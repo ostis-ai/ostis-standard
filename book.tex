@@ -1,0 +1,134 @@
+%%%%%%%%%%%%%%%%%%%% book.tex %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% sample root file for the chapters of your "monograph"
+%
+% Use this file as a template for your own input.
+%
+%%%%%%%%%%%%%%%% Springer-Verlag %%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% RECOMMENDED %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[graybox,envcountchap,sectrefs]{svmono}
+% choose options for [] as required from the list
+% in the Reference Guide
+
+\usepackage{mathptmx}
+\usepackage{helvet}
+\usepackage{courier}
+%
+\usepackage{type1cm}         
+\usepackage{setspace}
+
+\usepackage{xparse} 
+\usepackage{enumitem} 
+\usepackage{mathtools}
+\usepackage{ragged2e}
+\usepackage{float}
+\usepackage{amssymb}
+\usepackage{titlesec}
+\usepackage{microtype}
+\usepackage{changepage}
+\usepackage{trimspaces}
+\usepackage{bm}
+\usepackage{datetime}
+\usepackage{suffix}
+\usepackage{nameref}
+\usepackage[framemethod=TikZ]{mdframed}
+\usepackage[normalem]{ulem}
+
+\renewcommand{\ULdepth}{1.8pt}
+
+\usepackage{makeidx}         % allows index generation
+\usepackage{graphicx}        % standard LaTeX graphics tool
+                             % when including figure files
+\graphicspath{{Figures/}}
+\usepackage{multicol}        % used for the two-column index
+\usepackage[bottom]{footmisc}% places footnotes at page bottom
+
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+
+% Курсив и жирность для кириллицы
+\usepackage{substitutefont}
+
+\substitutefont{T2A}{\familydefault}{Tempora-TLF}
+\makeatletter
+\input{t2atempora-tlf.fd}
+\DeclareFontShape{T2A}{Tempora-TLF}{m}{sc}{
+         <-> ssub * Tempora-TLF/m/n
+}{}
+
+% see the list of further useful packages
+% in the Reference Guide
+
+\makeindex             % used for the subject index
+                       % please use the style svind.ist with
+                       % your makeindex program
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{geometry}
+\geometry{
+  a4paper,
+  left=30mm,
+  right=10mm,
+  top=20mm,
+  bottom=15mm,
+  %textwidth=117mm,
+  %textheight=191mm,
+  heightrounded, % <- I recommend this
+  hratio=1:1,
+  vratio=1:1,
+}
+
+\input{definitions.tex}
+
+\begin{document}
+
+\selectlanguage{russian}
+
+\author{Голенков В.В., Гулякина Н.А., Шункевич Д.В.}
+\title{Технология онтологического проектирования семантически совместимых гибридных интеллектуальных компьютерных систем}
+\subtitle{Технология OSTIS (Open Semantic Technology for Intelligent Systems)}
+\maketitle
+
+\frontmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\include{Contents/dedic}
+\begin{SCn}
+\scnsectionheader{Оглавление описания Технологии OSTIS}
+\scnstartstruct
+\end{SCn}
+
+\doublespacing
+\large
+\tableofcontents
+\singlespacing
+
+\begin{SCn}
+\scnendstruct
+\end{SCn}
+
+\include{Contents/foreword}
+\include{Contents/intro_ostis}
+\include{Contents/intro_lang}
+\include{Contents/rules}
+
+\mainmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include{Contents/chapter1}
+\include{Contents/chapter2}
+\include{Contents/conclusion}
+\include{Contents/bibliography}
+
+\backmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\include{Contents/glossary}
+%\printindex
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
+
+
+
+
+
