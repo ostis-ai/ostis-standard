@@ -1,5 +1,10 @@
 
+\usepackage{nameref}
+
 %SCN START
+
+\newif\iffilemode
+\filemodefalse
 
 \makeatletter
 
@@ -84,40 +89,61 @@
 \addtocounter{hind}{2}
 \setlength{\hangindent}{\value{hind}em} 
 
+\iffilemode
+\scnfilelist{#2}
+\else
 \scnlist{#2}
+\fi
 
 \addtocounter{ind}{-1}
 \addtocounter{hind}{-2}
 }
 
-\newcommand{\scnrelfromset}[2]{
-\hspace{\value{ind}em}$\bm{\Rightarrow}$ {\itshape #1*}:\\
+\newcommand{\scnrelfromcommonset}[4]{
+\hspace{\value{ind}em}$\bm{\Rightarrow}$ {\itshape #3*}:\\
 \addtocounter{ind}{1}
 \addtocounter{hind}{2}
 \setlength{\hangindent}{\value{hind}em} 
 
-\hspace{\value{ind}em}$\{$\\
-\scnlist{#2}
-\hspace{\value{ind}em}$\}$\\
+\hspace{\value{ind}em}$#1$\\
+%\scnlist{#4}
+\iffilemode
+\scnfilelist{#4}
+\else
+\scnlist{#4}
+\fi
+\hspace{\value{ind}em}$#2$\\
 
 \addtocounter{ind}{-1}
 \addtocounter{hind}{-2}
-
 }
 
-\newcommand{\scnreltoset}[2]{
-\hspace{\value{ind}em}$\bm{\Leftarrow}$ {\itshape #1*}:\\
+\newcommand{\scnrelfromset}[2]{\scnrelfromcommonset{\{}{\}}{#1}{#2}}
+
+\newcommand{\scnrelfromvector}[2]{\scnrelfromcommonset{<}{>}{#1}{#2}}
+
+\newcommand{\scnreltocommonset}[4]{
+\hspace{\value{ind}em}$\bm{\Leftarrow}$ {\itshape #3*}:\\
 \addtocounter{ind}{1}
 \addtocounter{hind}{2}
 \setlength{\hangindent}{\value{hind}em} 
 
-\hspace{\value{ind}em}$\{$\\
-\scnlist{#2}
-\hspace{\value{ind}em}$\}$\\
+\hspace{\value{ind}em}$\pmb{#1}$\\
+%\scnlist{#4}
+\iffilemode
+\scnfilelist{#4}
+\else
+\scnlist{#4}
+\fi
+\hspace{\value{ind}em}$\pmb{#2}$\\
 
 \addtocounter{ind}{-1}
 \addtocounter{hind}{-2}
 }
+
+\newcommand{\scnreltoset}[2]{\scnreltocommonset{\{}{\}}{#1}{#2}}
+
+\newcommand{\scnreltovector}[2]{\scnreltocommonset{\langle}{\rangle}{#1}{#2}}
 
 \newcommand{\scneq}[1]{
 \addtocounter{hind}{1}
@@ -127,9 +153,12 @@
 }
 
 \newcommand{\scneqfile}[1]{
+\hspace{\value{ind}em}$\bm{=}$ 
+\addtocounter{ind}{1}
 \addtocounter{hind}{1}
 \setlength{\hangindent}{\value{hind}em} 
-\hspace{\value{ind}em}$\bm{=}$ \scnfilelong{#1}\\
+\scnfilelong{#1}
+\addtocounter{ind}{-1}
 \addtocounter{hind}{-1}
 }
 
@@ -222,6 +251,10 @@
 \addtocounter{hind}{-1}
 }
 
+\newcommand{\scnrole}[1]{{\itshape #1'}:}
+
+\newcommand{\scnset}[1]{$\bm{\{}$#1$\bm{\}}$}
+
 \newcommand{\scnidtf}[1]{
 \addtocounter{hind}{1}
 \begin{adjustwidth}{\value{ind}em+1.6em}{0em}
@@ -263,6 +296,11 @@
 \newcommand{\scnstartsubstruct}{\hspace{\value{ind}em}$\bm{\supset=\{}$}
 \newcommand{\scnstartstruct}{\hspace{\value{ind}em}$\bm{=\{}$}
 \newcommand{\scnendstruct}{\hspace{\value{ind}em}$\bm{\}}$}
+
+\newcommand{\scnstartfile}{\hspace{\value{ind}em}\textbf{=[}}
+
+\newcommand{\scnendfile}{\hspace{\value{ind}em}\textbf{]}}
+
 
 \newcommand{\scnfilelongbreaks}[1]
 {\scnfilelong{\\#1\\}}
@@ -323,7 +361,17 @@
 \scntext{сферы применения}{#1}
 }
 
-\newcommand{\scnsourcecomment}[1]{/*#1*/}
+\newcommand{\scnseminclusion}[1]{
+\scntext{семантическое включение}{#1}
+}
+
+\newcommand{\scnsourcecomment}[1]{{\normalfont \normalsize \textbf{/*}#1\textbf{*/}}}
+
+\newcommand{\scnsourcecommentpar}[1]{
+\justifying
+\noindent
+\setlength{\hangindent}{\value{hind}em+1em}
+\hspace{\value{ind}em}\scnsourcecomment{#1}}
 
 \newcommand{\scnauthorcomment}[1]{\begin{flushleft}
 /*/*#1*/*/\end{flushleft}}
@@ -406,42 +454,43 @@
 \newlength\afterparlength
 \setlength{\afterparlength}{-2.5em}
 
+\newcommand{\scsuperchapter}{{\normalfont\bfseries\Large/*~Представляемый надраздел~\filldots/}}
+
 \newcommand{\scchapter}[1]{\clearpage
-\chapter[#1]{/*~Часть \thechapter~\filldots/\vspace{\afterparlength}}}
+\chapter[#1]{/*~Раздел-часть \thechapter~\filldots/\vspace{\afterparlength}}}
 
 \newcommand{\scsection}[1]{\clearpage
-\section[#1]{/*~Глава \thesection~\filldots/\vspace{\afterparlength}}}
+\section[#1]{/*~Раздел-глава \thesection~\filldots/\vspace{\afterparlength}}}
 
 \newcommand\scsubsection[1]{\clearpage
-\subsection[#1]{/*~Параграф \thesubsection~\filldots/\vspace{\afterparlength}}}
+\subsection[#1]{/*~Раздел-параграф \thesubsection~\filldots/\vspace{\afterparlength}}}
 
-\WithSuffix\newcommand\scsubsection*[2]{\clearpage\subsection*{/*~Параграф #2~\filldots/\vspace{\afterparlength}}
+\WithSuffix\newcommand\scsubsection*[2]{\clearpage\subsection*{/*~Раздел-параграф #2~\filldots/\vspace{\afterparlength}}
 \addcontentsline{toc}{subsection}{#1}
 }
 
 \newcommand{\scsubsubsection}[1]{\clearpage
-\subsubsection[#1]{/*~Пункт \thesubsubsection~\filldots/\vspace{\afterparlength}}}
+\subsubsection[#1]{/*~Раздел-пункт \thesubsubsection~\filldots/\vspace{\afterparlength}}}
 
-\WithSuffix\newcommand\scsubsubsection*[2]{\clearpage\subsubsection*{/*~Пункт #2~\filldots/\vspace{\afterparlength}}
+\WithSuffix\newcommand\scsubsubsection*[2]{\clearpage\subsubsection*{/*~Раздел-пункт #2~\filldots/\vspace{\afterparlength}}
 \addcontentsline{toc}{subsubsection}{#1}
 }
 
 \newcommand{\scparagraph}[1]{\clearpage
-\paragraph[#1]{/*~Подпункт \theparagraph~\filldots/\vspace{\afterparlength}}}
+\paragraph[#1]{/*~Раздел-подпункт \theparagraph~\filldots/\vspace{\afterparlength}}}
 
 \newcommand{\scchapterfinish}[1]{\clearpage
-\section*{/*~Завершение части \ref{#1}~\filldots/\vspace{\afterparlength}}}
+\section*{/*~Завершение раздела-части \ref{#1}~\filldots/\vspace{\afterparlength}}}
 
 \newcommand{\scsectionfinish}[1]{\clearpage
-\section*{/*~Завершение главы \ref{#1}~\filldots/\vspace{\afterparlength}}}
+\section*{/*~Завершение раздела-главы \ref{#1}~\filldots/\vspace{\afterparlength}}}
 
 \newcommand{\scsubsectionfinish}[1]{\clearpage
-\subsection*{/*~Завершение параграфа \ref{#1}~\filldots/\vspace{\afterparlength}}}
+\subsection*{/*~Завершение раздела-параграфа \ref{#1}~\filldots/\vspace{\afterparlength}}}
 
 \newcommand{\scsubsubsectionfinish}[1]{\clearpage
-\subsubsection*{/*~Завершение пункта \ref{#1}~\filldots/\vspace{\afterparlength}}}
+\subsubsection*{/*~Завершение раздела-пункта \ref{#1}~\filldots/\vspace{\afterparlength}}}
 
-\usepackage{nameref}
 \makeatletter
 \newcommand*{\currentname}{\@currentlabelname}
 \makeatother

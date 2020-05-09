@@ -89,25 +89,35 @@
 
 \author{Голенков В.В., Гулякина Н.А., Шункевич Д.В.}
 \title{Технология онтологического проектирования семантически совместимых гибридных интеллектуальных компьютерных систем}
-\subtitle{Технология OSTIS (Open Semantic Technology for Intelligent Systems)}
+\subtitle{Документация Технологии OSTIS (Open Semantic Technology for Intelligent Systems)}
 \maketitle
 
 \frontmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\large
+
+\addtocounter{chapter}{-1}
+\include{Contents/beginning}
 
 %\include{Contents/dedic}
 \begin{SCn}
-\scnsectionheader{Оглавление описания Технологии OSTIS}
-\scnstartstruct
+\scnsectionheader{Оглавление Документации Технологии OSTIS}\label{toc_ostis}
+
+\scnstartfile
+
+\scnsourcecommentpar{Обратите внимание на то, что в оглавлении номера разделов и номера их страниц оформлены как \uline{нетранслируемые комментарии} к исходному тексту базы знаний, то есть комментарии, которые состав базы знаний не вводятся, в отличие от комментариев, которые вводятся в состав базы знаний, например, в виде содержимого файлов. Это обусловлено тем, что номера разделов и номера их страниц актуальны только для текущего состояния данного исходного текста базы знаний. База знаний эволюционирует независимо от вводимых в неё исходных текстов, которые в общем случае разрабатываются разными авторами и могут иметь разный объем. В результате такой эволюции появляются новые разделы базы знаний, некоторые разделы могут "переместиться".}
+
 \end{SCn}
 
 \doublespacing
-\large
-\tableofcontents
+\large 
+{\textit \tableofcontents}
 \singlespacing
 
 \begin{SCn}
-\scnendstruct
+\scnendfile
 \end{SCn}
+
+\include{Contents/chapter0}
 
 \include{Contents/foreword}
 \include{Contents/intro_ostis}
