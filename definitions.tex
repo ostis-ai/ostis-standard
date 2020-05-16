@@ -224,12 +224,32 @@
 \addtocounter{hind}{-2}
 }
 
+\newcommand{\scnhaselementset}[1]{
+\hspace{\value{ind}em}$\bm{\ni~\{}$\\
+\addtocounter{ind}{1}
+\addtocounter{hind}{2}
+\setlength{\hangindent}{\value{hind}em} 
+\scnlist{#1}
+\hspace{\value{ind}em}$\}$\\
+\addtocounter{ind}{-1}
+\addtocounter{hind}{-2}
+}
+
 \newcommand{\scnhaselement}[1]{
 \addtocounter{hind}{1}
 \setlength{\hangindent}{\value{hind}em} 
 \hspace{\value{ind}em}$\bm{\ni}$ {\itshape #1}\\
 \addtocounter{hind}{-1}
 }
+
+\newcommand{\scnhaselements}[1]{
+\addtocounter{hind}{1}
+\setlength{\hangindent}{\value{hind}em} 
+\hspace{\value{ind}em}$\bm{\ni}$ #1\\
+\addtocounter{hind}{-1}
+}
+
+\newcommand{\scnsubdividing}[1]{\scnreltoset{разбиение}{#1}}
 
 \newcommand{\scnhaselementrole}[2]{
 \hspace{\value{ind}em}$\bm{\ni}$ {\itshape #1'}:\\
