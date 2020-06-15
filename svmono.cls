@@ -484,13 +484,13 @@ passing it to article class \MessageBreak
 
 \def\@chapter[#1]#2{\if@chapnum  % war mal \ifnum \c@secnumdepth >\m@ne
                        \refstepcounter{chapter}%
-                       \if@mainmatter
-                         \typeout{\@chapapp\space\thechapter.}%
-                         \addcontentsline{toc}{chapter}{\protect
-                                  \numberline{\thechapter\thechapterend}#1}%
-                       \else
+                       %\if@mainmatter
+                         %\typeout{\@chapapp\space\thechapter.}%
+                         %\addcontentsline{toc}{chapter}{\protect
+                                  %\numberline{\thechapter\thechapterend}#1}%
+                       %\else
                          \addcontentsline{toc}{chapter}{#1}%
-                       \fi
+                       %\fi
                     \else
                       \addcontentsline{toc}{chapter}{#1}%
                     \fi
