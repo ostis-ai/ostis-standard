@@ -482,23 +482,15 @@ passing it to article class \MessageBreak
                     \@afterindentfalse
                     \secdef\@chapter\@schapter}
 
-\def\@chapter[#1]#2{\if@chapnum  % war mal \ifnum \c@secnumdepth >\m@ne
-                       \refstepcounter{chapter}%
-                       %\if@mainmatter
-                         %\typeout{\@chapapp\space\thechapter.}%
-                         %\addcontentsline{toc}{chapter}{\protect
-                                  %\numberline{\thechapter\thechapterend}#1}%
-                       %\else
-                         \addcontentsline{toc}{chapter}{#1}%
-                       %\fi
-                    \else
-                      \addcontentsline{toc}{chapter}{#1}%
-                    \fi
-                    \chaptermark{#1}%
-                    \addtocontents{lof}{\protect\addvspace{10\p@}}%
-                    \addtocontents{lot}{\protect\addvspace{10\p@}}%
-                    \if@twocolumn
-                      \@topnewpage[\@makechapterhead{#2}]%
+\def\@chapter[#1]#2{
+        \refstepcounter{chapter}%
+        \addcontentsline{toc}{chapter}{\protect \numberline{\thechapter\thechapterend}#1}
+                       
+            \chaptermark{#1}%
+            \addtocontents{lof}{\protect\addvspace{10\p@}}%
+            \addtocontents{lot}{\protect\addvspace{10\p@}}%
+            \if@twocolumn
+            \@topnewpage[\@makechapterhead{#2}]%
                     \else
                       \@makechapterhead{#2}%
                       \@afterheading
@@ -1206,7 +1198,7 @@ to\z@{\kern0.55\wd0\vrule\@height0.45\ht0\hss}\box0}}}}
 \def\contentnameempty{}
 
 \def\tableofcontents{\@restonecolfalse\if@twocolumn\@restonecoltrue\onecolumn
- \fi\chapter*{\contentnameempty \@mkboth{{\contentnameempty}}{{\contentnameempty}}}
+ \fi
  \@starttoc{toc}\if@restonecol\twocolumn\fi}
 
 \setcounter{tocdepth}{5}
@@ -1231,7 +1223,7 @@ to\z@{\kern0.55\wd0\vrule\@height0.45\ht0\hss}\box0}}}}
 
 \def\addnumcontentsmark#1#2#3{%
 \addtocontents{#1}{\protect\contentsline{#2}{\protect\numberline
-                                    {\thechapter}#3}{\thepage}}}
+                                    {\thechapter}.#3}{\thepage}}}
 \def\addcontentsmark#1#2#3{%
 \addtocontents{#1}{\protect\contentsline{#2}{#3}{\thepage}}}
 \def\addcontentsmarkwop#1#2#3{%
@@ -1882,12 +1874,12 @@ to\z@{\kern0.55\wd0\vrule\@height0.45\ht0\hss}\box0}}}}
    \vskip 1cm                % Vertical space after subtitle.
   \fi
   \if!\@date!\else
-    {\large \@date}%          % Date set in \large size.
+    %{\large \@date}%          % Date set in \large size.
     \par
     \vskip 1.5em               % Vertical space after date.
   \fi
  \vfill
- {\Large Springer\par}
+ %{\Large Springer\par}
 %\vskip 5\p@
 %\large
 %  Berlin\enspace Heidelberg\enspace New\kern0.1em York\\

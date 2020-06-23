@@ -30,6 +30,12 @@
 \newlength{\bracketsize}
 \setlength{\bracketsize}{0.4em}
 
+\newlength{\squaresize}
+\setlength{\squaresize}{0.7em}
+
+\newlength{\doublesquaresize}
+\setlength{\doublesquaresize}{1.4em}
+
 \newlength{\eqsize}
 \setlength{\eqsize}{0.8em}
 
@@ -44,6 +50,16 @@
 %DEFINES END
 
 \usepackage{nameref}
+\usepackage{tocloft}
+\makeatletter
+\renewcommand{\@cftmaketoctitle}{}
+\makeatother
+\renewcommand{\cftchapaftersnum}{.}
+\renewcommand{\cftsecaftersnum}{.}
+\renewcommand{\cftsubsecaftersnum}{.}
+\renewcommand{\cftsubsubsecaftersnum}{.}
+\renewcommand{\cftparaaftersnum}{.}
+\renewcommand{\cftsubparaaftersnum}{.}
 
 %SCN START
 
@@ -121,11 +137,11 @@
 }
 
 \makeatletter
-\newcommand{\scnsegmentcaption}{\normalfont/*~\segcountertext сегмент Раздела~\@currentlabel.~\filldots/\hspace{0.5\textwidth}}
+\newcommand{\scnsegmentcaption}{\normalfont/*~Сегмент~\theseg~ Раздела~\@currentlabel.~\filldots/\hspace{0.5\textwidth}}
 \makeatother
 
 \newcommand{\scnrelfrom}[2]{
-\settab$\bm{\Rightarrow}$\makediff{\arrowsize}{\itshape #1*}:\\
+\settab$\bm{\Rightarrow}$\makediff{\arrowsize}{\itshape #1*}{\normalfont:}\\
 \addtocounter{ind}{1}
 \addtocounter{hind}{1}
 \sethind
@@ -178,7 +194,7 @@
 }
 
 \newcommand{\scnrelfromlist}[2]{
-\settab$\bm{\Rightarrow}$\makediff{\arrowsize}{\itshape #1*}:\\
+\settab$\bm{\Rightarrow}$\makediff{\arrowsize}{\itshape #1*}{\normalfont:}\\
 \addtocounter{ind}{1}
 \addtocounter{hind}{2}
 \sethind 
@@ -194,20 +210,8 @@
 \addtocounter{hind}{-2}
 }
 
-%\newcommand{\scnrelfromfilelist}[2]{
-%\settab$\bm{\Rightarrow}$\makediff{\arrowsize}{\%itshape #1*}:\\
-%\addtocounter{ind}{1}
-%\addtocounter{hind}{2}
-%\sethind 
-
-%\scnfilelist{#2}
-
-%\addtocounter{ind}{-1}
-%\addtocounter{hind}{-2}
-%}
-
 \newcommand{\scnreltolist}[2]{
-\settab$\bm{\Leftarrow}$\makediff{\arrowsize}{\itshape #1*}:\\
+\settab$\bm{\Leftarrow}$\makediff{\arrowsize}{\itshape #1*}{\normalfont:}\\
 \addtocounter{ind}{1}
 \addtocounter{hind}{2}
 \sethind 
@@ -223,7 +227,7 @@
 }
 
 \newcommand{\scnrelfromcommonset}[4]{
-\settab$\bm{\Rightarrow}$\makediff{\arrowsize}{\itshape #3*}:\\
+\settab$\bm{\Rightarrow}$\makediff{\arrowsize}{\itshape #3*}{\normalfont:}\\
 \addtocounter{ind}{1}
 \addtocounter{hind}{2}
 \sethind 
@@ -247,7 +251,7 @@
 \newcommand{\scnrelfromvector}[2]{\scnrelfromcommonset{\langle}{\rangle}{#1}{#2}}
 
 \newcommand{\scnreltocommonset}[4]{
-\settab$\bm{\Leftarrow}$\makediff{\arrowsize}{\itshape #3*}:\\
+\settab$\bm{\Leftarrow}$\makediff{\arrowsize}{\itshape #3*}{\normalfont:}\\
 \addtocounter{ind}{1}
 \addtocounter{hind}{2}
 \sethind 
@@ -304,7 +308,7 @@
 }
 
 \newcommand{\scnrelto}[2]{
-\settab$\bm{\Leftarrow}$\makediff{\arrowsize}{\itshape #1*}:\\
+\settab$\bm{\Leftarrow}$\makediff{\arrowsize}{\itshape #1*}{\normalfont:}\\
 \addtocounter{ind}{1}
 \addtocounter{hind}{1}
 \sethind 
@@ -314,7 +318,7 @@
 }
 
 \newcommand{\scnrelboth}[2]{
-\settab$\bm{\Leftrightarrow}$\makediff{\arrowsize}{\itshape #1*}:\\
+\settab$\bm{\Leftrightarrow}$\makediff{\arrowsize}{\itshape #1*}{\normalfont:}\\
 \addtocounter{ind}{1}
 \addtocounter{hind}{1}
 \sethind 
@@ -345,7 +349,7 @@
 }
 
 \newcommand{\scnhaselementlist}[2]{
-\settab$\bm{\ni}$\makediff{\nisize}{\itshape#1'}:\\
+\settab$\bm{\ni}$\makediff{\nisize}{\itshape#1'}{\normalfont:}\\
 \addtocounter{ind}{1}
 \addtocounter{hind}{2}
 \sethind 
@@ -383,21 +387,21 @@
 \newcommand{\scnsubdividing}[1]{\scnreltoset{разбиение}{#1}}
 
 \newcommand{\scnhaselementrole}[2]{
-\settab$\bm{\ni}$\makediff{\nisize}{\itshape #1'}:\\
+\settab$\bm{\ni}$\makediff{\nisize}{\itshape #1'}{\normalfont:}\\
 \addtocounter{ind}{1}
 \addtocounter{hind}{1}
 \sethind 
-\hspace{0.2em}\settab{\itshape #2}\\
+\settab{\itshape #2}\\
 \addtocounter{ind}{-1}
 \addtocounter{hind}{-1}
 }
 
 \newcommand{\scniselementrole}[2]{
-\settab$\bm{\in}$\makediff{\insize}{\itshape #1'}:\\
+\settab$\bm{\in}$\makediff{\insize}{\itshape #1'}{\normalfont:}\\
 \addtocounter{ind}{1}
 \addtocounter{hind}{1}
 \sethind 
-\hspace{0.2em}\settab{\itshape #2}\\
+\settab{\itshape #2}\\
 \addtocounter{ind}{-1}
 \addtocounter{hind}{-1}
 }
@@ -618,27 +622,27 @@
 \newcommand{\scsuperchapter}{{\normalfont\bfseries\large/*\filldots/}\vspace{0.5\afterparlength}}
 
 \newcommand{\scchapter}[1]{\clearpage
-\chapter[#1]{/*~Раздел~ \thechapter.~\filldots/\vspace{\afterparlength}}}
+\chapter[\textit{\textbf{#1}}]{/*~Раздел~ \thechapter.~\filldots/\vspace{\afterparlength}}}
 
 \newcommand{\scsection}[1]{\clearpage
-\section[#1]{/*~Раздел~\thesection.~\filldots/\vspace{\afterparlength}}}
+\section[\textit{\textbf{#1}}]{/*~Раздел~\thesection.~\filldots/\vspace{\afterparlength}}}
 
 \newcommand\scsubsection[1]{\clearpage
-\subsection[#1]{/*~Раздел~ \thesubsection.~\filldots/\vspace{\afterparlength}}}
+\subsection[\textit{#1}]{/*~Раздел~ \thesubsection.~\filldots/\vspace{\afterparlength}}}
 
 \WithSuffix\newcommand\scsubsection*[2]{\clearpage\subsection*{/*~Раздел~ #2.~\filldots/\vspace{\afterparlength}}
 \addcontentsline{toc}{subsection}{#1}
 }
 
 \newcommand{\scsubsubsection}[1]{\clearpage
-\subsubsection[#1]{/*~Раздел~ \thesubsubsection.~\filldots/\vspace{\afterparlength}}}
+\subsubsection[\textit{#1}]{/*~Раздел~ \thesubsubsection.~\filldots/\vspace{\afterparlength}}}
 
 \WithSuffix\newcommand\scsubsubsection*[2]{\clearpage\subsubsection*{/*~Раздел~#2.~\filldots/\vspace{\afterparlength}}
 \addcontentsline{toc}{subsubsection}{#1}
 }
 
 \newcommand{\scparagraph}[1]{\clearpage
-\paragraph[#1]{/*~Раздел~\theparagraph.~\filldots/\vspace{\afterparlength}}}
+\paragraph[\textit{#1}]{/*~Раздел~\theparagraph.~\filldots/\vspace{\afterparlength}}}
 
 \newcommand{\scchapterfinish}[1]{\clearpage
 \section*{/*~Завершение раздела~\ref{#1}.~\filldots/\vspace{\afterparlength}}}
@@ -690,8 +694,7 @@
 }
 
 \newenvironment{scnitemizeii}{
-%\begin{itemize}[leftmargin=\leftmargin +0.25em,itemsep=-0.25em,topsep=-0.75em]
-\begin{itemize}[leftmargin=\leftmargin +0.25em,itemsep=-0.25em,before=\vspace{-0.3em},after=\vspace{0em}]
+\begin{itemize}[leftmargin=\leftmargin-1em+\bracketsize+\squaresize,itemsep=-0.25em,before=\vspace{-0.3em},after=\vspace{0em}]
 \renewcommand{\labelitemi}{\scriptsize$\square~\square$} 
 }
 {
@@ -699,8 +702,7 @@
 }
 
 \newenvironment{scnitemizeiii}{
-%\begin{itemize}[leftmargin=\leftmargin +0.75em,itemsep=-0.25em,topsep=-0.75em]
-\begin{itemize}[leftmargin=\leftmargin +0.75em,itemsep=-0.25em,before=\vspace{-0.3em},after=\vspace{0em}]
+\begin{itemize}[leftmargin=\leftmargin-1em+\bracketsize+\doublesquaresize,itemsep=-0.25em,before=\vspace{-0.3em},after=\vspace{0em}]
 
 \renewcommand{\labelitemi}{\scriptsize$\square~\square$} 
 }
@@ -709,7 +711,7 @@
 }
 
 \newenvironment{scnenumerate}{
-\begin{enumerate}[leftmargin=\leftmargin +\value{ind}em-1.25em,itemsep=-0.25em,before=\vspace{-0.8em},after=\vspace{-0.5em}]
+\begin{enumerate}[leftmargin=\leftmargin-1em+\bracketsize,itemsep=-0.25em,before=\vspace{-0.8em},after=\vspace{-0.5em}]
 }
 {
 \end{enumerate}
@@ -760,3 +762,14 @@ angle=0
 }
 
 % Background END
+
+% SCs 
+
+\newcommand{\scsrelto}[2]{
+$\bm{\Leftarrow}$~{\itshape #1*}{\normalfont :}~{\itshape #2}}
+
+\newcommand{\scsabrreviation}[2]{\scnfileclass{#1}\scsrelto{является сокращением}{\scnfileclass{#2}}
+}
+
+
+% SCs END
