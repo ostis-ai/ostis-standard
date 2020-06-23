@@ -60,6 +60,9 @@
 \renewcommand{\cftsubsubsecaftersnum}{.}
 \renewcommand{\cftparaaftersnum}{.}
 \renewcommand{\cftsubparaaftersnum}{.}
+\renewcommand{\cftchapfont}{\bfseries}
+\renewcommand{\cftsecfont}{\bfseries}
+
 
 %SCN START
 
@@ -622,10 +625,10 @@
 \newcommand{\scsuperchapter}{{\normalfont\bfseries\large/*\filldots/}\vspace{0.5\afterparlength}}
 
 \newcommand{\scchapter}[1]{\clearpage
-\chapter[\textit{\textbf{#1}}]{/*~Раздел~ \thechapter.~\filldots/\vspace{\afterparlength}}}
+\chapter[\textit{#1}]{/*~Раздел~ \thechapter.~\filldots/\vspace{\afterparlength}}}
 
 \newcommand{\scsection}[1]{\clearpage
-\section[\textit{\textbf{#1}}]{/*~Раздел~\thesection.~\filldots/\vspace{\afterparlength}}}
+\section[\textit{#1}]{/*~Раздел~\thesection.~\filldots/\vspace{\afterparlength}}}
 
 \newcommand\scsubsection[1]{\clearpage
 \subsection[\textit{#1}]{/*~Раздел~ \thesubsection.~\filldots/\vspace{\afterparlength}}}
