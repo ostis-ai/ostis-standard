@@ -9,8 +9,6 @@
 
 % RECOMMENDED %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \documentclass[graybox,envcountchap,sectrefs]{svmono}
-% choose options for [] as required from the list
-% in the Reference Guide
 
 \usepackage{mathptmx}
 \usepackage{helvet}
@@ -46,7 +44,7 @@
 \usepackage[bottom]{footmisc}% places footnotes at page bottom
 
 \usepackage[utf8]{inputenc}
-\usepackage[russian]{babel}
+\usepackage[english,russian]{babel}
 
 \babelhyphenation{иден-ти-фи-ка-то-ры}
 
@@ -84,7 +82,9 @@
   vratio=1:1,
 }
 
-\input{scn.tex}
+\input{scn}
+\input{scn_biblio}
+\addbibresource{Contents/biblio/biblio.bib}
 
 \begin{document}
 
@@ -104,16 +104,16 @@
 \ActivateBG
 \include{Contents/chapter0}
 
-\include{Contents/foreword}
-\include{Contents/intro_ostis}
-\include{Contents/intro_lang}
-\include{Contents/rules}
+%\include{Contents/foreword}
+%\include{Contents/intro_ostis}
+%\include{Contents/intro_lang}
+%\include{Contents/rules}
 
 %\mainmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\include{Contents/chapter1}
-\include{Contents/chapter2}
-\include{Contents/conclusion}
-\include{Contents/bibliography}
+%\include{Contents/chapter1}
+%\include{Contents/chapter2}
+%\include{Contents/conclusion}
+%\include{Contents/bibliography}
 
 \backmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\include{Contents/glossary}

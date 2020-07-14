@@ -49,7 +49,6 @@
 
 %DEFINES END
 
-\usepackage{nameref}
 \usepackage{tocloft}
 \makeatletter
 \renewcommand{\@cftmaketoctitle}{}
@@ -93,6 +92,10 @@
 
 \newcommand{\scnheader}[1]{\scnresetlevel\sethind~\vspace{\parskip}\\
 \textit{\textbf{#1}}\\}
+
+\newcommand{\scnheaderlocal}[1]{\settab\textit{\textbf{#1}}\\}
+
+\newcommand{\scnkeyword}[1]{\textit{\textbf{#1}}\\}
 
 \newcommand{\scnsectionheader}[1]{\setcounter{seg}{0} \textspaced{\scnheader{\large #1}}}
 
@@ -140,7 +143,7 @@
 }
 
 \makeatletter
-\newcommand{\scnsegmentcaption}{\normalfont/*~Сегмент~\theseg~ Раздела~\@currentlabel.~\filldots/\hspace{0.5\textwidth}}
+\newcommand{\scnsegmentcaption}{\bfseries \normalfont/*~Сегмент~\theseg~ Раздела~\@currentlabel.~\filldots/\hspace{0.5\textwidth}}
 \makeatother
 
 \newcommand{\scnrelfrom}[2]{
@@ -154,6 +157,7 @@
 }
 
 \NewDocumentCommand\scnlist{>{\SplitList{;}}m}
+   %{\ProcessList{#1}{\iffilemode\scnlistitem\else\scnfilelistitem\fi}}
    {\ProcessList{#1}{\scnlistitem}}
 
 \NewDocumentCommand\scnfilelist{>{\SplitList{;}}m}
@@ -164,7 +168,6 @@
 
 \NewDocumentCommand\scnfilelistbrackets{>{\SplitList{;}}m}
    {\ProcessList{#1}{\scnfilelistitembrackets}}
-
 
 \newcommand\scnlistitem[1]{
 \settab{$\bullet$\makediff{\bulletsize}\itshape#1} \\
@@ -195,6 +198,8 @@
 \end{adjustwidth}
 \addtocounter{hind}{-1}
 }
+
+\newcommand\scnfileitem[1]{\scnaddlevel{1}\scnfilelong{#1}\scnaddlevel{-1}}
 
 \newcommand{\scnrelfromlist}[2]{
 \settab$\bm{\Rightarrow}$\makediff{\arrowsize}{\itshape #1*}{\normalfont:}\\
@@ -299,13 +304,18 @@
 }
 
 \newcommand{\scneqtoset}[1]{
-\settab$\bm{=}$\makediff{\eqsize}$\bm{\{}$\\
+\settab$\bm{=}$\makediff{\eqsize}$\pmb{\{}$\\
 \addtocounter{ind}{1}
 \addtocounter{hind}{2}
 \sethind 
+\iffilemode
+\vspace{-1.55\baselineskip}
+\scnfilelistbrackets{#1}
+\else
 \vspace{-1\baselineskip}
 \scnlistbrackets{#1}
-\settab$\}$\\
+\fi
+\settab$\pmb{\}}$\\
 \addtocounter{ind}{-1}
 \addtocounter{hind}{-2}
 }
@@ -328,6 +338,22 @@
 \hspace{0.2em}\settab{\itshape #2} \\
 \addtocounter{hind}{-1}
 \addtocounter{ind}{-1}
+}
+
+\newcommand{\scnrelbothlist}[2]{
+\settab$\bm{\Leftrightarrow}$\makediff{\arrowsize}{\itshape #1*}{\normalfont:}\\
+\addtocounter{ind}{1}
+\addtocounter{hind}{2}
+\sethind 
+
+\iffilemode
+\scnfilelist{#2}
+\else
+\scnlist{#2}
+\fi
+
+\addtocounter{ind}{-1}
+\addtocounter{hind}{-2}
 }
 
 \newcommand{\scnsubset}[1]{
@@ -362,13 +388,13 @@
 }
 
 \newcommand{\scnhaselementset}[1]{
-\settab$\bm{\ni}$\makediff{\nisize}$\bm{\{}$\\
+\settab$\bm{\ni}$\makediff{\nisize}$\pmb{\{}$\\
 \addtocounter{ind}{1}
 \addtocounter{hind}{2}
 \sethind 
 \vspace{-1\baselineskip}
 \scnlistbrackets{#1}
-\settab$\}$\\
+\settab$\pmb{\}}$\\
 \addtocounter{ind}{-1}
 \addtocounter{hind}{-2}
 }
@@ -411,7 +437,7 @@
 
 \newcommand{\scnrole}[1]{{\itshape #1'}:}
 
-\newcommand{\scnset}[1]{$\bm{\{}$#1$\bm{\}}$}
+\newcommand{\scnset}[1]{$\pmb{\{}$#1$\pmb{\}}$}
 
 \newcommand{\scnidtf}[1]{
 \begin{adjustwidth}{\calctab+3.4em}{0em}
@@ -419,6 +445,17 @@
 \hspace{-3.4em}\normalfont $\bm{\coloneqq}$\hspace{\calcdiff{\idtfsize}}[#1]
 \end{adjustwidth}
 }
+
+\newcommand{\scnidtftext}[2]{
+\settab$\bm{\coloneqq}$\hspace{\calcdiff{\idtfsize}}{\itshape #1*}{\normalfont:}\\
+\addtocounter{ind}{1}
+\settab{\scnfilelong{#2}}\\
+\addtocounter{ind}{-1}
+}
+
+\newcommand{\scnidtfdef}[1]{\scnidtftext{определение}{#1}}
+
+\newcommand{\scnidtfexp}[1]{\scnidtftext{пояснение}{#1}}
 
 \newcommand{\scnaddlevel}[1]{
 \addtocounter{ind}{#1}
@@ -460,9 +497,15 @@
 %\newcommand{\scnstructinclusion}{\settab$\bm{\supset=}$}
 \newcommand{\scnstartstruct}{\settab$\pmb{=\{}$}
 \newcommand{\scnstartset}{\settab$\pmb{\{}$}
+\newcommand{\scnstartsetlocal}{$\pmb{\{}$}
 \newcommand{\scnendstruct}{\settab$\pmb{\}}$}
 
-\newcommand{\scnstartfile}{\settab\textbf{=[}}
+\newcommand{\scnendstructcomment}[1]{\settab$\pmb{\}}$\makediff{\arrowsize}\scnsourcecomment{#1}}
+
+\newcommand{\scnendstructlocal}{$\pmb{\}}$}
+
+\newcommand{\scnstartfile}{\settab\textbf{=}\\
+\settab\textbf{[}\\}
 
 \newcommand{\scnendfile}{\settab\textbf{]}}
 
@@ -661,25 +704,29 @@
 
 \makeatletter
 \newcommand{\scsectionbeginning}{\bigskip
-{\bfseries \normalfont \normalsize /*~Начало  Раздела~\@currentlabel.~\filldots/}
+{\bfseries \normalfont \normalsize /*~Начало  Раздела~\@currentlabel.~\filldots/\hspace{0.5\textwidth}}
 \scnsectionheader{Начало Раздела "\@currentlabelname"}
 }
 \makeatother
 
 \makeatletter
 \newcommand{\scsectionbeginningname}[1]{\bigskip
-{\bfseries \normalfont \normalsize /*~Начало  Раздела~\@currentlabel.~\filldots/}
+{\bfseries \normalfont \normalsize /*~Начало  Раздела~\@currentlabel.~\filldots/\hspace{0.5\textwidth}}
 \scnsectionheader{#1}
 }
 \makeatother
 
-\newcommand{\scsupersectionbeginning}[1]{\bigskip \section*{/*~Начало раздела.~\filldots/}
+\newcommand{\scsupersectionbeginning}[1]{\bigskip \section*{\bfseries /*~Начало.~\filldots/\hspace{0.5\textwidth}}
 \vspace{0.5\afterparlength}
-\scnsectionheader{Начало Раздела "Документация Технологии OSTIS"}
+\scnsectionheader{Начало Документации Технологии OSTIS}
 }
 
 \makeatletter
 \newcommand*{\currentname}{\@currentlabelname}
+\makeatother
+
+\makeatletter
+\newcommand*{\currentnumber}{\@currentlabel}
 \makeatother
 
 %Sections END
