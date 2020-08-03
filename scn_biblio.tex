@@ -24,11 +24,11 @@ maxnames=3
 {
     \clist_sort:Nn \scncitenames
     {
-        \ifnumcomp{\pdfstrcmp{#1}{#2}}{>}{0}
+        \ifnumcomp{\pdfstrcmp{##1}{##2}}{>}{0}
         { \sort_return_swapped: }
         { \sort_return_same: }
     }
-    \clist_map_inline:Nn \scncitenames {\prop_item:Nn \scncitelist {#1}}
+    \clist_map_inline:Nn \scncitenames {\prop_item:Nn \scncitelist {##1}}
 }
 \ExplSyntaxOff
 

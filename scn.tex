@@ -39,6 +39,11 @@
 \newlength{\eqsize}
 \setlength{\eqsize}{0.8em}
 
+\newlength{\substructsize}
+\setlength{\substructsize}{1.7em}
+
+\newcommand{\scnsupergroupsign}{\textasciicircum}
+
 \newcommand{\sethind}{\setlength{\hangindent}{\dimexpr (\tabsize)*\value{hind} \relax} }
 \newcommand{\calctab}{\dimexpr (\tabsize)*\value{ind} \relax}
 \newcommand{\settab}{\hspace{\calctab}}
@@ -93,9 +98,16 @@
 \newcommand{\scnheader}[1]{\scnresetlevel\sethind~\vspace{\parskip}\\
 \textit{\textbf{#1}}\\}
 
+\newcommand{\scnstructheader}[1]{\scnresetlevel\sethind~\vspace{\parskip}\\
+\textit{\textbf{\textspaced{#1}}}\\}
+
 \newcommand{\scnheaderlocal}[1]{\settab\textit{\textbf{#1}}\\}
 
-\newcommand{\scnkeyword}[1]{\textit{\textbf{#1}}\\}
+\newcommand{\scnstructheaderlocal}[1]{\settab\textit{\textbf{\textspaced{#1}}}\\}
+
+\newcommand{\scnstructidtf}[1]{\textit{\textspaced{#1}}}
+
+\newcommand{\scnkeyword}[1]{\textit{\textbf{#1}}}
 
 \newcommand{\scnsectionheader}[1]{\setcounter{seg}{0} \textspaced{\scnheader{\large #1}}}
 
@@ -143,7 +155,7 @@
 }
 
 \makeatletter
-\newcommand{\scnsegmentcaption}{\bfseries \normalfont/*~Сегмент~\theseg~ Раздела~\@currentlabel.~\filldots/\hspace{0.5\textwidth}}
+\newcommand{\scnsegmentcaption}{\bfseries /*~Сегмент~\theseg~ Раздела~\@currentlabel.~\filldots/\hspace{0.5\textwidth}\normalfont}
 \makeatother
 
 \newcommand{\scnrelfrom}[2]{
@@ -204,10 +216,9 @@
 \newcommand{\scnrelfromlist}[2]{
 \settab$\bm{\Rightarrow}$\makediff{\arrowsize}{\itshape #1*}{\normalfont:}\\
 \addtocounter{ind}{1}
-\addtocounter{hind}{2}
+\addtocounter{hind}{1}
 \sethind 
 
-%\scnlist{#2}
 \iffilemode
 \scnfilelist{#2}
 \else
@@ -215,7 +226,7 @@
 \fi
 
 \addtocounter{ind}{-1}
-\addtocounter{hind}{-2}
+\addtocounter{hind}{-1}
 }
 
 \newcommand{\scnreltolist}[2]{
@@ -290,13 +301,15 @@
 }
 
 \newcommand{\scneqfile}[1]{
-\settab$\bm{=}$ 
-\addtocounter{ind}{1}
-\addtocounter{hind}{1}
-\sethind 
+\settab$\bm{=}$\\ 
+\vspace{0.5\baselineskip}
 \scnfilelong{#1}
-\addtocounter{ind}{-1}
-\addtocounter{hind}{-1}
+}
+
+\newcommand{\scneqimage}[1]{
+\settab$\bm{=}$\\ 
+\vspace{0.5\baselineskip}
+\scnfileimage{#1}
 }
 
 \newcommand{\scneqfileclass}[1]{
@@ -305,6 +318,23 @@
 
 \newcommand{\scneqtoset}[1]{
 \settab$\bm{=}$\makediff{\eqsize}$\pmb{\{}$\\
+\addtocounter{ind}{1}
+\addtocounter{hind}{2}
+\sethind 
+\iffilemode
+\vspace{-1.55\baselineskip}
+\scnfilelistbrackets{#1}
+\else
+\vspace{-1\baselineskip}
+\scnlistbrackets{#1}
+\fi
+\settab$\pmb{\}}$\\
+\addtocounter{ind}{-1}
+\addtocounter{hind}{-2}
+}
+
+\newcommand{\scnhassubstruct}[1]{
+\settab$\bm{\supset=}$\makediff{\substructsize}$\pmb{\{}$\\
 \addtocounter{ind}{1}
 \addtocounter{hind}{2}
 \sethind 
@@ -387,8 +417,8 @@
 \addtocounter{hind}{-2}
 }
 
-\newcommand{\scnhaselementset}[1]{
-\settab$\bm{\ni}$\makediff{\nisize}$\pmb{\{}$\\
+\newcommand{\scnmakeset}[1]{
+\hspace{-\bracketsize}$\pmb{\{}$\\
 \addtocounter{ind}{1}
 \addtocounter{hind}{2}
 \sethind 
@@ -397,6 +427,10 @@
 \settab$\pmb{\}}$\\
 \addtocounter{ind}{-1}
 \addtocounter{hind}{-2}
+}
+
+\newcommand{\scnhaselementset}[1]{
+\settab$\bm{\ni}$\makediff{\nisize}\scnmakeset{#1}
 }
 
 \newcommand{\scnhaselement}[1]{
@@ -490,17 +524,47 @@
 \end{adjustwidth}
 }
 
+\newcommand{\scnfileimage}[1]{
+\begin{adjustwidth}{\calctab}{0em}
+\setlength{\parindent}{0em}
+\setlength{\itemindent}{0em}
+\setlength{\parskip}{0.5em}
+\vspace{-1.5em}
+\normalfont \textbf{[}\\
+#1\\
+\textbf{]}
+\end{adjustwidth}
+}
+
+\newcommand{\scnfilescg}[1]{
+\begin{adjustwidth}{\calctab}{0em}
+\setlength{\parindent}{0em}
+\setlength{\itemindent}{0em}
+\setlength{\parskip}{0.5em}
+\vspace{-1.5em}
+\normalfont \textbf{[}\\
+\setlength\arrayrulewidth{1pt}
+\hspace{0.1em}\begin{tabular}{|l}
+\includegraphics[scale=0.8]{#1}\\
+\end{tabular}
+\newline
+\textbf{]}
+\end{adjustwidth}
+}
+
 \newcommand{\scnstartsubstruct}{
 \settab$\pmb{\supset=}$\\
 \settab$\pmb{\{}$
 }
-%\newcommand{\scnstructinclusion}{\settab$\bm{\supset=}$}
+
+\newcommand{\scnstructinclusion}{
+\settab$\pmb{\supset=}$\\
+}
+
 \newcommand{\scnstartstruct}{\settab$\pmb{=\{}$}
 \newcommand{\scnstartset}{\settab$\pmb{\{}$}
 \newcommand{\scnstartsetlocal}{$\pmb{\{}$}
 \newcommand{\scnendstruct}{\settab$\pmb{\}}$}
-
-\newcommand{\scnendstructcomment}[1]{\settab$\pmb{\}}$\makediff{\arrowsize}\scnsourcecomment{#1}}
 
 \newcommand{\scnendstructlocal}{$\pmb{\}}$}
 
@@ -573,14 +637,24 @@
 \scntext{семантическое включение}{#1}
 }
 
-\newcommand{\scnsourcecomment}[1]{{\normalfont \normalsize \textbf{/*}#1\textbf{*/}}}
+\newcommand{\scnsourcecomment}[1]{{\normalfont \normalsize \textbf{/*~}#1\textbf{{}~*/}}}
 
 \newcommand{\scnsourcecommentpar}[1]{
-\begin{adjustwidth}{\calctab+0.8em}{0em}
+\begin{adjustwidth}{\calctab+1em}{0em}
 \justify
 \setlength{\parindent}{0em}
 \setlength{\itemindent}{0em}
-\hspace{-0.8em}\normalfont /*#1*/
+\hspace{-1em}\normalfont /*~#1{}~*/
+\end{adjustwidth}
+}
+
+\newcommand{\scninlinesourcecommentpar}[1]{
+\begin{adjustwidth}{\calctab+1em+\tabsize}{0em}
+\justify
+\setlength{\parindent}{0em}
+\setlength{\itemindent}{0em}
+\vspace{-0.9\baselineskip}
+\hspace{-1em}\normalfont /*~#1{}~*/
 \end{adjustwidth}
 }
 
@@ -704,14 +778,14 @@
 
 \makeatletter
 \newcommand{\scsectionbeginning}{\bigskip
-{\bfseries \normalfont \normalsize /*~Начало  Раздела~\@currentlabel.~\filldots/\hspace{0.5\textwidth}}
+{\bfseries \normalsize /*~Начало  Раздела~\@currentlabel.~\filldots/\hspace{0.5\textwidth}\normalfont}
 \scnsectionheader{Начало Раздела "\@currentlabelname"}
 }
 \makeatother
 
 \makeatletter
 \newcommand{\scsectionbeginningname}[1]{\bigskip
-{\bfseries \normalfont \normalsize /*~Начало  Раздела~\@currentlabel.~\filldots/\hspace{0.5\textwidth}}
+{\bfseries \normalsize /*~Начало  Раздела~\@currentlabel.~\filldots/\hspace{0.5\textwidth}\normalfont}
 \scnsectionheader{#1}
 }
 \makeatother
