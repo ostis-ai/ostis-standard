@@ -592,7 +592,7 @@
 \scnrelto{алфавит}{SC-код}
 \scnrelfrom{разбиение}{sc-элемент}
 \scneq{{\normalfont(}Алфавит Ядра SC-кода $\cup$ \scnset{\scnkeyword{внутренний файл ostis-системы}}{\normalfont)}}
-\scneq{\scnmakeset{sc-узел общего вида; \textit{\scnkeyword{внутренний файл ostis-системы}}; sc-ребро общего вида; sc-дуга общего вида; базовая sc-дуга}}
+\scneq{\scnmakesetlocal{sc-узел общего вида; \textit{\scnkeyword{внутренний файл ostis-системы}}; sc-ребро общего вида; sc-дуга общего вида; базовая sc-дуга}}
 
 \scnheader{Алфавит SC-кода}
 \scnidtf{Алфавит sc-элементов в рамках SC-кода}
@@ -680,7 +680,7 @@
 \scnheader{sc-переменная}
 \scnrelto{разбиение}{\scnkeyword{Структурная типология sc-переменных}}
 \scnaddlevel{1}
-\scneq{\scnmakeset{произвольная терминальная сущность
+\scneq{\scnmakesetlocal{произвольная терминальная сущность
 \scnaddlevel{1}
 \scnidtf{sc-переменная, обозначающая терминальную сущность}
 \scnidtf{sc-переменная, значением или значением значения и т.д. которой является терминальная сущность}
@@ -964,7 +964,7 @@
 
 \scnrelto{разбиение}{\scnkeyword{Наличие sc-переменных, входящих в состав sc-структуры}}
 \scnaddlevel{1}
-\scneq{\scnmakeset{sc-структура, в составе которой sc-переменные не входят;sc-структура, в состав которой входят sc-переменные\\
+\scneq{\scnmakesetlocal{sc-структура, в составе которой sc-переменные не входят;sc-структура, в состав которой входят sc-переменные\\
 \scnaddlevel{1}
 \scnnote{Такие sc-структуры при представлении логических высказываний в SC-коде являются аналогами атомарных логических формул.}
 \scnaddlevel{-1}
@@ -972,7 +972,7 @@
 
 \scnrelto{разбиение}{\scnkeyword{Темпоральная характеристика sc-структур}}
 \scnaddlevel{1}
-\scneq{\scnmakeset{ситуативная sc-структура\\
+\scneq{\scnmakesetlocal{ситуативная sc-структура\\
 \scnaddlevel{1}
 \scnidtf{ситуация, представленная в SC-коде}
 \scnidtf{ситуация}
@@ -986,7 +986,7 @@
 \scnaddlevel{-2}
 \scnrelto{разбиение}{\scnkeyword{Наличие связности sc-структур}}
 \scnaddlevel{1}
-\scneq{\scnmakeset{связная sc-структура\\
+\scneq{\scnmakesetlocal{связная sc-структура\\
 \scnaddlevel{1}
 \scnrelto{разбиение}{Связность sc-структур\scnsupergroupsign}
 \scnaddlevel{1}
@@ -1008,7 +1008,7 @@
 
 \scnrelto{разбиение}{\scnkeyword{Рефлексивность sc-структур}}
 \scnaddlevel{1}
-\scneq{\scnmakeset{рефлексивная sc-структура\\
+\scneq{\scnmakesetlocal{рефлексивная sc-структура\\
 \scnaddlevel{1}
 \scnidtf{sc-структура, в число элементов которой входит sc-узел, обозначающий саму эту sc-структуру}
 \scnsubset{рефлексивное sc-множество}
@@ -1018,7 +1018,7 @@
 \scnaddlevel{-1}
 \scnrelto{разбиение}{\scnkeyword{Целостность sc-структур по связкам}}
 \scnaddlevel{1}
-\scneq{\scnmakeset{sc-структура, содержащая все компоненты всех своих связок;sc-структура, не содержащая все компоненты всех своих связок
+\scneq{\scnmakesetlocal{sc-структура, содержащая все компоненты всех своих связок;sc-структура, не содержащая все компоненты всех своих связок
 }}
 \scnaddlevel{-1}
 \scnsubdividing{синтаксически неправильная sc-структура\\
@@ -1053,11 +1053,11 @@
 \scnendstruct \scninlinesourcecommentpar{Завершили \textit{Классификацию sc-структур}}
 
 \scnheader{следует отличать*}
-\scnhaselementset{\scnmakeset{дискретная информационная конструкция;текст;знание}
+\scnhaselementset{\scnmakesetlocal{дискретная информационная конструкция;текст;знание}
 \scnaddlevel{1}
 \scniselement{следует отличать*}
 \scnaddlevel{-1}
-;\scnmakeset{sc-структура;sc-текст;sc-знание}
+;\scnmakesetlocal{sc-структура;sc-текст;sc-знание}
 \scnaddlevel{1}
 \scniselement{следует отличать*}
 \scnaddlevel{-1}
