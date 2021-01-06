@@ -1,6 +1,13 @@
 
 %DEFINES START
 
+\newcommand{\showfont}{encoding: \f@encoding{},
+  family: \f@family{},
+  series: \f@series{},
+  shape: \f@shape{},
+  size: \f@size{}
+}
+
 \newcommand\tabsize{3em}
 
 \newlength{\insize}
@@ -183,11 +190,17 @@
    {\ProcessList{#1}{\scnfilelistitembrackets}}
 
 \newcommand\scnlistitem[1]{
+\scnaddhind{1}
+\sethind
 \settab{$\bullet$\makediff{\bulletsize}\itshape#1} \\
+\scnaddhind{-1}
 }
 
 \newcommand\scnlistitembrackets[1]{
+\scnaddhind{1}
+\sethind
 \settab\hspace{0.2em}\hspace{\bracketsize}{$\bullet$\makediff{\bulletbracketsize}\itshape#1}\\
+\scnaddhind{-1}
 }
 
 \newcommand\scnfilelistitembrackets[1]{
@@ -313,6 +326,12 @@
 \settab$\bm{=}$\\ 
 \vspace{0.5\baselineskip}
 \scnfileimage{#1}
+}
+
+\newcommand{\scneqtable}[1]{
+\settab$\bm{=}$\\ 
+\vspace{0.5\baselineskip}
+\scnfiletable{#1}
 }
 
 \newcommand{\scneqscg}[1]{
@@ -555,6 +574,21 @@
 \setlength\arrayrulewidth{1pt}
 \hspace{0.1em}\begin{tabularx}{\textwidth-\calctab}{|X}
 \begin{center}\vspace{-1.3\baselineskip}#1\vspace{-0.7\baselineskip}\end{center}
+\end{tabularx}
+\textbf{]}
+\end{adjustwidth}
+}
+
+\newcommand{\scnfiletable}[1]{
+\begin{adjustwidth}{\calctab}{0em}
+\setlength{\parindent}{0em}
+\setlength{\itemindent}{0em}
+\setlength{\parskip}{0.5em}
+\vspace{-1.5em}
+\normalfont \textbf{[}
+\setlength\arrayrulewidth{1pt}
+\hspace{0.1em}\begin{tabularx}{\textwidth-\calctab}{|X}
+#1
 \end{tabularx}
 \textbf{]}
 \end{adjustwidth}
