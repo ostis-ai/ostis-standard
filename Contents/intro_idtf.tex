@@ -508,7 +508,7 @@ Sc-идентификаторы внешних файлов ostis-систем �
 		\scnhaselementrole{пример}{\scnfilelong{\scnset{\textit{e1}; \textit{e2}; \textit{e3}}}}
 		\scnaddlevel{1}
 		\scnrelboth{семантическая эквивалентность}{\scnfilelong{Дано множество с элементами \textbf{\textit{e1}}, \textbf{\textit{e2}},\textbf{\textit{e3}}.}}%TODO пример в SCg
-		\scnrelboth{семантическая эквивалентность}{\scnfilescg{***}}
+		\scnrelboth{семантическая эквивалентность}{\scnfilescg{figures/intro/idtf/sc_expr_example_set.png}}
 			\scnaddlevel{1}
 			\scniselement{sc.g-текст}
 		\scnaddlevel{-1}
@@ -520,7 +520,7 @@ Sc-идентификаторы внешних файлов ostis-систем �
 	\scnhaselementrole{пример}{\scnfilelong{\scnset{\textit{ai}\scnrolesign : \textit{e1}; \textit{aj}\scnrolesign : \textit{e2}; \textit{e3}}}}
 		\scnaddlevel{1}
 		\scnrelboth{семантическая эквивалентность}{\scnfilelong{Дано множество с элементами \textbf{\textit{e1}}, \textbf{\textit{e2}}, \textbf{\textit{e3}}. При этом элемент \textbf{\textit{e1}} в рамках указанного множества имеет атрибут (роль) \textbf{\textit{ai\scnrolesign}}, а элемент \textbf{\textit{e2}} -- атрибут (роль) \textbf{\textit{aj\scnrolesign}}.}}%TODO пример в SCg
-		\scnrelboth{семантическая эквивалентность}{\scnfilescg{***}}
+		\scnrelboth{семантическая эквивалентность}{\scnfilescg{figures/intro/idtf/sc_expr_example_role_set.png}}
 			\scnaddlevel{1}
 			\scniselement{sc.g-текст}
 		\scnaddlevel{-1}
@@ -590,8 +590,8 @@ sc-выражение, обозначающее файл-образец ostis-с
     \scnhaselementrole{пример}{\scnfilelong{(\textbf{\textit{e1}} $\in$ \textbf{\textit{s1}})}}
 	\scnaddlevel{1}
 	    \scnrelboth{семантическая эквивалентность}{\scnfilelong{(\textbf{\textit{e1}} <- \textbf{\textit{s1}})}}
-		\scnrelboth{семантическая эквивалентность}{\scnfilelong{Дана базовая sc-дуга, связывающая sc-элемент \textbf{\textit{e1}} с sc-элементом \textbf{\textit{s1}}.}}%TODO пример в SCg
-		\scnrelboth{семантическая эквивалентность}{\scnfilescg{***}}
+		\scnrelboth{семантическая эквивалентность}{\scnfilelong{Дана базовая sc-дуга, связывающая sc-элемент \textbf{\textit{e1}} с sc-элементом \textbf{\textit{s1}}.}}
+		\scnrelboth{семантическая эквивалентность}{\scnfilescg{figures/intro/idtf/sc_expr_example_affiliation.png}}
 			\scnaddlevel{1}
 			\scniselement{sc.g-текст}
 		\scnaddlevel{-1}
@@ -606,8 +606,8 @@ sc-выражение, обозначающее файл-образец ostis-с
 
 Следует отметить, что факт совпадения sc-выражений в рамках некоторого внешнего текста может являться поводом для анализа идентифицируемых этими sc-выражениями sc-элементов на возможную синонимичность и явно фиксироваться, например, на этапе погружения внешнего текста в sc-память.}}
 \scnaddlevel{1}
-    \scnrelfrom{пояснение}{\scnfilescg{**пример с двумя подмножество(S)**}}
-    \scnrelfrom{пояснение}{\scnfilescg{**пример с кратными дугами**}}
+    \scnrelfrom{пояснение}{\scnfilescg{figures/intro/idtf/sc_expr_example_subsets.png}}
+    \scnrelfrom{пояснение}{\scnfilescg{figures/intro/idtf/sc_expr_example_arcs.png}}
 \scnaddlevel{-1}
 
 \scnheader{ограничитель sc-выражений}
@@ -656,48 +656,47 @@ sc-выражение, обозначающее файл-образец ostis-с
         \scnaddlevel{-1}
 \scnnote{Очевидно, что многие о\textit{граничители sc-выражений} могут использоваться также в рамках \textit{внутренних файлов ostis-систем}, содержащих естественно-языковые тексты или математические выражения.}
 
-%TODO примеры в SCg
 \scnheader{sc-выражение}
 \scnhaselementrole{пример}{\scnfilelong{(\textit{ei} \textit{ki} \textit{ej})}}
 \scnaddlevel{1}
     \scniselement{sc-выражение, идентифицирующее sc-коннектор}
-    \scnrelboth{семантическая эквивалентность}{\scnfilescg{***}}
+    \scnrelboth{семантическая эквивалентность}{\scnfilescg{figures/intro/idtf/sc_expr_example_connector.png}}
 \scnaddlevel{-1}
 \scnhaselementrole{пример}{\scnfilelong{\scnset{$\bullet$\textit{ei}~$\bullet$\textit{ej}~$\bullet$\textit{ek}}}}
 \scnaddlevel{1}
     \scniselement{sc-выражение sc-множества, заданного перечислением}
     \scnrelboth{семантическая эквивалентность}{\scnfilelong{\scnset{\textit{ei};~\textit{ej};~\textit{ek}}}}
-    \scnrelboth{семантическая эквивалентность}{\scnfilescg{***}}
+    \scnrelboth{семантическая эквивалентность}{\scnfilescg{figures/intro/idtf/sc_expr_example_enum_set.png}}
 \scnaddlevel{-1}
 \scnhaselementrole{пример}{\scnfilelong{(\textit{si} $\cup$ \textit{sj} $\cup$ \textit{sk} $\cup$ ...)}}
 \scnaddlevel{1}
     \scniselement{sc-выражение, построенное на основе алгебраической операции}
-    \scnrelboth{семантическая эквивалентность}{\scnfilescg{***}}
+    \scnrelboth{семантическая эквивалентность}{\scnfilescg{figures/intro/idtf/sc_expr_example_union_set.png}}
 \scnaddlevel{-1}
 \scnhaselementrole{пример}{\scnfilelong{\scnset{\textit{si}; \textit{sj}; \textit{sk}; ...}}}
 \scnaddlevel{1}
     \scniselement{sc-выражение sc-множества, заданного перечислением}
-    \scnrelboth{семантическая эквивалентность}{\scnfilescg{***}}
+    \scnrelboth{семантическая эквивалентность}{\scnfilescg{figures/intro/idtf/sc_expr_example_enumeration_set.png}}
 \scnaddlevel{-1}
 \scnhaselementrole{пример}{\scnfilelong{\scnset{$ei => ri: ej;;$}}}
 \scnaddlevel{1}
     \scniselement{sc-выражение sc-структуры}
-    \scnrelboth{семантическая эквивалентность}{\scnfilescg{***}}
+    \scnrelboth{семантическая эквивалентность}{\scnfilescg{figures/intro/idtf/sc_expr_example_struct.png}}
 \scnaddlevel{-1}
 \scnhaselementrole{пример}{\scnfilelong{\textit{конкатенация*}(\scnvector{\textit{e1}; \textit{e2}}; \scnvector{\textit{e2}; \textit{e3}}; \scnvector{\textit{e3}; \textit{e4}})}}
 \scnaddlevel{1}
     \scniselement{sc-выражение, построенное на основе квазибинарного отношения}
-    \scnrelboth{семантическая эквивалентность}{\scnfilescg{***}}
+    \scnrelboth{семантическая эквивалентность}{\scnfilescg{figures/intro/idtf/sc_expr_example_concat.png}}
 \scnaddlevel{-1}
 \scnhaselementrole{пример}{\scnfilelong{\textit{пересечение}*($si$; $sj$; $sk$)}}
 \scnaddlevel{1}
     \scniselement{sc-выражение, построенное на основе квазибинарного отношения}
-    \scnrelboth{семантическая эквивалентность}{\scnfilescg{***}}
+    \scnrelboth{семантическая эквивалентность}{\scnfilescg{figures/intro/idtf/sc_expr_example_intersection.png}}
 \scnaddlevel{-1}
 \scnhaselementrole{пример}{\scnfilelong{\scnvector{\textit{e1}; \textit{e2}; \textit{e3}}}}
 \scnaddlevel{1}
     \scniselement{sc-выражение в угловых скобках}
-    \scnrelboth{семантическая эквивалентность}{\scnfilescg{***}}
+    \scnrelboth{семантическая эквивалентность}{\scnfilescg{figures/intro/idtf/sc_expr_example_role.png}}
 \scnaddlevel{-1}
 
 \bigskip
@@ -710,7 +709,7 @@ sc-выражение, обозначающее файл-образец ostis-с
 \scnendstruct\\
 \scnnote{В данном примере представлены три разных, но логически эквивалентных друг другу квазибинарных отношения: \textit{степень*}, \textit{корень*} и \textit{log*}. В базе знаний соответствующая конструкция записывается с использованием отношения \textit{возведение в степень*}.}
 \scnaddlevel{1}
-    \scnrelfrom{пояснение}{\scnfilescg{***}}
+    \scnrelfrom{пояснение}{\scnfilescg{figures/intro/idtf/sc_expr_example_log_root_degree.png}}
 \scnaddlevel{-1}
 
 \bigskip
@@ -723,7 +722,7 @@ sc-выражение, обозначающее файл-образец ostis-с
 \scnnote{Отношения \textit{подмножество*} и  \textit{надмножество*} не являются функциональными, таким образом необходимо явно уточнить при помощи символа ``/'' и некоторого уточняющего индекса (в данном случае просто ``\textit{i}''), что имеется в виду некоторое конкретное подмножество множества \textbf{\textit{si}} и некоторое конкретное надмножество множества \textbf{\textit{sj}}.}
 \scnnote{В данном примере представлены два отношения (\textit{подмножество*} и  \textit{надмножество*}), которые по отношению друг к другу являются \textit{обратными отношениями*}. В базе знаний соответствующая конструкция записывается при помощи отношения \textit{включение множеств*}.}
 \scnaddlevel{1}
-    \scnrelfrom{пояснение}{\scnfilescg{***}}
+    \scnrelfrom{пояснение}{\scnfilescg{figures/intro/idtf/sc_expr_example_subset_superset.png}}
 \scnaddlevel{-1}
 
 \scnheader{Правила построения sc-идентификаторов}
