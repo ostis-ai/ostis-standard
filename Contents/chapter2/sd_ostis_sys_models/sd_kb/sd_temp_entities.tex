@@ -1,6 +1,6 @@
 \begin{SCn}
 
-\scnsectionheader{Предметная область и онтология темпоральных сущностей}
+\scnsectionheader{\currentname}
 
 \scnstartsubstruct
 
@@ -10,7 +10,7 @@
 \scniselement{предметная область}
 \scnsdmainclasssingle{временная сущность}
 \scnsdclass{прошлая сущность;настоящая сущность;будущая сущность;временная связь;ситуация;процесс;процесс в sc-памяти;процесс во внешней среде ostis-системы;материальная сущность;воздействие;отношение;класс временных связей;класс временных и постоянных связей;множество;ситуативное множество;неситуативное множество;частично ситуативное множество;темпоральная связь;темпоральное отношение;начало;завершение;длительность;тысячелетие;век;год;месяц;сутки;час;минута;секунда}
-\scnsdrelation{воздействующая сущность*;объект воздействия*;начальная ситуация*;причинная ситуация*;конечная ситуация*;событие*;последний добавленный sc-элемент’;темпоральное включение*;темпоральная часть*;начальный этап*;конечный этап*;промежуточный этап*;темпоральное включение без совпадения начальных и конечных моментов*;темпоральное включение с совпадением начальных моментов*;темпоральное включение с совпадением конечных моментов*;темпоральное совпадение*;темпоральное объединение*;темпоральная декомпозиция*;темпоральная смежность*;темпоральная последовательность с промежутком*;темпоральная последовательность с пересечением*;номер тысячелетия';номер века';номер года';номер месяца в году';номер суток в месяце';номер часа в дне';номер минуты в часе';номер секунды в минуте'}
+\scnsdrelation{воздействующая сущность*;объект воздействия*;начальная ситуация*;причинная ситуация*;конечная ситуация*;событие*;последний добавленный sc-элемент\scnrolesign;темпоральное включение*;темпоральная часть*;начальный этап*;конечный этап*;промежуточный этап*;темпоральное включение без совпадения начальных и конечных моментов*;темпоральное включение с совпадением начальных моментов*;темпоральное включение с совпадением конечных моментов*;темпоральное совпадение*;темпоральное объединение*;темпоральная декомпозиция*;темпоральная смежность*;темпоральная последовательность с промежутком*;темпоральная последовательность с пересечением*;номер тысячелетия\scnrolesign;номер века\scnrolesign;номер года\scnrolesign;номер месяца в году\scnrolesign;номер суток в месяце\scnrolesign;номер часа в дне\scnrolesign;номер минуты в часе\scnrolesign;номер секунды в минуте\scnrolesign}
 
 \scnheader{временная сущность}
 \scnidtf{временно существующая сущность}
@@ -77,7 +77,7 @@
 
 Многим \textbf{\textit{процессам}} можно поставить в соответствие \textit{ситуацию}, которая является его \textit{начальной ситуацией*} и \textit{ситуацию}, которая является его \textit{конечной ситуацией*}, то есть указать \textit{ситуации}, переход между которыми осуществляется в ходе \textbf{\textit{процесса}}.
 
-При этом знаки тех \textit{временных сущностей}, с которыми связаны изменения, описываемые некоторым \textbf{\textit{процессом}}, входят в данный \textbf{\textit{процесс}} как элементы и, при необходимости уточняются дополнительными \textit{ролевыми отношениями}.}
+При этом знаки тех \textit{временных сущностей}, с которыми связаны изменения, описываемые некоторым \textbf{\textit{процессом}}, входят в данный \textbf{\textit{процесс}} как элементы и при необходимости уточняются дополнительными \textit{ролевыми отношениями}.}
 \scnreltoset{разбиение}{процесс в sc-памяти;процесс во внешней среде ostis-системы}
 
 \scnheader{процесс в sc-памяти}
@@ -121,12 +121,8 @@
 \scniselement{бинарное отношение}
 \scnexplanation{Связки отношения \textbf{\textit{событие*}} связывают знак процесса и ориентированную пару, первым компонентом которой является знак \textit{начальной ситуации*} данного процесса, вторым компонентом – знак \textit{конечной ситуации*} данного процесса.}
 \scnrelfrom{типичная семантическая окрестность}{
-\scnfilelong{
-\begin{figure}[H]
-\centering
-\includegraphics[width=1\linewidth]{figures/sd_temp_entities/event.png}
-\end{figure}
-}}
+\scnfilescg{figures/sd_temp_entities/event.png}
+}
 
 \scnheader{отношение}
 \scnreltoset{разбиение}{класс временных связей;класс постоянных связей;класс временных и постоянных связей}
@@ -183,19 +179,10 @@
 \scnidtf{этап процесса существования временной сущности*}
 \scnrelfromlist{включение}{начальный этап*;конечный этап*;промежуточный этап*}
 \scnrelfrom{типичная семантическая окрестность}{
-\scnfilelong{
-\begin{figure}[H]
-\centering
-\includegraphics[width=1\linewidth]{figures/sd_temp_entities/temporal_part.png}
-\end{figure}
-}}
+\scnfilescg{figures/sd_temp_entities/temporal_part.png}
+}
 \scnrelfrom{иллюстрация}{
-\scnfilelong{
-\begin{figure}[H]
-\centering
-\includegraphics[width=1\linewidth]{figures/sd_temp_entities/img_temporal_part.png}
-\end{figure}
-}}
+\scnfileimage{\includegraphics[width=1\linewidth]{figures/sd_temp_entities/img_temporal_part.png}}}
 \scntext{примечание}{Связки отношения \textbf{\textit{темпоральная часть*}} связывают две \textit{временные сущности}, одна из которых является частью другой, например, действие и одно из его поддействий. Соответственно, период существования одной из этих сущностей всегда будет включаться в период существования другой (большей).
 
 В отличие от более общего отношения \textit{темпоральное включение*}, связки которого могут связывать любые \textit{временные сущности}, связки отношения \textbf{\textit{темпоральное включение*}} связывают только \textit{временные сущности}, одна из которых является частью другой.}
@@ -209,138 +196,62 @@
 \scnheader{темпоральное включение без совпадения начальных и конечных моментов*}
 \scnidtf{строгое темпоральное включение*}
 \scnrelfrom{типичная семантическая окрестность}{
-\scnfilelong{
-\begin{figure}[H]
-\centering
-\includegraphics[width=1\linewidth]{figures/sd_temp_entities/strict_temporal_inclusion.png}
-\end{figure}
-}}
+\scnfilescg{figures/sd_temp_entities/strict_temporal_inclusion.png}}
 \scnrelfrom{иллюстрация}{
-\scnfilelong{
-\begin{figure}[H]
-\centering
-\includegraphics[width=1\linewidth]{figures/sd_temp_entities/img_strict_temporal_inclusion.png}
-\end{figure}
-}}
+\scnfileimage{\includegraphics[width=1\linewidth]{figures/sd_temp_entities/img_strict_temporal_inclusion.png}}}
 %
 % темпоральное включение без совпадения начальных и конечных %моментов
 %
 
 \scnheader{темпоральное включение с совпадением начальных моментов*}
 \scnrelfrom{типичная семантическая окрестность}{
-\scnfilelong{
-\begin{figure}[H]
-\centering
-\includegraphics[width=1\linewidth]{figures/sd_temp_entities/temporal_include_with_match_start_points.png}
-\end{figure}
-}}
+\scnfilescg{figures/sd_temp_entities/temporal_include_with_match_start_points.png}}
 \scnrelfrom{иллюстрация}{
-\scnfilelong{
-\begin{figure}[H]
-\centering
-\includegraphics[width=1\linewidth]{figures/sd_temp_entities/img_temporal_include_with_match_start_points.png}
-\end{figure}
-}}
+\scnfileimage{\includegraphics[width=1\linewidth]{figures/sd_temp_entities/img_temporal_include_with_match_start_points.png}}}
 
 \scnheader{темпоральное включение с совпадением конечных моментов*}
 \scnrelfrom{типичная семантическая окрестность}{
-\scnfilelong{
-\begin{figure}[H]
-\centering
-\includegraphics[width=1\linewidth]{figures/sd_temp_entities/temporal_include_with_terminal_point_match.png}
-\end{figure}
-}}
+\scnfilescg{figures/sd_temp_entities/temporal_include_with_terminal_point_match.png}}
 \scnrelfrom{иллюстрация}{
-\scnfilelong{
-\begin{figure}[H]
-\centering
-\includegraphics[width=1\linewidth]{figures/sd_temp_entities/img_temporal_include_with_terminal_point_match.png}
-\end{figure}
-}}
+\scnfileimage{\includegraphics[width=1\linewidth]{figures/sd_temp_entities/img_temporal_include_with_terminal_point_match.png}}}
 
 \scnheader{темпоральное совпадение*}
 \scnidtf{совпадение начала и завершения*}
 
 \scnheader{темпоральное объединение*}
 \scnrelfrom{типичная семантическая окрестность}{
-\scnfilelong{
-\begin{figure}[H]
-\centering
-\includegraphics[width=1\linewidth]{figures/sd_temp_entities/temporal_union.png}
-\end{figure}
-}}
+\scnfilescg{figures/sd_temp_entities/temporal_union.png}}
 \scnrelfrom{иллюстрация}{
-\scnfilelong{
-\begin{figure}[H]
-\centering
-\includegraphics[width=1\linewidth]{figures/sd_temp_entities/img_temporal_union.png}
-\end{figure}
-}}
+\scnfileimage{\includegraphics[width=1\linewidth]{figures/sd_temp_entities/img_temporal_union.png}}}
 
 \scnheader{темпоральная декомпозиция*}
 \scnrelfrom{типичная семантическая окрестность}{
-\scnfilelong{
-\begin{figure}[H]
-\centering
-\includegraphics[width=1\linewidth]{figures/sd_temp_entities/temporal_decomposition.png}
-\end{figure}
-}}
+\scnfilescg{figures/sd_temp_entities/temporal_decomposition.png}}
 \scnrelfrom{иллюстрация}{
-\scnfilelong{
-\begin{figure}[H]
-\centering
-\includegraphics[width=1\linewidth]{figures/sd_temp_entities/img_temporal_decomposition.png}
-\end{figure}
+\scnfileimage{\includegraphics[width=1\linewidth]{figures/sd_temp_entities/img_temporal_decomposition.png}
 }}
 
 \scnheader{темпоральная смежность*}
 \scnidtf{строгая темпоральная последовательность (без темпорального промежутка)*}
 \scnidtf{темпоральная последовательность без промежутка*}
 \scnrelfrom{типичная семантическая окрестность}{
-\scnfilelong{
-\begin{figure}[H]
-\centering
-\includegraphics[width=1\linewidth]{figures/sd_temp_entities/temporal_adjacency.png}
-\end{figure}
-}}
+\scnfilescg{figures/sd_temp_entities/temporal_adjacency.png}}
 \scnrelfrom{иллюстрация}{
-\scnfilelong{
-\begin{figure}[H]
-\centering
-\includegraphics[width=1\linewidth]{figures/sd_temp_entities/img_temporal_adjacency.png}
-\end{figure}
+\scnfileimage{\includegraphics[width=1\linewidth]{figures/sd_temp_entities/img_temporal_adjacency.png}
 }}
 
 \scnheader{темпоральная последовательность с промежутком*}
 \scnrelfrom{типичная семантическая окрестность}{
-\scnfilelong{
-\begin{figure}[H]
-\centering
-\includegraphics[width=1\linewidth]{figures/sd_temp_entities/temporal_sequence_with_intermediate.png}
-\end{figure}
-}}
+\scnfilescg{figures/sd_temp_entities/temporal_sequence_with_intermediate.png}}
 \scnrelfrom{иллюстрация}{
-\scnfilelong{
-\begin{figure}[H]
-\centering
-\includegraphics[width=1\linewidth]{figures/sd_temp_entities/img_temporal_sequence_with_intermediate.png}
-\end{figure}
-}}
+\scnfileimage{\includegraphics[width=1\linewidth]{figures/sd_temp_entities/img_temporal_sequence_with_intermediate.png}}}
 
 \scnheader{темпоральная последовательность с пересечением*}
 \scnrelfrom{типичная семантическая окрестность}{
-\scnfilelong{
-\begin{figure}[H]
-\centering
-\includegraphics[width=1\linewidth]{figures/sd_temp_entities/temporal_sequence_with_intersection.png}
-\end{figure}
-}}
+\scnfilescg{figures/sd_temp_entities/temporal_sequence_with_intersection.png}
+}
 \scnrelfrom{иллюстрация}{
-\scnfilelong{
-\begin{figure}[H]
-\centering
-\includegraphics[width=1\linewidth]{figures/sd_temp_entities/img_temporal_cross_sequence.png}
-\end{figure}
+\scnfileimage{\includegraphics[width=1\linewidth]{figures/sd_temp_entities/img_temporal_cross_sequence.png}
 }}
 
 \scnheader{начало}
@@ -348,13 +259,8 @@
 \scniselement{параметр}
 \scnexplanation{Каждый элемент множества \textbf{начало} представляет собой класс \textit{временных сущностей}, у которых совпадает момент начала их существования. Конкретное значение данного \textit{параметра} может быть как \textit{точной величиной}, так и \textit{неточной величиной} или \textit{интервальной величиной}.}
 \scnrelfrom{типичная семантическая окрестность}{
-\scnfilelong{
-\begin{figure}[H]
-\centering
-\includegraphics[width=1\linewidth]{figures/sd_temp_entities/start.png}
-\end{figure}
-}}
-\scncomment{В данном примере \textit{ki} обозначает класс сущностей, начавших свое существование 19 февраля 2015 года по григорианскому календарю. Конкретные примеры таких сущностей – \textit{bi} и \textit{bj}. \textit{ti} обозначает временную точку григорианского календаря, соответствующую 19 февраля 2015 года.}
+\scnfilescg{figures/sd_temp_entities/start.png}}
+\scncomment{В данном примере \textbf{\textbf{\textit{ki}}} обозначает класс сущностей, начавших свое существование 19 февраля 2015 года по григорианскому календарю. Конкретные примеры таких сущностей – \textbf{\textit{bi}} и \textbf{\textit{bj}}. \textbf{\textit{ti}} обозначает временную точку григорианского календаря, соответствующую 19 февраля 2015 года.}
 
 \scnheader{завершение}
 \scnidtf{конец}
@@ -362,13 +268,8 @@
 \scniselement{параметр}
 \scnexplanation{Каждый элемент множества \textbf{\textit{завершение}} представляет собой класс \textit{временных сущностей}, у которых совпадает конечный момент их существования (момент завершения существования). Конкретное значение данного \textit{параметра} может быть как \textit{точной величиной}, так и \textit{неточной величиной} или \textit{интервальной величиной}.}
 \scnrelfrom{типичная семантическая окрестность}{
-\scnfilelong{
-\begin{figure}[H]
-\centering
-\includegraphics[width=1\linewidth]{figures/sd_temp_entities/completion.png}
-\end{figure}
-}}
-\scncomment{В данном примере \textit{ki} обозначает класс сущностей, завершивших свое существование 21 февраля 2015 года по григорианскому календарю. Конкретные примеры таких сущностей – \textit{bi} и \textit{bj}. \textit{ti} обозначает временную точку григорианского календаря, соответствующую 21 февраля 2015 года.}
+\scnfilescg{figures/sd_temp_entities/completion.png}}
+\scncomment{В данном примере \textbf{\textit{ki}} обозначает класс сущностей, завершивших свое существование 21 февраля 2015 года по григорианскому календарю. Конкретные примеры таких сущностей – \textbf{\textit{bi}} и \textbf{\textit{bj}}. \textbf{\textit{ti}} обозначает временную точку григорианского календаря, соответствующую 21 февраля 2015 года.}
 
 \scnheader{длительность}
 \scnidtf{класс временных сущностей, имеющих одинаковую длительность}
@@ -383,13 +284,8 @@
 \scnhaselement{секунда}
 \scnexplanation{Каждый элемент множества \textbf{\textit{длительность}} представляет собой класс \textit{временных сущностей}, у которых совпадает длительность их существования. Конкретное значение данного \textit{параметра} может быть как \textit{точной величиной}, так и \textit{неточной величиной} или \textit{интервальной величиной}.}
 \scnrelfrom{типичная семантическая окрестность}{
-\scnfilelong{
-\begin{figure}[H]
-\centering
-\includegraphics[width=1\linewidth]{figures/sd_temp_entities/duration.png}
-\end{figure}
-}}
-\scncomment{В данном примере \textit{ki} обозначает класс сущностей, существовавших в течение 2 месяцев. Конкретный пример такой сущности – \textit{bi}.}
+\scnfilescg{figures/sd_temp_entities/duration.png}}
+\scncomment{В данном примере \textbf{\textit{ki}} обозначает класс сущностей, существовавших в течение 2 месяцев. Конкретный пример такой сущности – \textbf{\textit{bi}}.}
 
 \scnheader{тысячелетие}
 
@@ -407,14 +303,14 @@
 
 \scnheader{секунда}
 
-\scnheader{номер тысячелетия'}
-\scnheader{номер века'}
-\scnheader{номер года'}
-\scnheader{номер месяца в году'}
-\scnheader{номер суток в месяце'}
-\scnheader{номер часа в дне'}
-\scnheader{номер минуты в часе'}
-\scnheader{номер секунды в минуте'}
+\scnheader{номер тысячелетия\scnrolesign}
+\scnheader{номер века\scnrolesign}
+\scnheader{номер года\scnrolesign}
+\scnheader{номер месяца в году\scnrolesign}
+\scnheader{номер суток в месяце\scnrolesign}
+\scnheader{номер часа в дне\scnrolesign}
+\scnheader{номер минуты в часе\scnrolesign}
+\scnheader{номер секунды в минуте\scnrolesign}
 
 \scnendstruct
 
