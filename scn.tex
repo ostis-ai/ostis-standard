@@ -92,10 +92,12 @@
 \newcounter{ind}
 \newcounter{hind}
 \newcounter{seg}
+\newcounter{list_depth}
 
 \newenvironment{SCn}{
 \setcounter{ind}{0}
 \setcounter{hind}{0} 
+\setcounter{list_depth}{0} 
 \begin{flushleft}
 \noindent
 }
@@ -177,7 +179,6 @@
 }
 
 \NewDocumentCommand\scnlist{>{\SplitList{;}}m}
-   %{\ProcessList{#1}{\iffilemode\scnlistitem\else\scnfilelistitem\fi}}
    {\ProcessList{#1}{\scnlistitem}}
 
 \NewDocumentCommand\scnfilelist{>{\SplitList{;}}m}
@@ -190,17 +191,13 @@
    {\ProcessList{#1}{\scnfilelistitembrackets}}
 
 \newcommand\scnlistitem[1]{
-\scnaddhind{1}
 \sethind
 \settab{$\bullet$\makediff{\bulletsize}\itshape#1} \\
-\scnaddhind{-1}
 }
 
 \newcommand\scnlistitembrackets[1]{
-\scnaddhind{1}
 \sethind
 \settab\hspace{0.2em}\hspace{\bracketsize}{$\bullet$\makediff{\bulletbracketsize}\itshape#1}\\
-\scnaddhind{-1}
 }
 
 \newcommand\scnfilelistitembrackets[1]{
@@ -233,6 +230,10 @@
 \settab$\bm{\Rightarrow}$\makediff{\arrowsize}{\itshape #1*}{\normalfont:}\\
 \addtocounter{ind}{1}
 \addtocounter{hind}{1}
+\addtocounter{list_depth}{1}
+\ifnum\value{list_depth}=1
+	\addtocounter{hind}{1}
+\fi
 \sethind 
 
 \iffilemode
@@ -242,13 +243,21 @@
 \fi
 
 \addtocounter{ind}{-1}
+\ifnum\value{list_depth}=1
+	\addtocounter{hind}{-1}
+\fi
+\addtocounter{list_depth}{-1}
 \addtocounter{hind}{-1}
 }
 
 \newcommand{\scnreltolist}[2]{
 \settab$\bm{\Leftarrow}$\makediff{\arrowsize}{\itshape #1*}{\normalfont:}\\
 \addtocounter{ind}{1}
-\addtocounter{hind}{2}
+\addtocounter{hind}{1}
+\addtocounter{list_depth}{1}
+\ifnum\value{list_depth}=1
+	\addtocounter{hind}{1}
+\fi
 \sethind 
 
 \iffilemode
@@ -258,13 +267,21 @@
 \fi
 
 \addtocounter{ind}{-1}
-\addtocounter{hind}{-2}
+\ifnum\value{list_depth}=1
+	\addtocounter{hind}{-1}
+\fi
+\addtocounter{list_depth}{-1}
+\addtocounter{hind}{-1}
 }
 
 \newcommand{\scnrelfromcommonset}[4]{
 \settab$\bm{\Rightarrow}$\makediff{\arrowsize}{\itshape #3*}{\normalfont:}\\
 \addtocounter{ind}{1}
-\addtocounter{hind}{2}
+\addtocounter{hind}{1}
+\addtocounter{list_depth}{1}
+\ifnum\value{list_depth}=1
+	\addtocounter{hind}{1}
+\fi
 \sethind 
 
 \settab#1\\
@@ -278,7 +295,11 @@
 \settab#2\\
 
 \addtocounter{ind}{-1}
-\addtocounter{hind}{-2}
+\ifnum\value{list_depth}=1
+	\addtocounter{hind}{-1}
+\fi
+\addtocounter{list_depth}{-1}
+\addtocounter{hind}{-1}
 }
 
 \newcommand{\scnrelfromset}[2]{\scnrelfromcommonset{$\pmb{\{}$}{$\pmb{\}}$}{#1}{#2}}
@@ -288,7 +309,11 @@
 \newcommand{\scnreltocommonset}[4]{
 \settab$\bm{\Leftarrow}$\makediff{\arrowsize}{\itshape #3*}{\normalfont:}\\
 \addtocounter{ind}{1}
-\addtocounter{hind}{2}
+\addtocounter{hind}{1}
+\addtocounter{list_depth}{1}
+\ifnum\value{list_depth}=1
+	\addtocounter{hind}{1}
+\fi
 \sethind 
 
 \settab#1\\
@@ -302,7 +327,11 @@
 \settab#2\\
 
 \addtocounter{ind}{-1}
-\addtocounter{hind}{-2}
+\ifnum\value{list_depth}=1
+	\addtocounter{hind}{-1}
+\fi
+\addtocounter{list_depth}{-1}
+\addtocounter{hind}{-1}
 }
 
 \newcommand{\scnreltoset}[2]{\scnreltocommonset{$\pmb{\{}$}{$\pmb{\}}$}{#1}{#2}}
