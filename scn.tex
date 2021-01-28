@@ -168,18 +168,14 @@
 \newcommand{\scnsegmentcaption}{\bfseries /*~Сегмент~\theseg~ Раздела~\@currentlabel.~\filldots/\hspace{0.5\textwidth}\normalfont}
 \makeatother
 
-\newcommand{\scnrelfrom}[2]{
-\settab$\bm{\Rightarrow}$\makediff{\arrowsize}{\itshape #1*}{\normalfont:}\\
-\addtocounter{ind}{1}
-\addtocounter{hind}{1}
-\sethind
-\settab{\itshape#2}\\
-\addtocounter{ind}{-1}
-\addtocounter{hind}{-1}
-}
-
 \NewDocumentCommand\scnlist{>{\SplitList{;}}m}
    {\ProcessList{#1}{\scnlistitem}}
+
+\NewDocumentCommand\scnrellist{>{\SplitList{;}}m}
+   {\ProcessList{#1}{\scnrellistitem}}
+
+\NewDocumentCommand\scnrolerellist{>{\SplitList{;}}m}
+   {\ProcessList{#1}{\scnrolerellistitem}}
 
 \NewDocumentCommand\scnfilelist{>{\SplitList{;}}m}
    {\ProcessList{#1}{\scnfilelistitem}}
@@ -194,6 +190,10 @@
 \sethind
 \settab{$\bullet$\makediff{\bulletsize}\itshape#1} \\
 }
+
+\newcommand\scnrellistitem[1]{{\textit{#1}*{\normalfont:~}}}
+
+\newcommand\scnrolerellistitem[1]{{\textit{#1}\scnrolesign{\normalfont:~}}}
 
 \newcommand\scnlistitembrackets[1]{
 \sethind
@@ -226,8 +226,28 @@
 
 \newcommand\scgfileitem[1]{\scnaddlevel{1}\scnfilescg{#1}\scnaddlevel{-1}}
 
+\newcommand{\scnrelfrom}[2]{
+\settab$\bm{\Rightarrow}$\makediff{\arrowsize}\scnrellist{#1}\\
+\addtocounter{ind}{1}
+\addtocounter{hind}{1}
+\sethind
+\settab{\itshape#2}\\
+\addtocounter{ind}{-1}
+\addtocounter{hind}{-1}
+}
+
+\newcommand{\scnrelto}[2]{
+\settab$\bm{\Leftarrow}$\makediff{\arrowsize}\scnrellist{#1}\\
+\addtocounter{ind}{1}
+\addtocounter{hind}{1}
+\sethind 
+\settab{\itshape #2}\\
+\addtocounter{ind}{-1}
+\addtocounter{hind}{-1}
+}
+
 \newcommand{\scnrelfromlist}[2]{
-\settab$\bm{\Rightarrow}$\makediff{\arrowsize}{\itshape #1*}{\normalfont:}\\
+\settab$\bm{\Rightarrow}$\makediff{\arrowsize}\scnrellist{#1}\\
 \addtocounter{ind}{1}
 \addtocounter{hind}{1}
 \addtocounter{list_depth}{1}
@@ -251,7 +271,7 @@
 }
 
 \newcommand{\scnreltolist}[2]{
-\settab$\bm{\Leftarrow}$\makediff{\arrowsize}{\itshape #1*}{\normalfont:}\\
+\settab$\bm{\Leftarrow}$\makediff{\arrowsize}\scnrellist{#1}\\
 \addtocounter{ind}{1}
 \addtocounter{hind}{1}
 \addtocounter{list_depth}{1}
@@ -274,8 +294,34 @@
 \addtocounter{hind}{-1}
 }
 
+\newcommand{\scnrelboth}[2]{
+\settab$\bm{\Leftrightarrow}$\makediff{\arrowsize}\scnrellist{#1}\\
+\addtocounter{ind}{1}
+\addtocounter{hind}{1}
+\sethind 
+\hspace{0.2em}\settab{\itshape #2} \\
+\addtocounter{hind}{-1}
+\addtocounter{ind}{-1}
+}
+
+\newcommand{\scnrelbothlist}[2]{
+\settab$\bm{\Leftrightarrow}$\makediff{\arrowsize}\scnrellist{#1}\\
+\addtocounter{ind}{1}
+\addtocounter{hind}{2}
+\sethind 
+
+\iffilemode
+\scnfilelist{#2}
+\else
+\scnlist{#2}
+\fi
+
+\addtocounter{ind}{-1}
+\addtocounter{hind}{-2}
+}
+
 \newcommand{\scnrelfromcommonset}[4]{
-\settab$\bm{\Rightarrow}$\makediff{\arrowsize}{\itshape #3*}{\normalfont:}\\
+\settab$\bm{\Rightarrow}$\makediff{\arrowsize}\scnrellist{#3}\\
 \addtocounter{ind}{1}
 \addtocounter{hind}{1}
 \addtocounter{list_depth}{1}
@@ -307,7 +353,7 @@
 \newcommand{\scnrelfromvector}[2]{\scnrelfromcommonset{$\pmb{\langle}$}{$\pmb{\rangle}$}{#1}{#2}}
 
 \newcommand{\scnreltocommonset}[4]{
-\settab$\bm{\Leftarrow}$\makediff{\arrowsize}{\itshape #3*}{\normalfont:}\\
+\settab$\bm{\Leftarrow}$\makediff{\arrowsize}\scnrellist{#3}\\
 \addtocounter{ind}{1}
 \addtocounter{hind}{1}
 \addtocounter{list_depth}{1}
@@ -411,42 +457,6 @@
 \addtocounter{hind}{-2}
 }
 
-\newcommand{\scnrelto}[2]{
-\settab$\bm{\Leftarrow}$\makediff{\arrowsize}{\itshape #1*}{\normalfont:}\\
-\addtocounter{ind}{1}
-\addtocounter{hind}{1}
-\sethind 
-\settab{\itshape #2}\\
-\addtocounter{ind}{-1}
-\addtocounter{hind}{-1}
-}
-
-\newcommand{\scnrelboth}[2]{
-\settab$\bm{\Leftrightarrow}$\makediff{\arrowsize}{\itshape #1*}{\normalfont:}\\
-\addtocounter{ind}{1}
-\addtocounter{hind}{1}
-\sethind 
-\hspace{0.2em}\settab{\itshape #2} \\
-\addtocounter{hind}{-1}
-\addtocounter{ind}{-1}
-}
-
-\newcommand{\scnrelbothlist}[2]{
-\settab$\bm{\Leftrightarrow}$\makediff{\arrowsize}{\itshape #1*}{\normalfont:}\\
-\addtocounter{ind}{1}
-\addtocounter{hind}{2}
-\sethind 
-
-\iffilemode
-\scnfilelist{#2}
-\else
-\scnlist{#2}
-\fi
-
-\addtocounter{ind}{-1}
-\addtocounter{hind}{-2}
-}
-
 \newcommand{\scnsubset}[1]{
 \addtocounter{hind}{1}
 \sethind 
@@ -466,16 +476,6 @@
 \sethind
 \settab$\bm{\in}$\hspace{\calcdiff{\insize}}{\itshape #1}\\
 \addtocounter{hind}{-1}
-}
-
-\newcommand{\scnhaselementlist}[2]{
-\settab$\bm{\ni}$\makediff{\nisize}{\itshape#1\scnrolesign}{\normalfont:}\\
-\addtocounter{ind}{1}
-\addtocounter{hind}{2}
-\sethind 
-\scnlist{#2}
-\addtocounter{ind}{-1}
-\addtocounter{hind}{-2}
 }
 
 \newcommand{\scnmakesetlocal}[1]{
@@ -519,7 +519,7 @@
 \newcommand{\scnsubdividing}[1]{\scnreltoset{разбиение}{#1}}
 
 \newcommand{\scnhaselementrole}[2]{
-\settab$\bm{\ni}$\makediff{\nisize}{\itshape #1\scnrolesign}{\normalfont:}\\
+\settab$\bm{\ni}$\makediff{\nisize}\scnrolerellist{#1}\\
 \addtocounter{ind}{1}
 \addtocounter{hind}{1}
 \sethind 
@@ -528,8 +528,18 @@
 \addtocounter{hind}{-1}
 }
 
+\newcommand{\scnhaselementlist}[2]{
+\settab$\bm{\ni}$\makediff{\nisize}\scnrolerellist{#1}\\
+\addtocounter{ind}{1}
+\addtocounter{hind}{2}
+\sethind 
+\scnlist{#2}
+\addtocounter{ind}{-1}
+\addtocounter{hind}{-2}
+}
+
 \newcommand{\scniselementrole}[2]{
-\settab$\bm{\in}$\makediff{\insize}{\itshape #1\scnrolesign}{\normalfont:}\\
+\settab$\bm{\in}$\makediff{\insize}\scnrolerellist{#1}\\
 \addtocounter{ind}{1}
 \addtocounter{hind}{1}
 \sethind 
@@ -551,7 +561,7 @@
 }
 
 \newcommand{\scnidtftext}[2]{
-\settab$\bm{\coloneqq}$\hspace{\calcdiff{\idtfsize}}{\itshape #1*}{\normalfont:}\\
+\settab$\bm{\coloneqq}$\hspace{\calcdiff{\idtfsize}}\scnrellist{#1}\\
 \addtocounter{ind}{1}
 \settab{\scnfilelong{#2}}\\
 \addtocounter{ind}{-1}
