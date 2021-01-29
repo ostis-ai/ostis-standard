@@ -1,34 +1,60 @@
-# Монография
+# **Монография**
 Репозиторий содержит исходные файлы документации Технологии OSTIS, оформленной в виде исходного текста [базы знаний Метасистемы IMS.ostis](https://github.com/ShunkevichDV/ims.ostis.kb). База знаний представляет собой иерархическую систему связанных между собой формальных моделей предметных областей и соответствующих
 им онтологий. Также данную публикацию можно рассматривать как проект стандарта семантических моделей
 интеллектуальных компьютерных систем.
 
 Монография создана на основе LaTeX-документов с использованием [макросов](scn.tex). 
 
-## Установка
-Для работы необходимо установить [TexLive](https://tug.org/texlive/)-пакеты и редактор LaTeX, в данном случае [Texmaker](https://community.linuxmint.com/software/view/texmaker). Перечень иных средств для работы с LaTeX можно найти по этой [ссылке](https://tex.stackexchange.com/questions/339/latex-editors-ides).
-
-### Linux
-```
-sudo apt-get updateaction
-sudo apt install texlive-full texmaker
-```
-
-## Запуск
+## **Установка и запуск**
 ```
 git clone https://github.com/semsystems/monography2020.git
 cd monography2020
+``` 
+
+### **Linux**
+Для работы необходимо установить [TexLive](https://tug.org/texlive/)-пакеты и редактор LaTeX. 
+```
+sudo apt-get update
+sudo apt install texlive-full
 ```
 
-### Texmaker
-Можно запускать как десктопное приложение, и в нём открывать необходимые файлы. Можно запускать через консоль, перечислив необходимые файлы.
+В качестве редакторов рассмотрим [Texmaker](https://community.linuxmint.com/software/view/texmaker) и [TeXstudio](https://www.texstudio.org/). Перечень иных редакторов можно найти по этой [ссылке](https://tex.stackexchange.com/questions/339/latex-editors-ides).
+
+### *Texmaker*
+Установка:
+```
+sudo apt install texmaker
+```
+
+Можно запускать через меню приложений. Можно запускать через консоль, перечислив необходимые файлы.
 ```
 texmaker book.tex Contents/chapter0.tex
 ```
 
-F1 - быстрая сборка, F7 - просмотреть результат сборки несмотря на ошибки, Ctrl+Space - переход от кода к месту в pdf.
+F1 - быстрая сборка, F7 - просмотреть результат сборки, Ctrl+Space - переход от кода к месту в pdf.
 
-## Связанные репозитории
+### *TeXstudio*
+Подробную инструкцию установки c описанием каждого шага можно найти [тут](https://linuxhint.com/install-texstudio-latex-editor-linux/).
+```
+sudo add-apt-repository ppa:sunderme/texstudio
+sudo apt remove texstudio-doc texstudio-l10n
+sudo apt update
+sudo apt install texstudio
+```
+
+Проверить текущую версию приложения и корректность установки:
+```
+texstudio --version
+```
+
+Можно запускать через меню приложений. Можно запускать через консоль, перечислив необходимые файлы.
+```
+texstudio book.tex Contents/chapter0.tex
+```
+
+F5 - сборка и компиляция, F7 - переход от кода к месту в pdf.
+
+## **Связанные репозитории**
 
 [Репозитории Технологии OSTIS](https://github.com/ostis-dev)
 
