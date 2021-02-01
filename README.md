@@ -52,7 +52,7 @@ texstudio --version
 texstudio book.tex Contents/chapter0.tex
 ```
 
-F5 - сборка и компиляция, F7 - переход от кода к месту в pdf.
+F5 - сборка и компиляция, F7 или ctrl+click - переход от кода к месту в pdf.
 
 ## **Связанные репозитории**
 
