@@ -127,7 +127,8 @@
 \scnsegmentheader{Описание sc.s-разделителей и sc.s-ограничителей}
 \scnstartsubstruct
 
-\scnheader{sc.s-разделитель}	\scnidtf{разделитель, используемый в sc.s-текстах}
+\scnheader{sc.s-разделитель}	
+\scnidtf{разделитель, используемый в sc.s-текстах}
 \scnsubdividing{sc.s-разделитель, используемый для структуризации sc.s-предложений\\
 \scnaddlevel{1}
     \scnsuperset{sc.s-коннектор}
@@ -135,7 +136,7 @@
     \scnsuperset{двоеточие}
     \scnaddlevel{1}
         \scneqfileclass{$\colon$}
-        \scnnote{Разделяет sc-идентификатор бинарного отношения и второй компонент одной из связок этого отношения в случае, если указанное бинарное отношение и его связка связаны \uline{константной} sc-Другой принадлежности.}
+        \scnnote{Разделяет sc-идентификатор бинарного отношения и второй компонент одной из связок этого отношения в случае, если указанное бинарное отношение и его связка связаны \uline{константной} sc-дугой принадлежности.}
     \scnaddlevel{-1}
     \scnsuperset{двойное двоеточие}
     \scnaddlevel{1}
@@ -194,7 +195,7 @@
 \scnheader{Примеры синтаксической трансформации sc.s-предложений с использованием Расширенного алфавита sc.s-коннекторов}
 \scnstartsubstruct
 \bigskip
-\scnfilelong{\textbf{\textit{si}}~$\Rightarrow$~\textit{включение*}:~\textbf{\textit{sj}}}\\
+\scnfilelong{\textbf{\textit{si}}~$\Rightarrow$~\textit{включение*}:~\textbf{\textit{sj}}}
 \scnrelfrom{синтаксическая трансформация}{
 \scnfilelong{\textbf{\textit{si}}~$\supseteq$~\textbf{\textit{sj}}}}
 \scnaddlevel{1}
@@ -202,7 +203,7 @@
 \scnaddlevel{-1}
 
 \bigskip
-\scnfilelong{\textbf{\textit{si}}~$\Rightarrow$~\textit{строгое включение*}:~\textbf{\textit{sj}}}\\
+\scnfilelong{\textbf{\textit{si}}~$\Rightarrow$~\textit{строгое включение*}:~\textbf{\textit{sj}}}
 \scnrelfrom{синтаксическая трансформация}{
 \scnfilelong{\textbf{\textit{si}}~$\supset$~\textbf{\textit{sj}}}}
 \scnaddlevel{1}
@@ -261,15 +262,15 @@
     \scnexplanation{\textit{sc.s-предложение}, (1) \uline{состоящее} или из двух \textit{sc-идентификаторов}, соединенных между собой \textit{sc.s-коннектором}, или из трех \textit{sc-идентификаторов}, разделенных \textit{sc.s-разделителями, изображающими связь инцидентности sc-элементов}, и (2) завершающееся \textit{двойной точкой с запятой}}
     \scnnote{Нетрудно заметить, что простые sc.s-предложения по сути аналогичны триплетам языка RDF (RDF-триплетам), за тем исключением, что \textit{простое sc.s-предложение} можно "развернуть"\ при помощи \textit{Операции конверсии sc.s-предложений*} не меняя при этом его смысл, а RDF-триплет нельзя. Это является одной из причин, по которой, в отличие от RDF-триплетов, в простых sc.s-предложениях \textit{sc.s-коннекторы} и \textit{sc.s-разделители, изображающие связь инцидентности sc-элементов} не могут быть опущены, поскольку они в том числе показывают направление изображаемой ими связи между sc-элементами.}
 \scnrelfromlist{пример}{
-    \scnfileitem{\textit{многоугольник} $\supset$ \textit{треугольник}}\\
+    \scnfileitem{\textit{многоугольник} $\supset$ \textit{треугольник}}
     \scnaddlevel{1}
     \scnrelboth{семантическая эквивалентность}{\scnfilescg{***}}
     \scnaddlevel{-1};
-    \scnfileitem{\textit{сторона*} $\ni$ (\textit{Четырехугк(ТчкА\char59ТчкВ\char59ТчкС\char59ТчкD)} $\Rightarrow$ \textit{Отр(ТчкВ\char59ТчкС)})\char59\char59}\\
+    \scnfileitem{\textit{сторона*} $\ni$ (\textit{Четырехугк(ТчкА\char59ТчкВ\char59ТчкС\char59ТчкD)} $\Rightarrow$ \textit{Отр(ТчкВ\char59ТчкС)})\char59\char59}
     \scnaddlevel{1}
     \scnrelboth{семантическая эквивалентность}{\scnfilescg{***}}
     \scnaddlevel{-1};
-    \scnfileitem{\textit{Si} |- \textit{ai} >| \textit{ei}}\\
+    \scnfileitem{\textit{Si} |- \textit{ai} >| \textit{ei}}
     \scnaddlevel{1}
     \scnrelboth{семантическая эквивалентность}{\scnfilescg{***}}
     \scnaddlevel{-1}
