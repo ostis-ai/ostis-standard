@@ -268,7 +268,7 @@
     \scnrelfrom{sc.s-текст после трансформации}{\scnfilelong{\textit{Треуг(ТчкВ\char59ТчкС\char59ТчкD)$\in$треугольник}\char59\char59}}
     \scnrelboth{семантически эквивалентный sc.g-текст}{\scnfilescg{figures/intro/scs/conversion.png}}
     \scnaddlevel{-1}
-;Операция присоединения sc.s-предложений\\
+;Операция присоединения sc.s-предложений*\\
     \scnaddlevel{1}
     \scnsubset{синтаксическая трансформация*}
     \scnidtf{Операция соединения двух sc.s-предложений при совпадении последнего компонента первого предложения с первым компонентом второго*}
@@ -281,11 +281,6 @@
     \end{scnitemize}
     Аналогичным образом к любому присоединенному sc.s-предложению могут "пристыковываться"\ другие присоединенные sc.s-предложения, в общем случае уровень такой вложенности не ограничен.
     }
-	\scnrelfrom{sc.s-текст до трансформации}{\scnfilelong{\textit{треугольник $\ni$ Треугк(ТчкВ\char59ТчкС\char59ТчкD)\char59\char59
-	\newline
-	Треугк(ТчкВ\char59ТчкС\char59ТчкD)$\Rightarrow$ сторона*:включение*: Отр(ТчкВ\char59ТчкC)\char59\char59}}}
-	\scnrelfrom{sc.s-текст после трансформации}{\scnfilelong{\textit{треугольник$\ni$Треугк(ТчкВ\char59ТчкС\char59ТчкD)(*$\Rightarrow$сторона*:включение*:Отр(ТчкВ\char59ТчкС)\char59\char59*)}\char59\char59}}
-	\scnrelboth{семантически эквивалентный sc.g-текст}{\scnfilescg{figures/intro/scs/inline_sentences.png}}
     \scnaddlevel{-1}
 ;Операция присоединения sc.s-предложения*\\
     \scnaddlevel{1}
@@ -293,35 +288,17 @@
     \scnidtf{Операция присоединения простого sc.s-предложения к sc.s-предложению, у которого последний sc.s-коннектор совпадает с sc.s-коннектором простого sc.s-предложения, а предшествующий указанному sc.s-коннектору sc-идентификатор совпадает с первым sc-идентификатором простого sc.s-предложения*}
     \scnexplanation{В результате выполнения этой операции совпадающие sc-идентификаторы и sc.s-коннекторы соединяемых sc.s-предложений "склеиваются"\ , а последние sc-иден\-ти\-фи\-ка\-то\-ры соединяемых \textit{sc.s-предложений} становятся последними компонентами объединенного \textit{sc.s-предложения},
     разделенными \textit{точкой с запятой}. Аналогичным образом можно присоединять сколько угодно простых \textit{sc.s-предложений}.}
-	\scnrelfrom{sc.s-текст до трансформации}{\scnfilelong{\textit{сторона*$\ni$(Треугк(ТчкВ\char59Тчк С\char59ТчкD) $\Rightarrow$ Отр(ТчкВ\char59ТчкС))}\char59\char59
-	\newline
-	{сторона*$\ni$(Треугк(ТчкВ\char59Тчк С\char59ТчкD) $\Rightarrow$ Отр(ТчкC\char59ТчкD))}\char59\char59}}
-	\scnrelfrom{sc.s-текст после трансформации}{\scnfilelong{\textit{сторона*$\ni$((Треугк(ТчкВ\char59Тчк С\char59ТчкD)$\Rightarrow$Отр(ТчкВ\char59ТчкС)\char59Треуг(ТчкВ\char59Тчк С\char59ТчкD)$\Rightarrow$Отр(ТчкC\char59ТчкD))\char59\char59)}}}
-	\scnrelboth{семантически эквивалентный sc.g-текст}{\scnfilescg{figures/intro/scs/joining_sentences.png}}
     \scnaddlevel{-1}
 ;Операция разложения sc.s-предложений на простые sc.s-предложения*\\
     \scnaddlevel{1}
     \scnsubset{синтаксическая трансформация*}
     \scnexplanation{Каждое \textit{sc.s-предложение} можно разложить на множество \textit{простых sc.s-предложений}, т.е. представить в виде последовательности \textit{простых sc.s-предложений}.}
-    \scnrelfrom{sc.s-текст до трансформации}{\scnfilelong{\textit{Треуг(ТчкВ\char59ТчкС\char59ТчкD)$\Rightarrow$сторона*:включение*:Отр(ТчкВ\char59ТчкС)\char59\char59}}}
-    \scnrelfrom{sc.s-текст после трансформации}{\scnfilelong{\textit{сторона*$\ni$(Треугк(ТчкВ\char59ТчкС\char59ТчкD)$\Rightarrow$Отр(ТчкВ\char59ТчкС))\char59\char59
-    \newline включение*$\ni$(Треугк(ТчкВ\char59ТчкС\char59ТчкD)$\Rightarrow$Отр(ТчкВ\char59ТчкС))\char59\char59}}}
-    \scnrelboth{семантически эквивалентный sc.g-текст}{\scnfilescg{figures/intro/scs/dividing_sentences.png}}
     \scnaddlevel{-1}
 ;Операция разложения sc.s-предложений на простые sc.s-предложения с sc.s-разделителем, изображающим связь инцидентности sc-элементов*\\
     \scnaddlevel{1}
     \scnsubset{синтаксическая трансформация*}
     \scnexplanation{Каждое \textit{sc.s-предложение} (в том числе и \textit{простое sc.s-предложение} с \textit{sc.s-коннектором}) можно представить в виде семантически эквивалентной последовательности \textit{простых sc.s-предложений} с \textit{sc.s-разделителем, изображающим связь инцидентности sc-элементов}.}
     \scnnote{Данная операция осуществляет \uline{однозначное} (!) формирование множества \textit{простых sc.s-предложений} указанного вида.}
-    \scnrelfrom{sc.s-текст до трансформации}{\scnfilelong{\textit{треугольник$\ni$Треугк(ТчкВ\char59ТчкC\char59ТчкD)}}}
-    \scnrelfrom{sc.s-текст после трансформации}{\scnfilelong{\textit{треугольник |- ai >| Треугк(ТчкВ\char59ТчкС\char59ТчкD)\char59\char59
-    \newline
-	константный постоянный sc-узел, обозначающий класс$\ni$треугольник\char59\char59
-	\newline
-	константная постоянная позитивная sc-дуга принадлежности$\ni$ai\char59\char59
-	\newline
-	константный постоянный sc-узел общего вида$\ni$Треугк(ТчкВ\char59ТчкC\char59ТчкD)\char59\char59}}}
-    \scnrelboth{семантически эквивалентный sc.g-текст}{\scnfilescg{figures/intro/scs/dividing_sentences_incident.png}}
     \scnaddlevel{-1}
     }
 
@@ -340,8 +317,46 @@
 
 \bigskip
 
-\scnfilelong{Первый sc.s-текст}
-\scnrelfrom{Операция конверсии sc.s-предложения}{\scnfilelong{Второй sc.s-текст}}
+\scnfilelong{\textit{треугольник $\ni$ Треугк(ТчкВ\char59ТчкС\char59ТчкD)}\char59\char59}
+\scnrelfrom{Операция конверсии sc.s-предложения}{\scnfilelong{\textit{Треугк(ТчкВ\char59ТчкС\char59ТчкD) $\in$ треугольник}\char59\char59}}
+\scnaddlevel{1}
+\scnrelboth{семантическая эквивалентность*}{\scnfilescg{figures/intro/scs/conversion.png}}
+\scnaddlevel{-1}
+
+{\scnfilelong{\textit{треугольник $\ni$ Треугк(ТчкВ\char59ТчкС\char59ТчкD)\char59\char59
+\newline
+Треугк(ТчкВ\char59ТчкС\char59ТчкD) $\Rightarrow$ сторона*:включение*: Отр(ТчкВ\char59ТчкC)\char59\char59}}}
+\scnrelfrom{Операция присоединения sc.s-предложений}{\scnfilelong{\textit{треугольник $\ni$ Треугк(ТчкВ\char59ТчкС\char59ТчкD)(* $\Rightarrow$ сторона*:включение*:Отр(ТчкВ\char59ТчкС)\char59\char59*)}\char59\char59}}
+\scnaddlevel{1}
+\scnrelboth{семантическая эквивалентность*}{\scnfilescg{figures/intro/scs/joining_sentences.png}}
+\scnaddlevel{-1}
+
+\scnfilelong{\textit{сторона* $\ni$ (Треугк(ТчкВ\char59Тчк С\char59ТчкD) $\Rightarrow$ Отр(ТчкВ\char59ТчкС))\char59\char59
+\newline
+сторона* $\ni$ (Треугк(ТчкВ\char59Тчк С\char59ТчкD) $\Rightarrow$ Отр(ТчкC\char59ТчкD))\char59\char59}}
+\scnrelfrom{Операция присоединения sc.s-предложения}{\scnfilelong{\textit{сторона* $\ni$ ((Треугк(ТчкВ\char59ТчкС\char59ТчкD) $\Rightarrow$ Отр(ТчкВ\char59ТчкС)\char59Треуг(ТчкВ\char59ТчкС\char59ТчкD) $\Rightarrow$ Отр(ТчкC\char59ТчкD))\char59\char59)}}}
+\scnaddlevel{1}
+\scnrelboth{семантическая эквивалентность*}{\scnfilescg{figures/intro/scs/joining_sentence.png}}
+\scnaddlevel{-1}
+
+{\scnfilelong{\textit{Треугк(ТчкВ\char59ТчкС\char59ТчкD) $\Rightarrow$ сторона*:включение*:Отр(ТчкВ\char59ТчкС)\char59\char59}}}
+\scnrelfrom{Операция разложения sc.s-предложений на простые sc.s-предложения}{\scnfilelong{\textit{сторона* $\ni$ (Треугк(ТчкВ\char59ТчкС\char59ТчкD) $\Rightarrow$ Отр(ТчкВ\char59ТчкС))\char59\char59
+\newline включение* $\ni$ (Треугк(ТчкВ\char59ТчкС\char59ТчкD) $\Rightarrow$ Отр(ТчкВ\char59ТчкС))\char59\char59}}}
+\scnaddlevel{1}
+\scnrelboth{семантическая эквивалентность*}{\scnfilescg{figures/intro/scs/dividing_sentences.png}}
+\scnaddlevel{-1}
+
+{\scnfilelong{\textit{треугольник $\ni$ Треугк(ТчкВ\char59ТчкC\char59ТчкD)}}}
+\scnrelfrom{Операция разложения sc.s-предложений на простые sc.s-предложения с sc.s-разделителем, изображающим связь инцидентности sc-элементов}{\scnfilelong{\textit{треугольник |- ai >| Треугк(ТчкВ\char59ТчкС\char59ТчкD)\char59\char59
+\newline
+константный постоянный sc-узел, обозначающий класс $\ni$ треугольник\char59\char59
+\newline
+константная постоянная позитивная sc-дуга принадлежности $\ni$ ai\char59\char59
+\newline
+константный постоянный sc-узел общего вида $\ni$ Треугк(ТчкВ\char59ТчкC\char59ТчкD)\char59\char59}}}
+\scnaddlevel{1}
+\scnrelboth{семантическая эквивалентность}{\scnfilescg{figures/intro/scs/dividing_sentences_incident.png}}
+\scnaddlevel{-1}
 
 \scnendstruct
 
