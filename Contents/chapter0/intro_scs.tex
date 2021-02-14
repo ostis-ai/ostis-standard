@@ -268,7 +268,7 @@
     \scnrelfrom{sc.s-текст после трансформации}{\scnfilelong{\textit{Треуг(ТчкВ\char59ТчкС\char59ТчкD)$\in$треугольник}\char59\char59}}
     \scnrelboth{семантически эквивалентный sc.g-текст}{\scnfilescg{figures/intro/scs/conversion.png}}
     \scnaddlevel{-1}
-;Операция присоединения sc.s-предложений*\\
+;Операция присоединения sc.s-предложения*\\
     \scnaddlevel{1}
     \scnsubset{синтаксическая трансформация*}
     \scnidtf{Операция соединения двух sc.s-предложений при совпадении последнего компонента первого предложения с первым компонентом второго*}
@@ -282,7 +282,7 @@
     Аналогичным образом к любому присоединенному sc.s-предложению могут "пристыковываться"\ другие присоединенные sc.s-предложения, в общем случае уровень такой вложенности не ограничен.
     }
     \scnaddlevel{-1}
-;Операция присоединения sc.s-предложения*\\
+;Операция слияния sc.s-предложений*\\
     \scnaddlevel{1}
     \scnsubset{синтаксическая трансформация*}
     \scnidtf{Операция присоединения простого sc.s-предложения к sc.s-предложению, у которого последний sc.s-коннектор совпадает с sc.s-коннектором простого sc.s-предложения, а предшествующий указанному sc.s-коннектору sc-идентификатор совпадает с первым sc-идентификатором простого sc.s-предложения*}
@@ -320,32 +320,33 @@
 \scnfilelong{\textit{треугольник $\ni$ Треугк(ТчкВ\char59ТчкС\char59ТчкD)}\char59\char59}
 \scnrelfrom{Операция конверсии sc.s-предложения}{\scnfilelong{\textit{Треугк(ТчкВ\char59ТчкС\char59ТчкD) $\in$ треугольник}\char59\char59}}
 \scnaddlevel{1}
-\scnrelboth{семантическая эквивалентность*}{\scnfilescg{figures/intro/scs/conversion.png}}
+\scnrelboth{семантическая эквивалентность}{\scnfilescg{figures/intro/scs/conversion.png}}
 \scnaddlevel{-1}
-
+\bigskip
 {\scnfilelong{\textit{треугольник $\ni$ Треугк(ТчкВ\char59ТчкС\char59ТчкD)\char59\char59
 \newline
 Треугк(ТчкВ\char59ТчкС\char59ТчкD) $\Rightarrow$ сторона*:включение*: Отр(ТчкВ\char59ТчкC)\char59\char59}}}
-\scnrelfrom{Операция присоединения sc.s-предложений}{\scnfilelong{\textit{треугольник $\ni$ Треугк(ТчкВ\char59ТчкС\char59ТчкD)(* $\Rightarrow$ сторона*:включение*:Отр(ТчкВ\char59ТчкС)\char59\char59*)}\char59\char59}}
+\scnrelfrom{Операция присоединения sc.s-предложения}{\scnfilelong{\textit{треугольник $\ni$ Треугк(ТчкВ\char59ТчкС\char59ТчкD) (* $\Rightarrow$ сторона*:включение*:Отр(ТчкВ\char59ТчкС)\char59\char59*) }\char59\char59}}
 \scnaddlevel{1}
-\scnrelboth{семантическая эквивалентность*}{\scnfilescg{figures/intro/scs/joining_sentences.png}}
+\scnrelboth{семантическая эквивалентность}{\scnfilescg{figures/intro/scs/joining_sentences.png}}
 \scnaddlevel{-1}
-
+\bigskip
 \scnfilelong{\textit{сторона* $\ni$ (Треугк(ТчкВ\char59Тчк С\char59ТчкD) $\Rightarrow$ Отр(ТчкВ\char59ТчкС))\char59\char59
 \newline
 сторона* $\ni$ (Треугк(ТчкВ\char59Тчк С\char59ТчкD) $\Rightarrow$ Отр(ТчкC\char59ТчкD))\char59\char59}}
-\scnrelfrom{Операция присоединения sc.s-предложения}{\scnfilelong{\textit{сторона* $\ni$ ((Треугк(ТчкВ\char59ТчкС\char59ТчкD) $\Rightarrow$ Отр(ТчкВ\char59ТчкС)\char59Треуг(ТчкВ\char59ТчкС\char59ТчкD) $\Rightarrow$ Отр(ТчкC\char59ТчкD))\char59\char59)}}}
+\scnrelfrom{Операция слияния sc.s-предложений}{\scnfilelong{\textit{сторона* $\ni$ ((Треугк(ТчкВ\char59ТчкС\char59ТчкD) $\Rightarrow$ Отр(ТчкВ\char59ТчкС)\char59Треуг(ТчкВ\char59ТчкС\char59ТчкD) $\Rightarrow$ Отр(ТчкC\char59ТчкD))\char59\char59)}}}
 \scnaddlevel{1}
-\scnrelboth{семантическая эквивалентность*}{\scnfilescg{figures/intro/scs/joining_sentence.png}}
+\scnrelfrom{синтаксическая трансформация}{Треугк(ТчкВ\char59ТчкС\char59ТчкD)$\Rightarrow$сторона:Отр(ТчкВ\char59ТчкС)\char59Отр(ТчкС\char59ТчкD)\char59\char59}
+\scnrelboth{семантическая эквивалентность}{\scnfilescg{figures/intro/scs/joining_sentence.png}}
 \scnaddlevel{-1}
-
+\bigskip
 {\scnfilelong{\textit{Треугк(ТчкВ\char59ТчкС\char59ТчкD) $\Rightarrow$ сторона*:включение*:Отр(ТчкВ\char59ТчкС)\char59\char59}}}
 \scnrelfrom{Операция разложения sc.s-предложений на простые sc.s-предложения}{\scnfilelong{\textit{сторона* $\ni$ (Треугк(ТчкВ\char59ТчкС\char59ТчкD) $\Rightarrow$ Отр(ТчкВ\char59ТчкС))\char59\char59
 \newline включение* $\ni$ (Треугк(ТчкВ\char59ТчкС\char59ТчкD) $\Rightarrow$ Отр(ТчкВ\char59ТчкС))\char59\char59}}}
 \scnaddlevel{1}
-\scnrelboth{семантическая эквивалентность*}{\scnfilescg{figures/intro/scs/dividing_sentences.png}}
+\scnrelboth{семантическая эквивалентность}{\scnfilescg{figures/intro/scs/dividing_sentences.png}}
 \scnaddlevel{-1}
-
+\bigskip
 {\scnfilelong{\textit{треугольник $\ni$ Треугк(ТчкВ\char59ТчкC\char59ТчкD)}}}
 \scnrelfrom{Операция разложения sc.s-предложений на простые sc.s-предложения с sc.s-разделителем, изображающим связь инцидентности sc-элементов}{\scnfilelong{\textit{треугольник |- ai >| Треугк(ТчкВ\char59ТчкС\char59ТчкD)\char59\char59
 \newline
