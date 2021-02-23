@@ -648,6 +648,20 @@
 \end{adjustwidth}
 }
 
+\newcommand\scnfileitem[1]{\scnaddlevel{1}\scnfilescn{#1}\scnaddlevel{-1}}
+
+\newcommand{\scnfilescn}[1]{
+	\begin{adjustwidth}{\calctab}{0em}
+		\setlength{\parindent}{0em}
+		\setlength{\itemindent}{0em}
+		\setlength{\parskip}{0.5em}
+		\vspace{-1.5em}
+		\normalfont \textbf{[}
+		#1
+		\textbf{]}
+	\end{adjustwidth}
+}
+
 \newcommand{\scnstartsubstruct}{
 \settab$\pmb{\supset=}$\\
 \settab$\pmb{\{}$
