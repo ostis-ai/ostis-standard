@@ -177,30 +177,37 @@ SCn-код позволяет перейти от линейных тексто�
 
 \bigskip
 
-\scnfilelong{Треугк(ТчкВ\char59ТчкС\char59\char59) $\Rightarrow$ сторона*: Отр(ТчкВ\char59ТчкС)\char59Отр(ТчкС\char59ТчкD)\char59\char59}\\
-\scnrelfrom{Операция преобразования sc.s-предложения в sc.n-предложен ие}{\scnaddlevel{-1}\scnfileitem{Треугк(ТчкВ\char59ТчкС\char59ТчкD)
-\newline
-$\Rightarrow$ сторона*:
-			  Отр(ТчкВ\char59ТчкС)}}
-\scnaddlevel{1}
+\scnfilelong{\textit{Треугк(ТчкВ;ТчкС;ТчкD)} $\Rightarrow$ \textit{сторона*}: \textit{Отр(ТчкВ;ТчкС)} (* $\in$ \textit{отрезок};; *);;}\\
+\scnrelfrom{Операция преобразования sc.s-предложения в sc.n-предложен ие}{\scnfilescn{
+		\scnheader{Треугк(ТчкВ;ТчкС;ТчкD)}
+		\scnrelfrom{сторона}{Отр(ТчкВ;ТчкС)}
+		\scnaddlevel{1}
+			\scniselement{отрезок}
+		\scnaddlevel{-1}
+		}}
+\scnresetlevel
 
-\scnheader{\scnaddlevel{-1}
-	\scnfileitem{
-		Треугк(ТчкВ\char59ТчкС\char59ТчкD) $\Rightarrow$ сторона*: Отр(ТчкВ\char59ТчкС)
-\newline
-Треугк(ТчкВ\char59ТчкС\char59ТчкD)
-$\in$ треугольник}
-}\\
-\scnaddlevel{1}
-\scnrelfrom{Операция присоединения sc.n-предложения}{\scnaddlevel{-1}\scnfileitem{Треугк(ТчкВ\char59ТчкС\char59ТчкD)
-		$\Rightarrow$ сторона*: Отр(ТчкВ\char59ТчкС)
-		\newline
-		$\in$ треугольник}}
-\scnaddlevel{1}
-	
+\bigskip
+\bigskip
 
+\scnfilescn{
+	\scnheader{Треугк(ТчкВ;ТчкС;ТчкD)}
+	\scnrelfrom{сторона}{Отр(ТчкВ;ТчкС)}
+
+	\scnheader{Отр(ТчкВ;ТчкС)}
+	\scniselement{отрезок}
+}
+\scnrelfrom{Операция присоединения sc.n-предложения}{\scnfilescn{
+		\scnheader{Треугк(ТчкВ;ТчкС;ТчкD)}
+		\scnrelfrom{сторона}{Отр(ТчкВ;ТчкС)}
+		\scnaddlevel{1}
+		\scniselement{отрезок}
+		\scnaddlevel{-1}
+}}
+\scnresetlevel
+
+\bigskip
 \scnendstruct               
-
 \bigskip
 
 \scnendstruct \scninlinesourcecommentpar{Закрывающий ограничитель раздела  \textit{\nameref{intro_scn}}}
