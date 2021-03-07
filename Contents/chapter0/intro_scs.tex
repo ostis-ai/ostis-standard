@@ -246,15 +246,15 @@
 \scnrelfromlist{пример}{
     \scnfileitem{\textit{многоугольник} $\supset$ \textit{треугольник}}
     \scnaddlevel{1}
-    \scnrelboth{семантическая эквивалентность}{\scnfilescg{***}}
+    \scnrelboth{семантическая эквивалентность}{\scnfilescg{figures/intro/scs/inclusion.png}}
     \scnaddlevel{-1};
     \scnfileitem{\textit{сторона*} $\ni$ (\textit{Четырехугк(ТчкА\char59ТчкВ\char59ТчкС\char59ТчкD)} $\Rightarrow$ \textit{Отр(ТчкВ\char59ТчкС)})\char59\char59}
     \scnaddlevel{1}
-    \scnrelboth{семантическая эквивалентность}{\scnfilescg{***}}
+    \scnrelboth{семантическая эквивалентность}{\scnfilescg{figures/intro/scs/side.png}}
     \scnaddlevel{-1};
     \scnfileitem{\textit{Si} |- \textit{ai} >| \textit{ei}}
     \scnaddlevel{1}
-    \scnrelboth{семантическая эквивалентность}{\scnfilescg{***}}
+    \scnrelboth{семантическая эквивалентность}{\scnfilescg{figures/intro/scs/inclusion_incident.png}}
     \scnaddlevel{-1}
     }
 \scnaddlevel{-1}}
@@ -265,9 +265,10 @@
     \scnexplanation{Каждое \textit{sc.s-предложение} (в том числе, и \textit{простое sc.s-предложение}) можно преобразовать в семантически эквивалентное ему \textit{sc.s-предложение} путем конверсии ("разворота") цепочки компонентов \textit{sc.s-предложения}. Так, например, при конверсии ("развороте") простого \textit{sc.s-предложения} (1) первый его \textit{sc-идентификатор} (первый компонент этого \textit{sc.s-предложения}) становится третьим компонентом конвертированного\textit{ sc.s-предложения}, (2) второй его \textit{sc-идентификатор} (третий компонент исходного \textit{sc.s-предложения}) становится первым компонентом "конвертированного"\ \textit{sc.s-предложения} и (3) второй компонент исходного \textit{sc.s-предложения} (\textit{sc.s-коннектор} или \textit{sc.s-разделитель, изображающий связь инцидентности sc-элементов}, соединяющий указанные выше компоненты) остается вторым компонентом конвертированного \textit{sc.s-предложения}, но меняет направленность ("$\ni$"\ заменяется на "$\in$"\ и наоборот, "$\supset$"\ на "$\subset$"\ и наоборот, "$\Rightarrow$"\ на "$\Leftarrow$"\ и наоборот и т.д.)}
     \scnnote{Можно говорить не только о конверсии sc.s-предложения, но и о конверсии sc.s-коннектора, о конверсии sc.s-разделителя, изображающего связь инцидентности sc.s-элементов.}
     \scnrelfrom{sc.s-текст до трансформации}{\scnfilelong{\textit{треугольник $\ni$ Треуг(ТчкВ\char59ТчкС\char59ТчкD)}\char59\char59}}
-    \scnrelfrom{sc.s-текст после трансформации}{\scnfilelong{\textit{Треуг(ТчкВ\char59ТчкС\char59ТчкD)$\in$треугольник}\char59\char59}}
-    \scnrelboth{семантически эквивалентный sc.g-текст}{\scnfilescg{figures/intro/scs/conversion.png}}
-    \scnaddlevel{-1}
+    \scnrelfrom{sc.s-текст после трансформации}{\scnfilelong{\textit{Треуг(ТчкВ\char59ТчкС\char59ТчкD) $\in$ треугольник}\char59\char59}}
+	\scnaddlevel{1}
+    \scnrelboth{семантическая эквивалентность}{\scnfilescg{figures/intro/scs/conversion.png}}
+    \scnaddlevel{-2}
 ;Операция присоединения sc.s-предложения*\\
     \scnaddlevel{1}
     \scnsubset{синтаксическая трансформация*}
@@ -322,7 +323,9 @@
 \scnaddlevel{1}
 \scnrelboth{семантическая эквивалентность}{\scnfilescg{figures/intro/scs/conversion.png}}
 \scnaddlevel{-1}
-\bigskip
+
+\bigskip\bigskip
+
 {\scnfilelong{\textit{треугольник $\ni$ Треугк(ТчкВ\char59ТчкС\char59ТчкD)\char59\char59
 \newline
 Треугк(ТчкВ\char59ТчкС\char59ТчкD) $\Rightarrow$ сторона*:включение*: Отр(ТчкВ\char59ТчкC)\char59\char59}}}
@@ -330,23 +333,29 @@
 \scnaddlevel{1}
 \scnrelboth{семантическая эквивалентность}{\scnfilescg{figures/intro/scs/joining_sentences.png}}
 \scnaddlevel{-1}
-\bigskip
+
+\bigskip\bigskip
+
 \scnfilelong{\textit{сторона* $\ni$ (Треугк(ТчкВ\char59Тчк С\char59ТчкD) $\Rightarrow$ Отр(ТчкВ\char59ТчкС))\char59\char59
 \newline
 сторона* $\ni$ (Треугк(ТчкВ\char59Тчк С\char59ТчкD) $\Rightarrow$ Отр(ТчкC\char59ТчкD))\char59\char59}}
-\scnrelfrom{Операция слияния sc.s-предложений}{\scnfilelong{\textit{сторона* $\ni$ ((Треугк(ТчкВ\char59ТчкС\char59ТчкD) $\Rightarrow$ Отр(ТчкВ\char59ТчкС)\char59Треуг(ТчкВ\char59ТчкС\char59ТчкD) $\Rightarrow$ Отр(ТчкC\char59ТчкD))\char59\char59)}}}
+\scnrelfrom{Операция слияния sc.s-предложений}{\scnfilelong{\textit{сторона* $\ni$ ((Треугк(ТчкВ\char59ТчкС\char59ТчкD) $\Rightarrow$ Отр(ТчкВ\char59ТчкС))\char59(Треуг(ТчкВ\char59ТчкС\char59ТчкD) $\Rightarrow$ Отр(ТчкC\char59ТчкD)))\char59\char59}}}
 \scnaddlevel{1}
 \scnrelfrom{синтаксическая трансформация}{\scnfilelong{\textit{Треугк(ТчкВ\char59ТчкС\char59ТчкD)}$\Rightarrow$\textit{сторона*}: \textit{Отр(ТчкВ\char59ТчкС)}\char59\textit{Отр(ТчкС\char59ТчкD)}\char59\char59}}
 \scnrelboth{семантическая эквивалентность}{\scnfilescg{figures/intro/scs/joining_sentence.png}}
 \scnaddlevel{-1}
-\bigskip
+
+\bigskip\bigskip
+
 {\scnfilelong{\textit{Треугк(ТчкВ\char59ТчкС\char59ТчкD) $\Rightarrow$ сторона*:включение*:Отр(ТчкВ\char59ТчкС)\char59\char59}}}
 \scnrelfrom{Операция разложения sc.s-предложений на простые sc.s-предложения}{\scnfilelong{\textit{сторона* $\ni$ (Треугк(ТчкВ\char59ТчкС\char59ТчкD) $\Rightarrow$ Отр(ТчкВ\char59ТчкС))\char59\char59
 \newline включение* $\ni$ (Треугк(ТчкВ\char59ТчкС\char59ТчкD) $\Rightarrow$ Отр(ТчкВ\char59ТчкС))\char59\char59}}}
 \scnaddlevel{1}
 \scnrelboth{семантическая эквивалентность}{\scnfilescg{figures/intro/scs/dividing_sentences.png}}
 \scnaddlevel{-1}
-\bigskip
+
+\bigskip\bigskip
+
 {\scnfilelong{\textit{треугольник $\ni$ Треугк(ТчкВ\char59ТчкC\char59ТчкD)}}}
 \scnrelfrom{Операция разложения sc.s-предложений на простые sc.s-предложения с sc.s-разделителем, изображающим связь инцидентности sc-элементов}{\scnfilelong{\textit{треугольник |- ai >| Треугк(ТчкВ\char59ТчкС\char59ТчкD)\char59\char59
 \newline
@@ -386,11 +395,11 @@
 \scnrelfromlist{пример}{
     \scnfileitem{\textit{Четырехугк(ТчкА;ТчкВ;ТчкС;ТчкD)} $\Rightarrow$ \textit{сторона*} : \textit{включение*} : \textit{Отр(ТчкВ;ТчкС)};; }\\
     \scnaddlevel{1}
-    \scnrelboth{семантическая эквивалентность}{\scnfilescg{***}}
+    \scnrelboth{семантическая эквивалентность}{\scnfilescg{figures/intro/scs/modifier.png}}
     \scnaddlevel{-1};
     \scnfileitem{\textit{Треугк(ТчкА;ТчкВ;ТчкС)} $\_\Rightarrow$ \textit{сторона*} :: \textit{\_s};; }\\
     \scnaddlevel{1}
-    \scnrelboth{семантическая эквивалентность}{\scnfilescg{***}}
+    \scnrelboth{семантическая эквивалентность}{\scnfilescg{figures/intro/scs/modifier_var.png}}
     \scnaddlevel{-1}
     }
 
@@ -478,9 +487,27 @@
     \item сокращения текста путем минимизации числа повторений одного и того же \textit{sc-идентификатора} путем соединения \textit{sc.s-предложений};
     \item повышение уровня наглядности, "читабельности"\ sc.s-текстов.
 \end{scnitemize}}
-\scnhaselementrole{пример}{\scnfilelong{***}}
+\scnhaselementrole{пример}{\scnfilelong{\textit{треугольник |- ai >| Треугк(ТчкВ\char59ТчкС\char59ТчкD)\char59\char59
+\newline
+Треугк(ТчкВ\char59ТчкС\char59ТчкD) |- bi >| Отр(ТчкВ\char59ТчкС)\char59\char59
+\newline
+сторона* |- сi >| bi\char59\char59
+\newline
+константный постоянный sc-узел, обозначающий класс $\ni$ треугольник\char59\char59
+\newline
+константный постоянный sc-узел, обозначающий отношение $\ni$ сторона*\char59\char59
+\newline
+константная постоянная позитивная sc-дуга принадлежности $\ni$ ai\char59\char59
+\newline
+константная постоянная sc-дуга $\ni$ bi\char59\char59
+\newline
+константная постоянная позитивная sc-дуга принадлежности $\ni$ ci\char59\char59
+\newline
+константный постоянный sc-узел общего вида $\ni$ Отр(ТчкВ\char59ТчкС)\char59\char59
+\newline
+константный постоянный sc-узел общего вида $\ni$ Треугк(ТчкВ\char59ТчкC\char59ТчкD)\char59\char59}}}
 \scnaddlevel{1}
-\scnrelboth{семантическая эквивалентность}{\scnfilelong{SCg}}
+\scnrelboth{семантическая эквивалентность}{\scnfilescg{figures/intro/scs/kernel_incident.png}}
 \scnaddlevel{-1}
 
 \scnheader{Первое направление расширения Ядра SCs-кода}
