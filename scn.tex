@@ -53,6 +53,7 @@
 \newcommand{\scnrolesign}{\,$^\prime$}
 
 \newcommand{\sethind}{\setlength{\hangindent}{\dimexpr (\tabsize)*\value{hind} \relax} }
+\newcommand{\sethindfromind}[1]{\setcounter{\hind}{\numexpr (\value{ind}+#1 \relax} }
 \newcommand{\calctab}{\dimexpr (\tabsize)*\value{ind} \relax}
 \newcommand{\settab}{\hspace{\calctab}}
 \newcommand{\calcdiff}[1]{\dimexpr \tabsize-#1  \relax}
@@ -233,21 +234,21 @@
 \newcommand{\scnrelfrom}[2]{
 \settab$\bm{\Rightarrow}$\makediff{\arrowsize}\scnrellist{#1}\\
 \addtocounter{ind}{1}
-\addtocounter{hind}{1}
+\sethindfromind{1}
 \sethind
 \settab{\itshape#2}\\
 \addtocounter{ind}{-1}
-\addtocounter{hind}{-1}
+\sethindfromind{1}
 }
 
 \newcommand{\scnrelto}[2]{
 \settab$\bm{\Leftarrow}$\makediff{\arrowsize}\scnrellist{#1}\\
 \addtocounter{ind}{1}
-\addtocounter{hind}{1}
+\sethindfromind{1}
 \sethind 
 \settab{\itshape #2}\\
 \addtocounter{ind}{-1}
-\addtocounter{hind}{-1}
+\sethindfromind{1}
 }
 
 \newcommand{\scnrelfromlist}[2]{
@@ -426,8 +427,13 @@
 \newcommand{\scneqtocommonset}[3]{
 \settab$\bm{=}$\makediff{\eqsize}#1\\
 \addtocounter{ind}{1}
-\addtocounter{hind}{2}
+\addtocounter{hind}{1}
+\addtocounter{list_depth}{1}
+\ifnum\value{list_depth}=1
+\addtocounter{hind}{1}
+\fi
 \sethind 
+
 \iffilemode
 \vspace{-1.55\baselineskip}
 \scnfilelistbrackets{#3}
@@ -436,8 +442,13 @@
 \scnlistbrackets{#3}
 \fi
 \settab#2\\
+
 \addtocounter{ind}{-1}
-\addtocounter{hind}{-2}
+\ifnum\value{list_depth}=1
+\addtocounter{hind}{-1}
+\fi
+\addtocounter{list_depth}{-1}
+\addtocounter{hind}{-1}
 }
 
 \newcommand{\scneqtoset}[1]{\scneqtocommonset{$\pmb{\{}$}{$\pmb{\}}$}{#1}}
