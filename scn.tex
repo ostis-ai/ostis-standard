@@ -558,10 +558,16 @@
 \newcommand{\scnvector}[1]{$\pmb{\langle}$#1$\pmb{\rangle}$}
 
 \newcommand{\scnidtf}[1]{
-\begin{adjustwidth}{\calctab+3.4em}{0em}
+\addtocounter{hind}{1}
+\begin{adjustwidth}{\calctab+\tabsize+\bracketsize}{0em}
 \justify
-\hspace{-3.4em}\normalfont $\bm{\coloneqq}$\hspace{\calcdiff{\idtfsize}}[#1]
+\setlength{\parindent}{0em}
+\setlength{\itemindent}{0em}
+\setlength{\parskip}{0.5em}
+\vspace{-0.4\baselineskip}
+\hspace{-\tabsize}\hspace{-\bracketsize}\normalfont$\bm{\coloneqq}$\makediff{\idtfsize}[#1]
 \end{adjustwidth}
+\addtocounter{hind}{-1}
 }
 
 \newcommand{\scnidtftext}[2]{
