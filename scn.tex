@@ -53,6 +53,7 @@
 \newcommand{\scnrolesign}{\,$^\prime$}
 
 \newcommand{\sethind}{\setlength{\hangindent}{\dimexpr (\tabsize)*\value{hind} \relax} }
+\newcommand{\sethindfromind}[1]{\setcounter{\hind}{\numexpr (\value{ind}+#1 \relax} }
 \newcommand{\calctab}{\dimexpr (\tabsize)*\value{ind} \relax}
 \newcommand{\settab}{\hspace{\calctab}}
 \newcommand{\calcdiff}[1]{\dimexpr \tabsize-#1  \relax}
@@ -169,7 +170,7 @@
 \newcommand{\scnfragmentcaption}[1]{\bfseries /*\filldots/\hspace{0.5\textwidth}\normalfont}
 
 \makeatletter
-\newcommand{\scnsegmentcaption}{\normalfont \bfseries /*~Сегмент~\theseg~ Раздела~\@currentlabel.~\filldots/\hspace{0.5\textwidth}\normalfont}
+\newcommand{\scnsegmentcaption}{\normalfont \bfseries /*~Сегмент~\theseg~ Раздела~\@currentlabel~\filldots/\hspace{0.5\textwidth}\normalfont}
 \makeatother
 
 \NewDocumentCommand\scnlist{>{\SplitList{;}}m}
@@ -233,21 +234,21 @@
 \newcommand{\scnrelfrom}[2]{
 \settab$\bm{\Rightarrow}$\makediff{\arrowsize}\scnrellist{#1}\\
 \addtocounter{ind}{1}
-\addtocounter{hind}{1}
+\sethindfromind{1}
 \sethind
 \settab{\itshape#2}\\
 \addtocounter{ind}{-1}
-\addtocounter{hind}{-1}
+\sethindfromind{1}
 }
 
 \newcommand{\scnrelto}[2]{
 \settab$\bm{\Leftarrow}$\makediff{\arrowsize}\scnrellist{#1}\\
 \addtocounter{ind}{1}
-\addtocounter{hind}{1}
+\sethindfromind{1}
 \sethind 
 \settab{\itshape #2}\\
 \addtocounter{ind}{-1}
-\addtocounter{hind}{-1}
+\sethindfromind{1}
 }
 
 \newcommand{\scnrelfromlist}[2]{
@@ -426,8 +427,13 @@
 \newcommand{\scneqtocommonset}[3]{
 \settab$\bm{=}$\makediff{\eqsize}#1\\
 \addtocounter{ind}{1}
-\addtocounter{hind}{2}
+\addtocounter{hind}{1}
+\addtocounter{list_depth}{1}
+\ifnum\value{list_depth}=1
+\addtocounter{hind}{1}
+\fi
 \sethind 
+
 \iffilemode
 \vspace{-1.55\baselineskip}
 \scnfilelistbrackets{#3}
@@ -436,8 +442,13 @@
 \scnlistbrackets{#3}
 \fi
 \settab#2\\
+
 \addtocounter{ind}{-1}
-\addtocounter{hind}{-2}
+\ifnum\value{list_depth}=1
+\addtocounter{hind}{-1}
+\fi
+\addtocounter{list_depth}{-1}
+\addtocounter{hind}{-1}
 }
 
 \newcommand{\scneqtoset}[1]{\scneqtocommonset{$\pmb{\{}$}{$\pmb{\}}$}{#1}}
@@ -558,10 +569,16 @@
 \newcommand{\scnvector}[1]{$\pmb{\langle}$#1$\pmb{\rangle}$}
 
 \newcommand{\scnidtf}[1]{
-\begin{adjustwidth}{\calctab+3.4em}{0em}
+\addtocounter{hind}{1}
+\begin{adjustwidth}{\calctab+\tabsize+\bracketsize}{0em}
 \justify
-\hspace{-3.4em}\normalfont $\bm{\coloneqq}$\hspace{\calcdiff{\idtfsize}}[#1]
+\setlength{\parindent}{0em}
+\setlength{\itemindent}{0em}
+\setlength{\parskip}{0.5em}
+\vspace{-0.4\baselineskip}
+\hspace{-\tabsize}\hspace{-\bracketsize}\normalfont$\bm{\coloneqq}$\makediff{\idtfsize}[#1]
 \end{adjustwidth}
+\addtocounter{hind}{-1}
 }
 
 \newcommand{\scnidtftext}[2]{
