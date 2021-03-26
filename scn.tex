@@ -13,8 +13,14 @@
 \newlength{\insize}
 \setlength{\insize}{0.7em}
 
+\newlength{\insizevar}
+\setlength{\insizevar}{1.2em}
+
 \newlength{\nisize}
 \setlength{\nisize}{0.7em}
+
+\newlength{\nisizevar}
+\setlength{\nisizevar}{1.2em}
 
 \newlength{\subsetsize}
 \setlength{\subsetsize}{0.8em}
@@ -27,6 +33,9 @@
 
 \newlength{\arrowsize}
 \setlength{\arrowsize}{1em}
+
+\newlength{\arrowsizevar}
+\setlength{\arrowsizevar}{1.5em}
 
 \newlength{\bulletsize}
 \setlength{\bulletsize}{0.5em}
@@ -241,8 +250,28 @@
 \sethindfromind{1}
 }
 
+\newcommand{\scnvarrelfrom}[2]{
+	\settab\textunderscore$\bm{\Rightarrow}$\makediff{\arrowsizevar}\scnrellist{#1}\\
+	\addtocounter{ind}{1}
+	\sethindfromind{1}
+	\sethind
+	\settab{\itshape #2}\\
+	\addtocounter{ind}{-1}
+	\sethindfromind{1}
+}
+
 \newcommand{\scnrelto}[2]{
 \settab$\bm{\Leftarrow}$\makediff{\arrowsize}\scnrellist{#1}\\
+\addtocounter{ind}{1}
+\sethindfromind{1}
+\sethind 
+\settab{\itshape #2}\\
+\addtocounter{ind}{-1}
+\sethindfromind{1}
+}
+
+\newcommand{\scnvarrelto}[2]{
+\settab\textunderscore$\bm{\Leftarrow}$\makediff{\arrowsizevar}\scnrellist{#1}\\
 \addtocounter{ind}{1}
 \sethindfromind{1}
 \sethind 
@@ -493,6 +522,13 @@
 \addtocounter{hind}{-1}
 }
 
+\newcommand{\scnisvarelement}[1]{
+	\addtocounter{hind}{1}
+	\sethind
+	\settab\textunderscore$\bm{\in}$\makediff{\insizevar}{\itshape #1}\\
+	\addtocounter{hind}{-1}
+}
+
 \newcommand{\scnmakesetlocal}[1]{
 \hspace{-\bracketsize}$\pmb{\{}$\\
 \addtocounter{ind}{1}
@@ -524,6 +560,13 @@
 \addtocounter{hind}{-1}
 }
 
+\newcommand{\scnhasvarelement}[1]{
+\addtocounter{hind}{1}
+\sethind 
+\settab\textunderscore$\bm{\ni}$\makediff{\nisizevar}{\itshape #1}\\
+\addtocounter{hind}{-1}
+}
+
 \newcommand{\scnhaselements}[1]{
 \addtocounter{hind}{1}
 \sethind 
@@ -541,6 +584,16 @@
 \settab{\itshape #2}\\
 \addtocounter{ind}{-1}
 \addtocounter{hind}{-1}
+}
+
+\newcommand{\scnhasvarelementrole}[2]{
+	\settab\textunderscore$\bm{\ni}$\makediff{\nisizevar}\scnrolerellist{#1}\\
+	\addtocounter{ind}{1}
+	\addtocounter{hind}{1}
+	\sethind 
+	\settab{\itshape #2}\\
+	\addtocounter{ind}{-1}
+	\addtocounter{hind}{-1}
 }
 
 \newcommand{\scnhaselementlist}[2]{
