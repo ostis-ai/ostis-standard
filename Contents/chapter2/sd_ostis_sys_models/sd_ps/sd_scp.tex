@@ -88,15 +88,34 @@
 \scnrelfrom{типичная семантическая окрестность}{\scgfileitem{figures/sd_scp/program_example.png}}\\
 \scnaddlevel{1}
 	\scnexplanation{В приведенном примере показана \textit{scp-программа}, состоящая из трех \textit{scp-операторов}. Данная программа проверяет, содержится ли в заданном множестве (первый параметр) заданный элемент (второй параметр), и, если нет, то добавляет его в это множество.}
-	
 	\scnrelfrom{Операция преобразования sc.s-предложения в sc.n-предложение}{\scnfilescn{
 			\scnheader{\_scp\_process}
-			\scniselement{scp-процесс}
-			\scnhaselementrole{1;in-параметр}{\textunderscore set1}
-			\scnhaselementrole{2;in-параметр}{\textunderscore element1}
-			\scnrelto{декомпозиция действия}{\textunderscore ...}
+			\scnisvarelement{scp-процесс}
+			\scnhasvarelementrole{1;in-параметр}{\textunderscore set1}
+			\scnhasvarelementrole{2;in-параметр}{\textunderscore element1}
+			\scnvarrelto{декомпозиция действия}{\textunderscore ...}
 			\scnaddlevel{1}
-			\scniselement{отрезок}
+				\scnhasvarelementrole{1}{\textunderscore operator1}
+				\scnaddlevel{1}
+					\scnisvarelement{searchElStr3}
+					\scnhasvarelementrole{1; scp-операнд с заданным значением; scp-константа}{\textunderscore set1}
+					\scnhasvarelementrole{2; scp-операнд со свободным значением'; scp-переменная'; sc-дуга основного вида}{\textunderscore arc1}
+					\scnhasvarelementrole{3; scp-операнд с заданным значением'; scp-константа'}{\textunderscore element1}
+					\scnvarrelfrom{последовательность действий при отрицательном результате}{\textunderscore operator2}
+					\scnvarrelfrom{последовательность действий при положительном результате}{\textunderscore operator3}
+				\scnaddlevel{-1}
+				\scnhasvarelement{\textunderscore operator2}
+				\scnaddlevel{1}
+					\scnisvarelement{genElStr3}
+					\scnhasvarelementrole{1; scp-операнд с заданным значением; scp-константа}{\textunderscore set1}
+					\scnhasvarelementrole{2; scp-операнд со свободным значением'; scp-переменная'; rrel\textunderscore pos const\textunderscore perm}{\textunderscore arc1}
+					\scnhasvarelementrole{3; scp-операнд с заданным значением'; scp-константа'}{\textunderscore element1}
+					\scnvarrelfrom{следующий оператор}{\textunderscore operator3}
+				\scnaddlevel{-1}
+				\scnhasvarelement{\textunderscore operator3}
+				\scnaddlevel{1}
+					\scnisvarelement{return}
+				\scnaddlevel{-1}
 			\scnaddlevel{-1}
 	}}
 \scnaddlevel{-1}
