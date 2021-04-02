@@ -190,6 +190,12 @@
 
 \NewDocumentCommand\scnrolerellist{>{\SplitList{;}}m}
    {\ProcessList{#1}{\scnrolerellistitem}}
+   
+\NewDocumentCommand\scnvarrellist{>{\SplitList{;}}m}
+   {\ProcessList{#1}{\scnvarrellistitem}}
+   
+\NewDocumentCommand\scnvarrolerellist{>{\SplitList{;}}m}
+   {\ProcessList{#1}{\scnvarrolerellistitem}}
 
 \NewDocumentCommand\scnfilelist{>{\SplitList{;}}m}
    {\ProcessList{#1}{\scnfilelistitem}}
@@ -204,6 +210,10 @@
 \sethind
 \settab{$\bullet$\makediff{\bulletsize}\itshape#1} \\
 }
+
+\newcommand\scnvarrellistitem[1]{{\textit{#1}*{\normalfont::~}}}
+
+\newcommand\scnvarrolerellistitem[1]{{\textit{#1}\scnrolesign{\normalfont::~}}}
 
 \newcommand\scnrellistitem[1]{{\textit{#1}*{\normalfont:~}}}
 
@@ -251,7 +261,7 @@
 }
 
 \newcommand{\scnvarrelfrom}[2]{
-	\settab\textunderscore$\bm{\Rightarrow}$\makediff{\arrowsizevar}\scnrellist{#1}\\
+	\settab\textunderscore$\bm{\Rightarrow}$\makediff{\arrowsizevar}\scnvarrellist{#1}\\
 	\addtocounter{ind}{1}
 	\sethindfromind{1}
 	\sethind
@@ -271,7 +281,7 @@
 }
 
 \newcommand{\scnvarrelto}[2]{
-\settab\textunderscore$\bm{\Leftarrow}$\makediff{\arrowsizevar}\scnrellist{#1}\\
+\settab\textunderscore$\bm{\Leftarrow}$\makediff{\arrowsizevar}\scnvarrellist{#1}\\
 \addtocounter{ind}{1}
 \sethindfromind{1}
 \sethind 
@@ -587,7 +597,7 @@
 }
 
 \newcommand{\scnhasvarelementrole}[2]{
-	\settab\textunderscore$\bm{\ni}$\makediff{\nisizevar}\scnrolerellist{#1}\\
+	\settab\textunderscore$\bm{\ni}$\makediff{\nisizevar}\scnvarrolerellist{#1}\\
 	\addtocounter{ind}{1}
 	\addtocounter{hind}{1}
 	\sethind 
