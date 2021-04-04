@@ -132,6 +132,16 @@
 \scnsegmentcaption \textspaced{\scnheader{#1}}
 }
 
+\newcommand{\scnsegmentheaderbeginning}[1]{
+	\addtocounter{seg}{1}
+	\ifnum\value{seg}>1
+	\newpage
+	\else
+	\bigskip
+	\fi
+	\scnsegmentcaptionbeginning \textspaced{\scnheader{#1}}
+}
+
 \newcommand\segcountertext{
 \ifnum\value{seg}=1
     Первый
@@ -171,6 +181,10 @@
 
 \makeatletter
 \newcommand{\scnsegmentcaption}{\normalfont \bfseries /*~Сегмент~\theseg~ Раздела~\@currentlabel~\filldots/\hspace{0.5\textwidth}\normalfont}
+\makeatother
+
+\makeatletter
+\newcommand{\scnsegmentcaptionbeginning}{\normalfont \bfseries /*~Сегмент~\theseg~Начала~Раздела~\@currentlabel~\filldots/\hspace{0.5\textwidth}\normalfont}
 \makeatother
 
 \NewDocumentCommand\scnlist{>{\SplitList{;}}m}
