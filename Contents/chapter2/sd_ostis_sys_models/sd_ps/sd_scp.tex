@@ -67,7 +67,7 @@
 	даже непосредственно в процессе выполнения без потенциальной опасности
 	испортить общий универсальный алгоритм всей программы. Более того,
 	такой подход к проектированию и интерпретации программ позволяет
-	говорить о возможности создания \textit{самореконфигурируемых программ}}}
+	говорить о возможности создания самореконфигурируемых программ}}
 
 
 \scnheader{Абстрактная scp-машина}
@@ -87,38 +87,38 @@
 По сути каждая \textbf{\textit{scp-программа}} представляет собой описание последовательности элементарных операций, которые необходимо выполнить над семантической сетью, чтобы выполнить более сложное действие некоторого класса.}
 \scnrelfrom{типичная семантическая окрестность}{\scgfileitem{figures/sd_scp/program_example.png}}\\
 \scnaddlevel{1}
-	\scnexplanation{В приведенном примере показана \textit{scp-программа}, состоящая из трех \textit{scp-операторов}. Данная программа проверяет, содержится ли в заданном множестве (первый параметр) заданный элемент (второй параметр), и, если нет, то добавляет его в это множество.}
-	\scnrelfrom{Операция преобразования sc.s-предложения в sc.n-предложение}{\scnfilescn{
-			\scnheader{\_scp\_process}
-			\scnisvarelement{scp-процесс}
-			\scnhasvarelementrole{1;in-параметр}{\textunderscore set1}
-			\scnhasvarelementrole{2;in-параметр}{\textunderscore element1}
-			\scnvarrelto{декомпозиция действия}{\textunderscore ...}
-			\scnaddlevel{1}
-				\scnhasvarelementrole{1}{\textunderscore operator1}
-				\scnaddlevel{1}
-					\scnisvarelement{searchElStr3}
-					\scnhasvarelementrole{1; scp-операнд с заданным значением; scp-константа}{\textunderscore set1}
-					\scnhasvarelementrole{2; scp-операнд со свободным значением'; scp-переменная'; sc-дуга основного вида}{\textunderscore arc1}
-					\scnhasvarelementrole{3; scp-операнд с заданным значением'; scp-константа'}{\textunderscore element1}
-					\scnvarrelfrom{последовательность действий при отрицательном результате}{\textunderscore operator2}
-					\scnvarrelfrom{последовательность действий при положительном результате}{\textunderscore operator3}
-				\scnaddlevel{-1}
-				\scnhasvarelement{\textunderscore operator2}
-				\scnaddlevel{1}
-					\scnisvarelement{genElStr3}
-					\scnhasvarelementrole{1; scp-операнд с заданным значением; scp-константа}{\textunderscore set1}
-					\scnhasvarelementrole{2; scp-операнд со свободным значением'; scp-переменная'; rrel\textunderscore pos const\textunderscore perm}{\textunderscore arc1}
-					\scnhasvarelementrole{3; scp-операнд с заданным значением'; scp-константа'}{\textunderscore element1}
-					\scnvarrelfrom{следующий оператор}{\textunderscore operator3}
-				\scnaddlevel{-1}
-				\scnhasvarelement{\textunderscore operator3}
-				\scnaddlevel{1}
-					\scnisvarelement{return}
-				\scnaddlevel{-1}
-			\scnaddlevel{-1}
-	}}
+	\scnexplanation{В приведенном примере показана \textit{scp-программа}, состоящая из трех \textit{scp-операторов}. Данная программа проверяет, содержится ли в заданном множестве (первый параметр) заданный элемент (второй параметр), и, если нет, то добавляет его в это множество.}	
 \scnaddlevel{-1}
+\scnhaselementrole{пример}{\scnfilescn{
+		\scnheader{\_scp\_process}
+		\scnisvarelement{scp-процесс}
+		\scnhasvarelementrole{1;in-параметр}{\textunderscore set1}
+		\scnhasvarelementrole{2;in-параметр}{\textunderscore element1}
+		\scnvarrelto{декомпозиция действия}{\textunderscore ...}
+		\scnaddlevel{1}
+		\scnhasvarelementrole{1}{\textunderscore operator1}
+		\scnaddlevel{1}
+		\scnisvarelement{searchElStr3}
+		\scnhasvarelementrole{1; scp-операнд с заданным значением; scp-константа}{\textunderscore set1}
+		\scnhasvarelementrole{2; scp-операнд со свободным значением; scp-переменная; sc-дуга основного вида}{\textunderscore arc1}
+		\scnhasvarelementrole{3; scp-операнд с заданным значением; scp-константа}{\textunderscore element1}
+		\scnvarrelfrom{последовательность действий при отрицательном результате}{\textunderscore operator2}
+		\scnvarrelfrom{последовательность действий при положительном результате}{\textunderscore operator3}
+		\scnaddlevel{-1}
+		\scnhasvarelement{\textunderscore operator2}
+		\scnaddlevel{1}
+		\scnisvarelement{genElStr3}
+		\scnhasvarelementrole{1; scp-операнд с заданным значением; scp-константа}{\textunderscore set1}
+		\scnhasvarelementrole{2; scp-операнд со свободным значением; scp-переменная; sc-дуга основного вида}{\textunderscore arc1}
+		\scnhasvarelementrole{3; scp-операнд с заданным значением; scp-константа}{\textunderscore element1}
+		\scnvarrelfrom{следующий оператор}{\textunderscore operator3}
+		\scnaddlevel{-1}
+		\scnhasvarelement{\textunderscore operator3}
+		\scnaddlevel{1}
+		\scnisvarelement{return}
+		\scnaddlevel{-1}
+		\scnaddlevel{-1}
+}}
 
 
 \scnheader{агентная scp-программа}
@@ -189,9 +189,13 @@
 Принадлежность некоторого действия множеству \textit{scp-процессов} гарантирует тот факт, что в декомпозиции данного действия будут присутствовать только знаки элементарных действий (\textit{scp-операторов}), которые может интерпретировать реализация \textit{Абстрактной scp-машины}.}
 \scnrelfrom{пример выполнения}{\scnfilelong{
 \scgfileitem{figures/sd_scp/process_example.png}
+\scnexplanation{Вызов scp-программы. Генерируется соответствующий scp-процесс. Происходит вызов начального оператора scp-процесса Operator1}
 \scgfileitem{figures/sd_scp/process_example2.png}
+\scnexplanation{Действие Operator1 оказалось безуспешно выполненным. Производится запуск scp-оператора генерации трёхэементной конструкции Operator2}
 \scgfileitem{figures/sd_scp/process_example3.png}
+\scnexplanation{Действие Operator2 выполнилось. Производится запуск scp-оператора завершения выполнения программы Operator3}
 \scgfileitem{figures/sd_scp/process_example4.png}
+\scnexplanation{Действие Operator3 выполнилось. Завершаем выполнение scp-процесса}
 }}
 \scnaddlevel{1}
 \scnexplanation{В приведенном примере последовательно показаны состояния scp-процесса, соответствующего scp-программе, добавляющей заданный элемент в заданное множество, если он там ранее не содержался. В примере предполагается, что рассматриваемый элемент (element1) изначально не содержится во множестве (set1).
