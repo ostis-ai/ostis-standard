@@ -89,14 +89,15 @@
 \scnaddlevel{1}
 	\scnexplanation{В приведенном примере показана \textit{scp-программа}, состоящая из трех \textit{scp-операторов}. Данная программа проверяет, содержится ли в заданном множестве (первый параметр) заданный элемент (второй параметр), и, если нет, то добавляет его в это множество.}	
 \scnaddlevel{-1}
-\scnhaselementrole{пример}{\scnfilescn{
-		\scnheader{\_scp\_process}
+\scnhaselementrole{пример}{
+		\scnstartsetlocal \\
+		\scnheaderlocal{\_scp\_process}
 		\scnisvarelement{scp-процесс}
 		\scnhasvarelementrole{1;in-параметр}{\textunderscore set1}
 		\scnhasvarelementrole{2;in-параметр}{\textunderscore element1}
 		\scnvarrelto{декомпозиция действия}{\textunderscore ...}
 		\scnaddlevel{1}
-		\scnhasvarelementrole{1}{\textunderscore operator1}
+		\scnhasvarelementrole{начальный оператор}{\textunderscore operator1}
 		\scnaddlevel{1}
 		\scnisvarelement{searchElStr3}
 		\scnhasvarelementrole{1; scp-операнд с заданным значением; scp-константа}{\textunderscore set1}
@@ -118,7 +119,8 @@
 		\scnisvarelement{return}
 		\scnaddlevel{-1}
 		\scnaddlevel{-1}
-}}
+		\settab\scnendstructlocal
+}
 
 
 \scnheader{агентная scp-программа}
