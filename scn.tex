@@ -553,17 +553,21 @@
 	\addtocounter{hind}{-1}
 }
 
-\newcommand{\scnmakesetlocal}[1]{
-\hspace{-\bracketsize}$\pmb{\{}$\\
+\newcommand{\scnmakecommonsetlocal}[3]{
+\hspace{-\bracketsize}#1\\
 \addtocounter{ind}{1}
 \addtocounter{hind}{2}
 \sethind 
 \vspace{-1\baselineskip}
-\scnlistbrackets{#1}
-\settab$\pmb{\}}$\\
+\scnlistbrackets{#3}
+\settab#2\\
 \addtocounter{ind}{-1}
 \addtocounter{hind}{-2}
 }
+
+\newcommand{\scnmakesetlocal}[1]{\scnmakecommonsetlocal{$\pmb{\{}$}{$\pmb{\}}$}{#1}}
+
+\newcommand{\scnmakevectorlocal}[1]{\scnmakecommonsetlocal{$\pmb{\langle}$}{$\pmb{\rangle}$}{#1}}
 
 \newcommand{\scnmakeset}[1]{
 \settab$\pmb{\{}$\\
@@ -575,6 +579,10 @@
 
 \newcommand{\scnhaselementset}[1]{
 \settab$\bm{\ni}$\makediff{\nisize}\scnmakesetlocal{#1}
+}
+
+\newcommand{\scnhaselementvector}[1]{
+\settab$\bm{\ni}$\makediff{\nisize}\scnmakevectorlocal{#1}
 }
 
 \newcommand{\scnhaselement}[1]{
