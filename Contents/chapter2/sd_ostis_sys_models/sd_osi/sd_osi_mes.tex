@@ -7,7 +7,7 @@
 \scnheader{Предметная область входящих в ostis-систему и выходящих из ostis-системы сообщений}
 \scnsdmainclass{сообщение}
 \scnsdclass{***}
-\scnsdrelation{отправитель*; получатель*}
+\scnsdrelation{декомпозиция сообщения; последовательность сообщений*; отправитель*; получатель*}
 
 \scnheader{сообщение}
 \scnidtf{дискретная информационная конструкция, используемая в процессе передачи от \textit{\textbf{отправителя*}} к \textit{\textbf{получателю*}}}
@@ -21,14 +21,35 @@
 неатомарное сообщение\\
 \scnaddlevel{1}
 \scnidtf{сообщение, в состав которого входят другие сообщения}
+\scnrelfrom{типичная семантическая окрестность}{
+\scnfilelong{
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{figures/chapter2/sd_ostis_sys_models/sd_osi/non_atomic_message.png}
+\end{figure}
+}}
 \scnaddlevel{-1}}
 \scnsubdividing{сообщение на естественном языке
 \scnaddlevel{1}
 \scnidtf{сообщение, написанное с использованием естественного языка}
+\scnrelfrom{типичная семантическая окрестность}{
+\scnfilelong{
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.4\linewidth]{figures/chapter2/sd_ostis_sys_models/sd_osi/natural_language_message.png}
+\end{figure}
+}}
 \scnaddlevel{-1};
 сообщение на искусственном языке\\
 \scnaddlevel{1}
 \scnidtf{сообщение, написанное с использованием искусственного языка}
+\scnrelfrom{типичная семантическая окрестность}{
+\scnfilelong{
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.4\linewidth]{figures/chapter2/sd_ostis_sys_models/sd_osi/artificial_language_message.png}
+\end{figure}
+}}
 \scnaddlevel{-1}}
 %=================
 \scnsuperset{графическое сообщение
@@ -37,12 +58,26 @@
 \scnsuperset{видео-сообщение}
 \scnaddlevel{1}
 \scnidtf{сообщение, содержащее видео-информацию}
+\scnrelfrom{типичная семантическая окрестность}{
+\scnfilelong{
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.4\linewidth]{figures/chapter2/sd_ostis_sys_models/sd_osi/video_message.png}
+\end{figure}
+}}
 \scnaddlevel{-1}
 \scnaddlevel{-1}
 }
 \scnsuperset{аудио-сообщение\\
 \scnaddlevel{1}
 \scnidtf{сообщение, представленное в звуковом формате}
+\scnrelfrom{типичная семантическая окрестность}{
+\scnfilelong{
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.4\linewidth]{figures/chapter2/sd_ostis_sys_models/sd_osi/audio_message.png}
+\end{figure}
+}}
 \scnaddlevel{-1}
 }
 \scnsuperset{обонятельное сообщение\\
@@ -53,9 +88,15 @@
 \scnsuperset{текстовое сообщение\\
 \scnaddlevel{1}
 \scnidtf{сообщение, содержащее текстовую информацию}
+\scnrelfrom{типичная семантическая окрестность}{
+\scnfilelong{
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.4\linewidth]{figures/chapter2/sd_ostis_sys_models/sd_osi/text_message.png}
+\end{figure}
+}}
 \scnaddlevel{-1}
 }
-
 \scnsuperset{сообщение, требующее трансляции
 \scnaddlevel{1}
 \scnidtf{сообщение, которое система должна сформировать для дальнейшей передачи его пользователю}
@@ -71,7 +112,7 @@
 \scnsubdividing{сообщение пользователя на внешнем языке\\
 \scnaddlevel{1}
 \scnidtf{сообщение пользователя ostis-системы, сформированное на языке, внешнем по отношению к ostis-системе, который не используется для коммуникации внутри системы}
-\scnsubset{сообщение пользователя на языке интерфейсных действий}
+\scnsuperset{сообщение пользователя на языке интерфейсных действий}
 \scnaddlevel{1}
 \scnidtf{сообщение пользователя ostis-системы, сформированное на языке интерфейсных действий (интерфейсных команд), представляющее собой последовательность действий с указанием объектов, на которых эти действия заданы, и типов действий}
 \scnaddlevel{-1}
@@ -81,9 +122,13 @@
 \scnidtf{сообщение пользователя, записаннное в SC-коде}
 \scnidtf{сообщение пользователя ostis-системы, представляющее собой некоторый sc-текст, предназначенный для анализа ostis-системой}
 \scnaddlevel{-1}}
-
-\scnheader{}
-
+\scnrelfrom{типичная семантическая окрестность}{
+\scnfilelong{
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.35\linewidth]{figures/chapter2/sd_ostis_sys_models/sd_osi/user_message.png}
+\end{figure}
+}}
 
 \scnheader{сообщение системы}
 \scnidtf{сообщение, \textit{\textbf{отправителем*}} которого является некоторая система}
@@ -92,6 +137,13 @@
 \scnheader{сообщение ostis-системы}
 \scnidtf{сообщение, \textit{\textbf{отправителем*}} которого является ostis-система}
 \scnsubdividing{эффекторное сообщение ostis-системы; рецепторное сообщение ostis-системы}
+\scnrelfrom{типичная семантическая окрестность}{
+\scnfilelong{
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.35\linewidth]{figures/chapter2/sd_ostis_sys_models/sd_osi/ostis_system_message.png}
+\end{figure}
+}}
 
 %Разбиение по признаку адресата сообщения
 \scnheader{эффекторное сообщение ostis-системы}
@@ -162,6 +214,14 @@
 \scnidtf{нейтральное сообщение, являющееся прощанием}
 \scnaddlevel{-1}}
 \scnaddlevel{-1}}
+\scnrelfrom{типичная семантическая окрестность}{
+\scnfilelong{
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.4\linewidth]{figures/chapter2/sd_ostis_sys_models/sd_osi/narrative_message.png}
+\end{figure}
+}}
+
 
 \scnheader{информационное сообщение}
 \scnidtf{повествовательное сообщение, предназначенное для передачи новой информации об \textit{\textbf{объекте\scnrolesign}} сообщения}
@@ -221,20 +281,49 @@
 \scnnote{Данный тип сообщений может быть вызван в случае, когда человек испытывает сразу несколько, как правило, противоречащих друг другу эмоций.}
 \scnaddlevel{-1}}
 
-\scnheader{временная точка отправления сообщения}
-\scnsubset{временная точка}
-\scnidtf{временная точка, в которой сообщение было отправлено}
+%\scnheader{время отправления сообщения}
+%\scnsubset{начало}
+%\scnidtf{временная точка}
 
-\scnheader{временная точка получения сообщения}
-\scnsubset{временная точка}
-\scnidtf{временная точка, в которой сообщение было получено}
+%\scnheader{время получения сообщения}
+%\scnsubset{завершение}
+%\scnidtf{временная точка, в которой сообщение было получено}
 
 %отношения
+\scnheader{декомпозиция сообщения*}
+\scnidtf{квазибинарное отношение, связывающее неатомарное сообщение c множеством атомарных сообщений, на которое сообщение разделяется}
+\scnrelfrom{первый домен}{связь}
+\scnrelfrom{второй домен}{неатомарное сообщение}
+\scniselement{квазибинарное отношение}
+\scniselement{ориентированное отношение}
+\scniselement{антирефлексивное отношение}
+\scniselement{антитранзитивное отношение}
+\scniselement{асимметричное отношение}
+
+\scnheader{последовательность сообщений*}
+\scnidtf{бинарное отношение, связывающее упорядоченные относительно друг друга сообщения}
+\scnrelfrom{первый домен}{sc-дуга принадлежности}
+\scnrelfrom{второй домен}{sc-дуга принадлежности}
+\scniselement{бинарное отношение}
+\scniselement{ориентированное отношение}
+\scniselement{антирефлексивное отношение}
+\scniselement{транзитивное отношение}
+\scniselement{асимметричное отношение}
+
+\newpage
+\scnheader{Рис. Пример использования отношений \textbf{декомпозиция сообщения*} и \textbf{последовательность сообщений*}}
+\scneqtable{
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{figures/chapter2/sd_ostis_sys_models/sd_osi/non_atomic_message.png}
+\end{figure}
+}}
+
 \scnheader{отправитель*}
 \scnidtf{отправитель сообщения*}
 \scnidtf{бинарное ориентированное отношение, связывающее сообщение с его отправителем*}
 \scnrelfrom{первый домен}{сообщение}
-\scnrelfrom{второй домен}{живое существо $\cup$ компьютерная система}
+\scnrelfrom{второй домен}{живое существо $\cup$ кибернетическая система}
 \scniselement{бинарное отношение}
 \scniselement{ориентированное отношение}
 \scniselement{рефлексивное отношение}
@@ -245,12 +334,20 @@
 \scneq{получатель сообщения*}
 \scnidtf{бинарное ориентированное отношение, связывающее сообщение с его получателем*}
 \scnrelfrom{первый домен}{сообщение}
-\scnrelfrom{второй домен}{живое существо $\cup$ компьютерная система}
+\scnrelfrom{второй домен}{живое существо $\cup$ кибернетическая система}
 \scniselement{бинарное отношение}
 \scniselement{ориентированное отношение}
 \scniselement{рефлексивное отношение}
 \scniselement{транзитивное отношение}
 \scniselement{асимметричное отношение}
 
+\newpage
+\scnheader{Рис. Пример использования отношений \textbf{отправитель*} и \textbf{получатель*}}
+\scneqtable{
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{figures/chapter2/sd_ostis_sys_models/sd_osi/example_of_using_sender_and_recipient.png}
+\end{figure}
+}}
 
 \end{SCn}
