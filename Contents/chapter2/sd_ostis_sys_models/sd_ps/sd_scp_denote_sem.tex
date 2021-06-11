@@ -6,8 +6,8 @@
 
 \scnheader{Предметная область денотационной семантики языка SCP}
 \scniselement{предметная область}
-\scnsdmainclasssingle{***}
-\scnsdclass{***}
+\scnsdmainclasssingle{scp-оператор}
+\scnsdrelation{scp-операнд'; scp-константа'; scp-переменная'; scp-операнд с заданным значением'; scp-операнд со свободным значением'; формируемое множество'; удаляемый sc-элемент'}
 
 \scnheader{scp-оператор}
 \scnrelto{включение}{действие в sc-памяти}
@@ -49,7 +49,6 @@
     \scnsubdividing{scp-оператор снятия всех блокировок данного scp-процесса;scp-оператор снятия блокировки с sc-элемента;scp-оператор установки полной блокировки на sc-элемент;scp-оператор установки блокировки на изменение sc-элемента;scp-оператор установки блокировки на удаление sc-элемента;scp-оператор снятия блокировки со структуры;scp-оператор установки полной блокировки на структуру;scp-оператор установки блокировки на изменение структуры;scp-оператор установки блокировки на удаление структуры}}
 
 \scnresetlevel
-
 \scnheader{scp-операнд’}
 \scnrelto{включение}{аргумент действия'}
 \scniselement{неосновное понятие}
@@ -137,6 +136,36 @@
 \scnhaselementset{scp-переменная\scnrolesign;sc-переменная}
 \scnhaselementset{scp-константа\scnrolesign;sc-константа}
 
+\scnheader{scp-оператор генерации пятиэлементной конструкции}
+\scnrelfrom{пример выполнения}{\scnfilelong{
+		\scnfilescg{figures/sd_scp/genElStr5_fafaa.png}
+		\scnexplanation{Вызов scp-оператора.}
+		\scnfilescg{figures/sd_scp/genElStr5_fafaa_2.png}
+		\scnexplanation{Результат выполнения scp-оператора.}
+}}
+\scnexplanation{В приведённом примере показан пример scp-оператора генерации пятиэлементной конструкции, которая имеет два scp-операнда с заданным значением. В примере предполагается, что рассматриваемые элементы (some\_node1 и some\_node2) изначально никак не связаны между собой.}
+
+\scnheader{scp-оператор поиска трехэлементной конструкции}
+\scnrelfrom{пример выполнения}{\scnfilelong{
+		\scnfilescg{figures/sd_scp/searchElStr3_faf.png}
+		\scnaddlevel{1}
+		\scnexplanation{Вызов scp-оператора.}
+		\scnaddlevel{-1}
+		\scnfilescg{figures/sd_scp/searchElStr3_faf_2.png}
+		\scnaddlevel{1}
+		\scnexplanation{Результат выполнения scp-оператора.}
+		\scnaddlevel{-1}
+}}
+\scnexplanation{В приведённом примере показан пример scp-оператора генерации пятиэлементной конструкции, которая имеет два scp-операнда с заданным значением. В примере предполагается, что рассматриваемые элементы (some\_node1 и some\_node2) изначально никак не связаны между собой.}
+
+\scnheader{scp-оператор удаления одноэлементной конструкции}
+\scnrelfrom{пример выполнения}{\scnfilelong{
+		\scnfilescg{figures/sd_scp/erase_edge.png}
+		\scnfileitem{\scnexplanation{Вызов scp-оператора.}}
+		\scnfilescg{figures/sd_scp/erase_edge_2.png}
+		\scnfileitem{\scnexplanation{Результат выполнения scp-оператора.}}
+}}
+\scnexplanation{В приведённом примере показан пример scp-оператора генерации пятиэлементной конструкции, которая имеет два scp-операнда с заданным значением. В примере предполагается, что рассматриваемые элементы (some\_node1 и some\_node2) изначально никак не связаны между собой.}
 \scnendstruct
 
 \end{SCn}
