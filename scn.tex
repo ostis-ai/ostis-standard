@@ -52,6 +52,9 @@
 \newlength{\doublesquaresize}
 \setlength{\doublesquaresize}{1.4em}
 
+\newlength{\commentsize}
+\setlength{\commentsize}{1em}
+
 \newlength{\eqsize}
 \setlength{\eqsize}{0.8em}
 
@@ -184,7 +187,12 @@
 \fi
 }
 
-\newcommand{\scnfragmentcaptiontext}[1]{\bfseries /*~#1~\filldots/\hspace{0.5\textwidth}\normalfont}
+\newcommand{\scnfragmentcaptiontext}[1]{
+\begin{adjustwidth}{\commentsize}{0.5\textwidth+\commentsize}
+	\justify
+	\setlength{\parskip}{0.5em}
+	\hspace{-\commentsize}\bfseries /*~#1~\filldots/\normalfont	
+\end{adjustwidth}}
 
 \newcommand{\scnfragmentcaption}[1]{\bfseries /*\filldots/\hspace{0.5\textwidth}\normalfont}
 
