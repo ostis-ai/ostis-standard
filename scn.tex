@@ -532,6 +532,13 @@
 \addtocounter{hind}{-1}
 }
 
+\newcommand{\scnnotsubset}[1]{
+\addtocounter{hind}{1}
+\sethind 
+\settab$\bm{\not\subset}$\makediff{\subsetsize}{\itshape #1}\\
+\addtocounter{hind}{-1}
+}
+
 \newcommand{\scnsuperset}[1]{
 \addtocounter{hind}{1}
 \sethind 
@@ -646,6 +653,16 @@
 \settab{\itshape #2}\\
 \addtocounter{ind}{-1}
 \addtocounter{hind}{-1}
+}
+
+\newcommand{\scniselementlist}[2]{
+\settab$\bm{\in}$\makediff{\nisize}\scnrolerellist{#1}\\
+\addtocounter{ind}{1}
+\addtocounter{hind}{2}
+\sethind 
+\scnlist{#2}
+\addtocounter{ind}{-1}
+\addtocounter{hind}{-2}
 }
 
 \newcommand{\scnrole}[1]{{\itshape #1\scnrolesign}:}
