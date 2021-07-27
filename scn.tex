@@ -79,15 +79,35 @@
 \makeatletter
 \renewcommand{\@cftmaketoctitle}{}
 \makeatother
-\renewcommand{\cftchapaftersnum}{.}
-\renewcommand{\cftsecaftersnum}{.}
-\renewcommand{\cftsubsecaftersnum}{.}
-\renewcommand{\cftsubsubsecaftersnum}{.}
-\renewcommand{\cftparaaftersnum}{.}
-\renewcommand{\cftsubparaaftersnum}{.}
+%\renewcommand{\cftchapaftersnum}{.}
+%\renewcommand{\cftsecaftersnum}{.}
+%\renewcommand{\cftsubsecaftersnum}{.}
+%\renewcommand{\cftsubsubsecaftersnum}{.}
+%\renewcommand{\cftparaaftersnum}{.}
+%\renewcommand{\cftsubparaaftersnum}{.}
 \renewcommand{\cftchapfont}{\bfseries}
 \renewcommand{\cftsecfont}{\bfseries}
 
+\makeatletter
+\renewcommand{\cftchappresnum}{\begin{lrbox}{\@tempboxa}}
+\renewcommand{\cftchapaftersnum}{\end{lrbox}}
+\cftsetindents{chapter}{0}{0}
+\renewcommand{\cftsecpresnum}{\begin{lrbox}{\@tempboxa}}
+\renewcommand{\cftsecaftersnum}{\end{lrbox}}
+\cftsetindents{section}{\tabsize}{0}
+\renewcommand{\cftsubsecpresnum}{\begin{lrbox}{\@tempboxa}}
+\renewcommand{\cftsubsecaftersnum}{\end{lrbox}}
+\cftsetindents{subsection}{\tabsize+\tabsize}{0}
+\renewcommand{\cftsubsubsecpresnum}{\begin{lrbox}{\@tempboxa}}
+\renewcommand{\cftsubsubsecaftersnum}{\end{lrbox}}
+\cftsetindents{subsubsection}{\tabsize+\tabsize+\tabsize}{0}
+\renewcommand{\cftparapresnum}{\begin{lrbox}{\@tempboxa}}
+\renewcommand{\cftparaaftersnum}{\end{lrbox}}
+\cftsetindents{paragraph}{\tabsize+\tabsize+\tabsize+\tabsize}{0}
+\renewcommand{\cftsubparapresnum}{\begin{lrbox}{\@tempboxa}}
+\renewcommand{\cftsubparaaftersnum}{\end{lrbox}}
+\cftsetindents{subparagraph}{\tabsize+\tabsize+\tabsize+\tabsize+\tabsize}{0}
+\makeatother
 
 %SCN START
 
@@ -196,12 +216,20 @@
 
 \newcommand{\scnfragmentcaption}[1]{\bfseries /*\filldots/\hspace{0.5\textwidth}\normalfont}
 
-\makeatletter
-\newcommand{\scnsegmentcaption}{\normalfont \bfseries /*~Сегмент~\theseg~ Раздела~\@currentlabel~\filldots/\hspace{0.5\textwidth}\normalfont}
-\makeatother
+%\makeatletter
+%\newcommand{\scnsegmentcaption}{\normalfont \bfseries /*~Сегмент~\theseg~ Раздела~\@currentlabel~\filldots/\hspace{0.5\textwidth}\normalfont}
+%\makeatother
 
 \makeatletter
-\newcommand{\scnsegmentcaptionbeginning}{\normalfont \bfseries /*~Сегмент~\theseg~Начала~Раздела~\@currentlabel~\filldots/\hspace{0.5\textwidth}\normalfont}
+\newcommand{\scnsegmentcaption}{\normalfont \bfseries /*~Сегмент~\theseg~ Раздела~\filldots/\hspace{0.5\textwidth}\normalfont}
+\makeatother
+
+%\makeatletter
+%\newcommand{\scnsegmentcaptionbeginning}{\normalfont \bfseries /*~Сегмент~\theseg~Начала~Раздела~\@currentlabel~\filldots/\hspace{0.5\textwidth}\normalfont}
+%\makeatother
+
+\makeatletter
+\newcommand{\scnsegmentcaptionbeginning}{\normalfont \bfseries /*~Сегмент~\theseg~Начала~Раздела~\filldots/\hspace{0.5\textwidth}\normalfont}
 \makeatother
 
 \NewDocumentCommand\scnlist{>{\SplitList{;}}m}
@@ -979,52 +1007,103 @@
 
 \newcommand{\scsuperchapter}{{\normalfont\bfseries\large/*\filldots/}\vspace{0.5\afterparlength}}
 
+%\newcommand{\scchapter}[1]{\clearpage
+%\chapter[\textit{#1}]{/*~Раздел~ \thechapter~\filldots/\vspace{\afterparlength}}}
+
 \newcommand{\scchapter}[1]{\clearpage
-\chapter[\textit{#1}]{/*~Раздел~ \thechapter~\filldots/\vspace{\afterparlength}}}
+\chapter[\textit{#1}]{/*~Раздел~\filldots/\vspace{\afterparlength}}}
+
+%\newcommand{\scsection}[1]{\clearpage
+%\section[\textit{#1}]{/*~Раздел~\thesection~\filldots/\vspace{\afterparlength}}}
 
 \newcommand{\scsection}[1]{\clearpage
-\section[\textit{#1}]{/*~Раздел~\thesection~\filldots/\vspace{\afterparlength}}}
+\section[\textit{#1}]{/*~Раздел~\filldots/\vspace{\afterparlength}}}
+
+%\newcommand\scsubsection[1]{\clearpage
+%\subsection[\textit{#1}]{/*~Раздел~ \thesubsection~\filldots/\vspace{\afterparlength}}}
 
 \newcommand\scsubsection[1]{\clearpage
-\subsection[\textit{#1}]{/*~Раздел~ \thesubsection~\filldots/\vspace{\afterparlength}}}
+\subsection[\textit{#1}]{/*~Раздел~\filldots/\vspace{\afterparlength}}}
 
-\WithSuffix\newcommand\scsubsection*[2]{\clearpage\subsection*{/*~Раздел~ #2~\filldots/\vspace{\afterparlength}}
-\addcontentsline{toc}{subsection}{#1}
+%\WithSuffix\newcommand\scsubsection*[2]{\clearpage\subsection*{/*~Раздел~ #2~\filldots/\vspace{\afterparlength}}
+%\addcontentsline{toc}{subsection}{#1}
+%}
+
+\WithSuffix\newcommand\scsubsection*[2]{\clearpage\subsection*{/*~Раздел~\filldots/\vspace{\afterparlength}}
+	\addcontentsline{toc}{subsection}{#1}
 }
+
+%\newcommand{\scsubsubsection}[1]{\clearpage
+%\subsubsection[\textit{#1}]{/*~Раздел~ \thesubsubsection~\filldots/\vspace{\afterparlength}}}
 
 \newcommand{\scsubsubsection}[1]{\clearpage
-\subsubsection[\textit{#1}]{/*~Раздел~ \thesubsubsection~\filldots/\vspace{\afterparlength}}}
+\subsubsection[\textit{#1}]{/*~Раздел~\filldots/\vspace{\afterparlength}}}
 
-\WithSuffix\newcommand\scsubsubsection*[2]{\clearpage\subsubsection*{/*~Раздел~#2~\filldots/\vspace{\afterparlength}}
-\addcontentsline{toc}{subsubsection}{#1}
+%\WithSuffix\newcommand\scsubsubsection*[2]{\clearpage\subsubsection*{/*~Раздел~#2~\filldots/\vspace{\afterparlength}}
+%\addcontentsline{toc}{subsubsection}{#1}
+%}
+
+\WithSuffix\newcommand\scsubsubsection*[2]{\clearpage\subsubsection*{/*~Раздел~\filldots/\vspace{\afterparlength}}
+	\addcontentsline{toc}{subsubsection}{#1}
 }
 
+%\newcommand{\scparagraph}[1]{\clearpage
+%\paragraph[\textit{#1}]{/*~Раздел~\theparagraph~\filldots/\vspace{\afterparlength}}}
+
 \newcommand{\scparagraph}[1]{\clearpage
-\paragraph[\textit{#1}]{/*~Раздел~\theparagraph~\filldots/\vspace{\afterparlength}}}
+	\paragraph[\textit{#1}]{/*~Раздел~\filldots/\vspace{\afterparlength}}}
+
+%\newcommand{\scchapterfinish}[1]{\clearpage
+%\section*{/*~Завершение раздела~\ref{#1}~\filldots/\vspace{\afterparlength}}}
 
 \newcommand{\scchapterfinish}[1]{\clearpage
-\section*{/*~Завершение раздела~\ref{#1}~\filldots/\vspace{\afterparlength}}}
+\section*{/*~Завершение раздела~\filldots/\vspace{\afterparlength}}}
+
+
+%\newcommand{\scsectionfinish}[1]{\clearpage
+%\section*{/*~Завершение раздела~\ref{#1}~\filldots/\vspace{\afterparlength}}}
 
 \newcommand{\scsectionfinish}[1]{\clearpage
-\section*{/*~Завершение раздела~\ref{#1}~\filldots/\vspace{\afterparlength}}}
+	\section*{/*~Завершение раздела~\filldots/\vspace{\afterparlength}}}
+
+%\newcommand{\scsubsectionfinish}[1]{\clearpage
+%\subsection*{/*~Завершение раздела~\ref{#1}~\filldots/\vspace{\afterparlength}}}
 
 \newcommand{\scsubsectionfinish}[1]{\clearpage
-\subsection*{/*~Завершение раздела~\ref{#1}~\filldots/\vspace{\afterparlength}}}
+	\subsection*{/*~Завершение раздела~\filldots/\vspace{\afterparlength}}}
+
+
+%\newcommand{\scsubsubsectionfinish}[1]{\clearpage
+%\subsubsection*{/*~Завершение раздела~\ref{#1}~\filldots/\vspace{\afterparlength}}}
 
 \newcommand{\scsubsubsectionfinish}[1]{\clearpage
-\subsubsection*{/*~Завершение раздела~\ref{#1}~\filldots/\vspace{\afterparlength}}}
+	\subsubsection*{/*~Завершение раздела~\filldots/\vspace{\afterparlength}}}
+
+%\makeatletter
+%\newcommand{\scsectionbeginning}{\bigskip
+%{\bfseries \normalsize /*~Начало  %Раздела~\@currentlabel~\filldots/\hspace{0.5\textwidth}\normalfont}
+%\scnsectionheader{Начало Раздела "\@currentlabelname"}
+%}
+%\makeatother
 
 \makeatletter
 \newcommand{\scsectionbeginning}{\bigskip
-{\bfseries \normalsize /*~Начало  Раздела~\@currentlabel~\filldots/\hspace{0.5\textwidth}\normalfont}
-\scnsectionheader{Начало Раздела "\@currentlabelname"}
+	{\bfseries \normalsize /*~Начало  Раздела~\filldots/\hspace{0.5\textwidth}\normalfont}
+	\scnsectionheader{Начало Раздела "\@currentlabelname"}
 }
 \makeatother
 
+%\makeatletter
+%\newcommand{\scsectionbeginningname}[1]{\bigskip
+%{\bfseries \normalsize /*~Начало  Раздела~\@currentlabel~\filldots/\hspace{0.5\textwidth}\normalfont}
+%\scnsectionheader{#1}
+%}
+%\makeatother
+
 \makeatletter
 \newcommand{\scsectionbeginningname}[1]{\bigskip
-{\bfseries \normalsize /*~Начало  Раздела~\@currentlabel~\filldots/\hspace{0.5\textwidth}\normalfont}
-\scnsectionheader{#1}
+	{\bfseries \normalsize /*~Начало  Раздела~\filldots/\hspace{0.5\textwidth}\normalfont}
+	\scnsectionheader{#1}
 }
 \makeatother
 
