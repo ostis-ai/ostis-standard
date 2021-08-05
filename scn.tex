@@ -107,6 +107,12 @@
 \renewcommand{\cftsubparapresnum}{\begin{lrbox}{\@tempboxa}}
 \renewcommand{\cftsubparaaftersnum}{\end{lrbox}}
 \cftsetindents{subparagraph}{\tabsize+\tabsize+\tabsize+\tabsize+\tabsize}{0}
+\renewcommand\cftchapafterpnum{\bigskip}
+\renewcommand\cftsecafterpnum{\bigskip}
+\renewcommand\cftsubsecafterpnum{\bigskip}
+\renewcommand\cftsubsubsecafterpnum{\bigskip}
+\renewcommand\cftparaafterpnum{\bigskip}
+\renewcommand\cftsubparaafterpnum{\bigskip}
 \makeatother
 
 %SCN START
@@ -922,6 +928,12 @@
 \hspace{-1em}\normalfont /*~#1{}~*/
 \end{adjustwidth}
 }
+
+\makeatletter
+\newcommand{\scnendcurrentsectioncomment}{
+\scninlinesourcecommentpar{Завершили \textit{Раздел ``\@currentlabelname''}}
+}
+\makeatother
 
 \newcommand{\scnauthorcomment}[1]{\begin{flushleft}
 /*/*#1*/*/\end{flushleft}}
