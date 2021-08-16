@@ -1,151 +1,273 @@
 \begin{SCn}
-	\scnheader{user interface component}
-		\scnrelfromlist{включение}{presentation user interface component\\
-				\scnaddlevel{1}
-			{\scnrelfromlist{включение}{output\\
-				\scnaddlevel{1}
-				\scnrelfromlist{включение}{image-output;graphical-output\\
-				{	\scnaddlevel{1}
-					\scnrelfromlist{включение}{chart; map; progress-bar 	\scnaddlevel{-1}}}				
-				;video-output\\
-				;sound-output\\
-				;text-output\\{
-				\scnaddlevel{1}
-				\scnrelfromlist{включение}{headline; paragraph;message}}}
-				\scnaddlevel{-2}
-				;decorative user interface component\\
-				;label
-				;container\\
-				\scnaddlevel{1}
-				\scnrelfromlist{включение}{single-purpose-container\\
-					\scnaddlevel{1}
-					\scnrelfromlist{включение}{menu
-						;menu-bar
-						;tool-bar}
-					\scnaddlevel{-1}
-					;multi-purpose-container\\
-						\scnaddlevel{1}
-					\scnrelfromlist{включение}{status-bar;table-row-container;list-container;table-cell-container;tree-container;labeled-group;tab-pane;spin-pane;tree-node-container;scroll-pane
-						;window\\
-						{
-							\scnaddlevel{1}
-						\scnrelfromlist{включение}{modal-window;non-modal-window}
-						\scnaddlevel{-1}}	}
-				\scnaddlevel{-1}
-			}	\scnaddlevel{-1}}
-			\scnaddlevel{-1}	}
-		;interactive user interface component\\
+	
+\scnheader{user interface component}
+	\scnsuperset{presentation user interface component}
+		\scnaddlevel{1}
+		\scnsuperset{output}
 			\scnaddlevel{1}
-	\scnrelfromlist{включение}{data-input-component		
-		;presentation-manipulation-component \\	
-		;operation-trigger-component
-	}	\scnaddlevel{-1}
-}
-
+			\scnsuperset{image-output}
+			\scnsuperset{graphical-output}
+				\scnaddlevel{1}
+				\scnsuperset{chart}
+				\scnsuperset{map}
+				\scnsuperset{progress-bar} 
+				\scnaddlevel{-1}
+			\scnsuperset{video-output}
+			\scnsuperset{sound-output}
+			\scnsuperset{text-output}
+				\scnaddlevel{1}
+				\scnsuperset{headline}
+				\scnsuperset{paragraph}
+				\scnsuperset{message}
+				\scnaddlevel{-2}
+	\scnsuperset{decorative user interface component}
+	\scnsuperset{label}
+	\scnsuperset{container}
+		\scnaddlevel{1}
+		\scnsuperset{single-purpose-container}
+			\scnaddlevel{1}
+			\scnsuperset{menu}
+			\scnsuperset{menu-bar}
+			\scnsuperset{tool-bar}
+			\scnaddlevel{-1}
+		\scnsuperset{multi-purpose-container}
+			\scnaddlevel{1}
+			\scnsuperset{status-bar}
+			\scnsuperset{table-row-container}
+			\scnsuperset{list-container}
+			\scnsuperset{table-cell-container}
+			\scnsuperset{tree-container}
+			\scnsuperset{labeled-group}
+			\scnsuperset{tab-pane}
+			\scnsuperset{spin-pane}
+			\scnsuperset{tree-node-container}
+			\scnsuperset{scroll-pane}
+			\scnsuperset{window}
+				\scnaddlevel{1}
+				\scnsuperset{modal-window}
+				\scnsuperset{non-modal-window}
+				\scnaddlevel{-4}		
+	\scnsuperset{interactive user interface component}
+		\scnaddlevel{1}
+		\scnsuperset{data-input-component}
+			\scnaddlevel{1}
+			\scnsuperset{data-input-component-with-direct-feedback}
+				\scnaddlevel{1}
+				\scnsuperset{text-input-component-with-direct-feedback}
+					\scnaddlevel{1}
+					\scnsuperset{multi-line-text-field}
+					\scnsuperset{single-line-text-field}
+					\scnaddlevel{-1}
+				\scnsuperset{slider}
+				\scnsuperset{drawing-area}
+				\scnsuperset{selection-component}
+					\scnaddlevel{1}
+					\scnsuperset{selection-component-multiple-values}
+					\scnsuperset{selection-component-single-values}
+					\scnaddlevel{-1}
+				\scnsuperset{selectable-data-representation}			
+					\scnaddlevel{1}
+					\scnsuperset{check-box}
+					\scnsuperset{radio-button}
+					\scnsuperset{toggle-button}
+					\scnsuperset{selectable-item}
+					\scnaddlevel{-2}
+			\scnsuperset{data-input-component-without-direct-feedback}
+				\scnaddlevel{1}
+				\scnsuperset{spin-button}
+				\scnsuperset{speech-button}
+				\scnsuperset{motion-input}
+				\scnaddlevel{-2}
+		\scnsuperset{presentation-manipulation-component}
+			\scnaddlevel{1}
+			\scnsuperset{activating-component}
+			\scnsuperset{continuous-manipulation-component}
+				\scnaddlevel{1}
+				\scnsuperset{scrollbar}
+				\scnsuperset{resizer}
+				\scnaddlevel{-2}
+		\scnsuperset{operation-trigger-component}
+			\scnaddlevel{1}
+			\scnsuperset{command-selection-component}
+				\scnaddlevel{1}
+				\scnsuperset{button}
+				\scnsuperset{menu-item}
+				\scnaddlevel{-1}
+			\scnsuperset{command-input-component}
+			\scnaddlevel{-2}
 
 \scnheader{presentation user interface component}
-\scnexplanation{\textbf{presentation user interface component} -- это класс компонентов пользовательского интерфейса, предназначенный для представления информации.}
+\scnexplanation{\textbf{presentation user interface component} -- класс компонентов пользовательского интерфейса, предназначенный для представления информации.}
 
 
 \scnheader{output}
-\scnexplanation{\textbf{output} -- это класс компонентов пользовательского интерфейса, предназначенный для представления выходной информации.}
+\scnexplanation{\textbf{output} -- класс компонентов пользовательского интерфейса, предназначенный для представления выходной информации.}
 
 \scnheader{image-output}
-\scnexplanation{\textbf{image-output} -- это класс компонентов пользовательского интерфейса, предназначенный для отображения изображений.}
+\scnexplanation{\textbf{image-output} -- класс компонентов пользовательского интерфейса, предназначенный для отображения изображений.}
 
 \scnheader{graphical-output}
-\scnexplanation{\textbf{graphical-output} -- это класс компонентов пользовательского интерфейса, предназначенный для представления графической информации.}
+\scnexplanation{\textbf{graphical-output} -- класс компонентов пользовательского интерфейса, предназначенный для представления графической информации.}
 
 \scnheader{chart}
-\scnexplanation{\textbf{chart} -- это компонент пользовательского интерфейса, предназначенный для отображения графиков.}
+\scnexplanation{\textbf{chart} -- компонент пользовательского интерфейса, предназначенный для отображения графиков.}
 
 \scnheader{map}
-\scnexplanation{\textbf{map} -- это компонент пользовательского интерфейса, предназначенный для отображения карт.}
+\scnexplanation{\textbf{map} -- компонент пользовательского интерфейса, предназначенный для отображения карт.}
 
 \scnheader{progress-bar}
-\scnexplanation{\textbf{progress-bar} -- это компонент пользовательского интерфейса, предназначенный для отображения процента выполнения какой-либо задачи.}
+\scnexplanation{\textbf{progress-bar} -- компонент пользовательского интерфейса, предназначенный для отображения процента выполнения какой-либо задачи.}
 
 \scnheader{video-output}
-\scnexplanation{\textbf{video-output} -- это класс компонентов пользовательского интерфейса, предназначенный для представления видеоинформации.}
+\scnexplanation{\textbf{video-output} -- класс компонентов пользовательского интерфейса, предназначенный для представления видеоинформации.}
 
 \scnheader{sound-output}
-\scnexplanation{\textbf{sound-output} -- это класс компонентов пользовательского интерфейса, предназначенный для представления аудиоинформации.}
+\scnexplanation{\textbf{sound-output} -- класс компонентов пользовательского интерфейса, предназначенный для представления аудиоинформации.}
 
 \scnheader{text-output}
-\scnexplanation{\textbf{text-output} -- это класс компонентов пользовательского интерфейса, предназначенный для представления текстовой информации.}
+\scnexplanation{\textbf{text-output} -- класс компонентов пользовательского интерфейса, предназначенный для представления текстовой информации.}
 
 \scnheader{headline}
-\scnexplanation{\textbf{headline} -- это компонент пользовательского интерфейса, предназначенный для отображения заголовков.}
+\scnexplanation{\textbf{headline} -- компонент пользовательского интерфейса, предназначенный для отображения заголовков.}
 
 \scnheader{paragraph}
-\scnexplanation{\textbf{paragraph} -- это компонент пользовательского интерфейса, предназначенный для отображения блоков текста. Он отделяется от других блоков пустой строкой или первой строкой с отступом.}
+\scnexplanation{\textbf{paragraph} -- компонент пользовательского интерфейса, предназначенный для отображения блоков текста. Он отделяется от других блоков пустой строкой или первой строкой с отступом.}
 
 \scnheader{message}
-\scnexplanation{\textbf{message} -- это компонент пользовательского интерфейса, предназначенный для отображения сообщения.}
+\scnexplanation{\textbf{message} -- компонент пользовательского интерфейса, предназначенный для отображения сообщения.}
 
 \scnheader{decorative user interface component}
-\scnexplanation{\textbf{decorative user interface component} -- это класс компонентов пользовательского интерфейса, предназначенный для стилизации интерфейса.}
+\scnexplanation{\textbf{decorative user interface component} -- класс компонентов пользовательского интерфейса, предназначенный для стилизации интерфейса.}
 
 \scnheader{label}
-\scnexplanation{\textbf{label} -- это класс компонентов пользовательского интерфейса, предназначенный для отображения названий.}
+\scnexplanation{\textbf{label} -- класс компонентов пользовательского интерфейса, предназначенный для отображения названий.}
 
 \scnheader{container}
-\scnexplanation{\textbf{container} -- это компонент пользовательского интерфейса, задача которого состоит в размещении набора компонентов, включённых в его состав.
+\scnexplanation{\textbf{container} -- компонент пользовательского интерфейса, задача которого состоит в размещении набора компонентов, включённых в его состав.
 }
 
 \scnheader{single-purpose-container}
-\scnexplanation{\textbf{single-purpose-container} --это контейнер, предназначенный только для одной цели.}
+\scnexplanation{\textbf{single-purpose-container} -- контейнер, предназначенный только для одной цели.}
 
 \scnheader{menu}
-\scnexplanation{\textbf{menu} -- это компонент пользовательского интерфейса, с помощью которого пользователь может выбирать из нескольких вариантов.}
+\scnexplanation{\textbf{menu} -- компонент пользовательского интерфейса, с помощью которого пользователь может выбирать из нескольких вариантов.}
 
 \scnheader{menu-bar}
-\scnexplanation{\textbf{menu-bar} -- это раскрывающееся меню.}
+\scnexplanation{\textbf{menu-bar} -- раскрывающееся меню.}
 
 \scnheader{tool-bar}
-\scnexplanation{\textbf{toolbar} -- это компонент пользовательского интерфейса, на котором размещаются экранные кнопки, значки, меню или другие элементы ввода или вывода.}
+\scnexplanation{\textbf{toolbar} -- компонент пользовательского интерфейса, на котором размещаются экранные кнопки, значки, меню или другие элементы ввода или вывода.}
 
 \scnheader{multi-purpose-container}
-\scnexplanation{\textbf{multi-purpose-container} -- это контейнер, предназначенный для нескольких целей.}
+\scnexplanation{\textbf{multi-purpose-container} -- контейнер, предназначенный для нескольких целей.}
 
 \scnheader{status-bar}
-\scnexplanation{\textbf{status-bar} -- это компонент пользовательского интерфейса, предназначенный для отображения информации о текущем состоянии окна.}
+\scnexplanation{\textbf{status-bar} -- компонент пользовательского интерфейса, предназначенный для отображения информации о текущем состоянии окна.}
 
 \scnheader{list-container}
-\scnexplanation{\textbf{list-container} -- это контейнер, который располагает элементы интерфейса в виде списка.}
+\scnexplanation{\textbf{list-container} -- контейнер, который располагает элементы интерфейса в виде списка.}
 
 \scnheader{table-cell-container}
-\scnexplanation{\textbf{table-cell-container} -- это контейнер, который располагает элементы интерфейса в виде таблицы.}
+\scnexplanation{\textbf{table-cell-container} -- контейнер, который располагает элементы интерфейса в виде таблицы.}
 
 \scnheader{tree-container}
-\scnexplanation{\textbf{tree-container} -- это контейнер, который располагает элементы интерфейса в виде дерева.}
+\scnexplanation{\textbf{tree-container} -- контейнер, который располагает элементы интерфейса в виде дерева.}
 
 \scnheader{tab-pane}
-\scnexplanation{\textbf{tab-pane} -- это контейнер , который может содержать несколько вкладок (секций) внутри, которые могут быть отображены, нажав на вкладке с названием в верхней части tab-pane. Одновременно отображается только одна вкладка.}
+\scnexplanation{\textbf{tab-pane} -- контейнер , который может содержать несколько вкладок (секций) внутри, которые могут быть отображены, нажав на вкладке с названием в верхней части tab-pane. Одновременно отображается только одна вкладка.}
 
 \scnheader{scroll-pane}
-\scnexplanation{\textbf{scroll-pane} -- это компонент пользовательского интерфейса, который позволяет пользователю прокручивать контент.}
+\scnexplanation{\textbf{scroll-pane} -- компонент пользовательского интерфейса, который позволяет пользователю прокручивать контент.}
 
 \scnheader{window}
-\scnexplanation{\textbf{window} -- это обособленная область экрана, содержащая различные элементы пользовательского интерфейса. Окна могут располагаться поверх друг друга.}
+\scnexplanation{\textbf{window} -- обособленная область экрана, содержащая различные элементы пользовательского интерфейса. Окна могут располагаться поверх друг друга.}
 
 \scnheader{modal-window}
-\scnexplanation{\textbf{modal-window} -- это окно, которое блокирует работу пользователя с родительским приложением до тех пор, пока пользователь это окно не закроет.}
+\scnexplanation{\textbf{modal-window} -- окно, которое блокирует работу пользователя с родительским приложением до тех пор, пока пользователь  окно не закроет.}
 
 \scnheader{non-modal-window}
-\scnexplanation{\textbf{non-modal-window} -- это окно, которое позволяет перемещать фокус между окном диалога и другой формой без необходимости закрыть окно диалога.}
+\scnexplanation{\textbf{non-modal-window} -- окно, которое позволяет перемещать фокус между окном диалога и другой формой без необходимости закрыть окно диалога.}
 
 \scnheader{interactive user interface component}
-\scnexplanation{\textbf{interactive user interface component} -- это класс компонентов пользовательского интерфейса, с помощью которого осуществляется взаимодействие с пользователем.}
-
+\scnexplanation{\textbf{interactive user interface component} -- класс компонентов пользовательского интерфейса, с помощью которого осуществляется взаимодействие с пользователем.}
 
 \scnheader{data-input-component}
-\scnexplanation{\textbf{data-input-component} -- это класс компонентов пользовательского интерфейса, предназначенный для ввода информации.}
+\scnexplanation{\textbf{data-input-component} -- класс компонентов пользовательского интерфейса, предназначенный для ввода информации.}
+
+\scnheader{data-input-component-with-direct-feedback}
+\scnexplanation{\textbf{data-input-component-with-direct-feedback} -- data-input-component  .}
+
+\scnheader{text-input-component-with-direct-feedback}
+\scnexplanation{\textbf{text-input-component-with-direct-feedback} -- .}
+
+\scnheader{multi-line-text-field}
+\scnexplanation{\textbf{multi-line-text-field} -- .}
+
+\scnheader{single-line-text-field}
+\scnexplanation{\textbf{single-line-text-field} -- .}
+
+\scnheader{slider}
+\scnexplanation{\textbf{slider} -- .}
+
+\scnheader{drawing-area}
+\scnexplanation{\textbf{drawing-area} -- .}
+
+\scnheader{selection-component}
+\scnexplanation{\textbf{selection-component} -- .}
+
+\scnheader{selection-component-multiple-values}
+\scnexplanation{\textbf{selection-component-multiple-values} -- .}
+
+\scnheader{selection-component-single-values}
+\scnexplanation{\textbf{selection-component-single-values} -- .}
+
+\scnheader{selectable-data-representation}
+\scnexplanation{\textbf{selectable-data-representation} -- .}
+
+\scnheader{check-box}
+\scnexplanation{\textbf{check-box} -- .}
+
+\scnheader{radio-button}
+\scnexplanation{\textbf{radio-button} -- .}
+
+\scnheader{toggle-button}
+\scnexplanation{\textbf{toggle-button} -- .}
+
+\scnheader{selectable-item}
+\scnexplanation{\textbf{selectable-item} -- .}
+
+
+\scnheader{data-input-component-without-direct-feedback}
+\scnexplanation{\textbf{data-input-component-without-direct-feedback} -- .}
 
 \scnheader{presentation-manipulation-component}
-\scnexplanation{\textbf{presentation-manipulation-component} -- это класс компонентов пользовательского интерфейса, предназначенный для представления информации и взаимодействия с пользователем.}
+\scnexplanation{\textbf{presentation-manipulation-component} -- класс компонентов пользовательского интерфейса, предназначенный для представления информации и взаимодействия с пользователем.}
+
+\scnheader{activating-component}
+\scnexplanation{\textbf{activating-component} -- .}
+
+\scnheader{continuous-manipulation-component}
+\scnexplanation{\textbf{continuous-manipulation-component} -- .}
+
+\scnheader{scrollbar}
+\scnexplanation{\textbf{scrollbar} -- .}
+
+\scnheader{resizer}
+\scnexplanation{\textbf{resizer} -- .}
 
 \scnheader{operation-trigger-component}
-\scnexplanation{\textbf{operation-trigger-component} -- это класс компонентов пользовательского интерфейса, которые провоцируют пользователя совершить действие.}
+\scnexplanation{\textbf{operation-trigger-component} -- класс компонентов пользовательского интерфейса, которые провоцируют пользователя совершить действие.}
+
+\scnheader{command-selection-component}
+\scnexplanation{\textbf{command-selection-component} -- .}
+
+\scnheader{button}
+\scnexplanation{\textbf{button} -- .}
+
+\scnheader{menu-item}
+\scnexplanation{\textbf{menu-item} --.}
+
+\scnheader{command-input-component}
+\scnexplanation{\textbf{command-input-component} -- .}
 
 \end{SCn}
