@@ -275,4 +275,46 @@
 \scnheader{command-input-component}
 \scnexplanation{\textbf{command-input-component} -- .}
 
+\scnheader{Стартовая страница}
+\scnsuperset{table-cell-container}
+\scnaddlevel{1}
+\scnrelfromset{декомпозиция}{
+Navigation\\
+	\scnaddlevel{1}
+	\scniselement{non-atomic user interface component}
+	\scnrelfromset{декомпозиция}{
+	menu\\		
+		\scnaddlevel{1}
+		\scnrelfromset{декомпозиция}{
+		menu-item
+		;toggle-button}
+	\scnaddlevel{-1}
+	;selection-component-single-values
+	;button
+	}\scnaddlevel{-1}
+;HistoryBlock\\
+	\scnaddlevel{1}
+	\scniselement{non-atomic user interface component}
+	\scnrelfromset{декомпозиция}{
+	message
+	}\scnaddlevel{-1}
+;MainBlock\\
+	\scnaddlevel{1}
+	\scniselement{non-atomic user interface component}
+	\scnrelfromset{декомпозиция}{
+	window
+	;tool-bar\\
+		\scnaddlevel{1}
+		\scnrelfromset{декомпозиция}{
+		button\\
+		;single-line-text-field}
+	\scnaddlevel{-1}
+	}\scnaddlevel{-1}
+;Footer\\
+	\scnaddlevel{1}
+	\scniselement{non-atomic user interface component}
+\scnrelfromset{декомпозиция}{
+message
+}\scnaddlevel{-1}
+}
 \end{SCn}
