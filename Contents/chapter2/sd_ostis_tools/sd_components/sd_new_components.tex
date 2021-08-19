@@ -182,7 +182,7 @@
 \scnexplanation{\textbf{tab-pane} -- контейнер , который может содержать несколько вкладок (секций) внутри, которые могут быть отображены, нажав на вкладке с названием в верхней части tab-pane. Одновременно отображается только одна вкладка.}
 
 \scnheader{scroll-pane}
-\scnexplanation{\textbf{scroll-pane} -- компонент пользовательского интерфейса, который позволяет пользователю прокручивать контент.}
+\scnexplanation{\textbf{scroll-pane} -- контейнер, который позволяет пользователю прокручивать контент.}
 
 \scnheader{window}
 \scnexplanation{\textbf{window} -- обособленная область экрана, содержащая различные элементы пользовательского интерфейса. Окна могут располагаться поверх друг друга.}
@@ -203,47 +203,56 @@
 \scnexplanation{\textbf{data-input-component-with-direct-feedback} -- data-input-component  .}
 
 \scnheader{text-input-component-with-direct-feedback}
-\scnexplanation{\textbf{text-input-component-with-direct-feedback} -- .}
+\scnexplanation{\textbf{text-input-component-with-direct-feedback} -- класс компонентов пользовательского интерфейса, предназначенный для ввода текста.}
 
 \scnheader{multi-line-text-field}
-\scnexplanation{\textbf{multi-line-text-field} -- .}
+\scnexplanation{\textbf{multi-line-text-field} -- поле ввода, которое позволяет работать с несколькими строками текста.}
 
 \scnheader{single-line-text-field}
-\scnexplanation{\textbf{single-line-text-field} -- .}
+\scnexplanation{\textbf{single-line-text-field} -- поле ввода, которое позволяет работать только с одной строкой текста.}
 
 \scnheader{slider}
-\scnexplanation{\textbf{slider} -- .}
+\scnexplanation{\textbf{slider} -- компонент пользовательского интерфейса, с помощью которого пользователь может установить значение, перемещая индикатор, обычно по горизонтали.}
 
 \scnheader{drawing-area}
-\scnexplanation{\textbf{drawing-area} -- .}
+\scnexplanation{\textbf{drawing-area} -- прямоугольная область, которая поддерживает рисование и получение входных данных (щелчки мыши, движение мыши и нажатия клавиш).}
 
 \scnheader{selection-component}
-\scnexplanation{\textbf{selection-component} -- .}
+\scnexplanation{\textbf{selection-component} -- класс компонентов пользовательского интерфейса, предназначенный для выбора.}
 
 \scnheader{selection-component-multiple-values}
-\scnexplanation{\textbf{selection-component-multiple-values} -- .}
+\scnexplanation{\textbf{selection-component-multiple-values} -- selection-component, в котором можно выбрать значения для различных свойств.}
 
 \scnheader{selection-component-single-values}
-\scnexplanation{\textbf{selection-component-single-values} -- .}
+\scnexplanation{\textbf{selection-component-single-values} -- selection-component, в котором можно установить значение только одного свойства.}
 
 \scnheader{selectable-data-representation}
-\scnexplanation{\textbf{selectable-data-representation} -- .}
+\scnexplanation{\textbf{selectable-data-representation} -- класс компонентов пользовательского интерфейса, который позволяет выбрать отображаемые данные.}
 
 \scnheader{check-box}
-\scnexplanation{\textbf{check-box} -- .}
+\scnexplanation{\textbf{check-box} -- компонент пользовательского интерфейса, позволяющий пользователю управлять параметром с двумя состояниями — включено и отключено.}
 
 \scnheader{radio-button}
-\scnexplanation{\textbf{radio-button} -- .}
+\scnexplanation{\textbf{radio-button} -- компонент пользовательского интерфейса, который позволяет пользователю выбрать одну опцию из предопределенного набора.}
 
 \scnheader{toggle-button}
-\scnexplanation{\textbf{toggle-button} -- .}
+\scnexplanation{\textbf{toggle-button} -- компонент пользовательского интерфейса, который позволяет пользователю переключаться между двумя состояниями.}
 
 \scnheader{selectable-item}
-\scnexplanation{\textbf{selectable-item} -- .}
+\scnexplanation{\textbf{selectable-item} -- элемент компонента selection-component-single-values.}
 
 
 \scnheader{data-input-component-without-direct-feedback}
 \scnexplanation{\textbf{data-input-component-without-direct-feedback} -- .}
+
+\scnheader{spin-button}
+\scnexplanation{\textbf{spin-button} -- компонент пользовательского интерфейса, как правило, ориентированный вертикально, с помощью которого пользователь может изменить значение в прилегающем текстовом поле, щёлкнув на стрелку вверх или вниз, или удерживая стрелку вверх или вниз, в результате чего значение в текстовом поле увеличивается (если нажата стрелка вверх) или уменьшается (если нажата стрелка вниз).}
+
+\scnheader{speech-button}
+\scnexplanation{\textbf{speech-button} -- кнопка для записи голоса.}
+
+\scnheader{motion-button}
+\scnexplanation{\textbf{motion-button} -- кнопка для записи видео.}
 
 \scnheader{presentation-manipulation-component}
 \scnexplanation{\textbf{presentation-manipulation-component} -- класс компонентов пользовательского интерфейса, предназначенный для представления информации и взаимодействия с пользователем.}
@@ -255,10 +264,10 @@
 \scnexplanation{\textbf{continuous-manipulation-component} -- .}
 
 \scnheader{scrollbar}
-\scnexplanation{\textbf{scrollbar} -- .}
+\scnexplanation{\textbf{scrollbar} -- компонент пользовательского интерфейса, который используется для отображения информации и элементов интерфейса, больших по размеру, чем используемый для их отображения контейнер.}
 
 \scnheader{resizer}
-\scnexplanation{\textbf{resizer} -- .}
+\scnexplanation{\textbf{resizer} -- компонент пользовательского интерфейса, с помощью которого можно изменять размер другого компонента.}
 
 \scnheader{operation-trigger-component}
 \scnexplanation{\textbf{operation-trigger-component} -- класс компонентов пользовательского интерфейса, которые провоцируют пользователя совершить действие.}
@@ -267,54 +276,86 @@
 \scnexplanation{\textbf{command-selection-component} -- .}
 
 \scnheader{button}
-\scnexplanation{\textbf{button} -- .}
+\scnexplanation{\textbf{button} -- компонент пользовательского интерфейса, при нажатии на который происходит программно связанное с этим нажатием действие либо событие.}
 
 \scnheader{menu-item}
-\scnexplanation{\textbf{menu-item} --.}
+\scnexplanation{\textbf{menu-item} -- элемент компонента menu.}
 
 \scnheader{command-input-component}
 \scnexplanation{\textbf{command-input-component} -- .}
 
-\scnheader{Стартовая страница}
-\scnsuperset{table-cell-container}
+\scnheader{StartPage}
 \scnaddlevel{1}
+\scniselement{window}
 \scnrelfromset{декомпозиция}{
 Navigation\\
 	\scnaddlevel{1}
 	\scniselement{non-atomic user interface component}
 	\scnrelfromset{декомпозиция}{
-	menu\\		
+	mainMenu\\	
 		\scnaddlevel{1}
+		\scniselement{menu}
 		\scnrelfromset{декомпозиция}{
-		menu-item
-		;toggle-button}
+		item1\\
+			\scnaddlevel{1}
+			\scniselement{menu-item}
+			\scnaddlevel{-1}
+		;item2\\
+			\scnaddlevel{1}
+			\scniselement{menu-item}
+			\scnaddlevel{-1}			
+		;switch\\
+			\scnaddlevel{1}
+			\scniselement{toggle-button}
+			\scnaddlevel{-1}
+	}
 	\scnaddlevel{-1}
-	;selection-component-single-values
-	;button
+	;languageSelect\\
+		\scnaddlevel{1}
+		\scniselement{selection-component-single-values}
+		\scnaddlevel{-1}
+	;googleAuth\\
+		\scnaddlevel{1}
+		\scniselement{button}
+		\scnaddlevel{-1}
 	}\scnaddlevel{-1}
 ;HistoryBlock\\
 	\scnaddlevel{1}
 	\scniselement{non-atomic user interface component}
-	\scnrelfromset{декомпозиция}{
-	message
-	}\scnaddlevel{-1}
+	\scnaddlevel{-1}
 ;MainBlock\\
 	\scnaddlevel{1}
 	\scniselement{non-atomic user interface component}
 	\scnrelfromset{декомпозиция}{
-	window
+	mainWindow\\
+		\scnaddlevel{1}
+		\scniselement{window}
+		\scnaddlevel{-1}	
 	;tool-bar\\
 		\scnaddlevel{1}
 		\scnrelfromset{декомпозиция}{
-		button\\
-		;single-line-text-field}
+		printerButton\\
+			\scnaddlevel{1}
+			\scniselement{button}
+			\scnaddlevel{-1}
+		;arrowsButton\\
+			\scnaddlevel{1}
+			\scniselement{button}
+			\scnaddlevel{-1}
+		;linkButton\\
+			\scnaddlevel{1}
+			\scniselement{button}
+			\scnaddlevel{-1}
+		;searchInput\\	
+			\scnaddlevel{1}
+			\scniselement{single-line-text-field}
+			\scnaddlevel{-1}
+	}
 	\scnaddlevel{-1}
 	}\scnaddlevel{-1}
 ;Footer\\
 	\scnaddlevel{1}
 	\scniselement{non-atomic user interface component}
-\scnrelfromset{декомпозиция}{
-message
-}\scnaddlevel{-1}
+	\scnaddlevel{-1}
 }
 \end{SCn}
