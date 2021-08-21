@@ -1,361 +1,346 @@
 \begin{SCn}
-\scnheader{user interface component}
-\scnsubdividing{atomic user interface component\\
+	
+\scnsectionheader{\currentname}
+	
+\scnstartsubstruct
+
+\scnheader{компонент пользовательского интерфейса}
+\scnsubdividing{атомарный компонент пользовательского интерфейса\\
 	\scnaddlevel{1}
-	\scnsuperset{presentation user interface component}
+	\scnsuperset{компонент пользовательского интерфейса для представления}
 		\scnaddlevel{1}
-		\scnsuperset{output}
+		\scnsuperset{вывод}
 			\scnaddlevel{1}
-			\scnsuperset{image-output}
-			\scnsuperset{graphical-output}
+			\scnsuperset{вывод изображения}
+			\scnsuperset{графический вывод}
 				\scnaddlevel{1}
-				\scnsuperset{chart}
-				\scnsuperset{map}
-				\scnsuperset{progress-bar} 
+				\scnsuperset{диаграмма}
+				\scnsuperset{карта}
+				\scnsuperset{индикатор выполнения} 
 				\scnaddlevel{-1}
-			\scnsuperset{video-output}
-			\scnsuperset{sound-output}
-			\scnsuperset{text-output}
+			\scnsuperset{видеовывод}
+			\scnsuperset{звуковой вывод}
+			\scnsuperset{текстовый вывод}
 				\scnaddlevel{1}
-				\scnsuperset{headline}
-				\scnsuperset{paragraph}
-				\scnsuperset{message}
+				\scnsuperset{заголовок}
+				\scnsuperset{параграф}
+				\scnsuperset{сообщение}
 				\scnaddlevel{-2}
-	\scnsuperset{decorative user interface component}
+	\scnsuperset{декоративный компонент пользовательского интерфейса}
 		\scnaddlevel{1}
-		\scnsuperset{separator}
-		\scnsuperset{blank-space}
+		\scnsuperset{разделитель}
+		\scnsuperset{пустое пространство}
 		\scnaddlevel{-1}
-	\scnsuperset{container}
+	\scnsuperset{контейнер}
 		\scnaddlevel{1}
-		\scnsuperset{single-purpose-container}
+		\scnsuperset{одноцелевой контейнер}
 			\scnaddlevel{1}
-			\scnsuperset{menu}
-			\scnsuperset{menu-bar}
-			\scnsuperset{tool-bar}
+			\scnsuperset{меню}
+			\scnsuperset{строка меню}
+			\scnsuperset{панель инструментов}
 			\scnaddlevel{-1}
-		\scnsuperset{multi-purpose-container}
+		\scnsuperset{универсальный контейнер}
 			\scnaddlevel{1}
-			\scnsuperset{status-bar}
-			\scnsuperset{table-row-container}
-			\scnsuperset{list-container}
-			\scnsuperset{table-cell-container}
-			\scnsuperset{tree-container}
-			\scnsuperset{labeled-group}
-			\scnsuperset{tab-pane}
-			\scnsuperset{spin-pane}
-			\scnsuperset{tree-node-container}
-			\scnsuperset{scroll-pane}
-			\scnsuperset{window}
+			\scnsuperset{строка состояния}
+			\scnsuperset{таблично-строковый контейнер}
+			\scnsuperset{списковый контейнер}
+			\scnsuperset{таблично-клеточный контейнер}
+			\scnsuperset{древовидный контейнер}
+			\scnsuperset{помеченная группа}
+			\scnsuperset{панель вкладок}
+			\scnsuperset{панель вращения}
+			\scnsuperset{узловой контейнер}
+			\scnsuperset{панель прокрутки}
+			\scnsuperset{окно}
 				\scnaddlevel{1}
-				\scnsuperset{modal-window}
-				\scnsuperset{non-modal-window}
+				\scnsuperset{модальное окно}
+				\scnsuperset{немодальное окно}
 				\scnaddlevel{-4}		
-	\scnsuperset{interactive user interface component}
+	\scnsuperset{интерактивный компонент пользовательского интерфейса}
 		\scnaddlevel{1}
-		\scnsuperset{data-input-component}
+		\scnsuperset{компонент ввода данных}
 			\scnaddlevel{1}
-			\scnsuperset{data-input-component-with-direct-feedback}
+			\scnsuperset{компонент ввода данных с прямой ответной реакцией}
 				\scnaddlevel{1}
-				\scnsuperset{text-input-component-with-direct-feedback}
+				\scnsuperset{компонент ввода текста с прямой ответной реакцией}
 					\scnaddlevel{1}
-					\scnsuperset{multi-line-text-field}
-					\scnsuperset{single-line-text-field}
+					\scnsuperset{многострочное текстовое поле}
+					\scnsuperset{однострочное текстовое поле}
 					\scnaddlevel{-1}
-				\scnsuperset{slider}
-				\scnsuperset{drawing-area}
-				\scnsuperset{selection-component}
+				\scnsuperset{ползунок}
+				\scnsuperset{область рисования}
+				\scnsuperset{компонент выбора}
 					\scnaddlevel{1}
-					\scnsuperset{selection-component-multiple-values}
-					\scnsuperset{selection-component-single-values}
+					\scnsuperset{компонент выбора нескольких значений}
+					\scnsuperset{компонент выбора одного значения}
 					\scnaddlevel{-1}
-				\scnsuperset{selectable-data-representation}			
+				\scnsuperset{выбираемое представление данных}			
 					\scnaddlevel{1}
-					\scnsuperset{check-box}
-					\scnsuperset{radio-button}
-					\scnsuperset{toggle-button}
-					\scnsuperset{selectable-item}
+					\scnsuperset{флаговая кнопка}
+					\scnsuperset{радиокнопка}
+					\scnsuperset{переключатель}
+					\scnsuperset{выбираемый элемент}
 					\scnaddlevel{-2}
-			\scnsuperset{data-input-component-without-direct-feedback}
+			\scnsuperset{компонент ввода данных без прямой ответной реакции}
 				\scnaddlevel{1}
-				\scnsuperset{spin-button}
-				\scnsuperset{speech-button}
-				\scnsuperset{motion-input}
+				\scnsuperset{кнопка-счётчик}
+				\scnsuperset{голосовой ввод}
+				\scnsuperset{запись видео}
 				\scnaddlevel{-2}
-		\scnsuperset{presentation-manipulation-component}
+		\scnsuperset{компонент манипуляции представления}
 			\scnaddlevel{1}
-			\scnsuperset{activating-component}
-			\scnsuperset{continuous-manipulation-component}
+			\scnsuperset{активирующий компонент}
+			\scnsuperset{компонент непрерывной манипуляции}
 				\scnaddlevel{1}
-				\scnsuperset{scrollbar}
-				\scnsuperset{resizer}
+				\scnsuperset{полоса прокрутки}
+				\scnsuperset{редактор размера}
 				\scnaddlevel{-2}
-		\scnsuperset{operation-trigger-component}
+		\scnsuperset{компонент триггера операции}
 			\scnaddlevel{1}
-			\scnsuperset{command-selection-component}
+			\scnsuperset{компонент выбора команд}
 				\scnaddlevel{1}
-				\scnsuperset{button}
-				\scnsuperset{menu-item}
+				\scnsuperset{кнопка}
+				\scnsuperset{пункт меню}
 				\scnaddlevel{-1}
-			\scnsuperset{command-input-component}
+			\scnsuperset{компонент ввода команд}
 			\scnaddlevel{-3}
-;non-atomic user interface component}			
+;неатомарный компонент пользовательского интерфейса}			
 
-\scnheader{presentation user interface component}
-\scnexplanation{\textbf{presentation user interface component} -- класс компонентов пользовательского интерфейса, предназначенный для представления информации.}
+\scnheader{компонент пользовательского интерфейса для представления}
+\scnexplanation{\textbf{компонент пользовательского интерфейса для представления} -- компонент пользовательского интерфейса, не подразумевающий взаимодействия с пользователем.}
 
 
-\scnheader{output}
-\scnexplanation{\textbf{output} -- класс компонентов пользовательского интерфейса, предназначенный для представления выходной информации.}
+\scnheader{вывод}
+\scnexplanation{\textbf{вывод} -- компонент пользовательского интерфейса, предназначенный для представления информации.}
 
-\scnheader{image-output}
-\scnexplanation{\textbf{image-output} -- класс компонентов пользовательского интерфейса, предназначенный для отображения изображений.}
+\scnheader{вывод изображения}
+\scnexplanation{\textbf{вывод изображения} -- компонент пользовательского интерфейса, предназначенный для отображения изображений.}
 
-\scnheader{graphical-output}
-\scnexplanation{\textbf{graphical-output} -- класс компонентов пользовательского интерфейса, предназначенный для представления графической информации.}
+\scnheader{графический вывод}
+\scnexplanation{\textbf{графический вывод} -- компонент пользовательского интерфейса, предназначенный для представления графической информации.}
 
-\scnheader{chart}
-\scnexplanation{\textbf{chart} -- компонент пользовательского интерфейса, предназначенный для отображения графиков.}
+\scnheader{диаграмма}
+\scnexplanation{\textbf{диаграмма} -- компонент пользовательского интерфейса, предназначенный для отображения графиков.}
 
-\scnheader{map}
-\scnexplanation{\textbf{map} -- компонент пользовательского интерфейса, предназначенный для отображения карт.}
+\scnheader{карта}
+\scnexplanation{\textbf{карта} -- компонент пользовательского интерфейса, предназначенный для отображения карт.}
 
-\scnheader{progress-bar}
-\scnexplanation{\textbf{progress-bar} -- компонент пользовательского интерфейса, предназначенный для отображения процента выполнения какой-либо задачи.}
+\scnheader{индикатор выполнения}
+\scnexplanation{\textbf{индикатор выполнения} -- компонент пользовательского интерфейса, предназначенный для отображения процента выполнения какой-либо задачи.}
 
-\scnheader{video-output}
-\scnexplanation{\textbf{video-output} -- класс компонентов пользовательского интерфейса, предназначенный для представления видеоинформации.}
+\scnheader{вывод видео}
+\scnexplanation{\textbf{вывод видео} -- компонент пользовательского интерфейса, предназначенный для представления видео-информации.}
 
-\scnheader{sound-output}
-\scnexplanation{\textbf{sound-output} -- класс компонентов пользовательского интерфейса, предназначенный для представления аудиоинформации.}
+\scnheader{звуковой вывод}
+\scnexplanation{\textbf{звуковой вывод} -- компонент пользовательского интерфейса, предназначенный для представления аудио-информации.}
 
-\scnheader{text-output}
-\scnexplanation{\textbf{text-output} -- класс компонентов пользовательского интерфейса, предназначенный для представления текстовой информации.}
+\scnheader{текстовый вывод}
+\scnexplanation{\textbf{текстовый вывод} --компонент пользовательского интерфейса, предназначенный для представления текстовой информации.}
 
-\scnheader{headline}
-\scnexplanation{\textbf{headline} -- компонент пользовательского интерфейса, предназначенный для отображения заголовков.}
+\scnheader{заголовок}
+\scnexplanation{\textbf{заголовок} -- компонент пользовательского интерфейса, предназначенный для отображения заголовков.}
 
-\scnheader{paragraph}
-\scnexplanation{\textbf{paragraph} -- компонент пользовательского интерфейса, предназначенный для отображения блоков текста. Он отделяется от других блоков пустой строкой или первой строкой с отступом.}
+\scnheader{параграф}
+\scnexplanation{\textbf{параграф} -- компонент пользовательского интерфейса, предназначенный для отображения блоков текста. Он отделяется от других блоков пустой строкой или первой строкой с отступом.}
 
-\scnheader{message}
-\scnexplanation{\textbf{message} -- компонент пользовательского интерфейса, предназначенный для отображения сообщения.}
+\scnheader{сообщение}
+\scnexplanation{\textbf{сообщение} -- компонент пользовательского интерфейса, предназначенный для отображения сообщения.}
 
-\scnheader{decorative user interface component}
-\scnexplanation{\textbf{decorative user interface component} -- класс компонентов пользовательского интерфейса, предназначенный для стилизации интерфейса.}
+\scnheader{декоративный компонент пользовательского интерфейса}
+\scnexplanation{\textbf{декоративный компонент пользовательского интерфейса} -- компонент пользовательского интерфейса, предназначенный для стилизации интерфейса.}
 
-\scnheader{label}
-\scnexplanation{\textbf{label} -- класс компонентов пользовательского интерфейса, предназначенный для отображения названий.}
+\scnheader{метка}
+\scnexplanation{\textbf{метка} -- компонент пользовательского интерфейса, предназначенный для отображения названий.}
 
-\scnheader{container}
-\scnexplanation{\textbf{container} -- компонент пользовательского интерфейса, задача которого состоит в размещении набора компонентов, включённых в его состав.
+\scnheader{контейнер}
+\scnexplanation{\textbf{контейнер} -- компонент пользовательского интерфейса, задача которого состоит в размещении набора компонентов, включённых в его состав.
 }
 
-\scnheader{single-purpose-container}
-\scnexplanation{\textbf{single-purpose-container} -- контейнер, предназначенный только для одной цели.}
+\scnheader{одноцелевой контейнер}
+\scnexplanation{\textbf{одноцелевой контейнер} -- контейнер, предназначенный только для одной цели.}
 
-\scnheader{menu}
-\scnexplanation{\textbf{menu} -- компонент пользовательского интерфейса, с помощью которого пользователь может выбирать из нескольких вариантов.}
+\scnheader{меню}
+\scnexplanation{\textbf{меню} -- компонент пользовательского интерфейса, содержащий несколько вариантов для выбора пользователем.}
 
-\scnheader{menu-bar}
-\scnexplanation{\textbf{menu-bar} -- раскрывающееся меню.}
+\scnheader{строка меню}
+\scnexplanation{\textbf{строка меню} -- горизонтальная полоса , содержащая ярлыки меню. Строка меню предоставляет пользователю место в окне, где можно найти большинство основных функций программы.}
 
-\scnheader{tool-bar}
-\scnexplanation{\textbf{toolbar} -- компонент пользовательского интерфейса, на котором размещаются экранные кнопки, значки, меню или другие элементы ввода или вывода.}
+\scnheader{панель инструментов}
+\scnexplanation{\textbf{панель инструментов} -- компонент пользовательского интерфейса, на котором размещаются экранные кнопки, значки, меню или другие элементы ввода или вывода.}
 
-\scnheader{multi-purpose-container}
-\scnexplanation{\textbf{multi-purpose-container} -- контейнер, предназначенный для нескольких целей.}
+\scnheader{универсальный контейнер}
+\scnexplanation{\textbf{универсальный контейнер} -- контейнер, предназначенный для нескольких целей.}
 
-\scnheader{status-bar}
-\scnexplanation{\textbf{status-bar} -- компонент пользовательского интерфейса, предназначенный для отображения информации о текущем состоянии окна.}
+\scnheader{строка состояния}
+\scnexplanation{\textbf{строка состояния} -- компонент пользовательского интерфейса, предназначенный для отображения информации о текущем состоянии окна.}
 
-\scnheader{list-container}
-\scnexplanation{\textbf{list-container} -- контейнер, который располагает элементы интерфейса в виде списка.}
+\scnheader{списковый контейнер}
+\scnexplanation{\textbf{списковый контейнер} -- контейнер, который располагает элементы интерфейса в виде списка.}
 
-\scnheader{table-cell-container}
-\scnexplanation{\textbf{table-cell-container} -- контейнер, который располагает элементы интерфейса в виде таблицы.}
+\scnheader{таблично-клеточный контейнер}
+\scnexplanation{\textbf{таблично-клеточный контейнер} -- контейнер, который располагает элементы интерфейса в виде таблицы.}
 
-\scnheader{tree-container}
-\scnexplanation{\textbf{tree-container} -- контейнер, который располагает элементы интерфейса в виде дерева.}
+\scnheader{древовидный контейнер}
+\scnexplanation{\textbf{древовидный контейнер} -- контейнер, который располагает элементы интерфейса в виде дерева.}
 
-\scnheader{tab-pane}
-\scnexplanation{\textbf{tab-pane} -- контейнер , который может содержать несколько вкладок (секций) внутри, которые могут быть отображены, нажав на вкладке с названием в верхней части tab-pane. Одновременно отображается только одна вкладка.}
+\scnheader{панель вкладок}
+\scnexplanation{\textbf{панель вкладок} -- контейнер , который может содержать несколько вкладок (секций) внутри, которые могут быть отображены, нажав на вкладке с названием в верхней части панели. Одновременно отображается только одна вкладка.}
 
-\scnheader{scroll-pane}
-\scnexplanation{\textbf{scroll-pane} -- контейнер, который позволяет пользователю прокручивать контент.}
+\scnheader{панель прокрутки}
+\scnexplanation{\textbf{панель прокрутки} -- компонент пользовательского интерфейса, который позволяет пользователю прокручивать его содержимое.}
 
-\scnheader{window}
-\scnexplanation{\textbf{window} -- обособленная область экрана, содержащая различные элементы пользовательского интерфейса. Окна могут располагаться поверх друг друга.}
+\scnheader{окно}
+\scnexplanation{\textbf{окно} -- обособленная область экрана, содержащая различные элементы пользовательского интерфейса. Окна могут располагаться поверх друг друга.}
 
-\scnheader{modal-window}
-\scnexplanation{\textbf{modal-window} -- окно, которое блокирует работу пользователя с родительским приложением до тех пор, пока пользователь  окно не закроет.}
+\scnheader{модальное окно}
+\scnexplanation{\textbf{модальное окно} -- окно, которое блокирует работу пользователя с родительским приложением до тех пор, пока пользователь  окно не закроет.}
 
-\scnheader{non-modal-window}
-\scnexplanation{\textbf{non-modal-window} -- окно, которое позволяет перемещать фокус между окном диалога и другой формой без необходимости закрыть окно диалога.}
+\scnheader{немодальное окно}
+\scnexplanation{\textbf{немодальное окно} -- окно, которое позволяет перемещать фокус между окном диалога и другой формой без необходимости закрыть окно диалога.}
 
-\scnheader{interactive user interface component}
-\scnexplanation{\textbf{interactive user interface component} -- класс компонентов пользовательского интерфейса, с помощью которого осуществляется взаимодействие с пользователем.}
+\scnheader{интерактивный компонент пользовательского интерфейса}
+\scnexplanation{\textbf{интерактивный компонент пользовательского интерфейса} -- компонент пользовательского интерфейса, с помощью которого осуществляется взаимодействие с пользователем.}
 
-\scnheader{data-input-component}
-\scnexplanation{\textbf{data-input-component} -- класс компонентов пользовательского интерфейса, предназначенный для ввода информации.}
+\scnheader{компонент ввода данных}
+\scnexplanation{\textbf{компонент ввода данных} -- компонент пользовательского интерфейса, предназначенный для ввода информации.}
 
-\scnheader{data-input-component-with-direct-feedback}
-\scnexplanation{\textbf{data-input-component-with-direct-feedback} -- data-input-component  .}
+\scnheader{многострочное текстовое поле}
+\scnexplanation{\textbf{многострочное текстовое поле} -- поле ввода, которое позволяет работать с несколькими строками текста.}
 
-\scnheader{text-input-component-with-direct-feedback}
-\scnexplanation{\textbf{text-input-component-with-direct-feedback} -- класс компонентов пользовательского интерфейса, предназначенный для ввода текста.}
+\scnheader{однострочное текстовое поле}
+\scnexplanation{\textbf{однострочное текстовое поле} -- поле ввода, которое позволяет работать только с одной строкой текста.}
 
-\scnheader{multi-line-text-field}
-\scnexplanation{\textbf{multi-line-text-field} -- поле ввода, которое позволяет работать с несколькими строками текста.}
+\scnheader{ползунок}
+\scnexplanation{\textbf{ползунок} -- компонент пользовательского интерфейса, с помощью которого пользователь может установить значение, перемещая индикатор, обычно по горизонтали.}
 
-\scnheader{single-line-text-field}
-\scnexplanation{\textbf{single-line-text-field} -- поле ввода, которое позволяет работать только с одной строкой текста.}
+\scnheader{область рисования}
+\scnexplanation{\textbf{область рисования} -- прямоугольная область, которая поддерживает рисование и получение входных данных (щелчки мыши, движение мыши и нажатия клавиш).}
 
-\scnheader{slider}
-\scnexplanation{\textbf{slider} -- компонент пользовательского интерфейса, с помощью которого пользователь может установить значение, перемещая индикатор, обычно по горизонтали.}
+\scnheader{компонент выбора}
+\scnexplanation{\textbf{компонент выбора} -- компонент пользовательского интерфейса, предназначенный для выбора.}
 
-\scnheader{drawing-area}
-\scnexplanation{\textbf{drawing-area} -- прямоугольная область, которая поддерживает рисование и получение входных данных (щелчки мыши, движение мыши и нажатия клавиш).}
+\scnheader{компонент выбора нескольких значений}
+\scnexplanation{\textbf{компонент выбора нескольких значений} -- компонент выбора, в котором можно выбрать значения для различных свойств.}
 
-\scnheader{selection-component}
-\scnexplanation{\textbf{selection-component} -- класс компонентов пользовательского интерфейса, предназначенный для выбора.}
+\scnheader{компонент выбора одного значения}
+\scnexplanation{\textbf{компонент выбора одного значения} -- компонент выбора, в котором можно установить значение только одного свойства.}
 
-\scnheader{selection-component-multiple-values}
-\scnexplanation{\textbf{selection-component-multiple-values} -- selection-component, в котором можно выбрать значения для различных свойств.}
+\scnheader{выбираемое представление данных}
+\scnexplanation{\textbf{выбираемое представление данных} -- компонент пользовательского интерфейса, который позволяет выбрать отображаемые данные.}
 
-\scnheader{selection-component-single-values}
-\scnexplanation{\textbf{selection-component-single-values} -- selection-component, в котором можно установить значение только одного свойства.}
+\scnheader{флаговая кнопка}
+\scnexplanation{\textbf{флаговая кнопка} -- компонент пользовательского интерфейса, позволяющий пользователю управлять параметром с двумя состояниями — включено и отключено.}
 
-\scnheader{selectable-data-representation}
-\scnexplanation{\textbf{selectable-data-representation} -- класс компонентов пользовательского интерфейса, который позволяет выбрать отображаемые данные.}
+\scnheader{радиокнопка}
+\scnexplanation{\textbf{радиокнопка} -- компонент пользовательского интерфейса, который позволяет пользователю выбрать одну опцию из предопределенного набора.}
 
-\scnheader{check-box}
-\scnexplanation{\textbf{check-box} -- компонент пользовательского интерфейса, позволяющий пользователю управлять параметром с двумя состояниями — включено и отключено.}
+\scnheader{переключатель}
+\scnexplanation{\textbf{переключатель} -- компонент пользовательского интерфейса, который позволяет пользователю переключаться между двумя состояниями.}
 
-\scnheader{radio-button}
-\scnexplanation{\textbf{radio-button} -- компонент пользовательского интерфейса, который позволяет пользователю выбрать одну опцию из предопределенного набора.}
+\scnheader{выбираемый элемент}
+\scnexplanation{\textbf{выбираемый элемент} -- элемент компонента "компонент выбора одного значения".}
 
-\scnheader{toggle-button}
-\scnexplanation{\textbf{toggle-button} -- компонент пользовательского интерфейса, который позволяет пользователю переключаться между двумя состояниями.}
+\scnheader{кнопка-счетчик}
+\scnexplanation{\textbf{кнопка-счетчик} -- компонент пользовательского интерфейса, как правило, ориентированный вертикально, с помощью которого пользователь может изменить значение в прилегающем текстовом поле, щёлкнув на стрелку вверх или вниз, или удерживая стрелку вверх или вниз, в результате чего значение в текстовом поле увеличивается (если нажата стрелка вверх) или уменьшается (если нажата стрелка вниз).}
 
-\scnheader{selectable-item}
-\scnexplanation{\textbf{selectable-item} -- элемент компонента selection-component-single-values.}
+\scnheader{голосовой ввод}
+\scnexplanation{\textbf{голосовой ввод} -- компонент пользовательского интерфейса для записи голоса.}
 
+\scnheader{запись видео}
+\scnexplanation{\textbf{запись видео} -- компонент пользовательского интерфейса для записи видео.}
 
-\scnheader{data-input-component-without-direct-feedback}
-\scnexplanation{\textbf{data-input-component-without-direct-feedback} -- .}
+\scnheader{компонент манипуляции представления}
+\scnexplanation{\textbf{компонент манипуляции представления} -- компонент пользовательского интерфейса, предназначенный для представления информации и взаимодействия с пользователем.}
 
-\scnheader{spin-button}
-\scnexplanation{\textbf{spin-button} -- компонент пользовательского интерфейса, как правило, ориентированный вертикально, с помощью которого пользователь может изменить значение в прилегающем текстовом поле, щёлкнув на стрелку вверх или вниз, или удерживая стрелку вверх или вниз, в результате чего значение в текстовом поле увеличивается (если нажата стрелка вверх) или уменьшается (если нажата стрелка вниз).}
+\scnheader{полоса прокрутки}
+\scnexplanation{\textbf{полоса прокрутки} -- компонент пользовательского интерфейса, который используется для отображения информации и элементов интерфейса, больших по размеру, чем используемый для их отображения контейнер.}
 
-\scnheader{speech-button}
-\scnexplanation{\textbf{speech-button} -- кнопка для записи голоса.}
+\scnheader{редактор размера}
+\scnexplanation{\textbf{редактор размера} -- компонент пользовательского интерфейса, с помощью которого можно изменять размер другого компонента.}
 
-\scnheader{motion-button}
-\scnexplanation{\textbf{motion-button} -- кнопка для записи видео.}
+\scnheader{компонент триггера операции}
+\scnexplanation{\textbf{компонент триггера операции} -- компонент пользовательского интерфейса, который запрашивают пользователя совершить некоторое действие.}
 
-\scnheader{presentation-manipulation-component}
-\scnexplanation{\textbf{presentation-manipulation-component} -- класс компонентов пользовательского интерфейса, предназначенный для представления информации и взаимодействия с пользователем.}
+\scnheader{кнопка}
+\scnexplanation{\textbf{кнопка} -- компонент пользовательского интерфейса, при нажатии на который происходит программно связанное с этим нажатием действие либо событие.}
 
-\scnheader{activating-component}
-\scnexplanation{\textbf{activating-component} -- .}
+\scnheader{пункт меню}
+\scnexplanation{\textbf{пункт меню} -- элемент компонента меню.}
 
-\scnheader{continuous-manipulation-component}
-\scnexplanation{\textbf{continuous-manipulation-component} -- .}
-
-\scnheader{scrollbar}
-\scnexplanation{\textbf{scrollbar} -- компонент пользовательского интерфейса, который используется для отображения информации и элементов интерфейса, больших по размеру, чем используемый для их отображения контейнер.}
-
-\scnheader{resizer}
-\scnexplanation{\textbf{resizer} -- компонент пользовательского интерфейса, с помощью которого можно изменять размер другого компонента.}
-
-\scnheader{operation-trigger-component}
-\scnexplanation{\textbf{operation-trigger-component} -- класс компонентов пользовательского интерфейса, которые провоцируют пользователя совершить действие.}
-
-\scnheader{command-selection-component}
-\scnexplanation{\textbf{command-selection-component} -- .}
-
-\scnheader{button}
-\scnexplanation{\textbf{button} -- компонент пользовательского интерфейса, при нажатии на который происходит программно связанное с этим нажатием действие либо событие.}
-
-\scnheader{menu-item}
-\scnexplanation{\textbf{menu-item} -- элемент компонента menu.}
-
-\scnheader{command-input-component}
-\scnexplanation{\textbf{command-input-component} -- .}
-
-\scnheader{StartPage}
+\scnheader{Стартовая страница}
 \scnaddlevel{1}
-\scniselement{window}
+\scniselement{окно}
 \scnrelfromset{декомпозиция}{
-Navigation\\
+Навигация\\
 	\scnaddlevel{1}
-	\scniselement{non-atomic user interface component}
+	\scniselement{неатомарный компонент пользовательского интерфейса}
 	\scnrelfromset{декомпозиция}{
-	mainMenu\\	
+	Главное меню\\	
 		\scnaddlevel{1}
-		\scniselement{menu}
+		\scniselement{меню}
 		\scnrelfromset{декомпозиция}{
-		item1\\
+		Элемент-1\\
 			\scnaddlevel{1}
-			\scniselement{menu-item}
+			\scniselement{пункт меню}
 			\scnaddlevel{-1}
-		;item2\\
+		;Элемент-2\\
 			\scnaddlevel{1}
-			\scniselement{menu-item}
+			\scniselement{пункт меню}
 			\scnaddlevel{-1}			
-		;switch\\
+		;Переключение режима\\
 			\scnaddlevel{1}
-			\scniselement{toggle-button}
+			\scniselement{переключатель}
 			\scnaddlevel{-1}
 	}
 	\scnaddlevel{-1}
-	;languageSelect\\
+	;Выбор языка\\
 		\scnaddlevel{1}
-		\scniselement{selection-component-single-values}
+		\scniselement{компонент выбора одного значения}
 		\scnaddlevel{-1}
-	;googleAuth\\
+	;Гугл\\
 		\scnaddlevel{1}
-		\scniselement{button}
+		\scniselement{кнопка}
 		\scnaddlevel{-1}
 	}\scnaddlevel{-1}
-;HistoryBlock\\
+;Блок истории\\
 	\scnaddlevel{1}
-	\scniselement{non-atomic user interface component}
+	\scniselement{неатомарный компонент пользовательского интерфейса}
 	\scnaddlevel{-1}
-;MainBlock\\
+;Основной блок\\
 	\scnaddlevel{1}
-	\scniselement{non-atomic user interface component}
+	\scniselement{неатомарный компонент пользовательского интерфейса}
 	\scnrelfromset{декомпозиция}{
-	mainWindow\\
+	Главное окно\\
 		\scnaddlevel{1}
-		\scniselement{window}
+		\scniselement{окно}
 		\scnaddlevel{-1}	
-	;tool-bar\\
+	;панель инструментов\\
 		\scnaddlevel{1}
 		\scnrelfromset{декомпозиция}{
-		printerButton\\
+		Кнопка принтера\\
 			\scnaddlevel{1}
-			\scniselement{button}
+			\scniselement{кнопка}
 			\scnaddlevel{-1}
-		;arrowsButton\\
+		;Кнопка со стрелками\\
 			\scnaddlevel{1}
-			\scniselement{button}
+			\scniselement{кнопка}
 			\scnaddlevel{-1}
-		;linkButton\\
+		;Кнопка ссылки\\
 			\scnaddlevel{1}
-			\scniselement{button}
+			\scniselement{кнопка}
 			\scnaddlevel{-1}
-		;searchInput\\	
+		;Поиск\\	
 			\scnaddlevel{1}
-			\scniselement{single-line-text-field}
+			\scniselement{однострочное текстовое поле}
 			\scnaddlevel{-1}
 	}
 	\scnaddlevel{-1}
 	}\scnaddlevel{-1}
-;Footer\\
+;Футер\\
 	\scnaddlevel{1}
-	\scniselement{non-atomic user interface component}
+	\scniselement{неатомарный компонент пользовательского интерфейса}
 	\scnaddlevel{-1}
 }
+
+\scnendstruct \scnendcurrentsectioncomment
 \end{SCn}
