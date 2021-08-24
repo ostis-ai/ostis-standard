@@ -4,120 +4,333 @@
 	
 \scnstartsubstruct
 
+\scnheader{пользовательский интерфейс}
+\scnsuperset{командный интерфейс}
+\scnsuperset{графический интерфейс}
+\scnaddlevel{1}
+\scnsuperset{WIMP-интерфейс}
+\scnaddlevel{-1}
+\scnsuperset{SILK-интерфейс}
+\scnaddlevel{1}
+\scnidtf{(Speech – речь, Image – образ, Language – язык, Knowledge – знание)}
+\scnsuperset{естественно-языковой интерфейс}
+\scnaddlevel{1}
+\scnsuperset{речевой интерфейс}
+\scnaddlevel{-2}
+
+\scnheader{Пользовательский интерфейс}
+\scnexplanation{\textbf{Пользовательский интерфейс} -- один из наиболее важных компонентов компьютерной системы. Представляет собой совокупность аппаратных и программных средств, обеспечивающих обмен информацией между пользователем и компьютерной системой.}
+
+\scnheader{Командный пользовательский интерфейс}
+\scnexplanation{\textbf{Командный пользовательский интерфейс} -- пользовательский интерфейс, при котором обмен информацией между компьютерной системой и пользователем осуществляется путем написания текстовых инструкций или команд.}
+
+\scnheader{Графический пользовательский интерфейс}
+\scnexplanation{\textbf{Графический пользовательский интерфейс} -- пользовательский интерфейс, при котором обмен информацией между компьютерной системой и пользователем осуществляется при помощи графических компонентов компьютерной системы.}
+
+\scnheader{WIMP-интерфейс}
+\scnexplanation{\textbf{WIMP-интерфейс} -- пользовательский интерфейс, при котором обмен информацией между компьютерной системой и пользователем осуществляется в форме диалога при помощью окон, меню и других элементов управления.}
+
+\scnheader{SILK-интерфейс}
+\scnexplanation{\textbf{SILK-интерфейс} -- пользовательский интерфейс, наиболее приближенный к естественной для человека форме общения. Компьютерная система находит для себя команды, анализируя человеческую речь и находя в ней ключевые фразы. Результат выполнения команд преобразуется в понятную человеку форму, например, в естественно-языковую форму или изображение.}
+
+\scnheader{Естественно-языковой интерфейс}
+\scnexplanation{\textbf{Естественно-языковой интерфейс} -- SILK-интерфейс, обмен информацией между компьютерной системой и пользователем в котором происходит за счёт диалога. Диалог ведётся на одном из естественных языков.}
+
+\scnheader{Речевой интерфейс}
+\scnexplanation{\textbf{Речевой интерфейс} -- SILK-интерфейс, обмен информацией в котором происходит за счёт диалога, в процессе которого компьютерная система и пользователь общаются с помощью речи. Данный вид интерфейса наиболее приближен к естественному общению между людьми.}
+
 \scnheader{компонент пользовательского интерфейса}
-\scnsubdividing{атомарный компонент пользовательского интерфейса\\
-	\scnaddlevel{1}
+\scnaddlevel{1}
+\scnidtf{user interface component}
+\scnaddlevel{-1}
 	\scnsuperset{компонент пользовательского интерфейса для представления}
+	\scnaddlevel{1}
+	\scnidtf{presentation user interface component}
+	\scnaddlevel{-1}
+	\scnaddlevel{1}
+		\scnsuperset{компонент вывода}
 		\scnaddlevel{1}
-		\scnsuperset{вывод}
+		\scnidtf{output}
+		\scnaddlevel{-1}
+		\scnaddlevel{1}
+			\scnsuperset{компонент вывода изображения}
 			\scnaddlevel{1}
-			\scnsuperset{вывод изображения}
-			\scnsuperset{графический вывод}
+			\scnidtf{image-output}
+			\scnaddlevel{-1}
+			\scnsuperset{компонент вывода графической информации}
+			\scnaddlevel{1}
+			\scnidtf{graphical-output}
+			\scnaddlevel{-1}
 				\scnaddlevel{1}
 				\scnsuperset{диаграмма}
-				\scnsuperset{карта}
-				\scnsuperset{индикатор выполнения} 
+				\scnaddlevel{1}
+				\scnidtf{chart}
 				\scnaddlevel{-1}
-			\scnsuperset{видеовывод}
-			\scnsuperset{звуковой вывод}
-			\scnsuperset{текстовый вывод}
+				\scnsuperset{карта}
+				\scnaddlevel{1}
+				\scnidtf{map}
+				\scnaddlevel{-1}
+				\scnsuperset{индикатор выполнения} 
+				\scnaddlevel{1}
+				\scnidtf{progress-bar}
+				\scnaddlevel{-1}
+				\scnaddlevel{-1}
+			\scnsuperset{компонент вывода видео}
+			\scnaddlevel{1}
+			\scnidtf{video-output}
+			\scnaddlevel{-1}
+			\scnsuperset{компонент вывода звука}
+			\scnaddlevel{1}
+			\scnidtf{sound-output}
+			\scnaddlevel{-1}
+			\scnsuperset{компонент вывода текста}
+			\scnaddlevel{1}
+			\scnidtf{text-output}
+			\scnaddlevel{-1}
 				\scnaddlevel{1}
 				\scnsuperset{заголовок}
+				\scnaddlevel{1}
+				\scnidtf{headline}
+				\scnaddlevel{-1}
 				\scnsuperset{параграф}
+				\scnaddlevel{1}
+				\scnidtf{paragraph}
+				\scnaddlevel{-1}
 				\scnsuperset{сообщение}
+				\scnaddlevel{1}
+				\scnidtf{message}
+				\scnaddlevel{-1}
 				\scnaddlevel{-2}
 	\scnsuperset{декоративный компонент пользовательского интерфейса}
+	\scnaddlevel{1}
+	\scnidtf{decorative user interface component}
+	\scnaddlevel{-1}
 		\scnaddlevel{1}
 		\scnsuperset{разделитель}
-		\scnsuperset{пустое пространство}
-		\scnaddlevel{-1}
-	\scnsuperset{контейнер}
 		\scnaddlevel{1}
-		\scnsuperset{одноцелевой контейнер}
-			\scnaddlevel{1}
+		\scnidtf{separator}
+		\scnaddlevel{-1}
+		\scnsuperset{пустое пространство}
+		\scnaddlevel{1}
+		\scnidtf{blank-space}
+		\scnaddlevel{-2}
+	\scnsuperset{контейнер}
+	\scnidtf{container}
+		\scnaddlevel{1}
 			\scnsuperset{меню}
-			\scnsuperset{строка меню}
-			\scnsuperset{панель инструментов}
-			\scnaddlevel{-1}
-		\scnsuperset{универсальный контейнер}
 			\scnaddlevel{1}
+			\scnidtf{menu}
+			\scnaddlevel{-1}
+			\scnsuperset{строка меню}
+			\scnaddlevel{1}
+			\scnidtf{menu-bar}
+			\scnaddlevel{-1}
+			\scnsuperset{панель инструментов}
+			\scnaddlevel{1}
+			\scnidtf{tool-bar}
+			\scnaddlevel{-1}
 			\scnsuperset{строка состояния}
+			\scnaddlevel{1}
+			\scnidtf{status-bar}
+			\scnaddlevel{-1}
 			\scnsuperset{таблично-строковый контейнер}
+			\scnaddlevel{1}
+			\scnidtf{table-row-container}
+			\scnaddlevel{-1}
 			\scnsuperset{списковый контейнер}
+			\scnaddlevel{1}
+			\scnidtf{list-container}
+			\scnaddlevel{-1}
 			\scnsuperset{таблично-клеточный контейнер}
+			\scnaddlevel{1}
+			\scnidtf{table-cell-container}
+			\scnaddlevel{-1}
 			\scnsuperset{древовидный контейнер}
+			\scnaddlevel{1}
+			\scnidtf{tree-container}
+			\scnaddlevel{-1}
 			\scnsuperset{помеченная группа}
+			\scnaddlevel{1}
+			\scnidtf{labeled-group}
+			\scnaddlevel{-1}
 			\scnsuperset{панель вкладок}
+			\scnaddlevel{1}
+			\scnidtf{tab-pane}
+			\scnaddlevel{-1}
 			\scnsuperset{панель вращения}
+			\scnaddlevel{1}
+			\scnidtf{spin-pane}
+			\scnaddlevel{-1}
 			\scnsuperset{узловой контейнер}
+			\scnaddlevel{1}
+			\scnidtf{tree-node-container}
+			\scnaddlevel{-1}
 			\scnsuperset{панель прокрутки}
+			\scnaddlevel{1}
+			\scnidtf{scroll-pane}
+			\scnaddlevel{-1}
 			\scnsuperset{окно}
+			\scnaddlevel{1}
+			\scnidtf{window}
+			\scnaddlevel{-1}
 				\scnaddlevel{1}
 				\scnsuperset{модальное окно}
+				\scnaddlevel{1}
+				\scnidtf{modal-window}
+				\scnaddlevel{-1}
 				\scnsuperset{немодальное окно}
+				\scnaddlevel{1}
+				\scnidtf{non-modal-window}
 				\scnaddlevel{-4}		
 	\scnsuperset{интерактивный компонент пользовательского интерфейса}
+	\scnaddlevel{1}
+	\scnidtf{interactive user interface component}
+	\scnaddlevel{-1}
 		\scnaddlevel{1}
 		\scnsuperset{компонент ввода данных}
+		\scnaddlevel{1}
+		\scnidtf{data-input-component}
+		\scnaddlevel{-1}
 			\scnaddlevel{1}
 			\scnsuperset{компонент ввода данных с прямой ответной реакцией}
+			\scnaddlevel{1}
+			\scnidtf{data-input-component-with-direct-feedback}
+			\scnaddlevel{-1}
 				\scnaddlevel{1}
 				\scnsuperset{компонент ввода текста с прямой ответной реакцией}
+				\scnaddlevel{1}
+				\scnidtf{text-input-component-with-direct-feedback}
+				\scnaddlevel{-1}
 					\scnaddlevel{1}
 					\scnsuperset{многострочное текстовое поле}
+					\scnaddlevel{1}
+					\scnidtf{multi-line-text-field}
+					\scnaddlevel{-1}
 					\scnsuperset{однострочное текстовое поле}
+					\scnaddlevel{1}
+					\scnidtf{single-line-text-field}
+					\scnaddlevel{-1}
 					\scnaddlevel{-1}
 				\scnsuperset{ползунок}
+				\scnaddlevel{1}
+				\scnidtf{slider}
+				\scnaddlevel{-1}
 				\scnsuperset{область рисования}
+				\scnaddlevel{1}
+				\scnidtf{drawing-area}
+				\scnaddlevel{-1}
 				\scnsuperset{компонент выбора}
+				\scnaddlevel{1}
+				\scnidtf{selection-component}
+				\scnaddlevel{-1}
 					\scnaddlevel{1}
 					\scnsuperset{компонент выбора нескольких значений}
-					\scnsuperset{компонент выбора одного значения}
+					\scnaddlevel{1}
+					\scnidtf{selection-component-multiple-values}
 					\scnaddlevel{-1}
-				\scnsuperset{выбираемое представление данных}			
+					\scnsuperset{компонент выбора одного значения}
+					\scnaddlevel{1}
+					\scnidtf{selection-component-single-values}
+					\scnaddlevel{-1}
+					\scnaddlevel{-1}
+				\scnsuperset{компонент выбора данных}\\
+				\scnaddlevel{1}
+				\scnidtf{selectable-data-representation}
+				\scnaddlevel{-1}	
 					\scnaddlevel{1}
 					\scnsuperset{флаговая кнопка}
+					\scnaddlevel{1}
+					\scnidtf{check-box}
+					\scnaddlevel{-1}
 					\scnsuperset{радиокнопка}
+					\scnaddlevel{1}
+					\scnidtf{radio-button}
+					\scnaddlevel{-1}
 					\scnsuperset{переключатель}
+					\scnaddlevel{1}
+					\scnidtf{toggle-button}
+					\scnaddlevel{-1}
 					\scnsuperset{выбираемый элемент}
+					\scnidtf{selectable-item}
 					\scnaddlevel{-2}
 			\scnsuperset{компонент ввода данных без прямой ответной реакции}
+			\scnaddlevel{1}
+			\scnidtf{data-input-component-without-direct-feedback}
+			\scnaddlevel{-1}
 				\scnaddlevel{1}
 				\scnsuperset{кнопка-счётчик}
-				\scnsuperset{голосовой ввод}
-				\scnsuperset{запись видео}
+				\scnaddlevel{1}
+				\scnidtf{spin-button}
+				\scnaddlevel{-1}
+				\scnsuperset{компонент речевого ввода}
+				\scnaddlevel{1}
+				\scnidtf{speech-input}
+				\scnaddlevel{-1}
+				\scnsuperset{компонент ввода движений}
+				\scnaddlevel{1}
+				\scnidtf{motion-input}
+				\scnaddlevel{-1}
 				\scnaddlevel{-2}
-		\scnsuperset{компонент манипуляции представления}
+		\scnsuperset{компонент для представления и взаимодействия с пользователем}
+		\scnaddlevel{1}
+		\scnidtf{presentation-manipulation-component}
+		\scnaddlevel{-1}
 			\scnaddlevel{1}
 			\scnsuperset{активирующий компонент}
+			\scnaddlevel{1}
+			\scnidtf{activating-component}
+			\scnaddlevel{-1}
 			\scnsuperset{компонент непрерывной манипуляции}
+			\scnaddlevel{1}
+			\scnidtf{continuous-manipulation-component}
+			\scnaddlevel{-1}
 				\scnaddlevel{1}
 				\scnsuperset{полоса прокрутки}
-				\scnsuperset{редактор размера}
+				\scnaddlevel{1}
+				\scnidtf{scrollbar}
+				\scnaddlevel{-1}
+				\scnsuperset{компонент редактирования размера}
+				\scnaddlevel{1}
+				\scnidtf{resizer}
+				\scnaddlevel{-1}
 				\scnaddlevel{-2}
-		\scnsuperset{компонент триггера операции}
+		\scnsuperset{компонент запроса действий}
+		\scnaddlevel{1}
+		\scnidtf{operation-trigger-component}
+		\scnaddlevel{-1}
 			\scnaddlevel{1}
 			\scnsuperset{компонент выбора команд}
+			\scnaddlevel{1}
+			\scnidtf{command-selection-component}
+			\scnaddlevel{-1}
 				\scnaddlevel{1}
 				\scnsuperset{кнопка}
+				\scnaddlevel{1}
+				\scnidtf{button}
+				\scnaddlevel{-1}
 				\scnsuperset{пункт меню}
+				\scnaddlevel{1}
+				\scnidtf{menu-item}
+				\scnaddlevel{-1}
 				\scnaddlevel{-1}
 			\scnsuperset{компонент ввода команд}
+			\scnaddlevel{1}
+			\scnidtf{command-input-component}
+			\scnaddlevel{-1}
 			\scnaddlevel{-3}
-;неатомарный компонент пользовательского интерфейса}			
 
 \scnheader{компонент пользовательского интерфейса для представления}
 \scnexplanation{\textbf{компонент пользовательского интерфейса для представления} -- компонент пользовательского интерфейса, не подразумевающий взаимодействия с пользователем.}
 
 
-\scnheader{вывод}
-\scnexplanation{\textbf{вывод} -- компонент пользовательского интерфейса, предназначенный для представления информации.}
+\scnheader{компонент вывода}
+\scnexplanation{\textbf{компонент вывода} -- компонент пользовательского интерфейса, предназначенный для представления информации.}
 
-\scnheader{вывод изображения}
-\scnexplanation{\textbf{вывод изображения} -- компонент пользовательского интерфейса, предназначенный для отображения изображений.}
+\scnheader{компонент вывода изображения}
+\scnexplanation{\textbf{компонент вывода изображения} -- компонент пользовательского интерфейса, предназначенный для отображения изображений.}
 
-\scnheader{графический вывод}
-\scnexplanation{\textbf{графический вывод} -- компонент пользовательского интерфейса, предназначенный для представления графической информации.}
+\scnheader{компонент вывода графической информации}
+\scnexplanation{\textbf{компонент вывода графической информации} -- компонент пользовательского интерфейса, предназначенный для представления графической информации.}
 
 \scnheader{диаграмма}
 \scnexplanation{\textbf{диаграмма} -- компонент пользовательского интерфейса, предназначенный для отображения графиков.}
@@ -128,14 +341,14 @@
 \scnheader{индикатор выполнения}
 \scnexplanation{\textbf{индикатор выполнения} -- компонент пользовательского интерфейса, предназначенный для отображения процента выполнения какой-либо задачи.}
 
-\scnheader{вывод видео}
-\scnexplanation{\textbf{вывод видео} -- компонент пользовательского интерфейса, предназначенный для представления видео-информации.}
+\scnheader{компонент вывода видео}
+\scnexplanation{\textbf{компонент вывода видео} -- компонент пользовательского интерфейса, предназначенный для представления видео-информации.}
 
-\scnheader{звуковой вывод}
-\scnexplanation{\textbf{звуковой вывод} -- компонент пользовательского интерфейса, предназначенный для представления аудио-информации.}
+\scnheader{компонент вывода звука}
+\scnexplanation{\textbf{компонент вывода звука} -- компонент пользовательского интерфейса, предназначенный для представления аудио-информации.}
 
-\scnheader{текстовый вывод}
-\scnexplanation{\textbf{текстовый вывод} --компонент пользовательского интерфейса, предназначенный для представления текстовой информации.}
+\scnheader{компонент вывода текста}
+\scnexplanation{\textbf{компонент вывода текста} -- компонент пользовательского интерфейса, предназначенный для представления текстовой информации.}
 
 \scnheader{заголовок}
 \scnexplanation{\textbf{заголовок} -- компонент пользовательского интерфейса, предназначенный для отображения заголовков.}
@@ -149,15 +362,9 @@
 \scnheader{декоративный компонент пользовательского интерфейса}
 \scnexplanation{\textbf{декоративный компонент пользовательского интерфейса} -- компонент пользовательского интерфейса, предназначенный для стилизации интерфейса.}
 
-\scnheader{метка}
-\scnexplanation{\textbf{метка} -- компонент пользовательского интерфейса, предназначенный для отображения названий.}
-
 \scnheader{контейнер}
 \scnexplanation{\textbf{контейнер} -- компонент пользовательского интерфейса, задача которого состоит в размещении набора компонентов, включённых в его состав.
 }
-
-\scnheader{одноцелевой контейнер}
-\scnexplanation{\textbf{одноцелевой контейнер} -- контейнер, предназначенный только для одной цели.}
 
 \scnheader{меню}
 \scnexplanation{\textbf{меню} -- компонент пользовательского интерфейса, содержащий несколько вариантов для выбора пользователем.}
@@ -167,9 +374,6 @@
 
 \scnheader{панель инструментов}
 \scnexplanation{\textbf{панель инструментов} -- компонент пользовательского интерфейса, на котором размещаются экранные кнопки, значки, меню или другие элементы ввода или вывода.}
-
-\scnheader{универсальный контейнер}
-\scnexplanation{\textbf{универсальный контейнер} -- контейнер, предназначенный для нескольких целей.}
 
 \scnheader{строка состояния}
 \scnexplanation{\textbf{строка состояния} -- компонент пользовательского интерфейса, предназначенный для отображения информации о текущем состоянии окна.}
@@ -225,8 +429,8 @@
 \scnheader{компонент выбора одного значения}
 \scnexplanation{\textbf{компонент выбора одного значения} -- компонент выбора, в котором можно установить значение только одного свойства.}
 
-\scnheader{выбираемое представление данных}
-\scnexplanation{\textbf{выбираемое представление данных} -- компонент пользовательского интерфейса, который позволяет выбрать отображаемые данные.}
+\scnheader{компонент выбора данных}
+\scnexplanation{\textbf{компонент выбора данных} -- компонент пользовательского интерфейса, который позволяет выбрать отображаемые данные.}
 
 \scnheader{флаговая кнопка}
 \scnexplanation{\textbf{флаговая кнопка} -- компонент пользовательского интерфейса, позволяющий пользователю управлять параметром с двумя состояниями — включено и отключено.}
@@ -243,14 +447,14 @@
 \scnheader{кнопка-счетчик}
 \scnexplanation{\textbf{кнопка-счетчик} -- компонент пользовательского интерфейса, как правило, ориентированный вертикально, с помощью которого пользователь может изменить значение в прилегающем текстовом поле, щёлкнув на стрелку вверх или вниз, или удерживая стрелку вверх или вниз, в результате чего значение в текстовом поле увеличивается (если нажата стрелка вверх) или уменьшается (если нажата стрелка вниз).}
 
-\scnheader{голосовой ввод}
-\scnexplanation{\textbf{голосовой ввод} -- компонент пользовательского интерфейса для записи голоса.}
+\scnheader{компонент речевого ввода}
+\scnexplanation{\textbf{компонент речевого ввода} -- компонент пользовательского интерфейса для ввода речи.}
 
-\scnheader{запись видео}
-\scnexplanation{\textbf{запись видео} -- компонент пользовательского интерфейса для записи видео.}
+\scnheader{компонент ввода движений}
+\scnexplanation{\textbf{компонент ввода движений} -- компонент пользовательского интерфейса для ввода движений.}
 
-\scnheader{компонент манипуляции представления}
-\scnexplanation{\textbf{компонент манипуляции представления} -- компонент пользовательского интерфейса, предназначенный для представления информации и взаимодействия с пользователем.}
+\scnheader{компонент для представления и взаимодействия с пользователем}
+\scnexplanation{\textbf{компонент для представления и взаимодействия с пользователем} -- компонент пользовательского интерфейса, предназначенный для представления информации и взаимодействия с пользователем.}
 
 \scnheader{полоса прокрутки}
 \scnexplanation{\textbf{полоса прокрутки} -- компонент пользовательского интерфейса, который используется для отображения информации и элементов интерфейса, больших по размеру, чем используемый для их отображения контейнер.}
@@ -258,8 +462,8 @@
 \scnheader{редактор размера}
 \scnexplanation{\textbf{редактор размера} -- компонент пользовательского интерфейса, с помощью которого можно изменять размер другого компонента.}
 
-\scnheader{компонент триггера операции}
-\scnexplanation{\textbf{компонент триггера операции} -- компонент пользовательского интерфейса, который запрашивают пользователя совершить некоторое действие.}
+\scnheader{компонент запроса действий}
+\scnexplanation{\textbf{компонент запроса действий} -- компонент пользовательского интерфейса, который запрашивают пользователя совершить некоторое действие.}
 
 \scnheader{кнопка}
 \scnexplanation{\textbf{кнопка} -- компонент пользовательского интерфейса, при нажатии на который происходит программно связанное с этим нажатием действие либо событие.}
@@ -270,6 +474,7 @@
 \scnheader{Стартовая страница}
 \scnaddlevel{1}
 \scniselement{окно}
+\scnhaselementrole{пример}{\\
 \scnrelfromset{декомпозиция}{
 Навигация\\
 	\scnaddlevel{1}
@@ -278,6 +483,7 @@
 	Главное меню\\	
 		\scnaddlevel{1}
 		\scniselement{меню}
+		\scnhaselementrole{пример}{\\
 		\scnrelfromset{декомпозиция}{
 		Элемент-1\\
 			\scnaddlevel{1}
@@ -292,6 +498,7 @@
 			\scniselement{переключатель}
 			\scnaddlevel{-1}
 	}
+}
 	\scnaddlevel{-1}
 	;Выбор языка\\
 		\scnaddlevel{1}
@@ -301,7 +508,7 @@
 		\scnaddlevel{1}
 		\scniselement{кнопка}
 		\scnaddlevel{-1}
-	}\scnaddlevel{-1}
+	\scnaddlevel{-1}
 ;Блок истории\\
 	\scnaddlevel{1}
 	\scniselement{неатомарный компонент пользовательского интерфейса}
@@ -313,11 +520,11 @@
 	Главное окно\\
 		\scnaddlevel{1}
 		\scniselement{окно}
-		\scnaddlevel{-1}	
+		\scnaddlevel{-1}
 	;панель инструментов\\
 		\scnaddlevel{1}
-		\scnrelfromset{декомпозиция}{
-		Кнопка принтера\\
+\scnhaselementrole{пример}{\\
+		\scnrelfromset{декомпозиция}{Кнопка принтера\\
 			\scnaddlevel{1}
 			\scniselement{кнопка}
 			\scnaddlevel{-1}
@@ -332,8 +539,8 @@
 		;Поиск\\	
 			\scnaddlevel{1}
 			\scniselement{однострочное текстовое поле}
-			\scnaddlevel{-1}
-	}
+			\scnaddlevel{-1}}
+	}}
 	\scnaddlevel{-1}
 	}\scnaddlevel{-1}
 ;Футер\\
@@ -341,6 +548,6 @@
 	\scniselement{неатомарный компонент пользовательского интерфейса}
 	\scnaddlevel{-1}
 }
-
+}
 \scnendstruct \scnendcurrentsectioncomment
 \end{SCn}
