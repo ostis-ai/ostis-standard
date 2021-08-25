@@ -42,7 +42,6 @@
 \scnheader{компонент пользовательского интерфейса}
 \scnaddlevel{1}
 \scnidtf{user interface component}
-\scnaddlevel{-1}
 	\scnsuperset{компонент пользовательского интерфейса для представления}
 	\scnaddlevel{1}
 	\scnidtf{presentation user interface component}
@@ -472,41 +471,42 @@
 \scnexplanation{\textbf{пункт меню} -- элемент компонента меню.}
 
 \scnheader{Стартовая страница}
+\scnhaselementrole{пример}{компонент пользовательского интерфейса}
 \scnrelfrom{иллюстрация}{
 \scnfileimage{\includegraphics[width=1\linewidth]{figures/sd_ui/startPage.png}}}
 \scnaddlevel{1}
 \scniselement{окно}
-\scnhaselementrole{пример}{\\
+\scnaddlevel{-1}
 \scnrelfromset{декомпозиция}{
-Навигация\\
+Панель навигации\\
 	\scnaddlevel{1}
 	\scniselement{неатомарный компонент пользовательского интерфейса}
+	\scnaddlevel{-1}
 	\scnrelfromset{декомпозиция}{
 	Главное меню\\	
 		\scnaddlevel{1}
 		\scniselement{меню}
-		\scnhaselementrole{пример}{\\
+		\scnaddlevel{-1}
 		\scnrelfromset{декомпозиция}{
-		Элемент-1\\
+		Первый пункт меню\\
 			\scnaddlevel{1}
 			\scniselement{пункт меню}
 			\scnaddlevel{-1}
-		;Элемент-2\\
+		;Второй пункт меню\\
 			\scnaddlevel{1}
 			\scniselement{пункт меню}
 			\scnaddlevel{-1}			
-		;Переключение режима\\
+		;Компонент переключения режима\\
 			\scnaddlevel{1}
 			\scniselement{переключатель}
 			\scnaddlevel{-1}
 	}
-}
 	\scnaddlevel{-1}
-	;Выбор языка\\
+	;Компонент выбора языка\\
 		\scnaddlevel{1}
 		\scniselement{компонент выбора одного значения}
 		\scnaddlevel{-1}
-	;Гугл\\
+	;Компонент авторизации через гугл\\
 		\scnaddlevel{1}
 		\scniselement{кнопка}
 		\scnaddlevel{-1}
@@ -518,14 +518,13 @@
 ;Основной блок\\
 	\scnaddlevel{1}
 	\scniselement{неатомарный компонент пользовательского интерфейса}
+	\scnaddlevel{-1}
 	\scnrelfromset{декомпозиция}{
 	Главное окно\\
 		\scnaddlevel{1}
 		\scniselement{окно}
 		\scnaddlevel{-1}
 	;панель инструментов\\
-		\scnaddlevel{1}
-\scnhaselementrole{пример}{\\
 		\scnrelfromset{декомпозиция}{Кнопка принтера\\
 			\scnaddlevel{1}
 			\scniselement{кнопка}
@@ -538,18 +537,17 @@
 			\scnaddlevel{1}
 			\scniselement{кнопка}
 			\scnaddlevel{-1}
-		;Поиск\\	
+		;Поле поиска\\	
 			\scnaddlevel{1}
 			\scniselement{однострочное текстовое поле}
 			\scnaddlevel{-1}}
-	}}
+	}
 	\scnaddlevel{-1}
 	}\scnaddlevel{-1}
 ;Футер\\
 	\scnaddlevel{1}
 	\scniselement{неатомарный компонент пользовательского интерфейса}
 	\scnaddlevel{-1}
-}
 }
 \scnendstruct \scnendcurrentsectioncomment
 \end{SCn}
