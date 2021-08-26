@@ -360,6 +360,9 @@
                 <point x="-334" y="2843"/>
             </points>
         </contour>
+        <node type="node/const/perm/role" idtf="синапс'" shapeColor="0" id="94086231851312" parent="0" left="0" top="0" right="63.1719" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="-372.418" y="4399.27" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
         <node type="node/const/perm/relation" idtf="входное значение*" shapeColor="0" id="94086236440320" parent="0" left="0" top="0" right="151.906" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="-670.911" y="4682.01" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
@@ -394,9 +397,6 @@
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
         <node type="node/var/perm/general" idtf="" shapeColor="0" id="94086237703776" parent="0" x="-686.239" y="4485.38" haveBus="false" idtf_pos="0">
-            <content type="0" mime_type="" content_visibility="false" file_name=""/>
-        </node>
-        <node type="node/const/perm/role" idtf="синопс'" shapeColor="0" id="94086231851312" parent="0" left="0" top="0" right="63.3281" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="-372.418" y="4399.27" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
         <node type="node/const/perm/role" idtf="пороговый нейрон'" shapeColor="0" id="94086236848704" parent="0" left="0" top="0" right="151.422" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="-370.769" y="4343.92" haveBus="false" idtf_pos="0">
@@ -441,7 +441,7 @@
         <node type="node/const/perm/group" idtf="число" shapeColor="0" id="94086237853248" parent="0" left="0" top="0" right="52.1563" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="-395.385" y="4830.77" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
-        <node type="node/const/perm/role" idtf="нейрон'" shapeColor="0" id="94086237506736" parent="0" left="0" top="0" right="66.0313" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="-677.692" y="4374.62" haveBus="false" idtf_pos="0">
+        <node type="node/const/perm/role" idtf="нейрон'" shapeColor="255" id="94086237506736" parent="0" left="0" top="0" right="66.0313" bottom="25" textColor="157" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="-677.692" y="4374.62" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
         <node type="node/const/perm/relation" idtf="обрабатывающий слой*" shapeColor="0" id="94086235660192" parent="0" left="0" top="0" right="189.859" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="-445.385" y="4251.54" haveBus="false" idtf_pos="0">
