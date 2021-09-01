@@ -23,8 +23,6 @@
 \usepackage{ragged2e}
 \usepackage{float}
 \usepackage{amssymb}
-\usepackage[]{algorithm2e}
-\usepackage{algorithm}
 \usepackage{titlesec}
 \usepackage[tracking=true]{microtype}
 \usepackage{changepage}
@@ -103,19 +101,18 @@
 \normalsize
 \ActivateBG
 \addtocounter{chapter}{-1}
-%\include{Contents/beginning}
+\include{Contents/beginning}
 
 \ActivateBG
 
-%\input{Contents/chapter0/intro_ostis}
-%\input{Contents/chapter0/intro_lang}
-%\input{Contents/chapter0/rules}
+\input{Contents/chapter0/intro_ostis}
+\input{Contents/chapter0/intro_lang}
+\input{Contents/chapter0/rules}
 
 %\mainmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\include{Contents/chapter1}
-%\include{Contents/chapter2}
-\input{Contents/chapter2/sd_ostis_sys_models/sd_ps/sd_ann}
-%\include{Contents/bibliography}
+\include{Contents/chapter1}
+\include{Contents/chapter2}
+\include{Contents/bibliography}
 
 \backmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\include{Contents/glossary}
