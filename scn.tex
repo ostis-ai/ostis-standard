@@ -163,7 +163,9 @@
 \newcommand{\scnsegmentheader}[1]{
 \addtocounter{seg}{1}
 \ifnum\value{seg}>1
-\newpage
+%\newpage
+\bigskip
+\bigskip
 \else
 \bigskip
 \fi
@@ -178,7 +180,8 @@
 \newcommand{\scnsegmentheaderbeginning}[1]{
 	\addtocounter{seg}{1}
 	\ifnum\value{seg}>1
-	\newpage
+%	\newpage
+	\bigskip
 	\else
 	\bigskip
 	\fi
@@ -756,6 +759,17 @@
 \setlength{\parskip}{0.5em}
 \vspace{-1.5em}
 \hspace{-0.4em}\normalfont \textbf{[}#1\textbf{]}
+\end{adjustwidth}
+}
+
+\newcommand{\scnexternalfile}[1]{
+\begin{adjustwidth}{\calctab+0.4em}{0em}
+\justify
+\setlength{\parindent}{0em}
+\setlength{\itemindent}{0em}
+\setlength{\parskip}{0.5em}
+\vspace{-1.5em}
+\normalfont#1
 \end{adjustwidth}
 }
 
