@@ -261,7 +261,7 @@
         \scnaddlevel{1}
             \scnsubset{задача}
             \scnexplanation{Задача построения оценочной функции по примерам $(x_i, f(x_i))$, где $f(x)$ -- неизвестная функция}
-            \scnexplanation{\textbf{оценочная функция} -- отображение вида $\tilde{f}: X \rightarrow \mathbb{R}$, где $X \in \mathbb{R}^m$ -- признаковое пространство п.в.а.}
+            \scnexplanation{\textbf{\textit{оценочная функция}} -- отображение вида $\tilde{f}: X \rightarrow \mathbb{R}$, где $X \in \mathbb{R}^m$ -- признаковое пространство п.в.а.}
         \scnaddlevel{-1}
         ;задача кластеризация\\
         \scnaddlevel{1}
@@ -470,7 +470,7 @@
     \scnsubdividing{
         линейная\\
         \scnaddlevel{1}
-            \scnrelfrom{формула}{
+            \scntext{формула}{
                 \begin{equation*}
                     y = kS
                 \end{equation*}
@@ -479,7 +479,7 @@
         \scnaddlevel{-1}
         ;пороговая\\
         \scnaddlevel{1}
-            \scnrelfrom{формула}{
+            \scntext{формула}{
                 \begin{equation*}
                     y = sign(S) =
                     \begin{cases}
@@ -491,7 +491,7 @@
         \scnaddlevel{-1}
         ;сигмоидная\\
         \scnaddlevel{1}
-            \scnrelfrom{формула}{
+            \scntext{формула}{
                 \begin{equation*}
                     y = \frac{1}{1+e^{-cS}}
                 \end{equation*}
@@ -500,7 +500,7 @@
         \scnaddlevel{-1}
         ;гиперболический тангенс\\
         \scnaddlevel{1}
-            \scnrelfrom{формула}{
+            \scntext{формула}{
                 \begin{equation*}
                     y = \frac{e^{cS}-e^{-cS}}{e^{cs}+e^{-cS}}
                 \end{equation*}
@@ -509,7 +509,7 @@
         \scnaddlevel{-1}
         ;softmax\\
         \scnaddlevel{1}
-            \scnrelfrom{формула}{
+            \scntext{формула}{
                 \begin{equation*}
                     y_j = softmax(S_j) = \frac{e^{S_j}}{\sum_{j} e^{S_j}}
                 \end{equation*}
@@ -518,7 +518,7 @@
         \scnaddlevel{-1}
         ;ReLU\\
         \scnaddlevel{1}
-            \scnrelfrom{формула}{
+            \scntext{формула}{
                 \begin{equation*}
                     y = F(S) =
                     \begin{cases}
@@ -837,7 +837,7 @@
 		\scnaddlevel{1}
 			\scnidtf{м.о.р.о.}
 			\scntext{алгоритм}{
-				
+
 				\begin{minipage}{\linewidth}
 					\begin{algorithm}[H]
 						\KwData{$X$ -- данные, $Et$ -- желаемый отклик (метки), $E_m$ -- желаемая ошибка (в соответствии с выбранной функцией потерь)}
@@ -850,7 +850,7 @@
 								изменение настраиваемых параметров и.н.с. в соответствии с вычисленными ошибками;\\
 							}
 							вычисление общей ошибки E на данной эпохе;
-						}	
+						}
 					\end{algorithm}
 				\end{minipage}
             }
@@ -944,7 +944,7 @@
 		\scnaddlevel{1}
 			\scnidtf{mean square error}
 			\scnidtf{средняя квадратичная ошибка}
-			\scnrelfrom{формула}{
+			\scntext{формула}{
 				\begin{equation*}
 					MSE = \frac{1}{L} \sum_{l=1}^L \sum_{i=1}^m (y_i^l - e_i^l)^2
 				\end{equation*}
@@ -955,7 +955,7 @@
 		\scnaddlevel{1}
 			\scnidtf{binary cross entropy}
 			\scnidtf{бинарная кросс-энтропия}
-			\scnrelfrom{формула}{
+			\scntext{формула}{
 				\begin{equation*}
 					BCE = - \sum_{l=1}^L (e^l \log(y^l) + (1 - e^l)\log(1 - y^l))
 				\end{equation*}
@@ -967,7 +967,7 @@
 		\scnaddlevel{1}
 			\scnidtf{multi-class cross entropy}
 			\scnidtf{мультиклассовая кросс-энтропия}
-			\scnrelfrom{формула}{
+			\scntext{формула}{
 				\begin{equation*}
 					MCE = - \sum_{l=1}^L \sum_{i=1}^m e_{i}^l \log(y_{i}^l)
 				\end{equation*}
