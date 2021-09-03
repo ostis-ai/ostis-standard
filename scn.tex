@@ -163,7 +163,9 @@
 \newcommand{\scnsegmentheader}[1]{
 \addtocounter{seg}{1}
 \ifnum\value{seg}>1
-\newpage
+%\newpage
+\bigskip
+\bigskip
 \else
 \bigskip
 \fi
@@ -178,7 +180,8 @@
 \newcommand{\scnsegmentheaderbeginning}[1]{
 	\addtocounter{seg}{1}
 	\ifnum\value{seg}>1
-	\newpage
+%	\newpage
+	\bigskip
 	\else
 	\bigskip
 	\fi
