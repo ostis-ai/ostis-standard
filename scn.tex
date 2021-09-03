@@ -225,7 +225,7 @@
 	\hspace{-\commentsize}\bfseries /*~#1~\filldots/\normalfont	
 \end{adjustwidth}}
 
-\newcommand{\scnfragmentcaption}{\bfseries /*\filldots/\hspace{\textwidth}\vspace{\afterseglength}}
+\newcommand{\scnfragmentcaption}{\bfseries /*\filldots/\hspace{\textwidth}\normalfont\vspace{\afterseglength}}
 
 \makeatletter
 \newcommand{\scnsegmentcaption}{\normalfont \bfseries /*~\textspaced{Сегмент}~\filldots/\hspace{\textwidth}\normalfont\vspace{\afterseglength}}
@@ -1152,7 +1152,7 @@ $\bm{=[}$
         ]current page.north west);
 
 \foreach \i in {1,2,...,25}{
-\draw[gray] ($(NW)+(\i*\tabsize,0)$) -- ($(SW)+(\i*\tabsize,0)$);}
+\draw[black!25] ($(NW)+(\i*\tabsize,0)$) -- ($(SW)+(\i*\tabsize,0)$);}
 
 \end{tikzpicture}
 }
