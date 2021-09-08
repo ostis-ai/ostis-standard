@@ -72,11 +72,21 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand\headrulewidth{0pt}
+\lhead{}\chead{\hspace{14.5em}{\normalfont\thepage}}\rhead{}
+\cfoot{}
+%\pagenumbering{arabic}
+%\fancypagestyle{plain}{}
+%	\fancyfoot[C]{\thepage}}
+%\pagestyle{plain}
+
 \usepackage{geometry}
 \geometry{
   a4paper,
-  left=30mm,
-  right=10mm,
+  left=20mm,
+  right=20mm,
   top=20mm,
   bottom=15mm,
   %textwidth=117mm,
@@ -97,10 +107,12 @@
 \author{\centering Голенков В.В., Гулякина Н.А., Шункевич Д.В.}
 \title{\centering
 \textls[90]{Открытая ~технология}\\ онтологического проектирования,\\ \textls[55]{производства ~и ~эксплуатации}\\ \textls[28]{семантически совместимых гибридных}\\ интеллектуальных компьютерных систем}
-\maketitle
+%\maketitle
 
-\mainmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\mainmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \normalsize
+
+\setcounter{page}{3}
 
 \input{Contents/foreword}
 

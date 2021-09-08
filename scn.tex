@@ -1166,16 +1166,16 @@ $\bm{=[}$
 \begin{tikzpicture}[remember picture,overlay]
 
 \coordinate (NW) at ([
-            xshift=0.75in,
+            xshift=0.36in,
             yshift=-1.1in-2\voffset-\topmargin-\headheight-\headsep,
         ]current page.north west);
         
 \coordinate (SW) at ([
-            xshift=0.75in,
+            xshift=0.36in,
             yshift=-1.1in-2\voffset-\topmargin-\headheight-\headsep-\textheight,
         ]current page.north west);
 
-\foreach \i in {1,2,...,25}{
+\foreach \i in {1,2,...,18}{
 \draw[black!25] ($(NW)+(\i*\tabsize,0)$) -- ($(SW)+(\i*\tabsize,0)$);}
 
 \end{tikzpicture}
