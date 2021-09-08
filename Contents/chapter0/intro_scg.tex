@@ -18,7 +18,7 @@
 \scnidtf{Semantic Code graphical}
 \scnidtf{Язык визуального (графического) представления баз знаний ostis-систем}
 \scniselement{графовый язык}
-\scnexplanation{\textit{SCg-код} представляет собой способ визуализации \textit{sc-текстов} (информационных конструкций SC-кода) в виде рисунков этих абстрактных конструкций. Подчеркнем, что абстрактная \textit{графовая структура} и её рисунок (графическое изображение) -- это не одно и то же даже если они \textit{изоморфны} друг другу. \textit{SCg-код} рассматривается нами как объединение \textit{Ядра SCg-кода}, обеспечивающего изоморфное графическое изображение любого \textit{sc-текста}, а также нескольких направлений расширения этого ядра, обеспечивающих повышение компактности и "читабельности"{} текстов \textit{SCg-кода} (\textit{sc.g-текстов}).}
+\scnexplanation{\textit{SCg-код} представляет собой способ визуализации \textit{sc-текстов} (информационных конструкций SC-кода) в виде рисунков этих абстрактных конструкций. Подчеркнем, что абстрактная \textit{графовая структура} и её рисунок (графическое изображение) -- это не одно и то же даже если они \textit{изоморфны} друг другу. \mbox{\textit{SCg-код}} рассматривается нами как объединение \textit{Ядра SCg-кода}, обеспечивающего изоморфное графическое изображение любого \textit{sc-текста}, а также нескольких направлений расширения этого ядра, обеспечивающих повышение компактности и "читабельности"{} текстов \textit{SCg-кода} (\textit{sc.g-текстов}).}
 \scnnote{\textit{SC-код} -- это рассмотрение множества всевозможных графически представленных (визуализированных) графовых структур как \underline{универсального} языка представления знаний с соответствующим синтаксисом и семантикой.}
 
 \scnheader{SCg-код}
@@ -161,7 +161,7 @@
 
 \scnheader{Первое направление расширения Ядра SCg-кода}
 
-\scnexplanation{\textit{Первое направление синтаксического расширения Ядра SCg-кода} -- это \uline{приписывание} некоторым sc.g-элементам \textit{основных sc-идентификаторов*} (чаще всего - строковых идентификаторов, то есть имен) \textit{sc-элементов} , изображаемых этими \textit{sc.g-элементами}. Указываемые идентификаторы являются уникальным для каждого идентифицируемого (именуемого) \textit{sc.g-элемента}. Приписывание \textit{sc.g-элементам} уникальных идентификаторов дает возможность в рамках одного \textit{sc.g-текста} дублировать (копировать) некоторые \textit{sc.g-узлы} при условии, если \uline{всем} таким копиям будут приписаны соответствующие идентификаторы. Такое дублирование \textit{sc.g-узлов} является дополнительным средствам \uline{наглядного} размещения \textit{sc.g-текстов}. Кроме того, приписывание \textit{sc.g-элементу} соответствующего ему основного (уникального) \textit{sc-идентификатора*} представляет собой более компактный вариант изображения \textit{sc.g-текстов}.}
+\scnexplanation{\textit{Первое направление синтаксического расширения Ядра SCg-кода} -- это \uline{приписывание} некоторым \mbox{sc.g-элементам} \textit{основных sc-идентификаторов*} (чаще всего - строковых идентификаторов, то есть имен) \textit{sc-элементов} , изображаемых этими \textit{sc.g-элементами}. Указываемые идентификаторы являются уникальным для каждого идентифицируемого (именуемого) \textit{sc.g-элемента}. Приписывание \textit{sc.g-элементам} уникальных идентификаторов дает возможность в рамках одного \textit{sc.g-текста} дублировать (копировать) некоторые \textit{sc.g-узлы} при условии, если \uline{всем} таким копиям будут приписаны соответствующие идентификаторы. Такое дублирование \textit{sc.g-узлов} является дополнительным средствам \uline{наглядного} размещения \textit{sc.g-текстов}. Кроме того, приписывание \textit{sc.g-элементу} соответствующего ему основного (уникального) \textit{sc-идентификатора*} представляет собой более компактный вариант изображения \textit{sc.g-текстов}.}
 
 \scnheader{Пример sc.g-текста, трансформируемого по Первому направлению расширения Ядра SCg-кода}
 \scneqscg{figures/intro/scg/scg_transf1.png}
@@ -174,7 +174,7 @@
     \scnrelfrom{трансформация sc.g-текста по Первому направлению расширения Ядра SCg-кода}{\scnfilescg{figures/intro/scg/scg_transf3.png}}
     \scnaddlevel{1}
         \scniselement{sc.g-текст} 
-        \scnexplanation{В результате данной трансформации исходный \textit{sc.g-текст} трансформируется в один \textit{sc.g-общего вида}, которому приписывается \textit{основной sc-идентификатор} ``\textit{\textbf{ei}}''.}
+        \scnexplanation{В результате данной трансформации исходный \mbox{\textit{sc.g-текст}} трансформируется в один \textit{sc.g-общего вида}, которому приписывается \textit{основной sc-идентификатор} ``\textit{\textbf{ei}}''.}
     \scnaddlevel{-1}
 \scnaddlevel{-1}
 
@@ -216,8 +216,8 @@
 \item sc.g-узел, являющийся изображением \textit{класса классов};  
 \item sc.g-узел, являющийся изображением \textit{отношения}; 
 \item sc.g-узел, являющийся изображением \textit{ролевого отношения}; 
-\item sc.g-узел, являющийся изображением \textit{sc-структуры};  
-\item sc.g-узел, являющийся изображением \textit{небинарной sc-связки};
+\item sc.g-узел, являющийся изображением \textit{структуры};  
+\item sc.g-узел, являющийся изображением \textit{небинарной связки};
 \item sc.g-узел, являющийся изображением \textit{первичной сущности} (терминальной сущности, которая не является множеством, а также файлом, хранимым в памяти ostis-системы).
 \end{scnitemize}
 
@@ -247,14 +247,14 @@
 \scnaddlevel{1}
     \scnrelfrom{синтаксическая трансформация}{\scnfilescg{figures/intro/scg/nodes/const_perm/scg_const_perm_class_of_classes2.png}}
     \scnaddlevel{1}
-        \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{константный постоянный sc.g-узел, обозначающий класс классов}, изображаемый как \textit{константный постоянный sc.g-узел} с направленным вверх углом внутри.}
+        \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{константный постоянный \mbox{sc.g-узел}, обозначающий класс классов}, изображаемый как \textit{константный постоянный \mbox{sc.g-узел}} с направленным вверх углом внутри.}
     \scnaddlevel{-1}
 \scnaddlevel{-1};
 \scgfileitem{figures/intro/scg/nodes/const_perm/scg_const_perm_norole1.png}\\
 \scnaddlevel{1}
     \scnrelfrom{синтаксическая трансформация}{\scnfilescg{figures/intro/scg/nodes/const_perm/scg_const_perm_norole2.png}}
     \scnaddlevel{1}
-        \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{константный постоянный sc.g-узел, обозначающий неролевое отношение}, изображаемый как \textit{константный постоянный sc.g-узел} с "крестиком"{} внутри.}
+        \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{константный постоянный \mbox{sc.g-узел}, обозначающий неролевое отношение}, изображаемый как \textit{константный постоянный sc.g-узел} с "крестиком"{} внутри.}
     \scnaddlevel{-1}
 \scnaddlevel{-1};
 \scgfileitem{figures/intro/scg/nodes/const_perm/scg_const_perm_role1.png}\\
@@ -268,21 +268,21 @@
 \scnaddlevel{1}
     \scnrelfrom{синтаксическая трансформация}{\scnfilescg{figures/intro/scg/nodes/const_perm/scg_const_perm_structure2.png}}
     \scnaddlevel{1}
-        \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{константный постоянный sc.g-узел, обозначающий sc-структуру}, изображаемый как \textit{константный постоянный sc.g-узел} с точкой внутри.}
+        \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{константный постоянный \mbox{sc.g-узел}, обозначающий структуру}, изображаемый как \textit{константный постоянный \mbox{sc.g-узел}} с точкой внутри.}
     \scnaddlevel{-1}
 \scnaddlevel{-1};
 \scgfileitem{figures/intro/scg/nodes/const_perm/scg_const_perm_primary_entity1.png}\\
 \scnaddlevel{1}
     \scnrelfrom{синтаксическая трансформация}{\scnfilescg{figures/intro/scg/nodes/const_perm/scg_const_perm_primary_entity2.png}}
     \scnaddlevel{1}
-        \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{константный постоянный sc.g-узел, обозначающий первичную сущность}, изображаемый как \textit{константный постоянный sc.g-узел} с  косой штриховкой внутри.}
+        \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{константный постоянный \mbox{sc.g-узел}, обозначающий первичную сущность}, изображаемый как \textit{константный постоянный \mbox{sc.g-узел}} с  косой штриховкой внутри.}
     \scnaddlevel{-1}
 \scnaddlevel{-1};
 \scgfileitem{figures/intro/scg/nodes/const_perm/scg_const_perm_tuple1.png}\\
 \scnaddlevel{1}
     \scnrelfrom{синтаксическая трансформация}{\scnfilescg{figures/intro/scg/nodes/const_perm/scg_const_perm_tuple2.png}}
     \scnaddlevel{1}
-        \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{константный постоянный sc.g-узел, обозначающий небинарную sc-связку}, изображаемый как \textit{константный постоянный sc.g-узел} с горизонтальной линией внутри.}
+        \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{константный постоянный \mbox{sc.g-узел}, обозначающий небинарную связку}, изображаемый как \textit{константный постоянный sc.g-узел} с горизонтальной линией внутри.}
     \scnaddlevel{-1}
 \scnaddlevel{-1};
 \scgfileitem{figures/intro/scg/arcs/const/scg_const_perm_noorien1.png}\\
@@ -296,7 +296,7 @@
 \scnaddlevel{1}
     \scnrelfrom{синтаксическая трансформация}{\scnfilescg{figures/intro/scg/arcs/const/scg_const_perm_orient2.png}}
     \scnaddlevel{1}
-        \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{константная постоянная sc.g-дуга}, изображаемая двумя непрерывными параллельными линиями с общей стрелкой на одном из концов.}
+        \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{константная постоянная \mbox{sc.g-дуга}}, изображаемая двумя непрерывными параллельными линиями с общей стрелкой на одном из концов.}
     \scnaddlevel{-1}
 \scnaddlevel{-1};
 \scgfileitem{figures/intro/scg/arcs/const/scg_const_perm_positive1.png}\\
@@ -360,70 +360,70 @@
 \scnaddlevel{1}
     \scnrelfrom{синтаксическая трансформация}{\scnfilescg{figures/intro/scg/nodes/const_temp/scg_const_temp_general_view2.png}}
     \scnaddlevel{1}
-        \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{константный временный sc.g-узел общего вида}, изображаемый точечной окружностью диаметра $3d$ и толщиной границы $d/5$.}
+        \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{константный временный \mbox{sc.g-узел общего вида}}, изображаемый точечной окружностью диаметра $3d$ и толщиной границы $d/5$.}
     \scnaddlevel{-1}
 \scnaddlevel{-1};
 \scgfileitem{figures/intro/scg/nodes/const_temp/scg_const_temp_class1.png}\\
 \scnaddlevel{1}
     \scnrelfrom{синтаксическая трансформация}{\scnfilescg{figures/intro/scg/nodes/const_temp/scg_const_temp_class2.png}}
     \scnaddlevel{1}
-        \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{константный временный sc.g-узел, обозначающий класс}, изображаемый как \textit{константный временный sc.g-узел} с "решеткой"{} внутри.}
+        \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{константный временный \mbox{sc.g-узел}, обозначающий класс}, изображаемый как \textit{константный временный \mbox{sc.g-узел}} с "решеткой"{} внутри.}
     \scnaddlevel{-1}
 \scnaddlevel{-1};
 \scgfileitem{figures/intro/scg/nodes/const_temp/scg_const_temp_class_of_classes1.png}\\
 \scnaddlevel{1}
     \scnrelfrom{синтаксическая трансформация}{\scnfilescg{figures/intro/scg/nodes/const_temp/scg_const_temp_class_of_classes2.png}}
     \scnaddlevel{1}
-        \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{константный временный sc.g-узел, обозначающий класс классов}, изображаемый как \textit{константный временный sc.g-узел} с направленным вверх углом внутри.}
+        \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{константный временный \mbox{sc.g-узел}, обозначающий класс классов}, изображаемый как \textit{константный временный \mbox{sc.g-узел}} с направленным вверх углом внутри.}
     \scnaddlevel{-1}
 \scnaddlevel{-1};
 \scgfileitem{figures/intro/scg/nodes/const_temp/scg_const_temp_norole1.png}\\
 \scnaddlevel{1}
     \scnrelfrom{синтаксическая трансформация}{\scnfilescg{figures/intro/scg/nodes/const_temp/scg_const_temp_norole2.png}}
     \scnaddlevel{1}
-        \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{константный временный sc.g-узел, обозначающий неролевое отношение}, изображаемый как \textit{константный временный sc.g-узел} с "крестиком"{} внутри.}
+        \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{константный временный \mbox{sc.g-узел}, обозначающий неролевое отношение}, изображаемый как \textit{константный временный sc.g-узел} с "крестиком"{} внутри.}
     \scnaddlevel{-1}
 \scnaddlevel{-1};
 \scgfileitem{figures/intro/scg/nodes/const_temp/scg_const_temp_role1.png}\\
 \scnaddlevel{1}
     \scnrelfrom{синтаксическая трансформация}{\scnfilescg{figures/intro/scg/nodes/const_temp/scg_const_temp_role2.png}}
     \scnaddlevel{1}
-        \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{константный временный sc.g-узел, обозначающий ролевое отношение}, изображаемый как \textit{константный временный sc.g-узел} с "плюсом"{} внутри.}
+        \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{константный временный \mbox{sc.g-узел}, обозначающий ролевое отношение}, изображаемый как \textit{константный временный \mbox{sc.g-узел}} с "плюсом"{} внутри.}
     \scnaddlevel{-1}
 \scnaddlevel{-1};
 \scgfileitem{figures/intro/scg/nodes/const_temp/scg_const_temp_structure1.png}\\
 \scnaddlevel{1}
     \scnrelfrom{синтаксическая трансформация}{\scnfilescg{figures/intro/scg/nodes/const_temp/scg_const_temp_structure2.png}}
     \scnaddlevel{1}
-        \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{константный временный sc.g-узел, обозначающий sc-структуру}, изображаемый как \textit{константный временный sc.g-узел} с точкой внутри.}
+        \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{константный временный \mbox{sc.g-узел}, обозначающий структуру}, изображаемый как \textit{константный временный \mbox{sc.g-узел}} с точкой внутри.}
     \scnaddlevel{-1}
 \scnaddlevel{-1};
 \scgfileitem{figures/intro/scg/nodes/const_temp/scg_const_temp_primary_entity1.png}\\
 \scnaddlevel{1}
     \scnrelfrom{синтаксическая трансформация}{\scnfilescg{figures/intro/scg/nodes/const_temp/scg_const_temp_primary_entity2.png}}
     \scnaddlevel{1}
-        \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{константный временный sc.g-узел, обозначающий первичную сущность}, изображаемый как \textit{константный временный sc.g-узел} с  косой штриховкой внутри.}
+        \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{константный временный \mbox{sc.g-узел}, обозначающий первичную сущность}, изображаемый как \textit{константный временный \mbox{sc.g-узел}} с  косой штриховкой внутри.}
     \scnaddlevel{-1}
 \scnaddlevel{-1};
 \scgfileitem{figures/intro/scg/nodes/const_temp/scg_const_temp_tuple1.png}\\
 \scnaddlevel{1}
     \scnrelfrom{синтаксическая трансформация}{\scnfilescg{figures/intro/scg/nodes/const_temp/scg_const_temp_tuple2.png}}
     \scnaddlevel{1}
-        \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{константный временный sc.g-узел, обозначающий небинарную sc-связку}, изображаемый как \textit{константный временный sc.g-узел} с горизонтальной линией внутри.}
+        \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{константный временный \mbox{sc.g-узел}, обозначающий небинарную связку}, изображаемый как \textit{константный временный \mbox{sc.g-узел}} с горизонтальной линией внутри.}
     \scnaddlevel{-1}
 \scnaddlevel{-1};
 \scgfileitem{figures/intro/scg/arcs/const/scg_const_temp_noorien1.png}\\
 \scnaddlevel{1}
     \scnrelfrom{синтаксическая трансформация}{\scnfilescg{figures/intro/scg/arcs/const/scg_const_temp_noorien2.png}}
     \scnaddlevel{1}
-        \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{константное временное sc.g-ребро}, изображаемое двумя точечными параллельными линиями.}
+        \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{константное временное \mbox{sc.g-ребро}}, изображаемое двумя точечными параллельными линиями.}
     \scnaddlevel{-1}
 \scnaddlevel{-1};
 \scgfileitem{figures/intro/scg/arcs/const/scg_const_temp_orient1.png}\\
 \scnaddlevel{1}
     \scnrelfrom{синтаксическая трансформация}{\scnfilescg{figures/intro/scg/arcs/const/scg_const_temp_orient2.png}}
     \scnaddlevel{1}
-        \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{константная временная sc.g-дуга}, изображаемая двумя точечными параллельными линиями с общей стрелкой на одном из концов.}
+        \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{константная временная \mbox{sc.g-дуга}}, изображаемая двумя точечными параллельными линиями с общей стрелкой на одном из концов.}
     \scnaddlevel{-1}
 \scnaddlevel{-1};
 \scgfileitem{figures/intro/scg/arcs/const/scg_const_temp_positive1.png}\\
@@ -446,9 +446,7 @@
     \scnaddlevel{1}
         \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{константная временная нечеткая sc.g-дуга принадлежности}, которая изображается в виде "недочеркнутой"{} \textit{\textit{константной временной позитивная sc.g-дуги принадлежности}, с каждой стороны которой отображаются штрихи, по длине равные половине от длины штрихов, которыми перечеркнута \textit{константная постоянная негативная sc.g-дуга}.}
     \scnaddlevel{-1}
-\scnaddlevel{-1}
-}
-}
+\scnaddlevel{-1}}}
 
 \bigskip
 \scnendstruct \scnendsegmentcomment{Описание Третьего направления расширения Ядра SCg-кода}
@@ -474,7 +472,7 @@
 \scnaddlevel{1}
     \scnrelfrom{синтаксическая трансформация}{\scnfilescg{figures/intro/scg/nodes/var_perm/scg_var_perm_general_view2.png}}
     \scnaddlevel{1}
-        \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{переменный постоянный sc.g-узел общего вида}, изображаемый квадратиком cj со стороной длины $3d$ и толщиной границы $d/5$.}
+        \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{переменный постоянный \mbox{sc.g-узел} общего вида}, изображаемый квадратиком cj со стороной длины $3d$ и толщиной границы $d/5$.}
     \scnaddlevel{-1}
 \scnaddlevel{-1};
 \scgfileitem{figures/intro/scg/nodes/var_perm/scg_var_perm_class1.png}\\
@@ -488,14 +486,14 @@
 \scnaddlevel{1}
     \scnrelfrom{синтаксическая трансформация}{\scnfilescg{figures/intro/scg/nodes/var_perm/scg_var_perm_class_of_classes2.png}}
     \scnaddlevel{1}
-        \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{переменный постоянный sc.g-узел, обозначающий класс классов}, изображаемый как \textit{переменный постоянный sc.g-узел} с направленным вверх углом внутри.}
+        \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{переменный постоянный \mbox{sc.g-узел}, обозначающий класс классов}, изображаемый как \textit{переменный постоянный \mbox{sc.g-узел}} с направленным вверх углом внутри.}
     \scnaddlevel{-1}
 \scnaddlevel{-1};
 \scgfileitem{figures/intro/scg/nodes/var_perm/scg_var_perm_norole1.png}\\
 \scnaddlevel{1}
     \scnrelfrom{синтаксическая трансформация}{\scnfilescg{figures/intro/scg/nodes/var_perm/scg_var_perm_norole2.png}}
     \scnaddlevel{1}
-        \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{переменный постоянный sc.g-узел, обозначающий неролевое отношение}, изображаемый как \textit{переменный постоянный sc.g-узел} с "крестиком"{} внутри.}
+        \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{переменный постоянный \mbox{sc.g-узел}, обозначающий неролевое отношение}, изображаемый как \textit{переменный постоянный \mbox{sc.g-узел}} с "крестиком"{} внутри.}
     \scnaddlevel{-1}
 \scnaddlevel{-1};
 \scgfileitem{figures/intro/scg/nodes/var_perm/scg_var_perm_role1.png}\\
@@ -509,28 +507,28 @@
 \scnaddlevel{1}
     \scnrelfrom{синтаксическая трансформация}{\scnfilescg{figures/intro/scg/nodes/var_perm/scg_var_perm_structure2.png}}
     \scnaddlevel{1}
-        \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{переменный постоянный sc.g-узел, обозначающий sc-структуру}, изображаемый как \textit{переменный постоянный sc.g-узел} с точкой внутри.}
+        \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{переменный постоянный \mbox{sc.g-узел}, обозначающий структуру}, изображаемый как \textit{переменный постоянный \mbox{sc.g-узел}} с точкой внутри.}
     \scnaddlevel{-1}
 \scnaddlevel{-1};
 \scgfileitem{figures/intro/scg/nodes/var_perm/scg_var_perm_primary_entity1.png}\\
 \scnaddlevel{1}
     \scnrelfrom{синтаксическая трансформация}{\scnfilescg{figures/intro/scg/nodes/var_perm/scg_var_perm_primary_entity2.png}}
     \scnaddlevel{1}
-        \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{переменный постоянный sc.g-узел, обозначающий первичную сущность}, изображаемый как \textit{переменный постоянный sc.g-узел} с  косой штриховкой внутри.}
+        \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{переменный постоянный \mbox{sc.g-узел}, обозначающий первичную сущность}, изображаемый как \textit{переменный постоянный \mbox{sc.g-узел}} с  косой штриховкой внутри.}
     \scnaddlevel{-1}
 \scnaddlevel{-1};
 \scgfileitem{figures/intro/scg/nodes/var_perm/scg_var_perm_tuple1.png}\\
 \scnaddlevel{1}
     \scnrelfrom{синтаксическая трансформация}{\scnfilescg{figures/intro/scg/nodes/var_perm/scg_var_perm_tuple2.png}}
     \scnaddlevel{1}
-        \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{переменный постоянный sc.g-узел, обозначающий небинарную sc-связку}, изображаемый как \textit{переменный постоянный sc.g-узел} с горизонтальной линией внутри.}
+        \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{переменный постоянный \mbox{sc.g-узел}, обозначающий небинарную связку}, изображаемый как \textit{переменный постоянный \mbox{sc.g-узел}} с горизонтальной линией внутри.}
     \scnaddlevel{-1}
 \scnaddlevel{-1};
 \scgfileitem{figures/intro/scg/arcs/var/scg_var_perm_noorien1.png}\\
 \scnaddlevel{1}
     \scnrelfrom{синтаксическая трансформация}{\scnfilescg{figures/intro/scg/arcs/var/scg_var_perm_noorien2.png}}
     \scnaddlevel{1}
-        \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{переменное постоянное sc.g-ребро}, изображаемое двумя пунктирными параллельными линиями.}
+        \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{переменное постоянное \mbox{sc.g-ребро}}, изображаемое двумя пунктирными параллельными линиями.}
     \scnaddlevel{-1}
 \scnaddlevel{-1};
 \scgfileitem{figures/intro/scg/arcs/var/scg_var_perm_orient1.png}\\
@@ -600,7 +598,7 @@
 \scnaddlevel{1}
     \scnrelfrom{синтаксическая трансформация}{\scnfilescg{figures/intro/scg/nodes/metavar_perm/scg_metavar_perm_structure2.png}}
     \scnaddlevel{1}
-        \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{метапеременный постоянный sc.g-узел, обозначающий sc-структуру}, изображаемый как \textit{метапеременный постоянный sc.g-узел} с точкой внутри.}
+        \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{метапеременный постоянный sc.g-узел, обозначающий структуру}, изображаемый как \textit{метапеременный постоянный \mbox{sc.g-узел}} с точкой внутри.}
     \scnaddlevel{-1}
 \scnaddlevel{-1};
 \scgfileitem{figures/intro/scg/nodes/metavar_perm/scg_metavar_perm_primary_entity1.png}\\
@@ -614,7 +612,7 @@
 \scnaddlevel{1}
     \scnrelfrom{синтаксическая трансформация}{\scnfilescg{figures/intro/scg/nodes/metavar_perm/scg_metavar_perm_tuple2.png}}
     \scnaddlevel{1}
-        \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{метапеременный постоянный sc.g-узел, обозначающий небинарную sc-связку}, изображаемый как \textit{метапеременный постоянный sc.g-узел} с горизонтальной линией внутри.}
+        \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{метапеременный постоянный sc.g-узел, обозначающий небинарную связку}, изображаемый как \textit{метапеременный постоянный \mbox{sc.g-узел}} с горизонтальной линией внутри.}
     \scnaddlevel{-1}
 \scnaddlevel{-1};
 \scgfileitem{figures/intro/scg/arcs/meta/scg_metavar_perm_noorien1.png}\\
@@ -685,7 +683,7 @@
 \scnaddlevel{1}
     \scnrelfrom{синтаксическая трансформация}{\scnfilescg{figures/intro/scg/nodes/var_temp/scg_var_temp_class_of_classes2.png}}
     \scnaddlevel{1}
-        \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{переменный временный sc.g-узел, обозначающий класс классов}, изображаемый как \textit{переменный временный sc.g-узел} с направленным вверх углом внутри.}
+        \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{переменный временный \mbox{sc.g-узел}, обозначающий класс классов}, изображаемый как \textit{переменный временный sc.g-узел} с направленным вверх углом внутри.}
     \scnaddlevel{-1}
 \scnaddlevel{-1};
 \scgfileitem{figures/intro/scg/nodes/var_temp/scg_var_temp_norole1.png}\\
@@ -706,7 +704,7 @@
 \scnaddlevel{1}
     \scnrelfrom{синтаксическая трансформация}{\scnfilescg{figures/intro/scg/nodes/var_temp/scg_var_temp_structure2.png}}
     \scnaddlevel{1}
-        \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{переменный временный sc.g-узел, обозначающий sc-структуру}, изображаемый как \textit{переменный временный sc.g-узел} с точкой внутри.}
+        \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{переменный временный sc.g-узел, обозначающий структуру}, изображаемый как \textit{переменный временный sc.g-узел} с точкой внутри.}
     \scnaddlevel{-1}
 \scnaddlevel{-1};
 \scgfileitem{figures/intro/scg/nodes/var_temp/scg_var_temp_primary_entity1.png}\\
@@ -720,7 +718,7 @@
 \scnaddlevel{1}
     \scnrelfrom{синтаксическая трансформация}{\scnfilescg{figures/intro/scg/nodes/var_temp/scg_var_temp_tuple2.png}}
     \scnaddlevel{1}
-        \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{переменный временный sc.g-узел, обозначающий небинарную sc-связку}, изображаемый как \textit{переменный временный sc.g-узел} с горизонтальной линией внутри.}
+        \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{переменный временный sc.g-узел, обозначающий небинарную связку}, изображаемый как \textit{переменный временный \mbox{sc.g-узел}} с горизонтальной линией внутри.}
     \scnaddlevel{-1}
 \scnaddlevel{-1};
 \scgfileitem{figures/intro/scg/arcs/var/scg_var_temp_noorien1.png}\\
@@ -783,35 +781,35 @@
 \scnaddlevel{1}
     \scnrelfrom{синтаксическая трансформация}{\scnfilescg{figures/intro/scg/nodes/metavar_temp/scg_metavar_temp_norole2.png}}
     \scnaddlevel{1}
-        \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{метапеременный временный sc.g-узел, обозначающий неролевое отношение}, изображаемый как \textit{метапеременный временный sc.g-узел} с "крестиком"{} внутри.}
+        \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{метапеременный временный \mbox{sc.g-узел}, обозначающий неролевое отношение}, изображаемый как \textit{метапеременный временный sc.g-узел} с "крестиком"{} внутри.}
     \scnaddlevel{-1}
 \scnaddlevel{-1};
 \scgfileitem{figures/intro/scg/nodes/metavar_temp/scg_metavar_temp_role1.png}\\
 \scnaddlevel{1}
     \scnrelfrom{синтаксическая трансформация}{\scnfilescg{figures/intro/scg/nodes/metavar_temp/scg_metavar_temp_role2.png}}
     \scnaddlevel{1}
-        \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{метапеременный временный sc.g-узел, обозначающий ролевое отношение}, изображаемый как \textit{метапеременный временный sc.g-узел} с "плюсом"{} внутри..}
+        \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{метапеременный временный \mbox{sc.g-узел}, обозначающий ролевое отношение}, изображаемый как \textit{метапеременный временный sc.g-узел} с "плюсом"{} внутри.}
     \scnaddlevel{-1}
 \scnaddlevel{-1};
 \scgfileitem{figures/intro/scg/nodes/metavar_temp/scg_metavar_temp_structure1.png}\\
 \scnaddlevel{1}
     \scnrelfrom{синтаксическая трансформация}{\scnfilescg{figures/intro/scg/nodes/metavar_temp/scg_metavar_temp_structure2.png}}
     \scnaddlevel{1}
-        \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{метапеременный временный sc.g-узел, обозначающий sc-структуру}, изображаемый как \textit{метапеременный временный sc.g-узел} с точкой внутри.}
+        \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{метапеременный временный sc.g-узел, обозначающий структуру}, изображаемый как \textit{метапеременный временный sc.g-узел} с точкой внутри.}
     \scnaddlevel{-1}
 \scnaddlevel{-1};
 \scgfileitem{figures/intro/scg/nodes/metavar_temp/scg_metavar_temp_primary_entity1.png}\\
 \scnaddlevel{1}
     \scnrelfrom{синтаксическая трансформация}{\scnfilescg{figures/intro/scg/nodes/metavar_temp/scg_metavar_temp_primary_entity2.png}}
     \scnaddlevel{1}
-        \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{метапеременный временный sc.g-узел, обозначающий первичную сущность}, изображаемый как \textit{пметапеременный временный sc.g-узел} с  косой штриховкой внутри.}
+        \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{метапеременный временный \mbox{sc.g-узел}, обозначающий первичную сущность}, изображаемый как \textit{метапеременный временный \mbox{sc.g-узел}} с косой штриховкой внутри.}
     \scnaddlevel{-1}
 \scnaddlevel{-1};
 \scgfileitem{figures/intro/scg/nodes/metavar_temp/scg_metavar_temp_tuple1.png}\\
 \scnaddlevel{1}
     \scnrelfrom{синтаксическая трансформация}{\scnfilescg{figures/intro/scg/nodes/metavar_temp/scg_metavar_temp_tuple2.png}}
     \scnaddlevel{1}
-        \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{метапеременный временный sc.g-узел, обозначающий небинарную sc-связку}, изображаемый как \textit{метапеременный временный sc.g-узел} с горизонтальной линией внутри.}
+        \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{метапеременный временный \mbox{sc.g-узел}, обозначающий небинарную sc-связку}, изображаемый как \textit{метапеременный временный \mbox{sc.g-узел}} с горизонтальной линией внутри.}
     \scnaddlevel{-1}
 \scnaddlevel{-1};
 \scgfileitem{figures/intro/scg/arcs/meta/scg_metavar_temp_noorien1.png}\\
@@ -825,7 +823,7 @@
 \scnaddlevel{1}
     \scnrelfrom{синтаксическая трансформация}{\scnfilescg{figures/intro/scg/arcs/meta/scg_metavar_temp_orient2.png}}
     \scnaddlevel{1}
-        \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{метапеременная временная sc.g-дуга}, изображаемая двумя штрих-пунктирными параллельными линиями с общей стрелкой на одном из концов.}
+        \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{метапеременная временная \mbox{sc.g-дуга}}, изображаемая двумя штрих-пунктирными параллельными линиями с общей стрелкой на одном из концов.}
     \scnaddlevel{-1}
 \scnaddlevel{-1};
 \scgfileitem{figures/intro/scg/arcs/meta/scg_metavar_temp_positive1.png}\\
@@ -873,7 +871,7 @@
 \item точечной пунктирной линией.
 \end{scnitemize}
 
-Семантическим эквивалентом sc.g-контуру является sc.g-узел, обозначающий sc-структуру. Использование sc.g-контура вместо указанного sc.g-узла исключает необходимость явно изображать SC-дуги принадлежности, выходящие из этого sc.g-узла. Это существенно повышает уровень наглядности sc.g-текста.
+Семантическим эквивалентом sc.g-контуру является sc.g-узел, обозначающий структуру. Использование sc.g-контура вместо указанного sc.g-узла исключает необходимость явно изображать SC-дуги принадлежности, выходящие из этого sc.g-узла. Это существенно повышает уровень наглядности sc.g-текста.
 
 Если представленный внутри sc.g-контура текст не является sc.g-текстом, то считается, что что на самом деле внутренностью sc.g-контура является sc.g-текст, являющийся результатом перевода предоставленного текста в SCg-код.}
 
@@ -888,7 +886,7 @@
 \scgfileitem{figures/intro/scg/scg_transf6-1-1.png}
 \scnaddlevel{1}
 \scniselement{sc.g-текст}
-\scnexplanation{В данном примере представлена тривиальная \textit{sc-структура} \textbf{\textit{si}}, которая содержит три \textit{sc-элемента} -- \textbf{\textit{e1}}, \textbf{\textit{e2}}, \textbf{\textit{e3}}.}
+\scnexplanation{В данном примере представлена тривиальная \textit{структура} \textbf{\textit{si}}, которая содержит три \textit{sc-элемента} -- \textbf{\textit{e1}}, \textbf{\textit{e2}}, \textbf{\textit{e3}}.}
 \scnrelfrom{трансформация sc.g-текста по Шестому направлению расширения Ядра SCg-кода}{\scnfilescg{figures/intro/scg/scg_transf6-1-2.png}}
 \scnaddlevel{1}
     \scnexplanation{В результате трансформации \textit{sc.g-узел}, являющийся изображением структуры \textbf{\textit{si}} заменен на \textit{sc.g-контур}, внутри которого изображены \textit{sc.g-узлы}, изображающие \textit{sc-элементы} \textbf{\textit{e1}}, \textbf{\textit{e2}}, \textbf{\textit{e3}}, при этом соответствующие \textit{sc.g-дуги} не изображаются. Как видно из приведенного \textit{sc.g-текста}, при необходимости \textit{sc.g-контуру} также может ставиться в соответствие идентификатор, который изображается в произвольном месте вблизи границы \textit{sc.g-контура}.}
@@ -896,7 +894,7 @@
 ;\scgfileitem{figures/intro/scg/scg_transf6-2-1.png}
 \scnaddlevel{1}
 \scniselement{sc.g-текст}
-\scnexplanation{В данном примере \textit{sc-структура} содержит \textit{sc-элементы} различных типов.}
+\scnexplanation{В данном примере \textit{структура} содержит \textit{sc-элементы} различных типов.}
 \scnrelfrom{трансформация sc.g-текста по Шестому направлению расширения Ядра SCg-кода}{\scnfilescg{figures/intro/scg/scg_transf6-2-2.png}}
 \scnaddlevel{-1}
 ;\scgfileitem{figures/intro/scg/scg_transf6-3-1.png}
