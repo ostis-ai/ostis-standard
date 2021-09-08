@@ -159,8 +159,8 @@
         \scniselement{системный sc-идентификатор}
     \scnaddlevel{-1}\\
     \scnendstruct}
-\scnaddlevel{-1};
-\scnfileitem{Для именования sc-элементов, являющихся знаками \textit{структур}~~в~~\textit{системном sc-идентификаторе} используется приставка ``struct'' и далее после нижнего подчеркивания записывается имя \textit{структуры}.}\\
+\scnaddlevel{-1}
+\newpage;\scnfileitem{Для именования sc-элементов, являющихся знаками \textit{структур}~~в~~\textit{системном sc-идентификаторе} используется приставка ``struct'' и далее после нижнего подчеркивания записывается имя \textit{структуры}.}\\
 \scnaddlevel{1}
     \scnrelfrom{пример применения}{\scnstartsetlocal\\
     \scnheaderlocal{Треугольник(ТочкаA;ТочкаB;ТочкаC)}
@@ -169,8 +169,8 @@
         \scniselement{системный sc-идентификатор}
     \scnaddlevel{-1}\\
     \scnendstruct}
-\scnaddlevel{-1};
-\scnfileitem{Для именования sc-элементов, являющихся знаками \textit{связок}~~в~~\textit{системном sc-идентификаторе} используется приставка ``tuple'' и далее после нижнего подчеркивания записывается имя \textit{связки}.}}
+\scnaddlevel{-1}
+;\scnfileitem{Для именования sc-элементов, являющихся знаками \textit{связок}~~в~~\textit{системном sc-идентификаторе} используется приставка ``tuple'' и далее после нижнего подчеркивания записывается имя \textit{связки}.}}
 
 \scnheader{нетранслируемый sc-идентификатор}
 \scnsubset{системный sc-идентификатор}
@@ -287,6 +287,7 @@
         \scnnote{Данный sc-идентификатор описывает относительный путь к файлу под названием "image1.png"}
     \scnaddlevel{-1}
 \scnhaselementrole{пример}{\scnfilelong{"https://conf.ostis.net/content/image1.png"}}
+\newpage
     \scnaddlevel{1}
         \scnnote{Данный sc-идентификатор описывает путь к файлу под названием "image1.png", расположенному на удаленном сервере.}
     \scnaddlevel{-1}
@@ -324,12 +325,12 @@
 \scnaddlevel{1}
 \scnrelboth{синонимия внешних идентификаторов}{\scnfilelong{Город/Минск}}
 \scnaddlevel{-1};
-\scnfileitem{Точка/А};
-\scnfileitem{SC-код}\\
+\scnfileitem{Точка/А}
+\newpage;\scnfileitem{SC-код}\\
 \scnaddlevel{1}
 \scnrelboth{синонимия внешних идентификаторов}{\scnfilelong{Знак множества всевозможных sc-текстов}}
 \scnrelboth{синонимия внешних идентификаторов}{\scnfilelong{Множество всевозможных sc-текстов}}
-\scnrelboth{синонимия внешних идентификаторов}{\scnfilelong{Класс sc-текствов}}
+\scnrelboth{синонимия внешних идентификаторов}{\scnfilelong{Класс sc-текстов}}
 \scnrelboth{синонимия внешних идентификаторов}{\scnfilelong{sc-текст}}
 \scnaddlevel{1}
 \scniselement{имя нарицательное}
@@ -448,6 +449,7 @@
 \scnrelfrom{пример}{\scnstartsetlocal\\
 \scnheaderlocal{следует различать*}
 \scnhaselementset{элемент информационной конструкции\\
+\newpage
 \scnaddlevel{1}
     \scnidtfexp{Множество всевозможных элементов всевозможных информационных конструкций}
 \scnaddlevel{-1};
@@ -536,6 +538,7 @@
 	\scnhaselementrole{пример}{\scnfilelong{\scnset{\textit{ai}\scnrolesign : \textit{e1}; \textit{aj}\scnrolesign : \textit{e2}; \textit{e3}}}}
 		\scnaddlevel{1}
 		\scnrelboth{семантическая эквивалентность}{\scnfilelong{Дано множество с элементами \textbf{\textit{e1}}, \textbf{\textit{e2}}, \textbf{\textit{e3}}. При этом элемент \textbf{\textit{e1}} в рамках указанного множества имеет атрибут (роль) \textbf{\textit{ai\scnrolesign}}, а элемент \textbf{\textit{e2}} -- атрибут (роль) \textbf{\textit{aj\scnrolesign}}.}}%TODO пример в SCg
+		\newpage
 		\scnrelboth{семантическая эквивалентность}{\scnfilescg{figures/intro/idtf/sc_expr_example_role_set.png}}
 			\scnaddlevel{1}
 			\scniselement{sc.g-текст}
@@ -574,6 +577,7 @@
 sc-выражение, обозначающее файл-образец ostis-системы\\
     \scnaddlevel{1}
     \scnidtf{sc-выражение, ограниченное ограниченное квадратными скобками с восклицательными знаками}
+    \newpage
     \scnsuperset{файл-образец}
     \scnaddlevel{1}
         \scnrelfrom{смотрите}{Принципы SC-кода}
@@ -613,6 +617,7 @@ sc-выражение, обозначающее файл-образец ostis-с
 		\scnaddlevel{-1}
 \scnaddlevel{-2}
 }
+\newpage
 \scnexplanation{Использование sc-выражений позволяет существенно сократить число "придумываемых"\ sc-идентификаторов, каковыми в конечном счете становятся только простые sc-идентификаторы, поскольку, зная то, как связан идентифицируемый sc-элемент с теми sc-элементами, которые уже имеют sc-идентификаторы, во многих случаях можно построить sc-выражение, идентифицирующее указанный sc-элемент. Кроме того, каждое sc-выражение, являясь внешним идентификатором, является также и \uline{транслируемым} формальным текстом, содержащим некоторую информацию об обозначаемой ею сущности.}
 \scnrelfrom{правило интерпретации}{\scnfilelong{Очевидно, что некоторые sc-выражения могут интерпретироваться неоднозначно. Например, два одинаковых \textit{sc-выражения, идентифицирующих sc-коннектор}, могут изображать как один и тот же sc-коннектор, так и кратные sc-коннекторы одного и того же вида, связывающие одни и те же два sc-элемента. Аналогичная неоднозначность может возникать при использовании \textit{sc-выражений, построенных на основе бинарного отношения} (\textit{подмножество*(S)}) и ряда других \textit{sc-выражений}.
 
@@ -639,6 +644,7 @@ sc-выражение, обозначающее файл-образец ostis-с
     \scnidtf{конечный ограничитель sc-выражений}
     \scnidtf{закрывающий ограничитель sc-выражений}
     \scnaddlevel{-1}}
+\newpage
 \scnrelboth{пара пересекающихся множеств}{фигурная скобка}
     \scnaddlevel{1}
         \scneq{{\normalfont(}\scnfileclass{ \{ } $\cup$ \scnfileclass{ \} }{\normalfont)}}
@@ -682,6 +688,7 @@ sc-выражение, обозначающее файл-образец ostis-с
 \scnaddlevel{1}
     \scniselement{sc-выражение множества, заданного перечислением}
     \scnrelboth{семантическая эквивалентность}{\scnfilelong{\scnset{\textit{ei};~\textit{ej};~\textit{ek}}}}
+    \newpage
     \scnrelboth{семантическая эквивалентность}{\scnfilescg{figures/intro/idtf/sc_expr_example_enum_set.png}}
 \scnaddlevel{-1}
 \scnhaselementrole{пример}{\scnfilelong{(\textit{si} $\cup$ \textit{sj} $\cup$ \textit{sk} $\cup$ ...)}}
@@ -704,6 +711,7 @@ sc-выражение, обозначающее файл-образец ostis-с
     \scniselement{sc-выражение, построенное на основе квазибинарного отношения}
     \scnrelboth{семантическая эквивалентность}{\scnfilescg{figures/intro/idtf/sc_expr_example_concat.png}}
 \scnaddlevel{-1}
+\newpage
 \scnhaselementrole{пример}{\scnfilelong{\textit{пересечение}*($si$; $sj$; $sk$)}}
 \scnaddlevel{1}
     \scniselement{sc-выражение, построенное на основе квазибинарного отношения}
@@ -733,6 +741,7 @@ sc-выражение, обозначающее файл-образец ostis-с
 \scnstartset
 \scnheader{sc-выражение}
 \scnhaselementrole{пример}{\scnfilelong{\textit{подмножество*}(\textit{si}) /\textit{i}}}
+\bigskip
 \scnhaselementrole{пример}{\scnfilelong{\textit{надмножество*}(\textit{sj}) /\textit{i}}}
 \scnendstruct\\
 \scnnote{Отношения \textit{подмножество*} и  \textit{надмножество*} не являются функциональными, таким образом необходимо явно уточнить при помощи символа ``/'' и некоторого уточняющего индекса (в данном случае просто ``\textit{i}''), что имеется в виду некоторое конкретное подмножество множества \textbf{\textit{si}} и некоторое конкретное надмножество множества \textbf{\textit{sj}}.}
