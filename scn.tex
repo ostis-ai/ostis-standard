@@ -312,6 +312,16 @@
 \sethindfromind{1}
 }
 
+\newcommand{\scnrelsuperset}[2]{
+\settab$\bm{\supset}$\makediff{\supsetsize}\scnrellist{#1}\\
+\addtocounter{ind}{1}
+\sethindfromind{1}
+\sethind
+\settab{\itshape#2}\\
+\addtocounter{ind}{-1}
+\sethindfromind{1}
+}
+
 \newcommand{\scnvarrelfrom}[2]{
 	\settab\textunderscore$\bm{\Rightarrow}$\makediff{\arrowsizevar}\scnvarrellist{#1}\\
 	\addtocounter{ind}{1}
