@@ -70,9 +70,6 @@
 	\end{scnitemize}
 }
 
-\scnheader{SCg-текст. Алфавит SCg-кода}
-\scneqscg{figures/intro/scg/SCg-full.png}
-
 \scnheader{следует отличать*}
 \scnhaselementset{\scnmakesetlocal{
 		SCg-код;Введение в язык графического представления знаний ostis-систем
@@ -93,11 +90,18 @@
 \scnnote{Следует отличать сами описываемые сущности (в данном случае -- различные языки) от текстов, описывающих эти сущности.}
 \scnaddlevel{-1}
 
+\newpage
+\scnheader{SCg-текст. Алфавит SCg-кода}
+\scneqscg{figures/intro/scg/SCg-full.png}
+
+
+
 \input{Contents/chapter0/intro_scg_examples.tex}
 
 \bigskip
 \scnendstruct \scnendsegmentcomment{Основные положения языка графического представления знаний ostis-систем}
 
+\newpage
 \scnsegmentheader{Описание Ядра SCg-кода}
 
 \scnstartsubstruct
@@ -163,6 +167,7 @@
 
 \scnexplanation{\textit{Первое направление синтаксического расширения Ядра SCg-кода} -- это \uline{приписывание} некоторым sc.g-элементам \textit{основных sc-идентификаторов*} (чаще всего - строковых идентификаторов, то есть имен) \textit{sc-элементов} , изображаемых этими \textit{sc.g-элементами}. Указываемые идентификаторы являются уникальным для каждого идентифицируемого (именуемого) \textit{sc.g-элемента}. Приписывание \textit{sc.g-элементам} уникальных идентификаторов дает возможность в рамках одного \textit{sc.g-текста} дублировать (копировать) некоторые \textit{sc.g-узлы} при условии, если \uline{всем} таким копиям будут приписаны соответствующие идентификаторы. Такое дублирование \textit{sc.g-узлов} является дополнительным средствам \uline{наглядного} размещения \textit{sc.g-текстов}. Кроме того, приписывание \textit{sc.g-элементу} соответствующего ему основного (уникального) \textit{sc-идентификатора*} представляет собой более компактный вариант изображения \textit{sc.g-текстов}.}
 
+\newpage
 \scnheader{Пример sc.g-текста, трансформируемого по Первому направлению расширения Ядра SCg-кода}
 \scneqscg{figures/intro/scg/scg_transf1.png}
 \scniselement{sc.g-текст}
@@ -194,6 +199,7 @@
 \bigskip
 \scnendstruct \scnendsegmentcomment{Описание первого направления расширения Ядра SCg-кода}
 
+\newpage
 \scnsegmentheader{Описание Второго направления расширения Ядра SCg-кода}
 \scnstartsubstruct
 
@@ -242,7 +248,8 @@
     \scnaddlevel{1}
         \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{константный постоянный sc.g-узел, обозначающий класс}, изображаемый как \textit{константный постоянный sc.g-узел} с "решеткой"{} внутри.}
     \scnaddlevel{-1}
-\scnaddlevel{-1};
+\scnaddlevel{-1}
+\newpage;
 \scgfileitem{figures/intro/scg/nodes/const_perm/scg_const_perm_class_of_classes1.png}\\
 \scnaddlevel{1}
     \scnrelfrom{синтаксическая трансформация}{\scnfilescg{figures/intro/scg/nodes/const_perm/scg_const_perm_class_of_classes2.png}}
@@ -263,7 +270,8 @@
     \scnaddlevel{1}
         \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{константный постоянный sc.g-узел, обозначающий ролевое отношение}, изображаемый как \textit{константный постоянный sc.g-узел} с "плюсом"{} внутри.}
     \scnaddlevel{-1}
-\scnaddlevel{-1};
+\scnaddlevel{-1}
+\newpage;
 \scgfileitem{figures/intro/scg/nodes/const_perm/scg_const_perm_structure1.png}\\
 \scnaddlevel{1}
     \scnrelfrom{синтаксическая трансформация}{\scnfilescg{figures/intro/scg/nodes/const_perm/scg_const_perm_structure2.png}}
@@ -284,7 +292,8 @@
     \scnaddlevel{1}
         \scnexplanation{Здесь вводится новый синтаксический вид \textit{sc.g-элементов} -- \textit{константный постоянный sc.g-узел, обозначающий небинарную sc-связку}, изображаемый как \textit{константный постоянный sc.g-узел} с горизонтальной линией внутри.}
     \scnaddlevel{-1}
-\scnaddlevel{-1};
+\scnaddlevel{-1}
+\newpage;
 \scgfileitem{figures/intro/scg/arcs/const/scg_const_perm_noorien1.png}\\
 \scnaddlevel{1}
     \scnrelfrom{синтаксическая трансформация}{\scnfilescg{figures/intro/scg/arcs/const/scg_const_perm_noorien2.png}}
@@ -305,7 +314,8 @@
     \scnaddlevel{1}
         \scnexplanation{\textit{Константная постоянная позитивная sc.g-дуга принадлежности} есть ничто иное, как \textit{базовая sc.g-дуга}.}
     \scnaddlevel{-1}
-\scnaddlevel{-1};
+\scnaddlevel{-1}
+\newpage;
 \scgfileitem{figures/intro/scg/arcs/const/scg_const_perm_negative1.png}\\
 \scnaddlevel{1}
     \scnrelfrom{синтаксическая трансформация}{\scnfilescg{figures/intro/scg/arcs/const/scg_const_perm_negative2.png}}
@@ -322,6 +332,7 @@
 \scnaddlevel{-1}
 }
 
+\newpage
 \scnheader{Примеры sc.g-текста, записанного средствами Второго направления расширения Ядра SCg-кода}
 \scnstructinclusion
 
