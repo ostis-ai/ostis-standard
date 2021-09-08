@@ -256,11 +256,6 @@
 	\scnaddlevel{-1}
 }
 
-\scnheader{Пример sc.g-текста, описывающего лексему}
-\scneqscg{figures/sd_natural_languages/lexeme_example.png}
-\scniselement{sc.g-текст}
-\scnexplanation{Здесь представлено описание лексемы, содержащее указание ее принадлежности определённой части речи. Также описание содержит морфологическую парадигму данной лексемы, связывающую ее с ее словоформами.}
-
 \scnheader{член предложения\scnrolesign}
 \scniselement{ролевое отношение}
 \scnexplanation{\textit{Член предложения\scnrolesign} -- это отношение, связывающее декомпозицию текста с файлом, содержимое которого (часть языка) играет в декомпозируемом тексте определенную синтаксическую роль.}
@@ -346,6 +341,13 @@
 	\scnaddlevel{-1}
 }
 
+\bigskip
+\bigskip
+\scnheader{Пример sc.g-текста, описывающего лексему}
+\scniselement{sc.g-текст}
+\scnexplanation{Здесь представлено описание лексемы с указанием ее принадлежности определённой части речи. Также описание содержит морфологическую парадигму данной лексемы, связывающую ее с ее словоформами.}
+\scneqscg{figures/sd_natural_languages/lexeme_example.png}
+
 \scnheader{Пример этапов разбора текста естественного языка}
 
 \scnstartsubstruct
@@ -354,16 +356,18 @@
 	\scnexplanation{с точки зрения ostis-системы, любой естественно-языкой текст является \textit{файлом.}}
 	\scnrelfrom{лексическая структура}{\scnfilescg{figures/sd_natural_languages/nl_lexical.png}}
 		\scnaddlevel{1}
-		\scnexplanation{Данная конструкция включает в себя декомпозицию исходного текста на фрагменты, а также указание принадлежности данных фрагментов определённой \textit{лексеме}, \textit{номинативной единице} или \textit{знаку алфавита синтаксиса}.}
+		\scnexplanation{Данная конструкция описывает декомпозицию исходного текста на фрагменты с указанием их принадлежности определённой \textit{номинативной единице} или \textit{знаку алфавита синтаксиса}.}
 		\scnrelfrom{синтаксическая структура}{\scnfilescg{figures/sd_natural_languages/nl_synactical.png}}
-			\scnaddlevel{1}
-			\scnexplanation{Здесь приведена только частью синтаксической структуры. Оставшаяся часть записывается аналогично.}
-			\scnaddlevel{-1}
+%			\scnaddlevel{1}
+%			\bigskip
+%			\bigskip
+%			\scnexplanation{Здесь приведена только частью синтаксической структуры. Оставшаяся часть записывается аналогично.}
+%			\scnaddlevel{-1}
 		\scnaddlevel{-1}
 	\scnaddlevel{-1}
 \scnendstruct
 
-\bigskip
+%\bigskip
 \scnendstruct \scnendcurrentsectioncomment
 
 \end{SCn}
