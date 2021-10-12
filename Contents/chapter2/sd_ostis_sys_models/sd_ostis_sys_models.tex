@@ -26,7 +26,23 @@
 \input{Contents/chapter2/sd_ostis_sys_models/sd_kb/sd_temp_entities.tex}
 
 \scsection{Предметная область и онтология темпоральных сущностей баз знаний ostis-систем}
+\label{sd_temp_know_base}
 \input{Contents/chapter2/sd_ostis_sys_models/sd_kb/sd_temp_entities_kb.tex}
+
+\scsection{Предметная область и онтология пространственных сущностей различных форм}
+\label{sd_spatial_entities}
+
+\scsection{Предметная область и онтология материальных сущностей}
+\label{sd_material_entities}
+
+\scsubsection{Предметная область и онтология персон}
+\label{sd_person}
+
+\scsubsection{Предметная область и онтология организаций}
+\label{sd_organiztion}
+
+\scsubsection{Предметная область и онтология географических объектов}
+\label{sd_geograph_obj}
 
 \scsection{Предметная область и онтология семантических окрестностей}
 \label{sec:sd_sem_neigh}
@@ -40,13 +56,32 @@
 \label{sec:sd_ontologies}
 \input{Contents/chapter2/sd_ostis_sys_models/sd_kb/sd_ontologies.tex}
 
-\scsection{Предметная область и онтология логических формул, высказываний и формальных теорий}
+\scsection{Предметная область и онтология логических формул, высказываний и логических sc-языков}
 \label{sec:sd_logics}
 \input{Contents/chapter2/sd_ostis_sys_models/sd_kb/sd_logical_formulas.tex}
 
-\scsection{Глобальная предметная область действий и задач и соответствующая ей онтология методов и технологий}
+\scsection{Предметная область и онтология файлов, внешних информационных конструкций и внешних языков ostis-систем}
+\label{sd_file_internal_inform_struct}
+
+
+\scsubsection{Предметная область и онтология библиографических источников}
+\label{sd_bibliography}
+
+\scsubsection{Предметная область и онтология естественных языков}
+\label{sd_natural_lang}
+
+\scsubsubsection{Предметная область и онтология синтаксиса естественных языков}
+\label{sd_syntax_natural_lang}
+
+\scsubsubsection{Предметная область и онтология денотационной семантики естественных языков}
+\label{sd_sem_natural_lang}
+
+\scsection{Глобальная предметная область воздействий и действий, а также соответствующая ей онтология методов и технологий}
 \label{sec:sd_actions}
 \input{Contents/chapter2/sd_ostis_sys_models/sd_kb/sd_actions.tex}
+
+\scsubsection{Локальные предметные области действий и соответствующие им онтологии}
+\label{local_sd_actions}
 
 \scchapter{Предметная область и онтология решателей задач ostis-систем}
 \label{sec:sd_ps}
@@ -64,13 +99,50 @@
 \label{sec:sd_scp_denote_sem}
 \input{Contents/chapter2/sd_ostis_sys_models/sd_ps/sd_scp_denote_sem}
 
+
+\scsubsection{Предметная область и онтология синтаксиса Базового языка программирования ostis-систем}
+\label{syntax_basic_program_lang}
+
+
 \scsubsection{Предметная область и онтология операционной семантики Базового языка программирования ostis-систем}
 \label{sec:sd_scp_oper_sem}
 \input{Contents/chapter2/sd_ostis_sys_models/sd_ps/sd_scp_oper_sem}
 
-\scsection{Предметная область и онтология искусственных нейронных сетей и соответствующая им предметная область и онтология действий по обработке искусственных нейронных сетей}
-\label{sec:sd_neuronetworks}
-\input{Contents/chapter2/sd_ostis_sys_models/sd_ps/sd_ann}
+
+\scsection{Предметная область и онтология sc-языка вопросов}
+\label{sd_sc_quest_lang}
+
+\scsubsection{Предметная область и онтология синтаксиса sc-языка вопросов}
+\label{sd_syntax_sc_quest_lang}
+
+\scsubsection{Предметная область и онтология денотационной семантики sc-языка вопросов}
+\label{sd_denot_sem_sc_quest_lang}
+
+
+\scsubsection{Предметная область и онтология операционной семантики sc-языка вопросов}
+\label{sd_operat_sem_sc_quest_lang}
+
+
+\scsection{Предметная область и онтология операционной семантики логических sc-языков}
+\label{sd_operat_sem_sc_logical_lang}
+
+
+\scsection{Предметная область и онтология sc-языков программирования высокого уровня}
+\label{sd_sc_program_lang}
+
+
+\scsection{Предметная область и онтология sc-моделей искусственных нейронных сетей}
+\label{sd_sc_model_art_neural_networks}
+
+\scsubsection{Предметная область и онтология синтаксиса sc-моделей искусственных нейронных сетей}
+\label{sd_syntax_sc_model_art_neural_networks}
+
+\scsubsection{Предметная область и онтология денотационной семантики sc-моделей искусственных нейронных сетей}
+\label{sd_denot_sem_sc_model_art_neural_networks}
+
+\scsubsection{Предметная область и онтология операционной семантики sc-моделей искусственных нейронных сетей}
+\label{sd_oper_sem_sc_model_art_neural_networks}
+
 
 \scchapter{Предметная область и онтология интерфейсов ostis-систем}
 \label{sec:sd_interfaces}
@@ -80,6 +152,99 @@
 \label{sd_user_interface_actions}
 \input{Contents/chapter2/sd_ostis_tools/sd_ui/sd_user_interface_actions.tex}
 
-\scsection{Предметная область и онтология естественных языков}
-\label{sec:sd_natural_languages}
-\input{Contents/chapter2/sd_ostis_sys_models/sd_kb/sd_natural_languages.tex}
+\scsection{Предметная область и онтология сообщений, входящих в ostis-систему и выходящих из неё}
+\label{sd_messages}
+
+\scsection{Предметная область и онтология действий и внутренних агентов пользовательского интерфейса ostis-системы}
+\label{sd_actions_and_internal_agent}
+
+\scsection{Предметная область и онтология естественно-языковых интерфейсов ostis-систем}
+\label{sd_natural_lang_interface}
+
+\scsubsection{Предметная область и онтология процессов синтаксического анализа и понимания естественно-языковых сообщений, входящих в ostis-систему}
+\label{sd_process_syntax_message_analysis}
+
+\scsubsection{Предметная область и онтология процессов синтеза естественно-языковых сообщений  ostis-системы}
+\label{sd_process_message_synthesis}
+
+\scchapter{Предметная область и онтология действий и методик проектирования ostis-систем}
+\label{sd_actions_methodology_design}
+
+\scsection{Предметная область и онтология действий и методик проектирования баз знаний ostis-систем}
+\label{sd_actions_methodology_know_base_design}
+
+\scsection{Предметная область и онтология действий и методик проектирования решателей задач ostis-систем}
+\label{sd_actions_methodology_problem_solver_design}
+
+\scsection{Предметная область и онтология действий и методик проектирования интерфейсов ostis-систем}
+\label{sd_actions_methodology_interface_design}
+
+\scsection{Предметная область и онтология действий и методик \uline{обучения} проектированию ostis-систем}
+\label{sd_actions_methodology_learning_design}
+
+\scchapter{Предметная область и онтология средств проектирования ostis-систем}
+\label{sd_fund_design}
+
+\scsection{Предметная область и онтология библиотек компонентов ostis-систем, многократно используемых в разных ostis-системах}
+\label{sd_biblio_component}
+
+\scsubsection{Предметная область и онтология многократно используемых компонентов баз знаний ostis-систем}
+\label{sd_know_base_component}
+
+\scsubsection{Предметная область и онтология многократно используемых методов, хранимых в памяти ostis-систем и интерпретируемых их внутренними агентами}
+\label{sd_method_agent}
+
+\scsubsection{Предметная область и онтология многократно используемых внутренниз агентов ostis-систем}
+\label{sd_internal_agent}
+
+\scsubsection{Предметная область и онтология многократно используемых компонентов интерфейсов ostis-систем}
+\label{sd_component_interface}
+
+\scsubsection{Предметная область и онтология многократно используемых встраиваемых ostis-систем}
+\label{sd_embed_sys}
+
+\scsection{Предметная область и онтология ostis-систем автоматизации проектирования различных видов ostis-систем}
+\label{sd_type_automation_design}
+
+\scsubsection{Логико-семантическая модель встраиваемой ostis-системы автоматизации проектирования баз знаний ostis-систем}
+\label{logical_model_embed_automation_design}
+
+\scsubsubsection{Логико-семантическая модель средств редактирования, сборки и ввода исходных текстов различных компонентов проектируемой базы знаний в память ostis-системы}
+\label{edit_assem_logical_model}
+
+\scsubsubsection{Логико-семантическая модель средств редактирования проектируемой базы знаний ostis-системы на уровне её внутреннего представления}
+\label{edit_tools_proj_logical_model}
+
+\scsubsubsection{Логико-семантическая модель средств редактирования обнаружения и анализа ошибок и противоречий в базе знаний ostis-системы}
+\label{detec_error_logical_model}
+
+\scsubsubsection{Логико-семантическая модель средств обнаружения и анализа информационных дыр в базе знаний ostis-системы}
+\label{detec_hole_logical_model}
+
+\scsubsubsection{Логико-семантическая модель средств автоматизации управления взаимодействием менеджеров, авторов, рецензентов, экспертов и редакторов в процессе проектирования базы знаний ostis-системы}
+\label{author_logical_model}
+
+\scsubsection{Логико-семантическая модель ostis-системы автоматизации проектирования решателей задач ostis-систем}
+\label{problem_solver_logical_model}
+
+\scsubsubsection{Логико-семантическая ostis-системы автоматизации проектирования программ Базового языка программирования ostis-систем и, в частности, проектирования внутренних агентов ostis-систем, а также коллективов таких агентов}
+\label{design_problem_solver_logical_model}
+
+\scsubsubsection{Логико-семантическая ostis-системы автоматизации проектирования искусственных нейронных сетей, семантически совместимых с базами знаний ostis-систем}
+\label{autom_design_neural_network_logical_model}
+
+
+\scsubsection{Логико-семантическая модель ostis-системы автоматизации проектирования интерфейсов ostis-систем}
+\label{autom_design_interface_logical_model}
+
+\scsection{Предметная область и онтология ostis-систем автоматизации проектирования различных классов ostis-систем}
+\label{sd_autom_design_class}
+
+\scsubsection{Предметная область и онтология ostis-систем обучения проектированию ostis-систем и их компонентов}
+\label{sd_learn_design_component}
+
+\scchapter{Предметная область и онтология методов и средств производства ostis-систем}
+\label{sd_method_prod_sys}
+
+\scsection{Предметная область и онтология базовых интерпретаторов когнитивно-семантических моделей ostis-систем}
+\label{sd_basic_interp_semantic_sys}
