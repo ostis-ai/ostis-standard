@@ -89,22 +89,22 @@
 \makeatletter
 \renewcommand{\cftchappresnum}{\begin{lrbox}{\@tempboxa}}
 \renewcommand{\cftchapaftersnum}{\end{lrbox}}
-\cftsetindents{chapter}{0}{0}
+\cftsetindents{chapter}{0pt}{0pt}
 \renewcommand{\cftsecpresnum}{\begin{lrbox}{\@tempboxa}}
 \renewcommand{\cftsecaftersnum}{\end{lrbox}}
-\cftsetindents{section}{\tabsize}{0}
+\cftsetindents{section}{\tabsize}{0pt}
 \renewcommand{\cftsubsecpresnum}{\begin{lrbox}{\@tempboxa}}
 \renewcommand{\cftsubsecaftersnum}{\end{lrbox}}
-\cftsetindents{subsection}{\tabsize+\tabsize}{0}
+\cftsetindents{subsection}{\tabsize+\tabsize}{0pt}
 \renewcommand{\cftsubsubsecpresnum}{\begin{lrbox}{\@tempboxa}}
 \renewcommand{\cftsubsubsecaftersnum}{\end{lrbox}}
-\cftsetindents{subsubsection}{\tabsize+\tabsize+\tabsize}{0}
+\cftsetindents{subsubsection}{\tabsize+\tabsize+\tabsize}{0pt}
 \renewcommand{\cftparapresnum}{\begin{lrbox}{\@tempboxa}}
 \renewcommand{\cftparaaftersnum}{\end{lrbox}}
-\cftsetindents{paragraph}{\tabsize+\tabsize+\tabsize+\tabsize}{0}
+\cftsetindents{paragraph}{\tabsize+\tabsize+\tabsize+\tabsize}{0pt}
 \renewcommand{\cftsubparapresnum}{\begin{lrbox}{\@tempboxa}}
 \renewcommand{\cftsubparaaftersnum}{\end{lrbox}}
-\cftsetindents{subparagraph}{\tabsize+\tabsize+\tabsize+\tabsize+\tabsize}{0}
+\cftsetindents{subparagraph}{\tabsize+\tabsize+\tabsize+\tabsize+\tabsize}{0pt}
 \renewcommand\cftchapafterpnum{\vspace{\toclineskip}}
 \renewcommand\cftsecafterpnum{\vspace{\toclineskip}}
 \renewcommand\cftsubsecafterpnum{\vspace{\toclineskip}}
@@ -183,39 +183,6 @@
 	\bigskip
 	\fi
 	\scnsegmentcaptionbeginning \textspaced{\scnheader{#1}}
-}
-
-\newcommand\segcountertext{
-\ifnum\value{seg}=1
-    Первый
-\fi
-\ifnum\value{seg}=2
-    Второй
-\fi
-\ifnum\value{seg}=3
-    Третий
-\fi
-\ifnum\value{seg}=4
-    Четвертый
-\fi
-\ifnum\value{seg}=5
-    Пятый
-\fi
-\ifnum\value{seg}=6
-    Шестой
-\fi
-\ifnum\value{seg}=7
-    Седьмой
-\fi
-\ifnum\value{seg}=8
-    Восьмой
-\fi
-\ifnum\value{seg}=9
-    Девятый
-\fi
-\ifnum\value{seg}=10
-    Десятый
-\fi
 }
 
 \newcommand{\scnfragmentcaptiontext}[1]{
@@ -991,6 +958,8 @@
 \scnhaselementlist{исследуемое отношение}{#1}
 }
 
+%Developer info
+
 \newcommand{\timestamp}{\vspace{0.5em}\scnauthorcomment{\textbf{\large Версия от \today~ \currenttime}}}
 
 \newcommand{\addedstart}{\reversemarginpar\marginpar{\hspace{3em}НОВОЕ~[}}
@@ -1067,10 +1036,6 @@
 \vspace{\toclineskip}}
 \fi}
 
-\WithSuffix\newcommand\scsubsection*[2]{\clearpage\subsection*{/*~\textspaced{\large Раздел}~\filldots/\vspace{\afterparlength}}
-	\addcontentsline{toc}{subsection}{#1}
-}
-
 \newcommand{\scsubsubsection}[2][]{\clearpage
 \subsubsection[\textit{#2}]{/*~\textspaced{\large Раздел}~\filldots/\vspace{\afterparlength}}
 \ifx&#1&
@@ -1078,10 +1043,6 @@
 \addtocontents{toc}{\vspace{\dimexpr -\toclineskip+0.1\baselineskip \relax}\parbox{\textwidth}{\begin{adjustwidth}{\tabsize+\tabsize+\tabsize}{0em}\begin{SCn}\protect#1\end{SCn}\end{adjustwidth}}
 \vspace{\toclineskip}}
 \fi}
-
-\WithSuffix\newcommand\scsubsubsection*[2]{\clearpage\subsubsection*{/*~\textspaced{\large Раздел}~\filldots/\vspace{\afterparlength}}
-	\addcontentsline{toc}{subsubsection}{#1}
-}
 
 \newcommand{\scparagraph}[2][]{\clearpage\paragraph[\textit{#2}]{/*~\textspaced{\large Раздел}~\filldots/\vspace{\afterparlength}}
 \ifx&#1&
@@ -1135,11 +1096,6 @@
 {
 \end{enumerate}
 }
-
-\newcommand{\scncontentname}{\begin{SCn}
-\scnsectionheader{Оглавление описания Технологии OSTIS}
-$\bm{=[}$
-\end{SCn}}
 
 % Itemize END
 
