@@ -45,3 +45,7 @@ maxnames=3
 \scnheader{#2}
 \scntext{библиографическая ссылка}{\fullcite{#1}}
 }
+
+\newcommand{\scnciteannotation}[1]{
+	\scntext{аннотация}{\citefield{#1}{annotation}}
+}
