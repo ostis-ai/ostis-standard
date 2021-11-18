@@ -125,7 +125,7 @@
     pages = "99-118",
     language = {english},
     shorthand = "Davydenko.I.T.SemanticMMTKBCDBRC-2018ст",
-    annotation = "Работа содержит описание семантических моделей, методов и средств соглассованой разработки бах знаний на основе многократно используемых компонентов"
+    annotation = "Работа содержит описание семантических моделей, методов и средств согласованной разработки баз знаний на основе многократно используемых компонентов"
 }
 
 @inproceedings{Shunkevich2018,
@@ -5098,8 +5098,281 @@ $147$
   year = {1984},
   numpages = {132},
   shorthand = {Мартынов.В.В.УниверСемантКод-1984кн},
-  language = {russian}
+  language = {russian},
+  annotation = {Книга В.В. Мартынова о третьей версии Универсального семантического кода}
 }
 
+%sd_actions
+
+@article{Ikeda1998,
+	author = {Ikeda, Mitsuru and Seta, Kazuhisa and Kakusho, Osamu and Mizoguchi, Riichiro},
+	year = {1998},
+	month = {01},
+	pages = {126--133},
+	title = {Task ontology: Ontology for building conceptual problem solving models},
+	booktitle = {ECAI98 Workshop on Applications of ontologies and problem-solving model},
+	language = {english},
+	shorthand = {Ikeda.M..TaskOntolOBCPSM-1998art},
+	annotation = {В работе сделана попытка построения Онтологии задач (Task ontology) и реализации на базе этой онтологии системы концептуального программирования (Conceptual LEvel Programming Environment, CLEPE). Указанная система позволяет (1) описать процесс решения некоторой задачи на уровне удобных и понятных человеку примитивов, (2) промоделировать (сэмулировать) процесс решения задачи на абстрактном уровне в терминах примитивов концептуального уровня. Кроме того, указанная система позволяет пользователю разработать свою онтологию задач, исходя из собственных потребностей.\par
+	В работе противопоставляются два вида онтологий задач --
+	Обобщенная Онтология задач (core task ontology, C-Task), которая включает в себя понятия, общие для всех предметных областей, а именно описание условия задачи (цель, ограничения), общие классы действий (назначить, выбрать, классифицировать и т.д.), состояния процесса решения задачи и т.д., и частные онтологии задач, описывающие классы задач, решаемые в рамках конкретных предметных областей (task specific ontology, Task-S). Обобщенная Онтология задач, с другой стороны, противопоставляется более высокоуровневым онтологиям (general ontology).\par
+	В основе системы CLEPE лежит язык описания онтологий задач (Task Ontology representation Language, TOL), построенный на основе C-Task и позволяющий пользователю разработать онтологию задач для своей предметной области.\par
+	Основное внимание в работе уделяется практической стороне вопроса, то есть возможности описания процесса решения задачи на языке, понятном пользователю и близком к естественному, а также возможности моделирования процесса решения задач на абстрактном уровне.}
+}
+
+@MISC{Studer1996,
+	author = {Studer, Rudi and Eriksson, Henrik and Gennari, John and Tu, Samson and Fensel, Dieter and Musen, Mark},
+	year = {1996},
+	month = {11},
+	pages = {},
+	title = {Ontologies and the Configuration of Problem-Solving Methods},
+	shorthand = {Studer.R..OntologCPSM-1996art},
+	annotation = {В работе говорится о необходимости создания библиотеки многократно используемых методов решения задач, упоминается проект PROTÉGÉ-II, включающий библиотеку таких многократно используемых методов. кратко говорится о структуре библиотеки многократно используемых компонентов систем, основанных на знаниях, о необходимости поиска нужного компонента в библиотеке, основное внимание уделяется проблеме конфигурирования компонентов.\par
+	Формулируется проблема совместимости многократно используемых методов в рамках единой системы, которая решается вручную разработчиком. Для упрощения процесса согласования (конфигурирования) множества многократно используемых методов предлагается использовать иерархию онтологий, описывающих методы решения задач различных классов и их подметоды (методы решения подзадач исходной задачи).\par
+	Метод делится на подзадачи (явно сказано, что задача и метод ее решения не противопоставляются), каждая из которых, в свою очередь, может делиться на более простые, вплоть до таких подзадач, для которых существует тривиальный ("зашитый") способ их решения. Такой способ в работе назван \textit{элементарным логическим действием} (elementary inference action).\par
+	Тем не менее, в работе не дается описания какой-либо предметно-независимой общей онтологии методов в виде семейства классов и отношений. Предложенный подход иллюстрируется на примере онтологии для конкретного класса задач (простая настольная игра в виде поля с клетками, по которому перемещается фишка), формулируется проблема сопоставления (mapping) методов и решаемых ими классов задач. Говорится, что для описания онтологий используется формальный язык KARL (описан, например, в работе \scncite{Fensel1998KARL}), но не приводятся примеры описаний.\par
+	Основным результатом работы авторы считают введение понятия онтологии общего метода решения задач и онтологий подзадач (подметодов), что позволяет локализовать внимание разработчика на соответствующих частных онтологиях. Таким образом, речь в работе идет не о некоторой общей онтологии методов, а о самой идее разработки онтологий, соответствующих методам решения задач и формирования иерархических систем таких взаимосвязанных онтологий, соответствующих методам и их подметодам.}}
+	
+@article{Fensel1998KARL,
+doi = {10.1109/69.706055},
+url = {https://doi.org/10.1109/69.706055},
+year = {1998},
+publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},
+volume = {10},
+number = {4},
+pages = {527--550},
+author = {D. Fensel and J. Angele and R. Studer},
+title = {The knowledge acquisition and representation language,  {KARL}},
+shorthand = {Fensel.D..TheKnowledgeARL-1998art}
+}
+
+@article{Benjamins1999,
+	author = {Benjamins, V. Richard and Gomez-Perez, Asuncion},
+	year = {1999},
+	month = {01},
+	pages = {},
+	title = {Knowledge-System Technology: Ontologies and Problem-Solving Methods},
+	shorthand = {Benjamins.V.R..KnowledgeSTOPSM-1999art},
+	annotation = {В работе говорится о важности повторного использования онтологий и методов решения задач как компонентов систем, основанных на знаниях.\par
+	Приводится обзор сущствующих определений понятия онтология и актуальных подходов к их разработке на момент публикации работы. Рассматриваются методологии построения онтологий, проекты по их разработке, а также известные приложения, использующие онтологии.
+	Делается попытка описать архитектуру метода решения задач (МРЗ), отмечается взаимосвзяь МРЗ с классом задач и предметной областью. Рассматриваются основные существующие на тот момент МРЗ, однако не делается попытки их унификации или хотя бы классификации. Кратко рассматриваются подходы к разработке библиотек МРЗ. Делается вывод о необходимости интеграции МРЗ и онтологий, специфицирующих знания предметной области.}
+}
+
+@article{Chandrasekaran1999,
+	author = {Chandrasekaran, B. and Josephson, John and Benjamins, V. Richard},
+	year = {1999},
+	month = {11},
+	pages = {},
+	title = {Ontology of Tasks and Methods},
+	shorthand = {Chandrasekaran.B..OntologyTM-1999art},
+	annotation = {Существенно расширенная версия работы \scncite{Chandrasekaran1998}. В работе говорится о важности повторного использования онтологий и методов решения задач. В общих чертах описываются необходимые составляющие метода решения задач, такие как цель, состояние процесса решения задачи,  факты из предметной области, знания о том, как решать задачу. Процесс решения задачи, как и во многих других работах, рассматривается как декомпозиция на более простые подзадачи до тех пор, пока не будет существовать способ решения таких подзадач.}
+}
+
+@inproceedings{Fensel1998Reuse,
+	author={Fensel, Dieter and Benjamins, V Richard},
+	title={Key issues for automated problem-solving methods reuse},
+	booktitle={13th European Conference on Artificial Intelligence, ECAI98, Wiley \& Sons Pub},
+	year={1998},
+	shorthand = {Fensel.D..KeyIAPSMR-1998art},
+	annotation = {Рассматриваются проблемы повторного использования методов решения задач.}
+}
+
+@inproceedings{Chandrasekaran1998,
+	author={Chandrasekaran, B. and Josephson, John and Benjamins, V. Richard},
+	title={Ontology of tasks and methods},
+	booktitle={ECAI98 Workshop Notes on Applications of Ontologies and Problem-Solving Methods},
+	year={1998},
+	shorthand = {Chandrasekaran.B..OntologyTM-1998art},
+	annotation = {Первая версия статьи \scncite{Chandrasekaran1999}.}
+}
+
+@book{Kemke2001,
+	place={Computing Research Laboratory},
+	title={About the Ontology of Actions},
+	number={Technical Report MCCS-01-328}, 
+	institution={New Mexico State University}, 
+	author={Kemke, Christel}, 
+	year={2001},
+	shorthand = {Kemke.C.AboutOA-2001rep},
+	annotation = {В работе предлагается общая онтология действия, призванная облегчить разработку систем, основанных на знаниях, а также развить философские и психологические исследования в данной области. Рассматриваются такие понятия  как действие, план, событие и т.д. их основные характеристики, такие как участники (субъект, объект и т.д.), временные характеристики, результат и другие. Отдельно выделяются такие классы преобразований (dynamic items), как doing (преобразование, выполняемые субъектом, например, человеком или роботом), act (преобразование, выполняемое какой-либо силой или предметом), event (преобразование, происходящее само по себе). В свою очередь doing классифицируется на осознаные (action), рефлекторные (reflex) и выполняемые автоматически (skills). Далее вводится семантическая классификация действий, а также уровни абстракции действий (уровень реализации, уровень семантики, уровень прагматики).\par
+	Далее рассматривается абстрактная модель системы, выполнящей некоторые действия, в рамках которой, в частности, предполагается хранение в памяти автоматически применяемых навыков (skills), модели среды, перечня целей и задач и спецификации самих действий, а также предполагается наличие модулей планирования и выполнения действий. Модель описана на очень общем уровне и не детализируется.}
+ }
+
+@article{Tu1995,
+	doi = {10.1016/0933-3657(95)00006-r},
+	url = {https://doi.org/10.1016/0933-3657(95)00006-r},
+	year = {1995},
+	month = jun,
+	publisher = {Elsevier {BV}},
+	volume = {7},
+	number = {3},
+	pages = {257--289},
+	author = {Samson W Tu and Henrik Eriksson and John H Gennari and Yuval Shahar and Mark A Musen},
+	title = {Ontology-based configuration of problem-solving methods and generation of knowledge-acquisition tools: application of {PROT}{\'{E}}G{\'{E}}-{II} to protocol-based decision support},
+	shorthand = {Tu.S..OntologyBCPSMGKATAPPBDS-1995art},
+	annotation = {Достаточно подробно рассмотрена работа средств семейства PROTEGE II при разработке конкретной системы, обеспечивающей поддержку принятия решений на основе протоколов в области лечения ВИЧ-инфицированных пациентов. Для решения поставленной задачи используется метод, предполагающий декомпозицию задачи на подзадачи, который строится из многократно используемых компонентов.\par
+	Кроме того, рассматривается прикладная онтология, уточняющая систему понятий предметной области, а также онтологии, описывающие знанияя, специфичные для конкретного метода. На основе этой онтологии строится инструмент извлечения знаний, специфичный для предметной области.\par
+	Общая цель подхода PROTÉGÉ-II состоит в том, чтобы производить системы и компоненты, которые легко поддерживать и использовать повторно. По этой причине методы решения задач строятся из набора более мелких методов и механизмов. Это также объясняет, почему инструменты извлечения знаний привязаны к предметной области и автоматически генерируются на основе онтологий. Оценка успешности предложенных решений все еще является предварительной, тем не менее в работе показано, как указанных цели могут быть достигнуты для прикладной задачи обеспечения поддержки принятия решений.\par
+	Близкие работы: \scncite{Studer1996}.\par
+	Работа содержит много ссылок на другие работы, описывающие архитектуры, в которых методы решения задач строятся из более мелких многократно используемых компонентов.}
+}
+
+@article{Puerta1992,
+	title={A multiple-method knowledge-acquisition shell for the automatic generation of knowledge-acquisition tools},
+	author={Angel R. Puerta and John W. Egar and Samson W. Tu and Mark A. Musen},
+	journal={Knowledge Acquisition},
+	year={1992},
+	volume={4},
+	pages={171-196},
+	shorthand = {Puerta.A.R..MMKASAGKAT-1992art},
+	annotation = {Основная ссылка для проекта PROTEGE II (ее используют в других работах сами авторы.)}
+}
+
+@phdthesis{Trypuz2007,
+	author = {Trypuz, Robert},
+	year = {2007},
+	month = {01},
+	pages = {273},
+	title = {Formal Ontology of Action: a unifying approach},
+	shorthand = {Trypuz.R.FOAUA-2007th},
+	annotation = {В рамках диссертации разработана формальная онтология действий, названная OntoSTIT+. Она предполагает возможность ветвления при выполнения каких-либо действий (при этом некоторые из веток могут быть успешными, а некоторые -- нет), предлагает классификацию типов действий, учитывает ментальные установки агента. В рамках OntoSTIT+ определяются значения таких понятий, как «деятельность» и «действие».\par
+	Формально OntoSTIT+ представляет собой одиннадцать упорядоченных логик первого порядка, расширенных модальными операторами убеждений, желаний и намерений, и содержит около семидесяти аксиом и двадцати определений. Каждая аксиома и определение обоснованы и мотивированы ссылкой на соответствующую область исследования, такую ​​как лингвистика, философия действия и искусственный интеллект. OntoSTIT+ также основан на работах по модальной логике деятельности и работах по темпоральным логикам.\par
+	OntoSTIT+ носит междисциплинарный характер, и с одной стороны, соответствует методологии создания формальных онтологий, а с другой стороны, объединяет области исследований, результаты которых (в отношении действий и деятельности) были учтены в OntoSTIT+. OntoSTIT+ является основой для реализации различных теорий действий и, следовательно, позволяет сравнивать эти теории, а также является средством для интеграции междисциплинарных исследований.\par
+	OntoSTIT+ может также успешно применяться для реализации логических рассуждений и выполнения действий рациональными искусственными агентами, а также для обработки естественного языка на основе онтологий.\par
+	Одним из учителей автора является Nicola Guarino, известный ученый в области онтологий.}
+}
+
+@article{Fang2019,
+	doi = {10.3390/su11123484},
+	year = {2019},
+	month = jun,
+	publisher = {{MDPI} {AG}},
+	volume = {11},
+	number = {12},
+	pages = {3484},
+	author = {Kwoting Fang and Shuoche Lin},
+	title = {An Integrated Approach for Modeling Ontology-Based Task Knowledge on an Incident Command System},
+	shorthand = {Fang.K..IntegratedAMOBTKICS-2019art},
+	annotation = {В статье представлена ​​методология TTIPP, представляющая собой интеграцию методов анализа задач, онтологии задач, методологии IDEF0, сетей Петри и языка меток Петри (PNML) для организации и моделирования знаний о задачах, представленных в форме выражений естественного языка и приобретенных в процессе приобретения знаний. Цель методологии -- сделать задачи более полезными и доступными посредством Интернет для различных сторон, заинтересованных в решении задачи, выраженной в основном в лингвистической форме, а также пролить свет на природу знаний о решении задач.\par
+	Предлагаемая модель преодолевает недостатки IDEF0, которые заключаются в ее статической природе, и сетей Петри, в которых отсутствует понятие иерархии.\par
+	Предложенная методология применена при разработке системы управления инцидентами (ICS, под инцидинтами понимаются разлинчые стихийные бедствия). В такого рода системах существует острая необходимость в явном обмене, копировании и повторном использовании существующих знаний о решении задач в сложных ICS. В работе рассмотрено применение TTIPP в задаче аварийного реагирования на сели во время тайфуна.\par
+	Онтология задач в работе рассматривается в основном на лексическом уровне (как совокупность терминов и ограничений, действующих в контексте задачи).}
+}
+
+@InProceedings{Perkuhn1997,
+	author = {Perkuhn, Rainer},
+	editor = {Plaza, Enric and Benjamins, Richard},
+	title = {Reuse of problem-solving methods and family resemblances},
+	booktitle = {Knowledge Acquisition, Modeling and Management},
+	year = {1997},
+	publisher = {Springer Berlin Heidelberg},
+	address = {Berlin, Heidelberg},
+	pages = {174--189},
+	shorthand = {Perkuhn.R.ReusePSMFM-1997art},
+	abstract = {In the last years a common notion of a Problem-Solving Method (PSM) emerged from different knowledge engineering frameworks. As a generic description of the dynamic behaviour of knowledge based systems PSMs are favored subjects of reuse. Up to now, most investigations on the reuse of PSMs focus on static features and methods as objects of reuse. By this, they ignore a lot of information of how the PSM was developed that is, in principle, entailed in the different parts of a conceptual model of a PSM.},
+	isbn = {978-3-540-69606-3}
+}
+
+@incollection{Fensel1997,
+	doi = {10.1007/bfb0026781},
+	year = {1997},
+	publisher = {Springer Berlin Heidelberg},
+	pages = {113--128},
+	author = {D. Fensel and E. Motta and S. Decker and Z. Zdrahal},
+	shorthand = {Fensel.D..UsingODTPSMTM-1997art},
+	title = {Using ontologies for defining tasks,  problem-solving methods and their mappings}
+}
+
+@article{McBride2021,
+	doi = {10.5465/amr.2020.0093},
+	year = {2021},
+	month = jan,
+	publisher = {Academy of Management},
+	volume = {46},
+	number = {1},
+	pages = {211--214},
+	author = {Russ McBride and Mark D. Packard},
+	shorthand = {McBride.R..OntologyAANA-2021art},
+	title = {On the Ontology of Action: Actors are Not {\textquotedblleft}Abstractions{\textquotedblright}},
+	annotation = {В работе с философской точки зрения исследуются понятия "действие"{} и "актор". Дается определени понятию действия как целенаправленному поведению и понятию актора как субъекту этого целенаправленного поведения.}
+}
+
+@article{Crowther2020,
+	author = {Thomas Crowther},
+	title = {Temporal ontology and joint action},
+	journal = {Inquiry},
+	volume = {0},
+	number = {0},
+	pages = {1-23},
+	year  = {2020},
+	publisher = {Routledge},
+	doi = {10.1080/0020174X.2020.1731592},
+	shorthand = {Crowther.T.TemporalOJA-2020art},
+	annotation = {В работе с точки зрения социологии и психологии исследуется социальная деятельность, предполаюгающая совместное выполнение каких-либо действий. Особое внимание уделяется понятию "дружба"{} и другим видам социального взаимодействия субъектов.},
+	abstract = {The aim of the paper is to describe the temporal ontology of that basic manifestation of social agency that is the living of life together. The distinction between states, processes and events is clarified. There are notions of ‘doing things together’ that fall into each of these temporal categories. The ontology of the state of friendship is examined as one instance of living life together. Friendship is a state of community between agents that is sustained by a continuity of processes and events that are characteristic manifestations of the state, some (but not all) of which are processes of doing things together. The continuity of processes and events involved in friendship is distinctive in lacking a telic point. Further instances of shared life that possess this characteristic temporal structure are described. It is argued that this notion of a mode of shared life cannot be recovered from various kinds of temporally extended agential structures that are the ingredients of Michael Bratman’s work on shared agency. In so doing, I clarify the notion of a shared life and make a case for the fruitfulness of approaching questions about joint action from the perspective of work on the ontology of time occupation.}
+}
+
+@book{McCann1998,
+	doi = {10.7591/9781501737176},
+	url = {https://doi.org/10.7591/9781501737176},
+	year = {1998},
+	month = jan,
+	publisher = {Cornell University Press},
+	author = {Hugh J. McCann},
+	title = {The Works of Agency},
+	shorthand = {McCann.H.J.TheWorksA-1998bk},
+	annotation = {Философский труд, целиком посвященный понятию деятельности и ее составляющим и характеристикам, таким как действие, намерение, желание, рациональность.}
+}
+
+@article{Yan2014,
+	doi = {10.1016/j.engappai.2013.07.005},
+	url = {https://doi.org/10.1016/j.engappai.2013.07.005},
+	year = {2014},
+	month = jan,
+	publisher = {Elsevier {BV}},
+	volume = {27},
+	pages = {175--190},
+	author = {W. Yan and C. Zanni-Merk and D. Cavallucci and P. Collet},
+	title = {An ontology-based approach for inventive problem solving},
+	shorthand = {Yan.W..OntologyBAIPS-2014art},
+	annotation = {В статье исследуется новый подход к формализации теории решения изобретательских задач (ТРИЗ), основанный на онтологиях. В предлагаемом подходе пользователи ТРИЗ начинают решать изобретательскую задачу с помощью источника знаний ТРИЗ по своему выбору и получают абстрактное решение. Далее в соответствии с выбранными элементами этого первого источника знаний аналогичные элементы других источников знаний получаются на основе семантического сходства, рассчитанного заранее. Учитывая, что все источники знаний ТРИЗ описываются как короткие тексты, недостающие звенья среди источников знаний ТРИЗ определяются на основе семантического сходства коротких текстов. Для динамического предоставления эвристических решений пользователям ТРИЗ используется механизм вывода онтологий, реализованный в Protégé и JESS. Процесс применения ТРИЗ на основе онтологий демонстрируется на примере "Космического Котла".},
+	abstract = {With the development of the theory of inventive problem solving (TRIZ), different knowledge sources were established in order to solve different types of inventive problems, such as 40 inventive principles for eliminating the technical contradictions. These knowledge sources with different levels of abstraction are all built independent of the specific application field, and require extensive knowledge about different engineering domains. In order to facilitate the use of the TRIZ knowledge sources, this paper explores a new inventive problem solving approach based on ontologies. In this approach, the TRIZ users start solving an inventive problem with the TRIZ knowledge source of their choice to obtain an abstract solution. According to the selected items of that first knowledge source, the similar items of other knowledge sources are obtained based on the semantic similarity calculated in advance. Considering that all the TRIZ knowledge sources are described as short-texts, the missing links among the TRIZ knowledge sources are defined based on short-text semantic similarity. At the same time, the ontology reasoning mechanism, deployed on Protégé and JESS, is used to provide heuristic solutions dynamically for TRIZ users. The case of a “Space Boiler” is used to show this ontology-based inventive problem solving process in detail.}
+}
+
+@article{Ansari2018,
+	title = {A problem-solving ontology for human-centered cyber physical production systems},
+	journal = {CIRP Journal of Manufacturing Science and Technology},
+	volume = {22},
+	pages = {91-106},
+	year = {2018},
+	issn = {1755-5817},
+	doi = {https://doi.org/10.1016/j.cirpj.2018.06.002},
+	url = {https://www.sciencedirect.com/science/article/pii/S1755581718300324},
+	author = {Fazel Ansari and Marjan Khobreh and Ulrich Seidenberg and Wilfried Sihn},
+	keywords = {CPPS, Human, Problem-solving, Ontology, Industry 4.0},
+	shorthand = {Ansari.F..ProblemSOHCCPPS-2018art},
+	abstract = {Cyber physical social systems (CPSS) tend to integrate computation with physical processes as well as human and social characteristics. The fusion of cyber, physical, and socio spaces through Industry 4.0 emerges a new type of production systems known as cyber physical production systems (CPPS). CPPS enriches communications among cyber-physical-socio space in the production environment. Utilizing human-centered CPPS in smart factories (ideally) results in a mutual transition from human-machine cooperation to active collaboration, which is characterized by cyber-physical-socio interactions, knowledge exchange and reciprocal learning. The shift from data workers or producers to problem-solver is, therefore, triggered to both humans and CPPS, respectively. Hence, their job roles and responsibilities cannot be independently defined. This paper approaches the collaboration of human and CPPS in problem-solving from the angle of complementarity whereby “human competences” and “CPPS autonomy” together derive supplementary capability and reciprocal learning. In this research, “Problem” is an umbrella term that refers to both categories of “human-CPPS task” (i.e. a specific piece of work required to be done) and “failure event” (i.e. a state of difficulty that needs to be resolved). A holistic ontological framework is proposed, entitled PSP Ontology (Problem, Solution, Problem-Solver Ontology), which represents the logical relations between the three super-concepts of “Problem Profile”, “Problem-Solver Profile”, and “Solution Profile”. Related entities are formalized by introducing (i) contingency vector, (ii) vector of competence and autonomy, and (iii) solution maturity index, respectively. PSP Ontology is utilized for semantic representation of the super-concepts and reasoning out the competence questions, i.e. in which situation and under which conditions human and/or CPPS is dominant or eligible to solve a problem (to accomplish a given task and/or to detect or eliminate a failure), which is qualitatively exemplified in the use-case of maintenance 4.0.}
+}
+
+@incollection{Crubezy2004,
+	doi = {10.1007/978-3-540-24750-0_16},
+	year = {2004},
+	publisher = {Springer Berlin Heidelberg},
+	pages = {321--341},
+	author = {Monica Crub{\'{e}}zy and Mark A. Musen},
+	title = {Ontologies in Support of Problem Solving},
+	shorthand = {Crub{\'{e}}zy.M..OntologiesSPS-2004chap},
+	annotation = {Глава в книге, описывающая результаты, представленные также в серии работ~\scncite{Tu1995}, \scncite{Studer1996} и других.}
+}
+
+@INPROCEEDINGS{Coelho1996,
+	author = {Eliana Coelho and Guy Lapalme},
+	title = {Describing Reusable Problem-Solving Methods with a Method Ontology},
+	booktitle = {University of Calgary},
+	year = {1996},
+	pages = {3--1},
+	publisher = {SRDG Publications},
+	shorthand = {Coelho.E..DescribingRPSMMO-1996art}
+}
 
 @Comment{jabref-meta: databaseType:bibtex;}
