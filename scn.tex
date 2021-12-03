@@ -61,6 +61,9 @@
 \newlength{\substructsize}
 \setlength{\substructsize}{1.7em}
 
+\newlength{\toclineskip}
+\setlength{\toclineskip}{\baselineskip}
+
 \newcommand{\scnsupergroupsign}{\textasciicircum}
 \newcommand{\scnrolesign}{\,$^\prime$}
 
@@ -79,12 +82,6 @@
 \makeatletter
 \renewcommand{\@cftmaketoctitle}{}
 \makeatother
-%\renewcommand{\cftchapaftersnum}{.}
-%\renewcommand{\cftsecaftersnum}{.}
-%\renewcommand{\cftsubsecaftersnum}{.}
-%\renewcommand{\cftsubsubsecaftersnum}{.}
-%\renewcommand{\cftparaaftersnum}{.}
-%\renewcommand{\cftsubparaaftersnum}{.}
 \renewcommand{\cftchapfont}{\bfseries}
 \renewcommand{\cftsecfont}{\bfseries}
 \renewcommand{\cftsubsecfont}{\bfseries}
@@ -92,28 +89,28 @@
 \makeatletter
 \renewcommand{\cftchappresnum}{\begin{lrbox}{\@tempboxa}}
 \renewcommand{\cftchapaftersnum}{\end{lrbox}}
-\cftsetindents{chapter}{0}{0}
+\cftsetindents{chapter}{0pt}{0pt}
 \renewcommand{\cftsecpresnum}{\begin{lrbox}{\@tempboxa}}
 \renewcommand{\cftsecaftersnum}{\end{lrbox}}
-\cftsetindents{section}{\tabsize}{0}
+\cftsetindents{section}{\tabsize}{0pt}
 \renewcommand{\cftsubsecpresnum}{\begin{lrbox}{\@tempboxa}}
 \renewcommand{\cftsubsecaftersnum}{\end{lrbox}}
-\cftsetindents{subsection}{\tabsize+\tabsize}{0}
+\cftsetindents{subsection}{\tabsize+\tabsize}{0pt}
 \renewcommand{\cftsubsubsecpresnum}{\begin{lrbox}{\@tempboxa}}
 \renewcommand{\cftsubsubsecaftersnum}{\end{lrbox}}
-\cftsetindents{subsubsection}{\tabsize+\tabsize+\tabsize}{0}
+\cftsetindents{subsubsection}{\tabsize+\tabsize+\tabsize}{0pt}
 \renewcommand{\cftparapresnum}{\begin{lrbox}{\@tempboxa}}
 \renewcommand{\cftparaaftersnum}{\end{lrbox}}
-\cftsetindents{paragraph}{\tabsize+\tabsize+\tabsize+\tabsize}{0}
+\cftsetindents{paragraph}{\tabsize+\tabsize+\tabsize+\tabsize}{0pt}
 \renewcommand{\cftsubparapresnum}{\begin{lrbox}{\@tempboxa}}
 \renewcommand{\cftsubparaaftersnum}{\end{lrbox}}
-\cftsetindents{subparagraph}{\tabsize+\tabsize+\tabsize+\tabsize+\tabsize}{0}
-\renewcommand\cftchapafterpnum{\bigskip}
-\renewcommand\cftsecafterpnum{\bigskip}
-\renewcommand\cftsubsecafterpnum{\bigskip}
-\renewcommand\cftsubsubsecafterpnum{\bigskip}
-\renewcommand\cftparaafterpnum{\bigskip}
-\renewcommand\cftsubparaafterpnum{\bigskip}
+\cftsetindents{subparagraph}{\tabsize+\tabsize+\tabsize+\tabsize+\tabsize}{0pt}
+\renewcommand\cftchapafterpnum{\vspace{\toclineskip}}
+\renewcommand\cftsecafterpnum{\vspace{\toclineskip}}
+\renewcommand\cftsubsecafterpnum{\vspace{\toclineskip}}
+\renewcommand\cftsubsubsecafterpnum{\vspace{\toclineskip}}
+\renewcommand\cftparaafterpnum{\vspace{\toclineskip}}
+\renewcommand\cftsubparaafterpnum{\vspace{\toclineskip}}
 \makeatother
 
 %SCN START
@@ -137,9 +134,8 @@
 \newenvironment{SCn}{
 \setcounter{ind}{0}
 \setcounter{hind}{0} 
-\setcounter{list_depth}{0} 
+\setcounter{list_depth}{0}
 \begin{flushleft}
-\noindent
 }
 {
 \end{flushleft}
@@ -187,39 +183,6 @@
 	\bigskip
 	\fi
 	\scnsegmentcaptionbeginning \textspaced{\scnheader{#1}}
-}
-
-\newcommand\segcountertext{
-\ifnum\value{seg}=1
-    Первый
-\fi
-\ifnum\value{seg}=2
-    Второй
-\fi
-\ifnum\value{seg}=3
-    Третий
-\fi
-\ifnum\value{seg}=4
-    Четвертый
-\fi
-\ifnum\value{seg}=5
-    Пятый
-\fi
-\ifnum\value{seg}=6
-    Шестой
-\fi
-\ifnum\value{seg}=7
-    Седьмой
-\fi
-\ifnum\value{seg}=8
-    Восьмой
-\fi
-\ifnum\value{seg}=9
-    Девятый
-\fi
-\ifnum\value{seg}=10
-    Десятый
-\fi
 }
 
 \newcommand{\scnfragmentcaptiontext}[1]{
@@ -995,6 +958,8 @@
 \scnhaselementlist{исследуемое отношение}{#1}
 }
 
+%Developer info
+
 \newcommand{\timestamp}{\vspace{0.5em}\scnauthorcomment{\textbf{\large Версия от \today~ \currenttime}}}
 
 \newcommand{\addedstart}{\reversemarginpar\marginpar{\hspace{3em}НОВОЕ~[}}
@@ -1048,59 +1013,43 @@
 
 \newcommand{\scsuperchapter}{{\normalfont\bfseries\large/*\filldots/}\vspace{0.5\afterparlength}}
 
-\newcommand{\scchapter}[1]{\clearpage
-\chapter[\textit{#1}]{/*~\textspaced{\large Раздел}~\filldots/\vspace{\afterparlength}}}
+\newcommand{\scchapter}[2][]{\clearpage\chapter[\textit{#2}]{/*~\textspaced{\large Раздел}~\filldots/\vspace{\afterparlength}}
+\ifx&#1&
+\else
+\addtocontents{toc}{\vspace{\dimexpr -\toclineskip-0.4\baselineskip \relax}\parbox{\textwidth}{\begin{SCn}\protect#1\end{SCn}}
+\vspace{\toclineskip}}
+\fi}
 
-\newcommand{\scsection}[1]{\clearpage
-\section[\textit{#1}]{/*~\textspaced{\large Раздел}~\filldots/\vspace{\afterparlength}}}
+\newcommand{\scsection}[2][]{\clearpage
+\section[\textit{#2}]{/*~\textspaced{\large Раздел}~\filldots/\vspace{\afterparlength}}
+\ifx&#1&
+\else
+\addtocontents{toc}{\vspace{\dimexpr -\toclineskip+0.1\baselineskip \relax}\parbox{\textwidth}{\begin{adjustwidth}{\tabsize}{0em}\begin{SCn}\protect#1\end{SCn}\end{adjustwidth}}
+\vspace{\toclineskip}}
+\fi}
 
-\newcommand\scsubsection[1]{\clearpage
-\subsection[\textit{#1}]{/*~\textspaced{\large Раздел}~\filldots/\vspace{\afterparlength}}}
+\newcommand\scsubsection[2][]{\clearpage
+\subsection[\textit{#2}]{/*~\textspaced{\large Раздел}~\filldots/\vspace{\afterparlength}}
+\ifx&#1&
+\else
+\addtocontents{toc}{\vspace{\dimexpr -\toclineskip+0.1\baselineskip \relax}\parbox{\textwidth}{\begin{adjustwidth}{\tabsize+\tabsize}{0em}\begin{SCn}\protect#1\end{SCn}\end{adjustwidth}}
+\vspace{\toclineskip}}
+\fi}
 
-\WithSuffix\newcommand\scsubsection*[2]{\clearpage\subsection*{/*~\textspaced{\large Раздел}~\filldots/\vspace{\afterparlength}}
-	\addcontentsline{toc}{subsection}{#1}
-}
+\newcommand{\scsubsubsection}[2][]{\clearpage
+\subsubsection[\textit{#2}]{/*~\textspaced{\large Раздел}~\filldots/\vspace{\afterparlength}}
+\ifx&#1&
+\else
+\addtocontents{toc}{\vspace{\dimexpr -\toclineskip+0.1\baselineskip \relax}\parbox{\textwidth}{\begin{adjustwidth}{\tabsize+\tabsize+\tabsize}{0em}\begin{SCn}\protect#1\end{SCn}\end{adjustwidth}}
+\vspace{\toclineskip}}
+\fi}
 
-\newcommand{\scsubsubsection}[1]{\clearpage
-\subsubsection[\textit{#1}]{/*~\textspaced{\large Раздел}~\filldots/\vspace{\afterparlength}}}
-
-\WithSuffix\newcommand\scsubsubsection*[2]{\clearpage\subsubsection*{/*~\textspaced{\large Раздел}~\filldots/\vspace{\afterparlength}}
-	\addcontentsline{toc}{subsubsection}{#1}
-}
-
-\newcommand{\scparagraph}[1]{\clearpage
-	\paragraph[\textit{#1}]{/*~\textspaced{\large Раздел}~\filldots/\vspace{\afterparlength}}}
-
-\newcommand{\scchapterfinish}[1]{\clearpage
-\section*{/*~Завершение раздела~\filldots/\vspace{\afterparlength}}}
-
-\newcommand{\scsectionfinish}[1]{\clearpage
-	\section*{/*~Завершение раздела~\filldots/\vspace{\afterparlength}}}
-
-\newcommand{\scsubsectionfinish}[1]{\clearpage
-	\subsection*{/*~Завершение раздела~\filldots/\vspace{\afterparlength}}}
-
-\newcommand{\scsubsubsectionfinish}[1]{\clearpage
-	\subsubsection*{/*~Завершение раздела~\filldots/\vspace{\afterparlength}}}
-
-\makeatletter
-\newcommand{\scsectionbeginning}{\bigskip
-	{\bfseries \normalsize /*~Начало  Раздела~\filldots/\hspace{0.5\textwidth}\normalfont}
-	\scnsectionheader{Начало Раздела "\@currentlabelname"}
-}
-\makeatother
-
-\makeatletter
-\newcommand{\scsectionbeginningname}[1]{\bigskip
-	{\bfseries \normalsize /*~Начало  Раздела~\filldots/\hspace{0.5\textwidth}\normalfont}
-	\scnsectionheader{#1}
-}
-\makeatother
-
-\newcommand{\scsupersectionbeginning}[1]{\bigskip \section*{\bfseries /*~Начало.~\filldots/\hspace{0.5\textwidth}}
-\vspace{0.5\afterparlength}
-\scnsectionheader{Начало Документации Технологии OSTIS}
-}
+\newcommand{\scparagraph}[2][]{\clearpage\paragraph[\textit{#2}]{/*~\textspaced{\large Раздел}~\filldots/\vspace{\afterparlength}}
+\ifx&#1&
+\else
+\addtocontents{toc}{\vspace{\dimexpr -\toclineskip+0.1\baselineskip \relax}\parbox{\textwidth}{\begin{adjustwidth}{\tabsize+\tabsize+\tabsize+\tabsize}{0em}\begin{SCn}\protect#1\end{SCn}\end{adjustwidth}}
+\vspace{\toclineskip}}
+\fi}
 
 \makeatletter
 \newcommand*{\currentname}{\@currentlabelname}
@@ -1148,11 +1097,6 @@
 \end{enumerate}
 }
 
-\newcommand{\scncontentname}{\begin{SCn}
-\scnsectionheader{Оглавление описания Технологии OSTIS}
-$\bm{=[}$
-\end{SCn}}
-
 % Itemize END
 
 
@@ -1177,7 +1121,8 @@ $\bm{=[}$
         ]current page.north west);
 
 \foreach \i in {1,2,...,18}{
-\draw[black!25] ($(NW)+(\i*\tabsize,0)$) -- ($(SW)+(\i*\tabsize,0)$);}
+%RELEASE \draw[black!25] ($(NW)+(\i*\tabsize,0)$) -- ($(SW)+(\i*\tabsize,0)$);} 
+\draw[black!50] ($(NW)+(\i*\tabsize,0)$) -- ($(SW)+(\i*\tabsize,0)$);}
 
 \end{tikzpicture}
 }
