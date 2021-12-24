@@ -16,10 +16,14 @@ fi
 
 if [ -n "$2" ]; then
 	args="${args} $(realpath $2)"
+else
+	args="${args} $(realpath "translated_scs")"
 fi
 
 if [ -n "$3" ]; then 
 	args="${args} $(realpath $3)"
+else
+	args="${args} $(realpath ".")"
 fi
 
 echo $args
