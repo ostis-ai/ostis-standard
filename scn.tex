@@ -833,6 +833,12 @@
 \scnrelfrom{#1}{\scnfilelong{#2}}
 }
 
+\newcommand{\scneqhierstruct}{
+\settab$\pmb{=\langle|}$}
+
+\newcommand{\scnstarthierstruct}{\settab$\pmb{\langle|}$}
+\newcommand{\scnendhierstruct}{\settab$\pmb{|\rangle}$}
+
 \newcommand{\scncomment}[1]{
 \scntext{комментарий}{#1}
 }
@@ -1025,6 +1031,13 @@
 \ifx&#1&
 \else
 \addtocontents{toc}{\vspace{\dimexpr -\toclineskip+0.1\baselineskip \relax}\parbox{\textwidth}{\begin{adjustwidth}{\tabsize}{0em}\begin{SCn}\protect#1\end{SCn}\end{adjustwidth}}
+\vspace{\toclineskip}}
+\fi}
+
+\newcommand{\scseparatedfragment}[2][]{\clearpage\chapter[\textit{#2}]{/*\filldots/\vspace{\afterparlength}}
+\ifx&#1&
+\else
+\addtocontents{toc}{\vspace{\dimexpr -\toclineskip-0.4\baselineskip \relax}\parbox{\textwidth}{\begin{SCn}\protect#1\end{SCn}}
 \vspace{\toclineskip}}
 \fi}
 
