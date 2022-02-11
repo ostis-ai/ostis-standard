@@ -7,8 +7,8 @@
 
 ## **Установка и запуск**
 ```
-git clone https://github.com/semsystems/monography2020.git
-cd monography2020
+git clone https://github.com/ostis-apps/ostis-standard.git
+cd ostis-standard
 ``` 
 
 ### **Linux**
