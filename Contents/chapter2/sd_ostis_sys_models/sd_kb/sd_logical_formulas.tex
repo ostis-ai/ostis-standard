@@ -111,6 +111,9 @@
 \scndefinition{Будем называть \textbf{\textit{подформулой*}} \textit{неатомарной логической формулы} \textbf{\textit{fi}} любую \textit{логическую формулу} \textbf{\textit{fj}}, являющуюся элементом исходной формулы \textbf{\textit{fi}}, а также любую \textbf{\textit{подформулу*}} формулы \textbf{\textit{fj}}.}
 \scnrelfrom{описание примера}{
 \scnfilescg{figures/sd_logical_formulas/subformula.png}}
+\scnaddlevel{1}
+\scniselement{sc.g-текст}
+\scnaddlevel{-1}
 
 \scnheader{утверждение}
 \scnidtf{текст логической формулы}
@@ -156,22 +159,45 @@
 \scnsubset{выполнимая логическая формула}
 \scnsubset{тавтология}
 \scndefinition{\textbf{\textit{общезначимая логическая формула}} -- это \textit{логическая формула}, для которой не существует \textit{формальной теории}, в рамках которой она была бы ложной с учетом истинности и ложности всех ее \textit{подформул*} в рамках этой же \textit{формальной теории}.}
+\scnrelfrom{описание примера}{
+\scnfilescg{figures/sd_logical_formulas/valid_formula.png}}
+\scnaddlevel{1}
+\scniselement{sc.g-текст}
+\scnrelfrom{основной sc-идентификатор}{\scnfilelong{закон тождества}}
+\scnaddlevel{-1}
 
 \scnheader{противоречивая логическая формула}
 \scnsubset{невыполнимая логическая формула}
 \scnsubset{тавтология}
 \scndefinition{\textbf{\textit{противоречивая логическая формула}} -- это \textit{логическая формула}, для которой не существует \textit{формальной теории}, в рамках которой она была бы истинной с учетом истинности и ложности всех ее \textit{подформул*} в рамках этой же \textit{формальной теории}.}
+\scnrelfrom{описание примера}{
+\scnfilescg{figures/sd_logical_formulas/contradiction_formula.png}}
+\scnaddlevel{1}
+\scniselement{sc.g-текст}
+\scnrelfrom{основной sc-идентификатор}{\scnfilelong{закон противоречия}}
+\scnaddlevel{-1}
 
 \scnheader{нейтральная логическая формула}
 \scnsubset{выполнимая логическая формула}
 \scndefinition{\textbf{\textit{нейтральная логическая формула}} -- это \textit{логическая формула}, для которой существует хотя бы одна \textit{формальная теория}, в рамках которой эта формула ложна, и хотя бы одна \textit{формальная теория}, в рамках которой эта формула истинна.}
+\scnrelfrom{описание примера}{
+\scnfilescg{figures/sd_logical_formulas/neutral_formula.png}}
+\scnaddlevel{1}
+\scnnote{В евклидовой геометрии в плоскости через точку, не лежащую на данной прямой, можно провести одну и только одну прямую, параллельную данной. В геометрии Лобачевского данный постулат является ложным.}
+\scnnote{В сферической геометрии все прямые пересекаются.}
+\scniselement{sc.g-текст}
+\scnaddlevel{-1}
 
 \scnheader{выполнимая логическая формула}
+\scnidtf{непротиворечивая формула}
 \scndefinition{\textbf{\textit{выполнимая логическая формула}} -- это \textit{логическая формула}, для которой существует хотя бы одна \textit{формальная теория}, в рамках которой эта формула истинна.}
+\scnreltoset{объединение}{нейтральная логическая формула;общезначимая логическая формула}
 
 \scnheader{невыполнимая логическая формула}
+\scnidtf{необщезначимая формула}
 \scndefinition{\textbf{\textit{невыполнимая логическая формула}} -- это \textit{логическая формула}, для которой существует хотя бы одна \textit{формальная теория}, в рамках которой эта формула ложна.}
-
+\scnreltoset{объединение}{нейтральная логическая формула;противоречивая логическая формула}
+ 
 \scnheader{тавтология}
 \scnidtf{тождественно истинная формула}
 \scndefinition{\textbf{\textit{тавтология}} -- это \textit{логическая формула}, которая является либо только истинной, либо только ложной в рамках всех \textit{формальных теорий}, в которых можно установить ее истинность или ложность.}
@@ -195,6 +221,9 @@
 \scnnote{По умолчанию на все переменные, входящие в обе части высказывания об \textbf{\textit{имликации*}} (или хотя бы одну из \textit{подформул*} каждой части) неявно накладывается квантор \textit{всеобщности*}, при условии, что эти переменные не связаны другим \textit{квантором}, указанным явно.}
 \scnrelfrom{описание примера}{
 \scnfilescg{figures/sd_logical_formulas/implication.png}}
+\scnaddlevel{1}
+\scniselement{sc.g-текст}
+\scnaddlevel{-1}
 
 \scnheader{если\scnrolesign}
 \scnsubset{1\scnrolesign}
@@ -215,6 +244,9 @@
 \scnnote{По умолчанию на все переменные, входящие в обе части высказывания об \textbf{\textit{эквиваленции*}} (или хотя бы одну из \textit{подформул*} каждой части) неявно накладывается квантор \textit{всеобщности*}, при условии, что эти переменные не связаны другим \textit{квантором}, указанным явно.}
 \scnrelfrom{описание примера}{
 \scnfilescg{figures/sd_logical_formulas/equivalent.png}}
+\scnaddlevel{1}
+\scniselement{sc.g-текст}
+\scnaddlevel{-1}
 
 \scnheader{конъюнкция*}
 \scnidtf{логическое и*}
@@ -225,6 +257,9 @@
 \scndefinition{\textbf{\textit{конъюнкция*}} -- это множество конъюнктивных \textit{высказываний}, каждое из которых истинно в рамках некоторой \textit{формальной теории} только в том случае, когда все его компоненты истинны в рамках этой же \textit{формальной теории}.}
 \scnrelfrom{описание примера}{
 \scnfilescg{figures/sd_logical_formulas/conjunction.png}}
+\scnaddlevel{1}
+\scniselement{sc.g-текст}
+\scnaddlevel{-1}
 
 \scnheader{дизъюнкция*}
 \scnidtf{логическое или*}
@@ -236,6 +271,9 @@
 \scndefinition{\textbf{\textit{дизъюнкция*}} -- это множество дизъюнктивных \textit{высказываний}, каждое из которых истинно в рамках некоторой \textit{формальной теории} только в том случае, когда хотя бы один его компонент является истинным в рамках этой же \textit{формальной теории}.}
 \scnrelfrom{описание примера}{
 \scnfilescg{figures/sd_logical_formulas/disjunction.png}}
+\scnaddlevel{1}
+\scniselement{sc.g-текст}
+\scnaddlevel{-1}
 
 \scnheader{строгая дизъюнкция*}
 \scnidtf{сложение по модулю 2*}
@@ -247,6 +285,9 @@
 \scndefinition{\textbf{\textit{строгая дизъюнкция*}} -- это множество строго дизъюнктивных \textit{высказываний}, каждое из которых истинно в рамках некоторой \textit{формальной теории} только в том случае, когда ровно один его компонент является истинным в рамках этой же \textit{формальной теории}.}
 \scnrelfrom{описание примера}{
 \scnfilescg{figures/sd_logical_formulas/strictDisjunction.png}}
+\scnaddlevel{1}
+\scniselement{sc.g-текст}
+\scnaddlevel{-1}
 
 \scnheader{отрицание*}
 \scnsubset{логическая связка*}
@@ -254,6 +295,9 @@
 \scndefinition{\textbf{\textit{отрицание*}} -- это множество \textit{высказываний} об отрицании, каждое из которых истинно в рамках некоторой \textit{формальной теории} только в том случае, когда его единственный элемент является ложным в рамках этой же \textit{формальной теории}.}
 \scnrelfrom{описание примера}{
 \scnfilescg{figures/sd_logical_formulas/negation.png}}
+\scnaddlevel{1}
+\scniselement{sc.g-текст}
+\scnaddlevel{-1}
 
 \scnheader{квантор}
 \scnsubset{логическая связка*}
@@ -271,6 +315,9 @@
 \scnnote{Квантор \textbf{\textit{всеобщности*}} зачастую обозначается "$\forall$" \ и читается как "для всех"{}, "для каждого"{}, "для любого"{} или "все"{}, "каждый"{}, "любой".}
 \scnrelfrom{описание примера}{
 \scnfilescg{figures/sd_logical_formulas/universality.png}}
+\scnaddlevel{1}
+\scniselement{sc.g-текст}
+\scnaddlevel{-1}
 
 \scnheader{формула существования}
 \scnidtf{существование*}
@@ -286,6 +333,9 @@
 \scnnote{квантор \textbf{\textit{существования*}} зачастую обозначается "$\exists$" \ и читается как "существует"{}, "для некоторого"{}, "найдется".}
 \scnrelfrom{описание примера}{
 \scnfilescg{figures/sd_logical_formulas/non_atomicExistence.png}}
+\scnaddlevel{1}
+\scniselement{sc.g-текст}
+\scnaddlevel{-1}
 
 \scnheader{число значений переменной}
 \scniselement{параметр}
@@ -325,7 +375,16 @@
 \scndefinition{\textbf{\textit{замкнутая логическая формула}} -- это \textit{логическая формула}, в рамках которой (и всех ее \textit{подформул*}) не существует переменных, не связанных каким-либо \textit{квантором}.}
 
 \scnheader{Примеры логических утверждений}
-\scneqtoset{\scgfileitem{figures/sd_logical_formulas/ex_set_union.png};\scgfileitem{figures/sd_logical_formulas/ex_set_diff.png}}
+\scneqtoset{\scgfileitem{figures/sd_logical_formulas/ex_set_union.png}
+\scnaddlevel{1}
+\scniselement{sc.g-текст}
+\scnaddlevel{-1}
+;
+\scgfileitem{figures/sd_logical_formulas/ex_set_diff.png}
+\scnaddlevel{1}
+\scniselement{sc.g-текст}
+\scnaddlevel{-1}
+}
 
 \bigskip
 \scnendstruct \scnendcurrentsectioncomment
