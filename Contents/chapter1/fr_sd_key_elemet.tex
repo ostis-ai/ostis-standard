@@ -3,43 +3,44 @@
 
 	\scnstartsubstruct
 	\scnsectionheader{Система ключевых знаков}
-	\scnexplanation{Система ключевых знаков Стандарта OSTIS должна стать целостным дополнением  к оглавлению  Стандарта OSTIS}
-	\scnrelfrom{}{иерархия и последовательнось  ключевыз знаков  должно  четко соответствовать  иерархии и последовательности  разделов  стандарта}
-  	\scnrelfrom{}{система ключевых знаков  Стандарта OSTIS, как и его Оглавление должна восприниматься (читаться) как целостный понятный текст}
+	\scndefinition{Система ключевых знаков Стандарта OSTIS должна стать целостным дополнением  к оглавлению  Стандарта OSTIS
+	\scnlistitem{иерархия и последовательнось  ключевыз знаков  должно  четко соответствовать  иерархии и последовательности  разделов  стандарта}
+  	\scnlistitem{система ключевых знаков  Стандарта OSTIS, как и его Оглавление должна восприниматься (читаться) как целостный понятный текст}
+}
 	\scnhaselement{неатомарный раздел}
 	\scnhaselement{атомарный раздел}
-	\scnrelfrom{ключевой знак}{\scnrelfrom{ключевая сущность}{\scnidtf{SC-код}\scnidtf{SCg-код}\scnidtf{SCs-код}\scnidtf{SCn-код}}}
+	\scnhaselement{ключевой знак}{ключевая сущность*}\scnhaselement{SC-код}\scnhaselement{SCg-код}\scnhaselement{SCs-код}\scnhaselement{SCn-код}
 	\scnhaselement{декомпозиция* \\ 
 		\scnaddlevel{1}
 		\scnhaselement{конкатенация*}
 		\scnaddlevel{-1}
 }
-	\scnheader{Предметная область}
-	\scnidtf{\textit{sc-модель предметной области}}
-	\scnidtf{sc-текст является представлением предметной области}
+	\scnhaselement{Предметная область}
+	\scnhaselement{\textit{sc-модель предметной области}}
+	\scnhaselement{sc-текст является представлением предметной области}
 	\scnhaselement{максимальный класс объекта иследоавния\\}
-	
-	\scnlistitem{онтология'}
-	\scnlistitem{немаксимальный \textit{класс объекта иследоавния}\\ 
+	\bigskip
+	\scnhaselement{онтология'}
+	\scnhaselement{немаксимальный \textit{класс объекта иследоавния}\\ 
 		\scnaddlevel{1}
 		\scnidtf{подкласс максимального объекта исследования'} 
 	\scnaddlevel{-1}}
-	\scnlistitem{иследуемое отношение'}
-	\scnlistitem{исследуемый парамерт'}
+	\scnhaselement{иследуемое отношение'}
+	\scnhaselement{исследуемый парамерт'}
 	\\ 
-	\scnlistitem{алфавит*(языка)}
+	\scnhaselement{алфавит*(языка)}
 	\\
-	\scnlistitem{сформированное множество\scnaddlevel{1} \scnidtf{конечное множество все элементы которого представленны соответствующими sc-элементами}
+	\scnhaselement{сформированное множество\scnaddlevel{1} \scnidtf{конечное множество все элементы которого представленны соответствующими sc-элементами}
 	\scnaddlevel{-1}}
-	\scnlistitem{бинарное отношение}
-	\scnlistitem{ориентированное отношение}
-	\scnlistitem{первый домен*}
-	\scnlistitem{второй домен*}
-	\scnlistitem{\textit{пояснение*}}
-	\scnlistitem{\textit{семантическая эквивалентность*}}
-	\scnlistitem{\textit{следствие*}}
-	\scnlistitem{\textit{примечание*}}
-	\scnlistitem{\textit{опредедение*}}
+	\scnhaselement{бинарное отношение}
+	\scnhaselement{ориентированное отношение}
+	\scnhaselement{первый домен*}
+	\scnhaselement{второй домен*}
+	\scnhaselement{\textit{пояснение*}}
+	\scnhaselement{\textit{семантическая эквивалентность*}}
+	\scnhaselement{\textit{следствие*}}
+	\scnhaselement{\textit{примечание*}}
+	\scnhaselement{\textit{опредедение*}}
 	
 
 	\scnheader{Стандарт OSTIS}
@@ -49,7 +50,7 @@
 			ostis-система
 			\scnidtf{множество всевохможных ostis-систем}
 			\scnidtf{компьютерная система построенная на Технологии OSTIS }
-			\scnrelfromvector{ключевые понятия,соответсвующие принципам легразим}{\\
+			\scnrelfromvector{ключевые понятия,соответсвующие принципам лежащими в основе}{\\
 				\scnlistitem{cмысловые предсталения информации}
 				\scnlistitem{агенто-ориентированная обработка информации}
 				\scnlistitem{интерфейс компьютерной системы
