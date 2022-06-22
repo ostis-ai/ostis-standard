@@ -1,0 +1,120 @@
+\scnheader{RDFS}
+\scnidtf{RDF Schema}
+\scnidtf{RDF/S}
+\scnidtf{RDF-S}
+\scnidtf{RDF(S)}
+\scnidtf{RDF Schema}
+\scnidtf{набор классов и свойств для модели представления знаний RDF, составляющий основу для описания онтологий с использованием расширенного RDF-словаря}
+
+\scnnote{RDFS использует кодирование в виде RDF, то есть позволяет описать сами RDF-триплеты подобно описаниям других RDF-ресурсов}
+
+\scntext{особенность}{RDFS является базовых словарем, на основе которого строится большинство других словарей, включая язык OWL}
+
+\scnrelfrom{классы}{Классы RDFS\\
+	\scniselement{rdfs:Resource\\
+		\scnaddlevel{1}
+			\scnidtf{класс, включающий все ресурсы, то есть, всё, что описывает RDF}
+		\scnaddlevel{-1}
+	}
+	\scniselement{rdfs:Class\\
+		\scnaddlevel{1}
+			\scnidtf{описывает что ресурс является классом (типом) ресурса. Для отнесения ресурса к типу используется свойство \textit{rdf:type}
+			}
+		\scnaddlevel{-1}
+	}
+	\scniselement{rdfs:Literal\\
+		\scnaddlevel{1}
+			\scnidtf{обозначает литерал (строка, смысл которой уточняется отдельно при помощи IRI типа данных}
+			\scnnote{Литералы могут быть простыми (plain, например, число) или иметь некоторый тип}
+		\scnaddlevel{-1}
+	}
+	\scniselement{rdfs:Datatype\\
+		\scnaddlevel{1}
+			\scnidtf{класс типов данных}
+			\scntext{особенность}{Является одновременно и подклассом \textit{rdfs:Class}, и экземпляром из \textit{rdfs:Class}. Каждый экземпляр класса \textit{rdfs:Datatype} является подклассом \textit{rdfs:Literal}}	
+		\scnaddlevel{-1}
+	}
+	\scniselement{rdf:XMLLiteral\\
+		\scnaddlevel{1}
+			\scnidtf{класс XML-литералов, является экземпляром \textit{rdfs:Datatype}
+			}
+		\scnaddlevel{-1}
+	}
+	\scniselement{rdf:Property\\
+		\scnaddlevel{1}
+			\scnidtf{класс свойств (отношений)}
+		\scnaddlevel{-1}
+	}
+}
+\scnrelfrom{свойства}{Свойства RDFS\\
+	\scnidtf{описывают отношения между ресурсами-субъектами и ресурсами-объектами и являются экземплярами класса \textit{rdf:Property}, и выступают в качестве предикатов в RDF-триплетах}
+	\scnrelfrom{включение}{метасвойства RDFS}\\
+	\scnaddlevel{1}
+	\scntext{особенность}{могут описывать свойства самих предикатов}
+	\scniselement{rdfs:domain\\
+		\scnaddlevel{1}
+			\scnidtf{объявляет класс субъекта (первый домен отношения)}
+			\scntext{пример}{ex:employer rdfs:domain foaf:Person\\
+				ex:employer rdfs:range foaf:Organization\\
+				ex:John ex:employer ex:CompanyX
+			}
+			\scnaddlevel{1}
+				\scnnote{В этом примере пространство имен ex: означает, что это пример}
+			\scnaddlevel{-1}
+		\scnaddlevel{-1}
+	}
+	\scniselement{rdfs:range\\
+		\scnaddlevel{1}
+			\scnidtf{объявляет класс или тип данных объекта (второй домен отношения)}
+			\scntext{пример}{ex:employer rdfs:domain foaf:Person\\
+				ex:employer rdfs:range foaf:Organization\\
+				ex:John ex:employer ex:CompanyX
+			}
+			\scnaddlevel{1}
+				\scnnote{В этом примере пространство имен ex: означает, что это пример}
+			\scnaddlevel{-1}
+		\scnaddlevel{-1}
+	}
+	\scniselement{rdf:type\\
+		\scnaddlevel{1}
+			\scnidtf{декларирует принадлежность ресурса некоторому классу, то есть, тот факт, что ресурс является экземпляром класса}
+			\scntext{пример}{ex:John ex:type foaf:Person}
+		\scnaddlevel{-1}
+	}
+	\scniselement{rdfs:subClassOf\\
+		\scnaddlevel{1}
+			\scnidtf{свойство, позволяющее описать иерархию классов}
+			\scntext{пример}{foaf:Person rdfs:subClassOf foaf:Agent}
+		\scnaddlevel{-1}
+	}
+	\scniselement{rdfs:subPropertyOf\\
+		\scnaddlevel{1}
+			\scnidtf{свойство, которое утверждает, что все ресурсы, связанные некоторым подсвойством (subproperty), связаны также и свойством}
+		\scnaddlevel{-1}
+	}
+	\scniselement{rdfs:label
+		\scnaddlevel{1}
+			\scnidtf{задает удобные для человека имя и описание ресурса (на естественном языке)}
+		\scnaddlevel{-1}
+	}
+	\scniselement{rdfs:comment
+		\scnaddlevel{1}
+			\scnidtf{задает удобные для человека имя и описание ресурса (на естественном языке)}
+		\scnaddlevel{-1}
+	}
+	\scnaddlevel{-1}
+}
+\scnrelfrom{вспомогательные свойства}{Вспомогательные свойства RDFS\\
+	\scnnote{К вспомогательным относятся свойства, не имеющие семантики вывода, т.е. семантика этих свойств зависит от конкретных приложений, интерпретирующих RDFS}
+	\scniselement{rdfs:seeAlso\\
+		\scnaddlevel{1}
+			\scnidtf{указывает ресурс, который может служить источников дополнительной информации о ресурсе-субъекте}
+		\scnaddlevel{-1}
+	}
+	\scniselement{rdfs:isDefinedBy\\
+		\scnaddlevel{1}
+			\scnidtf{указывает на ресурс (например, RDF-словарь), который описывает ресурс-субъект}
+		\scnaddlevel{-1}
+	}
+}
+\scnrelto{ключевой знак}{\scncite{RDFSDescription}}
