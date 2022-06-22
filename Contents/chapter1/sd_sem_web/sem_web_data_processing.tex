@@ -1,0 +1,133 @@
+\scseparatedfragment{Обработка информации}
+\scnheader{Обработка информации}
+
+\scnstartsubstruct
+\scnnote{Ключевыми \textit{задачами} \textit{обработки информации}, представленной при помощи \textit{средств} \textit{\textbf{Semantic Web}}, являются:
+	\begin{scnitemize}
+		\item Выполнение \textit{поисковых запросов} (\textit{Query});
+		\item \textit{Логический вывод} на \textit{онтологиях} (порождения новой \textit{информации} на основе имеющейся).
+	\end{scnitemize}}
+
+\scnsegmentheader{Языки запросов}
+
+\scnstartsubstruct
+
+\scnexplanation{Для выполнения \textit{запросов} к \textit{хранилищу}, содержащему \textit{информацию}, записанную в \textit{RDF}, используются \textit{языки запросов}(\textit{Query languages})}
+
+\scnheader{SPARQL}
+\scnidtf{SPARQL Protocol and RDF Query Language}
+\scnidtfdef{\textit{язык запросов}, признанный в качестве \textit{стандарта} W3C в 2008 году}
+
+\scnrelfrom{поддерживаемые операции}{операции SQL}
+	\scnaddlevel{1}
+	\scnsubdividing{объединение (JOIN);сортировка (SORT)}
+	\scnaddlevel{-1}
+
+\scnnote{\textit{Запрос} \textit{SPARQL} по сути представляет собой \textit{шаблон} некоторого\textit{ RDF-графа}, в котором неизвестные \textit{сущности} задаются \textit{переменными}.
+\textit{SPARQL} позволяет получить \textit{результат запроса} в нескольких формах:
+\begin{scnitemize}
+	\item \textit{Оператор} \textit{SELECT} позволяет указать, значения каких \textit{переменных} мы хотели бы получить, \textit{результат} возвращается в виде \textit{таблицы};
+	\item \textit{Оператор CONSTRUCT} позволяет получить \textit{ответ} в виде \textit{RDF-графа};
+	\item \textit{Оператор ASK} позволяет получить \textit{ответ} вида да/нет (существует ли вообще такая \textit{конструкция});
+	\item \textit{Оператор CONSTRUCT} позволяет получить \textit{ответ} в виде \textit{RDF-графа}, \textit{содержание} которого может дополнительно уточняться при \textit{запросе};
+\end{scnitemize}
+
+
+Например:
+
+\textit{PREFIX foaf: <http://xmlns.com/foaf/0.1/>\newline
+SELECT ?name\newline
+?email\newline
+WHERE\newline
+{\newline
+	?person  a   foaf:Person .\newline
+	?person  foaf:name  ?name .\newline
+	?person  foaf:mbox  ?email .\newline
+}}\newline
+
+Данный запрос позволяет получить \textit{имена} и \textit{e-mail} всех \textit{персон}, известных \textit{системе}.
+
+\textit{PREFIX ex: <http://example.com/exampleOntology#>\newline
+SELECT ?capital\newline
+?country\newline
+WHERE\newline
+\{\newline
+	?x  ex:cityname   	?capital   ;\newline
+	ex:isCapitalOf	?y     	.\newline
+	?y  ex:countryname	?country   ;\newline
+	ex:isInContinent  ex:Africa  .\newline
+\}}\newline
+
+Данный запрос позволяет получить названия всех столичных городов в Африке.\\
+
+Ссылка:
+\scncite{https://www.w3.org/TR/sparql11-query/}}
+
+\scnheader{GraphQL}
+\scnidtfdef{открытый \textit{язык} для различного рода \textit{графовых хранилищ} и \textit{СУБД}}
+\scnrelfrom{синтаксическая схожесть}{JSON}
+\scnrelfromlist{оперирование понятиями}{поле; значение поля}
+\scnrelto{разработчик}{\textit{\textbf{Facebook}}}
+\scnnote{\textit{Язык} \textit{GraphQL} был предложен компанией Facebook в 2012 году. Существует большое число реализаций, поддерживающих \textit{GraphQL}.
+	
+Ссылка:
+\scncite{https://graphql.org/} }
+
+\scnheader{Gremlin}
+\scnidtfdef{популярный \textit{язык обхода графа} (\textit{graph traversal language})}
+\scnrelto{разработчик}{\textit{\textbf{Apache}}}
+\scnnote{Gremlin позволяет описывать \textit{запросы} к \textit{хранилищу графов} как в виде \textit{шаблонов} с \textit{переменными}, так и более простым способом, указывая необходимые \textit{свойства} искомых \textit{компонентов графа}. Поддержка \textit{Gremlin} реализована в большинстве современных \textit{хранилищ}.
+	
+Пример:
+\textit{g.V().hasLabel('movie').values('year').min()}
+ 
+Данный \textit{запрос} позволяет найти все \textit{вершины графа}, имеющие \textit{метку} “фильм” и выбрать минимальный по году выпуска.}
+
+\scnheader{Cypher}
+\scniselement{открытый язык}
+\scnidtfdef{\textit{язык запросов} для \textit{графовой СУБД Neo4j}}
+\scnrelfromlist{результат запроса}{граф; таблица}
+\scnaddlevel{2}
+\scnexplanation{В случае, когда граф построить нельзя, например запрашиваются только значения каких-либо атрибута для заданного множества сущностей}
+\scnaddlevel{-2}
+\scnnote{Cypher позволяет в достаточно удобной форме описывать шаблоны, на основе которых осуществляется в поиск в графе. Как и в модели СУБД Neo4j в Cypher различаются отношения между сущностями (аналог ObjectProperty в OWL) и свойства сущностей (атрибуты, аналог DataProperty в OWL).
+
+Пример:\newline
+\textit{MATCH (nicole:Actor {name: 'Nicole Kidman'})-[:ACTED\_IN]->(movie:Movie)\newline
+WHERE movie.year < 1990\newline
+RETURN movie\newline}
+Данный \textit{запрос} позволяет найти все фильмы старше 1990 года, в которых сыграла Николь Кидман.}
+
+\bigskip
+
+\scnendstruct \scnendsegmentcomment{Языки запросов}
+
+\scnsegmentheader{Ризонеры}
+
+\scnstartsubstruct
+
+\scnheader{Ризонеры}
+\scnidtf{reasoners}
+\scnrelfrom{область применения}{логический вывод}
+\scnaddlevel{2}
+\scnexplanation{\textit{Ризонеры}, как правило, реализуют \textit{прямой логический вывод} на основе \textit{отношений}, описанных в \textit{онтологии}. В простейшем случае это \textit{вывод} на основе \textit{свойства транзитивности отношений}, например \textit{SubClassOf}, в более сложных могут учитываться \textit{правила}, записанные, например в \textit{SWRL}.}
+\scnaddlevel{-2}
+
+\scnnote{Часто для \textit{ризонера} оговаривается \textit{язык}, \textit{семантика} которого полностью поддерживается соответствующим \textit{ризонером}, например \textit{OWL Lite} или \textit{OWL DL}.\newline
+	
+Полный список признанных сообществом \textit{ризонеров} с кратким описанием их возможностей приведен в статье:
+\scncite{https://www.w3.org/2001/sw/wiki/OWL/Implementations/}}
+
+\bigskip
+
+\scnendstruct \scnendsegmentcomment{Ризонеры}
+
+\bigskip
+
+\scnrelfromlist{выводы к разделу}{
+	\scnfileitem {Интересно отметить, что все рассмотренные \textit{языки запросов} (включая \textit{SPARQL}, который является \textit{стандартом W3C}), кроме \textit{GraphQL}, позволяют осуществлять только \textit{поиск} (собственно \textit{запросы}), и не дают возможности что-либо создавать, редактировать или удалять в \textit{графе}, в отличие, например, от \textit{языка} \textit{SQL}, обладающем соответсвующими \textit{классами операторов}. Это означает, что фактически эта часть никак не стандартизируется и отдается на откуп разработчикам конкретного \textit{хранилища}, которые формируют соответствующий \textit{программный интерфейс}.};
+	\scnfileitem {\textit{Возможности} и \textit{принципы} \textit{логического вывода} на \textit{онтологиях} зависят на \textit{синтаксиса} и \textit{семантики} \textit{языков}, используемых для \textit{представления знаний}. В остальном \textit{обработка информации}, записанной \textit{средствами} \textit{\textbf{Semantic Web}} никак не стандартизируется - реализуются \textit{программные интерфейсы} для \textit{доступа} к \textit{хранилищам} для различных \textit{языков программирования}, после чего разработчик конкретной \textit{системы} сам определяет, как использовать полученную \textit{информацию}.}}
+
+\bigskip
+\scnendstruct 
+\scnendcurrentsectioncomment
