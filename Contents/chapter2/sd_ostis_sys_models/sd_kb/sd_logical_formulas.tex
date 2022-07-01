@@ -34,8 +34,10 @@
 \scnsubdividing{атомарное высказывание;неатомарное высказывание}
 \scnsubdividing{фактографическое высказывание;логическая формула}
 \scnexplanation{Под \textbf{\textit{высказыванием}} понимается некоторая \textit{структура} (в которую входят \textit{sc-константы} из некоторой предметной области и/или \textit{sc-переменные}) или \textit{логическая связка}, которая может трактоваться как истинная или ложная в рамках какой-либо \textit{предметной области}.}
-\scnnote{Истинность \textbf{\textit{высказывания}} задается путем указания принадлежности знака этого высказывания \textit{формальной теории}, соответствующей данной \textit{предметной области}.Ложность высказывания задается путем указания принадлежности знака \textit{отрицания*} этого высказывания данной \textit{формальной теории}.}
-\scnnote{Явно указанная непринадлежность \textbf{\textit{высказывания}} \textit{формальной теории} может говорить как о его ложности в рамках данной теории (если это указано рассмотренным выше образом), так и о том, что данное \textbf{\textit{высказывание}} вообще не рассматривается в данной \textit{формальной теории} (например, использует понятия, не принадлежащие данной \textit{предметной области}).}
+\scnnote{Истинность \textbf{\textit{высказывания}} задается путем указания принадлежности знака этого высказывания \textit{формальной теории}, соответствующей данной \textit{предметной области}. Ложность высказывания задается путем указания принадлежности знака \textit{отрицания*} этого высказывания данной \textit{формальной теории}.}
+\scnaddlevel{1}
+\scnnote{Явно указанная непринадлежность \textbf{\textit{высказывания}} \textit{формальной теории} может говорить как о его ложности в рамках данной теории (если это указано рассмотренным выше образом), так и о том, что данное  \textbf{\textit{высказывание}} вообще не рассматривается в данной \textit{формальной теории} (например, использует понятия, не принадлежащие данной \textit{предметной области}).}
+\scnaddlevel{-1}
 
 \scnheader{высказывание формальной теории\scnrolesign}
 \scniselement{неосновное понятие}
@@ -367,14 +369,21 @@
 
 
 \scnheader{Примеры логических утверждений}
-\scneqtoset{\scgfileitem{figures/sd_logical_formulas/ex_set_union.png}
+\scneqtoset{
+	\scgfileitem{figures/sd_logical_formulas/ex_set_union.png}
+	\scnaddlevel{1}
 	\scnrelfrom{описание примера}{
 		\scnfilescg{figures/sd_logical_formulas/exampleSum.png}}
-	\scnexplanation{AB+BC=AC};
-	\scgfileitem{figures/sd_logical_formulas/ex_set_diff.png};
-\scnrelfrom{описание примера}{
+	\scnexplanation{AB+BC=AC}
+	\scnaddlevel{-1};
+	\scgfileitem{figures/sd_logical_formulas/ex_set_diff.png}
+	\scnaddlevel{1}
+	\scnrelfrom{описание примера}{
 	\scnfilescg{figures/sd_logical_formulas/exampleDiff.png}}
-\scnexplanation{AB-AC=CB}}
+	\scnexplanation{AB-AC=CB}
+	\scnaddlevel{-1}
+}
+
 
 \scnaddlevel{-1}
 
