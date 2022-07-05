@@ -839,7 +839,7 @@
 }
 
 \newcommand{\scneqhierstruct}{
-\settab$\pmb{=\langle|}$}
+\settab$\pmb{=}$\\ $\pmb{\langle|}$}
 
 \newcommand{\scnstarthierstruct}{\settab$\pmb{\langle|}$}
 \newcommand{\scnendhierstruct}{\settab$\pmb{|\rangle}$}
@@ -1031,6 +1031,13 @@
 \setlength{\afterseglength}{-1em}
 
 \newcommand{\scsuperchapter}{{\normalfont\bfseries\large/*\filldots/}\vspace{0.5\afterparlength}}
+
+\newcommand{\scsectionfamily}[2][]{\clearpage\chapter[\textit{#2}]{/*~\textspaced{\large Семейство разделов}~\filldots/\vspace{\afterparlength}}
+	\ifx&#1&
+	\else
+	\addtocontents{toc}{\vspace{\dimexpr -\toclineskip-0.4\baselineskip \relax}\parbox{\textwidth}{\begin{SCn}\protect#1\end{SCn}}
+		\vspace{\toclineskip}}
+	\fi}
 
 \newcommand{\scchapter}[2][]{\clearpage\chapter[\textit{#2}]{/*~\textspaced{\large Раздел}~\filldots/\vspace{\afterparlength}}
 \ifx&#1&
