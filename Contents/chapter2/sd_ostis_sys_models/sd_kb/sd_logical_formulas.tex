@@ -91,9 +91,12 @@
 \scnheader{атомарная логическая формула}
 \scnidtf{обобщенная структура}
 \scnidtf{атомарная формула существования}
-\scnexplanation{Под \textbf{\textit{атомарной логической формулой}} понимается \textit{атомарное высказывание}, которое является \textit{логической формулой}.
-
-По умолчанию \textbf{\textit{атомарная логическая формула}} трактуется как \textit{высказывание} о существовании, то есть наличия в памяти значений, соответствующих всем \textit{sc-переменным}, входящим в состав данной формулы и не попадающих под действие какого-либо другого \textit{квантора} (указанного явно или по умолчанию). Таким образом, на все \textit{sc-переменные}, входящие в состав \textbf{\textit{атомарной логической формулы}} и не попадающие под действие какого-либо другого \textit{квантора}, неявно накладывается квантор \textit{существования*}.}
+\scnexplanation{Под \textbf{\textit{атомарной логической формулой}} понимается \textit{атомарное высказывание}, которое является \textit{логической формулой}.}
+\scnexplanation{\textbf{\textit{Атомарная логическая формула}} -- это  логическая формула, которая не содержит логических связок.}
+\scnnote{По умолчанию \textbf{\textit{атомарная логическая формула}} трактуется как \textit{высказывание} о существовании, то есть наличия в памяти значений, соответствующих всем \textit{sc-переменным}, входящим в состав данной формулы и не попадающих под действие какого-либо другого \textit{квантора} (указанного явно или по умолчанию). Таким образом, на все \textit{sc-переменные}, входящие в состав \textbf{\textit{атомарной логической формулы}} и не попадающие под действие какого-либо другого \textit{квантора}, неявно накладывается квантор \textit{существования*}.}
+\scnaddlevel{1}
+\scnrelfrom{основной sc-идентификатор}{\scnfilelong{Примечание про высказывание о существовании}}
+\scnaddlevel{-1}
 
 \scnheader{неатомарная логическая формула}
 \scnsubdividing{общезначимая логическая формула;противоречивая логическая формула;нейтральная логическая формула}
@@ -225,6 +228,12 @@
 \scnaddlevel{1}
 \scniselement{sc.g-текст}
 \scnaddlevel{-1}
+\scnrelfrom{описание примера}{
+\scnfilescg{figures/sd_logical_formulas/implication_triangle.png}}
+\scnaddlevel{1}
+\scnexplanation{Данная неатомарная логическая формула содержит следующую информацию: для любых переменных \_triangle и \_angle если \_triangle является прямоугольным треугольником, то синус его внутреннего угла \_angle равен единице.}
+\scniselement{sc.g-текст}
+\scnaddlevel{-1}
 
 \scnheader{если\scnrolesign}
 \scnsubset{1\scnrolesign}
@@ -256,6 +265,18 @@
 \scniselement{неориентированное отношение}
 \scniselement{класс связок разной мощности}
 \scndefinition{\textbf{\textit{конъюнкция*}} -- это множество конъюнктивных \textit{высказываний}, каждое из которых истинно в рамках некоторой \textit{формальной теории} только в том случае, когда все его компоненты истинны в рамках этой же \textit{формальной теории}.}
+\scnnote{\textbf{\textit{конъюнкция*}} атомарных формул может быть заменена на атомарную формулу, полученную путём объединения исходных атомарных формул.}
+\scnaddlevel{1}
+\scnrelfrom{описание примера}{
+\scnfilescg{figures/sd_logical_formulas/conjunction_triangles.png}}
+\scnaddlevel{1}
+\scnexplanation{Данные конструкции эквивалентны по принципу $\exists x T(x) \land \exists x PT(x) \ \Longrightarrow \ \exists x (T(x) \land PT(x))$}
+\scnaddlevel{1}
+\scnexplanation{Следует помнить про \textbf{\textit{Примечание про высказывание о существовании}}.}
+\scnaddlevel{-1}
+\scniselement{sc.g-текст}
+\scnaddlevel{-1}
+\scnaddlevel{-1}
 \scnrelfrom{описание примера}{
 \scnfilescg{figures/sd_logical_formulas/conjunction.png}}
 \scnaddlevel{1}
@@ -288,6 +309,12 @@
 \scnfilescg{figures/sd_logical_formulas/strictDisjunction.png}}
 \scnaddlevel{1}
 \scniselement{sc.g-текст}
+\scnaddlevel{-1}
+\scnrelfrom{описание примера}{
+\scnfilescg{figures/sd_logical_formulas/strict_disjunction_triangle.png}}
+\scnaddlevel{1}
+\scniselement{sc.g-текст}
+\scnexplanation{Данная неатомарная логическая формула содержит следующую информацию: для любых переменных \_triangle если \_triangle является треугольником, то \_triangle является или тупоугольным треугольником, или остроугольным треугольником, или прямоугольным треугольником.}
 \scnaddlevel{-1}
 
 \scnheader{отрицание*}
