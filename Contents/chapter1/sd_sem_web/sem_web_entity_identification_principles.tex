@@ -1,0 +1,72 @@
+\scnheader{Принципы идентификации сущностей (ресурсов)}
+
+\scniselement{URI}
+\scnaddlevel{1}
+	\scnidtf{Universal Resource Identifier}
+	\scnidtf{Uniform Resource Identifier}
+	\scnidtf{символьная строка, позволяющая идентифицировать какой-либо ресурс: документ, изображение, файл, службу, ящик электронной почты и т. д.}
+	\scntext{структура}{URI = scheme:[//[пользователь@]хост[:порт]]путь[?запрос][#фрагмент]}
+	\scnaddlevel{1}
+		\scntext{пример}{https://example.com/path/resource.txt#fragment}
+	\scnaddlevel{-1}
+	\scnsuperset{URL}
+	\scnaddlevel{1}
+		\scnidtf{Universal Resource Locator}
+		\scnidtf{это \textit{URI}, который, помимо идентификации ресурса, предоставляет ещё и информацию о местонахождении этого ресурса}
+	\scnaddlevel{-1}
+	\scnsuperset{URN}
+	\scnaddlevel{1}
+		\scnidtf{Universal Resource Name}
+		\scnidtf{это \textit{URI}, который только идентифицирует ресурс в определённом пространстве имён (и, соответственно, в определённом контексте), но не указывает его местонахождение}
+		\scntext{структура}{<URN> ::= "urn:" <ID пространства имен> ":" <Имя ресурса>}
+		\scntext{пример}{urn:isbn:5170224575 (номер книги в пространстве ISBN)}
+	\scnaddlevel{-1}
+	\scntext{особенность}{\textit{URI} используются для обозначения субъектов, отношений и объектов в \textit{RDF}}
+	\scnaddlevel{1}
+		\scntext{пример}{http://localhost/Institute#Student (класс)\\
+		http://localhost/Institute#hasAuthor (отношение)}
+	\scnaddlevel{-1}
+	\scntext{особенность}{\textit{URI} позволяют отличать сущности, имеющие одинаковое название, но возможно, разную трактовку в разных онтологиях}
+	\scnrelto{ключевой знак}{\scncite{URI}}
+\scnaddlevel{-1}
+
+\scniselement{IRI}
+\scnaddlevel{1}
+	\scntext{особенность}{В \textit{URI} можно использовать только ограниченный набор латинских символов и знаков препинания (даже меньший, нежели в ASCII). Это входит в противоречие с принципом интернационализма, провозглашаемого W3C.\\
+	Эту проблему призван решить стандарт \textit{IRI} (Internationalized Resource Identifier), разрешающий использовать любые символы Юникода
+	}
+	\scnrelto{ключевой знак}{\scncite{IRI}}
+\scnaddlevel{-1}
+
+\scniselement{XRI}
+\scnaddlevel{1}
+	\scnidtf{Extensible Resource Identifier}
+	\scnidtf{расширяемый идентификатор ресурса, разработанный организацией OASIS, прежде всего, как будущая замена \textit{URL} в Интернете}
+	\scntext{особенность}{\textit{XRI} — это новая, совместимая с \textit{IRI} и \textit{URI} схема (протокол) для создания абстрактных идентификаторов ресурсов. Такие идентификаторы не зависят от платформы, домена, путей и программ — они полностью абстрактны и поэтому могут быть едины для всех доменов и каталогов}
+	\scnrelfromset{слои идентификатора}{I-Numbers\\
+		\scnaddlevel{1}
+			\scnidtf{постоянные сетевые адреса (похожие на IP-адреса)}
+			\scntext{особенность}{Такие адреса будут регистрироваться на какой-либо ресурс (человека, организацию, приложение, файл, цифровой объект и т. д.) и никогда больше не перерегистрироваться (в отличие от IP-адресов и доменов DNS). Это означает, что идентификатор \textit{I-Number} всегда можно будет использовать как адрес для какого-либо ресурса (по крайней мере, пока этот ресурс доступен в сети). Идентификаторы \textit{I-Numbers} очень эффективны, они специально разработаны и оптимизированы для обработки сетевыми маршрутизаторами}
+		\scnaddlevel{-1}
+		;I-Names\\
+		\scnaddlevel{1}
+			\scnidtf{удобные для человека названия (похожие на домены системы DNS)}
+			\scntext{особенность}{Как имена доменов DNS разрешаются DNS-серверами в IP-адреса, так и \textit{I-Names} будут разрешаться в \textit{I-Numbers}. Но, в отличие от \textit{I-Numbers}, идентификаторы \textit{I-Names} смогут быть переопределены их владельцами для идентификации других ресурсов. Например, если \textit{I-Name} ассоциирован с названием компании, а компания решила изменить своё название, то она может передать свой старый идентификатор \textit{I-Name} другой компании, хотя при этом обе компании останутся со своими старыми идентификаторами \textit{I-Numbers}}
+		\scnaddlevel{-1}
+	}
+	\scniselement{Глобальный контекст XRI}
+	\scnaddlevel{1}
+		\scnrelfromset{cпецсимволы глобального контекста}{
+			\scnfileitem{символ = для частных лиц}
+			;\scnfileitem{символ @ для организаций и бизнеса}
+			;\scnfileitem{символ + для общих понятий (например: аэропорт, дом, шкаф и т. п.)}
+		}
+		\scntext{пример}{=Mary.Jones\\
+			@Jones.and.Company\\
+			+phone.number\\
+			+phone.number/(+area.code)\\
+			=Mary.Jones/(+phone.number)\\
+			@Jones.and.Company/(+phone.number)\\
+			@Jones.and.Company/((+phone.number)/(+area.code))}
+	\scnaddlevel{-1}
+\scnaddlevel{-1}
