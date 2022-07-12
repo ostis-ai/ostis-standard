@@ -235,67 +235,6 @@
 \scndefinition{\textbf{\textit{логическая связка*}} -- это отношение (класс связок), связками которого являются \textit{высказывания}.}
 \scnexplanation{\textbf{\textit{логическая связка*}} -- это \textit{отношение}, областью определения которого является множество \textit{высказываний}, при этом само это отношение и некоторые его подмножества могут быть \textit{классами связок разной мощности}.}
 
-\scnheader{импликация*}
-\scnidtf{логическое следование*}
-\scnsubset{логическая связка*}
-\scniselement{бинарное отношение}
-\scniselement{ориентированное отношение}
-\scndefinition{\textbf{\textit{импликация*}} -- это множество импликативных \textit{неатомарных высказываний}, каждое из которых состоит из посылки (первый компонент \textit{высказывания}) и следствия (второй компонент \textit{высказывания}).}
-\scnnote{Каждое импликативное \textit{высказывание} ложно в рамках некоторой \textit{формальной теории} в том случае, когда его посылка истинна, а заключение ложно в рамках этой же \textit{формальной теории}. В других случаях такое \textit{высказывание} истинно.}
-\scnnote{По умолчанию на все переменные, входящие в обе части высказывания об \textbf{\textit{имликации*}} (или хотя бы одну из \textit{подформул*} каждой части) неявно накладывается квантор \textit{всеобщности*}, при условии, что эти переменные не связаны другим \textit{квантором}, указанным явно.}
-\scnrelfrom{описание примера}{
-\scnfilescg{figures/sd_logical_formulas/implication.png}}
-\scnaddlevel{1}
-\scniselement{sc.g-текст}
-\scnaddlevel{-1}
-\scnnote{\textbf{\textit{импликация*}} может быть представлена как \textit{дизъюнкция} \textit{отрицания} первой логической формулы и второй логической формулы или же как \textit{отрицание} \textit{конъюнкции} первой логической формулы и \textit{отрицания} второй логической формулы.}
-\scnaddlevel{1}
-\scnrelfrom{описание примера}{
-\scnfilescg{figures/sd_logical_formulas/implication_representation.png}}
-\scnaddlevel{1}
-\scniselement{sc.g-текст}
-\scnaddlevel{-1}
-\scnaddlevel{-1}
-\scnrelfrom{описание примера}{
-\scnfilescg{figures/sd_logical_formulas/implication_triangle.png}}
-\scnaddlevel{1}
-\scnexplanation{Данная неатомарная логическая формула содержит следующую информацию: для любых переменных \_triangle и \_angle если \_triangle является прямоугольным треугольником, то синус его внутреннего угла \_angle равен единице.}
-\scniselement{sc.g-текст}
-\scnaddlevel{-1}
-
-\scnheader{если\scnrolesign}
-\scnsubset{1\scnrolesign}
-\scnidtf{посылка\scnrolesign}
-\scniselement{ролевое отношение}
-\scndefinition{\textbf{\textit{если\scnrolesign}} -- это \textit{ролевое отношение}, используемое в связках \textit{импликации*} для указания посылки.}
-
-\scnheader{то\scnrolesign}
-\scnidtf{следствие\scnrolesign}
-\scnsubset{2\scnrolesign}
-\scniselement{ролевое отношение}
-\scndefinition{\textbf{\textit{то\scnrolesign}} -- это \textit{ролевое отношение}, используемое в связках \textit{импликации*} для указания следствия.}
-
-\scnheader{эквиваленция*}
-\scnidtf{эквивалентность*}
-\scnsubset{логическая связка*}
-\scniselement{бинарное отношение}
-\scniselement{неориентированное отношение}
-\scndefinition{\textbf{\textit{эквиваленция*}} -- это множество \textit{высказываний} об эквивалентности, каждое из которых истинно в рамках некоторой \textit{формальной теории} только в тех случаях, когда оба его компонента одновременно либо истинны в рамках этой же \textit{формальной теории}, либо ложны.}
-\scnnote{По умолчанию на все переменные, входящие в обе части высказывания об \textbf{\textit{эквиваленции*}} (или хотя бы одну из \textit{подформул*} каждой части) неявно накладывается квантор \textit{всеобщности*}, при условии, что эти переменные не связаны другим \textit{квантором}, указанным явно.}
-\scnrelfrom{описание примера}{
-\scnfilescg{figures/sd_logical_formulas/equivalent.png}}
-\scnaddlevel{1}
-\scniselement{sc.g-текст}
-\scnaddlevel{-1}
-\scnnote{\textbf{\textit{эквиваленция*}} двух логических формул может быть представлена как \textit{дизъюнкция} \textit{конъюнкции} этих двух логическх формул и \textit{конъюнкции} \textit{отрицаний} этих двух логических формул.}
-\scnaddlevel{1}
-\scnrelfrom{описание примера}{
-\scnfilescg{figures/sd_logical_formulas/equivalence_representation.png}}
-\scnaddlevel{1}
-\scniselement{sc.g-текст} 
-\scnaddlevel{-1}
-\scnaddlevel{-1}
-
 \scnheader{конъюнкция*}
 \scnidtf{логическое и*}
 \scnidtf{логическое умножение*}
@@ -335,6 +274,16 @@
 \scniselement{sc.g-текст}
 \scnaddlevel{-1}
 
+\scnheader{отрицание*}
+\scnsubset{логическая связка*}
+\scnsubset{синглетон}
+\scndefinition{\textbf{\textit{отрицание*}} -- это множество \textit{высказываний} об отрицании, каждое из которых истинно в рамках некоторой \textit{формальной теории} только в том случае, когда его единственный элемент является ложным в рамках этой же \textit{формальной теории}.}
+\scnrelfrom{описание примера}{
+\scnfilescg{figures/sd_logical_formulas/negation.png}}
+\scnaddlevel{1}
+\scniselement{sc.g-текст}
+\scnaddlevel{-1}
+
 \scnheader{строгая дизъюнкция*}
 \scnidtf{сложение по модулю 2*}
 \scnidtf{исключающее или*}
@@ -362,14 +311,65 @@
 \scnaddlevel{-1}
 \scnaddlevel{-1}
 
-\scnheader{отрицание*}
+\scnheader{импликация*}
+\scnidtf{логическое следование*}
 \scnsubset{логическая связка*}
-\scnsubset{синглетон}
-\scndefinition{\textbf{\textit{отрицание*}} -- это множество \textit{высказываний} об отрицании, каждое из которых истинно в рамках некоторой \textit{формальной теории} только в том случае, когда его единственный элемент является ложным в рамках этой же \textit{формальной теории}.}
+\scniselement{бинарное отношение}
+\scniselement{ориентированное отношение}
+\scndefinition{\textbf{\textit{импликация*}} -- это множество импликативных \textit{неатомарных высказываний}, каждое из которых состоит из посылки (первый компонент \textit{высказывания}) и следствия (второй компонент \textit{высказывания}).}
+\scnnote{Каждое импликативное \textit{высказывание} ложно в рамках некоторой \textit{формальной теории} в том случае, когда его посылка истинна, а заключение ложно в рамках этой же \textit{формальной теории}. В других случаях такое \textit{высказывание} истинно.}
+\scnnote{По умолчанию на все переменные, входящие в обе части высказывания об \textbf{\textit{имликации*}} (или хотя бы одну из \textit{подформул*} каждой части) неявно накладывается квантор \textit{всеобщности*}, при условии, что эти переменные не связаны другим \textit{квантором}, указанным явно.}
 \scnrelfrom{описание примера}{
-\scnfilescg{figures/sd_logical_formulas/negation.png}}
+\scnfilescg{figures/sd_logical_formulas/implication.png}}
 \scnaddlevel{1}
 \scniselement{sc.g-текст}
+\scnaddlevel{-1}
+\scnnote{\textbf{\textit{импликация*}} может быть представлена как \textit{дизъюнкция} \textit{отрицания} первой логической формулы и второй логической формулы или же как \textit{отрицание} \textit{конъюнкции} первой логической формулы и \textit{отрицания} второй логической формулы.}
+\scnaddlevel{1}
+\scnrelfrom{описание примера}{
+\scnfilescg{figures/sd_logical_formulas/implication_representation.png}}
+\scnaddlevel{1}
+\scniselement{sc.g-текст}
+\scnaddlevel{-1}
+\scnaddlevel{-1}
+\scnrelfrom{описание примера}{
+\scnfilescg{figures/sd_logical_formulas/implication_triangle.png}}
+\scnaddlevel{1}
+\scnexplanation{Данная неатомарная логическая формула содержит следующую информацию: для любых переменных \_triangle и \_angle если \_triangle является прямоугольным треугольником, то синус его внутреннего угла \_angle равен единице.}
+\scniselement{sc.g-текст}
+\scnaddlevel{-1}
+
+\scnheader{если\scnrolesign}
+\scnidtf{посылка\scnrolesign}
+\scnsubset{1\scnrolesign}
+\scniselement{ролевое отношение}
+\scndefinition{\textbf{\textit{если\scnrolesign}} -- это \textit{ролевое отношение}, используемое в связках \textit{импликации*} для указания посылки.}
+
+\scnheader{то\scnrolesign}
+\scnidtf{следствие\scnrolesign}
+\scnsubset{2\scnrolesign}
+\scniselement{ролевое отношение}
+\scndefinition{\textbf{\textit{то\scnrolesign}} -- это \textit{ролевое отношение}, используемое в связках \textit{импликации*} для указания следствия.}
+
+\scnheader{эквиваленция*}
+\scnidtf{эквивалентность*}
+\scnsubset{логическая связка*}
+\scniselement{бинарное отношение}
+\scniselement{неориентированное отношение}
+\scndefinition{\textbf{\textit{эквиваленция*}} -- это множество \textit{высказываний} об эквивалентности, каждое из которых истинно в рамках некоторой \textit{формальной теории} только в тех случаях, когда оба его компонента одновременно либо истинны в рамках этой же \textit{формальной теории}, либо ложны.}
+\scnnote{По умолчанию на все переменные, входящие в обе части высказывания об \textbf{\textit{эквиваленции*}} (или хотя бы одну из \textit{подформул*} каждой части) неявно накладывается квантор \textit{всеобщности*}, при условии, что эти переменные не связаны другим \textit{квантором}, указанным явно.}
+\scnrelfrom{описание примера}{
+\scnfilescg{figures/sd_logical_formulas/equivalent.png}}
+\scnaddlevel{1}
+\scniselement{sc.g-текст}
+\scnaddlevel{-1}
+\scnnote{\textbf{\textit{эквиваленция*}} двух логических формул может быть представлена как \textit{дизъюнкция} \textit{конъюнкции} этих двух логическх формул и \textit{конъюнкции} \textit{отрицаний} этих двух логических формул.}
+\scnaddlevel{1}
+\scnrelfrom{описание примера}{
+\scnfilescg{figures/sd_logical_formulas/equivalence_representation.png}}
+\scnaddlevel{1}
+\scniselement{sc.g-текст} 
+\scnaddlevel{-1}
 \scnaddlevel{-1}
 
 \scnheader{квантор}
