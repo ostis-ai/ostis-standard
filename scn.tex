@@ -78,48 +78,6 @@
 
 %DEFINES END
 
-\usepackage{tocloft}
-\makeatletter
-\renewcommand{\@cftmaketoctitle}{}
-\makeatother
-\renewcommand{\cftchapfont}{\bfseries}
-\renewcommand{\cftsecfont}{\bfseries}
-\renewcommand{\cftsubsecfont}{\bfseries}
-\renewcommand{\cftsubsubsecfont}{\bfseries}
-\renewcommand{\cftparfont}{\bfseries}
-\renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}
-\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
-\renewcommand{\cftsubsecleader}{\cftdotfill{\cftdotsep}}
-\renewcommand{\cftsubsubsecleader}{\cftdotfill{\cftdotsep}}
-\renewcommand{\cftparleader}{\cftdotfill{\cftdotsep}}
-
-\makeatletter
-\renewcommand{\cftchappresnum}{\begin{lrbox}{\@tempboxa}}
-\renewcommand{\cftchapaftersnum}{\end{lrbox}}
-\cftsetindents{chapter}{\tabsize}{0pt}
-\renewcommand{\cftsecpresnum}{\begin{lrbox}{\@tempboxa}}
-\renewcommand{\cftsecaftersnum}{\end{lrbox}}
-\cftsetindents{section}{\tabsize+\tabsize}{0pt}
-\renewcommand{\cftsubsecpresnum}{\begin{lrbox}{\@tempboxa}}
-\renewcommand{\cftsubsecaftersnum}{\end{lrbox}}
-\cftsetindents{subsection}{\tabsize+\tabsize+\tabsize}{0pt}
-\renewcommand{\cftsubsubsecpresnum}{\begin{lrbox}{\@tempboxa}}
-\renewcommand{\cftsubsubsecaftersnum}{\end{lrbox}}
-\cftsetindents{subsubsection}{\tabsize+\tabsize+\tabsize+\tabsize}{0pt}
-\renewcommand{\cftparapresnum}{\begin{lrbox}{\@tempboxa}}
-\renewcommand{\cftparaaftersnum}{\end{lrbox}}
-\cftsetindents{paragraph}{\tabsize+\tabsize+\tabsize+\tabsize+\tabsize}{0pt}
-\renewcommand{\cftsubparapresnum}{\begin{lrbox}{\@tempboxa}}
-\renewcommand{\cftsubparaaftersnum}{\end{lrbox}}
-\cftsetindents{subparagraph}{\tabsize+\tabsize+\tabsize+\tabsize+\tabsize+\tabsize}{0pt}
-\renewcommand\cftchapafterpnum{\vspace{\toclineskip}}
-\renewcommand\cftsecafterpnum{\vspace{\toclineskip}}
-\renewcommand\cftsubsecafterpnum{\vspace{\toclineskip}}
-\renewcommand\cftsubsubsecafterpnum{\vspace{\toclineskip}}
-\renewcommand\cftparaafterpnum{\vspace{\toclineskip}}
-\renewcommand\cftsubparaafterpnum{\vspace{\toclineskip}}
-\makeatother
-
 %SCN START
 
 \usepackage{calc}
@@ -1007,6 +965,48 @@
 
 %Sections START
 
+\usepackage{tocloft}
+\makeatletter
+\renewcommand{\@cftmaketoctitle}{}
+\makeatother
+\renewcommand{\cftchapfont}{\bfseries}
+\renewcommand{\cftsecfont}{\bfseries}
+\renewcommand{\cftsubsecfont}{\bfseries}
+\renewcommand{\cftsubsubsecfont}{\bfseries}
+\renewcommand{\cftparfont}{\bfseries}
+\renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\cftsubsecleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\cftsubsubsecleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\cftparleader}{\cftdotfill{\cftdotsep}}
+
+\makeatletter
+\renewcommand{\cftchappresnum}{\begin{lrbox}{\@tempboxa}}
+\renewcommand{\cftchapaftersnum}{\end{lrbox}}
+\cftsetindents{chapter}{\tabsize}{0pt}
+\renewcommand{\cftsecpresnum}{\begin{lrbox}{\@tempboxa}}
+\renewcommand{\cftsecaftersnum}{\end{lrbox}}
+\cftsetindents{section}{\tabsize+\tabsize}{0pt}
+\renewcommand{\cftsubsecpresnum}{\begin{lrbox}{\@tempboxa}}
+\renewcommand{\cftsubsecaftersnum}{\end{lrbox}}
+\cftsetindents{subsection}{\tabsize+\tabsize+\tabsize}{0pt}
+\renewcommand{\cftsubsubsecpresnum}{\begin{lrbox}{\@tempboxa}}
+\renewcommand{\cftsubsubsecaftersnum}{\end{lrbox}}
+\cftsetindents{subsubsection}{\tabsize+\tabsize+\tabsize+\tabsize}{0pt}
+\renewcommand{\cftparapresnum}{\begin{lrbox}{\@tempboxa}}
+\renewcommand{\cftparaaftersnum}{\end{lrbox}}
+\cftsetindents{paragraph}{\tabsize+\tabsize+\tabsize+\tabsize+\tabsize}{0pt}
+\renewcommand{\cftsubparapresnum}{\begin{lrbox}{\@tempboxa}}
+\renewcommand{\cftsubparaaftersnum}{\end{lrbox}}
+\cftsetindents{subparagraph}{\tabsize+\tabsize+\tabsize+\tabsize+\tabsize+\tabsize}{0pt}
+\renewcommand\cftchapafterpnum{\vspace{\toclineskip}}
+\renewcommand\cftsecafterpnum{\vspace{\toclineskip}}
+\renewcommand\cftsubsecafterpnum{\vspace{\toclineskip}}
+\renewcommand\cftsubsubsecafterpnum{\vspace{\toclineskip}}
+\renewcommand\cftparaafterpnum{\vspace{\toclineskip}}
+\renewcommand\cftsubparaafterpnum{\vspace{\toclineskip}}
+\makeatother
+
 \titleformat{\chapter}[display]
 {\normalfont\bfseries}{}{0pt}{\normalsize}
 
@@ -1033,6 +1033,14 @@
 \titlespacing*{\paragraph}
 {0em}{0em}{0em}
 
+\makeatletter
+\newcommand*{\currentname}{\@currentlabelname}
+\makeatother
+
+\makeatletter
+\newcommand*{\currentnumber}{\@currentlabel}
+\makeatother
+
 \newcommand{\filldots}{\xleaders\hbox{*}\hfill}
 \newlength\afterparlength
 \setlength{\afterparlength}{-2em}
@@ -1042,14 +1050,24 @@
 
 \newcommand{\scsuperchapter}{{\normalfont\bfseries\large/*\filldots/}\vspace{0.5\afterparlength}}
 
-\newcommand{\scsectionfamily}[2][]{\clearpage\chapter[\hspace{-\tabsize}$\bullet$\makediff{\bulletsize}\textit{#2}]{/*~\textspaced{\large Семейство разделов}~\filldots/\vspace{\afterparlength}}
-	\ifx&#1&
-	\else
-	\addtocontents{toc}{\vspace{\dimexpr -\toclineskip+0.1\baselineskip \relax}\parbox{\textwidth}{\begin{adjustwidth}{\tabsize}{0em}\begin{SCn}\protect#1\end{SCn}\end{adjustwidth}}
-		\vspace{\toclineskip}}
-	\fi}
+\newcommand{\scseparatedfragment}[2][]{\clearpage\chapter[{\hspace{-\tabsize}$\bullet$\makediff{\bulletsize}\textit{#2}}]{/*\filldots/\vspace{0.5\afterparlength}}
+\renewcommand{\currentname}{#2}
+\ifx&#1&
+\else
+\addtocontents{toc}{\vspace{\dimexpr -\toclineskip+0.1\baselineskip \relax}\parbox{\textwidth}{\begin{adjustwidth}{\tabsize}{0em}\begin{SCn}\protect#1\end{SCn}\end{adjustwidth}}
+\vspace{\toclineskip}}
+\fi}
 
-\newcommand{\scchapter}[2][]{\clearpage\chapter[\hspace{-\tabsize}$\bullet$\makediff{\bulletsize}\textit{#2}]{/*~\textspaced{\large Раздел}~\filldots/\vspace{\afterparlength}}
+\newcommand{\scsectionfamily}[2][]{\clearpage\chapter[\hspace{-\tabsize}$\bullet$\makediff{\bulletsize}\textit{#2}]{/*~\textspaced{\large Семейство разделов}~\filldots/\vspace{0.5\afterparlength}}
+\renewcommand{\currentname}{#2}
+\ifx&#1&
+\else
+\addtocontents{toc}{\vspace{\dimexpr -\toclineskip+0.1\baselineskip \relax}\parbox{\textwidth}{\begin{adjustwidth}{\tabsize}{0em}\begin{SCn}\protect#1\end{SCn}\end{adjustwidth}}
+\vspace{\toclineskip}}
+\fi}
+
+\newcommand{\scchapter}[2][]{\clearpage\chapter[\hspace{-\tabsize}$\bullet$\makediff{\bulletsize}\textit{#2}]{/*~\textspaced{\large Раздел}~\filldots/\vspace{0.5\afterparlength}}
+\renewcommand{\currentname}{#2}
 \ifx&#1&
 \else
 \addtocontents{toc}{\vspace{\dimexpr -\toclineskip+0.1\baselineskip \relax}\parbox{\textwidth}{\begin{adjustwidth}{\tabsize}{0em}\begin{SCn}\protect#1\end{SCn}\end{adjustwidth}}
@@ -1057,22 +1075,17 @@
 \fi}
 
 \newcommand{\scsection}[2][]{\clearpage
-\section[\hspace{-\tabsize}$\bullet$\makediff{\bulletsize}\textit{#2}]{/*~\textspaced{\large Раздел}~\filldots/\vspace{\afterparlength}}
+\section[\hspace{-\tabsize}$\bullet$\makediff{\bulletsize}\textit{#2}]{/*~\textspaced{\large Раздел}~\filldots/\vspace{0.5\afterparlength}}
+\renewcommand{\currentname}{#2}
 \ifx&#1&
 \else
 \addtocontents{toc}{\vspace{\dimexpr -\toclineskip+0.1\baselineskip \relax}\parbox{\textwidth}{\begin{adjustwidth}{\tabsize+\tabsize}{0em}\begin{SCn}\protect#1\end{SCn}\end{adjustwidth}}
 \vspace{\toclineskip}}
 \fi}
 
-\newcommand{\scseparatedfragment}[2][]{\clearpage\chapter[\hspace{-\tabsize}$\bullet$\makediff{\bulletsize}\textit{#2}]{/*\filldots/\vspace{\afterparlength}}
-\ifx&#1&
-\else
-\addtocontents{toc}{\vspace{\dimexpr -\toclineskip+0.1\baselineskip \relax}\parbox{\textwidth}{\begin{adjustwidth}{\tabsize}{0em}\begin{SCn}\protect#1\end{SCn}\end{adjustwidth}}
-\vspace{\toclineskip}}
-\fi}
-
 \newcommand\scsubsection[2][]{\clearpage
-\subsection[\hspace{-\tabsize}$\bullet$\makediff{\bulletsize}\textit{#2}]{/*~\textspaced{\large Раздел}~\filldots/\vspace{\afterparlength}}
+\subsection[\hspace{-\tabsize}$\bullet$\makediff{\bulletsize}\textit{#2}]{/*~\textspaced{\large Раздел}~\filldots/\vspace{0.5\afterparlength}}
+\renewcommand{\currentname}{#2}
 \ifx&#1&
 \else
 \addtocontents{toc}{\vspace{\dimexpr -\toclineskip+0.1\baselineskip \relax}\parbox{\textwidth}{\begin{adjustwidth}{\tabsize+\tabsize+\tabsize}{0em}\begin{SCn}\protect#1\end{SCn}\end{adjustwidth}}
@@ -1080,27 +1093,21 @@
 \fi}
 
 \newcommand{\scsubsubsection}[2][]{\clearpage
-\subsubsection[\hspace{-\tabsize}$\bullet$\makediff{\bulletsize}\textit{#2}]{/*~\textspaced{\large Раздел}~\filldots/\vspace{\afterparlength}}
+\subsubsection[\hspace{-\tabsize}$\bullet$\makediff{\bulletsize}\textit{#2}]{/*~\textspaced{\large Раздел}~\filldots/\vspace{0.5\afterparlength}}
+\renewcommand{\currentname}{#2}
 \ifx&#1&
 \else
 \addtocontents{toc}{\vspace{\dimexpr -\toclineskip+0.1\baselineskip \relax}\parbox{\textwidth}{\begin{adjustwidth}{\tabsize+\tabsize+\tabsize+\tabsize}{0em}\begin{SCn}\protect#1\end{SCn}\end{adjustwidth}}
 \vspace{\toclineskip}}
 \fi}
 
-\newcommand{\scparagraph}[2][]{\clearpage\paragraph[\hspace{-\tabsize}$\bullet$\makediff{\bulletsize}\textit{#2}]{/*~\textspaced{\large Раздел}~\filldots/\vspace{\afterparlength}}
+\newcommand{\scparagraph}[2][]{\clearpage\paragraph[\hspace{-\tabsize}$\bullet$\makediff{\bulletsize}\textit{#2}]{/*~\textspaced{\large Раздел}~\filldots/\vspace{0.5\afterparlength}}
+\renewcommand{\currentname}{#2}
 \ifx&#1&
 \else
 \addtocontents{toc}{\vspace{\dimexpr -\toclineskip+0.1\baselineskip \relax}\parbox{\textwidth}{\begin{adjustwidth}{\tabsize+\tabsize+\tabsize+\tabsize+\tabsize}{0em}\begin{SCn}\protect#1\end{SCn}\end{adjustwidth}}
 \vspace{\toclineskip}}
 \fi}
-
-\makeatletter
-\newcommand*{\currentname}{\@currentlabelname}
-\makeatother
-
-\makeatletter
-\newcommand*{\currentnumber}{\@currentlabel}
-\makeatother
 
 %Sections END
 
