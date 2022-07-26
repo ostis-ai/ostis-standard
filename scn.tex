@@ -872,10 +872,6 @@
 \scnrelfrom{глава в монографии}{#1}
 }
 
-\newcommand{\scnpagenumber}[1]{
-\scnrelfrom{номер страницы в распечатке Стандарта OSTIS}{#1}
-}
-
 \newcommand{\scnsourcecomment}[1]{{\normalfont \normalsize \textbf{/*~}#1\textbf{{}~*/}}}
 
 \newcommand{\scnsourcecommentpar}[1]{
@@ -974,11 +970,12 @@
 \renewcommand{\cftsubsecfont}{\bfseries}
 \renewcommand{\cftsubsubsecfont}{\bfseries}
 \renewcommand{\cftparfont}{\bfseries}
-\renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}
-\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
-\renewcommand{\cftsubsecleader}{\cftdotfill{\cftdotsep}}
-\renewcommand{\cftsubsubsecleader}{\cftdotfill{\cftdotsep}}
-\renewcommand{\cftparleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\cftdot}{}
+\addtocontents{toc}{\cftpagenumbersoff{chapter}}
+\addtocontents{toc}{\cftpagenumbersoff{section}}
+\addtocontents{toc}{\cftpagenumbersoff{subsection}}
+\addtocontents{toc}{\cftpagenumbersoff{subsubsection}}
+\addtocontents{toc}{\cftpagenumbersoff{paragraph}}
 
 \makeatletter
 \renewcommand{\cftchappresnum}{\begin{lrbox}{\@tempboxa}}
@@ -1048,15 +1045,21 @@
 \newlength\afterseglength
 \setlength{\afterseglength}{-1em}
 
+\usepackage{pageslts}
+\newcommand{\scnpagenumvalue}{\theCurrentPage}
+\newcommand{\scnpagenum}[1]{\scnrelfrom{номер страницы в распечатке Стандарта OSTIS}{#1}}
+
 \newcommand{\scsuperchapter}{{\normalfont\bfseries\large/*\filldots/}\vspace{0.5\afterparlength}}
 
 \newcommand{\scseparatedfragment}[2][]{\clearpage\chapter[{\hspace{-\tabsize}$\bullet$\makediff{\bulletsize}\textit{#2}}]{/*\filldots/\vspace{0.5\afterparlength}}
 \renewcommand{\currentname}{#2}
 \ifx&#1&
 \else
-\addtocontents{toc}{\vspace{\dimexpr -\toclineskip+0.1\baselineskip \relax}\parbox{\textwidth}{\begin{adjustwidth}{\tabsize}{0em}\begin{SCn}\protect#1\end{SCn}\end{adjustwidth}}
-\vspace{\toclineskip}}
-\fi}
+\addtocontents{toc}{\vspace{\dimexpr -\toclineskip+0.1\baselineskip \relax}\parbox{\textwidth}{\begin{adjustwidth}{\tabsize}{0em}\begin{SCn}\protect#1\end{SCn}\end{adjustwidth}}}
+\fi
+\renewcommand{\scnpagenumvalue}{\theCurrentPage}
+\addtocontents{toc}{\vspace{\dimexpr -\toclineskip+0.1\baselineskip \relax}\parbox{\textwidth}{\begin{adjustwidth}{\tabsize}{0em}\begin{SCn}\protect\scnpagenum{\scnpagenumvalue}\end{SCn}\end{adjustwidth}\vspace{\toclineskip}}}
+}
 
 \newcommand{\scsectionfamily}[2][]{\clearpage\chapter[\hspace{-\tabsize}$\bullet$\makediff{\bulletsize}\textit{#2}]{/*~\textspaced{\large Семейство разделов}~\filldots/\vspace{0.5\afterparlength}}
 \renewcommand{\currentname}{#2}
@@ -1064,7 +1067,10 @@
 \else
 \addtocontents{toc}{\vspace{\dimexpr -\toclineskip+0.1\baselineskip \relax}\parbox{\textwidth}{\begin{adjustwidth}{\tabsize}{0em}\begin{SCn}\protect#1\end{SCn}\end{adjustwidth}}
 \vspace{\toclineskip}}
-\fi}
+\fi
+\renewcommand{\scnpagenumvalue}{\theCurrentPage}
+\addtocontents{toc}{\vspace{\dimexpr -\toclineskip+0.1\baselineskip \relax}\parbox{\textwidth}{\begin{adjustwidth}{\tabsize}{0em}\begin{SCn}\protect\scnpagenum{\scnpagenumvalue}\end{SCn}\end{adjustwidth}\vspace{\toclineskip}}}
+}
 
 \newcommand{\scchapter}[2][]{\clearpage\chapter[\hspace{-\tabsize}$\bullet$\makediff{\bulletsize}\textit{#2}]{/*~\textspaced{\large Раздел}~\filldots/\vspace{0.5\afterparlength}}
 \renewcommand{\currentname}{#2}
@@ -1072,7 +1078,9 @@
 \else
 \addtocontents{toc}{\vspace{\dimexpr -\toclineskip+0.1\baselineskip \relax}\parbox{\textwidth}{\begin{adjustwidth}{\tabsize}{0em}\begin{SCn}\protect#1\end{SCn}\end{adjustwidth}}
 \vspace{\toclineskip}}
-\fi}
+\fi
+\renewcommand{\scnpagenumvalue}{\theCurrentPage}
+\addtocontents{toc}{\vspace{\dimexpr -\toclineskip+0.1\baselineskip \relax}\parbox{\textwidth}{\begin{adjustwidth}{\tabsize}{0em}\begin{SCn}\protect\scnpagenum{\scnpagenumvalue}\end{SCn}\end{adjustwidth}\vspace{\toclineskip}}}}
 
 \newcommand{\scsection}[2][]{\clearpage
 \section[\hspace{-\tabsize}$\bullet$\makediff{\bulletsize}\textit{#2}]{/*~\textspaced{\large Раздел}~\filldots/\vspace{0.5\afterparlength}}
@@ -1081,7 +1089,9 @@
 \else
 \addtocontents{toc}{\vspace{\dimexpr -\toclineskip+0.1\baselineskip \relax}\parbox{\textwidth}{\begin{adjustwidth}{\tabsize+\tabsize}{0em}\begin{SCn}\protect#1\end{SCn}\end{adjustwidth}}
 \vspace{\toclineskip}}
-\fi}
+\fi
+\renewcommand{\scnpagenumvalue}{\theCurrentPage}
+\addtocontents{toc}{\vspace{\dimexpr -\toclineskip+0.1\baselineskip \relax}\parbox{\textwidth}{\begin{adjustwidth}{\tabsize+\tabsize}{0em}\begin{SCn}\protect\scnpagenum{\scnpagenumvalue}\end{SCn}\end{adjustwidth}\vspace{\toclineskip}}}}
 
 \newcommand\scsubsection[2][]{\clearpage
 \subsection[\hspace{-\tabsize}$\bullet$\makediff{\bulletsize}\textit{#2}]{/*~\textspaced{\large Раздел}~\filldots/\vspace{0.5\afterparlength}}
@@ -1090,7 +1100,10 @@
 \else
 \addtocontents{toc}{\vspace{\dimexpr -\toclineskip+0.1\baselineskip \relax}\parbox{\textwidth}{\begin{adjustwidth}{\tabsize+\tabsize+\tabsize}{0em}\begin{SCn}\protect#1\end{SCn}\end{adjustwidth}}
 \vspace{\toclineskip}}
-\fi}
+\fi
+\renewcommand{\scnpagenumvalue}{\theCurrentPage}
+\addtocontents{toc}{\vspace{\dimexpr -\toclineskip+0.1\baselineskip \relax}\parbox{\textwidth}{\begin{adjustwidth}{\tabsize+\tabsize+\tabsize}{0em}\begin{SCn}\protect\scnpagenum{\scnpagenumvalue}\end{SCn}\end{adjustwidth}\vspace{\toclineskip}}}
+}
 
 \newcommand{\scsubsubsection}[2][]{\clearpage
 \subsubsection[\hspace{-\tabsize}$\bullet$\makediff{\bulletsize}\textit{#2}]{/*~\textspaced{\large Раздел}~\filldots/\vspace{0.5\afterparlength}}
@@ -1099,7 +1112,9 @@
 \else
 \addtocontents{toc}{\vspace{\dimexpr -\toclineskip+0.1\baselineskip \relax}\parbox{\textwidth}{\begin{adjustwidth}{\tabsize+\tabsize+\tabsize+\tabsize}{0em}\begin{SCn}\protect#1\end{SCn}\end{adjustwidth}}
 \vspace{\toclineskip}}
-\fi}
+\fi
+\renewcommand{\scnpagenumvalue}{\theCurrentPage}
+\addtocontents{toc}{\vspace{\dimexpr -\toclineskip+0.1\baselineskip \relax}\parbox{\textwidth}{\begin{adjustwidth}{\tabsize+\tabsize+\tabsize+\tabsize}{0em}\begin{SCn}\protect\scnpagenum{\scnpagenumvalue}\end{SCn}\end{adjustwidth}\vspace{\toclineskip}}}}
 
 \newcommand{\scparagraph}[2][]{\clearpage\paragraph[\hspace{-\tabsize}$\bullet$\makediff{\bulletsize}\textit{#2}]{/*~\textspaced{\large Раздел}~\filldots/\vspace{0.5\afterparlength}}
 \renewcommand{\currentname}{#2}
@@ -1107,7 +1122,9 @@
 \else
 \addtocontents{toc}{\vspace{\dimexpr -\toclineskip+0.1\baselineskip \relax}\parbox{\textwidth}{\begin{adjustwidth}{\tabsize+\tabsize+\tabsize+\tabsize+\tabsize}{0em}\begin{SCn}\protect#1\end{SCn}\end{adjustwidth}}
 \vspace{\toclineskip}}
-\fi}
+\fi
+\renewcommand{\scnpagenumvalue}{\theCurrentPage}
+\addtocontents{toc}{\vspace{\dimexpr -\toclineskip+0.1\baselineskip \relax}\parbox{\textwidth}{\begin{adjustwidth}{\tabsize+\tabsize+\tabsize+\tabsize+\tabsize}{0em}\begin{SCn}\protect\scnpagenum{\scnpagenumvalue}\end{SCn}\end{adjustwidth}\vspace{\toclineskip}}}}
 
 %Sections END
 
