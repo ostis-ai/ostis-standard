@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GWF version="2.0">
+    <staticSector>
+        <node type="node/-/-/not_define" idtf="mt8" shapeColor="0" id="94068105136912" parent="0" left="0" top="0" right="28.2188" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="384.5" y="178.5" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/-/-/not_define" idtf="временная сущность" shapeColor="0" id="94068114255664" parent="0" left="0" top="0" right="129.016" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="384.5" y="103.5" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/-/-/not_define" idtf="sc-метапеременная" shapeColor="0" id="94068109854208" parent="0" left="0" top="0" right="121.406" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="264.5" y="178.5" haveBus="false" idtf_pos="1">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/-/-/not_define" idtf="небинарная sc-связка" shapeColor="0" id="94068097704368" parent="0" left="0" top="0" right="129.375" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="519.5" y="178.5" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="94068100803920" parent="0" id_b="94068114255664" id_e="94068105136912" b_x="384.5" b_y="103.5" e_x="384.5" e_y="178.5" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </pair>
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="94068108001040" parent="0" id_b="94068097704368" id_e="94068105136912" b_x="519.5" b_y="178.5" e_x="384.5" e_y="178.5" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </pair>
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="94068107983280" parent="0" id_b="94068109854208" id_e="94068105136912" b_x="264.5" b_y="178.5" e_x="384.5" e_y="178.5" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </pair>
+    </staticSector>
+</GWF>

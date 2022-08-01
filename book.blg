@@ -1,0 +1,25 @@
+[0] Config.pm:306> INFO - This is Biber 2.18
+[0] Config.pm:309> INFO - Logfile is 'book.blg'
+[253] biber-MSWIN32:340> INFO - === 
+[328] Biber.pm:418> INFO - Reading 'book.bcf'
+[909] Biber.pm:978> INFO - Found 114 citekeys in bib section 0
+[952] Biber.pm:4401> INFO - Processing section 0
+[979] Biber.pm:4592> INFO - Looking for bibtex file 'Contents/biblio/biblio.bib' for section 0
+[1119] bibtex.pm:1713> INFO - LaTeX decoding ...
+[2876] bibtex.pm:1518> INFO - Found BibTeX data source 'Contents/biblio/biblio.bib'
+[3973] Utils.pm:410> ERROR - BibTeX subsystem: C:\Users\stasv\AppData\Local\Temp\biber_tmp_AxzT\a9e03cb3043b9e2c02591da84105bb68_14016.utf8, line 24, syntax error: found "annotation", expected end of entry ("}" or ")") (skipping to next "@")
+[3973] Biber.pm:130> WARN - Duplicate entry key: 'Trudeau1993' in file 'Contents/biblio/biblio.bib', skipping ...
+[3974] Biber.pm:130> WARN - Duplicate entry key: 'Gribova2015a' in file 'Contents/biblio/biblio.bib', skipping ...
+[3974] Biber.pm:130> WARN - Duplicate entry key: 'Ivashenko2015' in file 'Contents/biblio/biblio.bib', skipping ...
+[3974] Biber.pm:130> WARN - Duplicate entry key: 'Martynov1984' in file 'Contents/biblio/biblio.bib', skipping ...
+[3974] Biber.pm:130> WARN - legacy year field 'Oct 2016.' in entry 'gastelvecchi2016' is not an integer - this will probably not sort properly.
+[3974] Biber.pm:130> WARN - legacy month field 'Sep' in entry 'Diskrete_Math' is not an integer - this will probably not sort properly.
+[3974] Biber.pm:130> WARN - legacy month field 'Sep' in entry 'Neo4j' is not an integer - this will probably not sort properly.
+[3975] Biber.pm:130> WARN - legacy month field 'Sep' in entry 'ArangoDB' is not an integer - this will probably not sort properly.
+[3975] Biber.pm:130> WARN - legacy month field 'Sep' in entry 'OrientDB' is not an integer - this will probably not sort properly.
+[3975] Biber.pm:130> WARN - legacy month field 'Sep' in entry 'Grakn' is not an integer - this will probably not sort properly.
+[3975] Biber.pm:130> WARN - legacy month field 'Sep' in entry 'Virtuoso' is not an integer - this will probably not sort properly.
+[3975] Biber.pm:130> WARN - legacy month field 'Sep' in entry 'Sesame' is not an integer - this will probably not sort properly.
+[3975] Biber.pm:130> WARN - legacy month field 'Sep' in entry 'sc_web' is not an integer - this will probably not sort properly.
+[3975] Biber.pm:132> INFO - WARNINGS: 13
+[3975] Biber.pm:135> INFO - ERRORS: 1
