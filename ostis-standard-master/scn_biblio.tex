@@ -1,0 +1,51 @@
+
+\usepackage{expl3}
+\usepackage{etoolbox}
+\usepackage[
+style=ieee,
+citestyle=authoryear,
+maxnames=3
+]{biblatex}
+
+
+\ExplSyntaxOn
+
+\clist_new:N \scncitenames
+\prop_new:N \scncitelist
+
+\NewDocumentCommand \addcite {m m} 
+{
+    \prop_if_in:NnTF \scncitelist {#1}{}{
+        \prop_gput:NnV \scncitelist {#1}{#2}
+        \clist_gput_right:Nn \scncitenames {#1}
+    }
+}
+\NewDocumentCommand \printscnbiblio {} 
+{
+    \clist_sort:Nn \scncitenames
+    {
+        \ifnumcomp{\pdfstrcmp{##1}{##2}}{>}{0}
+        { \sort_return_swapped: }
+        { \sort_return_same: }
+    }
+    \clist_map_inline:Nn \scncitenames {\prop_item:Nn \scncitelist {##1}}
+}
+\ExplSyntaxOff
+
+\newcommand{\scncite}[1]{
+\scncitecommon{#1}{\cite{#1}}
+}
+
+\newcommand{\scncitecommon}[2]{
+\hspace{-0.6em}\textit{#2}\hspace{-0.8em}
+\addcite{#2}{\printscncite{#1}{#2}}
+}
+
+\newcommand{\printscncite}[2]{
+\scnheader{#2}
+\scntext{библиографическая ссылка}{\fullcite{#1}}
+}
+
+\newcommand{\scnciteannotation}[1]{
+	\scntext{аннотация}{\citefield{#1}{annotation}}
+}
