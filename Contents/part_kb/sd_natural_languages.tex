@@ -1,0 +1,373 @@
+\begin{SCn}
+
+\scnsectionheader{\currentname}
+
+\scnstartsubstruct
+
+\scnrelfromlist{соавтор}{Гордей А.Н.;Никифоров С.А.;Бобёр Е.С.;Святощик М.И.}
+
+\scnheader{Предметная область естественных языков}
+\scniselement{предметная область}
+\scnsdmainclasssingle{язык}
+\scnsdclass{плановый язык;язык общения;лексема;номинативная единица;комбинаторный вариант лексемы;естественный язык;тайген;ёген}
+\scnsdrelation{морфологическая парадигма*;член предложения\scnrolesign}
+
+\scnheader{язык}
+\scnsubdividing{естественный язык\\
+	\scnaddlevel{1}
+	\scnexplanation{Естественный язык представляет собой язык, который не был создан целенаправленно}
+	\scnaddlevel{-1}
+;искусственный язык\\
+	\scnaddlevel{1}
+	\scnexplanation{Искусственный язык представляет собой язык, специально разработанный для достижения определённых целей}
+	\scnhaselement{Эсперанто}
+	\scnhaselement{Python}
+	\scnsuperset{сконструированный язык}
+	\scnaddlevel{1}
+	\scnexplanation{Сконструированный язык представляет собой искусственный язык, предназначенный для общения людей}
+	\scnhaselement{Эсперанто}
+	\scnaddlevel{-1}
+	\scnaddlevel{-1}
+}
+\scnsuperset{международный язык}
+	\scnaddlevel{1}
+	\scnexplanation{Международный язык представляет собой естественный или искусственный язык, использующийся для общения людей разных из стран}
+	\scnhaselement{Английский язык}
+	\scnhaselement{Русский язык}
+	\scnaddlevel{-1}
+
+\scnheader{плановый язык}
+\scnreltoset{пересечение}{сконструированный язык;международный язык}
+
+\scnheader{язык общения}
+\scnreltoset{объединение}{естественный язык;сконструированный язык}
+\scnhaselement{Английский язык}
+\scnhaselement{Русский язык}
+\scnhaselement{Эсперанто}
+\scnreltoset{объединение}{корневой язык\\
+	\scnaddlevel{1}
+	\scnexplanation{Корневой язык представляет собой язык, для которого характерно полное отсутствие словоизменения и наличие грамматической значимости порядка слов, состоящих только из корня.}
+	\scnhaselement{Английский язык}
+	\scnaddlevel{-1}
+;агглютинативный язык\\
+	\scnaddlevel{1}
+	\scnexplanation{Агглютинативный язык характеризуется развитой системой употребления суффиксов, приставок, добавляемых к неизменяемой основе слова, которые используются для выражения категорий числа, падежа, рода и др.}
+	\scnhaselement{Английский язык}
+	\scnaddlevel{-1}
+;флективный язык\\
+	\scnaddlevel{1}
+	\scnexplanation{Для флективного языка характерно развитое употребление окончаний для выражения категорий рода, числа, падежа, сложная система склонения глаголов, чередование гласных в корне, а также строгое различение частей речи.}
+	\scnhaselement{Русский язык}
+	\scnaddlevel{-1}
+;профлективный язык\\
+	\scnaddlevel{1}
+	\scnexplanation{Для профлективного языка характерны агглютинация (в случае именного словоизменения), флексия и чередование гласных (аблаут)(в случае глагольного словоизменения).}
+	\scnaddlevel{-1}
+}
+
+\scnheader{лексема}
+\scnsubset{файл}
+\scnexplanation{\textit{Лексема} -- тайген или ёген конкретного естественного языка.}
+	\scnaddlevel{1}
+	\scnrelfrom{источник}{\scncite{Hardzei2005}}
+	\scnaddlevel{-1}
+	
+\scnheader{номинативная единица}
+\scnsubset{файл}
+\scnexplanation{\textit{Номинативная единица} -- устойчивая последовательность комбинáторных вариантов лексем, в которой один вариант лексемы (модификатор) определяет другой (актуализатор), например: ‘записная книжка’, ‘бежать галопом’.}
+	\scnaddlevel{1}
+	\scnrelfrom{источник}{\scncite{Hardzei2005}}
+	\scnaddlevel{-1}
+	
+\scnheader{комбинаторный вариант лексемы}
+\scnsubset{файл}
+\scnexplanation{\textit{Комбинáторный вариант лексемы } -- вариант лексемы в упорядоченном наборе её вариантов (парадигме).}
+	\scnaddlevel{1}
+	\scnrelfrom{источник}{\scncite{Hardzei2007}}
+	\scnaddlevel{-1}
+
+
+\scnheader{морфологическая парадигма*}
+\scniselement{квазибинарное отношение}
+\scnexplanation{\textit{Морфологическая парадигма*} -- квазибинарное отношение, связывающее лексему с её комбинáторными вариантами.}
+\scnrelfrom{первый домен}{словоформа}
+\scnrelfrom{второй домен}{лексема}
+
+\scnheader{естественный язык}
+\scnsubdividing{
+	часть языка\\
+	\scnaddlevel{1}
+	\scnsubdividing{тайген;ёген}
+	\scnaddlevel{-1}
+	;знак алфавита синтаксиса\\
+		\scnaddlevel{1}
+		\scnexplanation{\textit{Знаки алфавита синтаксиса} -- вспомогательные средства синтаксиса (на макроуровне -- предлоги, послелоги, союзы, частицы и др., на микроуровне -- флексии, префиксы, постфиксы, инфиксы и др.), служащие для соединения составных частей языковых структур и образования морфологических парадигм.}
+			\scnaddlevel{1}
+			\scnrelfrom{источник}{\scncite{Hardzei2005}}
+			\scnaddlevel{-1}
+		\scnaddlevel{-1}
+}
+
+\scnheader{тайген}
+\scnexplanation{\textit{Тайген} -- часть языка, обозначающая индивида.}
+	\scnaddlevel{1}
+	\scnrelfrom{источник}{\scncite{Hardzei2006}}
+	\scnrelfrom{источник}{\scncite{Hardzei2015}}
+	\scnaddlevel{-1}
+\scnsubdividing{
+	развёрнутый тайген\\
+	\scnaddlevel{1}
+	\scnsubdividing{
+		составной тайген\\
+		;сложный тайген\\
+	}   
+	\scnaddlevel{-1}
+	;свёрнутый тайген\\
+	\scnaddlevel{1}
+	\scnsubdividing{
+		сокращённый тайген\\
+		;сжатый тайген\\
+			\scnaddlevel{1}
+			\scnsubdividing{
+				информационный тайген\\
+				\scnaddlevel{1}
+				\scnexplanation{\textit{Информационный тайген} -- тайген, обозначающий индивида в информационном фрагменте модели мира.}
+					\scnaddlevel{1}
+					\scnrelfrom{источник}{\scncite{Hardzei2006}}
+					\scnrelfrom{источник}{\scncite{Hardzei2015}}
+					\scnaddlevel{-1}
+				\scnaddlevel{-1}
+				;физический тайген\\
+				\scnaddlevel{1}
+				\scnexplanation{\textit{Физический тайген} -- тайген, обозначающий индивида в физическом фрагменте модели мира. }
+					\scnaddlevel{1}
+					\scnrelfrom{источник}{\scncite{Hardzei2006}}
+					\scnrelfrom{источник}{\scncite{Hardzei2015}}
+					\scnaddlevel{-1}
+				\scnsubdividing{
+					постоянный тайген\\
+					\scnaddlevel{1}
+					\scnexplanation{\textit{Постоянный тайген} -- физический тайген, обозначающий постоянного индивида.}
+						\scnaddlevel{1}
+						\scnrelfrom{источник}{\scncite{Hardzei2006}}
+						\scnrelfrom{источник}{\scncite{Hardzei2015}}
+						\scnaddlevel{-1}
+					\scnaddlevel{-1}
+					;переменный тайген\\
+					\scnaddlevel{1}
+					\scnexplanation{\textit{Переменный тайген} -- физический тайген, обозначающий переменного индивида.}
+						\scnaddlevel{1}
+						\scnrelfrom{источник}{\scncite{Hardzei2006}}
+						\scnrelfrom{источник}{\scncite{Hardzei2015}}
+						\scnaddlevel{-1}
+					\scnaddlevel{-1}
+				}
+				\scnsubdividing{
+					качественный тайген
+					;количественный тайген\\
+				}
+				\scnsubdividing{
+					одноместный тайген
+					;многоместный тайген\\
+					\scnaddlevel{1}
+					\scnsuperset{интенсивный тайген}
+					\scnsuperset{экстенсивный тайген}
+					\scnaddlevel{-1}	
+				}
+			}
+			\scnaddlevel{-1}
+	}
+	\scnaddlevel{-1}
+}
+\scnaddlevel{-1}	
+
+\scnheader{ёген}
+\scnexplanation{\textit{Ёген} -- часть языка, обозначающая признак индивида.}
+	\scnaddlevel{1}
+	\scnrelfrom{источник}{\scncite{Hardzei2006}}
+	\scnrelfrom{источник}{\scncite{Hardzei2015}}
+	\scnaddlevel{-1}
+\scnsubdividing{
+	развёрнутый ёген\\
+	\scnaddlevel{1}
+	\scnsubdividing{
+		составной ёген
+		;сложный ёген
+	}
+	\scnaddlevel{-1}
+	;свёрнутый ёген\\
+	\scnaddlevel{1}
+	\scnsubdividing{
+		сокращённый ёген\\
+			\scnaddlevel{1}
+			\scnsubdividing{
+				информационный ёген\\
+					\scnaddlevel{1}
+					\scnexplanation{\textit{Информационный ёген} -- еген, обозначающий признак индивида в информационном фрагменте модели мира.}
+						\scnaddlevel{1}
+						\scnrelfrom{источник}{\scncite{Hardzei2006}}
+						\scnrelfrom{источник}{\scncite{Hardzei2007a}}
+						\scnaddlevel{-1}
+					\scnaddlevel{-1}
+				;физический ёген\\
+				\scnaddlevel{1}
+				\scnexplanation{\textit{Физический ёген} -- еген, обозначающий признак индивида в физическом фрагменте модели мира.}
+					\scnaddlevel{1}
+					\scnrelfrom{источник}{\scncite{Hardzei2006}}
+					\scnrelfrom{источник}{\scncite{Hardzei2007a}}
+					\scnaddlevel{-1}
+				\scnsubdividing{
+					постоянный ёген\\
+						\scnaddlevel{1}
+						\scnexplanation{\textit{Постоянный ёген} - физический ёген, обозначающий постоянный признак индивида.}
+							\scnaddlevel{1}
+							\scnrelfrom{источник}{\scncite{Hardzei2006}}
+							\scnrelfrom{источник}{\scncite{Hardzei2007a}}
+							\scnaddlevel{-1}
+						\scnaddlevel{-1}
+					;переменный ёген\\
+						\scnaddlevel{1}
+						\scnexplanation{\textit{Переменный ёген} -- физический ёген, обозначающий переменный признак индивида.}
+							\scnaddlevel{1}
+							\scnrelfrom{источник}{\scncite{Hardzei2006}}
+							\scnrelfrom{источник}{\scncite{Hardzei2007a}}
+							\scnaddlevel{-1}
+						\scnaddlevel{-1}
+				}
+				\scnsubdividing{
+					качественный ёген
+					;количественный ёген
+				}
+				\scnsubdividing{
+					одноместный ёген
+					;многоместный ёген\\
+						\scnaddlevel{1}
+						\scnsubdividing{
+							интенсивный ёген
+							;экстенсивный ёген
+						}
+						\scnaddlevel{-1}
+				}
+				\scnaddlevel{-1}
+			}
+			\scnaddlevel{-1}
+		;сжатый ёген
+	}
+	\scnaddlevel{-1}
+}
+
+\scnheader{член предложения\scnrolesign}
+\scniselement{ролевое отношение}
+\scnexplanation{\textit{Член предложения\scnrolesign} -- это отношение, связывающее декомпозицию текста с файлом, содержимое которого (часть языка) играет в декомпозируемом тексте определенную синтаксическую роль.}
+	\scnaddlevel{1}
+	\scnrelfrom{источник}{\scncite{Hardzei2005}}
+	\scnaddlevel{-1}
+\scnsubdividing{
+	главный член предложения\scnrolesign\\
+	\scnaddlevel{1}
+	\scnsubdividing{
+		подлежащее\scnrolesign\\
+			\scnaddlevel{1}
+			\scnexplanation{\textit{Подлежащее\scnrolesign} -- это одно из главных ролевых отношений, связывающее декомпозицию текста с файлом, содержимое которого обозначает исходный пункт описания события, выбранный наблюдателем. }
+				\scnaddlevel{1}
+				\scnrelfrom{источник}{\scncite{Hardzei2020}}
+				\scnaddlevel{-1}
+			\scnaddlevel{-1}
+		;сказуемое\scnrolesign\\
+			\scnaddlevel{1}
+			\scnexplanation{\textit{Сказуемое\scnrolesign} -- это одно из главных ролевых отношений, связывающее декомпозицию текста с файлом, содержимое которого обозначает отображение наблюдателем исходного пункта описания события в конечный.}
+				\scnaddlevel{1}
+				\scnrelfrom{источник}{\scncite{Hardzei2020}}
+				\scnaddlevel{-1}
+			\scnaddlevel{-1}
+		;прямое дополнение\scnrolesign\\
+			\scnaddlevel{1}
+			\scnexplanation{\textit{Прямое дополнение\scnrolesign} -- это одно из главных ролевых отношений, связывающее декомпозицию текста с файлом, содержимое которого обозначает конечный пункт описания события, выбранный наблюдателем.}
+				\scnaddlevel{1}
+				\scnrelfrom{источник}{\scncite{Hardzei2020}}
+				\scnaddlevel{-1}
+			\scnaddlevel{-1}
+	}
+	\scnaddlevel{-1}
+	;второстепенный член предложения\scnrolesign\\
+	\scnaddlevel{1}
+	\scnsubdividing{
+		косвенное дополнение\scnrolesign
+		;определение\scnrolesign\\
+			\scnaddlevel{1}
+			\scnexplanation{\textit{Определение\scnrolesign} -- это одно из второстепенных ролевых отношений, связывающее декомпозицию текста с файлом, содержимое которого обозначает модификацию подлежащего, дополнения, обстоятельства места и времени.}
+				\scnaddlevel{1}
+				\scnrelfrom{источник}{\scncite{Hardzei2007a}}
+				\scnrelfrom{источник}{\scncite{Hardzei2017a}}
+				\scnrelfrom{источник}{\scncite{Hardzei2007b}}
+				\scnaddlevel{-1}
+			\scnaddlevel{-1}
+		;обстоятельство\scnrolesign\\
+			\scnaddlevel{1}
+			\scnexplanation{\textit{Обстоятельство\scnrolesign} -- это одно из второстепенных ролевых отношений, связывающее декомпозицию текста с файлом, содержимое которого обозначает либо модификацию, либо локализацию сказуемого.}
+				\scnaddlevel{1}
+				\scnrelfrom{источник}{\scncite{Hardzei2007a}}
+				\scnrelfrom{источник}{\scncite{Hardzei2017a}}
+				\scnrelfrom{источник}{\scncite{Hardzei2007b}}
+				\scnaddlevel{-1}
+			\scnsubdividing{
+				обстоятельство степени\scnrolesign\\
+					\scnaddlevel{1}
+					\scnexplanation{Обстоятельство степени -- обстоятельство, обозначающее модификацию сказуемого.}
+					\scnaddlevel{-1}
+				;обстоятельство образа действия\scnrolesign\\
+					\scnaddlevel{1}
+					\scnexplanation{Обстоятельство образа действия -- обстоятельство, обозначающее модификацию сказуемого.}
+					\scnaddlevel{-1}
+				;обстоятельство места\scnrolesign\\
+				\scnaddlevel{1}
+				\scnexplanation{Обстоятельства места -- обстоятельство, обозначающее пространственную локализацию сказуемого.}
+				\scnsubdividing{
+					динамическое обстоятельство места\scnrolesign;
+					статическое обстоятельство места\scnrolesign
+				}
+				\scnaddlevel{-1}
+				;обстоятельство времени\scnrolesign\\
+				\scnaddlevel{1}
+				\scnexplanation{Обстоятельство времени -- обстоятельство, обозначающее временную локализацию сказуемого.}
+				\scnsubdividing{
+					динамическое обстоятельство времени\scnrolesign;
+					статическое обстоятельство времени\scnrolesign
+				}
+				\scnaddlevel{-1}
+			}
+			\scnaddlevel{-1}
+	}
+	\scnaddlevel{-1}
+}
+
+\bigskip
+\bigskip
+\scnheader{Пример sc.g-текста, описывающего лексему}
+\scniselement{sc.g-текст}
+\scnexplanation{Здесь представлено описание лексемы с указанием ее принадлежности определённой части речи. Также описание содержит морфологическую парадигму данной лексемы, связывающую ее с ее словоформами.}
+\scneqscg{figures/sd_natural_languages/lexeme_example.png}
+
+\scnheader{Пример этапов разбора текста естественного языка}
+
+\scnstartsubstruct
+	\scnaddlevel{1}
+	\scnfilescg{figures/sd_natural_languages/nl_text.png}
+	\scnexplanation{с точки зрения ostis-системы, любой естественно-языкой текст является \textit{файлом.}}
+	\scnrelfrom{лексическая структура}{\scnfilescg{figures/sd_natural_languages/nl_lexical.png}}
+		\scnaddlevel{1}
+		\scnexplanation{Данная конструкция описывает декомпозицию исходного текста на фрагменты с указанием их принадлежности определённой \textit{номинативной единице} или \textit{знаку алфавита синтаксиса}.}
+		\scnrelfrom{синтаксическая структура}{\scnfilescg{figures/sd_natural_languages/nl_synactical.png}}
+%			\scnaddlevel{1}
+%			\bigskip
+%			\bigskip
+%			\scnexplanation{Здесь приведена только частью синтаксической структуры. Оставшаяся часть записывается аналогично.}
+%			\scnaddlevel{-1}
+		\scnaddlevel{-1}
+	\scnaddlevel{-1}
+\scnendstruct
+
+%\bigskip
+\scnendstruct \scnendcurrentsectioncomment
+
+\end{SCn}
