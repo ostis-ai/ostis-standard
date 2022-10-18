@@ -1,0 +1,53 @@
+\newcommand{\scnidtfdef}[1]{%
+  \scnidtftext{определение}{#1}
+}
+
+\newcommand{\scnidtfexp}[1]{%
+  \scnidtftext{пояснение}{#1}
+}
+
+\newcommand{\scncomment}[1]{%
+  \scntext{комментарий}{#1}
+}
+
+\newcommand{\scnexplanation}[1]{%
+  \scntext{пояснение}{#1}
+}
+
+\newcommand{\scnnote}[1]{%
+  \scntext{примечание}{#1}
+}
+
+\newcommand{\scndefinition}[1]{%
+  \scntext{определение}{#1}
+}
+
+\newcommand{\scneditor}[1]{%
+  \scnrelfrom{автор}{#1}
+}
+
+\newcommand{\scnmonographychapter}[1]{%
+  \scnrelfrom{глава в монографии}{#1}
+}
+
+\newenvironment{scnsdmainclass}{%
+  \begin{scnhaselementrolelist}{максимальный класс объектов исследования}
+}{%
+  \end{scnhaselementrolelist}
+}
+
+\newcommand{\scnsdmainclasssingle}[1]{%
+  \scnhaselementrole{максимальный класс объектов исследования}{#1}
+}
+
+\newenvironment{scnsdclass}{%
+  \begin{scnhaselementrolelist}{класс объектов исследования}
+}{%
+  \end{scnhaselementrolelist}
+}
+
+\newenvironment{scnsdrelation}{%
+  \begin{scnhaselementrolelist}{исследуемое отношение}
+}{%
+  \end{scnhaselementrolelist}
+}
