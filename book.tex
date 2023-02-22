@@ -7,46 +7,55 @@
 %%%%%%%%%%%%%%%% Springer-Verlag %%%%%%%%%%%%%%%%%%%%%%%%%%
  
 % RECOMMENDED %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\documentclass[graybox,envcountchap,sectrefs]{svmono}
+% \documentclass[graybox,envcountchap,sectrefs]{svmono}
 
-\usepackage{mathptmx}
-\usepackage{helvet}
-\usepackage{courier}
-%
-\usepackage{type1cm}         
-\usepackage{setspace}
+\makeatletter
+\def\input@path{{scn//}}
+\makeatother
 
-\usepackage{xparse} 
-\usepackage[table]{xcolor}
-\usepackage{enumitem} 
-\usepackage{mathtools}
-\usepackage{ragged2e}
-\usepackage{float}
-\usepackage{amssymb}
-\usepackage[]{algorithm2e}
-\usepackage{algorithm}
-\usepackage{titlesec}
-\usepackage[tracking=true]{microtype}
-\usepackage{changepage}
-\usepackage{trimspaces}
-\usepackage{bm}
-\usepackage{datetime}
-\usepackage{suffix}
-\usepackage{nameref}
-\usepackage[framemethod=TikZ]{mdframed}
-\usepackage[normalem]{ulem}
-\usepackage{longtable}
+\documentclass{scndocument}
+
+% \usepackage{mathptmx}
+% \usepackage{helvet}
+% \usepackage{courier}
+% %
+% \usepackage{type1cm}         
+% \usepackage{setspace}
+
+% \usepackage{xparse} 
+% \usepackage[table]{xcolor}
+% \usepackage{enumitem} 
+% \usepackage{mathtools}
+% \usepackage{ragged2e}
+% \usepackage{float}
+% \usepackage{amssymb}
+% \usepackage[algo2e]{algorithm2e}
+% \usepackage{algorithm}
+% \usepackage{titlesec}
+% \usepackage[tracking=true]{microtype}
+% \usepackage{changepage}
+% \usepackage{trimspaces}
+% \usepackage{bm}
+% \usepackage{datetime}
+% \usepackage{suffix}
+ \usepackage{nameref}
+% \usepackage[framemethod=TikZ]{mdframed}
+ \usepackage[normalem]{ulem}
+% \usepackage{longtable}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+% \usepackage{amsmath}
 
-\renewcommand{\ULdepth}{1.8pt}
+\usepackage{scn}
 
-\usepackage{makeidx}         % allows index generation
-\usepackage{graphicx}        % standard LaTeX graphics tool
-                             % when including figure files
-\graphicspath{{Figures/}}
-\usepackage{multicol}        % used for the two-column index
-\usepackage[bottom]{footmisc}% places footnotes at page bottom
+% \renewcommand{\ULdepth}{1.8pt}
+
+% \usepackage{makeidx}         % allows index generation
+% \usepackage{graphicx}        % standard LaTeX graphics tool
+%                              % when including figure files
+% \graphicspath{{Figures/}}
+% \usepackage{multicol}        % used for the two-column index
+% \usepackage[bottom]{footmisc}% places footnotes at page bottom
 
 \usepackage[english,russian]{babel}
 
@@ -82,26 +91,28 @@
 %	\fancyfoot[C]{\thepage}}
 %\pagestyle{plain}
 
-\usepackage{geometry}
-\geometry{
-  a4paper,
-  left=20mm,
-  right=20mm,
-  top=20mm,
-  bottom=15mm,
-  %textwidth=117mm,
-  %textheight=191mm,
-  heightrounded, % <- I recommend this
-  hratio=1:1,
-  vratio=1:1,
-}
+% \usepackage{geometry}
+% \geometry{
+%   a4paper,
+%   left=20mm,
+%   right=20mm,
+%   top=20mm,
+%   bottom=15mm,
+%   %textwidth=117mm,
+%   %textheight=191mm,
+%   heightrounded, % <- I recommend this
+%   hratio=1:1,
+%   vratio=1:1,
+% }
 
-\input{scn}
-\input{scn_biblio}
-%\input{scn_alias}
+%\input{scn}
+% \input{scn_biblio}
+\input{scn_alias}
 \addbibresource{Contents/biblio/biblio.bib}
 
 \begin{document}
+
+\pagenumbering{arabic}
 
 \selectlanguage{russian}
 \DeactivateBG
@@ -122,23 +133,23 @@
 \setcounter{page}{3}
 
 \ActivateBG
-\input{Contents/foreword_1}
-\input{Contents/foreword_2}
+ %\input{Contents/foreword_1}
+ \input{Contents/foreword_2}
 
-\input{Contents/title_part}
+ \input{Contents/title_part}
 
-\include{Contents/part_intro}
-\include{Contents/part_kb}
-\include{Contents/part_ps}
-\include{Contents/part_ui}
-\include{Contents/part_methods_tools}
-\include{Contents/part_platform}
-\include{Contents/part_support}
-\include{Contents/part_ecosystem}
+ \include{Contents/part_intro}
+ \include{Contents/part_kb}
+ \include{Contents/part_ps}
+ \include{Contents/part_ui}
+ \include{Contents/part_methods_tools}
+ \include{Contents/part_platform}
+ \include{Contents/part_support}
+ \include{Contents/part_ecosystem}
 
-\include{Contents/bibliography}
+ \include{Contents/bibliography}
 
-\backmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \backmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\printindex
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
