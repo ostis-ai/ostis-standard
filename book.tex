@@ -5,13 +5,13 @@
 % Use this file as a template for your own input.
 %
 %%%%%%%%%%%%%%%% Springer-Verlag %%%%%%%%%%%%%%%%%%%%%%%%%%
- 
+
 % RECOMMENDED %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % \documentclass[graybox,envcountchap,sectrefs]{svmono}
 
-\makeatletter
-\def\input@path{{scn//}}
-\makeatother
+% \makeatletter
+% \def\input@path{{scn//}}
+% \makeatother
 
 \documentclass{scndocument}
 
@@ -38,12 +38,12 @@
 % \usepackage{bm}
 % \usepackage{datetime}
 % \usepackage{suffix}
- \usepackage{nameref}
+\usepackage{nameref}
 % \usepackage[framemethod=TikZ]{mdframed}
- \usepackage[normalem]{ulem}
+\usepackage[normalem]{ulem}
 % \usepackage{longtable}
 \usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
+\usepackage[T2A]{fontenc}
 % \usepackage{amsmath}
 
 \usepackage{scn}
@@ -57,7 +57,7 @@
 % \usepackage{multicol}        % used for the two-column index
 % \usepackage[bottom]{footmisc}% places footnotes at page bottom
 
-\usepackage[english,russian]{babel}
+\usepackage[english,main=russian]{babel}
 
 \babelhyphenation{иден-ти-фи-ка-то-ры}
 
@@ -68,16 +68,15 @@
 \makeatletter
 \input{t2atempora-tlf.fd}
 \DeclareFontShape{T2A}{Tempora-TLF}{m}{sc}{
-         <-> ssub * Tempora-TLF/m/n
+    <-> ssub * Tempora-TLF/m/n
 }{}
-
 
 % see the list of further useful packages
 % in the Reference Guide
 
-\makeindex             % used for the subject index
-                       % please use the style svind.ist with
-                       % your makeindex program
+\makeindex	       % used for the subject index
+% please use the style svind.ist with
+% your makeindex program
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -117,14 +116,17 @@
 \selectlanguage{russian}
 \DeactivateBG
 \title{\centering
-Стандарт\\ 
-\textls[90]{открытой ~технологии}\\ онтологического проектирования,\\ \textls[55]{производства ~и ~эксплуатации}\\ \textls[28]{семантически совместимых гибридных}\\ интеллектуальных компьютерных систем\\
-\bigskip
-\bigskip
-{\LARGE Стандарт Технологии OSTIS -- Open Semantic Technology for Intelligent Systems}\\
-\bigskip
-\bigskip
-{\Large Издание второе, исправленное и дополненное}}
+    Стандарт\\
+    \textls[90]{открытой ~технологии}\\ онтологического проектирования,\\
+    \textls[55]{производства ~и ~эксплуатации}\\ \textls[28]{семантически
+        совместимых гибридных}\\ интеллектуальных компьютерных систем\\
+    \bigskip
+    \bigskip
+    {\LARGE Стандарт Технологии OSTIS -- Open Semantic Technology for Intelligent
+        Systems}\\
+    \bigskip
+    \bigskip
+    {\Large Издание второе, исправленное и дополненное}}
 \maketitle
 
 %\mainmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -133,21 +135,21 @@
 \setcounter{page}{3}
 
 \ActivateBG
- %\input{Contents/foreword_1}
- \input{Contents/foreword_2}
+%\input{Contents/foreword_1}
+\input{Contents/foreword_2}
 
- \input{Contents/title_part}
+\input{Contents/title_part}
 
- \include{Contents/part_intro}
- \include{Contents/part_kb}
- \include{Contents/part_ps}
- \include{Contents/part_ui}
- \include{Contents/part_methods_tools}
- \include{Contents/part_platform}
- \include{Contents/part_support}
- \include{Contents/part_ecosystem}
+\include{Contents/part_intro}
+\include{Contents/part_kb}
+\include{Contents/part_ps}
+\include{Contents/part_ui}
+\include{Contents/part_methods_tools}
+\include{Contents/part_platform}
+\include{Contents/part_support}
+\include{Contents/part_ecosystem}
 
- \include{Contents/bibliography}
+\include{Contents/bibliography}
 
 % \backmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\printindex
@@ -155,8 +157,3 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \end{document}
-
-
-
-
-
