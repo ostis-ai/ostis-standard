@@ -1,127 +1,123 @@
-\scseparatedfragment[\scnmonographychapter{Глава 7.3. Метасистема OSTIS и Стандарт OSTIS}]{Титульная спецификация Стандарта OSTIS}
-
+\scseparatedfragment{Титульная спецификация Стандарта OSTIS}
 \begin{SCn}
+    \scnsectionheader{\currentname}
 
-\scnsectionheader{\currentname}
+    \begin{scnsubstruct}
+        \scnrelto{титульная спецификация}{Стандарт OSTIS}
+        \scnrelfrom{оглавление}{Оглавление Стандарта OSTIS}
+        \scnrelfrom{общая структура}{Общая Структура Стандарта OSTIS}
+        \scnrelfrom{система ключевых знаков}{Система ключевых знаков Стандарта OSTIS}
+        \scnrelfrom{редакционная коллегия}{Редакционная коллегия Стандарта OSTIS}
+        \scnrelfrom{авторский коллектив}{Авторский коллектив Стандарта OSTIS}
+        \scnrelfrom{направления развития}{Направления развития Стандарта OSTIS}
+        \scnrelfrom{правила построения}{Правила построения Стандарта OSTIS}
+        \scnidtf{правила построения*(Стандарт OSTIS)}
+        \scniselement{sc-выражение}
+        \scnrelfrom{правила организации развития}{Правила организации развития
+            Стандарта OSTIS}
+        \begin{scnrelfromset}{декомпозиция}
+            \scnitem{Правила организации развития исходного текста Стандарта OSTIS}
+            \scnitem{Правила организации развития Стандарта OSTIS на уровне его
+                внутреннего представления в памяти Метасистемы IMS.ostis}
+        \end{scnrelfromset}
+        \scnsourcecommentinline{Вычитать то, что дальше}
 
-\scnstartsubstruct
+        \scnfilelong{В титульную спецификацию \textit{Стандарта OSTIS} должны быть
+            включены ссылки на все разделы и фрагменты этих разделов,
+            где описываются правила построения и оформления всех видов информационных
+            конструкций, входящих в состав \textit{Стандарта OSTIS}
+            (внешних идентификаторов знаков, входящих в состав \textit{Стандарта OSTIS},
+            спецификаций различного вида cущностей, описываемых в \textit{Стандарте OSTIS})
 
-\scnrelto{титульная спецификация}{Стандарт OSTIS}
-\scnaddlevel{1}
-	\scnrelfrom{оглавление}{Оглавление Стандарта OSTIS}
-	\scnrelfrom{общая структура}{Общая Структура Стандарта OSTIS}
-	\scnrelfrom{система ключевых знаков}{Система ключевых знаков Стандарта OSTIS}
-	\scnrelfrom{редакционная коллегия}{Редакционная коллегия Стандарта OSTIS}
-	\scnrelfrom{авторский коллектив}{Авторский коллектив Стандарта OSTIS}
-	\scnrelfrom{направления развития}{Направления развития Стандарта OSTIS}
-	\scnrelfrom{правила построения}{Правила построения Стандарта OSTIS}
-	\scnaddlevel{1}
-		\scnidtf{правила построения*(Стандарт OSTIS)}
-		\scnaddlevel{1}
-			\scniselement{sc-выражение}
-		\scnaddlevel{-1}
-	\scnaddlevel{-1}
-	\scnrelfrom{правила организации развития}{Правила организации развития Стандарта OSTIS}
-	\scnaddlevel{1}	
-		\scnrelfromset{декомпозиция}{Правила организации развития исходного текста Стандарта OSTIS;Правила организации развития Стандарта OSTIS на уровне его внутреннего представления в памяти Метасистемы IMS.ostis}
-\scnaddlevel{-2}
+            В \textit{баз знаний ostis-систем} задаются правила унифицированного построения
+            (представления, оформления) следующих видов \textit{информационных
+                конструкций}:
+            \begin{scnitemize}
+                \item{\textit{sc-идентификаторов} -- внешних идентификаторов
+                            \textit{sc-элементов} следующих классов:
+                            \begin{scnitemizeii}
+                                \item{\textit{sc-элементов} (имеются в виду общие правила идентификации
+                                            любых sc-элементов) -- смотрите в разделе ``\nameref{intro_idtf}}
+                                \item{\textit{sc-переменных, sc-констант}}
+                                \item{знаков материальных сущностей
+                                            \begin{scnitemizeiii}
+                                                \item{знаков персон}
+                                                \item{знаков библиографических источников}
+                                            \end{scnitemizeiii}}
+                                \item{знаков множеств
+                                            \begin{scnitemizeiii}
+                                                \item{классов, понятий
+                                                            \begin{itemize}
+                                                                \item{отношений}
+                                                                \item{параметров}
+                                                                \item{структур}
+                                                                \item{знаний}
+                                                            \end{itemize}
+                                                      }
+                                            \end{scnitemizeiii}}
+                                \item{знаков файлов ostis-систем}
+                                \item{знаков sc-знаний баз знаний}
+                            \end{scnitemizeii}}
+                \item{\textit{sc-конструкций}}
+                \item{\textit{sc.g-конструкций}}
+                \item{\textit{sc.s-конструкций}}
+                \item{\textit{sc.n-конструкций}}
+                \item{базовых правил \textit{sc-спецификаций:}
+                            \begin{scnitemizeii}
+                                \item{понятий}
+                                \item{разделов баз знаний (титульные спецификации разделов)}
+                                \item{файлов ostis-систем}
+                                \item{библ. источников}
+                                \item{предметных областей}
+                            \end{scnitemizeii}}
+                \item{специализированная \textit{sc-спецификация}
+                            \begin{scnitemizeii}
+                                \item{информационная конструкция
+                                            \begin{scnitemizeiii}
+                                                \item{оглавление}
+                                                \item{система ключевых знаков}
+                                            \end{scnitemizeiii}}
+                                \item{понятий
+                                            \begin{scnitemizeiii}
+                                                \item{пояснение}
+                                                \item{определения}
+                                                \item{теоретико-множественная окрестность}
+                                                \item{семейство утверждений}
+                                            \end{scnitemizeiii}}
+                                \item{сегментов баз знаний (титульная спецификация)}
+                                \item{семейство разделов баз знаний}
+                            \end{scnitemizeii}}
+            \end{scnitemize}}
 
-\scnauthorcomment{Вычитать то, что дальше}		
+        \scnheader{Стандарт OSTIS-2021}
+        \scnidtf{Издание Документации Технологии OSTIS-2021}
+        \scnidtf{Первое издание (публикация) Внешнего представления Документации
+            Технологии OSTIS в виде книги}
+        \scniselement{публикация}
+        \scnidtf{библиографический источник}
+        \scniselement{официальная версия Стандарта OSTIS}
+        \scniselement{бумажное издание}
+        \scniselement{научное издание}
+        \scnrelfrom{рекомендация издания}{Совет БГУИР}
+        \begin{scnrelfromset}{рецензенты}
+            \scnitem{Курбацкий А.Н.}
+            \scnitem{ Дудкин А.А.}
+        \end{scnrelfromset}
+        \scnrelfrom{издательство}{Бестпринт}
+        \scniselement{\begin{scnsubstruct}\end{scnsubstruct}}
+        \scniselement{УДК}
+        \scniselement{параметр}
+        \scnrelfrom{Индекс УДК}{004.8}
+        \scnidtftext{ISBN}{978-985-7267-13-2}
 
-\scnfilelong{В титульную спецификацию \textit{Стандарта OSTIS} должны быть включены ссылки на все разделы и фрагменты этих разделов, где описываются правила построения и оформления всех видов информационных конструкций, входящих в состав \textit{Стандарта OSTIS} (внешних идентификаторов знаков, входящих в состав \textit{Стандарта OSTIS}, спецификаций различного вида cущностей, описываемых в \textit{Стандарте OSTIS})\\
-В \textit{баз знаний ostis-систем} задаются правила унифицированного построения (представления, оформления) следующих видов \textit{информационных конструкций}:
-\begin{scnitemize}
-	\item\textit{sc-идентификаторов} -- внешних идентификаторов \textit{sc-элементов} следующих классов:
-	\begin{itemize}
-		\item\textit{sc-элементов} (имеются в виду общие правила идентификации любых sc-элементов) -- смотрите в разделе ``\nameref{intro_idtf}''
-		\item\textit{sc-переменных, sc-констант}
-		\item знаков материальных сущностей
-		\begin{itemize}
-			\item знаков персон
-			\item знаков библиографических источников 
-		\end{itemize}
-		\item знаков множеств 
-		\begin{itemize}
-			\item классов, понятий
-			\begin{itemize}
-				\item отношений
-				\item параметров
-				\item структур
-				\begin{itemize}
-					\item знаний
-				\end{itemize}
-			\end{itemize}
-		\end{itemize}
-		\item знаков файлов ostis-систем
-		\item знаков sc-знаний баз знаний 
-	\end{itemize}
-	\item\textit{sc-конструкций}
-	\item\textit{sc.g-конструкций}
-	\item\textit{sc.s-конструкций}
-	\item\textit{sc.n-конструкций}
-	\item базовых правил \textit{sc-спецификаций:}
-	\begin{itemize}
-		\item понятий 
-		\item разделов баз знаний (титульные спецификации разделов)
-		\item файлов ostis-систем
-		\item библ. источников
-		\item предметных областей 	
-	\end{itemize}
-	\item специализированная \textit{sc-спецификация}
-	\begin{itemize}
-		\item информационная конструкция
-		\begin{itemize}
-			\item оглавление
-			\item система ключевых знаков	
-		\end{itemize}
-	\end{itemize}
-	\begin{itemize}
-		\item понятий
-		\begin{itemize}
-			\item пояснение
-			\item определения
-			\item теоретико-множественная окрестность
-			\item семейство утверждений	
-		\end{itemize}
-	\end{itemize}
-	\begin{itemize}
-		\item сегментов баз знаний (титульная спецификация)
-		\item семейство разделов баз знаний	
-	\end{itemize}
-\end{scnitemize}}
-
-\scnheader{Стандарт OSTIS-2021}
-\scnidtf{Издание Документации Технологии OSTIS-2021}
-\scnidtf{Первое издание (публикация) Внешнего представления Документации Технологии OSTIS в виде книги}
-\scniselement{публикация}
-\scnaddlevel{1}
-\scnidtf{библиографический источник}
-\scnaddlevel{-1}
-\scniselement{официальная версия Стандарта OSTIS}
-\scniselement{бумажное издание}
-\scniselement{научное издание}
-\scnrelfrom{рекомендация издания}{Совет БГУИР}
-\scnrelfromset{рецензенты}{Курбацкий А.Н.; Дудкин А.А.}
-\scnrelfrom{издательство}{Бестпринт}
-\scniselement{\scnstartsetlocal\scnendstructlocal}
-\scnaddlevel{1}
-\scniselement{УДК}
-\scnaddlevel{1}
-\scniselement{параметр}
-\scnaddlevel{-1}
-\scnrelfrom{Индекс УДК}{004.8}
-\scnaddlevel{-1}
-\scnidtftext{ISBN}{978-985-7267-13-2}
-
-\scnheader{Стандарт OSTIS-2022}
-\scnidtf{Издание Документации Технологии OSTIS-2022}
-\scnidtf{Второе издание (публикация) Внешнего представления Документации Технологии OSTIS в виде книги}
-\scniselement{публикация}
-\scniselement{официальная версия Стандарта OSTIS}
-\scniselement{бумажное издание}
-\scniselement{научное издание}
-
-\bigskip
-\scnendstruct \scninlinesourcecommentpar{Завершили Титульную спецификацию \textit{Стандарта OSTIS}}
-
+        \scnheader{Стандарт OSTIS-2022}
+        \scnidtf{Издание Документации Технологии OSTIS-2022}
+        \scnidtf{Второе издание (публикация) Внешнего представления Документации
+            Технологии OSTIS в виде книги}
+        \scniselement{публикация}
+        \scniselement{официальная версия Стандарта OSTIS}
+        \scniselement{бумажное издание}
+        \scniselement{научное издание}
+        \bigskip\end{scnsubstruct}
+    \scnsourcecommentinline{Завершили Титульную спецификацию Стандарта OSTIS}
 \end{SCn}
