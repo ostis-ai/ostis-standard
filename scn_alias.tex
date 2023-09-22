@@ -61,3 +61,15 @@
 }{%
   \end{scnrelfromset}
 }
+
+\newlist{textitemize}{itemize}{3}
+\setlist[textitemize,1]{labelsep=\tabsize-\bulletsize-0.5\bracketsize,leftmargin=\tabsize-0.5\bracketsize,before=\vspace{-0.5em},label=$\bullet$}
+\setlist[textitemize,2]{labelsep=\tabsize-\bulletsize,leftmargin=\tabsize,before=\vspace{-0.5em},label=$\bullet$}
+\setlist[textitemize,3]{labelsep=\tabsize-\bulletsize-0.5\bracketsize,leftmargin=\tabsize-0.5\bracketsize,before=\vspace{-0.5em},label=$\bullet$}
+
+\setlist[enumerate]{labelsep=\tabsize-0.7em,leftmargin=\tabsize,itemsep=-0.5em,before=\vspace{-0.5em}}
+
+\newcommand{\myuline}[1]{%
+	\uline{\phantom{#1}}%
+	\llap{\contour{white}{#1}}%
+}
