@@ -78,36 +78,36 @@
 		\scntext{пояснение}{В приведенном примере показана \textit{scp-программа}, состоящая из трех \textit{scp-операторов}. Данная программа проверяет, содержится ли в заданном множестве (первый параметр) заданный элемент (второй параметр), и, если нет, то добавляет его в это множество.}
 	\end{scnindent}
 
-\scnhaselementrole{пример}{
-	\scnheaderlocal{\_scp\_process}
+\begin{scnhaselementrolelist}{пример}
+	\scnitem{\_scp\_process}
 	\scnisvarelement{scp-процесс}
 	\scnhasvarelementrole{1;in-параметр}{\_set1}
 	\scnhasvarelementrole{2;in-параметр}{\_element1}
 	\scnvarrelto{декомпозиция действия}{\_...}
 	\begin{scnindent}
 		\scnhasvarelementrole{1}{\_ operator1}
-			\begin{scnindent}
-				\scnisvarelement{searchElStr3}
-				\scnhasvarelementrole{1; scp-операнд с заданным значением; scp-константа}{\_set1}
-				\scnhasvarelementrole{2; scp-операнд со свободным значением; scp-переменная; sc-дуга основного вида}{\_arc1}
-				\scnhasvarelementrole{3; scp-операнд с заданным значением; scp-константа}{\_element1}
-				\scnvarrelfrom{последовательность действий при отрицательном результате}{\_operator2}
-				\scnvarrelfrom{последовательность действий при положительном результате}{\_operator3}
-			\end{scnindent}
+		\begin{scnindent}
+			\scnisvarelement{searchElStr3}
+			\scnhasvarelementrole{1; scp-операнд с заданным значением; scp-константа}{\_set1}
+			\scnhasvarelementrole{2; scp-операнд со свободным значением; scp-переменная; sc-дуга основного вида}{\_arc1}
+			\scnhasvarelementrole{3; scp-операнд с заданным значением; scp-константа}{\_element1}
+			\scnvarrelfrom{последовательность действий при отрицательном результате}{\_operator2}
+			\scnvarrelfrom{последовательность действий при положительном результате}{\_operator3}
+		\end{scnindent}
 		\scnhasvarelement{\_operator2}
-			\begin{scnindent}
-				\scnisvarelement{genElStr3}
-				\scnhasvarelementrole{1:: scp-операнд с заданным значением; scp-константа}{\_set1}
-				\scnhasvarelementrole{2:: scp-операнд со свободным значением; scp-переменная; sc-дуга основного вида}{\_arc1}
-				\scnhasvarelementrole{3:: scp-операнд с заданным значением; scp-константа}{\_element1}
-				\scnvarrelfrom{следующий оператор}{\_operator3}
-			\end{scnindent}
+		\begin{scnindent}
+			\scnisvarelement{genElStr3}
+			\scnhasvarelementrole{1:: scp-операнд с заданным значением; scp-константа}{\_set1}
+			\scnhasvarelementrole{2:: scp-операнд со свободным значением; scp-переменная; sc-дуга основного вида}{\_arc1}
+			\scnhasvarelementrole{3:: scp-операнд с заданным значением; scp-константа}{\_element1}
+			\scnvarrelfrom{следующий оператор}{\_operator3}
+		\end{scnindent}
 		\scnhasvarelement{\_operator3}
-			\begin{scnindent}
-				\scnisvarelement{return}
-			\end{scnindent}
+		\begin{scnindent}
+			\scnisvarelement{return}
+		\end{scnindent}
 	\end{scnindent}
-}
+\end{scnhaselementrolelist}
 \end{scnsubstruct}
 
 \scnheader{агентная scp-программа}
