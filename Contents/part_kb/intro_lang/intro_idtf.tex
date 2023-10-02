@@ -82,7 +82,9 @@
             \bigskip
             \begin{scnset}
                 \scnheader{основной sc-идентификатор}
-                \scnsubset{файл-образец ostis-системы}
+                \begin{scnindent}
+                    \scnsubset{файл-образец ostis-системы}
+                \end{scnindent}
             \end{scnset}
             \scnrelboth{семантическая эквивалентность}{\scnfilelong{Все основные идентификаторы sc-элементов в памяти ostis-системы оформляются в виде копируемых фалов-образцов ostis-системы.}}
             \begin{scnindent}
@@ -131,14 +133,16 @@
                 \begin{scnindent}
                     \begin{scnrelfromset}{пример применения}
                         \scnitem{Раздел. Предметная область и онтология множеств}
-                        \scnrelfrom{основной sc-идентификатор}{\scnfilelong{Section. Subject domain and ontology of sets}}
                         \begin{scnindent}
-                            \scniselement{Английский язык}
-                            \scniselement{основной sc-идентификатор}
-                        \end{scnindent}
-                        \scnrelfrom{системный sc-идентификатор}{\scnfilelong{section\_subject\_domain\_and\_ontology\_of\_sets}}
-                        \begin{scnindent}    
-                            \scniselement{системный sc-идентификатор}
+                            \scnrelfrom{основной sc-идентификатор}{\scnfilelong{Section. Subject domain and ontology of sets}}
+                            \begin{scnindent}
+                                \scniselement{Английский язык}
+                                \scniselement{основной sc-идентификатор}
+                            \end{scnindent}
+                            \scnrelfrom{системный sc-идентификатор}{\scnfilelong{section\_subject\_domain\_and\_ontology\_of\_sets}}
+                            \begin{scnindent}
+                                \scniselement{системный sc-идентификатор}
+                            \end{scnindent}
                         \end{scnindent}
                     \end{scnrelfromset}
                 \end{scnindent}
@@ -146,9 +150,11 @@
                 \begin{scnindent}
                     \begin{scnrelfromset}{пример применения}
                         \scnitem{слагаемое\scnrolesign}
-                        \scnrelfrom{системный sc-идентификатор}{\scnfilelong{rrel\_summand}}
                         \begin{scnindent}
-                            \scniselement{системный sc-идентификатор}
+                            \scnrelfrom{системный sc-идентификатор}{\scnfilelong{rrel\_summand}}
+                            \begin{scnindent}
+                                \scniselement{системный sc-идентификатор}
+                            \end{scnindent}
                         \end{scnindent}
                     \end{scnrelfromset}
                 \end{scnindent}
@@ -156,9 +162,11 @@
                 \begin{scnindent}
                     \begin{scnrelfromset}{пример применения}
                         \scnitem{включение*}
-                        \scnrelfrom{системный sc-идентификатор}{\scnfilelong{nrel\_inclusion}}
                         \begin{scnindent}
-                            \scniselement{системный sc-идентификатор}
+                            \scnrelfrom{системный sc-идентификатор}{\scnfilelong{nrel\_inclusion}}
+                            \begin{scnindent}
+                                \scniselement{системный sc-идентификатор}
+                            \end{scnindent}
                         \end{scnindent}
                     \end{scnrelfromset}
                 \end{scnindent}
@@ -166,9 +174,11 @@
                 \begin{scnindent}
                     \begin{scnrelfromset}{пример применения}
                         \scnitem{треугольник}
-                        \scnrelfrom{системный sc-идентификатор}{\scnfilelong{concept\_triangle}}
                         \begin{scnindent}
-                            \scniselement{системный sc-идентификатор}
+                            \scnrelfrom{системный sc-идентификатор}{\scnfilelong{concept\_triangle}}
+                            \begin{scnindent}
+                                \scniselement{системный sc-идентификатор}
+                            \end{scnindent}
                         \end{scnindent}
                     \end{scnrelfromset}
                 \end{scnindent}
@@ -178,8 +188,8 @@
                         \scnitem{Треугольник(ТочкаA)}
                         \scnitem{ТочкаB}
                         \scnitem{ТочкаC}
-                        \scnrelfrom{системный sc-идентификатор}{\scnfilelong{struct\_Triangle\_A\_B\_C}}
                         \begin{scnindent}
+                            \scnrelfrom{системный sc-идентификатор}{\scnfilelong{struct\_Triangle\_A\_B\_C}}
                             \scniselement{системный sc-идентификатор}
                         \end{scnindent}
                     \end{scnrelfromset}
@@ -378,11 +388,12 @@
                 \bigskip
                 \begin{scneqtovector}
                     \scnfileitem{Общим правилом построения \textit{простых sc-идентификаторов} является стремление максимально возможным образом использовать сложившуюся терминологию. Но при этом следует подчеркнуть, что необходимость исключения омонимии в \textit{sc-идентификаторах} требует строгого формального \uline{уточнения} семантической интерпретации каждого используемого термина. Особо подчеркнем то, что в \textit{ostis-системах} процесс построения новых терминов (\textit{sc-идентификаторов}) и процесс совершенствования существующей терминологии по отношению к процессу эволюции \textit{баз знаний}, представленных в \textit{SC-коде}, с технической точки зрения абсолютно не зависят друг от друга. Кроме того, следует помнить, что \uline{далеко не все} \textit{sc-элементы}, входящие в состав базы знаний ostis-системы, должны иметь соответствующие им sc-идентификаторы (быть идентифицированными). Существенно подчеркнуть то, что далеко не все sc-элементы должны иметь \textit{простые sc-идентификаторы} по той простой причине, что для многих sc-элементов в случае необходимости можно достаточно легко построить идентифицирующее их \textit{sc-выражение} (sc-выражение). Тем не менее, для целого ряда сущностей (например, для понятий, исторических событий и т.п.) обойтись без простых sc-идентификаторов очень сложно. Очевидно, что идентифицированными (именованными) должны быть все используемые понятия, вводимые в соответствующих предметных областях и специфицируемые соответствующими онтологиями. Идентифицированными также должны быть обладающие особыми свойствами ключевые экземпляры (элементы) некоторых понятий, различные социально значимые объекты (персоны, населенные пункты, географические объекты, страны, организации, библиографические источники, исторические события и многое другое).}
-                    \scnitem{
-                        \begin{scnset}
-                            \scnheaderlocal{простой sc-идентификатор}
-                            \scnrelfrom{алфавит}{Алфавит символов, используемых в простых строковых sc-идентификаторах}
+                    \scnitem{\scnnonamednode}
+                    \begin{scnindent}
+                        \begin{scneqtoset}
+                            \scnitem{простой sc-идентификатор}
                             \begin{scnindent}
+                                \scnrelfrom{алфавит}{Алфавит символов, используемых в простых строковых sc-идентификаторах}
                                 \scnsuperset{Объединение заглавных и строчных букв алфавитов всевозможных естественных языков}
                                 \scnsuperset{Алфавит символов, используемых в URL}
                                 \scnsuperset{цифра}
@@ -392,13 +403,13 @@
                                 \begin{scnindent}
                                     \scneqfileclass{\dq}
                                     \scnidtf{ограничитель метафорических словосочетаний}
-                                    \scntext{примечание}{указанный символ также может использоваться и во внутренних файлах ostis-систем, и в рамках нетранслируемых комментариев}    
+                                    \scntext{примечание}{указанный символ также может использоваться и во внутренних файлах ostis-систем, и в рамках нетранслируемых комментариев}
                                 \end{scnindent}
                                 \scnhaselement{знак подчеркивания}
                                 \begin{scnindent}
                                     \scnidtf{знак нижнего подчеркивания}
                                     \scntext{примечание}{
-                                        используется в начале sc-идентификаторов sc-переменных. При этом 
+                                        используется в начале sc-идентификаторов sc-переменных. При этом
                                         \begin{scnitemize}
                                             \item если в начале sc-идентификатора sc-переменной стоит один знак подчеркивания, то по умолчанию такая sc-переменная считается \textit{первичной sc-переменной}, если явно не указано иное;
                                             \item если в начале sc-идентификатора sc-переменной стоит подряд два знака подчеркивания, то по умолчанию такая sc-переменная считается \textit{вторичной sc-переменной};
@@ -441,8 +452,8 @@
                                     \end{scnrelfromlist}
                                 \end{scnindent}
                             \end{scnindent}
-                        \end{scnset}
-                    }
+                        \end{scneqtoset}
+                    \end{scnindent}
                     \scnfileitem{Первым символом каждого \textit{простого строкового sc-идентификатора}, идентифицирующего \textit{sc-переменную} (переменный \textit{sc-элемент}), является знак подчеркивания. При этом, если после указанного знака подчеркивания указывается \textit{имя нарицательное} некоторого \textit{класса sc-элементов}, то рассматриваемый \textit{простой строковый sc-идентификатор} становится уже \textit{sc-выражением}, содержащим информацию о том, что \textit{областью возможных значений*} идентифицируемой \textit{sc-переменной} является указанный \textit{класс sc-элементов}.}
                     \scnfileitem{Последним символом простого sc-идентификатора, идентифицирующего sc-узел, обозначающий неролевое отношение, заданное на множестве sc-элементов, является надстрочная \textit{звездочка}.}
                     \scnfileitem{Последним символом простого sc-идентификатора, идентифицирующего sc-узел, обозначающий заданное на множестве sc-элементов ролевое отношение (т.е. отношение, являющееся подмножеством отношения принадлежности), является \textit{штрих} (прямой апостроф)}
@@ -572,7 +583,6 @@
                                 \scnrelboth{семантическая эквивалентность}{
                                     \scnfilelong{Дано множество с элементами \textbf{\textit{e1}}, \textbf{\textit{e2}},\textbf{\textit{e3}}.}
                                 }
-                                %TODO пример в SCg\scnrelboth{семантическая эквивалентность}{\scnfileimage[20em]{figures/intro/idtf/sc_expr_example_set.png}
                                 \begin{scnindent}
                                     \scniselement{sc.g-текст}
                                 \end{scnindent}
@@ -593,7 +603,6 @@
                                     \scnrelboth{семантическая эквивалентность}{
                                         \scnfilelong{Дано множество с элементами \textbf{\textit{e1}}, \textbf{\textit{e2}}, \textbf{\textit{e3}}. При этом элемент \textbf{\textit{e1}} в рамках указанного множества имеет атрибут (роль) \textbf{\textit{ai\scnrolesign}}, а элемент \textbf{\textit{e2}} --- атрибут (роль) \textbf{\textit{aj\scnrolesign}}.}
                                     }
-                                    %TODO пример в SCg\newpage\scnrelboth{семантическая эквивалентность}{\scnfileimage[20em]{figures/intro/idtf/sc_expr_example_role_set.png}
                                     \begin{scnindent}    
                                         \scniselement{sc.g-текст}
                                     \end{scnindent}
@@ -791,9 +800,9 @@
                 \scnfilelong{
                     \begin{scnset}
                         \scniselement{\textit{si}}
-                        \scniselement{ \textit{sj}}
-                        \scniselement{ \textit{sk}}
-                        \scniselement{ ...}
+                        \scniselement{\textit{sj}}
+                        \scniselement{\textit{sk}}
+                        \scniselement{...}
                     \end{scnset}
                 }
             }
@@ -901,7 +910,7 @@
                         \textit{si} $\Rightarrow$ \textit{пересечение*:} 
                         \begin{scnset}
                             \scnitem{\textit{sj}}
-                            \scnitem{ \textit{sk}}
+                            \scnitem{\textit{sk}}
                         \end{scnset}
                     }
                 }

@@ -20,7 +20,8 @@
             \scnidtf{Semantic Code graphical}
             \scnidtf{Язык визуального (графического) представления баз знаний ostis-систем}
             \scniselement{графовый язык}
-            \scntext{пояснение}{\textit{SCg-код} представляет собой способ визуализации \textit{sc-текстов} (информационных конструкций SC-кода) в виде рисунков этих абстрактных конструкций. Подчеркнем, что абстрактная \textit{графовая структура} и её рисунок (графическое изображение) --- это не одно и то же даже если они \textit{изоморфны} друг другу. \mbox{\textit{SCg-код}} рассматривается нами как объединение \textit{Ядра SCg-кода}, обеспечивающего изоморфное графическое изображение любого \textit{sc-текста}, а также нескольких направлений расширения этого ядра, обеспечивающих повышение компактности и читабельности текстов \textit{SCg-кода} (\textit{sc.g-текстов}).}\scntext{примечание}{\textit{SC-код} --- это рассмотрение множества всевозможных графически представленных (визуализированных) графовых структур как \underline{универсального} языка представления знаний с соответствующим синтаксисом и семантикой.}
+            \scntext{пояснение}{\textit{SCg-код} представляет собой способ визуализации \textit{sc-текстов} (информационных конструкций SC-кода) в виде рисунков этих абстрактных конструкций. Подчеркнем, что абстрактная \textit{графовая структура} и её рисунок (графическое изображение) --- это не одно и то же даже если они \textit{изоморфны} друг другу. \mbox{\textit{SCg-код}} рассматривается нами как объединение \textit{Ядра SCg-кода}, обеспечивающего изоморфное графическое изображение любого \textit{sc-текста}, а также нескольких направлений расширения этого ядра, обеспечивающих повышение компактности и читабельности текстов \textit{SCg-кода} (\textit{sc.g-текстов}).}
+            \scntext{примечание}{\textit{SC-код} --- это рассмотрение множества всевозможных графически представленных (визуализированных) графовых структур как \underline{универсального} языка представления знаний с соответствующим синтаксисом и семантикой.}
             
             \scnheader{SCg-код}
             \scntext{пояснение}{Основная цель \textit{SCg-кода}  иметь четкие синтаксические графические признаки изображения \textit{sc.g-элементов}, позволяющие легко выделить и различать такие классы \textit{sc.g-элементов}, как:
@@ -63,43 +64,30 @@
             
             \scnheader{следует отличать*}
             \begin{scnhaselementset}
-                \scnitem{
-                \begin{scnset}[local]
-                    \begin{scnlist}[local]
+                \scnitem{\scnnonamednode}
+                \begin{scnindent}
+                    \begin{scneqtoset}
                         \scnitem{SCg-код}
                         \scnitem{Введение в язык графического представления знаний ostis-систем}
-                    \end{scnlist}
-                \end{scnset}
-                \begin{scnindent}
-                    \scniselement{следует отличать*}
+                    \end{scneqtoset}
                 \end{scnindent}
-                }
-                \scnitem{
-                \begin{scnset}[local]
-                    \begin{scnlist}[local]
+                \scnitem{\scnnonamednode}
+                    \begin{scnindent}
+                        \begin{scneqtoset}
                         \scnitem{Ядро SCg-кода}
-                        \scnitem{ Описание Ядра SCg-кода}
-                    \end{scnlist}
-                \end{scnset}
-                \begin{scnindent}
-                    \scniselement{следует отличать*}
+                        \scnitem{Описание Ядра SCg-кода}
+                    \end{scneqtoset}
                 \end{scnindent}
-                }
-                \scnitem{
-                \begin{scnset}[local]
-                    \begin{scnlist}[local]
+                \scnitem{\scnnonamednode}
+                    \begin{scnindent}
+                        \begin{scneqtoset}
                         \scnitem{Первое направление расширения Ядра SCg-кода}
                         \scnitem{Описание Первого направления расширения Ядра SCg-кода}
-                    \end{scnlist}
-                \end{scnset}
-                \begin{scnindent}
-                    \scniselement{следует отличать*}
+                    \end{scneqtoset}
                 \end{scnindent}
-                }
             \end{scnhaselementset}
             \begin{scnindent}
                 \scntext{примечание}{Следует отличать сами описываемые сущности (в данном случае --- различные языки) от текстов, описывающих эти сущности.}
-                
             \end{scnindent}
                 
             \scnheader{SCg-текст. Алфавит SCg-кода}
@@ -117,7 +105,7 @@
             \scntext{пояснение}{\textit{Алфавит Ядра SCg-кода} взаимно однозначно соответствует \textit{Алфавиту SC-кода}. Указанное соответствие представлено в файле \scnqqi{Таблица. Алфавит Ядра SCg-кода}.}
             
             \scnheader{Таблица. Алфавит Ядра SCg-кода}
-            \scneqfile{[20em]{figures/intro/scg/SCg-core-alphabet.pdf}}
+            \scneqfile{figures/intro/scg/SCg-core-alphabet.pdf}
 
             \scnheader{sc.g-узел общего вида}
             \scnidtf{\textit{sc.g-элемент}, являющийся графическим изображением \textit{sc-узла общего вида}}
@@ -860,7 +848,8 @@
                 \scnitem{\scnfileimage[20em]{figures/intro/scg/scg_transf6-3-1.png}}
                 \begin{scnindent}
                     \scniselement{sc.g-текст}
-                    \scntext{пояснение}{В приведенном примере из \textit{sc.g-узла} \scnqqi{\textit{геометрическая фигура}}, выходит несколько \textit{sc.g-дуг}, с увеличением количества которых \textit{sc.g-текст} становится менее читабельным.}\scnrelfrom{трансформация sc.g-текста по Шестому направлению расширения Ядра SCg-кода}{\scnfileimage[20em]{figures/intro/scg/scg_transf6-3-2.png}}
+                    \scntext{пояснение}{В приведенном примере из \textit{sc.g-узла} \scnqqi{\textit{геометрическая фигура}}, выходит несколько \textit{sc.g-дуг}, с увеличением количества которых \textit{sc.g-текст} становится менее читабельным.}
+                    \scnrelfrom{трансформация sc.g-текста по Шестому направлению расширения Ядра SCg-кода}{\scnfileimage[20em]{figures/intro/scg/scg_transf6-3-2.png}}
                 \end{scnindent}
             \end{scneqtoset}
             \scnsourcecommentinline{Завершили перечень \textit{Примеров sc.g-текстов, трансформируемых по Шестому направлению расширения Ядра SCg-кода}}
