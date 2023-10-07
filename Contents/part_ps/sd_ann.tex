@@ -227,7 +227,7 @@
                 \begin{scnindent}
                     \scnsubset{задача}
                     \scntext{пояснение}{Задача построения классификатора, т.е. отображения $\tilde c: X \rightarrow C$, где $ X \in \mathbb{R}^m$ ---
-                    признаковое пространство п.в.а., $C = {C_1, C_2, ...C_k }$ --- конечное и обычно небольшое множество меток классов.}
+                    признаковое пространство п.в.а., $C = \scnleftcurlbraceC_1, C_2, ...C_k\scnrightcurlbraceC$ --- конечное и обычно небольшое множество меток классов.}
                 \end{scnindent}
                 \scnitem{задача регрессии}
                 \begin{scnindent}
@@ -276,10 +276,8 @@
     \scntext{примечание}{Отдельный формальный нейрон является искусственной нейронной сети с одним нейроном в единственном слое.}
     \scnsubset{искусственная нейронная сеть}
     \scntext{пояснение}{\textbf{\textit{формальный нейрон}} --- это основной элемент \textit{искусственной нейронной сети}, применяющий свою \textit{функцию активации} (\scncite{Golovko2017}) к сумме произведений входных сигналов на весовые коэффициенты:
-        \begin{equation*}
-            y = F\left(\sum_{i=1}^{n} w_ix_i - T\right) = F(WX - T)
-        \end{equation*}
-        где $X = (x_1,x_2,...,x_n)^{T}$ --- вектор входного сигнала; $W - (w_1,w_2,...,w_n)$ --- вектор весовых коэффициентов; \textit{T} --- пороговое значение;
+        $y = F\left(\sum\textunderscore\scnleftcurlbrace~i=1\scnrightcurlbrace\scnsupergroupsign\scnleftcurlbrace~n\scnrightcurlbrace w_ix_i - T\right) = F(WX - T)$
+        где $X = (x_1,x_2,...,x_n)^\scnleftcurlbrace~T\scnrightcurlbrace$ --- вектор входного сигнала; $W - (w_1,w_2,...,w_n)$ --- вектор весовых коэффициентов; \textit{T} --- пороговое значение;
         \textit{F} --- функция активации.}
     \scnrelfrom{изображение}{\scnfileimage[20em]{figures/sd_ps/sd_ann/neuron.png}}
     \scntext{примечание}{Формальные нейроны могут иметь полный набор связей с нейронами предшествующего слоя или неполный (разряженный) набор связей.}
