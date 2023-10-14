@@ -1,5 +1,5 @@
 \begin{SCn}
-    \scnsectionheader{\currentname}
+    \scnsectionheader{Предметная область и онтология информационных конструкций и языков}
     \begin{scnstruct}
         \scniselement{раздел базы знаний}
         \begin{scnrelfromlist}{дочерний раздел}
@@ -276,7 +276,7 @@
         \begin{scnindent}
             \scnhaselement{семантически связная знаковая конструкция}
             \scnhaselement{семантически несвязная знаковая конструкция}
-            \scnhaselementrole{пример}{\scnfilelong{В огороде бузина, а в Киеве дядька}}
+            \scntext{пример}{В огороде бузина, а в Киеве дядька}
         \end{scnindent}
         \scnhaselement{наличие разделителей и ограничителей\scnsupergroupsign}
         \begin{scnindent}
@@ -284,7 +284,8 @@
             \scnhaselement{знаковая конструкция без разделителей и ограничителей}
         \end{scnindent}
 
-        \newpage\scnheader{язык}
+        \newpage
+        \scnheader{язык}
         \scnidtftext{пояснение}{класс знаковых конструкций, для которого существуют (1) общие правила их построения и (2) общие правила их соотнесения с теми сущностями и конфигурациями сущностей, которые описываются (отражаются) указанными знаковыми конструкциями}
         \scnidtf{класс знаковых конструкций, эквивалентных с точки зрения правил их построения и правил их семантической интерпретации}
         \begin{scnsubdividing}
@@ -309,7 +310,7 @@
             \scnidtf{знаковая конструкция, принадлежащая заданному языку*}
             \scnidtf{синтаксически правильная (правильно построенная) знаковая конструкция заданного языка*}
             \scnidtf{синтаксически корректная и целостная знаковая конструкция для заданного языка*}
-            \scneq{{\normalfont(}синтаксически корректная знаковая конструкция для заданного языка* $\cap$ синтаксически целостная знаковая конструкция для заданного языка*{\normalfont)}}
+            \scneq{(синтаксически корректная знаковая конструкция для заданного языка* $\cap$ синтаксически целостная знаковая конструкция для заданного языка*)}
         \end{scnindent}
         \scnhaselement{синтаксически корректная знаковая конструкция для заданного языка*}
         \begin{scnindent}
@@ -318,7 +319,7 @@
         \scnhaselement{синтаксически целостная знаковая конструкция для заданного языка*}
         \scnhaselement{синтаксически неправильная знаковая конструкция для заданного языка*}
         \begin{scnindent}            
-            \scneq{{\normalfont(}синтаксически некорректная знаковая конструкция для заданного языка* $\cup$ синтаксически нецелостная знаковая конструкция для заданного языка*{\normalfont)}}
+            \scneq{(синтаксически некорректная знаковая конструкция для заданного языка* $\cup$ синтаксически нецелостная знаковая конструкция для заданного языка*)}
             \scnsuperset{синтаксически некорректная знаковая конструкция для заданного языка*}
             \scnsuperset{синтаксически нецелостная знаковая конструкция для заданного языка*}
         \end{scnindent}
@@ -444,7 +445,7 @@
         \end{scnindent}
         \scnhaselement{используемый язык*}
         \begin{scnindent}
-            \scneq{{\normalfont(}внутренний язык* $\cup$ внешний язык*{\normalfont)}}
+            \scneq{(внутренний язык* $\cup$ внешний язык*)}
             \scnidtf{язык, используемый заданной системой, основанной на обработке информации или заданного множества таких систем*}
             \scnidtf{язык, носителем которого является (которым владеет) данная система, основанная на обработке информации}
         \end{scnindent}
@@ -580,63 +581,57 @@
         \end{scnhaselementset}
         \bigskip
         \begin{scnhaselementset}
-                \scnitem{
-                \begin{scnset}[local]
-                   	\begin{scnlist}[local]
-                        \scnitem{синтаксис дискретной информационной конструкции*}
-                        \scnitem{синтаксическая структура дискретной информационной конструкции}
-                    \end{scnlist}
-                \end{scnset}
+            \scnitem{\scnnonamednode}
+            \begin{scnindent}
+                \begin{scneqtoset}
+                    \scnitem{синтаксис дискретной информационной конструкции*}
+                    \scnitem{синтаксическая структура дискретной информационной конструкции}
+                \end{scneqtoset}
                 \scniselement{следует отличать*}
-                }
-                \scnitem{
-                \begin{scnset}[local]
-                	\begin{scnlist}[local]
-	                    \scnitem{первичная синтаксическая структура дискретной информационной конструкции*}
-	                    \scnitem{первичная синтаксическая структура дискретной информационной конструкции}
-                    \end{scnlist}
-                \end{scnset}
+            \end{scnindent}
+            \scnitem{\scnnonamednode}
+            \begin{scnindent}
+                \begin{scneqtoset}
+                    \scnitem{первичная синтаксическая структура дискретной информационной конструкции*}
+                    \scnitem{первичная синтаксическая структура дискретной информационной конструкции}
+                \end{scneqtoset}
                 \scniselement{следует отличать*}
-                }
-                \scnitem{
-                \begin{scnset}[local]
-                	\begin{scnlist}[local]
-	                    \scnitem{смысл*}
-	                    \scnitem{смысл}
-	                    \begin{scnindent}
-	                        \scnidtf{смысловая информационная конструкция}
-	                    \end{scnindent}
-                    \end{scnlist}
-                \end{scnset}
+            \end{scnindent}
+            \scnitem{\scnnonamednode}
+            \begin{scnindent}
+                \begin{scneqtoset}
+                    \scnitem{смысл*}
+                    \scnitem{смысл}
+                    \begin{scnindent}
+                        \scnidtf{смысловая информационная конструкция}
+                    \end{scnindent}
+                \end{scneqtoset}
                 \scniselement{следует отличать*}
-                }
-                \scnitem{
-                \begin{scnset}[local]
-                   	\begin{scnlist}[local]
-                        \scnitem{синтаксис языка*}
-                        \scnitem{синтаксис языка}
-                    \end{scnlist}
-                \end{scnset}
+            \end{scnindent}
+            \scnitem{\scnnonamednode}
+            \begin{scnindent}
+                \begin{scneqtoset}
+                    \scnitem{синтаксис языка*}
+                    \scnitem{синтаксис языка}
+                \end{scneqtoset}
                 \scniselement{следует отличать*}
-                }
-                \scnitem{
-                \begin{scnset}[local]
-                	\begin{scnlist}[local]
-	                    \scnitem{денотационная семантика языка*}
-	                    \scnitem{денотационная семантика языка}
-                    \end{scnlist}
-                \end{scnset}
+            \end{scnindent}
+            \scnitem{\scnnonamednode}
+            \begin{scnindent}
+                \begin{scneqtoset}
+                    \scnitem{денотационная семантика языка*}
+                    \scnitem{денотационная семантика языка}
+                \end{scneqtoset}
                 \scniselement{следует отличать*}
-                }
-                \scnitem{
-                \begin{scnset}[local]
-                   	\begin{scnlist}[local]
-                        \scnitem{операционная семантика языка*}
-                        \scnitem{операционная семантика языка} 
-                    \end{scnlist}
-                \end{scnset}
+            \end{scnindent}
+            \scnitem{\scnnonamednode}
+            \begin{scnindent}
+                \begin{scneqtoset}
+                    \scnitem{операционная семантика языка*}
+                    \scnitem{операционная семантика языка}
+                \end{scneqtoset}
                 \scniselement{следует отличать*}
-                }
+            \end{scnindent}
         \end{scnhaselementset}
         \bigskip
         \begin{scnhaselementset}
