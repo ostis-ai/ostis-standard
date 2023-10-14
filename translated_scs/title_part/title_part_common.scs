@@ -1,0 +1,133 @@
+.system_element_4619
+=> nrel_inclusion: [*
+	<= .system_element_4620: .system_element_1295;
+	=> .system_element_4622: .system_element_4621;
+	=> .system_element_4624: .system_element_4623;
+	=> .system_element_4626: .system_element_4625;
+	=> .system_element_4628: .system_element_4627;
+	=> .system_element_4630: .system_element_4629;
+	=> .system_element_4632: .system_element_4631;
+	=> .system_element_3115: .system_element_4633
+	(*
+		=> nrel_idtf: [<p>правила построения*(Стандарт OSTIS)</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);
+	<- .system_element_3097;
+	=> .system_element_4635: .system_element_4634;
+	=> .system_element_431: {
+		.system_element_4636;
+		.system_element_4637
+	};
+	=> nrel_note: [<p>В титульную спецификацию <i>Стандарта OSTIS</i> должны бытьвключены ссылки на все разделы и фрагменты этих разделов,где описываются правила построения и оформления всех видов информационныхконструкций, входящих в состав <i>Стандарта OSTIS</i>(внешних идентификаторов знаков, входящих в состав <i>Стандарта OSTIS</i>,спецификаций различного вида cущностей, описываемых в <i>Стандарте OSTIS</i>)В <i>базе знаний ostis-систем</i> задаются правила унифицированного построения(представления, оформления) следующих видов <i>информационныхконструкций</i>:
+	<ul>
+		<li> <i>sc-идентификаторов</i> --- внешних идентификаторов<i>sc-элементов</i> следующих классов:
+		<ul>
+			<li> <i>sc-элементов</i> (имеются в виду общие правила идентификациилюбых sc-элементов) --- смотрите в разделе"intro_idtf"
+			<li> <i>sc-переменных, sc-констант</i>
+			<li> знаков материальных сущностей
+			<ul>
+				<li> знаков персон
+				<li> знаков библиографических источников</li>
+			<ul>
+			<li> знаков множеств
+			<ul>
+				<li> классов, понятий отношений
+				<li> параметров
+				<li> структур
+				<li> знаний</li>
+			<ul>
+			<li> знаков файлов ostis-систем
+			<li> знаков sc-знаний баз знаний</li>
+		<ul>
+		<li> <i>sc-конструкций</i>
+		<li> <i>sc.g-конструкций</i>
+		<li> <i>sc.s-конструкций</i>
+		<li> <i>sc.n-конструкций</i>
+		<li> базовых правил <i>sc-спецификаций:</i>
+		<ul>
+			<li> понятий
+			<li> разделов баз знаний (титульные спецификации разделов)
+			<li> файлов ostis-систем
+			<li> библ. источников
+			<li> предметных областей</li>
+		<ul>
+		<li> специализированная <i>sc-спецификация</i>
+		<ul>
+			<li> информационная конструкция
+			<ul>
+				<li> оглавление
+				<li> система ключевых знаков</li>
+			<ul>
+			<li> понятий
+			<ul>
+				<li> пояснение
+				<li> определения
+				<li> теоретико-множественная окрестность
+				<li> семейство утверждений</li>
+			<ul>
+			<li> сегментов баз знаний (титульная спецификация)
+			<li> семейство разделов баз знаний</li>
+		<ul></li>
+	<ul></p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+
+	.system_element_4638
+	=> nrel_idtf: [<p>Издание Документации Технологии OSTIS-2021</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>Первое издание (публикация) Внешнего представления ДокументацииТехнологии OSTIS в виде книги</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	<- .system_element_3144
+	(*
+		=> nrel_idtf: [<p>библиографический источник</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);
+	<- .system_element_4639;
+	<- .system_element_4640;
+	<- .system_element_4641;
+	=> .system_element_4643: .system_element_4642;
+	=> .system_element_4644: {
+		.system_element_1784;
+		.system_element_4645
+	};
+	=> .system_element_4647: .system_element_4646;
+	<- .system_element_1567;
+	<- .system_element_4648;
+	<- .system_element_439;
+	=> .system_element_4650: .system_element_4649;
+	=> .system_element_4651: [<p>978-985-7267-13-2</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+
+	.system_element_4652
+	=> nrel_idtf: [<p>Издание Документации Технологии OSTIS-2022</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>Второе издание (публикация) Внешнего представления Документации Технологии OSTIS в виде книги</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	<- .system_element_3144;
+	<- .system_element_4639;
+	<- .system_element_4640;
+	<- .system_element_4641;;
+*];;

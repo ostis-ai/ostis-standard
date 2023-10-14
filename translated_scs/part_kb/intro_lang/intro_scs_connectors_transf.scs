@@ -1,0 +1,221 @@
+.intro_scs_connectors_transf = [*
+.system_element_3085
+= [*
+
+	[<p><b><i>si</i></b> ⇒ <i>включение*</i>: <b><i>sj</i></b></p>]
+	=> .system_element_3019: [<p><b><i>si</i></b> ⊇ <b><i>sj</i></b></p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+		<=> .system_element_215: "file://figures/intro/scs/sc.s-connectors/examples/scs_transf_inclusion_const.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+
+	[<p><b><i>si</i></b> _⇒ <i>включение*</i>:: <b><i>sj</i></b></p>]
+	=> .system_element_3019: [<p><b><i>si</i></b> _⊇ <b><i>sj</i></b></p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+		<=> .system_element_215: "file://figures/intro/scs/sc.s-connectors/examples/scs_transf_inclusion_var.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+
+	[<p><b><i>si</i></b> __⇒ <i>включение*</i>::: <b><i>sj</i></b></p>]
+	=> .system_element_3019: [<p><b><i>si</i></b> __⊇ <b><i>sj</i></b></p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+		<=> .system_element_215: "file://figures/intro/scs/sc.s-connectors/examples/scs_transf_inclusion_meta.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+
+	[<p><b><i>si</i></b> ⇒ <i>строгое включение*</i>: <b><i>sj</i></b></p>]
+	=> .system_element_3019: [<p><b><i>si</i></b> ⊃ <b><i>sj</i></b></p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+		<=> .system_element_215: "file://figures/intro/scs/sc.s-connectors/examples/scs_transf_strict_inclusion_const.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+
+	[<p><b><i>si</i></b> _⇒ <i>строгое включение*</i>:: <b><i>sj</i></b></p>]
+	=> .system_element_3019: [<p><b><i>si</i></b> _⊃ <b><i>sj</i></b></p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+		<=> .system_element_215: "file://figures/intro/scs/sc.s-connectors/examples/scs_transf_strict_inclusion_var.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+
+	[<p><b><i>si</i></b> __⇒ <i>строгое включение*</i>::: <b><i>sj</i></b></p>]
+	=> .system_element_3019: [<p><b><i>si</i></b> __⊃ <b><i>sj</i></b></p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+		<=> .system_element_215: "file://figures/intro/scs/sc.s-connectors/examples/scs_transf_strict_inclusion_meta.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+
+	[<p><b><i>si</i></b> ⇒ <i>порядок величин*</i>: <b><i>sj</i></b></p>]
+	=> .system_element_3019: [<p><b><i>si</i></b>  <b><i>sj</i></b></p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+		<=> .system_element_215: "file://figures/intro/scs/sc.s-connectors/examples/scs_transf_value_order_const.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+
+	[<p><b><i>si</i></b> _⇒ <i>порядок величин*</i>:: <b><i>sj</i></b></p>]
+	=> .system_element_3019: [<p><b><i>si</i></b> _ <b><i>sj</i></b></p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+		<=> .system_element_215: "file://figures/intro/scs/sc.s-connectors/examples/scs_transf_value_order_var.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+
+	[<p><b><i>si</i></b> __⇒ <i>порядок величин*</i>::: <b><i>sj</i></b></p>]
+	=> .system_element_3019: [<p><b><i>si</i></b> __ <b><i>sj</i></b></p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+		<=> .system_element_215: "file://figures/intro/scs/sc.s-connectors/examples/scs_transf_value_order_meta.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+
+	[<p><b><i>si</i></b> ⇒ <i>строгий порядок величин*</i>: <b><i>sj</i></b></p>]
+	=> .system_element_3019: [<p><b><i>si</i></b> > <b><i>sj</i></b></p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+		<=> .system_element_215: "file://figures/intro/scs/sc.s-connectors/examples/scs_transf_value_strict_order_const.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*);;
+	*);
+	=> nrel_note: [<p>Данная синтаксическая трансформация представлена для расширенного алфавита. Обратите внимание, что в базовом алфавите таким же символом представлена sc.s-дуга общего вида.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+
+	[<p><b><i>si</i></b> _⇒ <i>строгий порядок величин*</i>:: <b><i>sj</i></b></p>]
+	=> .system_element_3019: [<p><b><i>si</i></b> _> <b><i>sj</i></b></p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+		<=> .system_element_215: "file://figures/intro/scs/sc.s-connectors/examples/scs_transf_value_strict_order_var.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+
+	[<p><b><i>si</i></b> __⇒ <i>строгий порядок величин*</i>::: <b><i>sj</i></b></p>]
+	=> .system_element_3019: [<p><b><i>si</i></b> __> <b><i>sj</i></b></p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+		<=> .system_element_215: "file://figures/intro/scs/sc.s-connectors/examples/scs_transf_value_strict_order_meta.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+
+	[<p><b><i>si</i></b> ⇒ <i>внешний идентификатор*</i>: <b><i>sj</i></b></p>]
+	=> .system_element_3019: [<p><b><i>si</i></b> := <b><i>sj</i></b></p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+		<=> .system_element_215: "file://figures/intro/scs/sc.s-connectors/examples/scs_transf_external_idtf_const.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+
+	[<p><b><i>si</i></b> _⇒ <i>внешний идентификатор*</i>:: <b><i>sj</i></b></p>]
+	=> .system_element_3019: [<p><b><i>si</i></b> _:= <b><i>sj</i></b></p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+		<=> .system_element_215: "file://figures/intro/scs/sc.s-connectors/examples/scs_transf_external_idtf_var.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+
+	[<p><b><i>si</i></b> __⇒ <i>внешний идентификатор*</i>::: <b><i>sj</i></b></p>]
+	=> .system_element_3019: [<p><b><i>si</i></b> __:= <b><i>sj</i></b></p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+		<=> .system_element_215: "file://figures/intro/scs/sc.s-connectors/examples/scs_transf_external_idtf_meta.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+
+	[<p><b><i>si</i></b> ⇔ <i>синонимия*</i>: <b><i>sj</i></b></p>]
+	=> .system_element_3019: [<p><b><i>si</i></b> = <b><i>sj</i></b></p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+		<=> .system_element_215: "file://figures/intro/scs/sc.s-connectors/examples/scs_transf_synonymy_const.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+
+	[<p><b><i>si</i></b> ⇒ <i>погружение*</i>: <b><i>sj</i></b></p>]
+	=> .system_element_3019: [<p><b><i>si</i></b> ⊃= <b><i>sj</i></b></p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+		<=> .system_element_215: "file://figures/intro/scs/sc.s-connectors/examples/scs_transf_insertion_const.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*];
+=> nrel_note: [<p>Аналогичным образом может быть описана трансформация предложений, содержащих любые классы <b>sc.s-коннекторов</b>, за исключением тех классов sc.s-коннекторов, которые соответствуют классам <b>sc-коннекторов</b>, входящим в Ядро SC-кода.</p>]
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);
+=> nrel_note: [<p>В общем случае <i>sc-элементы</i>, инцидентные <i>sc-коннекторам</i>, классы которых описаны в данном примере, могут быть как <i>sc-константами</i>, так и <i>sc-переменными</i> (в том числе <i>sc-метапеременными</i>). При этом как <i>переменному sc-коннектору</i> может соответствовать <i>константный sc-узел</i>, так и <i>константному sc-коннектору</i> может соответствовать <i>переменный sc-узел</i> (например, если возникает необходимость переменному sc-узлу приписать <i>внешний идентификатор*</i>). Последняя ситуация встречается не очень часто и возникает в случае, когда область определения соответствующего <i>отношения</i> имеет непустое пересечение с классом <i>sc-переменных</i>.</p>];;
+
+*];;

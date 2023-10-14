@@ -1,0 +1,440 @@
+.system_element_2843
+=> nrel_inclusion: [*
+
+	.system_element_2844
+	<- .system_element_2;
+	-> rrel_maximum_studied_object_class: 
+		.system_element_2660
+	;
+	-> rrel_studied_object_class: 
+		.system_element_2845;
+		.system_element_2846;
+		.system_element_2847;
+		.system_element_2848;
+		.system_element_2849;
+		.system_element_2850;
+		.system_element_2851;
+		.system_element_2852;
+		.system_element_2853;
+		.system_element_2854;
+		.system_element_2855;
+		.system_element_2856;
+		.system_element_2857;
+		.system_element_2858;
+		.system_element_2859;
+		.system_element_2860;
+		.system_element_2861;
+		.system_element_2862;
+		.system_element_2863;
+		.system_element_2864;
+		.system_element_2865;
+		.system_element_2866;
+		.system_element_2867;
+		.system_element_2868;
+		.system_element_2869
+	;
+	-> rrel_explored_relation: 
+		.system_element_2870;
+		.system_element_2871;
+		.system_element_2872;
+		.system_element_2873;
+		.system_element_2874;
+		.system_element_2875;
+		.system_element_2876;
+		.system_element_2877
+	;;
+
+	.system_element_2660
+	=> nrel_idtf: [<p>множество чисел</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	<= nrel_inclusion: .system_element_2878;
+	=> nrel_explanation: [<p><b><i>число</i></b> --- это основное понятие математики, используемое для количественной характеристики, сравнения, нумерации объектов и их частей. Письменными знаками для обозначения чисел служат <i>цифры</i>.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+
+	.system_element_2867
+	=> nrel_idtf: [<p>множество цифр</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	<= nrel_inclusion: .system_element_2879;
+	=> nrel_inclusion: 
+		.system_element_2868;
+		.system_element_2869
+	;
+	=> nrel_explanation: [<p><b><i>цифра</i></b> - это множество файлов, обозначающих вхождение этой цифры во всевозможные записи чисел с помощью этой цифры.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+
+	.system_element_2845
+	=> nrel_idtf: [<p>множество натуральных чисел</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_explanation: [<p><b><i>натуральное число</i></b> --- это подмножество множества <i>целых чисел</i>, которые используются при счете предметов.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	<= nrel_inclusion: .system_element_2846;;
+
+	.system_element_2846
+	=> nrel_idtf: [<p>множество целых чисел</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_explanation: [<p><b><i>целое число</i></b> --- это подмножество множества <i>рациональных чисел</i>, получаемых объединением <i>натуральных чисел</i> с множеством чисел, <i>противоположных* натуральным</i> и <i>нулём</i>.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	<= nrel_inclusion: .system_element_2847;;
+
+	.system_element_2847
+	=> nrel_idtf: [<p>множество рациональных чисел</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_explanation: [<p><b><i>рациональное число</i></b> --- это число, представляемое <i>обыкновенной дробью</i>, где числитель  <i>целое число</i>, а знаменатель  <i>натуральное число</i>.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	<= nrel_inclusion: .system_element_2849;;
+
+	.system_element_2864
+	=> nrel_idtf: [<p>множество дробей</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_inclusion: 
+		.system_element_2865;
+		.system_element_2866
+	;
+	=> nrel_explanation: [<p><b><i>дробь</i></b>  это число, состоящее из одной или нескольких равных частей (долей) единицы</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+
+	.system_element_2880
+	=> nrel_idtf: [<p>множество обыкновенных дробей</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>множество простых дробей</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_explanation: [<p><b><i>обыкновенная дробь</i></b> - запись <i>рационального числа</i> в виде  или m/n, где n ≠ 0.Горизонтальная или косая черта обозначает знак деления, в результате которого получается частное. Делимое называется числителем дроби, а делитель --- знаменателем.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+
+	.system_element_2866
+	=> nrel_idtf: [<p>множество десятичных дробей</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_explanation: [<p><b><i>десятичная дробь</i></b> - Десятичная дробь ---  разновидность дроби, которая представляет собой способ представления действительных чисел в виде d_m... d_1 d_0{,} d_{-1} d_{-2} ..., где , --- десятичная запятая, служащая разделителем между целой и дробной частью числа, d_km --- десятичные цифры.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+
+	.system_element_2848
+	=> nrel_idtf: [<p>множество иррациональных чисел</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_explanation: [<p><b><i>иррациональное число</i></b> --- это <i>вещественное число</i>, которое не является рациональным, то есть не может быть представлено в виде дроби, где числитель  <i>целое число</i>, знаменатель  <i>натуральное число</i>. Любое <b><i>иррациональное число</i></b> может быть представлено в виде бесконечной непериодической десятичной дроби.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	<= nrel_inclusion: .system_element_2849;;
+
+	.system_element_2849
+	=> nrel_idtf: [<p>вещественное число</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>множество вещественных чисел</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	<= .system_element_325: {
+		.system_element_2847;
+		.system_element_2848
+	};
+	=> nrel_subdividing: {
+		.system_element_2852;
+		.system_element_2851;
+		.system_element_2881
+	};
+	=> nrel_explanation: [<p><b><i>действительное число</i></b> --- это множество чисел, получаемое в результате объединения иррациональных и <i>рациональных чисел</i>.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	<= nrel_inclusion: .system_element_2850;;
+
+	.system_element_2850
+	=> nrel_idtf: [<p>множество комплексных чисел</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_explanation: [<p><b><i>комплексное число</i></b> --- число вида <i>z=a+b*i</i>, где <i>a</i> и <i>b</i> --- <i>вещественные числа</i>, <i>i</i> --- <i>Мнимая единица</i>.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+
+	.system_element_2851
+	=> nrel_idtf: [<p>множество отрицательных чисел</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_explanation: [<p><b><i>отрицательное число</i></b> --- число <i>меньше*</i> нуля.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+
+	.system_element_2852
+	=> nrel_idtf: [<p>множество положительных чисел</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_explanation: [<p><b><i>положительное число</i></b> --- число <i>больше*</i> нуля.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+
+	.system_element_2870
+	<- .system_element_2882;
+	=> nrel_explanation: [<p><b><i>противоположные числа*</i></b> --- <i>отношение</i>, связывающее два числа, одно из которых является <i>отрицательным числом</i>, второе --- <i>положительным</i>, при этом <i>модули*</i> этих чисел <i>равны*</i>.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+
+	.system_element_2871
+	=> nrel_idtf: [<p>модуль числа*</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	<- .system_element_478;
+	=> nrel_explanation: [<p>Связки отношения <b><i>модуль*</i></b> связывают некоторое <i>число</i> (которое может быть как <i>отрицательным</i>, так и <i>положительным</i>) и другое <i>число</i> (всегда <i>положительное</i>), которое выражает расстояние от указанного числа до <i>Нуля</i> в единицах.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+
+	.system_element_2853
+	=> nrel_idtf: [<p>множество арифметических выражений</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_explanation: [<p>Каждое <b><i>арифметическое выражение</i></b> представляет собой <i>связку</i>, компонентами которой являются <i>числа</i> или множества <i>чисел</i>.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+
+	.system_element_2854
+	=> nrel_idtf: [<p>множество арифметических операций</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	<= .system_element_195: .system_element_2853;
+	=> nrel_explanation: [<p>Каждая <b><i>арифметическая операция</i></b> представляет собой <i>отношение</i>, элементами которого являются <i>арифметические выражения</i>, то есть множество <i>арифметических выражений</i> какого-либо одного вида.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+
+	.system_element_2872
+	=> nrel_idtf: [<p>сложение*</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	<- .system_element_2854;
+	<- .system_element_490;
+	=> nrel_explanation: [<p><b><i>сумма*</i></b> --- это арифметическая операция, в результате которой по данным числам (слагаемым) находится новое число (сумма), обозначающее столько единиц, сколько их содержится во всех слагаемых.Первым компонентом связки отношения <b><i>сумма*</i></b> является <i>множество чисел</i> (слагаемых), содержащее два или более элемента, вторым компонентом --- <i>число</i>, являющееся результатом сложения.Отдельно отметим, что каждая связка отношения <b><i>сумма*</i></b> вида a = b+c может также трактоваться и как запись о вычитании чисел, например b = a-c, в связи с чем <i>арифметическая операция</i> разности чисел отдельно не вводится.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> .system_element_415: "file://figures/sd_numbers/sum.png"
+	(*
+		<- concept_file;;
+		=> nrel_format: format_png;;
+	*);;
+
+	.system_element_2873
+	=> nrel_idtf: [<p>умножение*</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	<- .system_element_2854;
+	<- .system_element_490;
+	=> nrel_explanation: [<p><b><i>произведение*</i></b> --- это <i>арифметическая операция</i>, в результате которой один аргумент складывается столько раз, сколько показывает другой, затем результат складывается столько раз, сколько показывает третий и т.д.Первым компонентом связки отношения <b><i>произведение*</i></b> является <i>множество чисел</i> (множителей), содержащее два или более элемента, вторым компонентом --- <i>число</i>, являющееся результатом произведения.Отдельно отметим, что каждая связка отношения <b><i>произведение*</i></b> вида a = b*c может также трактоваться и как запись о делении чисел, например b = a/c, в связи с чем <i>арифметическая операция</i> деления чисел отдельно не вводится.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> .system_element_415: "file://figures/sd_numbers/multiplication.png"
+	(*
+		<- concept_file;;
+		=> nrel_format: format_png;;
+	*);;
+
+	.system_element_2874
+	<- .system_element_2854;
+	<- .system_element_478;
+	=> nrel_explanation: [<p><b><i>возведение в степень*</i></b> --- это <i>арифметическая операция</i>, в результате которой число, называемое основанием степени, умножается само на себя столько раз, каков показатель степени.Первым компонентом связки отношения <b><i>возведение в степень*</i></b> является ориентированная пара, первым компонентом которой является <i>число</i>, которое является основанием степени, вторым --- <i>число</i>, которое является показателем степени; Вторым компонентом связки отношения <b><i>возведение в степень*</i></b> является <i>число</i>, которое является результатом возведения в степень.Отдельно отметим, что каждая связка отношения <b><i>возведение в степень*</i></b> вида a = b^c может также трактоваться и как запись об извлечении корня или взятии логарифма, в связи с чем <i>арифметические операции</i> извлечения корня и взятия логарифма отдельно не вводится.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> .system_element_415: "file://figures/sd_numbers/pow.png"
+	(*
+		<- concept_file;;
+		=> nrel_format: format_png;;
+	*);;
+
+	.system_element_2875
+	<- .system_element_478;
+	<- .system_element_2760;
+	=> nrel_explanation: [<p><b><i>больше*</i></b> --- это <i>бинарное отношение</i> сравнения чисел. Из двух чисел на координатной прямой больше то, которое расположено правее. Соответственно, первым компонентом связки <i>отношения</i> <b><i>больше*</i></b> является большее из двух <i>чисел</i>.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> .system_element_415: "file://figures/sd_numbers/more.png"
+	(*
+		<- concept_file;;
+		=> nrel_format: format_png;;
+	*);;
+
+	.system_element_2877
+	<- .system_element_478;
+	<- .system_element_2761;
+	=> nrel_explanation: [<p><b><i>больше или равно*</i></b> --- это <i>бинарное отношение</i> сравнения чисел, при которой первое <i>число</i> (первый компонент связки) может быть <i>больше*</i> второго или <i>равняться*</i> ему.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_note: [<p>Отношение <i>равенство*</i> явно не вводится, поскольку в рамках SC-кода равные числа трактуются как совпадающие числа, то есть обозначаемые одним и тем же <i>sc-элементом</i>.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> .system_element_415: "file://figures/sd_numbers/more_or_equal.png"
+	(*
+		<- concept_file;;
+		=> nrel_format: format_png;;
+	*);;
+
+	.system_element_2855
+	<- .system_element_2848;
+	=> nrel_explanation: [<p><b><i>Число Пи</i></b> --- это  математическая константа, равная отношению длины окружности к длине её диаметра.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+
+	.system_element_2856
+	=> nrel_idtf: [<p>0</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	<- .system_element_2846;
+	=> nrel_explanation: [<p><b><i>Нуль</i></b> --- это <i>целое число</i>, разделяющее на числовой прямой <i>положительные числа</i> и <i>отрицательные числа</i>.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+
+	.system_element_2857
+	=> nrel_idtf: [<p>1</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	<- .system_element_2846;
+	<- .system_element_2845;
+	=> nrel_explanation: [<p><b><i>Единица</i></b> --- это наименьшее <i>натуральное число</i>.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+
+	.system_element_2858
+	=> nrel_idtf: [<p>i</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	<- .system_element_2850;
+	=> nrel_explanation: [<p><b><i>Мнимая единица</i></b> --- это <i>число</i>, при возведении которого в степень 2 результатом будет число, противоположное <i>Единице</i>.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+
+	.system_element_2859
+	<= nrel_inclusion: .system_element_2807;
+	=> nrel_explanation: [<p><b><i>числовая структура</i></b> --- <i>структура</i>, в состав которой входят знаки <i>арифметических выражений</i>, а также знаки их элементов и связи между выражениями и их элементами.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+
+	.system_element_2860
+	<- .system_element_439;
+	=> nrel_explanation: [<p>Каждая <b><i>система счисления</i></b> представляет собой класс синтаксически эквивалентных файлов, хранимых в sc-памяти, каждый из которых может являться идентификатором какого-либо <i>числа</i>.Каждая <b><i>система счисления</i></b> характеризуется алфавитом, т.е. конечным множеством символов (цифр), которые допускается использовать при построении файлов принадлежащих данной <b><i>системе счисления</i></b>.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+
+	.system_element_2861
+	<- .system_element_2860;;
+
+	.system_element_2862
+	<- .system_element_2860;;
+
+	.system_element_2863
+	<- .system_element_2860;;
+*];;

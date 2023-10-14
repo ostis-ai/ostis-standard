@@ -1,0 +1,1190 @@
+.system_element_3728
+=> nrel_inclusion: [*
+
+	.system_element_3625
+	=> nrel_idtf: [<p>Теоретико-множественная предметная область</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>Предметная область теории множеств</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>Предметная область, объектами исследования которой являются множества</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	<- .system_element_2;
+	-> rrel_maximum_studied_object_class: 
+		.system_element_2722
+	;
+	-> rrel_studied_object_class: 
+		.system_element_3729;
+		.system_element_3730;
+		.system_element_3731;
+		.system_element_3732;
+		.system_element_3733;
+		.system_element_2663;
+		.system_element_3734;
+		.system_element_3351;
+		.system_element_3735;
+		.system_element_3353;
+		.system_element_3357;
+		.system_element_3356;
+		.system_element_3736;
+		.system_element_3737;
+		.system_element_3738;
+		.system_element_3739;
+		.system_element_3740;
+		.system_element_3494;
+		.system_element_3741;
+		.system_element_3742;
+		.system_element_3743;
+		.system_element_3744;
+		.system_element_3014;
+		.system_element_3745;
+		.system_element_3746;
+		.system_element_3747;
+		.system_element_3748;
+		.system_element_2664;
+		.system_element_3749;
+		.system_element_3750;
+		.system_element_3751
+	;
+	-> rrel_explored_relation: 
+		.system_element_2795;
+		.system_element_3752;
+		nrel_inclusion;
+		.system_element_3753;
+		.system_element_325;
+		nrel_subdividing;
+		.system_element_126;
+		.system_element_3201;
+		.system_element_3754;
+		.system_element_3755;
+		.system_element_3756;
+		.system_element_3757;
+		.system_element_3758;
+		.system_element_324;
+		.system_element_3759;
+		.system_element_198;
+		.system_element_195;
+		.system_element_3760;
+		.system_element_3761
+	;;
+
+	.system_element_2722
+	=> nrel_idtf: [<p>множество sc-элементов</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>sc-множество</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>множество знаков</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>множество знаков описываемых сущностей</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>семантически нормализованное множество</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>sc-знак множества sc-элементов</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>sc-знак множества sc-знаков</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>sc-текст</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>текст SC-кода</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>SC-код</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_subdividing: {
+		.system_element_3729;
+		.system_element_3730
+	};
+	=> nrel_subdividing: {
+		.system_element_3733;
+		.system_element_2663
+	};
+	=> nrel_subdividing: {
+		.system_element_3342;
+		.system_element_3351
+		(*
+			=> nrel_idtf: [<p>sc-элемент, обозначающий класс sc-элементов</p>];;
+			=> nrel_idtf: [<p>sc-знак множества sc-элементов, эквивалентных в том или ином смысле</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);
+		.system_element_2807
+		(*
+			=> nrel_idtf: [<p>sc-знак множества sc-элементов, в состав которого входят sc-связки или структуры, связывающие эти sc-элементы</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*)
+	};
+	=> nrel_subdividing: {
+		.system_element_3737;
+		.system_element_3736
+	};
+	=> nrel_subdividing: {
+		.system_element_3738;
+		.system_element_3762;
+		.system_element_3741
+	};
+	=> nrel_subdividing: {
+		.system_element_3494;
+		.system_element_3740
+	};
+	=> nrel_subdividing: {
+		.system_element_3742;
+		.system_element_3743
+	};
+	=> nrel_subdividing: {
+		.system_element_2664;
+		.system_element_2792
+	};
+	=> nrel_inclusion: .system_element_3744;
+	=> nrel_inclusion: .system_element_3014;
+	=> nrel_inclusion: .system_element_3745;
+	=> nrel_inclusion: .system_element_3748;
+	=> nrel_explanation: [<p>Под <b><i>множеством</i></b> понимается соединение в некое целое M определённых хорошо различимых предметов m нашего созерцания или нашего мышления (которые будут называться элементами множества M). <b><i>множество</i></b>  мысленная сущность, которая связывает одну или несколько сущностей в целое.Более формально <b><i>множество</i></b>  это абстрактный математический объект, состоящий из элементов. Связь множеств с их элементами задается бинарным ориентированным отношением <b><i>принадлежность*</i></b>.<b><i>множество</i></b> может быть полностью задано следующими тремя способами:
+	<ul>
+		<li> путем перечисления (явного указания) всех его элементов (очевидно, что таким способом можно задать только конечное множество)
+		<li> с помощью определяющего высказывания, содержащего описание общего характеристического свойства, которым обладают все те и только те объекты, которые являются элементами (т.е. принадлежат) задаваемого множества.
+		<li> с помощью теоретико-множественных операций, позволяющих однозначно задавать новые множества на основе уже заданных (это операции объединения, пересечения, разности множеств и др.)</li>
+	<ul>Для любого семантически ненормализованного <b><i>множества</i></b> существует единственное семантически нормализованное <b><i>множество</i></b>, в котором все элементы, не являющиеся знаками множеств, заменены на знаки множеств.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+
+	.system_element_2795
+	=> nrel_idtf: [<p>принадлежность элемента множеству*</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>отношение принадлежности элемента множеству*</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	<- .system_element_478;
+	<- .system_element_479;
+	=> nrel_explanation: [<p><b><i>принадлежность*</i></b>  это бинарное ориентированное отношение, каждая связка которого связывает множество с одним из его элементов. Элементами отношения <b><i>принадлежность*</i></b> по умолчанию являются <i>позитивные sc-дуги принадлежности</i>.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+
+	.system_element_3729
+	=> nrel_idtf: [<p>множество с конечным числом элементов</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_explanation: [<p><b><i>конечное множество</i></b>  это <i>множество</i>, количество элементов которого конечно, т.е. существует неотрицательное целое число <i>k</i>, равное количеству элементов этого множества.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+
+	.system_element_3730
+	=> nrel_idtf: [<p>множество с бесконечным числом элементов</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_subdividing: {
+		.system_element_3731;
+		.system_element_3732
+	};
+	=> nrel_explanation: [<p><b><i>бесконечное множество</i></b>  это <i>множество</i>, в котором для любого натурального числа <i>n</i> найдётся конечное подмножество из <i>n</i> элементов.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+
+	.system_element_3731
+	=> nrel_explanation: [<p><b><i>счетное множество</i></b>  это <i>бесконечное множество</i>, для которого существует <i>взаимно-однозначное соответствие</i> с натуральным рядом чисел.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+
+	.system_element_3732
+	=> nrel_idtf: [<p>континуальное множество</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_explanation: [<p><b><i>несчетное множество</i></b> - это <i>бесконечное множество</i>, элементы которого невозможно пронумеровать натуральными числами.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+
+	.system_element_3733
+	=> nrel_idtf: [<p>классическое множество</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>канторовское множество</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>множество, состоящее из разных элементов</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>множество без кратного вхождения элементов</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>множество, все элементы которого входят в него однократно</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>множество, не имеющее кратного вхождения элементов</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_explanation: [<p><b><i>множество без кратных элементов</i></b> - это <i>множество</i>, для каждого элемента которого существует только одна пара принадлежности, выходящая из знака этого множества в указанный элемент.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+
+	.system_element_2663
+	=> nrel_idtf: [<p>множество, имеющее кратные вхождения хотя бы одного элемента</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>множество, по крайней мере один элемент которого входит в его состав многократно</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_explanation: [<p><b><i>мультимножество</i></b> - это <i>множество</i>, для которого существует хотя бы одна кратная пара принадлежности, выходящая из знака этого множества.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+
+	.system_element_3734
+	=> nrel_idtf: [<p>кратность принадлежности элемента</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>кратность вхождения элемента во множество</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	<- .system_element_439;
+	=> nrel_explanation: [<p><b><i>кратность принадлежности</i></b> - <i>параметр</i>, значением которого являются числовые величины, показывающие сколько раз входит тот или иной элемент в рассматриваемое множество. Элементами данного параметра являются классы <i>позитивных sc-дуг принадлежности</i>, связывающих данное множество с элементом, кратность вхождения которого в данное множество мы хотим задать.Таким образом, кратное вхождение элемента в мультимножество может быть задано как явным указанием <i>позитивных sc-дуг принадлежности</i> этого элемента данному <i>множеству</i>, так и склеиванием этих дуг в одну и включением ее в некоторый класс <b><i>кратности принадлежности</i></b>.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> .system_element_415: "file://figures/sd_sets/multiplicityOfMembership.png"
+	(*
+		<- concept_file;;
+		=> nrel_format: format_png;;
+	*);;
+
+	.system_element_3351
+	=> nrel_idtf: [<p>класс sc-элементов</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_subdividing: {
+		.system_element_3735;
+		.system_element_3353
+	};
+	=> nrel_explanation: [<p><b><i>класс</i></b>  множество элементов, обладающих какими-либо явно указываемыми общими свойствами.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+
+	.system_element_3735
+	=> nrel_explanation: [<p><b><i>класс первичных sc-элементов</i></b>  класс, элементами которого являются только <i>sc-элементы</i>, не являющиеся знаками множеств.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+
+	.system_element_3353
+	=> nrel_subdividing: {
+		.system_element_2742;
+		.system_element_3357;
+		.system_element_3356
+	};
+	=> nrel_explanation: [<p><b><i>класс множеств</i></b>  класс, элементами которого являются только <i>sc-элементы</i>, являющиеся знаками множеств.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+
+	.system_element_3357
+	=> nrel_explanation: [<p><b><i>класс структур</i></b>  класс, элементами которого являются <i>структуры</i>.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+
+	.system_element_3356
+	=> nrel_explanation: [<p><b><i>класс классов</i></b>  класс, элементами которого являются <i>классы</i>.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+
+	.system_element_3736
+	=> nrel_explanation: [<p><b><i>нечеткое множество</i></b>  это <i>множество</i>, которое представляет собой совокупность элементов произвольной природы, относительно которых нельзя точно утверждать  обладают ли эти элементы некоторым характеристическим свойством, которое используется для задания этого нечеткого множества. Принадлежность элементов такому множеству указывается при помощи <i>нечетких позитивных sc-дуг принадлежности</i>.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+
+	.system_element_3737
+	=> nrel_explanation: [<p><b><i>четкое множество</i></b>  это <i>множество</i>, принадлежность элементов которому достоверна и указывается при помощи <i>четких позитивных sc-дуг принадлежности</i>.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+
+	.system_element_3738
+	=> nrel_inclusion: .system_element_3763;
+	<= nrel_inclusion: .system_element_2722;
+	=> nrel_explanation: [<p><b><i>множество первичных сущностей</i></b>  это <i>множество</i>, элементы которого не являются знаками множеств.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+
+	.system_element_3739
+	=> nrel_idtf: [<p>множество множеств</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_inclusion: .system_element_3356;
+	=> nrel_explanation: [<p><b><i>семейство множеств</i></b>  это <i>множество</i>, элементами которого являются знаки множеств.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+
+	.system_element_3740
+	=> nrel_explanation: [<p><b><i>нерефлексивное множеств</i></b>  это <i>множество</i>, знак которого не является элементом этого множества</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+
+	.system_element_3494
+	=> nrel_explanation: [<p><b><i>рефлексивное множеств</i></b>  это <i>множество</i>, знак которого является элементом этого множества</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+
+	.system_element_3741
+	=> nrel_explanation: [<p><b><i>множество первичных сущностей и множеств</i></b>  это <i>множество</i>, элементами которого являются как знаки множеств, так и знаки сущностей, не являющихся множествами.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+
+	.system_element_3742
+	<- .system_element_2895;
+	=> nrel_explanation: [<p><b><i>сформированное множество </i></b> - это <i>множество</i>, все элементы которого известны и перечислены в данный момент.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+
+	.system_element_3743
+	<- .system_element_2895;
+	=> nrel_explanation: [<p><b><i>несформированное множество</i></b> - это <i>множество</i>, не все элементы которого известны и перечислены в данный момент.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+
+	.system_element_3744
+	<- .system_element_3751;
+	=> nrel_explanation: [<p><b><i>пустое множество</i></b> - это <i>множество</i>, которому не принадлежит ни один элемент.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+
+	.system_element_3014
+	<- .system_element_3751;
+	=> nrel_idtf: [<p>множество мощности 1</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>одноэлементное множество</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>одномощное множество</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>множество, мощность которого равна 1</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>множество, имеющее мощность равную единице</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>синглетон из sc-элемента</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>sc-синглеон</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	<= nrel_inclusion: .system_element_3729;
+	=> nrel_explanation: [<p><b><i>синглетон</i></b> - это <i>множество</i>, состоящее из одного элемента.Другими словами - любое множество <i>Si</i> есть <b><i>синглетон</i></b> тогда и только тогда, когда существует принадлежность этому множеству, которая совпадает с любой принадлежностью этому множеству.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+
+	.system_element_3745
+	<- .system_element_3751;
+	=> nrel_idtf: [<p>множество мощности два</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>двухэлементное множество</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>двумощное множество</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>множество, мощность которого равна 2</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>sc-пара</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>пара sc-элементов</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	<= nrel_inclusion: .system_element_3729;
+	=> nrel_subdividing: {
+		.system_element_3746;
+		.system_element_3747
+	};
+	=> nrel_explanation: [<p><b><i>пара</i></b>  это <i>множество</i>, состоящее из двух элементов.Другими словами  любое множество есть <b><i>пара</i></b> тогда и только тогда, когда существуют две различные принадлежности этому множеству такие, что любая принадлежность этому множеству совпадает с одной из них.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+
+	.system_element_3746
+	=> nrel_idtf: [<p>канторовская пара</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>канторовская пара sc-элементов</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>канторовское двумощное множество</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+
+	.system_element_3747
+	=> nrel_idtf: [<p>пара-петля</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>sc-петля</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>двумощное мультимножество</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+
+	.system_element_3748
+	<- .system_element_3751;
+	=> nrel_idtf: [<p>тройка</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>sc-тройка</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>множество мощности три</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>множество, мощность которого равна 3</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	<= nrel_inclusion: .system_element_3729;
+	=> nrel_explanation: [<p><b><i>тройка</i></b>  это <i>множество</i>, состоящее из трех элементов.Другими словами  любое множество есть <b><i>тройка</i></b> тогда и только тогда, когда существуют три различные принадлежности этому множеству такие, что любая принадлежность этому множеству совпадает с одной из них.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+
+	.system_element_2664
+	=> nrel_idtf: [<p>вектор</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_explanation: [<p><b><i>кортеж</i></b> - это множество, представляющее собой упорядоченный набор элементов, т.е. такое множество, порядок элементов в котором имеет значение. Пары принадлежности элементов <b><i>кортежу</i></b> могут дополнительно принадлежать каким-либо <i>ролевым отношениям</i>, при этом, в рамках каждого <b><i>кортежа</i></b> должен существовать хотя бы один элемент, роль которого дополнительно уточнена <i>ролевым отношением</i>.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+
+	.system_element_3752
+	=> nrel_idtf: [<p>типичный пример'</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>типичный экземпляр заданного класса'</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	<- .system_element_2509;
+	=> nrel_explanation: [<p><b><i>пример'</i></b> - это <i>ролевое отношение</i>, связывающее некоторое <i>множество</i> с элементом, являющимся примером этого множества.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+
+	nrel_inclusion
+	=> nrel_idtf: [<p>включение множеств*</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>быть подмножеством*</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	<- .system_element_478;
+	<- .system_element_479;
+	<- .system_element_2755;
+	=> .system_element_671: .system_element_2722;
+	=> nrel_inclusion: .system_element_3753;
+	=> .system_element_436: [<p><b><i>включение*</i></b> - это бинарное ориентированное отношение, каждая связка которого связывает два множества. Будем говорить, что <i>Множество Si</i> <b><i>включает*</i></b> в себя <i>Множество Sj</i> в том и только том случае, если каждый элемент <i>Множества Sj</i> является также и элементом <i>Множества Si</i>.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> .system_element_415: "file://figures/sd_sets/inclusion.png"
+	(*
+		<- concept_file;;
+		=> nrel_format: format_png;;
+		=> nrel_explanation: [<p>Множество <i>Sj</i> включается во множество <i>Si</i>.</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+
+	.system_element_3753
+	=> nrel_idtf: [<p>строгое включение множеств*</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	<= nrel_inclusion: nrel_inclusion;
+	<- .system_element_478;
+	<- .system_element_479;
+	=> .system_element_671: .system_element_2722;
+	=> .system_element_436: [<p><b><i>строгое включение*</i></b> - это <i>бинарное ориентированное отношение</i>, областью определения которого является семейство всевозможных множеств. Будем говорить, что <i>Множество Si</i> <b><i>строго включает*</i></b> в себя <i>Множество Sj</i> в том и только том случае, если каждый элемент <i>Множество Sj</i> является также и элементом <i>Множество Si</i>, при этом существует хотя бы один элемент <i>Множество Si</i>, не являющийся элементом <i>Множество Sj</i>.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> .system_element_415: "file://figures/sd_sets/strictInclusion.png"
+	(*
+		<- concept_file;;
+		=> nrel_format: format_png;;
+		=> nrel_explanation: [<p>Множество <i>Sj</i> строго включается во множество <i>Si</i>.</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);
+	=> .system_element_2637: "file://figures/sd_sets/inclusion2.png"
+	(*
+		<- concept_file;;
+		=> nrel_format: format_png;;
+	*);;
+
+	.system_element_325
+	=> nrel_idtf: [<p>объединение множеств*</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	<- .system_element_490;
+	<- .system_element_479;
+	=> .system_element_436: [<p><b><i>объединение*</i></b>  это <i>квазибинарное ориентированное отношение</i>, областью определения которого является семейство всевозможных множеств. Будем говорить, что <i>Множество Si</i> является объединением <i>Множество Sj</i> и <i>Множество Sk</i> тогда и только тогда, когда любой элемент <i>Множество Si</i> является элементом или <i>Множество Sj</i> или <i>Множество Sk</i>.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> .system_element_415: "file://figures/sd_sets/union.png"
+	(*
+		<- concept_file;;
+		=> nrel_format: format_png;;
+		=> nrel_explanation: [<p>Множество <i>Si</i> является объединением множеств <i>Sj</i>, <i>Sk</i> и <i>Sm</i>.</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);
+	=> .system_element_2637: "file://figures/sd_sets/union2.png"
+	(*
+		<- concept_file;;
+		=> nrel_format: format_png;;
+	*);;
+
+	nrel_subdividing
+	=> nrel_idtf: [<p>разбиение  множества*</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>объединение попарно непересекающихся множеств*</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>декомпозиция множества*</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	<- .system_element_490;
+	<- .system_element_479;
+	<- .system_element_2401;
+	=> .system_element_436: [<p><b><i>разбиение*</i></b>  это <i>квазибинарное ориентированное отношение</i>, областью определения которого является семейство всевозможных множеств. В результате разбиения множества получается множество попарно непересекающихся множеств, объединение которых есть исходное множество.Семейство множеств  является разбиением множества <i>Si</i> в том и только том случае, если:
+	<ul>
+		<li> семейство  является семейством <i>попарно непересекающихся множеств</i>;
+		<li> семейство  является покрытием множества <i>Si</i> (или другими словами, множество <i>Si</i> является <i>объединением</i> множеств, входящих в указанное выше семейство)</li>
+	<ul></p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> .system_element_415: "file://figures/sd_sets/split.png"
+	(*
+		<- concept_file;;
+		=> nrel_format: format_png;;
+		=> nrel_explanation: [<p>Множество <i>Si</i> разбивается на множества <i>Sj</i>, <i>Sk</i> и <i>Sm</i>.</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);
+	=> .system_element_2637: "file://figures/sd_sets/split2.png"
+	(*
+		<- concept_file;;
+		=> nrel_format: format_png;;
+	*);;
+
+	.system_element_126
+	=> nrel_idtf: [<p>пересечение множеств*</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	<- .system_element_490;
+	<- .system_element_479;
+	=> .system_element_436: [<p><b><i>пересечение*</i></b>  это операция над множествами, аргументами которой являются два или большее число множеств, а результатом является множество, элементами которого являются все те и только те сущности, которые одновременно принадлежат каждому множеству, которое входит в семейство аргументов этой операции.Будем говорить, что <i>Множество Si</i> является пересечением <i>Множество Sj</i> и <i>Множество Sk</i> тогда и только тогда, когда любой элемент <i>Множество Si</i> является элементом <i>Множество Sj</i> и элементом <i>Множество Sk</i>.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> .system_element_415: "file://figures/sd_sets/intersection.png"
+	(*
+		<- concept_file;;
+		=> nrel_format: format_png;;
+		=> nrel_explanation: [<p>Множество <i>Si</i> является результатом пересечения множеств <i>Sj</i>, <i>Sk</i> и <i>Sm</i>.</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);
+	=> .system_element_2637: "file://figures/sd_sets/intersection2.png"
+	(*
+		<- concept_file;;
+		=> nrel_format: format_png;;
+	*);;
+
+	.system_element_3201
+	<- .system_element_478;
+	<- .system_element_2748;
+	=> nrel_explanation: [<p><b><i>пара пересекающихся множеств*</i></b>  <i>бинарное неориентированное отношение</i> между двумя <i>множествами</i>, имеющими непустое <i>пересечение*</i>.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> .system_element_436: [<p><b><i>пара пересекающихся множеств*</i></b>  <i>бинарное неориентированное отношение</i> между двумя <i>множествами</i>, имеющими, по крайней мере, один общий для этих двух множеств элемент.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> .system_element_415: "file://figures/sd_sets/pairOfIntersectingSets.png"
+	(*
+		<- concept_file;;
+		=> nrel_format: format_png;;
+		=> nrel_explanation: [<p>Множество <i>Si</i> и множество <i>Sj</i> являются парой пересекающихся множеств.</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);
+	=> .system_element_2637: "file://figures/sd_sets/pairOfIntersectingSets2.png"
+	(*
+		<- concept_file;;
+		=> nrel_format: format_png;;
+	*);;
+
+	.system_element_3754
+	=> nrel_idtf: [<p>семейство попарно пересекающихся множеств*</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_inclusion: .system_element_3755;
+	<- .system_element_2742;
+	=> .system_element_436: [<p><b><i>попарно пересекающиеся множества*</i></b>  семейство множеств, каждая пара которых является парой пересекающихся множеств, т.е. каждая пара которых имеет хотя бы один общий элемент</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_note: [<p>Не каждое <i>семейство попарно пересекающихся множеств*</i> является <i>семейством пересекающихся множеств*</i>, хотя обратное верно.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> .system_element_2637: "file://figures/sd_sets/pairwiseIntersectingSets.png"
+	(*
+		<- concept_file;;
+		=> nrel_format: format_png;;
+		=> nrel_explanation: [<p>Множества <i>Si</i>, <i>Sj</i>, <i>Sk</i> и <i>Sl</i> являются попарно пересекающимися множествами.</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);
+	=> .system_element_2637: "file://figures/sd_sets/pairwiseIntersectingSets2.png"
+	(*
+		<- concept_file;;
+		=> nrel_format: format_png;;
+	*);;
+
+	.system_element_3755
+	=> nrel_idtf: [<p>семейство пересекающихся множеств*</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>быть семейством пересекающихся множеств*</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>семейство множеств, имеющих по крайней мере один элемент, являющийся общим для всех этих множеств*</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_inclusion: .system_element_3754;
+	=> .system_element_436: [<p><b><i>пересекающиеся множества*</i></b>  это семейство множеств, имеющих по крайней мере один общий для всех этих множеств элемент</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> .system_element_415: "file://figures/sd_sets/intersectingSets.png"
+	(*
+		<- concept_file;;
+		=> nrel_format: format_png;;
+		=> nrel_explanation: [<p>Множества <i>Si</i>, <i>Sj</i>, <i>Sk</i> и <i>Sl</i> являются пересекающимися множествами.</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+
+	.system_element_3756
+	<- .system_element_478;
+	<- .system_element_2748;
+	=> .system_element_436: [<p><b><i>пара непересекающихся множеств*</i></b>  это <i>бинарное неориентированное отношение</i> между <i>множествами</i>, результатом <i>пересечения*</i> которых есть пустое множество.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> .system_element_415: "file://figures/sd_sets/pairOfNonIntersectingSets.png"
+	(*
+		<- concept_file;;
+		=> nrel_format: format_png;;
+		=> nrel_explanation: [<p>Множества <i>Si</i> и <i>Sj</i> являются парой непересекающихся множеств.</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);
+	=> .system_element_2637: "file://figures/sd_sets/pairOfNonIntersectingSets2.png"
+	(*
+		<- concept_file;;
+		=> nrel_format: format_png;;
+	*);;
+
+	.system_element_3757
+	=> nrel_idtf: [<p>семейство попарно непересекающихся множеств*</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	<= nrel_inclusion: .system_element_3758;
+	=> .system_element_436: [<p><b><i>попарно непересекающиеся множества*</i></b>  семейство множеств, каждая пара которых является парой непересекающихся множеств, т.е. каждая пара которых не имеет ни одного общего элемента</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> .system_element_2637: "file://figures/sd_sets/pairwiseNonIntersectingSets.png"
+	(*
+		<- concept_file;;
+		=> nrel_format: format_png;;
+		=> nrel_explanation: [<p>Множества <i>Si</i>, <i>Sj</i>, <i>Sk</i> и <i>Sl</i> являются попарно непересекающимися множествами.</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+
+	.system_element_3758
+	=> nrel_idtf: [<p>семейство непересекающихся множеств*</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>быть семейством непересекающихся множеств*</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> .system_element_436: [<p><b><i>непересекающиеся множества*</i></b>  это семейство множеств, не имеющих ни одного общего элемента для всех этих множеств</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> .system_element_2637: "file://figures/sd_sets/nonIntersectingSets.png"
+	(*
+		<- concept_file;;
+		=> nrel_format: format_png;;
+		=> nrel_explanation: [<p>Множества <i>Si</i>, <i>Sj</i>, <i>Sk</i> и <i>Sl</i> являются непересекающимися множествами.</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+
+	.system_element_324
+	<- .system_element_478;
+	<- .system_element_479;
+	=> .system_element_436: [<p><b><i>разность множеств*</i></b>  это <i>бинарное ориентированное отношение</i>, связывающее между собой <i>ориентированную пару</i>, первым элементом которой является уменьшаемое множество, вторым - вычитаемое множество, и множество, являющееся результатом вычитания вычитаемого из уменьшаемого, в которое входят все элементы первого множества, не входящие во второе множество.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> .system_element_415: "file://figures/sd_sets/setDifference.png"
+	(*
+		<- concept_file;;
+		=> nrel_format: format_png;;
+		=> nrel_explanation: [<p>Множество <i>Si</i> является результатом разности множеств <i>Sj</i> и <i>Sk</i>.</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);
+	=> .system_element_2637: "file://figures/sd_sets/setDifference2.png"
+	(*
+		<- concept_file;;
+		=> nrel_format: format_png;;
+	*);;
+
+	.system_element_3759
+	<- .system_element_478;
+	<- .system_element_479;
+	=> .system_element_436: [<p><b><i>симметрическая разность множеств*</i></b>  это <i>бинарное ориентированное отношение</i>, связывающее между собой <i>пару</i> множеств и множество, являющееся результатом симметрической разности элементов указанной пары. Будем называть <i>Множество Si</i> результатом симметрической разности <i>Множества Sj</i> и <i>Множества Sk</i> тогда и только тогда, когда любой элемент <i>Множества Si</i> является или элементом <i>Множества Sj</i> или <i>Множества Sk</i>, но не является элементом обоих множеств.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> .system_element_415: "file://figures/sd_sets/symmetricDifferenceOfSets.png"
+	(*
+		<- concept_file;;
+		=> nrel_format: format_png;;
+		=> nrel_explanation: [<p>Множество <i>Si</i> является результатом симметрической разности множеств <i>Sj</i> и <i>Sk</i>.</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);
+	=> .system_element_2637: "file://figures/sd_sets/symmetricDifferenceOfSets2.png"
+	(*
+		<- concept_file;;
+		=> nrel_format: format_png;;
+	*);;
+
+	.system_element_198
+	=> nrel_idtf: [<p>декартово произведение множеств*</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>прямое произведение множеств*</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	<- .system_element_478;
+	<- .system_element_479;
+	=> .system_element_436: [<p><b><i>декартово произведение*</i></b>  это <i>бинарное ориентированное отношение</i> между <i>ориентированной парой</i> множеств и <i>множеством</i>, элементами которого являются всевозможные упорядоченные пары, первыми элементами которых являются элементы первого из указанных множеств, вторыми  элементы второго из указанных множеств.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> .system_element_415: "file://figures/sd_sets/cartesianMultiplication.png"
+	(*
+		<- concept_file;;
+		=> nrel_format: format_png;;
+		=> nrel_explanation: [<p>Множество <i>Si</i> является результатом декартова произведения множеств <i>Sj</i> и <i>Sk</i>.</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+
+	.system_element_3749
+	=> nrel_idtf: [<p>второй домен отношения быть декартовым произведением</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> .system_element_95: .system_element_198;;
+
+	.system_element_195
+	=> nrel_idtf: [<p>семейство подмножеств заданного множества*</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	<- .system_element_478;
+	<- .system_element_479;
+	=> nrel_inclusion: .system_element_3760;
+	=> .system_element_436: [<p><b><i>семейство подмножеств*</i></b>  это <i>бинарное ориентированное отношение</i> между множеством и некоторым семейством множеств, каждое из которых является подмножеством первого множества.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> .system_element_415: "file://figures/sd_sets/familyOfSubsets.png"
+	(*
+		<- concept_file;;
+		=> nrel_format: format_png;;
+	*);;
+
+	.system_element_3760
+	=> nrel_idtf: [<p>булеан множества*</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>семейство всевозможных подмножеств заданного множества*</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	<- .system_element_478;
+	<- .system_element_479;
+	=> .system_element_436: [<p><b><i>булеан*</i></b>  это <i>бинарное ориентированное отношение</i> между множеством и некоторым семейством множеств, каждое из которых является подмножеством первого множества.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> .system_element_415: "file://figures/sd_sets/boulean.png"
+	(*
+		<- concept_file;;
+		=> nrel_format: format_png;;
+	*);;
+
+	.system_element_3750
+	=> nrel_idtf: [<p>второй домен отношения быть булеаном</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> .system_element_95: .system_element_3760;;
+
+	.system_element_3751
+	=> nrel_idtf: [<p>кардинальное число</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>общее число вхождений элементов в заданное множество</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>класс эквивалентности, элементами которого являются знаки всех тех и только тех множеств, которые имеют одинаковую мощность</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>класс эквивалентности, соответствующий отношению быть парой множеств, имеющих одинаковую мощность (равномощность множеств)</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>величина мощности множеств</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>трансфинитное число</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>мощность по Кантору</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	<- .system_element_439;
+	=> nrel_explanation: [<p><b><i>мощность множества</i></b>  это <i>параметр</i>, элементами которых являются <i>множества</i>, имеющие одинаковое количество элементов. Значением данного параметра является числовая величина, задающая количество элементов, входящих в данный класс множеств, т.е. по сути, количество <i>позитивных sc-дуг принадлежности</i>, выходящих из данного <i>множества</i>.Для двух множеств, имеющих одинаковую мощность, существует взаимно-однозначное соответствие между ними (между множествами вхождений элементов в эти множества  на случай мультимножеств).</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> .system_element_415: "file://figures/sd_sets/power.png"
+	(*
+		<- concept_file;;
+		=> nrel_format: format_png;;
+	*);;
+
+	.system_element_3761
+	<- .system_element_478;
+	<- .system_element_2748;
+	=> nrel_idtf: [<p>быть равными множествами*</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> .system_element_436: [<p><b><i>равенство множеств</i></b>* - бинарное неориентированное отношение, выражающее отношение равенства множеств.Любые два множества являются равными множествами тогда и только тогда, когда первое является включением второго и второе является включением первого.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> .system_element_415: "file://figures/sd_sets/equalityOfSets.png"
+	(*
+		<- concept_file;;
+		=> nrel_format: format_png;;
+		=> nrel_explanation: [<p>Множество <i>Si</i> равно множеству <i>Sj</i>.</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+*];;

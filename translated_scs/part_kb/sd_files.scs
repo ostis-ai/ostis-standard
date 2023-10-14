@@ -1,0 +1,111 @@
+.system_element_4603
+=> nrel_inclusion: [*
+
+	.system_element_4604
+	<- .system_element_2;
+	-> rrel_maximum_studied_object_class: 
+		.system_element_486
+	;
+	-> rrel_studied_object_class: 
+		.system_element_4605;
+		.system_element_3651;
+		.system_element_3660;
+		.system_element_3117;
+		.system_element_4606;
+		.system_element_4607;
+		.system_element_4608
+	;
+	-> rrel_explored_relation: 
+		.system_element_4609
+	;;
+
+	.system_element_486
+	=> nrel_idtf: [<p>знак файла</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>sc-знак файла</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>знак информационной конструкции, внешней по отношению к sc-памяти</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>sc-ссылка</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_explanation: [<p>Под <b><i>файлом</i></b> понимается любая информационная конструкция, внешняя по отношению к <i>sc-памяти</i>, т.е., не являющаяся <i>sc-текстом</i>. При этом каждому <b><i>файлу</i></b> может быть поставлен в соответствие семантически эквивалентный <i>sc-текст</i>.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+
+	.system_element_4605
+	=> nrel_idtf: [<p>язык, внешний по отношению к sc-памяти</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	<= .system_element_195: .system_element_486;
+	=> nrel_explanation: [<p>Под <b><i>внешним языком</i></b> понимается множество <i>файлов</i>, имеющих общую синтаксическую структуру.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+
+	.system_element_3651
+	=> nrel_idtf: [<p>язык диалога с пользователем</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	<= nrel_inclusion: .system_element_4605;
+	-> .system_element_3660;
+	-> .system_element_3117;
+	=> nrel_explanation: [<p>Под конкретным <b><i>естественным языком</i></b> понимается некоторое множество <i>файлов</i> (например, идентификаторов, естественно-языковых пояснений и т.д.), которые используются при диалоге с тем или иным пользователем, режим ведения которого он может выбрать. В этом смысле некоторые фрагменты, такие как, например обозначения <b>sin</b>, <b>cos</b>, <b>a.e.</b> и т.п., могут входить в несколько <b><i>естественных языков</i></b>, поскольку используются при диалоге, но исторически являться фрагментами другого языка.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+
+	.system_element_4609
+	=> nrel_explanation: [<p>Связки отношения <b><i>трансляция sc-текста*</i></b> связывают некоторый <i>sc-текст</i> и <i>файл</i>, который является семантическим эквивалентом этого <i>sc-текста</i> на некотором внешнем языке (в том числе, например, языке геометрических чертежей, математических формул и т.д.).</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+
+	.system_element_4606
+	=> nrel_idtf: [<p>графический файл</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>графическая несимвольная информационная конструкция</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	<= nrel_inclusion: .system_element_486;;
+
+	.system_element_4607
+	=> nrel_inclusion: .system_element_4608;
+	=> nrel_explanation: [<p><b><i>класс синтаксически эквивалентных информационных конструкций</i></b> - <i>класс</i> информационных конструкций имеющих общие синтаксические свойства без учета различий в форматах их кодирования, в используемых шрифтах, в форматировании и размещении.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+
+	.system_element_4608
+	=> nrel_explanation: [<p><b><i>максимальный класс синтаксически эквивалентных информационных конструкций</i></b> - <i>класс</i> всевозможных конструкций, имеющих общие синтаксические свойства без учета различий в форматах их кодирования, в используемых шрифтах, в форматировании и размещении.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+*];;

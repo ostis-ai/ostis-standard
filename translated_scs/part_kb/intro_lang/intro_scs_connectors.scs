@@ -1,0 +1,1087 @@
+.intro_scs_connectors = [*
+.system_element_3049
+= [*
+
+	.system_element_3050
+	=> nrel_idtf: [<p>базовая sc.s-дуга</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> .system_element_3051: 
+		![->]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);
+		![<-]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*)
+	;
+	=> .system_element_3052: 
+		![∋]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);
+		![∈]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*)
+	;
+	=> .system_element_3053: 
+		"file://figures/intro/scs/sc.s-connectors/posTermOrientMembership.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*);
+		"file://figures/intro/scs/sc.s-connectors/posTermOrientMembership2.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*)
+	;;
+
+	.system_element_3054
+	=> .system_element_3051: 
+		![-| >]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);
+		![< |-]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*)
+	;
+	=> .system_element_3052: 
+		![/ ∋]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);
+		![∉]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*)
+	;
+	=> .system_element_3053: 
+		"file://figures/intro/scs/sc.s-connectors/negPermOrient.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*);
+		"file://figures/intro/scs/sc.s-connectors/negPermOrient2.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*)
+	;;
+
+	.system_element_3055
+	=> .system_element_3051: 
+		![-/ >]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);
+		![< /-]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*)
+	;
+	=> .system_element_3052: 
+		![/ ∋]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);
+		![ ∈ /]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*)
+	;
+	=> .system_element_3053: 
+		"file://figures/intro/scs/sc.s-connectors/fuzPermOrient.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*);
+		"file://figures/intro/scs/sc.s-connectors/fuzPermOrient2.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*)
+	;;
+
+	.system_element_3056
+	=> .system_element_3051: 
+		![~>]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);
+		![<~]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*)
+	;
+	=> .system_element_3052: 
+		![~∋]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);
+		![∈~]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*)
+	;
+	=> .system_element_3053: 
+		"file://figures/intro/scs/sc.s-connectors/posTempOrient.png"
+
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*);
+		"file://figures/intro/scs/sc.s-connectors/posTempOrient2.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*)
+	;;
+
+	.system_element_3057
+	=> .system_element_3051: 
+		![~ |>]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);
+		![<| ~]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*)
+	;
+	=> .system_element_3052: 
+		![~ /∋]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);
+		![ ∉ ~]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*)
+	;
+	=> .system_element_3053: 
+		"file://figures/intro/scs/sc.s-connectors/negTempOrient.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*);
+		"file://figures/intro/scs/sc.s-connectors/negTempOrient2.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*)
+	;;
+
+	.system_element_3058
+	=> .system_element_3051: 
+		![~ />]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);
+		![</ ~]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*)
+	;
+	=> .system_element_3052: 
+		![~/∋]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);
+		![ ∈/~]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*)
+	;
+	=> .system_element_3053: 
+		"file://figures/intro/scs/sc.s-connectors/fuzTempOrient.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*);
+		"file://figures/intro/scs/sc.s-connectors/fuzTempOrient2.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*)
+	;;
+
+	.system_element_3059
+	=> .system_element_3051: 
+		![_->]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);
+		![<-_]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*)
+	;
+	=> .system_element_3052: 
+		![_∋]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);
+		![_∈]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*)
+	;
+	=> .system_element_3053: 
+		"file://figures/intro/scs/sc.s-connectors/varPosPermOrient.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*);
+		"file://figures/intro/scs/sc.s-connectors/varPosPermOrient2.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*)
+	;;
+
+	.system_element_3060
+	=> .system_element_3051: 
+		![_-|>]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);
+		![<|-_]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*)
+	;
+	=> .system_element_3052: 
+		![_/∋]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);
+		![∉_]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*)
+	;
+	=> .system_element_3053: 
+		"file://figures/intro/scs/sc.s-connectors/varNegPermOrient.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*);
+		"file://figures/intro/scs/sc.s-connectors/varNegPermOrient2.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*)
+	;;
+
+	.system_element_3061
+	=> .system_element_3051: 
+		![_-/>]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);
+		![</-_]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*)
+	;
+	=> .system_element_3052: 
+		![_/∋]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);
+		![∈/_]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*)
+	;
+	=> .system_element_3053: 
+		"file://figures/intro/scs/sc.s-connectors/varFuzPermOrient.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*);
+		"file://figures/intro/scs/sc.s-connectors/varFuzPermOrient2.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*)
+	;;
+
+	.system_element_3062
+	=> .system_element_3051: 
+		![_~>]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);
+		![<~_]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*)
+	;
+	=> .system_element_3052: 
+		![_~∋]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);
+		![∈~_]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*)
+	;
+	=> .system_element_3053: 
+		"file://figures/intro/scs/sc.s-connectors/varPosTempOrient.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*);
+		"file://figures/intro/scs/sc.s-connectors/varPosTempOrient2.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*)
+	;;
+
+	.system_element_3063
+	=> .system_element_3051: 
+		![_~|>]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);
+		![<|~_]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*)
+	;
+	=> .system_element_3052: 
+		![_~/∋]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);
+		![∉~_]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*)
+	
+;
+	=> .system_element_3053: 
+		"file://figures/intro/scs/sc.s-connectors/varNegTempOrient.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*);
+		"file://figures/intro/scs/sc.s-connectors/varNegTempOrient2.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*)
+	;;
+
+	.system_element_3064
+	=> .system_element_3051: 
+		![_~/>]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);
+		![</~_]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*)
+	;
+	=> .system_element_3052: 
+		![_~/∋]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);
+		![∈/~_]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*)
+	;
+	=> .system_element_3053: 
+		"file://figures/intro/scs/sc.s-connectors/varFuzTempOrient.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*);
+		"file://figures/intro/scs/sc.s-connectors/varFuzTempOrient2.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*)
+	;;
+
+	.system_element_3065
+	=> .system_element_3051: 
+		![__->]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);
+		![<-__]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*)
+	;
+	=> .system_element_3052: 
+		![__∋]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);
+		![∈__]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*)
+	;
+	=> .system_element_3053: 
+		"file://figures/intro/scs/sc.s-connectors/metaPosPermOrient.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*);
+		"file://figures/intro/scs/sc.s-connectors/metaPosPermOrient2.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*)
+	;;
+
+	.system_element_3066
+	=> .system_element_3051: 
+		![__-|>]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);
+		![<|-__]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*)
+	;
+	=> .system_element_3052: 
+		![__/∋]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);
+		![∉__]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*)
+	;
+	=> .system_element_3053: 
+		"file://figures/intro/scs/sc.s-connectors/metaNegPermOrient.png"
+
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*);
+		"file://figures/intro/scs/sc.s-connectors/metaNegPermOrient2.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*)
+	;;
+
+	.system_element_3067
+	=> .system_element_3051: 
+		![__-/>]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);
+		![</-__]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*)
+	;
+	=> .system_element_3052: 
+		![__/∋]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);
+		![∈/__]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*)
+	;
+	=> .system_element_3053: 
+		"file://figures/intro/scs/sc.s-connectors/metaFuzPermOrient.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*);
+		"file://figures/intro/scs/sc.s-connectors/metaFuzPermOrient2.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*)
+	;;
+
+	.system_element_3068
+	=> .system_element_3051: 
+		![__~>]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);
+		![<~__]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*)
+	;
+	=> .system_element_3052: 
+		![__~∋]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);
+		![∈~__]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*)
+	;
+	=> .system_element_3053: 
+		"file://figures/intro/scs/sc.s-connectors/metaPosTempOrient.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*);
+		"file://figures/intro/scs/sc.s-connectors/metaPosTempOrient2.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*)
+	;;
+
+	.system_element_3069
+	=> .system_element_3051: 
+		![__~ |>]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);
+		![<| ~__]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*)
+	;
+	=> .system_element_3052: 
+		![__~/∋]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);
+		![∉~__]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*)
+	;
+	=> .system_element_3053: 
+		"file://figures/intro/scs/sc.s-connectors/metaNegTempOrient.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*);
+		"file://figures/intro/scs/sc.s-connectors/metaNegTempOrient2.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*)
+	;;
+
+	.system_element_3070
+	=> .system_element_3051: 
+		![__~/>]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);
+		![</~__]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*)
+	;
+	=> .system_element_3052: 
+		![__~/∋]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);
+		![∈/~__]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*)
+	;
+	=> .system_element_3053: 
+		"file://figures/intro/scs/sc.s-connectors/metaFuzTempOrient.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*);
+		"file://figures/intro/scs/sc.s-connectors/metaFuzTempOrient2.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*)
+	;;
+
+	.system_element_3071
+	=> .system_element_3051: ![<>]!
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> .system_element_3052: ![]!
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> .system_element_3053: "file://figures/intro/scs/sc.s-connectors/noorient.png"
+	(*
+		<- concept_file;;
+		=> nrel_format: format_png;;
+	*);;
+
+	.system_element_3072
+	=> .system_element_3051: 
+		![>]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);
+		![<]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*)
+	;
+	=> .system_element_3052: 
+		![→]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);
+		![]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*)
+	;
+	=> .system_element_3053: 
+		"file://figures/intro/scs/sc.s-connectors/orient.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*);
+		"file://figures/intro/scs/sc.s-connectors/orient2.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*)
+	;;
+
+	.system_element_3073
+	=> .system_element_3051: ![<=>]!
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> .system_element_3052: ![⇔]!
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> .system_element_3053: "file://figures/intro/scs/sc.s-connectors/constPermNoorien.png"
+	(*
+		<- concept_file;;
+		=> nrel_format: format_png;;
+	*);;
+
+	.system_element_3074
+	=> .system_element_3051: 
+		![=>]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);
+		![<=]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*)
+	;
+	=> .system_element_3052: 
+		![⇒]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);
+		![]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*)
+	
+;
+	=> .system_element_3053: 
+		"file://figures/intro/scs/sc.s-connectors/constPermOrient.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*);
+		"file://figures/intro/scs/sc.s-connectors/constPermOrient2.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*)
+	;;
+
+	.system_element_3075
+	=> .system_element_3051: ![~<=>]!
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> .system_element_3052: ![~⇔]!
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> .system_element_3053: "file://figures/intro/scs/sc.s-connectors/constTempNoorien.png"
+	(*
+		<- concept_file;;
+		=> nrel_format: format_png;;
+	*);;
+
+	.system_element_3076
+	=> .system_element_3051: 
+		![~=>]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);
+		![<=~]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*)
+	;
+	=> .system_element_3052: 
+		![~⇒]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);
+		![~]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*)
+	;
+	=> .system_element_3053: 
+		"file://figures/intro/scs/sc.s-connectors/constTempOrient.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*);
+		"file://figures/intro/scs/sc.s-connectors/constTempOrient2.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*)
+	;;
+
+	.system_element_3077
+	=> .system_element_3051: ![_<=>]!
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> .system_element_3052: ![_⇔]!
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> .system_element_3053: "file://figures/intro/scs/sc.s-connectors/varPermNoorien.png"
+	(*
+		<- concept_file;;
+		=> nrel_format: format_png;;
+	*);;
+
+	.system_element_3078
+	=> .system_element_3051: 
+		![_=>]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);
+		![<=_]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*)
+	;
+	=> .system_element_3052: 
+		![_⇒]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);
+		![_]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*)
+	
+;
+	=> .system_element_3053: 
+		"file://figures/intro/scs/sc.s-connectors/varPermOrient.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*);
+		"file://figures/intro/scs/sc.s-connectors/varPermOrient2.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*)
+	;;
+
+	.system_element_3079
+	=> .system_element_3051: ![_~<=>]!
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> .system_element_3052: ![_~⇔]!
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> .system_element_3053: "file://figures/intro/scs/sc.s-connectors/varTempNoorien.png"
+	(*
+		<- concept_file;;
+		=> nrel_format: format_png;;
+	*);;
+
+	.system_element_3080
+	=> .system_element_3051: 
+		![_~=>]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);
+		![<=~_]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*)
+	;
+	=> .system_element_3052: 
+		![_~⇒]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);
+		![~_]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*)
+	;
+	=> .system_element_3053: 
+		"file://figures/intro/scs/sc.s-connectors/varTempOrient.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*);
+		"file://figures/intro/scs/sc.s-connectors/varTempOrient2.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*)
+	;;
+
+	.system_element_3081
+	=> .system_element_3051: ![__<=>]!
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> .system_element_3052: ![__⇔]!
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> .system_element_3053: "file://figures/intro/scs/sc.s-connectors/metaPermNoorien.png"
+	(*
+		<- concept_file;;
+		=> nrel_format: format_png;;
+	*);;
+
+	.system_element_3082
+	=> .system_element_3051: 
+		![__=>]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);
+		![<=__]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*)
+	;
+	=> .system_element_3052: 
+		![__⇒]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);
+		![__]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*)
+	
+;
+	=> .system_element_3053: 
+		"file://figures/intro/scs/sc.s-connectors/metaPermOrient.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*);
+		"file://figures/intro/scs/sc.s-connectors/metaPermOrient2.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*)
+	;;
+
+	.system_element_3083
+	=> .system_element_3051: ![__~<=>]!
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> .system_element_3052: ![__~⇔]!
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> .system_element_3053: "file://figures/intro/scs/sc.s-connectors/metaTempNoorien.png"
+	(*
+		<- concept_file;;
+		=> nrel_format: format_png;;
+	*);;
+
+	.system_element_3084
+	=> .system_element_3051: 
+		![__~=>]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);
+		![<=~__]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*)
+	;
+	=> .system_element_3052: 
+		![__~⇒]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);
+		![~__]!
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*)
+	;
+	=> .system_element_3053: 
+		"file://figures/intro/scs/sc.s-connectors/metaTempOrient.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*);
+		"file://figures/intro/scs/sc.s-connectors/metaTempOrient2.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*)
+	;;
+*];
+=> nrel_note: [<p>Аналогичным образом может быть описано изображение всех классов sc.s-коннекторов, представленных в <i>Таблица. Алфавит sc.s-коннекторов, соответствующих sc.g-дугам принадлежности</i> и <i>Таблица. Алфавит sc.s-коннекторов, соответствующих sc.g-дугам принадлежности</i></p>];;
+
+*];;

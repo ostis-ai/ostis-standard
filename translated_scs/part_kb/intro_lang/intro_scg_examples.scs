@@ -1,0 +1,56 @@
+.intro_scg_examples = [*
+.system_element_3260
+=> nrel_subdividing: {
+	"file://figures/intro/scg/examples/scg_examples_transf_1_1.png"
+	(*
+		<- concept_file;;
+		=> nrel_format: format_png;;
+		=> .system_element_3019: "file://figures/intro/scg/examples/scg_examples_transf_1_2.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*);;
+		=> .system_element_3019: "file://figures/intro/scg/examples/scg_examples_transf_1_3.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*);;
+		=> .system_element_3019: "file://figures/intro/scg/examples/scg_examples_transf_1_4.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*);;
+	*);
+	"file://figures/intro/scg/examples/scg_examples_transf_2_1.png"
+	(*
+		<- concept_file;;
+		=> nrel_format: format_png;;
+		=> .system_element_3019: "file://figures/intro/scg/examples/scg_examples_transf_2_2.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*);;
+		=> .system_element_3019: "file://figures/intro/scg/examples/scg_examples_transf_2_3.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*);;
+	*);
+	"file://figures/intro/scg/examples/scg_examples_transf_3_1.png"
+	(*
+		<- concept_file;;
+		=> nrel_format: format_png;;
+		=> .system_element_3019: "file://figures/intro/scg/examples/scg_examples_transf_3_2.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*);;
+		=> .system_element_3019: "file://figures/intro/scg/examples/scg_examples_transf_3_3.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*);;
+	*)
+};;
+
+*];;

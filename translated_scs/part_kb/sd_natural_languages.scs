@@ -1,0 +1,479 @@
+.system_element_1301
+=> nrel_inclusion: [*
+	=> .system_element_38: 
+		.system_element_3641;
+		.system_element_3642;
+		.system_element_3643;
+		.system_element_3644
+	;;
+
+	.system_element_3645
+	<- .system_element_2;
+	-> rrel_maximum_studied_object_class: 
+		.system_element_610
+	;
+	-> rrel_studied_object_class: 
+		.system_element_3646;
+		.system_element_3647;
+		.system_element_3648;
+		.system_element_3649;
+		.system_element_3650;
+		.system_element_3651;
+		.system_element_3652;
+		.system_element_3653
+	;
+	-> rrel_explored_relation: 
+		.system_element_3654;
+		.system_element_3655
+	;;
+
+	.system_element_610
+	=> nrel_subdividing: {
+		.system_element_3651
+		(*
+			=> nrel_explanation: [<p>Естественный язык представляет собой язык, который не был создан целенаправленно</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);
+		.system_element_3656
+		(*
+			=> nrel_explanation: [<p>Искусственный язык представляет собой язык, специально разработанный для достижения определённых целей</p>];;
+			-> .system_element_3657;;
+			-> .system_element_80;;
+			=> nrel_inclusion: .system_element_3658
+			(*
+				=> nrel_explanation: [<p>Сконструированный язык представляет собой искусственный язык, предназначенный для общения людей</p>];;
+				-> .system_element_3657;;
+			*);;
+		*)
+	};
+	=> nrel_inclusion: .system_element_3659
+	(*
+		=> nrel_explanation: [<p>Международный язык представляет собой естественный или искусственный язык, использующийся для общения людей разных из стран</p>];;
+		-> .system_element_3117;;
+		-> .system_element_3660;;
+	*);;
+
+	.system_element_3646
+	<= .system_element_126: {
+		.system_element_3658;
+		.system_element_3659
+	};;
+
+	.system_element_3647
+	<= .system_element_325: {
+		.system_element_3651;
+		.system_element_3658
+	};
+	-> .system_element_3117;
+	-> .system_element_3660;
+	-> .system_element_3657;
+	<= .system_element_325: {
+		.system_element_3661
+		(*
+			=> nrel_explanation: [<p>Корневой язык представляет собой язык, для которого характерно полное отсутствие словоизменения и наличие грамматической значимости порядка слов, состоящих только из корня.</p>];;
+			-> .system_element_3117;;
+		*);
+		.system_element_3662
+		(*
+			=> nrel_explanation: [<p>Агглютинативный язык характеризуется развитой системой употребления суффиксов, приставок, добавляемых к неизменяемой основе слова, которые используются для выражения категорий числа, падежа, рода и др.</p>];;
+			-> .system_element_3117;;
+		*);
+		.system_element_3663
+		(*
+			=> nrel_explanation: [<p>Для флективного языка характерно развитое употребление окончаний для выражения категорий рода, числа, падежа, сложная система склонения глаголов, чередование гласных в корне, а также строгое различение частей речи.</p>];;
+			-> .system_element_3660;;
+		*);
+		.system_element_3664
+		(*
+			=> nrel_explanation: [<p>Для профлективного языка характерны агглютинация (в случае именного словоизменения), флексия и чередование гласных (аблаут)(в случае глагольного словоизменения).</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*)
+	};;
+
+	.system_element_3648
+	<= nrel_inclusion: .system_element_486;
+	=> nrel_explanation: [<p><i>Лексема</i> --- тайген или ёген конкретного естественного языка.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+		=> .system_element_1285: .system_element_3665;;
+	*);;
+
+	.system_element_3649
+	<= nrel_inclusion: .system_element_486;
+	=> nrel_explanation: [<p><i>Номинативная единица</i> --- устойчивая последовательность комбинторных вариантов лексем, в которой один вариант лексемы (модификатор) определяет другой (актуализатор), например: записная книжка, бежать галопом.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+		=> .system_element_1285: .system_element_3665;;
+	*);;
+
+	.system_element_3650
+	<= nrel_inclusion: .system_element_486;
+	=> nrel_explanation: [<p><i>Комбинторный вариант лексемы </i> --- вариант лексемы в упорядоченном наборе её вариантов (парадигме).</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+		=> .system_element_1285: .system_element_3666;;
+	*);;
+
+	.system_element_3654
+	<- .system_element_490;
+	=> nrel_explanation: [<p><i>Морфологическая парадигма*</i> --- квазибинарное отношение, связывающее лексему с её комбинторными вариантами.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> .system_element_480: .system_element_3667;
+	=> .system_element_95: .system_element_3648;;
+
+	.system_element_3651
+	=> nrel_subdividing: {
+		.system_element_3668
+		(*
+			=> nrel_subdividing: {
+				.system_element_3652;
+				.system_element_3653
+			};;
+		*);
+		.system_element_3669
+		(*
+			=> nrel_explanation: [<p><i>Знаки алфавита синтаксиса</i> --- вспомогательные средства синтаксиса (на макроуровне --- предлоги, послелоги, союзы, частицы и др., на микроуровне --- флексии, префиксы, постфиксы, инфиксы и др.), служащие для соединения составных частей языковых структур и образования морфологических парадигм.</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+				=> .system_element_1285: .system_element_3665;;
+			*);;
+		*)
+	};;
+
+	.system_element_3652
+	=> nrel_explanation: [<p><i>Тайген</i> --- часть языка, обозначающая индивида.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+		=> .system_element_1285: .system_element_3670;;
+		=> .system_element_1285: .system_element_3671;;
+	*);
+	=> nrel_subdividing: {
+		.system_element_3672
+		(*
+			=> nrel_subdividing: {
+				.system_element_3673;
+				.system_element_3674
+			};;
+		*);
+		.system_element_3675
+		(*
+			=> nrel_subdividing: {
+				.system_element_3676;
+				.system_element_3677
+				(*
+					=> nrel_subdividing: {
+						.system_element_3678
+						(*
+							=> nrel_explanation: [<p><i>Информационный тайген</i> --- тайген, обозначающий индивида в информационном фрагменте модели мира.</p>]
+							(*
+								<- lang_ru;;
+								=> nrel_format: format_html;;
+								=> .system_element_1285: .system_element_3670;;
+								=> .system_element_1285: .system_element_3671;;
+							*);;
+						*);
+						.system_element_3679
+						(*
+							=> nrel_explanation: [<p><i>Физический тайген</i> --- тайген, обозначающий индивида в физическом фрагменте модели мира.</p>]
+							(*
+								<- lang_ru;;
+								=> nrel_format: format_html;;
+								=> .system_element_1285: .system_element_3670;;
+								=> .system_element_1285: .system_element_3671;;
+							*);;
+							=> nrel_subdividing: {
+								.system_element_3680
+								(*
+									=> nrel_explanation: [<p><i>Постоянный тайген</i> --- физический тайген, обозначающий постоянного индивида.</p>]
+									(*
+										<- lang_ru;;
+										=> nrel_format: format_html;;
+										=> .system_element_1285: .system_element_3670;;
+										=> .system_element_1285: .system_element_3671;;
+									*);;
+								*);
+								.system_element_3681
+								(*
+									=> nrel_explanation: [<p><i>Переменный тайген</i> --- физический тайген, обозначающий переменного индивида.</p>]
+									(*
+										<- lang_ru;;
+										=> nrel_format: format_html;;
+										=> .system_element_1285: .system_element_3670;;
+										=> .system_element_1285: .system_element_3671;;
+									*);;
+								*)
+							};;
+							=> nrel_subdividing: {
+								.system_element_3682;
+								.system_element_3683
+							};;
+							=> nrel_subdividing: {
+								.system_element_3684;
+								.system_element_3685
+								(*
+									=> nrel_inclusion: .system_element_3686;;
+									=> nrel_inclusion: .system_element_3687;;
+								*)
+							};;
+						*)
+					};;
+				*)
+			};;
+		*)
+	};;
+
+	.system_element_3653
+	=> nrel_explanation: [<p><i>Ёген</i> --- часть языка, обозначающая признак индивида.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+		=> .system_element_1285: .system_element_3670;;
+		=> .system_element_1285: .system_element_3671;;
+	*);
+	=> nrel_subdividing: {
+		.system_element_3688
+		(*
+			=> nrel_subdividing: {
+				.system_element_3689;
+				.system_element_3690
+			};;
+		*);
+		.system_element_3691
+		(*
+			=> nrel_subdividing: {
+				.system_element_3692
+				(*
+					=> nrel_subdividing: {
+						.system_element_3693
+						(*
+							=> nrel_explanation: [<p><i>Информационный ёген</i> --- еген, обозначающий признак индивида в информационном фрагменте модели мира.</p>]
+							(*
+								<- lang_ru;;
+								=> nrel_format: format_html;;
+								=> .system_element_1285: .system_element_3670;;
+								=> .system_element_1285: .system_element_3694;;
+							*);;
+						*);
+						.system_element_3695
+						(*
+							=> nrel_explanation: [<p><i>Физический ёген</i> --- еген, обозначающий признак индивида в физическом фрагменте модели мира.</p>]
+							(*
+								<- lang_ru;;
+								=> nrel_format: format_html;;
+								=> .system_element_1285: .system_element_3670;;
+								=> .system_element_1285: .system_element_3694;;
+							*);;
+							=> nrel_subdividing: {
+								.system_element_3696
+								(*
+									=> nrel_explanation: [<p><i>Постоянный ёген</i> - физический ёген, обозначающий постоянный признак индивида.</p>]
+									(*
+										<- lang_ru;;
+										=> nrel_format: format_html;;
+										=> .system_element_1285: .system_element_3670;;
+										=> .system_element_1285: .system_element_3694;;
+									*);;
+								*);
+								.system_element_3697
+								(*
+									=> nrel_explanation: [<p><i>Переменный ёген</i> --- физический ёген, обозначающий переменный признак индивида.</p>]
+									(*
+										<- lang_ru;;
+										=> nrel_format: format_html;;
+										=> .system_element_1285: .system_element_3670;;
+										=> .system_element_1285: .system_element_3694;;
+									*);;
+								*)
+							};;
+							=> nrel_subdividing: {
+								.system_element_3698;
+								.system_element_3699
+							};;
+							=> nrel_subdividing: {
+								.system_element_3700;
+								.system_element_3701
+								(*
+									=> nrel_subdividing: {
+										.system_element_3702;
+										.system_element_3703
+									};;
+								*)
+							};;
+						*)
+					};;
+				*);
+				.system_element_3704
+			};;
+		*)
+	};;
+
+	.system_element_3655
+	<- .system_element_2509;
+	=> nrel_explanation: [<p><i>Член предложения'</i> --- это отношение, связывающее декомпозицию текста с файлом, содержимое которого (часть языка) играет в декомпозируемом тексте определенную синтаксическую роль.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+		=> .system_element_1285: .system_element_3665;;
+	*);
+	=> nrel_subdividing: {
+		.system_element_3705
+		(*
+			=> nrel_subdividing: {
+				.system_element_3706
+				(*
+					=> nrel_explanation: [<p><i>Подлежащее'</i> --- это одно из главных ролевых отношений, связывающее декомпозицию текста с файлом, содержимое которого обозначает исходный пункт описания события, выбранный наблюдателем.</p>]
+					(*
+						<- lang_ru;;
+						=> nrel_format: format_html;;
+						=> .system_element_1285: .system_element_3707;;
+					*);;
+				*);
+				.system_element_3708
+				(*
+					=> nrel_explanation: [<p><i>Сказуемое'</i> --- это одно из главных ролевых отношений, связывающее декомпозицию текста с файлом, содержимое которого обозначает отображение наблюдателем исходного пункта описания события в конечный.</p>]
+					(*
+						<- lang_ru;;
+						=> nrel_format: format_html;;
+						=> .system_element_1285: .system_element_3707;;
+					*);;
+				*);
+				.system_element_3709
+				(*
+					=> nrel_explanation: [<p><i>Прямое дополнение'</i> --- это одно из главных ролевых отношений, связывающее декомпозицию текста с файлом, содержимое которого обозначает конечный пункт описания события, выбранный наблюдателем.</p>]
+					(*
+						<- lang_ru;;
+						=> nrel_format: format_html;;
+						=> .system_element_1285: .system_element_3707;;
+					*);;
+				*)
+			};;
+		*);
+		.system_element_3710
+		(*
+			=> nrel_subdividing: {
+				.system_element_3711;
+				.system_element_3712
+				(*
+					=> nrel_explanation: [<p><i>Определение'</i> --- это одно из второстепенных ролевых отношений, связывающее декомпозицию текста с файлом, содержимое которого обозначает модификацию подлежащего, дополнения, обстоятельства места и времени.</p>]
+					(*
+						<- lang_ru;;
+						=> nrel_format: format_html;;
+						=> .system_element_1285: .system_element_3694;;
+						=> .system_element_1285: .system_element_3713;;
+						=> .system_element_1285: .system_element_3714;;
+					*);;
+				*);
+				.system_element_3715
+				(*
+					=> nrel_explanation: [<p><i>Обстоятельство'</i> --- это одно из второстепенных ролевых отношений, связывающее декомпозицию текста с файлом, содержимое которого обозначает либо модификацию, либо локализацию сказуемого.</p>]
+					(*
+						<- lang_ru;;
+						=> nrel_format: format_html;;
+						=> .system_element_1285: .system_element_3694;;
+						=> .system_element_1285: .system_element_3713;;
+						=> .system_element_1285: .system_element_3714;;
+						=> nrel_subdividing: {
+							.system_element_3716
+							(*
+								=> nrel_explanation: [<p>Обстоятельство степени --- обстоятельство, обозначающее модификацию сказуемого.</p>]
+								(*
+									<- lang_ru;;
+									=> nrel_format: format_html;;
+								*);;
+							*);
+							.system_element_3717
+							(*
+								=> nrel_explanation: [<p>Обстоятельство образа действия --- обстоятельство, обозначающее модификацию сказуемого.</p>]
+								(*
+									<- lang_ru;;
+									=> nrel_format: format_html;;
+								*);;
+							*);
+							.system_element_3718
+							(*
+								=> nrel_explanation: [<p>Обстоятельства места --- обстоятельство, обозначающее пространственную локализацию сказуемого.</p>]
+								(*
+									<- lang_ru;;
+									=> nrel_format: format_html;;
+									=> nrel_subdividing: {
+										.system_element_3719;
+										.system_element_3720
+									};;
+								*);;
+							*);
+							.system_element_3721
+							(*
+								=> nrel_explanation: [<p>Обстоятельство времени --- обстоятельство, обозначающее временную локализацию сказуемого.</p>];;
+								=> nrel_subdividing: {
+									.system_element_3722;
+									.system_element_3723
+								};;
+							*)
+						};;
+					*);;
+				*)
+			};;
+		*)
+	};;
+
+	.system_element_3724
+	<- .system_element_484;
+	=> nrel_explanation: [<p>Здесь представлено описание лексемы с указанием ее принадлежности определённой части речи. Также описание содержит морфологическую парадигму данной лексемы, связывающую ее с ее словоформами.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	<=> "file://figures/sd_natural_languages/lexeme_example.png"
+	(*
+		<- concept_file;;
+		=> nrel_format: format_png;;
+	*);;
+
+	.system_element_3725
+	<=> .system_element_319: {
+		[<p>figures/sd_natural_languages/nl_text.png</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+			=> nrel_explanation: [<p>с точки зрения ostis-системы, любой естественно-языкой текст является <i>файлом.</i></p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+			=> .system_element_3726: "file://figures/sd_natural_languages/nl_lexical.png"
+			(*
+				<- concept_file;;
+				=> nrel_format: format_png;;
+				=> nrel_explanation: [<p>Данная конструкция описывает декомпозицию исходного текста на фрагменты с указанием их принадлежности определённой <i>номинативной единице</i> или <i>знаку алфавита синтаксиса</i>.</p>]
+				(*
+					<- lang_ru;;
+					=> nrel_format: format_html;;
+				*);;
+				=> .system_element_3727: "file://figures/sd_natural_languages/nl_synactical.png"
+				(*
+					<- concept_file;;
+					=> nrel_format: format_png;;
+				*);;
+				=> nrel_explanation: [<p>Здесь приведена только частью синтаксической структуры. Оставшаяся часть записывается аналогично.</p>]
+				(*
+					<- lang_ru;;
+					=> nrel_format: format_html;;
+				*);;
+			*);;
+		*)
+	};;
+*];;
