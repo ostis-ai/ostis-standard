@@ -174,9 +174,9 @@
     \begin{scnindent}
         \scntext{пояснение}{\textbf{\textit{математическая модель}} --- это упрощенное описание объекта реального мира, выраженное с помощью математической символики}
     \end{scnindent}
-    \scnrelfrom{описание примера}{\scnfileimage[30em]{figures/sd_ps/sd_ann/neural_network_scg.png}}
+    \scnrelfrom{описание примера}{\scnfileimage[30em]{Contents/part_ps/images/sd_ps/sd_ann/neural_network_scg.png}}
     \vspace{5\baselineskip}
-    \scnrelfrom{изображение}{\scnfileimage[30em]{figures/sd_ps/sd_ann/neural_network.png}}
+    \scnrelfrom{изображение}{\scnfileimage[30em]{Contents/part_ps/images/sd_ps/sd_ann/neural_network.png}}
     \scnrelfrom{разбиение}{\scnkeyword{Типология и.н.с. по признаку направленности связей\scnsupergroupsign}}
         \begin{scnindent}
             \begin{scneqtoset}
@@ -279,7 +279,7 @@
         $y = F\left(\sum\textunderscore\scnleftcurlbrace~i=1\scnrightcurlbrace\scnsupergroupsign\scnleftcurlbrace~n\scnrightcurlbrace w_ix_i - T\right) = F(WX - T)$
         где $X = (x_1,x_2,...,x_n)^\scnleftcurlbrace~T\scnrightcurlbrace$ --- вектор входного сигнала; $W - (w_1,w_2,...,w_n)$ --- вектор весовых коэффициентов; \textit{T} --- пороговое значение;
         \textit{F} --- функция активации.}
-    \scnrelfrom{изображение}{\scnfileimage[20em]{figures/sd_ps/sd_ann/neuron.png}}
+    \scnrelfrom{изображение}{\scnfileimage[20em]{Contents/part_ps/images/sd_ps/sd_ann/neuron.png}}
     \scntext{примечание}{Формальные нейроны могут иметь полный набор связей с нейронами предшествующего слоя или неполный (разряженный) набор связей.}
     \begin{scnsubdividing}
         \scnitem{полносвязный формальный нейрон}
@@ -672,7 +672,7 @@
     \scntext{примечание}{Действия по обработке и.н.с осуществляет соответствующий коллектив агентов.}
     \scntext{пояснение}{Так как в результате действий по обработке и.н.с объект этих действий, конкретная и.н.с, может существенно меняться (меняется конфигурация сети, ее весовые коэффициенты), то и.н.с представляется в базе знаний как темпоральное объединение всех ее версий. Каждая версия является и.н.с. и темпоральной сущностью. На множестве этих темпоральных сущностей задается темпоральная последовательность с указанием первой и последней версии. Для каждой версии описываются специфичные знания. Общие для всех версий знания описываются для и.н.с, являющейся темпоральным объединением всех версий.}
     \begin{scnindent}
-        \scnrelfrom{пример}{\scnfileimage[30em]{figures/sd_ps/sd_ann/temporal_neural_network_scg.png}}
+        \scnrelfrom{пример}{\scnfileimage[30em]{Contents/part_ps/images/sd_ps/sd_ann/temporal_neural_network_scg.png}}
     \end{scnindent}
 
 \scnheader{действие обучения и.н.с.}
@@ -684,7 +684,7 @@
             Обнаружение переобученности сложнее, чем недообученности. Как правило, для этого применяется кросс-валидация на валидационной выборке, позволяющая оценить момент завершения процесса обучения. Идеальным вариантом является достижение баланса между переобученностью и недообученностью.}
         \scnfileitem{Недообучение --- проблема, возникающая при обучении и.н.с., заключающаяся в том, что сеть дает одинаково плохие результаты на обучающей и контрольной выборках. Чаще всего такого рода проблема возникает при недостаточном времени, затраченном на обучение модели. Однако это может быть вызвано и слишком простой архитектурой модели либо малым размером обучающей выборки. Соответственно решение, которое может быть принято ML-инженером, заключается в устранении этих недостатков: увеличение времени обучения, использование модели с большим числом настраиваемых параметров, увеличение размера обучающей выборки, а также уменьшение регуляризации и более тщательный отбор признаков для обучающих примеров.}
     \end{scnrelfromset}
-    \scnrelfrom{описание примера}{\scnfileimage{figures/sd_ps/sd_ann/ann_trainning_scg.png}}
+    \scnrelfrom{описание примера}{\scnfileimage{Contents/part_ps/images/sd_ps/sd_ann/ann_trainning_scg.png}}
 
 \scnheader{выборка}
     \scnsubset{множество}
