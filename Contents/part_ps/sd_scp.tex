@@ -71,7 +71,7 @@
 	Принадлежность некоторого действия множеству \textit{scp-процессов} гарантирует тот факт, что в декомпозиции данного действия будут присутствовать только знаки элементарных действий (\textit{scp-операторов}), которые может интерпретировать реализация абстрактной scp-машины.\\
 	Таким образом, каждая \textbf{\textit{scp-программа}} описывает в обобщенном виде декомпозицию некоторого \textit{\mbox{scp-процесса}} на взаимосвязанные \textit{scp-операторы}, с указанием, при их наличии, аргументов для данного \textit{scp-процесса}.\\
 	По сути каждая \textbf{\textit{scp-программа}} представляет собой описание последовательности элементарных операций, которые необходимо выполнить над семантической сетью, чтобы выполнить более сложное действие некоторого класса.}
-\scnrelfrom{описание примера}{\scnfileimage[20em]{figures/sd_scp/program_example.png}}
+\scnrelfrom{описание примера}{\scnfileimage[20em]{Contents/part_ps/images/sd_scp/program_example.png}}
 	\begin{scnindent}
 		\scntext{пояснение}{В приведенном примере показана \textit{scp-программа}, состоящая из трех \textit{scp-операторов}. Данная программа проверяет, содержится ли в заданном множестве (первый параметр) заданный элемент (второй параметр), и, если нет, то добавляет его в это множество.}
 	\end{scnindent}
@@ -135,19 +135,19 @@
 	Принадлежность некоторого действия множеству \textit{scp-процессов} гарантирует тот факт, что в декомпозиции данного действия будут присутствовать только знаки элементарных действий (\textit{scp-операторов}), которые может интерпретировать реализация \textit{Абстрактной scp-машины}.}
 \begin{scnrelfromvector}{пример выполнения}
 	%TODO: check by human--->
-	\scnitem{\scnfileimage[20em]{figures/sd_scp/process_example.png}}
+	\scnitem{\scnfileimage[20em]{Contents/part_ps/images/sd_scp/process_example.png}}
 		\begin{scnindent}
 			\scntext{пояснение}{Осуществляется вызов \textit{scp-программы}. Генерируется соответствующий \textit{scp-процесс}. Происходит инициирование начального оператора scp-процесса \textit{Operator1}.} 
 		\end{scnindent}
-	\scnitem{\scnfileimage[20em]{figures/sd_scp/process_example2.png}}
+	\scnitem{\scnfileimage[20em]{Contents/part_ps/images/sd_scp/process_example2.png}}
 		\begin{scnindent}	
 			\scntext{пояснение}{Оператор \textit{Operator1} оказался безуспешно выполненным. Производится инициирование \textit{\mbox{scp-оператора} генерации трёхэлементной конструкции} \textit{Operator2}.}
 		\end{scnindent}
-	\scnitem{\scnfileimage[20em]{figures/sd_scp/process_example3.png}}
+	\scnitem{\scnfileimage[20em]{Contents/part_ps/images/sd_scp/process_example3.png}}
 		\begin{scnindent}	
 			\scntext{пояснение}{Оператор \textit{Operator2} выполнился. Производится инициирование \textit{scp-оператора завершения выполнения программы} \textit{Operator3}.}
 		\end{scnindent}
-	\scnitem{\scnfileimage[20em]{figures/sd_scp/process_example4.png}}
+	\scnitem{\scnfileimage[20em]{Contents/part_ps/images/sd_scp/process_example4.png}}
 		\begin{scnindent}
 			\scntext{пояснение}{Оператор \textit{Operator3} выполнился. Выполнение \textit{scp-процесса} завершается.}
 		\end{scnindent}

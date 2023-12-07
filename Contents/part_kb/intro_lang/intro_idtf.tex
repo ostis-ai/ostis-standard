@@ -711,7 +711,7 @@
                     \begin{scnindent}
                         \scnrelboth{семантическая эквивалентность}{\scnfilelong{(\textbf{\textit{e1}} <- \textbf{\textit{s1}})}}
                         \scnrelboth{семантическая эквивалентность}{\scnfilelong{Дана базовая sc-дуга, связывающая sc-элемент \textbf{\textit{e1}} с sc-элементом \textbf{\textit{s1}}.}}
-                        \scnrelboth{семантическая эквивалентность}{\scnfileimage[20em]{figures/intro/idtf/sc_expr_example_affiliation.png}}
+                        \scnrelboth{семантическая эквивалентность}{\scnfileimage[20em]{Contents/part_kb/images/idtf/sc_expr_example_affiliation.png}}
                         \begin{scnindent}
                             \scniselement{sc.g-текст}
                         \end{scnindent}
@@ -721,8 +721,8 @@
             \scntext{пояснение}{Использование sc-выражений позволяет существенно сократить число придумываемых\ sc-идентификаторов, каковыми в конечном счете становятся только простые sc-идентификаторы, поскольку, зная то, как связан идентифицируемый sc-элемент с теми sc-элементами, которые уже имеют sc-идентификаторы, во многих случаях можно построить sc-выражение, идентифицирующее указанный sc-элемент. Кроме того, каждое sc-выражение, являясь внешним идентификатором, является также и \uline{транслируемым} формальным текстом, содержащим некоторую информацию об обозначаемой ею сущности.}
             \scnrelfrom{правило интерпретации}{\scnfilelong{Очевидно, что некоторые sc-выражения могут интерпретироваться неоднозначно. Например, два одинаковых \textit{sc-выражения, идентифицирующих sc-коннектор}, могут изображать как один и тот же sc-коннектор, так и кратные sc-коннекторы одного и того же вида, связывающие одни и те же два sc-элемента. Аналогичная неоднозначность может возникать при использовании \textit{sc-выражений, построенных на основе бинарного отношения} (\textit{подмножество*(S)}) и ряда других \textit{sc-выражений}.В то же время, некоторые sc-выражения являются однозначными, то есть всегда идентифицируют одну и ту же сущность в любом тексте, в состав которого входят. Например выражение \textit{sin(x)} является однозначным (при условии, что x в разных текстах обозначает одно и то же). Однако, однозначность или неоднозначность sc-выражений зависит от их семантики, таким образом установить факт однозначности на уровне внешнего текста достаточно сложно.Для решения проблемы неоднозначности интерпретации sc-выражений такого рода будем считать, что каждое вхождение какого-либо sc-выражения в различные тексты (например, sc.s-тексты) обозначает \uline{разные} sc-элементы. После трансляции таких текстов в sc-текст может оказаться, что некоторые из указанных sc-выражений на самом деле обозначали одну и ту же сущность, в этом случае соответствующие sc-элементы будут склеены\, но уже на уровне sc-текста, а не на уровне внешнего текста.Следует отметить, что факт совпадения sc-выражений в рамках некоторого внешнего текста может являться поводом для анализа идентифицируемых этими sc-выражениями sc-элементов на возможную синонимичность и явно фиксироваться, например, на этапе погружения внешнего текста в sc-память.}}
             \begin{scnindent}
-                \scnrelfrom{пояснение}{\scnfileimage[20em]{figures/intro/idtf/sc_expr_example_subsets.png}}
-                \scnrelfrom{пояснение}{\scnfileimage[20em]{figures/intro/idtf/sc_expr_example_arcs.png}}
+                \scnrelfrom{пояснение}{\scnfileimage[20em]{Contents/part_kb/images/idtf/sc_expr_example_subsets.png}}
+                \scnrelfrom{пояснение}{\scnfileimage[20em]{Contents/part_kb/images/idtf/sc_expr_example_arcs.png}}
             \end{scnindent}
 
             \scnheader{ограничитель sc-выражений}
@@ -778,7 +778,7 @@
             \scnhaselementrole{пример}{\scnfilelong{(\textit{ei} \textit{ki} \textit{ej})}}
             \begin{scnindent}
                 \scniselement{sc-выражение, идентифицирующее sc-коннектор}
-                \scnrelboth{семантическая эквивалентность}{\scnfileimage[20em]{figures/intro/idtf/sc_expr_example_connector.png}}
+                \scnrelboth{семантическая эквивалентность}{\scnfileimage[20em]{Contents/part_kb/images/idtf/sc_expr_example_connector.png}}
             \end{scnindent}
             \scnhaselementrole{пример}{$\bullet$\textit{ei} $\bullet$\textit{ej} $\bullet$\textit{ek}}
             \begin{scnindent}
@@ -792,12 +792,12 @@
                         \end{scnitemize}
                     }
                 }
-                \scnrelboth{семантическая эквивалентность}{\scnfileimage[20em]{figures/intro/idtf/sc_expr_example_enum_set.png}}
+                \scnrelboth{семантическая эквивалентность}{\scnfileimage[20em]{Contents/part_kb/images/idtf/sc_expr_example_enum_set.png}}
             \end{scnindent}
             \scnhaselementrole{пример}{\scnfilelong{(\textit{si} $\cup$ \textit{sj} $\cup$ \textit{sk} $\cup$ ...)}}
             \begin{scnindent}
                 \scniselement{sc-выражение, построенное на основе алгебраической операции}
-                \scnrelboth{семантическая эквивалентность}{\scnfileimage[20em]{figures/intro/idtf/sc_expr_example_union_set.png}}
+                \scnrelboth{семантическая эквивалентность}{\scnfileimage[20em]{Contents/part_kb/images/idtf/sc_expr_example_union_set.png}}
             \end{scnindent}
             \scnhaselementrole{пример}{
                 \scnfilelong{
@@ -811,13 +811,13 @@
             }
             \begin{scnindent}
                 \scniselement{sc-выражение множества, заданного перечислением}
-                \scnrelboth{семантическая эквивалентность}{\scnfileimage[20em]{figures/intro/idtf/sc_expr_example_enumeration_set.png}
+                \scnrelboth{семантическая эквивалентность}{\scnfileimage[20em]{Contents/part_kb/images/idtf/sc_expr_example_enumeration_set.png}
                 }
             \end{scnindent}
             \scnhaselementrole{пример}{\scnfilelong{$ei => ri: ej;;$}}
             \begin{scnindent}
                 \scniselement{sc-выражение структуры}
-                \scnrelboth{семантическая эквивалентность}{\scnfileimage[20em]{figures/intro/idtf/sc_expr_example_struct.png}}
+                \scnrelboth{семантическая эквивалентность}{\scnfileimage[20em]{Contents/part_kb/images/idtf/sc_expr_example_struct.png}}
             \end{scnindent}
             \scnhaselementrole{пример}{
                 \scnfilelong{
@@ -839,13 +839,13 @@
             }
             \begin{scnindent}
                 \scniselement{sc-выражение, построенное на основе квазибинарного отношения}
-                \scnrelboth{семантическая эквивалентность}{\scnfileimage[20em]{figures/intro/idtf/sc_expr_example_concat.png}}
+                \scnrelboth{семантическая эквивалентность}{\scnfileimage[20em]{Contents/part_kb/images/idtf/sc_expr_example_concat.png}}
             \end{scnindent}
             \newpage
             \scnhaselementrole{пример}{\scnfilelong{\textit{пересечение}*($si$; $sj$; $sk$)}}
             \begin{scnindent}
                 \scniselement{sc-выражение, построенное на основе квазибинарного отношения}
-                \scnrelboth{семантическая эквивалентность}{\scnfileimage[20em]{figures/intro/idtf/sc_expr_example_intersection.png}}
+                \scnrelboth{семантическая эквивалентность}{\scnfileimage[20em]{Contents/part_kb/images/idtf/sc_expr_example_intersection.png}}
             \end{scnindent}
             \scnhaselementrole{пример}{
                 \scnfilelong{
@@ -858,7 +858,7 @@
             }
             \begin{scnindent}
                 \scniselement{sc-выражение в угловых скобках}
-                \scnrelboth{семантическая эквивалентность}{\scnfileimage[20em]{figures/intro/idtf/sc_expr_example_role.png}}
+                \scnrelboth{семантическая эквивалентность}{\scnfileimage[20em]{Contents/part_kb/images/idtf/sc_expr_example_role.png}}
             \end{scnindent}
             
             \bigskip
@@ -872,7 +872,7 @@
             \end{scnset}
             \scntext{примечание}{В данном примере представлены три разных, но логически эквивалентных друг другу квазибинарных отношения: \textit{степень*}, \textit{корень*} и \textit{log*}. В базе знаний соответствующая конструкция записывается с использованием отношения \textit{возведение в степень*}.}
             \begin{scnindent}    
-                \scnrelfrom{пояснение}{\scnfileimage[20em]{figures/intro/idtf/sc_expr_example_log_root_degree.png}}
+                \scnrelfrom{пояснение}{\scnfileimage[20em]{Contents/part_kb/images/idtf/sc_expr_example_log_root_degree.png}}
             \end{scnindent}
             \begin{scnset}
                 \scnitem{sc-выражение}
@@ -882,7 +882,7 @@
                 \end{scnindent}
             \end{scnset}
             \scntext{примечание}{Отношения \textit{подмножество*} и  \textit{надмножество*} не являются функциональными, таким образом необходимо явно уточнить при помощи символа \scnqqi{/} и некоторого уточняющего индекса (в данном случае просто \scnqqi{\textit{i}}), что имеется в виду некоторое конкретное подмножество множества \textbf{\textit{si}} и некоторое конкретное надмножество множества \textbf{\textit{sj}}.}
-            \scntext{примечание}{В данном примере представлены два отношения (\textit{подмножество*} и  \textit{надмножество*}), которые по отношению друг к другу являются \textit{обратными отношениями*}. В базе знаний соответствующая конструкция записывается при помощи отношения \textit{включение множеств*}.}\scnrelfrom{пояснение}{\scnfileimage[20em]{figures/intro/idtf/sc_expr_example_subset_superset.png}}
+            \scntext{примечание}{В данном примере представлены два отношения (\textit{подмножество*} и  \textit{надмножество*}), которые по отношению друг к другу являются \textit{обратными отношениями*}. В базе знаний соответствующая конструкция записывается при помощи отношения \textit{включение множеств*}.}\scnrelfrom{пояснение}{\scnfileimage[20em]{Contents/part_kb/images/idtf/sc_expr_example_subset_superset.png}}
             
             \scnheader{Правила построения sc-идентификаторов}
             \scntext{примечание}{Правила построения sc-идентификаторов легко записываются на языке Бэкуса-Наура, который является формальным метаязыком, ориентированным на описание синтаксиса всевозможных линейных языков (языков, текстами которых являются строки символов-линейные информационные конструкции). Но, поскольку в рамках Технологии OSTIS любые виды знаний (в том числе и описания синтаксиса различных языков) представляются в виде текстов SC-кода, в рамках \textit{SC-кода} должен существовать подъязык, семантически эквивалентный язык Бэкуса-Наура.}
