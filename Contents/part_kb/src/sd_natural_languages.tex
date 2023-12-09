@@ -1,0 +1,397 @@
+\begin{SCn}
+    \scnsectionheader{Предметная область и онтология естественных языков}
+    \begin{scnsubstruct}
+        \begin{scnrelfromlist}{соавтор}
+            \scnitem{Гордей А.Н.}
+            \scnitem{Никифоров С.А.}
+            \scnitem{Бобёр Е.С.}
+            \scnitem{Святощик М.И.}
+        \end{scnrelfromlist}
+        
+        \scnheader{Предметная область естественных языков}
+        \scniselement{предметная область}
+        \begin{scnhaselementrolelist}{максимальный класс объектов исследования}
+            \scnitem{язык}
+        \end{scnhaselementrolelist}
+        \begin{scnhaselementrolelist}{класс объектов исследования}
+            \scnitem{плановый язык}
+            \scnitem{язык общения}
+            \scnitem{лексема}
+            \scnitem{номинативная единица}
+            \scnitem{комбинаторный вариант лексемы}
+            \scnitem{естественный язык}
+            \scnitem{тайген}
+            \scnitem{ёген}
+        \end{scnhaselementrolelist}
+        \begin{scnhaselementrolelist}{исследуемое отношение}
+            \scnitem{морфологическая парадигма*}
+            \scnitem{член предложения\scnrolesign}
+        \end{scnhaselementrolelist}
+        
+        \scnheader{язык}
+        \begin{scnsubdividing}
+            \scnitem{естественный язык}
+            \begin{scnindent}
+                \scntext{пояснение}{Естественный язык представляет собой язык, который не был создан целенаправленно}
+            \end{scnindent}
+            \scnitem{искусственный язык}
+            \begin{scnindent}
+                \scntext{пояснение}{Искусственный язык представляет собой язык, специально разработанный для достижения определённых целей}
+                \scnhaselement{Эсперанто}
+                \scnhaselement{Python}
+                \scnsuperset{сконструированный язык}
+                \begin{scnindent}
+	                \scntext{пояснение}{Сконструированный язык представляет собой искусственный язык, предназначенный для общения людей}
+	                \scnhaselement{Эсперанто}
+	            \end{scnindent}
+            \end{scnindent}
+        \end{scnsubdividing}
+        \scnsuperset{международный язык}
+        \begin{scnindent}
+	        \scntext{пояснение}{Международный язык представляет собой естественный или искусственный язык, использующийся для общения людей разных из стран}
+	        \scnhaselement{Английский язык}
+	        \scnhaselement{Русский язык}
+	    \end{scnindent}
+        
+        \scnheader{плановый язык}
+        \begin{scnreltoset}{пересечение}
+            \scnitem{сконструированный язык}
+            \scnitem{международный язык}
+        \end{scnreltoset}
+        
+        \scnheader{язык общения}
+        \begin{scnreltoset}{объединение}
+            \scnitem{естественный язык}
+            \scnitem{сконструированный язык}
+        \end{scnreltoset}
+        \scnhaselement{Английский язык}
+        \scnhaselement{Русский язык}
+        \scnhaselement{Эсперанто}
+        \begin{scnreltoset}{объединение}
+            \scnitem{корневой язык}
+            \begin{scnindent}
+                \scntext{пояснение}{Корневой язык представляет собой язык, для которого характерно полное отсутствие словоизменения и наличие грамматической значимости порядка слов, состоящих только из корня.}
+                \scnhaselement{Английский язык}
+            \end{scnindent}
+            \scnitem{агглютинативный язык}
+            \begin{scnindent}
+                \scntext{пояснение}{Агглютинативный язык характеризуется развитой системой употребления суффиксов, приставок, добавляемых к неизменяемой основе слова, которые используются для выражения категорий числа, падежа, рода и др.}
+                \scnhaselement{Английский язык}
+            \end{scnindent}
+            \scnitem{флективный язык}
+            \begin{scnindent}
+                \scntext{пояснение}{Для флективного языка характерно развитое употребление окончаний для выражения категорий рода, числа, падежа, сложная система склонения глаголов, чередование гласных в корне, а также строгое различение частей речи.}
+                \scnhaselement{Русский язык}
+            \end{scnindent}
+            \scnitem{профлективный язык}
+            \begin{scnindent}
+                \scntext{пояснение}{Для профлективного языка характерны агглютинация (в случае именного словоизменения), флексия и чередование гласных (аблаут)(в случае глагольного словоизменения).}
+            \end{scnindent}
+        \end{scnreltoset}
+        
+        \scnheader{лексема}
+        \scnsubset{файл}
+        \scntext{пояснение}{\textit{Лексема} --- тайген или ёген конкретного естественного языка.}
+        \begin{scnindent}
+        	\scnrelfrom{источник}{\cite{Hardzei2005}}
+        \end{scnindent}
+        
+        \scnheader{номинативная единица}
+        \scnsubset{файл}
+        \scntext{пояснение}{\textit{Номинативная единица} --- устойчивая последовательность комбинторных вариантов лексем, в которой один вариант лексемы (модификатор) определяет другой (актуализатор), например: записная книжка, бежать галопом.}
+        \begin{scnindent}
+        	\scnrelfrom{источник}{\cite{Hardzei2005}}
+        \end{scnindent}
+        
+        \scnheader{комбинаторный вариант лексемы}
+        \scnsubset{файл}
+        \scntext{пояснение}{\textit{Комбинторный вариант лексемы } --- вариант лексемы в упорядоченном наборе её вариантов (парадигме).}
+        \begin{scnindent}
+        	\scnrelfrom{источник}{\cite{Hardzei2007}}
+        \end{scnindent}
+        
+        \scnheader{морфологическая парадигма*}
+        \scniselement{квазибинарное отношение}
+        \scntext{пояснение}{\textit{Морфологическая парадигма*} --- квазибинарное отношение, связывающее лексему с её комбинторными вариантами.}
+        \scnrelfrom{первый домен}{словоформа}
+        \scnrelfrom{второй домен}{лексема}
+        
+        \scnheader{естественный язык}
+        \begin{scnsubdividing}
+            \scnitem{часть языка}
+            \begin{scnindent}
+                \begin{scnsubdividing}
+                    \scnitem{тайген}
+                    \scnitem{ёген}
+                \end{scnsubdividing}
+            \end{scnindent}
+            \scnitem{знак алфавита синтаксиса}
+            \begin{scnindent}
+                \scntext{пояснение}{\textit{Знаки алфавита синтаксиса} --- вспомогательные средства синтаксиса (на макроуровне --- предлоги, послелоги, союзы, частицы и др., на микроуровне --- флексии, префиксы, постфиксы, инфиксы и др.), служащие для соединения составных частей языковых структур и образования морфологических парадигм.}
+                \begin{scnindent}
+                	\scnrelfrom{источник}{\cite{Hardzei2005}}
+                \end{scnindent}
+            \end{scnindent}
+        \end{scnsubdividing}
+        
+        \scnheader{тайген}
+        \scntext{пояснение}{\textit{Тайген} --- часть языка, обозначающая индивида.}
+        \begin{scnindent}
+	        \scnrelfrom{источник}{\cite{Hardzei2006}}
+	        \scnrelfrom{источник}{\cite{Hardzei2015}}
+	    \end{scnindent}
+        \begin{scnsubdividing}
+            \scnitem{развёрнутый тайген}
+            \begin{scnindent}
+                \begin{scnsubdividing}
+                    \scnitem{составной тайген}
+                    \scnitem{сложный тайген}
+                \end{scnsubdividing}
+            \end{scnindent}
+            \scnitem{свёрнутый тайген}
+            \begin{scnindent}
+                \begin{scnsubdividing}
+                    \scnitem{сокращённый тайген}
+                    \scnitem{сжатый тайген}
+                    \begin{scnindent}
+                        \begin{scnsubdividing}
+                            \scnitem{информационный тайген}
+                            \begin{scnindent}
+                                \scntext{пояснение}{\textit{Информационный тайген} --- тайген, обозначающий индивида в информационном фрагменте модели мира.}
+                                \begin{scnindent}
+	                                \scnrelfrom{источник}{\cite{Hardzei2006}}
+	                                \scnrelfrom{источник}{\cite{Hardzei2015}}
+	                            \end{scnindent}
+                            \end{scnindent}
+                            \scnitem{физический тайген}
+                            \begin{scnindent}
+                                \scntext{пояснение}{\textit{Физический тайген} --- тайген, обозначающий индивида в физическом фрагменте модели мира.}
+                                \begin{scnindent}
+	                                \scnrelfrom{источник}{\cite{Hardzei2006}}
+	                                \scnrelfrom{источник}{\cite{Hardzei2015}}
+	                            \end{scnindent}
+                            \begin{scnsubdividing}
+                                 \scnitem{постоянный тайген}
+                                 \begin{scnindent}
+                                     \scntext{пояснение}{\textit{Постоянный тайген} --- физический тайген, обозначающий постоянного индивида.}
+                                     \begin{scnindent}
+                                      \scnrelfrom{источник}{\cite{Hardzei2006}}
+                                      \scnrelfrom{источник}{\cite{Hardzei2015}}
+                                  \end{scnindent}
+                                 \end{scnindent}
+                                 \scnitem{переменный тайген}
+                                 \begin{scnindent}
+                                     \scntext{пояснение}{\textit{Переменный тайген} --- физический тайген, обозначающий переменного индивида.}
+                                     \begin{scnindent}
+                                      \scnrelfrom{источник}{\cite{Hardzei2006}}
+                                      \scnrelfrom{источник}{\cite{Hardzei2015}}
+                                  \end{scnindent}
+                                 \end{scnindent}
+                            \end{scnsubdividing}
+                            \begin{scnsubdividing}
+                                 \scnitem{качественный тайген}
+                                 \scnitem{количественный тайген}
+                            \end{scnsubdividing}
+                            \begin{scnsubdividing}
+                                 \scnitem{одноместный тайген}
+                                 \scnitem{многоместный тайген}
+                                 \begin{scnindent}
+                                     \scnsuperset{интенсивный тайген}
+                                     \scnsuperset{экстенсивный тайген}
+                                  \end{scnindent}
+                            \end{scnsubdividing}
+                        \end{scnindent}
+                        \end{scnsubdividing}
+                        
+                    \end{scnindent}
+                \end{scnsubdividing}
+            \end{scnindent}
+        \end{scnsubdividing}
+        
+        \scnheader{ёген}
+        \scntext{пояснение}{\textit{Ёген} --- часть языка, обозначающая признак индивида.}
+        \begin{scnindent}
+	        \scnrelfrom{источник}{\cite{Hardzei2006}}
+	        \scnrelfrom{источник}{\cite{Hardzei2015}}
+	    \end{scnindent}
+        \begin{scnsubdividing}
+            \scnitem{развёрнутый ёген}
+            \begin{scnindent}
+                \begin{scnsubdividing}
+                    \scnitem{составной ёген}
+                    \scnitem{сложный ёген}
+                \end{scnsubdividing}
+            \end{scnindent}
+            \scnitem{свёрнутый ёген}
+            \begin{scnindent}
+                \begin{scnsubdividing}
+                    \scnitem{сокращённый ёген}
+                    \begin{scnindent}
+                        \begin{scnsubdividing}
+                            \scnitem{информационный ёген}
+                            \begin{scnindent}
+                                \scntext{пояснение}{\textit{Информационный ёген} --- еген, обозначающий признак индивида в информационном фрагменте модели мира.}
+                                \begin{scnindent}
+	                                \scnrelfrom{источник}{\cite{Hardzei2006}}
+	                                \scnrelfrom{источник}{\cite{Hardzei2007a}}
+	                            \end{scnindent}
+                            \end{scnindent}
+                            \scnitem{физический ёген}
+                            \begin{scnindent}
+                                \scntext{пояснение}{\textit{Физический ёген} --- еген, обозначающий признак индивида в физическом фрагменте модели мира.}
+                                \begin{scnindent}
+	                                \scnrelfrom{источник}{\cite{Hardzei2006}}
+	                                \scnrelfrom{источник}{\cite{Hardzei2007a}}
+	                            \end{scnindent}
+                                \begin{scnsubdividing}
+                                    \scnitem{постоянный ёген}
+                                    \begin{scnindent}
+                                        \scntext{пояснение}{\textit{Постоянный ёген} - физический ёген, обозначающий постоянный признак индивида.}
+                                        \begin{scnindent}
+	                                        \scnrelfrom{источник}{\cite{Hardzei2006}}
+	                                        \scnrelfrom{источник}{\cite{Hardzei2007a}}
+	                                    \end{scnindent}
+                                    \end{scnindent}
+                                    \scnitem{переменный ёген}
+                                    \begin{scnindent}
+                                        \scntext{пояснение}{\textit{Переменный ёген} --- физический ёген, обозначающий переменный признак индивида.}
+                                        \begin{scnindent}
+	                                        \scnrelfrom{источник}{\cite{Hardzei2006}}
+	                                        \scnrelfrom{источник}{\cite{Hardzei2007a}}
+	                                    \end{scnindent}
+                                    \end{scnindent}
+                                \end{scnsubdividing}
+                                \begin{scnsubdividing}
+                                    \scnitem{качественный ёген}
+                                    \scnitem{количественный ёген}
+                                \end{scnsubdividing}
+                                \begin{scnsubdividing}
+                                    \scnitem{одноместный ёген}
+                                    \scnitem{многоместный ёген}
+                                    \begin{scnindent}
+                                        \begin{scnsubdividing}
+                                            \scnitem{интенсивный ёген}
+                                            \scnitem{экстенсивный ёген}
+                                        \end{scnsubdividing}
+                                    \end{scnindent}
+                                \end{scnsubdividing}
+                            \end{scnindent}
+                        \end{scnsubdividing}
+                    \end{scnindent}
+                    \scnitem{сжатый ёген}
+                \end{scnsubdividing}
+            \end{scnindent}
+        \end{scnsubdividing}
+        
+        \scnheader{член предложения\scnrolesign}
+        \scniselement{ролевое отношение}
+        \scntext{пояснение}{\textit{Член предложения\scnrolesign} --- это отношение, связывающее декомпозицию текста с файлом, содержимое которого (часть языка) играет в декомпозируемом тексте определенную синтаксическую роль.}
+        \begin{scnindent}
+        	\scnrelfrom{источник}{\cite{Hardzei2005}}
+        \end{scnindent}
+        \begin{scnsubdividing}
+            \scnitem{главный член предложения\scnrolesign}
+            \begin{scnindent}
+                \begin{scnsubdividing}
+                    \scnitem{подлежащее\scnrolesign}
+                    \begin{scnindent}
+                        \scntext{пояснение}{\textit{Подлежащее\scnrolesign} --- это одно из главных ролевых отношений, связывающее декомпозицию текста с файлом, содержимое которого обозначает исходный пункт описания события, выбранный наблюдателем.}
+                        \begin{scnindent}
+                        	\scnrelfrom{источник}{\cite{Hardzei2020}}
+                        \end{scnindent}
+                    \end{scnindent}
+                    \scnitem{сказуемое\scnrolesign}
+                    \begin{scnindent}
+                        \scntext{пояснение}{\textit{Сказуемое\scnrolesign} --- это одно из главных ролевых отношений, связывающее декомпозицию текста с файлом, содержимое которого обозначает отображение наблюдателем исходного пункта описания события в конечный.}
+                        \begin{scnindent}
+                        	\scnrelfrom{источник}{\cite{Hardzei2020}}
+                        \end{scnindent}
+                    \end{scnindent}
+                    \scnitem{прямое дополнение\scnrolesign}
+                    \begin{scnindent}
+                        \scntext{пояснение}{\textit{Прямое дополнение\scnrolesign} --- это одно из главных ролевых отношений, связывающее декомпозицию текста с файлом, содержимое которого обозначает конечный пункт описания события, выбранный наблюдателем.}
+                        \begin{scnindent}
+                        	\scnrelfrom{источник}{\cite{Hardzei2020}}
+                        \end{scnindent}
+                    \end{scnindent}
+                \end{scnsubdividing}
+            \end{scnindent}
+            \scnitem{второстепенный член предложения\scnrolesign}
+            \begin{scnindent}
+                \begin{scnsubdividing}
+                    \scnitem{косвенное дополнение\scnrolesign}
+                    \scnitem{определение\scnrolesign}
+                    \begin{scnindent}
+                        \scntext{пояснение}{\textit{Определение\scnrolesign} --- это одно из второстепенных ролевых отношений, связывающее декомпозицию текста с файлом, содержимое которого обозначает модификацию подлежащего, дополнения, обстоятельства места и времени.}
+                        \begin{scnindent}
+	                        \scnrelfrom{источник}{\cite{Hardzei2007a}}
+	                        \scnrelfrom{источник}{\cite{Hardzei2017a}}
+	                        \scnrelfrom{источник}{\cite{Hardzei2007b}}
+	                    \end{scnindent}
+                    \end{scnindent}
+                    \scnitem{обстоятельство\scnrolesign}
+                    \begin{scnindent}
+                        \scntext{пояснение}{\textit{Обстоятельство\scnrolesign} --- это одно из второстепенных ролевых отношений, связывающее декомпозицию текста с файлом, содержимое которого обозначает либо модификацию, либо локализацию сказуемого.}
+                        \begin{scnindent}
+	                        \scnrelfrom{источник}{\cite{Hardzei2007a}}
+	                        \scnrelfrom{источник}{\cite{Hardzei2017a}}
+	                        \scnrelfrom{источник}{\cite{Hardzei2007b}}
+	                        \begin{scnsubdividing}
+	                            \scnitem{обстоятельство степени\scnrolesign}
+	                            \begin{scnindent}
+	                                \scntext{пояснение}{Обстоятельство степени --- обстоятельство, обозначающее модификацию сказуемого.}
+	                            \end{scnindent}
+	                            \scnitem{обстоятельство образа действия\scnrolesign}
+	                            \begin{scnindent}
+	                                \scntext{пояснение}{Обстоятельство образа действия --- обстоятельство, обозначающее модификацию сказуемого.}
+	                            \end{scnindent}
+	                            \scnitem{обстоятельство места\scnrolesign}
+	                            \begin{scnindent}
+	                                \scntext{пояснение}{Обстоятельства места --- обстоятельство, обозначающее пространственную локализацию сказуемого.}
+	                                \begin{scnindent}
+		                                \begin{scnsubdividing}
+		                                    \scnitem{динамическое обстоятельство места\scnrolesign}
+		                                    \scnitem{статическое обстоятельство места\scnrolesign}
+		                                \end{scnsubdividing}
+	                                \end{scnindent}
+	                            \end{scnindent}
+	                            \scnitem{обстоятельство времени\scnrolesign}
+	                            \begin{scnindent}
+	                                \scntext{пояснение}{Обстоятельство времени --- обстоятельство, обозначающее временную локализацию сказуемого.}
+		                            \begin{scnsubdividing}
+		                                \scnitem{динамическое обстоятельство времени\scnrolesign}
+		                                \scnitem{статическое обстоятельство времени\scnrolesign}
+		                            \end{scnsubdividing}
+	                            \end{scnindent}
+	                        \end{scnsubdividing}
+	                    \end{scnindent}
+                    \end{scnindent}
+                \end{scnsubdividing}
+            \end{scnindent}
+        \end{scnsubdividing}
+        \bigskip
+        \bigskip
+        
+        \scnheader{Пример sc.g-текста, описывающего лексему}
+        \scniselement{sc.g-текст}
+        \scntext{пояснение}{Здесь представлено описание лексемы с указанием ее принадлежности определённой части речи. Также описание содержит морфологическую парадигму данной лексемы, связывающую ее с ее словоформами.}
+        \scneq{\scnfileimage[20em]{Contents/part_kb/src/images/sd_natural_languages/lexeme_example.png}}
+        
+        \scnheader{Пример этапов разбора текста естественного языка}
+        \begin{scneqtoset}
+            \scnfileitem{\includegraphics{Contents/part_kb/src/images/sd_natural_languages/nl_text.png}}
+            \begin{scnindent}
+            	\scntext{пояснение}{с точки зрения ostis-системы, любой естественно-языкой текст является \textit{файлом.}}
+	            \scnrelfrom{лексическая структура}{\scnfileimage[20em]{Contents/part_kb/src/images/sd_natural_languages/nl_lexical.png}}
+			    \begin{scnindent}
+		            \scntext{пояснение}{Данная конструкция описывает декомпозицию исходного текста на фрагменты с указанием их принадлежности определённой \textit{номинативной единице} или \textit{знаку алфавита синтаксиса}.}
+		            \scnrelfrom{синтаксическая структура}{\scnfileimage[20em]{Contents/part_kb/src/images/sd_natural_languages/nl_synactical.png}}
+		            \bigskip
+		            \bigskip
+		            \scntext{пояснение}{Здесь приведена только частью синтаксической структуры. Оставшаяся часть записывается аналогично.}
+		         \end{scnindent}
+        	\end{scnindent}
+        \end{scneqtoset}
+    \end{scnsubstruct}
+    \scnendcurrentsectioncomment
+\end{SCn}

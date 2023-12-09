@@ -1,0 +1,219 @@
+\begin{SCn}
+\scnsectionheader{Предметная область и онтология интерфейсных действий пользователей ostis-системы}
+\begin{scnsubstruct}
+\scnrelfrom{соавтор}{Садовский М.Е.}
+
+\scnheader{Предметная область интерфейсных действий пользователей}
+\scniselement{предметная область}
+\begin{scnhaselementrole}{максимальный класс объектов исследования}
+	{интерфейсное действие пользователя}
+\end{scnhaselementrole}
+\begin{scnhaselementrolelist}{класс объектов исследования}
+    \scnitem{действие мышью}
+    \scnitem{прокрутка мышью}
+    \scnitem{прокрутка мышью вверх}
+    \scnitem{прокрутка мышью вниз}
+    \scnitem{наведение мышью}
+    \scnitem{отпускание мышью}
+    \scnitem{нажатие мыши}
+    \scnitem{одиночное нажатие мыши}
+    \scnitem{двойное нажатие мыши}
+    \scnitem{жест мышью}
+    \scnitem{отведение мышью}
+    \scnitem{перетаскивание мышью}
+    \scnitem{действие голосом}
+    \scnitem{действие клавиатурой}
+    \scnitem{нажатие функциональной клавиши}
+    \scnitem{нажатие клавиши набора текста}
+    \scnitem{действие осязанием}
+    \scnitem{действие сенсором}
+    \scnitem{нажатие сенсора}
+    \scnitem{одиночное нажатие сенсора}
+    \scnitem{двойное нажатие сенсора}
+    \scnitem{жест по сенсору}
+    \scnitem{жест по сенсору одним пальцем}
+    \scnitem{жест по сенсору несколькими пальцами}
+    \scnitem{отпускание сенсором}
+    \scnitem{перетаскивание сенсором}
+    \scnitem{действие пером}
+    \scnitem{нажатие функциональной клавиши пером}
+    \scnitem{рисование пером}
+    \scnitem{написание текста пером}
+\end{scnhaselementrolelist}
+\begin{scnhaselementrole}{исследуемое отношение}
+	{инициируемое пользовательским интерфейсом действие*}
+\end{scnhaselementrole}
+\scnrelfrom{частная предметная область}{Предметная область интерфейсных действий пользователей ostis-системы}
+
+\scnheader{интерфейсное действие пользователя}
+\scnidtf{user interface action}
+\scntext{пояснение}{Действие, выполняемое пользователем над некоторым \textit{компонентом пользовательского интерфейса}. Для связи данного действия с \textit{компонентом пользовательского интерфейса} и необходимым к выполнению \textit{внутренним действием системы} используется отношение \textit{инициируемое пользовательским интерфейсом действие*}.}
+\scnsuperset{действие мышью}
+\begin{scnindent}
+	\scnidtf{mouse-action}
+	\scnsuperset{прокрутка мышью}
+	\scnidtf{mouse-scroll}
+	\scnsuperset{прокрутка мышью вверх}
+	\begin{scnindent}
+		\scnidtf{mouse-scroll-up}
+		\scnsuperset{прокрутка мышью вниз}
+		\begin{scnindent}
+		\scnidtf{mouse-scroll-down}
+		\end{scnindent}
+	\end{scnindent}
+	\scnsuperset{наведение мышью}
+	\begin{scnindent}
+		\scnidtf{mouse-hover}
+	\end{scnindent}
+	\scnsuperset{отпускание мышью}
+	\begin{scnindent}
+		\scnidtf{mouse-drop}
+	\end{scnindent}
+	\scnsuperset{нажатие мыши}
+	\begin{scnindent}
+		\scnidtf{mouse-click}
+		\scnsuperset{одиночное нажатие мыши}
+		\begin{scnindent}
+			\scnidtf{mouse-single-click}
+		\end{scnindent}
+		\scnsuperset{двойное нажатие мыши}
+		\begin{scnindent}
+			\scnidtf{mouse-double-click}
+		\end{scnindent}
+	\end{scnindent}
+	\scnsuperset{жест мышью}
+	\begin{scnindent}
+		\scnidtf{mouse-gesture}
+	\end{scnindent}
+	\scnsuperset{отведение мышью}
+	\begin{scnindent}
+		\scnidtf{mouse-unhover}
+	\end{scnindent}
+	\scnsuperset{перетаскивание мышью}
+	\begin{scnindent}
+		\scnidtf{mouse-drag}
+	\end{scnindent}
+\end{scnindent}
+\scnsuperset{действие голосом}
+\begin{scnindent}
+	\scnidtf{speech-action}
+\end{scnindent}
+\scnsuperset{действие клавиатурой}
+\begin{scnindent}
+	\scnidtf{keyboard-action}
+	\scnsuperset{нажатие функциональной клавиши}
+	\begin{scnindent}
+		\scnidtf{press-function-key}
+	\end{scnindent}
+	\scnsuperset{нажатие клавиши набора текста}
+	\begin{scnindent}
+		\scnidtf{type-text}
+	\end{scnindent}
+\end{scnindent}
+\scnsuperset{действие осязанием}
+\begin{scnindent}
+	\scnidtf{tangible-action}
+\end{scnindent}
+\scnsuperset{действие сенсором}
+\begin{scnindent}
+	\scnidtf{touch-action}
+	\scnsuperset{нажатие сенсора}
+	\begin{scnindent}
+		\scnidtf{touch-click}
+		\scnsuperset{одиночное нажатие сенсора}
+		\begin{scnindent}
+			\scnidtf{touch-single-click}
+		\end{scnindent}
+		\scnsuperset{двойное нажатие сенсора}
+		\begin{scnindent}
+			\scnidtf{touch-double-click}
+		\end{scnindent}
+	\end{scnindent}
+	\scnsuperset{жест по сенсору}
+	\begin{scnindent}
+		\scnidtf{touch-gesture}
+		\scnsuperset{жест по сенсору одним пальцем}
+		\begin{scnindent}
+			\scnidtf{one-fingure-gesture}
+		\end{scnindent}
+		\scnsuperset{жест по сенсору несколькими пальцами}
+		\begin{scnindent}
+			\scnidtf{multiple-finger-gesture}
+		\end{scnindent}
+	\end{scnindent}
+	\scnsuperset{отпускание сенсором}
+	\begin{scnindent}
+		\scnidtf{touch-drop}
+	\end{scnindent}
+	\scnsuperset{перетаскивание сенсором}
+	\begin{scnindent}
+		\scnidtf{touch-drag}
+	\end{scnindent}
+\end{scnindent}
+\scnsuperset{действие пером}
+\begin{scnindent}
+	\scnidtf{pen-base-action}
+	\scnsuperset{нажатие функциональной клавиши пером}
+	\begin{scnindent}
+		\scnidtf{touch-function-key}
+	\end{scnindent}
+	\scnsuperset{рисование пером}
+	\begin{scnindent}
+		\scnidtf{draw}
+	\end{scnindent}
+	\scnsuperset{написание текста пером}
+	\begin{scnindent}
+		\scnidtf{write-text}
+	\end{scnindent}
+\end{scnindent}	
+
+\scnheader{прокрутка мышью}
+\scntext{пояснение}{\textit{прокрутка мышью} --- интерфейсное действие пользователя, соответствующее прокрутке содержимого некоторого компонента пользовательского интерфейса при помощи мыши.}
+
+\scnheader{наведение мышью}
+\scntext{пояснение}{\textit{наведение мышью} --- интерфейсное действие пользователя, соответствующее появлению курсора мыши в рамках компонента пользовательского интерфейса.}
+
+\scnheader{отпускание мышью}
+\scntext{пояснение}{\textit{отпускание мышью} --- интерфейсное действие пользователя, соответствующее отпусканию некоторого компонента пользовательского интерфейса в рамках другого компонента пользовательского интерфейса при помощи мыши.}
+
+\scnheader{нажатие мыши}
+\scntext{пояснение}{\textit{нажатие мыши} --- интерфейсное действие пользователя, соответствующее выполнению нажатия мыши в рамках некоторого компонента пользовательского интерфейса.}
+
+\scnheader{отведение мышью}
+\scntext{пояснение}{\textit{отведение мышью} --- интерфейсное действие пользователя, соответствующее выходу курсора мыши за рамки компонента пользовательского интерфейса.}
+
+\scnheader{перетаскивание мышью}
+\scntext{пояснение}{\textit{перетаскивание мышью} --- интерфейсное действие пользователя, соответствующее перетаскиванию компонента пользовательского интерфейса при помощи мыши.}
+
+\scnheader{нажатие сенсора}
+\scntext{пояснение}{\textit{нажатие сенсора} --- интерфейсное действие пользователя, соответствующее выполнению нажатия сенсора в рамках некоторого компонента пользовательского интерфейса.}
+
+\scnheader{жест по сенсору}
+\scntext{пояснение}{\textit{жест по сенсору} --- интерфейсное действие пользователя, соответствующее выполнению некоторого жеста, выполняемого при помощи движения пальцев на экране сенсора.}
+
+\scnheader{отпускание сенсором}
+\scntext{пояснение}{\textit{отпускание сенсором} --- интерфейсное действие пользователя, соответствующее отпусканию некоторого компонента пользовательского интерфейса в рамках другого компонента пользовательского интерфейса при помощи сенсора.}
+
+\scnheader{перетаскивание сенсором}
+\scntext{пояснение}{\textit{перетаскивание сенсором} --- интерфейсное действие пользователя, соответствующее перетаскиванию компонента пользовательского интерфейса при помощи сенсора.}
+
+\scnheader{действие пером}
+\scntext{пояснение}{\textit{действие пером} --- интерфейсное действие пользователя, осуществляемое при помощи пера на графическом планшете.}
+
+\scnheader{класс интерфейсных действий пользователя}
+\scnsubset{класс действий}
+\scnrelto{семейство подмножеств}{интерфейсное действие пользователя}
+\scntext{пояснение}{\textit{класс интерфейсных действий пользователя} --- множество, элементами которого являются классы \textit{интерфейсных действий пользователя}.}
+
+\scnheader{инициируемое пользовательским интерфейсом действие*}
+\scntext{пояснение}{При взаимодействии пользователя с \textit{компонентом пользовательского интерфейса} могут быть произведены различные интерфейсные действия. В зависимости от выполненного интерфейсного действия и компонента, над которым оно было выполнено, происходит инициирование некоторого \textit{внутреннего действия системы}. Для задания такого инициируемого при взаимодействии с пользовательским интерфейсом действия и используется указанное отношение. Первым компонентом связки отношения \textit{инициируемое пользовательским интерфейсом действие*} является связка, элементами которой являются элемент множества компонентов пользовательского интерфейса и элемент множества \textit{класс интерфейсных действий пользователя}. Вторым компонентом является элемент множества \textit{класс внутренних действий системы}.}
+\scniselement{квазибинарное отношение}
+\scniselement{ориентированное отношение}
+\scnrelfrom{первый домен}{компонент пользовательского интерфейса $\cup$ класс интерфейсных действий пользователя}
+\scnrelfrom{второй домен}{класс внутренних действий системы}
+\scnrelfrom{описание примера}{\scnfileimage[40em]{Contents/part_ui/src/images/sd_ui/ui_initiated_action.png}}
+
+\bigskip
+\end{scnsubstruct}
+\scnendcurrentsectioncomment
+\end{SCn}
