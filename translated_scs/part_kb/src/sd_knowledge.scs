@@ -1,0 +1,320 @@
+.system_element_3110
+=> nrel_inclusion: [*
+	=> .system_element_340: 
+		.system_element_2821
+		(*
+			=> nrel_idtf: [<p>Предметная область и онтология <i>знаний о множествах</i></p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+				=> nrel_note: [<p><i>знания о множествах</i> являются <u>частным видом</u> <i>знаний</i> и, следовательно, общие свойства сущностей, описываемых знаниями, могут наследоваться <i>Предметной областью и онтологией множеств</i></p>]
+				(*
+					<- lang_ru;;
+					=> nrel_format: format_html;;
+				*);;
+			*);;
+		*);
+		.system_element_3083;
+		.system_element_2123;
+		.system_element_2132;
+		.system_element_2717;
+		.system_element_3090;
+		.system_element_3111;
+		.system_element_2704;
+		.system_element_2723;
+		.system_element_3027;
+		.system_element_3006;
+		.system_element_3112;
+		.system_element_3113
+	;;
+
+	.system_element_3114
+	<- subject_domain;
+	-> .system_element_1210: 
+		knowledge
+	;
+	-> .system_element_3115: 
+		.system_element_1932;
+		.system_element_3116
+	;;
+
+	knowledge
+	=> nrel_idtf: [<p>синтаксически корректная (для соответствующего языка) и семантически целостная информационная конструкция</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	<= nrel_inclusion: .system_element_482
+	(*
+		<- .system_element_2: .system_element_3117;;
+	*);
+	=> .system_element_3118: .system_element_1932
+	(*
+		=> nrel_idtf: [<p>Множество <u>всевозможных</u> видов знаний</p>];;
+		=> nrel_note: [<p>Тот факт, что семейство <i>видов знаний</i> является <i>покрытием</i> Множества всевозможных <i>знаний</i>, означает то, что каждое <i>знание</i> принадлежит по крайней мере одному выделенному нами <i>виду знаний</i></p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+
+	.system_element_1932
+	-> .system_element_1957
+	(*
+		=> nrel_idtf: [<p>описание заданной сущности</p>];;
+		=> nrel_inclusion: .system_element_3119;;
+		=> nrel_inclusion: .system_element_3120
+		(*
+			=> nrel_inclusion: .system_element_3121;;
+			=> nrel_inclusion: .system_element_3122;;
+		*);;
+		=> nrel_inclusion: .system_element_3123
+		(*
+			=> nrel_inclusion: .system_element_3124;;
+			=> nrel_inclusion: .system_element_3125;;
+			=> nrel_inclusion: .system_element_3126
+			(*
+				=> nrel_inclusion: .system_element_3127;;
+				=> nrel_inclusion: .system_element_3128
+				(*
+					=> nrel_idtf: [<p>спецификация класса связей (связок)</p>]
+					(*
+						<- lang_ru;;
+						=> nrel_format: format_html;;
+					*);;
+				*);;
+				=> nrel_inclusion: .system_element_3129;;
+				=> nrel_inclusion: .system_element_3130;;
+				=> nrel_inclusion: .system_element_3131;;
+				=> nrel_inclusion: .system_element_3132
+				(*
+					=> nrel_inclusion: explanation;;
+					=> nrel_inclusion: definition;;
+					=> nrel_inclusion: statement
+					(*
+						=> nrel_idtf: [<p>утверждение, описывающее свойства экземпляров (элементов) специфицируемого понятия</p>];;
+						=> nrel_idtf: [<p>закономерность</p>]
+						(*
+							<- lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+				*);;
+			*);;
+		*);;
+		=> nrel_inclusion: semantic_neighborhood;;
+		=> nrel_inclusion: .system_element_3133;;
+		=> nrel_inclusion: comparative_analysis;;
+		=> nrel_inclusion: .system_element_3134;;
+		=> nrel_inclusion: .system_element_3135;;
+		=> nrel_inclusion: .system_element_3136;;
+		=> nrel_inclusion: .system_element_3137;;
+		=> nrel_inclusion: .system_element_3138
+		(*
+			=> nrel_idtf: [<p>аргументация предлагаемого решения</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);
+	-> .system_element_2707;
+	-> observation
+	(*
+		=> nrel_inclusion: factual_observation;;
+		=> nrel_inclusion: .system_element_3139;;
+	*);
+	-> formal_theory;
+	-> subject_domain;
+	-> .system_element_1862
+	(*
+		=> nrel_idtf: [<p>предметная область и её онтология</p>];;
+		=> nrel_idtf: [<p>предметная область и соответствующая ей объединенная онтология</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);
+	-> .system_element_3040
+	(*
+		=> nrel_idtf: [<p>спецификация знания</p>];;
+		=> nrel_inclusion: .system_element_3140;;
+		=> nrel_inclusion: .system_element_3141;;
+		=> nrel_inclusion: .system_element_3142;;
+		=> nrel_inclusion: .system_element_3143;;
+		=> nrel_inclusion: ontology
+		(*
+			=> nrel_inclusion: .system_element_3045
+			(*
+				=> nrel_inclusion: .system_element_3144;;
+				=> nrel_inclusion: .system_element_3035;;
+				=> nrel_inclusion: .system_element_3036;;
+				=> nrel_inclusion: .system_element_3039;;
+				=> nrel_inclusion: .system_element_3145;;
+			*);;
+		*);;
+	*);
+	-> task
+	(*
+		=> nrel_idtf: [<p>спецификация действия</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);
+	-> plan;
+	-> protocol;
+	-> .system_element_3146;
+	-> .system_element_1965;
+	-> .system_element_1436;
+	-> .system_element_3147;
+	-> .system_element_3148;
+	-> .system_element_3149;
+	-> knowledge_base
+	(*
+		=> nrel_idtf: [<p>совокупность знаний, хранимых в памяти интеллектуальной компьютерной системы и <u>достаточных</u> для того, чтобы указанная система удовлетворяла соответствующим предъявляемым к ней требованиям (в частности, чтобы она имела соответствующий уровень интеллекта)</p>];;
+		=> nrel_idtf: [<p>систематизированная совокупность знаний, хранимая в памяти интеллектуальной компьютерной системы и достаточная для обеспечения целенаправленного (целесообразного, адекватного) функционирования (поведения) этой системы как в своей внешней среде, так и в своей внутренней среде (в собственной базе знаний)</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+		=> .system_element_1014: {
+			concerted_part_of_kb
+			(*
+				=> nrel_idtf: [<p>часть базы знаний, признанная коллективом авторов на текущий момент</p>]
+				(*
+					<- lang_ru;;
+					=> nrel_format: format_html;;
+				*);;
+			*);
+			.system_element_3150;
+			.system_element_3151;
+			.system_element_3152
+			(*
+				=> nrel_idtf: [<p>система специфицированных и согласованных действий авторов базы знаний, направленных на повышение её качества</p>]
+				(*
+					<- lang_ru;;
+					=> nrel_format: format_html;;
+				*);;
+			*)
+		};;
+		=> nrel_note: [<p>Основным факторами, определяющими качество интеллектуальной компьютерной системы, являются:
+		<ul>
+			<li> качественная структуризация (систематизация) и <u>стратификация</u> базы знаний интеллектуальной компьютерной системы, а также
+			<li> систематизация и стратификация <u>деятельности</u>, которая осуществляется интеллектуальной компьютерной системой и спецификация которой является важнейшей частью базы знаний этой системы (Смотрите Раздел <i>Глобальная предметная область действий и задач и соответствующая ей онтология методов и технологий</i>).</li>
+		<ul></p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);
+	=> nrel_note: [<p>Даже небольшой перечень <i>видов знаний</i> свидетельствует об огромном многообразии <i>видов знаний</i></p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+
+	knowledge
+	=> nrel_subdividing: {
+		.system_element_3153
+		(*
+			=> nrel_idtf: [<p><i>знание</i>, имеющее <u>только</u> <i>денотационную семантику</i>, которая представляется в виде семантической <i>спецификации</i> системы <i>понятий</i>, используемых в этом <i>знании</i></p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);
+		.system_element_3154
+		(*
+			=> nrel_idtf: [<p><i>знание</i>, имеющее не только <i>денотационную семантику</i>, но и <i>операционную семантику</i>, которая представляется в виде семейства <i>спецификаций агентов</i>, осуществляющих интерпретацию <i>процедурного знания</i>, направленную на решение некоторой инициированной <i>задачи</i></p>];;
+			=> nrel_idtf: [<p>функционально интерпретируемое знание, обеспечивающее решение либо конкретной задачи, либо некоторого множества инициируемых задач</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+			=> nrel_inclusion: task
+			(*
+				=> nrel_idtf: [<p>формулировка конкретной задачи</p>];;
+				=> nrel_inclusion: declarative_formulation_of_task;;
+				=> nrel_inclusion: procedural_formulation_of_task;;
+			*);;
+			=> nrel_inclusion: plan
+			(*
+				=> nrel_idtf: [<p>план решения конкретной задачи</p>];;
+				=> nrel_idtf: [<p>контекст конкретной задачи, предоставляющий всю информацию для решения всех подзадач для указанной конкретной задачи</p>]
+				(*
+					<- lang_ru;;
+					=> nrel_format: format_html;;
+				*);;
+				=> nrel_idtf: [<p>описание системы подзадач некоторой задачи</p>]
+				(*
+					<- lang_ru;;
+					=> nrel_format: format_html;;
+				*);;
+			*);;
+			=> nrel_inclusion: .system_element_1965
+			(*
+				=> nrel_idtf: [<p>обобщенное описание плана решения любой задачи из некоторого заданного класса задач</p>]
+				(*
+					<- lang_ru;;
+					=> nrel_format: format_html;;
+				*);;
+			*);;
+			=> nrel_inclusion: .system_element_390
+			(*
+				=> nrel_idtf: [<p>метод, детализированный до уровня элементарных подзадач</p>]
+				(*
+					<- lang_ru;;
+					=> nrel_format: format_html;;
+				*);;
+			*);;
+		*)
+	};;
+
+	.system_element_3116
+	-> .system_element_3155
+	(*
+		=> nrel_idtf: [<p>знание, которое от материнского знания наследует все описанные там свойства объектов исследования</p>];;
+		=> nrel_note: [<p>Факт наследования свойств описываемых объектов от материнского знания подчеркивается использованием прилагательного дочернее в sc-идентификаторе данного отношения, заданного на множестве знаний</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+		=> nrel_inclusion: .system_element_340
+		(*
+			=> nrel_idtf: [<p>частный раздел*</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+		=> nrel_inclusion: .system_element_3156;;
+	*);
+	-> .system_element_3057
+	(*
+		=> nrel_idtf: [<p>быть знанием, которое является спецификацией (описанием) заданной сущности</p>];;
+		=> nrel_note: [<p>специфицируемой сущностью может быть сущность любого вида, в том числе, и другое знание</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);
+	-> nrel_ontology
+	(*
+		=> nrel_idtf: [<p>быть семантической спецификацией заданного знания*</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);
+	-> nrel_semantic_equivalence;
+	-> .system_element_512
+	(*
+		=> nrel_idtf: [<p>логическое следствие*</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);
+	-> .system_element_938;;
+*];;
