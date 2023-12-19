@@ -1,0 +1,57 @@
+.system_element_1856
+=> nrel_inclusion: [*
+
+	.system_element_1857
+	<- subject_domain;
+	<= nrel_private_subject_domain: .system_element_1858;
+	-> .system_element_2: 
+		.system_element_1859
+	;
+	-> .system_element_2: .system_element_1860;;
+
+	.system_element_1861
+	=> nrel_inclusion: .system_element_1862;
+	<= nrel_inclusion: .system_element_339;
+	=> nrel_inclusion: semantic_neighborhood;
+	=> .system_element_1366: .system_element_1863;
+	=> nrel_inclusion: .system_element_1864;
+	=> nrel_note: [<p>Базовый фрагмент предметной области и онтологии включает в себя теоретико-множественную и логическую онтологию, а также фрагменты терминологической онтологии, описывающие основные идентификаторы объектов исследования предметной области.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_note: [<p>Данный вид многократно используемых компонентов позволяет использовать только те знания, которые непосредственно необходимы для функционирования интеллектуальных систем, исключив то, что никак не влияет на работу конечной системы (пояснения, примеры, дидактический материал и т.д.).</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	-> .system_element_1865;
+	-> .system_element_1866;
+	-> .system_element_1867;
+	=> nrel_inclusion: .system_element_1868;
+	=> nrel_note: [<p>Целые базы знаний могут быть многократно используемыми компонентами в случае разработки интеллектуальных систем, имеющих схожие функциональные требования.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+
+	.system_element_1869
+	-> .system_element_1870;
+	-> .system_element_1871;
+	=> nrel_explanation: [<p><i>Ядро базы знаний</i> представляет собой компонент, входящий в состав каждой базы знаний, разрабатываемой по <i>Технологии OSTIS</i>, и устанавливаемый в первую очередь.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_note: [<p>Список приведенных классов многократно используемых компонентов не является окончательным. В случае, когда разработчик базы знаний интеллектуальной системы считает, что разработанный им компонент сможет стать неотъемлемой частью библиотеки, то компонент будет добавлен в библиотеку, как многократно используемый, в случае, если компонент прошел верификацию и соответствует требованиям разработчиков библиотеки.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+
+	.system_element_1860
+	<= nrel_inclusion: .system_element_1872;
+	-> rrel_maximum_studied_object_class;
+	-> rrel_not_maximum_studied_object_class;
+	-> rrel_explored_relation;;
+*];;

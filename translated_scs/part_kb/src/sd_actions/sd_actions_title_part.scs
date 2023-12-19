@@ -1,0 +1,612 @@
+.sd_actions_title_part = [*
+
+<- section;
+<- .system_element_1862;
+<= .system_element_440: <
+	.system_element_3329;
+	.system_element_3274;
+	.system_element_3371;
+	.system_element_3195;
+	.system_element_3372;
+	.system_element_3373;
+	.system_element_3374
+>;
+-> .system_element_3375: 
+	impact
+	(*
+		=> nrel_idtf: [<p><i>процесс</i> воздействия одних <i>сущностей</i> на другие</p>];;
+		<= nrel_inclusion: process;;
+	*);
+	question
+	(*
+		=> nrel_idtf: [<p><i>процесс</i>, "осознанно" и целенаправленно выполняемый (управляемый) некоторой <i>кибернетической системой</i></p>];;
+		<= nrel_inclusion: impact;;
+		<= nrel_inclusion: process;;
+	*);
+	.system_element_3376;
+	.system_element_3343;
+	.system_element_3344;
+	receptor_action
+	(*
+		=> nrel_idtf: [<p>действие, выполняемое рецептором субъекта действия</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);
+	effector_action
+	(*
+		=> nrel_idtf: [<p>действие, выполняемое эффектором субъекта действия</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);
+	.system_element_3345
+	(*
+		=> nrel_idtf: [<p>действие, выполнение которого не требует его декомпозиции на взаимосвязанные поддействия</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);
+	.system_element_3346;
+	.system_element_3347
+	(*
+		=> nrel_idtf: [<p>сложное действие, которое известно, как выполнять</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);
+	.system_element_3348
+	(*
+		=> nrel_idtf: [<p>сложное действие, для которого априори не известно, как его выполнять</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);
+	.system_element_3352
+	(*
+		=> nrel_idtf: [<p>действие, выполняемое индивидуальной кибернетической системой</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);
+	.system_element_3377
+	(*
+		=> nrel_idtf: [<p>действие, выполняемое коллективом кибернетических систем (многоагентной системой)</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);
+	planned_action;
+	question_initiated;
+	performed_action
+	(*
+		=> nrel_idtf: [<p>активное действие</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);
+	.system_element_3361
+	(*
+		=> nrel_idtf: [<p>выполняемое действие, находящееся в состоянии прерывания</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);
+	question_finished;
+	.system_element_3362;
+	.system_element_3363;
+	.system_element_3364;
+	.system_element_3365;
+	.system_element_3366;
+	.system_element_3367
+;
+-> .system_element_2844: 
+	.system_element_3378;
+	.system_element_3379;
+	.system_element_3338;
+	.system_element_3339;
+	.system_element_3380
+	(*
+		=> nrel_idtf: [<p>коллективность субъекта действия</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);
+	.system_element_3341;
+	.system_element_3342
+	(*
+		=> nrel_idtf: [<p>важность действия^</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);
+	.system_element_3381;
+	actions_class;
+	.system_element_3382;
+	.system_element_3383;
+	.system_element_3384;
+	.system_element_3385;
+	.system_element_3386;
+	.system_element_3387
+	(*
+		=> nrel_idtf: [<p>класс однотипных семантически элементарных воздействий^</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*)
+;
+-> .system_element_3115: 
+	.system_element_3388
+	(*
+		=> nrel_idtf: [<p>отношение, заданное на множестве действий</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);
+	.system_element_3389;
+	.system_element_3337;
+	.system_element_3390
+;
+=> nrel_comment: [<p>Здесь указаны классы классов, которые не являются классами классов <u>первичных</u> объектов исследования</p>]
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);
+-> .system_element_3391: 
+	.system_element_3392;
+	.system_element_3393;
+	.system_element_3394;
+	.system_element_3216;
+	.system_element_3206
+	(*
+		=> nrel_idtf: [<p>быть субъектом заданного действия</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);
+	.system_element_3395
+	(*
+		=> nrel_inclusion: .system_element_3396;;
+	*);
+	.system_element_3396
+	(*
+		=> nrel_inclusion: .system_element_3306
+		(*
+			=> nrel_subdividing: {
+				.system_element_3279;
+				.system_element_3294
+			};;
+		*);;
+		=> nrel_inclusion: .system_element_3397;;
+		=> nrel_inclusion: .system_element_3398;;
+		=> nrel_inclusion: .system_element_3311;;
+		=> nrel_inclusion: .system_element_3312;;
+	*);
+	.system_element_3279;
+	.system_element_3294;
+	.system_element_3397;
+	.system_element_3398;
+	.system_element_3311;
+	.system_element_3312
+;
+-> .system_element_356: 
+	.system_element_3399;
+	.system_element_3400;
+	.system_element_3401;
+	.system_element_3402;
+	.system_element_3403
+
+(*
+	=> nrel_comment: [<p>Здесь указаны исследуемые отношения, которые заданы не на множестве первичных объектов исследования</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+*);
+-> .system_element_3404: 
+	task
+	(*
+		=> nrel_idtf: [<p>формулировка задачи</p>];;
+		=> nrel_idtf: [<p>спецификация действия</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+		=> nrel_idtf: [<p>структура (sc-конструкция), содержащая в идеале достаточную информацию для выполнения соответствующего (специфицируемого) действия</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);
+	declarative_formulation_of_task
+	(*
+		=> nrel_idtf: [<p>семантическая спецификация действия</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);
+	procedural_formulation_of_task
+	(*
+		=> nrel_idtf: [<p>функциональная спецификация действия</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);
+	.system_element_3159
+	(*
+		=> nrel_idtf: [<p>план выполнения сложного действия</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);
+	.system_element_3160;
+	.system_element_3161
+	(*
+		=> nrel_idtf: [<p>декларативный план сложного действия</p>];;
+		=> nrel_idtf: [<p>иерархическая система подзадач заданной сложной задачи</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*)
+;
+-> .system_element_3405: 
+	.system_element_1965
+	(*
+		=> nrel_idtf: [<p>спецификация класса сложных действий</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);
+	.system_element_3406;
+	.system_element_3407;
+	.system_element_390;
+	.system_element_648;
+	.system_element_1436
+
+(*
+	=> nrel_comment: [<p>Здесь указаны классы структур, не являющихся спецификациями первичных объектов исследования</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+*);
+-> .system_element_3408: 
+	.system_element_3409;
+	.system_element_3410;
+	.system_element_3411;
+	effector_action_ostis_system;
+	sc_agent
+	(*
+		=> nrel_idtf: [<p>внутренний субъект ostis-системы</p>];;
+		=> nrel_idtf: [<p>субъект, реализующий действия, выполняемые в памяти ostis-системы</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*)
+;
+-> .system_element_3412: 
+	.system_element_347
+	(*
+		=> nrel_idtf: [<p>сущность, обладающая способностью быть субъектом различного вида действий</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);
+	computer_system
+	(*
+		=> nrel_idtf: [<p>искусственная кибернетическая система</p>];;
+		<= nrel_inclusion: .system_element_347;;
+	*);
+	.system_element_411
+	(*
+		<= nrel_inclusion: computer_system;;
+		=> nrel_inclusion: ostis_system;;
+	*);
+	.system_element_988
+	(*
+		<= nrel_inclusion: .system_element_347;;
+	*);
+	ostis_system;
+	.system_element_3057
+	(*
+		=> nrel_idtf: [<p>быть спецификацией (описанием, семантической окрестностью заданной сущности*)</p>];;
+		=> nrel_idtf: [<p>семантическая окрестность*</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*)
+;;
+
+.system_element_461
+-> {
+	...
+	(*
+		<=> .system_element_293: <
+			question;
+			actions_class
+		>;;
+	*);
+	...
+	(*
+		<=> .system_element_293: <
+			.system_element_1965;
+			.system_element_3413
+		>;;
+	*);
+	...
+	(*
+		<=> .system_element_293: <
+			.system_element_1427;
+			.system_element_1429
+		>;;
+	*)
+}
+(*
+	<= nrel_inclusion: .system_element_3169;;
+	=> nrel_note: [<p>Все сущности, принадлежащие рассмотренным <i>понятиям</i>, требуют достаточно детальной <i>спецификации</i>. При этом не следует путать сами сущности и их <i>спецификации</i>. Так, например, не следует путать <i>действие</i> и <i>задачу</i>, которая специфицирует (уточняет) это <i>действие</i>. Особое место среди указанных понятий занимает понятие <i>метода</i>, т.к. каждый конкретный <i>метод</i>, с одной стороны, является <i>спецификацией</i> соответствующего <i>класса действий</i>, а, с другой стороны, сам нуждается в <i>спецификации</i>, которая уточняет либо <i>декларативную семантику</i> этого <i>метода</i> (т.е. обобщенную декларативную формулировку класса задач, решаемых с помощью этого <i>метода</i>), либо <i>операционную семантику</i> этого <i>метода</i>, (т.е. множество <i>методов</i>, обеспечивающих <i>интерпретацию</i> данного специфицируемого <i>метода</i>) и тем самым преобразует специфицируемый <i>метод</i> в <i>навык</i>.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+*);;
+
+.system_element_461
+-> <
+	.system_element_3414
+	(*
+		=> nrel_idtf: [<p>специфицируемая сущность</p>];;
+		=> nrel_idtf: [<p>сущность, использование которой требует вполне определенной ее спецификации</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+		=> nrel_inclusion: question;;
+		=> nrel_inclusion: actions_class;;
+		=> nrel_inclusion: .system_element_1965;;
+		=> nrel_inclusion: .system_element_3413;;
+		=> nrel_inclusion: .system_element_1427;;
+		=> nrel_inclusion: .system_element_1429;;
+	*);
+	.system_element_3415
+	(*
+		=> nrel_idtf: [<p>спецификация</p>];;
+		=> nrel_inclusion: task
+		(*
+			=> nrel_inclusion: declarative_formulation_of_task
+			(*
+				=> nrel_idtf: [<p>семантическая формулировка задачи</p>]
+				(*
+					<- lang_ru;;
+					=> nrel_format: format_html;;
+				*);;
+			*);;
+			=> nrel_inclusion: procedural_formulation_of_task
+			(*
+				=> nrel_idtf: [<p>функциональная формулировка задачи</p>]
+				(*
+					<- lang_ru;;
+					=> nrel_format: format_html;;
+				*);;
+			*);;
+		*);;
+		=> nrel_inclusion: .system_element_3416
+		(*
+			=> nrel_idtf: [<p>план</p>];;
+			=> nrel_idtf: [<p>план выполнения действия</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+		=> nrel_inclusion: .system_element_3417
+		(*
+			=> nrel_idtf: [<p>иерархическая система подзадач</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+		=> nrel_inclusion: protocol;;
+		=> nrel_inclusion: .system_element_3146;;
+		=> nrel_inclusion: .system_element_3418;;
+		=> nrel_inclusion: .system_element_1965;;
+		=> nrel_inclusion: .system_element_3419;;
+		=> nrel_inclusion: .system_element_3407;;
+		=> nrel_inclusion: .system_element_648;;
+	*)
+>
+(*
+	=> nrel_note: [<p>При этом следует отличать:
+	<ul>
+		<li> спецификацию конкретного <i>действия</i> (<i>задачу</i>, <i>план</i>, <i>декларативную спецификацию выполнения действия</i>, <i>протокол</i>, <i>результативную часть протокола</i>);
+		<li> спецификацию конкретной <i>деятельности</i> (<i>контекст</i>*, <i>множество используемых методов</i>*);
+		<li> спецификацию <i>класса действий</i> (<i>обобщенную декларативную формулировку класса задач</i>, <i>метод</i>);
+		<li> спецификацию <i>вида деятельности</i> (<i>технологию</i>);
+		<li> спецификацию <i>метода</i> (<i>декларативную семантику метода</i>, <i>операционную семантику метода</i>);
+		<li> спецификацию <i>класса методов</i> (<i>модель решения задач</i>).</li>
+	<ul></p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+*);;
+
+.system_element_461
+-> {
+	...
+	(*
+		<=> .system_element_293: <
+			question;
+			.system_element_3420
+		>;;
+	*);
+	...
+	(*
+		<=> .system_element_293: <
+			.system_element_1427;
+			.system_element_3421
+		>;;
+	*)
+};
+=> .system_element_1182: 
+	.system_element_496
+	(*
+		=> nrel_summary: [<p>Martynov1984</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);
+	.system_element_3422
+	(*
+		=> nrel_summary: [<p>Ikeda1998</p>];;
+		=> .system_element_45: .system_element_3423
+		(*
+			=> nrel_idtf: [<p>задачная онтология</p>];;
+			=> nrel_idtf: [<p>онтология классов задач, решаемых в данной предметной области</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);
+	.system_element_3424
+	(*
+		=> nrel_summary: [<p>Studer1996</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);
+	.system_element_3425
+	(*
+		=> nrel_summary: [<p>Benjamins1999</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);
+	.system_element_3426
+	(*
+		=> nrel_summary: [<p>Chandrasekaran1999</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);
+	.system_element_3427
+	(*
+		=> nrel_summary: [<p>Chandrasekaran1998</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);
+	.system_element_3428
+	(*
+		=> nrel_summary: [<p>Fensel1998Reuse</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);
+	.system_element_3429
+	(*
+		=> nrel_summary: [<p>Kemke2001</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);
+	.system_element_3430
+	(*
+		=> nrel_summary: [<p>Tu1995</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);
+	.system_element_3431
+	(*
+		=> nrel_summary: [<p>Trypuz2007</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);
+	.system_element_3432
+	(*
+		=> nrel_summary: [<p>Fang2019</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);
+	.system_element_3433;
+	.system_element_3434
+	(*
+		=> nrel_summary: [<p>McBride2021</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);
+	.system_element_3435
+	(*
+		=> nrel_summary: [<p>Crowther2020</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);
+	.system_element_3436
+	(*
+		=> nrel_summary: [<p>McCann1998</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);
+	.system_element_3437
+	(*
+		=> nrel_summary: [<p>Yan2014</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);
+	.system_element_1183;
+	.system_element_3438
+	(*
+		=> nrel_summary: [<p>Crubezy2004</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);
+	.system_element_3439
+;;
+
+*];;
