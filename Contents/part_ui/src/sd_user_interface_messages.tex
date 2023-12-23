@@ -1,0 +1,84 @@
+\begin{SCn}
+\scnsectionheader{Предметная область и онтология сообщений, входящих в ostis-систему и выходящих из неё}
+\begin{scnsubstruct}
+\scnrelfrom{соавтор}{Садовский М.Е.}
+
+\scnheader{сообщение}
+\begin{scnrelfromlist}{разбиение}
+	\scnsuperset{сообщение пользователя системы}
+	\begin{scnindent}
+		\scnsuperset{сообщение пользователя ostis-системы}
+	\end{scnindent}
+	\scnsuperset{сообщение системы}
+\end{scnrelfromlist}
+\begin{scnrelfromlist}{разбиение}
+	\scnsuperset{атомарное сообщение}
+	\scnsuperset{неатомарное сообщение}
+\end{scnrelfromlist}
+\begin{scnrelfromlist}{разбиение}
+	\scnsuperset{сообщение на естественном языке}
+	\scnsuperset{сообщение на искусственном языке}
+\end{scnrelfromlist}
+\scnsuperset{графическое сообщение}
+\begin{scnindent}
+	\scnidtf{сообщение, содержащее графическую информацию}
+	\scnsuperset{видео-сообщение}
+	\begin{scnindent}
+		\scnidtf{сообщение, содержащее видео-информацию}
+	\end{scnindent}
+\end{scnindent}
+\scnsuperset{аудио-сообщение}
+\begin{scnindent}
+	\scnidtf{сообщение, представленное в звуковом формате}
+\end{scnindent}
+\scnsuperset{обонятельное сообщение}
+\begin{scnindent}
+	\scnidtf{сообщение, содержащее информацию о запахах}
+\end{scnindent}
+\scnsuperset{текстовое сообщение}
+\begin{scnindent}
+	\scnidtf{сообщение, содержащее текстовую информацию}
+\end{scnindent}
+\scnsuperset{сообщение, требующее трансляции}
+\begin{scnindent}
+	\scnidtf{сообщение, которое необходимо сформировать системой для дальнейшей передачи его пользователю}
+\end{scnindent}
+\scnsuperset{протранслированное сообщение}
+\begin{scnindent}
+	\scnidtf{сообщение, которое было сформировано системой для дальнейшей передачи его пользователю}
+\end{scnindent}
+\scnheader{решатель задач пользовательского интерфейса ostis-систем}
+\scnsuperset{sc-агенты}
+\begin{scnindent}
+	\scnidtf{обеспечивают работу пользователя с компонентами пользовательского интерфейса ostis-системы}
+\end{scnindent}
+\scnsuperset{семантическая составляющая}
+\begin{scnindent}
+	\scntext{задача}{определение того, знаком какой сущности является отображаемый на экране компонент}
+\end{scnindent}
+\scnsuperset{прагматическая составляющая}
+\begin{scnindent}
+	\scnidtf{рассматривает прикладной аспект (аспект применения) отображаемого на экране компонента}
+\end{scnindent}
+\scntext{примечание}{На уровне sc-памяти имеет значение только семантическая составляющая, однако данный факт не влияет на процесс эксплуатации системы пользователем, поскольку обе составляющие отражают разные стороны одного и того же знака некоторой сущности.}
+\scnheader{внутреннее действие системы}
+\scnsuperset{внутреннее действие ostis-системы}
+\scnheader{внутреннее действие ostis-системы}
+\scnidtf{действие в sc-памяти}
+\scnidtf{действие, выполняемое в sc-памяти}
+\scnheader{действие в sc-памяти}
+\scnsuperset{действие в sc-памяти, инициируемое вопросом}
+\scnsuperset{действие редактирования базы знаний ostis-системы}
+\scnsuperset{действие установки режима ostis-системы}
+\scnsuperset{действие редактирования файла, хранимого в sc-памяти}
+\scnsuperset{ действие интерпретации программы, хранимой в sc памяти}
+\scnheader{база знаний пользовательского интерфейса ostis-системы}
+\begin{scnrelfromset}{задачи}
+	\scnitem{обработка пользовательских действий}
+	\scnitem{интерпретация модели базы знаний пользовательского интерфейса ostis-системы(построение пользовательского интерфейса)}
+\end{scnrelfromset}
+
+\bigskip
+\end{scnsubstruct}
+\scnendcurrentsectioncomment
+\end{SCn}
