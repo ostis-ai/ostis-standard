@@ -2,6 +2,7 @@
     \scnsectionheader{Предметная область и онтология структур}
     \begin{scnsubstruct}
         \scnheader{Предметная область структур}
+        \scniselement{предметная область}
         \begin{scnhaselementrolelist}{максимальный класс объектов исследования}
             \scnitem{структура}
         \end{scnhaselementrolelist}
@@ -43,6 +44,7 @@
         \scnheader{структура}
         \scnidtf{sc-структура}
         \scnidtf{структура, представленная в виде текста SC-кода}
+        \scnsubset{множество}
         \begin{scnsubdividing}
             \scnitem{связная структура}
             \scnitem{несвязная структура}
@@ -89,8 +91,17 @@
         \scniselement{неосновное понятие}
         \begin{scnsubdividing}
             \scnitem{непредставленное множество\scnrolesign}
+            \begin{scnindent}
+            	\scnidtf{множество, не представленное в рамках данной структуры\scnrolesign}
+        	\end{scnindent}
             \scnitem{полностью представленное множество\scnrolesign}
+            \begin{scnindent}
+            	\scnidtf{множество, полностью представленное в рамках данной структуры\scnrolesign}
+            \end{scnindent}
             \scnitem{частично представленное множество\scnrolesign}
+            \begin{scnindent}
+            	\scnidtf{множество, частично представленное в рамках данной структуры\scnrolesign}
+        	\end{scnindent}
             \scnitem{элемент структуры, не являющийся множеством\scnrolesign}
         \end{scnsubdividing}
         \begin{scnsubdividing}
@@ -195,7 +206,7 @@
         }
         \scnheader{изоморфизм*}
         \scniselement{бинарное отношение}
-        \scnheader{автомоморфность*}
+        \scnheader{автоморфность*}
         \scnsubset{гомоморфность*}
         \scniselement{бинарное отношение}
         \scntext{пояснение}{\textbf{\textit{автоморфность*}} --- это \textit{изоморфность*}, у которой область определения соответствия и область значения соответствия совпадают.}
