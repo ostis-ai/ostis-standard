@@ -37,7 +37,7 @@
         \scnidtf{синтаксически корректная (для соответствующего языка) и семантически целостная информационная конструкция}
         \scnsubset{информационная конструкция}
         \begin{scnindent}
-            \scniselementrole{класс объектов исследования}{\nameref{intro_lang}}
+            \scniselementrole{класс объектов исследования}{\nameref{intro_lang}}%здесь что-то не работает или не должно быть этойй строчки
         \end{scnindent}
         \scnrelfrom{покрытие}{вид знаний}
         \begin{scnindent}
@@ -67,7 +67,9 @@
                         \scnidtf{спецификация класса связей (связок)}
                     \end{scnindent}
                     \scnsuperset{спецификация класса классов}
-                    \scnsuperset{спецификация параметра}
+                    \begin{scnindent}
+	                    \scnsuperset{спецификация параметра}
+                    \end{scnindent}
                     \scnsuperset{спецификация класса структур}
                     \scnsuperset{спецификация понятий}
                     \begin{scnindent}
