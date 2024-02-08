@@ -3,11 +3,12 @@ ostis_standard_specification
 
 ostis_standard_specification = [*
 ostis_standard
-    -> concept_reusable_component;
-    -> concept_noatomic_reusable_component;
-    -> concept_independent_reusable_component;
-    -> concept_reusable_kb_component;
-    -> concept_reusable_dynamically_installed_component;
+    <- concept_reusable_component;
+    <- concept_noatomic_reusable_component;
+    <- concept_independent_reusable_component;
+    <- concept_reusable_kb_component;
+    <- concept_reusable_dynamically_installed_component;
+    <- concept_reusable_source_code_component;
 
     => nrel_sc_identifier: [Стандарт OSTIS](* <- lang_ru;; *);
 
