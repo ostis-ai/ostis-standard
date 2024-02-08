@@ -1,0 +1,30 @@
+part_5_specification
+    <- concept_reusable_component_specification;;
+
+part_5_specification = [*
+part_5_methods_and_tools_of_reengineering_and_use_of_intelligent_computer_systems_new_generation
+    <- concept_reusable_component;
+    <- concept_atomic_reusable_component;
+    <- concept_independent_reusable_component;
+    <- concept_reusable_kb_component;
+    <- concept_reusable_dynamically_installed_component;
+    <- concept_reusable_source_code_component;
+
+    => nrel_sc_identifier: [Часть 5 Стандарта OSTIS. Методы и средства реинжиниринга и эксплуатации интеллектуальных компьютерных систем нового поколения](* <- lang_ru;; *);
+   
+    => nrel_note: [Описаны методы и средства поддержки жизненого цикла ostis-систем.] (* <- lang_ru;; *);
+    => nrel_authors:
+        {
+            Shunkevich;
+            Orlov;
+            Bantsevich;
+            Zotov;
+            Sadovsky;
+            Butrin;
+            Zhmyrko
+        };
+
+    => nrel_component_dependencies: ... (* <- empty_set;; *);
+    => nrel_component_address: [https://github.com/ostis-ai/ostis-standard/tree/main/translated_scs/part_methods_tools] (* <- concept_github_url;; *);
+    => nrel_installation_method: ... (* <- concept_component_dynamically_installed_method;; *);;
+*];;
