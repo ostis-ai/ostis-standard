@@ -1,0 +1,36 @@
+ostis_standard_specification
+    <- concept_reusable_component_specification;;
+
+ostis_standard_specification = [*
+ostis_standard
+    -> concept_reusable_component;
+    -> concept_noatomic_reusable_component;
+    -> concept_independent_reusable_component;
+    -> concept_reusable_kb_component;
+    -> concept_reusable_dynamically_installed_component;
+
+    => nrel_sc_identifier: [Стандарт OSTIS](* <- lang_ru;; *);
+
+    => nrel_decomposition:
+      {
+        part_1_introduction_to_next_generation_intelligent_computer_systems;
+        part_2_semantic_representation_and_ontological_systematization_of_knowledge_in_intelligent_computer_systems_of_the_new_generation;
+        part_3_multiagent_problem_solvers_of_intelligent_computer_systems_of_the_new_generation;
+        part_4_ontological_models_of_interfaces_of_intelligent_computer_systems_of_the_new_generation;
+        part_5_intelligent_computer_systems_new_generation_implementation_platforms;
+        part_6_methods_and_tools_of_reengineering_and_use_of_intelligent_computer_systems_new_generation;
+        part_7_ecosystem_of_intelligent_computer_systems_of_the_new_generation_and_their_users
+      };
+    -> rrel_key_sc_element: ...;
+
+    => nrel_purpose: [](* <- lang_ru;; *);
+    => nrel_note: [] (* <- lang_ru;; *);
+    => nrel_authors: ... 
+      (*  
+          -> ...;;
+      *);
+
+    => nrel_component_dependencies: ... (* <- empty_set;; *);
+    => nrel_component_address: [https://github.com/ostis-ai/ostis-metasystem/tree/main/sc-models/knowledge-base/ostis-standard] (* <- concept_github_url;; *);
+    => nrel_installation_method: ... (* <- concept_component_dynamically_installed_method;; *);;
+*];;
