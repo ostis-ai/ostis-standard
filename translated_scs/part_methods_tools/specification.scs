@@ -1,8 +1,8 @@
-part_6_specification
+part_5_specification
     <- concept_reusable_component_specification;;
 
-part_6_specification = [*
-part_6_methods_and_tools_of_reengineering_and_use_of_intelligent_computer_systems_new_generation
+part_5_specification = [*
+part_5_methods_and_tools_of_reengineering_and_use_of_intelligent_computer_systems_new_generation
     <- concept_reusable_component;
     <- concept_atomic_reusable_component;
     <- concept_independent_reusable_component;
@@ -10,7 +10,7 @@ part_6_methods_and_tools_of_reengineering_and_use_of_intelligent_computer_system
     <- concept_reusable_dynamically_installed_component;
     <- concept_reusable_source_code_component;
 
-    => nrel_sc_identifier: [Часть 6 Стандарта OSTIS. Методы и средства реинжиниринга и эксплуатации интеллектуальных компьютерных систем нового поколения](* <- lang_ru;; *);
+    => nrel_sc_identifier: [Часть 5 Стандарта OSTIS. Методы и средства реинжиниринга и эксплуатации интеллектуальных компьютерных систем нового поколения](* <- lang_ru;; *);
     
     => nrel_purpose: [](* <- lang_ru;; *);
     => nrel_note: [Описаны методы и средства поддержки жизненого цикла ostis-систем.] (* <- lang_ru;; *);

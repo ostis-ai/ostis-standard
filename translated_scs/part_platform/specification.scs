@@ -1,8 +1,8 @@
-part_5_specification
+part_6_specification
     <- concept_reusable_component_specification;;
 
-part_5_specification = [*
-part_5_intelligent_computer_systems_new_generation_implementation_platforms
+part_6_specification = [*
+part_6_intelligent_computer_systems_new_generation_implementation_platforms
     <- concept_reusable_component;
     <- concept_atomic_reusable_component;
     <- concept_independent_reusable_component;
@@ -10,7 +10,7 @@ part_5_intelligent_computer_systems_new_generation_implementation_platforms
     <- concept_reusable_dynamically_installed_component;
     <- concept_reusable_source_code_component;
 
-    => nrel_sc_identifier: [Часть 5 Стандарта OSTIS. Платформы реализации интеллектуальных компьютерных систем нового поколения](* <- lang_ru;; *);
+    => nrel_sc_identifier: [Часть 6 Стандарта OSTIS. Платформы реализации интеллектуальных компьютерных систем нового поколения](* <- lang_ru;; *);
 
     -> rrel_key_sc_element:
         { 
