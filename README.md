@@ -9,6 +9,7 @@
 ```
 git clone https://github.com/ostis-ai/ostis-standard.git
 cd ostis-standard
+git submodule update --init --recursive
 ``` 
 
 ### **Linux**

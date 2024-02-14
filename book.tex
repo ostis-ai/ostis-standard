@@ -62,9 +62,7 @@
 \babelhyphenation{иден-ти-фи-ка-то-ры}
 
 % Курсив и жирность для кириллицы
-\usepackage{substitutefont}
-
-\substitutefont{T2A}{\familydefault}{Tempora-TLF}
+\DeclareFontFamilySubstitution{T2A}{\familydefault}{Tempora-TLF}
 \makeatletter
 \input{t2atempora-tlf.fd}
 \DeclareFontShape{T2A}{Tempora-TLF}{m}{sc}{
