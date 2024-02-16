@@ -10,7 +10,7 @@
             \scnitem{\nameref{intro_scn}}
         \end{scnrelfromlist}
         \scntext{аннотация}{Поскольку предлагаемая Вашему вниманию \textit{Публикация Стандарта OSTIS-2021} представляет собой внешний текст основной части \textit{базы знаний} ostis-системы (\textit{Метасистемы IMS.ostis}), необходимо сразу во вводном разделе этого Стандарта пояснить основные принципы, лежащие в основе внутреннего представления \textit{баз знаний} в памяти \textit{ostis-систем}, а также некоторые правила и условные обозначения, используемые в оформлении внешних текстов \textit{баз знаний ostis-систем}.\\Подчеркнем, что все эти принципы, правила и условные обозначения детально рассмотрены в соответствующих разделах \textit{Стандарта OSTIS}, но некоторые из них необходимо пояснить до начала ознакомления с основными положениями \textit{Технологии OSTIS}. Фактически речь идет о кратком руководстве конечных пользователей \textit{ostis-систем}. 
-        \\Прежде, чем рассматривать \textit{внутренний язык*} и \textit{внешние языки*}, используемые \textit{ostis-системами}, необходимо уточнить понятие \textit{информационной конструкции}, понятие \textit{знака}, понятие \textit{текста}, понятие \textit{языка}.\\}
+        \\Прежде, чем рассматривать \textit{внутренний язык*} и \textit{внешние языки*}, используемые \textit{ostis-системами}, необходимо уточнить понятие \textit{информационной конструкции}, понятие \textit{знака}, понятие \textit{текста}, понятие \textit{языка}. Также будут рассмотрены основные лингвистические концепты в формализованном виде и базовые средства формального описания \textit{синтаксиса} и \textit{денотационной семантики} различных \textit{языков} в виде фрагмента \textit{онтологии} \textit{языков} и \textit{информационных конструкций}, который можно будет использовать при проектировании интеллектуальных компьютерных систем нового поколения.\\}
         \scnheader{Предметная область информационных конструкций и языков}
         \scniselement{предметная область}
         \begin{scnhaselementrole}{класс объектов исследования}
@@ -302,6 +302,66 @@
                 \scntext{следствие}{Знаковые конструкции такого языка состоят \uline{только} из знаков.}
             \end{scnindent}
         \end{scnsubdividing}
+        
+        \begin{scnsubdividing}
+        	\scnitem{естественный язык}
+        	\begin{scnindent}
+        		\scntext{пояснение}{\textit{естественный язык} представляет собой \textit{язык}, который не был создан целенаправленно}
+        	\end{scnindent}
+        	\scnitem{искусственный язык}
+        	\begin{scnindent}
+        		\scntext{пояснение}{\textit{искусственный язык} представляет собой \textit{язык}, специально разработанный для достижения определенных целей}
+        		\scnhaselement{Python}
+        		\scnsuperset{сконструированный язык}
+        		\begin{scnindent}
+        			\scntext{пояснение}{\textit{сконструированный язык} представляет собой искусственный \textit{язык}, предназначенный для общения людей}
+        			\scnhaselement{Эсперанто}
+        		\end{scnindent}
+        	\end{scnindent}
+        \end{scnsubdividing}
+        
+        \scnsuperset{международный язык}
+        \begin{scnindent}
+        	\scntext{пояснение}{\textit{международный язык} представляет собой \textit{естественный} или \textit{искусственный язык}, использующийся для общения людей из разных стран}
+        	\scnhaselement{Английский язык}
+        	\scnhaselement{Русский язык}
+        \end{scnindent}
+        
+        \scnheader{плановый язык}
+        \begin{scnreltoset}{пересечение}
+        	\scnitem{сконструированный язык}
+        	\scnitem{международный язык}
+        \end{scnreltoset}
+        
+        \scnheader{язык общения}
+        \begin{scnreltoset}{объединение}
+        	\scnitem{естественный язык}
+        	\scnitem{сконструированный язык}
+        \end{scnreltoset}
+        \scnhaselement{Английский язык}
+        \scnhaselement{Русский язык}
+        \scnhaselement{Эсперанто}
+        \begin{scnreltoset}{объединение}
+        	\scnitem{корневой язык}
+        	\begin{scnindent}
+        		\scntext{пояснение}{\textit{корневой язык} представляет собой \textit{язык}, для которого характерно полное отсутствие словоизменения и наличие грамматической значимости порядка слов, состоящих только из корня.}
+        		\scnhaselement{Английский язык}
+        	\end{scnindent}
+        	\scnitem{агглютинативный язык}
+        	\begin{scnindent}
+        		\scntext{пояснение}{\textit{агглютинативный язык} характеризуется развитой системой употребления суффиксов, приставок, добавляемых к неизменяемой основе слова, которые используются для выражения категорий числа, падежа, рода и так далее}
+        		\scnhaselement{Английский язык}
+        	\end{scnindent}
+        	\scnitem{флективный язык}
+        	\begin{scnindent}
+        		\scntext{пояснение}{Для \textit{флективного языка} характерно развитое употребление окончаний для выражения категорий рода, числа, падежа, сложная система склонения глаголов, чередование гласных в корне, а также строгое различение частей речи.}
+        		\scnhaselement{Русский язык}
+        	\end{scnindent}
+        	\scnitem{профлективный язык}
+        	\begin{scnindent}
+        		\scntext{пояснение}{Для \textit{профлективного языка} характерны агглютинация (в случае именного словоизменения), флексия и чередование гласных (аблаут)(в случае глагольного словоизменения).}
+        	\end{scnindent}
+        \end{scnreltoset}
 
         \scnheader{отношение, заданное на множестве языков\scnsupergroupsign}
         \scnidtf{отношение, область определения которого включает в себя множество всевозможных языков}
@@ -521,6 +581,100 @@
             \scntext{примечание}{Для явного представления описываемых сущностей и связей между ними требуется существенное упрощение синтаксической структуры информационных конструкций}
         \end{scnindent}
         
+        \scnheader{грамматическая категория}
+        \scnidtf{система противопоставленных друг другу рядов грамматических форм с однородными значениями}
+        \scnhaselement{лицо}
+        \begin{scnindent}
+        	\scnrelto{семейство подмножеств}{ролевое отношение}
+        	\scnhaselement{первое лицо\scnrolesign}
+        	\scnhaselement{второе лицо\scnrolesign}
+        	\scnhaselement{третье лицо\scnrolesign}
+        \end{scnindent}
+        \scnhaselement{число}
+        \begin{scnindent}
+        	\scnrelto{семейство подмножеств}{ролевое отношение}
+        	\scnhaselement{единственное число\scnrolesign}
+        	\scnhaselement{множественное число\scnrolesign}
+        	\scnhaselement{двойственное число\scnrolesign}
+        	\scnhaselement{тройственное число\scnrolesign}
+        	\scnhaselement{паукальное число\scnrolesign}
+        \end{scnindent}
+        \scnhaselement{род}
+        \begin{scnindent}
+        	\scnrelto{семейство подмножеств}{ролевое отношение}
+        	\scnhaselement{мужской род\scnrolesign}
+        	\scnhaselement{средний род\scnrolesign}
+        	\scnhaselement{женский род\scnrolesign}
+        \end{scnindent}
+        \scnhaselement{падеж}
+        \begin{scnindent}
+        	\scnrelto{семейство подмножеств}{ролевое отношение}
+        	\scnhaselement{именительный падеж\scnrolesign}
+        	\scnhaselement{родительный падеж\scnrolesign}
+        	\scnhaselement{дательный падеж\scnrolesign}
+        	\scnhaselement{винительный падеж\scnrolesign}
+        	\scnhaselement{творительный падеж\scnrolesign}
+        	\scnhaselement{предложный падеж\scnrolesign}
+        	\scnhaselement{звательный падеж\scnrolesign}
+        	\scnhaselement{абсолютивный падеж\scnrolesign}
+        	\scnhaselement{эргативный падеж\scnrolesign}
+        \end{scnindent}
+        \scnhaselement{время}
+        \begin{scnindent}
+        	\scnrelto{семейство подмножеств}{ролевое отношение}
+        	\scnhaselement{настоящее время\scnrolesign}
+        	\scnhaselement{прошедшее время\scnrolesign}
+        	\scnhaselement{будущее время\scnrolesign}
+        \end{scnindent}
+        \scnhaselement{наклонение}
+        \begin{scnindent}
+        	\scnrelto{семейство подмножеств}{ролевое отношение}
+        	\scnhaselement{изъявительное наклонение\scnrolesign}
+        	\scnhaselement{повелительное наклонение\scnrolesign}
+        	\scnhaselement{сослагательное наклонение\scnrolesign}
+        	\scnhaselement{условное наклонение\scnrolesign}
+        \end{scnindent}
+        \scnhaselement{залог}
+        \begin{scnindent}
+        	\scnrelto{семейство подмножеств}{ролевое отношение}
+        	\scnhaselement{действительный залог\scnrolesign}
+        	\scnhaselement{страдательный залог\scnrolesign}
+        	\scnhaselement{средний залог\scnrolesign}
+        	\scnhaselement{возвратный залог\scnrolesign}
+        	\scnhaselement{взаимный залог\scnrolesign}
+        \end{scnindent}
+        \scnhaselement{вид}
+        \begin{scnindent}
+        	\scnrelto{семейство подмножеств}{ролевое отношение}
+        	\scnhaselement{совершенный вид\scnrolesign}
+        	\scnhaselement{несовершенный вид\scnrolesign}
+        	\scnhaselement{общий вид\scnrolesign}
+        	\scnhaselement{прогрессивный вид\scnrolesign}
+        	\scnhaselement{перфектный вид\scnrolesign}
+        \end{scnindent}
+        \scnhaselement{степень сравнения}
+        \begin{scnindent}
+        	\scnrelto{семейство подмножеств}{ролевое отношение}
+        	\scnhaselement{положительная степень сравнения\scnrolesign}
+        	\scnhaselement{сравнительная степень сравнения\scnrolesign}
+        	\scnhaselement{превосходная степень сравнения\scnrolesign}
+        \end{scnindent}
+
+       	\scnheader{часть речи}
+		\scnidtf{\textit{категория}, представляющая собой класс синтаксически эквивалентных \textit{знаков} \textit{естественного языка}}
+       	\scnrelto{семейство подмножеств}{лексема}
+       	\scnhaselement{существительное}
+       	\scnhaselement{прилагательное}
+       	\scnhaselement{глагол}
+       	\scnhaselement{наречие}
+       	\scnhaselement{предлог}
+       	\scnhaselement{комплементатор}
+       	\scnhaselement{вспомогательный глагол}
+       	\scnhaselement{детерминант}
+       	
+       	\scnheader{лексема}
+       	\scnidtf{минимальная единица \textit{языка}, имеющая семантическую интерпретацию и обозначающая концепт, отражающий взгляд на мир некоторого языкового сообщества}
+
         \scnheader{язык ostis-системы}
         \scnidtf{язык, используемый ostis-системами}
         \scnidtf{язык представления информационных конструкций в ostis-системах}
