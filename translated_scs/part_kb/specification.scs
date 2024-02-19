@@ -1,0 +1,50 @@
+part_2_specification
+    <- concept_reusable_component_specification;;
+
+part_2_specification = [*
+part_2_semantic_representation_and_ontological_systematization_of_knowledge_in_intelligent_computer_systems_of_the_new_generation
+    <- concept_reusable_component;
+    <- concept_atomic_reusable_component;
+    <- concept_independent_reusable_component;
+    <- concept_reusable_kb_component;
+    <- concept_reusable_dynamically_installed_component;
+    <- concept_reusable_source_code_component;
+
+    => nrel_sc_identifier: [Часть 2 Стандарта OSTIS. Смысловое представление и онтологическая систематизация знаний в интеллектуальных компьютерных системах нового поколения](* <- lang_ru;; *);
+
+    -> rrel_key_sc_element:
+      {
+        concept_information_structure;
+        concept_sc_identifier;
+        concept_knowledge;
+        concept_set;
+        concept_relation;
+        concept_parameter;
+        concept_number;
+        concept_structure;
+        concept_temporal_entity;
+        concept_situation;
+        concept_semantic_neighborhood;
+        concept_subject_domain;
+        concept_ontology;
+        concept_formal_theory;
+        concept_file;
+        concept_language
+      };
+    => nrel_note: [Описаны виды языков и информационных конструкций в рамках соответствующей онтологии, уточнены модели смыслового представления знаний, использующей понятие смыслового пространства, способы внутреннего и внешнего представления информации ostis-систем, онтологическая систематизация фактографической и логической информации, средства описания структуры баз знаний, а также средства описания денотационной семантики и синтаксиса естественных языков в ostis-системах. Данная часть имеет важное значение для обеспечения семантической совместимости ostis-систем.] (* <- lang_ru;; *);
+    => nrel_authors:
+      {
+        Bober;
+        Nikiforov;
+        Zotov;
+        Shunkevich;
+        Sadovsky;
+        Bantsevich;
+        Orlov;
+        Vasilevskaya
+      };
+
+    => nrel_component_dependencies: ... (* <- empty_set;; *);
+    => nrel_component_address: [https://github.com/ostis-ai/ostis-standard/tree/main/translated_scs/part_kb] (* <- concept_github_url;; *);
+    => nrel_installation_method: ... (* <- concept_component_dynamically_installed_method;; *);;
+*];;
