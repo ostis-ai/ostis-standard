@@ -1,3 +1,4 @@
+\begin{SCn}
 \scnheader{Язык представления исходных текстов баз знаний на основе языка LaTeX}
 \scntext{пояснение}{Одним из удобных вариантов представления исходных текстов баз знаний для различных областей научно-технической деятельности является Язык представления исходных текстов баз знаний на основе языка LaTeX. В его основу положен язык LaTeX, так как:
     \begin{scnitemize}
@@ -35,72 +36,14 @@
 	\scnrelfrom{смотрите}{\scncite{Ostis-scn-latex-plugin2023}}
 \end{scnindent}
 \scntext{примечание}{Для формирования отступов для корректного отображения sc.n-текстов используется окружение \textbackslash begin\{scnindent\} --- \textbackslash end\{scnindent\}. После смещения на определенное число уровней вправо следует смещение на то же число уровней влево.}
-\begin{scnrelfromlist}{пример}
-\scnfileitem{входная конструкция}
-    {
-        \begin{verbatim}
-        \scnheader{кибернетическая система}
-        \scnsuperset{компьютерная система}
-        \begin{scnindent}
-            \scnidtf{искусственная кибернетическая система}
-            \scnsuperset{ostis-система}
-            \begin{scnindent}
-                \scnidtf{компьютерная система, построенная по технологии OSTIS на основе
-                интерпретации спроектированной логико-семантическая sc-модель этой системы}
-            \end{scnindent}
-        \end{scnindent}
-        \end{verbatim}
-    }
-\scnfileitem{выходная конструкция}
-	{
-	\scnheader{кибернетическая система}
-	\scnsuperset{компьютерная система}
-	\begin{scnindent}
-	    \scnidtf{искусственная кибернетическая система}
-	    \scnsuperset{ostis-система}
-	    \begin{scnindent}
-	        \scnidtf{компьютерная система, построенная по технологии OSTIS на основе интерпретации спроектированной логико-семантическая sc-модель этой системы}
-	    \end{scnindent}
-	\end{scnindent}
-	}
-\end{scnrelfromlist}
+\scnrelfrom{пример входной конструкции}{\scnfileimage[30em]{Contents/part_kb/src/images/sd_lang/example_1_1.png}}
+\scnrelfrom{пример входной конструкции}{\scnfileimage[30em]{Contents/part_kb/src/images/sd_lang/example_1_2.png}}
+
 
 \scnheader{scn-tex}
 \scntext{примечание}{Команды из набора scn-tex делятся на классы. К чаще всего используемым классам относятся окружения (environments) и списки (lists), которые являются частным случаем окружения. Окружения могут быть вложенными.}
-\begin{scnrelfromlist}{пример}
-	\scnfileitem{входная конструкция}
-	    {
-		\begin{verbatim}
-		\scnheader{Логико-семантическая модель Метасистемы IMS.ostis}
-		\scnrelfrom{примечание}{
-			\begin{scnset}
-			\scnfilelong{IMS.ostis}
-			\scnrelto{сокращение}{\scnfilelong{Метасистема IMS.ostis}}
-			\begin{scnindent}
-			\scnrelto{сокращение}{\scnfilelong{Intelligent MetaSystem of Open Semantic Technology
-			 for Intelligent Systems}}
-			\end{scnindent}
-			\end{scnset}
-			}
-		\scnidtf{Логико-семантическая модель интеллектуального ostis-портала научно-технических
-		 знаний по Технологии OSTIS}
-		\end{verbatim}
-		}
-\scnfileitem{выходная конструкция}
-	{
-		\scnheader{Логико-семантическая модель Метасистемы IMS.ostis}
-		\scnrelfrom{примечание}{
-			\begin{scnset}
-			\scnfilelong{IMS.ostis}
-			\scnrelto{сокращение}{\scnfilelong{Метасистема IMS.ostis}}
-			\begin{scnindent}
-			\scnrelto{сокращение}{\scnfilelong{Intelligent MetaSystem of Open Semantic Technology for Intelligent Systems}}
-			\end{scnindent}
-			\end{scnset}
-			}
-		\scnidtf{Логико-семантическая модель интеллектуального ostis-портала научно-технических знаний по Технологии OSTIS}
-	}
-\end{scnrelfromlist}
+\scnrelfrom{пример входной конструкции}{\scnfileimage[30em]{Contents/part_kb/src/images/sd_lang/example_3_1.png}}
+\scnrelfrom{пример выходной конструкции}{\scnfileimage[30em]{Contents/part_kb/src/images/sd_lang/example_3_2.png}}
 \scntext{примечание}{Таким образом scn-tex позволяет записать практически любую синтаксически корректную конструкцию SCn-кода.}
 
 \scnheader{tex2scs-translator}
@@ -108,42 +51,7 @@
 \begin{scnindent}
 	\scnrelfrom{смотрите}{\scncite{Ostis-tex2scs-translator2023}}
 \end{scnindent}
-\begin{scnrelfromlist}{пример}
-	\scnfileitem{входная конструкция}
-	{
-		\begin{verbatim}
-			\scnheader{множество}
-			\begin{scnrelfromset}{разбиение}
-				\scnitem{конечное множество}
-				\scnitem{бесконечное множество}
-			\end{scnrelfromset}
-		\end{verbatim}
-	}
-	\scnfileitem{выходная конструкция}
-	{
-		\begin{verbatim}
-			.system_element_0
-		=> nrel_subdividing: {
-			.system_element_1;
-			.system_element_2
-		};;
+\scnrelfrom{пример входной конструкции}{\scnfileimage[30em]{Contents/part_kb/src/images/sd_lang/example_4_1.png}}
+\scnrelfrom{пример выходной конструкции}{\scnfileimage[30em]{Contents/part_kb/src/images/sd_lang/example_4_2.png}}
 
-		.system_element_1 => nrel_main_idtf: [конечное множество] (* <- lang_ru;;
-		 => nrel_format: format_html;; *);;
-		.system_element_1 <- sc_node;;
-		
-		nrel_subdividing => nrel_main_idtf: [разбиение*] (* <- lang_ru;; =>
-		nrel_format: format_html;; *);;
-		nrel_subdividing <- sc_node_norole_relation;;
-
-		.system_element_2 => nrel_main_idtf: [бесконечное множество] (* <- lang_ru;;
-		 => nrel_format: format_html;; *);;
-		.system_element_2 <- sc_node;;
-		
-		.system_element_0 => nrel_main_idtf: [множество] (* <- lang_ru;; => nrel_format:
-		 format_html;; *);;
-		.system_element_0 <- sc_node;;
-
-		\end{verbatim}
-	}
-\end{scnrelfromlist}
+\end{SCn}
