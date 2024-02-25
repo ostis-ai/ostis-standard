@@ -1,0 +1,741 @@
+
+\scnsegmentheader{Описание Ядра SC-кода}
+\begin{scnsubstruct}
+
+    \scnstructheader{Синтаксис Ядра SC-кода}
+    \begin{scnsubstruct}
+        \scnheader{Синтаксис Ядра SC-кода}
+        \scntext{примечание}{\textit{Синтаксис Ядра SC-кода} задается: (1) \textit{Алфавитом Ядра SC-кода}, (2) Отношением \textit{инцидентности sc-коннекторов*}, (3) Отношением \textit{инцидентности входящих sc-дуг*}}\scnrelto{синтаксис}{Ядро SC-кода}
+                
+        \scnheader{Ядро SC-кода}
+        \scnrelfrom{множество всех элементов конструкций данного языка}{sc-элемент}
+            \begin{scnindent}
+                \scnidtf{элемент конструкции \textit{Ядра SC-кода}}
+                \scnidtf{синтаксически элементарный (атомарный) фрагмент дискретной информационной конструкции, принадлежащей \textit{Ядру SC-кода}}
+                \scnidtf{Класс элементов конструкций \textit{Ядра SC-кода}}
+                \scnidtf{Множество всех элементов всевозможных конструкций \textit{Ядра SC-кода}}
+            \end{scnindent}
+        \scnrelfrom{алфавит}{Алфавит Ядра SC-кода\scnsupergroupsign}
+                
+        \scnheader{Алфавит Ядра SC-кода\scnsupergroupsign}    
+        \scnidtf{Множество (Семейство) всех классов синтаксически эквивалентных sc-элементов Ядра SC-кода}
+        \scnidtf{класс синтаксически эквивалентных sc-элементов Ядра SC-кода}
+        \scnidtf{класс синтаксически эквивалентных элементов конструкций Ядра SC-кода}
+        \scnidtf{элемент Алфавита Ядра SC-кода}
+        \scnidtf{синтаксический тип sc-элемента Ядра SC-кода}
+        \begin{scneqtoset}
+            \scnitem{sc-узел общего вида}
+            \scnitem{sc-ребро общего вида}
+            \scnitem{sc-дуга общего вида}
+            \scnitem{базовая sc-дуга}
+        \end{scneqtoset}
+                                   
+        \scnheader{SC-код}
+        \begin{scnhaselementset}
+                \scnitem{sc-элемент}
+                  \scnitem{sc-множество}
+                  \scnitem{sc-структура}
+                  \scnitem{sc-текст}
+                  \scnitem{sc-знание}
+                  \scnitem{файл}
+                  \scnitem{sc-идентификатор}
+                  \scnitem{основной sc-идентификатор}
+        \end{scnhaselementset}
+        
+        \scnheader{sc-элемент}
+        \scnidtf{элементарный (атомарный) фрагмент информационной конструкции, принадлежащей SC-коду}
+        \scnidtf{обозначение одной из описываемых сущностей}
+        \scnrelfrom{разбиение}{Алфавит Ядра SC-кода\scnsupergroupsign}
+        \begin{scnindent}
+            \scntext{примечание}{\textit{Алфавит Ядра SC-кода} является одним из признаков классификации sc-элементов.}
+            \scntext{примечание}{В процессе обработки текстов \textit{Ядра SC-кода} синтаксический тип \textit{sc-элементов} может меняться --- \textit{sc-узел} может трансформироваться в \textit{sc-ребро}, \textit{sc-ребро} --- в \textit{sc-дугу}, \textit{sc-дуга} общего вида --- в \textit{базовую sc-дугу}.}
+        \end{scnindent}
+        
+        \scnheader{sc-множество}
+        \scnidtf{sc-конструкция}
+        \scnidtf{множество sc-элементов}
+        \scnidtf{информационная конструкция SC-кода}
+        
+        \scnheader{sc-структура}
+        \scnidtf{sc-множество, содержащее связки (знаки связей) между элементами этого множества}
+                
+        \scnheader{sc-текст}
+        \scnidtf{связная sc-структура, являющаяся семантически корректной в рамках Базовой денотационной семантики SC-кода, а также синтаксически корректной в рамках соответствующей синтаксической модификации SC-кода}
+        
+        \scnheader{sc-знание}
+        \scnidtf{sc-текст, обладающий дополнительным свойством иметь истинное значение по отношению к соответствующей предметной области}
+        
+        \scnheader{файл}
+        \scnidtf{информационная конструкция, которая не является sc-конструкцией и которая может храниться в файловой памяти ostis-системы}
+        
+        \scnheader{sc-идентификатор}
+        \scnsubset{файл}
+        \scnidtf{файл, являющийся внешним идентификатором (в частности, именем) соответствующего sc-элемента, хранимого в sc-памяти ostis-системы}
+
+        \scnheader{основной sc-идентификатор}
+        \scnidtf{sc-идентификатор, который взаимно однозначно соответствует идентифицируемому sc-элементу}
+           
+        \scnheader{синтаксически выделяемый класс sc-элементов в рамках Ядра SC-кода\scnsupergroupsign}
+        \scnidtf{класс \textit{sc-элементов}, определяемый на основе \textit{Алфавита Ядра SC-кода}}
+        \scnhaselement{sc-коннектор}
+        \scnhaselement{sc-дуга}
+        \scnsuperset{Алфавит Ядра SC-кода\scnsupergroupsign}
+                
+        \scnheader{sc-дуга}
+        \begin{scnsubdividing}
+            \scnitem{sc-дуга общего вида}
+            \scnitem{базовая sc-дуга}
+        \end{scnsubdividing}
+        
+        \scnheader{sc-коннектор}
+        \begin{scnsubdividing}
+            \scnitem{sc-ребро общего вида}
+            \scnitem{sc-дуга общего вида}
+        \end{scnsubdividing}
+    \end{scnsubstruct}
+
+    \scnstructheader{Синтаксическая классификация sc-элементов в рамках Ядра SC-кода}
+    \begin{scnsubstruct}
+        \scnheader{sc-элемент}
+        \begin{scnsubdividing}
+            \scnitem{sc-узел общего вида}
+            \scnitem{sc-коннектор}
+            \begin{scnindent}
+                \begin{scnsubdividing}
+                    \scnitem{sc-ребро общего вида}
+                    \scnitem{sc-дуга}
+                    \begin{scnindent}
+                        \begin{scnsubdividing}
+                            \scnitem{sc-дуга общего вида}
+                            \scnitem{базовая sc-дуга}
+                        \end{scnsubdividing}
+                        \end{scnindent}
+                \end{scnsubdividing}
+            \end{scnindent}
+        \end{scnsubdividing}
+        \scntext{примечание}{Все классы \textit{sc-элементов}, входящие в состав синтаксической классификации sc-элементов являются синтаксически выделяемыми классами \textit{sc-элементов}.}
+        
+        \scnheader{инцидентность sc-коннекторов*}
+        \scnidtftext{определение}{Бинарное ориентированное отношение, первым компонентом каждой ориентированной пары которого является некоторый sc-коннектор, а вторым компонентом является один из sc-элементов, соединяемых указанным sc-коннектором с некоторым другим sc-элементом, который указывается в другой паре инцидентности для этого же sc-коннектора}
+            
+        \scnheader{инцидентность входящих sc-дуг*}
+        \scnidtftext{определение}{Бинарное ориентированное отношение, первым компонентом каждой ориентированной пары которого является некоторая sc-дуга, а вторым компонентом --- sc-элемент, в который указанная sc-дуга входит, т.е. sc-элемент, который является вторым компонентом, соединяемым (связываемым) указанной sc-дугой}
+            
+        \scnheader{Ядро SC-кода}
+        \scnrelfrom{синтаксические правила}{\scnstructidtf{Синтаксические правила Ядра SC-кода}}
+        \begin{scnindent}
+            \begin{scnhassubset}
+                \scnitem{
+                    \begin{scnset}
+                        \scnitem{инцидентность sc-коннекторов*}
+                        \begin{scnindent}
+                            \scnsuperset{инцидентность входящих sc-дуг*}
+                            \scniselement{бинарное ориентированное отношение}
+                        \end{scnindent}
+                    \end{scnset}
+                }
+                \scnfileitem{Для каждого sc-коннектора существует две и только две пары \textit{инцидентности sc-коннекторов*}, указанный sc-коннектор является первым связующим компонентом. При этом для каждой sc-дуги из двух указанных пар инцидентности \uline{одна} должна принадлежать отношению инцидентности \textit{входящей sc-дуги*}.}
+                \scnfileitem{Пары инцидентности sc-коннекторов могут быть \uline{кратными}. То есть sc-коннектор может соединять (связывать) sc-элемент с самим собой. Такие sc-коннекторы будем называть петлевыми sc-коннекторами (петлевыми sc-ребрами и петлевыми sc-дугами).}
+                \scnfileitem{Само \textit{Отношение инцидентности sc-коннекторов*} и, следовательно, \textit{Отношение инцидентности входящих sc-дуг*} не имеет кратных пар инцидентности. То есть sc-коннектор не может быть инцидентен самому себе.}
+                \scnfileitem{В область определения \textit{Отношения инцидентности sc-коннекторов*} и \textit{Отношения инцидентности входящих sc-дуг*} входят не только sc-узлы общего вида, но и sc-коннекторы. Это значит, что sc-коннектор может соединять (связывать) не только sc-узел с sc-узлом, но также sc-узел с sc-коннектором и даже sc-коннектор с sc-коннектором.}
+            \end{scnhassubset}
+        \end{scnindent}
+    \end{scnsubstruct}
+
+    \scnstructheader{Денотационная семантика Ядра SC-кода}
+    \begin{scnsubstruct}
+        \scnheader{Ядро SC-кода}
+        \scnrelfrom{денотационная семантика}{Денотационная семантика Ядра SC-кода}
+        \begin{scnindent}
+            \scnidtf{Описание соответствия информационных конструкций, принадлежащих \textit{Ядру SC-кода}, и сущностей, описываемых этими конструкциями}
+        \end{scnindent}
+        
+        \scnheader{параметр, заданный на множестве sc-элементов}
+        \scnhaselement{Алфавит Ядра SC-кода\scnsupergroupsign}
+        \scnhaselement{Алфавит SC-кода\scnsupergroupsign}
+        \scnhaselement{Структурная типология sc-элементов\scnsupergroupsign}
+        \scnhaselement{Типология sc-элементов по признаку константности\scnsupergroupsign}
+        \scnhaselement{Типология sc-элементов по признаку постоянства обозначаемой сущности\scnsupergroupsign}
+        \scnhaselement{Типология sc-элементов по признаку доступности sc-элемента в процессе эксплуатации и эволюции базы знаний\scnsupergroupsign}
+    \end{scnsubstruct}
+
+    
+    \scnstructheader{Структурная классификация sc-констант}
+    \begin{scnsubstruct}
+        \scnnote{Приведенная типология полностью аналогична \textit{Структурной типологии sc-элементов\scnsupergroupsign}, в отличие от которой она описывает структурную классификацию только константных sc-элементов (\textit{sc-констант}).}
+        \scniselement{sc-структура}
+        \scnrelboth{аналог}{Структурная типология sc-элементов\scnsupergroupsign}
+    
+        \scnheader{sc-константа}
+        \scnrelfrom{разбиение}{\scnkeyword{Структурная типология sc-констант\scnsupergroupsign}}
+        \begin{scnindent}
+            \begin{scneqtoset}
+            \scnitem{sc-множество}
+            \begin{scnindent}
+                \begin{scnsubdividing}
+                    \scnitem{sc-связка}
+                    \begin{scnindent}
+                        \begin{scnsubdividing}
+                            \scnitem{sc-синглетон}
+                            \scnitem{sc-пара}
+                            \begin{scnindent}
+                                \begin{scnsubdividing}
+                                    \scnitem{неориентированная sc-пара}
+                                    \scnitem{ориентированная sc-пара}
+                                \end{scnsubdividing}
+                            \end{scnindent}
+                            \scnitem{sc-связка, не являющаяся ни синглетоном, ни парой}
+                        \end{scnsubdividing}
+                    \end{scnindent}
+                    \scnitem{sc-класс}
+                    \scnitem{sc-структура}
+                \end{scnsubdividing}
+            \end{scnindent}
+            \scnitem{внешняя сущность}
+            \begin{scnindent}
+                \scnidtf{sc-элемент, являющийся знаком внешней сущности}
+                \scnidtf{знак внешней сущности}
+                \scnidtf{знак сущности, не являющейся sc-множеством (sc-конструкцией)}
+            \end{scnindent} 
+            \begin{scnindent}
+                \begin{scnsubdividing}
+                    \scnitem{файл}
+                    \scnitem{информационная конструкция, не являющаяся ни sc-множеством, ни файлом}
+                    \scnitem{внешняя сущность, не являющаяся информационной конструкцией}
+                \end{scnsubdividing}
+            \end{scnindent}
+            \end{scneqtoset}
+        \end{scnindent}
+
+        \scnheader{ориентированная sc-пара}
+        \begin{scnsubdividing}
+            \scnitem{sc-пара принадлежности}
+            \begin{scnindent}
+                \begin{scnsubdividing}
+                    \scnitem{sc-пара нечеткой принадлежности}
+                    \scnitem{sc-пара позитивной принадлежности}
+                    \begin{scnindent}
+                        \scnsuperset{sc-пара постоянной позитивной принадлежности}
+                        \begin{scnindent}
+                            \begin{scnreltoset}{пересечение множеств}
+                                \scnitem{sc-константа}
+                                \scnitem{постоянная сущность}
+                                \scnitem{статическая сущность}
+                                \scnitem{sc-пара позитивной принадлежности}	
+                            \end{scnreltoset}
+                        \end{scnindent}
+                        \scnsuperset{sc-пара временной позитивной принадлежности}
+                        \begin{scnindent}
+                            \begin{scnreltoset}{пересечение множеств}
+                                \scnitem{sc-константа}
+                                \scnitem{временная сущность}
+                                \scnitem{динамическая сущность}
+                                \scnitem{sc-пара позитивной принадлежности}	
+                            \end{scnreltoset}
+                        \end{scnindent}
+                    \end{scnindent}
+                    \scnitem{sc-пара негативной принадлежности}
+                \end{scnsubdividing}
+            \end{scnindent}
+            \scnitem{ориентированнная sc-пара, не являющаяся парой принадлежности}	
+        \end{scnsubdividing}
+    \end{scnsubstruct}
+
+    \scnstructheader{Семантическая классификация sc-элементов}
+    \begin{scnsubstruct}
+        \scnheader{sc-элемент}
+        \begin{scnrelfromlist}{базовые признаки классификации}
+            \scnitem{структурный признак}
+            \begin{scnindent}
+                \scnrelfrom{смотрите}{\textbf{Структурная типология sc-элементов\scnsupergroupsign}}
+            \end{scnindent}
+            \scnitem{логико-семантический признак}
+            \begin{scnindent}
+                \scnrelfrom{смотрите}{\textbf{Типология sc-элементов по признаку константности\scnsupergroupsign}}
+            \end{scnindent}
+            \scnitem{темпоральная характеристика сущностей}
+            \begin{scnindent}
+                \scnidtf{темпоральная характеристика sc-элементов}
+                \scnhaselement{постоянство существования обозначаемой сущности}
+                \begin{scnindent}
+                    \scnrelfrom{смотрите}{\textbf{Типология sc-элементов по постоянству обозначаемых сущностей\scnsupergroupsign}}
+                \end{scnindent}
+                \scnhaselement{временность существования обозначаемой сущности}
+                \scnhaselement{статичность обозначаемой сущности}
+                \begin{scnindent}
+                    \scnrelfrom{смотрите}{\textbf{Типология sc-элементов по статичности обозначаемых сущностей\scnsupergroupsign}}
+                    \scnidtf{стационарность обозначаемой сущности}
+                \end{scnindent}
+                \scnhaselement{динамичность обозначаемой сущности}
+                \begin{scnindent}
+                    \scnidtf{изменчивость обозначаемой сущности}
+                \end{scnindent}
+            \end{scnindent}
+        \end{scnrelfromlist}
+        
+        \scnheader{sc-элемент}
+        \scnidtf{обозначение описываемой сущности}
+        \scnrelfrom{разбиение}{\scnkeyword{Структурная типология sc-элементов\scnsupergroupsign}}
+        \begin{scnindent}
+            \begin{scneqtoset}
+                \scnitem{обозначение терминальной сущности}
+                \begin{scnindent}
+                    \begin{scnsubdividing}
+                        \scnitem{обозначение материальной сущности}
+                        \begin{scnindent}
+                            \scnidtf{обозначение внешней сущности, не являющейся информационной конструкцией}
+                            \scntext{примечание}{К материальным сущностям относятся физические тела, поля, биологические объекты, технические системы и многое другое.}
+                        \end{scnindent}
+                        \scnitem{обозначение абстрактной терминальной сущности}
+                        \begin{scnindent}
+                            \scntext{примечание}{Примерами абстрактных терминальных сущностей являются предельно малые физические тела, точки различных пространств, числа.}
+                        \end{scnindent}
+                        \scnitem{обозначение дискретной информационной конструкции, не принадлежащей SC-коду}
+                        \begin{scnindent}
+                            \scnidtf{обозначение информационной конструкции, не являющейся ни sc-множеством, ни файлом}
+                            \scnidtf{обозначение информационной конструкции, не являющейся конструкцией \textit{SC-кода} и тем более \textit{Ядра SC-кода}}
+                            \scnidtf{обозначение \scnqq{инородной} для \textit{SC-кода} информационной конструкции}
+                            \scnsuperset{обозначение файла}
+                            \begin{scnindent}
+                                \scnidtf{обозначение внешней информационной конструкции, представленной в электронной форме}
+                            \end{scnindent}
+                        \end{scnindent}
+                    \end{scnsubdividing}
+                \end{scnindent}
+                \scnitem{обозначение множества}
+                \begin{scnindent}
+                    \begin{scnsubdividing}
+                        \scnitem{обозначение связки}
+                        \scnitem{обозначение класса}
+                        \scnitem{обозначение структуры}
+                    \end{scnsubdividing}
+                \end{scnindent}
+            \end{scneqtoset}
+        \end{scnindent}
+        
+        \scnheader{обозначение связки}
+        \begin{scnsubdividing}
+            \scnitem{обозначение небинарной пары}
+            \begin{scnindent}
+                \scnsuperset{обозначение sc-синглетона}
+                \scnsuperset{обозначение sc-связки, не являющейся ни синглетоном, ни парой}
+            \end{scnindent}
+            \scnitem{обозначение sc-пары}
+            \begin{scnindent}
+                \begin{scnsubdividing}
+                    \scnitem{обозначение неориентированной sc-пары}
+                    \scnitem{обозначение ориентированной пары неизвестной направленности}
+                    \scnitem{обозначение ориентированной sc-пары}
+                    \begin{scnindent}
+                        \scnsuperset{обозначение sc-пары принадлежности}
+                        \begin{scnindent}
+                            \begin{scnsubdividing}
+                                \scnitem{обозначение позитивной sc-пары принадлежности}
+                                \scnitem{обозначение негативной sc-пары принадлежности}
+                                \scnitem{обозначение нечеткой sc-пары принадлежности}
+                            \end{scnsubdividing}
+                        \end{scnindent}
+                        \scnsuperset{обозначение ориентированной sc-пары, не являющейся парой принадлежности}
+                    \end{scnindent}
+                \end{scnsubdividing}
+            \end{scnindent}
+        \end{scnsubdividing}
+        
+        \scnheader{sc-элемент}
+        \scnrelfrom{разбиение}{\scnkeyword{Типология sc-элементов по признаку константности\scnsupergroupsign}}
+            \begin{scnindent}
+            \begin{scneqtoset}
+                \scnitem{sc-константа}
+                \begin{scnindent}
+                    \scnidtf{sc-элемент, логико-семантическим значением которого является он сам}
+                    \scnidtf{константный sc-элемент}
+                    \scnidtf{обозначение конкретной (фиксированной) сущности}
+                \end{scnindent}
+                \scnitem{sc-переменная}
+                \begin{scnindent}
+                    \scnidtf{переменный sc-элемент}
+                    \scnidtf{обозначение произвольной сущности из некоторого множества сущностей}
+                    \scnidtf{sc-элемент, имеющий (принимающий) произвольное значение из некоторого множества sc-элементов}
+                       \begin{scnsubdividing}
+                           \scnitem{sc-переменная 1-го уровня}
+                           \begin{scnindent}
+                               \scnidtf{sc-элемент, областью возможных значений которого является множество sc-констант}
+                           \end{scnindent}
+                           \scnitem{sc-переменная 2-го уровня}
+                           \begin{scnindent}
+                               \scnidtf{sc-элемент, возможными значениями которого являются переменные 1-го уровня}
+                               \scnnote{такие переменные (метапеременные) необходимы для описания логических языков}
+                           \end{scnindent}
+                           \scnitem{sc-переменная универсального типа}
+                           \begin{scnindent}
+                               \scnidtf{sc-переменная, на значения которой не накладывается никаких ограничений}
+                           \end{scnindent}
+                       \end{scnsubdividing}
+                \end{scnindent}
+            \end{scneqtoset}
+        \end{scnindent}
+        \scnrelfrom{разбиение}{\scnkeyword{Типология sc-элементов по постоянству обозначаемых сущностей\scnsupergroupsign}}
+        \begin{scnindent}
+            \begin{scneqtoset}
+                \scnitem{обозначение постоянной сущности}
+                \scnitem{обозначение временной сущности}
+                \begin{scnindent}
+                    \scnidtf{обозначение нестационарной сущности, факт существования которой зависит от времени}
+                    \begin{scnsubdividing}
+                        \scnitem{обозначение прошлой сущности}
+                        \begin{scnindent}
+                            \scnidtf{обозначение сущности, существовавшей до текущего момента времени}
+                        \end{scnindent}
+                        \scnitem{обозначение настоящей сущности}
+                        \begin{scnindent}
+                            \scnidtf{обозначение сущности, существующей в текущий момент времени}
+                        \end{scnindent}
+                        \scnitem{обозначение будущей сущности}
+                        \begin{scnindent}
+                            \scnidtf{обозначение сущности, существование которой прогнозируется или планируется в будущем}
+                        \end{scnindent}
+                    \end{scnsubdividing}
+                    \begin{scnsubdividing}
+                        \scnitem{обозначение внешней временной сущности}
+                        \begin{scnindent}
+                            \scnsuperset{обозначение внешней ситуации}
+                            \scnsuperset{обозначение внешнего события}
+                            \scnsuperset{обозначение внешнего процесса}
+                        \end{scnindent}
+                        \scnitem{обозначение временной сущности в sc-памяти}
+                        \begin{scnindent}
+                            \begin{scnsubdividing}
+                                \scnitem{обозначение ситуации в sc-памяти}
+                                \begin{scnindent}
+                                    \scnidtf{обозначение ситуации, которая возникла или возникает в процессе обработки информации в sc-памяти}
+                                \end{scnindent}
+                                \scnitem{обозначение события в sc-памяти}
+                                \begin{scnindent}
+                                    \scnidtf{обозначение события, которое произошло или произойдет в процессе обработки информации в sc-памяти}
+                                \end{scnindent}
+                                \scnitem{обозначение информационного процесса в sc-памяти}
+                                \begin{scnindent}
+                                    \scnidtf{обозначение внутреннего процесса в sc-памяти, который происходит, произошел или будет происходить}
+                                \end{scnindent}
+                            \end{scnsubdividing}
+                        \end{scnindent}
+                    \end{scnsubdividing}
+                \end{scnindent}
+            \end{scneqtoset}
+        \end{scnindent}
+        \scnrelfrom{разбиение}{\scnkeyword{Типология sc-элементов по признаку статичности обозначаемых элементов\scnsupergroupsign}}
+        \begin{scnindent}
+            \begin{scneqtoset}
+                \scnitem{обозначение статической сущности}
+                \begin{scnindent}
+                    \scnidtf{обозначение статичной сущности}
+                    \scnidtf{обозначение стационарной сущности}
+                    \scnidtf{обозначение сущности, изменения которой в рамках соответствующего интервала времени ее существования считаются несущественными}
+                    \scnsuperset{обозначение статического sc-множества}
+                \end{scnindent}
+                \scnitem{обозначение динамической сущности}
+                \begin{scnindent}
+                    \scnidtf{обозначение сущности изменяющейся во времени}
+                    \scnsuperset{обозначение динамического sc-множетсва}
+                \end{scnindent}
+            \end{scneqtoset}
+        \end{scnindent} 
+        \scnrelfrom{разбиение}{\scnkeyword{Типология sc-элементов по признаку доступности sc-элемента в процессе эксплуатации и эволюции базы знаний\scnsupergroupsign}}
+        \begin{scnindent}
+            \begin{scneqtoset}
+                \scnitem{удаленный sc-элемент}
+                \begin{scnindent}
+                    \scnidtf{sc-элемент, считающийся логически удаленным, но присутствующим в описании истории эксплуатации и эволюции базы знаний}
+                \end{scnindent}
+                \scnitem{настоящий sc-элемент}
+                \begin{scnindent}
+                    \scnidtf{sc-элемент, входящий в состав эксплуатируемой части базы знаний}
+                \end{scnindent}
+                \scnitem{будущий sc-элемент}
+                \begin{scnindent}
+                    \scnidtf{sc-элемент, планируемый для включения в состав эксплуатируемой части базы знаний}
+                \end{scnindent}
+            \end{scneqtoset}
+        \end{scnindent}
+        \begin{scnrelfromset}{следует отличать}
+               \scnfileitem{Временный характер присутствия любого \textit{sc-элемента} в составе той \textit{базы знаний} (в той \textit{sc-памяти}) \textit{ostis-системы}, в которой он находится (когда-то он появляется, когда-то может быть удален из \textit{sc-памяти}).}
+               \scnfileitem{Временный характер присутствия в \textit{sc-памяти} всей заданной \textit{sc-конструкции} (заданного множества sc-элементов) --- такую \textit{sc-конструкцию} будем называть \textit{ситуацией в sc-памяти}.}
+               \scnfileitem{Временный характер существования \textit{внешней сущности}, которую \textit{sc-элемент} обозначает.}
+               \scnfileitem{Статичный или динамичный (изменчивый) характер \textit{внешней сущности}, обозначаемой \textit{sc-элементом}. Динамический характер внешней сущности, предполагает наличие в \textit{sc-памяти} описания процесса изменения состояния или конфигурации указанной \textit{внешней сущности}.}
+               \scnfileitem{\textit{динамическое sc-множество} (динамическая sc-конструкция), являющееся отражением (динамической моделью) соответствующего внешнего процесса (процесса, происходящего во внешней среде).}
+               \scnfileitem{\textit{динамическое sc-множество} (динамическая sc-конструкция), являющееся отражением (динамической моделью) соответствующего внутреннего процесса (информационного процесса, происходящего в той же \textit{sc-памяти}, в которой находится \textit{sc-элемент}, обозначающий указанное динамическое \textit{sc-множество}).}
+        \end{scnrelfromset}
+        
+        \scnheader{обозначение множества}
+        \scnidtf{обозначение множества sc-элементов}
+        \begin{scnsubdividing}
+            \scnitem{произвольное множество}
+            \begin{scnindent}
+                      \scnidtf{sc-переменная, обозначающая произвольное множество из некоторого семейства множеств}
+                \scnidtf{переменное множество}
+            \end{scnindent}
+            \scnitem{множество}
+            \begin{scnindent}
+                      \scnidtf{конкретное (константное, фиксированное) множество sc-элементов}
+            \end{scnindent}
+        \end{scnsubdividing}
+        
+        \scnheader{множество}
+        \scnidtf{множество sc-элементов}
+        \begin{scnsubdividing}
+            \scnitem{множество sc-констант}
+            \begin{scnindent}
+                      \scnidtf{множество, элементами которого являются только sc-константы}
+            \end{scnindent}
+            \scnitem{множество sc-переменных}
+            \begin{scnindent}
+                \scnidtf{множество, элементами которого являются только sc-переменные}
+                \scnsuperset{sc-переменная}
+                \begin{scnindent}
+                    \scnidtf{множество, элементами которого являются всевозможные sc-переменные и только они}
+                    \scnsuperset{произвольное множество}
+                    \begin{scnindent}
+                        \scnidtf{sc-переменная, значениями которой являются всевозможные обозначения множеств и только они}
+                    \end{scnindent}
+                \end{scnindent}
+            \end{scnindent}
+            \scnitem{множество sc-констант и sc-переменных}
+            \begin{scnindent}
+                      \scnidtf{множество, в число элементов которого входят как sc-константы, так и sc-переменные}
+                \scnsuperset{обозначение множества}
+                \begin{scnindent}
+                    \scnidtf{множество, элементами которого являются всевозможные \mbox{sc-переменные} и \mbox{sc-константы}, обозначающие множества и только они}
+                \end{scnindent}
+            \end{scnindent}
+        \end{scnsubdividing}
+        
+        \scnheader{обозначение связки}
+        \scnidtf{обозначение связи между sc-элементами и/или обозначаемыми ими сущностями}
+        \begin{scnsubdividing}
+            \scnitem{произвольная связка}
+            \begin{scnindent}
+                      \scnidtf{sc-переменная, значениями которой являются обозначения связок}
+            \end{scnindent}
+            \scnitem{связка}
+            \begin{scnindent}
+                      \scnidtf{конкретная связка sc-элементов}
+            \end{scnindent}
+        \end{scnsubdividing}
+        \scnsuperset{обозначение sc-пары}
+        \begin{scnindent}
+            \scnidtf{обозначение связки двух sc-элементов либо одного sc-элемента с самим собой}
+            \scnsuperset{sc-пара}
+            \scnidtf{конкретная sc-пара}
+            \scnsubset{sc-константа}
+            \scnsuperset{sc-коннектор}
+            \scnsuperset{ориентированная sc-пара}
+            \begin{scnindent}
+                \scnsuperset{sc-пара принадлежности}
+                \begin{scnindent}
+                    \begin{scnsubdividing}
+                        \scnitem{позитивная sc-пара принадлежности}
+                        \begin{scnindent}
+                            \scnsuperset{позитивная постоянная sc-пара принадлежности}
+                            \begin{scnindent}
+                                \scnsuperset{базовая sc-дуга}
+                            \end{scnindent}
+                        \end{scnindent}
+                        \scnitem{негативная sc-пара принадлежности}
+                        \scnitem{нечеткая sc-пара принадлежности}
+                    \end{scnsubdividing}
+                \end{scnindent}
+            \end{scnindent}
+        \end{scnindent}
+
+        \scnheader{обозначение класса}
+        \scnidtf{обозначение множества sc-элементов, которые в соответствующем смысле эквивалентны друг другу, т.е. имеют одинаковые свойства}
+        \begin{scnsubdividing}
+            \scnitem{произвольный класс}
+            \begin{scnindent}
+                      \scnsubset{sc-переменная}
+                \scniselement{sc-константа}
+            \end{scnindent}
+            \scnitem{класс}
+            \begin{scnindent}
+                      \scnsubset{sc-константа}
+            \end{scnindent}
+        \end{scnsubdividing}
+        
+        \scnheader{класс}
+        \begin{scnsubdividing}
+            \scnitem{класс терминальных сущностей}
+            \scnitem{класс множеств}
+            \begin{scnindent}
+                \begin{scnsubdividing}
+                    \scnitem{класс связок}
+                    \begin{scnindent}
+                        \scnsuperset{sc-отношение}
+                    \end{scnindent}
+                    \scnitem{класс классов}
+                    \begin{scnindent}
+                        \scnsuperset{параметр}
+                    \end{scnindent}
+                    \scnitem{класс структур}
+                    \begin{scnindent}
+                        \scnsuperset{sc-язык}
+                        \begin{scnindent}
+                            \scnidtf{специализированный язык, являющийся подъязыком SC-кода, и обеспечивающий представление всевозможных знаний в рамках соответствующей предметной области, которая, в свою очередь, специфицируется соответствующей комплексной онтологией}
+                        \end{scnindent}
+                    \end{scnindent}
+                \end{scnsubdividing}
+            \end{scnindent}
+        \end{scnsubdividing}
+        \scnhaselement{обозначение множества}
+        \begin{scnindent}
+            \scnsuperset{множество}
+        \end{scnindent}
+        \scnhaselement{множество}
+        \scnhaselement{обозначение связки}
+        \begin{scnindent}
+            \scnsuperset{связка}
+        \end{scnindent}
+        \scnhaselement{связка}
+        \scnhaselement{обозначение класса}
+        \begin{scnindent}
+            \scnsuperset{класс}
+        \end{scnindent}
+        \scnhaselement{класс}
+        \scnhaselement{обозначение структуры}
+        \begin{scnindent}
+            \scnsuperset{структура}
+        \end{scnindent}
+        \scnhaselement{структура}
+        \scnhaselement{обозначение дискретной информационной конструкции}
+        \begin{scnindent}
+            \scnsuperset{дискретная информационная конструкция}
+            \begin{scnindent}
+                \scnsuperset{файл}
+                \begin{scnindent}
+                    \scnsuperset{файл ostis-системы}
+                    \begin{scnindent}
+                        \scnsuperset{внутренний файл ostis-системы}
+                    \end{scnindent}
+                \end{scnindent}
+            \end{scnindent}
+        \end{scnindent}
+            \scnsuperset{обозначение структуры}
+        \scntext{примечание}{Все семантически и синтаксически выделяемые классы sc-элементов, а также всевозможные подклассы этих классов являются экземплярами (элементами) \textit{класса}}
+        
+        \scnheader{обозначение структуры}
+        \scnidtf{обозначение множества, не являющегося ни связкой, ни классом}
+        \begin{scnsubdividing}
+            \scnitem{произвольная структура}
+            \begin{scnindent}
+                      \scnsubset{sc-переменная}
+            \end{scnindent}
+            \scnitem{структура}
+            \begin{scnindent}
+                      \scnidtf{конкретная структура}
+                \scnsubset{sc-константа}
+            \end{scnindent}
+        \end{scnsubdividing}
+    \end{scnsubstruct}
+
+    \scnstructheader{Соотношение между семантически и синтаксически выделяемыми классами sc-элементов в рамках Ядра SC-кода}
+    \begin{scnsubstruct}
+        \scnheader{семантически выделяемый класс sc-элементов}
+        \begin{scnsubstruct}
+            \scnidtf{класс sc-элементов, определяемый сущностями, которые обозначаются этими sc-элементами, также доступностью (активностью использования) sc-элементов в процессе эксплуатации и эволюции базы знаний}
+            \scniselement{обозначение терминальной сущности}
+            \begin{scnindent}
+                \scnsuperset{\scnkeyword{sc-узел общего вида}}
+            \end{scnindent}
+            \scniselement{обозначение небинарной связки}
+            \begin{scnindent}
+                \scnsuperset{\scnkeyword{sc-узел общего вида}}
+            \end{scnindent}
+            \scniselement{обозначение sc-пары}
+            \begin{scnindent}
+                \scnrelboth{пара пересекающихся множеств}{sc-узел общего вида}
+                \scnsuperset{\scnkeyword{sc-коннектор}}
+                \scntext{примечание}{\textit{обозначение sc-пары} может быть представлено либо \textit{sc-узлом общего вида}, либо \textit{sc-коннектором}. При этом каждый \textit{sc-коннектор} представляет собой \textit{обозначение sc-пары}.}
+            \end{scnindent}
+            \scniselement{обозначение неориентированной sc-пары}
+            \begin{scnindent}
+                \scnidtf{обозначение бинарной неориентированной связи между sc-элементами}
+                \begin{scnrelbothlist}{пара пересекающихся множеств}
+                    \scnitem{\scnkeyword{sc-узел общего вида}}
+                    \scnitem{\scnkeyword{sc-ребро общего вида}}
+                \end{scnrelbothlist}
+                \scntext{примечание}{\textit{обозначение неориентированной sc-пары} может быть представлено либо \textit{sc-узлом общего вида}, либо \textit{sc-ребром}. При этом не каждое \textit{sc-ребро} представляет обозначение \textit{неориентированный sc-пары}. Некоторые из них представляют \textit{обозначения ориентированных sc-пар неизвестной направленности}.}
+            \end{scnindent}
+            \scniselement{обозначение ориентированной sc-пары неизвестной направленности}
+            \begin{scnindent}
+                \begin{scnrelbothlist}{пара пересекающихся множеств}
+                    \scnitem{\scnkeyword{sc-узел общего вида}}
+                    \scnitem{\scnkeyword{sc-ребро общего вида}}
+                \end{scnrelbothlist}
+            \end{scnindent}
+            \scniselement{обозначение ориентированной sc-пары}
+            \begin{scnindent}
+                \scnidtf{обозначение бинарной ориентированной связи между sc-элементами}
+                \begin{scnrelbothlist}{пара пересекающихся множеств}
+                    \scnitem{\scnkeyword{sc-узел общего вида}}
+                    \scnitem{\scnkeyword{sc-ребро общего вида}}
+                \end{scnrelbothlist}
+                \scnsuperset{sc-дуга общего вида}
+            \end{scnindent}
+            \scniselement{константная постоянная позитивная sc-пара принадлежности}
+            \begin{scnindent}
+                \begin{scnrelbothlist}{пара пересекающихся множеств}
+                    \scnitem{\scnkeyword{sc-узел общего вида}}
+                    \scnitem{\scnkeyword{sc-ребро общего вида}}
+                    \scnitem{\scnkeyword{sc-дуга общего вида}}
+                \end{scnrelbothlist}
+                \scnsuperset{\scnkeyword{базовая sc-дуга}}
+                \begin{scnreltoset}{пересечение множеств}
+                    \scnitem{sc-константа}
+                    \scnitem{обозначение постоянной сущности}
+                    \scnitem{обозначение sc-пары принадлежности}
+                \end{scnreltoset}
+            \end{scnindent}
+            \scniselement{обозначение класса}
+            \begin{scnindent}
+                \scnsubset{\scnkeyword{sc-узел общего вида}}
+            \end{scnindent}
+            \scniselement{обозначение структуры}
+            \begin{scnindent}
+                \scnsubset{\scnkeyword{sc-узел общего вида}}
+            \end{scnindent}
+        \end{scnsubstruct}
+
+        \scnstructheader{Соотношение между семантически и синтаксически выделяемыми классами sc-элементов в рамках Ядра SC-кода}
+        \begin{scnsubstruct}
+            \scnheader{Ядро SC-кода}
+            \scnrelfrom{семантические правила}{\scnstructidtf{Семантические правила Ядра SC-кода}}
+            \begin{scnindent}
+                \begin{scnhassubset}
+                    \scnfileitem{Каждый sc-элемент является знаком (обозначением) некоторой описываемой сущности.}
+                    \scnfileitem{Любая сущность может быть обозначена sc-элементом и, соответственно, описана в виде конструкции Ядра SC-кода.}
+                    \scnfileitem{С помощью sc-элементов можно описать любые связи между sc-элементами и/или между сущностями, которые обозначаются этими sc-элементами. При этом указанные связи трактуются как множества связываемых sc-элементов и обозначаются sc-ребрами, sc-дугами, а в случае небинарных связей --- sc-узлами.}
+                    \scnfileitem{Поскольку каждый \mbox{sc-коннектор} семантически трактуется как обозначение пары \mbox{sc-элементов}, связываемых (соединяемых) этим \mbox{sc-коннектором}, каждая пара инцидентности \mbox{sc-коннектора} семантически интерпретируется как обозначение пары принадлежности, связывающей \mbox{sc-коннектор} с одним из элементов обозначаемой им пары \mbox{sc-элементов}.}
+                    \scnfileitem{\uline{Любая} описываемая сущность может быть обозначена sc-узлом общего вида, но обратное неверно, т.к. некоторые сущности могут быть обозначены sc-ребрами общего вида, sc-дугами общего вида, базовыми sc-дугами.}
+                    \scnfileitem{Каждое sc-ребро является обозначением либо бинарной неориентированной связи между sc-элементами, либо бинарной ориентированной связи неизвестной направленности между sc-элементами.}
+                    \scnfileitem{Любая бинарная неориентированная связь между sc-элементами может быть обозначена sc-ребром, но обратное неверно.}
+                \end{scnhassubset}
+            \end{scnindent}
+     
+            \scnheader{Правила синтаксической трансформации sc-элементов в рамках Ядра SC-кода}
+            \scnidtf{Правила модификации синтаксического типа sc-элементов в рамках Ядра SC-кода}
+            \begin{scnhassubset}
+                \scnfileitem{Если \textit{sc-узел общего вида} является \textit{обозначением sc-пары}, то он трансформируется в \textit{sc-коннектор}}
+                \scnfileitem{Если \textit{sc-узел общего вида} является \textit{обозначением неориентированной sc-пары} или \textit{обозначением ориентированной sc-пары неизвестной направленности}, то он трансформируется в \textit{sc-ребро общего вида}}
+                \scnfileitem{Если \textit{sc-узел общего вида} или \textit{sc-ребро общего вида} являются \textit{обозначением ориентированной sc-пары} и при этом дополнительно указана направленность этой sc-пары, то она трансформируется в \textit{sc-дугу общего вида}.}
+                \scnfileitem{Если \textit{sc-узел общего вида} или \textit{sc-ребро общего вида} или \textit{sc-дуга общего вида} являются \textit{константными постоянными позитивными парами принадлежности}, то они трансформируются в \textit{базовую sc-дугу}.}
+            \end{scnhassubset}
+            
+            \scnheader{следует отличать*}
+            \begin{scnhaselementset}
+                \scnitem{синтаксически выделяемый класс sc-элементов в рамках Ядра SC-кода}
+                \scnitem{синтаксически выделяемый класс sc-элементов в рамках SC-кода}
+                \scnitem{семантически выделяемый класс sc-элементов}
+            \end{scnhaselementset}
+        \end{scnsubstruct}
+    \end{scnsubstruct}
+\end{scnsubstruct}
+\scnsourcecommentinline{Завершили Сегмент \scnqqi{Описание Ядра SC-кода}}
