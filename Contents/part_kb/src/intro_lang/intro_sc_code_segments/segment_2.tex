@@ -57,7 +57,7 @@
         \scnidtf{информационная конструкция SC-кода}
         
         \scnheader{sc-структура}
-        \scnidtf{sc-множество, содержащее связки (знаки связей) между элементами этого множества}
+        \scnidtf{sc-множество, содержащее sc-связки (знаки связей) между элементами этого множества}
                 
         \scnheader{sc-текст}
         \scnidtf{связная sc-структура, являющаяся семантически корректной в рамках Базовой денотационной семантики SC-кода, а также синтаксически корректной в рамках соответствующей синтаксической модификации SC-кода}
@@ -244,7 +244,7 @@
     \scnstructheader{Семантическая классификация sc-элементов}
     \begin{scnsubstruct}
         \scnheader{sc-элемент}
-        \begin{scnrelfromlist}{базовые признаки классификации}
+        \begin{scnrelfromset}{базовые признаки классификации}
             \scnitem{структурный признак}
             \begin{scnindent}
                 \scnrelfrom{смотрите}{\textbf{Структурная типология sc-элементов\scnsupergroupsign}}
@@ -256,22 +256,22 @@
             \scnitem{темпоральная характеристика сущностей}
             \begin{scnindent}
                 \scnidtf{темпоральная характеристика sc-элементов}
-                \scnhaselement{постоянство существования обозначаемой сущности}
+                \scnrelfrom{включение}{постоянство существования обозначаемой сущности}
                 \begin{scnindent}
                     \scnrelfrom{смотрите}{\textbf{Типология sc-элементов по постоянству обозначаемых сущностей\scnsupergroupsign}}
                 \end{scnindent}
-                \scnhaselement{временность существования обозначаемой сущности}
-                \scnhaselement{статичность обозначаемой сущности}
+                \scnrelfrom{включение}{временность существования обозначаемой сущности}
+                \scnrelfrom{включение}{статичность обозначаемой сущности}
                 \begin{scnindent}
                     \scnrelfrom{смотрите}{\textbf{Типология sc-элементов по статичности обозначаемых сущностей\scnsupergroupsign}}
                     \scnidtf{стационарность обозначаемой сущности}
                 \end{scnindent}
-                \scnhaselement{динамичность обозначаемой сущности}
+                \scnrelfrom{включение}{динамичность обозначаемой сущности}
                 \begin{scnindent}
                     \scnidtf{изменчивость обозначаемой сущности}
                 \end{scnindent}
             \end{scnindent}
-        \end{scnrelfromlist}
+        \end{scnrelfromset}
         
         \scnheader{sc-элемент}
         \scnidtf{обозначение описываемой сущности}
@@ -302,18 +302,18 @@
                         \end{scnindent}
                     \end{scnsubdividing}
                 \end{scnindent}
-                \scnitem{обозначение множества}
+                \scnitem{обозначение sc-множества}
                 \begin{scnindent}
                     \begin{scnsubdividing}
-                        \scnitem{обозначение связки}
-                        \scnitem{обозначение класса}
-                        \scnitem{обозначение структуры}
+                        \scnitem{обозначение sc-связки}
+                        \scnitem{обозначение sc-класса}
+                        \scnitem{обозначение sc-структуры}
                     \end{scnsubdividing}
                 \end{scnindent}
             \end{scneqtoset}
         \end{scnindent}
         
-        \scnheader{обозначение связки}
+        \scnheader{обозначение sc-связки}
         \begin{scnsubdividing}
             \scnitem{обозначение небинарной пары}
             \begin{scnindent}
@@ -509,21 +509,21 @@
             \end{scnindent}
         \end{scnsubdividing}
         
-        \scnheader{обозначение связки}
+        \scnheader{обозначение sc-связки}
         \scnidtf{обозначение связи между sc-элементами и/или обозначаемыми ими сущностями}
         \begin{scnsubdividing}
-            \scnitem{произвольная связка}
+            \scnitem{произвольная sc-связка}
             \begin{scnindent}
-                      \scnidtf{sc-переменная, значениями которой являются обозначения связок}
+                \scnidtf{sc-переменная, значениями которой являются обозначения sc-связок}
             \end{scnindent}
-            \scnitem{связка}
+            \scnitem{sc-связка}
             \begin{scnindent}
-                      \scnidtf{конкретная связка sc-элементов}
+                \scnidtf{конкретная sc-связка sc-элементов}
             \end{scnindent}
         \end{scnsubdividing}
         \scnsuperset{обозначение sc-пары}
         \begin{scnindent}
-            \scnidtf{обозначение связки двух sc-элементов либо одного sc-элемента с самим собой}
+            \scnidtf{обозначение sc-связки двух sc-элементов либо одного sc-элемента с самим собой}
             \scnsuperset{sc-пара}
             \scnidtf{конкретная sc-пара}
             \scnsubset{sc-константа}
@@ -585,26 +585,26 @@
                 \end{scnsubdividing}
             \end{scnindent}
         \end{scnsubdividing}
-        \scnhaselement{обозначение множества}
+        \scnhaselement{обозначение sc-множества}
         \begin{scnindent}
-            \scnsuperset{множество}
+            \scnsuperset{sc-множество}
         \end{scnindent}
         \scnhaselement{множество}
-        \scnhaselement{обозначение связки}
+        \scnhaselement{обозначение sc-связки}
         \begin{scnindent}
-            \scnsuperset{связка}
+            \scnsuperset{sc-связка}
         \end{scnindent}
-        \scnhaselement{связка}
-        \scnhaselement{обозначение класса}
+        \scnhaselement{sc-связка}
+        \scnhaselement{обозначение sc-ласса}
         \begin{scnindent}
-            \scnsuperset{класс}
+            \scnsuperset{sc-класс}
         \end{scnindent}
-        \scnhaselement{класс}
-        \scnhaselement{обозначение структуры}
+        \scnhaselement{sc-класс}
+        \scnhaselement{обозначение sc-структуры}
         \begin{scnindent}
-            \scnsuperset{структура}
+            \scnsuperset{sc-структура}
         \end{scnindent}
-        \scnhaselement{структура}
+        \scnhaselement{sc-структура}
         \scnhaselement{обозначение дискретной информационной конструкции}
         \begin{scnindent}
             \scnsuperset{дискретная информационная конструкция}
@@ -618,19 +618,19 @@
                 \end{scnindent}
             \end{scnindent}
         \end{scnindent}
-            \scnsuperset{обозначение структуры}
+            \scnsuperset{обозначение sc-структуры}
         \scntext{примечание}{Все семантически и синтаксически выделяемые классы sc-элементов, а также всевозможные подклассы этих классов являются экземплярами (элементами) \textit{класса}}
         
-        \scnheader{обозначение структуры}
-        \scnidtf{обозначение множества, не являющегося ни связкой, ни классом}
+        \scnheader{обозначение sc-структуры}
+        \scnidtf{обозначение sc-множества, не являющегося ни sc-связкой, ни sc-классом}
         \begin{scnsubdividing}
-            \scnitem{произвольная структура}
+            \scnitem{произвольная sc-структура}
             \begin{scnindent}
-                      \scnsubset{sc-переменная}
+                \scnsubset{sc-переменная}
             \end{scnindent}
             \scnitem{структура}
             \begin{scnindent}
-                      \scnidtf{конкретная структура}
+                \scnidtf{конкретная sc-структура}
                 \scnsubset{sc-константа}
             \end{scnindent}
         \end{scnsubdividing}
@@ -645,7 +645,7 @@
             \begin{scnindent}
                 \scnsuperset{\scnkeyword{sc-узел общего вида}}
             \end{scnindent}
-            \scniselement{обозначение небинарной связки}
+            \scniselement{обозначение небинарной sc-связки}
             \begin{scnindent}
                 \scnsuperset{\scnkeyword{sc-узел общего вида}}
             \end{scnindent}
@@ -691,6 +691,9 @@
                 \begin{scnreltoset}{пересечение множеств}
                     \scnitem{sc-константа}
                     \scnitem{обозначение постоянной сущности}
+                    \begin{scnindent}
+                        \scnidtf{обозначение постоянно существующей сущности}
+                    \end{scnindent}
                     \scnitem{обозначение sc-пары принадлежности}
                 \end{scnreltoset}
             \end{scnindent}
