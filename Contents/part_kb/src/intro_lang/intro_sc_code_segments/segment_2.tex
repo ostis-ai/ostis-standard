@@ -32,14 +32,14 @@
                                    
         \scnheader{SC-код}
         \begin{scnhaselementset}
-                \scnitem{sc-элемент}
-                  \scnitem{sc-множество}
-                  \scnitem{sc-структура}
-                  \scnitem{sc-текст}
-                  \scnitem{sc-знание}
-                  \scnitem{файл}
-                  \scnitem{sc-идентификатор}
-                  \scnitem{основной sc-идентификатор}
+            \scnitem{sc-элемент}
+            \scnitem{sc-множество}
+            \scnitem{sc-структура}
+            \scnitem{sc-текст}
+            \scnitem{sc-знание}
+            \scnitem{файл}
+            \scnitem{sc-идентификатор}
+            \scnitem{основной sc-идентификатор}
         \end{scnhaselementset}
         
         \scnheader{sc-элемент}
@@ -256,17 +256,17 @@
             \scnitem{темпоральная характеристика сущностей}
             \begin{scnindent}
                 \scnidtf{темпоральная характеристика sc-элементов}
-                \scnrelfrom{включение}{постоянство существования обозначаемой сущности}
+                \scnsuperset{постоянство существования обозначаемой сущности}
                 \begin{scnindent}
                     \scnrelfrom{смотрите}{\textbf{Типология sc-элементов по постоянству обозначаемых сущностей\scnsupergroupsign}}
                 \end{scnindent}
-                \scnrelfrom{включение}{временность существования обозначаемой сущности}
-                \scnrelfrom{включение}{статичность обозначаемой сущности}
+                \scnsuperset{временность существования обозначаемой сущности}
+                \scnsuperset{статичность обозначаемой сущности}
                 \begin{scnindent}
                     \scnrelfrom{смотрите}{\textbf{Типология sc-элементов по статичности обозначаемых сущностей\scnsupergroupsign}}
                     \scnidtf{стационарность обозначаемой сущности}
                 \end{scnindent}
-                \scnrelfrom{включение}{динамичность обозначаемой сущности}
+                \scnsuperset{динамичность обозначаемой сущности}
                 \begin{scnindent}
                     \scnidtf{изменчивость обозначаемой сущности}
                 \end{scnindent}
@@ -659,35 +659,35 @@
             \begin{scnindent}
                 \scnidtf{обозначение бинарной неориентированной связи между sc-элементами}
                 \begin{scnrelbothlist}{пара пересекающихся множеств}
-                    \scnitem{\scnkeyword{sc-узел общего вида}}
-                    \scnitem{\scnkeyword{sc-ребро общего вида}}
+                    \scnitem{sc-узел общего вида}
+                    \scnitem{sc-ребро общего вида}
                 \end{scnrelbothlist}
                 \scntext{примечание}{\textit{обозначение неориентированной sc-пары} может быть представлено либо \textit{sc-узлом общего вида}, либо \textit{sc-ребром}. При этом не каждое \textit{sc-ребро} представляет обозначение \textit{неориентированный sc-пары}. Некоторые из них представляют \textit{обозначения ориентированных sc-пар неизвестной направленности}.}
             \end{scnindent}
             \scniselement{обозначение ориентированной sc-пары неизвестной направленности}
             \begin{scnindent}
                 \begin{scnrelbothlist}{пара пересекающихся множеств}
-                    \scnitem{\scnkeyword{sc-узел общего вида}}
-                    \scnitem{\scnkeyword{sc-ребро общего вида}}
+                    \scnitem{sc-узел общего вида}
+                    \scnitem{sc-ребро общего вида}
                 \end{scnrelbothlist}
             \end{scnindent}
             \scniselement{обозначение ориентированной sc-пары}
             \begin{scnindent}
                 \scnidtf{обозначение бинарной ориентированной связи между sc-элементами}
                 \begin{scnrelbothlist}{пара пересекающихся множеств}
-                    \scnitem{\scnkeyword{sc-узел общего вида}}
-                    \scnitem{\scnkeyword{sc-ребро общего вида}}
+                    \scnitem{sc-узел общего вида}
+                    \scnitem{sc-ребро общего вида}
                 \end{scnrelbothlist}
                 \scnsuperset{sc-дуга общего вида}
             \end{scnindent}
             \scniselement{константная постоянная позитивная sc-пара принадлежности}
             \begin{scnindent}
                 \begin{scnrelbothlist}{пара пересекающихся множеств}
-                    \scnitem{\scnkeyword{sc-узел общего вида}}
-                    \scnitem{\scnkeyword{sc-ребро общего вида}}
-                    \scnitem{\scnkeyword{sc-дуга общего вида}}
+                    \scnitem{sc-узел общего вида}
+                    \scnitem{sc-ребро общего вида}
+                    \scnitem{sc-дуга общего вида}
                 \end{scnrelbothlist}
-                \scnsuperset{\scnkeyword{базовая sc-дуга}}
+                \scnsuperset{базовая sc-дуга}
                 \begin{scnreltoset}{пересечение множеств}
                     \scnitem{sc-константа}
                     \scnitem{обозначение постоянной сущности}
@@ -699,11 +699,11 @@
             \end{scnindent}
             \scniselement{обозначение класса}
             \begin{scnindent}
-                \scnsubset{\scnkeyword{sc-узел общего вида}}
+                \scnsubset{sc-узел общего вида}
             \end{scnindent}
             \scniselement{обозначение структуры}
             \begin{scnindent}
-                \scnsubset{\scnkeyword{sc-узел общего вида}}
+                \scnsubset{sc-узел общего вида}
             \end{scnindent}
         \end{scnsubstruct}
 
