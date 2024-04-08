@@ -430,7 +430,7 @@
     \begin{scnsubdividing}
         \scnitem{линейная функция}
             \begin{scnindent}
-                \scntext{формула}{
+                \scnrelfrom{формула}{
                     \begin{equation*}
                         y = kS
                     \end{equation*}
@@ -438,7 +438,7 @@
             \end{scnindent}
         \scnitem{пороговая функция}
             \begin{scnindent}
-                \scntext{формула}{
+                \scnrelfrom{формула}{
                     \begin{equation*}
                         y = sign(S) =
                         \begin{cases}
@@ -449,7 +449,7 @@
             \end{scnindent}
         \scnitem{сигмоидная функция}
             \begin{scnindent}
-                \scntext{формула}{
+                \scnrelfrom{формула}{
                     \begin{equation*}
                         y = \frac{1}{1+e^\scnleftcurlbrace-cS\scnrightcurlbrace}
                     \end{equation*}
@@ -457,7 +457,7 @@
             \end{scnindent}
         \scnitem{функция гиперболического тангенса}
             \begin{scnindent}
-                \scntext{формула}{
+                \scnrelfrom{формула}{
                     \begin{equation*}
                         y = \frac{e^\scnleftcurlbrace~cS\scnrightcurlbrace-e^\scnleftcurlbrace-cS\scnrightcurlbrace}{e^\scnleftcurlbrace~cs\scnrightcurlbrace+e^\scnleftcurlbrace-cS\scnrightcurlbrace}
                     \end{equation*}
@@ -465,7 +465,7 @@
             \end{scnindent}
         \scnitem{функция softmax}
             \begin{scnindent}
-                \scntext{формула}{
+                \scnrelfrom{формула}{
                     \begin{equation*}
                         y_j = softmax(S_j) = \frac{e^\scnleftcurlbrace~S_j\scnrightcurlbrace}{\sum_{j} e^\scnleftcurlbrace~S_j\scnrightcurlbrace}
                     \end{equation*}
@@ -473,7 +473,7 @@
             \end{scnindent}
         \scnitem{функция ReLU}
             \begin{scnindent}
-                \scntext{формула}{
+                \scnrelfrom{формула}{
                     \begin{equation*}
                         y = F(S) =
                         \begin{cases}
@@ -492,7 +492,7 @@
     \scniselement{неролевое отношение}
     \scniselement{бинарное отношение}
     \scntext{пояснение}{\textbf{\textit{взвешенная сумма*}} --- неролевое отношение, связывающее формальный нейрон с числом, являющимся суммой произведений входных сигналов на весовые коэффициенты входящих в нейрон синаптических связей. }
-     \scnrelfrom{область определения}{\scnnonamednode}
+    \scnrelfrom{область определения}{\scnnonamednode}
     \begin{scnindent}
     	\begin{scnreltoset}{объединение}
     		\scnitem{формальный нейрон}
@@ -670,6 +670,26 @@
 \bigskip
 \end{scnsubstruct}
 \scnendsegmentcomment{Предметная область и онтология искусственных нейронных сетей}
+
+\scnsegmentheader{Операционная семантика моделей искусственных нейронных сетей, используемых
+в ostis-системах}
+\begin{scnsubstruct}
+
+\scnheader{Предметная область нейросетевых методов}
+    \scnidtf{Предметная область искусственных нейронных сетей}
+%    \scniselement{предметная область}
+%    \begin{scnhaselementrole}{максимальный класс объектов исследования}
+%        {искусственные нейронные сети}
+%    \end{scnhaselementrole}
+    \begin{scnrelfromset}{дочерняя предметная область}
+        \scnitem{Предметная область нейросетевых методов SCP}
+        \scnitem{Предметная область нейросетевых методов Python}
+        \scnitem{Предметная область нейросетевых методов C++}
+    \end{scnrelfromset}
+
+\bigskip
+\end{scnsubstruct}
+\scnendsegmentcomment{Предметная область нейросетевых методов}
 
 \scnsegmentheader{Предметная область и онтология действий по обработке искусственной нейронной сети}
 \begin{scnsubstruct}
