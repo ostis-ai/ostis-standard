@@ -26,6 +26,10 @@
                 \scnitem{действие вычисления функции активации всех нейронов слоя}
                 \scnitem{действие интерпретации сверточного слоя}
                 \scnitem{действие интерпретации пулинг слоя}
+                \scnitem{проблема задания различных аргументов для нейронов одного слоя}
+                \scnitem{агентно-ориентированная модель интерпретации искусственных нейронных сетей}
+                \scnitem{задача "ИСКЛЮЧАЮЩЕЕ ИЛИ"}
+                \scnitem{однослойный персептрон, решающий задачу \scnqq{ИСКЛЮЧАЮЩЕЕ ИЛИ}}
             \end{scnhaselementrolelist}
 
             \scnheader{нейросетевой метод}
@@ -34,8 +38,10 @@
             \begin{scnindent}
             \scntext{примечание}{внешний язык --- язык, который не является внутренним языком ostis-системы, т.е. не Язык SCP}
             \end{scnindent}
+            \scntext{пример описания}{\textbf{\textit{задача "ИСКЛЮЧАЮЩЕЕ ИЛИ"}}}
 
             \scnheader{действие интерпретации нейросетевого метода}
+            \scnidtf{действие интерпретации и.н.с}
             \scntext{примечание}{действию соответствует агент, реализованный на соответствующем языке программирования}
                 \begin{scnrelfromset}{декомпозиция}
                     \scnitem{действие интерпретации слоя и.н.с.} %возможно тут включение надо, а не декомпозиция или что-то типо того
@@ -60,11 +66,11 @@
             \scndefinition{\textbf{\textit{матрица}} --- \textit{ориентированное множество} \textit{ориентированных множеств} чисел равной мощности }
 
             \scnheader{действие вычисления взвешенной суммы всех нейронов слоя}
-            \begin{scnrelfromset}{отношения характеризующие действие}
+            \begin{scnrelfromset}{отношения характеризующие аргументы данного действия}
                 \scnitem{входной вектор\scnrolesign}
                 \begin{scnindent}
                     \scniselement{ролевое отношение}
-                    \scnrelfrom{первый домен}{действие по обработке и.н.с.}
+                    \scnrelfrom{первый домен}{действие интерпретации и.н.с.}
                     \scnrelfrom{второй домен}{матрица}
                 \end{scnindent}
                 \scnitem{матрица весовых коэффициентов нейронов слоя\scnrolesign}
@@ -76,10 +82,10 @@
                 \scnitem{результат\scnrolesign}
                 \begin{scnindent}
                     \scniselement{ролевое отношение}
-                    \scnrelfrom{первый домен}{действие по обработке и.н.с.}
+                    \scnrelfrom{первый домен}{действие интерпретации нейросетевого метода}
                     \scnrelfrom{второй домен}{взвешенная сумма нейронов соответствующего слоя}
                     \begin{scnindent}
-                    \scnsubset{\textbf{\textit{ориентированное множество чисел}}} %или включение или принадлежность, не уверен
+                    \scnsubset{ориентированное множество чисел} %или включение или принадлежность, не уверен
                     \end{scnindent}
                 \end{scnindent}
             \end{scnrelfromset}
@@ -88,10 +94,155 @@
             \scntext{примечание}{Пример спецификации действия вычисления взвешенной суммы всех нейронов слоя для слоя с двумя нейронами и входным вектором размерностью 2}
             \end{scnindent}
 
+            \scnheader{действие вычисления взвешенной суммы всех нейронов слоя}
+            \begin{scnrelfromset}{отношения характеризующие аргументы данного действия}
+                \scnitem{вектор взвешенных сумм нейронов слоя\scnrolesign}
+                \begin{scnindent}
+                    \scniselement{ролевое отношение}
+                    \scnrelfrom{первый домен}{действие по обработке и.н.с.}
+                    \scnrelfrom{второй домен}{ориентированное множество чисел}
+                \end{scnindent}
+                \scnitem{вектор порогов нейронов слоя\scnrolesign}
+                \begin{scnindent}
+                    \scniselement{ролевое отношение}
+                    \scnrelfrom{первый домен}{действие по обработке и.н.с.}
+                    \scnrelfrom{второй домен}{ориентированное множество чисел}
+                \end{scnindent}
+                \scnitem{функция активации\scnrolesign}
+                \begin{scnindent}
+                    \scniselement{ролевое отношение}
+                    \scnrelfrom{первый домен}{действие по обработке и.н.с.}
+                    \scnrelfrom{второй домен}{функция}
+                \end{scnindent}
+                \scnitem{результат\scnrolesign}
+                \begin{scnindent}
+                    \scniselement{ролевое отношение}
+                    \scnrelfrom{первый домен}{действие интерпретации нейросетевого метода}
+                    \scnrelfrom{второй домен}{выходные значения нейронов слоя}
+                    \begin{scnindent}
+                        \scnsubset{ориентированное множество чисел} %или включение или принадлежность, не уверен
+                    \end{scnindent}
+                \end{scnindent}
+            \end{scnrelfromset}
+
+            \scnheader{действие интерпретации сверточного слоя}
+            \begin{scnrelfromset}{отношения характеризующие аргументы данного действия}
+                \scnitem{входная матрица\scnrolesign}
+                \begin{scnindent}
+                    \scniselement{ролевое отношение}
+                    \scnrelfrom{первый домен}{действие интерпретации и.н.с.}
+                    \scnrelfrom{второй домен}{матрица}
+                \end{scnindent}
+                \scnitem{ядро свертки\scnrolesign}
+                \begin{scnindent}
+                    \scniselement{ролевое отношение}
+                    \scnrelfrom{первый домен}{действие интерпретации сверточного слоя}
+                    \scnrelfrom{второй домен}{матрица}
+                \end{scnindent}
+                \scnitem{шаг свертки\scnrolesign}
+                \begin{scnindent}
+                    \scniselement{ролевое отношение}
+                    \scnrelfrom{первый домен}{действие интерпретации сверточного слоя}
+                    \scnrelfrom{второй домен}{число}
+                \end{scnindent}
+                \scnitem{результат\scnrolesign}
+                \begin{scnindent}
+                    \scniselement{ролевое отношение}
+                    \scnrelfrom{первый домен}{действие интерпретации нейросетевого метода}
+                    \scnrelfrom{второй домен}{результат свертки входной матрицы с ядром свертки}
+                    \begin{scnindent}
+                        \scnsubset{матрица} %или включение или принадлежность, не уверен
+                    \end{scnindent}
+                \end{scnindent}
+            \end{scnrelfromset}
+
+            \scnheader{действие интерпретации пулинг слоя}
+            \begin{scnrelfromset}{отношения характеризующие аргументы данного действия}
+                \scnitem{входная матрица\scnrolesign}
+                \begin{scnindent}
+                    \scniselement{ролевое отношение}
+                    \scnrelfrom{первый домен}{действие интерпретации и.н.с.}
+                    \scnrelfrom{второй домен}{матрица}
+                \end{scnindent}
+                \scnitem{размер окна пулинга\scnrolesign}
+                \begin{scnindent}
+                    \scniselement{ролевое отношение}
+                    \scnrelfrom{первый домен}{действие интерпретации пулинг слоя}
+                    \scnrelfrom{второй домен}{матрица}
+                \end{scnindent}
+                \scnitem{размер окна пулинга\scnrolesign}
+                \begin{scnindent}
+                    \scniselement{ролевое отношение}
+                    \scnrelfrom{первый домен}{действие интерпретации пулинг слоя}
+                    \scnrelfrom{второй домен}{матрица}
+                \end{scnindent}
+                \scnitem{шаг окна пулинга\scnrolesign}
+                \begin{scnindent}
+                    \scniselement{ролевое отношение}
+                    \scnrelfrom{первый домен}{действие интерпретации пулинг слоя}
+                    \scnrelfrom{второй домен}{число}
+                \end{scnindent}
+                \scnitem{результат\scnrolesign}
+                \begin{scnindent}
+                    \scniselement{ролевое отношение}
+                    \scnrelfrom{первый домен}{действие интерпретации нейросетевого метода}
+                    \scnrelfrom{второй домен}{результат пулинга входной матрицы}
+                    \begin{scnindent}
+                        \scnsubset{матрица} %или включение или принадлежность, не уверен
+                    \end{scnindent}
+                \end{scnindent}
+            \end{scnrelfromset}
+
+            \scnheader{проблема задания различных аргументов для нейронов одного слоя}
+            \scntext{пояснение}{присутствует необходимость спецификации соответствующего действия(задание различных аргументов для нейронов одного слоя)}
+            \scntext{примечание}{нерешённая на данный момент}
+            \begin{scnindent}
+                \scntext{причина}{слабая изученность \texit{нейросетевых моделей решения задач} подобного рода}
+            \end{scnindent}
+
+            \scnheader{агентно-ориентированная модель интерпретации искусственных нейронных сетей}
+            \scnsubset{спецификация агентов, соотвтствующих действиям интерпретации нейросетевых методов}
+            \scntext{реализация}{интерпретатор искусственных нейронных сетей}
+            \scntext{примечание}{любой агент, интерпретирующий действия с заданными с помощью отношения \textit{функция активации'} аргументами, должен использовать интерпретатор математических функций. использующихся в качестве функций активации}
+
+            \scnheader{задача \scnqq{ИСКЛЮЧАЮЩЕЕ ИЛИ}}
+            \scnidtf{нейросетевой метод, решающий задачу \scnqq{ИСКЛЮЧАЮЩЕЕ ИЛИ}}
+            \scntext{формулировка}{вычислить результат логической операции \scnqq{ИСКЛЮЧАЮЩЕЕ ИЛИ} для значений двух логических переменных}
+            \scnrelfrom{решение задачи с помощью сигнальных функций}{\scnfileimage[30em]{Contents/part_ps/src/images/sd_ps/sd_ann/strong_or_graphic.png}}
+            \scntext{метод решения}{использование \textbf{\textit{однослойного персептрона, решающего задачу \scnqq{ИСКЛЮЧАЮЩЕЕ ИЛИ}}}}
+            \begin{scnindent}
+                \scnrelfrom{описание метода, представленного с помощью языка представления нейросетевых методов SCP}{\scnfileimage[35em]{Contents/part_ps/src/images/sd_ps/sd_ann/exclusive_or_ann_scp.png}}
+                \scntext{пояснение}{описание метода состоит из последовательности двух обобщенных спецификаций действий --- действия вычисления взвешенной суммы всех нейронов слоя и действия вычисления функции активации для всех нейронов слоя}
+            \end{scnindent}
+
+            \scnheader{однослойный персептрон, решающий задачу \scnqq{ИСКЛЮЧАЮЩЕЕ ИЛИ}}
+            \begin{scnrelfromset}{характеристика}
+                \scnitem{два входных нейрона}
+                \scnitem{один выходной нейрон}
+                \scnitem{порог - 0,5}
+                \scnitem{сигнальная функция активации}
+                \begin{scnindent}
+                    \scnrelfrom{формула}{
+                        \begin{equation*}
+                            F(S) =
+                            \begin{cases}
+                                1, 0 < S < 0,\\
+                                0, else
+                            \end{cases}
+                        \end{equation*}}
+                    \scnrelfrom{логическая формула}{\scnfileimage[30em]{Contents/part_ps/src/images/sd_ps/sd_ann/signal_function_def.png}}
+                \end{scnindent}
+                \scnitem{весовые коэффициенты синапсов входного слоя - 1}
+            \end{scnrelfromset}
+            \scntext{источник}{\scncite{Golovko2017}}
+            \scnrelfrom{схема}{\scnfileimage[20em]{Contents/part_ps/src/images/sd_ps/sd_ann/strong_or_ann.png}}
+
+
+
             \bigskip
         \end{scnsubstruct}
 
-        \scnendsegmentcomment{ Операционная семантика sc-моделей искусственных нейронных сетей, используемых в ostis-системах}
+        \scnendsegmentcomment{Операционная семантика sc-моделей искусственных нейронных сетей, используемых в ostis-системах}
 
         \bigskip
     \end{scnsubstruct}
