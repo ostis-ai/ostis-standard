@@ -1,0 +1,101 @@
+\usepackage{scn}
+\begin{SCn}
+    \scnsectionheader{Предметная область и онтология операционной семантики sc-моделей искусственных нейронных сетей}
+    \begin{scnsubstruct}
+
+        \scnsegmentheader{Операционная семантика sc-моделей искусственных нейронных сетей, используемых в ostis-системах}
+        \begin{scnsubstruct}
+
+            \scnheader{Предметная область нейросетевых методов}
+            \scnidtf{Предметная область искусственных нейронных сетей}
+            \begin{scnrelfromset}{дочерняя предметная область}
+                \scnitem{Предметная область нейросетевых методов SCP}
+                \scnitem{Предметная область нейросетевых методов Python}
+                \scnitem{Предметная область нейросетевых методов C++}
+            \end{scnrelfromset}
+            \scniselement{предметная область}
+            \begin{scnhaselementrole}{максимальный класс объектов исследования}
+            {нейросетевой метод}
+            \end{scnhaselementrole}
+            \begin{scnhaselementrolelist}{класс объектов исследования}
+                \scnitem{нейросетевой метод}
+                \scnitem{действие интерпретации нейросетевого метода}
+                \scnitem{ориентированное множество чисел}
+                \scnitem{матрица}
+                \scnitem{действие вычисления взвешенной суммы всех нейронов слоя}
+                \scnitem{действие вычисления функции активации всех нейронов слоя}
+                \scnitem{действие интерпретации сверточного слоя}
+                \scnitem{действие интерпретации пулинг слоя}
+            \end{scnhaselementrolelist}
+
+            \scnheader{нейросетевой метод}
+            %\scndefinition{\textbf{\textit{нейросетевой метод}} --- метод }
+            \scntext{примечание}{в случае описания \textbf{\textit{нейросетевого метода}} на внешнем языке, такой метод описывается в соответствующей предметной области, в рамках которой также специфицируется \textbf{\textit{действие интерпретации}} данного \textbf{\textit{нейросетевого метода}}}
+            \begin{scnindent}
+            \scntext{примечание}{внешний язык --- язык, который не является внутренним языком ostis-системы, т.е. не Язык SCP}
+            \end{scnindent}
+
+            \scnheader{действие интерпретации нейросетевого метода}
+            \scntext{примечание}{действию соответствует агент, реализованный на соответствующем языке программирования}
+                \begin{scnrelfromset}{декомпозиция}
+                    \scnitem{действие интерпретации слоя и.н.с.} %возможно тут включение надо, а не декомпозиция или что-то типо того
+                    \begin{scnindent}
+                        \begin{scnrelfromset}{декомпозиция}
+                            \scnitem{\textbf{действие вычисления взвешенной суммы всех нейронов слоя}}
+                            \scnitem{\textbf{действие вычисления функции активации всех нейронов слоя}}
+                            \scnitem{\textbf{действие интерпретации сверточного слоя}}
+                            \scnitem{\textbf{действие интерпретации пулинг слоя}}
+                        \end{scnrelfromset}
+                    \end{scnindent}
+                \end{scnrelfromset}
+
+
+            \scnheader{ориентированное множество чисел}
+            \scnidtf{ормножество чисел}
+            \scnrelto{включение}{число}
+            \scnrelto{включение}{ориентированное множество}
+            \scnrelto{первый домен}{строковое представление ормножества чисел*}
+
+            \scnheader{матрица}
+            \scndefinition{\textbf{\textit{матрица}} --- \textit{ориентированное множество} \textit{ориентированных множеств} чисел равной мощности }
+
+            \scnheader{действие вычисления взвешенной суммы всех нейронов слоя}
+            \begin{scnrelfromset}{отношения характеризующие действие}
+                \scnitem{входной вектор\scnrolesign}
+                \begin{scnindent}
+                    \scniselement{ролевое отношение}
+                    \scnrelfrom{первый домен}{действие по обработке и.н.с.}
+                    \scnrelfrom{второй домен}{матрица}
+                \end{scnindent}
+                \scnitem{матрица весовых коэффициентов нейронов слоя\scnrolesign}
+                \begin{scnindent}
+                    \scniselement{ролевое отношение}
+                    \scnrelfrom{первый домен}{действие по обработке и.н.с.}
+                    \scnrelfrom{второй домен}{матрица}
+                \end{scnindent}
+                \scnitem{результат\scnrolesign}
+                \begin{scnindent}
+                    \scniselement{ролевое отношение}
+                    \scnrelfrom{первый домен}{действие по обработке и.н.с.}
+                    \scnrelfrom{второй домен}{взвешенная сумма нейронов соответствующего слоя}
+                    \begin{scnindent}
+                    \scnsubset{\textbf{\textit{ориентированное множество чисел}}} %или включение или принадлежность, не уверен
+                    \end{scnindent}
+                \end{scnindent}
+            \end{scnrelfromset}
+            \scnrelfrom{описание примера}{\scnfileimage[40em]{Contents/part_ps/src/images/sd_ps/sd_ann/action_weighted_sum.png}}
+            \begin{scnindent}
+            \scntext{примечание}{Пример спецификации действия вычисления взвешенной суммы всех нейронов слоя для слоя с двумя нейронами и входным вектором размерностью 2}
+            \end{scnindent}
+
+            \bigskip
+        \end{scnsubstruct}
+
+        \scnendsegmentcomment{ Операционная семантика sc-моделей искусственных нейронных сетей, используемых в ostis-системах}
+
+        \bigskip
+    \end{scnsubstruct}
+
+    \scnendcurrentsectioncomment
+
+\end{SCn}
