@@ -235,7 +235,7 @@
                     \begin{scnindent}
                         \scnsubset{задача}
                         \scntext{пояснение}{Задача построения классификатора, т.е. отображения $\tilde c: X \rightarrow C$, где $ X \in \mathbb{R}^m$ ---
-                        признаковое пространство п.в.а., $C = \scnleftcurlbrace~C_1, C_2, ...C_k\scnrightcurlbrace$ --- конечное и обычно небольшое множество меток классов.}
+                        признаковое пространство п.в.а., $C = {~C_1, C_2, ...C_k}$ --- конечное и обычно небольшое множество меток классов.}
                     \end{scnindent}
                     \scnitem{задача регрессии}
                     \begin{scnindent}
@@ -290,8 +290,8 @@
             \scntext{примечание}{Отдельный формальный нейрон является искусственной нейронной сетью с одним нейроном в единственном слое.}
             \scnsubset{искусственная нейронная сеть}
             \scntext{пояснение}{\textbf{\textit{формальный нейрон}} --- это основной элемент \textit{искусственной нейронной сети}, применяющий свою \textit{функцию активации} (\scncite{Golovko2017}) к сумме произведений входных сигналов на весовые коэффициенты:
-                $y = F\left(\sum\textunderscore\scnleftcurlbrace~i=1\scnrightcurlbrace\scnsupergroupsign\scnleftcurlbrace~n\scnrightcurlbrace w_ix_i - T\right) = F(WX - T)$
-                где $X = (x_1,x_2,...,x_n)^\scnleftcurlbrace~T\scnrightcurlbrace$ --- вектор входного сигнала; $W - (w_1,w_2,...,w_n)$ --- вектор весовых коэффициентов; \textit{T} --- пороговое значение;
+                $y = F\left(\sum_{~i=1}^{~n}w_ix_i - T\right) = F(WX - T)$
+                где $X = (x_1,x_2,...,x_n)^{~T}$ --- вектор входного сигнала; $W - (w_1,w_2,...,w_n)$ --- вектор весовых коэффициентов; \textit{T} --- пороговое значение;
                 \textit{F} --- функция активации.}
             \scnrelfrom{изображение}{\scnfileimage[20em]{Contents/part_ps/src/images/sd_ps/sd_ann/neuron.png}}
             \scntext{примечание}{Формальные нейроны могут иметь полный набор связей с нейронами предшествующего слоя или неполный (разряженный) набор связей.}
@@ -457,7 +457,7 @@
                     \begin{scnindent}
                         \scnrelfrom{формула}{
                             \begin{equation*}
-                                y = \frac{1}{1+e^\scnleftcurlbrace-cS\scnrightcurlbrace}
+                                y = \frac{1}{1+e^{-cS}}
                             \end{equation*}
                             где \textit{с} > 0 --- коэффициент, характеризующий ширину сигмоидной функции по оси абсцисс, \textit{S} --- в.с.}
                     \end{scnindent}
@@ -465,7 +465,7 @@
                     \begin{scnindent}
                         \scnrelfrom{формула}{
                             \begin{equation*}
-                                y = \frac{e^\scnleftcurlbrace~cS\scnrightcurlbrace-e^\scnleftcurlbrace-cS\scnrightcurlbrace}{e^\scnleftcurlbrace~cs\scnrightcurlbrace+e^\scnleftcurlbrace-cS\scnrightcurlbrace}
+                                y = \frac{e^{~cS}-e^{-cS}}{e^{~cS}+e^{-cS}}
                             \end{equation*}
                             где \textit{с} > 0 --- коэффициент, характеризующий ширину сигмоидной функции по оси абсцисс, \textit{S} --- в.с.}
                     \end{scnindent}
@@ -473,7 +473,7 @@
                     \begin{scnindent}
                         \scnrelfrom{формула}{
                             \begin{equation*}
-                                y_j = softmax(S_j) = \frac{e^\scnleftcurlbrace~S_j\scnrightcurlbrace}{\sum_{j} e^\scnleftcurlbrace~S_j\scnrightcurlbrace}
+                                y_j = softmax(S_j) = \frac{e^{~S_j}}{\sum_{j} e^{~S_j}}
                             \end{equation*}
                             где $S_j$ --- в.с. \textit{j}-го выходного нейрона.}
                     \end{scnindent}
@@ -509,7 +509,7 @@
             \scnrelfrom{второй домен}{число}
             \scnrelfrom{формула}{
                 \begin{equation*}
-                    S = \sum_{i=1}^\scnleftcurlbrace~n\scnrightcurlbrace w_ix_i - T
+                    S = \sum_{i=1}^{~n} w_ix_i - T
                 \end{equation*}
                 где \textit{n} --- размерность вектора входных значений, $w_i$ --- \textit{i}-тый элемент вектора весовых коэффициентов, $x_i$ --- \textit{i}-тый элемент вектора входных значений, \textit{T} --- пороговое значение.}
 
@@ -965,9 +965,9 @@
                     \scnidtf{мультиклассовая кросс-энтропия}
                     \scntext{формула}{
                         \begin{equation*}
-                            MCE = - \sum_{l=1}^L \sum_{i=1}^m e_\scnleftcurlbrace~i\scnrightcurlbrace^l \log(y_\scnleftcurlbrace~i\scnrightcurlbrace^l)
+                            MCE = - \sum_{l=1}^L \sum_{i=1}^m e_{~i}^l \log(y_{~i}^l)
                         \end{equation*}
-                        где $y_\scnleftcurlbrace~i\scnrightcurlbrace^l$ --- прогноз модели, $e_i^l$ --- ожидаемый (эталонный результат), \textit{m} --- размерность выходного вектора.}
+                        где $y_{~i}^l$ --- прогноз модели, $e_i^l$ --- ожидаемый (эталонный результат), \textit{m} --- размерность выходного вектора.}
                     \scntext{примечание}{для мультиклассовой кросс-энтропии количество нейронов в выходном слое и.н.с. совпадает с количеством классов}
                 \end{scnindent}
             \end{scnrelfromlist}
