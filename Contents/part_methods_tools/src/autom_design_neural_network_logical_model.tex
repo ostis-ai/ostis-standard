@@ -40,11 +40,6 @@
                 \scnitem{метод обучения и.н.с.}
                 \scnitem{метод оптимизации}
                 \scnitem{функция потерь}
-                \scnitem{}
-                \scnitem{}
-                \scnitem{}
-                \scnitem{}
-
             \end{scnhaselementrolelist}
             \begin{scnhaselementrolelist}{исследуемое отношение}
                 \scnitem{обучающая выборка\scnrolesign}
@@ -52,26 +47,20 @@
                 \scnitem{валидационная выборка\scnrolesign}
                 \scnitem{метод обучения\scnrolesign}
                 \scnitem{функция потерь\scnrolesign}
-                \scnitem{}
-                \scnitem{}
-                \scnitem{}
-                \scnitem{}
-
             \end{scnhaselementrolelist}
 
             \scnheader{интеллектуальная среда построения нейросетевых методов}
-            \begin{scnrelfromset}{этапы построения нейросетевых методов}
+            \begin{scnrelfromset}{этап построения нейросетевых методов}
                 \begin{scnindent}
-                    \scnidtf{этапы построения и.н.с}
                     \scnitem{постановка задачи}
-                    \scnitem{этапы, связанные с выборкой}
+                    \scnitem{этап, связанный с выборкой}
                     \begin{scnindent}
                         \begin{scnrelfromset}{разбиение}
                             \scnitem{предобработка выборки}
                             \scnitem{разбиение выборки на обучающую, валидационную и тестовую (контрольную)}
                         \end{scnrelfromset}
                     \end{scnindent}
-                    \scnitem{этапы, связанные с импользуемыми моделями и.н.с}
+                    \scnitem{этап, связанные с импользуемыми моделями и.н.с}
                     \begin{scnindent}
                         \begin{scnrelfromset}{разбиение}
                             \scnitem{выбор класса нейросетевых методов в соответствии со сформулированной задачей}
@@ -129,7 +118,7 @@
             \scntext{пояснение}{Если обучающая выборка не была предоставлена и не была найдена, то необходимо сформировать описание требований к обучающей выборке, которое можно будет транслировать на язык пользовательского интерфейса и запросить необходимую выборку у пользователя.}
 
             \scnheader{предобработка выборки}
-            \begin{scnrelfromset}{этапы}
+            \begin{scnrelfromset}{этап}
                 \scnitem{очистка}
                 \begin{scnindent}
                     \begin{scnrelfromset}{содержимое}
@@ -205,7 +194,7 @@
                                         \scntext{пример}{один признак в среднем имеет значение 10000 и 12}
                                         \scntext{примечание}{это может проявится в выполнении минимизации только по признаку с наибольшими значениями и плохой сходимости метода обучения}
                                     \end{scnindent}
-                                    \begin{scnrelfromset}{способы реализации}
+                                    \begin{scnrelfromset}{способ реализации}
                                         \scnitem{нормализация на отрезок (min-max нормализация)}
                                         \begin{scnindent}
                                             \scntext{примечание}{чаще всего используется}
@@ -252,9 +241,8 @@
             \begin{scnindent}
                 \scntext{примечание}{выбор относительно условный, то есть исследователь не ограничен исползованием только одного типа и.н.с. для решения задачи(как например, свёрточной сети для изображений, поскольку изображения можно обрабатывать и обычным многослойным персептроном). Речь идёт скорее о рекомендованной архитектуре, но это не  исключает использование любых других выриантов архитектур и их сочетаний в рамках одной модели}
                 \begin{scnindent}
-                    \begin{scnrelfromset}{пример}
+                    \begin{scnrelfromset}{пример рекомендации}
                         \begin{scnindent}
-                            \scnidtf{примеры рекомендаций}
                             \scnitem{изображения/видео --- сверхточные нейронные сети}
                             \scnitem{временные ряды --- многослойные персептроны или рекуррентные сети}
                             \scnitem{текстовая информация --- многослойные персептроны или рекуррентные сети}
@@ -279,20 +267,24 @@
             \begin{scnrelfromset}{разбиение}
                 \scnitem{стохастический градиентный спуск}
                 \begin{scnindent}
-                    \scnidtf{stochastic gradient descent --- SGD}
+                    \scnidtf{stochastic gradient descent}
+                    \scnidtf{SGD}
                 \end{scnindent}
                 \scnitem{метод Нестерова}
                 \scnitem{адаптивный градиент}
                 \begin{scnindent}
-                    \scnidtf{adaptive gradient --- AdaGrad}
+                    \scnidtf{adaptive gradient}
+                    \scnidtf{AdaGrad}
                 \end{scnindent}
                 \scnitem{адаптивная оценка момента}
                 \begin{scnindent}
-                    \scnidtf{adaptive moment estimation --- Adam}
+                    \scnidtf{adaptive moment estimation}
+                    \scnidtf{Adam}
                 \end{scnindent}
                 \scnitem{среднеквадратическое распространение}
                 \begin{scnindent}
-                    \scnidtf{root mean square propagation --- RMSProp}
+                    \scnidtf{root mean square propagation}
+                    \scnidtf{RMSProp}
                 \end{scnindent}
             \end{scnrelfromset}
 
