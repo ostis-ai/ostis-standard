@@ -30,6 +30,10 @@ ostis_standard_specification = [*
         Guliakina;
         Shunkevich
       };;
+    => nrel_note: [Компонент содержит Стандарт OSTIS.] (* <- lang_ru;; *);;
+    //Agent specification contains an agent procedure that finds an intersection of sets specification.
+    => nrel_explanation: [Компонент предоставляет предметные области и онтологии Стандарта OSTIS.] (*<- lang_ru;; *);;
+    //Component provides an agent that finds an intersection of sets specification
 
     => nrel_component_dependencies: ... (* <- empty_set;; *);;
     => nrel_component_address: [https://github.com/ostis-ai/ostis-standard] (* <- concept_github_url;; *);;
