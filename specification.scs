@@ -2,13 +2,14 @@ ostis_standard_specification
     <- concept_reusable_component_specification;;
 
 ostis_standard_specification = [*
-ostis_standard
-    <- concept_reusable_component;
-    <- concept_nonatomic_reusable_component;
-    <- concept_independent_reusable_component;
-    <- concept_reusable_kb_component;
-    <- concept_reusable_dynamically_installed_component;
-    <- concept_reusable_source_code_component;
+-> rrel_key_sc_element : ostis_standard
+(*
+    <- concept_reusable_component;;
+    <- concept_nonatomic_reusable_component;;
+    <- concept_independent_reusable_component;;
+    <- concept_reusable_kb_component;;
+    <- concept_reusable_dynamically_installed_component;;
+    <- concept_reusable_source_code_component;;
 
     => nrel_main_idtf: [Стандарт OSTIS](* <- lang_ru;; *);
 
@@ -21,16 +22,17 @@ ostis_standard
         part_5_intelligent_computer_systems_new_generation_implementation_platforms;
         part_6_methods_and_tools_of_reengineering_and_use_of_intelligent_computer_systems_new_generation;
         part_7_ecosystem_of_intelligent_computer_systems_of_the_new_generation_and_their_users
-      };
+      };;
 
     => nrel_authors:
       {
         Golenkov;
         Guliakina;
         Shunkevich
-      };
+      };;
 
-    => nrel_component_dependencies: ... (* <- empty_set;; *);
-    => nrel_component_address: [https://github.com/ostis-ai/ostis-standard] (* <- concept_github_url;; *);
+    => nrel_component_dependencies: ... (* <- empty_set;; *);;
+    => nrel_component_address: [https://github.com/ostis-ai/ostis-standard] (* <- concept_github_url;; *);;
     => nrel_installation_method: ... (* <- concept_component_dynamically_installed_method;; *);;
+*);;
 *];;
