@@ -1,22 +1,160 @@
-.system_element_3640
+.toc = [*
+.system_element_3059
 => nrel_idtf: [<p>Оглавление текущей версии Стандарта OSTIS</p>]
 (*
 	<- lang_ru;;
 	=> nrel_format: format_html;;
 *);
-=> nrel_explanation: [<p>Иерархический перечень разделов, входящих в состав<i>Стандарта OSTIS</i>, с дополнительной спецификацией некоторых разделов,указывающей альтернативные названия разделов, а также их авторов и редакторов</p>]
+=> nrel_explanation: [<p>Иерархический перечень разделов, входящих в состав <i>Стандарта OSTIS</i>, с дополнительной спецификацией некоторых разделов, указывающей альтернативные названия разделов, а также их авторов и редакторов</p>]
 (*
 	<- lang_ru;;
 	=> nrel_format: format_html;;
-	=> nrel_note: [<p>Существенно подчеркнуть, что иерархия разделов <i>СтандартаOSTIS</i> как и <i>разделов</i> любой другой <i>базы знаний</i> не означаетто, что <i>разделы</i> более низкого уровня иерархии входят в состав(являются частями) соответствующих разделов более высокого уровня. Связь между<i>разделами</i> разных уровней иерархии означает то, что <i>раздел</i>более низкого уровня иерархии является <i>дочерним</i> разделом по отношениюк соответствующему <i>разделу</i> более высокого уровня, т.е.<i>разделом</i>, который наследует свойства указанного <i>раздела</i> болеевысокого уровня.</p>]
+	=> nrel_note: [<p>Существенно подчеркнуть, что иерархия разделов <i>СтандартаOSTIS</i> как и <i>разделов</i> любой другой <i>базы знаний</i> не означает то, что <i>разделы</i> более низкого уровня иерархии входят в состав (являются частями) соответствующих разделов более высокого уровня. Связь между <i>разделами</i> разных уровней иерархии означает то, что <i>раздел</i> более низкого уровня иерархии является <i>дочерним</i> разделом по отношениюк соответствующему <i>разделу</i> более высокого уровня, т.е. <i>разделом</i>, который наследует свойства указанного <i>раздела</i> более высокого уровня.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 *);
-=> nrel_note: [<p>Описание логико-семантических связей каждого раздела<i>Стандарта OSTIS</i> с другими разделами <i>Стандарта OSTIS</i>приводится в рамках <i>титульной спецификации</i> каждого <i>раздела</i>.</p>]
+=> nrel_note: [<p>Описание логико-семантических связей каждого раздела <i>Стандарта OSTIS</i> с другими разделами <i>Стандарта OSTIS</i> приводится в рамках <i>титульной спецификации</i> каждого <i>раздела</i>.</p>]
 (*
 	<- lang_ru;;
 	=> nrel_format: format_html;;
 *);
-=> nrel_note: [<p>Названия тех <i>разделов</i>, которые планируется написать впоследующих изданиях <i>Стандарта OSTIS</i> или <i>разделов</i>, которые<u>в данном</u> издании <i>Стандарта OSTIS</i> не печатаются, посколькусодержание их не изменилось по сравнению с предыдущим <u>явно указываемым</u>изданием <i>Стандарта OSTIS</i>, выделяются также <u>жирным курсивом</u>, нодля них страницы в рамках данного издания <i>Стандарта OSTIS</i> неуказываются</p>];;
+=> nrel_note: [<p>Названия тех <i>разделов</i>, которые планируется написать в последующих изданиях <i>Стандарта OSTIS</i> или <i>разделов</i>, которые <u>в данном</u> издании <i>Стандарта OSTIS</i> не печатаются, поскольку содержание их не изменилось по сравнению с предыдущим <u>явно указываемым</u> изданием <i>Стандарта OSTIS</i>, выделяются также <u>жирным курсивом</u>, но для них страницы в рамках данного издания <i>Стандарта OSTIS</i> не указываются</p>]
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+
+ostis_standard
+=> nrel_section_decomposition: <
+	.system_element_3644;
+	.system_element_3640;
+	.system_element_3645;
+	.system_element_3641;
+	part_1_introduction_to_next_generation_intelligent_computer_systems
+	(*
+		=> nrel_section_decomposition: <
+			.system_element_375;
+			.system_element_364
+			(*
+				=> nrel_section_decomposition: <
+					.system_element_450;
+					.system_element_352;
+					.system_element_1115
+				>;;
+			*);
+			.system_element_1906
+		>;;
+	*);
+	part_2_semantic_representation_and_ontological_systematization_of_knowledge_in_intelligent_computer_systems_of_the_new_generation
+	(*
+		=> nrel_section_decomposition: <
+			.system_element_2831
+			(*
+				=> nrel_section_decomposition: <
+					.system_element_2381;
+					.system_element_2184;
+					.system_element_2305;
+					.system_element_2618;
+					.system_element_2354
+				>;;
+			*);
+			.system_element_3110
+			(*
+				=> nrel_section_decomposition: <
+					.system_element_2821;
+					.system_element_3083;
+					.system_element_2123;
+					.system_element_2132;
+					.system_element_2717;
+					.system_element_3090
+					(*
+						=> nrel_section_decomposition: <
+							.system_element_3063
+						>;;
+					*);
+					.system_element_2704;
+					.system_element_2723;
+					.system_element_3027;
+					.system_element_2715
+					(*
+						=> nrel_section_decomposition: <
+							.system_element_1985
+						>;;
+					*);
+					.system_element_3026
+				>;;
+			*)
+		>;;
+	*);
+	part_3_multiagent_problem_solvers_of_intelligent_computer_systems_of_the_new_generation
+	(*
+		=> nrel_section_decomposition: <
+			.system_element_3983
+			(*
+				=> nrel_section_decomposition: <
+					.system_element_3754;
+					.system_element_3984
+					(*
+						=> nrel_section_decomposition: <
+							.system_element_3728;
+							.system_element_4090
+						>;;
+					*);
+					.system_element_3801
+				>;;
+			*)
+		>;;
+	*);
+	part_4_ontological_models_of_interfaces_of_intelligent_computer_systems_of_the_new_generation
+	(*
+		=> nrel_section_decomposition: <
+			.system_element_1983;
+			.system_element_2085
+		>;;
+	*);
+	part_5_methods_and_tools_of_reengineering_and_use_of_intelligent_computer_systems_new_generation
+	(*
+		=> nrel_section_decomposition: <
+			.system_element_1873
+			(*
+				=> nrel_section_decomposition: <
+					.system_element_1856;
+					.system_element_1908;
+					.system_element_1909
+				>;;
+			*);
+			.system_element_1978
+		>;;
+	*);
+	part_6_intelligent_computer_systems_new_generation_implementation_platforms
+	(*
+		=> nrel_section_decomposition: <
+			.system_element_338
+			(*
+				=> nrel_section_decomposition: <
+					.system_element_0;
+					.system_element_18
+				>;;
+			*)
+		>;;
+	*);
+	part_7_ecosystem_of_intelligent_computer_systems_of_the_new_generation_and_their_users
+	(*
+		=> nrel_section_decomposition: <
+			.system_element_1131;
+			.system_element_1127
+			(*
+				=> nrel_section_decomposition: <
+					.system_element_1775
+				>;;
+			*);
+			.system_element_1140;
+			.system_element_1132;
+			.system_element_1148;
+			.system_element_1174
+		>;;
+	*)
+>;;
+*];;
