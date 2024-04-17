@@ -1,65 +1,65 @@
-.system_element_375
+.system_element_1891
 => nrel_inclusion: [*
 
-	.system_element_376
-	<- subject_domain;
-	-> .system_element_2: 
-		.system_element_347
+	.system_element_1892
+	<- .system_element_114;
+	-> rrel_studied_object_class: 
+		.system_element_188
 	;
-	-> .system_element_2: 
-		.system_element_377;
-		computer_system;
-		.system_element_378;
-		.system_element_379;
-		.system_element_380;
-		.system_element_381;
-		.system_element_382;
-		.system_element_383;
-		.system_element_384;
-		.system_element_385;
-		.system_element_386;
-		.system_element_387;
-		.system_element_388;
-		task;
-		.system_element_389;
-		.system_element_390;
-		.system_element_391;
-		.system_element_392;
-		.system_element_393;
-		.system_element_394;
-		.system_element_395;
-		.system_element_396;
-		.system_element_397;
-		.system_element_398;
-		.system_element_399;
-		.system_element_400;
-		.system_element_401;
-		.system_element_402;
-		.system_element_403;
-		.system_element_404;
-		.system_element_405;
-		intelligent_system;
-		.system_element_406;
-		.system_element_407;
-		.system_element_408;
-		.system_element_409;
-		.system_element_410;
-		.system_element_411;
-		.system_element_412;
-		.system_element_413;
-		.system_element_414;
-		.system_element_415;
-		.system_element_416;
-		.system_element_417;
-		.system_element_418;
-		.system_element_419
+	-> rrel_studied_object_class: 
+		.system_element_1308;
+		.system_element_189;
+		.system_element_1316;
+		.system_element_1317;
+		.system_element_1893;
+		.system_element_1332;
+		.system_element_1319;
+		.system_element_1333;
+		.system_element_1338;
+		.system_element_1340;
+		.system_element_1341;
+		.system_element_1342;
+		.system_element_1346;
+		.system_element_1351;
+		.system_element_1352;
+		.system_element_1357;
+		.system_element_1358;
+		.system_element_1343;
+		.system_element_1236;
+		.system_element_1361;
+		.system_element_1378;
+		.system_element_1297;
+		.system_element_1284;
+		.system_element_1894;
+		.system_element_1466;
+		.system_element_1873;
+		.system_element_1874;
+		.system_element_1222;
+		.system_element_1224;
+		.system_element_1262;
+		.system_element_1270;
+		.system_element_1277;
+		.system_element_1281;
+		.system_element_1282;
+		.system_element_1283;
+		.system_element_1286;
+		.system_element_1291;
+		.system_element_1294;
+		.system_element_1175;
+		.system_element_1402;
+		.system_element_1232;
+		.system_element_1271;
+		.system_element_1467;
+		.system_element_1468;
+		.system_element_1600;
+		.system_element_1272
 	;
-	-> .system_element_356: 
-		.system_element_420;
-		.system_element_421;
-		.system_element_422;
-		.system_element_423;
-		.system_element_424
+	-> rrel_explored_relation: 
+		.system_element_1344;
+		.system_element_1353;
+		.system_element_1384;
+		.system_element_1394;
+		.system_element_1588
 	;
 	=> nrel_idtf: [<p>Иерархическая система свойств (характеристик) кибернетическихсистем, определяющих общий (интегральный) уровень их качества</p>]
 	(*
@@ -84,12 +84,12 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> nrel_preface: [<p>Свойства (способности), которым должныудовлетворять <i>интеллектуальные системы</i>, рассматриваются в целом рядепубликаций. Тем не менее, для <u>практической</u> реализации<i>компьютерных систем</i>, обладающих указанными свойствами (способностями),т.е. <i>интеллектуальных компьютерных систем</i>, необходимо детализировать(уточнить) эти <i>свойства</i>, пытаясь свести их к более конструктивным,прозрачным и понятным для реализации свойствам.</p>]
+	=> .system_element_1895: [<p>Свойства (способности), которым должныудовлетворять <i>интеллектуальные системы</i>, рассматриваются в целом рядепубликаций. Тем не менее, для <u>практической</u> реализации<i>компьютерных систем</i>, обладающих указанными свойствами (способностями),т.е. <i>интеллектуальных компьютерных систем</i>, необходимо детализировать(уточнить) эти <i>свойства</i>, пытаясь свести их к более конструктивным,прозрачным и понятным для реализации свойствам.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_425: {
+	=> .system_element_1098: {
 		[<p>По каким свойствам (параметрам, характеристикам,способностям) кибернетических систем можно оценивать уровень их качества.</p>]
 		(*
 			<- lang_ru;;
@@ -151,12 +151,12 @@
 			=> nrel_format: format_html;;
 		*)
 	};
-	=> .system_element_426: <
-		.system_element_347
+	=> .system_element_1896: <
+		.system_element_188
 		(*
 			=> nrel_subdividing: {
-				.system_element_427;
-				computer_system
+				.system_element_1304;
+				.system_element_189
 				(*
 					=> nrel_idtf: [<p>искусственная кибернетическая система</p>]
 					(*
@@ -164,7 +164,7 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);
-				.system_element_428
+				.system_element_1897
 				(*
 					=> nrel_idtf: [<p>кибернетическая система, являющаяся симбиозом компонентов какестественного, так и искусственного происхождения</p>]
 					(*
@@ -174,10 +174,10 @@
 				*)
 			};;
 		*);
-		.system_element_396;
-		.system_element_392;
-		.system_element_402;
-		.system_element_404
+		.system_element_1297;
+		.system_element_1343;
+		.system_element_1222;
+		.system_element_1262
 		(*
 			=> nrel_idtf: [<p>уровень интеллекта кибернетическойсистемы</p>];;
 			=> nrel_idtf: [<p>интеллектуальность</p>]
@@ -186,23 +186,23 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		intelligent_system
+		.system_element_1277
 		(*
 			=> nrel_idtf: [<p>интеллектуальная кибернетическая система</p>];;
-			=> nrel_inclusion: .system_element_411;;
+			=> nrel_inclusion: .system_element_1294;;
 		*);
-		.system_element_385;
-		.system_element_429;
-		knowledge_base;
-		.system_element_430;
-		.system_element_387;
-		.system_element_414;
-		.system_element_393;
-		.system_element_403;
-		.system_element_415;
-		.system_element_399;
-		.system_element_416;
-		.system_element_417
+		.system_element_1340;
+		.system_element_1898;
+		.system_element_867;
+		.system_element_1899;
+		.system_element_1342;
+		.system_element_1232;
+		.system_element_1236;
+		.system_element_1224;
+		.system_element_1271;
+		.system_element_1466;
+		.system_element_1467;
+		.system_element_1468
 		(*
 			=> nrel_idtf: [<p>уровень рефлексии кибернетической системы</p>]
 			(*
@@ -210,11 +210,11 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_381;
-		.system_element_431;
-		.system_element_432;
-		.system_element_433;
-		.system_element_419
+		.system_element_1332;
+		.system_element_1607;
+		.system_element_1900;
+		.system_element_1901;
+		.system_element_1272
 		(*
 			=> nrel_idtf: [<p>способность кибернетической системы своей внутренней и внешней деятельностью обеспечиватьвысокий уровень интеллекта тех многоагентных систем, членом (агентом) которыхона является</p>]
 			(*
@@ -223,23 +223,44 @@
 			*);;
 		*)
 	>;
-	=> .system_element_434: <
-		.system_element_435;
-		.system_element_436;
-		.system_element_437;
-		.system_element_438;
-		.system_element_439
+	=> .system_element_772: <
+		.system_element_1902;
+		.system_element_1903;
+		.system_element_1904;
+		.system_element_1419;
+		.system_element_1905;
+		.system_element_1906;
+		.system_element_1300;
+		.system_element_1865;
+		.system_element_1866;
+		.system_element_1867;
+		.system_element_1863;
+		.system_element_1862;
+		.system_element_1252;
+		.system_element_1267;
+		.system_element_1268;
+		.system_element_1907;
+		.system_element_1864;
+		.system_element_1908;
+		.system_element_1909;
+		.system_element_1910;
+		.system_element_1911;
+		.system_element_1912;
+		.system_element_1602;
+		.system_element_1605;
+		.system_element_1913
 	>;
-	<= .system_element_440: <
-		.system_element_441;
-		.system_element_442;
-		.system_element_443;
-		.system_element_444;
-		.system_element_445;
-		.system_element_446;
-		.system_element_447;
-		.system_element_448;
-		.system_element_449
+	<= .system_element_118: <
+		.system_element_1299;
+		.system_element_1914;
+		.system_element_1915;
+		.system_element_1916;
+		.system_element_1917;
+		.system_element_1918;
+		.system_element_1919;
+		.system_element_1577;
+		.system_element_1920;
+		.system_element_1837
 	>
 ;
 	=> nrel_inclusion: .intro_hs_segment1;
@@ -251,5 +272,6 @@
 	=> nrel_inclusion: .intro_hs_segment7;
 	=> nrel_inclusion: .intro_hs_segment8;
 	=> nrel_inclusion: .intro_hs_segment9;
+	=> nrel_inclusion: .intro_hs_segment10;
 	=> nrel_inclusion: .intro_hs_final_segment;;
 *];;

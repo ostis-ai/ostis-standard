@@ -1,4 +1,4 @@
-.system_element_3680
+.system_element_5718
 => nrel_inclusion: [*
 	=> nrel_explanation: [<p><i>Система ключевых знаков Стандарта OSTIS</i> должнастать целостным дополнением  к Оглавлению Стандарта OSTIS
 	<ul>
@@ -10,9 +10,9 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_371
-	=> .system_element_426: <
-		.system_element_1553
+	.system_element_2032
+	=> .system_element_1896: <
+		.system_element_2079
 		(*
 			=> nrel_idtf: [<p>база знаний, представленная в SC-коде</p>];;
 			=> nrel_idtf: [<p>sc-модель базы знаний</p>]
@@ -21,16 +21,16 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_3681;
-		.system_element_3682;
-		.system_element_3683;
-		.system_element_3684;
-		.system_element_3685;
-		.system_element_3686;
-		.system_element_3687;
-		.system_element_3688;
-		.system_element_3689;
-		.system_element_3688
+		.system_element_5719;
+		.system_element_5720;
+		.system_element_5721;
+		.system_element_5722;
+		.system_element_5723;
+		.system_element_5724;
+		.system_element_5725;
+		.system_element_5726;
+		.system_element_5727;
+		.system_element_5726
 		(*
 			=> nrel_idtf: [<p>онтологическая модель интерфейса, построенная на основе SC-кода</p>]
 			(*
@@ -38,8 +38,8 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_3690;
-		.system_element_3691
+		.system_element_5728;
+		.system_element_5729
 		(*
 			=> nrel_idtf: [<p>программная система интерпретации логико-семантических моделейostis-систем, построенная на основе графовой СУБД</p>];;
 			=> nrel_idtf: [<p>система управления базами знаний (СУБЗ) ostis-систем, построенная наоснове графовых СУБД</p>]
@@ -48,7 +48,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_3692
+		.system_element_5730
 		(*
 			=> nrel_idtf: [<p>компьютер с ассоциативной графодинамической (структурнореконфигурируемой) памятью, ориентированный на реализацию ostis-систем</p>];;
 			=> nrel_idtf: [<p>компьютер с ассоциативной графодинамической памятью, обеспечивающийинтерпретацию логико-семантических моделей ostis-систем</p>]
@@ -62,9 +62,9 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		project_ostis;
-		.system_element_371;
-		.system_element_591
+		.system_element_2306;
+		.system_element_2032;
+		.system_element_1598
 		(*
 			=> nrel_idtf: [<p>Экосистема ostis-систем и их пользователей</p>];;
 			=> nrel_idtf: [<p>Вариант построения smart-общества (общества 5.0) на основеostis-систем</p>]
@@ -73,7 +73,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_3693
+		.system_element_5731
 		(*
 			=> nrel_idtf: [<p>многоагентная модель обработки информации</p>];;
 			=> nrel_idtf: [<p><i>модель обработки информации</i>, рассматривающая <i>процессобработки информации</i> как <i>деятельность</i>, выполняемую некоторым<i>коллективом</i> самостоятельных <i>информационных агентов</i> (агентовобработки информации)</p>]
@@ -83,8 +83,8 @@
 			*);;
 		*)
 	>;
-	=> .system_element_3694: technology_OSTIS;
-	=> .system_element_3695: ostis_system
+	=> .system_element_5732: .system_element_2028;
+	=> .system_element_5733: .system_element_180
 	(*
 		=> nrel_idtf: [<p>множество всевозможных ostis-систем</p>];;
 		=> nrel_idtf: [<p>компьютерная система, построенная по Технологии OSTIS</p>]
@@ -93,10 +93,10 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	=> .system_element_3696: <
-		.system_element_3697;
-		.system_element_3698;
-		.system_element_3699
+	=> .system_element_5734: <
+		.system_element_5735;
+		.system_element_5736;
+		.system_element_5737
 		(*
 			=> nrel_idtf: [<p>интерфейс компьютерной системы, построенный на основе онтологий</p>];;
 			=> nrel_idtf: [<p>ontology based interface</p>]
@@ -105,15 +105,15 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_3700;
-		.system_element_951;
-		.system_element_3701;
-		.system_element_3702;
-		.system_element_3703;
-		.system_element_3704;
-		.system_element_3705;
-		.system_element_3706;
-		.system_element_3707
+		.system_element_5738;
+		.system_element_1544;
+		.system_element_5739;
+		.system_element_5740;
+		.system_element_5741;
+		.system_element_2003;
+		.system_element_5742;
+		.system_element_5743;
+		.system_element_1926
 		(*
 			=> nrel_idtf: [<p>мультимодальная интеллектуальная компьютерная система</p>]
 			(*
@@ -121,20 +121,20 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_3708;
-		.system_element_3709;
-		.system_element_3710;
-		.system_element_3711;
-		.system_element_3712;
-		.system_element_3713;
-		.system_element_3714;
-		.system_element_3715;
-		.system_element_3716;
-		.system_element_3717;
-		.system_element_3718;
-		non_atomic_section;
-		atomic_section;
-		.system_element_45
+		.system_element_5744;
+		.system_element_5745;
+		.system_element_5746;
+		.system_element_5747;
+		.system_element_5748;
+		.system_element_5749;
+		.system_element_5750;
+		.system_element_5751;
+		.system_element_5752;
+		.system_element_5753;
+		.system_element_5754;
+		.system_element_5755;
+		.system_element_5756;
+		.system_element_1110
 		(*
 			=> nrel_idtf: [<p>ключевая сущность*</p>]
 			(*
@@ -142,13 +142,13 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_523;
-		scg_code;
-		scs_code;
-		.system_element_510;
-		.system_element_1371;
-		.system_element_3719;
-		subject_domain
+		.system_element_391;
+		.system_element_1196;
+		.system_element_761;
+		.system_element_1186;
+		.system_element_453;
+		.system_element_5757;
+		.system_element_114
 		(*
 			=> nrel_idtf: [<p>sc-модель предметной области</p>];;
 			=> nrel_idtf: [<p>sc-текст, являющийся представлением предметной области</p>]
@@ -157,8 +157,8 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_3720;
-		.system_element_3721
+		.system_element_5758;
+		.system_element_5759
 		(*
 			=> nrel_idtf: [<p>подкласс максимального объекта исследования'</p>]
 			(*
@@ -166,11 +166,11 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		rrel_explored_relation;
-		.system_element_3722;
-		ontology;
-		.system_element_3723;
-		formed_set
+		.system_element_1060;
+		.system_element_5760;
+		.system_element_4569;
+		.system_element_5761;
+		.system_element_4702
 		(*
 			=> nrel_idtf: [<p>конечное множество, все элементы которого представленысоответствующими sc-элементами</p>]
 			(*
@@ -178,14 +178,14 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		binary_relation;
-		oriented_relation;
-		nrel_first_domain;
-		nrel_second_domain;
+		.system_element_949;
+		.system_element_842;
+		.system_element_843;
+		.system_element_845;
 		nrel_explanation;
-		nrel_semantic_equivalence;
-		.system_element_1163;
+		.system_element_232;
+		.system_element_408;
 		nrel_note;
-		.system_element_514
+		.system_element_850
 	>;;
 *];;

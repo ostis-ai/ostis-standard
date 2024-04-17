@@ -1,46 +1,47 @@
-.system_element_2717
+.system_element_3651
 => nrel_inclusion: [*
 
-	subject_domain_of_structures
-	-> .system_element_1210: 
-		structure
+	.system_element_3652
+	<- .system_element_114;
+	-> rrel_maximum_studied_object_class: 
+		.system_element_3653
 	;
-	-> .system_element_2: 
-		connected_structure;
-		non_connected_structure;
-		trivial_structure;
-		non_trivial_structure;
-		second_level_structure;
-		semantic_level_structural_element;
-		quantity_semantic_level_structural_element
+	-> rrel_studied_object_class: 
+		.system_element_3654;
+		.system_element_3655;
+		.system_element_3656;
+		.system_element_3657;
+		.system_element_3658;
+		.system_element_3659;
+		.system_element_3660
 	;
-	-> .system_element_356: 
-		rrel_structure_element;
-		rrel_unrepresented_set;
-		rrel_completely_represented_set;
-		rrel_partly_represented_set;
-		rrel_structure_element_not_set;
-		rrel_maximum_set;
-		rrel_non_maximum_set;
-		rrel_primary_element;
-		rrel_second_element;
-		rrel_second_level_element;
-		rrel_metaconnection;
-		nrel_polymorphic;
-		nrel_polymorphism;
-		nrel_gomomorphic;
-		nrel_gomomorphism;
-		nrel_isomorphic;
-		nrel_isomorphism;
-		nrel_automorphic;
-		nrel_automorphism;
-		nrel_structures_analogy;
-		nrel_sameness;
-		nrel_difference;
-		nrel_primary_syntax_sc_text_structure
+	-> rrel_explored_relation: 
+		.system_element_3661;
+		.system_element_3662;
+		.system_element_3663;
+		.system_element_3664;
+		.system_element_3665;
+		.system_element_3666;
+		.system_element_3667;
+		.system_element_3668;
+		.system_element_3669;
+		.system_element_3670;
+		.system_element_3671;
+		.system_element_3672;
+		.system_element_3673;
+		.system_element_3674;
+		.system_element_3675;
+		.system_element_3676;
+		.system_element_3677;
+		.system_element_3678;
+		.system_element_3679;
+		.system_element_3680;
+		.system_element_3681;
+		.system_element_3682;
+		.system_element_3683
 	;;
 
-	structure
+	.system_element_3653
 	=> nrel_idtf: [<p>sc-структура</p>]
 	(*
 		<- lang_ru;;
@@ -51,73 +52,115 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
+	<= nrel_inclusion: .system_element_3568;
 	=> nrel_subdividing: {
-		connected_structure;
-		non_connected_structure
+		.system_element_3654;
+		.system_element_3655
 	};
 	=> nrel_subdividing: {
-		trivial_structure;
-		non_trivial_structure
+		.system_element_3656;
+		.system_element_3657
 	};
 	=> nrel_explanation: [<p><b><i>структура</i></b> --- множество <i>sc-элементов</i>, удаление одного из которых может привести к нарушению целостности этого множества.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> nrel_subdividing: {
-		process
+	=> nrel_subdividing: .system_element_3684
+	(*
+		<=> .system_element_155: {
+			.system_element_1517
+			(*
+				=> nrel_idtf: [<p>динамическая структура</p>];;
+				=> nrel_idtf: [<p>структура, состав которой меняется с течением времени</p>]
+				(*
+					<- lang_ru;;
+					=> nrel_format: format_html;;
+				*);;
+				=> nrel_idtf: [<p>нестационарная структура</p>]
+				(*
+					<- lang_ru;;
+					=> nrel_format: format_html;;
+				*);;
+			*);
+			.system_element_3685
+			(*
+				=> nrel_idtf: [<p>стационарная структура</p>];;
+				=> nrel_idtf: [<p>структура, не изменяющаяся во времени</p>]
+				(*
+					<- lang_ru;;
+					=> nrel_format: format_html;;
+				*);;
+				=> nrel_idtf: [<p>структура, состав которой не меняется с течением времени</p>]
+				(*
+					<- lang_ru;;
+					=> nrel_format: format_html;;
+				*);;
+			*)
+		};;
+	*);
+	=> nrel_subdividing: .system_element_3686
+	(*
+		<=> .system_element_155: {
+			.system_element_3687
+			(*
+				=> nrel_idtf: [<p>(структура ⋂ временная сущность)</p>]
+				(*
+					<- lang_ru;;
+					=> nrel_format: format_html;;
+				*);;
+			*);
+			.system_element_3688
+			(*
+				=> nrel_idtf: [<p>(структура ⋂ постоянная сущность)</p>]
+				(*
+					<- lang_ru;;
+					=> nrel_format: format_html;;
+				*);;
+			*)
+		};;
+	*);
+	=> nrel_explanation: [<p>Существующие подходы к разработке <b>баз знаний</b> основываются на рассмотрении в качестве объектов спецификации конкретных элементов базы знаний (классов, экземпляров, отношений и так далее). Однако при накоплении больших объемов информации в базе знаний возникает необходимость выделять целые фрагменты базы знаний и иметь возможность их специфицировать, рассматривая как отдельные сущности.Такой фрагмент базы знаний назван <b>структурой</b> (sc-структурой). Под структурой будем понимать множество sc-элементов, удаление одного из которых может привести к нарушению целостности этого множества. Каждая структура представляет собой sc-элемент, обозначающий некоторый текст SC-кода, который может быть объектом спецификации, в том числе входить в состав других структур, быть связанным с другими сущностями различнымиотношениями.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_explanation: [<p>Понятие <b>структуры</b> является основой для представления знаний, метазнаний и их структуризации, а также является одним из наиболее общих (с точки зрения уточнения семантики) понятий при описании свойств какого-либо объекта.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_explanation: [<p><b>структура</b> может изображаться путем явного указания всех пар принадлежности элементов этой структуре, а также в виде контура, содержащего все элементы, входящие в состав этой структуры.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+		=> .system_element_242: "file://images/sd_structures/example_of_scg_structure.png"
 		(*
-			=> nrel_idtf: [<p>динамическая структура</p>];;
-			=> nrel_idtf: [<p>нестационарная структура</p>]
+			<- concept_file;;
+			=> nrel_format: format_png;;
+			=> nrel_note: [<p>Пример полного и сокращенного представления структуры в SCg-коде.</p>]
 			(*
 				<- lang_ru;;
 				=> nrel_format: format_html;;
 			*);;
-		*);
-		.system_element_2718
-		(*
-			=> nrel_idtf: [<p>стационарная структура</p>];;
-			=> nrel_idtf: [<p>структура, не изменяющаяся во времени</p>]
-			(*
-				<- lang_ru;;
-				=> nrel_format: format_html;;
-			*);;
-		*)
-	};
-	=> nrel_subdividing: {
-		.system_element_2719
-		(*
-			=> nrel_idtf: [<p>(структура ⋂ временная сущность)</p>]
-			(*
-				<- lang_ru;;
-				=> nrel_format: format_html;;
-			*);;
-		*);
-		.system_element_2720
-		(*
-			=> nrel_idtf: [<p>(структура ⋂ постоянная сущность)</p>]
-			(*
-				<- lang_ru;;
-				=> nrel_format: format_html;;
-			*);;
-		*)
-	};;
+		*);;
+	*);;
 
-	connected_structure
-	=> nrel_explanation: [<p><i>Структуре</i>, представленной в <i>SC-коде</i>, поставим в соответствие орграф, вершинами которого являются <i><b>sc-элементы</b></i>, а дугами --- пары инцидентности, связывающие <i>sc-коннекторы</i> с инцидентными им <i><b>sc-элементами</b></i>, которые являются компонентами указанных <i>sc-коннекторов</i>.Если полученный таким способом орграф является связным орграфом, то исходную структуру будем считать <b><i>связной структурой</i></b>.</p>]
+	.system_element_3654
+	=> nrel_explanation: [<p><i>структуре</i>, представленной в <i>SC-коде</i>, поставим в соответствие орграф, вершинами которого являются <i><b>sc-элементы</b></i>, а дугами --- пары инцидентности, связывающие <i>sc-коннекторы</i> с инцидентными им <i><b>sc-элементами</b></i>, которые являются компонентами указанных <i>sc-коннекторов</i>. Если полученный таким способом орграф является связным орграфом, то исходную структуру будем считать <b><i>связной структурой</i></b>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	non_connected_structure
-	=> nrel_explanation: [<p><i>Структуре</i>, представленной в <i>SC-коде</i>, поставим в соответствие орграф, вершинами которого являются <i><b>sc-элементы</b></i>, а дугами --- пары инцидентности, связывающие <i>sc-коннекторы</i> с инцидентными им <i><b>sc-элементами</b></i>, которые являются компонентами указанных <i>sc-коннекторов</i>.Если полученный таким способом орграф не является связным орграфом, то исходную структуру будем считать <b><i>несвязной структурой</i></b>.</p>]
+	.system_element_3655
+	=> nrel_explanation: [<p><i>структуре</i>, представленной в <i>SC-коде</i>, поставим в соответствие орграф, вершинами которого являются <i><b>sc-элементы</b></i>, а дугами --- пары инцидентности, связывающие <i>sc-коннекторы</i> с инцидентными им <i><b>sc-элементами</b></i>, которые являются компонентами указанных <i>sc-коннекторов</i>. Если полученный таким способом орграф не является связным орграфом, то исходную структуру будем считать <b><i>несвязной структурой</i></b>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	trivial_structure
+	.system_element_3656
 	=> nrel_idtf: [<p>структура первого уровня</p>]
 	(*
 		<- lang_ru;;
@@ -129,61 +172,90 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	non_trivial_structure
-	=> nrel_inclusion: second_level_structure;
+	.system_element_3657
+	=> nrel_inclusion: .system_element_3658;
 	=> nrel_explanation: [<p><b><i>нетривиальная структура</i></b> --- <i>структура</i>, среди элементов которой есть хотя бы одна связка.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	rrel_structure_element
-	<- auxiliary_concept;
+	.system_element_3689
+	-> .system_element_3661;
+	-> .system_element_3666;
+	-> .system_element_3667;
+	-> .system_element_3668;
+	-> .system_element_3669;;
+
+	.system_element_3661
+	<- .system_element_3354;
 	=> nrel_subdividing: {
-		rrel_unrepresented_set;
-		rrel_completely_represented_set;
-		rrel_partly_represented_set;
-		rrel_structure_element_not_set
+		.system_element_3662
+		(*
+			=> nrel_idtf: [<p>множество, не представленное в рамках данной структуры'</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);
+		.system_element_3663
+		(*
+			=> nrel_idtf: [<p>множество, полностью представленное в рамках данной структуры'</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);
+		.system_element_3664
+		(*
+			=> nrel_idtf: [<p>множество, частично представленное в рамках данной структуры'</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);
+		.system_element_3665
 	};
 	=> nrel_subdividing: {
-		rrel_maximum_set;
-		rrel_non_maximum_set
+		.system_element_3666;
+		.system_element_3667
 	};
-	=> nrel_explanation: [<p><b><i>элемент структуры'</i></b> --- <i>неосновное понятие</i>, <i>ролевое отношение</i>, указывающее на все элементы каждой структуры.В рамках заданной структуры ее элементы можно классифицировать по заданным признакам:
+	=> nrel_explanation: [<p><b><i>элемент структуры'</i></b> --- <i>неосновное понятие</i>, <i>ролевое отношение</i>, указывающее на все элементы каждой структуры.В рамках заданной структуры ее <i>элементы</i> можно классифицировать по заданным признакам:
 	<ul>
 		<li> насколько полно в рамках <u>заданной <i>структуры</i></u> представлено множество, обозначаемое <i>заданным sc-элементом</i> вместе с соответствующими дугами принадлежности;
 		<li> существуют ли в рамках <u>заданной <i>структуры</i></u> <i>sc-элементы</i>, обозначающие множества, являющиеся надмножествами того множества, которое обозначается <u>заданным <i>sc-элементом</i></u>;
-		<li> уровень (этаж) иерархии перехода от знаков к метазнакам для <u>заданного <i>sc-элемента</i></u> в рамках заданной <i>структуры</i>.</li>
+		<li> уровень ("этаж") иерархии перехода от знаков к метаилзнакам для <u>заданного <i>sc-элемента</i></u> в рамках заданной <i>структуры</i>.</li>
 	<ul></p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
+	*);
+	=> .system_element_2035: "file://images/sd_structures/example_of_element_structure.png"
+	(*
+		<- concept_file;;
+		=> nrel_format: format_png;;
+		=> nrel_idtf: [<p>Рисунок. Пример описания элементов структуры на SCg-коде.</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+		<- .system_element_243;;
 	*);;
 
-	rrel_unrepresented_set
-	=> nrel_idtf: [<p>множество, не представленное в рамках данной структуры'</p>]
-	(*
-		<- lang_ru;;
-		=> nrel_format: format_html;;
-	*);
+	.system_element_3662
 	=> nrel_idtf: [<p>быть знаком множества, элементы которого не являются элементами данной структуры'</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<- role_relation;
+	<- .system_element_3355;
 	=> nrel_explanation: [<p><b><i>непредставленное множество'</i></b> --- <i>ролевое отношение</i>, связывающее структуру со знаком множества, все элементы которого не являются элементами данной структуры.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	rrel_completely_represented_set
-	=> nrel_idtf: [<p>множество, полностью представленное в рамках данной структуры'</p>]
-	(*
-		<- lang_ru;;
-		=> nrel_format: format_html;;
-	*);
+	.system_element_3663
 	=> nrel_idtf: [<p>множество, все элементы которого являются элементами данной структуры'</p>]
 	(*
 		<- lang_ru;;
@@ -194,19 +266,14 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<- role_relation;
+	<- .system_element_3355;
 	=> nrel_explanation: [<p><b><i>полностью представленное множество'</i></b> --- <i>ролевое отношение</i>, связывающее <i>структуру</i> со знаком множества (любого семантического типа --- класса, связки или структуры), все элементы которого являются элементами данной <i>структуры</i>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	rrel_partly_represented_set
-	=> nrel_idtf: [<p>множество, частично представленное в рамках данной структуры'</p>]
-	(*
-		<- lang_ru;;
-		=> nrel_format: format_html;;
-	*);
+	.system_element_3664
 	=> nrel_idtf: [<p>множество, некоторые элементы которого являются элементами данной структуры'</p>]
 	(*
 		<- lang_ru;;
@@ -217,31 +284,31 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<- role_relation;
+	<- .system_element_3355;
 	=> nrel_explanation: [<p><b><i>частично представленное множество'</i></b> --- ролевое отношение, связывающее структуру со знаком множества, не все элементы которого являются элементами данной структуры.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	rrel_structure_element_not_set
-	<- role_relation;;
+	.system_element_3665
+	<- .system_element_3355;;
 
-	rrel_maximum_set
+	.system_element_3666
 	=> nrel_explanation: [<p><b><i>максимальное множество'</i></b> --- <i>ролевое отношение</i>, связывающее <i>структуру</i> со знаком множества, для которого не существует множества, которое было бы надмножеством указанного множества и знак которого был бы элементом этой же структуры.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	rrel_non_maximum_set
+	.system_element_3667
 	=> nrel_explanation: [<p><b><i>немаксимальное множество'</i></b> --- <i>ролевое отношение</i>, связывающее <i>структуру</i> со знаком множества, для которого в рамках данной <i>структуры</i> существует множество, являющееся надмножеством указанного множества.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	rrel_primary_element
+	.system_element_3668
 	=> nrel_idtf: [<p>первичный элемент данной структуры'</p>]
 	(*
 		<- lang_ru;;
@@ -252,22 +319,22 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<- role_relation;
-	<- semantic_level_structural_element;
-	<= nrel_inclusion: rrel_structure_element;
-	=> nrel_explanation: [<p><b><i>первичный элемент'</i></b> --- ролевое отношение, указывающее на элемент <i>структуры</i>, являющийся либо терминальным элементом, либо знаком множества, такого что не существует другого элемента этой же структуры, который был бы элементом множества, обозначаемого первым из указанных элементов структуры. При этом соответствующая пара принадлежности может существовать, но в состав данной структуры не входить.</p>]
+	<- .system_element_3355;
+	<- .system_element_3659;
+	<= nrel_inclusion: .system_element_3661;
+	=> nrel_explanation: [<p><b><i>первичный элемент'</i></b> --- ролевое отношение, указывающее на элемент <i>структуры</i>, являющийся либо терминальным элементом, либо знаком такого множества, что не существует другого элемента этой же структуры, который был бы элементом множества, обозначаемого первым из указанных элементов структуры. При этом соответствующая пара принадлежности может существовать, но в состав данной структуры не входить.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	rrel_second_element
+	.system_element_3669
 	=> nrel_idtf: [<p>вторичный элемент данной структуры'</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> nrel_idtf: [<p>элемент данной структуры имеющий семантический уровень более 2'</p>]
+	=> nrel_idtf: [<p>элемент данной структуры, имеющий семантический уровень более 2'</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
@@ -277,34 +344,34 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<- role_relation;
-	<= nrel_inclusion: rrel_structure_element;
+	<- .system_element_3355;
+	<= nrel_inclusion: .system_element_3661;
 	=> nrel_explanation: [<p><b><i>вторичный элемент'</i></b> --- ролевое отношение, указывающее на элемент структуры, обозначающий множество, все или некоторые элементы которого являются элементами указанной структуры.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> nrel_inclusion: rrel_second_level_element;;
+	=> nrel_inclusion: .system_element_3670;;
 
-	rrel_second_level_element
-	<- role_relation;
-	<- semantic_level_structural_element;
+	.system_element_3670
+	<- .system_element_3355;
+	<- .system_element_3659;
 	=> nrel_explanation: [<p><b><i>элементом второго уровня'</i></b> в рамках заданной <i>структуры</i> может быть связка первичных элементов, тривиальная структура из первичных элементов или класс первичных элементов.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2721
+	.system_element_3690
 	=> nrel_explanation: [<p><b><i>структура второго уровня</i></b> --- <i>структура</i>, среди элементов которой есть хотя бы один <i>элемент второго уровня'</i>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	semantic_level_structural_element
-	<- parameter;
-	=> nrel_explanation: [<p><b><i>семантический уровень структурного элемента</i></b> представляет собой <i>параметр</i>, каждый элемент которого является классом <i>sc-дуг принадлежности</i>, связывающих некоторую <i>структуру</i> с теми ее элементами, который имеют одинаковый семантический уровень в рамках данной структуры. Значением данного параметра является число, обозначающее указанный семантический уровень.<b><i>семантический уровень структурного элемента</i></b> вычисляется следующим образом:
+	.system_element_3659
+	<- .system_element_854;
+	=> nrel_explanation: [<p><b><i>семантический уровень структурного элемента</i></b> представляет собой <i>параметр</i>, каждый элемент которого является классом <i>sc-дуг принадлежности</i>, связывающих некоторую <i>структуру</i> с теми ее элементами, которые имеют одинаковый семантический уровень в рамках данной структуры. Значением данного параметра является число, обозначающее указанный семантический уровень.<b><i>семантический уровень структурного элемента</i></b> вычисляется следующим образом:
 	<ul>
 		<li> элементы структуры, входящие в нее с атрибутом <i>первичный элемент'</i> имеют семантический уровень 1;
 		<li> уровень элемента, не являющегося <i>первичным элементом'</i> структуры вычисляется путем прибавления 1 к максимальному из уровней элементов этого элемента (множества), входящих в эту же структуру. Например, <i>sc-дуга</i>, соединяющая два <i>первичных элемента' структуры</i> будет иметь семантический уровень 2, а <i>sc-элемент</i>, обозначающий отношение, которому принадлежит указанная <i>sc-дуга</i> --- семантический уровень 3.</li>
@@ -312,66 +379,73 @@
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
-	*);
-	=> .system_element_1913: "file://images/sd_structures/sem_level_struct_elem.png"
-	(*
-		<- concept_file;;
-		=> nrel_format: format_png;;
+		=> .system_element_242: "file://images/sd_structures/sem_level_struct_elem.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*);;
 	*);;
 
-	quantity_semantic_level_structural_element
-	<- parameter;
-	=> nrel_explanation: [<p><b><i>количество семантических уровней элементов структуры</i></b> --- параметр, каждый элемент которого представляет собой класс структур, у которых совпадает максимальный среди семантических уровней элементов этих структур.Значением данного параметра является число, совпадающее с указанным максимальным семантическим уровнем элементов.</p>]
-	(*
-		<- lang_ru;;
-		=> nrel_format: format_html;;
-	*);;
-
-	rrel_metaconnection
-	<- role_relation;
-	<= nrel_inclusion: rrel_second_element;
-	=> nrel_explanation: [<p> Каждая входящая в структуру связь, хотя бы одним компонентом которой является связь, входящая в эту же структуру, элементами которой являются <i>первичные элементы'</i> этой структуры, является <b><i>метасвязью'</i></b> указанной структуры;
-	<li> Каждая входящая в структуру связь, хотя бы одним компонентом которой является <b><i>метасвязь'</i></b> этой структуры также является <b><i>метасвязью'</i></b> указанной структуры;</p>]
+	.system_element_3660
+	<- .system_element_854;
+	=> nrel_explanation: [<p><b><i>количество семантических уровней элементов структуры</i></b> --- параметр, каждый элемент которого представляет собой класс структур, у которых совпадает максимальный среди семантических уровней элементов этих структур. Значением данного параметра является число, совпадающее с указанным максимальным семантическим уровнем элементов.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	nrel_polymorphic
-	<= nrel_inclusion: nrel_mapping;
-	<- binary_relation;
+	.system_element_3671
+	<- .system_element_3355;
+	<= nrel_inclusion: .system_element_3669;
+	=> nrel_explanation: [<p> Каждая входящая в структуру связь, хотя бы одним компонентом которой является связь, входящая в эту же структуру, элементами которой являются <i>первичные элементы'</i> этой структуры, является <b><i>метасвязью'</i></b> указанной структуры.
+	<li> Каждая входящая в структуру связь, хотя бы одним компонентом которой является <b><i>метасвязь'</i></b> этой структуры также является <b><i>метасвязью'</i></b> указанной структуры.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+
+	.system_element_3653
+	=> nrel_note: [<p>Тот факт, что в качестве формальной основы представления знаний в SC-коде лежит теория графов и теория множеств, позволяет анализировать не только <u>внешние</u> связи рассматриваемого фрагмента базы знаний с другими элементами базы знаний, но и <u>внутреннюю</u> структуру этих фрагментов с необходимой степенью детализации, то есть выявлять в базе знаний аналогии, сходства, различия, строить различные виды соответствий между фрагментами.Между <b>структурами</b> можно определять ряд <b>соответствий</b>, таких как гомоморфизм, полиморфизм, автоморфизм, изоморфизм, а также аналогичность структур, что позволяет фиксировать факт наличия некоторой аналогии, сходства и различия некоторых подструктур рассматриваемых структур.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+
+	.system_element_3672
+	<= nrel_inclusion: .system_element_3619;
+	<- .system_element_949;
 	=> nrel_explanation: [<p><b><i>полиморфность*</i></b> --- это <i>соответствие</i>, заданное на <i>структурах</i>, при котором каждому элементу из области определения соответствия (первой <i>структуры</i>) ставится в соответствие один или более элемент из области значения соответствия (второй <i>структуры</i>), при этом существует хотя бы один элемент области определения соответствия, которому соответствуют два или более элемента из области значения соответствия.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	nrel_polymorphism
-	<- binary_relation;;
+	.system_element_3673
+	<- .system_element_949;;
 
-	nrel_gomomorphic
+	.system_element_3674
 	=> nrel_idtf: [<p>гомоморфность структур*</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<= nrel_inclusion: nrel_mapping;
-	<- binary_relation;
+	<= nrel_inclusion: .system_element_3619;
+	<- .system_element_949;
 	=> nrel_explanation: [<p><b><i>гомоморфность*</i></b> --- это <i>соответствие</i>, заданное на <i>структурах</i>, при котором каждому элементу из области определения соответствия (первой <i>структуры</i>) ставится в соответствие только один элемент из области значения соответствия (второй <i>структуры</i>).</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_1913: "file://images/sd_structures/homomorphism.png"
+	=> .system_element_242: "file://images/sd_structures/homomorphism.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);;
 
-	nrel_gomomorphism
-	<- binary_relation;;
+	.system_element_3675
+	<- .system_element_949;;
 
-	nrel_isomorphic
+	.system_element_3676
 	=> nrel_idtf: [<p>изоморфное соответствие*</p>]
 	(*
 		<- lang_ru;;
@@ -382,72 +456,72 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<= nrel_inclusion: nrel_gomomorphic;
-	<- binary_relation;
+	<= nrel_inclusion: .system_element_3674;
+	<- .system_element_949;
 	=> nrel_explanation: [<p><b><i>изоморфность*</i></b> --- это <i>гомоморфность*</i>, при которой для каждого элемента из области значения существует ровно один соответствующий элемент из области определения.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_1913: "file://images/sd_structures/isomorphism.png"
+	=> .system_element_242: "file://images/sd_structures/isomorphism.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);;
 
-	nrel_isomorphism
-	<- binary_relation;;
+	.system_element_3677
+	<- .system_element_949;;
 
-	.system_element_2722
-	<= nrel_inclusion: nrel_gomomorphic;
-	<- binary_relation;
+	.system_element_3678
+	<= nrel_inclusion: .system_element_3674;
+	<- .system_element_949;
 	=> nrel_explanation: [<p><b><i>автоморфность*</i></b> --- это <i>изоморфность*</i>, у которой область определения соответствия и область значения соответствия совпадают.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_1913: "file://images/sd_structures/automorphism.png"
+	=> .system_element_242: "file://images/sd_structures/automorphism.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);;
 
-	nrel_automorphism
-	<- binary_relation;;
+	.system_element_3679
+	<- .system_element_949;;
 
-	nrel_structures_analogy
-	<= nrel_inclusion: nrel_mapping;
-	<- binary_relation;
-	=> nrel_explanation: [<p><b><i>аналогичность структур*</i></b> --- <i>соответствие*</i>, задаваемое на структурах, и фиксирующее факт наличия некоторой аналогии на подструктурах (подмножествах) указанных структур. Каждой ориентированной паре, принадлежащей <b><i>аналогичности структур*</i></b> может быть поставлено в соответствие множество пар, задающих <i>сходства*</i> некоторых подструктур и <i>различия*</i> некоторых подструктур исходных структур.</p>]
+	.system_element_3680
+	<= nrel_inclusion: .system_element_3619;
+	<- .system_element_949;
+	=> nrel_explanation: [<p><b><i>аналогичность структур*</i></b> --- <i>соответствие*</i>, задаваемое на структурах и фиксирующее факт наличия некоторой аналогии на подструктурах (подмножествах) указанных структур. Каждой ориентированной паре, принадлежащей <b><i>аналогичности структур*</i></b> может быть поставлено в соответствие множество пар, задающих <i>сходства*</i> некоторых подструктур и <i>различия*</i> некоторых подструктур исходных структур.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_1913: "file://images/sd_structures/analogy.png"
+	=> .system_element_242: "file://images/sd_structures/analogy.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);;
 
-	nrel_sameness
-	<- binary_relation;;
+	.system_element_3681
+	<- .system_element_949;;
 
-	nrel_difference
-	<- binary_relation;;
+	.system_element_3682
+	<- .system_element_949;;
 
-	nrel_primary_syntax_sc_text_structure
-	<- binary_relation;
+	.system_element_3683
+	<- .system_element_949;
 	=> nrel_explanation: [<p><b><i>первичная синтаксическая структура sc-текста*</i></b> --- это бинарное отношение, связывающее некоторый <i>sc-текст</i> с другим <i>sc-текстом</i>, формируемым по следующим правилам:
 	<ul>
-		<li> каждому <i>sc-узлу</i> первого <i>sc-текста</i> соответствует <i>синглетон</i> (<i>знак sc-узла</i>) в рамках второго <i>sc-текста</i>;
-		<li> каждому <i>sc-коннектору</i> из первого <i>sc-текста</i> в рамках второго <i>sc-текста</i> соответствует <i>синглетон</i>, обозначающий данный <i>sc-коннектор</i> и соединенный с другими <i>синглетонами</i> второго <i>sc-текста</i> парами инцидентности двух типов, в зависимости от того, началом или концом данного <i>sc-коннектора</i> являются обозначаемые этими <i>синглетонами sc-элементы</i>. В случае, когда <i>sc-коннектор</i> является <i>sc-ребром</i>, то достаточно пар инцидентности первого типа.
-		<li> для каждого <i>синглетона</i> в рамках второго <i>sc-текста</i> явно указывается синтаксический тип, определяемый типом соответствующего ему элемента из первого <i>sc-текста</i> (<i>знак sc-константы</i>, <i>знак sc-узла</i> и т.п.).</li>
-	<ul>Стоит отметить, что подобным образом может быть задана синтаксическая структура любого текста, а не только sc-текста. В этом случае понадобятся другие отношения инцидентности другие классы синтаксических типов.</p>]
+		<li> Каждому <i>sc-узлу</i> первого <i>sc-текста</i> соответствует <i>синглетон</i> (<i>знак sc-узла</i>) в рамках второго <i>sc-текста</i>.
+		<li> Каждому <i>sc-коннектору</i> из первого <i>sc-текста</i> в рамках второго <i>sc-текста</i> соответствует <i>синглетон</i>, обозначающий данный <i>sc-коннектор</i> и соединенный с другими <i>синглетонами</i> второго <i>sc-текста</i> парами инцидентности двух типов, в зависимости от того, началом или концом данного <i>sc-коннектора</i> являются обозначаемые этими <i>синглетонами sc-элементы</i>. В случае, когда <i>sc-коннектор</i> является <i>sc-ребром</i>, достаточно пар инцидентности первого типа.
+		<li> Для каждого <i>синглетона</i> в рамках второго <i>sc-текста</i> явно указывается синтаксический тип, определяемый типом соответствующего ему элемента из первого <i>sc-текста</i> (<i>знак sc-константы</i>, <i>знак sc-узла</i> и так далее).</li>
+	<ul>Стоит отметить, что подобным образом может быть задана синтаксическая структура любого текста, а не только sc-текста. В этом случае понадобятся другие отношения инцидентности и другие классы синтаксических типов.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_1913: "file://images/sd_structures/primary_sc_syntax.png"
+	=> .system_element_242: "file://images/sd_structures/primary_sc_syntax.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;

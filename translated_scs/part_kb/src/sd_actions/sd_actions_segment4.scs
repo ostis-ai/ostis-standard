@@ -1,48 +1,48 @@
 .sd_actions_segment4 = [*
-.system_element_3195
+.system_element_5134
 => nrel_inclusion: [*
-	=> .system_element_20: 
-		.system_element_3196;
-		.system_element_3197;
-		.system_element_3198;
-		.system_element_3199
+	=> .system_element_329: 
+		.system_element_4601;
+		.system_element_4602;
+		.system_element_4603;
+		.system_element_4604
 	;
-	<- .system_element_1862;;
+	<- .system_element_865;;
 
-	.system_element_3200
-	=> .system_element_349: [<p>субъект</p>]
+	.system_element_5421
+	=> .system_element_139: [<p>субъект</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
-		=> .system_element_360: .system_element_3201;;
+		=> .system_element_167: .system_element_4625;;
 	*);;
 
-	.system_element_3202
+	.system_element_5422
 	=> nrel_idtf: [<p>участник акции'</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<- role_relation;
-	=> nrel_first_domain: .system_element_3200;
-	=> nrel_second_domain: impact;
+	<- .system_element_3355;
+	=> .system_element_843: .system_element_5421;
+	=> .system_element_845: .system_element_3739;
 	=> nrel_explanation: [<p><i>участник акции'</i> --- это ролевое отношение, которое связывает акцию с участвующим в ней индивидом.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
-		=> .system_element_360: .system_element_3203;;
-		=> .system_element_360: .system_element_3204;;
-		=> .system_element_360: .system_element_3205;;
+		=> .system_element_167: .system_element_5423;;
+		=> .system_element_167: .system_element_5424;;
+		=> .system_element_167: .system_element_5425;;
 	*);
 	=> nrel_subdividing: {
-		.system_element_3206
+		.system_element_5183
 		(*
 			=> nrel_explanation: [<p><i>субъект'</i> --- инициатор акции.</p>];;
 			=> nrel_subdividing: {
-				.system_element_3207;
-				.system_element_3208;
-				.system_element_3209;
-				.system_element_3210
+				.system_element_5426;
+				.system_element_5427;
+				.system_element_5428;
+				.system_element_5429
 				(*
 					=> nrel_explanation: [<p><i>вершитель'</i> завершает акцию производством из объекта продукта.</p>]
 					(*
@@ -52,11 +52,11 @@
 				*)
 			};;
 		*);
-		.system_element_3211
+		.system_element_5430
 		(*
 			=> nrel_explanation: [<p><i>инструмент'</i> --- исполнитель акции.</p>];;
 			=> nrel_subdividing: {
-				.system_element_3212
+				.system_element_5431
 				(*
 					=> nrel_explanation: [<p><i>активатор'</i> непосредственно воздействует на медиатор.</p>]
 					(*
@@ -64,7 +64,7 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);
-				.system_element_3213
+				.system_element_5432
 				(*
 					=> nrel_explanation: [<p><i>супрессор'</i> подавляет сопротивление медиатора.</p>]
 					(*
@@ -72,7 +72,7 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);
-				.system_element_3214
+				.system_element_5433
 				(*
 					=> nrel_explanation: [<p><i>усилитель'</i> наращивает воздействие на медиатор.</p>]
 					(*
@@ -80,7 +80,7 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);
-				.system_element_3215
+				.system_element_5434
 				(*
 					=> nrel_explanation: [<p><i>преобразователь'</i> преобразует медиатор в инструмент.</p>]
 					(*
@@ -90,12 +90,12 @@
 				*)
 			};;
 		*);
-		.system_element_3216
+		.system_element_5182
 		(*
 			=> nrel_explanation: [<p><i>медиатор'</i> --- посредник акции.</p>];;
 			=> nrel_subdividing: {
-				.system_element_3217;
-				.system_element_3218
+				.system_element_5435;
+				.system_element_5436
 				(*
 					=> nrel_explanation: [<p><i>локус'</i> частично или полностью окружает объект и тем самым локализует его в пространстве.</p>]
 					(*
@@ -103,7 +103,7 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);
-				.system_element_3219
+				.system_element_5437
 				(*
 					=> nrel_explanation: [<p><i>транспортёр'</i> перемещает объект.</p>]
 					(*
@@ -111,7 +111,7 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);
-				.system_element_3220
+				.system_element_5438
 				(*
 					=> nrel_explanation: [<p><i>адаптер'</i> приспосабливает инструмент к воздействию на объект.</p>]
 					(*
@@ -119,7 +119,7 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);
-				.system_element_3221
+				.system_element_5439
 				(*
 					=> nrel_explanation: [<p><i>материал'</i> используется в качестве объекта-сырья для производства продукта.</p>]
 					(*
@@ -127,7 +127,7 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);
-				.system_element_3222
+				.system_element_5440
 				(*
 					=> nrel_explanation: [<p><i>макет'</i> является исходным образцом для производства из объекта продукта.</p>]
 					(*
@@ -135,7 +135,7 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);
-				.system_element_3223
+				.system_element_5441
 				(*
 					=> nrel_explanation: [<p><i>фиксатор'</i> превращает переменный локус объекта в постоянный.</p>]
 					(*
@@ -143,7 +143,7 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);
-				.system_element_3224
+				.system_element_5442
 				(*
 					=> nrel_explanation: [<p><i>ресурс'</i> питает инструмент.</p>]
 					(*
@@ -151,7 +151,7 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);
-				.system_element_3225
+				.system_element_5443
 				(*
 					=> nrel_explanation: [<p><i>стимул'</i> проявляет параметр объекта.</p>]
 					(*
@@ -159,7 +159,7 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);
-				.system_element_3226
+				.system_element_5444
 				(*
 					=> nrel_explanation: [<p><i>регулятор'</i> служит инструкцией в производстве из объекта продукта.</p>]
 					(*
@@ -167,7 +167,7 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);
-				.system_element_3227
+				.system_element_5445
 				(*
 					=> nrel_explanation: [<p><i>хронотоп'</i> локализует объект во времени.</p>]
 					(*
@@ -175,7 +175,7 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);
-				.system_element_3228
+				.system_element_5446
 				(*
 					=> nrel_explanation: [<p><i>источник'</i> обеспечивает инструкциями инструмент.</p>]
 					(*
@@ -183,7 +183,7 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);
-				.system_element_3229
+				.system_element_5447
 				(*
 					=> nrel_explanation: [<p><i>индикатор'</i> отображает параметр воздействия на объект или параметр продукта как результата воздействия на объект.</p>]
 					(*
@@ -193,11 +193,11 @@
 				*)
 			};;
 		*);
-		.system_element_3230
+		.system_element_5448
 		(*
 			=> nrel_explanation: [<p><i>объект'</i> --- реципиент акции.</p>];;
 			=> nrel_subdividing: {
-				.system_element_3231
+				.system_element_5449
 				(*
 					=> nrel_explanation: [<p><i>покрытие'</i> --- внешняя изоляция оболочки индивида.</p>]
 					(*
@@ -205,7 +205,7 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);
-				.system_element_3232
+				.system_element_5450
 				(*
 					=> nrel_explanation: [<p><i>корпус'</i> --- оболочка индивида.</p>]
 					(*
@@ -213,7 +213,7 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);
-				.system_element_3233
+				.system_element_5451
 				(*
 					=> nrel_explanation: [<p><i>прослойка'</i> --- внутренняя изоляция оболочки индивида.</p>]
 					(*
@@ -221,7 +221,7 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);
-				.system_element_3234
+				.system_element_5452
 				(*
 					=> nrel_explanation: [<p><i>сердцевина'</i> --- ядро индивида.</p>]
 					(*
@@ -231,11 +231,11 @@
 				*)
 			};;
 		*);
-		.system_element_3235
+		.system_element_5453
 		(*
 			=> nrel_explanation: [<p><i>продукт'</i> --- результат воздействия субъекта на объект.</p>];;
 			=> nrel_subdividing: {
-				.system_element_3236
+				.system_element_5454
 				(*
 					=> nrel_explanation: [<p><i>заготовка'</i> --- превращённый в сырьё объект.</p>]
 					(*
@@ -243,7 +243,7 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);
-				.system_element_3237
+				.system_element_5455
 				(*
 					=> nrel_explanation: [<p><i>полуфабрикат'</i> --- наполовину изготовленный из сырья продукт.</p>]
 					(*
@@ -251,7 +251,7 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);
-				.system_element_3238
+				.system_element_5456
 				(*
 					=> nrel_explanation: [<p><i>прототип'</i> --- опытный образец продукта.</p>]
 					(*
@@ -259,7 +259,7 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);
-				.system_element_3239
+				.system_element_5457
 				(*
 					=> nrel_explanation: [<p><i>изделие'</i> --- готовый продукт.</p>]
 					(*
@@ -271,17 +271,17 @@
 		*)
 	};;
 
-	impact
+	.system_element_3739
 	=> nrel_idtf: [<p>акция</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_360: .system_element_3240;
-	=> nrel_subdividing: .system_element_3241
+	=> .system_element_167: .system_element_5458;
+	=> nrel_subdividing: .system_element_5459
 	(*
-		<=> .system_element_293: {
-			.system_element_3242
+		<=> .system_element_155: {
+			.system_element_5460
 			(*
 				=> nrel_explanation: [<p><i>воздействие активизации</i> --- воздействие, в ходе которого взаимодействие осуществляется между субъектом и инструментом.</p>]
 				(*
@@ -289,7 +289,7 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);
-			.system_element_3243
+			.system_element_5461
 			(*
 				=> nrel_explanation: [<p><i>воздействие эксплуатации</i> --- воздействие, в ходе которого взаимодействие осуществляется между инструментом и медиатором.</p>]
 				(*
@@ -297,7 +297,7 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);
-			.system_element_3244
+			.system_element_5462
 			(*
 				=> nrel_explanation: [<p><i>воздействие трансформации</i> --- воздействие, в ходе которого взаимодействие осуществляется между объектом и продуктом.</p>]
 				(*
@@ -305,7 +305,7 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);
-			.system_element_3245
+			.system_element_5463
 			(*
 				=> nrel_explanation: [<p><i>воздействие нормализации</i> --- воздействие, в ходе которого взаимодействие осуществляется между объектом и продуктом.</p>]
 				(*
@@ -315,21 +315,21 @@
 			*)
 		};;
 	*);
-	=> nrel_subdividing: .system_element_3246
+	=> nrel_subdividing: .system_element_5464
 	(*
-		<=> .system_element_293: {
-			.system_element_3247;
-			.system_element_3248;
-			.system_element_3249;
-			.system_element_3250
+		<=> .system_element_155: {
+			.system_element_5465;
+			.system_element_5466;
+			.system_element_5467;
+			.system_element_5468
 		};;
 	*);;
 
-	impact
-	=> nrel_subdividing: .system_element_3251
+	.system_element_3739
+	=> nrel_subdividing: .system_element_5469
 	(*
-		<=> .system_element_293: {
-			.system_element_3252
+		<=> .system_element_155: {
+			.system_element_5470
 			(*
 				=> nrel_explanation: [<p><i>воздействие инициации</i> --- воздействие, в ходе которого оно начинается в каждой подсистеме.</p>]
 				(*
@@ -337,7 +337,7 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);
-			.system_element_3253
+			.system_element_5471
 			(*
 				=> nrel_explanation: [<p><i>воздействие аккумуляции</i> --- воздействие, в ходе которого происходит его накапливание в каждой подсистеме.</p>]
 				(*
@@ -345,7 +345,7 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);
-			.system_element_3254
+			.system_element_5472
 			(*
 				=> nrel_explanation: [<p><i>воздействие амплификации</i> --- воздействие, в ходе которого происходит его усиление.</p>]
 				(*
@@ -353,7 +353,7 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);
-			.system_element_3255
+			.system_element_5473
 			(*
 				=> nrel_explanation: [<p><i>воздействие генерации</i> --- воздействие, которое представляет собой переход в каждой подсистеме с одного уровня, например, среды-оболочки, на другой, например, оболочки-ядра.</p>]
 				(*
@@ -364,11 +364,11 @@
 		};;
 	*);;
 
-	impact
-	=> nrel_subdividing: .system_element_3256
+	.system_element_3739
+	=> nrel_subdividing: .system_element_5474
 	(*
-		<=> .system_element_293: {
-			.system_element_3257
+		<=> .system_element_155: {
+			.system_element_5475
 			(*
 				=> nrel_explanation: [<p><i>физическое воздействие</i> --- воздействие, в котором в роли инструмента выступает оболочка субъекта.</p>]
 				(*
@@ -376,7 +376,7 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);
-			.system_element_3258
+			.system_element_5476
 			(*
 				=> nrel_explanation: [<p><i>информационное воздействие</i> --- воздействие, в котором в роли инструмента выступает среда субъекта.</p>]
 				(*
@@ -387,102 +387,102 @@
 		};;
 	*);;
 
-	.system_element_3259
-	<=> nrel_semantic_equivalence: "file://macroproc_table.png"
+	.system_element_5477
+	<=> "file://macroproc_table.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);
-	=> .system_element_360: .system_element_3240;
+	=> .system_element_167: .system_element_5458;
 	=> nrel_explanation: [<p>На изображении представлена типология <i>воздействий</i>. Любое воздействие характеризуется принадлежностью четырём классам, соответствующим признакам классификации. Заштрихованы <i>физические воздействия</i>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3260
+	.system_element_5478
 	-> {
-		.system_element_3261
+		.system_element_5479
 		(*
-			<= nrel_intersection: {
-				.system_element_3244;
-				.system_element_3247;
-				.system_element_3255;
-				.system_element_3257
+			<= .system_element_2448: {
+				.system_element_5462;
+				.system_element_5465;
+				.system_element_5473;
+				.system_element_5475
 			};;
 		*);
-		.system_element_3262
+		.system_element_5480
 		(*
-			<= nrel_intersection: {
-				.system_element_3242;
-				.system_element_3247;
-				.system_element_3252;
-				.system_element_3257
+			<= .system_element_2448: {
+				.system_element_5460;
+				.system_element_5465;
+				.system_element_5470;
+				.system_element_5475
 			};;
 		*);
-		.system_element_3263
+		.system_element_5481
 		(*
-			<= nrel_intersection: {
-				.system_element_3244;
-				.system_element_3249;
-				.system_element_3255;
-				.system_element_3257
+			<= .system_element_2448: {
+				.system_element_5462;
+				.system_element_5467;
+				.system_element_5473;
+				.system_element_5475
 			};;
 		*);
-		.system_element_3264
+		.system_element_5482
 		(*
-			<= nrel_intersection: {
-				.system_element_3244;
-				.system_element_3250;
-				.system_element_3255;
-				.system_element_3257
+			<= .system_element_2448: {
+				.system_element_5462;
+				.system_element_5468;
+				.system_element_5473;
+				.system_element_5475
 			};;
 		*);
-		.system_element_3141
+		.system_element_4866
 		(*
-			<= nrel_intersection: {
-				.system_element_3243;
-				.system_element_3248;
-				.system_element_3252;
-				.system_element_3257
+			<= .system_element_2448: {
+				.system_element_5461;
+				.system_element_5466;
+				.system_element_5470;
+				.system_element_5475
 			};;
 		*);
-		.system_element_3265
+		.system_element_5483
 		(*
-			<= nrel_intersection: {
-				.system_element_3244;
-				.system_element_3250;
-				.system_element_3254;
-				.system_element_3257
+			<= .system_element_2448: {
+				.system_element_5462;
+				.system_element_5468;
+				.system_element_5472;
+				.system_element_5475
 			};;
 		*);
-		.system_element_3266
+		.system_element_5484
 		(*
-			<= nrel_intersection: {
-				.system_element_3244;
-				.system_element_3249;
-				.system_element_3254;
-				.system_element_3257
+			<= .system_element_2448: {
+				.system_element_5462;
+				.system_element_5467;
+				.system_element_5472;
+				.system_element_5475
 			};;
 		*);
-		.system_element_3267
+		.system_element_5485
 		(*
-			<= nrel_intersection: {
-				.system_element_3243;
-				.system_element_3249;
-				.system_element_3255;
-				.system_element_3257
+			<= .system_element_2448: {
+				.system_element_5461;
+				.system_element_5467;
+				.system_element_5473;
+				.system_element_5475
 			};;
 		*)
 	};;
 
-	.system_element_3268
+	.system_element_5486
 	<=> "file://tapaz_description_example.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);
-	<- .system_element_1967;
+	<- .system_element_243;
 	=> nrel_explanation: [<p>Представленный фрагмент базы знаний содержит декомпозицию воздействия во времени, указание принадлежности данного декомпозируемого воздействия и полученных в результате данной декомпозиции воздействий определенному их классу из приведенной выше классификации, а также указание участников данных акций.</p>]
 	(*
 		<- lang_ru;;
@@ -494,8 +494,8 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	subject
-	=> .system_element_349: [<p>индивид</p>]
+	.system_element_190
+	=> .system_element_139: [<p>индивид</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
@@ -505,6 +505,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
+	<= nrel_inclusion: .system_element_5487;
 	=> nrel_idtf: [<p>сущность, способная самостоятельно выполнять некоторые виды действий</p>]
 	(*
 		<- lang_ru;;
@@ -515,33 +516,33 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> nrel_inclusion: Myself;
-	=> nrel_inclusion: internal_subject_ostis_system;
-	=> nrel_inclusion: external_subject_ostis_system_interaction;
-	=> nrel_inclusion: external_subject_ostis_system_without_interaction;;
+	=> nrel_inclusion: .system_element_5488;
+	=> nrel_inclusion: .system_element_5489;
+	=> nrel_inclusion: .system_element_5490;
+	=> nrel_inclusion: .system_element_5491;;
 
-	internal_subject_ostis_system
+	.system_element_5489
 	=> nrel_idtf: [<p>субъект, входящий в состав той <i>ostis-системы, в базе знаний</i> которой он описывается</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> nrel_inclusion: sc_agent;
+	=> nrel_inclusion: .system_element_3042;
 	=> nrel_explanation: [<p>Под <i>внутренним субъектом ostis-системы</i> понимается такой <i>субъект</i>, который выполняет некоторые <i>действия</i> в <u>той же памяти</u>, в которой хранится его знак.К числу <i>внутренних субъектов ostis-системы</i> относятся входящие в нее <i>sc-агенты</i>, частные sc-машины, целые интеллектуальные подсистемы.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	external_subject_ostis_system_interaction
-	=> nrel_explanation: [<p>К числу <i>внешних субъектов ostis-системы, с которыми осуществляется взаимодействие</i>, относятся конечные пользователи <i>ostis-системы</i>, ее разработчики, а также другие компьютерные системы(причем не только интеллектуальные).</p>]
+	.system_element_5490
+	=> nrel_explanation: [<p>К числу <i>внешних субъектов ostis-системы, с которыми осуществляется взаимодействие</i>, относятся конечные пользователи <i>ostis-системы</i>, ее разработчики, а также другие компьютерные системы (причем не только интеллектуальные).</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3269
-	<= nrel_inclusion: .system_element_3206;
+	.system_element_5492
+	<= nrel_inclusion: .system_element_5183;
 	=> nrel_idtf: [<p>сущность, воздействующая на некоторую другую сущность в процессе заданного действия'</p>]
 	(*
 		<- lang_ru;;
@@ -557,8 +558,8 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> nrel_inclusion: .system_element_3270;
-	=> nrel_inclusion: .system_element_3271
+	=> nrel_inclusion: .system_element_5493;
+	=> nrel_inclusion: .system_element_5494
 	(*
 		=> nrel_idtf: [<p>субъект целенаправленного, активного воздействия'</p>]
 		(*
@@ -567,19 +568,43 @@
 		*);;
 	*);;
 
-	nrel_performer
-	=> nrel_explanation: [<p>Связки отношения <i>исполнитель*</i> связывают <i>sc-элементы</i>, обозначающие <i>действие</i> и <i>sc-элементы</i>, обозначающие <i>субъекта</i>, который предположительно будет осуществлять, осуществляет или осуществлял выполнение указанного <i>действия</i>. Данное отношение может быть использовано при назначении конкретного исполнителя для проектной задачи по развитию баз знаний.В случае, когда заранее неизвестно, какой именно <i>субъект*</i> будет исполнителем данного <i>действия</i>, отношение <i>исполнитель*</i> может отсутствовать в первоначальной формулировке <i>задачи</i> и добавляться позже, уже непосредственно при исполнении.Когда действие выполняется (является <i>настоящей сущностью</i>) или уже выполнено (является <i>прошлой сущностью</i>), то исполнитель этого действия в каждый момент времени уже определён. Но когда действие только инициировано, тогда важно знать: кто <u>хочет</u> выполнить это действие и насколько важно для него стать исполнителем данного действия;
-
-	<li> кто <u>может</u> выполнить данное действие и каков уровень его квалификации и опыта;
-
-	<li> кто и кому поручает выполнить это действие и каков уровень ответственности за невыполнение (приказ, заказ, официальный договор, просьба...)При этом следует помнить, что связь отношения <i>исполнитель*</i> в данном случае также является временной прогнозируемой сущностью.Первым компонентом связок отношений <i>исполнитель*</i> является знак <i>действия</i>, вторым --- знак <i>субъекта</i> исполнителя</p>]
+	.system_element_5183
+	=> nrel_idtf: [<p>воздействующая сущность'</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>сущность, создающая <i>причину</i> изменений другой сущности (объекта)'</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3272
-	<= nrel_inclusion: .system_element_3230;
+	.system_element_5448
+	=> nrel_idtf: [<p>воздействуемая сущность'</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>сущность, являющаяся в рамках заданного воздействия исходным условием (аргументом), необходимым для выполнения этого воздействия'</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+
+	.system_element_5495
+	=> nrel_explanation: [<p>Связки отношения <i>исполнитель*</i> связывают <i>sc-элементы</i>, обозначающие <i>действие</i> и <i>sc-элементы</i>, обозначающие <i>субъекта</i>, который предположительно будет осуществлять, осуществляет или осуществлял выполнение указанного <i>действия</i>. Данное отношение может быть использовано при назначении конкретного исполнителя для проектной задачи по развитию баз знаний.В случае, когда заранее неизвестно, какой именно <i>субъект*</i> будет исполнителем данного <i>действия</i>, отношение <i>исполнитель*</i> может отсутствовать в первоначальной формулировке <i>задачи</i> и добавляться позже, уже непосредственно при исполнении.Когда действие выполняется (является <i>настоящей сущностью</i>) или уже выполнено (является <i>прошлой сущностью</i>), то исполнитель этого действия в каждый момент времени уже определён. Но когда действие только инициировано, тогда важно знать: кто <u>хочет</u> выполнить это действие и насколько важно для него стать исполнителем данного действия;
+
+	<li> кто <u>может</u> выполнить данное действие и каков уровень его квалификации и опыта;
+
+	<li> кто и кому поручает выполнить это действие и каков уровень ответственности за невыполнение (приказ, заказ, официальный договор, просьба...)При этом следует помнить, что связь отношения <i>исполнитель*</i> в данном случае также является временной прогнозируемой сущностью.Первым компонентом связок отношений <i>исполнитель*</i> является знак <i>действия</i>, вторым --- знак <i>субъекта</i> исполнителя.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+
+	.system_element_5496
+	<= nrel_inclusion: .system_element_5448;
 	=> nrel_idtf: [<p>сущность, на которую осуществляется воздействие в рамках заданного действия'</p>]
 	(*
 		<- lang_ru;;
@@ -601,14 +626,14 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3235
+	.system_element_5453
 	=> nrel_idtf: [<p>быть продуктом заданного действия'</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<= nrel_inclusion: .system_element_1250;
-	<= nrel_inclusion: nrel_result;
+	<= nrel_inclusion: .system_element_2307;
+	<= nrel_inclusion: .system_element_795;
 	=> nrel_idtf: [<p>сухой остаток'</p>]
 	(*
 		<- lang_ru;;
@@ -619,19 +644,19 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> nrel_note: [<p>Продуктом действия может быть некоторая материальная сущность, некоторое множество (тираж) одинаковых материальных сущностей, некоторая информационная конструкция</p>]
+	=> nrel_note: [<p>Продуктом действия может быть некоторая материальная сущность, некоторое множество (тираж) одинаковых материальных сущностей, некоторая информационная конструкция.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	nrel_result
+	.system_element_795
 	=> nrel_explanation: [<p>Связки отношения <i>результат*</i> связывают <i>sc-элемент</i>, обозначающий <i>действие</i>, и <i>sc-конструкцию</i>, описывающую результат выполнения рассматриваемого действия, другими словами, цель, которая должна быть достигнута при выполнении <i>действия</i>.Результат может специфицироваться как атомарным высказыванием, так и неатомарным, т.е. конъюнктивным, дизъюнктивным, строго дизъюнктивным и т.д.В случае, когда успешное выполнение <i>действия</i> приводит к изменению какой-либо конструкции в <i><b>sc-памяти</b></i>, которое необходимо занести в историю изменений базы знаний или использовать для демонстрации протокола решении задачи, генерируется соответствующая связка отношения <i>результат*</i>, связывающая задачу и <i>sc-конструкцию</i>, описывающую данное изменение. Конкретный вид указанной <i><b>sc-конструкции</b></i> зависит от типа действия.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<=> .system_element_461: .system_element_3273
+	<=> .system_element_392: .system_element_228
 	(*
 		=> nrel_idtf: [<p>спецификация планируемого результата*</p>];;
 		=> nrel_note: [<p>Следует также отмечать то, что является непосредственно результатом (продуктом) некоторого действия, и то, что является предварительной (исходной, стартовой) спецификацией этого результата. Далеко не всегда результатом действия является именно то, что планировалось (было целью) изначально.</p>]
@@ -641,7 +666,20 @@
 		*);;
 	*);;
 
-	nrel_executing_actions_class
+	.system_element_228
+	=> nrel_idtf: [<p>целевая ситуация*</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	<= nrel_inclusion: .system_element_4595;
+	=> nrel_idtf: [<p>описание того, что требуется получить (какая ситуация должна быть достигнута) в результате выполнения заданного (специфицируемого) действия*</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+
+	.system_element_5497
 	=> nrel_idtf: [<p>класс действий, выполняемых классом субъектов*</p>]
 	(*
 		<- lang_ru;;
@@ -653,21 +691,21 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	nrel_customer
-	=> nrel_explanation: [<p>Связки отношения <i>заказчик*</i> связывают классы <i>sc-элементы</i>, обозначающие <i>действие</i>, и <i>sc-элементы</i>, обозначающие <i>субъекта</i>, который заинтересован в выполнении данного действия и, как правило, инициирует его выполнение. Данное отношение может быть использовано при указании того, кто поставил проектную задачу по развитию баз знаний.Первым компонентов связок отношения <i>заказчик*</i> является знак <i>действия</i>, вторым --- знак <i>субъекта</i>.</p>]
+	.system_element_5498
+	=> nrel_explanation: [<p>Связки отношения <i>заказчик*</i> связывают классы <i>sc-элементов</i>, обозначающие <i>действие</i>, и классы <i>sc-элементов</i>, обозначающие <i>субъекта</i>, который заинтересован в выполнении данного действия и, как правило, инициирует его выполнение. Данное отношение может быть использовано при указании того, кто поставил проектную задачу по развитию баз знаний.Первым компонентов связок отношения <i>заказчик*</i> является знак <i>действия</i>, вторым --- знак <i>субъекта</i>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	nrel_initiator
+	.system_element_5499
 	=> nrel_explanation: [<p>Связки отношения <i>инициатор*</i> связывают <i>sc-элемент</i>, обозначающий <i>инициированное действие</i>, и знак <i>субъекта</i>, который является инициатором данного <i>действия</i>, то есть <i>субъектом</i>, который инициировал данное <i>действие</i> и, как правило, заинтересован в его успешном выполнении.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3230
+	.system_element_5448
 	=> nrel_idtf: [<p>аргумент действия'</p>]
 	(*
 		<- lang_ru;;
@@ -678,11 +716,11 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> nrel_inclusion: rrel_first_action_argument;
-	=> nrel_inclusion: rrel_second_section_argument;
-	=> nrel_inclusion: rrel_third_section_argument;;
+	=> nrel_inclusion: .system_element_5500;
+	=> nrel_inclusion: .system_element_5501;
+	=> nrel_inclusion: .system_element_5502;;
 
-	nrel_class_of_arguments
+	.system_element_5503
 	=> nrel_idtf: [<p>класс аргументов класса команд*</p>]
 	(*
 		<- lang_ru;;
@@ -693,9 +731,9 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> nrel_inclusion: nrel_first_argument_class;
-	=> nrel_inclusion: nrel_second_argument_class;
-	=> nrel_explanation: [<p>Связки отношения <i>класс аргументов*</i> связывают <i>классы команд</i> (подмножества множества <i>команд</i>) и классы <i>sc-элементов</i>, которые могут быть аргументами действий, соответствующих данному <i>классу команд</i>. В случае, когда <i>команды</i> данного класса имеют один аргумент, используется собственно отношение  <i>класс аргументов*</i>, в случае, когда команды данного класса имеют более одного аргумента, то используются подмножества данного отношения, такие как <i>класс первых аргументов*</i>, <i>класс вторых аргументов*</i> и т.д.Если для некоторого <i>класса команд</i> не указан тип какого-либо из аргументов, то предполагается, что в качестве данного аргумента может выступать любой <i>sc-элемент</i>.Первым компонентом связок отношения <i>класс аргументов*</i> является знак <i>класса команд</i>, вторым --- знак класса <i>sc-элемента</i>, которые могут быть <i>аргументами действий'</i>, соответствующих данному <i>классу команд</i>.</p>]
+	=> nrel_inclusion: .system_element_5504;
+	=> nrel_inclusion: .system_element_5505;
+	=> nrel_explanation: [<p>Связки отношения <i>класс аргументов*</i> связывают <i>классы команд</i> (подмножества множества <i>команд</i>) и классы <i>sc-элементов</i>, которые могут быть аргументами действий, соответствующих данному <i>классу команд</i>. В случае, когда <i>команды</i> данного класса имеют один аргумент, используется собственно отношение  <i>класс аргументов*</i>, в случае, когда команды данного класса имеют более одного аргумента, используются подмножества данного отношения, такие как <i>класс первых аргументов*</i>, <i>класс вторых аргументов*</i> и т.д.Если для некоторого <i>класса команд</i> не указан тип какого-либо из аргументов, то предполагается, что в качестве данного аргумента может выступать любой <i>sc-элемент</i>.Первым компонентом связок отношения <i>класс аргументов*</i> является знак <i>класса команд</i>, вторым --- знак класса <i>sc-элемента</i>, которые могут быть <i>аргументами действий'</i>, соответствующих данному <i>классу команд</i>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;

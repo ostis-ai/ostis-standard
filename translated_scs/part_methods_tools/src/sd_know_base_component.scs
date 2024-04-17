@@ -1,20 +1,20 @@
-.system_element_1856
+.system_element_1043
 => nrel_inclusion: [*
 
-	.system_element_1857
-	<- subject_domain;
-	<= nrel_private_subject_domain: .system_element_1858;
-	-> .system_element_2: 
-		.system_element_1859
+	.system_element_1046
+	<- .system_element_114;
+	<= .system_element_1047: .system_element_1031;
+	-> rrel_studied_object_class: 
+		.system_element_901
 	;
-	-> .system_element_2: .system_element_1860;;
+	-> rrel_studied_object_class: .system_element_1048;;
 
-	.system_element_1861
-	=> nrel_inclusion: .system_element_1862;
-	<= nrel_inclusion: .system_element_339;
-	=> nrel_inclusion: semantic_neighborhood;
-	=> .system_element_1366: .system_element_1863;
-	=> nrel_inclusion: .system_element_1864;
+	.system_element_1049
+	=> nrel_inclusion: .system_element_865;
+	<= nrel_inclusion: .system_element_174;
+	=> nrel_inclusion: .system_element_862;
+	=> .system_element_202: .system_element_1050;
+	=> nrel_inclusion: .system_element_1051;
 	=> nrel_note: [<p>Базовый фрагмент предметной области и онтологии включает в себя теоретико-множественную и логическую онтологию, а также фрагменты терминологической онтологии, описывающие основные идентификаторы объектов исследования предметной области.</p>]
 	(*
 		<- lang_ru;;
@@ -25,19 +25,19 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	-> .system_element_1865;
-	-> .system_element_1866;
-	-> .system_element_1867;
-	=> nrel_inclusion: .system_element_1868;
+	-> .system_element_1052;
+	-> .system_element_1053;
+	-> .system_element_1054;
+	=> nrel_inclusion: .system_element_1055;
 	=> nrel_note: [<p>Целые базы знаний могут быть многократно используемыми компонентами в случае разработки интеллектуальных систем, имеющих схожие функциональные требования.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_1869
-	-> .system_element_1870;
-	-> .system_element_1871;
+	.system_element_893
+	-> .system_element_1056;
+	-> .system_element_1057;
 	=> nrel_explanation: [<p><i>Ядро базы знаний</i> представляет собой компонент, входящий в состав каждой базы знаний, разрабатываемой по <i>Технологии OSTIS</i>, и устанавливаемый в первую очередь.</p>]
 	(*
 		<- lang_ru;;
@@ -49,9 +49,9 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_1860
-	<= nrel_inclusion: .system_element_1872;
-	-> rrel_maximum_studied_object_class;
-	-> rrel_not_maximum_studied_object_class;
-	-> rrel_explored_relation;;
+	.system_element_1048
+	<= nrel_inclusion: .system_element_1036;
+	-> .system_element_1058;
+	-> .system_element_1059;
+	-> .system_element_1060;;
 *];;

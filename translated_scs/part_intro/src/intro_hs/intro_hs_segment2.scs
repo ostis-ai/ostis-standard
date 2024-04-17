@@ -1,9 +1,9 @@
 .intro_hs_segment2 = [*
 
-.system_element_544
+.system_element_1861
 => nrel_inclusion: [*
 
-	.system_element_396
+	.system_element_1297
 	=> nrel_idtf: [<p>интегральный уровень качества кибернетической системы в заданный момент</p>]
 	(*
 		<- lang_ru;;
@@ -23,7 +23,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<- .system_element_545;
+	<- .system_element_1264;
 	=> nrel_idtf: [<p>эволюционный уровень кибернетической системы</p>]
 	(*
 		<- lang_ru;;
@@ -62,27 +62,40 @@
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
+	*);
+	=> nrel_note: [<p>Проблема выделения критериев интеллектуальности компьютерных систем рассмотрена в ряде работ. Были предложены различные системные показатели для измерения качества компьютерных систем. Поскольку системы становятся все более сложными и включают множество подсистем или компонентов, измерение их качества в нескольких измерениях становится сложной задачей. Метрики качества включают в себя набор мер, которые могут описывать атрибуты системы в терминах, не зависящих от структуры, которая приводит к этим атрибутам. Эти меры должны быть выражены количественно и должны иметь значительный уровень точности и надежности.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+		=> .system_element_167: 
+			.system_element_1862;
+			.system_element_1863;
+			.system_element_1864;
+			.system_element_1865;
+			.system_element_1866;
+			.system_element_1867
+		;;
 	*);;
 
-	.system_element_396
-	=> .system_element_546: 
-		.system_element_402;
-		.system_element_414
+	.system_element_1297
+	=> .system_element_1868: 
+		.system_element_1222;
+		.system_element_1232
 		(*
-			=> .system_element_546: .system_element_547;;
+			=> .system_element_1868: .system_element_1231;;
 		*);
-		.system_element_547;
-		.system_element_548
+		.system_element_1231;
+		.system_element_1869
 		(*
 			=> nrel_idtf: [<p>степень многообразия (1) видов знаний, хранимых в памяти кибернетической системы, (2) используемых моделей решения задач, (3) видов сенсоров и эффекторов</p>];;
-			=> .system_element_549: 
-				.system_element_550;
-				.system_element_551;
-				.system_element_552
+			=> .system_element_1257: 
+				.system_element_1435;
+				.system_element_1870;
+				.system_element_1871
 			;;
 		*);
-		.system_element_553;
-		.system_element_400
+		.system_element_1872;
+		.system_element_1873
 		(*
 			=> nrel_idtf: [<p>cкорость решения задач кибернетической системы</p>]
 			(*
@@ -90,24 +103,24 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_401;
-		.system_element_419
+		.system_element_1874;
+		.system_element_1272
 	;;
 
-	.system_element_548
-	=> .system_element_549: 
-		.system_element_550;
-		.system_element_551;
-		.system_element_552
+	.system_element_1869
+	=> .system_element_1257: 
+		.system_element_1435;
+		.system_element_1870;
+		.system_element_1871
 	;;
 
-	.system_element_397
+	.system_element_1284
 	=> nrel_idtf: [<p>кибернетическая система, использующая многообразие рецепторных и/или эффекторных подсистем, и/или многообразие видов обрабатываемой информации, и/или многообразие способов решения задач</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> nrel_inclusion: .system_element_554
+	=> nrel_inclusion: .system_element_1875
 	(*
 		=> nrel_idtf: [<p><i>компьютерная система</i>, способная решать <i>комплексные задачи</i>, требующие использования многообразия различных видов обрабатываемой информации и различных <i>моделей решения задач</i></p>]
 		(*
@@ -116,14 +129,14 @@
 		*);;
 	*);;
 
-	.system_element_553
+	.system_element_1872
 	=> nrel_idtf: [<p>приспособленность кибернетической системы к эволюции, к повышению уровня своего качества</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_555: {
-		.system_element_415
+	=> .system_element_1405: {
+		.system_element_1271
 		(*
 			=> nrel_idtf: [<p>способность кибернетической системы самостоятельно повышать уровень своего качества</p>];;
 			=> nrel_idtf: [<p>способность кибернетической системы к самоэволюции, саморазвитию, устранению своих недостатков</p>]
@@ -132,7 +145,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_556
+		.system_element_1460
 		(*
 			=> nrel_idtf: [<p>приспособленность кибернетической системы к её совершенствованию, осуществляемому внешними субъектами</p>];;
 			=> nrel_idtf: [<p>удобство совершенствования кибернетической системы для её создателей</p>]
@@ -147,9 +160,9 @@
 			*);;
 		*)
 	};
-	=> .system_element_555: {
-		.system_element_399;
-		.system_element_416
+	=> .system_element_1405: {
+		.system_element_1466;
+		.system_element_1467
 		(*
 			=> nrel_idtf: [<p>уровень стратифицированности кибернетической системы</p>];;
 			=> nrel_idtf: [<p>качество разделения (декомпозиции) кибернетической системы на в достаточной степени независимые части (компоненты), определенные виды изменений которых не предполагают внесения изменений в другие части системы</p>]
@@ -160,7 +173,7 @@
 		*)
 	};;
 
-	.system_element_399
+	.system_element_1466
 	=> nrel_idtf: [<p>реконфигурируемость кибернетической системы</p>]
 	(*
 		<- lang_ru;;
@@ -247,7 +260,6 @@
 		=> nrel_format: format_html;;
 	*);
 	=> nrel_note: [<p>изменения могут вноситься (1) полностью самостоятельно (без учителя) (2) с помощью учителя-тренера (терапевта) путем создания определенных условий для совершенствования системы (3) хирургически --- путем непосредственного вмешательства извне (например, вмешательства разработчика)</p>]
-
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
@@ -257,31 +269,31 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_555: {
-		.system_element_557
+	=> .system_element_1405: {
+		.system_element_1876
 		(*
-			=> .system_element_558: .system_element_416;;
+			=> .system_element_1223: .system_element_1467;;
 		*);
-		.system_element_559
+		.system_element_1877
 	};
-	=> .system_element_560: {
-		.system_element_561;
-		.system_element_562;
-		.system_element_563
+	=> .system_element_1464: {
+		.system_element_1878;
+		.system_element_1879;
+		.system_element_1259
 		(*
-			=> .system_element_549: .system_element_564;;
+			=> .system_element_1257: .system_element_1880;;
 		*);
-		.system_element_565
+		.system_element_1881
 	};
-	=> .system_element_560: {
-		.system_element_566;
-		.system_element_567
+	=> .system_element_1464: {
+		.system_element_1882;
+		.system_element_1472
 		(*
-			<= .system_element_558: .system_element_415;;
+			<= .system_element_1223: .system_element_1271;;
 		*)
 	};;
 
-	.system_element_556
+	.system_element_1460
 	=> nrel_idtf: [<p>приспособленность кибернетическиой системы к хирургическим методам её совершенствования, реализуемым разработчиками</p>]
 	(*
 		<- lang_ru;;
@@ -292,15 +304,15 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_558: 
-		.system_element_568
+	=> .system_element_1223: 
+		.system_element_1883
 		(*
-			=> .system_element_558: .system_element_416;;
+			=> .system_element_1223: .system_element_1467;;
 		*);
-		.system_element_569
+		.system_element_1884
 	;;
 
-	.system_element_400
+	.system_element_1873
 	=> nrel_idtf: [<p>быстродействие кибернетической системы</p>]
 	(*
 		<- lang_ru;;
@@ -311,23 +323,23 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_549: 
-		.system_element_570;
-		.system_element_571
+	=> .system_element_1257: 
+		.system_element_1885;
+		.system_element_1886
 	;;
 
-	.system_element_401
+	.system_element_1874
 	=> nrel_idtf: [<p>способность кибернетической системы при соответствующих условиях ее функционирования сохранять (и, точнее, не снижать) уровень всех свойств и способностей, определяющих общее (комплексное) качество кибернетической системы</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_558: 
-		.system_element_572;
-		.system_element_573;
-		.system_element_574
+	=> .system_element_1223: 
+		.system_element_1887;
+		.system_element_1888;
+		.system_element_1889
 		(*
-			=> .system_element_576: .system_element_575
+			=> .system_element_1295: .system_element_1890
 			(*
 				=> nrel_note: [<p>Здесь слово ремонтопригодность взято в кавычки, т.к. речь идет не только об искусственных (технических) кибернетических системах</p>]
 				(*

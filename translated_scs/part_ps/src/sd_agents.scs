@@ -1,49 +1,49 @@
-.system_element_3754
+.system_element_3037
 => nrel_inclusion: [*
 
-	.system_element_3755
-	<- subject_domain;
-	-> .system_element_1210: 
-		action_in_sc_memory;
-		abstract_sc_agent;
-		sc_agent
+	.system_element_3158
+	<- .system_element_114;
+	-> rrel_maximum_studied_object_class: 
+		.system_element_3159;
+		.system_element_200;
+		.system_element_3042
 	;
-	-> .system_element_2: 
-		abstract_sc_agent_is_not_implemented_on_the_scp_language;
-		abstract_sc_agent_implemented_on_the_scp_language;
-		.system_element_3756;
-		non_atomic_abstract_sc_agent;
-		atomic_abstract_sc_agent;
-		platform_independent_abstract_sc_agent;
-		platform_dependent_abstract_sc_agent;
-		inside_abstract_sc_agent;
-		effector_abstract_sc_agent;
-		receptor_abstract_sc_agent;
-		abstract_sc_agent_is_not_implemented_on_the_scp_language;
-		abstract_sc_agent_implemented_on_the_scp_language;
-		abstract_sc_agent_of_interpretation_of_scp_program;
-		abstract_program_sc_agent;
-		abstract_program_sc_agent_implemented_on_the_scp_language;
-		abstract_sc_metaagent;
-		sc_agent;
-		active_sc_agent;
-		.system_element_3757;
-		lock_type;
-		total_lock;
-		lock_for_any_change;
-		lock_for_deleting
+	-> rrel_studied_object_class: 
+		.system_element_891;
+		.system_element_3156;
+		.system_element_3160;
+		.system_element_3161;
+		.system_element_872;
+		.system_element_3162;
+		.system_element_3163;
+		.system_element_3164;
+		.system_element_3165;
+		.system_element_3166;
+		.system_element_891;
+		.system_element_3156;
+		.system_element_3167;
+		.system_element_3168;
+		.system_element_3169;
+		.system_element_3170;
+		.system_element_3042;
+		.system_element_3171;
+		.system_element_3172;
+		.system_element_3173;
+		.system_element_3174;
+		.system_element_3175;
+		.system_element_3176
 	;
-	-> .system_element_356: 
-		nrel_abstract_sc_agent_decomposition;
-		nrel_sc_agent_key_sc_elements;
-		nrel_sc_agent_program;
-		nrel_primary_initiation_condition;
-		nrel_initiation_condition_and_result;
-		nrel_lock
+	-> rrel_explored_relation: 
+		.system_element_829;
+		.system_element_3177;
+		.system_element_3178;
+		.system_element_3179;
+		.system_element_3180;
+		.system_element_3181
 	;;
 
-	.system_element_3758
-	=> .system_element_6: 
+	.system_element_3182
+	=> .system_element_213: 
 		[<p>В основе решателя задач каждой <i>ostis-системы</i> лежит многоагентная система, агенты которой взаимодействуют между собой <u>только</u>(!) через общую для них <i>sc-память</i> посредством спецификации в этой памяти выполняемых ими <i>действий в sc-памяти</i>. При этом пользователи <i>ostis-системы</i> также считаются агентами этой системы. Кроме того, <i>sc-агенты</i> делятся на внутренние, рецепторные и эффекторные. Взаимодействие между агентами через общую <i>sc-память</i> сводится к следующим видам действий: К использованию общедоступной для соответствующей группы sc-агентов части хранимой базы знаний.
 		<li> К формированию (генерации) новых фрагментов базы знаний и/или к корректировке (редактированию) каких-либо фрагментов доступной части базы знаний.
 		<li> К интеграции (погружению) новых и/или обновленных фрагментов в состав доступной части базы знаний.Подчеркнем, что sc-агенты не общаются между собой напрямую путем отправки сообщений, как это делается в большинстве современных подходов к построению многоагентных систем. Кроме того, sc-агенты имеют доступ к общей для них базе знаний за счет чего гарантируется семантическая совместимость (взаимопонимание) между агентами, включая и пользователей ostis-систем.</p>]
@@ -81,10 +81,10 @@
 		*)
 	;;
 
-	.system_element_3759
+	.system_element_3183
 	=> nrel_inclusion: [*
 
-		action_in_sc_memory
+		.system_element_3159
 		=> nrel_idtf: [<p>внутреннее действие ostis-системы</p>]
 		(*
 			<- lang_ru;;
@@ -120,7 +120,7 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
-		<= nrel_inclusion: process_in_sc_memory;
+		<= nrel_inclusion: .system_element_3184;
 		=> nrel_explanation: [<p>Каждое <b><i>действие в sc-памяти</i></b> обозначает некоторое преобразование, выполняемое некоторым <i>sc-агентом</i> (или коллективом <i>sc-агентов</i>) и ориентированное на преобразование <i>sc-памяти</i>. Спецификация действия после его выполнения может быть включена в протокол решения некоторой задачи.Преобразование состояния базы знаний включает, в том числе и информационный поиск, предполагающий (1) локализацию в базе знаний ответа на запрос, явное выделение структуры ответа и (2) трансляцию ответа на некоторый внешний язык.Во множество <b><i>действий в sc-памяти</i></b> входят знаки действий самого различного рода, семантика каждого из которых зависит от конкретного контекста, т.е. ориентации действия на какие-либо конкретные объекты и принадлежности действия какому-либо конкретному классу действий.Следует четко отличать:
 		<ul>
 			<li> каждое конкретное <b><i>действие в sc-памяти</i></b>, представляющее собой некоторый переходный процесс, переводящий sc-память из одного состояния в другое;
@@ -132,57 +132,57 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
-		=> nrel_inclusion: action_in_sc_memory_initiated_by_question;
-		=> nrel_inclusion: .system_element_3760;
-		=> nrel_inclusion: action_of_ostis_system_mode_setting;
-		=> nrel_inclusion: action_of_editing_file_stored_in_sc_memory;
-		=> nrel_inclusion: action_of_interpreting_program_stored_in_sc_memory;;
+		=> nrel_inclusion: .system_element_3185;
+		=> nrel_inclusion: .system_element_3186;
+		=> nrel_inclusion: .system_element_3187;
+		=> nrel_inclusion: .system_element_3188;
+		=> nrel_inclusion: .system_element_3189;;
 
-		action_in_sc_memory_initiated_by_question
+		.system_element_3185
 		=> nrel_idtf: [<p>действие, направленное на формирование ответа на поставленный вопрос</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
-		=> nrel_inclusion: .system_element_3761;
-		=> nrel_inclusion: .system_element_3762
+		=> nrel_inclusion: .system_element_3190;
+		=> nrel_inclusion: .system_element_3191
 		(*
-			=> nrel_inclusion: act_verify_the_desired_structure
+			=> nrel_inclusion: .system_element_3192
 			(*
-				=> nrel_inclusion: action_to_determine_truth_or_falsity_of_designated_logical_statement;;
-				=> nrel_inclusion: action_to_determine_correctness_or_incorrectness_of_designated_structure;;
-				=> nrel_inclusion: action_to_form_structure_describing_incorrectnesses_existing_in_designated_structure;;
+				=> nrel_inclusion: .system_element_3193;;
+				=> nrel_inclusion: .system_element_3194;;
+				=> nrel_inclusion: .system_element_3195;;
 			*);;
-			=> nrel_inclusion: .system_element_3763
+			=> nrel_inclusion: .system_element_3196
 			(*
-				=> nrel_inclusion: action_to_determine_positivity_or_negativity_of_designated_sc_arc_of_belonging_or_not_belonging;;
+				=> nrel_inclusion: .system_element_3197;;
 			*);;
-			=> nrel_inclusion: action_to_form_semantic_neighborhood
+			=> nrel_inclusion: .system_element_3198
 			(*
-				=> nrel_inclusion: action_to_form_full_semantic_neighborhood_of_designated_entity;;
-				=> nrel_inclusion: action_to_form_basic_semantic_neighborhood_of_designated_entity;;
-				=> nrel_inclusion: action_to_form_local_semantic_neighborhood_of_designated_entity;;
+				=> nrel_inclusion: .system_element_3199;;
+				=> nrel_inclusion: .system_element_3200;;
+				=> nrel_inclusion: .system_element_3201;;
 			*);;
-			=> nrel_inclusion: action_to_form_structure_describing_connections_between_designated_entities
+			=> nrel_inclusion: .system_element_3202
 			(*
-				=> nrel_inclusion: action_to_form_structure_describing_similarities_of_designated_entities;;
-				=> nrel_inclusion: action_to_form_structure_describing_differences_of_designated_entities;;
+				=> nrel_inclusion: .system_element_3203;;
+				=> nrel_inclusion: .system_element_3204;;
 			*);;
-			=> nrel_inclusion: action_to_form_structure_describing_method_of_designated_task_solution;;
-			=> nrel_inclusion: action_to_form_plan_of_answer_to_selected_question_generation;;
-			=> nrel_inclusion: action_to_form_execution_history_of_designated_action;;
-			=> nrel_inclusion: action_to_form_argumentation_of_designated_solution_correctness;;
-			=> nrel_inclusion: action_to_verify_argumentation_of_designated_solution_correctness;;
-			=> nrel_inclusion: action_aimed_at_determination_of_designated_entity_temporal_characteristics;;
-			=> nrel_inclusion: action_aimed_at_determination_of_designated_entity_extensive_characteristics;;
+			=> nrel_inclusion: .system_element_3205;;
+			=> nrel_inclusion: .system_element_3206;;
+			=> nrel_inclusion: .system_element_3207;;
+			=> nrel_inclusion: .system_element_3208;;
+			=> nrel_inclusion: .system_element_3209;;
+			=> nrel_inclusion: .system_element_3210;;
+			=> nrel_inclusion: .system_element_3211;;
 		*);;
 
-		action_of_kb_editing
-		=> nrel_inclusion: .system_element_3764;
-		=> nrel_inclusion: action_to_correct_mistakes_in_given_structure;
-		=> nrel_inclusion: .system_element_3765;
-		=> nrel_inclusion: question_merge_two_elements;
-		=> nrel_inclusion: action_to_include_set
+		.system_element_3212
+		=> nrel_inclusion: .system_element_3213;
+		=> nrel_inclusion: .system_element_3214;
+		=> nrel_inclusion: .system_element_3215;
+		=> nrel_inclusion: .system_element_3216;
+		=> nrel_inclusion: .system_element_3217
 		(*
 			=> nrel_idtf: [<p>сделать все элементы множества <b><i>Si</i></b> явно принадлежащими множеству <b><i>Sj</i></b>, то есть сгенерировать соответствующие sc-дуги принадлежности</p>]
 			(*
@@ -190,21 +190,21 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		=> nrel_inclusion: action_of_generation_sc_elements
+		=> nrel_inclusion: .system_element_3218
 		(*
-			=> nrel_inclusion: action_of_generation_one_of_arguments_of_that_is_some_generalized_structure
+			=> nrel_inclusion: .system_element_3219
 			(*
-				=> nrel_inclusion: .system_element_3766;;
+				=> nrel_inclusion: .system_element_3220;;
 			*);;
-			=> nrel_inclusion: action_to_generate_sc_element_of_selected_type
+			=> nrel_inclusion: .system_element_3221
 			(*
-				=> nrel_inclusion: action_to_generate_sc_connector_of_selected_type;;
-				=> nrel_inclusion: action_to_generate_sc_node_of_selected_type;;
+				=> nrel_inclusion: .system_element_3222;;
+				=> nrel_inclusion: .system_element_3223;;
 			*);;
-			=> nrel_inclusion: action_to_generate_file_with_selected_content;;
-			=> nrel_inclusion: .system_element_3767;;
+			=> nrel_inclusion: .system_element_3224;;
+			=> nrel_inclusion: .system_element_3225;;
 		*);
-		=> nrel_inclusion: action_to_renew_concepts
+		=> nrel_inclusion: .system_element_3226
 		(*
 			=> nrel_idtf: [<p>действие. заменить неосновные понятия на их определения через основные понятия</p>]
 			(*
@@ -212,28 +212,28 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		=> nrel_inclusion: .system_element_3768
+		=> nrel_inclusion: .system_element_3227
 		(*
-			=> nrel_inclusion: .system_element_3769
+			=> nrel_inclusion: .system_element_3228
 			(*
-				=> nrel_inclusion: .system_element_3770;;
+				=> nrel_inclusion: .system_element_3229;;
 			*);;
-			=> nrel_inclusion: action_to_integrate_selected_structure_into_current_state_of_kb;;
+			=> nrel_inclusion: .system_element_3230;;
 		*);
-		=> nrel_inclusion: .system_element_3771
+		=> nrel_inclusion: .system_element_3231
 		(*
-			=> nrel_inclusion: .system_element_3772;;
-			=> nrel_inclusion: .system_element_3773;;
+			=> nrel_inclusion: .system_element_3232;;
+			=> nrel_inclusion: .system_element_3233;;
 		*);
-		=> nrel_inclusion: action_of_deleting_sc_elements
+		=> nrel_inclusion: .system_element_3234
 		(*
-			=> nrel_inclusion: action_to_delete_selected_sc_elements
+			=> nrel_inclusion: .system_element_3235
 			(*
-				=> nrel_inclusion: action_to_delete_sc_elements_that_are_contained_in_selected_structure_and_that_arent_keynodes_of_any_sc_agents;;
+				=> nrel_inclusion: .system_element_3236;;
 			*);;
 		*);;
 
-		question_merge_two_elements
+		.system_element_3216
 		=> nrel_idtf: [<p>действие. совместить два указанных sc-элемента</p>]
 		(*
 			<- lang_ru;;
@@ -245,18 +245,18 @@
 			=> nrel_format: format_html;;
 		*);
 		=> nrel_subdividing: {
-			action_to_physically_identify_two_selected_sc_elements;
-			action_to_logically_identify_two_selected_sc_elements
+			.system_element_3237;
+			.system_element_3238
 		};;
 
-		question_merge_two_elements
+		.system_element_3216
 		=> nrel_explanation: [<p>Каждое <b><i>действие. отождествить два указанных sc-элемента</i></b> может быть выполнено как <i>действие. физически отождествить два указанных sc-элемента</i> или <i>действие. логически отождествить два указанных sc-элемента</i>. В случае логического отождествления в протоколе деятельности агентов сохраняется само действие с его спецификацией, включающей обязательное указание того, какие элементы были сгенерированы, а какие удалены. В случае физического отождествления протокол действия не сохраняется.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		action_to_renew_concepts
+		.system_element_3226
 		=> nrel_idtf: [<p>действие. заменить некоторое множество понятий на другое множество понятий</p>]
 		(*
 			<- lang_ru;;
@@ -274,10 +274,10 @@
 			=> nrel_format: format_html;;
 		*);;
 
-		action_to_delete_selected_sc_elements
+		.system_element_3235
 		=> nrel_subdividing: {
-			action_to_physically_delete_selected_sc_elements;
-			action_to_logically_delete_selected_sc_elements
+			.system_element_3239;
+			.system_element_3240
 		};
 		=> nrel_explanation: [<p>Каждое <b><i>действие. удалить указанные sc-элементы</i></b> может быть выполнено как <i>действие. физически удалить указанные sc-элементы</i> или <i>действие. логически удалить указанные sc-элементы</i>. В случае логического удаления в протоколе деятельности агентов сохраняется само действие с его спецификацией, включающей обязательное указание того, какие элементы были удалены, т.е. по сути, элементы просто исключаются из текущего состояния базы знаний.В случае физического удаления протокол действия не сохраняется. В случае удаления какого-либо <i>sc-элемента</i>, инцидентные ему <i>связки</i>, в том числе <i>sc-коннекторы</i>, так же удаляются.</p>]
 		(*
@@ -285,18 +285,18 @@
 			=> nrel_format: format_html;;
 		*);;
 
-		action_to_integrate_selected_structure_into_current_state_of_kb
+		.system_element_3230
 		=> nrel_explanation: [<p>Для того, чтобы выполнить <b><i>действие. интегрировать указанную структуру в текущее состояние базы знаний</i></b>, необходимо склеить <i>sc-элементы</i>, входящие в интегрируемую <i>структуру</i> с синонимичными им <i>sc-элементами</i>, входящими в текущее состояние базы знаний, заменить неиспользуемые (например, устаревшие) понятия, входящие в интегрируемую <i>структуру</i>, на используемые (т.е. заменить неиспользуемые понятия на их определения через используемые), явно включить все элементы интегрируемой <i>структуры</i> в число элементов утвержденной части базы знаний и явно включить все элементы интегрируемой <i>структуры</i> в число элементов одного из атомарных разделов утвержденной части базы знаний.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		action_of_interpreting_program_stored_in_sc_memory
-		=> nrel_inclusion: question_scp_interpretation_request;;
+		.system_element_3189
+		=> nrel_inclusion: .system_element_3241;;
 
-		task_solved_in_sc_memory
-		<= nrel_inclusion: task;
+		.system_element_3242
+		<= nrel_inclusion: .system_element_1351;
 		=> nrel_idtf: [<p>спецификация действия, выполняемого в sc-памяти</p>]
 		(*
 			<- lang_ru;;
@@ -313,13 +313,13 @@
 			=> nrel_format: format_html;;
 		*);;
 
-		actions_class
-		=> nrel_inclusion: .system_element_3774
+		.system_element_2276
+		=> nrel_inclusion: .system_element_3243
 		(*
-			<= nrel_set_of_subsets: action_in_sc_memory;;
+			<= .system_element_378: .system_element_3159;;
 		*);
 		=> nrel_subdividing: {
-			.system_element_3775
+			.system_element_3244
 			(*
 				=> nrel_idtf: [<p>класс автономных действий</p>]
 				(*
@@ -327,7 +327,7 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);
-			.system_element_3776
+			.system_element_3245
 			(*
 				=> nrel_idtf: [<p>класс неавтономных действий</p>]
 				(*
@@ -337,7 +337,7 @@
 			*)
 		};;
 
-		.system_element_3775
+		.system_element_3244
 		=> nrel_explanation: [<p>Каждое <i>действие</i>, принадлежащее некоторому конкретному <i>классу логически атомарных действий</i>, обладает двумя необходимыми свойствами:
 
 		<ul>
@@ -351,7 +351,7 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
-		=> nrel_inclusion: .system_element_3777
+		=> nrel_inclusion: .system_element_3246
 		(*
 			=> nrel_explanation: [<p>На логически атомарные действия предлагается делить всю деятельность, направленную на решение каких-либо задач ostis-системой. Соответственно <i>решатель задач ostis-системы</i> предлагается делить на компоненты, соответствующие таким <i>классам логически атомарных действий в sc-памяти</i>, что является основой для обеспечения его <i>модифицируемости</i>.</p>]
 			(*
@@ -361,10 +361,10 @@
 		*);;
 	*];;
 
-	.system_element_3778
+	.system_element_3247
 	=> nrel_inclusion: [*
 
-		sc_agent
+		.system_element_3042
 		=> nrel_idtf: [<p>единственный вид <i>субъектов</i>, выполняющих преобразования в <i><i>sc-памяти</i></i></p>]
 		(*
 			<- lang_ru;;
@@ -381,7 +381,7 @@
 			=> nrel_format: format_html;;
 		*);;
 
-		abstract_sc_agent
+		.system_element_200
 		=> nrel_note: [<p>Поскольку предполагается, что копии одного и того же <i>sc-агента</i> или функционально эквивалентные <i>sc-агенты</i> могут работать в разных ostis-системах, будучи при этом физически разными sc-агентами, то целесообразно рассматривать свойства и классификацию не sc-агентов, а классов функционально эквивалентных sc-агентов, которые будем называть <i>абстрактными sc-агентами</i>.</p>]
 		(*
 			<- lang_ru;;
@@ -400,209 +400,209 @@
 			=> nrel_format: format_html;;
 		*);
 		=> nrel_subdividing: {
-			non_atomic_abstract_sc_agent;
-			atomic_abstract_sc_agent
+			.system_element_3161;
+			.system_element_872
 		};
 		=> nrel_subdividing: {
-			inside_abstract_sc_agent;
-			effector_abstract_sc_agent;
-			receptor_abstract_sc_agent
+			.system_element_3164;
+			.system_element_3165;
+			.system_element_3166
 		};
 		=> nrel_subdividing: {
-			abstract_sc_agent_is_not_implemented_on_the_scp_language;
-			abstract_sc_agent_implemented_on_the_scp_language
+			.system_element_891;
+			.system_element_3156
 		};
 		=> nrel_subdividing: {
-			abstract_sc_agent_of_interpretation_of_scp_program;
-			abstract_program_sc_agent;
-			abstract_sc_metaagent
+			.system_element_3167;
+			.system_element_3168;
+			.system_element_3170
 		};
 		=> nrel_subdividing: {
-			platform_dependent_abstract_sc_agent
+			.system_element_3163
 			(*
-				=> nrel_inclusion: abstract_sc_agent_is_not_implemented_on_the_scp_language;;
+				=> nrel_inclusion: .system_element_891;;
 			*);
-			platform_independent_abstract_sc_agent
+			.system_element_3162
 		};;
 
-		abstract_sc_agent_is_not_implemented_on_the_scp_language
+		.system_element_891
 		=> nrel_idtf: [<p>абстрактный sc-агент, который не может быть реализован на платформенно-независимом уровне</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
 		=> nrel_subdividing: {
-			effector_abstract_sc_agent;
-			receptor_abstract_sc_agent;
-			abstract_sc_agent_of_interpretation_of_scp_program
+			.system_element_3165;
+			.system_element_3166;
+			.system_element_3167
 		};;
 
-		abstract_sc_agent_implemented_on_the_scp_language
+		.system_element_3156
 		=> nrel_idtf: [<p>абстрактный sc-агент, который может быть реализован на платформенно-независимом уровне</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
 		=> nrel_subdividing: {
-			abstract_sc_metaagent;
-			abstract_program_sc_agent_implemented_on_the_scp_language
+			.system_element_3170;
+			.system_element_3169
 		};;
 
-		abstract_program_sc_agent
+		.system_element_3168
 		=> nrel_subdividing: {
-			effector_abstract_sc_agent;
-			receptor_abstract_sc_agent;
-			abstract_program_sc_agent_implemented_on_the_scp_language
+			.system_element_3165;
+			.system_element_3166;
+			.system_element_3169
 		};;
 
-		non_atomic_abstract_sc_agent
+		.system_element_3161
 		=> nrel_explanation: [<p>Под <b><i>неатомарным абстрактным sc-агентом</i></b> понимается <i>абстрактный sc-агент</i>, который декомпозируется на коллектив более простых <i>абстрактных sc-агентов</i>, каждый из которых в свою очередь может быть как <i>атомарным абстрактным sc-агентом</i>, так и <b><i>неатомарным абстрактным sc-агентом</i></b>. При этом в каком-либо варианте <i>декомпозиции абстрактного sc-агента*</i> дочерний <b><i>неатомарный абстрактный sc-агент</i></b> может стать <i>атомарным абстрактным sc-агентом</i> и реализовываться соответствующим образом.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		atomic_abstract_sc_agent
+		.system_element_872
 		=> nrel_explanation: [<p>Под <b><i>атомарным абстрактным sc-агентом</i></b> понимается <i>абстрактный sc-агент</i>, для которого уточняется платформа его реализации, т.е. существует соответствующая связка отношения <i>программа sc-агента*</i>.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
 		=> nrel_subdividing: {
-			platform_independent_abstract_sc_agent;
-			platform_dependent_abstract_sc_agent
+			.system_element_3162;
+			.system_element_3163
 		};;
 
-		platform_independent_abstract_sc_agent
+		.system_element_3162
 		=> nrel_explanation: [<p>К <b><i>платформенно-независимым абстрактным <b>sc-агентам</b></i></b> относят <i>атомарные абстрактные sc-агенты</i>, реализованные на базовом языке программирования Технологии OSTIS, т.е. на <i>Языке SCP</i>.При описании <b><i>платформенно-независимых абстрактных sc-агентов</i></b> под платформенной независимостью понимается платформенная независимость с точки зрения Технологии OSTIS, т.е реализация на специализированном языке программирования, ориентированном на обработку семантических сетей (<i>Языке SCP</i>), поскольку <i>атомарные sc-агенты</i>, реализованные на указанном языке могут свободно переноситься с одной платформы интерпретации <i>sc-моделей</i> на другую. При этом языки программирования, традиционно считающиеся платформенно-независимыми, в данном случае не могут считаться таковыми.Существуют <i>sc-агенты</i>, которые принципиально не могут быть реализованы на платформенно-независимом уровне, например, собственно <i>sc-агенты</i> интерпретации <i>sc-моделей</i> или рецепторные и эффекторные <i>sc-агенты</i>, обеспечивающие взаимодействие с внешней средой.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		platform_dependent_abstract_sc_agent
+		.system_element_3163
 		=> nrel_explanation: [<p>К <b><i>платформенно-зависимым абстрактным sc-агентам</i></b> относят <i>атомарные абстрактные sc-агенты</i>, реализованные ниже уровня sc-моделей, т.е. не на <i>Языке SCP</i>, а на каком-либо другом языке описания программ.Существуют <i>sc-агенты</i>, которые принципиально должны быть реализованы на платформенно-зависимом уровне, например, собственно <i>sc-агенты</i> интерпретации <i>sc-моделей</i> или рецепторные и эффекторные <i>sc-агенты</i>, обеспечивающие взаимодействие с внешней средой.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		inside_abstract_sc_agent
+		.system_element_3164
 		=> nrel_explanation: [<p>Каждый <b><i>внутренний абстрактный sc-агент</i></b> обозначает класс <i>sc-агентов</i>, которые реагируют на события в <i>sc-памяти</i> и осуществляют преобразования исключительно в рамках этой же <i>sc-памяти</i>.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		effector_abstract_sc_agent
+		.system_element_3165
 		=> nrel_explanation: [<p>Каждый <b><i>эффекторный абстрактный sc-агент</i></b> обозначает класс <i>sc-агентов</i>, которые реагируют на события в <i>sc-памяти</i> и осуществляют преобразования во внешней относительно данной <i>ostis-системы</i> среде.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		receptor_abstract_sc_agent
+		.system_element_3166
 		=> nrel_explanation: [<p>Каждый <b><i>рецепторный абстрактный sc-агент</i></b> обозначает класс <i>sc-агентов</i>, которые реагируют на события во внешней относительно данной <i>ostis-системы</i> среде и осуществляют преобразования в памяти данной системы.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		abstract_sc_agent_is_not_implemented_on_the_scp_language
+		.system_element_891
 		=> nrel_explanation: [<p>Каждый <b><i>абстрактный sc-агент, не реализуемый на Языке SCP</i></b> должен быть реализован на уровне платформы интерпретации sc-моделей, в том числе, аппаратной. К таким <i>абстрактным sc-агентам</i> относятся абстрактные sc-агенты интерпретации scp-программ, а также эффекторные и рецепторные абстрактные sc-агенты.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		abstract_sc_agent_implemented_on_the_scp_language
+		.system_element_3156
 		=> nrel_explanation: [<p>Каждый <b><i>абстрактный sc-агент, реализуемый на Языке SCP</i></b> может быть реализован на Языке SCP, то есть на платформенно-независимом уровне, но при необходимости может реализовываться и на уровне платформы, например, с целью повышения производительности.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		abstract_sc_agent_of_interpretation_of_scp_program
+		.system_element_3167
 		=> nrel_explanation: [<p>К <b><i>абстрактным sc-агентам интерпретации scp-программ</i></b> относятся нереализуемые на платформенно-независимом уровне <i>абстрактные sc-агенты</i>, обеспечивающие интерпретацию <i>scp-программ</i> и <i>scp-метапрограмм</i>, в том числе создание <i>scp-процессов</i>, собственно интерпретацию <i>scp-операторов</i>, а также другие вспомогательные действия. По сути, агенты данного класса обеспечивают работу sc-агентов более высоких уровней (программных sc-агентов и sc-метаагентов), реализованных на Языке SCP, в частности, обеспечивают соблюдение указанными агентами общих принципов синхронизации.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		abstract_program_sc_agent
+		.system_element_3168
 		=> nrel_explanation: [<p>К <b><i>абстрактным программным sc-агентам</i></b> относятся все <i>абстрактные sc-агенты</i>, обеспечивающие основной функционал системы, то есть ее возможность решать те или иные задачи. Агенты данного класса должны работать в соответствии с общими принципами синхронизации деятельности субъектов в sc-памяти.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		abstract_sc_metaagent
+		.system_element_3170
 		=> nrel_explanation: [<p>Задачей <b><i>абстрактных sc-метаагентов</i></b> является координация деятельности <i>абстрактных программных sc-агентов</i>, в частности, решение проблемы взаимоблокировок. Агенты данного класса могут быть реализованы на Языке SCP, однако для синхронизации их деятельности используются другие принципы, соответственно, для реализации таких агентов требуется Язык SCP другого уровня, типология операторов которого полностью аналогична типологии scp-операторов, однако эти операторы имеют другую операционную семантику, учитывающую отличия в принципах синхронизации (работы с <i>блокировками*</i>). Программы такого языка будем называть <i>scp-метапрограммами</i>, соответствующие им <b><i>процессы в sc-памяти</i> ---  <i>scp-метапроцессами</i></b>, операторы  --- <i>scp-метаоператорами</i>.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		nrel_abstract_sc_agent_decomposition
-		<- decomposition_relation;
+		.system_element_829
+		<- .system_element_3248;
 		=> nrel_explanation: [<p>Отношение <b><i>декомпозиции абстрактного sc-агента*</i></b> трактует <i>неатомарные абстрактные sc-агенты</i> как коллективы более простых <i>абстрактных sc-агентов</i>, взаимодействующих через <i>sc-память</i>.Другими словами, <b><i>декомпозиция абстрактного sc-агента*</i></b> на <i>абстрактные sc-агенты</i> более низкого уровня уточняет один из возможных подходов к реализации этого <i>абстрактного sc-агента</i> путем построения коллектива более простых <i>абстрактных sc-агентов</i>.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		sc_agent
+		.system_element_3042
 		=> nrel_idtf: [<p>агент над sc-памятью</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
-		<= nrel_inclusion: subject;
-		=> nrel_set_of_subsets: abstract_sc_agent;
+		<= nrel_inclusion: .system_element_190;
+		=> .system_element_378: .system_element_200;
 		=> nrel_explanation: [<p>Под <b><i>sc-агентом</i></b> понимается конкретный экземпляр (с теоретико-множественной точки зрения --- элемент) некоторого <i>атомарного абстрактного sc-агента</i>, работающий в какой-либо конкретной интеллектуальной системе.Таким образом, каждый <i>sc-агент</i> --- это субъект, способный выполнять некоторый класс однотипных действий либо только над <i>sc-памятью</i>, либо над sc-памятью и внешней средой (для эффекторных <i>sc-агентов</i>). Каждое такое действие инициируется либо состоянием или ситуацией в sc-памяти, либо состоянием или ситуацией во внешней среде (для рецепторных sc-агентов-датчиков),  соответствующей условию инициирования <i>атомарного абстрактного sc-агента</i>, экземпляром которого является заданный <i>sc-агент</i>. В данном случае можно провести аналогию между принципами объектно-ориентированного программирования, рассматривая <i>атомарный абстрактный sc-агент</i> как класс, а конкретный <i>sc-агент</i>  как экземпляр, конкретную имплементацию этого класса.Взаимодействие <i>sc-агентов</i> осуществляется только через <i>sc-память</i>. Как следствие, результатом работы любого <i>sc-агента</i> является некоторое изменение состояния <i>sc-памяти</i>, т.е. удаление либо генерация каких-либо <i>sc-элементов</i>.В общем случае один <i>sc-агент</i> может явно передать управление другому <i>sc-агенту</i>, если этот <i>sc-агент</i> априори известен. Для этого каждый <i>sc-агент</i> в <i>sc-памяти</i> имеет обозначающий его <i>sc-узел</i>, с которым можно связать конкретную ситуацию в текущем состоянии базы знаний, которую инициируемый <i>sc-агент</i> должен обработать.Однако далеко не всегда легко определить тот <i>sc-агент</i>, который должен принять управление от заданного <i>sc-агента</i>, в связи с чем описанная выше ситуация возникает крайне редко. Более того, иногда условие инициирования <i>sc-агента</i> является результатом деятельности непредсказуемой группы <i>sc-агентов</i>, равно как и одна и та же конструкция может являться условием инициирования целой группы <i>sc-агентов</i>.При этом общаются через <i>sc-память</i> не <i>программы sc-агентов*</i>, а сами описываемые данными программами <i>sc-агенты</i>.В процессе работы <i>sc-агент</i> может сам для себя порождать вспомогательные <i>sc-элементы</i>, которые сам же удаляет после завершения акта своей деятельности (это вспомогательные <i>структуры</i>, которые используются в качестве информационных лесов только в ходе выполнения соответствующего акта деятельности и после завершения этого акта удаляются).</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		active_sc_agent
-		<= nrel_inclusion: sc_agent;
+		.system_element_3171
+		<= nrel_inclusion: .system_element_3042;
 		=> nrel_explanation: [<p>Под <b><i>активным sc-агентом</i></b> понимается <i>sc-агент</i> ostis-системы, который реагирует на события, соответствующие его условию инициирования, и, как следствие, его <i>первичному условию инициирования*</i>. Не входящие во множество <b><i>активных sc-агентов</i></b> <i>sc-агенты</i> не реагируют ни на какие события в <i>sc-памяти</i>.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		nrel_sc_agent_key_sc_elements
+		.system_element_3177
 		=> nrel_explanation: [<p>Связки отношения <b><i>ключевые sc-элементы sc-агента*</i></b> связывают между собой <i>sc-узел</i>, обозначающий <i>абстрактный sc-агент</i> и <i>sc-узел</i>, обозначающий множество <i>sc-элементов</i>, которые являются ключевыми для данного <i>абстрактного sc-агента</i>, то данные <i>sc-элементы</i> явно упоминаются в рамках программ, реализующих данный <i>абстрактный sc-агент</i>.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		nrel_sc_agent_program
+		.system_element_3178
 		=> nrel_explanation: [<p>Связки отношения <b><i>программа sc-агента*</i></b> связывают между собой <i>sc-узел</i>, обозначающий <i>атомарный абстрактный sc-агент</i> и <i>sc-узел</i>, обозначающий множество программ, реализующих указанный <i>атомарный абстрактный sc-агент</i>. В случае <i>платформенно-независимого абстрактного sc-агента</i> каждая связка отношения <i>программа sc-агента*</i> связывает <i>sc-узел</i>, обозначающий указанный <i>абстрактный sc-агент</i> с множеством <i>scp-программ</i>, описывающих деятельность данного <i>абстрактного sc-агента</i>. Данное множество содержит одну <i>агентную scp-программу</i> и произвольное количество (может быть, и ни одной) <i>scp-программ</i>, которые необходимы для выполнения указанной <i>агентной scp-программы</i>.В случае <i>платформенно-зависимого абстрактного sc-агента</i> каждая связка отношения <i>программа <b>sc-агента*</b></i> связывает <i>sc-узел</i>, обозначающий указанный <i>абстрактный sc-агент</i> с множеством файлов, содержащих исходные тексты программы на некотором внешнем языке программирования, реализующей деятельность данного <i>абстрактного sc-агента</i>.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		nrel_primary_initiation_condition
+		.system_element_3179
 		=> nrel_explanation: [<p>Связки отношения <b><i>первичное условие инициирования*</i></b> связывают между собой <i>sc-узел</i>, обозначающий <i>абстрактный sc-агент</i> и бинарную ориентированную пару, описывающую первичное условие инициирования данного <i>абстрактного sc-агента</i>, т.е. такую спецификацию <i>ситуации</i> в <i>sc-памяти</i>, возникновение которой побуждает <i>sc-агента</i> перейти в активное состояние и начать проверку наличия своего полного условия инициирования.Первым компонентом данной ориентированной пары является знак некоторого класса <i>элементарных событий в sc-памяти*</i>, например, <i>событие добавления sc-дуги, выходящей из заданного sc-элемента*</i>.Вторым компонентом данной ориентированной пары является произвольный в общем случае <i>sc-элемент</i>, с которым непосредственно связан указанный тип события в <i>sc-памяти</i>, т.е., например, <i>sc-элемент</i>, из которого выходит либо в который входит генерируемая либо удаляемая <i>sc-дуга</i> либо <i>файл</i>, содержимое которого было изменено.После того, как в <i>sc-памяти</i> происходит некоторое событие, активизируются все <i>активные sc-агенты</i>, <b><i>первичное условие инициирования*</i></b> которых соответствует произошедшему событию.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		nrel_initiation_condition_and_result
+		.system_element_3180
 		=> nrel_explanation: [<p>Связки отношения <b><i>условие инициирования и результат*</i></b> связывают между собой <i>sc-узел</i>, обозначающий <i>абстрактный sc-агент</i>, и бинарную ориентированную пару, связывающую условие инициирования данного <i>абстрактного sc-агента</i> и результаты выполнения данного экземпляров данного <i>sc-агента</i> в какой-либо конкретной системе.Указанную ориентированную пару можно рассматривать как логическую связку импликации, при этом на <i>sc-переменные</i>, присутствующие в обеих частях связки, неявно накладывается квантор всеобщности, на <i>sc-переменные</i>, присутствующие либо только в посылке, либо только в заключении неявно накладывается квантор существования.Первым компонентом указанной ориентированной пары является логическая формула, описывающая условие инициирования описываемого <i>абстрактного sc-агента</i>, то есть конструкции, наличие которой в <i>sc-памяти</i> побуждает <i>sc-агент</i> начать работу по изменению состояния <i>sc-памяти</i>. Данная логическая формула может быть как атомарной, так и неатомарной, в которой допускается использование любых связок логического языка.Вторым компонентом указанной ориентированной пары является логическая формула, описывающая возможные результаты выполнения описываемого абстрактного <i>sc-агента</i>, то есть описание произведенных им изменений состояния <i>sc-памяти</i>. Данная логическая формула может быть как атомарной, так и неатомарной, в которой допускается использование любых связок логического языка.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_3757
-		<= nrel_inclusion: semantic_neighborhood;
+		.system_element_3172
+		<= nrel_inclusion: .system_element_862;
 		=> nrel_explanation: [<p><b><i>описание поведения sc-агента</i></b> представляет собой <i>семантическую окрестность</i>, описывающую деятельность <i>sc-агента</i> до какой-либо степени детализации, однако такое описание должно быть строгим, полным и однозначно понимаемым. Как любая другая <i>семантическая окрестность</i>, <b><i>описание поведения sc-агента</i></b> может быть протранслировано на какие-либо понятные, общепринятые средства, не требующие специального изучения, например, на естественный язык.Описываемый <i>абстрактный sc-агент</i> входит в соответствующее <b><i>описание поведения sc-агента</i></b> под атрибутом <i>ключевой sc-элемент'</i>.</p>]
 		(*
 			<- lang_ru;;
@@ -610,76 +610,76 @@
 		*);;
 	*];;
 
-	.system_element_3779
+	.system_element_3249
 	=> nrel_inclusion: [*
 
-		process_in_sc_memory
+		.system_element_3184
 		=> nrel_note: [<p>Понятия <i>действие в sc-памяти</i> и <i>процесс в sc-памяти</i> (информационный процесс, выполняемый агентом в семантической памяти), являются синонимичными, поскольку все процессы, протекающие в sc-памяти, являюся осознанными и выполняются каким-либо sc-агентами. Тем не менее, когда идет речь о синхронизации выполнения каких-либо преобразований в памяти компьютерной системы, в литературе принято использовать именно термины <i>процесс</i>, взаимодействие процессов Dijkstra1972, Hoare1989, в связи с чем будем использовать этот термин при описании принципов синхронизации деятельности sc-агентов при выполнении ими параллельных процессов в sc-памяти.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
 		=> nrel_subdividing: {
-			sc_memory_process_corresponding_platform_dependent_sc_agent;
-			scp_process
+			.system_element_3250;
+			.system_element_3119
 		};
 		=> nrel_subdividing: {
-			.system_element_3780;
-			scp_metaprocess
+			.system_element_3251;
+			.system_element_3252
 		};;
 
-		sc_memory_process_corresponding_platform_dependent_sc_agent
+		.system_element_3250
 		=> nrel_subdividing: {
-			.system_element_3781;
-			.system_element_3782
+			.system_element_3253;
+			.system_element_3254
 		};;
 
-		nrel_lock
-		<- binary_relation;
+		.system_element_3181
+		<- .system_element_949;
 		=> nrel_explanation: [<p>Для синхронизации выполнения <i>процессов в sc-памяти</i> используется механизм блокировок. Отношение <b><i>блокировка*</i></b> связывает знаки <i>действий в sc-памяти</i> со знаками <i>структур</i> (ситуативных), которые содержат элементы, заблокированные на время выполнения данного действия или на какую-то часть этого периода. Каждая такая <i>структура</i> принадлежит какому-либо из <i>типов блокировки</i>.Первым компонентом связок отношения <b><i>блокировка*</i></b> является знак <i>действия в sc-памяти</i>, вторым  знак заблокированной <i>структуры</i>.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
-		=> .system_element_1913: "file://images/sd_agents/lock.png"
+		=> .system_element_242: "file://images/sd_agents/lock.png"
 		(*
 			<- concept_file;;
 			=> nrel_format: format_png;;
 		*);;
 
-		lock_type
+		.system_element_3173
 		=> nrel_explanation: [<p>Множество <b><i>тип блокировки</i></b> содержит все возможные классы блокировок, т.е. <i>структуры</i>, содержащие <i>sc-элементы</i>, заблокированные каким-либо <i>sc-агентом</i> на время выполнения им некоторого <i>действия в sc-памяти</i>.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
-		-> total_lock;
-		-> lock_for_any_change;
-		-> lock_for_deleting;;
+		-> .system_element_3174;
+		-> .system_element_3175;
+		-> .system_element_3176;;
 
-		total_lock
+		.system_element_3174
 		=> nrel_explanation: [<p>Каждая <i>структура</i>, принадлежащая множеству <b><i>полная блокировка</i></b> содержит <i>sc-элементы</i>, просмотр и изменение (удаление, добавление инцидентных <i>sc-коннекторов</i>, удаление самих <i>sc-элементов</i>, изменение содержимого в  случае файла) которых запрещены всем <i>sc-агентам</i>, кроме собственно <i>sc-агента</i>, выполняющего соответствующее данной структуре <i>действие в sc-памяти</i>, связанное с ней отношением <i>блокировка*</i>.Для того, чтобы исключить возможность реализации <i>sc-агентов</i>, которые могут внести изменения в конструкции, описывающие блокировки других <i>sc-агентов</i>, все элементы этих конструкций, в том числе, сам знак <i>структуры</i>, содержащей заблокированные <i>sc-элементы</i> (принадлежащей как множеству <b><i>полная блокировка</i></b>, так и любому другому <i>типу блокировки</i>) и связки отношения <i>блокировка*</i>, связывающие эту <i>структуру</i> и конкретное <i>действие в sc-памяти</i>, добавляются в <b><i>полную блокировку</i></b>, соответствующую данному <i>действию в sc-памяти</i>. Таким образом, каждой <b><i>полной блокировке</i></b> соответствует петля принадлежности, связывающая ее знак с самим собой.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		lock_for_any_change
+		.system_element_3175
 		=> nrel_explanation: [<p>Каждая <i>структура</i>, принадлежащая множеству <b><i>блокировка на любое изменение</i></b> содержит <i>sc-элементы</i>, изменение (физическое удаление, добавление инцидентных <i>sc-коннекторов</i>, физическое удаление самих <i><b>sc-элементов</b></i>, изменение содержимого в случае файл) которых запрещено всем <i>sc-агентам</i>, кроме собственно <i>sc-агента</i>, выполняющего соответствующее данной структуре <i>действие в sc-памяти</i>, связанное с ней отношением <i>блокировка*</i>. Однако не запрещен просмотр (чтение) этих <i>sc-элементов</i> любым <i>sc-агентом</i>.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		lock_for_deleting
+		.system_element_3176
 		=> nrel_explanation: [<p>Каждая <i>структура</i>, принадлежащая множеству <b><i>блокировка на удаление</i></b> содержит <i>sc-элементы</i>, удаление которых запрещено всем <i>sc-агентам</i>, кроме собственно <i>sc-агента</i>, выполняющего соответствующее данной структуре <i>действие в sc-памяти</i>, связанное с ней отношением <i>блокировка*</i>. Однако не запрещен просмотр (чтение) этих <i>sc-элементов</i> любым <i>sc-агентом</i>, добавление инцидентных sc-коннекторов.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		nrel_lock
-		=> .system_element_1143: {
+		.system_element_3181
+		=> .system_element_2326: {
 			[<p>В каждый момент времени одному процессу в sc-памяти может соответствовать только одна блокировка каждого типа.</p>]
 			(*
 				<- lang_ru;;
@@ -704,7 +704,7 @@
 			(*
 				<- lang_ru;;
 				=> nrel_format: format_html;;
-				=> nrel_detalization: 
+				=> .system_element_1458: 
 					[<p>Все дочерние процессы в sc-памяти имеют доступ к блокировкам родительского процесса так же, как если бы это были блокировки соответствующие каждому из таких дочерних процессов.</p>]
 					(*
 						<- lang_ru;;
@@ -729,8 +729,8 @@
 			*)
 		};;
 
-		total_lock
-		=> .system_element_1143: {
+		.system_element_3174
+		=> .system_element_2326: {
 			[<p>Если sc-элемент, инцидентный некоторому sc-коннектору, попадает в какую-либо полную блокировку, то сам этот sc-коннектор по умолчанию также считается заблокированным этой же блокировкой. Обратное в общем случае неверно, т. к. часть sc-коннекторов, инцидентных некоторому sc-элементу, может быть полностью заблокирована, при этом сам этот элемент заблокирован не будет. Такая ситуация типична, например, для sc-узлов, обозначающих классы понятий.</p>]
 			(*
 				<- lang_ru;;
@@ -750,8 +750,8 @@
 			*);;
 		*);;
 
-		lock_for_any_change
-		=> .system_element_1143: {
+		.system_element_3175
+		=> .system_element_2326: {
 			[<p>На один и тот же sc-элемент в один момент времени может быть установлена только одна блокировка одного типа, но разные процессы могут одновременно установить на один и тот же элемент блокировки двух разных типов. Это касается случая, когда первый процесс установил на некоторый sc-элемент блокировку на удаление, а второй процесс затем устанавливает блокировку на любое изменение. В других случаях возникает конфликт блокировок.</p>]
 			(*
 				<- lang_ru;;
@@ -769,48 +769,48 @@
 			*)
 		}
 		(*
-			<= .system_element_1143: lock_for_deleting;;
+			<= .system_element_2326: .system_element_3176;;
 		*);;
 
-		process_in_sc_memory
+		.system_element_3184
 		=> nrel_idtf: [<p>действие в sc-памяти</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
-		=> nrel_subdividing: .system_element_3783
+		=> nrel_subdividing: .system_element_3255
 		(*
-			<=> .system_element_293: {
-				.system_element_3784;
-				action_of_generation_sc_elements;
-				action_of_deleting_sc_elements;
-				.system_element_3785;
-				.system_element_3786
+			<=> .system_element_155: {
+				.system_element_3256;
+				.system_element_3218;
+				.system_element_3234;
+				.system_element_3257;
+				.system_element_3258
 			};;
 		*);;
 
-		.system_element_3787
+		.system_element_3259
 		=> nrel_explanation: [<p>В некоторых случаях для того, чтобы обеспечить синхронизацию, необходимо объединять несколько элементарных действий над sc-памятью в одно неделимое действие (<i>транзакцию в sc-памяти</i>), для которого гарантируется, что ни один сторонний процесс не сможет прочитать или изменить участвующие в этом действии sc-элементы, пока действие не завершится. При этом, в отличие от ситуации с полной блокировкой, процесс, пытающийся получить доступ к таким элементам, не продолжает выполнение так, как если бы этих элементов просто не было в sc-памяти, а ожидает завершения транзакции, после чего может выполнять с данными элементами любые действия согласно общим принципам синхронизации процессов. Проблема обеспечения транзакций не может быть решена на уровне SC-кода и требует реализации таких неделимых действий на уровне <i>платформы интерпретации sc-моделей</i>.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_3784
+		.system_element_3256
 		=> nrel_explanation: [<p>В случае осуществления поиска все найденные и сохраненные в рамках какого-либо процесса sc-элементы попадают в соответствующую данному процессу <i>блокировку на любое изменение</i>. Таким образом, гарантируется целостность фрагмента базы знаний, с которым работает некоторый процесс в sc-памяти. При этом поиск и автоматическая установка такой блокировки должны быть реализованы как <i>транзакция в sc-памяти</i>.Такой подход также позволяет избежать ситуации, когда один процесс заблокировал некоторый sc-элемент на любое изменение, а второй процесс пытается сгенерировать или удалить <i>sc-коннектор</i>, инцидентный данному <i>sc-элементу</i>. В таком случае второй процесс должен будет предварительно найти и заблокировать указанный <i>sc-элемент</i> на любое изменение, что вызовет конфликт блокировок (<i>взаимоблокировку*</i>).</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		action_of_generation_sc_elements
+		.system_element_3218
 		=> nrel_explanation: [<p>В случае генерации любого sc-элемента в рамках некоторого процесса он автоматически попадает в полную блокировку, соответствующую данному процессу. При этом генерация и автоматическая установка такой блокировки должны быть реализованы как <i>транзакция в sc-памяти</i>. При необходимости сгенерированные элементы могут быть удалены (т. е. их временное существование вообще никак не отразится на деятельности других процессов) или разблокированы в случае, когда сгенерирована информация, которая может иметь некоторую ценность в дальнейшем.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_3785
+		.system_element_3257
 		=> nrel_explanation: [<p>В случае, если какой-либо процесс пытается установить блокировку любого типа на какой-либо sc-элемент, уже заблокированный каким-либо другим процессом, то, с одной стороны, блокировка не может быть установлена, пока другой процесс не разблокирует указанный sc-элемент; с другой стороны, для того чтобы обеспечить возможность поиска и устранения <i>взаимоблокировок</i>, необходимо явно указывать тот факт, что какой-либо процесс хочет получить доступ к какому-либо заблокированному другим процессом sc-элементу. Для того чтобы иметь возможность указать, какие процессы пытаются заблокировать уже заблокированный <i>sc-элемент</i>, предлагается наряду с отношением <i>блокировка*</i> использовать отношение <i>планируемая блокировка*</i>, полностью аналогичное отношению <i>блокировка*</i>.Описанный механизм регулирует также и процессы поиска, поскольку поиск и сохранение некоторого sc-элемента предполагает установку <i>блокировки на любое изменение</i>. Кроме того, следует учитывать, что на один sc-элемент <i>блокировка на любое изменение</i> может быть установлена после <i>блокировки на удаление</i>, соответствующей другому процессу. В этом случае использовать отношение <i>планируемые блокировки*</i> нет необходимости.</p>]
 		(*
 			<- lang_ru;;
@@ -822,23 +822,23 @@
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_3788
-		<= nrel_inclusion: nrel_lock;
+		.system_element_3260
+		<= nrel_inclusion: .system_element_3181;
 		=> nrel_explanation: [<p>Процесс, которому в соответствие поставлена <i>планируемая блокировка*</i>, приостанавливает выполнение до тех пор, пока уже установленные блокировки не будут сняты, после чего <i>планируемая блокировка*</i> становится реальной <i>блокировкой*</i> и процесс продолжает выполнение в соответствии с общими правилами.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_3789
-		=> nrel_definitional_domain: .system_element_3788;
+		.system_element_3261
+		=> .system_element_1265: .system_element_3260;
 		=> nrel_explanation: [<p>В случае, когда на один и тот же sc-элемент планируют установить блокировку сразу несколько процессов, используется отношение <i>приоритет блокировки*</i>, связывающее между собой пары отношения <i>планируемая блокировка*</i>. Как правило, приоритет блокировки определяется тем, какой из процессов раньше попытался установить блокировку на рассматриваемый sc-элемент, хотя в общем случае приоритет может устанавливаться или меняться в зависимости от дополнительных критериев.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		action_of_deleting_sc_elements
+		.system_element_3234
 		=> nrel_note: [<p>В случае попытки удаления некоторого sc-элемента некоторым процессом удаление может быть осуществлено только в случае, когда на данный sc-элемент не установлена (и не планируется) ни одна блокировка каким-либо другим процессом.В других случаях необходимо обеспечить корректное завершение выполнения всех процессов, работающих с данным sc-элементом, и только потом удалить его физически.Для реализации такой возможности каждому процессу в соответствие может быть поставлено множество удаляемых данным процессом sc-элементов.</p>]
 		(*
 			<- lang_ru;;
@@ -850,16 +850,16 @@
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_3790
-		=> nrel_first_domain: process_in_sc_memory;
+		.system_element_3262
+		=> .system_element_843: .system_element_3184;
 		=> nrel_explanation: [<p>Sc-элементы, попавшие во множество удаляемых sc-элементов некоторого процесса в sc-памяти, доступны процессам, уже установившим (или планирующим установить) на эти sc-элементы блокировки ранее (до попытки его удаления), а для всех остальных процессов эти sc-элементы уже считаются удаленными. Процесс, пытающийся удалить sc-элемент, приостанавливает свое выполнение до того момента, пока все заблокировавшие и планирующие заблокировать данный sc-элемент процессы не разблокируют его. В общем случае один sc-элемент может входить во множества удаляемых элементов одновременно для нескольких процессов, в этом случае все такие процессы одновременно продолжат выполнение после снятия с этого sc-элемента всех блокировок. Если удаление пытается осуществить один из процессов, уже установивший на указанный sc-элемент блокировку, то алгоритм действий остается прежним --- sc-элемент добавляется во множество удаляемых данным процессом sc-элементов и будет физически удален, как только все остальные процессы, установившие на данный sc-элемент блокировки, снимут их.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_3786
-		=> .system_element_3791: <
+		.system_element_3258
+		=> .system_element_3263: <
 			[<p>Если на данный sc-элемент установлена одна или несколько <i>планируемых блокировок*</i>, то первая из них по приоритету (или единственная) становится <i>блокировкой*</i>, соответствующий ей процесс продолжает выполнение (становится настоящей сущностью).</p>]
 			(*
 				<- lang_ru;;
@@ -882,24 +882,24 @@
 			*)
 		>;;
 
-		.system_element_3787
+		.system_element_3259
 		=> nrel_subdividing: {
-			.system_element_3792;
-			.system_element_3793;
-			.system_element_3794;
-			.system_element_3795;
-			.system_element_3796;
-			.system_element_3797;
-			.system_element_3798
+			.system_element_3264;
+			.system_element_3265;
+			.system_element_3266;
+			.system_element_3267;
+			.system_element_3268;
+			.system_element_3269;
+			.system_element_3270
 		};;
 
-		abstract_program_sc_agent
+		.system_element_3168
 		=> nrel_note: [<p>При реализации <i>абстрактных программных sc-агентов</i> на <i>языке SCP</i>, соблюдение всех принципов синхронизации соответствующих этим sc-агентам процессов обеспечивается на уровне <i>sc-агентов интерпретации scp-программ</i>, т. е. средствами <i>платформы интерпретации sc-моделей</i>. При реализации <i>абстрактных программных sc-агентов</i> на уровне платформы, соблюдение всех принципов синхронизации возлагается, во-первых, непосредственно на разработчика агентов, во-вторых, --- на разработчика платформы. Так, например, платформа может предоставлять доступ к хранимым в sc-памяти элементам через некоторый программный интерфейс, уже учитывающий принципы работы с блокировками, что избавит разработчика агентов от необходимости учитывать все эти принципы вручную.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
-		=> .system_element_1143: {
+		=> .system_element_2326: {
 			[<p>В результате появления в sc-памяти некоторой конструкции, удовлетворяющей условию инициирования какого-либо <i>абстрактного sc-агента</i>, реализованного при помощи <i>Языка SCP</i>, в <i>sc-памяти</i> генерируется и инициируется <i>scp-процесс</i>. В качестве шаблона для генерации используется <i>агентная scp-программа</i>, соответствующая данному <i>абстрактному sc-агенту</i>.</p>]
 			(*
 				<- lang_ru;;
@@ -947,13 +947,13 @@
 			*)
 		};;
 
-		nrel_lock
+		.system_element_3181
 		=> nrel_note: [<p>В общем случае весь механизм блокировок может описываться как на уровне SC-кода (для повышения уровня платформенной независимости), так и при необходимости может быть реализован на уровне <i>платформы интерпретации sc-моделей</i>, например, для повышения производительности. Для этого каждому выполняемому в sc-памяти процессу на нижнем уровне может быть поставлена в соответствие некая уникальная таблица, в каждый момент времени содержащая перечень заблокированных элементов с указанием типа блокировки.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
-		=> .system_element_2214: <
+		=> .system_element_3271: <
 			"file://images/sd_agents/plan_lock_1.png"
 			(*
 				<- concept_file;;
@@ -996,7 +996,7 @@
 			*)
 		>;;
 
-		.system_element_3799
+		.system_element_3272
 		=> nrel_explanation: [<p>В зависимости от конкретных <i>типов блокировок</i>, установленных параллельно выполняемыми процессами на некоторые sc-элементы, и того, какие конкретно действия с этими <i>sc-элементами</i> предполагается выполнить, далее в рамках выполнения этих процессов возможны ситуации взаимоблокировки, когда каждый из указанных процессов будет ожидать снятия блокировки вторым процессом с нужного <i>sc-элемента</i>, не снимая при этом установленной им самим блокировки с <i>sc-элемента</i>, доступ к которому необходим второму процессу.В случае, когда хотя бы одна из блокировок является <i>полной блокировкой</i>, ситуация взаимоблокировки возникнуть не может, поскольку <i>sc-элементы</i>, попавшие в <i>полную блокировку</i> некоторого <i>scp-процесса</i>, не доступны другим <i>scp-процессам</i> даже для чтения и, таким образом, остальные <i>scp-процессы</i> будут работать так, как будто заблокированные <i>sc-элементы</i> просто отсутствуют в текущем состоянии <i>sc-памяти</i>.В случаях, когда ни одна из установленных блокировок не является <i>полной блокировкой</i>, возможно появление взаимоблокировок.</p>]
 		(*
 			<- lang_ru;;
@@ -1013,7 +1013,7 @@
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_3800
+		.system_element_3273
 		=> nrel_explanation: [<p>Для <i>sc-метаагентов</i> все sc-элементы, в том числе описывающие блокировки, планируемые блокировки и т. д., полностью эквивалентны между собой с точки зрения доступа к ним, т. е. любой <i>sc-метаагент</i> имеет доступ к любым sc-элементам, даже попавшим в полную блокировку для какого-либо другого процесса. Это необходимо для того, чтобы <i>sc-метаагенты</i> смогли выявлять и устранять различные проблемы, например, описанную выше проблему взаимоблокировки.Таким образом, проблема синхронизации деятельности <i>sc-метаагентов</i> требует введения дополнительных правил.Указанную проблему разделим на две более частные:
 
 		<ul>

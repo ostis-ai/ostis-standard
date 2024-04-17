@@ -1,11 +1,11 @@
-.system_element_3641
+.system_element_5631
 => nrel_inclusion: [*
 	=> nrel_idtf: [<p>Титульная спецификация Стандарта OSTIS-2022</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<= .system_element_3643: .system_element_3642
+	<= .system_element_5596: .system_element_5628
 	(*
 		=> nrel_idtf: [<p>Второе издание стандарта OSTIS</p>]
 		(*
@@ -13,5 +13,5 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	=> nrel_preface: .system_element_3644;;
+	=> .system_element_1895: .system_element_5630;;
 *];;

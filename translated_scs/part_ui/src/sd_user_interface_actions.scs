@@ -1,44 +1,44 @@
-.system_element_2085
+.system_element_2241
 => nrel_inclusion: [*
-	=> .system_element_20: .system_element_1116;;
+	=> .system_element_329: .system_element_1070;;
 
-	.system_element_2086
-	<- subject_domain;
-	-> .system_element_2: 
-		.system_element_2087;
-		.system_element_2088;
-		.system_element_2089;
-		.system_element_2090;
-		.system_element_2091;
-		.system_element_2092;
-		.system_element_2093;
-		.system_element_2094;
-		.system_element_2095;
-		.system_element_2096;
-		.system_element_2097;
-		.system_element_2098;
-		.system_element_2099;
-		.system_element_2100;
-		.system_element_2101;
-		.system_element_2102;
-		.system_element_2103;
-		.system_element_2104;
-		.system_element_2105;
-		.system_element_2106;
-		.system_element_2107;
-		.system_element_2108;
-		.system_element_2109;
-		.system_element_2110;
-		.system_element_2111;
-		.system_element_2112;
-		.system_element_2113;
-		.system_element_2114;
-		.system_element_2115;
-		.system_element_2116
+	.system_element_2242
+	<- .system_element_114;
+	-> rrel_studied_object_class: 
+		.system_element_2243;
+		.system_element_2244;
+		.system_element_2245;
+		.system_element_2246;
+		.system_element_2247;
+		.system_element_2248;
+		.system_element_2249;
+		.system_element_2250;
+		.system_element_2251;
+		.system_element_2252;
+		.system_element_2253;
+		.system_element_2254;
+		.system_element_2255;
+		.system_element_2256;
+		.system_element_2257;
+		.system_element_2258;
+		.system_element_2259;
+		.system_element_2260;
+		.system_element_2261;
+		.system_element_2262;
+		.system_element_2263;
+		.system_element_2264;
+		.system_element_2265;
+		.system_element_2266;
+		.system_element_2267;
+		.system_element_2268;
+		.system_element_2269;
+		.system_element_2270;
+		.system_element_2271;
+		.system_element_2272
 	;
-	=> nrel_private_subject_domain: .system_element_2117;;
+	=> .system_element_1047: .system_element_2273;;
 
-	.system_element_2118
+	.system_element_2274
 	=> nrel_idtf: [<p>user interface action</p>]
 	(*
 		<- lang_ru;;
@@ -49,19 +49,21 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> nrel_inclusion: .system_element_2087
+	=> nrel_inclusion: .system_element_2243
 	(*
 		=> nrel_idtf: [<p>mouse-action</p>];;
-		=> nrel_inclusion: .system_element_2088;;
-		=> nrel_idtf: [<p>mouse-scroll</p>]
+		=> nrel_inclusion: .system_element_2244
 		(*
-			<- lang_ru;;
-			=> nrel_format: format_html;;
-		*);;
-		=> nrel_inclusion: .system_element_2089
-		(*
-			=> nrel_idtf: [<p>mouse-scroll-up</p>];;
-			=> nrel_inclusion: .system_element_2090
+			=> nrel_idtf: [<p>mouse-scroll</p>];;
+			=> nrel_inclusion: .system_element_2245
+			(*
+				=> nrel_idtf: [<p>mouse-scroll-up</p>]
+				(*
+					<- lang_ru;;
+					=> nrel_format: format_html;;
+				*);;
+			*);;
+			=> nrel_inclusion: .system_element_2246
 			(*
 				=> nrel_idtf: [<p>mouse-scroll-down</p>]
 				(*
@@ -70,7 +72,7 @@
 				*);;
 			*);;
 		*);;
-		=> nrel_inclusion: .system_element_2091
+		=> nrel_inclusion: .system_element_2247
 		(*
 			=> nrel_idtf: [<p>mouse-hover</p>]
 			(*
@@ -78,7 +80,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);;
-		=> nrel_inclusion: .system_element_2092
+		=> nrel_inclusion: .system_element_2248
 		(*
 			=> nrel_idtf: [<p>mouse-drop</p>]
 			(*
@@ -86,10 +88,10 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);;
-		=> nrel_inclusion: .system_element_2093
+		=> nrel_inclusion: .system_element_2249
 		(*
 			=> nrel_idtf: [<p>mouse-click</p>];;
-			=> nrel_inclusion: .system_element_2094
+			=> nrel_inclusion: .system_element_2250
 			(*
 				=> nrel_idtf: [<p>mouse-single-click</p>]
 				(*
@@ -97,7 +99,7 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);;
-			=> nrel_inclusion: .system_element_2095
+			=> nrel_inclusion: .system_element_2251
 			(*
 				=> nrel_idtf: [<p>mouse-double-click</p>]
 				(*
@@ -106,7 +108,7 @@
 				*);;
 			*);;
 		*);;
-		=> nrel_inclusion: .system_element_2096
+		=> nrel_inclusion: .system_element_2252
 		(*
 			=> nrel_idtf: [<p>mouse-gesture</p>]
 			(*
@@ -114,7 +116,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);;
-		=> nrel_inclusion: .system_element_2097
+		=> nrel_inclusion: .system_element_2253
 		(*
 			=> nrel_idtf: [<p>mouse-unhover</p>]
 			(*
@@ -122,7 +124,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);;
-		=> nrel_inclusion: .system_element_2098
+		=> nrel_inclusion: .system_element_2254
 		(*
 			=> nrel_idtf: [<p>mouse-drag</p>]
 			(*
@@ -131,7 +133,7 @@
 			*);;
 		*);;
 	*);
-	=> nrel_inclusion: .system_element_2099
+	=> nrel_inclusion: .system_element_2255
 	(*
 		=> nrel_idtf: [<p>speech-action</p>]
 		(*
@@ -139,10 +141,10 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	=> nrel_inclusion: .system_element_2100
+	=> nrel_inclusion: .system_element_2256
 	(*
 		=> nrel_idtf: [<p>keyboard-action</p>];;
-		=> nrel_inclusion: .system_element_2101
+		=> nrel_inclusion: .system_element_2257
 		(*
 			=> nrel_idtf: [<p>press-function-key</p>]
 			(*
@@ -150,7 +152,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);;
-		=> nrel_inclusion: .system_element_2102
+		=> nrel_inclusion: .system_element_2258
 		(*
 			=> nrel_idtf: [<p>type-text</p>]
 			(*
@@ -159,7 +161,7 @@
 			*);;
 		*);;
 	*);
-	=> nrel_inclusion: .system_element_2103
+	=> nrel_inclusion: .system_element_2259
 	(*
 		=> nrel_idtf: [<p>tangible-action</p>]
 		(*
@@ -167,13 +169,13 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	=> nrel_inclusion: .system_element_2104
+	=> nrel_inclusion: .system_element_2260
 	(*
 		=> nrel_idtf: [<p>touch-action</p>];;
-		=> nrel_inclusion: .system_element_2105
+		=> nrel_inclusion: .system_element_2261
 		(*
 			=> nrel_idtf: [<p>touch-click</p>];;
-			=> nrel_inclusion: .system_element_2106
+			=> nrel_inclusion: .system_element_2262
 			(*
 				=> nrel_idtf: [<p>touch-single-click</p>]
 				(*
@@ -181,7 +183,7 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);;
-			=> nrel_inclusion: .system_element_2107
+			=> nrel_inclusion: .system_element_2263
 			(*
 				=> nrel_idtf: [<p>touch-double-click</p>]
 				(*
@@ -190,10 +192,10 @@
 				*);;
 			*);;
 		*);;
-		=> nrel_inclusion: .system_element_2108
+		=> nrel_inclusion: .system_element_2264
 		(*
 			=> nrel_idtf: [<p>touch-gesture</p>];;
-			=> nrel_inclusion: .system_element_2109
+			=> nrel_inclusion: .system_element_2265
 			(*
 				=> nrel_idtf: [<p>one-fingure-gesture</p>]
 				(*
@@ -201,7 +203,7 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);;
-			=> nrel_inclusion: .system_element_2110
+			=> nrel_inclusion: .system_element_2266
 			(*
 				=> nrel_idtf: [<p>multiple-finger-gesture</p>]
 				(*
@@ -210,7 +212,7 @@
 				*);;
 			*);;
 		*);;
-		=> nrel_inclusion: .system_element_2111
+		=> nrel_inclusion: .system_element_2267
 		(*
 			=> nrel_idtf: [<p>touch-drop</p>]
 			(*
@@ -218,7 +220,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);;
-		=> nrel_inclusion: .system_element_2112
+		=> nrel_inclusion: .system_element_2268
 		(*
 			=> nrel_idtf: [<p>touch-drag</p>]
 			(*
@@ -227,10 +229,10 @@
 			*);;
 		*);;
 	*);
-	=> nrel_inclusion: .system_element_2113
+	=> nrel_inclusion: .system_element_2269
 	(*
 		=> nrel_idtf: [<p>pen-base-action</p>];;
-		=> nrel_inclusion: .system_element_2114
+		=> nrel_inclusion: .system_element_2270
 		(*
 			=> nrel_idtf: [<p>touch-function-key</p>]
 			(*
@@ -238,7 +240,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);;
-		=> nrel_inclusion: .system_element_2115
+		=> nrel_inclusion: .system_element_2271
 		(*
 			=> nrel_idtf: [<p>draw</p>]
 			(*
@@ -246,7 +248,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);;
-		=> nrel_inclusion: .system_element_2116
+		=> nrel_inclusion: .system_element_2272
 		(*
 			=> nrel_idtf: [<p>write-text</p>]
 			(*
@@ -256,103 +258,103 @@
 		*);;
 	*);;
 
-	.system_element_2088
+	.system_element_2244
 	=> nrel_explanation: [<p><i>прокрутка мышью</i> --- интерфейсное действие пользователя, соответствующее прокрутке содержимого некоторого компонента пользовательского интерфейса при помощи мыши.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2091
+	.system_element_2247
 	=> nrel_explanation: [<p><i>наведение мышью</i> --- интерфейсное действие пользователя, соответствующее появлению курсора мыши в рамках компонента пользовательского интерфейса.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2092
+	.system_element_2248
 	=> nrel_explanation: [<p><i>отпускание мышью</i> --- интерфейсное действие пользователя, соответствующее отпусканию некоторого компонента пользовательского интерфейса в рамках другого компонента пользовательского интерфейса при помощи мыши.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2093
+	.system_element_2249
 	=> nrel_explanation: [<p><i>нажатие мыши</i> --- интерфейсное действие пользователя, соответствующее выполнению нажатия мыши в рамках некоторого компонента пользовательского интерфейса.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2097
+	.system_element_2253
 	=> nrel_explanation: [<p><i>отведение мышью</i> --- интерфейсное действие пользователя, соответствующее выходу курсора мыши за рамки компонента пользовательского интерфейса.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2098
+	.system_element_2254
 	=> nrel_explanation: [<p><i>перетаскивание мышью</i> --- интерфейсное действие пользователя, соответствующее перетаскиванию компонента пользовательского интерфейса при помощи мыши.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2105
+	.system_element_2261
 	=> nrel_explanation: [<p><i>нажатие сенсора</i> --- интерфейсное действие пользователя, соответствующее выполнению нажатия сенсора в рамках некоторого компонента пользовательского интерфейса.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2108
+	.system_element_2264
 	=> nrel_explanation: [<p><i>жест по сенсору</i> --- интерфейсное действие пользователя, соответствующее выполнению некоторого жеста, выполняемого при помощи движения пальцев на экране сенсора.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2111
+	.system_element_2267
 	=> nrel_explanation: [<p><i>отпускание сенсором</i> --- интерфейсное действие пользователя, соответствующее отпусканию некоторого компонента пользовательского интерфейса в рамках другого компонента пользовательского интерфейса при помощи сенсора.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2112
+	.system_element_2268
 	=> nrel_explanation: [<p><i>перетаскивание сенсором</i> --- интерфейсное действие пользователя, соответствующее перетаскиванию компонента пользовательского интерфейса при помощи сенсора.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2113
+	.system_element_2269
 	=> nrel_explanation: [<p><i>действие пером</i> --- интерфейсное действие пользователя, осуществляемое при помощи пера на графическом планшете.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2119
-	<= nrel_inclusion: actions_class;
-	<= nrel_set_of_subsets: .system_element_2118;
+	.system_element_2275
+	<= nrel_inclusion: .system_element_2276;
+	<= .system_element_378: .system_element_2274;
 	=> nrel_explanation: [<p><i>класс интерфейсных действий пользователя</i> --- множество, элементами которого являются классы <i>интерфейсных действий пользователя</i>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2120
+	.system_element_2277
 	=> nrel_explanation: [<p>При взаимодействии пользователя с <i>компонентом пользовательского интерфейса</i> могут быть произведены различные интерфейсные действия. В зависимости от выполненного интерфейсного действия и компонента, над которым оно было выполнено, происходит инициирование некоторого <i>внутреннего действия системы</i>. Для задания такого инициируемого при взаимодействии с пользовательским интерфейсом действия и используется указанное отношение. Первым компонентом связки отношения <i>инициируемое пользовательским интерфейсом действие*</i> является связка, элементами которой являются элемент множества компонентов пользовательского интерфейса и элемент множества <i>класс интерфейсных действий пользователя</i>. Вторым компонентом является элемент множества <i>класс внутренних действий системы</i>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<- quasybinary_relation;
-	<- oriented_relation;
-	=> nrel_first_domain: .system_element_2121;
-	=> nrel_second_domain: .system_element_2122;
-	=> .system_element_1913: "file://images/sd_ui/ui_initiated_action.png"
+	<- .system_element_841;
+	<- .system_element_842;
+	=> .system_element_843: .system_element_2278;
+	=> .system_element_845: .system_element_2279;
+	=> .system_element_242: "file://images/sd_ui/ui_initiated_action.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;

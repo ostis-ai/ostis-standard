@@ -1,11 +1,11 @@
-.system_element_3984
+.system_element_201
 => nrel_inclusion: [*
-	=> .system_element_340: 
-		.system_element_4060;
-		.system_element_4061
+	=> .system_element_176: 
+		.system_element_3115;
+		.system_element_3116
 	;;
 
-	.system_element_4062
+	.system_element_3117
 	=> nrel_idtf: [<p>Предметная область Базового языка программирования ostis-систем</p>]
 	(*
 		<- lang_ru;;
@@ -21,23 +21,23 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<- subject_domain;
-	-> .system_element_2: 
-		agent_scp_program;
-		scp_process;
-		new_scp_operator;
-		scp_operator_atomic_type
+	<- .system_element_114;
+	-> rrel_studied_object_class: 
+		.system_element_3118;
+		.system_element_3119;
+		.system_element_3120;
+		.system_element_3121
 	;
-	-> .system_element_356: 
-		rrel_init;
-		rrel_new_param;
-		rrel_in;
-		rrel_out;
-		rrel_scp_operand
+	-> rrel_explored_relation: 
+		.system_element_3122;
+		.system_element_3123;
+		.system_element_3124;
+		.system_element_3125;
+		.system_element_3126
 	;;
 
-	.system_element_1364
-	=> .system_element_349: [<p>scp-программа</p>]
+	.system_element_2896
+	=> .system_element_139: [<p>scp-программа</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
@@ -48,12 +48,12 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4063
-	<= nrel_combination: {
-		.system_element_4064;
-		.system_element_4065
+	.system_element_3127
+	<= .system_element_922: {
+		.system_element_3128;
+		.system_element_3129
 	};
-	=> .system_element_4066: {
+	=> .system_element_226: {
 		[<p>Тексты программ <i>Языка SCP</i> записываются при помощи тех же унифицированных семантических сетей, что и обрабатываемая информация, таким образом, можно сказать, что <i>Синтаксис языка SCP</i> на базовом уровне совпадает с <i>Синтаксисом SC-кода</i>.</p>]
 		(*
 			<- lang_ru;;
@@ -65,7 +65,7 @@
 			=> nrel_format: format_html;;
 		*)
 	};
-	=> .system_element_17: {
+	=> .system_element_209: {
 		[<p>Одновременно в общей памяти могут выполняться несколько независимых<i>sc-агентов</i>, при этом разные копии <i>sc-агентов</i> могут выполняться на разных серверах, за счет распределенной реализации интерпретатора sc-моделей (<i>платформы реализации sc-моделей компьютерных систем</i>). Более того, <i>Язык SCP</i> позволяет осуществлять параллельные асинхронные вызовы подпрограмм с последующей синхронизацией, и даже параллельно выполнять операторы в рамках одной <i>scp-программы</i>.</p>]
 		(*
 			<- lang_ru;;
@@ -88,22 +88,22 @@
 		*)
 	};;
 
-	.system_element_310
-	=> .system_element_4067: .system_element_4065;
+	.system_element_723
+	=> .system_element_3130: .system_element_3129;
 	=> nrel_note: [<p><i>Абстрактная scp-машина</i> представляет собой интерпретатор <i>scp-программ</i>, который должен являться частью <i>платформы интерпретации sc-моделей компьютерных систем</i> (хотя в общем случае могут существовать варианты платформы, не содержащие такого интерпретатора, что, однако, не позволит использовать достоинства предлагаемой базовой модели</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	new_scp_program
-	<= nrel_inclusion: program_in_sc_memory;
+	.system_element_895
+	<= nrel_inclusion: .system_element_3131;
 	=> nrel_explanation: [<p>Каждая <b><i>scp-программа</i></b> представляет собой <i>обобщенную структуру</i>, описывающую один из вариантов декомпозиции действий некоторого класса, выполняемых в sc-памяти. Знак <i>sc-переменной</i>, соответствующей конкретному декомпозируемому действию является в рамках <b><i>scp-программы</i></b> <i>ключевым sc-элементом'</i>. Также явно указывается принадлежность данного знака множеству <i>scp-процессов</i>.Принадлежность некоторого действия множеству <i>scp-процессов</i> гарантирует тот факт, что в декомпозиции данного действия будут присутствовать только знаки элементарных действий (<i>scp-операторов</i>), которые может интерпретировать реализация абстрактной scp-машины.Таким образом, каждая <b><i>scp-программа</i></b> описывает в обобщенном виде декомпозицию некоторого <i><b>scp-процесса</b></i> на взаимосвязанные <i>scp-операторы</i>, с указанием, при их наличии, аргументов для данного <i>scp-процесса</i>.По сути каждая <b><i>scp-программа</i></b> представляет собой описание последовательности элементарных операций, которые необходимо выполнить над семантической сетью, чтобы выполнить более сложное действие некоторого класса.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_1913: "file://images/sd_scp/program_example.png"
+	=> .system_element_242: "file://images/sd_scp/program_example.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
@@ -113,48 +113,48 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	-> .system_element_67: 
-		.system_element_4068;
-		_<- scp_process;
-		_-> .system_element_4070:: .system_element_4069;
-		_-> .system_element_4072:: .system_element_4071;
-		_<= nrel_decomposition_of_action:: .system_element_4073
+	-> .system_element_241: 
+		.system_element_3132;
+		_<- .system_element_3119;
+		_-> .system_element_3134:: .system_element_3133;
+		_-> .system_element_3136:: .system_element_3135;
+		_<= .system_element_3138:: .system_element_3137
 		(*
-			_-> .system_element_4075:: .system_element_4074
+			_-> .system_element_3140:: .system_element_3139
 			(*
-				_<- .system_element_4076;;
-				_-> .system_element_4077:: .system_element_4069;;
-				_-> .system_element_4079:: .system_element_4078;;
-				_-> .system_element_4080:: .system_element_4071;;
-				_=> nrel_else_new:: .system_element_4081;;
-				_=> nrel_then:: .system_element_4082;;
+				_<- .system_element_3141;;
+				_-> .system_element_3142:: .system_element_3133;;
+				_-> .system_element_3144:: .system_element_3143;;
+				_-> .system_element_3145:: .system_element_3135;;
+				_=> .system_element_3147:: .system_element_3146;;
+				_=> .system_element_3149:: .system_element_3148;;
 			*);;
-			_-> .system_element_4081
+			_-> .system_element_3146
 			(*
-				_<- .system_element_4083;;
-				_-> .system_element_4084:: .system_element_4069;;
-				_-> .system_element_4085:: .system_element_4078;;
-				_-> .system_element_4086:: .system_element_4071;;
-				_=> .system_element_4087:: .system_element_4082;;
+				_<- .system_element_3150;;
+				_-> .system_element_3151:: .system_element_3133;;
+				_-> .system_element_3152:: .system_element_3143;;
+				_-> .system_element_3153:: .system_element_3135;;
+				_=> .system_element_3154:: .system_element_3148;;
 			*);;
-			_-> .system_element_4082
+			_-> .system_element_3148
 			(*
-				_<- .system_element_4088;;
+				_<- .system_element_3155;;
 			*);;
 		*)
 	;;
 *];;
 
-agent_scp_program
-<= nrel_inclusion: new_scp_program;
+.system_element_3118
+<= nrel_inclusion: .system_element_895;
 => nrel_explanation: [<p><b><i>агентные scp-программы</i></b> представляют собой частный случай <i>scp-программ</i> вообще, однако заслуживают отдельного рассмотрения, поскольку используются наиболее часто. <i>Scp-программы</i> данного класса представляют собой реализации программ агентов обработки знаний и имеют жестко фиксированный набор параметров. Каждая такая программа имеет ровно два <i>in-параметра'</i>. Значение первого параметра является знаком бинарной ориентированной пары, являющейся вторым компонентом связки отношения <i>первичное условие инициирования*</i> для абстрактного <i>sc-агента</i>, во множество <i>программ sc-агента*</i> которого входит рассматриваемая <b><i>агентная scp-программа</i></b>, и, по сути, описывает класс событий, на которые реагирует указанный sc-агент.Значением второго параметра является <i>sc-элемент</i>, с которым непосредственно связано событие, в результате возникновения которого был инициирован соответствующий <i>sc-агент</i>, т.е., например, сгенерированная либо удаляемая <i>sc-дуга</i> или <i>sc-ребро</i>.</p>]
 (*
 	<- lang_ru;;
 	=> nrel_format: format_html;;
 *);;
 
-abstract_sc_agent_implemented_on_the_scp_language
-=> .system_element_50: {
+.system_element_3156
+=> .system_element_365: {
 	[<p>Общие принципы организации взаимодействия <i>sc-агентов</i> и пользователей <i>ostis-системы</i> через общую<i>sc-память</i>.</p>]
 	(*
 		<- lang_ru;;
@@ -207,13 +207,13 @@ abstract_sc_agent_implemented_on_the_scp_language
 	*)
 };;
 
-scp_process
+.system_element_3119
 => nrel_explanation: [<p>Под <b><i>scp-процессом</i></b> понимается некоторое <i>действие в sc-памяти</i>, однозначно описывающее конкретный акт выполнения некоторой <i>scp-программы</i> для заданных исходных данных. Если <i>scp-программа</i> описывает алгоритм решения какой-либо задачи в общем виде, то <i>scp-процесс</i> обозначает конкретное действие, реализующее данный алгоритм для заданных входных параметроПо сути, <b><i>scp-процесс</i></b> представляет собой уникальную копию, созданную на основе <i>scp-программы</i>, в которой каждой <i>sc-переменной</i>, за исключением <i>scp-переменных'</i>, соответствует сгенерированная <i>sc-константа</i>.Принадлежность некоторого действия множеству <i>scp-процессов</i> гарантирует тот факт, что в декомпозиции данного действия будут присутствовать только знаки элементарных действий (<i>scp-операторов</i>), которые может интерпретировать реализация <i>Абстрактной scp-машины</i>.</p>]
 (*
 	<- lang_ru;;
 	=> nrel_format: format_html;;
 *);
-=> .system_element_4089: <
+=> .system_element_3157: <
 	"file://images/sd_scp/process_example.png"
 	(*
 		<- concept_file;;
