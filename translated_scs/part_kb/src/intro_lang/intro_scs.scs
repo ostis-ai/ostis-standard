@@ -357,7 +357,7 @@
 			=> nrel_format: format_html;;
 		*);
 		=> .system_element_3240: {
-			"file://Contents/part_kb/src/images/scs/sc.s-connectors/tableOfConctrs1.png"
+			"file://../images/scs/sc.s-connectors/tableOfConctrs1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
@@ -367,7 +367,7 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scs/sc.s-connectors/tableOfConctrs2.png"
+			"file://../images/scs/sc.s-connectors/tableOfConctrs2.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
@@ -605,7 +605,7 @@
 		.system_element_4028
 		=> .system_element_4038: .system_element_4037
 		(*
-			=> .system_element_231: "file://Contents/part_kb/src/images/scs/sc.s-connectors/scs_membership_connectors.pdf"
+			=> .system_element_231: "file://../images/scs/sc.s-connectors/scs_membership_connectors.pdf"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_pdf;;
@@ -615,8 +615,8 @@
 		.system_element_4029
 		=> .system_element_4038: .system_element_4039
 		(*
-			=> .system_element_231: "file://Contents/part_kb/src/images/scs/sc.s-connectors/scs_non_membership_connectors_1.png";;
-			=> .system_element_231: "file://Contents/part_kb/src/images/scs/sc.s-connectors/scs_non_membership_connectors_2.png"
+			=> .system_element_231: "file://../images/scs/sc.s-connectors/scs_non_membership_connectors_1.png";;
+			=> .system_element_231: "file://../images/scs/sc.s-connectors/scs_non_membership_connectors_2.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
@@ -657,7 +657,7 @@
 				(*
 					<- lang_ru;;
 					=> nrel_format: format_html;;
-					<=> nrel_semantic_equivalence: "file://Contents/part_kb/src/images/scs/inclusion.png"
+					<=> nrel_semantic_equivalence: "file://../images/scs/inclusion.png"
 					(*
 						<- concept_file;;
 						=> nrel_format: format_png;;
@@ -667,7 +667,7 @@
 				(*
 					<- lang_ru;;
 					=> nrel_format: format_html;;
-					<=> nrel_semantic_equivalence: "file://Contents/part_kb/src/images/scs/side.png"
+					<=> nrel_semantic_equivalence: "file://../images/scs/side.png"
 					(*
 						<- concept_file;;
 						=> nrel_format: format_png;;
@@ -677,7 +677,7 @@
 				(*
 					<- lang_ru;;
 					=> nrel_format: format_html;;
-					<=> nrel_semantic_equivalence: "file://Contents/part_kb/src/images/scs/inclusion_incident.png"
+					<=> nrel_semantic_equivalence: "file://../images/scs/inclusion_incident.png"
 					(*
 						<- concept_file;;
 						=> nrel_format: format_png;;
@@ -713,7 +713,7 @@
 				(*
 					<- lang_ru;;
 					=> nrel_format: format_html;;
-					<=> nrel_semantic_equivalence: "file://Contents/part_kb/src/images/scs/conversion.png"
+					<=> nrel_semantic_equivalence: "file://../images/scs/conversion.png"
 					(*
 						<- concept_file;;
 						=> nrel_format: format_png;;
@@ -804,7 +804,7 @@
 			(*
 				<- lang_ru;;
 				=> nrel_format: format_html;;
-				<=> nrel_semantic_equivalence: "file://Contents/part_kb/src/images/scs/conversion.png"
+				<=> nrel_semantic_equivalence: "file://../images/scs/conversion.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -817,7 +817,7 @@
 			(*
 				<- lang_ru;;
 				=> nrel_format: format_html;;
-				<=> nrel_semantic_equivalence: "file://Contents/part_kb/src/images/scs/joining_sentences.png"
+				<=> nrel_semantic_equivalence: "file://../images/scs/joining_sentences.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -835,7 +835,7 @@
 					<- lang_ru;;
 					=> nrel_format: format_html;;
 				*);;
-				<=> nrel_semantic_equivalence: "file://Contents/part_kb/src/images/scs/joining_sentence.png"
+				<=> nrel_semantic_equivalence: "file://../images/scs/joining_sentence.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -848,7 +848,7 @@
 			(*
 				<- lang_ru;;
 				=> nrel_format: format_html;;
-				<=> nrel_semantic_equivalence: "file://Contents/part_kb/src/images/scs/dividing_sentences.png"
+				<=> nrel_semantic_equivalence: "file://../images/scs/dividing_sentences.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -863,7 +863,7 @@
 			(*
 				<- lang_ru;;
 				=> nrel_format: format_html;;
-				<=> nrel_semantic_equivalence: "file://Contents/part_kb/src/images/scs/dividing_sentences_incident.png"
+				<=> nrel_semantic_equivalence: "file://../images/scs/dividing_sentences_incident.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -910,7 +910,7 @@
 				(*
 					<- lang_ru;;
 					=> nrel_format: format_html;;
-					<=> nrel_semantic_equivalence: "file://Contents/part_kb/src/images/scs/modifier.png"
+					<=> nrel_semantic_equivalence: "file://../images/scs/modifier.png"
 					(*
 						<- concept_file;;
 						=> nrel_format: format_png;;
@@ -920,7 +920,7 @@
 				(*
 					<- lang_ru;;
 					=> nrel_format: format_html;;
-					<=> nrel_semantic_equivalence: "file://Contents/part_kb/src/images/scs/modifier_var.png"
+					<=> nrel_semantic_equivalence: "file://../images/scs/modifier_var.png"
 					(*
 						<- concept_file;;
 						=> nrel_format: format_png;;
@@ -970,7 +970,7 @@
 			(*
 				<- lang_ru;;
 				=> nrel_format: format_html;;
-				=> nrel_semantic_equivalence: "file://Contents/part_kb/src/images/scs/scs_text_example.png"
+				=> nrel_semantic_equivalence: "file://../images/scs/scs_text_example.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1012,7 +1012,7 @@
 			(*
 				<- lang_ru;;
 				=> nrel_format: format_html;;
-				<=> nrel_semantic_equivalence: "file://Contents/part_kb/src/images/scs/kernel_incident.png"
+				<=> nrel_semantic_equivalence: "file://../images/scs/kernel_incident.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;

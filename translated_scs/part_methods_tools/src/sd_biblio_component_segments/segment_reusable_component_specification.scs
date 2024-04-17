@@ -31,7 +31,7 @@
 	*);
 	=> .system_element_904: .system_element_829;
 	=> .system_element_906: .system_element_905;
-	=> .system_element_232: "file://Contents/part_methods_tools/src/images/sd_ostis_library/component_specification_example.png"
+	=> .system_element_232: "file://../images/sd_ostis_library/component_specification_example.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
@@ -85,7 +85,7 @@
 		=> nrel_inclusion: .system_element_917
 		(*
 			=> nrel_note: [<p>При динамической установке необходимо только скачать компонент и, при необходимости, его зависимые компоненты, и он сразу же функционирует в системе.</p>];;
-			=> .system_element_232: "file://Contents/part_methods_tools/src/images/sd_ostis_library/install_dynamic_method.png"
+			=> .system_element_232: "file://../images/sd_ostis_library/install_dynamic_method.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
@@ -95,7 +95,7 @@
 		=> nrel_inclusion: .system_element_918
 		(*
 			=> nrel_note: [<p>Установка таких компонентов происходит путём скачивания компонента и его трансляции в память системы.</p>];;
-			=> .system_element_232: "file://Contents/part_methods_tools/src/images/sd_ostis_library/install_with_reboot_method.png"
+			=> .system_element_232: "file://../images/sd_ostis_library/install_with_reboot_method.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;

@@ -160,7 +160,7 @@
 		*);;
 
 		.system_element_3714
-		<=> "file://Contents/part_kb/src/images/scg/SCg-full.png";
+		<=> "file://../images/scg/SCg-full.png";
 		=> nrel_inclusion: .intro_scg_examples
 		(*
 			<- concept_file;;
@@ -185,7 +185,7 @@
 		*);;
 
 		.system_element_3716
-		<=> "file://Contents/part_kb/src/images/scg/SCg-core-alphabet.pdf"
+		<=> "file://../images/scg/SCg-core-alphabet.pdf"
 		(*
 			<- concept_file;;
 			=> nrel_format: format_pdf;;
@@ -313,7 +313,7 @@
 		*);;
 
 		.system_element_3723
-		<=> "file://Contents/part_kb/src/images/scg/scg_transf1.png"
+		<=> "file://../images/scg/scg_transf1.png"
 		(*
 			<- concept_file;;
 			=> nrel_format: format_png;;
@@ -324,7 +324,7 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
-		=> .system_element_3724: "file://Contents/part_kb/src/images/scg/scg_transf2.png"
+		=> .system_element_3724: "file://../images/scg/scg_transf2.png"
 		(*
 			<- concept_file;;
 			=> nrel_format: format_png;;
@@ -334,7 +334,7 @@
 				<- lang_ru;;
 				=> nrel_format: format_html;;
 			*);;
-			=> .system_element_3724: "file://Contents/part_kb/src/images/scg/scg_transf3.png"
+			=> .system_element_3724: "file://../images/scg/scg_transf3.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
@@ -427,7 +427,7 @@
 		*);;
 
 		.system_element_3731
-		<=> "file://Contents/part_kb/src/images/scg/scg2ex.png"
+		<=> "file://../images/scg/scg2ex.png"
 		(*
 			<- concept_file;;
 			=> nrel_format: format_png;;
@@ -435,11 +435,11 @@
 
 		.system_element_3732
 		<=> .system_element_151: {
-			"file://Contents/part_kb/src/images/scg/scg2_ex1.png"
+			"file://../images/scg/scg2_ex1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/scg2_ex1_1.png"
+				=> .system_element_3493: "file://../images/scg/scg2_ex1_1.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -450,11 +450,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/nodes/const_perm/scg_const_perm_class1.png"
+			"file://../images/scg/nodes/const_perm/scg_const_perm_class1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/nodes/const_perm/scg_const_perm_class2.png"
+				=> .system_element_3493: "file://../images/scg/nodes/const_perm/scg_const_perm_class2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -465,11 +465,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/nodes/const_perm/scg_const_perm_class_of_classes1.png"
+			"file://../images/scg/nodes/const_perm/scg_const_perm_class_of_classes1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/nodes/const_perm/scg_const_perm_class_of_classes2.png"
+				=> .system_element_3493: "file://../images/scg/nodes/const_perm/scg_const_perm_class_of_classes2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -480,11 +480,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/nodes/const_perm/scg_const_perm_norole1.png"
+			"file://../images/scg/nodes/const_perm/scg_const_perm_norole1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/nodes/const_perm/scg_const_perm_norole2.png"
+				=> .system_element_3493: "file://../images/scg/nodes/const_perm/scg_const_perm_norole2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -495,11 +495,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/nodes/const_perm/scg_const_perm_role1.png"
+			"file://../images/scg/nodes/const_perm/scg_const_perm_role1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/nodes/const_perm/scg_const_perm_role2.png"
+				=> .system_element_3493: "file://../images/scg/nodes/const_perm/scg_const_perm_role2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -510,11 +510,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/nodes/const_perm/scg_const_perm_structure1.png"
+			"file://../images/scg/nodes/const_perm/scg_const_perm_structure1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/nodes/const_perm/scg_const_perm_structure2.png"
+				=> .system_element_3493: "file://../images/scg/nodes/const_perm/scg_const_perm_structure2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -525,11 +525,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/nodes/const_perm/scg_const_perm_primary_entity1.png"
+			"file://../images/scg/nodes/const_perm/scg_const_perm_primary_entity1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/nodes/const_perm/scg_const_perm_primary_entity2.png"
+				=> .system_element_3493: "file://../images/scg/nodes/const_perm/scg_const_perm_primary_entity2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -540,11 +540,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/nodes/const_perm/scg_const_perm_tuple1.png"
+			"file://../images/scg/nodes/const_perm/scg_const_perm_tuple1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/nodes/const_perm/scg_const_perm_tuple2.png"
+				=> .system_element_3493: "file://../images/scg/nodes/const_perm/scg_const_perm_tuple2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -555,11 +555,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/arcs/const/scg_const_perm_noorien1.png"
+			"file://../images/scg/arcs/const/scg_const_perm_noorien1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/arcs/const/scg_const_perm_noorien2.png"
+				=> .system_element_3493: "file://../images/scg/arcs/const/scg_const_perm_noorien2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -570,11 +570,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/arcs/const/scg_const_perm_orient1.png"
+			"file://../images/scg/arcs/const/scg_const_perm_orient1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/arcs/const/scg_const_perm_orient2.png"
+				=> .system_element_3493: "file://../images/scg/arcs/const/scg_const_perm_orient2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -585,11 +585,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/arcs/const/scg_const_perm_positive1.png"
+			"file://../images/scg/arcs/const/scg_const_perm_positive1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/arcs/const/scg_const_perm_positive2.png"
+				=> .system_element_3493: "file://../images/scg/arcs/const/scg_const_perm_positive2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -600,11 +600,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/arcs/const/scg_const_perm_negative1.png"
+			"file://../images/scg/arcs/const/scg_const_perm_negative1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/arcs/const/scg_const_perm_negative2.png"
+				=> .system_element_3493: "file://../images/scg/arcs/const/scg_const_perm_negative2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -615,11 +615,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/arcs/const/scg_const_perm_fuzzy1.png"
+			"file://../images/scg/arcs/const/scg_const_perm_fuzzy1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/arcs/const/scg_const_perm_fuzzy2.png"
+				=> .system_element_3493: "file://../images/scg/arcs/const/scg_const_perm_fuzzy2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -634,7 +634,7 @@
 
 		.system_element_3733
 		<=> .system_element_151: {
-			"file://Contents/part_kb/src/images/scg/examples/scg_example_triangle.png"
+			"file://../images/scg/examples/scg_example_triangle.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
@@ -650,7 +650,7 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/examples/scg_example_alice.png"
+			"file://../images/scg/examples/scg_example_alice.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
@@ -676,11 +676,11 @@
 
 		.system_element_3736
 		<=> .system_element_151: {
-			"file://Contents/part_kb/src/images/scg/nodes/const_temp/scg_const_temp_general_view1.png"
+			"file://../images/scg/nodes/const_temp/scg_const_temp_general_view1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/nodes/const_temp/scg_const_temp_general_view2.png"
+				=> .system_element_3493: "file://../images/scg/nodes/const_temp/scg_const_temp_general_view2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -691,11 +691,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/nodes/const_temp/scg_const_temp_class1.png"
+			"file://../images/scg/nodes/const_temp/scg_const_temp_class1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/nodes/const_temp/scg_const_temp_class2.png"
+				=> .system_element_3493: "file://../images/scg/nodes/const_temp/scg_const_temp_class2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -706,11 +706,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/nodes/const_temp/scg_const_temp_class_of_classes1.png"
+			"file://../images/scg/nodes/const_temp/scg_const_temp_class_of_classes1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/nodes/const_temp/scg_const_temp_class_of_classes2.png"
+				=> .system_element_3493: "file://../images/scg/nodes/const_temp/scg_const_temp_class_of_classes2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -721,11 +721,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/nodes/const_temp/scg_const_temp_norole1.png"
+			"file://../images/scg/nodes/const_temp/scg_const_temp_norole1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/nodes/const_temp/scg_const_temp_norole2.png"
+				=> .system_element_3493: "file://../images/scg/nodes/const_temp/scg_const_temp_norole2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -736,11 +736,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/nodes/const_temp/scg_const_temp_role1.png"
+			"file://../images/scg/nodes/const_temp/scg_const_temp_role1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/nodes/const_temp/scg_const_temp_role2.png"
+				=> .system_element_3493: "file://../images/scg/nodes/const_temp/scg_const_temp_role2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -751,11 +751,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/nodes/const_temp/scg_const_temp_structure1.png"
+			"file://../images/scg/nodes/const_temp/scg_const_temp_structure1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/nodes/const_temp/scg_const_temp_structure2.png"
+				=> .system_element_3493: "file://../images/scg/nodes/const_temp/scg_const_temp_structure2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -766,11 +766,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/nodes/const_temp/scg_const_temp_primary_entity1.png"
+			"file://../images/scg/nodes/const_temp/scg_const_temp_primary_entity1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/nodes/const_temp/scg_const_temp_primary_entity2.png"
+				=> .system_element_3493: "file://../images/scg/nodes/const_temp/scg_const_temp_primary_entity2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -781,11 +781,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/nodes/const_temp/scg_const_temp_tuple1.png"
+			"file://../images/scg/nodes/const_temp/scg_const_temp_tuple1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/nodes/const_temp/scg_const_temp_tuple2.png"
+				=> .system_element_3493: "file://../images/scg/nodes/const_temp/scg_const_temp_tuple2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -796,11 +796,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/arcs/const/scg_const_temp_noorien1.png"
+			"file://../images/scg/arcs/const/scg_const_temp_noorien1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/arcs/const/scg_const_temp_noorien2.png"
+				=> .system_element_3493: "file://../images/scg/arcs/const/scg_const_temp_noorien2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -811,11 +811,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/arcs/const/scg_const_temp_orient1.png"
+			"file://../images/scg/arcs/const/scg_const_temp_orient1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/arcs/const/scg_const_temp_orient2.png"
+				=> .system_element_3493: "file://../images/scg/arcs/const/scg_const_temp_orient2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -826,11 +826,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/arcs/const/scg_const_temp_positive1.png"
+			"file://../images/scg/arcs/const/scg_const_temp_positive1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/arcs/const/scg_const_temp_positive2.png"
+				=> .system_element_3493: "file://../images/scg/arcs/const/scg_const_temp_positive2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -841,11 +841,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/arcs/const/scg_const_temp_negative1.png"
+			"file://../images/scg/arcs/const/scg_const_temp_negative1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/arcs/const/scg_const_temp_negative2.png"
+				=> .system_element_3493: "file://../images/scg/arcs/const/scg_const_temp_negative2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -856,11 +856,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/arcs/const/scg_const_temp_fuzzy1.png"
+			"file://../images/scg/arcs/const/scg_const_temp_fuzzy1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/arcs/const/scg_const_temp_fuzzy2.png"
+				=> .system_element_3493: "file://../images/scg/arcs/const/scg_const_temp_fuzzy2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -896,11 +896,11 @@
 
 		.system_element_3739
 		<=> .system_element_151: {
-			"file://Contents/part_kb/src/images/scg/nodes/var_perm/scg_var_perm_general_view1.png"
+			"file://../images/scg/nodes/var_perm/scg_var_perm_general_view1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/nodes/var_perm/scg_var_perm_general_view2.png"
+				=> .system_element_3493: "file://../images/scg/nodes/var_perm/scg_var_perm_general_view2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -911,11 +911,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/nodes/var_perm/scg_var_perm_class1.png"
+			"file://../images/scg/nodes/var_perm/scg_var_perm_class1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/nodes/var_perm/scg_var_perm_class2.png"
+				=> .system_element_3493: "file://../images/scg/nodes/var_perm/scg_var_perm_class2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -926,11 +926,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/nodes/var_perm/scg_var_perm_class_of_classes1.png"
+			"file://../images/scg/nodes/var_perm/scg_var_perm_class_of_classes1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/nodes/var_perm/scg_var_perm_class_of_classes2.png"
+				=> .system_element_3493: "file://../images/scg/nodes/var_perm/scg_var_perm_class_of_classes2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -941,11 +941,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/nodes/var_perm/scg_var_perm_norole1.png"
+			"file://../images/scg/nodes/var_perm/scg_var_perm_norole1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/nodes/var_perm/scg_var_perm_norole2.png"
+				=> .system_element_3493: "file://../images/scg/nodes/var_perm/scg_var_perm_norole2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -956,11 +956,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/nodes/var_perm/scg_var_perm_role1.png"
+			"file://../images/scg/nodes/var_perm/scg_var_perm_role1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/nodes/var_perm/scg_var_perm_role2.png"
+				=> .system_element_3493: "file://../images/scg/nodes/var_perm/scg_var_perm_role2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -971,11 +971,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/nodes/var_perm/scg_var_perm_structure1.png"
+			"file://../images/scg/nodes/var_perm/scg_var_perm_structure1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/nodes/var_perm/scg_var_perm_structure2.png"
+				=> .system_element_3493: "file://../images/scg/nodes/var_perm/scg_var_perm_structure2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -986,11 +986,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/nodes/var_perm/scg_var_perm_primary_entity1.png"
+			"file://../images/scg/nodes/var_perm/scg_var_perm_primary_entity1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/nodes/var_perm/scg_var_perm_primary_entity2.png"
+				=> .system_element_3493: "file://../images/scg/nodes/var_perm/scg_var_perm_primary_entity2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1001,11 +1001,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/nodes/var_perm/scg_var_perm_tuple1.png"
+			"file://../images/scg/nodes/var_perm/scg_var_perm_tuple1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/nodes/var_perm/scg_var_perm_tuple2.png"
+				=> .system_element_3493: "file://../images/scg/nodes/var_perm/scg_var_perm_tuple2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1016,11 +1016,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/arcs/var/scg_var_perm_noorien1.png"
+			"file://../images/scg/arcs/var/scg_var_perm_noorien1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/arcs/var/scg_var_perm_noorien2.png"
+				=> .system_element_3493: "file://../images/scg/arcs/var/scg_var_perm_noorien2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1031,11 +1031,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/arcs/var/scg_var_perm_orient1.png"
+			"file://../images/scg/arcs/var/scg_var_perm_orient1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/arcs/var/scg_var_perm_orient2.png"
+				=> .system_element_3493: "file://../images/scg/arcs/var/scg_var_perm_orient2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1046,11 +1046,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/arcs/var/scg_var_perm_positive1.png"
+			"file://../images/scg/arcs/var/scg_var_perm_positive1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/arcs/var/scg_var_perm_positive2.png"
+				=> .system_element_3493: "file://../images/scg/arcs/var/scg_var_perm_positive2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1061,11 +1061,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/arcs/var/scg_var_perm_negative1.png"
+			"file://../images/scg/arcs/var/scg_var_perm_negative1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/arcs/var/scg_var_perm_negative2.png"
+				=> .system_element_3493: "file://../images/scg/arcs/var/scg_var_perm_negative2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1076,11 +1076,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/arcs/var/scg_var_perm_fuzzy1.png"
+			"file://../images/scg/arcs/var/scg_var_perm_fuzzy1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/arcs/var/scg_var_perm_fuzzy2.png"
+				=> .system_element_3493: "file://../images/scg/arcs/var/scg_var_perm_fuzzy2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1091,11 +1091,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/nodes/metavar_perm/scg_metavar_perm_general_view1.png"
+			"file://../images/scg/nodes/metavar_perm/scg_metavar_perm_general_view1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/nodes/metavar_perm/scg_metavar_perm_general_view2.png"
+				=> .system_element_3493: "file://../images/scg/nodes/metavar_perm/scg_metavar_perm_general_view2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1106,11 +1106,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/nodes/metavar_perm/scg_metavar_perm_class1.png"
+			"file://../images/scg/nodes/metavar_perm/scg_metavar_perm_class1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/nodes/metavar_perm/scg_metavar_perm_class2.png"
+				=> .system_element_3493: "file://../images/scg/nodes/metavar_perm/scg_metavar_perm_class2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1121,11 +1121,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/nodes/metavar_perm/scg_metavar_perm_class_of_classes1.png"
+			"file://../images/scg/nodes/metavar_perm/scg_metavar_perm_class_of_classes1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/nodes/metavar_perm/scg_metavar_perm_class_of_classes2.png"
+				=> .system_element_3493: "file://../images/scg/nodes/metavar_perm/scg_metavar_perm_class_of_classes2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1136,11 +1136,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/nodes/metavar_perm/scg_metavar_perm_norole1.png"
+			"file://../images/scg/nodes/metavar_perm/scg_metavar_perm_norole1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/nodes/metavar_perm/scg_metavar_perm_norole2.png"
+				=> .system_element_3493: "file://../images/scg/nodes/metavar_perm/scg_metavar_perm_norole2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1151,11 +1151,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/nodes/metavar_perm/scg_metavar_perm_role1.png"
+			"file://../images/scg/nodes/metavar_perm/scg_metavar_perm_role1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/nodes/metavar_perm/scg_metavar_perm_role2.png"
+				=> .system_element_3493: "file://../images/scg/nodes/metavar_perm/scg_metavar_perm_role2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1166,11 +1166,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/nodes/metavar_perm/scg_metavar_perm_structure1.png"
+			"file://../images/scg/nodes/metavar_perm/scg_metavar_perm_structure1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/nodes/metavar_perm/scg_metavar_perm_structure2.png"
+				=> .system_element_3493: "file://../images/scg/nodes/metavar_perm/scg_metavar_perm_structure2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1181,11 +1181,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/nodes/metavar_perm/scg_metavar_perm_primary_entity1.png"
+			"file://../images/scg/nodes/metavar_perm/scg_metavar_perm_primary_entity1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/nodes/metavar_perm/scg_metavar_perm_primary_entity2.png"
+				=> .system_element_3493: "file://../images/scg/nodes/metavar_perm/scg_metavar_perm_primary_entity2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1196,11 +1196,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/nodes/metavar_perm/scg_metavar_perm_tuple1.png"
+			"file://../images/scg/nodes/metavar_perm/scg_metavar_perm_tuple1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/nodes/metavar_perm/scg_metavar_perm_tuple2.png"
+				=> .system_element_3493: "file://../images/scg/nodes/metavar_perm/scg_metavar_perm_tuple2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1211,11 +1211,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/arcs/meta/scg_metavar_perm_noorien1.png"
+			"file://../images/scg/arcs/meta/scg_metavar_perm_noorien1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/arcs/meta/scg_metavar_perm_noorien2.png"
+				=> .system_element_3493: "file://../images/scg/arcs/meta/scg_metavar_perm_noorien2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1226,11 +1226,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/arcs/meta/scg_metavar_perm_orient1.png"
+			"file://../images/scg/arcs/meta/scg_metavar_perm_orient1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/arcs/meta/scg_metavar_perm_orient2.png"
+				=> .system_element_3493: "file://../images/scg/arcs/meta/scg_metavar_perm_orient2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1241,11 +1241,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/arcs/meta/scg_metavar_perm_positive1.png"
+			"file://../images/scg/arcs/meta/scg_metavar_perm_positive1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/arcs/meta/scg_metavar_perm_positive2.png"
+				=> .system_element_3493: "file://../images/scg/arcs/meta/scg_metavar_perm_positive2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1256,11 +1256,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/arcs/meta/scg_metavar_perm_negative1.png"
+			"file://../images/scg/arcs/meta/scg_metavar_perm_negative1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/arcs/meta/scg_metavar_perm_negative2.png"
+				=> .system_element_3493: "file://../images/scg/arcs/meta/scg_metavar_perm_negative2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1271,11 +1271,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/arcs/meta/scg_metavar_perm_fuzzy1.png"
+			"file://../images/scg/arcs/meta/scg_metavar_perm_fuzzy1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/arcs/meta/scg_metavar_perm_fuzzy2.png"
+				=> .system_element_3493: "file://../images/scg/arcs/meta/scg_metavar_perm_fuzzy2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1301,11 +1301,11 @@
 
 		.system_element_3742
 		<=> .system_element_151: {
-			"file://Contents/part_kb/src/images/scg/nodes/var_temp/scg_var_temp_general_view1.png"
+			"file://../images/scg/nodes/var_temp/scg_var_temp_general_view1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/nodes/var_temp/scg_var_temp_general_view2.png"
+				=> .system_element_3493: "file://../images/scg/nodes/var_temp/scg_var_temp_general_view2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1316,11 +1316,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/nodes/var_temp/scg_var_temp_class1.png"
+			"file://../images/scg/nodes/var_temp/scg_var_temp_class1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/nodes/var_temp/scg_var_temp_class2.png"
+				=> .system_element_3493: "file://../images/scg/nodes/var_temp/scg_var_temp_class2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1331,11 +1331,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/nodes/var_temp/scg_var_temp_class_of_classes1.png"
+			"file://../images/scg/nodes/var_temp/scg_var_temp_class_of_classes1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/nodes/var_temp/scg_var_temp_class_of_classes2.png"
+				=> .system_element_3493: "file://../images/scg/nodes/var_temp/scg_var_temp_class_of_classes2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1346,11 +1346,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/nodes/var_temp/scg_var_temp_norole1.png"
+			"file://../images/scg/nodes/var_temp/scg_var_temp_norole1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/nodes/var_temp/scg_var_temp_norole2.png"
+				=> .system_element_3493: "file://../images/scg/nodes/var_temp/scg_var_temp_norole2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1361,11 +1361,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/nodes/var_temp/scg_var_temp_role1.png"
+			"file://../images/scg/nodes/var_temp/scg_var_temp_role1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/nodes/var_temp/scg_var_temp_role2.png"
+				=> .system_element_3493: "file://../images/scg/nodes/var_temp/scg_var_temp_role2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1376,11 +1376,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/nodes/var_temp/scg_var_temp_structure1.png"
+			"file://../images/scg/nodes/var_temp/scg_var_temp_structure1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/nodes/var_temp/scg_var_temp_structure2.png"
+				=> .system_element_3493: "file://../images/scg/nodes/var_temp/scg_var_temp_structure2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1391,11 +1391,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/nodes/var_temp/scg_var_temp_primary_entity1.png"
+			"file://../images/scg/nodes/var_temp/scg_var_temp_primary_entity1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/nodes/var_temp/scg_var_temp_primary_entity2.png"
+				=> .system_element_3493: "file://../images/scg/nodes/var_temp/scg_var_temp_primary_entity2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1406,11 +1406,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/nodes/var_temp/scg_var_temp_tuple1.png"
+			"file://../images/scg/nodes/var_temp/scg_var_temp_tuple1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/nodes/var_temp/scg_var_temp_tuple2.png"
+				=> .system_element_3493: "file://../images/scg/nodes/var_temp/scg_var_temp_tuple2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1421,11 +1421,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/arcs/var/scg_var_temp_noorien1.png"
+			"file://../images/scg/arcs/var/scg_var_temp_noorien1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/arcs/var/scg_var_temp_noorien2.png"
+				=> .system_element_3493: "file://../images/scg/arcs/var/scg_var_temp_noorien2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1436,11 +1436,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/arcs/var/scg_var_temp_orient1.png"
+			"file://../images/scg/arcs/var/scg_var_temp_orient1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/arcs/var/scg_var_temp_orient2.png"
+				=> .system_element_3493: "file://../images/scg/arcs/var/scg_var_temp_orient2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1451,11 +1451,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/arcs/var/scg_var_temp_positive1.png"
+			"file://../images/scg/arcs/var/scg_var_temp_positive1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/arcs/var/scg_var_temp_positive2.png"
+				=> .system_element_3493: "file://../images/scg/arcs/var/scg_var_temp_positive2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1466,11 +1466,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/arcs/var/scg_var_temp_negative1.png"
+			"file://../images/scg/arcs/var/scg_var_temp_negative1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/arcs/var/scg_var_temp_negative2.png"
+				=> .system_element_3493: "file://../images/scg/arcs/var/scg_var_temp_negative2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1481,11 +1481,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/arcs/var/scg_var_temp_fuzzy1.png"
+			"file://../images/scg/arcs/var/scg_var_temp_fuzzy1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/arcs/var/scg_var_temp_fuzzy2.png"
+				=> .system_element_3493: "file://../images/scg/arcs/var/scg_var_temp_fuzzy2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1496,11 +1496,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/nodes/metavar_temp/scg_metavar_temp_general_view1.png"
+			"file://../images/scg/nodes/metavar_temp/scg_metavar_temp_general_view1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/nodes/metavar_temp/scg_metavar_temp_general_view2.png"
+				=> .system_element_3493: "file://../images/scg/nodes/metavar_temp/scg_metavar_temp_general_view2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1511,11 +1511,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/nodes/metavar_temp/scg_metavar_temp_class1.png"
+			"file://../images/scg/nodes/metavar_temp/scg_metavar_temp_class1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/nodes/metavar_temp/scg_metavar_temp_class2.png"
+				=> .system_element_3493: "file://../images/scg/nodes/metavar_temp/scg_metavar_temp_class2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1526,11 +1526,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/nodes/metavar_temp/scg_metavar_temp_class_of_classes1.png"
+			"file://../images/scg/nodes/metavar_temp/scg_metavar_temp_class_of_classes1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/nodes/metavar_temp/scg_metavar_temp_class_of_classes2.png"
+				=> .system_element_3493: "file://../images/scg/nodes/metavar_temp/scg_metavar_temp_class_of_classes2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1541,11 +1541,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/nodes/metavar_temp/scg_metavar_temp_norole1.png"
+			"file://../images/scg/nodes/metavar_temp/scg_metavar_temp_norole1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/nodes/metavar_temp/scg_metavar_temp_norole2.png"
+				=> .system_element_3493: "file://../images/scg/nodes/metavar_temp/scg_metavar_temp_norole2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1556,11 +1556,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/nodes/metavar_temp/scg_metavar_temp_role1.png"
+			"file://../images/scg/nodes/metavar_temp/scg_metavar_temp_role1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/nodes/metavar_temp/scg_metavar_temp_role2.png"
+				=> .system_element_3493: "file://../images/scg/nodes/metavar_temp/scg_metavar_temp_role2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1571,11 +1571,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/nodes/metavar_temp/scg_metavar_temp_structure1.png"
+			"file://../images/scg/nodes/metavar_temp/scg_metavar_temp_structure1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/nodes/metavar_temp/scg_metavar_temp_structure2.png"
+				=> .system_element_3493: "file://../images/scg/nodes/metavar_temp/scg_metavar_temp_structure2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1586,11 +1586,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/nodes/metavar_temp/scg_metavar_temp_primary_entity1.png"
+			"file://../images/scg/nodes/metavar_temp/scg_metavar_temp_primary_entity1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/nodes/metavar_temp/scg_metavar_temp_primary_entity2.png"
+				=> .system_element_3493: "file://../images/scg/nodes/metavar_temp/scg_metavar_temp_primary_entity2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1601,11 +1601,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/nodes/metavar_temp/scg_metavar_temp_tuple1.png"
+			"file://../images/scg/nodes/metavar_temp/scg_metavar_temp_tuple1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/nodes/metavar_temp/scg_metavar_temp_tuple2.png"
+				=> .system_element_3493: "file://../images/scg/nodes/metavar_temp/scg_metavar_temp_tuple2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1616,11 +1616,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/arcs/meta/scg_metavar_temp_noorien1.png"
+			"file://../images/scg/arcs/meta/scg_metavar_temp_noorien1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/arcs/meta/scg_metavar_temp_noorien2.png"
+				=> .system_element_3493: "file://../images/scg/arcs/meta/scg_metavar_temp_noorien2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1631,11 +1631,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/arcs/meta/scg_metavar_temp_orient1.png"
+			"file://../images/scg/arcs/meta/scg_metavar_temp_orient1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/arcs/meta/scg_metavar_temp_orient2.png"
+				=> .system_element_3493: "file://../images/scg/arcs/meta/scg_metavar_temp_orient2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1646,11 +1646,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/arcs/meta/scg_metavar_temp_positive1.png"
+			"file://../images/scg/arcs/meta/scg_metavar_temp_positive1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/arcs/meta/scg_metavar_temp_positive2.png"
+				=> .system_element_3493: "file://../images/scg/arcs/meta/scg_metavar_temp_positive2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1661,11 +1661,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/arcs/meta/scg_metavar_temp_negative1.png"
+			"file://../images/scg/arcs/meta/scg_metavar_temp_negative1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/arcs/meta/scg_metavar_temp_negative2.png"
+				=> .system_element_3493: "file://../images/scg/arcs/meta/scg_metavar_temp_negative2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1676,11 +1676,11 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/arcs/meta/scg_metavar_temp_fuzzy1.png"
+			"file://../images/scg/arcs/meta/scg_metavar_temp_fuzzy1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3493: "file://Contents/part_kb/src/images/scg/arcs/meta/scg_metavar_temp_fuzzy2.png"
+				=> .system_element_3493: "file://../images/scg/arcs/meta/scg_metavar_temp_fuzzy2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1732,7 +1732,7 @@
 
 		.system_element_3746
 		<=> .system_element_151: {
-			"file://Contents/part_kb/src/images/scg/scg_transf6-1-1.png"
+			"file://../images/scg/scg_transf6-1-1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
@@ -1742,7 +1742,7 @@
 					<- lang_ru;;
 					=> nrel_format: format_html;;
 				*);;
-				=> .system_element_3747: "file://Contents/part_kb/src/images/scg/scg_transf6-1-2.png"
+				=> .system_element_3747: "file://../images/scg/scg_transf6-1-2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1753,7 +1753,7 @@
 					*);;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/scg_transf6-2-1.png"
+			"file://../images/scg/scg_transf6-2-1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
@@ -1763,13 +1763,13 @@
 					<- lang_ru;;
 					=> nrel_format: format_html;;
 				*);;
-				=> .system_element_3747: "file://Contents/part_kb/src/images/scg/scg_transf6-2-2.png"
+				=> .system_element_3747: "file://../images/scg/scg_transf6-2-2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
 				*);;
 			*);
-			"file://Contents/part_kb/src/images/scg/scg_transf6-3-1.png"
+			"file://../images/scg/scg_transf6-3-1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
@@ -1779,7 +1779,7 @@
 					<- lang_ru;;
 					=> nrel_format: format_html;;
 				*);;
-				=> .system_element_3747: "file://Contents/part_kb/src/images/scg/scg_transf6-3-2.png"
+				=> .system_element_3747: "file://../images/scg/scg_transf6-3-2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
