@@ -1,197 +1,197 @@
-.system_element_3274
+.system_element_3113
 => nrel_inclusion: [*
 
-	.system_element_3275
-	<- .system_element_114;
-	-> rrel_maximum_studied_object_class: .system_element_3120;
-	-> rrel_explored_relation: 
-		.system_element_3126;
-		.system_element_3276;
-		.system_element_3277;
-		.system_element_3278;
-		.system_element_3279;
-		.system_element_3280;
-		.system_element_3281
+	.system_element_3114
+	<- subject_domain;
+	-> .system_element_767: new_scp_operator;
+	-> .system_element_1003: 
+		rrel_scp_operand;
+		rrel_scp_const;
+		rrel_scp_var;
+		rrel_fixed;
+		rrel_assign;
+		rrel_set;
+		rrel_erase
 	;;
 
-	.system_element_3120
-	<= nrel_inclusion: .system_element_3159;
-	<= .system_element_378: .system_element_3121;
+	new_scp_operator
+	<= nrel_inclusion: action_in_sc_memory;
+	<= nrel_set_of_subsets: scp_operator_atomic_type;
 	=> nrel_subdividing: {
-		.system_element_3282
+		scp_operator_of_structure_generation
 		(*
 			=> nrel_subdividing: {
-				.system_element_3283;
-				.system_element_3284;
-				.system_element_3285;
-				.system_element_3286
+				.system_element_3115;
+				.system_element_3116;
+				.system_element_3117;
+				.system_element_3118
 			};;
 		*);
-		.system_element_3287
+		.system_element_3119
 		(*
 			=> nrel_subdividing: {
-				.system_element_3288;
-				.system_element_3289;
-				.system_element_3290;
-				.system_element_3291;
-				.system_element_3292
+				.system_element_3120;
+				.system_element_3121;
+				.system_element_3122;
+				.system_element_3123;
+				.system_element_3124
 			};;
 		*);
-		.system_element_3293
+		.system_element_3125
 		(*
 			=> nrel_subdividing: {
-				.system_element_3294;
-				.system_element_3295;
-				.system_element_3296;
-				.system_element_3297
+				.system_element_3126;
+				.system_element_3127;
+				.system_element_3128;
+				.system_element_3129
 			};;
 		*);
-		.system_element_3298
+		scp_operator_of_conditions_check
 		(*
 			=> nrel_subdividing: {
-				.system_element_3299;
-				.system_element_3300;
-				.system_element_3301;
-				.system_element_3302;
-				.system_element_3303;
-				.system_element_3304
+				ifGr;
+				ifEq;
+				ifCoin;
+				ifFormCont;
+				ifVarAssign;
+				ifType
 			};;
 		*);
-		.system_element_3305
+		scp_operator_of_scp_operand_value_control
 		(*
 			=> nrel_subdividing: {
-				.system_element_3306;
-				.system_element_3307
+				varErase;
+				varAssign
 			};;
 		*);
-		.system_element_3308
+		scp_operator_of_scp_process_control
 		(*
 			=> nrel_subdividing: {
-				.system_element_3306;
-				.system_element_3309;
-				.system_element_3310;
-				.system_element_3311;
-				.system_element_3312;
-				.system_element_3313
+				varErase;
+				return;
+				syncronize;
+				waitReturnSet;
+				waitReturn;
+				call
 			};;
 		*);
-		.system_element_3314
+		scp_operator_of_event_control
 		(*
 			<= nrel_subdividing: {
-				.system_element_3315
+				sys_wait
 			};;
 		*);
-		.system_element_3316
+		scp_operator_of_file_content_process
 		(*
 			=> nrel_subdividing: {
-				.system_element_3317;
-				.system_element_3318;
-				.system_element_3319;
-				.system_element_3320;
-				.system_element_3321;
-				.system_element_3322;
-				.system_element_3323;
-				.system_element_3324;
-				.system_element_3325;
-				.system_element_3326;
-				.system_element_3327;
-				.system_element_3328;
-				.system_element_3329;
-				.system_element_3330;
-				.system_element_3331;
-				.system_element_3332;
-				.system_element_3333;
-				.system_element_3333;
-				.system_element_3334;
-				.system_element_3335;
-				.system_element_3336;
-				.system_element_3337;
-				.system_element_3338;
-				.system_element_3339;
-				.system_element_3340;
-				.system_element_3341;
-				.system_element_3342
+				contASin;
+				contACos;
+				contDiv;
+				contMult;
+				contSub;
+				contAdd;
+				contTg;
+				contCos;
+				contSin;
+				contLn;
+				contPow;
+				contErase;
+				contAssign;
+				contDivRem;
+				contDivInt;
+				contATg;
+				stringToUpperCase;
+				stringToUpperCase;
+				.system_element_3130;
+				.system_element_3131;
+				.system_element_3132;
+				stringSlice;
+				.system_element_3133;
+				stringLen;
+				stringSplit;
+				stringIfGr;
+				stringIfEq
 			};;
 		*);
-		.system_element_3343
+		scp_operator_of_lock_management
 		(*
 			=> nrel_subdividing: {
-				.system_element_3344;
-				.system_element_3345;
-				.system_element_3346;
-				.system_element_3347;
-				.system_element_3348;
-				.system_element_3349;
-				.system_element_3350;
-				.system_element_3351;
-				.system_element_3352
+				unlockProc;
+				unlockEl;
+				lockEl;
+				lockElEdit;
+				.system_element_3134;
+				unlockElStr;
+				lockElStr;
+				lockElStrEdit;
+				lockElStrRemove
 			};;
 		*)
 	};;
 
-	.system_element_3126
-	<= nrel_inclusion: .system_element_3353;
-	<- .system_element_3354;
-	<- .system_element_3355;
+	rrel_scp_operand
+	<= nrel_inclusion: rrel_argument_of_action;
+	<- auxiliary_concept;
+	<- role_relation;
 	=> nrel_subdividing: {
-		.system_element_3276;
-		.system_element_3277
+		rrel_scp_const;
+		rrel_scp_var
 	};
 	=> nrel_subdividing: {
-		.system_element_3278;
-		.system_element_3279
+		rrel_fixed;
+		rrel_assign
 	};
 	=> nrel_subdividing: {
-		.system_element_3356;
-		.system_element_3357
+		.system_element_3135;
+		.system_element_3136
 	};
 	=> nrel_inclusion: 
-		.system_element_3280
+		rrel_set
 		(*
 			=> nrel_subdividing: {
-				.system_element_3358;
-				.system_element_3359;
-				.system_element_3360;
-				.system_element_3361;
-				.system_element_3362
+				rrel_set_1;
+				rrel_set_2;
+				rrel_set_3;
+				rrel_set_4;
+				rrel_set_5
 			};;
 		*);
-		.system_element_3281;
-		.system_element_3363
+		rrel_erase;
+		rrel_type_of_sc_element
 		(*
 			=> nrel_subdividing: {
-				.system_element_3364
+				rrel_node
 				(*
 					=> nrel_subdividing: {
-						.system_element_3365;
-						.system_element_3366
+						rrel_struct;
+						rrel_relation
 						(*
-							=> nrel_inclusion: .system_element_3367;;
+							=> nrel_inclusion: .system_element_3137;;
 						*);
-						.system_element_3368
+						rrel_class
 					};;
 				*);
-				.system_element_3369
+				rrel_arc
 				(*
 					=> nrel_subdividing: {
-						.system_element_3370;
-						.system_element_3371
+						rrel_common;
+						rrel_access
 						(*
-							=> nrel_inclusion: .system_element_3372;;
+							=> nrel_inclusion: .system_element_3138;;
 							=> nrel_subdividing: {
-								.system_element_3373;
-								.system_element_3374;
-								.system_element_3375
+								rrel_pos;
+								rrel_neg;
+								rrel_fuz
 							};;
 							=> nrel_subdividing: {
-								.system_element_3376;
-								.system_element_3377
+								rrel_temp;
+								rrel_perm
 							};;
 						*)
 					};;
 				*);
-				.system_element_3378;
-				.system_element_3379
+				rrel_edge;
+				rrel_file
 			};;
 		*)
 	;
@@ -201,28 +201,28 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3276
+	rrel_scp_const
 	=> nrel_explanation: [<p>В рамках <i>scp-программы</i> <i>scp-константы'</i> явно участвуют в <i><b>scp-операторах</b></i> в качестве элементов (в теоретико-множественном смысле) и напрямую обрабатываются при интерпретации <i>scp-программы</i>. Константами в рамках <i>scp-программы</i> могут быть <i>sc-элементы</i> любого типа, как <i><b>sc-константы</b></i>, так и <i><b>sc-переменные</b></i>. Константа в рамках <i>scp-программы</i> остается неизменной в течение всего срока интерпретации. Константа <i><b>scp-программы</b></i> может быть рассмотрена как переменная, значение которой совпадает с самой переменной в каждый момент времени и изменено быть не может. Таким образом, далее будем считать, что <i>scp-константа'</i> и ее значение это одно и то же. Каждый <i>in-параметр'</i> при интерпретации каждой конкретной копии <i>scp-программы</i> становится <i>scp-константой'</i> в рамках всех ее операторов, хотя в исходном теле данной программы в каждом из этих операторов он является <i>scp-переменной'</i>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3277
+	rrel_scp_var
 	=> nrel_explanation: [<p>В рамках <i>scp-программы</i> <i>scp-переменные'</i> не обрабатываются явно при интерпретации, обрабатываются значения переменных. Каждая переменная <i>scp-программы</i> может иметь одно значение в каждый момент времени, т. е. представляет собой ситуативный <i>синглетон</i>, элементом которого является текущее значение <i>scp-переменной'</i>. Значение каждой <i>scp-переменной'</i> может меняться в ходе интерпретации <i>scp-программы</i>. При этом интерпретатор при обработке <i>scp-оператора</i> работает непосредственно со значениями <i><b>scp-переменных'</b></i>, а не самими <i>scp-переменными'</i> (которые также являются узлами той же семантической сети).</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3278
+	rrel_fixed
 	=> nrel_explanation: [<p>Значение операндов, помеченных ролевым отношением <i>scp-операнд с заданным значением'</i>, считается заданным в рамках текущего <i>scp-оператора</i>. Данное значение учитывается при выполнении <i>scp-оператора</i> и остается неизменным после окончания выполнения <i>scp-оператора</i>. Каждая <i>scp-константа'</i> по умолчанию рассматривается как <i>scp-операнд с заданным значением'</i>, в связи с чем явное использование данного ролевого отношения в таком случае является избыточным. В таком случае в качестве значения рассматривается непосредственно сам операнд. В случае, если отношением <i><b>scp-операнд</b> с заданным значением'</i> помечена <i>scp-переменная'</i>, то осуществляется попытка поиска значения для данной <i>scp-переменной'</i> (ее элемента). Если попытка оказалась безуспешной, то возникает ошибка времени выполнения, которая должна быть обработана соответствующим образом.Любой <i>scp-операнд с заданным значением'</i> независимо от конкретного типа <i>scp-оператора</i> может быть <i>scp-переменной'</i>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3279
+	rrel_assign
 	=> nrel_explanation: [<p>Значение операндов, помеченных ролевым отношением <i>scp-операнд со свободным значением'</i>, считается свободным (не заданным заранее) в рамках текущего <i>scp-оператора</i>. В начале выполнения <i>scp-оператора</i> связь между <i>scp-переменной'</i>, помеченной данным ролевым отношением, и ее элементом (значением) всегда удаляется. В результате выполнения данного оператора может быть либо сгенерировано новое значение <i>scp-переменной'</i>, либо не сгенерировано, тогда <i>scp-переменная'</i> будет считаться не имеющей значения. Ни одна <i>scp-константа'</i> не может быть помечена как <i>scp-операнд со свободным значением'</i>, поскольку константа не может изменять свое значение в ходе интерпретации <i>scp-программы</i>.</p>]
 	(*
 		<- lang_ru;;

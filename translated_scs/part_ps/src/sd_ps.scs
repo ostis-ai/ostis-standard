@@ -1,24 +1,24 @@
-.system_element_214
+.system_element_205
 => nrel_inclusion: [*
-	=> .system_element_176: 
-		.system_element_3037;
-		.system_element_201;
-		.system_element_3038
+	=> .system_element_172: 
+		.system_element_2960;
+		.system_element_192;
+		.system_element_2961
 	;;
 
-	.system_element_1331
+	.system_element_1289
 	=> nrel_idtf: [<p>совокупность всех навыков, которыми обладает ostis-система на текущий момент времени</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<= .system_element_378: .system_element_1357;
+	<= nrel_set_of_subsets: .system_element_1313;
 	=> nrel_note: [<p>Предлагаемый в рамках <i>Технологии OSTIS</i> подход к построению решателей задач позволяет обеспечить их модифицируемость, что, в свою очередь, позволяет <i>ostis-системе</i> при необходимости легко приобретать новые <i>навыки</i>, модифицировать (совершенствовать) уже имеющиеся и даже избавляться от некоторых навыков с целью повышения производительности системы. Таким образом, имеет смысл говорить не о жестко фиксированном решателе задач, который разрабатывается один раз при создании первой версии системы и далее не меняется, а о совокупности навыков, фиксированной в каждый текущий момент времени, но постоянно эволюционирующей.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> nrel_inclusion: .system_element_3039
+	=> nrel_inclusion: .system_element_2962
 	(*
 		=> nrel_idtf: [<p>полный решатель задач ostis-системы</p>];;
 		=> nrel_idtf: [<p>интегрированный решатель задач ostis-системы</p>]
@@ -43,7 +43,7 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	=> nrel_inclusion: .system_element_3040
+	=> nrel_inclusion: .system_element_2963
 	(*
 		=> nrel_idtf: [<p>решатель задач ostis-системы, реализующий две и более модели решения задач</p>]
 		(*
@@ -52,71 +52,71 @@
 		*);;
 	*);;
 
-	.system_element_3041
-	<= nrel_inclusion: .system_element_3042;
+	.system_element_2964
+	<= nrel_inclusion: sc_agent;
 	=> nrel_explanation: [<p>Под <i>машиной обработки знаний</i> будем понимать совокупность интерпретаторов всех <i>навыков</i>, составляющих некоторый <i>решатель задач</i>. С учетом многоагентного подхода к обработке информации, используемого в рамках Технологии OSTIS, <i>машина обработки знаний</i> представляет собой <i>sc-агент</i> (чаще всего --- <i>неатомарный sc-агент</i>), в состав которого входят более простые sc-агенты, обеспечивающие интерпретацию соответствующего множества <i>методов</i>. Таким образом, <i>машина обработки знаний</i> в общем случае представляет собой иерархическую систему <i>sc-агентов</i>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_1331
-	-> .system_element_3043;
-	=> nrel_inclusion: .system_element_3044
+	.system_element_1289
+	-> .system_element_2965;
+	=> nrel_inclusion: .system_element_2966
 	(*
-		=> nrel_inclusion: .system_element_3045
+		=> nrel_inclusion: .system_element_2967
 		(*
 			=> nrel_subdividing: {
-				.system_element_3046;
-				.system_element_3047;
-				.system_element_3048
+				.system_element_2968;
+				.system_element_2969;
+				.system_element_2970
 			};;
 		*);;
-		=> nrel_inclusion: .system_element_3049
+		=> nrel_inclusion: .system_element_2971
 		(*
-			=> nrel_inclusion: .system_element_3050
+			=> nrel_inclusion: .system_element_2972
 			(*
-				=> nrel_inclusion: .system_element_3051
+				=> nrel_inclusion: .system_element_2973
 				(*
-					=> nrel_inclusion: .system_element_3052
+					=> nrel_inclusion: .system_element_2974
 					(*
-						=> nrel_inclusion: .system_element_3053;;
-						=> nrel_inclusion: .system_element_3054;;
+						=> nrel_inclusion: .system_element_2975;;
+						=> nrel_inclusion: .system_element_2976;;
 					*);;
-					=> nrel_inclusion: .system_element_3055;;
-					=> nrel_inclusion: .system_element_3056;;
+					=> nrel_inclusion: .system_element_2977;;
+					=> nrel_inclusion: .system_element_2978;;
 				*);;
 			*);;
-			=> nrel_inclusion: .system_element_3057
+			=> nrel_inclusion: .system_element_2979
 			(*
 				=> nrel_subdividing: {
-					.system_element_3058;
-					.system_element_3059
+					.system_element_2980;
+					.system_element_2981
 				};;
 			*);;
 		*);;
-		=> nrel_inclusion: .system_element_3060;;
+		=> nrel_inclusion: .system_element_2982;;
 	*);
-	=> nrel_inclusion: .system_element_3061;;
+	=> nrel_inclusion: .system_element_2983;;
 
-	.system_element_1331
-	=> nrel_inclusion: .system_element_3062
+	.system_element_1289
+	=> nrel_inclusion: .system_element_2984
 	(*
 		=> nrel_idtf: [<p>решатель, способный решать задачи тех классов, для которых на данный момент времени известен соответствующий метод решения</p>];;
-		=> nrel_inclusion: .system_element_3063;;
-		=> nrel_inclusion: .system_element_3064;;
-		=> nrel_inclusion: .system_element_3065
+		=> nrel_inclusion: .system_element_2985;;
+		=> nrel_inclusion: .system_element_2986;;
+		=> nrel_inclusion: .system_element_2987
 		(*
-			=> nrel_inclusion: .system_element_3066;;
-			=> nrel_inclusion: .system_element_3067;;
+			=> nrel_inclusion: .system_element_2988;;
+			=> nrel_inclusion: .system_element_2989;;
 		*);;
-		=> nrel_inclusion: .system_element_3068
+		=> nrel_inclusion: .system_element_2990
 		(*
-			=> nrel_inclusion: .system_element_3069;;
-			=> nrel_inclusion: .system_element_3070;;
+			=> nrel_inclusion: .system_element_2991;;
+			=> nrel_inclusion: .system_element_2992;;
 		*);;
 	*);
-	=> nrel_inclusion: .system_element_3071
+	=> nrel_inclusion: .system_element_2993
 	(*
 		=> nrel_idtf: [<p>решатель, реализующий стратегии решения задач, позволяющие породить метод решения задачи, который в текущий момент времени не известен ostis-системе</p>];;
 		=> nrel_idtf: [<p>решатель, использующий для решения задач метаметоды, соответствующие более общим классам задач по отношению к заданной</p>]
@@ -129,80 +129,80 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
-		=> nrel_inclusion: .system_element_3072;;
-		=> nrel_inclusion: .system_element_3073;;
-		=> nrel_inclusion: .system_element_3074;;
-		=> nrel_inclusion: .system_element_3075;;
-		=> nrel_inclusion: .system_element_3076;;
-		=> nrel_inclusion: .system_element_3077;;
+		=> nrel_inclusion: .system_element_2994;;
+		=> nrel_inclusion: .system_element_2995;;
+		=> nrel_inclusion: .system_element_2996;;
+		=> nrel_inclusion: .system_element_2997;;
+		=> nrel_inclusion: .system_element_2998;;
+		=> nrel_inclusion: .system_element_2999;;
 	*);;
 
-	.system_element_3041
-	=> nrel_inclusion: .system_element_3078
+	.system_element_2964
+	=> nrel_inclusion: .system_element_3000
 	(*
-		=> nrel_inclusion: .system_element_3079
+		=> nrel_inclusion: .system_element_3001
 		(*
-			=> nrel_inclusion: .system_element_3080;;
-			=> nrel_inclusion: .system_element_3081;;
+			=> nrel_inclusion: .system_element_3002;;
+			=> nrel_inclusion: .system_element_3003;;
 		*);;
-		=> nrel_inclusion: .system_element_3082;;
-		=> nrel_inclusion: .system_element_3083;;
-		=> nrel_inclusion: .system_element_3084;;
-		=> nrel_inclusion: .system_element_3085;;
-		=> nrel_inclusion: .system_element_3086;;
+		=> nrel_inclusion: .system_element_3004;;
+		=> nrel_inclusion: .system_element_3005;;
+		=> nrel_inclusion: .system_element_3006;;
+		=> nrel_inclusion: .system_element_3007;;
+		=> nrel_inclusion: .system_element_3008;;
 	*);;
 
-	.system_element_1331
-	=> nrel_inclusion: .system_element_3087
+	.system_element_1289
+	=> nrel_inclusion: .system_element_3009
 	(*
 		=> nrel_subdividing: {
-			.system_element_3088;
-			.system_element_3089
+			.system_element_3010;
+			.system_element_3011
 		};;
 	*);
-	=> nrel_inclusion: .system_element_3090
+	=> nrel_inclusion: .system_element_3012
 	(*
 		=> nrel_idtf: [<p>решатель задач, для которых явно сформулирована цель</p>];;
-		=> nrel_inclusion: .system_element_3091;;
-		=> nrel_inclusion: .system_element_3092;;
-		=> nrel_inclusion: .system_element_3093;;
-		=> nrel_inclusion: .system_element_3094;;
-		=> nrel_inclusion: .system_element_3095
+		=> nrel_inclusion: .system_element_3013;;
+		=> nrel_inclusion: .system_element_3014;;
+		=> nrel_inclusion: .system_element_3015;;
+		=> nrel_inclusion: .system_element_3016;;
+		=> nrel_inclusion: .system_element_3017
 		(*
-			=> nrel_inclusion: .system_element_3096;;
+			=> nrel_inclusion: .system_element_3018;;
 		*);;
 	*);
-	=> nrel_inclusion: .system_element_3097
+	=> nrel_inclusion: .system_element_3019
 	(*
-		=> nrel_inclusion: .system_element_3098;;
-		=> nrel_inclusion: .system_element_3099;;
+		=> nrel_inclusion: .system_element_3020;;
+		=> nrel_inclusion: .system_element_3021;;
 	*);
-	=> nrel_inclusion: .system_element_3100
+	=> nrel_inclusion: .system_element_3022
 	(*
-		=> nrel_inclusion: .system_element_3101;;
-		=> nrel_inclusion: .system_element_3102;;
-		=> nrel_inclusion: .system_element_3103
+		=> nrel_inclusion: .system_element_3023;;
+		=> nrel_inclusion: .system_element_3024;;
+		=> nrel_inclusion: .system_element_3025
 		(*
-			=> nrel_inclusion: .system_element_3104;;
+			=> nrel_inclusion: .system_element_3026;;
 		*);;
 	*);
-	=> nrel_inclusion: .system_element_3105
+	=> nrel_inclusion: .system_element_3027
 	(*
-		=> nrel_inclusion: .system_element_3106
+		=> nrel_inclusion: .system_element_3028
 		(*
-			=> nrel_inclusion: .system_element_3107;;
-			=> nrel_inclusion: .system_element_3108;;
+			=> nrel_inclusion: .system_element_3029;;
+			=> nrel_inclusion: .system_element_3030;;
 		*);;
-		=> nrel_inclusion: .system_element_3109
+		=> nrel_inclusion: .system_element_3031
 		(*
-			=> nrel_inclusion: .system_element_3110;;
-			=> nrel_inclusion: .system_element_3111;;
+			=> nrel_inclusion: .system_element_3032;;
+			=> nrel_inclusion: .system_element_3033;;
 		*);;
-		=> nrel_inclusion: .system_element_3112
+		=> nrel_inclusion: .system_element_3034
 		(*
-			=> nrel_inclusion: .system_element_3113
+			=> nrel_inclusion: .system_element_3035
 			(*
-				=> nrel_inclusion: .system_element_3114;;
+				=> nrel_inclusion: .system_element_3036;;
 			*);;
 		*);;
 	*);;

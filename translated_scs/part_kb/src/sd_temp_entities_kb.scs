@@ -1,6 +1,6 @@
-.system_element_4887
+.system_element_4356
 => nrel_inclusion: [*
-	=> .system_element_111: [<p>Обработка информации в <i>sc-памяти</i> (т.е. динамика базы знаний, хранимой в <i>sc-памяти</i>) в конечном счете сводится:
+	=> nrel_introduction: [<p>Обработка информации в <i>sc-памяти</i> (т.е. динамика базы знаний, хранимой в <i>sc-памяти</i>) в конечном счете сводится:
 	<ul>
 		<li> к появлению в <i>sc-памяти</i> новых актуальных <i>sc-узлов</i> и <i>sc-коннекторов</i>;
 		<li> к логическому удалению актуальных <i>sc-элементов</i>, т.е. к переводу их в неактуальное состояние (это необходимо для хранения протокола изменения состояния базы знаний, в рамках которого могут описываться действия по удалению <i>sc-элементов</i>);
@@ -19,89 +19,89 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4888
+	.system_element_4357
 	=> nrel_idtf: [<p>Предметная область, описывающая динамику базы знаний, хранимой в sc-памяти</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<- .system_element_114;
-	-> rrel_studied_object_class: 
-		.system_element_400;
-		.system_element_4889;
-		.system_element_4890;
-		.system_element_3505;
-		.system_element_4891;
-		.system_element_4892;
-		.system_element_4731;
-		.system_element_4893;
-		.system_element_3354;
-		.system_element_4894;
-		.system_element_4895;
-		.system_element_4896;
-		.system_element_4897;
-		.system_element_4898;
-		.system_element_4899;
-		.system_element_3653;
-		.system_element_954;
-		.system_element_4900;
-		.system_element_4901;
-		.system_element_4902;
-		.system_element_4903;
-		.system_element_4904;
-		.system_element_4905;
-		.system_element_4906;
-		.system_element_4907;
-		.system_element_4908;
-		.system_element_4909
+	<- subject_domain;
+	-> .system_element_112: 
+		sc_element;
+		.system_element_4358;
+		logically_removed_sc_element;
+		number;
+		non_calculated_number;
+		calculated_number;
+		concept;
+		main_concept;
+		auxiliary_concept;
+		main_to_auxilary_concept;
+		.system_element_4359;
+		specified_essence;
+		not_enough_specified_essence;
+		enough_specified_essence;
+		average_specified_essence;
+		structure;
+		file;
+		nrel_situation_in_sc_memory;
+		nrel_elementary_situation_in_sc_memory;
+		sc_event_add_output_arc;
+		nrel_add_sc_arc_coming_in_given_sc_element_situation;
+		nrel_add_sc_edge_incident_to_given_sc_element_situation;
+		sc_event_remove_output_arc;
+		sc_event_remove_input_arc;
+		nrel_remove_sc_edge_incident_to_given_sc_element_situation;
+		sc_event_remove_element;
+		sc_event_content_changed
 	;;
 
-	.system_element_400
+	sc_element
 	<= nrel_subdividing: {
-		.system_element_4889;
-		.system_element_4890
+		.system_element_4358;
+		logically_removed_sc_element
 	};;
 
-	.system_element_4889
-	<- .system_element_3742;;
+	.system_element_4358
+	<- situational_set;;
 
-	.system_element_4890
-	<- .system_element_3742;;
+	logically_removed_sc_element
+	<- situational_set;;
 
-	.system_element_3505
+	number
 	=> nrel_subdividing: {
-		.system_element_4891;
-		.system_element_4892
+		non_calculated_number;
+		calculated_number
 	};;
 
-	.system_element_4891
-	<- .system_element_3742;;
+	non_calculated_number
+	<- situational_set;;
 
-	.system_element_4892
-	<- .system_element_3743;;
+	calculated_number
+	<- non_situational_set;;
 
-	.system_element_4731
+	concept
 	=> nrel_subdividing: {
-		.system_element_4893;
-		.system_element_3354;
-		.system_element_4894;
-		.system_element_4895
+		main_concept;
+		auxiliary_concept;
+		main_to_auxilary_concept;
+		.system_element_4359
 	};;
 
-	.system_element_4893
+	main_concept
 	=> nrel_idtf: [<p>основное понятие для данной ostis-системы</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<- .system_element_3742;
+	<- situational_set;
 	=> nrel_explanation: [<p>К <b><i>основным понятиям</i></b> относятся те понятия, которые активно используются в системе и могут быть ключевыми элементами sc-агентов. К <b><i>основным понятиям</i></b> относятся также все неопределяемые понятия.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3354
+	auxiliary_concept
 	=> nrel_idtf: [<p>дополнительное понятие</p>]
 	(*
 		<- lang_ru;;
@@ -117,37 +117,37 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<- .system_element_3742;
+	<- situational_set;
 	=> nrel_explanation: [<p>Каждое <b><i>неосновное понятие</i></b> должно быть строго определено на основе <i>основных понятий</i>. Такие <b><i>неосновные понятия</i></b> используются только для понимания и правильного восприятия вводимой информации, в том числе, для выравнивания онтологий. Ключевым элементом <i>sc-агентов</i> <b><i>неосновные понятия</i></b> быть не могут.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_3642: [<p>В случае, когда некоторое понятие полностью перешло из <i>основных понятий</i> в неосновные, то есть стало <b><i>неосновным понятием</i></b>, и соответствующее ему <i>основное понятие</i> (через которое оно определяется) в рамках некоторого внешнего языка имеет одинаковый с ним основной идентификатор, то к идентификатору <b><i>неосновного понятия</i></b> спереди добавляется знак #. Если при этом соответствуюшее <i>основное понятие</i> имеет в идентификаторе знак , добавленный в процессе перехода, то этот знак удаляется. Если указанные понятия имеют разные основные идентификаторы в рамках этого внешнего языка, то никаких дополнительных средств идентификации не используется.Например:<i>#трансляция sc-текста</i><i>#scp-программа</i></p>]
+	=> .system_element_3340: [<p>В случае, когда некоторое понятие полностью перешло из <i>основных понятий</i> в неосновные, то есть стало <b><i>неосновным понятием</i></b>, и соответствующее ему <i>основное понятие</i> (через которое оно определяется) в рамках некоторого внешнего языка имеет одинаковый с ним основной идентификатор, то к идентификатору <b><i>неосновного понятия</i></b> спереди добавляется знак #. Если при этом соответствуюшее <i>основное понятие</i> имеет в идентификаторе знак , добавленный в процессе перехода, то этот знак удаляется. Если указанные понятия имеют разные основные идентификаторы в рамках этого внешнего языка, то никаких дополнительных средств идентификации не используется.Например:<i>#трансляция sc-текста</i><i>#scp-программа</i></p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4894
-	<- .system_element_3742;;
+	main_to_auxilary_concept
+	<- situational_set;;
 
-	.system_element_4895
-	<- .system_element_3742;
-	=> .system_element_3642: [<p>В случае, когда текущее <i>основное понятие</i> и соответствующее ему <b><i>понятие, переходящее из неосновного в основное</i></b> в рамках некоторого внешнего языка имеют одинаковый основной идентификатор, то к идентификатору понятия, переходящего из неосновного в основное спереди добавляется знак . Если указанные понятия имеют разные основные идентификаторы в рамках этого внешнего языка, то никаких дополнительных средств идентификации не используется.Например:<i>трансляция sc-текста</i><i>scp-программа</i></p>]
+	.system_element_4359
+	<- situational_set;
+	=> .system_element_3340: [<p>В случае, когда текущее <i>основное понятие</i> и соответствующее ему <b><i>понятие, переходящее из неосновного в основное</i></b> в рамках некоторого внешнего языка имеют одинаковый основной идентификатор, то к идентификатору понятия, переходящего из неосновного в основное спереди добавляется знак . Если указанные понятия имеют разные основные идентификаторы в рамках этого внешнего языка, то никаких дополнительных средств идентификации не используется.Например:<i>трансляция sc-текста</i><i>scp-программа</i></p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4896
+	specified_essence
 	=> nrel_subdividing: {
-		.system_element_4897;
-		.system_element_4898;
-		.system_element_4899
+		not_enough_specified_essence;
+		enough_specified_essence;
+		average_specified_essence
 	};;
 
-	.system_element_4898
+	enough_specified_essence
 	=> nrel_explanation: [<p>К <b><i>достаточно специфицированным сущностям</i></b> предъявляются следующие требования:
 
 	<ul>
@@ -194,46 +194,46 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3653
+	structure
 	=> nrel_subdividing: {
-		.system_element_4910;
-		.system_element_4911
+		formed_structure;
+		unformed_structure
 	};
 	=> nrel_subdividing: {
-		.system_element_4912;
-		.system_element_4913;
-		.system_element_4914
+		not_enough_formed_structure;
+		enough_formed_structure;
+		structure_with_average_formation_level
 	};;
 
-	.system_element_954
+	file
 	=> nrel_subdividing: {
-		.system_element_4915;
-		.system_element_4916;
-		.system_element_4917
+		.system_element_4360;
+		.system_element_4361;
+		.system_element_4362
 	};;
 
-	.system_element_4918
-	=> nrel_inclusion: .system_element_2012;;
+	.system_element_4363
+	=> nrel_inclusion: .system_element_1959;;
 
-	.system_element_4919
-	<= nrel_inclusion: .system_element_4918;
+	.system_element_4364
+	<= nrel_inclusion: .system_element_4363;
 	=> nrel_explanation: [<p>Под <b><i>элементарным событием в sc-памяти</i></b> понимается такое <i>событие</i>, в результате выполнения которого изменяется состояние только одного <i>sc-элемента</i>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
 	=> nrel_subdividing: {
-		.system_element_4920;
-		.system_element_4921;
-		.system_element_4922;
-		.system_element_4923;
-		.system_element_4924;
-		.system_element_4925;
-		.system_element_4926;
-		.system_element_4927
+		.system_element_4365;
+		.system_element_4366;
+		.system_element_4367;
+		.system_element_4368;
+		.system_element_4369;
+		.system_element_4370;
+		.system_element_4371;
+		.system_element_4372
 	};;
 
-	.system_element_3794
+	.system_element_3377
 	=> nrel_idtf: [<p>атомарный процесс</p>]
 	(*
 		<- lang_ru;;
@@ -250,7 +250,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3795
+	.system_element_3378
 	=> nrel_idtf: [<p>процесс, детализация которого на входящие в него подпроцессы в текущем контексте не производится</p>]
 	(*
 		<- lang_ru;;

@@ -1,82 +1,82 @@
-.system_element_3579
+.system_element_3335
 => nrel_inclusion: [*
 
-	.system_element_3580
-	<- .system_element_114;
-	-> rrel_maximum_studied_object_class: 
-		.system_element_3581
+	.system_element_3336
+	<- subject_domain;
+	-> .system_element_767: 
+		sheaf
 	;
-	-> rrel_studied_object_class: 
-		.system_element_3582;
-		.system_element_3583;
-		.system_element_3584;
-		.system_element_3585;
-		.system_element_3586;
-		.system_element_3587;
-		.system_element_3588;
-		.system_element_3589;
-		.system_element_3590;
-		.system_element_3591;
-		.system_element_949;
-		.system_element_841;
-		.system_element_3592;
-		.system_element_3593;
-		.system_element_842;
-		.system_element_3594;
-		.system_element_3595;
-		.system_element_3596;
-		.system_element_3597;
-		.system_element_3598;
-		.system_element_3599;
-		.system_element_3600;
-		.system_element_3601;
-		.system_element_3602;
-		.system_element_3603;
-		.system_element_3604;
-		.system_element_3605;
-		.system_element_3606;
-		.system_element_3607;
-		.system_element_3608;
-		.system_element_3609;
-		.system_element_3355;
-		.system_element_3610;
-		.system_element_3504;
-		.system_element_3611;
-		.system_element_3612;
-		.system_element_3613;
-		.system_element_3248;
-		.system_element_3614
+	-> .system_element_112: 
+		binary_sheaf;
+		sc_connector;
+		non_atomic_binary_sheaf;
+		non_binary_sheaf;
+		non_oriented_sheaf;
+		oriented_sheaf;
+		relation;
+		class_of_equipotent_sheaves;
+		.system_element_3337;
+		unary_relation;
+		binary_relation;
+		quasybinary_relation;
+		ternary_relation;
+		nonbinary_relation;
+		oriented_relation;
+		non_oriented_relation;
+		reflexive_relation;
+		antireflexive_relation;
+		partially_reflexive_relation;
+		symmetric_relation;
+		antisymmetric_relation;
+		partially_symmetric_relation;
+		transitive_relation;
+		antitransitive_relation;
+		partially_transitive_relation;
+		related_relation;
+		order_relation;
+		strict_order_relation;
+		non_strict_order_relation;
+		tolerance_relation;
+		equivalence_relation;
+		role_relation;
+		order_role_relation;
+		norole_relation;
+		norole_binary_relation;
+		arity;
+		metarelation;
+		decomposition_relation;
+		integration_relation
 	;
-	-> rrel_explored_relation: 
-		.system_element_1265;
-		.system_element_3615;
-		.system_element_3616;
-		.system_element_843;
-		.system_element_845;
-		.system_element_3617;
-		.system_element_3618;
-		.system_element_3619;
-		.system_element_3620;
-		.system_element_3621;
-		.system_element_3622;
-		.system_element_3623;
-		.system_element_3624;
-		.system_element_3625;
-		.system_element_3626;
-		.system_element_3627;
-		.system_element_3628;
-		.system_element_3629;
-		.system_element_3630;
-		.system_element_3631;
-		.system_element_3632;
-		.system_element_3633;
-		.system_element_3634;
-		.system_element_3635;
-		.system_element_3636;
-		.system_element_3637
+	-> .system_element_1003: 
+		nrel_definitional_domain;
+		nrel_relation_attribute;
+		nrel_domain;
+		nrel_first_domain;
+		nrel_second_domain;
+		nrel_composition_of_relations;
+		nrel_quotient_set;
+		nrel_mapping;
+		nrel_relation_of_mapping;
+		rrel_input_set;
+		rrel_output_set;
+		rrel_image_of_mapping;
+		rrel_preimage_of_mapping;
+		nrel_total_mapping;
+		nrel_partial_mapping;
+		nrel_surjection;
+		nrel_non_surjective_mapping;
+		nrel_functional_mapping;
+		nrel_backward_mapping;
+		nrel_inversible_mapping;
+		nrel_ambiguous_mapping;
+		nrel_injection;
+		nrel_bijective_mapping;
+		nrel_set_of_combinations;
+		nrel_set_of_partial_permutations;
+		nrel_set_of_permutations
 	;;
 
-	.system_element_3581
+	sheaf
 	=> nrel_idtf: [<p>связка sc-элементов</p>]
 	(*
 		<- lang_ru;;
@@ -98,18 +98,18 @@
 		=> nrel_format: format_html;;
 	*);
 	=> nrel_subdividing: {
-		.system_element_3582;
-		.system_element_3585
+		binary_sheaf;
+		non_binary_sheaf
 	};
 	=> nrel_subdividing: {
-		.system_element_3586;
-		.system_element_3587
+		non_oriented_sheaf;
+		oriented_sheaf
 	};;
 
-	.system_element_3582
+	binary_sheaf
 	=> nrel_subdividing: {
-		.system_element_3583;
-		.system_element_3584
+		sc_connector;
+		non_atomic_binary_sheaf
 	};
 	=> nrel_note: [<p>Данное разбиение осуществляется на основе синтаксического признака, а не семантического, поскольку каждый <i>sc-коннектор</i> может быть записан в памяти при помощи семантически эквивалентной конструкции, содержащей знак самой связи и пары принадлежности, ведущие к ее элементам, уточненные, при необходимости ролевыми отношениями.</p>]
 	(*
@@ -117,7 +117,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3583
+	sc_connector
 	=> nrel_idtf: [<p>атомарная бинарная связь</p>]
 	(*
 		<- lang_ru;;
@@ -129,37 +129,37 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3584
+	non_atomic_binary_sheaf
 	=> nrel_explanation: [<p><b><i>неатомарная бинарная связь</i></b> --- <i>бинарная связь</i>, роли компонентов которой не могут быть заданы только при помощи <i>ролевых отношений 1'</i> и <i>2'</i>, или не заданы совсем, а требуют дополнительного уточнения при помощи более частных ролевых отношений.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3585
+	non_binary_sheaf
 	=> nrel_explanation: [<p><b><i>небинарная связь</i></b> --- связь, имеющая больше двух элементов.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3586
-	=> nrel_inclusion: .system_element_3638;
+	non_oriented_sheaf
+	=> nrel_inclusion: non_oriented_set;
 	=> nrel_explanation: [<p><b><i>неориентированная связь</i></b> --- связь, все элементы которой имеют одинаковые роли (при этом соответствующее ролевое отношение, как правило, явно не указывается).</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3587
-	=> nrel_inclusion: .system_element_3509;
+	oriented_sheaf
+	=> nrel_inclusion: .system_element_3266;
 	=> nrel_explanation: [<p><b><i>ориентированная связь</i></b> --- связь, в которой с помощью ролевых отношений, указываются роли компонентов этой связи.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3588
+	relation
 	=> nrel_idtf: [<p>класс связей</p>]
 	(*
 		<- lang_ru;;
@@ -180,7 +180,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_850: [<p><b><i>отношение</i></b>, <i>заданное на множестве M</i> --- это подмножество <i>декартового произведения</i> этого множества самого на себя некоторое количество раз.</p>]
+	=> .system_element_827: [<p><b><i>отношение</i></b>, <i>заданное на множестве M</i> --- это подмножество <i>декартового произведения</i> этого множества самого на себя некоторое количество раз.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
@@ -191,23 +191,23 @@
 		=> nrel_format: format_html;;
 	*);
 	=> nrel_subdividing: {
-		.system_element_3589;
-		.system_element_3590
+		class_of_equipotent_sheaves;
+		.system_element_3337
 	};
 	=> nrel_subdividing: {
-		.system_element_949;
-		.system_element_3593
+		binary_relation;
+		nonbinary_relation
 	};
 	=> nrel_subdividing: {
-		.system_element_842;
-		.system_element_3594
+		oriented_relation;
+		non_oriented_relation
 	};
 	=> nrel_subdividing: {
-		.system_element_3355;
-		.system_element_3504
+		role_relation;
+		norole_relation
 	};;
 
-	.system_element_3589
+	class_of_equipotent_sheaves
 	=> nrel_idtf: [<p>класс связок фиксированной арности</p>]
 	(*
 		<- lang_ru;;
@@ -218,29 +218,29 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> nrel_inclusion: .system_element_3591;
-	=> nrel_inclusion: .system_element_949;
-	=> nrel_inclusion: .system_element_3592;
-	=> .system_element_850: [<p><b><i>класс равномощных связок</i></b> --- класс связок, имеющих одинаковую мощность.</p>]
+	=> nrel_inclusion: unary_relation;
+	=> nrel_inclusion: binary_relation;
+	=> nrel_inclusion: ternary_relation;
+	=> .system_element_827: [<p><b><i>класс равномощных связок</i></b> --- класс связок, имеющих одинаковую мощность.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3590
+	.system_element_3337
 	=> nrel_idtf: [<p>отношение нефиксированной арности</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<= nrel_inclusion: .system_element_3593;
-	=> .system_element_850: [<p><b><i>класс связок разной мощности</i></b> --- класс связок, имеющих разную мощность.</p>]
+	<= nrel_inclusion: nonbinary_relation;
+	=> .system_element_827: [<p><b><i>класс связок разной мощности</i></b> --- класс связок, имеющих разную мощность.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3591
+	unary_relation
 	=> nrel_idtf: [<p>отношение арности один</p>]
 	(*
 		<- lang_ru;;
@@ -256,13 +256,13 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_850: [<p><b><i>унарное отношение</i></b> --- это множество таких отношений на множестве M, являющихся любым подмножеством множества M.</p>]
+	=> .system_element_827: [<p><b><i>унарное отношение</i></b> --- это множество таких отношений на множестве M, являющихся любым подмножеством множества M.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_949
+	binary_relation
 	=> nrel_idtf: [<p>отношение арности два</p>]
 	(*
 		<- lang_ru;;
@@ -273,41 +273,41 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> nrel_inclusion: .system_element_841;
-	=> nrel_inclusion: .system_element_3605;
-	=> nrel_inclusion: .system_element_3608;
+	=> nrel_inclusion: quasybinary_relation;
+	=> nrel_inclusion: order_relation;
+	=> nrel_inclusion: tolerance_relation;
 	=> nrel_subdividing: {
-		.system_element_3595;
-		.system_element_3596;
-		.system_element_3597
+		reflexive_relation;
+		antireflexive_relation;
+		partially_reflexive_relation
 	};
 	=> nrel_subdividing: {
-		.system_element_3598;
-		.system_element_3599;
-		.system_element_3600
+		symmetric_relation;
+		antisymmetric_relation;
+		partially_symmetric_relation
 	};
 	=> nrel_subdividing: {
-		.system_element_3601;
-		.system_element_3602;
-		.system_element_3603
+		transitive_relation;
+		antitransitive_relation;
+		partially_transitive_relation
 	};
 	=> nrel_subdividing: {
-		.system_element_3355;
-		.system_element_3611
+		role_relation;
+		norole_binary_relation
 	};
-	=> .system_element_850: [<p><b><i>бинарное отношение</i></b> --- это множество таких отношений на множестве <b><i>M</i></b>, являющихся подмножеством <i>декартова произведения</i> множества <b><i>M</i></b>.Если <b><i>бинарное отношение R</i></b> задано на <i>множестве</i> <b><i>М</i></b> и два элемента этого множества <b><i>a</i></b> и <b><i>b</i></b> связаны данным отношением, то будем обозначать такую связь как <b><i>aRb</i></b>.</p>]
+	=> .system_element_827: [<p><b><i>бинарное отношение</i></b> --- это множество таких отношений на множестве <b><i>M</i></b>, являющихся подмножеством <i>декартова произведения</i> множества <b><i>M</i></b>.Если <b><i>бинарное отношение R</i></b> задано на <i>множестве</i> <b><i>М</i></b> и два элемента этого множества <b><i>a</i></b> и <b><i>b</i></b> связаны данным отношением, то будем обозначать такую связь как <b><i>aRb</i></b>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_841
+	quasybinary_relation
 	=> nrel_explanation: [<p><b><i>квазибинарное отношение</i></b> --- множество ориентированных пар, первые компоненты которых являются связками.Таким образом, <i>sc-дуги</i>, принадлежащие <b><i>квазибинарным отношениям</i></b>, всегда выходят из связок.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_3639: [<p>В область определения квазибинарного отношения будем включать:
+	=> .system_element_3338: [<p>В область определения квазибинарного отношения будем включать:
 	<ul>
 		<li> вторые компоненты ориентированных пар, принадлежащих этому отношению;
 		<li> элементы первых компонентов ориентированных пар, принадлежащих этому отношению;
@@ -318,7 +318,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3592
+	ternary_relation
 	=> nrel_idtf: [<p>отношение арности три</p>]
 	(*
 		<- lang_ru;;
@@ -335,138 +335,138 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3593
+	nonbinary_relation
 	=> nrel_explanation: [<p><b><i>небинарное отношение</i></b> --- это множество отношений, хотя бы одна из связок каждого из которых имеет значение мощности больше двух.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_842
-	=> .system_element_850: [<p><b><i>ориентированное отношение</i></b> --- это множество таких отношений, каждая связка которых является кортежем.</p>]
+	oriented_relation
+	=> .system_element_827: [<p><b><i>ориентированное отношение</i></b> --- это множество таких отношений, каждая связка которых является кортежем.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3594
-	=> .system_element_850: [<p><b><i>неориентированное отношение</i></b> --- это множество таких отношений, каждая связка которых является неориентированным множеством.</p>]
+	non_oriented_relation
+	=> .system_element_827: [<p><b><i>неориентированное отношение</i></b> --- это множество таких отношений, каждая связка которых является неориентированным множеством.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3595
-	=> .system_element_850: [<p><b><i>рефлексивное отношение</i></b> --- это <i>бинарное отношение</i>, любая пара которого есть канторовское множество.</p>]
+	reflexive_relation
+	=> .system_element_827: [<p><b><i>рефлексивное отношение</i></b> --- это <i>бинарное отношение</i>, любая пара которого есть канторовское множество.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3596
-	=> .system_element_850: [<p><b><i>антирефлексивное отношение R</i></b> на <i>множестве</i> <b><i>A</i></b> --- это <i>бинарное отношение</i>, в котором все элементы множества <b><i>A</i></b> не находятся в отношении <b><i>R</i></b> к самому себе.</p>]
+	antireflexive_relation
+	=> .system_element_827: [<p><b><i>антирефлексивное отношение R</i></b> на <i>множестве</i> <b><i>A</i></b> --- это <i>бинарное отношение</i>, в котором все элементы множества <b><i>A</i></b> не находятся в отношении <b><i>R</i></b> к самому себе.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3597
-	=> .system_element_850: [<p><b><i>частично рефлексивное отношение R</i></b> на <i>множестве</i> <b><i>A</i></b> --- это <i>бинарное отношение</i>,  в котором хотя бы один (но не все) элемент множества <b><i>A</i></b> находится в отношении <b><i>R</i></b> к самому себе.</p>]
+	partially_reflexive_relation
+	=> .system_element_827: [<p><b><i>частично рефлексивное отношение R</i></b> на <i>множестве</i> <b><i>A</i></b> --- это <i>бинарное отношение</i>,  в котором хотя бы один (но не все) элемент множества <b><i>A</i></b> находится в отношении <b><i>R</i></b> к самому себе.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3598
-	=> .system_element_850: [<p><b><i>симметричное отношение R</i></b> на <i>множестве</i> <b><i>A</i></b> --- это <i>бинарное отношение</i>, в котором для каждой пары элементов <b><i>а</i></b> и <b><i>b</i></b> этого множества выполнение отношения <b><i>aRb</i></b> влечёт выполнение <b><i>bRa</i></b>.</p>]
+	symmetric_relation
+	=> .system_element_827: [<p><b><i>симметричное отношение R</i></b> на <i>множестве</i> <b><i>A</i></b> --- это <i>бинарное отношение</i>, в котором для каждой пары элементов <b><i>а</i></b> и <b><i>b</i></b> этого множества выполнение отношения <b><i>aRb</i></b> влечёт выполнение <b><i>bRa</i></b>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3599
-	=> .system_element_850: [<p><b><i>антисимметричное отношение R</i></b> на <i>множестве</i> <b><i>A</i></b> --- это <i>бинарное отношение</i>, в котором для каждой пары элементов <b><i>а</i></b> и <b><i>b</i></b> этого множества выполнение отношений <b><i>aRb</i></b> и <b><i>bRa</i></b> влечёт равенство <b><i>a</i></b> и <b><i>b</i></b>.</p>]
+	antisymmetric_relation
+	=> .system_element_827: [<p><b><i>антисимметричное отношение R</i></b> на <i>множестве</i> <b><i>A</i></b> --- это <i>бинарное отношение</i>, в котором для каждой пары элементов <b><i>а</i></b> и <b><i>b</i></b> этого множества выполнение отношений <b><i>aRb</i></b> и <b><i>bRa</i></b> влечёт равенство <b><i>a</i></b> и <b><i>b</i></b>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3600
-	=> .system_element_850: [<p><b><i>частично симметричное отношение R</i></b> на <i>множестве</i> <b><i>A</i></b> --- это <i>бинарное отношение</i>, в котором для каждой пары элементов <b><i>а</i></b> и <b><i>b</i></b> (но не для всех таких пар) этого множества выполнение отношения <b><i>aRb</i></b> влечёт выполнение <b><i>bRa</i></b>.</p>]
+	partially_symmetric_relation
+	=> .system_element_827: [<p><b><i>частично симметричное отношение R</i></b> на <i>множестве</i> <b><i>A</i></b> --- это <i>бинарное отношение</i>, в котором для каждой пары элементов <b><i>а</i></b> и <b><i>b</i></b> (но не для всех таких пар) этого множества выполнение отношения <b><i>aRb</i></b> влечёт выполнение <b><i>bRa</i></b>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3601
-	=> .system_element_850: [<p><b><i>транзитивное отношение R</i></b> на <i>множестве</i> <b><i>A</i></b> --- это <i>бинарное отношение</i>, в котором для любых трёх элементов этого множества <b><i>a, b, c</i></b> выполнение отношений <b><i>aRb</i></b> и <b><i>bRc</i></b> влечёт выполнение отношения <b><i>aRc</i></b>.</p>]
+	transitive_relation
+	=> .system_element_827: [<p><b><i>транзитивное отношение R</i></b> на <i>множестве</i> <b><i>A</i></b> --- это <i>бинарное отношение</i>, в котором для любых трёх элементов этого множества <b><i>a, b, c</i></b> выполнение отношений <b><i>aRb</i></b> и <b><i>bRc</i></b> влечёт выполнение отношения <b><i>aRc</i></b>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3602
-	=> .system_element_850: [<p><b><i>антитранзитивное отношение R</i></b> на <i>множестве</i> <b><i>A</i></b> --- это <i>бинарное отношение</i>, в котором для любых трёх элементов этого множества <b><i>a, b, c</i></b> выполнение отношений <b><i>aRb</i></b> и <b><i>bRc</i></b> не влечёт выполнение отношения <b><i>aRc</i></b>.</p>]
+	antitransitive_relation
+	=> .system_element_827: [<p><b><i>антитранзитивное отношение R</i></b> на <i>множестве</i> <b><i>A</i></b> --- это <i>бинарное отношение</i>, в котором для любых трёх элементов этого множества <b><i>a, b, c</i></b> выполнение отношений <b><i>aRb</i></b> и <b><i>bRc</i></b> не влечёт выполнение отношения <b><i>aRc</i></b>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3603
-	=> .system_element_850: [<p><b><i>частично транзитивное отношение R</i></b> на <i>множестве</i> <b><i>A</i></b> --- это <i>бинарное отношение</i>, в котором для каждых трёх элементов этого множества <b><i>a, b, c</i></b> (но не для всех таких троек) выполнение отношений <b><i>aRb</i></b> и <b><i>bRc</i></b> влечёт выполнение отношения <b><i>aRc</i></b>.</p>]
+	partially_transitive_relation
+	=> .system_element_827: [<p><b><i>частично транзитивное отношение R</i></b> на <i>множестве</i> <b><i>A</i></b> --- это <i>бинарное отношение</i>, в котором для каждых трёх элементов этого множества <b><i>a, b, c</i></b> (но не для всех таких троек) выполнение отношений <b><i>aRb</i></b> и <b><i>bRc</i></b> влечёт выполнение отношения <b><i>aRc</i></b>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3640
-	<- .system_element_949;
-	=> .system_element_850: [<p><b><i>связанное отношение* R</i></b> на <i>множестве</i> <b><i>A</i></b> --- это <i>бинарное отношение</i>, в котором для каждой пары элементов <b><i>а</i></b> и <b><i>b</i></b> этого множества выполняется одно из двух отношений: <b><i>aRb</i></b> или <b><i>bRa</i></b>.</p>]
+	.system_element_3339
+	<- binary_relation;
+	=> .system_element_827: [<p><b><i>связанное отношение* R</i></b> на <i>множестве</i> <b><i>A</i></b> --- это <i>бинарное отношение</i>, в котором для каждой пары элементов <b><i>а</i></b> и <b><i>b</i></b> этого множества выполняется одно из двух отношений: <b><i>aRb</i></b> или <b><i>bRa</i></b>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3605
+	order_relation
 	=> nrel_subdividing: {
-		.system_element_3606;
-		.system_element_3607
+		strict_order_relation;
+		non_strict_order_relation
 	};
-	=> .system_element_850: [<p><b><i>отношение порядка</i></b> --- это <i>бинарное отношение</i>, обладающее свойством транзитивности и антисимметричности.</p>]
+	=> .system_element_827: [<p><b><i>отношение порядка</i></b> --- это <i>бинарное отношение</i>, обладающее свойством транзитивности и антисимметричности.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3606
-	=> .system_element_850: [<p><b><i>отношение строгого порядка</i></b> --- это <i>отношение порядка</i>, обладающее свойством антирефлексивности.</p>]
+	strict_order_relation
+	=> .system_element_827: [<p><b><i>отношение строгого порядка</i></b> --- это <i>отношение порядка</i>, обладающее свойством антирефлексивности.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3607
-	=> .system_element_850: [<p><b><i>отношение нестрогого порядка</i></b> --- это <i>отношение порядка</i>, обладающее свойством рефлексивности.</p>]
+	non_strict_order_relation
+	=> .system_element_827: [<p><b><i>отношение нестрогого порядка</i></b> --- это <i>отношение порядка</i>, обладающее свойством рефлексивности.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3608
-	=> .system_element_850: [<p><b><i>отношение толерантности</i></b> --- это <i>бинарное отношение</i>, принадлежащее классам <i>симметричное отношение</i> и <i>рефлексивное отношение</i>.</p>]
+	tolerance_relation
+	=> .system_element_827: [<p><b><i>отношение толерантности</i></b> --- это <i>бинарное отношение</i>, принадлежащее классам <i>симметричное отношение</i> и <i>рефлексивное отношение</i>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3609
+	equivalence_relation
 	=> nrel_idtf: [<p>максимальное семейство отношений эквивалентности</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<= nrel_inclusion: .system_element_3608;
-	=> .system_element_850: [<p><b><i>отношение эквивалентности</i></b> --- это <i>отношение толерантности</i>, принадлежащее классу <i>транзитивных отношений</i>.</p>]
+	<= nrel_inclusion: tolerance_relation;
+	=> .system_element_827: [<p><b><i>отношение эквивалентности</i></b> --- это <i>отношение толерантности</i>, принадлежащее классу <i>транзитивных отношений</i>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
@@ -477,7 +477,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3355
+	role_relation
 	=> nrel_idtf: [<p>атрибут</p>]
 	(*
 		<- lang_ru;;
@@ -498,21 +498,21 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<= .system_element_378: .system_element_3641;
-	<= nrel_inclusion: .system_element_949;
-	=> nrel_inclusion: .system_element_3610;
+	<= nrel_set_of_subsets: nrel_belonging;
+	<= nrel_inclusion: binary_relation;
+	=> nrel_inclusion: order_role_relation;
 	=> nrel_explanation: [<p><b><i>ролевое отношение</i></b> --- это отношение, являющееся подмножеством отношения принадлежности.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_3642: [<p>В конце каждого <i>идентификатора</i>, соответствующего экземплярам класса <b><i>ролевое отношение</i></b>, не являющегося системным, ставится знак "'".Например:<i>ключевой экземпляр'</i>.Из-за ограничений в разрешенном алфавите символов, в системном идентификаторе не может быть использовать знак "'", поэтому в начале каждого <i>системного идентификатора</i>, соответствующего экземплярам класса <b><i>ролевое отношение</i></b> ставится префикс "rrel_".Например:<i>rrel_key_sc_element</i></p>]
+	=> .system_element_3340: [<p>В конце каждого <i>идентификатора</i>, соответствующего экземплярам класса <b><i>ролевое отношение</i></b>, не являющегося системным, ставится знак "'".Например:<i>ключевой экземпляр'</i>.Из-за ограничений в разрешенном алфавите символов, в системном идентификаторе не может быть использовать знак "'", поэтому в начале каждого <i>системного идентификатора</i>, соответствующего экземплярам класса <b><i>ролевое отношение</i></b> ставится префикс "rrel_".Например:<i>rrel_key_sc_element</i></p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3610
+	order_role_relation
 	=> nrel_idtf: [<p>порядковый номер</p>]
 	(*
 		<- lang_ru;;
@@ -523,148 +523,148 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	-> .system_element_3643;
+	-> .system_element_3341;
 	=> nrel_explanation: [<p><b><i>числовой атрибут</i></b> --- <i>ролевое отношение</i>, задающее порядковый номер элемента некоторой ориентированной связки, не уточняя при этом семантику такой принадлежности. Во многих случаях бывает достаточно использовать числовые атрибуты, чтобы различать компоненты связки, семантика каждого из которых дополнительно оговаривается, например, при определении отношения, которому данная связка принадлежит.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3504
+	norole_relation
 	=> nrel_subdividing: {
-		.system_element_3593;
-		.system_element_3611
+		nonbinary_relation;
+		norole_binary_relation
 	};
 	=> nrel_explanation: [<p><b><i>неролевое отношение</i></b> --- отношение, не являющееся подмножеством отношения принадлежности.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_3642: [<p>В конце каждого <i>идентификатора</i>, соответствующего экземплярам класса <b><i>неролевое отношение</i></b>, не являющегося системным, ставится знак "*".Например:<i>включение*</i>.Из-за ограничений в разрешенном алфавите символов, в системном идентификаторе не может быть использовать знак "*", поэтому в начале каждого <i>системного идентификатора</i>, соответствующего экземплярам класса <b><i>неролевое отношение</i></b> ставится префикс "nrel_".Например:<i>nrel_inclusion</i></p>]
+	=> .system_element_3340: [<p>В конце каждого <i>идентификатора</i>, соответствующего экземплярам класса <b><i>неролевое отношение</i></b>, не являющегося системным, ставится знак "*".Например:<i>включение*</i>.Из-за ограничений в разрешенном алфавите символов, в системном идентификаторе не может быть использовать знак "*", поэтому в начале каждого <i>системного идентификатора</i>, соответствующего экземплярам класса <b><i>неролевое отношение</i></b> ставится префикс "nrel_".Например:<i>nrel_inclusion</i></p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3611
+	norole_binary_relation
 	=> nrel_explanation: [<p><b><i>неролевое бинарное отношение</i></b> --- <i>бинарное отношение</i>, не являющееся <i>ролевым отношением</i>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3612
+	arity
 	=> nrel_idtf: [<p>арность отношения</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<- .system_element_854;
+	<- parameter;
 	=> nrel_explanation: [<p><b><i>арность</i></b> --- это параметр, каждый элемент которого представляет собой класс <i>отношений</i>, каждая связка которых имеет одинаковую <i>мощность</i>. Значение данного <i>параметра</i> совпадает со значением <i>мощности</i> каждой из таких связок.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_242: "file://images/sd_relations/arity.png"
+	=> .system_element_232: "file://images/sd_relations/arity.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);;
 
-	.system_element_1265
+	nrel_definitional_domain
 	=> nrel_idtf: [<p>область определения отношения*</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<- .system_element_949;
+	<- binary_relation;
 	=> nrel_explanation: [<p><b><i>область определения*</i></b> --- это <i>бинарное отношение</i>, связывающее отношение со множеством, являющимся его областью определения.Областью определения отношения будем называть результат теоретико-множественного объединения всех связок этого отношения, или, другими словами, результат теоретико-множественного объединения всех множеств, являющихся доменами данного отношения.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_242: "file://images/sd_relations/domain.png"
+	=> .system_element_232: "file://images/sd_relations/domain.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);;
 
-	.system_element_3615
+	nrel_relation_attribute
 	=> nrel_idtf: [<p>ролевой атрибут, используемый в связках заданного отношения*</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<- .system_element_949;
+	<- binary_relation;
 	=> nrel_explanation: [<p><b><i>атрибут отношения*</i></b> --- это <i>бинарное отношение</i>, связывающее заданное отношение с <i>ролевым отношением</i>, используемым в данном отношении для уточнения роли того или иного элемента связок данного отношения.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_242: "file://images/sd_relations/relationshipAttribute.png"
+	=> .system_element_232: "file://images/sd_relations/relationshipAttribute.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);;
 
-	.system_element_3616
+	nrel_domain
 	=> nrel_idtf: [<p>домен отношения по заданному атрибуту*</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<- .system_element_949;
+	<- binary_relation;
 	=> nrel_explanation: [<p><b><i>домен*</i></b> --- это <i>бинарное отношение</i>, связывающее связку отношения <i>атрибут отношения*</i> со множеством, являющимся доменом заданного отношения по заданному атрибуту. Множество <b><i>di</i></b> является доменом отношения <b><i>ri</i></b> по атрибуту <b><i>ai</i></b> в том и только том случае, если элементами этого множества являются все те и только те элементы связок отношения <b><i>ri</i></b>, которые имеют в рамках этих связок атрибут <b><i>ai</i></b>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_242: "file://images/sd_relations/domen.png"
+	=> .system_element_232: "file://images/sd_relations/domen.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);;
 
-	.system_element_843
-	<- .system_element_949;
-	=> .system_element_850: [<p><b><i>первый домен*</i></b> --- это <i>бинарное отношение</i>, связывающее отношение с множеством, являющимся доменом по атрибуту <b><i>1'</i></b> данного отношения.</p>]
+	nrel_first_domain
+	<- binary_relation;
+	=> .system_element_827: [<p><b><i>первый домен*</i></b> --- это <i>бинарное отношение</i>, связывающее отношение с множеством, являющимся доменом по атрибуту <b><i>1'</i></b> данного отношения.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_242: "file://images/sd_relations/firstDomen.png"
+	=> .system_element_232: "file://images/sd_relations/firstDomen.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);;
 
-	.system_element_845
-	<- .system_element_949;
-	=> .system_element_850: [<p><b><i>второй домен*</i></b> --- это <i>бинарное отношение</i>, связывающее отношение с множеством, являющимся доменом по атрибуту <b><i>2'</i></b> данного отношения.</p>]
+	nrel_second_domain
+	<- binary_relation;
+	=> .system_element_827: [<p><b><i>второй домен*</i></b> --- это <i>бинарное отношение</i>, связывающее отношение с множеством, являющимся доменом по атрибуту <b><i>2'</i></b> данного отношения.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_242: "file://images/sd_relations/secondDomen.png"
+	=> .system_element_232: "file://images/sd_relations/secondDomen.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);;
 
-	.system_element_3617
-	<- .system_element_841;
-	=> .system_element_850: [<p><b><i>композиция отношений*</i></b> --- это <i>квазибинарное отношение</i>, связывающее два бинарных отношения с отношением, являющимся их композицией. Под композицией бинарных отношений <b><i>R</i></b> и <b><i>S</i></b> будем понимать множество </p>]
+	nrel_composition_of_relations
+	<- quasybinary_relation;
+	=> .system_element_827: [<p><b><i>композиция отношений*</i></b> --- это <i>квазибинарное отношение</i>, связывающее два бинарных отношения с отношением, являющимся их композицией. Под композицией бинарных отношений <b><i>R</i></b> и <b><i>S</i></b> будем понимать множество </p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_242: "file://images/sd_relations/relationshipComposition.png"
+	=> .system_element_232: "file://images/sd_relations/relationshipComposition.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);;
 
-	.system_element_3618
+	nrel_quotient_set
 	=> nrel_idtf: [<p>быть фактор-множеством*</p>]
 	(*
 		<- lang_ru;;
@@ -680,82 +680,82 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<- .system_element_949;
-	=> .system_element_850: [<p><b><i>фактор множество*</i></b> --- это бинарное ориентированное отношение, каждая связка которого связывает некоторое отношение эквивалентности со множеством всех соответствующих этому отношению классов эквивалентности. Каждый такой класс представляет собой максимальное множество сущностей, каждая пара которых принадлежит указанному выше отношению эквивалентности.</p>]
+	<- binary_relation;
+	=> .system_element_827: [<p><b><i>фактор множество*</i></b> --- это бинарное ориентированное отношение, каждая связка которого связывает некоторое отношение эквивалентности со множеством всех соответствующих этому отношению классов эквивалентности. Каждый такой класс представляет собой максимальное множество сущностей, каждая пара которых принадлежит указанному выше отношению эквивалентности.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_242: "file://images/sd_relations/factor_set.png"
+	=> .system_element_232: "file://images/sd_relations/factor_set.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);;
 
-	.system_element_3613
-	=> .system_element_850: [<p>метаотношение --- это <i>отношение</i>, в каждой связке которого есть по крайней мере один компонент, являющийся знаком некоторого <i>отношения</i>.</p>]
+	metarelation
+	=> .system_element_827: [<p>метаотношение --- это <i>отношение</i>, в каждой связке которого есть по крайней мере один компонент, являющийся знаком некоторого <i>отношения</i>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3248
+	decomposition_relation
 	-> nrel_subdividing;
-	-> .system_element_3644;
-	-> .system_element_3645;;
+	-> nrel_section_decomposition;
+	-> nrel_decomposition_of_abstract_object;;
 
-	.system_element_3614
-	-> .system_element_922;;
+	integration_relation
+	-> nrel_combination;;
 
-	.system_element_3619
+	nrel_mapping
 	=> nrel_idtf: [<p>наличие соответствия*</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<- .system_element_949;
+	<- binary_relation;
 	=> nrel_subdividing: {
-		.system_element_3646;
-		.system_element_3647;
-		.system_element_3648
+		nrel_mapping_between_non_intersecting_sets;
+		nrel_mapping_between_strict_intersecting_sets;
+		nrel_mapping_input_and_output_sets_of_which_coincide
 	};
 	=> nrel_subdividing: {
-		.system_element_3625;
-		.system_element_3626
+		nrel_total_mapping;
+		nrel_partial_mapping
 	};
 	=> nrel_subdividing: {
-		.system_element_3649;
-		.system_element_3628
+		.system_element_3342;
+		nrel_non_surjective_mapping
 	};
 	=> nrel_subdividing: {
-		.system_element_3629;
-		.system_element_3632
+		nrel_functional_mapping;
+		nrel_ambiguous_mapping
 	};
-	=> .system_element_850: [<p><b><i>соответствие*</i></b> --- <i>бинарное ориентированное отношение</i>, каждая пара которого связывает два множества и указывает на наличие некоторого отношения, связывающего элементы этих двух множеств.</p>]
+	=> .system_element_827: [<p><b><i>соответствие*</i></b> --- <i>бинарное ориентированное отношение</i>, каждая пара которого связывает два множества и указывает на наличие некоторого отношения, связывающего элементы этих двух множеств.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_242: "file://images/sd_relations/conformity.png"
+	=> .system_element_232: "file://images/sd_relations/conformity.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);;
 
-	.system_element_3620
-	<- .system_element_949;
-	=> .system_element_850: [<p><b><i>отношение соответствия*</i></b> --- <i>бинарное отношение</i>, связывающее ориентированную пару множеств, на которых задано <i>соответствие*</i> и некоторое подмножество <i>декартова произведения*</i> этих <i>множеств</i>.</p>]
+	nrel_relation_of_mapping
+	<- binary_relation;
+	=> .system_element_827: [<p><b><i>отношение соответствия*</i></b> --- <i>бинарное отношение</i>, связывающее ориентированную пару множеств, на которых задано <i>соответствие*</i> и некоторое подмножество <i>декартова произведения*</i> этих <i>множеств</i>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_242: "file://images/sd_relations/relationshipConformity.png"
+	=> .system_element_232: "file://images/sd_relations/relationshipConformity.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);;
 
-	.system_element_3621
+	rrel_input_set
 	=> nrel_idtf: [<p>область отправления соответствия'</p>]
 	(*
 		<- lang_ru;;
@@ -771,19 +771,19 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<- .system_element_3355;
-	=> .system_element_850: [<p><b><i>область отправления'</i></b> --- <i>ролевое отношение</i>, указывающее на первый компонент пары в рамках отношения <i>соответствие*</i>.</p>]
+	<- role_relation;
+	=> .system_element_827: [<p><b><i>область отправления'</i></b> --- <i>ролевое отношение</i>, указывающее на первый компонент пары в рамках отношения <i>соответствие*</i>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_242: "file://images/sd_relations/departureArea.png"
+	=> .system_element_232: "file://images/sd_relations/departureArea.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);;
 
-	.system_element_3622
+	rrel_output_set
 	=> nrel_idtf: [<p>область прибытия соответствия'</p>]
 	(*
 		<- lang_ru;;
@@ -794,55 +794,55 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<- .system_element_3355;
-	=> .system_element_850: [<p><b><i>область прибытия'</i></b> --- <i>ролевое отношение</i>, указывающее на второй компонент пары в рамках отношения <i>соответствие*</i>.</p>]
+	<- role_relation;
+	=> .system_element_827: [<p><b><i>область прибытия'</i></b> --- <i>ролевое отношение</i>, указывающее на второй компонент пары в рамках отношения <i>соответствие*</i>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_242: "file://images/sd_relations/arrivalArea.png"
+	=> .system_element_232: "file://images/sd_relations/arrivalArea.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);;
 
-	.system_element_3623
+	rrel_image_of_mapping
 	=> nrel_idtf: [<p>образ соответствия'</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<- .system_element_3355;
-	=> .system_element_850: [<p><b><i>образ'</i></b> --- <i>ролевое отношение</i>, указывающее на второй компонент каждой пары в рамках множества пар, которое является вторым компонентом <i>отношения соответствия*</i>.</p>]
+	<- role_relation;
+	=> .system_element_827: [<p><b><i>образ'</i></b> --- <i>ролевое отношение</i>, указывающее на второй компонент каждой пары в рамках множества пар, которое является вторым компонентом <i>отношения соответствия*</i>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_242: "file://images/sd_relations/form.png"
+	=> .system_element_232: "file://images/sd_relations/form.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);;
 
-	.system_element_3624
+	rrel_preimage_of_mapping
 	=> nrel_idtf: [<p>прообраз соответствия'</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<- .system_element_3355;
-	=> .system_element_850: [<p><b><i>прообраз'</i></b> --- <i>ролевое отношение</i>, указывающее на первый компонент каждой пары в рамках множества пар, которое является первым компонентом <i>отношения соответствия*</i>.</p>]
+	<- role_relation;
+	=> .system_element_827: [<p><b><i>прообраз'</i></b> --- <i>ролевое отношение</i>, указывающее на первый компонент каждой пары в рамках множества пар, которое является первым компонентом <i>отношения соответствия*</i>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_242: "file://images/sd_relations/prototype.png"
+	=> .system_element_232: "file://images/sd_relations/prototype.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);;
 
-	.system_element_3625
+	nrel_total_mapping
 	=> nrel_idtf: [<p>полное соответствие*</p>]
 	(*
 		<- lang_ru;;
@@ -853,45 +853,45 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_850: [<p><b><i>всюду определенное соответствие*</i></b> --- это <i>соответствие*</i>, при котором существует <i>образ'</i> для каждого элемента <i>области отправления'</i> данного <i>соответствия*</i>.</p>]
+	=> .system_element_827: [<p><b><i>всюду определенное соответствие*</i></b> --- это <i>соответствие*</i>, при котором существует <i>образ'</i> для каждого элемента <i>области отправления'</i> данного <i>соответствия*</i>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_242: "file://images/sd_relations/surjection.png"
+	=> .system_element_232: "file://images/sd_relations/surjection.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);
-	=> .system_element_3482: "file://images/sd_relations/surjection2.png"
+	=> .system_element_3241: "file://images/sd_relations/surjection2.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);;
 
-	.system_element_3626
+	nrel_partial_mapping
 	=> nrel_idtf: [<p>наличие частично определенного соответствия*</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_850: [<p><b><i>частично определенное соответствие*</i></b> --- это <i>соответствие*</i>, при котором существует <i>образ'</i> для некоторых, но не всех элементов <i>области отправления'</i> данного <i>соответствия*</i>.</p>]
+	=> .system_element_827: [<p><b><i>частично определенное соответствие*</i></b> --- это <i>соответствие*</i>, при котором существует <i>образ'</i> для некоторых, но не всех элементов <i>области отправления'</i> данного <i>соответствия*</i>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_242: "file://images/sd_relations/partiallyDefinedConformity.png"
+	=> .system_element_232: "file://images/sd_relations/partiallyDefinedConformity.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);
-	=> .system_element_3482: "file://images/sd_relations/partiallySurjection.png"
+	=> .system_element_3241: "file://images/sd_relations/partiallySurjection.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);;
 
-	.system_element_3627
+	nrel_surjection
 	=> nrel_idtf: [<p>наличие сюръективного соответствия*</p>]
 	(*
 		<- lang_ru;;
@@ -902,45 +902,45 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_850: [<p><b><i>сюръективное соответствие*</i></b> --- это <i>соответствие*</i>, при котором существует <i>прообраз'</i> для каждого элемента <i>области прибытия'</i> данного <i>соответствия*</i>.</p>]
+	=> .system_element_827: [<p><b><i>сюръективное соответствие*</i></b> --- это <i>соответствие*</i>, при котором существует <i>прообраз'</i> для каждого элемента <i>области прибытия'</i> данного <i>соответствия*</i>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_242: "file://images/sd_relations/surjectiveConformity.png"
+	=> .system_element_232: "file://images/sd_relations/surjectiveConformity.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);
-	=> .system_element_3482: "file://images/sd_relations/surjectiveConformity2.png"
+	=> .system_element_3241: "file://images/sd_relations/surjectiveConformity2.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);;
 
-	.system_element_3628
+	nrel_non_surjective_mapping
 	=> nrel_idtf: [<p>наличие несюръективного соответствия*</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_850: [<p><b><i>несюръективное соответствие*</i></b> --- это <i>соответствие*</i>, при котором не для каждого элемента <i>области прибытия'</i> данного <i>соответствия*</i> существует <i>прообраз'</i>.</p>]
+	=> .system_element_827: [<p><b><i>несюръективное соответствие*</i></b> --- это <i>соответствие*</i>, при котором не для каждого элемента <i>области прибытия'</i> данного <i>соответствия*</i> существует <i>прообраз'</i>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_242: "file://images/sd_relations/nonSurjectiveConformity.png"
+	=> .system_element_232: "file://images/sd_relations/nonSurjectiveConformity.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);
-	=> .system_element_3482: "file://images/sd_relations/nonSurjectiveConformity2.png"
+	=> .system_element_3241: "file://images/sd_relations/nonSurjectiveConformity2.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);;
 
-	.system_element_3629
+	nrel_functional_mapping
 	=> nrel_idtf: [<p>наличие однозначного соответствия*</p>]
 	(*
 		<- lang_ru;;
@@ -956,26 +956,26 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_850: [<p><b><i>однозначное соответствие*</i></b> --- это <i>соответствие*</i>, при котором каждому элементу из <i>области отправления'</i> соответствия ставится не более, чем один элемент из <i>области прибытия'</i> соответствия.</p>]
+	=> .system_element_827: [<p><b><i>однозначное соответствие*</i></b> --- это <i>соответствие*</i>, при котором каждому элементу из <i>области отправления'</i> соответствия ставится не более, чем один элемент из <i>области прибытия'</i> соответствия.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_242: "file://images/sd_relations/singleConformity.png"
+	=> .system_element_232: "file://images/sd_relations/singleConformity.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);
-	=> .system_element_3482: "file://images/sd_relations/singleConformity2.png"
+	=> .system_element_3241: "file://images/sd_relations/singleConformity2.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);;
 
-	.system_element_3630
-	<- .system_element_949;
-	=> .system_element_1265: .system_element_3619;
-	=> .system_element_850: [<p><b><i>обратное соответствие*</i></b> --- <i>бинарное отношение</i>, связывающее два <i>соответствия*</i>, при этом выполняются следующие условия:
+	nrel_backward_mapping
+	<- binary_relation;
+	=> nrel_definitional_domain: nrel_mapping;
+	=> .system_element_827: [<p><b><i>обратное соответствие*</i></b> --- <i>бинарное отношение</i>, связывающее два <i>соответствия*</i>, при этом выполняются следующие условия:
 	<ul>
 		<li> <i>область отправления'</i> первого соответствия является <i>областью прибытия'</i> второго;
 		<li> <i>область прибытия'</i> первого соответствия является <i>областью отправления'</i> второго;
@@ -986,80 +986,80 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3631
-	<= nrel_inclusion: .system_element_3629;
-	=> .system_element_850: [<p><b><i>обратимое соответствие*</i></b> --- такое <i>однозначное соответствие*</i>, для которого <i>обратное соответствие*</i> также является <i>однозначным соответствием*</i>.</p>]
+	nrel_inversible_mapping
+	<= nrel_inclusion: nrel_functional_mapping;
+	=> .system_element_827: [<p><b><i>обратимое соответствие*</i></b> --- такое <i>однозначное соответствие*</i>, для которого <i>обратное соответствие*</i> также является <i>однозначным соответствием*</i>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3632
-	=> .system_element_850: [<p><b><i>неоднозначное соответствие*</i></b> --- это <i>соответствие*</i>, при котором хотя бы одному элементу из <i>области отправления'</i> соответствия ставится более, чем один элемент из <i>области прибытия'</i> соответствия.</p>]
+	nrel_ambiguous_mapping
+	=> .system_element_827: [<p><b><i>неоднозначное соответствие*</i></b> --- это <i>соответствие*</i>, при котором хотя бы одному элементу из <i>области отправления'</i> соответствия ставится более, чем один элемент из <i>области прибытия'</i> соответствия.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_242: "file://images/sd_relations/nonSingleConformity.png"
+	=> .system_element_232: "file://images/sd_relations/nonSingleConformity.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);
-	=> .system_element_3482: "file://images/sd_relations/nonSingleConformity2.png"
+	=> .system_element_3241: "file://images/sd_relations/nonSingleConformity2.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);;
 
-	.system_element_3633
+	nrel_injection
 	=> nrel_idtf: [<p>инъекция*</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<= nrel_inclusion: .system_element_3629;
-	=> .system_element_850: [<p><b><i>инъективное соответствие*</i></b> --- это <i>соответствие*</i>, при котором разным элементам из <i>области отправления'</i> соответствия всегда соответствуют разные элементы из <i>области прибытия'</i> соответствия и наоборот.</p>]
+	<= nrel_inclusion: nrel_functional_mapping;
+	=> .system_element_827: [<p><b><i>инъективное соответствие*</i></b> --- это <i>соответствие*</i>, при котором разным элементам из <i>области отправления'</i> соответствия всегда соответствуют разные элементы из <i>области прибытия'</i> соответствия и наоборот.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_242: "file://images/sd_relations/injectiveConformity.png"
+	=> .system_element_232: "file://images/sd_relations/injectiveConformity.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);
-	=> .system_element_3482: "file://images/sd_relations/injectiveConformity2.png"
+	=> .system_element_3241: "file://images/sd_relations/injectiveConformity2.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);;
 
-	.system_element_3634
+	nrel_bijective_mapping
 	=> nrel_idtf: [<p>биекция*</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<= nrel_inclusion: .system_element_3625;
-	<= nrel_inclusion: .system_element_3627;
-	<= nrel_inclusion: .system_element_3633;
-	=> .system_element_850: [<p><b><i>взаимно однозначное соответствие*</i></b> --- это <i>инъективное соответствие*</i>, являющееся всюду определенным и сюръективным.</p>]
+	<= nrel_inclusion: nrel_total_mapping;
+	<= nrel_inclusion: nrel_surjection;
+	<= nrel_inclusion: nrel_injection;
+	=> .system_element_827: [<p><b><i>взаимно однозначное соответствие*</i></b> --- это <i>инъективное соответствие*</i>, являющееся всюду определенным и сюръективным.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_242: "file://images/sd_relations/bijectiveConformity.png"
+	=> .system_element_232: "file://images/sd_relations/bijectiveConformity.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);
-	=> .system_element_3482: "file://images/sd_relations/bijectiveConformity2.png"
+	=> .system_element_3241: "file://images/sd_relations/bijectiveConformity2.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);;
 
-	.system_element_3635
+	nrel_set_of_combinations
 	=> nrel_idtf: [<p>множество всевозможных сочетаний*</p>]
 	(*
 		<- lang_ru;;
@@ -1085,17 +1085,17 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_850: [<p><b><i>множество сочетаний*</i></b> --- <i>отношение</i>, связывающее некоторое множество и семейство всевозможных множеств, имеющих значение мощности, меньше либо равное мощности исходного множества и состоящих из тех же элементов, что и это множество.</p>]
+	=> .system_element_827: [<p><b><i>множество сочетаний*</i></b> --- <i>отношение</i>, связывающее некоторое множество и семейство всевозможных множеств, имеющих значение мощности, меньше либо равное мощности исходного множества и состоящих из тех же элементов, что и это множество.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_3650: [<p>Мощность <b><i>множества сочетаний*</i></b> может быть вычислена как <b>n!/(k!(n-k)!)</b>, где <b><i>n</i></b> --- мощность исходного множества, <b><i>k</i></b> --- мощность элементов множества сочетаний.</p>]
+	=> .system_element_3343: [<p>Мощность <b><i>множества сочетаний*</i></b> может быть вычислена как <b>n!/(k!(n-k)!)</b>, где <b><i>n</i></b> --- мощность исходного множества, <b><i>k</i></b> --- мощность элементов множества сочетаний.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_242: "file://images/sd_relations/setsOfCombinations.png"
+	=> .system_element_232: "file://images/sd_relations/setsOfCombinations.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
@@ -1106,18 +1106,18 @@
 		*);;
 	*);;
 
-	.system_element_3636
-	=> .system_element_850: [<p><b><i>множество размещений*</i></b> --- <i>отношение</i>, связывающее некоторое множество и семейство всевозможных кортежей, имеющих значение мощности, меньше либо равное мощности исходного множества и состоящих из тех же элементов, что и это множество.</p>]
+	nrel_set_of_partial_permutations
+	=> .system_element_827: [<p><b><i>множество размещений*</i></b> --- <i>отношение</i>, связывающее некоторое множество и семейство всевозможных кортежей, имеющих значение мощности, меньше либо равное мощности исходного множества и состоящих из тех же элементов, что и это множество.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_3650: [<p>Мощность <b><i>множества размещений*</i></b> может быть вычислена как <b>n!/(n-k)!</b>, где <b><i>n</i></b> --- мощность исходного множества, <b><i>k</i></b> --- мощность элементов множества сочетаний.</p>]
+	=> .system_element_3343: [<p>Мощность <b><i>множества размещений*</i></b> может быть вычислена как <b>n!/(n-k)!</b>, где <b><i>n</i></b> --- мощность исходного множества, <b><i>k</i></b> --- мощность элементов множества сочетаний.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_242: "file://images/sd_relations/setsOfPlacements.png"
+	=> .system_element_232: "file://images/sd_relations/setsOfPlacements.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
@@ -1128,19 +1128,19 @@
 		*);;
 	*);;
 
-	.system_element_3637
-	<= nrel_inclusion: .system_element_3636;
-	=> .system_element_850: [<p><b><i>множество перестановок*</i></b> --- <i>отношение</i>, связывающее некоторое множество и семейство всевозможных кортежей, равномощных исходному множеству и состоящих из тех же элементов, что и это множество.</p>]
+	nrel_set_of_permutations
+	<= nrel_inclusion: nrel_set_of_partial_permutations;
+	=> .system_element_827: [<p><b><i>множество перестановок*</i></b> --- <i>отношение</i>, связывающее некоторое множество и семейство всевозможных кортежей, равномощных исходному множеству и состоящих из тех же элементов, что и это множество.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_3650: [<p>Мощность <b><i>множества перестановок*</i></b> может быть вычислена как <b>n!</b>, где <b><i>n</i></b> --- мощность исходного множества.</p>]
+	=> .system_element_3343: [<p>Мощность <b><i>множества перестановок*</i></b> может быть вычислена как <b>n!</b>, где <b><i>n</i></b> --- мощность исходного множества.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_242: "file://images/sd_relations/setsOfPermutations.png"
+	=> .system_element_232: "file://images/sd_relations/setsOfPermutations.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;

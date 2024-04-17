@@ -1,15 +1,15 @@
 .segment2 = [*
-.system_element_1975
+.system_element_1925
 => nrel_inclusion: [*
 	=> .system_element_1: 
-		.system_element_1997;
-		.system_element_1998;
-		.system_element_1999;
-		.system_element_2000;
-		.system_element_2001;
-		.system_element_2002;
-		.system_element_2003;
-		.system_element_2004
+		.system_element_1946;
+		count_dynamic_memory;
+		.system_element_1947;
+		.system_element_1948;
+		.system_element_1949;
+		.system_element_1950;
+		.system_element_1951;
+		.system_element_1952
 		(*
 			=> nrel_idtf: [<p>интегрированный язык смыслового представления различного вида программ</p>]
 			(*
@@ -17,20 +17,20 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_2005
+		.system_element_1953
 	;
-	=> .system_element_1933: 
-		.system_element_2006
+	=> .system_element_1883: 
+		.system_element_1954
 	;;
 
-	.system_element_2007
-	=> .system_element_147: 
+	.system_element_1955
+	=> .system_element_144: 
 		[<p>решатель задач интеллектуальных компьютерных систем нового поколения должен уметь решать интеллектуальные задачи</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
-		=> .system_element_2008: 
+		=> .system_element_1956: 
 			[<p>некачественно сформулированная задача</p>]
 			(*
 				<- lang_ru;;
@@ -51,7 +51,7 @@
 				<- lang_ru;;
 				=> nrel_format: format_html;;
 			*);
-			=> .system_element_2009: 
+			=> .system_element_1957: 
 				[<p>переформулировать задачу, то есть сгенерировать (логически вывести) логически эквивалентнуюформулировку исходной задачи, для которой метод ее решения в текущий момент являетсяизвестным</p>]
 				(*
 					<- lang_ru;;
@@ -76,7 +76,7 @@
 		*)
 	;;
 
-	.system_element_2010
+	.system_element_1958
 	=> nrel_idtf: [<p>ситуационно-событийное управление</p>]
 	(*
 		<- lang_ru;;
@@ -92,7 +92,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2011
+	situation
 	=> nrel_idtf: [<p>структура, описывающая некоторую временно существующую конфигурацию связей между некоторымисущностями</p>]
 	(*
 		<- lang_ru;;
@@ -104,8 +104,8 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2012
-	=> nrel_inclusion: .system_element_2013
+	.system_element_1959
+	=> nrel_inclusion: .system_element_1960
 	(*
 		=> nrel_idtf: [<p>появление, рождение, начало существования некоторой временной сущности</p>]
 		(*
@@ -113,7 +113,7 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	=> nrel_inclusion: .system_element_2014
+	=> nrel_inclusion: .system_element_1961
 	(*
 		=> nrel_idtf: [<p>прекращение, завершение существования некоторой временной сущности</p>]
 		(*
@@ -121,7 +121,7 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	=> nrel_inclusion: .system_element_2015
+	=> nrel_inclusion: .system_element_1962
 	(*
 		=> nrel_note: [<p>Здесь учитывается не только факт возникновения новой ситуации, но и ее предыстория - то есть таситуация, которая ей непосредственно предшествует. Так, например, реагируя на аномальное значениекакого-либо параметра, нам важно знать:
 		<ul>
@@ -134,8 +134,8 @@
 		*);;
 	*);;
 
-	.system_element_2016
-	=> .system_element_213: 
+	.system_element_1963
+	=> .system_element_204: 
 		[<p>смысловое представление обрабатываемых знаний</p>]
 		(*
 			<- lang_ru;;

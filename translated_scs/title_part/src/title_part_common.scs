@@ -1,13 +1,13 @@
-.system_element_5595
+.system_element_4958
 => nrel_inclusion: [*
-	<= .system_element_5596: .system_element_2032;
-	=> .system_element_5598: .system_element_5597;
-	=> .system_element_5600: .system_element_5599;
-	=> .system_element_5602: .system_element_5601;
-	=> .system_element_5604: .system_element_5603;
-	=> .system_element_5606: .system_element_5605;
-	=> .system_element_5608: .system_element_5607;
-	=> .system_element_811: .system_element_5609
+	<= .system_element_4959: ostis_standard;
+	=> .system_element_4961: .system_element_4960;
+	=> .system_element_4963: .system_element_4962;
+	=> .system_element_4965: .system_element_4964;
+	=> .system_element_4967: .system_element_4966;
+	=> .system_element_4969: .system_element_4968;
+	=> .system_element_4971: .system_element_4970;
+	=> .system_element_793: .system_element_4972
 	(*
 		=> nrel_idtf: [<p>правила построения*(Стандарт OSTIS)</p>]
 		(*
@@ -15,11 +15,11 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	<- .system_element_4040;
-	=> .system_element_5611: .system_element_5610;
-	=> .system_element_453: {
-		.system_element_5612;
-		.system_element_5613
+	<- .system_element_3580;
+	=> .system_element_4974: .system_element_4973;
+	=> .system_element_437: {
+		.system_element_4975;
+		.system_element_4976
 	};
 	=> nrel_note: [<p>В титульную спецификацию <i>Стандарта OSTIS</i> должны бытьвключены ссылки на все разделы и фрагменты этих разделов,где описываются правила построения и оформления всех видов информационныхконструкций, входящих в состав <i>Стандарта OSTIS</i>(внешних идентификаторов знаков, входящих в состав <i>Стандарта OSTIS</i>,спецификаций различного вида cущностей, описываемых в <i>Стандарте OSTIS</i>)В <i>базе знаний ostis-систем</i> задаются правила унифицированного построения(представления, оформления) следующих видов <i>информационныхконструкций</i>:
 	<ul>
@@ -77,7 +77,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_5614
+	.system_element_4977
 	=> nrel_idtf: [<p>Издание Документации Технологии OSTIS-2021</p>]
 	(*
 		<- lang_ru;;
@@ -88,7 +88,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<- .system_element_4090
+	<- .system_element_3627
 	(*
 		=> nrel_idtf: [<p>библиографический источник</p>]
 		(*
@@ -96,26 +96,26 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	<- .system_element_5615;
-	<- .system_element_5616;
-	<- .system_element_5617;
-	=> .system_element_5619: .system_element_5618;
-	=> .system_element_5620: {
-		.system_element_2649;
-		.system_element_5621
+	<- .system_element_4978;
+	<- .system_element_4979;
+	<- .system_element_4980;
+	=> .system_element_4982: .system_element_4981;
+	=> .system_element_4983: {
+		.system_element_2572;
+		.system_element_4984
 	};
-	=> .system_element_5623: .system_element_5622;
-	<- .system_element_2432;
-	<- .system_element_5624;
-	<- .system_element_854;
-	=> .system_element_5626: .system_element_5625;
-	=> .system_element_5627: [<p>978-985-7267-13-2</p>]
+	=> .system_element_4986: .system_element_4985;
+	<- .system_element_2356;
+	<- .system_element_4987;
+	<- parameter;
+	=> .system_element_4989: .system_element_4988;
+	=> .system_element_4990: [<p>978-985-7267-13-2</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_5628
+	.system_element_4991
 	=> nrel_idtf: [<p>Издание Документации Технологии OSTIS-2022</p>]
 	(*
 		<- lang_ru;;
@@ -126,8 +126,8 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<- .system_element_4090;
-	<- .system_element_5615;
-	<- .system_element_5616;
-	<- .system_element_5617;;
+	<- .system_element_3627;
+	<- .system_element_4978;
+	<- .system_element_4979;
+	<- .system_element_4980;;
 *];;

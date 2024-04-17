@@ -1,49 +1,49 @@
-.system_element_4830
+.system_element_4306
 => nrel_inclusion: [*
 
-	.system_element_4928
+	.system_element_4373
 	=> nrel_idtf: [<p>Предметная область параметров и классов эквивалентности, являющихся их элементами (значениями, величинами)</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<- .system_element_114;
-	-> rrel_maximum_studied_object_class: 
-		.system_element_854
+	<- subject_domain;
+	-> .system_element_767: 
+		parameter
 	;
-	-> rrel_studied_object_class: 
-		.system_element_4929;
-		.system_element_4930;
-		.system_element_4931;
-		.system_element_4932;
-		.system_element_4933;
-		.system_element_4934;
-		.system_element_4935;
-		.system_element_4936;
-		.system_element_4937;
-		.system_element_4938;
-		.system_element_4939;
-		.system_element_4940;
-		.system_element_4941;
-		.system_element_4942
+	-> .system_element_112: 
+		measurable_parameter;
+		immeasurable_parameter;
+		level_class_equivalence;
+		value;
+		exact_value;
+		inaccurate_value;
+		interval_value;
+		parametric_model;
+		measurement_of_fixed_measure;
+		scale;
+		arithmetic_operation_on_the_values_for_values;
+		arithmetic_operation_on_the_values;
+		action_measurement;
+		task_measurement
 	;
-	-> rrel_explored_relation: 
-		.system_element_3872;
-		.system_element_4943;
-		.system_element_4944;
-		.system_element_4945;
-		.system_element_4946;
-		.system_element_4947;
-		.system_element_4948;
-		.system_element_4949;
-		.system_element_4950;
-		.system_element_4951;
-		.system_element_4952;
-		.system_element_4953;
-		.system_element_4954
+	-> .system_element_1003: 
+		nrel_param_definitional_domain;
+		rrel_standard;
+		nrel_measurement;
+		nrel_accuracy;
+		nrel_measure;
+		nrel_zero_mark;
+		.system_element_4374;
+		nrel_sum_of_quantities;
+		nrel_composition_of_quantities;
+		nrel_pow_of_quantities;
+		nrel_large_quantitie;
+		nrel_equal_of_quantities;
+		nrel_greater_or_equal_quantitie
 	;;
 
-	.system_element_854
+	parameter
 	=> nrel_idtf: [<p>характеристика</p>]
 	(*
 		<- lang_ru;;
@@ -95,10 +95,10 @@
 		=> nrel_format: format_html;;
 	*);
 	=> nrel_subdividing: {
-		.system_element_4929;
-		.system_element_4930
+		measurable_parameter;
+		immeasurable_parameter
 	};
-	=> nrel_inclusion: .system_element_4955;
+	=> nrel_inclusion: .system_element_4375;
 	=> nrel_explanation: [<p>Каждый <b><i>параметр</i></b> представляет собой класс, являющийся семейством всевозможных классов эквивалентности или толерантности, задаваемых либо <i>отношением эквивалентности</i>, либо <i>отношением толерантности</i> (симметричным, рефлексивным, но частично транзитивным).Так, например, элементами (значениями, величинами) <b><i>параметра</i></b> <i>длина</i> являются либо классы эквивалентности, задаваемые отношением эквивалентности "иметь точно одинаковую длину*", либо классы толерантности, задаваемые отношением вида "иметь приблизительно одинаковую длину с указываемой точностью*", либо интервальные классы, задаваемые бинарными отношениями вида "иметь длину, находящуюся в одном и том же указываемом интервале*" (например, от 1 метра до 2 метров).Примерами параметров как отношений эквивалентности являются:
 	<ul>
 		<li> равновеликость геометрических фигур (по длине, площади, объему --- в зависимости от размерности этих фигур);
@@ -109,13 +109,13 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_242: "file://images/sd_parameters_and_quantities/parameterDescription.png"
+	=> .system_element_232: "file://images/sd_parameters_and_quantities/parameterDescription.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);;
 
-	.system_element_3872
+	nrel_param_definitional_domain
 	=> nrel_idtf: [<p>множество всех тех и только тех сущностей, которые являются компонентами значений заданного параметра*</p>]
 	(*
 		<- lang_ru;;
@@ -126,9 +126,9 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<= nrel_inclusion: .system_element_922;;
+	<= nrel_inclusion: nrel_combination;;
 
-	.system_element_4929
+	measurable_parameter
 	=> nrel_idtf: [<p>количественный параметр</p>]
 	(*
 		<- lang_ru;;
@@ -149,44 +149,44 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> nrel_inclusion: .system_element_4956;;
+	=> nrel_inclusion: .system_element_4376;;
 
-	.system_element_4930
+	immeasurable_parameter
 	=> nrel_idtf: [<p>качественный параметр</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4955
+	.system_element_4375
 	=> nrel_idtf: [<p>упорядоченный параметр</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> nrel_inclusion: .system_element_4956;
+	=> nrel_inclusion: .system_element_4376;
 	=> nrel_idtf: [<p>параметр, на значениях которого может быть задано некоторое отношение порядка, семантика которого уточняется в зависимости от семантики параметра</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4957
-	<= nrel_inclusion: .system_element_3606;
-	=> nrel_inclusion: .system_element_4952;
+	.system_element_4377
+	<= nrel_inclusion: strict_order_relation;
+	=> nrel_inclusion: nrel_large_quantitie;
 	=> nrel_note: [<p>Связки отношения <i>порядок величин*</i> могут связывать только величины <u>одного и того же</u> <i>ориентированного параметра</i>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3804
+	.system_element_3386
 	=> nrel_explanation: [<p>Связки отношения <i>соединение значений ориентированного параметра*</i> связывают связки отношения <i>порядок величин*</i> и величину (возможно, интервальную) того же параметра, элементами которой являются все сущности, значение данного параметра для которых лежит в интервале, границы которого задаются величинами, являющимися компонентами указанной связки отношения <i>порядок величин*</i>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_242: "file://images/sd_parameters_and_quantities/values_join.png"
+	=> .system_element_232: "file://images/sd_parameters_and_quantities/values_join.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
@@ -197,25 +197,25 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4931
+	level_class_equivalence
 	=> nrel_idtf: [<p>уровень параметра</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<- .system_element_854;
+	<- parameter;
 	=> nrel_explanation: [<p>Параметр <b><i>уровень класса эквивалентности</i></b> задает уровень некоторого значения некоторого <i>параметра</i> в иерархии значений этого параметра. Уровень класса эквивалентности равен 1, если значение параметра не является частным по отношению к другому значению этого параметра, равен 2, если значение параметра является частным по отношению к значению этого параметра с уровнем 1 и т.д.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_242: "file://images/sd_parameters_and_quantities/color.png"
+	=> .system_element_232: "file://images/sd_parameters_and_quantities/color.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);;
 
-	.system_element_4932
+	value
 	=> nrel_idtf: [<p>значение количественного параметра</p>]
 	(*
 		<- lang_ru;;
@@ -232,9 +232,9 @@
 		=> nrel_format: format_html;;
 	*);
 	=> nrel_inclusion: 
-		.system_element_4933;
-		.system_element_4934;
-		.system_element_4935
+		exact_value;
+		inaccurate_value;
+		interval_value
 	;
 	=> nrel_explanation: [<p>Каждая <b><i>величина</i></b> представляет собой однозначный и независящий от шкалы измерения результат измерения некоторой характеристики у некоторой сущности.Каждой <b><i>величине</i></b> можно поставить в соответствие ее числовое значение на основании выбранной единицы измерения и точки отсчета (нулевой отметки выбранной шкалы, в случае, если измерение осуществляется по шкале).Нельзя путать значение параметра (<b><i>величину</i></b>) и значение величины по некоторой шкале, которое может быть скалярным и векторным.</p>]
 	(*
@@ -242,7 +242,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4933
+	exact_value
 	=> nrel_idtf: [<p>точное значение параметра</p>]
 	(*
 		<- lang_ru;;
@@ -268,7 +268,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_242: "file://images/sd_parameters_and_quantities/exactLength.png"
+	=> .system_element_232: "file://images/sd_parameters_and_quantities/exactLength.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
@@ -279,7 +279,7 @@
 		*);;
 	*);;
 
-	.system_element_4934
+	inaccurate_value
 	=> nrel_idtf: [<p>множество неточных значений параметра</p>]
 	(*
 		<- lang_ru;;
@@ -305,7 +305,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_242: "file://images/sd_parameters_and_quantities/approximateLength.png"
+	=> .system_element_232: "file://images/sd_parameters_and_quantities/approximateLength.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
@@ -316,7 +316,7 @@
 		*);;
 	*);;
 
-	.system_element_4958
+	.system_element_4378
 	=> nrel_idtf: [<p>интервальное значение параметра</p>]
 	(*
 		<- lang_ru;;
@@ -337,7 +337,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_242: "file://images/sd_parameters_and_quantities/intervalLength.png"
+	=> .system_element_232: "file://images/sd_parameters_and_quantities/intervalLength.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
@@ -348,20 +348,20 @@
 		*);;
 	*);;
 
-	.system_element_4943
+	rrel_standard
 	=> nrel_idtf: [<p>образец'</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<- .system_element_3355;
+	<- role_relation;
 	=> nrel_explanation: [<p>Ролевое отношение <i>эталон'</i> указывает на тот элемент значения некоторого параметра, который в рамках данного класса эквивалентности считается эталонным, то есть он используется как образец при определении данного параметра.<i>эталон'</i> может задаваться как для измеряемых, так и для неизмеряемых параметров, например, эталон метра или эталон красоты.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4944
+	nrel_measurement
 	=> nrel_idtf: [<p>значение параметра*</p>]
 	(*
 		<- lang_ru;;
@@ -393,7 +393,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4945
+	nrel_accuracy
 	=> nrel_idtf: [<p>отклонение*</p>]
 	(*
 		<- lang_ru;;
@@ -404,14 +404,14 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<- .system_element_949;
+	<- binary_relation;
 	=> nrel_explanation: [<p>Связки отношения <b><i>точность*</i></b> связывают <i>неточную величину</i> и <i>точную величину</i> того же класса, задающую максимальное возможное отклонение указанной <i>неточной величины</i> от своего значения.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4936
+	parametric_model
 	=> nrel_idtf: [<p>параметрическая спецификация</p>]
 	(*
 		<- lang_ru;;
@@ -427,15 +427,15 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<= nrel_inclusion: .system_element_862;
+	<= nrel_inclusion: semantic_neighborhood;
 	=> nrel_explanation: [<p>Каждая <b><i>параметрическая модель</i></b> представляет собой описание заданной сущности в некотором параметрическом пространстве количественных и качественных <i>параметров</i>, т.е. указание того, какие значения заданных параметров (характеристик) соответствуют описываемой (заданной) сущности.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4946
-	<- .system_element_949;
+	nrel_measure
+	<- binary_relation;
 	=> nrel_idtf: [<p>единица по шкале*</p>]
 	(*
 		<- lang_ru;;
@@ -452,27 +452,27 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4959
-	<= .system_element_378: .system_element_4944;
+	.system_element_4379
+	<= nrel_set_of_subsets: nrel_measurement;
 	=> nrel_explanation: [<p>Каждое <b><i>измерение с фиксированной единицей измерения</i></b> представляет собой подмножество отношения <i>измерение*</i> и характеризуется некоторой <i>единицей измерения*</i>, которая является элементом того же параметра (семейством сущностей, имеющих значение данного параметра, совпадающее с этой единицей измерения).</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4938
+	scale
 	=> nrel_idtf: [<p>шкала</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<= .system_element_378: .system_element_4944;
+	<= nrel_set_of_subsets: nrel_measurement;
 	=> nrel_explanation: [<p>Каждое <b><i>измерение по шкале</i></b> представляет собой подмножество отношения <i>измерение*</i> и характеризуется не единицей измерения, а некоторой точкой отсчета для данной <b><i>шкалы</i></b>. Результатом <b><i>измерения по шкале</i></b> будет некоторая точка шкалы, отстоящая от точки отсчета на определенное расстояние в нужную сторону (меньшую или большую). Понятно, что это расстояние может быть измерено любыми единицами измерения, но его величина при этом останется неизменной.Не стоит путать измерение по <b><i>измерению по шкале</i></b>, которое зависит от <i>нулевой отметки*</i>, с измерением изменения того же <i>параметра</i>, которое характеризуется единицей измерения и не зависит от точки отсчета. Например, не стоит путать дату по некоторому календарю, соответствующую <i>началу</i> какого-либо процесса, и <i>длительность</i> этого процесса, которая не зависит от выбранного календаря.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_242: "file://images/sd_parameters_and_quantities/scale.png"
+	=> .system_element_232: "file://images/sd_parameters_and_quantities/scale.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
@@ -483,7 +483,7 @@
 		*);;
 	*);;
 
-	.system_element_4947
+	nrel_zero_mark
 	=> nrel_idtf: [<p>нуль по шкале*</p>]
 	(*
 		<- lang_ru;;
@@ -499,86 +499,86 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<- .system_element_949;
+	<- binary_relation;
 	=> nrel_explanation: [<p>Связки отношения <b><i>нулевая отметка*</i></b> связывают знак некоторого <i>измерения по шкале</i> со знаком <i>точной величины</i> того же <i>параметра</i>, которая в рамках данной шкалы принимается за точку отсчета.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4939
+	arithmetic_operation_on_the_values_for_values
 	=> nrel_explanation: [<p>Каждое <b><i>арифметическое выражение на величинах</i></b> представляет собой <i>связку</i>, компонентами которой являются элементы или подмножества некоторого <i>количественного параметра</i>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4940
-	<= .system_element_378: .system_element_4939;
+	arithmetic_operation_on_the_values
+	<= nrel_set_of_subsets: arithmetic_operation_on_the_values_for_values;
 	=> nrel_explanation: [<p>Каждая <b><i>арифметическая операция на величинах</i></b> представляет собой <i>отношение</i>, элементами которого являются <i>арифметические выражения на величинах</i>, то есть множество <i>арифметических выражений на величинах</i> какого-либо одного вида.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4949
+	nrel_sum_of_quantities
 	=> nrel_idtf: [<p>сложение величин*</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<- .system_element_4940;
-	<- .system_element_841;
+	<- arithmetic_operation_on_the_values;
+	<- quasybinary_relation;
 	=> nrel_explanation: [<p><b><i>сумма величин*</i></b> --- это <i>арифметическая операция на величинах</i>, аналогичная <i>арифметической операции сумма*</i> для <i>чисел</i>.Первым компонентом связки отношения <b><i>сумма величин*</i></b> является подмножество некоторого <i>количественного параметра</i> (слагаемые <i>величины</i>), содержащее два или более элемента, вторым компонентом --- элемент этого же <i>количественного параметра</i>, значение которого в любой <i>единице измерения*</i> является результатом сложения значений всех слагаемых <i>величин</i> в той же <i>единице измерения*</i>. При несовпадении <i>единиц измерения</i> слагаемых величин необходимо воспользоваться соотношениями между <i>единицами измерения</i>, которые задаются при помощи операций <i>произведение величин*</i> и <i>возведение величин в степень*</i>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4950
+	nrel_composition_of_quantities
 	=> nrel_idtf: [<p>умножение величин*</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<- .system_element_4940;
-	<- .system_element_841;
+	<- arithmetic_operation_on_the_values;
+	<- quasybinary_relation;
 	=> nrel_explanation: [<p><b><i>произведение величин*</i></b> --- это <i>арифметическая операция на величинах</i>, аналогичная <i>арифметической операции</i> <i>произведения*</i> для <i>чисел</i>.Первым компонентом связки отношения <b><i>произведение величин*</i></b> является <i>связка</i>, элементами которой являются либо <i>величины количественных параметров</i>, либо <i>числа</i>, но при этом хотя бы один элемент должен быть <i>величиной</i>.Вторым компонентом является <i>величина количественного параметра</i>. Операция <b><i>произведение величин*</i></b> может быть использована для задания соотношения между <i>единицами измерения*</i> в рамках одного <i>количественного параметра</i>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_242: "file://images/sd_parameters_and_quantities/multiplicationOfQuantities.png"
+	=> .system_element_232: "file://images/sd_parameters_and_quantities/multiplicationOfQuantities.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);
-	=> .system_element_242: "file://images/sd_parameters_and_quantities/multiplicationOfQuantities2.png"
+	=> .system_element_232: "file://images/sd_parameters_and_quantities/multiplicationOfQuantities2.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);;
 
-	.system_element_4951
-	<- .system_element_4940;
-	<- .system_element_949;
+	nrel_pow_of_quantities
+	<- arithmetic_operation_on_the_values;
+	<- binary_relation;
 	=> nrel_explanation: [<p><b><i>возведение величин в степень*</i></b> --- это <i>арифметическая операция на величинах</i>, аналогичная <i>арифметической операции возведение в степень*</i> для <i>чисел</i>.Первым компонентом связки отношения <b><i>возведение величин в степень*</i></b> является ориентированная пара, первым компонентом которой является <i>величина количественного параметра</i> (основание степени), вторым --- <i>число</i> (показатель степени).Вторым компонентом связки отношения <b><i>возведение величин в степень*</i></b> является <i>величина количественного параметра</i> (результат возведения в степень).</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_242: "file://images/sd_parameters_and_quantities/exponentiation.png"
+	=> .system_element_232: "file://images/sd_parameters_and_quantities/exponentiation.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);
-	=> .system_element_242: "file://images/sd_parameters_and_quantities/exponentiationTo2.png"
+	=> .system_element_232: "file://images/sd_parameters_and_quantities/exponentiationTo2.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);;
 
-	.system_element_4957
+	.system_element_4377
 	=> nrel_idtf: [<p>большая величина*</p>]
 	(*
 		<- lang_ru;;
@@ -589,15 +589,15 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<- .system_element_949;
-	<- .system_element_3606;
+	<- binary_relation;
+	<- strict_order_relation;
 	=> nrel_explanation: [<p><b><i>порядок величин*</i></b> --- это <i>отношение на величинах</i>, аналогичное отношению <i>больше*</i> для <i>чисел</i>.Из двух величин большей является та, <i>значение</i> которой в любой <i>единице измерения*</i> <i>больше*</i> значения другой <i>величины</i> в той же <i>единице измерения*</i>. В ряде случаев нет возможности говорить о большей или меньшей величине, но можно говорить об их упорядоченности.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4941
+	action_measurement
 	=> nrel_idtf: [<p>измерение как действие</p>]
 	(*
 		<- lang_ru;;
@@ -613,9 +613,9 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<= nrel_inclusion: .system_element_1347;;
+	<= nrel_inclusion: question;;
 
-	.system_element_4942
+	task_measurement
 	=> nrel_idtf: [<p>спецификация действия измерения</p>]
 	(*
 		<- lang_ru;;
@@ -626,5 +626,5 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<= nrel_inclusion: .system_element_1351;;
+	<= nrel_inclusion: task;;
 *];;
