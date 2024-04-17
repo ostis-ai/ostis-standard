@@ -1,48 +1,48 @@
 .sd_actions_segment4 = [*
-.system_element_4552
+.system_element_4551
 => nrel_inclusion: [*
 	=> .system_element_319: 
+		.system_element_4116;
 		.system_element_4117;
 		.system_element_4118;
-		.system_element_4119;
-		.system_element_4120
+		.system_element_4119
 	;
-	<- .system_element_840;;
+	<- .system_element_839;;
 
-	.system_element_4820
+	.system_element_4819
 	=> .system_element_137: [<p>субъект</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
-		=> .system_element_163: .system_element_4139;;
+		=> .system_element_163: .system_element_4138;;
 	*);;
 
-	.system_element_4821
+	.system_element_4820
 	=> nrel_idtf: [<p>участник акции'</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
 	<- role_relation;
-	=> nrel_first_domain: .system_element_4820;
+	=> nrel_first_domain: .system_element_4819;
 	=> nrel_second_domain: impact;
 	=> nrel_explanation: [<p><i>участник акции'</i> --- это ролевое отношение, которое связывает акцию с участвующим в ней индивидом.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
+		=> .system_element_163: .system_element_4821;;
 		=> .system_element_163: .system_element_4822;;
 		=> .system_element_163: .system_element_4823;;
-		=> .system_element_163: .system_element_4824;;
 	*);
 	=> nrel_subdividing: {
-		.system_element_4596
+		.system_element_4595
 		(*
 			=> nrel_explanation: [<p><i>субъект'</i> --- инициатор акции.</p>];;
 			=> nrel_subdividing: {
+				.system_element_4824;
 				.system_element_4825;
 				.system_element_4826;
-				.system_element_4827;
-				.system_element_4828
+				.system_element_4827
 				(*
 					=> nrel_explanation: [<p><i>вершитель'</i> завершает акцию производством из объекта продукта.</p>]
 					(*
@@ -52,11 +52,11 @@
 				*)
 			};;
 		*);
-		.system_element_4829
+		.system_element_4828
 		(*
 			=> nrel_explanation: [<p><i>инструмент'</i> --- исполнитель акции.</p>];;
 			=> nrel_subdividing: {
-				.system_element_4830
+				.system_element_4829
 				(*
 					=> nrel_explanation: [<p><i>активатор'</i> непосредственно воздействует на медиатор.</p>]
 					(*
@@ -64,7 +64,7 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);
-				.system_element_4831
+				.system_element_4830
 				(*
 					=> nrel_explanation: [<p><i>супрессор'</i> подавляет сопротивление медиатора.</p>]
 					(*
@@ -72,7 +72,7 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);
-				.system_element_4832
+				.system_element_4831
 				(*
 					=> nrel_explanation: [<p><i>усилитель'</i> наращивает воздействие на медиатор.</p>]
 					(*
@@ -80,7 +80,7 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);
-				.system_element_4833
+				.system_element_4832
 				(*
 					=> nrel_explanation: [<p><i>преобразователь'</i> преобразует медиатор в инструмент.</p>]
 					(*
@@ -90,12 +90,12 @@
 				*)
 			};;
 		*);
-		.system_element_4595
+		.system_element_4594
 		(*
 			=> nrel_explanation: [<p><i>медиатор'</i> --- посредник акции.</p>];;
 			=> nrel_subdividing: {
-				.system_element_4834;
-				.system_element_4835
+				.system_element_4833;
+				.system_element_4834
 				(*
 					=> nrel_explanation: [<p><i>локус'</i> частично или полностью окружает объект и тем самым локализует его в пространстве.</p>]
 					(*
@@ -103,7 +103,7 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);
-				.system_element_4836
+				.system_element_4835
 				(*
 					=> nrel_explanation: [<p><i>транспортёр'</i> перемещает объект.</p>]
 					(*
@@ -111,7 +111,7 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);
-				.system_element_4837
+				.system_element_4836
 				(*
 					=> nrel_explanation: [<p><i>адаптер'</i> приспосабливает инструмент к воздействию на объект.</p>]
 					(*
@@ -119,7 +119,7 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);
-				.system_element_4838
+				.system_element_4837
 				(*
 					=> nrel_explanation: [<p><i>материал'</i> используется в качестве объекта-сырья для производства продукта.</p>]
 					(*
@@ -127,7 +127,7 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);
-				.system_element_4839
+				.system_element_4838
 				(*
 					=> nrel_explanation: [<p><i>макет'</i> является исходным образцом для производства из объекта продукта.</p>]
 					(*
@@ -135,7 +135,7 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);
-				.system_element_4840
+				.system_element_4839
 				(*
 					=> nrel_explanation: [<p><i>фиксатор'</i> превращает переменный локус объекта в постоянный.</p>]
 					(*
@@ -143,7 +143,7 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);
-				.system_element_4841
+				.system_element_4840
 				(*
 					=> nrel_explanation: [<p><i>ресурс'</i> питает инструмент.</p>]
 					(*
@@ -151,7 +151,7 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);
-				.system_element_4842
+				.system_element_4841
 				(*
 					=> nrel_explanation: [<p><i>стимул'</i> проявляет параметр объекта.</p>]
 					(*
@@ -159,7 +159,7 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);
-				.system_element_4843
+				.system_element_4842
 				(*
 					=> nrel_explanation: [<p><i>регулятор'</i> служит инструкцией в производстве из объекта продукта.</p>]
 					(*
@@ -167,7 +167,7 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);
-				.system_element_4844
+				.system_element_4843
 				(*
 					=> nrel_explanation: [<p><i>хронотоп'</i> локализует объект во времени.</p>]
 					(*
@@ -175,7 +175,7 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);
-				.system_element_4845
+				.system_element_4844
 				(*
 					=> nrel_explanation: [<p><i>источник'</i> обеспечивает инструкциями инструмент.</p>]
 					(*
@@ -183,7 +183,7 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);
-				.system_element_4846
+				.system_element_4845
 				(*
 					=> nrel_explanation: [<p><i>индикатор'</i> отображает параметр воздействия на объект или параметр продукта как результата воздействия на объект.</p>]
 					(*
@@ -193,11 +193,11 @@
 				*)
 			};;
 		*);
-		.system_element_4847
+		.system_element_4846
 		(*
 			=> nrel_explanation: [<p><i>объект'</i> --- реципиент акции.</p>];;
 			=> nrel_subdividing: {
-				.system_element_4848
+				.system_element_4847
 				(*
 					=> nrel_explanation: [<p><i>покрытие'</i> --- внешняя изоляция оболочки индивида.</p>]
 					(*
@@ -205,7 +205,7 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);
-				.system_element_4849
+				.system_element_4848
 				(*
 					=> nrel_explanation: [<p><i>корпус'</i> --- оболочка индивида.</p>]
 					(*
@@ -213,7 +213,7 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);
-				.system_element_4850
+				.system_element_4849
 				(*
 					=> nrel_explanation: [<p><i>прослойка'</i> --- внутренняя изоляция оболочки индивида.</p>]
 					(*
@@ -221,7 +221,7 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);
-				.system_element_4851
+				.system_element_4850
 				(*
 					=> nrel_explanation: [<p><i>сердцевина'</i> --- ядро индивида.</p>]
 					(*
@@ -231,11 +231,11 @@
 				*)
 			};;
 		*);
-		.system_element_4852
+		.system_element_4851
 		(*
 			=> nrel_explanation: [<p><i>продукт'</i> --- результат воздействия субъекта на объект.</p>];;
 			=> nrel_subdividing: {
-				.system_element_4853
+				.system_element_4852
 				(*
 					=> nrel_explanation: [<p><i>заготовка'</i> --- превращённый в сырьё объект.</p>]
 					(*
@@ -243,7 +243,7 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);
-				.system_element_4854
+				.system_element_4853
 				(*
 					=> nrel_explanation: [<p><i>полуфабрикат'</i> --- наполовину изготовленный из сырья продукт.</p>]
 					(*
@@ -251,7 +251,7 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);
-				.system_element_4855
+				.system_element_4854
 				(*
 					=> nrel_explanation: [<p><i>прототип'</i> --- опытный образец продукта.</p>]
 					(*
@@ -259,7 +259,7 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);
-				.system_element_4856
+				.system_element_4855
 				(*
 					=> nrel_explanation: [<p><i>изделие'</i> --- готовый продукт.</p>]
 					(*
@@ -277,11 +277,11 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_163: .system_element_4857;
-	=> nrel_subdividing: .system_element_4858
+	=> .system_element_163: .system_element_4856;
+	=> nrel_subdividing: .system_element_4857
 	(*
 		<=> .system_element_151: {
-			.system_element_4859
+			.system_element_4858
 			(*
 				=> nrel_explanation: [<p><i>воздействие активизации</i> --- воздействие, в ходе которого взаимодействие осуществляется между субъектом и инструментом.</p>]
 				(*
@@ -289,7 +289,7 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);
-			.system_element_4860
+			.system_element_4859
 			(*
 				=> nrel_explanation: [<p><i>воздействие эксплуатации</i> --- воздействие, в ходе которого взаимодействие осуществляется между инструментом и медиатором.</p>]
 				(*
@@ -297,7 +297,7 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);
-			.system_element_4861
+			.system_element_4860
 			(*
 				=> nrel_explanation: [<p><i>воздействие трансформации</i> --- воздействие, в ходе которого взаимодействие осуществляется между объектом и продуктом.</p>]
 				(*
@@ -305,7 +305,7 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);
-			.system_element_4862
+			.system_element_4861
 			(*
 				=> nrel_explanation: [<p><i>воздействие нормализации</i> --- воздействие, в ходе которого взаимодействие осуществляется между объектом и продуктом.</p>]
 				(*
@@ -315,21 +315,21 @@
 			*)
 		};;
 	*);
-	=> nrel_subdividing: .system_element_4863
+	=> nrel_subdividing: .system_element_4862
 	(*
 		<=> .system_element_151: {
+			.system_element_4863;
 			.system_element_4864;
 			.system_element_4865;
-			.system_element_4866;
-			.system_element_4867
+			.system_element_4866
 		};;
 	*);;
 
 	impact
-	=> nrel_subdividing: .system_element_4868
+	=> nrel_subdividing: .system_element_4867
 	(*
 		<=> .system_element_151: {
-			.system_element_4869
+			.system_element_4868
 			(*
 				=> nrel_explanation: [<p><i>воздействие инициации</i> --- воздействие, в ходе которого оно начинается в каждой подсистеме.</p>]
 				(*
@@ -337,7 +337,7 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);
-			.system_element_4870
+			.system_element_4869
 			(*
 				=> nrel_explanation: [<p><i>воздействие аккумуляции</i> --- воздействие, в ходе которого происходит его накапливание в каждой подсистеме.</p>]
 				(*
@@ -345,7 +345,7 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);
-			.system_element_4871
+			.system_element_4870
 			(*
 				=> nrel_explanation: [<p><i>воздействие амплификации</i> --- воздействие, в ходе которого происходит его усиление.</p>]
 				(*
@@ -353,7 +353,7 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);
-			.system_element_4872
+			.system_element_4871
 			(*
 				=> nrel_explanation: [<p><i>воздействие генерации</i> --- воздействие, которое представляет собой переход в каждой подсистеме с одного уровня, например, среды-оболочки, на другой, например, оболочки-ядра.</p>]
 				(*
@@ -365,10 +365,10 @@
 	*);;
 
 	impact
-	=> nrel_subdividing: .system_element_4873
+	=> nrel_subdividing: .system_element_4872
 	(*
 		<=> .system_element_151: {
-			.system_element_4874
+			.system_element_4873
 			(*
 				=> nrel_explanation: [<p><i>физическое воздействие</i> --- воздействие, в котором в роли инструмента выступает оболочка субъекта.</p>]
 				(*
@@ -376,7 +376,7 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);
-			.system_element_4875
+			.system_element_4874
 			(*
 				=> nrel_explanation: [<p><i>информационное воздействие</i> --- воздействие, в котором в роли инструмента выступает среда субъекта.</p>]
 				(*
@@ -387,96 +387,96 @@
 		};;
 	*);;
 
-	.system_element_4876
+	.system_element_4875
 	<=> "file://macroproc_table.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);
-	=> .system_element_163: .system_element_4857;
+	=> .system_element_163: .system_element_4856;
 	=> nrel_explanation: [<p>На изображении представлена типология <i>воздействий</i>. Любое воздействие характеризуется принадлежностью четырём классам, соответствующим признакам классификации. Заштрихованы <i>физические воздействия</i>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4877
+	.system_element_4876
 	-> {
+		.system_element_4877
+		(*
+			<= nrel_intersection: {
+				.system_element_4860;
+				.system_element_4863;
+				.system_element_4871;
+				.system_element_4873
+			};;
+		*);
 		.system_element_4878
 		(*
 			<= nrel_intersection: {
-				.system_element_4861;
-				.system_element_4864;
-				.system_element_4872;
-				.system_element_4874
+				.system_element_4858;
+				.system_element_4863;
+				.system_element_4868;
+				.system_element_4873
 			};;
 		*);
 		.system_element_4879
 		(*
 			<= nrel_intersection: {
-				.system_element_4859;
-				.system_element_4864;
-				.system_element_4869;
-				.system_element_4874
+				.system_element_4860;
+				.system_element_4865;
+				.system_element_4871;
+				.system_element_4873
 			};;
 		*);
 		.system_element_4880
 		(*
 			<= nrel_intersection: {
-				.system_element_4861;
+				.system_element_4860;
 				.system_element_4866;
-				.system_element_4872;
-				.system_element_4874
+				.system_element_4871;
+				.system_element_4873
+			};;
+		*);
+		.system_element_4339
+		(*
+			<= nrel_intersection: {
+				.system_element_4859;
+				.system_element_4864;
+				.system_element_4868;
+				.system_element_4873
 			};;
 		*);
 		.system_element_4881
 		(*
 			<= nrel_intersection: {
-				.system_element_4861;
-				.system_element_4867;
-				.system_element_4872;
-				.system_element_4874
-			};;
-		*);
-		.system_element_4340
-		(*
-			<= nrel_intersection: {
 				.system_element_4860;
-				.system_element_4865;
-				.system_element_4869;
-				.system_element_4874
+				.system_element_4866;
+				.system_element_4870;
+				.system_element_4873
 			};;
 		*);
 		.system_element_4882
 		(*
 			<= nrel_intersection: {
-				.system_element_4861;
-				.system_element_4867;
-				.system_element_4871;
-				.system_element_4874
+				.system_element_4860;
+				.system_element_4865;
+				.system_element_4870;
+				.system_element_4873
 			};;
 		*);
 		.system_element_4883
 		(*
 			<= nrel_intersection: {
-				.system_element_4861;
-				.system_element_4866;
+				.system_element_4859;
+				.system_element_4865;
 				.system_element_4871;
-				.system_element_4874
-			};;
-		*);
-		.system_element_4884
-		(*
-			<= nrel_intersection: {
-				.system_element_4860;
-				.system_element_4866;
-				.system_element_4872;
-				.system_element_4874
+				.system_element_4873
 			};;
 		*)
 	};;
 
-	.system_element_4885
+	.system_element_4884
 	<=> "file://tapaz_description_example.png"
 	(*
 		<- concept_file;;
@@ -505,7 +505,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<= nrel_inclusion: .system_element_4886;
+	<= nrel_inclusion: .system_element_4885;
 	=> nrel_idtf: [<p>сущность, способная самостоятельно выполнять некоторые виды действий</p>]
 	(*
 		<- lang_ru;;
@@ -541,8 +541,8 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4887
-	<= nrel_inclusion: .system_element_4596;
+	.system_element_4886
+	<= nrel_inclusion: .system_element_4595;
 	=> nrel_idtf: [<p>сущность, воздействующая на некоторую другую сущность в процессе заданного действия'</p>]
 	(*
 		<- lang_ru;;
@@ -558,8 +558,8 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> nrel_inclusion: .system_element_4888;
-	=> nrel_inclusion: .system_element_4889
+	=> nrel_inclusion: .system_element_4887;
+	=> nrel_inclusion: .system_element_4888
 	(*
 		=> nrel_idtf: [<p>субъект целенаправленного, активного воздействия'</p>]
 		(*
@@ -568,7 +568,7 @@
 		*);;
 	*);;
 
-	.system_element_4596
+	.system_element_4595
 	=> nrel_idtf: [<p>воздействующая сущность'</p>]
 	(*
 		<- lang_ru;;
@@ -580,7 +580,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4847
+	.system_element_4846
 	=> nrel_idtf: [<p>воздействуемая сущность'</p>]
 	(*
 		<- lang_ru;;
@@ -603,8 +603,8 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4890
-	<= nrel_inclusion: .system_element_4847;
+	.system_element_4889
+	<= nrel_inclusion: .system_element_4846;
 	=> nrel_idtf: [<p>сущность, на которую осуществляется воздействие в рамках заданного действия'</p>]
 	(*
 		<- lang_ru;;
@@ -626,13 +626,13 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4852
+	.system_element_4851
 	=> nrel_idtf: [<p>быть продуктом заданного действия'</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<= nrel_inclusion: .system_element_2249;
+	<= nrel_inclusion: .system_element_2248;
 	<= nrel_inclusion: nrel_result;
 	=> nrel_idtf: [<p>сухой остаток'</p>]
 	(*
@@ -672,7 +672,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<= nrel_inclusion: .system_element_4111;
+	<= nrel_inclusion: .system_element_4110;
 	=> nrel_idtf: [<p>описание того, что требуется получить (какая ситуация должна быть достигнута) в результате выполнения заданного (специфицируемого) действия*</p>]
 	(*
 		<- lang_ru;;
@@ -705,7 +705,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4847
+	.system_element_4846
 	=> nrel_idtf: [<p>аргумент действия'</p>]
 	(*
 		<- lang_ru;;

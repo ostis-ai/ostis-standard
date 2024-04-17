@@ -1,7 +1,7 @@
 .sd_actions_segment1 = [*
-.system_element_4549
+.system_element_4548
 => nrel_inclusion: [*
-	<- .system_element_4647;;
+	<- .system_element_4646;;
 
 	impact
 	=> nrel_idtf: [<p><i>процесс</i> воздействия одной сущности (или некоторого множества <i>сущностей</i>) на другую <i>сущность</i> (или на некоторое множество других <i>сущностей</i>)</p>]
@@ -31,13 +31,13 @@
 	*);;
 
 	process
-	=> .system_element_4316: .system_element_3367
+	=> .system_element_4315: .system_element_3366
 	(*
 		<=> .system_element_151: {
+			.system_element_4763;
 			.system_element_4764;
 			.system_element_4765;
-			.system_element_4766;
-			.system_element_4767
+			.system_element_4766
 		};;
 		=> nrel_note: [<p>Длительность различных процессов можно уточнять до любой необходимой точности, используя различные единицы измерения длительности (с точностью до секунд, минут, часов, дней, месяцев, лет, столетий и т.д.). Кроме того, можно ссылаться на процессы, длительность (время жизни) которых соизмерима с рассматриваемым процессом.</p>]
 		(*
@@ -151,7 +151,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_3340: [<p>Экземпляры класса <i>действий</i> в рамках <i>Русского языка</i> именуются по следующим правилам:
+	=> .system_element_3339: [<p>Экземпляры класса <i>действий</i> в рамках <i>Русского языка</i> именуются по следующим правилам:
 	<ul>
 		<li> в начале идентификатора пишется слово "<i>Действие</i>" и ставится точка;
 		<li> далее с прописной буквы идет либо содержащее глагол совершенного вида в инфинитиве описание сути того, что требуется получить в результате выполнения действия, либо вопросительное предложение, являющееся спецификацией запрашиваемой (ответной) информации.</li>
@@ -181,20 +181,20 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_2513
+		.system_element_2512
 	};;
 
-	.system_element_4768
+	.system_element_4767
 	=> nrel_idtf: [<p>признак классификации воздействий</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	-> .system_element_4769
+	-> .system_element_4768
 	(*
 		=> nrel_idtf: [<p>наличие субъекта (индивида), который запланировал и реализовал воздействие, т.е. обеспечил управление выполнения этого воздействия</p>];;
 		<=> .system_element_151: {
-			.system_element_4770;
+			.system_element_4769;
 			question
 			(*
 				=> nrel_idtf: [<p>осознанное действие</p>]
@@ -206,23 +206,23 @@
 		};;
 	*);;
 
-	.system_element_4589
+	.system_element_4588
 	=> nrel_idtf: [<p>признак классификации действий</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
+	-> .system_element_4574;
 	-> .system_element_4575;
-	-> .system_element_4576;
-	-> .system_element_4771;
-	-> .system_element_4578;
-	-> .system_element_4579;;
+	-> .system_element_4770;
+	-> .system_element_4577;
+	-> .system_element_4578;;
 
 	question
-	=> nrel_subdividing: .system_element_4575
+	=> nrel_subdividing: .system_element_4574
 	(*
 		<=> .system_element_151: {
-			.system_element_4558
+			.system_element_4557
 			(*
 				=> nrel_idtf: [<p>информационное действие</p>];;
 				=> nrel_idtf: [<p>действие, выполняемое в памяти</p>]
@@ -241,7 +241,7 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);
-			.system_element_4559
+			.system_element_4558
 			(*
 				=> nrel_idtf: [<p>поведенческое действие</p>];;
 				=> nrel_note: [<p>В случае <b><i>поведенческого действия</i></b> результатом его выполнения будет новое состояние внешней среды. Очень важно отметить, что под внешней средой в данном случае понимаются также и компоненты системы, внешние с точки зрения памяти, то есть не являющиеся хранимыми в ней информационными конструкциями. К таким компонентам можно отнести, например, различные манипуляторы и прочие средства воздействия системы на внешний мир, то есть к поведенческим задачам можно отнести изменение состояния механической конечности робота или непосредственно вывод некоторой информации на экран для восприятия пользователем.</p>]
@@ -269,10 +269,10 @@
 			*)
 		};;
 	*);
-	=> nrel_subdividing: .system_element_4576
+	=> nrel_subdividing: .system_element_4575
 	(*
 		<=> .system_element_151: {
-			.system_element_4560
+			.system_element_4559
 			(*
 				=> nrel_idtf: [<p>действие, выполняемое индивидуальной кибернетической системой</p>];;
 				=> nrel_idtf: [<p>атомарное действие</p>]
@@ -286,7 +286,7 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);
-			.system_element_4561
+			.system_element_4560
 			(*
 				=> nrel_idtf: [<p>действие, выполнение которого требует декомпозиции этого действия на множество его <u>поддействий</u>, т.е. частных действий более низкого уровня</p>];;
 				=> nrel_idtf: [<p>система более простых действий (<i>поддействий</i>), которые могут выполняться как последовательно, так и параллельно</p>]
@@ -329,8 +329,8 @@
 					<- lang_ru;;
 					=> nrel_format: format_html;;
 				*);;
-				=> .system_element_4316: {
-					.system_element_4562
+				=> .system_element_4315: {
+					.system_element_4561
 					(*
 						=> nrel_idtf: [<p>сложное действие, для выполнения которого известен соответствующий <i>метод</i> и соответствующие этому методу исходные данные, а также (для действий, выполняемых во внешней среде) имеются в наличии все необходимые исходные объекты (расходные материалы и комплектация), а также средства (инструменты)</p>]
 						(*
@@ -338,7 +338,7 @@
 							=> nrel_format: format_html;;
 						*);;
 					*);
-					.system_element_4563
+					.system_element_4562
 					(*
 						=> nrel_idtf: [<p>трудно выполнимое сложное действие</p>];;
 						=> nrel_idtf: [<p>сложное действие, для выполнения которого в текущий момент либо неизвестен соответствующий <i>метод</i>, либо возможные <i>методы</i> известны, но отсутствуют условия их применения</p>]
@@ -346,9 +346,9 @@
 							<- lang_ru;;
 							=> nrel_format: format_html;;
 						*);;
-						=> nrel_inclusion: .system_element_4772
+						=> nrel_inclusion: .system_element_4771
 						(*
-							=> nrel_inclusion: .system_element_4773
+							=> nrel_inclusion: .system_element_4772
 							(*
 								=> nrel_note: [<p>Это действие декомпозируется на несколько самостоятельных поддействий, каждое из которых выявляет (локализует) противоречия (ошибки) конкретного формализуемого вида, для которого в базе знаний существует точное определение.</p>]
 								(*
@@ -357,7 +357,7 @@
 								*);;
 							*);;
 						*);;
-						=> nrel_inclusion: .system_element_4774
+						=> nrel_inclusion: .system_element_4773
 						(*
 							=> nrel_note: [<p>Соответствующий метод либо не найден, либо его вообще нет в памяти.</p>]
 							(*
@@ -370,10 +370,10 @@
 			*)
 		};;
 	*);
-	=> nrel_subdividing: .system_element_4771
+	=> nrel_subdividing: .system_element_4770
 	(*
 		<=> .system_element_151: {
-			.system_element_4564
+			.system_element_4563
 			(*
 				=> nrel_idtf: [<p>действие, выполняемое одним субъектом (агентом)</p>];;
 				=> nrel_idtf: [<p>действие, выполняемое индивидуальной кибернетической системой</p>]
@@ -381,10 +381,10 @@
 					<- lang_ru;;
 					=> nrel_format: format_html;;
 				*);;
+				=> nrel_inclusion: .system_element_4774;;
 				=> nrel_inclusion: .system_element_4775;;
-				=> nrel_inclusion: .system_element_4776;;
 			*);
-			.system_element_4777
+			.system_element_4776
 			(*
 				=> nrel_idtf: [<p>действие, выполняемое коллективом субъектов (многоагентной системой)</p>];;
 				=> nrel_idtf: [<p>действие, выполняемое коллективом кибернетических систем (коллективом субъектов)</p>]
@@ -392,17 +392,17 @@
 					<- lang_ru;;
 					=> nrel_format: format_html;;
 				*);;
+				=> nrel_inclusion: .system_element_4777;;
 				=> nrel_inclusion: .system_element_4778;;
-				=> nrel_inclusion: .system_element_4779;;
-				=> nrel_inclusion: .system_element_4780
+				=> nrel_inclusion: .system_element_4779
 				(*
+					=> nrel_inclusion: .system_element_4780;;
 					=> nrel_inclusion: .system_element_4781;;
-					=> nrel_inclusion: .system_element_4782;;
 				*);;
 			*)
 		};;
 	*);
-	=> nrel_subdividing: .system_element_4578
+	=> nrel_subdividing: .system_element_4577
 	(*
 		<=> .system_element_151: {
 			planned_action
@@ -483,7 +483,7 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);
-			.system_element_4566
+			.system_element_4565
 			(*
 				=> nrel_idtf: [<p>действие, ожидающее продолжения своего выполнения</p>];;
 				=> nrel_idtf: [<p>отложенное действие</p>]
@@ -549,21 +549,21 @@
 					*)
 				};;
 			*);
-			.system_element_4567
+			.system_element_4566
 		};;
 	*);
-	=> .system_element_4316: .system_element_4579
+	=> .system_element_4315: .system_element_4578
 	(*
 		<=> .system_element_151: {
+			.system_element_4567;
 			.system_element_4568;
 			.system_element_4569;
 			.system_element_4570;
-			.system_element_4571;
-			.system_element_4572
+			.system_element_4571
 		};;
 	*);;
 
-	.system_element_4558
+	.system_element_4557
 	=> nrel_idtf: [<p>информационное действие</p>]
 	(*
 		<- lang_ru;;
@@ -579,7 +579,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> nrel_inclusion: .system_element_4783
+	=> nrel_inclusion: .system_element_4782
 	(*
 		=> nrel_idtf: [<p>действие, выполняемое кибернетической системой в её памяти и направленное на организацию её деятельности во внешней среде и в конечном счете --- на сенсомоторную координацию деятельности её эффекторов</p>]
 		(*
@@ -593,7 +593,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4559
+	.system_element_4558
 	=> nrel_idtf: [<p>действие, выполняемое кибернетической системой в её внешней среде и осуществляемое (на самом низком уровне) эффекторами этой кибернетической системы</p>]
 	(*
 		<- lang_ru;;
@@ -617,8 +617,8 @@
 		=> nrel_format: format_html;;
 	*);
 	=> nrel_subdividing: {
-		.system_element_4784;
-		.system_element_4785
+		.system_element_4783;
+		.system_element_4784
 		(*
 			=> nrel_explanation: [<p><i>поддействие*</i>, которое осуществляет инициирование выполнения очередного <i>поддействия*</i> (или сразу некоторого множества <i>поддействий*</i>) при соблюдении некоторого априори известного условия. В общем случае таким условием является возникновение некоторой ситуации или события. В частности, это может быть:
 			<ul>

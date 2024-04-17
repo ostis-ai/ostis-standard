@@ -1,9 +1,9 @@
-.system_element_3344
+.system_element_3343
 => nrel_inclusion: [*
 
 	subject_domain_of_structures
 	<- subject_domain;
-	-> .system_element_767: 
+	-> .system_element_766: 
 		structure
 	;
 	-> .system_element_112: 
@@ -15,7 +15,7 @@
 		semantic_level_structural_element;
 		quantity_semantic_level_structural_element
 	;
-	-> .system_element_1003: 
+	-> .system_element_1002: 
 		rrel_structure_element;
 		rrel_unrepresented_set;
 		rrel_completely_represented_set;
@@ -66,7 +66,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> nrel_subdividing: .system_element_3345
+	=> nrel_subdividing: .system_element_3344
 	(*
 		<=> .system_element_151: {
 			process
@@ -83,7 +83,7 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);
-			.system_element_3346
+			.system_element_3345
 			(*
 				=> nrel_idtf: [<p>стационарная структура</p>];;
 				=> nrel_idtf: [<p>структура, не изменяющаяся во времени</p>]
@@ -99,10 +99,10 @@
 			*)
 		};;
 	*);
-	=> nrel_subdividing: .system_element_3347
+	=> nrel_subdividing: .system_element_3346
 	(*
 		<=> .system_element_151: {
-			.system_element_3348
+			.system_element_3347
 			(*
 				=> nrel_idtf: [<p>(структура ⋂ временная сущность)</p>]
 				(*
@@ -110,7 +110,7 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);
-			.system_element_3349
+			.system_element_3348
 			(*
 				=> nrel_idtf: [<p>(структура ⋂ постоянная сущность)</p>]
 				(*
@@ -180,7 +180,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3350
+	.system_element_3349
 	-> rrel_structure_element;
 	-> rrel_maximum_set;
 	-> rrel_non_maximum_set;
@@ -230,7 +230,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_1980: "file://images/sd_structures/example_of_element_structure.png"
+	=> .system_element_1979: "file://images/sd_structures/example_of_element_structure.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
@@ -362,7 +362,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3351
+	.system_element_3350
 	=> nrel_explanation: [<p><b><i>структура второго уровня</i></b> --- <i>структура</i>, среди элементов которой есть хотя бы один <i>элемент второго уровня'</i>.</p>]
 	(*
 		<- lang_ru;;

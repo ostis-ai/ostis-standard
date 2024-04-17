@@ -1,26 +1,27 @@
-.system_element_2038
+.system_element_2037
 => nrel_inclusion: [*
-	=> .system_element_319: .system_element_1033;
+	=> .system_element_319: .system_element_1032;
 	=> .system_element_172: 
-		.system_element_2039;
-		.system_element_2040
+		.system_element_2038;
+		.system_element_2039
 	;;
 
-	.system_element_2041
+	.system_element_2040
 	<- subject_domain;
 	-> .system_element_112: 
-		.system_element_792;
+		.system_element_791;
+		.system_element_2041;
+		.system_element_469;
 		.system_element_2042;
-		.system_element_470;
 		.system_element_2043;
 		.system_element_2044;
+		.system_element_1925;
 		.system_element_2045;
-		.system_element_1926;
 		.system_element_2046;
 		.system_element_2047;
 		.system_element_2048;
+		.system_element_1927;
 		.system_element_2049;
-		.system_element_1928;
 		.system_element_2050;
 		.system_element_2051;
 		.system_element_2052;
@@ -31,8 +32,8 @@
 		.system_element_2057;
 		.system_element_2058;
 		.system_element_2059;
+		.system_element_945;
 		.system_element_2060;
-		.system_element_946;
 		.system_element_2061;
 		.system_element_2062;
 		.system_element_2063;
@@ -45,11 +46,10 @@
 		.system_element_2070;
 		.system_element_2071;
 		.system_element_2072;
-		.system_element_2073;
-		.system_element_2074
+		.system_element_2073
 	;;
 
-	.system_element_2038
+	.system_element_2037
 	=> nrel_introduction: {
 		[<p>Организация взаимодействия пользователей с компьютерными системами (в том числе и с интеллектуальными компьютерными системами) оказывает существенное влияние на эффективность автоматизации человеческой деятельности, пользовательский опыт и уровень удовлетворенности пользователей.</p>]
 		(*
@@ -65,16 +65,16 @@
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
-			=> .system_element_163: .system_element_2075;;
+			=> .system_element_163: .system_element_2074;;
 		*)
 	};
-	=> .system_element_2077: .system_element_2076;;
+	=> .system_element_2076: .system_element_2075;;
 
-	.system_element_2076
+	.system_element_2075
 	=> nrel_inclusion: [*
 
-		.system_element_792
-		=> .system_element_939: 
+		.system_element_791
+		=> .system_element_938: 
 			[<p><u>Необходимость пользователя обучаться принципам взаимодействия</u> с каждой конкретной системой.</p>]
 			(*
 				<- lang_ru;;
@@ -95,7 +95,7 @@
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
-			=> .system_element_1980: "file://images/sd_ui/traditional_ui.png"
+			=> .system_element_1979: "file://images/sd_ui/traditional_ui.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
@@ -104,12 +104,12 @@
 					<- lang_ru;;
 					=> nrel_format: format_html;;
 				*);;
-				=> .system_element_163: .system_element_2078;;
+				=> .system_element_163: .system_element_2077;;
 			*);;
 		*);;
 
-		.system_element_2079
-		=> .system_element_1980: "file://images/sd_ui/adaptive_ui_tools.png"
+		.system_element_2078
+		=> .system_element_1979: "file://images/sd_ui/adaptive_ui_tools.png"
 		(*
 			<- concept_file;;
 			=> nrel_format: format_png;;
@@ -118,18 +118,18 @@
 				<- lang_ru;;
 				=> nrel_format: format_html;;
 			*);;
-			=> .system_element_163: .system_element_2080;;
+			=> .system_element_163: .system_element_2079;;
 		*);;
 
-		.system_element_2081
+		.system_element_2080
 		=> nrel_note: [<p><em>интерфейс интеллектуальных компьютерных систем нового поколения</em> должен воспринимать различные типы ввода информации. Для организации такого взаимодействия используются термины <i>адаптивного</i>, <i>интеллектуального</i> и <i>мультимодального интерфейса</i>.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_2082
-		=> .system_element_1980: "file://images/sd_ui/adaptive_ui.png"
+		.system_element_2081
+		=> .system_element_1979: "file://images/sd_ui/adaptive_ui.png"
 		(*
 			<- concept_file;;
 			=> nrel_format: format_png;;
@@ -144,6 +144,7 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 			=> .system_element_163: 
+				.system_element_2082;
 				.system_element_2083;
 				.system_element_2084;
 				.system_element_2085;
@@ -151,8 +152,7 @@
 				.system_element_2087;
 				.system_element_2088;
 				.system_element_2089;
-				.system_element_2090;
-				.system_element_2091
+				.system_element_2090
 			;;
 			=> nrel_note: [<p>Онтологический подход позволяет:
 			<ul>
@@ -177,7 +177,7 @@
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_2092
+		.system_element_2091
 		=> .system_element_232: [<p>Среди существующих онтологий модели пользователя можно выделить онтологию GUMO, в рамках которой выделяют:
 
 		<ul>
@@ -198,10 +198,10 @@
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
-			=> .system_element_163: .system_element_2093;;
+			=> .system_element_163: .system_element_2092;;
 		*);;
 
-		.system_element_2094
+		.system_element_2093
 		=> .system_element_232: [<p>На верхнем уровне рассматриваются следующие типы компонентов:
 
 		<ul>
@@ -230,16 +230,16 @@
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
-			=> .system_element_163: .system_element_2095;;
+			=> .system_element_163: .system_element_2094;;
 		*);
 		=> nrel_note: [<p>В данную онтологию также можно включить классы свойств компонента, которые определяют оформление внешнего вида интерфейсных элементов, начиная от простых, таких как шрифт, цвет, размер элементов, до составных,содержащих наборы интерфейсных решений.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
-			=> .system_element_163: .system_element_2096;;
+			=> .system_element_163: .system_element_2095;;
 		*);;
 
-		.system_element_2097
+		.system_element_2096
 		=> .system_element_232: [<p>Классификация интерфейсных содержит следующие основные классы:
 
 		<ul>
@@ -256,10 +256,10 @@
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
-			=> .system_element_163: .system_element_2095;;
+			=> .system_element_163: .system_element_2094;;
 		*);;
 
-		.system_element_2098
+		.system_element_2097
 		=> .system_element_232: [<p>
 
 		<ul>
@@ -312,10 +312,10 @@
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
-			=> .system_element_163: .system_element_756;;
+			=> .system_element_163: .system_element_755;;
 		*);;
 
-		.system_element_2099
+		.system_element_2098
 		=> nrel_note: [<p>Для управления взаимодействием пользователя с системой принято использовать <i>интеллектуальные агенты</i>.</p>]
 		(*
 			<- lang_ru;;
@@ -337,8 +337,8 @@
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_2076
-		=> .system_element_2100: 
+		.system_element_2075
+		=> .system_element_2099: 
 			[<p>Для перехода к <u>парадигме равноправного сотрудничества пользователя и системы</u> интерфейсы должны быть адаптивными, интеллектуальными и мультимодальными. Существующие решения позволяют проектировать такие интерфейсы, однако имеют ряд недостатков.</p>]
 			(*
 				<- lang_ru;;
@@ -361,8 +361,8 @@
 			*)
 		;;
 
-		.system_element_2101
-		=> .system_element_2103: .system_element_2102
+		.system_element_2100
+		=> .system_element_2102: .system_element_2101
 		(*
 			<=> .system_element_151: {
 				[<p>Существующие решения, как правило, предусматривают <u>вопросно-ответный принцип взаимодействия</u>.</p>]
@@ -389,7 +389,7 @@
 		*);;
 	*];;
 
-	.system_element_2104
+	.system_element_2103
 	=> nrel_idtf: [<p>совокупность технических, программных и методических (протоколов, правил, соглашений) средств, обеcпечивающих обмен информацией между пользователем, устройствами и программами, а также между устройствами и другими устройствами и программами</p>]
 	(*
 		<- lang_ru;;
@@ -411,7 +411,7 @@
 		=> nrel_format: format_html;;
 	*);
 	=> nrel_subdividing: {
-		.system_element_792
+		.system_element_791
 		(*
 			=> nrel_idtf: [<p>один из наиболее важных компонентов компьютерной системы, представляющий собой совокупность аппаратных и программных средств, обеспечивающих обмен информацией между пользователем и компьютерной системой</p>]
 			(*
@@ -419,7 +419,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_470
+		.system_element_469
 		(*
 			=> nrel_idtf: [<p>система унифицированных связей, предназначенных для обмена информацией между компонентами вычислительной системы, задающая набор необходимых процедур, их параметров и способов обращения</p>]
 			(*
@@ -427,7 +427,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_2042
+		.system_element_2041
 		(*
 			=> nrel_idtf: [<p>устройство, преобразующее сигналы и передающее их от одного компонента оборудования к другому, определяющееся набором электрических связей и характеристиками сигналов</p>]
 			(*
@@ -437,7 +437,7 @@
 		*)
 	};;
 
-	.system_element_2044
+	.system_element_2043
 	=> nrel_idtf: [<p><i>пользовательский интерфейс</i>, который изменяется на основе потребностей пользователя или контекста</p>]
 	(*
 		<- lang_ru;;
@@ -447,8 +447,8 @@
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
-		=> .system_element_163: .system_element_2080;;
-		=> .system_element_1980: "file://images/sd_ui/user-context.png"
+		=> .system_element_163: .system_element_2079;;
+		=> .system_element_1979: "file://images/sd_ui/user-context.png"
 		(*
 			<- concept_file;;
 			=> nrel_format: format_png;;
@@ -463,24 +463,24 @@
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
-		=> .system_element_163: .system_element_2105;;
+		=> .system_element_163: .system_element_2104;;
 	*);
 	=> nrel_note: [<p>В адаптируемых системах любая адаптация является предопределенной и может изменяться пользователями перед запуском системы. В адаптивных же системах, напротив, любая адаптация является динамической, то есть происходит в то же время, когда пользователь взаимодействует с системой, и зависит от поведения пользователя. Но система также может быть адаптируемой и адаптивной одновременно. Недостаток ручного редактирования интерфейса заключается в необходимости пользователя быть достаточно хорошо знакомым, как с самой системой, так и со средствами, позволяющими изменять ее <em>интерфейс</em>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
-		=> .system_element_163: .system_element_2106;;
+		=> .system_element_163: .system_element_2105;;
 	*);;
 
-	.system_element_2107
-	=> .system_element_827: [<p><em>адаптированный интерфейс</em> --- это <em>пользовательский интерфейс</em>, который адаптирован к конечному пользователю при проектировании и не изменяется во время эксплуатации системы.</p>]
+	.system_element_2106
+	=> .system_element_826: [<p><em>адаптированный интерфейс</em> --- это <em>пользовательский интерфейс</em>, который адаптирован к конечному пользователю при проектировании и не изменяется во время эксплуатации системы.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
-		=> .system_element_163: .system_element_2108;;
+		=> .system_element_163: .system_element_2107;;
 	*);;
 
-	.system_element_2045
+	.system_element_2044
 	=> nrel_idtf: [<p><i>пользовательский интерфейс</i>, который может предположить дальнейшие действия пользователей и представить информацию на основе этого предположения</p>]
 	(*
 		<- lang_ru;;
@@ -491,29 +491,29 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 		=> .system_element_163: 
+			.system_element_2108;
 			.system_element_2109;
-			.system_element_2110;
-			.system_element_755
+			.system_element_754
 		;;
 	*);;
 
-	.system_element_1926
+	.system_element_1925
 	=> nrel_idtf: [<p><i>пользовательский интерфейс</i>, предназначенный для обработки двух или более комбинированных режимов пользовательского ввода, таких как речь, перо, касание, ручные жесты и взгляд, скоординированным образом с выводом мультимедийной системы</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_792
-	=> nrel_inclusion: .system_element_2046;
-	=> nrel_inclusion: .system_element_2047
+	.system_element_791
+	=> nrel_inclusion: .system_element_2045;
+	=> nrel_inclusion: .system_element_2046
 	(*
-		=> nrel_inclusion: .system_element_2048
+		=> nrel_inclusion: .system_element_2047
 		(*
-			=> nrel_inclusion: .system_element_2051
+			=> nrel_inclusion: .system_element_2050
 			(*
-				-> .system_element_2111;;
-				-> .system_element_2112
+				-> .system_element_2110;;
+				-> .system_element_2111
 				(*
 					=> nrel_idtf: [<p>Пользовательский интерфейс интеллектуальной справочной системы по геометрии</p>]
 					(*
@@ -521,7 +521,7 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);;
-				-> .system_element_2113
+				-> .system_element_2112
 				(*
 					=> nrel_idtf: [<p>Пользовательский интерфейс интеллектуальной справочной системы по дискретной математике</p>]
 					(*
@@ -529,7 +529,7 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);;
-				-> .system_element_2114
+				-> .system_element_2113
 				(*
 					=> nrel_idtf: [<p>Пользовательский интерфейс интеллектуальной справочной системы по географии</p>]
 					(*
@@ -537,7 +537,7 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);;
-				-> .system_element_2115
+				-> .system_element_2114
 				(*
 					=> nrel_idtf: [<p>Пользовательский интерфейс интеллектуальной справочной системы по искусственным нейронным сетям</p>]
 					(*
@@ -545,7 +545,7 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);;
-				-> .system_element_2116
+				-> .system_element_2115
 				(*
 					=> nrel_idtf: [<p>Пользовательский интерфейс интеллектуальной справочной системы по лингвистике</p>]
 					(*
@@ -555,37 +555,37 @@
 				*);;
 			*);;
 		*);;
-		=> nrel_inclusion: .system_element_2049
+		=> nrel_inclusion: .system_element_2048
 		(*
-			=> nrel_inclusion: .system_element_1928
+			=> nrel_inclusion: .system_element_1927
 			(*
-				=> nrel_inclusion: .system_element_2050;;
+				=> nrel_inclusion: .system_element_2049;;
 			*);;
 		*);;
 	*);;
 
-	.system_element_792
+	.system_element_791
 	=> nrel_explanation: [<p><i>пользовательский интерфейс</i> --- один из наиболее важных компонентов компьютерной системы. Представляет собой совокупность аппаратных и программных средств, обеспечивающих обмен информацией между пользователем и компьютерной системой.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2046
+	.system_element_2045
 	=> nrel_explanation: [<p><i>командный пользовательский интерфейс</i> --- пользовательский интерфейс, при котором обмен информацией между компьютерной системой и пользователем осуществляется путем написания текстовых инструкций или команд.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2047
+	.system_element_2046
 	=> nrel_explanation: [<p><i>графический пользовательский интерфейс</i> --- пользовательский интерфейс, при котором обмен информацией между компьютерной системой и пользователем осуществляется при помощи графических компонентов компьютерной системы.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2048
+	.system_element_2047
 	=> nrel_idtf: [<p>Window, Image, Menu, Pointer --- интерфейс</p>]
 	(*
 		<- lang_ru;;
@@ -602,7 +602,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2049
+	.system_element_2048
 	=> nrel_idtf: [<p>Speech, Image, Language, Knowledge --- интерфейс</p>]
 	(*
 		<- lang_ru;;
@@ -619,28 +619,28 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_1928
+	.system_element_1927
 	=> nrel_explanation: [<p><i>естественно-языковой интерфейс</i> --- SILK-интерфейс, обмен информацией между компьютерной системой и пользователем в котором происходит за счёт диалога. Диалог ведётся на одном из естественных языков.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2050
+	.system_element_2049
 	=> nrel_explanation: [<p><i>речевой интерфейс</i> --- SILK-интерфейс, обмен информацией в котором происходит за счёт диалога, в процессе которого компьютерная система и пользователь общаются с помощью речи. Данный вид интерфейса наиболее приближен к естественному общению между людьми.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2051
+	.system_element_2050
 	<= nrel_inclusion: ostis_system;
-	<= nrel_inclusion: .system_element_2082;
+	<= nrel_inclusion: .system_element_2081;
 	=> nrel_explanation: [<p><i>пользовательский интерфейс ostis-системы</i> представляет собой специализированную <i>ostis-систему</i>, ориентированную на решение интерфейсных задач и имеющую в своем составе базу знаний и решатель задач пользовательского интерфейса ostis-системы.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
-		=> .system_element_163: .system_element_2117;;
+		=> .system_element_163: .system_element_2116;;
 	*);
 	=> .system_element_204: {
 		[<p>Для решения задачи построения пользовательского интерфейса в базе знаний <i>пользовательского интерфейса ostis-системы</i> необходимо наличие sc-модели <i>компонентов пользовательского интерфейса</i>, <i>интерфейсных действий пользователей</i>, а также классификации <i>пользовательских интерфейсов</i> в целом.</p>]
@@ -652,15 +652,15 @@
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
-			<= nrel_note: .system_element_2118;;
+			<= nrel_note: .system_element_2117;;
 		*);
 		[<p>При проектировании интерфейса используется компонентный подход, который предполагает представление всего интерфейса приложения в виде отдельных специфицированных компонентов, которые могут разрабатываться и совершенствоваться независимо.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 			=> .system_element_163: 
-				.system_element_763;
-				.system_element_2119
+				.system_element_762;
+				.system_element_2118
 			;;
 		*);
 		[<p>Каждый компонент <i>пользовательского интерфейса ostis-системы</i> является внешним отображением определенного элемента из базы знаний, что позволяет использовать их в качестве аргументов пользовательских команд и правильно трактовать прагматику и семантику объектов интерфейсной деятельности, легко изменять интерфейс системы даже во время ее эксплуатации, позволяет пользователю задавать системе вопросы касательно любого из компонентов интерфейса.</p>]
@@ -679,7 +679,7 @@
 			=> nrel_format: format_html;;
 		*)
 	};
-	=> .system_element_2120: "file://images/sd_ui/ui_model.png"
+	=> .system_element_2119: "file://images/sd_ui/ui_model.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
@@ -690,52 +690,52 @@
 		*);;
 	*);;
 
-	.system_element_2052
+	.system_element_2051
 	=> nrel_explanation: [<p><i>компонент пользовательского интерфейса</i> --- знак фрагмента базы знаний, имеющий определённую форму внешнего представления на экране.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
 	=> nrel_subdividing: {
-		.system_element_2053;
-		.system_element_2054
+		.system_element_2052;
+		.system_element_2053
 	};;
 
-	.system_element_2053
+	.system_element_2052
 	=> nrel_explanation: [<p><i>атомарный компонент пользовательского интерфейса</i> --- компонент пользовательского интерфейса, не содержащий в своём составе других компонентов пользовательского интерфейса.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2054
+	.system_element_2053
 	=> nrel_explanation: [<p><i>неатомарный компонент пользовательского интерфейса</i> --- компонент пользовательского интерфейса, состоящий из других компонентов пользовательского интерфейса.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2055
-	<= nrel_inclusion: .system_element_2054;
+	.system_element_2054
+	<= nrel_inclusion: .system_element_2053;
 	=> nrel_explanation: [<p><i>визуальная часть пользовательского интерфейса ostis-системы</i> --- часть базы знаний пользовательского интерфейса ostis-системы, содержащая необходимые для отображения пользовательского интерфейса компоненты.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2052
+	.system_element_2051
 	=> nrel_idtf: [<p>user interface component</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> nrel_inclusion: .system_element_2121
+	=> nrel_inclusion: .system_element_2120
 	(*
 		=> nrel_idtf: [<p>presentation user interface component</p>];;
-		=> nrel_inclusion: .system_element_2057
+		=> nrel_inclusion: .system_element_2056
 		(*
 			=> nrel_idtf: [<p>output</p>];;
-			=> nrel_inclusion: .system_element_2122
+			=> nrel_inclusion: .system_element_2121
 			(*
 				=> nrel_idtf: [<p>image-output</p>]
 				(*
@@ -743,10 +743,10 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);;
-			=> nrel_inclusion: .system_element_2123
+			=> nrel_inclusion: .system_element_2122
 			(*
 				=> nrel_idtf: [<p>graphical-output</p>];;
-				=> nrel_inclusion: .system_element_2124
+				=> nrel_inclusion: .system_element_2123
 				(*
 					=> nrel_idtf: [<p>chart</p>]
 					(*
@@ -754,7 +754,7 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);;
-				=> nrel_inclusion: .system_element_2125
+				=> nrel_inclusion: .system_element_2124
 				(*
 					=> nrel_idtf: [<p>map</p>]
 					(*
@@ -762,7 +762,7 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);;
-				=> nrel_inclusion: .system_element_2126
+				=> nrel_inclusion: .system_element_2125
 				(*
 					=> nrel_idtf: [<p>progress-bar</p>]
 					(*
@@ -771,7 +771,7 @@
 					*);;
 				*);;
 			*);;
-			=> nrel_inclusion: .system_element_2127
+			=> nrel_inclusion: .system_element_2126
 			(*
 				=> nrel_idtf: [<p>video-output</p>]
 				(*
@@ -779,7 +779,7 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);;
-			=> nrel_inclusion: .system_element_2128
+			=> nrel_inclusion: .system_element_2127
 			(*
 				=> nrel_idtf: [<p>sound-output</p>]
 				(*
@@ -787,10 +787,10 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);;
-			=> nrel_inclusion: .system_element_2129
+			=> nrel_inclusion: .system_element_2128
 			(*
 				=> nrel_idtf: [<p>text-output</p>];;
-				=> nrel_inclusion: .system_element_2130
+				=> nrel_inclusion: .system_element_2129
 				(*
 					=> nrel_idtf: [<p>headline</p>]
 					(*
@@ -798,7 +798,7 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);;
-				=> nrel_inclusion: .system_element_2059
+				=> nrel_inclusion: .system_element_2058
 				(*
 					=> nrel_idtf: [<p>paragraph</p>]
 					(*
@@ -806,7 +806,7 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);;
-				=> nrel_inclusion: .system_element_1728
+				=> nrel_inclusion: .system_element_1727
 				(*
 					=> nrel_idtf: [<p>message</p>]
 					(*
@@ -816,10 +816,10 @@
 				*);;
 			*);;
 		*);;
-		=> nrel_inclusion: .system_element_2060
+		=> nrel_inclusion: .system_element_2059
 		(*
 			=> nrel_idtf: [<p>decorative user interface component</p>];;
-			=> nrel_inclusion: .system_element_2131
+			=> nrel_inclusion: .system_element_2130
 			(*
 				=> nrel_idtf: [<p>separator</p>]
 				(*
@@ -827,7 +827,7 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);;
-			=> nrel_inclusion: .system_element_2132
+			=> nrel_inclusion: .system_element_2131
 			(*
 				=> nrel_idtf: [<p>blank-space</p>]
 				(*
@@ -836,10 +836,10 @@
 				*);;
 			*);;
 		*);;
-		=> nrel_inclusion: .system_element_946
+		=> nrel_inclusion: .system_element_945
 		(*
 			=> nrel_idtf: [<p>container</p>];;
-			=> nrel_inclusion: .system_element_2061
+			=> nrel_inclusion: .system_element_2060
 			(*
 				=> nrel_idtf: [<p>menu</p>]
 				(*
@@ -847,7 +847,7 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);;
-			=> nrel_inclusion: .system_element_2062
+			=> nrel_inclusion: .system_element_2061
 			(*
 				=> nrel_idtf: [<p>menu-bar</p>]
 				(*
@@ -855,7 +855,7 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);;
-			=> nrel_inclusion: .system_element_2063
+			=> nrel_inclusion: .system_element_2062
 			(*
 				=> nrel_idtf: [<p>tool-bar</p>]
 				(*
@@ -863,7 +863,7 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);;
-			=> nrel_inclusion: .system_element_2133
+			=> nrel_inclusion: .system_element_2132
 			(*
 				=> nrel_idtf: [<p>status-bar</p>]
 				(*
@@ -871,7 +871,7 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);;
-			=> nrel_inclusion: .system_element_2134
+			=> nrel_inclusion: .system_element_2133
 			(*
 				=> nrel_idtf: [<p>table-row-container</p>]
 				(*
@@ -879,7 +879,7 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);;
-			=> nrel_inclusion: .system_element_2135
+			=> nrel_inclusion: .system_element_2134
 			(*
 				=> nrel_idtf: [<p>list-container</p>]
 				(*
@@ -887,7 +887,7 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);;
-			=> nrel_inclusion: .system_element_2136
+			=> nrel_inclusion: .system_element_2135
 			(*
 				=> nrel_idtf: [<p>table-cell-container</p>]
 				(*
@@ -895,7 +895,7 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);;
-			=> nrel_inclusion: .system_element_2137
+			=> nrel_inclusion: .system_element_2136
 			(*
 				=> nrel_idtf: [<p>tree-container</p>]
 				(*
@@ -903,7 +903,7 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);;
-			=> nrel_inclusion: .system_element_2064
+			=> nrel_inclusion: .system_element_2063
 			(*
 				=> nrel_idtf: [<p>tab-pane</p>]
 				(*
@@ -911,7 +911,7 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);;
-			=> nrel_inclusion: .system_element_2138
+			=> nrel_inclusion: .system_element_2137
 			(*
 				=> nrel_idtf: [<p>spin-pane</p>]
 				(*
@@ -919,7 +919,7 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);;
-			=> nrel_inclusion: .system_element_2139
+			=> nrel_inclusion: .system_element_2138
 			(*
 				=> nrel_idtf: [<p>tree-node-container</p>]
 				(*
@@ -927,7 +927,7 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);;
-			=> nrel_inclusion: .system_element_2140
+			=> nrel_inclusion: .system_element_2139
 			(*
 				=> nrel_idtf: [<p>scroll-pane</p>]
 				(*
@@ -935,10 +935,10 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);;
-			=> nrel_inclusion: .system_element_2065
+			=> nrel_inclusion: .system_element_2064
 			(*
 				=> nrel_idtf: [<p>window</p>];;
-				=> nrel_inclusion: .system_element_2066
+				=> nrel_inclusion: .system_element_2065
 				(*
 					=> nrel_idtf: [<p>modal-window</p>]
 					(*
@@ -946,7 +946,7 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);;
-				=> nrel_inclusion: .system_element_2067
+				=> nrel_inclusion: .system_element_2066
 				(*
 					=> nrel_idtf: [<p>non-modal-window</p>]
 					(*
@@ -957,19 +957,19 @@
 			*);;
 		*);;
 	*);
-	=> nrel_inclusion: .system_element_2068
+	=> nrel_inclusion: .system_element_2067
 	(*
 		=> nrel_idtf: [<p>interactive user interface component</p>];;
-		=> nrel_inclusion: .system_element_2141
+		=> nrel_inclusion: .system_element_2140
 		(*
 			=> nrel_idtf: [<p>data-input-component</p>];;
-			=> nrel_inclusion: .system_element_2142
+			=> nrel_inclusion: .system_element_2141
 			(*
 				=> nrel_idtf: [<p>data-input-component-with-direct-feedback</p>];;
-				=> nrel_inclusion: .system_element_2143
+				=> nrel_inclusion: .system_element_2142
 				(*
 					=> nrel_idtf: [<p>text-input-component-with-direct-feedback</p>];;
-					=> nrel_inclusion: .system_element_2144
+					=> nrel_inclusion: .system_element_2143
 					(*
 						=> nrel_idtf: [<p>multi-line-text-field</p>]
 						(*
@@ -977,7 +977,7 @@
 							=> nrel_format: format_html;;
 						*);;
 					*);;
-					=> nrel_inclusion: .system_element_2145
+					=> nrel_inclusion: .system_element_2144
 					(*
 						=> nrel_idtf: [<p>single-line-text-field</p>]
 						(*
@@ -986,7 +986,7 @@
 						*);;
 					*);;
 				*);;
-				=> nrel_inclusion: .system_element_2146
+				=> nrel_inclusion: .system_element_2145
 				(*
 					=> nrel_idtf: [<p>slider</p>]
 					(*
@@ -994,7 +994,7 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);;
-				=> nrel_inclusion: .system_element_2147
+				=> nrel_inclusion: .system_element_2146
 				(*
 					=> nrel_idtf: [<p>drawing-area</p>]
 					(*
@@ -1002,10 +1002,10 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);;
-				=> nrel_inclusion: .system_element_2148
+				=> nrel_inclusion: .system_element_2147
 				(*
 					=> nrel_idtf: [<p>selection-component</p>];;
-					=> nrel_inclusion: .system_element_2149
+					=> nrel_inclusion: .system_element_2148
 					(*
 						=> nrel_idtf: [<p>selection-component-multiple-values</p>]
 						(*
@@ -1013,7 +1013,7 @@
 							=> nrel_format: format_html;;
 						*);;
 					*);;
-					=> nrel_inclusion: .system_element_2150
+					=> nrel_inclusion: .system_element_2149
 					(*
 						=> nrel_idtf: [<p>selection-component-single-values</p>]
 						(*
@@ -1022,10 +1022,10 @@
 						*);;
 					*);;
 				*);;
-				=> nrel_inclusion: .system_element_2151
+				=> nrel_inclusion: .system_element_2150
 				(*
 					=> nrel_idtf: [<p>selectable-data-representation</p>];;
-					=> nrel_inclusion: .system_element_2069
+					=> nrel_inclusion: .system_element_2068
 					(*
 						=> nrel_idtf: [<p>check-box</p>]
 						(*
@@ -1033,7 +1033,7 @@
 							=> nrel_format: format_html;;
 						*);;
 					*);;
-					=> nrel_inclusion: .system_element_2070
+					=> nrel_inclusion: .system_element_2069
 					(*
 						=> nrel_idtf: [<p>radio-button</p>]
 						(*
@@ -1041,7 +1041,7 @@
 							=> nrel_format: format_html;;
 						*);;
 					*);;
-					=> nrel_inclusion: .system_element_2071
+					=> nrel_inclusion: .system_element_2070
 					(*
 						=> nrel_idtf: [<p>toggle-button</p>]
 						(*
@@ -1049,7 +1049,7 @@
 							=> nrel_format: format_html;;
 						*);;
 					*);;
-					=> nrel_inclusion: .system_element_2152
+					=> nrel_inclusion: .system_element_2151
 					(*
 						=> nrel_idtf: [<p>selectable-item</p>]
 						(*
@@ -1059,10 +1059,10 @@
 					*);;
 				*);;
 			*);;
-			=> nrel_inclusion: .system_element_2153
+			=> nrel_inclusion: .system_element_2152
 			(*
 				=> nrel_idtf: [<p>data-input-component-without-direct-feedback</p>];;
-				=> nrel_inclusion: .system_element_2154
+				=> nrel_inclusion: .system_element_2153
 				(*
 					=> nrel_idtf: [<p>spin-button</p>]
 					(*
@@ -1070,7 +1070,7 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);;
-				=> nrel_inclusion: .system_element_2155
+				=> nrel_inclusion: .system_element_2154
 				(*
 					=> nrel_idtf: [<p>speech-input</p>]
 					(*
@@ -1078,7 +1078,7 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);;
-				=> nrel_inclusion: .system_element_2156
+				=> nrel_inclusion: .system_element_2155
 				(*
 					=> nrel_idtf: [<p>motion-input</p>]
 					(*
@@ -1088,10 +1088,10 @@
 				*);;
 			*);;
 		*);;
-		=> nrel_inclusion: .system_element_2157
+		=> nrel_inclusion: .system_element_2156
 		(*
 			=> nrel_idtf: [<p>presentation-manipulation-component</p>];;
-			=> nrel_inclusion: .system_element_2158
+			=> nrel_inclusion: .system_element_2157
 			(*
 				=> nrel_idtf: [<p>activating-component</p>]
 				(*
@@ -1099,10 +1099,10 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);;
-			=> nrel_inclusion: .system_element_2159
+			=> nrel_inclusion: .system_element_2158
 			(*
 				=> nrel_idtf: [<p>continuous-manipulation-component</p>];;
-				=> nrel_inclusion: .system_element_2073
+				=> nrel_inclusion: .system_element_2072
 				(*
 					=> nrel_idtf: [<p>scrollbar</p>]
 					(*
@@ -1110,7 +1110,7 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);;
-				=> nrel_inclusion: .system_element_2160
+				=> nrel_inclusion: .system_element_2159
 				(*
 					=> nrel_idtf: [<p>resizer</p>]
 					(*
@@ -1120,13 +1120,13 @@
 				*);;
 			*);;
 		*);;
-		=> nrel_inclusion: .system_element_2161
+		=> nrel_inclusion: .system_element_2160
 		(*
 			=> nrel_idtf: [<p>operation-trigger-component</p>];;
-			=> nrel_inclusion: .system_element_2162
+			=> nrel_inclusion: .system_element_2161
 			(*
 				=> nrel_idtf: [<p>command-selection-component</p>];;
-				=> nrel_inclusion: .system_element_2074
+				=> nrel_inclusion: .system_element_2073
 				(*
 					=> nrel_idtf: [<p>button</p>]
 					(*
@@ -1134,7 +1134,7 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);;
-				=> nrel_inclusion: .system_element_2163
+				=> nrel_inclusion: .system_element_2162
 				(*
 					=> nrel_idtf: [<p>menu-item</p>]
 					(*
@@ -1143,7 +1143,7 @@
 					*);;
 				*);;
 			*);;
-			=> nrel_inclusion: .system_element_2164
+			=> nrel_inclusion: .system_element_2163
 			(*
 				=> nrel_idtf: [<p>command-input-component</p>]
 				(*
@@ -1154,230 +1154,230 @@
 		*);;
 	*);;
 
-	.system_element_2056
+	.system_element_2055
 	=> nrel_explanation: [<p><i>компонент пользовательского интерфейса для представления</i> --- компонент пользовательского интерфейса, не подразумевающий взаимодействия с пользователем.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2057
+	.system_element_2056
 	=> nrel_explanation: [<p><i>компонент вывода</i> --- компонент пользовательского интерфейса, предназначенный для представления информации.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2126
+	.system_element_2125
 	=> nrel_explanation: [<p><i>индикатор выполнения</i> --- компонент пользовательского интерфейса, предназначенный для отображения процента выполнения какой-либо задачи.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2059
+	.system_element_2058
 	=> nrel_explanation: [<p><i>параграф</i> --- компонент пользовательского интерфейса, предназначенный для отображения блоков текста. Он отделяется от других блоков пустой строкой или первой строкой с отступом.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2060
+	.system_element_2059
 	=> nrel_explanation: [<p><i>декоративный компонент пользовательского интерфейса</i> --- компонент пользовательского интерфейса, предназначенный для стилизации интерфейса.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_946
+	.system_element_945
 	=> nrel_explanation: [<p><i>контейнер</i> --- компонент пользовательского интерфейса, задача которого состоит в размещении набора компонентов, включённых в его состав.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2061
+	.system_element_2060
 	=> nrel_explanation: [<p><i>меню</i> --- компонент пользовательского интерфейса, содержащий несколько вариантов для выбора пользователем.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2062
+	.system_element_2061
 	=> nrel_explanation: [<p><i>строка меню</i> --- горизонтальная полоса, содержащая ярлыки меню. Строка меню предоставляет пользователю место в окне, где можно найти большинство основных функций программы.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2063
+	.system_element_2062
 	=> nrel_explanation: [<p><i>панель инструментов</i> --- компонент пользовательского интерфейса, на котором размещаются элементы ввода или вывода данных.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2064
+	.system_element_2063
 	=> nrel_explanation: [<p><i>панель вкладок</i> --- контейнер, который может содержать несколько вкладок (секций) внутри, которые могут быть отображены, нажав на вкладке с названием в верхней части панели. Одновременно отображается только одна вкладка.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2065
+	.system_element_2064
 	=> nrel_explanation: [<p><i>окно</i> --- обособленная область экрана, содержащая различные элементы пользовательского интерфейса. Окна могут располагаться поверх друг друга.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2066
+	.system_element_2065
 	=> nrel_explanation: [<p><i>модальное окно</i> --- окно, которое блокирует работу пользователя с системой до тех пор, пока пользователь окно не закроет.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2067
+	.system_element_2066
 	=> nrel_explanation: [<p><i>немодальное окно</i> --- окно, которое позволяет выполнять переключение между данным окном и другим окном без необходимости закрытия окна.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2068
+	.system_element_2067
 	=> nrel_explanation: [<p><i>интерактивный компонент пользовательского интерфейса</i> --- компонент пользовательского интерфейса, с помощью которого осуществляется взаимодействие с пользователем.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2069
+	.system_element_2068
 	=> nrel_explanation: [<p><i>флаговая кнопка</i> --- компонент пользовательского интерфейса, позволяющий пользователю управлять параметром с двумя состояниями --- включено и отключено.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2070
+	.system_element_2069
 	=> nrel_explanation: [<p><i>радиокнопка</i> --- компонент пользовательского интерфейса, который позволяет пользователю выбрать одну опцию из предопределенного набора.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2071
+	.system_element_2070
 	=> nrel_explanation: [<p><i>переключатель</i> --- компонент пользовательского интерфейса, который позволяет пользователю переключаться между двумя состояниями.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2072
+	.system_element_2071
 	=> nrel_explanation: [<p><i>кнопка-счетчик</i> --- компонент пользовательского интерфейса, как правило, ориентированный вертикально, с помощью которого пользователь может изменить значение в прилегающем текстовом поле, в результате чего значение в текстовом поле увеличивается или уменьшается.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2073
+	.system_element_2072
 	=> nrel_explanation: [<p><i>полоса прокрутки</i> --- компонент пользовательского интерфейса, который используется для отображения компонентов пользовательского интерфейса, больших по размеру, чем используемый для их отображения контейнер.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2074
+	.system_element_2073
 	=> nrel_explanation: [<p><i>кнопка</i> --- компонент пользовательского интерфейса, при нажатии на который происходит программно связанное с этим нажатием действие либо событие.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2165
-	<- .system_element_2166
+	.system_element_2164
+	<- .system_element_2165
 	(*
-		<= nrel_inclusion: .system_element_2055;;
-		<= .system_element_1157: .system_element_2111;;
+		<= nrel_inclusion: .system_element_2054;;
+		<= .system_element_1156: .system_element_2110;;
 	*);
-	<- .system_element_2065;
-	=> .system_element_1980: "file://images/sd_ui/startPage.png"
+	<- .system_element_2064;
+	=> .system_element_1979: "file://images/sd_ui/startPage.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);
-	=> .system_element_437: {
-		.system_element_2167
+	=> nrel_decomposition: {
+		.system_element_2166
 		(*
-			<- .system_element_2054;;
-			=> .system_element_437: {
+			<- .system_element_2053;;
+			=> nrel_decomposition: {
 				ui_main_menu
 				(*
-					<- .system_element_2061;;
-					=> .system_element_437: {
+					<- .system_element_2060;;
+					=> nrel_decomposition: {
+						.system_element_2167
+						(*
+							<- .system_element_2162;;
+						*);
 						.system_element_2168
 						(*
-							<- .system_element_2163;;
+							<- .system_element_2162;;
 						*);
 						.system_element_2169
 						(*
-							<- .system_element_2163;;
-						*);
-						.system_element_2170
-						(*
-							<- .system_element_2071;;
+							<- .system_element_2070;;
 						*)
 					};;
+				*);
+				.system_element_2170
+				(*
+					<- .system_element_2149;;
 				*);
 				.system_element_2171
 				(*
-					<- .system_element_2150;;
-				*);
-				.system_element_2172
-				(*
-					<- .system_element_2074;;
+					<- .system_element_2073;;
 				*)
 			};;
 		*);
+		.system_element_2172
+		(*
+			<- .system_element_2053;;
+		*);
 		.system_element_2173
 		(*
-			<- .system_element_2054;;
-		*);
-		.system_element_2174
-		(*
-			<- .system_element_2054;;
-			=> .system_element_437: {
+			<- .system_element_2053;;
+			=> nrel_decomposition: {
+				.system_element_2174
+				(*
+					<- .system_element_2064;;
+				*);
 				.system_element_2175
 				(*
-					<- .system_element_2065;;
-				*);
-				.system_element_2176
-				(*
-					<- .system_element_2054;;
-					=> .system_element_437: {
+					<- .system_element_2053;;
+					=> nrel_decomposition: {
+						.system_element_2176
+						(*
+							<- .system_element_2073;;
+						*);
 						.system_element_2177
 						(*
-							<- .system_element_2074;;
+							<- .system_element_2073;;
 						*);
 						.system_element_2178
 						(*
-							<- .system_element_2074;;
+							<- .system_element_2073;;
 						*);
 						.system_element_2179
 						(*
-							<- .system_element_2074;;
-						*);
-						.system_element_2180
-						(*
-							<- .system_element_2145;;
+							<- .system_element_2144;;
 						*)
 					};;
 				*)
 			};;
 		*);
-		.system_element_2181
+		.system_element_2180
 		(*
-			<- .system_element_2054;;
+			<- .system_element_2053;;
 		*)
 	};;
 *];;

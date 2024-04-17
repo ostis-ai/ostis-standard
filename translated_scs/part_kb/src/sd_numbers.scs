@@ -1,9 +1,9 @@
-.system_element_3352
+.system_element_3351
 => nrel_inclusion: [*
 
 	subject_domain_numbers_and_numeric_structures
 	<- subject_domain;
-	-> .system_element_767: 
+	-> .system_element_766: 
 		number
 	;
 	-> .system_element_112: 
@@ -18,22 +18,22 @@
 		arithmetic_expression;
 		arithmetic_operation;
 		number_pi;
+		.system_element_3352;
 		.system_element_3353;
-		.system_element_3354;
 		imaginary_unit;
 		numeric_structure;
 		numeral_system;
 		decimal_numeral_system;
 		binary_numeral_system;
 		hexadecimal_numeral_system;
+		.system_element_3354;
 		.system_element_3355;
 		.system_element_3356;
 		.system_element_3357;
 		.system_element_3358;
-		.system_element_3359;
-		.system_element_3360
+		.system_element_3359
 	;
-	-> .system_element_1003: 
+	-> .system_element_1002: 
 		nrel_opposite_numbers;
 		nrel_modulus;
 		nrel_sum_of_numbers;
@@ -57,16 +57,16 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3358
+	.system_element_3357
 	=> nrel_idtf: [<p>множество цифр</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<= nrel_inclusion: .system_element_3361;
+	<= nrel_inclusion: .system_element_3360;
 	=> nrel_inclusion: 
-		.system_element_3359;
-		.system_element_3360
+		.system_element_3358;
+		.system_element_3359
 	;
 	=> nrel_explanation: [<p><b><i>цифра</i></b> --- это множество файлов, обозначающих вхождение этой цифры во всевозможные записи чисел с помощью этой цифры.</p>]
 	(*
@@ -114,15 +114,15 @@
 	<= nrel_inclusion: real_number;
 	=> nrel_inclusion: integer;;
 
-	.system_element_3355
+	.system_element_3354
 	=> nrel_idtf: [<p>множество дробей</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
 	=> nrel_inclusion: 
-		.system_element_3356;
-		.system_element_3357
+		.system_element_3355;
+		.system_element_3356
 	;
 	=> nrel_explanation: [<p><b><i>дробь</i></b>  это число, состоящее из одной или нескольких равных частей (долей) единицы</p>]
 	(*
@@ -130,7 +130,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3362
+	.system_element_3361
 	=> nrel_idtf: [<p>множество обыкновенных дробей</p>]
 	(*
 		<- lang_ru;;
@@ -147,7 +147,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3357
+	.system_element_3356
 	=> nrel_idtf: [<p>множество десятичных дробей</p>]
 	(*
 		<- lang_ru;;
@@ -190,7 +190,7 @@
 	=> nrel_subdividing: {
 		positive_number;
 		negative_number;
-		.system_element_3363
+		.system_element_3362
 	};
 	=> nrel_explanation: [<p><b><i>действительное число</i></b> --- это множество чисел, получаемое в результате объединения иррациональных и <i>рациональных чисел</i>.</p>]
 	(*
@@ -236,7 +236,7 @@
 	*);;
 
 	nrel_opposite_numbers
-	<- .system_element_3364;
+	<- .system_element_3363;
 	=> nrel_explanation: [<p><b><i>противоположные числа*</i></b> --- <i>отношение</i>, связывающее два числа, одно из которых является <i>отрицательным числом</i>, второе --- <i>положительным</i>, при этом <i>модули*</i> этих чисел <i>равны*</i>.</p>]
 	(*
 		<- lang_ru;;
@@ -374,7 +374,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3353
+	.system_element_3352
 	=> nrel_idtf: [<p>0</p>]
 	(*
 		<- lang_ru;;
@@ -387,7 +387,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3354
+	.system_element_3353
 	=> nrel_idtf: [<p>1</p>]
 	(*
 		<- lang_ru;;

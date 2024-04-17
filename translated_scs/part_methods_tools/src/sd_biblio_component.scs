@@ -1,4 +1,4 @@
-.system_element_980
+.system_element_979
 => nrel_inclusion: [*
 	=> nrel_epigraph: [<p>Всё, что можно сделать одинаково, нужно делать одинаково.</p>]
 	(*
@@ -11,7 +11,7 @@
 		=> nrel_format: format_html;;
 	*);
 	<= .system_element_116: <
-		.system_element_965
+		.system_element_964
 		(*
 			=> nrel_idtf: [<p>Сегмент. Введение в компонентное проектирование интеллектуальных компьютерных систем</p>]
 			(*
@@ -19,12 +19,12 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_925;
-		.system_element_879;
-		.system_element_823;
-		.system_element_901;
-		.system_element_802;
-		.system_element_800
+		.system_element_924;
+		.system_element_878;
+		.system_element_822;
+		.system_element_900;
+		.system_element_801;
+		.system_element_799
 		(*
 			=> nrel_idtf: [<p>Сегмент. Заключение в компонентное проектирование интеллектуальных компьютерных систем</p>]
 			(*
@@ -33,35 +33,36 @@
 			*);;
 		*)
 	>;
-	=> .system_element_754: 
-		.system_element_981;
-		.system_element_968;
-		.system_element_969;
-		.system_element_982;
+	=> .system_element_753: 
+		.system_element_980;
 		.system_element_967;
-		.system_element_973;
-		.system_element_828;
-		.system_element_978;
-		.system_element_983;
+		.system_element_968;
+		.system_element_981;
+		.system_element_966;
+		.system_element_972;
+		.system_element_827;
+		.system_element_977;
+		.system_element_982;
+		.system_element_974;
 		.system_element_975;
-		.system_element_976;
+		.system_element_927;
 		.system_element_928;
 		.system_element_929;
-		.system_element_930;
-		.system_element_940;
-		.system_element_954;
-		.system_element_956;
-		.system_element_958;
-		.system_element_960;
-		.system_element_962;
-		.system_element_834;
-		.system_element_763;
-		.system_element_904;
-		.system_element_887;
-		.system_element_888;
-		.system_element_835;
-		.system_element_984;
+		.system_element_939;
+		.system_element_953;
+		.system_element_955;
+		.system_element_957;
+		.system_element_959;
+		.system_element_961;
+		.system_element_833;
+		.system_element_762;
+		.system_element_903;
 		.system_element_886;
+		.system_element_887;
+		.system_element_834;
+		.system_element_983;
+		.system_element_885;
+		.system_element_984;
 		.system_element_985;
 		.system_element_986;
 		.system_element_987;
@@ -72,63 +73,62 @@
 		.system_element_992;
 		.system_element_993;
 		.system_element_994;
-		.system_element_995;
-		.system_element_996
+		.system_element_995
 	;;
 
-	.system_element_997
+	.system_element_996
 	<- subject_domain;
-	-> .system_element_767: 
-		.system_element_880;
-		.system_element_592
+	-> .system_element_766: 
+		.system_element_879;
+		.system_element_591
 	;
 	-> .system_element_112: 
-		.system_element_864;
+		.system_element_863;
+		.system_element_997;
 		.system_element_998;
-		.system_element_999;
-		.system_element_451;
+		.system_element_450;
 		.system_element_343;
 		.system_element_344;
-		.system_element_855;
-		.system_element_863;
+		.system_element_854;
+		.system_element_862;
 		.system_element_136;
-		.system_element_857;
+		.system_element_856;
 		.system_element_342;
+		.system_element_857;
 		.system_element_858;
-		.system_element_859;
+		.system_element_999;
+		.system_element_866;
+		.system_element_868;
 		.system_element_1000;
-		.system_element_867;
-		.system_element_869;
+		.system_element_803;
+		.system_element_806;
+		.system_element_901;
 		.system_element_1001;
-		.system_element_804;
-		.system_element_807;
-		.system_element_902;
-		.system_element_1002;
-		.system_element_830;
-		.system_element_920;
-		.system_element_808
+		.system_element_829;
+		.system_element_919;
+		.system_element_807
+	;
+	-> .system_element_1002: 
+		.system_element_908;
+		.system_element_610;
+		.system_element_352;
+		.system_element_820
 	;
 	-> .system_element_1003: 
-		.system_element_909;
-		.system_element_611;
-		.system_element_352;
-		.system_element_821
+		.system_element_830
 	;
 	-> .system_element_1004: 
-		.system_element_831
-	;
-	-> .system_element_1005: 
 		nrel_authors;
 		.system_element_330;
 		nrel_explanation;
-		.system_element_1006;
-		.system_element_912
+		.system_element_1005;
+		.system_element_911
 	;;
 
-	.system_element_1007
+	.system_element_1006
 	-> {
-		.system_element_980;
-		.system_element_1008
+		.system_element_979;
+		.system_element_1007
 	}
 	(*
 		=> nrel_explanation: [<p><i>Метасистема OSTIS</i> ориентирована на разработку и практическое внедрение методов и средств компонентного проектирования семантически совместимых интеллектуальных систем, которая предоставляет возможность быстрого создания интеллектуальных приложений различного назначения. В состав Метасистемы OSTIS входит <em>Библиотека Метасистемы OSTIS</em>. Сферы практического применения технологии компонентного проектирования семантически совместимых интеллектуальных систем ничем не ограничены.</p>];;
@@ -139,10 +139,10 @@
 		*);;
 	*);;
 
-	.system_element_1007
+	.system_element_1006
 	-> {
-		.system_element_980;
-		.system_element_1009
+		.system_element_979;
+		.system_element_1008
 	}
 	(*
 		=> nrel_explanation: [<p>Основным требованием, предъявляемым к <i>Технологии OSTIS</i>, является обеспечение возможности совместного использования в рамках ostis-систем различных <i>видов знаний</i> и различных <i>моделей решения задач</i> с возможностью <u>неограниченного</u> расширения перечня используемых в ostis-системе видов знаний и моделей решения задач без существенных трудозатрат. Следствием данного требования является необходимость реализации компонентного подхода на всех уровнях, от простых компонентов баз знаний и решателей задач до целых встраиваемых ostis-систем.</p>]
@@ -154,8 +154,8 @@
 
 	.system_element_172
 	-> <
-		.system_element_980;
-		.system_element_1010
+		.system_element_979;
+		.system_element_1009
 	>
 	(*
 		=> nrel_explanation: [<p>На сегодняшний день разработано большое число <i>баз знаний</i> по самым различным предметным областям. Однако в большинстве случаев каждая база знаний разрабатывается отдельно и независимо от других, вследствие отсутствия единой унифицированной формальной основы для представления знаний, а также единых принципов формирования систем понятий для описываемой предметной области. В связи с этим разработанные базы оказываются, как правило, несовместимы между собой и непригодны для повторного использования. Компонентный подход к разработке интеллектуальных компьютерных систем, реализуемый в виде <em>библиотеки многократно используемых компонентов ostis-систем</em>, позволяет решить описанные проблемы.</p>]
@@ -167,8 +167,8 @@
 
 	.system_element_172
 	-> <
-		.system_element_980;
-		.system_element_1011
+		.system_element_979;
+		.system_element_1010
 	>
 	(*
 		=> nrel_explanation: [<p>В области разработки <i>решателей задач</i> существует большое количество конкретных реализаций, однако вопросы совместимости различных решателей при решении одной задачи практически не рассматриваются.</p>]
@@ -180,8 +180,8 @@
 
 	.system_element_172
 	-> <
-		.system_element_980;
-		.system_element_1012
+		.system_element_979;
+		.system_element_1011
 	>;
 	=> nrel_inclusion: .segment_library_introduction;
 	=> nrel_inclusion: .segment_library_analysis;

@@ -1,9 +1,9 @@
 .intro_scs_connectors_transf = [*
-.system_element_3557
+.system_element_3556
 = [*
 
 	[<p><b><i>si</i></b> ⇒ <i>включение*</i>: <b><i>sj</i></b></p>]
-	=> .system_element_3494: [<p><b><i>si</i></b> ⊇ <b><i>sj</i></b></p>]
+	=> .system_element_3493: [<p><b><i>si</i></b> ⊇ <b><i>sj</i></b></p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
@@ -15,7 +15,7 @@
 	*);;
 
 	[<p><b><i>si</i></b> _⇒ <i>включение*</i>:: <b><i>sj</i></b></p>]
-	=> .system_element_3494: [<p><b><i>si</i></b> _⊇ <b><i>sj</i></b></p>]
+	=> .system_element_3493: [<p><b><i>si</i></b> _⊇ <b><i>sj</i></b></p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
@@ -27,7 +27,7 @@
 	*);;
 
 	[<p><b><i>si</i></b> __⇒ <i>включение*</i>::: <b><i>sj</i></b></p>]
-	=> .system_element_3494: [<p><b><i>si</i></b> __⊇ <b><i>sj</i></b></p>]
+	=> .system_element_3493: [<p><b><i>si</i></b> __⊇ <b><i>sj</i></b></p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
@@ -39,7 +39,7 @@
 	*);;
 
 	[<p><b><i>si</i></b> ⇒ <i>строгое включение*</i>: <b><i>sj</i></b></p>]
-	=> .system_element_3494: [<p><b><i>si</i></b> ⊃ <b><i>sj</i></b></p>]
+	=> .system_element_3493: [<p><b><i>si</i></b> ⊃ <b><i>sj</i></b></p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
@@ -51,7 +51,7 @@
 	*);;
 
 	[<p><b><i>si</i></b> _⇒ <i>строгое включение*</i>:: <b><i>sj</i></b></p>]
-	=> .system_element_3494: [<p><b><i>si</i></b> _⊃ <b><i>sj</i></b></p>]
+	=> .system_element_3493: [<p><b><i>si</i></b> _⊃ <b><i>sj</i></b></p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
@@ -63,7 +63,7 @@
 	*);;
 
 	[<p><b><i>si</i></b> __⇒ <i>строгое включение*</i>::: <b><i>sj</i></b></p>]
-	=> .system_element_3494: [<p><b><i>si</i></b> __⊃ <b><i>sj</i></b></p>]
+	=> .system_element_3493: [<p><b><i>si</i></b> __⊃ <b><i>sj</i></b></p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
@@ -75,7 +75,7 @@
 	*);;
 
 	[<p><b><i>si</i></b> ⇒ <i>порядок величин*</i>: <b><i>sj</i></b></p>]
-	=> .system_element_3494: [<p><b><i>si</i></b>  <b><i>sj</i></b></p>]
+	=> .system_element_3493: [<p><b><i>si</i></b>  <b><i>sj</i></b></p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
@@ -87,7 +87,7 @@
 	*);;
 
 	[<p><b><i>si</i></b> _⇒ <i>порядок величин*</i>:: <b><i>sj</i></b></p>]
-	=> .system_element_3494: [<p><b><i>si</i></b> _ <b><i>sj</i></b></p>]
+	=> .system_element_3493: [<p><b><i>si</i></b> _ <b><i>sj</i></b></p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
@@ -99,7 +99,7 @@
 	*);;
 
 	[<p><b><i>si</i></b> __⇒ <i>порядок величин*</i>::: <b><i>sj</i></b></p>]
-	=> .system_element_3494: [<p><b><i>si</i></b> __ <b><i>sj</i></b></p>]
+	=> .system_element_3493: [<p><b><i>si</i></b> __ <b><i>sj</i></b></p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
@@ -111,7 +111,7 @@
 	*);;
 
 	[<p><b><i>si</i></b> ⇒ <i>строгий порядок величин*</i>: <b><i>sj</i></b></p>]
-	=> .system_element_3494: [<p><b><i>si</i></b> > <b><i>sj</i></b></p>]
+	=> .system_element_3493: [<p><b><i>si</i></b> > <b><i>sj</i></b></p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
@@ -128,7 +128,7 @@
 	*);;
 
 	[<p><b><i>si</i></b> _⇒ <i>строгий порядок величин*</i>:: <b><i>sj</i></b></p>]
-	=> .system_element_3494: [<p><b><i>si</i></b> _> <b><i>sj</i></b></p>]
+	=> .system_element_3493: [<p><b><i>si</i></b> _> <b><i>sj</i></b></p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
@@ -140,7 +140,7 @@
 	*);;
 
 	[<p><b><i>si</i></b> __⇒ <i>строгий порядок величин*</i>::: <b><i>sj</i></b></p>]
-	=> .system_element_3494: [<p><b><i>si</i></b> __> <b><i>sj</i></b></p>]
+	=> .system_element_3493: [<p><b><i>si</i></b> __> <b><i>sj</i></b></p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
@@ -152,7 +152,7 @@
 	*);;
 
 	[<p><b><i>si</i></b> ⇒ <i>внешний идентификатор*</i>: <b><i>sj</i></b></p>]
-	=> .system_element_3494: [<p><b><i>si</i></b> := <b><i>sj</i></b></p>]
+	=> .system_element_3493: [<p><b><i>si</i></b> := <b><i>sj</i></b></p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
@@ -164,7 +164,7 @@
 	*);;
 
 	[<p><b><i>si</i></b> _⇒ <i>внешний идентификатор*</i>:: <b><i>sj</i></b></p>]
-	=> .system_element_3494: [<p><b><i>si</i></b> _:= <b><i>sj</i></b></p>]
+	=> .system_element_3493: [<p><b><i>si</i></b> _:= <b><i>sj</i></b></p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
@@ -176,7 +176,7 @@
 	*);;
 
 	[<p><b><i>si</i></b> __⇒ <i>внешний идентификатор*</i>::: <b><i>sj</i></b></p>]
-	=> .system_element_3494: [<p><b><i>si</i></b> __:= <b><i>sj</i></b></p>]
+	=> .system_element_3493: [<p><b><i>si</i></b> __:= <b><i>sj</i></b></p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
@@ -188,7 +188,7 @@
 	*);;
 
 	[<p><b><i>si</i></b> ⇔ <i>синонимия*</i>: <b><i>sj</i></b></p>]
-	=> .system_element_3494: [<p><b><i>si</i></b> = <b><i>sj</i></b></p>]
+	=> .system_element_3493: [<p><b><i>si</i></b> = <b><i>sj</i></b></p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
@@ -200,7 +200,7 @@
 	*);;
 
 	[<p><b><i>si</i></b> ⇒ <i>погружение*</i>: <b><i>sj</i></b></p>]
-	=> .system_element_3494: [<p><b><i>si</i></b> ⊃= <b><i>sj</i></b></p>]
+	=> .system_element_3493: [<p><b><i>si</i></b> ⊃= <b><i>sj</i></b></p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;

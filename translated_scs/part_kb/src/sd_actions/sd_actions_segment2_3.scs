@@ -1,7 +1,7 @@
 .sd_actions_segment2_3 = [*
-.system_element_4550
+.system_element_4549
 => nrel_inclusion: [*
-	<- .system_element_4647;;
+	<- .system_element_4646;;
 
 	task
 	=> nrel_idtf: [<p>описание желаемого состояния или события в рамках внешней среды кибернетической системы либо в рамках её базы знаний</p>]
@@ -67,7 +67,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_3340: [<p>Экземпляры класса <b><i>задач</i></b> в рамках <i>Русского языка</i> именуются по следующим правилам:
+	=> .system_element_3339: [<p>Экземпляры класса <b><i>задач</i></b> в рамках <i>Русского языка</i> именуются по следующим правилам:
 	<ul>
 		<li> в начале идентификатора пишется слово "<i>Задача</i>" и ставится точка;
 		<li> далее с прописной буквы идет либо содержащее глагол совершенного вида в инфинитиве описание сути того, что требуется получить в результате выполнения действия, либо вопросительное предложение, являющееся спецификацией запрашиваемой (ответной) информации.</li>
@@ -95,7 +95,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> nrel_inclusion: .system_element_4891
+	=> nrel_inclusion: .system_element_4890
 	(*
 		=> nrel_idtf: [<p>формулировка задачи, которая подлежит выполнению</p>]
 		(*
@@ -130,7 +130,7 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	=> nrel_inclusion: .system_element_4892
+	=> nrel_inclusion: .system_element_4891
 	(*
 		=> nrel_idtf: [<p>задача, в формулировке которой присутствуют как декларативные (целевые), так и процедурные аспекты</p>]
 		(*
@@ -143,7 +143,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> nrel_inclusion: .system_element_4893
+	=> nrel_inclusion: .system_element_4892
 	(*
 		=> nrel_idtf: [<p>проблемная задача</p>];;
 		=> nrel_idtf: [<p>сложная, трудно решаемая задача</p>]
@@ -151,7 +151,7 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
-		=> nrel_inclusion: .system_element_4894;;
+		=> nrel_inclusion: .system_element_4893;;
 	*);;
 
 	procedural_formulation_of_task
@@ -177,7 +177,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<= nrel_second_domain: .system_element_4599;
+	<= nrel_second_domain: .system_element_4598;
 	=> nrel_idtf: [<p>описание исходной (начальной) ситуации, являющейся условием выполнения соответствующего действия и целевой (конечной) ситуации, являющейся результатом выполнения этого действия</p>]
 	(*
 		<- lang_ru;;
@@ -224,10 +224,10 @@
 	*);;
 
 	task
-	=> nrel_inclusion: .system_element_4895
+	=> nrel_inclusion: .system_element_4894
 	(*
+		=> nrel_inclusion: .system_element_4895;;
 		=> nrel_inclusion: .system_element_4896;;
-		=> nrel_inclusion: .system_element_4897;;
 		=> nrel_idtf: [<p>информационная задача</p>]
 		(*
 			<- lang_ru;;
@@ -238,14 +238,14 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
-		=> nrel_inclusion: .system_element_4898;;
+		=> nrel_inclusion: .system_element_4897;;
 	*);
+	=> nrel_inclusion: .system_element_4898;
 	=> nrel_inclusion: .system_element_4899;
-	=> nrel_inclusion: .system_element_4900;
-	=> nrel_inclusion: .system_element_4901
+	=> nrel_inclusion: .system_element_4900
 	(*
 		=> nrel_idtf: [<p>интеллектуальная информационная задача</p>];;
-		=> nrel_inclusion: .system_element_4902;;
+		=> nrel_inclusion: .system_element_4901;;
 	*);;
 
 	task_question
@@ -254,16 +254,16 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<= nrel_inclusion: .system_element_4895;
+	<= nrel_inclusion: .system_element_4894;
 	=> nrel_idtf: [<p>непроцедурная формулировка задачи на поиск (в текущем состоянии базы знаний) или на генерацию знания, удовлетворяющего заданным требованиям</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
+	=> nrel_inclusion: .system_element_4902;
 	=> nrel_inclusion: .system_element_4903;
 	=> nrel_inclusion: .system_element_4904;
-	=> nrel_inclusion: .system_element_4905;
-	=> nrel_inclusion: .system_element_4906
+	=> nrel_inclusion: .system_element_4905
 	(*
 		=> nrel_idtf: [<p>каким способом</p>];;
 		=> nrel_idtf: [<p>запрос метода (способа) решения заданного (указываемого) вида задач или класса задач либо, плана решения конкретной указываемой задачи</p>]
@@ -302,8 +302,8 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4907
-	-> .system_element_4908
+	.system_element_4906
+	-> .system_element_4907
 	(*
 		<- auxiliary_concept;;
 		=> nrel_idtf: [<p>формулировка задачи*</p>]
@@ -317,19 +317,19 @@
 			=> nrel_format: format_html;;
 		*);;
 		=> nrel_subdividing: {
-			.system_element_4599;
-			.system_element_4600
+			.system_element_4598;
+			.system_element_4599
 		};;
-		=> nrel_second_domain: .system_element_4909
+		=> nrel_second_domain: .system_element_4908
 		(*
 			<- main_concept;;
+			=> nrel_inclusion: .system_element_4909;;
 			=> nrel_inclusion: .system_element_4910;;
+			=> nrel_inclusion: .system_element_1309;;
 			=> nrel_inclusion: .system_element_4911;;
-			=> nrel_inclusion: .system_element_1310;;
-			=> nrel_inclusion: .system_element_4912;;
 		*);;
 	*);
-	-> .system_element_4913
+	-> .system_element_4912
 	(*
 		<- auxiliary_concept;;
 		=> nrel_idtf: [<p>описание исходной ситуации и целевой ситуации специфицируемого действия*</p>]
@@ -350,7 +350,7 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	-> .system_element_4914
+	-> .system_element_4913
 	(*
 		<- auxiliary_concept;;
 		=> nrel_explanation: [<p><i>процедурная формулировка задачи</i> включает в себя указание:
@@ -378,11 +378,11 @@
 	*);;
 *];;
 
-.system_element_4915
+.system_element_4914
 => nrel_inclusion: [*
-	<- .system_element_4647;;
+	<- .system_element_4646;;
 
-	.system_element_4708
+	.system_element_4707
 	=> nrel_idtf: [<p>отношение, заданное на множестве действий*</p>]
 	(*
 		<- lang_ru;;
@@ -399,7 +399,7 @@
 		*);;
 		<- binary_relation;;
 		<- taxonomy_relation;;
-		<=> .system_element_1078: .system_element_4916;;
+		<=> .system_element_1077: .system_element_4915;;
 		=> nrel_idtf: [<p>быть действием, являющимся частью заданного действия более высокого уровня иерархии*</p>]
 		(*
 			<- lang_ru;;
@@ -410,7 +410,7 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
-		=> nrel_inclusion: .system_element_4917
+		=> nrel_inclusion: .system_element_4916
 		(*
 			=> nrel_idtf: [<p>быть таким поддействием заданного действия, для которого не существует наддействия, которое было бы также поддействием заданного действия*</p>]
 			(*
@@ -420,28 +420,28 @@
 		*);;
 	*);;
 
-	.system_element_4111
-	=> nrel_inclusion: .system_element_4918
+	.system_element_4110
+	=> nrel_inclusion: .system_element_4917
 	(*
 		=> .system_element_137: [<p>спецификация действия*</p>];;
 		=> nrel_subdividing: {
-			.system_element_798
+			.system_element_797
 			(*
 				=> nrel_subdividing: {
-					.system_element_4599
+					.system_element_4598
 					(*
 						=> nrel_second_domain: declarative_formulation_of_task;;
 					*);
-					.system_element_4600
+					.system_element_4599
 					(*
 						=> nrel_second_domain: procedural_formulation_of_task;;
 					*)
 				};;
 			*);
-			.system_element_4919;
+			.system_element_4918;
 			.system_element_219;
+			.system_element_4919;
 			.system_element_4920;
-			.system_element_4921;
 			nrel_context_of_action
 			(*
 				=> nrel_idtf: [<p>информационный ресурс необходимый для выполнения заданного действия*</p>]
@@ -450,7 +450,7 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);
-			.system_element_4922
+			.system_element_4921
 			(*
 				=> nrel_idtf: [<p>множество методов, используемых для выполнения заданного действия*</p>];;
 				=> nrel_idtf: [<p>операционный (функциональный) ресурс, необходимый для выполнения заданного действия*</p>]
@@ -459,8 +459,8 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);
-			.system_element_4603;
-			.system_element_4604
+			.system_element_4602;
+			.system_element_4603
 		};;
 	*);
 	=> nrel_note: [<p>Таким образом, каждому <i>действию</i> может быть поставлен в соответствие целый ряд видов спецификации этого <i>действия</i>, которые описывают различные аспекты специфицируемого действия --- и то, что является причиной (условием) инициирования этого действия, и то, что является результатом (сухим остатком) его выполнения, и то, и то, с помощью таких ресурсов оно может быть выполнено, и то, как управлять этими ресурсами в процессе выполнения действия, и то, как на самом деле это действие было выполнено.</p>]
@@ -475,14 +475,21 @@
 		(*
 			<=> .system_element_151: <
 				question;
-				.system_element_798
+				.system_element_797
 			>;;
 		*);
 		...
 		(*
 			<=> .system_element_151: <
 				question;
-				.system_element_3376
+				.system_element_3375
+			>;;
+		*);
+		...
+		(*
+			<=> .system_element_151: <
+				question;
+				.system_element_4598
 			>;;
 		*);
 		...
@@ -496,7 +503,7 @@
 		(*
 			<=> .system_element_151: <
 				question;
-				.system_element_4600
+				.system_element_4919
 			>;;
 		*);
 		...
@@ -510,7 +517,7 @@
 		(*
 			<=> .system_element_151: <
 				question;
-				.system_element_4921
+				.system_element_4602
 			>;;
 		*);
 		...
@@ -519,17 +526,10 @@
 				question;
 				.system_element_4603
 			>;;
-		*);
-		...
-		(*
-			<=> .system_element_151: <
-				question;
-				.system_element_4604
-			>;;
 		*)
 	};;
 
-	.system_element_4918
+	.system_element_4917
 	=> nrel_idtf: [<p>спецификация действия*</p>]
 	(*
 		<- lang_ru;;
@@ -568,11 +568,11 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4923
-	-> .system_element_4924
+	.system_element_4922
+	-> .system_element_4923
 	(*
-		<= nrel_inclusion: .system_element_4111;;
-		=> nrel_second_domain: .system_element_4742
+		<= nrel_inclusion: .system_element_4110;;
+		=> nrel_second_domain: .system_element_4741
 		(*
 			=> nrel_explanation: [<p>В состав такой спецификации действия входят:
 			<ul>
@@ -584,8 +584,8 @@
 				<- lang_ru;;
 				=> nrel_format: format_html;;
 			*);;
+			=> nrel_inclusion: .system_element_4924;;
 			=> nrel_inclusion: .system_element_4925;;
-			=> nrel_inclusion: .system_element_4926;;
 			=> nrel_note: [<p><i>декларативная спецификация выполнения действия</i> --- это такой выделенный фрагмент <i>базы знаний</i> (такой <i>контекст*</i> выполнения соответствующего конкретного <i>действия</i>), которого <u>достаточно</u> для выполнения этого <i>действия</i> с помощью заданного множества <i>методов</i>, используемых в рамках указанного <i>контекста*</i>. При этом важна <u>минимизация</u> и самого <i>контекста*</i> и <i>множества используемых методов*</i>.</p>]
 			(*
 				<- lang_ru;;
@@ -593,7 +593,7 @@
 			*);;
 		*);;
 	*);
-	-> .system_element_4927
+	-> .system_element_4926
 	(*
 		=> nrel_idtf: [<p>задачная ситуация*</p>];;
 		=> nrel_idtf: [<p>что дано*</p>]
@@ -626,8 +626,8 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	-> .system_element_4928;
-	-> .system_element_4929
+	-> .system_element_4927;
+	-> .system_element_4928
 	(*
 		<- auxiliary_concept;;
 		=> nrel_idtf: [<p>декомпозиция выполненного действия на систему последовательно-параллельно выполненных его <u>под</u>действий*</p>]
@@ -661,7 +661,7 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	-> .system_element_4930
+	-> .system_element_4929
 	(*
 		<- auxiliary_concept;;
 		=> nrel_idtf: [<p>часть протокола соответствующего выполненного действия, которая включает в себя только те его поддействия, которые действительно внесли вклад в построение результата (сухого остатка) этого выполненного действия*</p>]
@@ -680,7 +680,7 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	-> .system_element_4931
+	-> .system_element_4930
 	(*
 		<- decomposition_relation;;
 		<- quasybinary_relation;;
@@ -695,7 +695,7 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	-> .system_element_4932
+	-> .system_element_4931
 	(*
 		=> nrel_idtf: [<p>исходная ситуация, соответствующая заданному действию*</p>];;
 		=> nrel_idtf: [<p>начальная ситуация действия*</p>]
@@ -713,10 +713,10 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
-		<= nrel_inclusion: .system_element_4111;;
+		<= nrel_inclusion: .system_element_4110;;
 		=> nrel_second_domain: situation;;
 	*);
-	-> .system_element_4933
+	-> .system_element_4932
 	(*
 		=> nrel_idtf: [<p>результирующая ситуация, соответствующая заданному действию*</p>];;
 		=> nrel_idtf: [<p>конечная ситуация, соответствующая заданному действию*</p>]
@@ -724,13 +724,13 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
-		<= nrel_inclusion: .system_element_4111;;
+		<= nrel_inclusion: .system_element_4110;;
 		=> nrel_second_domain: situation;;
 	*);
-	-> .system_element_4934
+	-> .system_element_4933
 	(*
 		=> nrel_idtf: [<p>целевая ситуация*</p>];;
-		<= nrel_inclusion: .system_element_4111;;
+		<= nrel_inclusion: .system_element_4110;;
 		=> nrel_second_domain: situation;;
 		=> nrel_idtf: [<p>описание того, что требуется получить (какая ситуация должна быть достигнута) в результате выполнения заданного (специфицируемого) действия*</p>]
 		(*
@@ -800,7 +800,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_4935
+		.system_element_4934
 		(*
 			=> nrel_idtf: [<p>результат выполнения действия*</p>];;
 			=> nrel_idtf: [<p>результат решения задачи*</p>]
@@ -816,7 +816,7 @@
 		*)
 	};
 	-> {
-		.system_element_4936
+		.system_element_4935
 		(*
 			=> nrel_idtf: [<p>процесс доказательства утверждения</p>]
 			(*
@@ -824,7 +824,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_4937
+		.system_element_4936
 		(*
 			=> nrel_idtf: [<p>текст доказательства*</p>];;
 			=> nrel_idtf: [<p>текст, обосновывающий истинность доказываемого утверждения*</p>]
