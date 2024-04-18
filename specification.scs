@@ -11,6 +11,17 @@ ostis_standard_specification = [*
     <- concept_reusable_dynamically_installed_component;;
     <- concept_reusable_source_code_component;;
 
+    => nrel_decomposition:
+      {
+        part_1_introduction_to_next_generation_intelligent_computer_systems;
+        part_2_semantic_representation_and_ontological_systematization_of_knowledge_in_intelligent_computer_systems_of_the_new_generation;
+        part_3_multiagent_problem_solvers_of_intelligent_computer_systems_of_the_new_generation;
+        part_4_ontological_models_of_interfaces_of_intelligent_computer_systems_of_the_new_generation;
+        part_5_intelligent_computer_systems_new_generation_implementation_platforms;
+        part_6_methods_and_tools_of_reengineering_and_use_of_intelligent_computer_systems_new_generation;
+        part_7_ecosystem_of_intelligent_computer_systems_of_the_new_generation_and_their_users
+      };;
+
     => nrel_main_idtf: [Стандарт OSTIS](* <- lang_ru;; *);;
 
     => nrel_authors:
