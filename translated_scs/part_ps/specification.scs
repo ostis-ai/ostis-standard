@@ -1,0 +1,44 @@
+part_3_specification
+    <- concept_reusable_component_specification;;
+
+part_3_specification = [*
+part_3_multiagent_problem_solvers_of_intelligent_computer_systems_of_the_new_generation
+    <- concept_reusable_component;
+    <- concept_atomic_reusable_component;
+    <- concept_independent_reusable_component;
+    <- concept_reusable_kb_component;
+    <- concept_reusable_dynamically_installed_component;
+    <- concept_reusable_source_code_component;
+
+    => nrel_main_idtf: [Часть 3 Стандарта OSTIS. Многоагентные решатели задач интеллектуальных компьютерных систем нового поколения](* <- lang_ru;; *);
+
+    -> rrel_key_sc_element: 
+      {
+        concept_action_in_sc_memory;
+        concept_abstract_sc_agent;
+        concept_sc_agent;
+        concept_scp_program;
+        concept_scp_operator;
+        concept_artificial_neural_network;
+        concept_abstract_scp_machine;
+        concept_action_of_processing_artificial_neural_networks
+      };
+      
+    => nrel_explanation: [Компонент описывает многоагентные решатели задач.](* <- lang_ru;; *);
+    => nrel_note: [Уточнение понятий действия, задачи, метода, средства, навыка и технологии. Принципы программированияв ostis-системах. Принципы разработки различных видов решателей задач в многоагентных ostis-системах.] (* <- lang_ru;; *);
+    => nrel_authors: ... 
+      (* 
+        -> Zotov;;
+        -> Shunkevich;;
+        -> Mikhno;;
+        -> Kroschenko;;
+        -> Kovalev;;
+        -> Serdyukov;;
+        -> Orlov;;
+        -> Butrin;;
+      *);
+
+    => nrel_component_dependencies: ... (* <- empty_set;; *);
+    => nrel_component_address: [https://github.com/ostis-ai/ostis-standard/tree/main/translated_scs/part_ps] (* <- concept_github_url;; *);
+    => nrel_installation_method: ... (* <- concept_component_dynamically_installed_method;; *);;
+*];;
