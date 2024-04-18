@@ -1,7 +1,7 @@
-.system_element_3090
+.system_element_3352
 => nrel_inclusion: [*
 
-	.system_element_3091
+	.system_element_3353
 	=> nrel_idtf: [<p>Предметная область темпоральных связей и отношений</p>]
 	(*
 		<- lang_ru;;
@@ -13,7 +13,7 @@
 		=> nrel_format: format_html;;
 	*);
 	<- subject_domain;
-	-> .system_element_2: 
+	-> .system_element_112: 
 		last_entity;
 		real_entity;
 		future_entity;
@@ -33,19 +33,19 @@
 		partial_situational_set;
 		temporal_connection;
 		temporal_relation;
-		.system_element_1930;
-		.system_element_1931;
-		.system_element_3092;
+		.system_element_830;
+		.system_element_831;
+		.system_element_3354;
 		millennium;
 		century;
 		year;
 		month;
-		.system_element_3093;
+		.system_element_3355;
 		hour;
 		minute;
 		second
 	;
-	-> .system_element_356: 
+	-> .system_element_1000: 
 		nrel_affecting_entity;
 		nrel_object_of_impact;
 		nrel_initial_situation;
@@ -71,7 +71,7 @@
 		rrel_number_of_century;
 		rrel_number_of_year;
 		rrel_number_of_month_in_year;
-		.system_element_3094;
+		.system_element_3356;
 		rrel_number_of_hour_in_day;
 		rrel_number_of_minute_in_hour;
 		rrel_number_of_second_in_minute
@@ -110,14 +110,14 @@
 	};
 	=> nrel_subdividing: {
 		temporary_connection;
-		.system_element_3095
+		.system_element_3357
 		(*
 			=> nrel_idtf: [<p>структура, содержащая хотя бы одну временную сущность</p>];;
 			=> nrel_inclusion: structure;;
 			=> nrel_note: [<p>Следует отличать:
 			<ul>
-				<li> временный характер самой структуры как sc-элемента
-				<li> временный характер sc-элементов, принадлежащих данной структуре, и сущностей, обозначаемых этими sc-элементами
+				<li> временный характер самой структуры как sc-элемента;
+				<li> временный характер sc-элементов, принадлежащих данной структуре, и сущностей, обозначаемых этими sc-элементами;
 				<li> временный характер пар принадлежности, связывающих структуру с ее элементами.</li>
 			<ul></p>]
 			(*
@@ -152,10 +152,10 @@
 		material_entity
 	};
 	=> nrel_subdividing: {
-		.system_element_3096
+		.system_element_3358
 		(*
 			=> nrel_subdividing: {
-				.system_element_3097
+				.system_element_3359
 				(*
 					=> nrel_idtf: [<p>атомарная временная сущность</p>];;
 					=> nrel_idtf: [<p>условно мгновенная временная сущность</p>]
@@ -169,10 +169,10 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);
-				.system_element_3098
+				.system_element_3360
 			};;
 		*);
-		.system_element_3099
+		.system_element_3361
 		(*
 			=> nrel_idtf: [<p>временная сущность, которая может быть декомпозирована на последовательность точечных временных сущностей</p>];;
 			=> nrel_idtf: [<p>временная сущность, которой соответствует некоторый временной ряд параметров (состояний) точечных временных сущностей, на которые декомпозируется исходная временная сущность</p>]
@@ -181,7 +181,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_3100
+		.system_element_3362
 		(*
 			=> nrel_idtf: [<p>временная сущность, являющаяся результатом соединения нескольких не только точечных временных сущностей</p>];;
 			=> nrel_idtf: [<p>временная сущность с прерываниями</p>]
@@ -208,12 +208,12 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_461
+	.system_element_377
 	-> {
 		temporary_entity;
 		process
 	};
-	=> nrel_note: [<p>Следует отличать, например, <i>материальную сущность</i> (некоторый физический или, в частности, биологический объект) от различных динамических структур (<i>процессов</i>), которые с той или иной степенью детализации и в том или ином ракурсе отражают (описывают) динамику изменений этой <i>материальной сущности</i>. При этом сам <i>процесс</i> как уточнение динамики некоторой последовательности ситуаций и событий, также является сущностью, принадлежащей к классу <i>временных сущностей</i>.</p>]
+	=> nrel_note: [<p>Следует отличать, например, <i>материальную сущность</i> (некоторый физический или, в частности, биологический объект) от различных динамических структур (<i>процессов</i>), которые с той или иной степенью детализации и в том или ином ракурсе отражают (описывают) динамику изменений этой <i>материальной сущности</i>.При этом сам <i>процесс</i> как уточнение динамики некоторой последовательности ситуаций и событий, также является сущностью, принадлежащей к классу <i>временных сущностей</i>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
@@ -381,7 +381,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> nrel_note: [<p>Поскольку <i>процесс</i> представляет собой изменяющуюся во времени динамическую структуру, то полностью представить процесс в базе знаний в общем случае не представляется возможным. Однако, можно ввести sc-элемент, обозначающий конкретный процесс, с необходимой степенью детализации описать его декомпозицию на более частные подпроцессы и/или описать ситуации, соответствующие состояниям процесса в разные моменты времени. В данном случае можно провести некоторую аналогию с <i>бесконечными множествами</i>, все элементы которых физически не могут быть представлены в базе знаний одновременно, тем не менее, само множество и некоторые из его элементов могут быть описаны с необходимой степенью детализации.</p>]
+	=> nrel_note: [<p>Поскольку <i>процесс</i> представляет собой изменяющуюся во времени динамическую структуру, то полностью представить процесс в базе знаний в общем случае не представляется возможным. Однако, можно ввести sc-элемент, обозначающий конкретный процесс, с необходимой степенью детализации описать его декомпозицию на более частные подпроцессы и/или описать ситуации, соответствующие состояниям процесса в разные моменты времени.В данном случае можно провести некоторую аналогию с <i>бесконечными множествами</i>, все элементы которых физически не могут быть представлены в базе знаний одновременно, тем не менее, само множество и некоторые из его элементов могут быть описаны с необходимой степенью детализации.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
@@ -400,7 +400,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3101
+	.system_element_3363
 	=> nrel_idtf: [<p>начальная ситуация процесса*</p>]
 	(*
 		<- lang_ru;;
@@ -448,7 +448,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3081
+	.system_element_3364
 	=> nrel_idtf: [<p>атомарный процесс</p>]
 	(*
 		<- lang_ru;;
@@ -464,15 +464,15 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<= nrel_inclusion: .system_element_3097;;
+	<= nrel_inclusion: .system_element_3359;;
 
-	.system_element_3082
+	.system_element_3365
 	=> nrel_idtf: [<p>процесс, детализация которого на входящие в него подпроцессы в текущем контексте не производится</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> nrel_inclusion: .system_element_3081;
+	=> nrel_inclusion: .system_element_3364;
 	=> nrel_note: [<p>Элементарные процессы могут иметь длительность и, следовательно, не обязательно являются атомарными процессами.</p>]
 	(*
 		<- lang_ru;;
@@ -482,11 +482,11 @@
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
-		<= nrel_note: .system_element_3081;;
+		<= nrel_note: .system_element_3364;;
 	*);;
 
-	.system_element_3071
-	<= nrel_inclusion: .system_element_3097;
+	.system_element_1956
+	<= nrel_inclusion: .system_element_3359;
 	=> nrel_idtf: [<p>точечная временная сущность, являющаяся началом и/или завершением какой-либо временной сущности (например, процесса)</p>]
 	(*
 		<- lang_ru;;
@@ -497,32 +497,32 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_1913: "file://images/sd_temp_entities/event.png"
+	=> .system_element_232: "file://images/sd_temp_entities/event.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
-	*);
-	=> nrel_note: [<p>Одно и то же событие может быть одновременно завершением одной временной сущности и началом другой. В приведенном примере событие <b>ei</b> является завершением временной сущности <b>si</b> и началом временной сущности <b>sj</b>.</p>]
-	(*
-		<- lang_ru;;
-		=> nrel_format: format_html;;
+		=> nrel_note: [<p>Одно и то же событие может быть одновременно завершением одной временной сущности и началом другой. В приведенном примере событие <b>ei</b> является завершением временной сущности <b>si</b> и началом временной сущности <b>sj</b>.</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
 	*);;
 
-	.system_element_3102
+	.system_element_3366
 	=> nrel_idtf: [<p>быть начальным событием заданной временной сущности*</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
 	=> nrel_first_domain: temporary_entity;
-	=> nrel_second_domain: .system_element_3071;
+	=> nrel_second_domain: .system_element_1956;
 	=> nrel_idtf: [<p>быть начальной точечной временной частью заданной временной сущности*</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3103
+	.system_element_3367
 	=> nrel_idtf: [<p>конец*</p>]
 	(*
 		<- lang_ru;;
@@ -539,7 +539,7 @@
 		=> nrel_format: format_html;;
 	*);
 	=> nrel_first_domain: temporary_entity;
-	=> nrel_second_domain: .system_element_3071;;
+	=> nrel_second_domain: .system_element_1956;;
 
 	nrel_event
 	<- binary_relation;
@@ -548,19 +548,19 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_1913: "file://images/sd_temp_entities/nrel_event.png"
+	=> .system_element_232: "file://images/sd_temp_entities/nrel_event.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);;
 
-	.system_element_3104
-	=> nrel_idtf: [<p>Бинарное ориентированное отношение, каждая связка которого связывает некоторый процесс с более детальным его описанием, что предполагает представление декомпозиции этого процесса на систему взаимосвязанных его подпроцессов (в том числе элементарных).</p>]
+	.system_element_3368
+	=> nrel_idtf: [<p>бинарное ориентированное отношение, каждая связка которого связывает некоторый процесс с более детальным его описанием, что предполагает представление декомпозиции этого процесса на систему взаимосвязанных его подпроцессов (в том числе элементарных).</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_67: [<p>Переход от процесса, соответствующего какой-либо программе, к рассмотрению декомпозиции этого процесса (протокола) в терминах языка программирования высокого уровня, затем переход для каждого из полученных подпроцессов (операторов языка высокого уровня) к детализации выполнения этих подпроцессов на уровне машинных операций, выполняемых процессором компьютера (на уровне ассемблера), и далее к детализации выполнения подпроцессов уровня машинных операций к подпроцессам на уровне языка микропрограммирования. Таким образом, детализация процесса может быть иерархической, вплоть до уровня <i>элементарных процессов</i>.</p>]
+	=> .system_element_231: [<p>Переход от процесса, соответствующего какой-либо программе, к рассмотрению декомпозиции этого процесса (протокола) в терминах языка программирования высокого уровня, затем переход для каждого из полученных подпроцессов (операторов языка высокого уровня) к детализации выполнения этих подпроцессов на уровне машинных операций, выполняемых процессором компьютера (на уровне ассемблера), и далее к детализации выполнения подпроцессов уровня машинных операций к подпроцессам на уровне языка микропрограммирования. Таким образом, детализация процесса может быть иерархической, вплоть до уровня <i>элементарных процессов</i>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
@@ -612,7 +612,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> nrel_explanation: [<p>Под <b><i>ситуативным множеством</i></b> понимается постоянное множество, у которого все выходящие из него связи принадлежности являются <i>временными сущностями</i>.В частности, ситуативное множество может использоваться как вспомогательная динамическая структура, которая содержит элементы некоторых структур, обрабатываемые в данный момент, например, это может быть копия некоторого множества, из которой постепенно удаляются элементы по мере их просмотра и обработки. В случае, когда такая структура содержит всего один элемент, ее можно считать  на данный элемент, при этом в разные моменты времени это могут быть разные элементы.</p>]
+	=> nrel_explanation: [<p>Под <b><i>ситуативным множеством</i></b> понимается постоянное множество, у которого все выходящие из него связи принадлежности являются <i>временными сущностями</i>. В частности, ситуативное множество может использоваться как вспомогательная динамическая структура, которая содержит элементы некоторых структур, обрабатываемые в данный момент, например, это может быть копия некоторого множества, из которой постепенно удаляются элементы по мере их просмотра и обработки. В случае, когда такая структура содержит всего один элемент, ее можно считать  на данный элемент, при этом в разные моменты времени это могут быть разные элементы.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
@@ -662,7 +662,7 @@
 	-> nrel_temporal_inclusion;
 	-> nrel_temporal_union;
 	-> nrel_temporal_decomposition;
-	-> .system_element_3105;
+	-> .system_element_3369;
 	=> nrel_subdividing: {
 		nrel_temporal_adjacency;
 		nrel_temporal_sequence_with_gap;
@@ -695,15 +695,17 @@
 	=> nrel_inclusion: nrel_first_stage;
 	=> nrel_inclusion: nrel_final_stage;
 	=> nrel_inclusion: nrel_intermediate_stage;
-	=> nrel_inclusion: .system_element_3106;
-	=> nrel_first_domain: process;
-	=> nrel_second_domain: process;
-	=> .system_element_1913: "file://images/sd_temp_entities/temporal_part.png"
+	=> nrel_inclusion: .system_element_3370
+	(*
+		=> nrel_first_domain: process;;
+		=> nrel_second_domain: process;;
+	*);
+	=> .system_element_232: "file://images/sd_temp_entities/temporal_part.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);
-	=> .system_element_52: "file://images/sd_temp_entities/img_temporal_part.png"
+	=> .system_element_1977: "file://images/sd_temp_entities/img_temporal_part.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
@@ -714,11 +716,11 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_461
+	.system_element_377
 	-> {
 		nrel_temporal_part
 		(*
-			=> nrel_inclusion: .system_element_3106;;
+			=> nrel_inclusion: .system_element_3370;;
 		*);
 		nrel_temporal_inclusion
 		(*
@@ -736,36 +738,36 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_1913: "file://images/sd_temp_entities/strict_temporal_inclusion.png"
+	=> .system_element_232: "file://images/sd_temp_entities/strict_temporal_inclusion.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);
-	=> .system_element_52: "file://images/sd_temp_entities/img_strict_temporal_inclusion.png"
+	=> .system_element_1977: "file://images/sd_temp_entities/img_strict_temporal_inclusion.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);;
 
 	nrel_temporal_inclusion_with_coincidence_of_the_initial_moments
-	=> .system_element_1913: "file://images/sd_temp_entities/temporal_include_with_match_start_points.png"
+	=> .system_element_232: "file://images/sd_temp_entities/temporal_include_with_match_start_points.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);
-	=> .system_element_52: "file://images/sd_temp_entities/img_temporal_include_with_match_start_points.png"
+	=> .system_element_1977: "file://images/sd_temp_entities/img_temporal_include_with_match_start_points.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);;
 
 	nrel_temporal_inclusion_with_coincidence_of_the_final_moments
-	=> .system_element_1913: "file://images/sd_temp_entities/temporal_include_with_terminal_point_match.png"
+	=> .system_element_232: "file://images/sd_temp_entities/temporal_include_with_terminal_point_match.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);
-	=> .system_element_52: "file://images/sd_temp_entities/img_temporal_include_with_terminal_point_match.png"
+	=> .system_element_1977: "file://images/sd_temp_entities/img_temporal_include_with_terminal_point_match.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
@@ -785,18 +787,18 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<=> .system_element_3108: .system_element_3107;
+	<=> .system_element_187: .system_element_3371;
 	=> nrel_note: [<p>С формальной точки зрения объединять можно любые временные сущности. Но делать это надо только тогда, когда это имеет смысл, точно так же, как и в случае объединения множеств.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_1913: "file://images/sd_temp_entities/temporal_union.png"
+	=> .system_element_232: "file://images/sd_temp_entities/temporal_union.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);
-	=> .system_element_52: "file://images/sd_temp_entities/img_temporal_union.png"
+	=> .system_element_1977: "file://images/sd_temp_entities/img_temporal_union.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
@@ -808,13 +810,13 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<=> .system_element_3108: nrel_subdividing;
-	=> .system_element_1913: "file://images/sd_temp_entities/temporal_decomposition.png"
+	<=> .system_element_187: nrel_subdividing;
+	=> .system_element_232: "file://images/sd_temp_entities/temporal_decomposition.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);
-	=> .system_element_52: "file://images/sd_temp_entities/img_temporal_decomposition.png"
+	=> .system_element_1977: "file://images/sd_temp_entities/img_temporal_decomposition.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
@@ -841,12 +843,12 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_1913: "file://images/sd_temp_entities/temporal_adjacency.png"
+	=> .system_element_232: "file://images/sd_temp_entities/temporal_adjacency.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);
-	=> .system_element_52: "file://images/sd_temp_entities/img_temporal_adjacency.png"
+	=> .system_element_1977: "file://images/sd_temp_entities/img_temporal_adjacency.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
@@ -858,30 +860,30 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_1913: "file://images/sd_temp_entities/temporal_sequence_with_intermediate.png"
+	=> .system_element_232: "file://images/sd_temp_entities/temporal_sequence_with_intermediate.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);
-	=> .system_element_52: "file://images/sd_temp_entities/img_temporal_sequence_with_intermediate.png"
+	=> .system_element_1977: "file://images/sd_temp_entities/img_temporal_sequence_with_intermediate.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);;
 
 	nrel_temporal_sequence_with_intersection
-	=> .system_element_1913: "file://images/sd_temp_entities/temporal_sequence_with_intersection.png"
+	=> .system_element_232: "file://images/sd_temp_entities/temporal_sequence_with_intersection.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);
-	=> .system_element_52: "file://images/sd_temp_entities/img_temporal_cross_sequence.png"
+	=> .system_element_1977: "file://images/sd_temp_entities/img_temporal_cross_sequence.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);;
 
-	.system_element_1930
+	.system_element_830
 	=> nrel_idtf: [<p>одновременность начинаний^</p>]
 	(*
 		<- lang_ru;;
@@ -898,7 +900,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_1913: "file://images/sd_temp_entities/start.png"
+	=> .system_element_232: "file://images/sd_temp_entities/start.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
@@ -909,7 +911,7 @@
 		*);;
 	*);;
 
-	.system_element_1931
+	.system_element_831
 	=> nrel_idtf: [<p>конец^</p>]
 	(*
 		<- lang_ru;;
@@ -931,7 +933,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_1913: "file://images/sd_temp_entities/completion.png"
+	=> .system_element_232: "file://images/sd_temp_entities/completion.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
@@ -942,7 +944,7 @@
 		*);;
 	*);;
 
-	.system_element_3109
+	.system_element_3372
 	=> nrel_idtf: [<p>параметр, значениями (элементами) которого являются классы либо одновременно существующих (происходящих) <i>точечных временных сущностей</i>, одновременность которых рассматривается с заданной степенью точности, либо одновременно начинающихся и заканчивающихся длительных процессов</p>]
 	(*
 		<- lang_ru;;
@@ -953,7 +955,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_1913: "file://images/sd_temp_entities/simultaneity.png"
+	=> .system_element_232: "file://images/sd_temp_entities/simultaneity.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
@@ -964,8 +966,8 @@
 		*);;
 	*);;
 
-	.system_element_2129
-	=> .system_element_1913: "file://images/sd_temp_entities/temporal_values_join.png"
+	.system_element_3373
+	=> .system_element_232: "file://images/sd_temp_entities/temporal_values_join.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
@@ -976,13 +978,13 @@
 		*);;
 	*);;
 
-	.system_element_461
+	.system_element_377
 	-> {
 		nrel_temporal_concurrence
 		(*
 			<- equivalence_relation;;
 		*);
-		.system_element_3109
+		.system_element_3372
 		(*
 			=> nrel_idtf: [<p>фактор-множество для отношения темпоральное совпадение*</p>]
 			(*
@@ -992,7 +994,7 @@
 		*)
 	};;
 
-	.system_element_3092
+	.system_element_3354
 	=> nrel_idtf: [<p>класс временных сущностей, имеющих одинаковую длительность^</p>]
 	(*
 		<- lang_ru;;
@@ -1012,7 +1014,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_1913: "file://images/sd_temp_entities/duration.png"
+	=> .system_element_232: "file://images/sd_temp_entities/duration.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
