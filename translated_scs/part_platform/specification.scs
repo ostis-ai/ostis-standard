@@ -18,15 +18,17 @@ part_6_intelligent_computer_systems_new_generation_implementation_platforms
             concept_semantic_associative_computer;
             concept_software_version_of_the_interpretation_platform_of_computer_systems
         };
-    => nrel_note: [Описаны семантический ассоциативный компьютер и его программные реализации, реализация подсистемы взаимодействия.] (* <- lang_ru;; => nrel_format: format_html;; *);
-    => nrel_authors:
-        {
-            Shunkevich;
-            Koronchik;
-            Markovetc;
-            Zotov;
-            Orlov
-        };
+
+    => nrel_explanation: [Компонент ставит своей целью повышение производительности компьютерных систем, основанных на знаниях, представленных в виде семантических сетей.](* <- lang_ru;; *);
+    => nrel_note: [Описаны семантический ассоциативный компьютер и его программные реализации. Реализация подсистемы взаимодействия.] (* <- lang_ru;; => nrel_format: format_html;; *);
+    => nrel_authors: ... 
+        (*
+            -> Shunkevich;;
+            -> Koronchik;;
+            -> Markovetc;;
+            -> Zotov;;
+            -> Orlov;;
+        *);
 
     => nrel_component_dependencies: ... (* <- empty_set;; *);
     => nrel_component_address: [https://github.com/ostis-ai/ostis-standard/tree/main/translated_scs/part_platform] (* <- concept_github_url;; *);

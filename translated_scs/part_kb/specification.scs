@@ -31,18 +31,19 @@ part_2_semantic_representation_and_ontological_systematization_of_knowledge_in_i
         concept_file;
         concept_language
       };
-    => nrel_note: [Описаны виды языков и информационных конструкций в рамках соответствующей онтологии, уточнены модели смыслового представления знаний, использующей понятие смыслового пространства, способы внутреннего и внешнего представления информации ostis-систем, онтологическая систематизация фактографической и логической информации, средства описания структуры баз знаний, а также средства описания денотационной семантики и синтаксиса естественных языков в ostis-системах. Данная часть имеет важное значение для обеспечения семантической совместимости ostis-систем.] (* <- lang_ru;; *);
-    => nrel_authors:
-      {
-        Bober;
-        Nikiforov;
-        Zotov;
-        Shunkevich;
-        Sadovsky;
-        Bantsevich;
-        Orlov;
-        Vasilevskaya
-      };
+    => nrel_explanation: [Уточнение модели смыслового представления знаний, использующей понятие смыслового пространства, средства описания структуры баз знаний.] (* <- lang_ru;; *);
+    => nrel_note: [В части рассмотрено описание видов языков и информационных конструкций в рамках соответствующей онтологии, ажное значение для обеспечения семантической совместимости ostis-систем.] (* <- lang_ru;; *);
+    => nrel_authors: ... 
+      (* 
+        -> Bober;;
+        -> Nikiforov;;
+        -> Zotov;;
+        -> Shunkevich;;
+        -> Sadovsky;;
+        -> Bantsevich;;
+        -> Orlov;;
+        -> Vasilevskaya;;
+      *);
 
     => nrel_component_dependencies: ... (* <- empty_set;; *);
     => nrel_component_address: [https://github.com/ostis-ai/ostis-standard/tree/main/translated_scs/part_kb] (* <- concept_github_url;; *);
