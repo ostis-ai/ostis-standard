@@ -373,15 +373,15 @@
 				<- .system_element_375;
 				<- .system_element_376;
 				<- sc_lang;
-				<= nrel_inclusion: .system_element_377;
+				<= nrel_inclusion: .system_element_208;
 				=> nrel_inclusion: sc_memory;
 				=> nrel_authors: 
 					.system_element_327
 				;;
 
-				.system_element_378
+				.system_element_377
 				-> {
-					.system_element_377
+					.system_element_208
 					(*
 						=> nrel_idtf: [<p>Универсальный язык внутреннего смыслового представления знаний в памяти ostis-систем</p>]
 						(*
@@ -392,11 +392,11 @@
 					.system_element_362
 					(*
 						=> nrel_idtf: [<p>Метаязык описания представления SC-кода в sc-памяти ostis-платформы</p>];;
-						<= nrel_inclusion: .system_element_377;;
+						<= nrel_inclusion: .system_element_208;;
 					*)
 				};;
 
-				.system_element_379
+				.system_element_378
 				=> nrel_inclusion: [*
 					=> nrel_note: [<p>Одним из замечательных достоинств <i>SC-кода</i> является то, что синтаксис любого его <i>подъязыка</i> наследует свойства <i>Синтаксиса SC-кода</i>. То есть форма представления различных знаний, описываемых его подъязыками, остается одна и та же. В данном случае, <i>Синтаксис SCin-кода</i> не является исключением и уточняет семантику <i>Синтаксиса SC-кода</i>. При этом <i>Синтаксис SCin-кода</i>, как и синтаксис любого другого sc-языка, является частью <i>Денотационной семантики SCin-кода</i>. То есть <i>Синтаксис SCin-кода</i> описывает семантику того, как формируются sc.in-тексты при помощи <i>Синтаксических правил SCin-кода</i>. <b><i>Синтаксис SCin-кода</i></b> задается: (1) <i>Алфавитом SCin-кода</i>, (2) отношением инцидентности <i>sc-адрес элемента sc-памяти*</i>. <i>Алфавит SCin-кода^</i>, а также отношение инцидентности <i>sc-адрес элемента sc-памяти*</i> являются подмножествами <i>Алфавит SC-кода^</i> и отношений инцидентности <i>SC-кода</i> соответственно, при этом правила <i>Синтаксиса SCin-кода</i> включают правила <i>Синтаксиса SC-кода</i> и правила, которые уточняют нюансы <i>Синтаксиса SCin-кода</i>.</p>]
 					(*
@@ -404,7 +404,7 @@
 						=> nrel_format: format_html;;
 					*);;
 
-					.system_element_380
+					.system_element_379
 					=> nrel_idtf: [<p>синтаксический класс элемента sc-памяти</p>]
 					(*
 						<- lang_ru;;
@@ -425,11 +425,11 @@
 						<- lang_ru;;
 						=> nrel_format: format_html;;
 					*);
-					<= .system_element_381: .system_element_362;
+					<= .system_element_380: .system_element_362;
 					<=> .system_element_151: {
+						.system_element_381;
 						.system_element_382;
-						.system_element_383;
-						.system_element_384
+						.system_element_383
 						(*
 							<- singletone;;
 						*)
@@ -469,9 +469,9 @@
 					*);
 					<- sc_element;
 					=> nrel_inclusion: sc_element;
-					=> nrel_subdividing: .system_element_380;;
+					=> nrel_subdividing: .system_element_379;;
 
-					.system_element_385
+					.system_element_384
 					=> nrel_idtf: [<p>адрес элемента sc-памяти, соответствующего заданному sc-элементу, в рамках текущего варианта реализации sc-памяти</p>]
 					(*
 						<- lang_ru;;
@@ -504,9 +504,9 @@
 						<- lang_ru;;
 						=> nrel_format: format_html;;
 					*);
-					=> .system_element_386: 
-						.system_element_387;
-						.system_element_388
+					=> .system_element_385: 
+						.system_element_386;
+						.system_element_387
 					;
 					=> nrel_explanation: [<p>Для каждого <i>sc-адреса элемента sc-памяти</i> можно <i>взаимно однозначно</i> поставить в соответствие некоторый <i>хэш</i>, полученный в результате применения специальной <i>хэш-функции*</i> над этим <i>sc-адресом элемента sc-памяти</i>. <i>хэш</i> является <i>неотрицательным целым числом</i> и является результатом преобразования <i>номера sc-сегмента sc-памяти</i> <i>si</i>, в котором располагается <i>элемент sc-памяти</i>, и <i>номера</i> этого <i>элемента sc-памяти</i> <i>ei</i> <i>в рамках</i> этого <i>sc-сегмента</i> <i>si</i>. В рамках <i>sc-памяти</i> используется единственная <i>хеш-функция*</i> для получения <i>хеша sc-адреса элемента sc-памяти</i> и задается как f(si, ei) = si << 16 ∨ ei ∧ 0xffff, где операция << --- операция <i>битового сдвига влево*</i> левого аргумента на количество единиц, заданное правым аргументом, относительно этой операции, операция ∨ --- операция <i>битового сложения*</i>, операция ∧ --- операция <i>битового умножения*</i>, число 0xffff --- <i>Число 65535</i>, представленное в шестнадцатеричном виде и обозначающее максимальное количество элементов в одном <i>sc-сегменте sc-памяти</i>. Числовое выражение <i>sc-адреса</i> является <i>32-битовым целым числом</i>.</p>]
 					(*
@@ -519,7 +519,7 @@
 						=> nrel_format: format_html;;
 					*);;
 
-					.system_element_389
+					.system_element_388
 					=> nrel_idtf: [<p>класс всех синтаксических и семантических классов элементов sc-памяти</p>]
 					(*
 						<- lang_ru;;
@@ -543,10 +543,10 @@
 						<- .system_element_361;;
 					*);
 					=> nrel_subdividing: {
-						.system_element_390;
-						.system_element_391
+						.system_element_389;
+						.system_element_390
 					};
-					<= .system_element_392: [<p>В рамках любой <i>реализации sc-памяти</i> должен существовать набор <i>синтаксических</i> и <i>семантических классов элементов sc-памяти^</i> (меток), которые:
+					<= .system_element_391: [<p>В рамках любой <i>реализации sc-памяти</i> должен существовать набор <i>синтаксических</i> и <i>семантических классов элементов sc-памяти^</i> (меток), которые:
 					<ul>
 						<li> задают тип элемента на уровне <i>ostis-платформы</i> и не имеют соответствующей <i>sc-дуги принадлежности</i> (а точнее --- <i>базовой sc-дуги</i>), явно хранимой в рамках sc-памяти (ее наличие подразумевается, однако она не хранится явно, поскольку это приведет к бесконечному увеличению числа элементов, которые необходимо хранить в <i>sc-памяти</i>);
 						<li> могут быть представлены в виде параметров соответствующих <i>элементов sc-памяти</i>, то есть множеством таких элементов, каждый из которых имеет "метку", выраженную некоторым числовым значением;
@@ -557,22 +557,22 @@
 						=> nrel_format: format_html;;
 					*);;
 
-					.system_element_393
+					.system_element_392
 					=> nrel_inclusion: [*
 
 						.system_element_366
 						=> nrel_subdividing: {
+							.system_element_381
+							(*
+								<- .system_element_389;;
+							*);
 							.system_element_382
 							(*
-								<- .system_element_390;;
+								<- .system_element_389;;
 							*);
 							.system_element_383
 							(*
-								<- .system_element_390;;
-							*);
-							.system_element_384
-							(*
-								<- .system_element_390;;
+								<- .system_element_389;;
 							*)
 						};;
 					*];
@@ -587,11 +587,11 @@
 						=> nrel_format: format_html;;
 					*);;
 
-					.system_element_394
+					.system_element_393
 					=> nrel_subdividing: {
+						.system_element_394;
 						.system_element_395;
-						.system_element_396;
-						.system_element_397
+						.system_element_396
 					};
 					=> nrel_note: [<p>Несмотря на то, что отношение <i>sc-адрес элемента sc-памяти*</i> позволяет полностью описать связи <i>элементов sc-памяти</i>, для спецификации представления конструкций SC-кода внутри sc-памяти только одного отношения <i>sc-адрес элемента sc-памяти*</i> не всегда достаточно, чтобы полностью точно и ясно указывать связи между <i>элементами sc-памяти</i>, соответствующими <i>sc-элементам</i> этих конструкций. Поэтому на практике при описании представления <i>sc-конструкций</i> внутри <i>sc-памяти</i> необходимо использовать более частные отношения этого базового отношения, например, такие, как <i>sc-адрес элемента sc-памяти, соответствующего выходящему sc-коннектору из заданного sc-элемента*</i>, <i>sc-адрес элемента sc-памяти, соответствующего входящему sc-коннектору в заданный sc-элемент*</i> и <i>sc-адрес элемента sc-памяти, соответствующего инцидентному sc-элементу sc-коннектора*</i>.</p>]
 					(*
@@ -599,28 +599,28 @@
 						=> nrel_format: format_html;;
 					*);;
 
+					.system_element_394
+					=> nrel_subdividing: {
+						.system_element_397;
+						.system_element_398;
+						.system_element_399
+					};;
+
 					.system_element_395
 					=> nrel_subdividing: {
-						.system_element_398;
-						.system_element_399;
-						.system_element_400
+						.system_element_400;
+						.system_element_401;
+						.system_element_402
 					};;
 
 					.system_element_396
 					=> nrel_subdividing: {
-						.system_element_401;
-						.system_element_402;
-						.system_element_403
+						.system_element_403;
+						.system_element_404
 					};;
 
-					.system_element_397
-					=> nrel_subdividing: {
-						.system_element_404;
-						.system_element_405
-					};;
-
-					.system_element_379
-					=> .system_element_406: [<p>На синтаксические <i>конструкции SCin-кода</i>, кроме ограничения самого <i>SC-кода</i>, накладываются дополнительные ограничения:
+					.system_element_378
+					=> .system_element_405: [<p>На синтаксические <i>конструкции SCin-кода</i>, кроме ограничения самого <i>SC-кода</i>, накладываются дополнительные ограничения:
 
 					<ul>
 
@@ -639,7 +639,7 @@
 					*);;
 				*];;
 
-				.system_element_407
+				.system_element_406
 				=> nrel_inclusion: [*
 					=> nrel_note: [<p>Для каждого <i>класса sc-элементов</i> должна существовать программная модель <i>класса элементов sc-памяти^</i>, которая удовлетворяет всем перечисленным требованиям. Поэтому важно, чтобы <i>Алфавит SCin-кода</i> изначально был полон, чтобы погрузить не только <i>sc-конструкции</i> <i>Ядра SC-кода</i>, но и его расширенных версий. Для этого разработаны <b><i>семантические классы элементов sc-памяти^</i></b>, спецификация которых представляется в виде <b><i>Семантической классификации элементов SCin-кода</i></b>.</p>]
 					(*
@@ -647,117 +647,117 @@
 						=> nrel_format: format_html;;
 					*);;
 
-					.system_element_408
+					.system_element_407
 					=> nrel_inclusion: [*
 
 						.system_element_366
-						=> nrel_subdividing: .system_element_409
+						=> nrel_subdividing: .system_element_408
 						(*
 							<=> .system_element_151: {
+								.system_element_409
+								(*
+									<- .system_element_390;;
+								*);
 								.system_element_410
 								(*
-									<- .system_element_391;;
+									<- .system_element_390;;
 								*);
 								.system_element_411
 								(*
-									<- .system_element_391;;
-								*);
-								.system_element_412
-								(*
-									<- .system_element_391;;
+									<- .system_element_390;;
 								*)
 							};;
 						*);
-						=> nrel_subdividing: .system_element_413
+						=> nrel_subdividing: .system_element_412
 						(*
 							<=> .system_element_151: {
+								.system_element_413
+								(*
+									<- .system_element_390;;
+								*);
 								.system_element_414
 								(*
-									<- .system_element_391;;
-								*);
-								.system_element_415
-								(*
-									<- .system_element_391;;
+									<- .system_element_390;;
 								*)
 							};;
 						*);
-						=> nrel_subdividing: .system_element_416
+						=> nrel_subdividing: .system_element_415
 						(*
 							=> nrel_idtf: [<p>класс уровня доступа к элементу sc-памяти</p>];;
 							<=> .system_element_151: {
+								.system_element_416
+								(*
+									<- .system_element_390;;
+								*);
 								.system_element_417
 								(*
-									<- .system_element_391;;
-								*);
-								.system_element_418
-								(*
-									<- .system_element_391;;
+									<- .system_element_390;;
 								*)
 							};;
 						*);
-						=> nrel_inclusion: .system_element_419;;
+						=> nrel_inclusion: .system_element_418;;
 
-						.system_element_420
-						=> nrel_subdividing: .system_element_421
+						.system_element_419
+						=> nrel_subdividing: .system_element_420
 						(*
 							<=> .system_element_151: {
+								.system_element_421
+								(*
+									<- .system_element_390;;
+								*);
 								.system_element_422
 								(*
-									<- .system_element_391;;
+									<- .system_element_390;;
 								*);
 								.system_element_423
 								(*
-									<- .system_element_391;;
+									<- .system_element_390;;
 								*);
 								.system_element_424
 								(*
-									<- .system_element_391;;
+									<- .system_element_390;;
 								*);
 								.system_element_425
 								(*
-									<- .system_element_391;;
+									<- .system_element_390;;
 								*);
 								.system_element_426
 								(*
-									<- .system_element_391;;
+									<- .system_element_390;;
 								*);
 								.system_element_427
 								(*
-									<- .system_element_391;;
-								*);
-								.system_element_428
-								(*
-									<- .system_element_391;;
+									<- .system_element_390;;
 								*)
 							};;
 						*);
-						=> nrel_subdividing: .system_element_429
+						=> nrel_subdividing: .system_element_428
 						(*
 							<=> .system_element_151: {
+								.system_element_429
+								(*
+									<- .system_element_390;;
+								*);
 								.system_element_430
 								(*
-									<- .system_element_391;;
-								*);
-								.system_element_431
-								(*
-									<- .system_element_391;;
+									<- .system_element_390;;
 								*)
 							};;
 						*);
-						=> nrel_subdividing: .system_element_432
+						=> nrel_subdividing: .system_element_431
 						(*
 							<=> .system_element_151: {
+								.system_element_432
+								(*
+									<- .system_element_390;;
+								*);
 								.system_element_433
 								(*
-									<- .system_element_391;;
+									<- .system_element_390;;
 								*);
 								.system_element_434
 								(*
-									<- .system_element_391;;
-								*);
-								.system_element_435
-								(*
-									<- .system_element_391;;
+									<- .system_element_390;;
 								*)
 							};;
 						*);;
@@ -778,10 +778,10 @@
 						=> nrel_format: format_html;;
 					*);;
 
-					.system_element_436
+					.system_element_435
 					=> nrel_decomposition: {
-						.system_element_437;
-						.system_element_438
+						.system_element_436;
+						.system_element_437
 					};
 					=> nrel_note: [<p>Каждый <i>элемент sc-памяти</i> описывается его синтаксическим типом (меткой), а также независимо от <i>класса элемента sc-памяти^</i> указывается <i>sc-адрес первого входящего в данный sc-элемент sc-коннектора</i> и <i>sc-адрес первого выходящего из данного sc-элемента sc-коннектора</i> (могут быть пустыми, если таких sc-коннекторов нет). Оставшиеся байты в зависимости от <i>класса элемента sc-памяти</i> (sc-узел или sc-коннектор) могут использоваться для хранения спецификации <i>элемента sc-памяти, соответствующего sc-коннектору</i>. Также <i>sc-адрес первой sc-дуги, выходящей из данного sc-элемента*</i> и <i>sc-адрес первой sc-дуги, входящей в данный sc-элемент*</i> в общем случае могут отсутствовать (быть нулевыми, "пустыми"), но размер <i>элемента sc-памяти</i> в байтах останется тем же.</p>]
 					(*
@@ -789,35 +789,35 @@
 						=> nrel_format: format_html;;
 					*);;
 
-					.system_element_439
+					.system_element_438
 					=> nrel_inclusion: [*
 
-						.system_element_382
-						=> .system_element_386: 
-							.system_element_389;
+						.system_element_381
+						=> .system_element_385: 
+							.system_element_388;
+							.system_element_439;
+							.system_element_393;
 							.system_element_440;
-							.system_element_394;
-							.system_element_441;
-							.system_element_442
+							.system_element_441
 						;;
 					*];;
 
-					.system_element_443
+					.system_element_442
 					=> nrel_inclusion: [*
 
-						.system_element_383
-						=> .system_element_386: 
-							.system_element_389;
-							.system_element_440;
-							.system_element_394;
+						.system_element_382
+						=> .system_element_385: 
+							.system_element_388;
+							.system_element_439;
+							.system_element_393;
+							.system_element_403;
 							.system_element_404;
-							.system_element_405;
+							.system_element_397;
+							.system_element_400;
 							.system_element_398;
 							.system_element_401;
 							.system_element_399;
-							.system_element_402;
-							.system_element_400;
-							.system_element_403
+							.system_element_402
 						;;
 					*];
 					=> nrel_note: [<p>В текущей <i>Реализации sc-памяти</i> <b><i>классы уровня доступа^</i></b> используются для того, чтобы обеспечить возможность ограничения доступа некоторых <i>процессов в sc-памяти</i> к некоторым <i>элементам sc-памяти</i>. Каждый <i>элемент sc-памяти</i> принадлежит одному из двух классов: классу <i>элементов sc-памяти, соответствующих sc-элементам, на которых разрешено право чтения</i> и классу <i>элементов sc-памяти, соответствующих sc-элементам, на которых разрешено право записи</i>, каждый из которых выражается <i>целым числом</i> от 0 до 255.Таким образом нулевое значение числовых выражений класса <i>элементов sc-памяти, соответствующих sc-элементам, на которых разрешено право чтения</i> и класса <i>элементов sc-памяти, соответствующих sc-элементам, на которых разрешено право записи</i> означает, что любой процесс может получить неограниченный доступ к данному <i>элементу sc-памяти</i>.</p>]
@@ -827,7 +827,7 @@
 					*);;
 				*];;
 
-				.system_element_444
+				.system_element_443
 				<=> nrel_semantic_equivalence: "file://images/sc_code_in_memory_representation.png"
 				(*
 					<- concept_file;;
@@ -838,7 +838,7 @@
 					<- lang_ru;;
 					=> nrel_format: format_html;;
 				*);
-				=> .system_element_445: [<p><u>Любой</u> <i>sc-конструкции</i> взаимно-однозначно соответствует <i>конструкция sc-памяти</i> <i>ostis-платформы</i>. Погрузка <i>sc-конструкции</i> в <i>sc-память ostis-платформы</i> означает трансляцию каждого sc-элемента этой <i>sc-конструкции</i> и связей инцидентности между этими sc-элементами в <i>sc-память ostis-платформы</i>, то есть трансляцию синтаксической структуры sc-конструкции в соответствующее представление внутри <i>памяти ostis-системы</i>. В общем случае, алгоритм погрузки любой произвольной sc-конструкции в <i>sc-память ostis-платформы</i> состоит из следующих этапов:
+				=> .system_element_444: [<p><u>Любой</u> <i>sc-конструкции</i> взаимно-однозначно соответствует <i>конструкция sc-памяти</i> <i>ostis-платформы</i>. Погрузка <i>sc-конструкции</i> в <i>sc-память ostis-платформы</i> означает трансляцию каждого sc-элемента этой <i>sc-конструкции</i> и связей инцидентности между этими sc-элементами в <i>sc-память ostis-платформы</i>, то есть трансляцию синтаксической структуры sc-конструкции в соответствующее представление внутри <i>памяти ostis-системы</i>. В общем случае, алгоритм погрузки любой произвольной sc-конструкции в <i>sc-память ostis-платформы</i> состоит из следующих этапов:
 				<ul>
 					<li> Выделение sc-узлов и их синтаксических и семантических классов в sc-конструкции и создание соответствующих элементов в sc-памяти ostis-платформы при помощи <i>Метода создания элемента в sc-памяти с заданным классом, соответствующего некоторому sc-узлу</i>;
 					<li> Выделение всех независимых sc-коннекторов и их синтаксических и семантических классов в sc-конструкции (то есть sc-коннекторов, у которых начальным и конечным sc-элементом не являются другие sc-коннекторы) между sc-узлами, для которых были созданы на шаге 1 соответствующие элементы в sc-памяти, и создание соответствующих элементов в sc-памяти ostis-платформы при помощи <i>Метода создания элемента в sc-памяти с заданным классом, соответствующего некоторому sc-коннектору</i>;
@@ -868,14 +868,14 @@
 				*);;
 			*];;
 
-			.system_element_446
+			.system_element_445
 			=> nrel_inclusion: [*
 				=> nrel_idtf: [<p>Документация Реализации файловой памяти в Программной платформе ostis-систем</p>]
 				(*
 					<- lang_ru;;
 					=> nrel_format: format_html;;
 				*);
-				-> .system_element_330: .system_element_447;
+				-> .system_element_330: .system_element_446;
 				=> nrel_authors: 
 					.system_element_327
 				;
@@ -892,33 +892,33 @@
 				*);;
 
 				.system_element_367
-				<- .system_element_448;
-				<= .system_element_364: .system_element_449;
+				<- .system_element_447;
+				<= .system_element_364: .system_element_448;
 				<- .system_element_342;
-				<- .system_element_450;
+				<- .system_element_449;
 				<- .system_element_344;
 				=> .system_element_352: {
 					.system_element_357
 				};
-				=> .system_element_345: .system_element_451;
-				=> .system_element_452: 
+				=> .system_element_345: .system_element_450;
+				=> .system_element_451: 
 					.system_element_360
 				;
 				=> .system_element_363: 
-					.system_element_453
+					.system_element_452
 				;
 				=> nrel_authors: 
 					.system_element_327
 				;;
 
-				.system_element_454
+				.system_element_453
 				=> nrel_inclusion: [*
 					=> nrel_idtf: [<p>Документация Метаязыка описания представления внешних информационных конструкций в текущей Реализации файловой памяти Программной платформы ostis-систем</p>]
 					(*
 						<- lang_ru;;
 						=> nrel_format: format_html;;
 					*);
-					-> .system_element_330: .system_element_455;
+					-> .system_element_330: .system_element_454;
 					=> nrel_authors: 
 						.system_element_327
 					;
@@ -928,7 +928,7 @@
 						=> nrel_format: format_html;;
 					*);;
 
-					.system_element_453
+					.system_element_452
 					=> nrel_idtf: [<p>Semantic Code file interior</p>]
 					(*
 						<- lang_ru;;
@@ -953,13 +953,13 @@
 					<- .system_element_375;
 					<- .system_element_376;
 					<- sc_lang;
-					<= nrel_inclusion: .system_element_377;
-					=> nrel_inclusion: .system_element_449;
+					<= nrel_inclusion: .system_element_208;
+					=> nrel_inclusion: .system_element_448;
 					=> nrel_authors: 
 						.system_element_327
 					;;
 
-					.system_element_456
+					.system_element_455
 					=> nrel_inclusion: [*
 						=> nrel_note: [<p><i>Синтаксис SCfin-кода</i> задается: (1) <i>Алфавитом SCfin-кода^</i>, (2) отношением порядка <i>последовательность в линейном тексте*</i>.</p>]
 						(*
@@ -967,7 +967,7 @@
 							=> nrel_format: format_html;;
 						*);;
 
-						.system_element_457
+						.system_element_456
 						=> nrel_idtf: [<p>синтаксический тип элемента файловой памяти</p>]
 						(*
 							<- lang_ru;;
@@ -978,9 +978,9 @@
 							<- lang_ru;;
 							=> nrel_format: format_html;;
 						*);
-						<= .system_element_381: .system_element_453;
+						<= .system_element_380: .system_element_452;
 						<=> .system_element_151: {
-							.system_element_458
+							.system_element_457
 						};
 						=> nrel_explanation: [<p><b><i>Алфавит SCfin-кода^</i></b> состоит из одного синтаксически выделяемого типа элементов файловой памяти --- <i>элемента файловой памяти, соответствующего подстроке текста линейного языка</i>.</p>]
 						(*
@@ -988,7 +988,7 @@
 							=> nrel_format: format_html;;
 						*);;
 
-						.system_element_458
+						.system_element_457
 						<- sc_element;
 						=> nrel_idtf: [<p>элемент файловой памяти ostis-платформы</p>]
 						(*
@@ -1006,7 +1006,7 @@
 							=> nrel_format: format_html;;
 						*);;
 
-						.system_element_459
+						.system_element_458
 						=> nrel_explanation: [<p>Отношение <b><i>последовательности в линейном тексте*</i></b> определяется как бинарное ориентированное отношение порядка, компонентами каждой ориентированной пары которого являются элементы файловой памяти ostis-платформы, соответствующие некоторым подстрокам линейного текста, в результате конкатенации которых образуется подстрока, принадлежащая этому же линейному тексту.</p>]
 						(*
 							<- lang_ru;;
@@ -1019,7 +1019,7 @@
 						=> nrel_format: format_html;;
 					*);;
 
-					.system_element_460
+					.system_element_459
 					=> nrel_inclusion: [*
 						=> nrel_note: [<p>На уровне реализации важно выделить семантические классы <i>элементов файловой памяти, соответствующих подстроке текста линейного языка</i>, которые обозначают некоторую префиксную или постфиксную часть целой информационной конструкции.</p>]
 						(*
@@ -1027,15 +1027,15 @@
 							=> nrel_format: format_html;;
 						*);;
 
-						.system_element_461
+						.system_element_460
 						=> nrel_inclusion: [*
 
-							.system_element_462
-							=> nrel_subdividing: .system_element_463
+							.system_element_461
+							=> nrel_subdividing: .system_element_462
 							(*
 								<=> .system_element_151: {
-									.system_element_464;
-									.system_element_465
+									.system_element_463;
+									.system_element_464
 								};;
 							*);;
 						*];;
@@ -1046,7 +1046,7 @@
 						=> nrel_format: format_html;;
 					*);;
 
-					.system_element_466
+					.system_element_465
 					<=> nrel_semantic_equivalence: "file://images/file_in_memory_representation.png"
 					(*
 						<- concept_file;;
@@ -1104,7 +1104,7 @@
 				=> nrel_format: format_html;;
 			*);;
 
-			.system_element_467
+			.system_element_466
 			=> nrel_inclusion: [*
 				=> nrel_idtf: [<p>Документация Программного интерфейса Реализации sc-памяти в Программной платформе ostis-систем</p>]
 				(*
@@ -1122,16 +1122,16 @@
 				*);;
 
 				.system_element_370
-				<= .system_element_468: .system_element_348;
-				<- .system_element_469;
+				<= .system_element_467: .system_element_348;
+				<- .system_element_468;
 				<- .system_element_342;
-				<- .system_element_450;
+				<- .system_element_449;
 				<- .system_element_344;
 				=> .system_element_352: {
 					.system_element_357;
-					.system_element_470
+					.system_element_469
 				};
-				=> .system_element_471: 
+				=> .system_element_470: 
 					.system_element_360;
 					.system_element_361
 				;
@@ -1142,7 +1142,7 @@
 					.system_element_327;
 					.system_element_346
 				;
-				=> nrel_inclusion: .system_element_472
+				=> nrel_inclusion: .system_element_471
 				(*
 					=> nrel_idtf: [<p>Информационно-формирующие методы Реализации sc-памяти</p>];;
 					=> nrel_idtf: [<p>Подсистема, являющаяся частью Реализации sc-памяти, которая позволяет создавать, изменять и удалять конструкции в sc-памяти</p>]
@@ -1150,12 +1150,12 @@
 						<- lang_ru;;
 						=> nrel_format: format_html;;
 					*);;
-					<= .system_element_468: .system_element_473
+					<= .system_element_467: .system_element_472
 					(*
 						<= nrel_inclusion: .system_element_348;;
 					*);;
 				*);
-				=> nrel_inclusion: .system_element_474
+				=> nrel_inclusion: .system_element_473
 				(*
 					=> nrel_idtf: [<p>Информационно-поисковые методы Реализации sc-памяти</p>];;
 					=> nrel_idtf: [<p>Подсистема, являющаяся частью Реализации sc-памяти, которая позволяет находить конструкции в sc-памяти</p>]
@@ -1163,7 +1163,7 @@
 						<- lang_ru;;
 						=> nrel_format: format_html;;
 					*);;
-					<= .system_element_468: .system_element_475
+					<= .system_element_467: .system_element_474
 					(*
 						<= nrel_inclusion: .system_element_348;;
 					*);;
@@ -1174,14 +1174,14 @@
 					=> nrel_format: format_html;;
 				*);;
 
-				.system_element_476
+				.system_element_475
 				=> nrel_inclusion: [*
 					=> nrel_idtf: [<p>Документация Программного интерфейса информационно-формирующих методов Реализации sc-памяти в Программной платформе ostis-систем</p>]
 					(*
 						<- lang_ru;;
 						=> nrel_format: format_html;;
 					*);
-					-> .system_element_330: .system_element_477;
+					-> .system_element_330: .system_element_476;
 					=> nrel_authors: 
 						.system_element_327
 					;
@@ -1191,56 +1191,56 @@
 						=> nrel_format: format_html;;
 					*);;
 
-					.system_element_478
+					.system_element_477
 					=> nrel_inclusion: [*
 
-						.system_element_477
+						.system_element_476
+						-> .system_element_478;
 						-> .system_element_479;
 						-> .system_element_480;
 						-> .system_element_481;
-						-> .system_element_482;
-						-> .system_element_483;;
+						-> .system_element_482;;
 					*];;
 
-					.system_element_479
-					<- .system_element_484;
-					=> .system_element_485: [<p>scAddr scMemoryContext::CreateNode(scType const & type)</p>]
+					.system_element_478
+					<- .system_element_483;
+					=> .system_element_484: [<p>scAddr scMemoryContext::CreateNode(scType const & type)</p>]
 					(*
 						<- lang_ru;;
 						=> nrel_format: format_html;;
 						<- .system_element_361;;
 					*);
-					=> .system_element_486: <
-						.system_element_389
+					=> .system_element_485: <
+						.system_element_388
 					>;
-					=> .system_element_487: 
-						.system_element_488
+					=> .system_element_486: 
+						.system_element_487
 					;
-					=> .system_element_489: 
-						.system_element_490;
-						.system_element_491
+					=> .system_element_488: 
+						.system_element_489;
+						.system_element_490
 					;;
 
-					.system_element_480
-					<- .system_element_484;
-					=> .system_element_485: [<p>scAddr scMemoryContext::CreateConnector(scType const & type, scAddr const & begAddr, scAddr const & endAddr)</p>]
+					.system_element_479
+					<- .system_element_483;
+					=> .system_element_484: [<p>scAddr scMemoryContext::CreateConnector(scType const & type, scAddr const & begAddr, scAddr const & endAddr)</p>]
 					(*
 						<- lang_ru;;
 						=> nrel_format: format_html;;
 						<- .system_element_361;;
 					*);
-					=> .system_element_486: <
-						.system_element_389;
-						.system_element_488;
-						.system_element_488
+					=> .system_element_485: <
+						.system_element_388;
+						.system_element_487;
+						.system_element_487
 					>;
-					=> .system_element_487: 
-						.system_element_488
+					=> .system_element_486: 
+						.system_element_487
 					;
-					=> .system_element_489: 
-						.system_element_492;
-						.system_element_490;
-						.system_element_491
+					=> .system_element_488: 
+						.system_element_491;
+						.system_element_489;
+						.system_element_490
 					;
 					=> nrel_explanation: [<p>При помощи <b><i>Метода создания элемента в sc-памяти с заданным классом, соответствующего некоторому sc-узлу</i></b> и <b><i>Метода создания элемента в sc-памяти с заданным классом, соответствующего некоторому sc-коннектору</i></b> можно создавать все программные элементы <i>Алфавита SCin-кода^</i>, соответствующие sc-элементам <i>Алфавита SC-кода^</i> в <i>sc-памяти ostis-платформы</i>.</p>]
 					(*
@@ -1258,22 +1258,22 @@
 						=> nrel_format: format_html;;
 					*);;
 
-					.system_element_481
-					<- .system_element_484;
-					=> .system_element_485: [<p>bool scMemoryContext::EraseElement(scAddr const & addr)</p>]
+					.system_element_480
+					<- .system_element_483;
+					=> .system_element_484: [<p>bool scMemoryContext::EraseElement(scAddr const & addr)</p>]
 					(*
 						<- lang_ru;;
 						=> nrel_format: format_html;;
 						<- .system_element_361;;
 					*);
-					=> .system_element_486: <
-						.system_element_488
+					=> .system_element_485: <
+						.system_element_487
 					>;
-					=> .system_element_487: 
-						.system_element_493
-					;
-					=> .system_element_489: 
+					=> .system_element_486: 
 						.system_element_492
+					;
+					=> .system_element_488: 
+						.system_element_491
 					;
 					=> nrel_explanation: [<p>Любой <i>элемент sc-памяти</i> может быть удален из нее. Для того, чтобы удалить заданный <i>элемент из sc-памяти</i> необходимо применить <b><i>Метод удаления элемента из sc-памяти</i></b> с указанным в качестве аргумента <i>sc-адресом</i> заданного <i>элемента sc-памяти</i>. Если заданный sc-адрес в действительности является <i>sc-адресом</i> некоторого <i>элемента sc-памяти</i>, то этот элемент будет удален из <i>sc-памяти</i>, а метод закончит работу с результатом логического значения <i>Истина</i>. Если указанный sc-адрес является <i>sc-адресом</i> некоторого <i>элемента sc-памяти, соответствующего некоторому sc-элементу</i>, из которого выходят или в который входят <i>элементы sc-памяти, соответствующие sc-коннекторам</i>, то из <i>sc-памяти</i> также будут эти <i>элементы sc-памяти, соответствующие sc-коннекторам</i>.</p>]
 					(*
@@ -1286,25 +1286,25 @@
 						=> nrel_format: format_html;;
 					*);;
 
-					.system_element_482
-					<- .system_element_484;
-					=> .system_element_485: [<p>bool scMemoryContext::SetElementSubtype(scAddr const & addr, scType const & type)</p>]
+					.system_element_481
+					<- .system_element_483;
+					=> .system_element_484: [<p>bool scMemoryContext::SetElementSubtype(scAddr const & addr, scType const & type)</p>]
 					(*
 						<- lang_ru;;
 						=> nrel_format: format_html;;
 						<- .system_element_361;;
 					*);
-					=> .system_element_486: <
-						.system_element_488;
-						.system_element_389
+					=> .system_element_485: <
+						.system_element_487;
+						.system_element_388
 					>;
-					=> .system_element_487: 
-						.system_element_493
+					=> .system_element_486: 
+						.system_element_492
 					;
-					=> .system_element_489: 
-						.system_element_492;
-						.system_element_494;
-						.system_element_495
+					=> .system_element_488: 
+						.system_element_491;
+						.system_element_493;
+						.system_element_494
 					;
 					=> nrel_explanation: [<p>На практике частой ситуацией бывает, что пользователю, разработчику или самой системе неизвестны все знания о создаваемом <i>элементе в sc-памяти</i> либо об элементах его <i>семантической окрестности</i>. Так, например, во время трансляции в <i>sc-память ostis-платформы</i> исходных файлов, реализованных на <i>внешних языках представления знаний</i>: <i>SCs-коде</i> или <i>SCg-коде</i> --- зачастую происходит уточнение классов уже созданных элементов sc-памяти. Такие действия над <i>элементами в sc-памяти ostis-платформы</i> можно осуществить при помощи <b><i>Метода уточнения класса элемента sc-памяти, соответствующего некоторому sc-элементу</i></b>. Для этого необходимо задать в качестве аргументов <i>sc-адрес элемента sc-памяти</i>, для которого необходимо уточнить класс, и сам <i>класс элемента sc-памяти^</i>. В случае успешного выполнения метода в результате пользователем этого метода будет получено логическое значение <i>Истина</i>. По правилам <i>Синтаксиса SC-кода</i> запрещается указывать несколько <i>синтаксических классов</i> для одного и того же <i>sc-элемента</i>, также как и запрещается уточнять класс <i>sc-элемента</i>, которые не могут быть указаны для <i>sc-элементов</i> с заданным <i>синтаксическим классом</i>. При попытке совершить такие действия над <i>элементом sc-памяти</i> результатом работы <i>Метода уточнения класса элемента sc-памяти, соответствующего некоторому sc-элементу</i> будет логическое значение <i>Ложь</i>.</p>]
 					(*
@@ -1317,22 +1317,22 @@
 						=> nrel_format: format_html;;
 					*);;
 
-					.system_element_483
-					<- .system_element_484;
-					=> .system_element_485: [<p>scType scMemoryContext::GetElementType(scAddr const & addr) const</p>]
+					.system_element_482
+					<- .system_element_483;
+					=> .system_element_484: [<p>scType scMemoryContext::GetElementType(scAddr const & addr) const</p>]
 					(*
 						<- lang_ru;;
 						=> nrel_format: format_html;;
 						<- .system_element_361;;
 					*);
-					=> .system_element_486: <
-						.system_element_385
+					=> .system_element_485: <
+						.system_element_384
 					>;
-					=> .system_element_487: 
-						.system_element_389
+					=> .system_element_486: 
+						.system_element_388
 					;
-					=> .system_element_489: 
-						.system_element_492
+					=> .system_element_488: 
+						.system_element_491
 					;
 					=> nrel_explanation: [<p>Чтобы получить <i>класс</i> заданного <i>элемента sc-памяти^</i> достаточно применить <b><i>Метод получения класса элемента sc-памяти, соответствующего некоторому sc-элементу</i></b>, задав в качестве аргумента sc-адрес заданного элемента sc-памяти. В последних двух методах не допускается использовать <i>sc-адреса</i>, которые не являются <i>sc-адресами элементов в sc-памяти</i>.</p>]
 					(*
@@ -1341,7 +1341,7 @@
 					*);;
 				*];;
 
-				.system_element_496
+				.system_element_495
 				=> nrel_inclusion: [*
 					=> nrel_idtf: [<p>Документация Программного интерфейса информационно-поисковых методов Реализации sc-памяти в Программной платформе ostis-систем</p>]
 					(*
@@ -1351,42 +1351,42 @@
 					=> nrel_authors: 
 						.system_element_327
 					;
-					-> .system_element_330: .system_element_497;
+					-> .system_element_330: .system_element_496;
 					=> nrel_explanation: [<p>В задачах, решаемых в прикладных ostis-системах, реализуемых на базе текущего <i>Программного варианта реализации ostis-платформы</i>, необходимо использовать механизмы поиска уже существующих элементов или <i>конструкций в sc-памяти</i>. Такие механизмы являются частью <b><i>Реализации информационно-поисковой подсистемы Реализации sc-памяти</i></b>, на базе которой можно реализовывать <i>информационные-поисковые подсистемы</i> для <i>платформенно-зависимых</i> и <i>платформенно-независимых ostis-систем</i>. Несмотря на сложность <i>информационного поиска</i>, текущий <i>Программный вариант реализации ostis-платформы</i> позволяет эффективно использовать реализуемые методы <i>информационного поиска</i> в задачах, решаемых прикладными ostis-системами. Данную подсистему нельзя реализовать независимо от реализации <i>ostis-платформы</i>, то есть ее нельзя сделать <i>платформенно-независимой</i>, поэтому необходимо разделять <i>Реализацию информационно-поисковой подсистемы Реализации sc-памяти</i> и <i>Реализацию информационно-поисковой подсистемы Метасистемы OSTIS</i>, которая реализуется на <i>Языке SCP</i> и независимо от текущего <i>Программного варианта реализации ostis-платформы</i> (см. <i></i>). Сам же <i>scp-интерпретатор</i> должен использовать информационно-поисковые методы <i>Реализации sc-памяти</i>, а <i>Язык SCP</i> --- предоставлять возможность навигироваться по <i>базе знаний</i> любой <i>ostis-системы</i> (см. <i></i>).</p>]
 					(*
 						<- lang_ru;;
 						=> nrel_format: format_html;;
 					*);;
 
-					.system_element_478
+					.system_element_477
 					=> nrel_inclusion: [*
 
-						.system_element_497
+						.system_element_496
+						-> .system_element_497;
 						-> .system_element_498;
 						-> .system_element_499;
 						-> .system_element_500;
-						-> .system_element_501;
-						-> .system_element_502;;
+						-> .system_element_501;;
 					*];;
 
-					.system_element_498
-					<- .system_element_484;
-					=> .system_element_485: [<p>template <typename ParamType1, typename ParamType2, typename ParamType3> std::shared_ptr<TIterator5<ParamType1, ParamType2, ParamType3>> Iterator3(ParamType1 const & param1, ParamType2 const & param2, ParamType3 const & param3)</p>]
+					.system_element_497
+					<- .system_element_483;
+					=> .system_element_484: [<p>template <typename ParamType1, typename ParamType2, typename ParamType3> std::shared_ptr<TIterator5<ParamType1, ParamType2, ParamType3>> Iterator3(ParamType1 const & param1, ParamType2 const & param2, ParamType3 const & param3)</p>]
 					(*
 						<- lang_ru;;
 						=> nrel_format: format_html;;
 						<- .system_element_361;;
 					*);
-					=> .system_element_486: <
-						.system_element_503;
-						.system_element_503;
-						.system_element_503
+					=> .system_element_485: <
+						.system_element_502;
+						.system_element_502;
+						.system_element_502
 					>;
-					=> .system_element_487: 
-						.system_element_504
+					=> .system_element_486: 
+						.system_element_503
 					;
-					=> .system_element_489: 
-						.system_element_492
+					=> .system_element_488: 
+						.system_element_491
 					;
 					=> nrel_explanation: [<p>По правилам <i>Синтаксиса SC-кода</i> <i>sc-конструкции</i>, то есть конструкции, состоящие из <i>sc-элементов</i>, могут состоять из трех <i>sc-элементов</i>, пяти <i>sc-элементов</i>, семи sc-элементов и так далее (см. <i></i>). В <i>sc-памяти ostis-платформы</i> эквивалентом <i>sc-конструкции</i> является конструкция, состоящая из <i>элементов sc-памяти</i> (<b><i>конструкция в sc-памяти</i></b>). <b><i>Метод создания итератора поиска трехэлементных конструкций в sc-памяти</i></b> и <b><i>Метод создания итератора поиска пятиэлементных конструкций в sc-памяти</i></b> позволяют создавать итераторы поиска трех- и пяти- элементных <i>конструкций в sc-памяти ostis-платформы</i> соответственно. С помощью параметров данных методов можно создавать итераторы любой необходимой конфигурации для поиска <i>трех-</i> и <i>пяти- элементных sc-конструкций</i>. Так, например, если необходимо найти все <i>элементы sc-памяти, соответствующие sc-элементам</i>, которые принадлежат некоторому <i>sc-множеству</i>, для которого соответствует заданный <i>элемент sc-памяти</i>, то необходимо при помощи <i>Метода создания итератора поиска трехэлементных конструкций элементов в sc-памяти</i> создать итератор поиска, задав в качестве первого аргумента <i>элемент sc-памяти, соответствующий</i> заданному <i>sc-множеству</i>, а в качестве второго и третьего аргументов --- <i>класс элементов sc-памяти, соответствующих базовой sc-дуге^</i> и <i>класс элементов sc-памяти, соответствующих sc-элементам неуточненного класса^</i>, соответственно. Для поиска в <i>sc-памяти</i> более сложных конструкций, состоящих из семи и более элементов, необходимо комбинировать итераторы поиска трех- и пяти- элементных <i>конструкций в sc-памяти</i>, или использовать <b><i>Метод поиска конструкций в sc-памяти, изоморфных данному графу-образцу</i></b>.</p>]
 					(*
@@ -1399,20 +1399,20 @@
 						=> nrel_format: format_html;;
 					*);;
 
-					.system_element_478
+					.system_element_477
 					=> nrel_inclusion: [*
 
-						.system_element_497
+						.system_element_496
 						=> nrel_inclusion: [*
-							=> nrel_inclusion: .system_element_505;;
+							=> nrel_inclusion: .system_element_504;;
 
-							.system_element_506
+							.system_element_505
 							=> nrel_idtf: [<p>sc-итератор</p>]
 							(*
 								<- lang_ru;;
 								=> nrel_format: format_html;;
 							*);
-							<= nrel_inclusion: .system_element_507;
+							<= nrel_inclusion: .system_element_506;
 							=> nrel_idtf: [<p>scIterator</p>]
 							(*
 								<- lang_ru;;
@@ -1425,38 +1425,38 @@
 								=> nrel_format: format_html;;
 							*);;
 
-							.system_element_508
+							.system_element_507
 							=> nrel_inclusion: [*
-								<= .system_element_468: .system_element_506;;
+								<= .system_element_467: .system_element_505;;
 
-								.system_element_509
-								<- .system_element_484;
-								=> .system_element_485: [<p>bool Next() const</p>]
+								.system_element_508
+								<- .system_element_483;
+								=> .system_element_484: [<p>bool Next() const</p>]
 								(*
 									<- lang_ru;;
 									=> nrel_format: format_html;;
 									<- .system_element_361;;
 								*);
-								=> .system_element_487: 
-									.system_element_493
+								=> .system_element_486: 
+									.system_element_492
 								;;
 
-								.system_element_510
-								<- .system_element_484;
-								=> .system_element_485: [<p>scAddr Get(size_t idx) const</p>]
+								.system_element_509
+								<- .system_element_483;
+								=> .system_element_484: [<p>scAddr Get(size_t idx) const</p>]
 								(*
 									<- lang_ru;;
 									=> nrel_format: format_html;;
 									<- .system_element_361;;
 								*);
-								=> .system_element_486: <
-									.system_element_511
+								=> .system_element_485: <
+									.system_element_510
 								>;
-								=> .system_element_487: 
-									.system_element_488
+								=> .system_element_486: 
+									.system_element_487
 								;
-								=> .system_element_489: 
-									.system_element_512
+								=> .system_element_488: 
+									.system_element_511
 								;;
 							*];
 							=> nrel_explanation: [<p>Создаваемые при помощи данных <i>методов</i> <i>итераторы</i> также <i>имеют программный интерфейс</i>. Результатами обоих <i>методов</i> являются разные <i>итераторы</i>, но имеющие общий <i>программный интерфейс</i>. Такие <i>итераторы</i> позволяют работать с <i>конструкциями в sc-памяти</i> в тот же момент, когда они были найдены. При помощи <i>Метода перехода к следующей "подходящей" для заданного итератора конструкции в sc-памяти</i> <i>итератор</i> обновляет свое внутреннее состояние каждый раз, когда была найдена новая <i>конструкция в sc-памяти</i>. Под следующей "подходящей" для заданного итератора <i>конструкцией в sc-памяти</i> подразумевается <i>конструкция в sc-памяти</i>, элементы которой удовлетворяют конфигурации созданного <i>итератора поиска конструкций в sc-памяти</i> и которая не была найдена раннее. Результатом последнего <i>метода</i> является логическое значение <i>Истина</i>, если следующая "подходящая" для заданного <i>итератора</i> конструкция существует в <i>sc-памяти</i>. Если "подходящих" для этого <i>итератора</i> конструкций нет в <i>sc-памяти</i>, то результатом <i>Метода перехода к следующей подходящей для заданного итератора конструкции в sc-памяти</i> является логическое значение <i>Ложь</i>. Чтобы получить <i>sc-адрес</i> некоторого из элементов найденной <i>конструкции в sc-памяти</i> необходимо использовать <i>Метода доступа к sc-адресу элемента заданной конструкции в sc-памяти по номеру позиции этого элемента в заданной конструкции sc-памяти</i>, задав качестве аргумента целочисленное значение в виде номера позиции искомого элемента в этой конструкции. При этом нумерация позиций элементов в <i>конструкции sc-памяти</i> в текущей <i>Реализации sc-памяти</i> происходит начиная с нуля, а не с единицы, а порядок нумерации задается тем, какой порядок аргументов для создания <i>итератора</i> был использован. При попытке указать для данного метода номер позиции, по которому не существует позиции в данной конструкции, результатом этого метода будет <i>исключительная ситуация</i> о недопустимой позиции элемента в заданной <i>конструкции sc-памяти</i>. Таким образом, диапазон номеров позиции для <i>трехэлементных конструкций</i> ограничен от нуля до двух, а для пятиэлементных --- от нуля до четырех.</p>]
@@ -1467,56 +1467,56 @@
 						*];;
 					*];;
 
-					.system_element_478
+					.system_element_477
 					=> nrel_inclusion: [*
 
-						.system_element_497
+						.system_element_496
 						=> nrel_inclusion: [*
 
-							.system_element_498
+							.system_element_497
+							=> nrel_inclusion: .system_element_512
+							(*
+								<- .system_element_483;;
+								=> .system_element_485: <
+									.system_element_487;
+									.system_element_487;
+									.system_element_487
+								>;;
+							*);
 							=> nrel_inclusion: .system_element_513
 							(*
-								<- .system_element_484;;
-								=> .system_element_486: <
-									.system_element_488;
-									.system_element_488;
-									.system_element_488
+								<- .system_element_483;;
+								=> .system_element_485: <
+									.system_element_487;
+									.system_element_388;
+									.system_element_388
 								>;;
 							*);
 							=> nrel_inclusion: .system_element_514
 							(*
-								<- .system_element_484;;
-								=> .system_element_486: <
-									.system_element_488;
-									.system_element_389;
-									.system_element_389
+								<- .system_element_483;;
+								=> .system_element_485: <
+									.system_element_388;
+									.system_element_388;
+									.system_element_487
 								>;;
 							*);
 							=> nrel_inclusion: .system_element_515
 							(*
-								<- .system_element_484;;
-								=> .system_element_486: <
-									.system_element_389;
-									.system_element_389;
-									.system_element_488
+								<- .system_element_483;;
+								=> .system_element_485: <
+									.system_element_487;
+									.system_element_388;
+									.system_element_487
 								>;;
 							*);
 							=> nrel_inclusion: .system_element_516
 							(*
-								<- .system_element_484;;
-								=> .system_element_486: <
-									.system_element_488;
-									.system_element_389;
-									.system_element_488
-								>;;
-							*);
-							=> nrel_inclusion: .system_element_517
-							(*
-								<- .system_element_484;;
-								=> .system_element_486: <
-									.system_element_389;
-									.system_element_488;
-									.system_element_389
+								<- .system_element_483;;
+								=> .system_element_485: <
+									.system_element_388;
+									.system_element_487;
+									.system_element_388
 								>;;
 							*);;
 						*];
@@ -1527,7 +1527,7 @@
 						*);;
 					*];;
 
-					.system_element_498
+					.system_element_497
 					=> nrel_explanation: [<p>Данные варианты реализации <i>Метода создания итератора поиска трехэлементных конструкций в sc-памяти</i> являются достаточными для решения любых поисково-навигационных задач. Возможны варианты реализации <b><i>Метода создания итератора поиска ffa-конструкций в sc-памяти</i></b> и <b><i>Метода создания итератора поиска aff-конструкций в sc-памяти</i></b>, но на практике нет необходимости искать третий элемент sc-памяти по известным элементу, соответствующему sc-коннектору, и элементу, соответствующему sc-элементу, из которого данный sc-коннектор выходит или в который данный sc-коннектор входит. Такую задачу можно решить, используя <b><i>Метод создания итератора поиска afa-конструкций в sc-памяти</i></b>. Впрочем, реализация <i>Метода создания итератора поиска пятиэлементных конструкций в sc-памяти</i> вовсе не обязательна, поскольку все задачи, решаемые при помощи данного метода, можно также решить при помощи <i>Метода создания итератора поиска трехэлементных конструкций в sc-памяти</i>, однако реализация <i>Метода создания итератора поиска пятиэлементных конструкций в sc-памяти</i> позволяет сделать текст создаваемого метода более компактным по сравнению с методом, в котором бы использовался <i>Метод создания итератора поиска трехэлементных конструкций в sc-памяти</i>. В качестве всех трех аргументов для <i>Метода создания итератора поиска трехэлементных конструкций в sc-памяти</i> могут быть указаны:
 
 					<ul>
@@ -1549,156 +1549,156 @@
 						<- lang_ru;;
 						=> nrel_format: format_html;;
 					*);
-					=> .system_element_392: .system_element_499;;
+					=> .system_element_391: .system_element_498;;
 
-					.system_element_499
-					<- .system_element_484;
-					=> .system_element_485: [<p>template <typename ParamType1, typename ParamType2, typename ParamType3, typename ParamType4, typename ParamType5> std::shared_ptr<TIterator5<ParamType1, ParamType2, ParamType3, ParamType4, ParamType5>> Iterator5(ParamType1 const & param1, ParamType2 const & param2, ParamType3 const & param3, ParamType4 const & param4, ParamType5 const & param5)</p>]
+					.system_element_498
+					<- .system_element_483;
+					=> .system_element_484: [<p>template <typename ParamType1, typename ParamType2, typename ParamType3, typename ParamType4, typename ParamType5> std::shared_ptr<TIterator5<ParamType1, ParamType2, ParamType3, ParamType4, ParamType5>> Iterator5(ParamType1 const & param1, ParamType2 const & param2, ParamType3 const & param3, ParamType4 const & param4, ParamType5 const & param5)</p>]
 					(*
 						<- lang_ru;;
 						=> nrel_format: format_html;;
 						<- .system_element_361;;
 					*);
-					=> .system_element_486: <
-						.system_element_503;
-						.system_element_503;
-						.system_element_503;
-						.system_element_503;
-						.system_element_503
+					=> .system_element_485: <
+						.system_element_502;
+						.system_element_502;
+						.system_element_502;
+						.system_element_502;
+						.system_element_502
 					>;
-					=> .system_element_487: 
-						.system_element_518
+					=> .system_element_486: 
+						.system_element_517
 					;
-					=> .system_element_489: 
-						.system_element_492
+					=> .system_element_488: 
+						.system_element_491
 					;;
 
-					.system_element_478
+					.system_element_477
 					=> nrel_inclusion: [*
 
-						.system_element_497
+						.system_element_496
 						=> nrel_inclusion: [*
 
-							.system_element_519
+							.system_element_518
+							=> nrel_inclusion: .system_element_519
+							(*
+								<- .system_element_483;;
+								=> .system_element_485: <
+									.system_element_487;
+									.system_element_487;
+									.system_element_487;
+									.system_element_487;
+									.system_element_487
+								>;;
+							*);
 							=> nrel_inclusion: .system_element_520
 							(*
-								<- .system_element_484;;
-								=> .system_element_486: <
-									.system_element_488;
-									.system_element_488;
-									.system_element_488;
-									.system_element_488;
-									.system_element_488
+								<- .system_element_483;;
+								=> .system_element_485: <
+									.system_element_487;
+									.system_element_388;
+									.system_element_388;
+									.system_element_388;
+									.system_element_388
 								>;;
 							*);
 							=> nrel_inclusion: .system_element_521
 							(*
-								<- .system_element_484;;
-								=> .system_element_486: <
-									.system_element_488;
-									.system_element_389;
-									.system_element_389;
-									.system_element_389;
-									.system_element_389
+								<- .system_element_483;;
+								=> .system_element_485: <
+									.system_element_388;
+									.system_element_388;
+									.system_element_388;
+									.system_element_388;
+									.system_element_487
 								>;;
 							*);
 							=> nrel_inclusion: .system_element_522
 							(*
-								<- .system_element_484;;
-								=> .system_element_486: <
-									.system_element_389;
-									.system_element_389;
-									.system_element_389;
-									.system_element_389;
-									.system_element_488
+								<- .system_element_483;;
+								=> .system_element_485: <
+									.system_element_487;
+									.system_element_388;
+									.system_element_388;
+									.system_element_388;
+									.system_element_487
 								>;;
 							*);
 							=> nrel_inclusion: .system_element_523
 							(*
-								<- .system_element_484;;
-								=> .system_element_486: <
-									.system_element_488;
-									.system_element_389;
-									.system_element_389;
-									.system_element_389;
-									.system_element_488
+								<- .system_element_483;;
+								=> .system_element_485: <
+									.system_element_487;
+									.system_element_388;
+									.system_element_487;
+									.system_element_388;
+									.system_element_487
 								>;;
 							*);
 							=> nrel_inclusion: .system_element_524
 							(*
-								<- .system_element_484;;
-								=> .system_element_486: <
-									.system_element_488;
-									.system_element_389;
-									.system_element_488;
-									.system_element_389;
-									.system_element_488
+								<- .system_element_483;;
+								=> .system_element_485: <
+									.system_element_388;
+									.system_element_487;
+									.system_element_388;
+									.system_element_388;
+									.system_element_388
 								>;;
 							*);
 							=> nrel_inclusion: .system_element_525
 							(*
-								<- .system_element_484;;
-								=> .system_element_486: <
-									.system_element_389;
-									.system_element_488;
-									.system_element_389;
-									.system_element_389;
-									.system_element_389
+								<- .system_element_483;;
+								=> .system_element_485: <
+									.system_element_388;
+									.system_element_388;
+									.system_element_388;
+									.system_element_487;
+									.system_element_388
 								>;;
 							*);
 							=> nrel_inclusion: .system_element_526
 							(*
-								<- .system_element_484;;
-								=> .system_element_486: <
-									.system_element_389;
-									.system_element_389;
-									.system_element_389;
-									.system_element_488;
-									.system_element_389
+								<- .system_element_483;;
+								=> .system_element_485: <
+									.system_element_388;
+									.system_element_388;
+									.system_element_487;
+									.system_element_388;
+									.system_element_388
 								>;;
 							*);
 							=> nrel_inclusion: .system_element_527
 							(*
-								<- .system_element_484;;
-								=> .system_element_486: <
-									.system_element_389;
-									.system_element_389;
-									.system_element_488;
-									.system_element_389;
-									.system_element_389
+								<- .system_element_483;;
+								=> .system_element_485: <
+									.system_element_388;
+									.system_element_487;
+									.system_element_388;
+									.system_element_388;
+									.system_element_487
 								>;;
 							*);
 							=> nrel_inclusion: .system_element_528
 							(*
-								<- .system_element_484;;
-								=> .system_element_486: <
-									.system_element_389;
-									.system_element_488;
-									.system_element_389;
-									.system_element_389;
-									.system_element_488
+								<- .system_element_483;;
+								=> .system_element_485: <
+									.system_element_487;
+									.system_element_388;
+									.system_element_388;
+									.system_element_487;
+									.system_element_388
 								>;;
 							*);
 							=> nrel_inclusion: .system_element_529
 							(*
-								<- .system_element_484;;
-								=> .system_element_486: <
-									.system_element_488;
-									.system_element_389;
-									.system_element_389;
-									.system_element_488;
-									.system_element_389
-								>;;
-							*);
-							=> nrel_inclusion: .system_element_530
-							(*
-								<- .system_element_484;;
-								=> .system_element_486: <
-									.system_element_389;
-									.system_element_488;
-									.system_element_389;
-									.system_element_488;
-									.system_element_389
+								<- .system_element_483;;
+								=> .system_element_485: <
+									.system_element_388;
+									.system_element_487;
+									.system_element_388;
+									.system_element_487;
+									.system_element_388
 								>;;
 							*);
 							=> nrel_explanation: [<p>В качестве всех пяти аргументов для <b><i>Метода создания итератора поиска пятиэлементных конструкций в sc-памяти</i></b> могут быть указаны и другие комбинации, не указанные в представленной классификации. Однако в этом нет необходимости, поскольку все задачи, решаемые с помощью таких <i>итераторов</i>, можно решить уже существующими <u><i>итераторами поиска пятиэлементных конструк-</i></u> <u><i>ций в sc-памяти</i></u>.</p>]
@@ -1709,9 +1709,9 @@
 						*];;
 					*];;
 
-					.system_element_531
+					.system_element_530
 					=> nrel_inclusion: [*
-						-> .system_element_330: .system_element_505;
+						-> .system_element_330: .system_element_504;
 						=> nrel_note: [<p><i>Метод создания итератора поиска трехэлементных конструкций в sc-памяти</i> и <i>Метод создания итератора поиска пятиэлементных конструкций в sc-памяти</i>, а также <i>программный интерфейс итератора поиска трех- и пяти- элементных конструкций в sc-памяти</i> являются достаточно мощными средствами для решения любых задач <u><i>информационного поиска</i></u> в прикладных <i>ostis-системах</i>. Однако есть <i>модели решения задач</i>, в которых необходимо использовать другие методы поиска. Так, например, в задачах <u><i>логического вывода</i></u> считается удобным решать <i>задачи</i>, когда <i>поиск конструкций</i> любой необходимой конфигурации <i>в sc-памяти</i> сводится к <b><i>изоморфному поиску</i></b> этих конструкций по заданному <b><i>графу-образцу</i></b>. Такими <i>графами-образцами</i> могут выступать любые <i>атомарные логические формулы</i>, входящие в состав в любой другой <i>неатомарной формулы</i> (см. <i></i>).<i>изоморфный поиск</i> является одним из способов решения <i>задачи</i> поиска подграфа в <i>графе</i> (см. Fort1996). Эта задача заключается в том, чтобы найти все вхождения заданного <i>графа-образца</i> в исходном графе. Процесс <i>изоморфного поиска</i> может быть реализован с использованием различных алгоритмов. Один из них --- <i>Алгоритм Ульмана</i>, который основан на использовании матрицы смежности, чтобы определить соответствие между вершинами графов. Другой алгоритм --- <i>Алгоритм VF2</i>, который использует функцию сравнения для проверки соответствия соответствующих узлов и ребер в двух графах (см. Foggia2001). В современной информатике также известны алгоритмы, позволяющие решать <i>задачу</i> <i>изоморфного поиска</i> за субэкспоненциальное время (см. McKay2007).Основополагающим принципом разрабатываемой <i>Технологии OSTIS</i> является принцип заимствования наилучших существующих технологий для разработки <i>ostis-систем</i>. Однако в силу разных обстоятельств, например, связанных с особенностями <i>Реализации sc-памяти</i>, а также требований, предъявляемых к sc-агентам, занимающихся логическим выводом, необходимо разрабатывать и апробировать новые решения. В рамках текущей <i>Реализации sc-памяти</i> разработан принципиально другой алгоритм <i>изоморфного поиска</i>, позволяющего за оптимальное время находить графы, изоморфные данному <i>графу-образцу</i>.В общем случае <u>нет</u> необходимости реализовывать <i>изоморфный поиск</i> в универсальном виде. Это объясняется тем, что:
 						<ul>
 							<li> <i>изоморфный поиск</i> является NP-полной задачей, что означает, что затраты на ее решение растут экспоненциально с размером входных данных, и пока не существует эффективного алгоритма для решения задачи <i>изоморфного поиска</i>;
@@ -1726,64 +1726,64 @@
 							=> nrel_format: format_html;;
 						*);;
 
-						.system_element_500
-						<- .system_element_484;
-						=> .system_element_485: [<p>scTemplate::Result HelperSearchTemplate(scTemplate const & templ, scTemplateSearchResult & result)</p>]
+						.system_element_499
+						<- .system_element_483;
+						=> .system_element_484: [<p>scTemplate::Result HelperSearchTemplate(scTemplate const & templ, scTemplateSearchResult & result)</p>]
 						(*
 							<- lang_ru;;
 							=> nrel_format: format_html;;
 							<- .system_element_361;;
 						*);
-						=> .system_element_486: <
-							.system_element_532;
-							.system_element_533
+						=> .system_element_485: <
+							.system_element_531;
+							.system_element_532
 						>;
-						=> .system_element_487: 
-							.system_element_534
+						=> .system_element_486: 
+							.system_element_533
 						;
-						=> .system_element_489: 
-							.system_element_535;
+						=> .system_element_488: 
+							.system_element_534;
+							.system_element_535
+						;;
+
+						.system_element_500
+						<- .system_element_483;
+						=> .system_element_484: [<p>scTemplate::Result HelperGenTemplate(scTemplate const & templ, scTemplateGenResult & result)</p>]
+						(*
+							<- lang_ru;;
+							=> nrel_format: format_html;;
+							<- .system_element_361;;
+						*);
+						=> .system_element_485: <
+							.system_element_531;
 							.system_element_536
+						>;
+						=> .system_element_486: 
+							.system_element_537
+						;
+						=> .system_element_488: 
+							.system_element_534;
+							.system_element_535
 						;;
 
 						.system_element_501
-						<- .system_element_484;
-						=> .system_element_485: [<p>scTemplate::Result HelperGenTemplate(scTemplate const & templ, scTemplateGenResult & result)</p>]
+						<- .system_element_483;
+						=> .system_element_484: [<p>scTemplate::Result HelperBuildTemplate(scTemplate & templ, scAddr const & templAddr)</p>]
 						(*
 							<- lang_ru;;
 							=> nrel_format: format_html;;
 							<- .system_element_361;;
 						*);
-						=> .system_element_486: <
-							.system_element_532;
-							.system_element_537
+						=> .system_element_485: <
+							.system_element_531;
+							.system_element_487
 						>;
-						=> .system_element_487: 
+						=> .system_element_486: 
 							.system_element_538
 						;
-						=> .system_element_489: 
-							.system_element_535;
-							.system_element_536
-						;;
-
-						.system_element_502
-						<- .system_element_484;
-						=> .system_element_485: [<p>scTemplate::Result HelperBuildTemplate(scTemplate & templ, scAddr const & templAddr)</p>]
-						(*
-							<- lang_ru;;
-							=> nrel_format: format_html;;
-							<- .system_element_361;;
-						*);
-						=> .system_element_486: <
-							.system_element_532;
-							.system_element_488
-						>;
-						=> .system_element_487: 
-							.system_element_539
-						;
-						=> .system_element_489: 
-							.system_element_535;
-							.system_element_536
+						=> .system_element_488: 
+							.system_element_534;
+							.system_element_535
 						;
 						=> nrel_explanation: [<p><b><i>программный объект граф-образца</i></b> можно сформировать при помощи <i>Метода создания программного объекта графа-образца</i>, для этого необходимо в качестве аргументов задать <i>программный объект графа-образца</i> как выходный параметр и <i>sc-адрес элемента sc-памяти, соответствующего sc-структуре</i> <i>атомарной логической формулы</i> (sc-шаблону).Как и <i>итератор поиска трех- и пяти- элементных конструкций в sc-памяти</i>, <i>программный объект графа-образца</i> имеет специализированный <i>программный интерфейс</i>. Изначально <i>программный объект графа-образца</i> задается пустым. При помощи <b><i>Метода добавления трехэлементной конструкции для заданного графа-образца</i></b> и <b><i>Метода добавления пятиэлементной конструкции для заданного графа-образца</i></b> можно расширять заданный <i>программный объект графа-образца</i>. Расширение <i>программного объекта графа-образца</i> происходит с добавлением трехэлементных конструкций в <b><i>кортеж программных объектов трехэлементных конструкций в заданном графе-образце</i></b>, при этом порядок программный объектов конструкций в этом множестве задается последовательностью выполнения <i>Метода добавления трехэлементной конструкции для заданного графа-образца</i> и <i>Метода добавления пятиэлементной конструкции для заданного графа-образца</i>.</p>]
 						(*
@@ -1791,13 +1791,13 @@
 							=> nrel_format: format_html;;
 						*);;
 
-						.system_element_478
+						.system_element_477
 						=> nrel_inclusion: [*
 
-							.system_element_497
+							.system_element_496
 							=> nrel_inclusion: [*
 
-								.system_element_532
+								.system_element_531
 								=> nrel_idtf: [<p>scTemplate</p>]
 								(*
 									<- lang_ru;;
@@ -1814,9 +1814,9 @@
 									<- lang_ru;;
 									=> nrel_format: format_html;;
 								*);
-								<= nrel_inclusion: .system_element_507;
-								=> .system_element_386: {
-									.system_element_540
+								<= nrel_inclusion: .system_element_506;
+								=> .system_element_385: {
+									.system_element_539
 									(*
 										=> nrel_idtf: [<p>std::vector<scTemplateTriple *> m_templateTriples</p>]
 										(*
@@ -1824,7 +1824,7 @@
 											=> nrel_format: format_html;;
 										*);;
 									*);
-									.system_element_541
+									.system_element_540
 									(*
 										=> nrel_idtf: [<p>std::unordered_multimap<std::string, size_t> m_templateItemsNamesToReplacementItemsPositions</p>]
 										(*
@@ -1832,7 +1832,7 @@
 											=> nrel_format: format_html;;
 										*);;
 									*);
-									.system_element_542
+									.system_element_541
 									(*
 										=> nrel_idtf: [<p>std::vector<std::unordered_set<size_t>> m_priorityOrderedTemplateTriples</p>]
 										(*
@@ -1840,7 +1840,7 @@
 											=> nrel_format: format_html;;
 										*);;
 									*);
-									.system_element_543
+									.system_element_542
 									(*
 										=> nrel_idtf: [<p>std::map<std::string, scAddr> m_templateItemsNamesToReplacementItemsAddrs</p>]
 										(*
@@ -1848,7 +1848,7 @@
 											=> nrel_format: format_html;;
 										*);;
 									*);
-									.system_element_544
+									.system_element_543
 									(*
 										=> nrel_idtf: [<p>std::map<std::string, scType> m_templateItemsNamesToTypes</p>]
 										(*
@@ -1858,16 +1858,16 @@
 									*)
 								};;
 
-								.system_element_545
+								.system_element_544
 								=> nrel_idtf: [<p>scTemplateTriple</p>]
 								(*
 									<- lang_ru;;
 									=> nrel_format: format_html;;
 									<- .system_element_361;;
 								*);
-								<= nrel_inclusion: .system_element_507;
-								=> .system_element_386: {
-									.system_element_546
+								<= nrel_inclusion: .system_element_506;
+								=> .system_element_385: {
+									.system_element_545
 									(*
 										=> nrel_idtf: [<p>size_t m_index</p>]
 										(*
@@ -1875,7 +1875,7 @@
 											=> nrel_format: format_html;;
 										*);;
 									*);
-									.system_element_547
+									.system_element_546
 									(*
 										=> nrel_idtf: [<p>std::array<scTemplateItem, 3> m_values</p>]
 										(*
@@ -1885,34 +1885,34 @@
 									*)
 								};;
 
-								.system_element_548
+								.system_element_547
 								=> nrel_idtf: [<p>scTemplateItem</p>]
 								(*
 									<- lang_ru;;
 									=> nrel_format: format_html;;
 									<- .system_element_361;;
 								*);
-								<= nrel_inclusion: .system_element_507;
-								=> .system_element_386: {
-									.system_element_549
+								<= nrel_inclusion: .system_element_506;
+								=> .system_element_385: {
+									.system_element_548
 									(*
-										<= nrel_inclusion: .system_element_488;;
+										<= nrel_inclusion: .system_element_487;;
 										=> nrel_idtf: [<p>ScAddr m_addrValue</p>]
 										(*
 											<- lang_ru;;
 											=> nrel_format: format_html;;
 										*);;
 									*);
-									.system_element_550
+									.system_element_549
 									(*
-										<= nrel_inclusion: .system_element_389;;
+										<= nrel_inclusion: .system_element_388;;
 										=> nrel_idtf: [<p>ScType m_typeValue</p>]
 										(*
 											<- lang_ru;;
 											=> nrel_format: format_html;;
 										*);;
 									*);
-									.system_element_551
+									.system_element_550
 									(*
 										=> nrel_idtf: [<p>std::string m_name</p>]
 										(*
@@ -1922,69 +1922,69 @@
 									*)
 								};;
 
-								.system_element_552
+								.system_element_551
 								=> nrel_inclusion: [*
-									<= .system_element_468: .system_element_532;;
+									<= .system_element_467: .system_element_531;;
 
-									.system_element_553
-									<- .system_element_484;
-									=> .system_element_485: [<p>scTemplate & Triple(scTemplateItemValue const & param1, scTemplateItemValue const & param2, scTemplateItemValue const & param3)</p>]
+									.system_element_552
+									<- .system_element_483;
+									=> .system_element_484: [<p>scTemplate & Triple(scTemplateItemValue const & param1, scTemplateItemValue const & param2, scTemplateItemValue const & param3)</p>]
 									(*
 										<- lang_ru;;
 										=> nrel_format: format_html;;
 										<- .system_element_361;;
 									*);
-									=> .system_element_486: <
-										.system_element_554;
-										.system_element_554;
-										.system_element_554
+									=> .system_element_485: <
+										.system_element_553;
+										.system_element_553;
+										.system_element_553
 									>;
-									=> .system_element_487: 
-										.system_element_532
+									=> .system_element_486: 
+										.system_element_531
 									;
-									=> .system_element_489: 
-										.system_element_555
+									=> .system_element_488: 
+										.system_element_554
 										(*
+											=> nrel_inclusion: .system_element_555;;
 											=> nrel_inclusion: .system_element_556;;
 											=> nrel_inclusion: .system_element_557;;
 											=> nrel_inclusion: .system_element_558;;
 											=> nrel_inclusion: .system_element_559;;
-											=> nrel_inclusion: .system_element_560;;
 										*)
 									;;
 
-									.system_element_561
-									<- .system_element_484;
-									=> .system_element_485: [<p>scTemplate & Fiver(scTemplateItemValue const & param1, scTemplateItemValue const & param2, scTemplateItemValue const & param3, scTemplateItemValue const & param4, scTemplateItemValue const & param5)</p>]
+									.system_element_560
+									<- .system_element_483;
+									=> .system_element_484: [<p>scTemplate & Fiver(scTemplateItemValue const & param1, scTemplateItemValue const & param2, scTemplateItemValue const & param3, scTemplateItemValue const & param4, scTemplateItemValue const & param5)</p>]
 									(*
 										<- lang_ru;;
 										=> nrel_format: format_html;;
 										<- .system_element_361;;
 									*);
-									=> .system_element_562: [<p>scTemplate & TripleWithRelation(scTemplateItemValue const & param1, scTemplateItemValue const & param2, scTemplateItemValue const & param3, scTemplateItemValue const & param4, scTemplateItemValue const & param5)</p>]
+									=> .system_element_561: [<p>scTemplate & TripleWithRelation(scTemplateItemValue const & param1, scTemplateItemValue const & param2, scTemplateItemValue const & param3, scTemplateItemValue const & param4, scTemplateItemValue const & param5)</p>]
 									(*
 										<- lang_ru;;
 										=> nrel_format: format_html;;
 										<- .system_element_361;;
 									*);
-									=> .system_element_486: <
-										.system_element_554;
-										.system_element_554;
-										.system_element_554;
-										.system_element_554;
-										.system_element_554
+									=> .system_element_485: <
+										.system_element_553;
+										.system_element_553;
+										.system_element_553;
+										.system_element_553;
+										.system_element_553
 									>;
-									=> .system_element_487: 
-										.system_element_532
+									=> .system_element_486: 
+										.system_element_531
 									;
-									=> .system_element_489: 
-										.system_element_555
+									=> .system_element_488: 
+										.system_element_554
 										(*
+											=> nrel_inclusion: .system_element_562;;
+											=> nrel_inclusion: .system_element_556;;
 											=> nrel_inclusion: .system_element_563;;
-											=> nrel_inclusion: .system_element_557;;
 											=> nrel_inclusion: .system_element_564;;
-											=> nrel_inclusion: .system_element_565;;
-											=> nrel_inclusion: .system_element_560;;
+											=> nrel_inclusion: .system_element_559;;
 										*)
 									;;
 								*];
@@ -2023,34 +2023,34 @@
 							*];;
 						*];;
 
-						.system_element_478
+						.system_element_477
 						=> nrel_inclusion: [*
 
-							.system_element_497
+							.system_element_496
 							=> nrel_inclusion: [*
 
-								.system_element_533
+								.system_element_532
 								=> nrel_idtf: [<p>scTemplateSearchResult</p>]
 								(*
 									<- lang_ru;;
 									=> nrel_format: format_html;;
 									<- .system_element_361;;
 								*);
-								<= nrel_inclusion: .system_element_507;;
+								<= nrel_inclusion: .system_element_506;;
 
-								.system_element_552
+								.system_element_551
 								=> nrel_inclusion: [*
 
-									.system_element_566
+									.system_element_565
 									=> nrel_idtf: [<p>scTemplateSearch</p>]
 									(*
 										<- lang_ru;;
 										=> nrel_format: format_html;;
 										<- .system_element_361;;
 									*);
-									<= nrel_inclusion: .system_element_507;
-									=> .system_element_386: {
-										.system_element_567
+									<= nrel_inclusion: .system_element_506;
+									=> .system_element_385: {
+										.system_element_566
 										(*
 											=> nrel_idtf: [<p>std::map<std::string, std::unordered_set<size_t>>  m_templateItemsNamesToDependedTemplateTriples</p>]
 											(*
@@ -2058,7 +2058,7 @@
 												=> nrel_format: format_html;;
 											*);;
 										*);
-										.system_element_568
+										.system_element_567
 										(*
 											=> nrel_idtf: [<p>std::vector<std::unordered_set<size_t>> m_connectivityComponentsTemplateTriples</p>]
 											(*
@@ -2066,7 +2066,7 @@
 												=> nrel_format: format_html;;
 											*);;
 										*);
-										.system_element_569
+										.system_element_568
 										(*
 											=> nrel_idtf: [<p>std::vector<size_t> m_connectivityComponentPriorityTemplateTriples</p>]
 											(*
@@ -2074,7 +2074,7 @@
 												=> nrel_format: format_html;;
 											*);;
 										*);
-										.system_element_570
+										.system_element_569
 										(*
 											=> nrel_idtf: [<p>std::vector<std::unordered_set<scAddr, scAddrHashFunc<uint32_t>>>  m_notUsedEdgesInTemplateTriples</p>]
 											(*
@@ -2082,7 +2082,7 @@
 												=> nrel_format: format_html;;
 											*);;
 										*);
-										.system_element_571
+										.system_element_570
 										(*
 											=> nrel_idtf: [<p>std::vector<std::unordered_set<scAddr, scAddrHashFunc<uint32_t>>>  m_usedEdgesInTemplateTriples</p>]
 											(*
@@ -2090,7 +2090,7 @@
 												=> nrel_format: format_html;;
 											*);;
 										*);
-										.system_element_572
+										.system_element_571
 										(*
 											=> nrel_idtf: [<p>std::vector<std::unordered_set<scAddr, scAddrHashFunc<uint32_t>>>  m_usedEdgesInReplacementConstructions</p>]
 											(*
@@ -2098,7 +2098,7 @@
 												=> nrel_format: format_html;;
 											*);;
 										*);
-										.system_element_573
+										.system_element_572
 										(*
 											=> nrel_idtf: [<p>std::vector<std::unordered_set<size_t>>  m_checkedTemplateTriplesInReplacementConstructions</p>]
 											(*
@@ -2106,7 +2106,7 @@
 												=> nrel_format: format_html;;
 											*);;
 										*);
-										.system_element_574
+										.system_element_573
 										(*
 											=> nrel_idtf: [<p>size_t m_lastReplacementConstructionIdx</p>]
 											(*
@@ -2114,7 +2114,7 @@
 												=> nrel_format: format_html;;
 											*);;
 										*);
-										.system_element_575
+										.system_element_574
 										(*
 											=> nrel_idtf: [<p>std::unordered_set<size_t> m_foundReplacementConstructions</p>]
 											(*
@@ -2125,127 +2125,127 @@
 									};;
 								*];;
 
-								.system_element_576
+								.system_element_575
 								=> nrel_inclusion: [*
-									<= .system_element_468: .system_element_533;;
+									<= .system_element_467: .system_element_532;;
 
-									.system_element_577
-									<- .system_element_484;
-									=> .system_element_485: [<p>scTemplateSearchResultItem operator(size_t index) const noexcept(false)</p>]
+									.system_element_576
+									<- .system_element_483;
+									=> .system_element_484: [<p>scTemplateSearchResultItem operator(size_t index) const noexcept(false)</p>]
 									(*
 										<- lang_ru;;
 										=> nrel_format: format_html;;
 										<- .system_element_361;;
 									*);
-									=> .system_element_486: <
-										.system_element_511
+									=> .system_element_485: <
+										.system_element_510
 									>;
-									=> .system_element_487: 
-										.system_element_578
+									=> .system_element_486: 
+										.system_element_577
 									;
-									=> .system_element_489: 
-										.system_element_579
+									=> .system_element_488: 
+										.system_element_578
 									;;
 
-									.system_element_580
-									<- .system_element_484;
-									<- .system_element_581;
-									=> .system_element_485: [<p>bool Get(size_t index, scTemplateSearchResultItem & outItem) const noexcept</p>]
+									.system_element_579
+									<- .system_element_483;
+									<- .system_element_580;
+									=> .system_element_484: [<p>bool Get(size_t index, scTemplateSearchResultItem & outItem) const noexcept</p>]
 									(*
 										<- lang_ru;;
 										=> nrel_format: format_html;;
 										<- .system_element_361;;
 									*);
-									=> .system_element_486: <
-										.system_element_511;
-										.system_element_578
+									=> .system_element_485: <
+										.system_element_510;
+										.system_element_577
 									>;
-									=> .system_element_487: 
-										.system_element_493
+									=> .system_element_486: 
+										.system_element_492
 									;;
 								*];;
 
-								.system_element_578
+								.system_element_577
 								=> nrel_idtf: [<p>scTemplateSearchResultItem</p>]
 								(*
 									<- lang_ru;;
 									=> nrel_format: format_html;;
 									<- .system_element_361;;
 								*);
-								<= nrel_inclusion: .system_element_507;;
+								<= nrel_inclusion: .system_element_506;;
 
-								.system_element_582
+								.system_element_581
 								=> nrel_inclusion: [*
-									<= .system_element_468: .system_element_578;;
+									<= .system_element_467: .system_element_577;;
 
-									.system_element_583
-									<- .system_element_484;
-									=> .system_element_485: [<p>scAddr const & operator(size_t index) const noexcept(false)</p>]
+									.system_element_582
+									<- .system_element_483;
+									=> .system_element_484: [<p>scAddr const & operator(size_t index) const noexcept(false)</p>]
 									(*
 										<- lang_ru;;
 										=> nrel_format: format_html;;
 										<- .system_element_361;;
 									*);
-									=> .system_element_486: <
-										.system_element_511
+									=> .system_element_485: <
+										.system_element_510
 									>;
-									=> .system_element_487: 
-										.system_element_488
+									=> .system_element_486: 
+										.system_element_487
 									;
-									=> .system_element_489: 
-										.system_element_584
+									=> .system_element_488: 
+										.system_element_583
+									;;
+
+									.system_element_584
+									<- .system_element_483;
+									<- .system_element_580;
+									=> .system_element_484: [<p>bool Get(size_t index, scAddr & outAddr) const noexcept</p>]
+									(*
+										<- lang_ru;;
+										=> nrel_format: format_html;;
+										<- .system_element_361;;
+									*);
+									=> .system_element_485: <
+										.system_element_510;
+										.system_element_487
+									>;
+									=> .system_element_486: 
+										.system_element_492
 									;;
 
 									.system_element_585
-									<- .system_element_484;
-									<- .system_element_581;
-									=> .system_element_485: [<p>bool Get(size_t index, scAddr & outAddr) const noexcept</p>]
+									<- .system_element_483;
+									=> .system_element_484: [<p>scAddr const & operator(std::string const & name) const noexcept(false)</p>]
 									(*
 										<- lang_ru;;
 										=> nrel_format: format_html;;
 										<- .system_element_361;;
 									*);
-									=> .system_element_486: <
-										.system_element_511;
-										.system_element_488
+									=> .system_element_485: <
+										.system_element_586
 									>;
-									=> .system_element_487: 
-										.system_element_493
-									;;
-
-									.system_element_586
-									<- .system_element_484;
-									=> .system_element_485: [<p>scAddr const & operator(std::string const & name) const noexcept(false)</p>]
-									(*
-										<- lang_ru;;
-										=> nrel_format: format_html;;
-										<- .system_element_361;;
-									*);
-									=> .system_element_486: <
-										.system_element_587
-									>;
-									=> .system_element_487: 
-										.system_element_488
+									=> .system_element_486: 
+										.system_element_487
 									;
-									=> .system_element_489: 
-										.system_element_588
+									=> .system_element_488: 
+										.system_element_587
 									;;
 
-									.system_element_589
-									<- .system_element_484;
-									<- .system_element_581;
-									=> .system_element_485: [<p>bool Get(std::string const & name, scAddr & outAddr) const noexcept</p>]
+									.system_element_588
+									<- .system_element_483;
+									<- .system_element_580;
+									=> .system_element_484: [<p>bool Get(std::string const & name, scAddr & outAddr) const noexcept</p>]
 									(*
 										<- lang_ru;;
 										=> nrel_format: format_html;;
 										<- .system_element_361;;
 									*);
-									=> .system_element_486: <
-										.system_element_587;
-										.system_element_488
+									=> .system_element_485: <
+										.system_element_586;
+										.system_element_487
 									>;
-									=> .system_element_487: 
-										.system_element_493
+									=> .system_element_486: 
+										.system_element_492
 									;;
 								*];
 								=> nrel_explanation: [<p>Текущий <b><i>Метод поиска конструкций в sc-памяти, изоморфных данному графу-образцу</i></b>, состоит из двух этапов: (1) <i>Этапа предобработки графа-образца</i>, (2)<i>Этапа поиска конструкций в sc-памяти, изоморфных заданному графу-образцу</i>. При этом внутри <i>Метода поиска конструкций в sc-памяти, изоморфных данному графу-образцу</i> происходит создание программного <i>итератора поиска конструкций в sc-памяти, изоморфных данному графу-образцу</i>, выполняющего весь алгоритм изоморфного поиска.<b><i>Этап предобработки графа-образца</i></b> состоит из <u>следующих</u> промежуточных шагов обработки:
@@ -2309,7 +2309,7 @@
 				*);;
 			*];;
 
-			.system_element_590
+			.system_element_589
 			=> nrel_inclusion: [*
 				=> nrel_idtf: [<p>Документация Сетевого интерфейса Реализации sc-памяти Программной платформе ostis-систем</p>]
 				(*
@@ -2342,19 +2342,19 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);
-				<- .system_element_591;
+				<- .system_element_590;
 				<- .system_element_343;
 				<- .system_element_344;
 				=> .system_element_359: 
 					.system_element_360;
 					.system_element_361;
+					.system_element_591;
 					.system_element_592;
 					.system_element_593;
-					.system_element_594;
-					.system_element_595
+					.system_element_594
 				;
-				=> .system_element_596: 
-					.system_element_597
+				=> .system_element_595: 
+					.system_element_596
 				;
 				=> nrel_authors: 
 					.system_element_327
@@ -2375,19 +2375,19 @@
 					=> nrel_format: format_html;;
 				*);
 				=> .system_element_347: {
-					.system_element_598;
-					.system_element_599
+					.system_element_597;
+					.system_element_598
 					(*
 						=> .system_element_347: {
+							.system_element_599;
 							.system_element_600;
 							.system_element_601;
-							.system_element_602;
-							.system_element_603
+							.system_element_602
 						};;
 					*)
 				};;
 
-				.system_element_598
+				.system_element_597
 				=> nrel_idtf: [<p>Серверная система на основе Websocket, обеспечивающая доступ к Реализации sc-памяти в Программной платформе ostis-систем при помощи команд SC-JSON-кода</p>]
 				(*
 					<- lang_ru;;
@@ -2403,37 +2403,37 @@
 					<- lang_ru;;
 					=> nrel_format: format_html;;
 				*);
-				=> .system_element_604: [<p>sc-сервер</p>]
+				=> .system_element_603: [<p>sc-сервер</p>]
 				(*
 					<- lang_ru;;
 					=> nrel_format: format_html;;
 				*);
-				<- .system_element_591;
-				<- .system_element_450;
+				<- .system_element_590;
+				<- .system_element_449;
 				<- .system_element_344;
 				=> .system_element_359: 
-					.system_element_605;
+					.system_element_604;
 					.system_element_361
 				;
 				=> .system_element_363: 
-					.system_element_597
+					.system_element_596
 				;
 				=> .system_element_352: 
+					.system_element_605;
 					.system_element_606;
-					.system_element_607;
-					.system_element_608
+					.system_element_607
 					(*
 						=> nrel_idtf: [<p>sc-config-utils</p>];;
-						<= .system_element_609: .system_element_608
+						<= .system_element_608: .system_element_607
 						(*
 							=> nrel_idtf: [<p>sc-config-utils</p>];;
-							<- .system_element_591;;
+							<- .system_element_590;;
 							<- .system_element_343;;
 							<- .system_element_344;;
 							=> nrel_authors: 
 								.system_element_327
 							;;
-							=> .system_element_610: [<p>https://github.com/ostis-ai/sc-machine/tree/main/sc-tools/sc-config-utils</p>]
+							=> .system_element_609: [<p>https://github.com/ostis-ai/sc-machine/tree/main/sc-tools/sc-config-utils</p>]
 							(*
 								<- lang_ru;;
 								=> nrel_format: format_html;;
@@ -2442,7 +2442,7 @@
 					*);
 					.system_element_348
 				;
-				=> .system_element_610: [<p>https://github.com/ostis-ai/sc-machine/tree/main/sc-tools/sc-server</p>]
+				=> .system_element_609: [<p>https://github.com/ostis-ai/sc-machine/tree/main/sc-tools/sc-server</p>]
 				(*
 					<- lang_ru;;
 					=> nrel_format: format_html;;
@@ -2451,14 +2451,14 @@
 					.system_element_327
 				;;
 
-				.system_element_611
+				.system_element_610
 				=> nrel_inclusion: [*
 					=> nrel_idtf: [<p>Документация Метаязыка обмена сообщениями между ostis-системами в Программной платформе ostis-систем</p>]
 					(*
 						<- lang_ru;;
 						=> nrel_format: format_html;;
 					*);
-					-> .system_element_330: .system_element_597;
+					-> .system_element_330: .system_element_596;
 					=> nrel_authors: 
 						.system_element_327
 					;
@@ -2469,7 +2469,7 @@
 						=> nrel_format: format_html;;
 					*);;
 
-					.system_element_597
+					.system_element_596
 					=> nrel_idtf: [<p>Semantic JSON-code</p>]
 					(*
 						<- lang_ru;;
@@ -2490,22 +2490,22 @@
 						<- lang_ru;;
 						=> nrel_format: format_html;;
 					*);
-					=> .system_element_604: [<p>sc-json-текст</p>]
+					=> .system_element_603: [<p>sc-json-текст</p>]
 					(*
 						<- lang_ru;;
 						=> nrel_format: format_html;;
 						<- .system_element_374;;
 					*);
 					<- .system_element_375;
-					<- .system_element_612;
-					<= nrel_inclusion: .system_element_613;
+					<- .system_element_611;
+					<= nrel_inclusion: .system_element_612;
 					=> nrel_authors: 
 						.system_element_327;
 						.system_element_346
 					;
 					=> .system_element_204: 
-						.system_element_614;
-						.system_element_615
+						.system_element_613;
+						.system_element_614
 					;
 					=> .system_element_200: {
 						[<p>Язык JSON является общепринятым открытым форматом, для работы с которым существует большое количество библиотек для популярных языков программирования. Это, в свою очередь, упрощает реализацию клиента и сервера для протокола, построенного на базе <i><b>SC-JSON-код</b></i>.</p>]
@@ -2525,38 +2525,38 @@
 						=> nrel_format: format_html;;
 					*);;
 
-					.system_element_616
+					.system_element_615
 					=> nrel_inclusion: [*
 
-						.system_element_616
+						.system_element_615
 						=> nrel_note: [<p><i>Синтаксис SC-JSON-кода</i> задается: (1) <i>Алфавитом SC-JSON-кода</i>, (2) Грамматикой SC-JSON-кода</p>]
 						(*
 							<- lang_ru;;
 							=> nrel_format: format_html;;
 						*);
-						<= .system_element_617: .system_element_597;;
+						<= .system_element_616: .system_element_596;;
 
-						.system_element_618
+						.system_element_617
 						=> nrel_inclusion: [*
 
-							.system_element_597
-							<= nrel_set_of_subsets: .system_element_619
+							.system_element_596
+							<= nrel_set_of_subsets: .system_element_618
 							(*
-								<= nrel_inclusion: .system_element_620;;
-								<= nrel_set_of_subsets: .system_element_621
+								<= nrel_inclusion: .system_element_619;;
+								<= nrel_set_of_subsets: .system_element_620
 								(*
 									<= nrel_cartesian_product: <
-										.system_element_622;
-										.system_element_623
+										.system_element_621;
+										.system_element_622
 										(*
 											=> nrel_subdividing: {
+												.system_element_623;
 												.system_element_624;
-												.system_element_625;
-												.system_element_626
+												.system_element_625
 												(*
 													=> nrel_subdividing: {
-														.system_element_622;
-														.system_element_627
+														.system_element_621;
+														.system_element_626
 													};;
 												*)
 											};;
@@ -2564,13 +2564,13 @@
 									>;;
 								*);;
 								=> nrel_subdividing: {
-									.system_element_628;
-									.system_element_629
+									.system_element_627;
+									.system_element_628
 								};;
 							*);;
 						*];;
 
-						.system_element_630
+						.system_element_629
 						=> nrel_idtf: [<p>Множество всех возможных символов в SC-JSON-коде</p>]
 						(*
 							<- lang_ru;;
@@ -2581,15 +2581,15 @@
 							<- lang_ru;;
 							=> nrel_format: format_html;;
 						*);
-						<= .system_element_381: .system_element_597;
+						<= .system_element_380: .system_element_596;
 						=> nrel_note: [<p>Последовательности знаков алфавита могут образовывать sc-json ключевые слова, sc-json-пары, sc-json-предложения из sc-json-пар и sc-json-тексты из sc-json-предложений.</p>]
 						(*
 							<- lang_ru;;
 							=> nrel_format: format_html;;
 						*);;
 
-						.system_element_597
-						=> .system_element_406: 
+						.system_element_596
+						=> .system_element_405: 
 							[<p>Каждое правило <i>Грамматики SC-JSON-кода</i> описывает корректный с точки зрения <i>Синтаксиса SC-JSON-кода</i> порядок sc-json-объектов в sc-json-предложении. Совокупность правил <i>Грамматики SC-JSON-кода</i> описывает корректный с точки зрения <i>Синтаксиса SC-JSON-кода</i> порядок sc-json-предложений в sc-json-тексте.</p>]
 							(*
 								<- lang_ru;;
@@ -2622,7 +2622,7 @@
 							*)
 						;;
 
-						.system_element_631
+						.system_element_630
 						=> nrel_idtf: [<p>Множество всех возможных правил, используемых при построении команд и ответов на них на SC-JSON-коде</p>]
 						(*
 							<- lang_ru;;
@@ -2633,365 +2633,365 @@
 							<- lang_ru;;
 							=> nrel_format: format_html;;
 						*);
-						<= .system_element_632: .system_element_597;
+						<= .system_element_631: .system_element_596;
 						=> nrel_explanation: [<p>Правила <i>Грамматики SC-JSON-кода</i> позволяют правильно составить команду на SC-JSON-коде. Каждое правило грамматики <i>SC-JSON-кода</i> представляется в виде правила на <i>Языке описания грамматик ANTLR</i> и его интерпретации на естественном языке.</p>]
 						(*
 							<- lang_ru;;
 							=> nrel_format: format_html;;
 						*);
-						-> .system_element_330: .system_element_633
+						-> .system_element_330: .system_element_632
 						(*
 							<=> nrel_semantic_equivalence: "file://images/command.png"
 							(*
 								<- concept_file;;
 								=> nrel_format: format_png;;
-								<- .system_element_634;;
-								=> .system_element_635: [<p>Класс <i>команд на SC-JSON-коде</i> включает <i>команду создания sc-элементов</i>, <i>команду получения соответствующих типов sc-элементов</i>, <i>команду удаления sc-элементов</i>, <i>команду обработки ключевых sc-элементов</i>, <i>команду обработки содержимого файлов ostis-системы</i>, <i>команду поиска sc-конструкций, изоморфных заданному sc-шаблону</i>, <i>команду генерации sc-конструкции, изоморфной заданному sc-шаблону</i>, и <i>команду обработки sc-событий</i>. В <i>команду на SC-JSON-коде</i> включаются идентификатор этой команды, тип и сообщение.</p>]
+								<- .system_element_633;;
+								=> .system_element_634: [<p>Класс <i>команд на SC-JSON-коде</i> включает <i>команду создания sc-элементов</i>, <i>команду получения соответствующих типов sc-элементов</i>, <i>команду удаления sc-элементов</i>, <i>команду обработки ключевых sc-элементов</i>, <i>команду обработки содержимого файлов ostis-системы</i>, <i>команду поиска sc-конструкций, изоморфных заданному sc-шаблону</i>, <i>команду генерации sc-конструкции, изоморфной заданному sc-шаблону</i>, и <i>команду обработки sc-событий</i>. В <i>команду на SC-JSON-коде</i> включаются идентификатор этой команды, тип и сообщение.</p>]
 								(*
 									<- lang_ru;;
 									=> nrel_format: format_html;;
 								*);;
 							*);;
-							<= .system_element_636: .system_element_628;;
+							<= .system_element_635: .system_element_627;;
 						*);
-						-> .system_element_330: .system_element_637
+						-> .system_element_330: .system_element_636
 						(*
 							<=> nrel_semantic_equivalence: "file://images/command_answer.png"
 							(*
 								<- concept_file;;
 								=> nrel_format: format_png;;
-								<- .system_element_634;;
-								=> .system_element_635: [<p>Класс <i>ответов на команды на SC-JSON-коде</i> включает <i>ответ на команду создания sc-элементов</i>, <i>ответ на команду получения соответствующих типов sc-элементов</i>, <i>ответ на команду удаления sc-элементов</i>, <i>ответ на команду обработки ключевых sc-элементов</i>, <i>ответ на команду обработки содержимого файлов ostis-системы</i>, <i>ответ на команду поиска sc-конструкций, изоморфных заданному sc-шаблону</i>, <i>ответ на команду генерации sc-конструкции, изоморфной заданному sc-шаблону</i>, и <i>ответ на команду обработки sc-событий</i>. В <i>ответ на команду на SC-JSON-коде</i> включаются идентификатор соответствующей команды, статус обработки ответа и ответное сообщение.</p>]
+								<- .system_element_633;;
+								=> .system_element_634: [<p>Класс <i>ответов на команды на SC-JSON-коде</i> включает <i>ответ на команду создания sc-элементов</i>, <i>ответ на команду получения соответствующих типов sc-элементов</i>, <i>ответ на команду удаления sc-элементов</i>, <i>ответ на команду обработки ключевых sc-элементов</i>, <i>ответ на команду обработки содержимого файлов ostis-системы</i>, <i>ответ на команду поиска sc-конструкций, изоморфных заданному sc-шаблону</i>, <i>ответ на команду генерации sc-конструкции, изоморфной заданному sc-шаблону</i>, и <i>ответ на команду обработки sc-событий</i>. В <i>ответ на команду на SC-JSON-коде</i> включаются идентификатор соответствующей команды, статус обработки ответа и ответное сообщение.</p>]
 								(*
 									<- lang_ru;;
 									=> nrel_format: format_html;;
 								*);;
 							*);;
-							<= .system_element_636: .system_element_629;;
+							<= .system_element_635: .system_element_628;;
 						*);
-						-> .system_element_638
+						-> .system_element_637
 						(*
 							<=> nrel_semantic_equivalence: "file://images/create_elements_command.pdf"
 							(*
 								<- concept_file;;
 								=> nrel_format: format_pdf;;
-								<- .system_element_634;;
-								=> .system_element_635: [<p>В сообщении <i>команды создания sc-элементов</i> представляется список описаний создаваемых sc-элементов. Такими sc-элементами могут быть sc-узел, sc-дуга, sc-ребро или файл ostis-системы. Тип sc-элемента указывается в паре с ключевым словом "el": для sc-узла sc-json-тип элемент представляется как "node", для sc-дуги и sc-ребра - "edge", для файла ostis-системы - "link". Метки типов sc-элементов уточняются в соответствующих им описаниях в сообщении команды в паре с ключевым словом "type". Если создаваемым sc-элементом является файл ostis-системы, то дополнительно указывается содержимое этого файла ostis-системы в паре с ключевым словом "content", если создаваемым sc-элементом является sc-дуга или sc-ребро, то указываются описания sc-элементов, из которых они выходят, и sc-элементов, в которые они входят. Описание таких sc-элементов состоят из двух пар: первая пара указывает на способ ассоциации с sc-элементом и представляется как "addr" или "idtf" или "ref" в паре с ключевым словом "type", вторая пара - то, по чему происходит ассоциация с этим sc-элементом: его хэшу, системному идентификатору или номеру в массиве создаваемых sc-элементов - в паре с ключевым словом "value".</p>]
+								<- .system_element_633;;
+								=> .system_element_634: [<p>В сообщении <i>команды создания sc-элементов</i> представляется список описаний создаваемых sc-элементов. Такими sc-элементами могут быть sc-узел, sc-дуга, sc-ребро или файл ostis-системы. Тип sc-элемента указывается в паре с ключевым словом "el": для sc-узла sc-json-тип элемент представляется как "node", для sc-дуги и sc-ребра - "edge", для файла ostis-системы - "link". Метки типов sc-элементов уточняются в соответствующих им описаниях в сообщении команды в паре с ключевым словом "type". Если создаваемым sc-элементом является файл ostis-системы, то дополнительно указывается содержимое этого файла ostis-системы в паре с ключевым словом "content", если создаваемым sc-элементом является sc-дуга или sc-ребро, то указываются описания sc-элементов, из которых они выходят, и sc-элементов, в которые они входят. Описание таких sc-элементов состоят из двух пар: первая пара указывает на способ ассоциации с sc-элементом и представляется как "addr" или "idtf" или "ref" в паре с ключевым словом "type", вторая пара - то, по чему происходит ассоциация с этим sc-элементом: его хэшу, системному идентификатору или номеру в массиве создаваемых sc-элементов - в паре с ключевым словом "value".</p>]
 								(*
 									<- lang_ru;;
 									=> nrel_format: format_html;;
 								*);;
 							*);;
-							<= .system_element_636: .system_element_639;;
+							<= .system_element_635: .system_element_638;;
 						*);
-						-> .system_element_640
+						-> .system_element_639
 						(*
 							<=> nrel_semantic_equivalence: "file://images/create_elements_command_answer.png"
 							(*
 								<- concept_file;;
 								=> nrel_format: format_png;;
-								<- .system_element_634;;
-								=> .system_element_635: [<p>Сообщением <i>ответа на команду создания sc-элементов</i> является список хэшей созданных sc-элементов, соответствующих описаниям <i>команды создания sc-элементов</i> со статусом 1, в случае успешной обработки команды.</p>]
+								<- .system_element_633;;
+								=> .system_element_634: [<p>Сообщением <i>ответа на команду создания sc-элементов</i> является список хэшей созданных sc-элементов, соответствующих описаниям <i>команды создания sc-элементов</i> со статусом 1, в случае успешной обработки команды.</p>]
 								(*
 									<- lang_ru;;
 									=> nrel_format: format_html;;
 								*);;
 							*);;
-							<= .system_element_636: .system_element_641;;
+							<= .system_element_635: .system_element_640;;
 						*);
-						-> .system_element_642
+						-> .system_element_641
 						(*
 							<=> nrel_semantic_equivalence: "file://images/create_elements_by_scs_command.png"
 							(*
 								<- concept_file;;
 								=> nrel_format: format_png;;
-								<- .system_element_634;;
-								=> .system_element_635: [<p>В списке описаний создаваемых sc-элементов сообщения этой команды вместо описания создаваемого отдельного sc-элемента указывается фрагмент SCs-текста.</p>]
+								<- .system_element_633;;
+								=> .system_element_634: [<p>В списке описаний создаваемых sc-элементов сообщения этой команды вместо описания создаваемого отдельного sc-элемента указывается фрагмент SCs-текста.</p>]
 								(*
 									<- lang_ru;;
 									=> nrel_format: format_html;;
 								*);;
 							*);;
-							<= .system_element_636: .system_element_643;;
+							<= .system_element_635: .system_element_642;;
 						*);
-						-> .system_element_644
+						-> .system_element_643
 						(*
 							<=> nrel_semantic_equivalence: "file://images/create_elements_by_scs_command_answer.png"
 							(*
 								<- concept_file;;
 								=> nrel_format: format_png;;
-								<- .system_element_634;;
-								=> .system_element_635: [<p>Сообщением <i>ответа на команду создания sc-элементов</i> является список результатов обработки переданных SCs-текстов. Нулевой статус говорит о том, что обработка соотвествующего SCs-текста завершилась безуспешно.</p>]
+								<- .system_element_633;;
+								=> .system_element_634: [<p>Сообщением <i>ответа на команду создания sc-элементов</i> является список результатов обработки переданных SCs-текстов. Нулевой статус говорит о том, что обработка соотвествующего SCs-текста завершилась безуспешно.</p>]
 								(*
 									<- lang_ru;;
 									=> nrel_format: format_html;;
 								*);;
 							*);;
-							<= .system_element_636: .system_element_645;;
+							<= .system_element_635: .system_element_644;;
 						*);
-						-> .system_element_646
+						-> .system_element_645
 						(*
 							<=> nrel_semantic_equivalence: "file://images/check_elements_command.png"
 							(*
 								<- concept_file;;
 								=> nrel_format: format_png;;
-								<- .system_element_634;;
-								=> .system_element_635: [<p>Сообщением <i>команды получения соответствующих типов sc-элементов</i> является списком хэшей sc-элементов, у которых необходимо получить синтаксические типы.</p>]
+								<- .system_element_633;;
+								=> .system_element_634: [<p>Сообщением <i>команды получения соответствующих типов sc-элементов</i> является списком хэшей sc-элементов, у которых необходимо получить синтаксические типы.</p>]
 								(*
 									<- lang_ru;;
 									=> nrel_format: format_html;;
 								*);;
 							*);;
-							<= .system_element_636: .system_element_647;;
+							<= .system_element_635: .system_element_646;;
 						*);
-						-> .system_element_648
+						-> .system_element_647
 						(*
 							<=> nrel_semantic_equivalence: "file://images/check_elements_command_answer.png"
 							(*
 								<- concept_file;;
 								=> nrel_format: format_png;;
-								<- .system_element_634;;
-								=> .system_element_635: [<p>Сообщением <i>ответа на команду получения соответствующих типов sc-элементов</i> является список типов проверенных sc-элементов, соответствующих описаниям <i>команды получения соответствующих типов sc-элементов</i> со статусом 1, в случае успешной обработки команды.</p>]
+								<- .system_element_633;;
+								=> .system_element_634: [<p>Сообщением <i>ответа на команду получения соответствующих типов sc-элементов</i> является список типов проверенных sc-элементов, соответствующих описаниям <i>команды получения соответствующих типов sc-элементов</i> со статусом 1, в случае успешной обработки команды.</p>]
 								(*
 									<- lang_ru;;
 									=> nrel_format: format_html;;
 								*);;
 							*);;
-							<= .system_element_636: .system_element_649;;
+							<= .system_element_635: .system_element_648;;
 						*);
-						-> .system_element_650
+						-> .system_element_649
 						(*
 							<=> nrel_semantic_equivalence: "file://images/delete_elements_command.png"
 							(*
 								<- concept_file;;
 								=> nrel_format: format_png;;
-								<- .system_element_634;;
-								=> .system_element_635: [<p>Сообщением <i>команды удаления sc-элементов</i> является список хэшей sc-элементов, которые необходимо удалить из sc-памяти.</p>]
+								<- .system_element_633;;
+								=> .system_element_634: [<p>Сообщением <i>команды удаления sc-элементов</i> является список хэшей sc-элементов, которые необходимо удалить из sc-памяти.</p>]
 								(*
 									<- lang_ru;;
 									=> nrel_format: format_html;;
 								*);;
 							*);;
-							<= .system_element_636: .system_element_651;;
+							<= .system_element_635: .system_element_650;;
 						*);
-						-> .system_element_652
+						-> .system_element_651
 						(*
 							<=> nrel_semantic_equivalence: "file://images/delete_elements_command_answer.png"
 							(*
 								<- concept_file;;
 								=> nrel_format: format_png;;
-								<- .system_element_634;;
-								=> .system_element_635: [<p>Сообщение <i>ответа на команду удаления sc-элементов</i> является пустым со статусом 1, в случае успешной обработки команды.</p>]
+								<- .system_element_633;;
+								=> .system_element_634: [<p>Сообщение <i>ответа на команду удаления sc-элементов</i> является пустым со статусом 1, в случае успешной обработки команды.</p>]
 								(*
 									<- lang_ru;;
 									=> nrel_format: format_html;;
 								*);;
 							*);;
-							<= .system_element_636: .system_element_653;;
+							<= .system_element_635: .system_element_652;;
 						*);
-						-> .system_element_654
+						-> .system_element_653
 						(*
 							<=> nrel_semantic_equivalence: "file://images/handle_keynodes_command.png"
 							(*
 								<- concept_file;;
 								=> nrel_format: format_png;;
-								<- .system_element_634;;
-								=> .system_element_635: [<p>Сообщение <i>команды обработки ключевых sc-элементов</i> может включать описание ключевых sc-элементов, которые необходимо найти и/или разрешить по их идентификаторам. Такое деление осуществляется с помощью подкоманд, содержащихся в сообщении команды. Идентификаторами подкоманд могут быть "find" и "resolve" соответственно, стоящие в паре с ключевым словом "command". Описание искомого sc-элемента команды "find" включает системный идентификатор sc-элемента, по которому необходимо найти этот sc-элемент, стоящий в паре с ключевым словом "idtf". Описание разрешаемого sc-элемента команды "resolve" включает системный идентификатор sc-элемента, по которому необходимо найти этот sc-элемент, либо в случае безуспешного поиска создать sc-элемент некоторого типа, указанного в его описании в паре с ключевым словом "elType", и установить для него системный идентификатор, по которому была произведена попытка найти другой sc-элемент.</p>]
+								<- .system_element_633;;
+								=> .system_element_634: [<p>Сообщение <i>команды обработки ключевых sc-элементов</i> может включать описание ключевых sc-элементов, которые необходимо найти и/или разрешить по их идентификаторам. Такое деление осуществляется с помощью подкоманд, содержащихся в сообщении команды. Идентификаторами подкоманд могут быть "find" и "resolve" соответственно, стоящие в паре с ключевым словом "command". Описание искомого sc-элемента команды "find" включает системный идентификатор sc-элемента, по которому необходимо найти этот sc-элемент, стоящий в паре с ключевым словом "idtf". Описание разрешаемого sc-элемента команды "resolve" включает системный идентификатор sc-элемента, по которому необходимо найти этот sc-элемент, либо в случае безуспешного поиска создать sc-элемент некоторого типа, указанного в его описании в паре с ключевым словом "elType", и установить для него системный идентификатор, по которому была произведена попытка найти другой sc-элемент.</p>]
 								(*
 									<- lang_ru;;
 									=> nrel_format: format_html;;
 								*);;
 							*);;
-							<= .system_element_636: .system_element_655;;
+							<= .system_element_635: .system_element_654;;
 						*);
-						-> .system_element_656
+						-> .system_element_655
 						(*
 							<=> nrel_semantic_equivalence: "file://images/handle_keynodes_command_answer.png"
 							(*
 								<- concept_file;;
 								=> nrel_format: format_png;;
-								<- .system_element_634;;
-								=> .system_element_635: [<p>Сообщением <i>ответа на команду обработки ключевых sc-элементов</i> является список хэшей sc-элементов, соответствующих описаниям <i>команды обработки ключевых sc-элементов</i> со статусом 1, в случае успешной обработки команды.</p>]
+								<- .system_element_633;;
+								=> .system_element_634: [<p>Сообщением <i>ответа на команду обработки ключевых sc-элементов</i> является список хэшей sc-элементов, соответствующих описаниям <i>команды обработки ключевых sc-элементов</i> со статусом 1, в случае успешной обработки команды.</p>]
 								(*
 									<- lang_ru;;
 									=> nrel_format: format_html;;
 								*);;
 							*);;
-							<= .system_element_636: .system_element_657;;
+							<= .system_element_635: .system_element_656;;
 						*);
-						-> .system_element_658
+						-> .system_element_657
 						(*
 							<=> nrel_semantic_equivalence: "file://images/handle_link_contents_command.png"
 							(*
 								<- concept_file;;
 								=> nrel_format: format_png;;
-								<- .system_element_634;;
-								=> .system_element_635: [<p>Сообщение <i>команды обработки содержимого файлов ostis-системы</i> может включать описание ключевых файлов ostis-системы, которые необходимо найти по их содержимому или части этого содержимого, для которых необходимо установить содержимое разрешить и/или у которых необходимо получить содержимое. Как и в <i>Правиле, задающее синтаксис команды обработки ключевых sc-элементов</i> деление осуществляется с помощью подкоманд, содержащихся в сообщении команды. Идентификаторами подкоманд могут быть "find", "find_by_substr", "set" и "get" соответственно, стоящие в паре с ключевым словом "command". В описаниях команд "set" и "get" указывается хэш файла ostis-системы в паре с ключевым словом "addr". В описаниях команд "set", "find" и "find_by_substr" указывается содержимое файла ostis-системы в паре с ключевым словом "data". Дополнительно в описании подкоманды "set" указывается тип устанавливаемого содержимого файла ostis-системы.</p>]
+								<- .system_element_633;;
+								=> .system_element_634: [<p>Сообщение <i>команды обработки содержимого файлов ostis-системы</i> может включать описание ключевых файлов ostis-системы, которые необходимо найти по их содержимому или части этого содержимого, для которых необходимо установить содержимое разрешить и/или у которых необходимо получить содержимое. Как и в <i>Правиле, задающее синтаксис команды обработки ключевых sc-элементов</i> деление осуществляется с помощью подкоманд, содержащихся в сообщении команды. Идентификаторами подкоманд могут быть "find", "find_by_substr", "set" и "get" соответственно, стоящие в паре с ключевым словом "command". В описаниях команд "set" и "get" указывается хэш файла ostis-системы в паре с ключевым словом "addr". В описаниях команд "set", "find" и "find_by_substr" указывается содержимое файла ostis-системы в паре с ключевым словом "data". Дополнительно в описании подкоманды "set" указывается тип устанавливаемого содержимого файла ostis-системы.</p>]
 								(*
 									<- lang_ru;;
 									=> nrel_format: format_html;;
 								*);;
 							*);;
-							<= .system_element_636: .system_element_659;;
+							<= .system_element_635: .system_element_658;;
 						*);
-						-> .system_element_660
+						-> .system_element_659
 						(*
 							<=> nrel_semantic_equivalence: "file://images/handle_link_contents_command_answer.png"
 							(*
 								<- concept_file;;
 								=> nrel_format: format_png;;
-								<- .system_element_634;;
-								=> .system_element_635: [<p>Сообщением <i>ответа на команду обработки содержимого файлов ostis-системы</i> является список, состоящий из булевого результата установки содержимого в файл ostis-системы и/или найденных файлов ostis-системы по их содержимому и/или описания полученного содержимого файлов ostis-системы, соответствующих описаниям <i>команды обработки содержимого файлов ostis-системы</i> со статусом 1, в случае успешной обработки команды.</p>]
+								<- .system_element_633;;
+								=> .system_element_634: [<p>Сообщением <i>ответа на команду обработки содержимого файлов ostis-системы</i> является список, состоящий из булевого результата установки содержимого в файл ostis-системы и/или найденных файлов ostis-системы по их содержимому и/или описания полученного содержимого файлов ostis-системы, соответствующих описаниям <i>команды обработки содержимого файлов ostis-системы</i> со статусом 1, в случае успешной обработки команды.</p>]
 								(*
 									<- lang_ru;;
 									=> nrel_format: format_html;;
 								*);;
 							*);;
-							<= .system_element_636: .system_element_661;;
+							<= .system_element_635: .system_element_660;;
 						*);
-						-> .system_element_662
+						-> .system_element_661
 						(*
 							<=> nrel_semantic_equivalence: "file://images/search_template_command.png"
 							(*
 								<- concept_file;;
 								=> nrel_format: format_png;;
-								<- .system_element_634;;
-								<= nrel_inclusion: .system_element_663;;
-								=> .system_element_635: [<p><i>Правило, задающее синтаксис команды поиска sc-конструкций, изоморфных заданному sc-шаблону</i> включает <i>Правило, задающее синтаксис сообщения <i>команды поиска sc-конструкций, изоморфных заданному sc-шаблону,</i> и <i>команды генерации sc-конструкции, изоморфной заданному sc-шаблону</i></i> и описывает команду поиска sc-конструкций по сформированному этой командой sc-шаблону (см. <i>Правило, задающее синтаксис сообщения <i>команды поиска sc-конструкций, изоморфных заданному sc-шаблону,</i> и <i>команды генерации sc-конструкции, изоморфной заданному sc-шаблону</i></i>).</p>]
+								<- .system_element_633;;
+								<= nrel_inclusion: .system_element_662;;
+								=> .system_element_634: [<p><i>Правило, задающее синтаксис команды поиска sc-конструкций, изоморфных заданному sc-шаблону</i> включает <i>Правило, задающее синтаксис сообщения <i>команды поиска sc-конструкций, изоморфных заданному sc-шаблону,</i> и <i>команды генерации sc-конструкции, изоморфной заданному sc-шаблону</i></i> и описывает команду поиска sc-конструкций по сформированному этой командой sc-шаблону (см. <i>Правило, задающее синтаксис сообщения <i>команды поиска sc-конструкций, изоморфных заданному sc-шаблону,</i> и <i>команды генерации sc-конструкции, изоморфной заданному sc-шаблону</i></i>).</p>]
 								(*
 									<- lang_ru;;
 									=> nrel_format: format_html;;
 								*);;
 							*);;
-							<= .system_element_636: .system_element_664;;
+							<= .system_element_635: .system_element_663;;
 						*);
-						-> .system_element_665
+						-> .system_element_664
 						(*
 							<=> nrel_semantic_equivalence: "file://images/search_template_command_answer.png"
 							(*
 								<- concept_file;;
 								=> nrel_format: format_png;;
-								<- .system_element_634;;
-								=> .system_element_635: [<p>Сообщение <i>ответа на команду поиска sc-конструкций, изоморфных заданному sc-шаблону</i> состоит из списка найденных sc-конструкций и отображения псевдонимов sc-элементов на их позиции в тройках sc-шаблона. Ответ имеет статус 1, в случае успешной обработки команды.</p>]
+								<- .system_element_633;;
+								=> .system_element_634: [<p>Сообщение <i>ответа на команду поиска sc-конструкций, изоморфных заданному sc-шаблону</i> состоит из списка найденных sc-конструкций и отображения псевдонимов sc-элементов на их позиции в тройках sc-шаблона. Ответ имеет статус 1, в случае успешной обработки команды.</p>]
 								(*
 									<- lang_ru;;
 									=> nrel_format: format_html;;
 								*);;
 							*);;
-							<= .system_element_636: .system_element_666;;
+							<= .system_element_635: .system_element_665;;
 						*);
-						-> .system_element_667
+						-> .system_element_666
 						(*
 							<=> nrel_semantic_equivalence: "file://images/generate_template_command.png"
 							(*
 								<- concept_file;;
 								=> nrel_format: format_png;;
-								<- .system_element_634;;
-								<= nrel_inclusion: .system_element_668;;
-								=> .system_element_635: [<p><i>Правило, задающее синтаксис команды создания sc-конструкции, изоморфной заданному sc-шаблону</i> включает <i>Правило, задающее синтаксис сообщения <i>команды поиска sc-конструкций, изоморфных заданному sc-шаблону,</i> и <i>команды генерации sc-конструкции, изоморфной заданному sc-шаблону</i></i> и описывает команду создания sc-конструкции по сформированному этой командой sc-шаблону (см. <i>Правило, задающее синтаксис сообщения <i>команды поиска sc-конструкций, изоморфных заданному sc-шаблону,</i> и <i>команды генерации sc-конструкции, изоморфной заданному sc-шаблону</i></i>).</p>]
+								<- .system_element_633;;
+								<= nrel_inclusion: .system_element_667;;
+								=> .system_element_634: [<p><i>Правило, задающее синтаксис команды создания sc-конструкции, изоморфной заданному sc-шаблону</i> включает <i>Правило, задающее синтаксис сообщения <i>команды поиска sc-конструкций, изоморфных заданному sc-шаблону,</i> и <i>команды генерации sc-конструкции, изоморфной заданному sc-шаблону</i></i> и описывает команду создания sc-конструкции по сформированному этой командой sc-шаблону (см. <i>Правило, задающее синтаксис сообщения <i>команды поиска sc-конструкций, изоморфных заданному sc-шаблону,</i> и <i>команды генерации sc-конструкции, изоморфной заданному sc-шаблону</i></i>).</p>]
 								(*
 									<- lang_ru;;
 									=> nrel_format: format_html;;
 								*);;
 							*);;
-							<= .system_element_636: .system_element_669;;
+							<= .system_element_635: .system_element_668;;
 						*);
-						-> .system_element_670
+						-> .system_element_669
 						(*
 							<=> nrel_semantic_equivalence: "file://images/generate_template_command_answer.png"
 							(*
 								<- concept_file;;
 								=> nrel_format: format_png;;
-								<- .system_element_634;;
-								=> .system_element_635: [<p>Сообщение <i>ответа на команду создания sc-конструкции, изоморфной заданному sc-шаблону</i> состоит из списка найденных sc-конструкций и отображения псевдонимов sc-элементов на их позиции в тройках sc-шаблона. Ответ имеет статус 1, в случае успешной обработки команды.</p>]
+								<- .system_element_633;;
+								=> .system_element_634: [<p>Сообщение <i>ответа на команду создания sc-конструкции, изоморфной заданному sc-шаблону</i> состоит из списка найденных sc-конструкций и отображения псевдонимов sc-элементов на их позиции в тройках sc-шаблона. Ответ имеет статус 1, в случае успешной обработки команды.</p>]
 								(*
 									<- lang_ru;;
 									=> nrel_format: format_html;;
 								*);;
 							*);;
-							<= .system_element_636: .system_element_671;;
+							<= .system_element_635: .system_element_670;;
 						*);
-						-> .system_element_672
+						-> .system_element_671
 						(*
 							<=> nrel_semantic_equivalence: "file://images/template_message_command.png"
 							(*
 								<- concept_file;;
 								=> nrel_format: format_png;;
-								<- .system_element_634;;
-								=> .system_element_635: [<p>Сообщения <i>команды поиска sc-конструкций, изоморфных заданному sc-шаблону,</i> и <i>команды создания sc-конструкции, изоморфной заданному sc-шаблону</i> включают описание троек, необходимых для создания sc-шаблона поиска или генерации изоморфных sc-конструкций. Описание каждой тройки sc-шаблона включает описание sc-элементов этой тройки. Описания первого и третьего sc-элементов тройки должны всегда содержать хэш или тип в паре с ключевым словом "value". Если выбран тип, то в паре с ключевым словом "type" указывается "type", если - хэш, то - "addr". Вторым sc-элементом тройки должна быть дуга, для которой всегда указывается тип в паре с ключевым словом "value". Для каждого sc-элемента тройки может указываться псевдоним в паре с "alias". Псевдоним представляет собой строку и может быть использован для ассоциации с sc-элементами в других тройках sc-шаблона, либо ассоциации со значениями переменных sc-шаблона, которые указываются в списке под ключевым словом "params" и могут представлять собой либо хэш sc-элемента, либо его системный идентификатор. Таким образом, в некоторых случаях может отсутствовать необходимость указания хэша или типа sc-элемента. Также вместо списка описаний троек sc-шаблона, может указываться хэш или системный идентификатор sc-структуры, хранящейся в sc-памяти. хэш и системный идентификатор указываются в паре с ключевым словом "value".</p>]
+								<- .system_element_633;;
+								=> .system_element_634: [<p>Сообщения <i>команды поиска sc-конструкций, изоморфных заданному sc-шаблону,</i> и <i>команды создания sc-конструкции, изоморфной заданному sc-шаблону</i> включают описание троек, необходимых для создания sc-шаблона поиска или генерации изоморфных sc-конструкций. Описание каждой тройки sc-шаблона включает описание sc-элементов этой тройки. Описания первого и третьего sc-элементов тройки должны всегда содержать хэш или тип в паре с ключевым словом "value". Если выбран тип, то в паре с ключевым словом "type" указывается "type", если - хэш, то - "addr". Вторым sc-элементом тройки должна быть дуга, для которой всегда указывается тип в паре с ключевым словом "value". Для каждого sc-элемента тройки может указываться псевдоним в паре с "alias". Псевдоним представляет собой строку и может быть использован для ассоциации с sc-элементами в других тройках sc-шаблона, либо ассоциации со значениями переменных sc-шаблона, которые указываются в списке под ключевым словом "params" и могут представлять собой либо хэш sc-элемента, либо его системный идентификатор. Таким образом, в некоторых случаях может отсутствовать необходимость указания хэша или типа sc-элемента. Также вместо списка описаний троек sc-шаблона, может указываться хэш или системный идентификатор sc-структуры, хранящейся в sc-памяти. хэш и системный идентификатор указываются в паре с ключевым словом "value".</p>]
 								(*
 									<- lang_ru;;
 									=> nrel_format: format_html;;
 								*);;
 							*);;
 						*);
-						-> .system_element_673
+						-> .system_element_672
 						(*
 							<=> nrel_semantic_equivalence: "file://images/handle_events_command.png"
 							(*
 								<- concept_file;;
 								=> nrel_format: format_png;;
-								<- .system_element_634;;
-								=> .system_element_635: [<p>Сообщение <i>команды обработки sc-событий</i> может включать описание sc-элементов, по котором необходимо зарегистрировать или разрегистрировать sc-события. Идентификаторами подкоманд в описании команды могут быть "create" и "delete" соответственно, стоящие в паре с ключевым словом "command". Описание команды регистрации sс-cобытий "create" представляет собой список описаний типов sc-событий и sc-элементов, по которым необходимо зарегистрировать sc-события. Описания sc-элементов включают хэши этих sc-элементов в парах с ключевым словом "addr". Описание команды разрегистрации sc-событий представляет собой список позиций sc-событий в очереди sc-событий, которые необходимо удалить из этой очереди sc-событий.</p>]
+								<- .system_element_633;;
+								=> .system_element_634: [<p>Сообщение <i>команды обработки sc-событий</i> может включать описание sc-элементов, по котором необходимо зарегистрировать или разрегистрировать sc-события. Идентификаторами подкоманд в описании команды могут быть "create" и "delete" соответственно, стоящие в паре с ключевым словом "command". Описание команды регистрации sс-cобытий "create" представляет собой список описаний типов sc-событий и sc-элементов, по которым необходимо зарегистрировать sc-события. Описания sc-элементов включают хэши этих sc-элементов в парах с ключевым словом "addr". Описание команды разрегистрации sc-событий представляет собой список позиций sc-событий в очереди sc-событий, которые необходимо удалить из этой очереди sc-событий.</p>]
 								(*
 									<- lang_ru;;
 									=> nrel_format: format_html;;
 								*);;
 							*);;
-							=> nrel_inclusion: .system_element_674
+							=> nrel_inclusion: .system_element_673
 							(*
 								<=> nrel_semantic_equivalence: "file://images/sc_event_types.png"
 								(*
 									<- concept_file;;
 									=> nrel_format: format_png;;
-									<- .system_element_634;;
-									=> .system_element_635: [<p>sc-событиями могут быть <i>sc-события добавления выходящей дуги из sc-элемента (add_outgoing_edge)</i>, <i>sc-события добавления входящей дуги в sc-элемент (add_ingoing_edge)</i>, <i>sc-события удаления выходящей дуги из sc-элемента (remove_outgoing_edge)</i>, <i>sc-события удаления входящей дуги в sc-элемент (remove_ingoing_edge)</i>, <i>sc-события изменения содержимого файла ostis-системы (content_change)</i> и <i>sc-события удаления sc-элемента (delete_element)</i>.</p>]
+									<- .system_element_633;;
+									=> .system_element_634: [<p>sc-событиями могут быть <i>sc-события добавления выходящей дуги из sc-элемента (add_outgoing_edge)</i>, <i>sc-события добавления входящей дуги в sc-элемент (add_ingoing_edge)</i>, <i>sc-события удаления выходящей дуги из sc-элемента (remove_outgoing_edge)</i>, <i>sc-события удаления входящей дуги в sc-элемент (remove_ingoing_edge)</i>, <i>sc-события изменения содержимого файла ostis-системы (content_change)</i> и <i>sc-события удаления sc-элемента (delete_element)</i>.</p>]
 									(*
 										<- lang_ru;;
 										=> nrel_format: format_html;;
 									*);;
 								*);;
 							*);;
-							<= .system_element_636: .system_element_675;;
+							<= .system_element_635: .system_element_674;;
 						*);
-						-> .system_element_676
+						-> .system_element_675
 						(*
 							<=> nrel_semantic_equivalence: "file://images/handle_events_command_answer.png"
 							(*
 								<- concept_file;;
 								=> nrel_format: format_png;;
-								<- .system_element_634;;
-								=> .system_element_635: [<p>Сообщение <i>ответа на команду обработки sc-событий</i> состоит из позиций зарегистрированных sc-событий в очереди. Успешным результатом <i>команды обработки sc-событий</i> является статус 1.</p>]
+								<- .system_element_633;;
+								=> .system_element_634: [<p>Сообщение <i>ответа на команду обработки sc-событий</i> состоит из позиций зарегистрированных sc-событий в очереди. Успешным результатом <i>команды обработки sc-событий</i> является статус 1.</p>]
 								(*
 									<- lang_ru;;
 									=> nrel_format: format_html;;
 								*);;
 							*);;
-							<= .system_element_636: .system_element_677;;
+							<= .system_element_635: .system_element_676;;
 						*);
-						-> .system_element_678
+						-> .system_element_677
 						(*
 							<=> nrel_semantic_equivalence: "file://images/init_event_command_answer.png"
 							(*
 								<- concept_file;;
 								=> nrel_format: format_png;;
-								<- .system_element_634;;
-								=> .system_element_635: [<p><i>Ответ инициализации sc-события</i> возникает тогда и только тогда, когда в sc-памяти инициализируется соответствующее sc-событие. <i>Ответ инициализации sc-события</i> всегда отсылается той клиентской системе, которая зарегистрировала это sc-событие. В сообщение <i>ответа инициализации sc-события</i> включаются хэши тех sc-элементов, которые связаны с зарегистрированным sc-событием. Таким образом, если было зарегистрировано sc-событие выходящей sc-дуги, то в списке сообщения <i>ответа инициализации sc-события</i> будут находится хэши трёх sc-элементов: хэш sc-элемента, который был подписан на sc-событие, хэш добавленной выходящей из него sc-дуги и хэш sc-элемента, являющегося концом этой sc-дуги.</p>]
+								<- .system_element_633;;
+								=> .system_element_634: [<p><i>Ответ инициализации sc-события</i> возникает тогда и только тогда, когда в sc-памяти инициализируется соответствующее sc-событие. <i>Ответ инициализации sc-события</i> всегда отсылается той клиентской системе, которая зарегистрировала это sc-событие. В сообщение <i>ответа инициализации sc-события</i> включаются хэши тех sc-элементов, которые связаны с зарегистрированным sc-событием. Таким образом, если было зарегистрировано sc-событие выходящей sc-дуги, то в списке сообщения <i>ответа инициализации sc-события</i> будут находится хэши трёх sc-элементов: хэш sc-элемента, который был подписан на sc-событие, хэш добавленной выходящей из него sc-дуги и хэш sc-элемента, являющегося концом этой sc-дуги.</p>]
 								(*
 									<- lang_ru;;
 									=> nrel_format: format_html;;
 								*);;
 							*);;
-							<= .system_element_636: .system_element_679;;
+							<= .system_element_635: .system_element_678;;
 						*);
-						-> .system_element_680
+						-> .system_element_679
 						(*
 							<=> nrel_semantic_equivalence: "file://images/sc_addr_types.png"
 							(*
 								<- concept_file;;
 								=> nrel_format: format_png;;
-								<- .system_element_634;;
-								=> .system_element_635: [<p><i>Правило, задающее синтаксис синтаксических типов sc-элементов</i> включает <i>Правило, задающее синтаксис синтаксических типов sc-узлов</i>, <i>Правило, задающее синтаксис синтаксических типов sc-дуг</i>, <i>Правило, задающее синтаксис синтаксических типов файлов ostis-системы</i>. Синтаксические типы sc-элементов представляются в виде целого числа и соответствуют программным синтаксическим типам, представляемым в sc-памяти.</p>]
+								<- .system_element_633;;
+								=> .system_element_634: [<p><i>Правило, задающее синтаксис синтаксических типов sc-элементов</i> включает <i>Правило, задающее синтаксис синтаксических типов sc-узлов</i>, <i>Правило, задающее синтаксис синтаксических типов sc-дуг</i>, <i>Правило, задающее синтаксис синтаксических типов файлов ostis-системы</i>. Синтаксические типы sc-элементов представляются в виде целого числа и соответствуют программным синтаксическим типам, представляемым в sc-памяти.</p>]
 								(*
 									<- lang_ru;;
 									=> nrel_format: format_html;;
@@ -3003,14 +3003,28 @@
 								=> nrel_format: format_html;;
 							*);;
 						*);
-						-> .system_element_681
+						-> .system_element_680
 						(*
 							<=> nrel_semantic_equivalence: "file://images/sc_node_types.png"
 							(*
 								<- concept_file;;
 								=> nrel_format: format_png;;
-								<- .system_element_634;;
-								=> .system_element_635: [<p><i>Правило, задающее синтаксис синтаксических типов sc-узлов</i> описывает возможные синтаксические типы sc-узлов, интерпретируемые на стороне <i>Реализации интерпретатора команда SC-JSON-кода</i>.</p>]
+								<- .system_element_633;;
+								=> .system_element_634: [<p><i>Правило, задающее синтаксис синтаксических типов sc-узлов</i> описывает возможные синтаксические типы sc-узлов, интерпретируемые на стороне <i>Реализации интерпретатора команда SC-JSON-кода</i>.</p>]
+								(*
+									<- lang_ru;;
+									=> nrel_format: format_html;;
+								*);;
+							*);;
+						*);
+						-> .system_element_681
+						(*
+							<=> nrel_semantic_equivalence: "file://images/sc_edge_types.png"
+							(*
+								<- concept_file;;
+								=> nrel_format: format_png;;
+								<- .system_element_633;;
+								=> .system_element_634: [<p><i>Правило, задающее синтаксис синтаксических типов sc-дуг</i> описывает возможные синтаксические типы sc-дуг, в том числе и sc-рёбер, интерпретируемые на стороне <i>Реализации интерпретатора команда SC-JSON-кода</i>.</p>]
 								(*
 									<- lang_ru;;
 									=> nrel_format: format_html;;
@@ -3019,26 +3033,12 @@
 						*);
 						-> .system_element_682
 						(*
-							<=> nrel_semantic_equivalence: "file://images/sc_edge_types.png"
-							(*
-								<- concept_file;;
-								=> nrel_format: format_png;;
-								<- .system_element_634;;
-								=> .system_element_635: [<p><i>Правило, задающее синтаксис синтаксических типов sc-дуг</i> описывает возможные синтаксические типы sc-дуг, в том числе и sc-рёбер, интерпретируемые на стороне <i>Реализации интерпретатора команда SC-JSON-кода</i>.</p>]
-								(*
-									<- lang_ru;;
-									=> nrel_format: format_html;;
-								*);;
-							*);;
-						*);
-						-> .system_element_683
-						(*
 							<=> nrel_semantic_equivalence: "file://images/sc_link_types.png"
 							(*
 								<- concept_file;;
 								=> nrel_format: format_png;;
-								<- .system_element_634;;
-								=> .system_element_635: [<p><i>Правило, задающее синтаксис синтаксических типов файлов ostis-системы</i> описывает возможные синтаксические типы файлов ostis-системы, интерпретируемые на стороне <i>Реализации интерпретатора команда SC-JSON-кода</i>.</p>]
+								<- .system_element_633;;
+								=> .system_element_634: [<p><i>Правило, задающее синтаксис синтаксических типов файлов ostis-системы</i> описывает возможные синтаксические типы файлов ostis-системы, интерпретируемые на стороне <i>Реализации интерпретатора команда SC-JSON-кода</i>.</p>]
 								(*
 									<- lang_ru;;
 									=> nrel_format: format_html;;
@@ -3046,34 +3046,59 @@
 							*);;
 						*);;
 
-						.system_element_628
+						.system_element_627
 						=> nrel_idtf: [<p>sc-json-code command</p>]
 						(*
 							<- lang_ru;;
 							=> nrel_format: format_html;;
 						*);
-						<= nrel_inclusion: .system_element_597;
+						<= nrel_inclusion: .system_element_596;
 						=> nrel_note: [<p>Множество <i>команд на SC-JSON-коде</i> легко расширяемо засчёт гибкости и функциональности языка JSON.</p>]
 						(*
 							<- lang_ru;;
 							=> nrel_format: format_html;;
 						*);;
 
-						.system_element_629
+						.system_element_628
 						=> nrel_idtf: [<p>sc-json-code command answer</p>]
 						(*
 							<- lang_ru;;
 							=> nrel_format: format_html;;
 						*);
-						<= nrel_inclusion: .system_element_597;
+						<= nrel_inclusion: .system_element_596;
 						=> nrel_note: [<p>Множество <i>ответов на команды на SC-JSON-коде</i> легко расширяемо вместе с расширением <i>команд на SC-JSON-коде</i>.</p>]
 						(*
 							<- lang_ru;;
 							=> nrel_format: format_html;;
 						*);;
 
-						.system_element_639
+						.system_element_638
 						=> nrel_idtf: [<p>create elements command</p>]
+						(*
+							<- lang_ru;;
+							=> nrel_format: format_html;;
+						*);
+						<= nrel_inclusion: .system_element_627;
+						=> .system_element_231: .system_element_683
+						(*
+							<=> nrel_semantic_equivalence: "file://images/create_elements_command_example.png";;
+							<- .system_element_638;;
+							=> .system_element_685: .system_element_684;;
+							=> .system_element_634: [<p>Обработать команду создания sc-элементов: sc-узла с типом 1 (неуточняемого типа), файла ostis-системы с типом 2 (неуточняемого типа) и содержимым в виде числа с плавающей точкой 45.4 и sc-дуги типа 32 (константного типа) между sc-элементом, находящимся на нулевой позиции в массиве создаваемых sc-элементов, и sc-элементом, находящимся на первой позиции в том же самом массиве.</p>]
+							(*
+								<- lang_ru;;
+								=> nrel_format: format_html;;
+							*);;
+						*);
+						=> .system_element_686: .system_element_640;
+						=> nrel_note: [<p>Стоит отметить, что на уровне интерфейса sc-памяти команда интерпретируется быстро за счёт того, что не используются шаблоны создания изоморфных им конструкций. Также содержимое сообщения <i>команды создания sc-элементов</i> может быть пустым.</p>]
+						(*
+							<- lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+
+						.system_element_640
+						=> nrel_idtf: [<p>create elements command answer</p>]
 						(*
 							<- lang_ru;;
 							=> nrel_format: format_html;;
@@ -3081,42 +3106,42 @@
 						<= nrel_inclusion: .system_element_628;
 						=> .system_element_231: .system_element_684
 						(*
-							<=> nrel_semantic_equivalence: "file://images/create_elements_command_example.png";;
-							<- .system_element_639;;
-							=> .system_element_686: .system_element_685;;
-							=> .system_element_635: [<p>Обработать команду создания sc-элементов: sc-узла с типом 1 (неуточняемого типа), файла ostis-системы с типом 2 (неуточняемого типа) и содержимым в виде числа с плавающей точкой 45.4 и sc-дуги типа 32 (константного типа) между sc-элементом, находящимся на нулевой позиции в массиве создаваемых sc-элементов, и sc-элементом, находящимся на первой позиции в том же самом массиве.</p>]
-							(*
-								<- lang_ru;;
-								=> nrel_format: format_html;;
-							*);;
-						*);
-						=> .system_element_687: .system_element_641;
-						=> nrel_note: [<p>Стоит отметить, что на уровне интерфейса sc-памяти команда интерпретируется быстро за счёт того, что не используются шаблоны создания изоморфных им конструкций. Также содержимое сообщения <i>команды создания sc-элементов</i> может быть пустым.</p>]
-						(*
-							<- lang_ru;;
-							=> nrel_format: format_html;;
-						*);;
-
-						.system_element_641
-						=> nrel_idtf: [<p>create elements command answer</p>]
-						(*
-							<- lang_ru;;
-							=> nrel_format: format_html;;
-						*);
-						<= nrel_inclusion: .system_element_629;
-						=> .system_element_231: .system_element_685
-						(*
 							<=> nrel_semantic_equivalence: "file://images/create_elements_command_answer_example.png";;
-							<- .system_element_641;;
-							=> .system_element_635: [<p>Созданы sc-элементы с хэшами 323, 534 и 342 соответственно. Команда обработана успешно.</p>]
+							<- .system_element_640;;
+							=> .system_element_634: [<p>Созданы sc-элементы с хэшами 323, 534 и 342 соответственно. Команда обработана успешно.</p>]
 							(*
 								<- lang_ru;;
 								=> nrel_format: format_html;;
 							*);;
 						*);;
 
-						.system_element_647
+						.system_element_646
 						=> nrel_idtf: [<p>check elements command</p>]
+						(*
+							<- lang_ru;;
+							=> nrel_format: format_html;;
+						*);
+						<= nrel_inclusion: .system_element_627;
+						=> .system_element_231: .system_element_687
+						(*
+							<=> nrel_semantic_equivalence: "file://images/check_elements_command_example.png";;
+							<- .system_element_646;;
+							=> .system_element_685: .system_element_688;;
+							=> .system_element_634: [<p>Получить синтаксические типы sc-элементов с хэшами 885 и 1025.</p>]
+							(*
+								<- lang_ru;;
+								=> nrel_format: format_html;;
+							*);;
+						*);
+						=> .system_element_686: .system_element_648;
+						=> nrel_note: [<p>Содержимое сообщения <i>команды получения соответствующих типов sc-элементов</i> может быть пустым.</p>]
+						(*
+							<- lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+
+						.system_element_648
+						=> nrel_idtf: [<p>check elements command answer</p>]
 						(*
 							<- lang_ru;;
 							=> nrel_format: format_html;;
@@ -3124,34 +3149,9 @@
 						<= nrel_inclusion: .system_element_628;
 						=> .system_element_231: .system_element_688
 						(*
-							<=> nrel_semantic_equivalence: "file://images/check_elements_command_example.png";;
-							<- .system_element_647;;
-							=> .system_element_686: .system_element_689;;
-							=> .system_element_635: [<p>Получить синтаксические типы sc-элементов с хэшами 885 и 1025.</p>]
-							(*
-								<- lang_ru;;
-								=> nrel_format: format_html;;
-							*);;
-						*);
-						=> .system_element_687: .system_element_649;
-						=> nrel_note: [<p>Содержимое сообщения <i>команды получения соответствующих типов sc-элементов</i> может быть пустым.</p>]
-						(*
-							<- lang_ru;;
-							=> nrel_format: format_html;;
-						*);;
-
-						.system_element_649
-						=> nrel_idtf: [<p>check elements command answer</p>]
-						(*
-							<- lang_ru;;
-							=> nrel_format: format_html;;
-						*);
-						<= nrel_inclusion: .system_element_629;
-						=> .system_element_231: .system_element_689
-						(*
 							<=> nrel_semantic_equivalence: "file://images/check_elements_command_answer_example.png";;
-							<- .system_element_649;;
-							=> .system_element_635: [<p>Типы sc-элементов 32 и 0 соответственно. Команда обработана успешно.</p>]
+							<- .system_element_648;;
+							=> .system_element_634: [<p>Типы sc-элементов 32 и 0 соответственно. Команда обработана успешно.</p>]
 							(*
 								<- lang_ru;;
 								=> nrel_format: format_html;;
@@ -3163,8 +3163,33 @@
 							=> nrel_format: format_html;;
 						*);;
 
-						.system_element_651
+						.system_element_650
 						=> nrel_idtf: [<p>delete elements command</p>]
+						(*
+							<- lang_ru;;
+							=> nrel_format: format_html;;
+						*);
+						<= nrel_inclusion: .system_element_627;
+						=> .system_element_231: .system_element_689
+						(*
+							<=> nrel_semantic_equivalence: "file://images/delete_elements_command_example.png";;
+							<- .system_element_650;;
+							=> .system_element_685: .system_element_690;;
+							=> .system_element_634: [<p>Удалить sc-элементы с хэшами 885 и 1025.</p>]
+							(*
+								<- lang_ru;;
+								=> nrel_format: format_html;;
+							*);;
+						*);
+						=> .system_element_686: .system_element_652;
+						=> nrel_note: [<p>Содержимое сообщения <i>команды удаления sc-элементов</i> может быть пустым.</p>]
+						(*
+							<- lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+
+						.system_element_652
+						=> nrel_idtf: [<p>delete elements command answer</p>]
 						(*
 							<- lang_ru;;
 							=> nrel_format: format_html;;
@@ -3172,34 +3197,9 @@
 						<= nrel_inclusion: .system_element_628;
 						=> .system_element_231: .system_element_690
 						(*
-							<=> nrel_semantic_equivalence: "file://images/delete_elements_command_example.png";;
-							<- .system_element_651;;
-							=> .system_element_686: .system_element_691;;
-							=> .system_element_635: [<p>Удалить sc-элементы с хэшами 885 и 1025.</p>]
-							(*
-								<- lang_ru;;
-								=> nrel_format: format_html;;
-							*);;
-						*);
-						=> .system_element_687: .system_element_653;
-						=> nrel_note: [<p>Содержимое сообщения <i>команды удаления sc-элементов</i> может быть пустым.</p>]
-						(*
-							<- lang_ru;;
-							=> nrel_format: format_html;;
-						*);;
-
-						.system_element_653
-						=> nrel_idtf: [<p>delete elements command answer</p>]
-						(*
-							<- lang_ru;;
-							=> nrel_format: format_html;;
-						*);
-						<= nrel_inclusion: .system_element_629;
-						=> .system_element_231: .system_element_691
-						(*
 							<=> nrel_semantic_equivalence: "file://images/delete_elements_command_answer_example.png";;
-							<- .system_element_653;;
-							=> .system_element_635: [<p>sc-элементы были удалены из sc-памяти успешно.</p>]
+							<- .system_element_652;;
+							=> .system_element_634: [<p>sc-элементы были удалены из sc-памяти успешно.</p>]
 							(*
 								<- lang_ru;;
 								=> nrel_format: format_html;;
@@ -3211,8 +3211,33 @@
 							=> nrel_format: format_html;;
 						*);;
 
-						.system_element_655
+						.system_element_654
 						=> nrel_idtf: [<p>handle keynodes command</p>]
+						(*
+							<- lang_ru;;
+							=> nrel_format: format_html;;
+						*);
+						<= nrel_inclusion: .system_element_627;
+						=> .system_element_231: .system_element_691
+						(*
+							<=> nrel_semantic_equivalence: "file://images/handle_keynodes_command_example.png";;
+							<- .system_element_654;;
+							=> .system_element_685: .system_element_692;;
+							=> .system_element_634: [<p>(1) Найти sc-элемент по системному идентификатору "any_system_identifier"; (2) Разрешить sc-элемент с типом 1 (неуточняемого типа) по системному идентификатору "any_system_identifier".</p>]
+							(*
+								<- lang_ru;;
+								=> nrel_format: format_html;;
+							*);;
+						*);
+						=> .system_element_686: .system_element_656;
+						=> nrel_note: [<p>Данный класс команд позволяет быстро обращаться к sc-элементам по их системным идентификаторам, поскольку ключевые sc-элементы кэшируются на уровне интерфейса.</p>]
+						(*
+							<- lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+
+						.system_element_656
+						=> nrel_idtf: [<p>handle keynodes command answer</p>]
 						(*
 							<- lang_ru;;
 							=> nrel_format: format_html;;
@@ -3220,42 +3245,42 @@
 						<= nrel_inclusion: .system_element_628;
 						=> .system_element_231: .system_element_692
 						(*
-							<=> nrel_semantic_equivalence: "file://images/handle_keynodes_command_example.png";;
-							<- .system_element_655;;
-							=> .system_element_686: .system_element_693;;
-							=> .system_element_635: [<p>(1) Найти sc-элемент по системному идентификатору "any_system_identifier"; (2) Разрешить sc-элемент с типом 1 (неуточняемого типа) по системному идентификатору "any_system_identifier".</p>]
+							<=> nrel_semantic_equivalence: "file://images/handle_keynodes_command_answer_example.png";;
+							<- .system_element_656;;
+							=> .system_element_634: [<p>Ключевый sc-элемент с системным идентификатором "any_system_identifier" не был найден, поэтому был создан. хэш нового ключевого sc-элемента - 128. Команда выполнена успешно.</p>]
 							(*
 								<- lang_ru;;
 								=> nrel_format: format_html;;
 							*);;
-						*);
-						=> .system_element_687: .system_element_657;
-						=> nrel_note: [<p>Данный класс команд позволяет быстро обращаться к sc-элементам по их системным идентификаторам, поскольку ключевые sc-элементы кэшируются на уровне интерфейса.</p>]
-						(*
-							<- lang_ru;;
-							=> nrel_format: format_html;;
 						*);;
 
-						.system_element_657
-						=> nrel_idtf: [<p>handle keynodes command answer</p>]
+						.system_element_658
+						=> nrel_idtf: [<p>handle link contents command</p>]
 						(*
 							<- lang_ru;;
 							=> nrel_format: format_html;;
 						*);
-						<= nrel_inclusion: .system_element_629;
+						<= nrel_inclusion: .system_element_627;
 						=> .system_element_231: .system_element_693
 						(*
-							<=> nrel_semantic_equivalence: "file://images/handle_keynodes_command_answer_example.png";;
-							<- .system_element_657;;
-							=> .system_element_635: [<p>Ключевый sc-элемент с системным идентификатором "any_system_identifier" не был найден, поэтому был создан. хэш нового ключевого sc-элемента - 128. Команда выполнена успешно.</p>]
+							<=> nrel_semantic_equivalence: "file://images/handle_link_contents_command_example.png";;
+							<- .system_element_658;;
+							=> .system_element_685: .system_element_694;;
+							=> .system_element_634: [<p>(1) Установить содержимое 67 типа "int" в файл ostis-системы с хэшем 3123; (2) Получить содержимое файла ostis-системы с хэшем 232; (3) Найти файлы ostis-системы с содержимым "exist".</p>]
 							(*
 								<- lang_ru;;
 								=> nrel_format: format_html;;
 							*);;
+						*);
+						=> .system_element_686: .system_element_660;
+						=> nrel_note: [<p>Стоит отметить, что в случае, если файл ostis-системы уже имеет содержимое, то при установке нового содержимого старое содержимое будет удалено из памяти. Содержимое файла ostis-системы может быть установлено как пустое.</p>]
+						(*
+							<- lang_ru;;
+							=> nrel_format: format_html;;
 						*);;
 
-						.system_element_659
-						=> nrel_idtf: [<p>handle link contents command</p>]
+						.system_element_660
+						=> nrel_idtf: [<p>handle link contents command answer</p>]
 						(*
 							<- lang_ru;;
 							=> nrel_format: format_html;;
@@ -3263,42 +3288,42 @@
 						<= nrel_inclusion: .system_element_628;
 						=> .system_element_231: .system_element_694
 						(*
-							<=> nrel_semantic_equivalence: "file://images/handle_link_contents_command_example.png";;
-							<- .system_element_659;;
-							=> .system_element_686: .system_element_695;;
-							=> .system_element_635: [<p>(1) Установить содержимое 67 типа "int" в файл ostis-системы с хэшем 3123; (2) Получить содержимое файла ostis-системы с хэшем 232; (3) Найти файлы ostis-системы с содержимым "exist".</p>]
+							<=> nrel_semantic_equivalence: "file://images/handle_link_contents_command_answer_example.png";;
+							<- .system_element_660;;
+							=> .system_element_634: [<p>(1) Содержимое 67 типа "int" было установлено успешно в файл ostis-системы с хэшем 3123; (2) Содержимое файла ostis-системы с хэшем 232 - число 67 целочисленного типа; (3) Файлы ostis-системы с содержимым "exist": 324 и 423.</p>]
 							(*
 								<- lang_ru;;
 								=> nrel_format: format_html;;
 							*);;
-						*);
-						=> .system_element_687: .system_element_661;
-						=> nrel_note: [<p>Стоит отметить, что в случае, если файл ostis-системы уже имеет содержимое, то при установке нового содержимого старое содержимое будет удалено из памяти. Содержимое файла ostis-системы может быть установлено как пустое.</p>]
-						(*
-							<- lang_ru;;
-							=> nrel_format: format_html;;
 						*);;
 
-						.system_element_661
-						=> nrel_idtf: [<p>handle link contents command answer</p>]
+						.system_element_663
+						=> nrel_idtf: [<p>search template command</p>]
 						(*
 							<- lang_ru;;
 							=> nrel_format: format_html;;
 						*);
-						<= nrel_inclusion: .system_element_629;
+						<= nrel_inclusion: .system_element_627;
 						=> .system_element_231: .system_element_695
 						(*
-							<=> nrel_semantic_equivalence: "file://images/handle_link_contents_command_answer_example.png";;
-							<- .system_element_661;;
-							=> .system_element_635: [<p>(1) Содержимое 67 типа "int" было установлено успешно в файл ostis-системы с хэшем 3123; (2) Содержимое файла ostis-системы с хэшем 232 - число 67 целочисленного типа; (3) Файлы ostis-системы с содержимым "exist": 324 и 423.</p>]
+							<=> nrel_semantic_equivalence: "file://images/search_template_command_example.png";;
+							<- .system_element_663;;
+							=> .system_element_685: .system_element_696;;
+							=> .system_element_634: [<p>Найти все такие тройки, в которых первым элементом является sc-элемент c хэшем 23123, третьим sc-элементом является файл ostis-системы неуточняемого константного типа c псевдонимом "_trg", а вторым элементом - sc-дуга типа sc_edge_d_common c псевдонимом "_edge1", исходящая от sc-элемента c хэшем 23123 и входящая в файл ostis-системы с псевдонимом "_trg", и найти все такие тройки, в которых первым элементом является sc-элемент c хэшем 231342, третьим элементов является sc-дуга под псевдонимом "_edge1", а вторым элементом - sc-дуга типа sc_edge_access_const_pos_perm, исходящая от sc-элемента c хэшем 231342 и входящая в sc-дугу "_edge1". На место переменной с псевдонимом "_trg" подставить sc-элемент с хэшем 564.</p>]
 							(*
 								<- lang_ru;;
 								=> nrel_format: format_html;;
 							*);;
+						*);
+						=> .system_element_686: .system_element_665;
+						=> nrel_note: [<p>Поиск sс-конструкций по сформированному sc-шаблону осуществляется специализированным модулем, являющимся частью sc-памяти.</p>]
+						(*
+							<- lang_ru;;
+							=> nrel_format: format_html;;
 						*);;
 
-						.system_element_664
-						=> nrel_idtf: [<p>search template command</p>]
+						.system_element_665
+						=> nrel_idtf: [<p>search template command answer</p>]
 						(*
 							<- lang_ru;;
 							=> nrel_format: format_html;;
@@ -3306,34 +3331,9 @@
 						<= nrel_inclusion: .system_element_628;
 						=> .system_element_231: .system_element_696
 						(*
-							<=> nrel_semantic_equivalence: "file://images/search_template_command_example.png";;
-							<- .system_element_664;;
-							=> .system_element_686: .system_element_697;;
-							=> .system_element_635: [<p>Найти все такие тройки, в которых первым элементом является sc-элемент c хэшем 23123, третьим sc-элементом является файл ostis-системы неуточняемого константного типа c псевдонимом "_trg", а вторым элементом - sc-дуга типа sc_edge_d_common c псевдонимом "_edge1", исходящая от sc-элемента c хэшем 23123 и входящая в файл ostis-системы с псевдонимом "_trg", и найти все такие тройки, в которых первым элементом является sc-элемент c хэшем 231342, третьим элементов является sc-дуга под псевдонимом "_edge1", а вторым элементом - sc-дуга типа sc_edge_access_const_pos_perm, исходящая от sc-элемента c хэшем 231342 и входящая в sc-дугу "_edge1". На место переменной с псевдонимом "_trg" подставить sc-элемент с хэшем 564.</p>]
-							(*
-								<- lang_ru;;
-								=> nrel_format: format_html;;
-							*);;
-						*);
-						=> .system_element_687: .system_element_666;
-						=> nrel_note: [<p>Поиск sс-конструкций по сформированному sc-шаблону осуществляется специализированным модулем, являющимся частью sc-памяти.</p>]
-						(*
-							<- lang_ru;;
-							=> nrel_format: format_html;;
-						*);;
-
-						.system_element_666
-						=> nrel_idtf: [<p>search template command answer</p>]
-						(*
-							<- lang_ru;;
-							=> nrel_format: format_html;;
-						*);
-						<= nrel_inclusion: .system_element_629;
-						=> .system_element_231: .system_element_697
-						(*
 							<=> nrel_semantic_equivalence: "file://images/search_template_command_answer_example.png";;
-							<- .system_element_666;;
-							=> .system_element_635: [<p>Найдена одна sc-конструкция, состоящая из двух троек. хэши sc-элементов в тройках: 23123, 4953, 564 и 231342, 533, 4953 соответственно их расположению в тройках. Команда выполнена успешно.</p>]
+							<- .system_element_665;;
+							=> .system_element_634: [<p>Найдена одна sc-конструкция, состоящая из двух троек. хэши sc-элементов в тройках: 23123, 4953, 564 и 231342, 533, 4953 соответственно их расположению в тройках. Команда выполнена успешно.</p>]
 							(*
 								<- lang_ru;;
 								=> nrel_format: format_html;;
@@ -3345,8 +3345,33 @@
 							=> nrel_format: format_html;;
 						*);;
 
-						.system_element_669
+						.system_element_668
 						=> nrel_idtf: [<p>generate template command</p>]
+						(*
+							<- lang_ru;;
+							=> nrel_format: format_html;;
+						*);
+						<= nrel_inclusion: .system_element_627;
+						=> .system_element_231: .system_element_697
+						(*
+							<=> nrel_semantic_equivalence: "file://images/generate_template_command_example.png";;
+							<- .system_element_668;;
+							=> .system_element_685: .system_element_698;;
+							=> .system_element_634: [<p>Создать такую тройку, в которой первым элементом является sc-элемент c хэшем 589, третьим sc-элементом является sc-узел неуточняемого типа c псевдонимом "_trg", а вторым элементом - sc-дуга типа sc_edge_d_common c псевдонимом "_edge1", исходящая от sc-элемента c хэшем 589 и входящая в sc-узел с псевдонимом "_trg". На место переменной с псевдонимом "_trg" подставить sc-элемент с хэшем 332.</p>]
+							(*
+								<- lang_ru;;
+								=> nrel_format: format_html;;
+							*);;
+						*);
+						=> .system_element_686: .system_element_670;
+						=> nrel_note: [<p>Создание sс-конструкции по сформированному sc-шаблону осуществляется специализированным модулем, являющимся частью sc-памяти.</p>]
+						(*
+							<- lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+
+						.system_element_670
+						=> nrel_idtf: [<p>search template command answer</p>]
 						(*
 							<- lang_ru;;
 							=> nrel_format: format_html;;
@@ -3354,34 +3379,9 @@
 						<= nrel_inclusion: .system_element_628;
 						=> .system_element_231: .system_element_698
 						(*
-							<=> nrel_semantic_equivalence: "file://images/generate_template_command_example.png";;
-							<- .system_element_669;;
-							=> .system_element_686: .system_element_699;;
-							=> .system_element_635: [<p>Создать такую тройку, в которой первым элементом является sc-элемент c хэшем 589, третьим sc-элементом является sc-узел неуточняемого типа c псевдонимом "_trg", а вторым элементом - sc-дуга типа sc_edge_d_common c псевдонимом "_edge1", исходящая от sc-элемента c хэшем 589 и входящая в sc-узел с псевдонимом "_trg". На место переменной с псевдонимом "_trg" подставить sc-элемент с хэшем 332.</p>]
-							(*
-								<- lang_ru;;
-								=> nrel_format: format_html;;
-							*);;
-						*);
-						=> .system_element_687: .system_element_671;
-						=> nrel_note: [<p>Создание sс-конструкции по сформированному sc-шаблону осуществляется специализированным модулем, являющимся частью sc-памяти.</p>]
-						(*
-							<- lang_ru;;
-							=> nrel_format: format_html;;
-						*);;
-
-						.system_element_671
-						=> nrel_idtf: [<p>search template command answer</p>]
-						(*
-							<- lang_ru;;
-							=> nrel_format: format_html;;
-						*);
-						<= nrel_inclusion: .system_element_629;
-						=> .system_element_231: .system_element_699
-						(*
 							<=> nrel_semantic_equivalence: "file://images/generate_template_command_answer_example.png";;
-							<- .system_element_671;;
-							=> .system_element_635: [<p>Создана одна sc-конструкция, состоящая из одной тройки. хэши sc-элементов в тройке: 128, 589, 332 соответственно их расположению в тройках. Команда выполнена успешно.</p>]
+							<- .system_element_670;;
+							=> .system_element_634: [<p>Создана одна sc-конструкция, состоящая из одной тройки. хэши sc-элементов в тройке: 128, 589, 332 соответственно их расположению в тройках. Команда выполнена успешно.</p>]
 							(*
 								<- lang_ru;;
 								=> nrel_format: format_html;;
@@ -3393,63 +3393,63 @@
 							=> nrel_format: format_html;;
 						*);;
 
-						.system_element_675
+						.system_element_674
 						=> nrel_idtf: [<p>handle events command</p>]
 						(*
 							<- lang_ru;;
 							=> nrel_format: format_html;;
 						*);
-						<= nrel_inclusion: .system_element_628;
-						=> .system_element_231: .system_element_700
+						<= nrel_inclusion: .system_element_627;
+						=> .system_element_231: .system_element_699
 						(*
 							<=> nrel_semantic_equivalence: "file://images/handle_events_command_example.png";;
-							<- .system_element_675;;
-							=> .system_element_686: .system_element_701;;
-							=> .system_element_635: [<p>(1) Зарегистрировать sc-событие типа "add_outgoing_edge" по sc-элементу с хэшем 324; (2) Разрегистрировать sc-события с позициями sc-элементов 2, 4 и 5 соответственно.</p>]
+							<- .system_element_674;;
+							=> .system_element_685: .system_element_700;;
+							=> .system_element_634: [<p>(1) Зарегистрировать sc-событие типа "add_outgoing_edge" по sc-элементу с хэшем 324; (2) Разрегистрировать sc-события с позициями sc-элементов 2, 4 и 5 соответственно.</p>]
 							(*
 								<- lang_ru;;
 								=> nrel_format: format_html;;
 							*);;
 						*);
-						=> .system_element_687: .system_element_677;
-						=> .system_element_687: .system_element_679;
+						=> .system_element_686: .system_element_676;
+						=> .system_element_686: .system_element_678;
 						=> nrel_note: [<p><i>Ответ инициализации sc-события</i> может производиться несколько раз за разные промежутки времени.</p>]
 						(*
 							<- lang_ru;;
 							=> nrel_format: format_html;;
 						*);;
 
-						.system_element_677
+						.system_element_676
 						=> nrel_idtf: [<p>handle events command answer</p>]
 						(*
 							<- lang_ru;;
 							=> nrel_format: format_html;;
 						*);
-						<= nrel_inclusion: .system_element_629;
-						=> nrel_inclusion: .system_element_597;
-						=> .system_element_231: .system_element_701
+						<= nrel_inclusion: .system_element_628;
+						=> nrel_inclusion: .system_element_596;
+						=> .system_element_231: .system_element_700
 						(*
 							<=> nrel_semantic_equivalence: "file://images/handle_events_command_answer_example.png";;
-							<- .system_element_677;;
-							=> .system_element_635: [<p>(1) sc-событие типа "add_outgoing_edge" по sc-элементу с хэшем 324 было зарегистрировано успешно на 7-ой позиции очереди sc-событий; (2) sc-события под позициями 2, 4, 5 удалены успешно.</p>]
+							<- .system_element_676;;
+							=> .system_element_634: [<p>(1) sc-событие типа "add_outgoing_edge" по sc-элементу с хэшем 324 было зарегистрировано успешно на 7-ой позиции очереди sc-событий; (2) sc-события под позициями 2, 4, 5 удалены успешно.</p>]
 							(*
 								<- lang_ru;;
 								=> nrel_format: format_html;;
 							*);;
 						*);;
 
-						.system_element_679
+						.system_element_678
 						=> nrel_idtf: [<p>init event command answer</p>]
 						(*
 							<- lang_ru;;
 							=> nrel_format: format_html;;
 						*);
-						<= nrel_inclusion: .system_element_629;
-						=> .system_element_231: .system_element_702
+						<= nrel_inclusion: .system_element_628;
+						=> .system_element_231: .system_element_701
 						(*
 							<=> nrel_semantic_equivalence: "file://images/init_event_command_answer_example.png";;
-							<- .system_element_679;;
-							=> .system_element_635: [<p>sc-событие было инициализировано успешно: добавлена выходящая sc-дуга с хэшем 328 из зарегистрированного sc-элемента с хэшем 324 в sc-элемент c хэшем 35. Статус sc-события - 1.</p>]
+							<- .system_element_678;;
+							=> .system_element_634: [<p>sc-событие было инициализировано успешно: добавлена выходящая sc-дуга с хэшем 328 из зарегистрированного sc-элемента с хэшем 324 в sc-элемент c хэшем 35. Статус sc-события - 1.</p>]
 							(*
 								<- lang_ru;;
 								=> nrel_format: format_html;;
@@ -3458,7 +3458,7 @@
 					*];;
 				*];;
 
-				.system_element_598
+				.system_element_597
 				=> .system_element_200: [<p><i>Реализация интерпретатора команд SC-JSON-кода</i>, представляет собой интерпретатор команд и ответов на них <i>SC-JSON-кода</i> на программное представление sc-конструкций в sc-памяти при помощи Библиотеки программных компонентов для обработки и, задающее синтаксис json-текстов JSON for Modern C++ и Библиотека кросс-платформенных программных компонентов для реализации серверных приложений на основе Websocket WebSocket++, а также обеспечивается комплексным тестовым покрытием посредством программных фреймворков Google Tests и Google Benchmark Tests. Библиотека программных компонентов для обработки и, задающее синтаксис json-текстов JSON for Modern C++ имеет богатый, удобный и быстродействующий функционал, необходимый для реализации подобных компонентов ostis-систем, а Библиотеки кросс-платформенных программных компонентов для реализации серверных приложений на основе Websocket WebSocket++ позволяет элегантно проектировать серверные системы без использовании избыточных зависимостей и решение. Настройка программного компонента осуществляется с помощью <i>Программного компонента настройки программных компонентов ostis-систем</i> и скриптов языков CMake и Bash.</p>]
 				(*
 					<- lang_ru;;
@@ -3476,7 +3476,7 @@
 			*];;
 		*];;
 
-		.system_element_703
+		.system_element_702
 		=> nrel_inclusion: [*
 			=> nrel_idtf: [<p>Документация Реализации scp-интерпретатора в Программной платформе ostis-систем</p>]
 			(*
@@ -3485,12 +3485,12 @@
 			*);
 			-> .system_element_330: .system_element_349;
 			=> nrel_authors: 
-				.system_element_704;
+				.system_element_703;
 				.system_element_327
 			;;
 
 			.system_element_349
-			<= .system_element_364: .system_element_705
+			<= .system_element_364: .system_element_704
 			(*
 				=> nrel_note: [<p>Важнейшей особенностью <i>Языка SCP</i> является тот факт, что его программы записываются таким же образом, что и обрабатываемые ими знания, то есть в SC-коде. Это, с одной стороны, дает возможность сделать ostis-системы платформенно-независимыми (четко разделить <i>sc-модель компьютерной системы</i> и платформу интерпретации таких моделей), а с другой стороны требует наличия в рамках платформы <i>Реализации scp-интерпретатора</i>, то есть интерпретатора программ <i>Языка SCP</i>.</p>]
 				(*
@@ -3515,14 +3515,15 @@
 				.system_element_361
 			;
 			=> nrel_authors: 
-				.system_element_704;
+				.system_element_703;
 				.system_element_327
 			;
 			=> .system_element_347: {
-				.system_element_706;
-				.system_element_707
+				.system_element_705;
+				.system_element_706
 				(*
 					=> .system_element_347: {
+						.system_element_707;
 						.system_element_708;
 						.system_element_709;
 						.system_element_710;
@@ -3530,14 +3531,13 @@
 						.system_element_712;
 						.system_element_713;
 						.system_element_714;
-						.system_element_715;
-						.system_element_716
+						.system_element_715
 					};;
 				*);
+				.system_element_716;
 				.system_element_717;
 				.system_element_718;
-				.system_element_719;
-				.system_element_720
+				.system_element_719
 			};
 			=> nrel_note: [<p>Текущая <i>Реализация scp-интерпретатора</i> не включает в себя специализированных средств для работы с блокировками, поскольку механизм блокировок элементов sc-памяти реализован на более низком уровне в рамках <i>Реализации sc-памяти</i></p>]
 			(*
@@ -3545,14 +3545,14 @@
 				=> nrel_format: format_html;;
 			*);;
 
-			.system_element_721
+			.system_element_720
 			=> nrel_inclusion: [*
 				=> nrel_idtf: [<p>Документация Реализации интерпретатора sc-моделей пользовательских интерфейсов в Программной платформе ostis-систем</p>]
 				(*
 					<- lang_ru;;
 					=> nrel_format: format_html;;
 				*);
-				-> .system_element_330: .system_element_720;
+				-> .system_element_330: .system_element_719;
 				=> nrel_authors: 
 					.system_element_327
 				;
@@ -3562,7 +3562,7 @@
 					=> nrel_format: format_html;;
 				*);;
 
-				.system_element_720
+				.system_element_719
 				=> nrel_idtf: [<p>sc-web</p>]
 				(*
 					<- lang_ru;;
@@ -3587,17 +3587,17 @@
 					=> nrel_format: format_html;;
 				*);
 				=> .system_element_352: {
+					.system_element_721;
 					.system_element_722;
 					.system_element_723;
-					.system_element_724;
-					.system_element_725
+					.system_element_724
 				};
-				=> .system_element_471: 
+				=> .system_element_470: 
+					.system_element_725;
 					.system_element_726;
+					.system_element_591;
 					.system_element_727;
-					.system_element_592;
-					.system_element_728;
-					.system_element_729
+					.system_element_728
 				;
 				=> nrel_authors: 
 					.system_element_346;
@@ -3608,7 +3608,7 @@
 					<- lang_ru;;
 					=> nrel_format: format_html;;
 				*);
-				=> .system_element_730: 
+				=> .system_element_729: 
 					[<p>Отсутствие единого унифицированного механизма клиент-серверного взаимодействия. Часть компонентов (визуализатор sc-текстов в SCn-коде, команды меню и др.) работают по протоколу HTTP, часть по протоколу SCTP с использованием технологии WebSocket, это приводит к значительным трудностям при развитии платформы.</p>]
 					(*
 						<- lang_ru;;
@@ -3655,7 +3655,7 @@
 						=> nrel_format: format_html;;
 					*)
 				;
-				=> .system_element_731: 
+				=> .system_element_730: 
 					[<p>Унифицировать принципы взаимодействия всех компонентов интерфейса с <i>Программной моделью sc-памяти</i>, независимо от того, к какому типу относится компонент. Например, список команд меню должен формироваться через тот же механизм, что и ответ на запрос пользователя, и команда редактирования, сформированная пользователем, и команда добавления нового фрагмента в базу знаний и т.д.</p>]
 					(*
 						<- lang_ru;;
@@ -3712,8 +3712,8 @@
 					<- lang_ru;;
 					=> nrel_format: format_html;;
 				*);
-				=> .system_element_732: 
-					.system_element_733
+				=> .system_element_731: 
+					.system_element_732
 					(*
 						=> nrel_explanation: [<p><i>Панель меню команд пользовательского интерфейса</i> содержит изображения классов команд (как атомарных, так и неатомарных), имеющихся на данный момент в базе знаний и входящих в декомпозицию <i>Главного меню пользовательского интерфейса</i> (имеется в виду полная декомпозиция, которая в общем случае может включать несколько уровней неатомарных классов команд).Взаимодействие с изображением неатомарного класса команд инициирует команду изображения классов команд, входящих в декомпозицию данного неатомарного класса команд.Взаимодействие с изображением атомарного класса команд инициирует генерацию команды данного класса с ранее выбранными аргументами на основе соответствующей <i>обобщенной формулировки класса команд</i> (шаблона класса команд).</p>]
 						(*
@@ -3721,7 +3721,7 @@
 							=> nrel_format: format_html;;
 						*);;
 					*);
-					.system_element_734
+					.system_element_733
 					(*
 						=> nrel_explanation: [<p><i>Компонент переключения языка идентификации отображаемых sc-элементов</i> является изображением множества имеющихся в системе естественных языков. Взаимодействие пользователя с данным компонентом переключает пользовательский интерфейс в режим общения с конкретным пользователем с использованием <i>основных sc-идентификаторов</i>, принадлежащих данному <i>естественному языку</i>. Это значит, что при изображении sc-идентификаторов sc-элементов на каком-либо языке, например, SCg-коде или SCn-коде будут использоваться <i>основные sc-идентификаторы</i>, принадлежащие данному <i>естественному языку</i>. Это касается как sc-элементов, отображаемых в рамках <i>Панели визуализации и редактирования знаний</i>, так и любых других sc-элементов, например, классов команд и даже самих <i>естественных языков</i>, изображаемых в рамках самого <i>Компонента переключения языка идентификации отображаемых sc-элементов</i>.</p>]
 						(*
@@ -3729,7 +3729,7 @@
 							=> nrel_format: format_html;;
 						*);;
 					*);
-					.system_element_735
+					.system_element_734
 					(*
 						=> nrel_explanation: [<p><i>Компонент переключения внешнего языка визуализации знаний</i> служит для переключения языка визуализации знаний в текущем окне, отображаемом на <i>Панели визуализации и редактирования знаний</i>. В текущей реализации в качестве таких языков по умолчанию поддерживаются SCg-код и SCn-код, а также любые другие языки, входящие во множество <i>внешних языков визуализации SC-кода</i>.</p>]
 						(*
@@ -3737,7 +3737,7 @@
 							=> nrel_format: format_html;;
 						*);;
 					*);
-					.system_element_736
+					.system_element_735
 					(*
 						=> nrel_explanation: [<p><i>Поле поиска sc-элементов по идентификатору</i> позволяет осуществлять поиск <b>sc-идентификаторов</b>, содержащих подстроку, введенную в данное поле (с учетом регистра). В результате поиска отображается список sc-идентификаторов, содержащих указанную подстроку, при взаимодействии с которыми осуществляется автоматическое задание вопроса"Что это такое?", аргументом которого является либо для сам sc-элемент, имеющий данный sc-идентификатор (в случае, если указанный sc-идентификатор является основным или системным, и, таким образом, указанный sc-элемент может быть определен однозначно), либо для самого внутреннего файла ostis-системы, являющегося sc-идентификатором (в случае, если данный sc-идентификатор является неосновным).</p>]
 						(*
@@ -3745,7 +3745,7 @@
 							=> nrel_format: format_html;;
 						*);;
 					*);
-					.system_element_737
+					.system_element_736
 					(*
 						=> nrel_explanation: [<p><i>Панель отображения диалога пользователя с ostis-системой</i> отображает упорядоченный по времени список sc-элементов, являющихся знаками действий, которые инициировал пользователь в рамках диалога с ostis-системой путем взаимодействия с изображениями соответствующих классов команд (то есть, если действие было инициировано другим способом, например, путем его явного инициирования через создание дуги принадлежности множеству <i>инициированных действий</i> в sc.g-редакторе, то на данной панели оно отображено не будет). При взаимодействии пользователя с любым из изображенных знаков действий на <i>Панели визуализации и редактирования знаний</i> отображается окно, содержащее результат выполнения данного <i>действия</i> на том языке визуализации, на котором он был отображен, когда пользователь просматривал его в последний (предыдущий) раз. Таким образом, в текущей реализации данная панель может работать только в том случае, если инициированное пользователем действие предполагает явно представленный в памяти результат данного действия. В свою очередь, из этого следует, что в настоящее время данная панель, как и в целом <i>Реализация интерпретатора sc-моделей пользовательских интерфейсов ostis-систем</i>, позволяет работать с системой только в режиме диалога "вопрос-ответ".</p>]
 						(*
@@ -3753,12 +3753,12 @@
 							=> nrel_format: format_html;;
 						*);;
 					*);
-					.system_element_738
+					.system_element_737
 					(*
 						=> nrel_explanation: [<p><i>Панель визуализации и редактирования знаний</i> отображает окна, содержащие sc-текст, представленный на некотором языке из множества <i>внешних языков визуализации SC-кода</i> и, как правило, являющийся результатом некоторого действия, инициированного пользователем. Если соответствующий визуализатор поддерживает возможность редактирования текстов соответствующего естественного языка, то он одновременно является также и редактором.</p>];;
-						=> .system_element_739: 
-							.system_element_740;
-							.system_element_741
+						=> .system_element_738: 
+							.system_element_739;
+							.system_element_740
 						;;
 						=> nrel_note: [<p>При необходимости пользовательский интерфейс каждой конкретной ostis-системы может быть дополнен визуализаторами и редакторами различных внешних языков, которые в текущей версии <i>Реализации интерпретатора sc-моделей пользовательских интерфейсов ostis-систем</i> будут также располагаться на <i>Панели визуализации и редактирования знаний</i>.</p>]
 						(*
@@ -3771,10 +3771,10 @@
 		*];;
 
 		.system_element_350
-		=> .system_element_739: .system_element_742
+		=> .system_element_738: .system_element_741
 		(*
 			=> nrel_idtf: [<p>sc-builder</p>];;
-			=> .system_element_596: scs_code;;
+			=> .system_element_595: scs_code;;
 			<- .system_element_342;;
 			<- .system_element_343;;
 			<- .system_element_344;;

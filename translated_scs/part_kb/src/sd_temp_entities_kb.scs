@@ -1,4 +1,4 @@
-.system_element_4355
+.system_element_4329
 => nrel_inclusion: [*
 	=> nrel_introduction: [<p>Обработка информации в <i>sc-памяти</i> (т.е. динамика базы знаний, хранимой в <i>sc-памяти</i>) в конечном счете сводится:
 	<ul>
@@ -19,7 +19,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4356
+	.system_element_4330
 	=> nrel_idtf: [<p>Предметная область, описывающая динамику базы знаний, хранимой в sc-памяти</p>]
 	(*
 		<- lang_ru;;
@@ -28,7 +28,7 @@
 	<- subject_domain;
 	-> .system_element_112: 
 		sc_element;
-		.system_element_4357;
+		.system_element_4331;
 		logically_removed_sc_element;
 		number;
 		non_calculated_number;
@@ -37,7 +37,7 @@
 		main_concept;
 		auxiliary_concept;
 		main_to_auxilary_concept;
-		.system_element_4358;
+		.system_element_4332;
 		specified_essence;
 		not_enough_specified_essence;
 		enough_specified_essence;
@@ -58,11 +58,11 @@
 
 	sc_element
 	<= nrel_subdividing: {
-		.system_element_4357;
+		.system_element_4331;
 		logically_removed_sc_element
 	};;
 
-	.system_element_4357
+	.system_element_4331
 	<- situational_set;;
 
 	logically_removed_sc_element
@@ -85,7 +85,7 @@
 		main_concept;
 		auxiliary_concept;
 		main_to_auxilary_concept;
-		.system_element_4358
+		.system_element_4332
 	};;
 
 	main_concept
@@ -123,7 +123,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_3339: [<p>В случае, когда некоторое понятие полностью перешло из <i>основных понятий</i> в неосновные, то есть стало <b><i>неосновным понятием</i></b>, и соответствующее ему <i>основное понятие</i> (через которое оно определяется) в рамках некоторого внешнего языка имеет одинаковый с ним основной идентификатор, то к идентификатору <b><i>неосновного понятия</i></b> спереди добавляется знак #. Если при этом соответствуюшее <i>основное понятие</i> имеет в идентификаторе знак , добавленный в процессе перехода, то этот знак удаляется. Если указанные понятия имеют разные основные идентификаторы в рамках этого внешнего языка, то никаких дополнительных средств идентификации не используется.Например:<i>#трансляция sc-текста</i><i>#scp-программа</i></p>]
+	=> .system_element_3327: [<p>В случае, когда некоторое понятие полностью перешло из <i>основных понятий</i> в неосновные, то есть стало <b><i>неосновным понятием</i></b>, и соответствующее ему <i>основное понятие</i> (через которое оно определяется) в рамках некоторого внешнего языка имеет одинаковый с ним основной идентификатор, то к идентификатору <b><i>неосновного понятия</i></b> спереди добавляется знак #. Если при этом соответствуюшее <i>основное понятие</i> имеет в идентификаторе знак , добавленный в процессе перехода, то этот знак удаляется. Если указанные понятия имеют разные основные идентификаторы в рамках этого внешнего языка, то никаких дополнительных средств идентификации не используется.Например:<i>#трансляция sc-текста</i><i>#scp-программа</i></p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
@@ -132,9 +132,9 @@
 	main_to_auxilary_concept
 	<- situational_set;;
 
-	.system_element_4358
+	.system_element_4332
 	<- situational_set;
-	=> .system_element_3339: [<p>В случае, когда текущее <i>основное понятие</i> и соответствующее ему <b><i>понятие, переходящее из неосновного в основное</i></b> в рамках некоторого внешнего языка имеют одинаковый основной идентификатор, то к идентификатору понятия, переходящего из неосновного в основное спереди добавляется знак . Если указанные понятия имеют разные основные идентификаторы в рамках этого внешнего языка, то никаких дополнительных средств идентификации не используется.Например:<i>трансляция sc-текста</i><i>scp-программа</i></p>]
+	=> .system_element_3327: [<p>В случае, когда текущее <i>основное понятие</i> и соответствующее ему <b><i>понятие, переходящее из неосновного в основное</i></b> в рамках некоторого внешнего языка имеют одинаковый основной идентификатор, то к идентификатору понятия, переходящего из неосновного в основное спереди добавляется знак . Если указанные понятия имеют разные основные идентификаторы в рамках этого внешнего языка, то никаких дополнительных средств идентификации не используется.Например:<i>трансляция sc-текста</i><i>scp-программа</i></p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
@@ -207,33 +207,33 @@
 
 	file
 	=> nrel_subdividing: {
-		.system_element_4359;
-		.system_element_4360;
-		.system_element_4361
+		.system_element_4333;
+		.system_element_4334;
+		.system_element_4335
 	};;
 
-	.system_element_4362
-	=> nrel_inclusion: .system_element_1958;;
+	.system_element_4336
+	=> nrel_inclusion: .system_element_1956;;
 
-	.system_element_4363
-	<= nrel_inclusion: .system_element_4362;
+	.system_element_4337
+	<= nrel_inclusion: .system_element_4336;
 	=> nrel_explanation: [<p>Под <b><i>элементарным событием в sc-памяти</i></b> понимается такое <i>событие</i>, в результате выполнения которого изменяется состояние только одного <i>sc-элемента</i>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
 	=> nrel_subdividing: {
-		.system_element_4364;
-		.system_element_4365;
-		.system_element_4366;
-		.system_element_4367;
-		.system_element_4368;
-		.system_element_4369;
-		.system_element_4370;
-		.system_element_4371
+		.system_element_4338;
+		.system_element_4339;
+		.system_element_4340;
+		.system_element_4341;
+		.system_element_4342;
+		.system_element_4343;
+		.system_element_4344;
+		.system_element_4345
 	};;
 
-	.system_element_3376
+	.system_element_3364
 	=> nrel_idtf: [<p>атомарный процесс</p>]
 	(*
 		<- lang_ru;;
@@ -250,7 +250,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3377
+	.system_element_3365
 	=> nrel_idtf: [<p>процесс, детализация которого на входящие в него подпроцессы в текущем контексте не производится</p>]
 	(*
 		<- lang_ru;;

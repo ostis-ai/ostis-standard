@@ -1,8 +1,8 @@
 .segment_reusable_component_concept = [*
-.system_element_822
+.system_element_821
 => nrel_inclusion: [*
 
-	.system_element_591
+	.system_element_590
 	=> nrel_idtf: [<p>типовой компонент ostis-систем</p>]
 	(*
 		<- lang_ru;;
@@ -28,13 +28,13 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_823: [<p>МИК ostis-систем</p>]
+	=> .system_element_822: [<p>МИК ostis-систем</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<= nrel_inclusion: .system_element_824;
-	<= nrel_inclusion: .system_element_825
+	<= nrel_inclusion: .system_element_823;
+	<= nrel_inclusion: .system_element_824
 	(*
 		=> nrel_explanation: [<p>Целостная часть ostis-системы, которая содержит все те (и только те) sc-элементы, которые необходимы для её функционирования в ostis-системе.</p>]
 		(*
@@ -42,18 +42,18 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	=> .system_element_826: [<p>многократно используемый компонент ostis-систем --- компонент некоторой ostis-системы, который может быть использован в рамках другой ostis-системы.</p>]
+	=> .system_element_825: [<p>многократно используемый компонент ostis-систем --- компонент некоторой ostis-системы, который может быть использован в рамках другой ostis-системы.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
-		=> .system_element_163: .system_element_827;;
+		=> .system_element_163: .system_element_826;;
 	*);
-	=> nrel_explanation: [<p>Компонент ostis-системы, который может быть использован в других ostis-системах (<em>дочерних ostis-системах</em>).</p>]
+	=> nrel_explanation: [<p>Компонент ostis-системы, который может быть использован в других ostis-системах (дочерних ostis-системах).</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> nrel_explanation: [<p>Компонент некоторой <em>материнской ostis-системы</em>, который может быть использован в некоторой <em>дочерней ostis-системе</em>.</p>]
+	=> nrel_explanation: [<p>Компонент некоторой материнской ostis-системы, который может быть использован в некоторой дочерней ostis-системе.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
@@ -78,8 +78,8 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_828: {
-		[<p>Существует техническая возможность встроить многократно используемый компонент в <em>дочернюю ostis-систему</em>.</p>]
+	=> .system_element_827: {
+		[<p>Существует техническая возможность встроить многократно используемый компонент в дочернюю ostis-систему.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
@@ -106,20 +106,20 @@
 		*)
 	};;
 
-	.system_element_378
+	.system_element_377
 	-> {
-		.system_element_591;
-		.system_element_825
+		.system_element_590;
+		.system_element_824
 	};
-	=> .system_element_152: [<p>многократно используемый компонент ostis-систем имеет <u>спецификацию, достаточную для установки</u> этого компонента в <em>дочернюю ostis-систему</em>. Спецификация является частью базы знаний <em>библиотеки многократно используемых компонентов</em> соответствующей <em>материнской ostis-системы</em>. Есть техническая возможность встроить многократно используемый компонент в дочернюю ostis-систему.</p>]
+	=> .system_element_152: [<p>многократно используемый компонент ostis-систем имеет <u>спецификацию, достаточную для установки</u> этого компонента в дочернюю ostis-систему. Спецификация является частью базы знаний библиотеки многократно используемых компонентов соответствующей материнской ostis-системы. Есть техническая возможность встроить многократно используемый компонент в дочернюю ostis-систему.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_829
+	.system_element_828
 	<= nrel_inclusion: parameter;
-	-> .system_element_830
+	-> .system_element_829
 	(*
 		=> nrel_note: [<p>класс многократно используемого компонента ostis-систем является важной частью спецификации компонента, позволяющей лучше понять назначение и область применения данного компонента, а также класс многократно используемого компонента является важнейшим критерием поиска компонентов в библиотеке ostis-систем.</p>]
 		(*
@@ -127,53 +127,53 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	-> .system_element_831;
-	-> .system_element_832;;
+	-> .system_element_830;
+	-> .system_element_831;;
 
-	.system_element_591
+	.system_element_590
 	=> nrel_note: [<p>Интеллектуальная система, спроектированная по <i>Технологии OSTIS</i>, представляет собой интеграцию <i>многократно используемых компонентов баз знаний</i>, <i>многократно используемых компонентов решателей задач</i> и <i>многократно используемых компонентов интерфейсов</i>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
-		=> .system_element_163: .system_element_833;;
+		=> .system_element_163: .system_element_832;;
 	*);
 	=> nrel_note: [<p>Основной признак классификации многократно используемых компонентов является признак предметной области, к которой относится компонент. Здесь структура может быть довольно богатой в соответствии с иерархией областей человеческой деятельности. Существует также множество предметно-независимых многократно используемых компонентов, которые могут использоваться в любой предметной области.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
-		=> .system_element_163: .system_element_834;;
+		=> .system_element_163: .system_element_833;;
 	*);
 	=> nrel_subdividing: {
-		.system_element_835
+		.system_element_834
 		(*
 			=> nrel_idtf: [<p>многократно используемый компонент базы знаний</p>];;
-			<- .system_element_830;;
+			<- .system_element_829;;
 			=> nrel_note: [<p>Важнейшим признаком классификации многократно используемых компонентов баз знаний является вид знаний.</p>]
 			(*
 				<- lang_ru;;
 				=> nrel_format: format_html;;
-				=> .system_element_193: .system_element_836;;
+				=> .system_element_193: .system_element_835;;
 			*);;
 			=> nrel_inclusion: semantic_neighborhood
 			(*
+				-> .system_element_836;;
 				-> .system_element_837;;
-				-> .system_element_838;;
 			*);;
-			=> nrel_inclusion: .system_element_839
+			=> nrel_inclusion: .system_element_838
 			(*
-				-> .system_element_840;;
+				-> .system_element_839;;
 			*);;
 			=> nrel_inclusion: knowledge_base;;
-			=> nrel_inclusion: .system_element_841
+			=> nrel_inclusion: .system_element_840
 			(*
+				-> .system_element_841;;
 				-> .system_element_842;;
-				-> .system_element_843;;
 			*);;
 		*);
-		.system_element_844
+		.system_element_843
 		(*
 			=> nrel_idtf: [<p>многократно используемый компонент решателя задач</p>];;
-			<- .system_element_830;;
+			<- .system_element_829;;
 			=> nrel_note: [<p>Важнейшим признаком классификации многократно используемых компонентов баз решателя задач является используемая модель решения задачи.</p>]
 			(*
 				<- lang_ru;;
@@ -181,31 +181,31 @@
 			*);;
 			=> nrel_inclusion: atomic_abstract_sc_agent
 			(*
-				-> .system_element_845;;
+				-> .system_element_844;;
 			*);;
-			=> nrel_inclusion: .system_element_846;;
+			=> nrel_inclusion: .system_element_845;;
 			=> nrel_inclusion: .system_element_179;;
-			=> nrel_inclusion: .system_element_847;;
+			=> nrel_inclusion: .system_element_846;;
 		*);
-		.system_element_848
+		.system_element_847
 		(*
 			=> nrel_idtf: [<p>многократно используемый компонент интерфейса</p>];;
-			<- .system_element_830;;
+			<- .system_element_829;;
 			=> nrel_note: [<p>Важнейшим признаком классификации многократно используемых компонентов баз решателя задач является вид интерфейса в соответствии с классификацией интерфейсов.</p>]
 			(*
 				<- lang_ru;;
 				=> nrel_format: format_html;;
 			*);;
-			=> nrel_inclusion: .system_element_849;;
+			=> nrel_inclusion: .system_element_848;;
 		*)
 	};
-	=> nrel_subdividing: .system_element_850
+	=> nrel_subdividing: .system_element_849
 	(*
-		<= nrel_inclusion: .system_element_830;;
+		<= nrel_inclusion: .system_element_829;;
 		<=> .system_element_151: {
-			.system_element_450
+			.system_element_449
 			(*
-				-> .system_element_845;;
+				-> .system_element_844;;
 				=> nrel_explanation: [<p>Многократно используемый компонент, который в текущем состоянии библиотеки ostis-систем рассматривается как неделимый, то есть не содержит в своем составе других компонентов.</p>]
 				(*
 					<- lang_ru;;
@@ -230,7 +230,7 @@
 			.system_element_343
 			(*
 				=> nrel_idtf: [<p>составной многократно используемый компонент ostis-систем</p>];;
-				-> .system_element_851;;
+				-> .system_element_850;;
 				=> nrel_explanation: [<p>Многократно используемый компонент, который в текущем состоянии библиотеки ostis-систем содержит в своем составе другие атомарные или неатомарные компоненты.</p>]
 				(*
 					<- lang_ru;;
@@ -254,20 +254,20 @@
 			*)
 		};;
 	*);
-	=> nrel_subdividing: .system_element_852
+	=> nrel_subdividing: .system_element_851
 	(*
-		<= nrel_inclusion: .system_element_830;;
+		<= nrel_inclusion: .system_element_829;;
 		<=> .system_element_151: {
 			.system_element_344
 			(*
-				-> .system_element_853;;
+				-> .system_element_852;;
 				=> nrel_explanation: [<p>Многократно используемый компонент, который зависит хотя бы от одного другого компонента библиотеки ostis-систем, то есть не может быть встроен в дочернюю ostis-систему без компонентов, от которых он зависит.</p>]
 				(*
 					<- lang_ru;;
 					=> nrel_format: format_html;;
 				*);;
 			*);
-			.system_element_854
+			.system_element_853
 			(*
 				-> subject_domain_of_sets;;
 				=> nrel_explanation: [<p>Многократно используемый компонент, который не зависит ни от одного другого компонента библиотеки ostis-систем.</p>]
@@ -278,18 +278,18 @@
 			*)
 		};;
 	*);
-	=> nrel_subdividing: .system_element_855
+	=> nrel_subdividing: .system_element_854
 	(*
-		<= nrel_inclusion: .system_element_830;;
+		<= nrel_inclusion: .system_element_829;;
 		<=> .system_element_151: {
-			.system_element_856
+			.system_element_855
 			(*
 				=> nrel_subdividing: {
 					.system_element_342;
-					.system_element_857
+					.system_element_856
 				};;
 			*);
-			.system_element_858
+			.system_element_857
 		};;
 		=> nrel_note: [<p>На данном этапе развития <i>Технологии OSTIS</i> более удобным является хранение компонентов в виде исходных текстов.</p>]
 		(*
@@ -297,11 +297,11 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	=> nrel_subdividing: .system_element_859
+	=> nrel_subdividing: .system_element_858
 	(*
-		<= nrel_inclusion: .system_element_830;;
+		<= nrel_inclusion: .system_element_829;;
 		<=> .system_element_151: {
-			.system_element_860
+			.system_element_859
 			(*
 				=> nrel_explanation: [<p>Под платформенно-зависимым многократно используемым компонентом OSTIS понимается компонент, частично или полностью реализованный при помощи каких-либо сторонних с точки зрения <i>Технологии OSTIS</i> средств.</p>];;
 				=> .system_element_218: [<p>Интеграция таких компонентов в интеллектуальные системы может сопровождаться дополнительными трудностями, зависящими от конкретных средств реализации компонента.</p>]
@@ -309,7 +309,7 @@
 					<- lang_ru;;
 					=> nrel_format: format_html;;
 				*);;
-				=> .system_element_861: [<p>В качестве возможного преимущества платформенно-зависимых многократно используемых компонентов ostis-систем можно выделить их, как правило, более высокую производительность за счет реализации их на более приближенном к платформе уровне.</p>]
+				=> .system_element_860: [<p>В качестве возможного преимущества платформенно-зависимых многократно используемых компонентов ostis-систем можно выделить их, как правило, более высокую производительность за счет реализации их на более приближенном к платформе уровне.</p>]
 				(*
 					<- lang_ru;;
 					=> nrel_format: format_html;;
@@ -327,11 +327,11 @@
 				=> nrel_inclusion: .system_element_122;;
 				=> nrel_inclusion: abstract_sc_agent_is_not_implemented_on_the_scp_language;;
 			*);
-			.system_element_862
+			.system_element_861
 			(*
 				=> nrel_explanation: [<p>Под платформенно-независимым многократно используемым компонентом ostis-систем понимается компонент, который полностью представлен на <i>SC-коде</i>.</p>];;
+				=> nrel_inclusion: .system_element_862;;
 				=> nrel_inclusion: .system_element_863;;
-				=> nrel_inclusion: .system_element_864;;
 				=> nrel_inclusion: new_scp_program;;
 				=> nrel_note: [<p>В случае <i>неатомарного многократно используемого компонента</i> платформенная независимость означает, что <u>все</u> более простые компоненты, входящие в его состав также обязаны быть платформенно-независимыми многократно используемыми компонентами ostis-систем.</p>]
 				(*
@@ -351,19 +351,19 @@
 			*)
 		};;
 	*);
-	=> nrel_subdividing: .system_element_865
+	=> nrel_subdividing: .system_element_864
 	(*
-		<= nrel_inclusion: .system_element_830;;
+		<= nrel_inclusion: .system_element_829;;
 		<=> .system_element_151: {
-			.system_element_866
+			.system_element_865
 			(*
 				=> nrel_idtf: [<p>многократно используемый компонент, при установке которого система не требует перезапуска</p>];;
 				=> nrel_decomposition: {
-					.system_element_867;
-					.system_element_863
+					.system_element_866;
+					.system_element_862
 				};;
 			*);
-			.system_element_868
+			.system_element_867
 		};;
 		=> nrel_note: [<p>Процесс интеграции компонентов разных видов на разных этапах жизненного цикла osits-систем бывает разным. Наиболее ценными являются компоненты, которые могут быть интегрированы в работающую систему <u>без</u> прекращения её функционирования. Некоторые системы, особенно системы управления, нельзя останавливать, а устанавливать и обновлять компоненты нужно.</p>]
 		(*
@@ -371,28 +371,28 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	=> nrel_inclusion: .system_element_869
+	=> nrel_inclusion: .system_element_868
 	(*
 		=> nrel_idtf: [<p>типовая подсистема ostis-систем</p>];;
 		<= nrel_inclusion: ostis_system;;
 		<= nrel_inclusion: .system_element_343;;
-		=> nrel_explanation: [<p><em>встраиваемая ostis-система</em> --- это <i>неатомарный многократно используемый компонент</i>, который состоит из <i>базы знаний</i>, <i>решателя задач</i> и <i>интерфейса</i>.</p>]
+		=> nrel_explanation: [<p>встраиваемая ostis-система --- это <i>неатомарный многократно используемый компонент</i>, который состоит из <i>базы знаний</i>, <i>решателя задач</i> и <i>интерфейса</i>.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 		=> nrel_decomposition: {
+			.system_element_869;
 			.system_element_870;
-			.system_element_871;
-			.system_element_872
+			.system_element_871
 		};;
-		<- .system_element_830;;
+		<- .system_element_829;;
+		-> .system_element_872;;
 		-> .system_element_873;;
 		-> .system_element_874;;
-		-> .system_element_875;;
-		=> nrel_inclusion: .system_element_807;;
+		=> nrel_inclusion: .system_element_806;;
+		=> nrel_inclusion: .system_element_875;;
 		=> nrel_inclusion: .system_element_876;;
-		=> nrel_inclusion: .system_element_877;;
 		=> nrel_note: [<p>Особенность <i>встраиваемых ostis-систем</i> в том, что интеграция целых интеллектуальных систем предполагает интеграцию баз знаний этих систем, интеграцию их решателей задач и интеграцию их интеллектуальных интерфейсов. При интеграции встраиваемых ostis-систем база знаний встраиваемой системы становится частью базы знаний системы, в которую она встраивается. Решатель задач встраиваемой ostis-системы становится частью решателя задач системы, в которую она встраивается. И интерфейс встраиваемой ostis-системы становится частью интерфейса системы, в которую она встраивается. При этом встраиваемая система является целостной и может функционировать отдельно от других ostis-систем, в отличие от других многократно используемых компонентов.</p>]
 		(*
 			<- lang_ru;;

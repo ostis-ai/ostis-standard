@@ -1,25 +1,25 @@
-.system_element_2222
+.system_element_2220
 => nrel_inclusion: [*
-	=> .system_element_319: .system_element_1032;;
+	=> .system_element_319: .system_element_1030;;
 
-	.system_element_1727
-	=> .system_element_826: [<p><em>сообщение</em> --- дискретная информационная конструкция, используемая в процессе передачи от отправителя к получателю.</p>]
+	.system_element_1725
+	=> .system_element_825: [<p>сообщение --- дискретная информационная конструкция, используемая в процессе передачи от отправителя к получателю.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
 	=> nrel_subdividing: {
+		.system_element_2221
+		(*
+			=> nrel_inclusion: .system_element_2222;;
+		*);
 		.system_element_2223
 		(*
-			=> nrel_inclusion: .system_element_2224;;
-		*);
-		.system_element_2225
-		(*
-			=> nrel_inclusion: .system_element_2226
+			=> nrel_inclusion: .system_element_2224
 			(*
-				=> nrel_inclusion: .system_element_2227
+				=> nrel_inclusion: .system_element_2225
 				(*
-					=> .system_element_826: [<p><em>эффекторное сообщение ostis-системы</em> --- сообщение ostis-системы, формируемое самой ostis-системой при возникновении некоторых ситуаций.</p>];;
+					=> .system_element_825: [<p>эффекторное сообщение ostis-системы --- сообщение ostis-системы, формируемое самой ostis-системой при возникновении некоторых ситуаций.</p>];;
 					=> nrel_note: [<p>К ситуациям, инициирующим возникновение эффекторных сообщений, можно отнести:
 					<ul>
 						<li> Ситуации, возникающие при анализе деятельности самого пользователя. Например, задание аргументов, не соответствующих типу инициируемого действия или появление подсказок при использовании компонентов пользовательского интерфейса.
@@ -30,9 +30,9 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);;
-				=> nrel_inclusion: .system_element_2228
+				=> nrel_inclusion: .system_element_2226
 				(*
-					=> .system_element_826: [<p><em>рецепторное сообщение ostis-системы</em> --- сообщение ostis-системы, являющееся реакцией на императивное сообщение (сообщение, побуждающее к какому-либо действию).</p>];;
+					=> .system_element_825: [<p>рецепторное сообщение ostis-системы --- сообщение ostis-системы, являющееся реакцией на императивное сообщение (сообщение, побуждающее к какому-либо действию).</p>];;
 					=> nrel_note: [<p>Возможными реакциями ostis-системы на императивное сообщение пользователя являются:
 					<ul>
 						<li> указание факта завершения выполнения некоторой задачи, что, например, характерно для поведенческих действий;
@@ -47,17 +47,17 @@
 		*)
 	};
 	=> nrel_subdividing: {
+		.system_element_2227;
+		.system_element_2228
+	};
+	=> nrel_subdividing: {
 		.system_element_2229;
 		.system_element_2230
 	};
-	=> nrel_subdividing: {
-		.system_element_2231;
-		.system_element_2232
-	};
-	=> nrel_inclusion: .system_element_2233
+	=> nrel_inclusion: .system_element_2231
 	(*
 		=> nrel_idtf: [<p>сообщение, содержащее графическую информацию</p>];;
-		=> nrel_inclusion: .system_element_2234
+		=> nrel_inclusion: .system_element_2232
 		(*
 			=> nrel_idtf: [<p>сообщение, содержащее видео-информацию</p>]
 			(*
@@ -66,7 +66,7 @@
 			*);;
 		*);;
 	*);
-	=> nrel_inclusion: .system_element_2235
+	=> nrel_inclusion: .system_element_2233
 	(*
 		=> nrel_idtf: [<p>сообщение, представленное в звуковом формате</p>]
 		(*
@@ -74,7 +74,7 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	=> nrel_inclusion: .system_element_2236
+	=> nrel_inclusion: .system_element_2234
 	(*
 		=> nrel_idtf: [<p>сообщение, содержащее информацию о запахах</p>]
 		(*
@@ -82,7 +82,7 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	=> nrel_inclusion: .system_element_2237
+	=> nrel_inclusion: .system_element_2235
 	(*
 		=> nrel_idtf: [<p>сообщение, содержащее текстовую информацию</p>]
 		(*
@@ -90,7 +90,7 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	=> nrel_inclusion: .system_element_2238
+	=> nrel_inclusion: .system_element_2236
 	(*
 		=> nrel_idtf: [<p>сообщение, которое необходимо сформировать системой для дальнейшей передачи его пользователю</p>]
 		(*
@@ -98,7 +98,7 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	=> nrel_inclusion: .system_element_2239
+	=> nrel_inclusion: .system_element_2237
 	(*
 		=> nrel_idtf: [<p>сообщение, которое было сформировано системой для дальнейшей передачи его пользователю</p>]
 		(*

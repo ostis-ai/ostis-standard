@@ -1,7 +1,7 @@
-.system_element_3589
+.system_element_3577
 => nrel_inclusion: [*
 	=> .system_element_172: 
-		.system_element_4201
+		.system_element_4176
 		(*
 			=> nrel_idtf: [<p>Предметная область и онтология <i>знаний о множествах</i></p>]
 			(*
@@ -14,18 +14,18 @@
 				*);;
 			*);;
 		*);
-		.system_element_3334;
-		.system_element_4305;
-		.system_element_3351;
-		.system_element_3343;
-		.system_element_3364;
-		.system_element_4306;
-		.system_element_4307;
-		.system_element_3394;
-		.system_element_4072;
-		.system_element_3386;
-		.system_element_4308;
-		.system_element_4309
+		.system_element_3322;
+		.system_element_4279;
+		.system_element_3339;
+		.system_element_3331;
+		.system_element_3352;
+		.system_element_4280;
+		.system_element_4281;
+		.system_element_3382;
+		.system_element_4047;
+		.system_element_3374;
+		.system_element_4282;
+		.system_element_4283
 	;
 	=> nrel_introduction: 
 		[<p>Развитие информационных технологий привело к расширению многообразия используемой информации, и вследствие этого к необходимости создания <i>интеллектуальных компьютерных систем</i>, способных оперировать объемными информационными ресурсами. Важнейшими видами таких ресурсов являются <i>базы знаний</i>.</p>]
@@ -43,7 +43,7 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 			=> .system_element_163: {
-				.system_element_4310
+				.system_element_4284
 			};;
 		*);
 		[<p>На сегодняшний день существуют десятки моделей представления <i>знаний</i>. Каждая из которых адаптирована для представления <i>знаний</i> определенного вида, в то время как при создании <i>интеллектуальных компьютерных систем</i> часто возникает необходимость представить различные <i>виды знаний</i> в рамках одной <i>базы знаний</i>. Однако, в настоящее время ни одна из существующих моделей, взятых в отдельности, не может этого обеспечить.</p>]
@@ -58,14 +58,14 @@
 		*)
 	;;
 
-	.system_element_4311
+	.system_element_4285
 	<- subject_domain;
-	-> .system_element_766: 
+	-> .system_element_765: 
 		knowledge
 	;
-	-> .system_element_4312: 
-		.system_element_836;
-		.system_element_4313
+	-> .system_element_4286: 
+		.system_element_835;
+		.system_element_4287
 	;
 	=> nrel_summary: [<p><i>Предметная область знаний и баз знаний ostis-систем</i> посвящена онтологическому подходу к проектированию баз знаний интеллектуальных компьютерных систем нового поколения. Данный подход основан на представлении базы знаний как иерархической структуры взаимосвязанных предметных областей и их онтологий, построенных на базе онтологий верхнего уровня.</p>]
 	(*
@@ -79,11 +79,11 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<= nrel_inclusion: .system_element_1078
+	<= nrel_inclusion: .system_element_1076
 	(*
-		<- .system_element_112: .system_element_4314;;
+		<- .system_element_112: .system_element_4288;;
 	*);
-	=> .system_element_4315: .system_element_836
+	=> .system_element_4289: .system_element_835
 	(*
 		=> nrel_idtf: [<p>Множество <u>всевозможных</u> видов знаний</p>];;
 		=> nrel_note: [<p>Тот факт, что семейство <i>видов знаний</i> является <i>покрытием</i> <b>Множества всевозможных <i>знаний</i></b>, означает то, что каждое <i>знание</i> принадлежит по крайней мере одному выделенному нами <i>виду знаний</i>.</p>]
@@ -93,24 +93,24 @@
 		*);;
 	*);;
 
-	.system_element_836
-	-> .system_element_902
+	.system_element_835
+	-> .system_element_901
 	(*
 		=> nrel_idtf: [<p>описание заданной сущности</p>];;
-		=> nrel_inclusion: .system_element_4316;;
-		=> nrel_inclusion: .system_element_4317
+		=> nrel_inclusion: .system_element_4290;;
+		=> nrel_inclusion: .system_element_4291
 		(*
-			=> nrel_inclusion: .system_element_4318;;
-			=> nrel_inclusion: .system_element_4319;;
+			=> nrel_inclusion: .system_element_4292;;
+			=> nrel_inclusion: .system_element_4293;;
 		*);;
-		=> nrel_inclusion: .system_element_4320
+		=> nrel_inclusion: .system_element_4294
 		(*
-			=> nrel_inclusion: .system_element_4321;;
-			=> nrel_inclusion: .system_element_4322;;
-			=> nrel_inclusion: .system_element_4323
+			=> nrel_inclusion: .system_element_4295;;
+			=> nrel_inclusion: .system_element_4296;;
+			=> nrel_inclusion: .system_element_4297
 			(*
-				=> nrel_inclusion: .system_element_4324;;
-				=> nrel_inclusion: .system_element_4325
+				=> nrel_inclusion: .system_element_4298;;
+				=> nrel_inclusion: .system_element_4299
 				(*
 					=> nrel_idtf: [<p>спецификация класса связей (связок)</p>]
 					(*
@@ -118,12 +118,12 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);;
-				=> nrel_inclusion: .system_element_4326
+				=> nrel_inclusion: .system_element_4300
 				(*
-					=> nrel_inclusion: .system_element_4327;;
+					=> nrel_inclusion: .system_element_4301;;
 				*);;
-				=> nrel_inclusion: .system_element_4328;;
-				=> nrel_inclusion: .system_element_4329
+				=> nrel_inclusion: .system_element_4302;;
+				=> nrel_inclusion: .system_element_4303
 				(*
 					=> nrel_inclusion: explanation;;
 					=> nrel_inclusion: definition;;
@@ -140,13 +140,13 @@
 			*);;
 		*);;
 		=> nrel_inclusion: semantic_neighborhood;;
-		=> nrel_inclusion: .system_element_4330;;
+		=> nrel_inclusion: .system_element_4304;;
 		=> nrel_inclusion: comparative_analysis;;
-		=> nrel_inclusion: .system_element_4331;;
-		=> nrel_inclusion: .system_element_4332;;
-		=> nrel_inclusion: .system_element_4333;;
-		=> nrel_inclusion: .system_element_4334;;
-		=> nrel_inclusion: .system_element_4335
+		=> nrel_inclusion: .system_element_4305;;
+		=> nrel_inclusion: .system_element_4306;;
+		=> nrel_inclusion: .system_element_4307;;
+		=> nrel_inclusion: .system_element_4308;;
+		=> nrel_inclusion: .system_element_4309
 		(*
 			=> nrel_idtf: [<p>аргументация предлагаемого решения</p>]
 			(*
@@ -155,15 +155,15 @@
 			*);;
 		*);;
 	*);
-	-> .system_element_4336;
+	-> .system_element_4310;
 	-> observation
 	(*
 		=> nrel_inclusion: factual_observation;;
-		=> nrel_inclusion: .system_element_4337;;
+		=> nrel_inclusion: .system_element_4311;;
 	*);
 	-> formal_theory;
 	-> subject_domain;
-	-> .system_element_839
+	-> .system_element_838
 	(*
 		=> nrel_idtf: [<p>предметная область и её онтология</p>];;
 		=> nrel_idtf: [<p>предметная область и соответствующая ей объединенная онтология</p>]
@@ -172,22 +172,22 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	-> .system_element_4086
+	-> .system_element_4061
 	(*
 		=> nrel_idtf: [<p>спецификация знания</p>];;
-		=> nrel_inclusion: .system_element_4338;;
-		=> nrel_inclusion: .system_element_4339;;
-		=> nrel_inclusion: .system_element_4340;;
-		=> nrel_inclusion: .system_element_4341;;
+		=> nrel_inclusion: .system_element_4312;;
+		=> nrel_inclusion: .system_element_4313;;
+		=> nrel_inclusion: .system_element_4314;;
+		=> nrel_inclusion: .system_element_4315;;
 		=> nrel_inclusion: ontology
 		(*
-			=> nrel_inclusion: .system_element_4091
+			=> nrel_inclusion: .system_element_4066
 			(*
-				=> nrel_inclusion: .system_element_4342;;
-				=> nrel_inclusion: .system_element_4081;;
-				=> nrel_inclusion: .system_element_4082;;
-				=> nrel_inclusion: .system_element_4085;;
-				=> nrel_inclusion: .system_element_4343;;
+				=> nrel_inclusion: .system_element_4316;;
+				=> nrel_inclusion: .system_element_4056;;
+				=> nrel_inclusion: .system_element_4057;;
+				=> nrel_inclusion: .system_element_4060;;
+				=> nrel_inclusion: .system_element_4317;;
 			*);;
 		*);;
 	*);
@@ -201,13 +201,13 @@
 	*);
 	-> plan;
 	-> protocol;
-	-> .system_element_4344;
-	-> .system_element_484;
-	-> .system_element_2463;
-	-> .system_element_4345;
-	-> .system_element_4346;
-	-> .system_element_4347;
-	=> .system_element_2797: [<p>Важным видом знаний являются <b>базы знаний</b>.</p>]
+	-> .system_element_4318;
+	-> .system_element_483;
+	-> .system_element_2458;
+	-> .system_element_4319;
+	-> .system_element_4320;
+	-> .system_element_4321;
+	=> .system_element_2785: [<p>Важным видом знаний являются <b>базы знаний</b>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
@@ -229,9 +229,9 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);
-			.system_element_4348;
-			.system_element_4349;
-			.system_element_4350
+			.system_element_4322;
+			.system_element_4323;
+			.system_element_4324
 			(*
 				=> nrel_idtf: [<p>система специфицированных и согласованных действий авторов базы знаний, направленных на повышение её качества</p>]
 				(*
@@ -258,7 +258,7 @@
 
 	knowledge
 	=> nrel_subdividing: {
-		.system_element_4351
+		.system_element_4325
 		(*
 			=> nrel_idtf: [<p><i>знание</i>, имеющее <u>только</u> <i>денотационную семантику</i>, которая представляется в виде семантической <i>спецификации</i> системы <i>понятий</i>, используемых в этом <i>знании</i></p>]
 			(*
@@ -266,7 +266,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_4352
+		.system_element_4326
 		(*
 			=> nrel_idtf: [<p><i>знание</i>, имеющее не только <i>денотационную семантику</i>, но и <i>операционную семантику</i>, которая представляется в виде семейства <i>спецификаций агентов</i>, осуществляющих интерпретацию <i>процедурного знания</i>, направленную на решение некоторой инициированной <i>задачи</i></p>];;
 			=> nrel_idtf: [<p>функционально интерпретируемое знание, обеспечивающее решение либо конкретной задачи, либо некоторого множества инициируемых задач</p>]
@@ -294,7 +294,7 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);;
-			=> nrel_inclusion: .system_element_484
+			=> nrel_inclusion: .system_element_483
 			(*
 				=> nrel_idtf: [<p>обобщенное описание плана решения любой задачи из некоторого заданного класса задач</p>]
 				(*
@@ -302,7 +302,7 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);;
-			=> nrel_inclusion: .system_element_1312
+			=> nrel_inclusion: .system_element_1310
 			(*
 				=> nrel_idtf: [<p>метод, детализированный до уровня элементарных подзадач</p>]
 				(*
@@ -313,8 +313,8 @@
 		*)
 	};;
 
-	.system_element_4313
-	-> .system_element_4353
+	.system_element_4287
+	-> .system_element_4327
 	(*
 		=> nrel_idtf: [<p>знание, которое от "материнского" знания наследует все описанные там свойства объектов исследования</p>];;
 		=> nrel_note: [<p>Факт наследования свойств описываемых объектов от "материнского" знания подчеркивается использованием прилагательного дочернее в sc-идентификаторе данного отношения, заданного на множестве знаний.</p>]
@@ -330,9 +330,9 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);;
-		=> nrel_inclusion: .system_element_4354;;
+		=> nrel_inclusion: .system_element_4328;;
 	*);
-	-> .system_element_4110
+	-> .system_element_4085
 	(*
 		=> nrel_idtf: [<p>быть знанием, которое является спецификацией (описанием) заданной сущности</p>];;
 		=> nrel_note: [<p>Специфицируемой сущностью может быть сущность любого вида, в том числе, и другое знание.</p>]
@@ -350,7 +350,7 @@
 		*);;
 	*);
 	-> nrel_semantic_equivalence;
-	-> .system_element_1149
+	-> .system_element_1147
 	(*
 		=> nrel_idtf: [<p>логическое следствие*</p>]
 		(*
@@ -358,7 +358,7 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	-> .system_element_1484;
+	-> .system_element_1482;
 	=> nrel_note: [<p>В рамках Технологии OSTIS также выделяются отношения, заданные на множестве знаний.</p>]
 	(*
 		<- lang_ru;;

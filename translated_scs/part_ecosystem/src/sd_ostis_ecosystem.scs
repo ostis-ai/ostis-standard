@@ -1,18 +1,18 @@
-.system_element_2240
+.system_element_2238
 => nrel_inclusion: [*
 	=> .system_element_172: 
+		.system_element_2239;
+		.system_element_2240;
 		.system_element_2241;
-		.system_element_2242;
-		.system_element_2243;
-		.system_element_2244
+		.system_element_2242
 	;;
 
-	.system_element_2245
+	.system_element_2243
 	<- subject_domain;
 	-> .system_element_112: 
 		ostis_system;
-		.system_element_2246;
-		.system_element_2247
+		.system_element_2244;
+		.system_element_2245
 	;;
 
 	project_ostis
@@ -21,7 +21,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_2248: 
+	=> .system_element_2246: 
 		technology_OSTIS;
 		myself
 		(*
@@ -35,16 +35,16 @@
 		ostis_ecosystem
 	;
 	=> nrel_subproject: 
+		.system_element_2247;
+		.system_element_2248;
 		.system_element_2249;
-		.system_element_2250;
-		.system_element_2251;
-		.system_element_2252
+		.system_element_2250
 	;
-	=> .system_element_2253: 
+	=> .system_element_2251: 
+		.system_element_2252;
+		.system_element_2253;
 		.system_element_2254;
-		.system_element_2255;
-		.system_element_2256;
-		.system_element_2257
+		.system_element_2255
 	;;
 
 	ostis_ecosystem
@@ -68,7 +68,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_2258: [<p>Обеспечить постоянную поддержку совместимости компьютерных систем, входящих в <i>Экосистему OSTIS</i> как на этапе их разработки, так и в ходе их эксплуатации. Проблема здесь заключается в том, что в ходе эксплуатации систем, входящих в <i>Экосистему OSTIS</i>, они могут изменяться из-за чего совместимость может нарушаться.Задачами <i>Экосистемы OSTIS</i> являются:
+	=> .system_element_2256: [<p>Обеспечить постоянную поддержку совместимости компьютерных систем, входящих в <i>Экосистему OSTIS</i> как на этапе их разработки, так и в ходе их эксплуатации. Проблема здесь заключается в том, что в ходе эксплуатации систем, входящих в <i>Экосистему OSTIS</i>, они могут изменяться из-за чего совместимость может нарушаться.Задачами <i>Экосистемы OSTIS</i> являются:
 	<ul>
 		<li> оперативное внедрение всех согласованных изменений стандарта <i>ostis-систем</i> (в том числе, и изменений систем используемых понятий и соответствующих им терминов);
 		<li> перманентная поддержка высокого уровня взаимопонимания всех систем, входящих в <i>Экосистему OSTIS</i>, и всех их пользователей;
@@ -86,7 +86,7 @@
 
 	ostis_system
 	=> nrel_subdividing: {
-		.system_element_2246
+		.system_element_2244
 		(*
 			=> nrel_idtf: [<p>целостная <i>ostis-система</i>, которая должна самостоятельно решать соответствующее множество задач и, в частности, взаимодействовать с внешней средой (как вербально --- с пользователями и другими компьютерными системами, так и невербально)</p>]
 			(*
@@ -103,7 +103,7 @@
 				=> nrel_format: format_html;;
 			*);;
 			=> nrel_subdividing: {
-				.system_element_2259
+				.system_element_2257
 				(*
 					=> nrel_idtf: [<p><i>встроенная ostis-система</i>, не включающая в себя какие-либо другие <i>встроенные ostis-системы</i></p>]
 					(*
@@ -111,13 +111,13 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);
-				.system_element_2260
+				.system_element_2258
 				(*
-					=> nrel_inclusion: .system_element_2261;;
+					=> nrel_inclusion: .system_element_2259;;
 				*)
 			};;
 		*);
-		.system_element_2262
+		.system_element_2260
 		(*
 			=> nrel_idtf: [<p>группа общающихся ostis-систем, в состав которой могут входить не только самостоятельные ostis-системы, но и коллективы ostis-систем</p>];;
 			=> nrel_idtf: [<p>распределенная ostis-система</p>]
@@ -128,7 +128,7 @@
 		*)
 	};;
 
-	.system_element_2246
+	.system_element_2244
 	=> nrel_explanation: [<p>Подчеркнем, что к <i><b>самостоятельным ostis-системам</b></i>, входящим в состав <i>Экосистемы OSTIS</i>, предъявляются особые требования:
 
 	<ul>
@@ -188,7 +188,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2247
+	.system_element_2245
 	=> nrel_explanation: [<p>Есть три аспекта поддержки совместимости и взаимопонимания в <i>Экосистеме OSTIS</i>:
 
 	<ul>

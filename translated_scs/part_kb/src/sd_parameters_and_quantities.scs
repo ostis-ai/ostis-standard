@@ -1,14 +1,14 @@
-.system_element_4305
+.system_element_4279
 => nrel_inclusion: [*
 
-	.system_element_4372
+	.system_element_4346
 	=> nrel_idtf: [<p>Предметная область параметров и классов эквивалентности, являющихся их элементами (значениями, величинами)</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
 	<- subject_domain;
-	-> .system_element_766: 
+	-> .system_element_765: 
 		parameter
 	;
 	-> .system_element_112: 
@@ -27,14 +27,14 @@
 		action_measurement;
 		task_measurement
 	;
-	-> .system_element_1002: 
+	-> .system_element_1000: 
 		nrel_param_definitional_domain;
 		rrel_standard;
 		nrel_measurement;
 		nrel_accuracy;
 		nrel_measure;
 		nrel_zero_mark;
-		.system_element_4373;
+		.system_element_4347;
 		nrel_sum_of_quantities;
 		nrel_composition_of_quantities;
 		nrel_pow_of_quantities;
@@ -98,7 +98,7 @@
 		measurable_parameter;
 		immeasurable_parameter
 	};
-	=> nrel_inclusion: .system_element_4374;
+	=> nrel_inclusion: .system_element_4348;
 	=> nrel_explanation: [<p>Каждый <b><i>параметр</i></b> представляет собой класс, являющийся семейством всевозможных классов эквивалентности или толерантности, задаваемых либо <i>отношением эквивалентности</i>, либо <i>отношением толерантности</i> (симметричным, рефлексивным, но частично транзитивным).Так, например, элементами (значениями, величинами) <b><i>параметра</i></b> <i>длина</i> являются либо классы эквивалентности, задаваемые отношением эквивалентности "иметь точно одинаковую длину*", либо классы толерантности, задаваемые отношением вида "иметь приблизительно одинаковую длину с указываемой точностью*", либо интервальные классы, задаваемые бинарными отношениями вида "иметь длину, находящуюся в одном и том же указываемом интервале*" (например, от 1 метра до 2 метров).Примерами параметров как отношений эквивалентности являются:
 	<ul>
 		<li> равновеликость геометрических фигур (по длине, площади, объему --- в зависимости от размерности этих фигур);
@@ -149,7 +149,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> nrel_inclusion: .system_element_4375;;
+	=> nrel_inclusion: .system_element_4349;;
 
 	immeasurable_parameter
 	=> nrel_idtf: [<p>качественный параметр</p>]
@@ -158,20 +158,20 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4374
+	.system_element_4348
 	=> nrel_idtf: [<p>упорядоченный параметр</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> nrel_inclusion: .system_element_4375;
+	=> nrel_inclusion: .system_element_4349;
 	=> nrel_idtf: [<p>параметр, на значениях которого может быть задано некоторое отношение порядка, семантика которого уточняется в зависимости от семантики параметра</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4376
+	.system_element_4350
 	<= nrel_inclusion: strict_order_relation;
 	=> nrel_inclusion: nrel_large_quantitie;
 	=> nrel_note: [<p>Связки отношения <i>порядок величин*</i> могут связывать только величины <u>одного и того же</u> <i>ориентированного параметра</i>.</p>]
@@ -180,7 +180,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3385
+	.system_element_3373
 	=> nrel_explanation: [<p>Связки отношения <i>соединение значений ориентированного параметра*</i> связывают связки отношения <i>порядок величин*</i> и величину (возможно, интервальную) того же параметра, элементами которой являются все сущности, значение данного параметра для которых лежит в интервале, границы которого задаются величинами, являющимися компонентами указанной связки отношения <i>порядок величин*</i>.</p>]
 	(*
 		<- lang_ru;;
@@ -316,7 +316,7 @@
 		*);;
 	*);;
 
-	.system_element_4377
+	.system_element_4351
 	=> nrel_idtf: [<p>интервальное значение параметра</p>]
 	(*
 		<- lang_ru;;
@@ -452,7 +452,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4378
+	.system_element_4352
 	<= nrel_set_of_subsets: nrel_measurement;
 	=> nrel_explanation: [<p>Каждое <b><i>измерение с фиксированной единицей измерения</i></b> представляет собой подмножество отношения <i>измерение*</i> и характеризуется некоторой <i>единицей измерения*</i>, которая является элементом того же параметра (семейством сущностей, имеющих значение данного параметра, совпадающее с этой единицей измерения).</p>]
 	(*
@@ -578,7 +578,7 @@
 		=> nrel_format: format_png;;
 	*);;
 
-	.system_element_4376
+	.system_element_4350
 	=> nrel_idtf: [<p>большая величина*</p>]
 	(*
 		<- lang_ru;;

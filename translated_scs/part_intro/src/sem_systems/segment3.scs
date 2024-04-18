@@ -1,10 +1,10 @@
 .segment3 = [*
-.system_element_1924
+.system_element_1922
 => nrel_inclusion: [*
 	=> .system_element_1: 
+		.system_element_1923;
+		.system_element_1924;
 		.system_element_1925;
-		.system_element_1926;
-		.system_element_1927;
 		lang_external
 		(*
 			=> nrel_idtf: [<p>язык обмена сообщениями</p>]
@@ -13,7 +13,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_1928
+		.system_element_1926
 		(*
 			=> nrel_idtf: [<p>язык представления информации в памяти кибернетической системы</p>]
 			(*
@@ -21,13 +21,13 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
+		.system_element_1927;
+		.system_element_1928;
+		.system_element_1692;
 		.system_element_1929;
 		.system_element_1930;
-		.system_element_1694;
 		.system_element_1931;
-		.system_element_1932;
-		.system_element_1933;
-		.system_element_1934
+		.system_element_1932
 		(*
 			=> nrel_idtf: [<p>рецептор</p>]
 			(*
@@ -35,25 +35,25 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
+		.system_element_1933;
+		.system_element_1934;
+		.system_element_1355;
 		.system_element_1935;
 		.system_element_1936;
-		.system_element_1357;
-		.system_element_1937;
-		.system_element_1938;
-		.system_element_1939
+		.system_element_1937
 	;
-	=> .system_element_1882: 
-		.system_element_1940
+	=> .system_element_1880: 
+		.system_element_1938
 	;;
 
-	.system_element_1941
+	.system_element_1939
 	=> .system_element_204: 
 		[<p>интерфейс <i>интеллектуальной компьютерной системы нового поколения</i> рассматривается как решательзадач частного вида - <i>интерфейсных задач</i></p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
-		=> .system_element_1942: 
+		=> .system_element_1940: 
 			[<p>задачи понимания вербальной информации, приобретаемой интеллектуальной компьютерной системой (синтаксический анализ, семантический анализ и погружение в базу знаний интеллектуальнойкомпьютерной системы)</p>]
 			(*
 				<- lang_ru;;
@@ -115,7 +115,7 @@
 		*)
 	;;
 
-	.system_element_1943
+	.system_element_1941
 	=> .system_element_204: 
 		[<p>интерфейс индивидуальной интеллектуальной компьютерной системы нового поколения являетсяспециализированным компонентом решателя задач интеллектуальной компьютерной системы нового поколения,то есть специализированной <u>встроенной</u> (в индивидуальную интеллектуальную компьютерную системунового поколения) интеллектуальной компьютерной системой нового поколения, ориентированной нарешение интерфейсных задач, к которым относятся:
 		<ul>
@@ -142,7 +142,7 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
-		=> .system_element_1944: 
+		=> .system_element_1942: 
 			[<p>синтаксиса и денотационной семантики всех используемых внешних языков</p>]
 			(*
 				<- lang_ru;;

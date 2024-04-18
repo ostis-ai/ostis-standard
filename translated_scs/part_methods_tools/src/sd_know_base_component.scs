@@ -1,20 +1,20 @@
-.system_element_1009
+.system_element_1007
 => nrel_inclusion: [*
 
-	.system_element_1012
+	.system_element_1010
 	<- subject_domain;
-	<= nrel_private_subject_domain: .system_element_996;
+	<= nrel_private_subject_domain: .system_element_994;
 	-> .system_element_112: 
-		.system_element_870
+		.system_element_869
 	;
-	-> .system_element_112: .system_element_1013;;
+	-> .system_element_112: .system_element_1011;;
 
-	.system_element_1014
-	=> nrel_inclusion: .system_element_839;
+	.system_element_1012
+	=> nrel_inclusion: .system_element_838;
 	<= nrel_inclusion: .system_element_170;
 	=> nrel_inclusion: semantic_neighborhood;
-	=> .system_element_193: .system_element_1015;
-	=> nrel_inclusion: .system_element_1016;
+	=> .system_element_193: .system_element_1013;
+	=> nrel_inclusion: .system_element_1014;
 	=> nrel_note: [<p>Базовый фрагмент предметной области и онтологии включает в себя теоретико-множественную и логическую онтологию, а также фрагменты терминологической онтологии, описывающие основные идентификаторы объектов исследования предметной области.</p>]
 	(*
 		<- lang_ru;;
@@ -25,19 +25,19 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
+	-> .system_element_1015;
+	-> .system_element_1016;
 	-> .system_element_1017;
-	-> .system_element_1018;
-	-> .system_element_1019;
-	=> nrel_inclusion: .system_element_1020;
+	=> nrel_inclusion: .system_element_1018;
 	=> nrel_note: [<p>Целые базы знаний могут быть многократно используемыми компонентами в случае разработки интеллектуальных систем, имеющих схожие функциональные требования.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_863
-	-> .system_element_1021;
-	-> .system_element_1022;
+	.system_element_862
+	-> .system_element_1019;
+	-> .system_element_1020;
 	=> nrel_explanation: [<p><i>Ядро базы знаний</i> представляет собой компонент, входящий в состав каждой базы знаний, разрабатываемой по <i>Технологии OSTIS</i>, и устанавливаемый в первую очередь.</p>]
 	(*
 		<- lang_ru;;
@@ -49,8 +49,8 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_1013
-	<= nrel_inclusion: .system_element_1001;
+	.system_element_1011
+	<= nrel_inclusion: .system_element_999;
 	-> rrel_maximum_studied_object_class;
 	-> rrel_not_maximum_studied_object_class;
 	-> rrel_explored_relation;;
