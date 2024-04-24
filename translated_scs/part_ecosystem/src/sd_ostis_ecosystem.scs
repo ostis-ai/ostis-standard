@@ -23,16 +23,17 @@
 	*);
 	=> .system_element_1250: 
 		technology_OSTIS;
-		.system_element_1843
-		(*
+		myself
+		/*(*
 			=> nrel_idtf: [<p>Метасистема IMS.ostis</p>]
 			(*
 				<- lang_ru;;
 				=> nrel_format: format_html;;
 			*);;
-		*);
-		.system_element_371;
-		.system_element_591
+		*)*/
+		;
+		ostis_standard;
+		ostis_ecosystem
 	;
 	=> nrel_subproject: 
 		.system_element_1844;
