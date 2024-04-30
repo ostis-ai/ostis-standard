@@ -1,22 +1,352 @@
-.system_element_3640
+ostis_standard
 => nrel_idtf: [<p>Оглавление текущей версии Стандарта OSTIS</p>]
 (*
 	<- lang_ru;;
 	=> nrel_format: format_html;;
 *);
-=> nrel_explanation: [<p>Иерархический перечень разделов, входящих в состав<i>Стандарта OSTIS</i>, с дополнительной спецификацией некоторых разделов,указывающей альтернативные названия разделов, а также их авторов и редакторов</p>]
+=> nrel_explanation: [<p>Иерархический перечень разделов, входящих в состав<i>Стандарта OSTIS</i>, с дополнительной спецификацией некоторых разделов, указывающей альтернативные названия разделов, а также их авторов и редакторов</p>]
 (*
 	<- lang_ru;;
 	=> nrel_format: format_html;;
-	=> nrel_note: [<p>Существенно подчеркнуть, что иерархия разделов <i>СтандартаOSTIS</i> как и <i>разделов</i> любой другой <i>базы знаний</i> не означаетто, что <i>разделы</i> более низкого уровня иерархии входят в состав(являются частями) соответствующих разделов более высокого уровня. Связь между<i>разделами</i> разных уровней иерархии означает то, что <i>раздел</i>более низкого уровня иерархии является <i>дочерним</i> разделом по отношениюк соответствующему <i>разделу</i> более высокого уровня, т.е.<i>разделом</i>, который наследует свойства указанного <i>раздела</i> болеевысокого уровня.</p>]
+	=> nrel_note: [<p>Существенно подчеркнуть, что иерархия разделов <i>Стандарта OSTIS</i> как и <i>разделов</i> любой другой <i>базы знаний</i> не означает то, что <i>разделы</i> более низкого уровня иерархии входят в состав (являются частями) соответствующих разделов более высокого уровня. Связь между <i>разделами</i> разных уровней иерархии означает то, что <i>раздел</i> более низкого уровня иерархии является <i>дочерним</i> разделом по отношению к соответствующему <i>разделу</i> более высокого уровня, т.е. <i>разделом</i>, который наследует свойства указанного <i>раздела</i> более высокого уровня.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 *);
-=> nrel_note: [<p>Описание логико-семантических связей каждого раздела<i>Стандарта OSTIS</i> с другими разделами <i>Стандарта OSTIS</i>приводится в рамках <i>титульной спецификации</i> каждого <i>раздела</i>.</p>]
+=> nrel_note: [<p>Описание логико-семантических связей каждого раздела <i>Стандарта OSTIS</i> с другими разделами <i>Стандарта OSTIS</i> приводится в рамках <i>титульной спецификации</i> каждого <i>раздела</i>.</p>]
 (*
 	<- lang_ru;;
 	=> nrel_format: format_html;;
 *);
-=> nrel_note: [<p>Названия тех <i>разделов</i>, которые планируется написать впоследующих изданиях <i>Стандарта OSTIS</i> или <i>разделов</i>, которые<u>в данном</u> издании <i>Стандарта OSTIS</i> не печатаются, посколькусодержание их не изменилось по сравнению с предыдущим <u>явно указываемым</u>изданием <i>Стандарта OSTIS</i>, выделяются также <u>жирным курсивом</u>, нодля них страницы в рамках данного издания <i>Стандарта OSTIS</i> неуказываются</p>];;
+=> nrel_note: [<p>Названия тех <i>разделов</i>, которые планируется написать в последующих изданиях <i>Стандарта OSTIS</i> или <i>разделов</i>, которые <u>в данном</u> издании <i>Стандарта OSTIS</i> не печатаются, поскольку содержание их не изменилось по сравнению с предыдущим <u>явно указываемым</u> изданием <i>Стандарта OSTIS</i>, выделяются также <u>жирным курсивом</u>, но для них страницы в рамках данного издания <i>Стандарта OSTIS</i> не указываются</p>]
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);
+=> nrel_section_decomposition: <
+	.system_element_4951;
+	.system_element_4952;
+	.system_element_4919;
+	.system_element_4917;
+	.system_element_4953;
+	.system_element_4954
+	(*
+		=> nrel_section_decomposition: <
+			.system_element_1839
+			(*
+				=> nrel_section_decomposition: <
+					.system_element_4955;
+					.system_element_4956
+				>;;
+			*);
+			.system_element_1970
+			(*
+				=> nrel_section_decomposition: <
+					.system_element_1042;
+					.system_element_1961;
+					.system_element_1029
+				>;;
+			*);
+			.system_element_1006
+		>;;
+	*);
+	.system_element_4957
+	(*
+		=> nrel_section_decomposition: <
+			.system_element_4353
+			(*
+				=> nrel_section_decomposition: <
+					.system_element_211
+					(*
+						=> nrel_section_decomposition: <
+							.system_element_4958;
+							.system_element_4959
+						>;;
+					*);
+					.system_element_3545;
+					.system_element_3678
+					(*
+						=> nrel_section_decomposition: <
+							.system_element_4960;
+							.system_element_4961;
+							.system_element_4962
+						>;;
+					*);
+					.system_element_3963
+					(*
+						=> nrel_section_decomposition: <
+							.system_element_4963;
+							.system_element_4964;
+							.system_element_4965
+						>;;
+					*);
+					.system_element_3482
+					(*
+						=> nrel_section_decomposition: <
+							.system_element_4966;
+							.system_element_4967;
+							.system_element_4968
+						>;;
+					*)
+				>;;
+			*);
+			.system_element_3577
+			(*
+				=> nrel_section_decomposition: <
+					.system_element_4176;
+					.system_element_3322;
+					.system_element_4279;
+					.system_element_3339;
+					.system_element_3331;
+					.system_element_3352
+					(*
+						=> nrel_section_decomposition: <
+							.system_element_4329
+						>;;
+					*);
+					.system_element_4969;
+					.system_element_4970;
+					.system_element_4281;
+					.system_element_3382;
+					.system_element_4047;
+					.system_element_4971;
+					.system_element_4906
+					(*
+						=> nrel_section_decomposition: <
+							.system_element_2037
+							(*
+								=> nrel_section_decomposition: <
+									.system_element_4972;
+									.system_element_4973
+								>;;
+							*)
+						>;;
+					*);
+					.system_element_4905
+					(*
+						=> nrel_section_decomposition: <
+							.system_element_4974;
+							.system_element_4975
+						>;;
+					*)
+				>;;
+			*)
+		>;;
+	*);
+	.system_element_4976
+	(*
+		=> nrel_section_decomposition: <
+			.system_element_205
+			(*
+				=> nrel_section_decomposition: <
+					.system_element_2947;
+					.system_element_192
+					(*
+						=> nrel_section_decomposition: <
+							.system_element_4977;
+							.system_element_3100;
+							.system_element_3126
+						>;;
+					*);
+					.system_element_4978
+					(*
+						=> nrel_section_decomposition: <
+							.system_element_4979
+						>;;
+					*);
+					.system_element_4980
+					(*
+						=> nrel_section_decomposition: <
+							.system_element_4981;
+							.system_element_4982;
+							.system_element_4983
+						>;;
+					*);
+					.system_element_4984;
+					.system_element_4985
+					(*
+						=> nrel_section_decomposition: <
+							.system_element_4986;
+							.system_element_4987;
+							.system_element_4988
+						>;;
+					*);
+					.system_element_3135
+					(*
+						=> nrel_section_decomposition: <
+							.system_element_4989;
+							.system_element_4990;
+							.system_element_4991
+						>;;
+					*)
+				>;;
+			*)
+		>;;
+	*);
+	.system_element_4992
+	(*
+		=> nrel_section_decomposition: <
+			.system_element_2035;
+			.system_element_2182;
+			.system_element_2220;
+			.system_element_2179;
+			.system_element_4993
+			(*
+				=> nrel_section_decomposition: <
+					.system_element_4994;
+					.system_element_4995;
+					.system_element_4996
+				>;;
+			*)
+		>;;
+	*);
+	.system_element_4997
+	(*
+		=> nrel_section_decomposition: <
+			.system_element_977
+			(*
+				=> nrel_section_decomposition: <
+					.system_element_1007;
+					.system_element_1008
+					(*
+						=> nrel_section_decomposition: <
+							.system_element_4998;
+							.system_element_4999
+						>;;
+					*);
+					.system_element_1009;
+					.system_element_5000
+				>;;
+			*);
+			.system_element_5001
+			(*
+				=> nrel_section_decomposition: <
+					.system_element_5002;
+					.system_element_5003;
+					.system_element_742
+				>;;
+			*);
+			.system_element_5004;
+			.system_element_5005
+			(*
+				=> nrel_section_decomposition: <
+					.system_element_5006
+					(*
+						=> nrel_section_decomposition: <
+							.system_element_5007;
+							.system_element_5008;
+							.system_element_5009;
+							.system_element_5010;
+							.system_element_5011
+						>;;
+					*);
+					.system_element_5012
+					(*
+						=> nrel_section_decomposition: <
+							.system_element_5013;
+							.system_element_5014;
+							.system_element_5015
+						>;;
+					*);
+					.system_element_5016;
+					.system_element_5017
+				>;;
+			*);
+			.system_element_5018
+		>;;
+	*);
+	.system_element_5019
+	(*
+		=> nrel_section_decomposition: <
+			.system_element_174
+			(*
+				=> nrel_section_decomposition: <
+					.system_element_169
+					(*
+						=> nrel_section_decomposition: <
+							.system_element_0;
+							.system_element_173
+						>;;
+					*)
+				>;;
+			*)
+		>;;
+	*);
+	.system_element_5020
+	(*
+		=> nrel_section_decomposition: <
+			.system_element_5021
+			(*
+				=> nrel_section_decomposition: <
+					.system_element_5022;
+					.system_element_5023
+				>;;
+			*)
+		>;;
+	*);
+	.system_element_5024
+	(*
+		=> nrel_section_decomposition: <
+			.system_element_2238
+			(*
+				=> nrel_section_decomposition: <
+					.system_element_5025;
+					.system_element_5026
+					(*
+						=> nrel_section_decomposition: <
+							.system_element_5027
+						>;;
+					*);
+					.system_element_2858;
+					.system_element_5028
+					(*
+						=> nrel_section_decomposition: <
+							.system_element_5029
+						>;;
+					*);
+					.system_element_2270
+					(*
+						=> nrel_section_decomposition: <
+							.system_element_1005
+						>;;
+					*);
+					.system_element_5030;
+					.system_element_2261
+					(*
+						=> nrel_section_decomposition: <
+							.system_element_5031
+						>;;
+					*);
+					.system_element_2878
+					(*
+						=> nrel_section_decomposition: <
+							.system_element_5032
+						>;;
+					*);
+					.system_element_2859
+					(*
+						=> nrel_section_decomposition: <
+							.system_element_5033
+						>;;
+					*);
+					.system_element_5034;
+					.system_element_5035
+					(*
+						=> nrel_section_decomposition: <
+							.system_element_2885
+						>;;
+					*);
+					.system_element_5036
+					(*
+						=> nrel_section_decomposition: <
+							.system_element_5037
+						>;;
+					*);
+					.system_element_5038
+				>;;
+			*)
+		>;;
+	*);
+	.system_element_5039
+>;;

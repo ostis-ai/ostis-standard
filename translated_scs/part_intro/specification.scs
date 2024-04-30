@@ -2,15 +2,16 @@ part_1_specification
     <- concept_reusable_component_specification;;
 
 part_1_specification = [*
-part_1_introduction_to_next_generation_intelligent_computer_systems
-    <- concept_reusable_component;
-    <- concept_atomic_reusable_component;
-    <- concept_independent_reusable_component;
-    <- concept_reusable_kb_component;
-    <- concept_reusable_dynamically_installed_component;
-    <- concept_reusable_source_code_component;
+-> rrel_key_sc_element : part_1_introduction_to_next_generation_intelligent_computer_systems
+(*
+    <- concept_reusable_component;;
+    <- concept_atomic_reusable_component;;
+    <- concept_independent_reusable_component;;
+    <- concept_reusable_kb_component;;
+    <- concept_reusable_dynamically_installed_component;;
+    <- concept_reusable_source_code_component;;
 
-    => nrel_sc_identifier: [Часть 1 Стандартна OSTIS. Введение в интеллектуальные компьютерные системы нового поколения](* <- lang_ru;; *);
+    => nrel_main_idtf: [Часть 1 Стандартна OSTIS. Введение в интеллектуальные компьютерные системы нового поколения](* <- lang_ru;; *);;
 
     -> rrel_key_sc_element: 
       {
@@ -22,19 +23,23 @@ part_1_introduction_to_next_generation_intelligent_computer_systems
         concept_multi_agent_approach_to_information_processing;
         concept_approach_to_building_user_interface;
         concept_technology_for_supporting_the_life_cycle_of_new_generation_intelligent_computer_systems
-      };
+      };;
 
-    => nrel_note: [Предложены требования, предъявляемые к интеллектуальным компьютерным системам нового поколения и принципы, лежащие в их основе. Обозначены структура и особенности жизненного цикла интеллектуальных компьютерных систем нового поколения. Описана технология комплексной поддержки жизненного цикла интеллектуальных компьютерных систем нового поколения.] (* <- lang_ru;; *);
-    => nrel_authors:
-      {
-        Golenkov;
-        Shunkevich;
-        Sadovsky;
-        Bantsevich;
-        Serdyukov
-      };
+    => nrel_explanation: [Описаны структура и особенности жизненного цикла интеллектуальных компьютерных систем нового поколения.](* <- lang_ru;; *);;
+    => nrel_note: [Уточнение понятия интеллектуальной компьютерной системы.] (* <- lang_ru;; *);;
 
-    => nrel_component_dependencies: ... (* <- empty_set;; *);
-    => nrel_component_address: [https://github.com/ostis-ai/ostis-standard/tree/main/translated_scs/part_intro] (* <- concept_github_url;; *);
+    => nrel_authors: ... 
+      (* 
+        -> Golenkov;;
+        -> Shunkevich;;
+        -> Sadovsky;;
+        -> Bantsevich;;
+        -> Serdyukov;;
+      *);;
+
+    => nrel_component_dependencies: ... (* <- empty_set;; *);;
+    => nrel_component_address: [https://github.com/ostis-ai/ostis-standard/tree/main/translated_scs/part_intro] (* <- concept_github_url;; *);;
     => nrel_installation_method: ... (* <- concept_component_dynamically_installed_method;; *);;
+*);;
 *];;
+

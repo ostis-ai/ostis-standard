@@ -1,13 +1,13 @@
 .intro_scs_connectors_transf = [*
-.system_element_2145
+.system_element_3544
 = [*
 
 	[<p><b><i>si</i></b> ⇒ <i>включение*</i>: <b><i>sj</i></b></p>]
-	=> .system_element_2146: [<p><b><i>si</i></b> ⊇ <b><i>sj</i></b></p>]
+	=> .system_element_3481: [<p><b><i>si</i></b> ⊇ <b><i>sj</i></b></p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
-		<=> nrel_semantic_equivalence: "file://Contents/part_kb/src/images/scs/sc.s-connectors/examples/scs_transf_inclusion_const.png"
+		<=> nrel_semantic_equivalence: "file://../images/scs/sc.s-connectors/examples/scs_transf_inclusion_const.png"
 		(*
 			<- concept_file;;
 			=> nrel_format: format_png;;
@@ -15,11 +15,11 @@
 	*);;
 
 	[<p><b><i>si</i></b> _⇒ <i>включение*</i>:: <b><i>sj</i></b></p>]
-	=> .system_element_2146: [<p><b><i>si</i></b> _⊇ <b><i>sj</i></b></p>]
+	=> .system_element_3481: [<p><b><i>si</i></b> _⊇ <b><i>sj</i></b></p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
-		<=> nrel_semantic_equivalence: "file://Contents/part_kb/src/images/scs/sc.s-connectors/examples/scs_transf_inclusion_var.png"
+		<=> nrel_semantic_equivalence: "file://../images/scs/sc.s-connectors/examples/scs_transf_inclusion_var.png"
 		(*
 			<- concept_file;;
 			=> nrel_format: format_png;;
@@ -27,11 +27,11 @@
 	*);;
 
 	[<p><b><i>si</i></b> __⇒ <i>включение*</i>::: <b><i>sj</i></b></p>]
-	=> .system_element_2146: [<p><b><i>si</i></b> __⊇ <b><i>sj</i></b></p>]
+	=> .system_element_3481: [<p><b><i>si</i></b> __⊇ <b><i>sj</i></b></p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
-		<=> nrel_semantic_equivalence: "file://Contents/part_kb/src/images/scs/sc.s-connectors/examples/scs_transf_inclusion_meta.png"
+		<=> nrel_semantic_equivalence: "file://../images/scs/sc.s-connectors/examples/scs_transf_inclusion_meta.png"
 		(*
 			<- concept_file;;
 			=> nrel_format: format_png;;
@@ -39,11 +39,11 @@
 	*);;
 
 	[<p><b><i>si</i></b> ⇒ <i>строгое включение*</i>: <b><i>sj</i></b></p>]
-	=> .system_element_2146: [<p><b><i>si</i></b> ⊃ <b><i>sj</i></b></p>]
+	=> .system_element_3481: [<p><b><i>si</i></b> ⊃ <b><i>sj</i></b></p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
-		<=> nrel_semantic_equivalence: "file://Contents/part_kb/src/images/scs/sc.s-connectors/examples/scs_transf_strict_inclusion_const.png"
+		<=> nrel_semantic_equivalence: "file://../images/scs/sc.s-connectors/examples/scs_transf_strict_inclusion_const.png"
 		(*
 			<- concept_file;;
 			=> nrel_format: format_png;;
@@ -51,11 +51,11 @@
 	*);;
 
 	[<p><b><i>si</i></b> _⇒ <i>строгое включение*</i>:: <b><i>sj</i></b></p>]
-	=> .system_element_2146: [<p><b><i>si</i></b> _⊃ <b><i>sj</i></b></p>]
+	=> .system_element_3481: [<p><b><i>si</i></b> _⊃ <b><i>sj</i></b></p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
-		<=> nrel_semantic_equivalence: "file://Contents/part_kb/src/images/scs/sc.s-connectors/examples/scs_transf_strict_inclusion_var.png"
+		<=> nrel_semantic_equivalence: "file://../images/scs/sc.s-connectors/examples/scs_transf_strict_inclusion_var.png"
 		(*
 			<- concept_file;;
 			=> nrel_format: format_png;;
@@ -63,11 +63,11 @@
 	*);;
 
 	[<p><b><i>si</i></b> __⇒ <i>строгое включение*</i>::: <b><i>sj</i></b></p>]
-	=> .system_element_2146: [<p><b><i>si</i></b> __⊃ <b><i>sj</i></b></p>]
+	=> .system_element_3481: [<p><b><i>si</i></b> __⊃ <b><i>sj</i></b></p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
-		<=> nrel_semantic_equivalence: "file://Contents/part_kb/src/images/scs/sc.s-connectors/examples/scs_transf_strict_inclusion_meta.png"
+		<=> nrel_semantic_equivalence: "file://../images/scs/sc.s-connectors/examples/scs_transf_strict_inclusion_meta.png"
 		(*
 			<- concept_file;;
 			=> nrel_format: format_png;;
@@ -75,11 +75,11 @@
 	*);;
 
 	[<p><b><i>si</i></b> ⇒ <i>порядок величин*</i>: <b><i>sj</i></b></p>]
-	=> .system_element_2146: [<p><b><i>si</i></b>  <b><i>sj</i></b></p>]
+	=> .system_element_3481: [<p><b><i>si</i></b>  <b><i>sj</i></b></p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
-		<=> nrel_semantic_equivalence: "file://Contents/part_kb/src/images/scs/sc.s-connectors/examples/scs_transf_value_order_const.png"
+		<=> nrel_semantic_equivalence: "file://../images/scs/sc.s-connectors/examples/scs_transf_value_order_const.png"
 		(*
 			<- concept_file;;
 			=> nrel_format: format_png;;
@@ -87,11 +87,11 @@
 	*);;
 
 	[<p><b><i>si</i></b> _⇒ <i>порядок величин*</i>:: <b><i>sj</i></b></p>]
-	=> .system_element_2146: [<p><b><i>si</i></b> _ <b><i>sj</i></b></p>]
+	=> .system_element_3481: [<p><b><i>si</i></b> _ <b><i>sj</i></b></p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
-		<=> nrel_semantic_equivalence: "file://Contents/part_kb/src/images/scs/sc.s-connectors/examples/scs_transf_value_order_var.png"
+		<=> nrel_semantic_equivalence: "file://../images/scs/sc.s-connectors/examples/scs_transf_value_order_var.png"
 		(*
 			<- concept_file;;
 			=> nrel_format: format_png;;
@@ -99,11 +99,11 @@
 	*);;
 
 	[<p><b><i>si</i></b> __⇒ <i>порядок величин*</i>::: <b><i>sj</i></b></p>]
-	=> .system_element_2146: [<p><b><i>si</i></b> __ <b><i>sj</i></b></p>]
+	=> .system_element_3481: [<p><b><i>si</i></b> __ <b><i>sj</i></b></p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
-		<=> nrel_semantic_equivalence: "file://Contents/part_kb/src/images/scs/sc.s-connectors/examples/scs_transf_value_order_meta.png"
+		<=> nrel_semantic_equivalence: "file://../images/scs/sc.s-connectors/examples/scs_transf_value_order_meta.png"
 		(*
 			<- concept_file;;
 			=> nrel_format: format_png;;
@@ -111,11 +111,11 @@
 	*);;
 
 	[<p><b><i>si</i></b> ⇒ <i>строгий порядок величин*</i>: <b><i>sj</i></b></p>]
-	=> .system_element_2146: [<p><b><i>si</i></b> > <b><i>sj</i></b></p>]
+	=> .system_element_3481: [<p><b><i>si</i></b> > <b><i>sj</i></b></p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
-		<=> nrel_semantic_equivalence: "file://Contents/part_kb/src/images/scs/sc.s-connectors/examples/scs_transf_value_strict_order_const.png"
+		<=> nrel_semantic_equivalence: "file://../images/scs/sc.s-connectors/examples/scs_transf_value_strict_order_const.png"
 		(*
 			<- concept_file;;
 			=> nrel_format: format_png;;
@@ -128,11 +128,11 @@
 	*);;
 
 	[<p><b><i>si</i></b> _⇒ <i>строгий порядок величин*</i>:: <b><i>sj</i></b></p>]
-	=> .system_element_2146: [<p><b><i>si</i></b> _> <b><i>sj</i></b></p>]
+	=> .system_element_3481: [<p><b><i>si</i></b> _> <b><i>sj</i></b></p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
-		<=> nrel_semantic_equivalence: "file://Contents/part_kb/src/images/scs/sc.s-connectors/examples/scs_transf_value_strict_order_var.png"
+		<=> nrel_semantic_equivalence: "file://../images/scs/sc.s-connectors/examples/scs_transf_value_strict_order_var.png"
 		(*
 			<- concept_file;;
 			=> nrel_format: format_png;;
@@ -140,11 +140,11 @@
 	*);;
 
 	[<p><b><i>si</i></b> __⇒ <i>строгий порядок величин*</i>::: <b><i>sj</i></b></p>]
-	=> .system_element_2146: [<p><b><i>si</i></b> __> <b><i>sj</i></b></p>]
+	=> .system_element_3481: [<p><b><i>si</i></b> __> <b><i>sj</i></b></p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
-		<=> nrel_semantic_equivalence: "file://Contents/part_kb/src/images/scs/sc.s-connectors/examples/scs_transf_value_strict_order_meta.png"
+		<=> nrel_semantic_equivalence: "file://../images/scs/sc.s-connectors/examples/scs_transf_value_strict_order_meta.png"
 		(*
 			<- concept_file;;
 			=> nrel_format: format_png;;
@@ -152,11 +152,11 @@
 	*);;
 
 	[<p><b><i>si</i></b> ⇒ <i>внешний идентификатор*</i>: <b><i>sj</i></b></p>]
-	=> .system_element_2146: [<p><b><i>si</i></b> := <b><i>sj</i></b></p>]
+	=> .system_element_3481: [<p><b><i>si</i></b> := <b><i>sj</i></b></p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
-		<=> nrel_semantic_equivalence: "file://Contents/part_kb/src/images/scs/sc.s-connectors/examples/scs_transf_external_idtf_const.png"
+		<=> nrel_semantic_equivalence: "file://../images/scs/sc.s-connectors/examples/scs_transf_external_idtf_const.png"
 		(*
 			<- concept_file;;
 			=> nrel_format: format_png;;
@@ -164,11 +164,11 @@
 	*);;
 
 	[<p><b><i>si</i></b> _⇒ <i>внешний идентификатор*</i>:: <b><i>sj</i></b></p>]
-	=> .system_element_2146: [<p><b><i>si</i></b> _:= <b><i>sj</i></b></p>]
+	=> .system_element_3481: [<p><b><i>si</i></b> _:= <b><i>sj</i></b></p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
-		<=> nrel_semantic_equivalence: "file://Contents/part_kb/src/images/scs/sc.s-connectors/examples/scs_transf_external_idtf_var.png"
+		<=> nrel_semantic_equivalence: "file://../images/scs/sc.s-connectors/examples/scs_transf_external_idtf_var.png"
 		(*
 			<- concept_file;;
 			=> nrel_format: format_png;;
@@ -176,11 +176,11 @@
 	*);;
 
 	[<p><b><i>si</i></b> __⇒ <i>внешний идентификатор*</i>::: <b><i>sj</i></b></p>]
-	=> .system_element_2146: [<p><b><i>si</i></b> __:= <b><i>sj</i></b></p>]
+	=> .system_element_3481: [<p><b><i>si</i></b> __:= <b><i>sj</i></b></p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
-		<=> nrel_semantic_equivalence: "file://Contents/part_kb/src/images/scs/sc.s-connectors/examples/scs_transf_external_idtf_meta.png"
+		<=> nrel_semantic_equivalence: "file://../images/scs/sc.s-connectors/examples/scs_transf_external_idtf_meta.png"
 		(*
 			<- concept_file;;
 			=> nrel_format: format_png;;
@@ -188,11 +188,11 @@
 	*);;
 
 	[<p><b><i>si</i></b> ⇔ <i>синонимия*</i>: <b><i>sj</i></b></p>]
-	=> .system_element_2146: [<p><b><i>si</i></b> = <b><i>sj</i></b></p>]
+	=> .system_element_3481: [<p><b><i>si</i></b> = <b><i>sj</i></b></p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
-		<=> nrel_semantic_equivalence: "file://Contents/part_kb/src/images/scs/sc.s-connectors/examples/scs_transf_synonymy_const.png"
+		<=> nrel_semantic_equivalence: "file://../images/scs/sc.s-connectors/examples/scs_transf_synonymy_const.png"
 		(*
 			<- concept_file;;
 			=> nrel_format: format_png;;
@@ -200,11 +200,11 @@
 	*);;
 
 	[<p><b><i>si</i></b> ⇒ <i>погружение*</i>: <b><i>sj</i></b></p>]
-	=> .system_element_2146: [<p><b><i>si</i></b> ⊃= <b><i>sj</i></b></p>]
+	=> .system_element_3481: [<p><b><i>si</i></b> ⊃= <b><i>sj</i></b></p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
-		<=> nrel_semantic_equivalence: "file://Contents/part_kb/src/images/scs/sc.s-connectors/examples/scs_transf_insertion_const.png"
+		<=> nrel_semantic_equivalence: "file://../images/scs/sc.s-connectors/examples/scs_transf_insertion_const.png"
 		(*
 			<- concept_file;;
 			=> nrel_format: format_png;;

@@ -1,8 +1,8 @@
 .intro_hs_segment6 = [*
-.system_element_446
+.system_element_1563
 => nrel_inclusion: [*
 
-	.system_element_414
+	.system_element_1189
 	=> nrel_idtf: [<p>интегральная качественная оценка множества задач (действий), которыекибернетическая система способна выполнять в заданный момент</p>]
 	(*
 		<- lang_ru;;
@@ -28,35 +28,35 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_558: 
-		.system_element_603;
-		.system_element_604;
-		.system_element_605
+	=> .system_element_1180: 
+		.system_element_1564;
+		.system_element_1565;
+		.system_element_1566
 	;;
 
-	.system_element_603
-	=> .system_element_558: 
-		.system_element_606;
-		.system_element_607;
-		.system_element_608;
-		.system_element_609;
-		.system_element_610;
-		.system_element_611;
-		.system_element_612;
-		.system_element_613;
-		.system_element_614;
-		.system_element_615;
-		.system_element_616;
-		.system_element_617;
-		.system_element_618;
-		.system_element_619;
-		.system_element_620;
-		.system_element_621;
-		.system_element_622;
-		.system_element_623
+	.system_element_1564
+	=> .system_element_1180: 
+		.system_element_1567;
+		.system_element_1568;
+		.system_element_1569;
+		.system_element_1570;
+		.system_element_1571;
+		.system_element_1572;
+		.system_element_1573;
+		.system_element_1574;
+		.system_element_1575;
+		.system_element_1576;
+		.system_element_1577;
+		.system_element_1578;
+		.system_element_1579;
+		.system_element_1580;
+		.system_element_1581;
+		.system_element_1582;
+		.system_element_1583;
+		.system_element_1584
 	;;
 
-	.system_element_606
+	.system_element_1567
 	=> nrel_idtf: [<p>общий объем задач, которые кибернетическая система способна решать</p>]
 	(*
 		<- lang_ru;;
@@ -67,9 +67,9 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_558: .system_element_624;;
+	=> .system_element_1180: .system_element_1585;;
 
-	.system_element_625
+	.system_element_1586
 	=> nrel_idtf: [<p>мощность языка спецификации (описания) различного вида действий,выполняемых кибернетической системой</p>]
 	(*
 		<- lang_ru;;
@@ -80,41 +80,41 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<= .system_element_558: .system_element_626;
-	=> .system_element_549: 
-		.system_element_627
+	<= .system_element_1180: .system_element_1587;
+	=> .system_element_1214: 
+		.system_element_1588
 		(*
-			<= .system_element_558: .system_element_628;;
+			<= .system_element_1180: .system_element_1589;;
 		*);
-		.system_element_629
+		.system_element_1590
 		(*
-			<= .system_element_558: .system_element_630;;
+			<= .system_element_1180: .system_element_1591;;
 		*);
-		.system_element_631
+		.system_element_1592
 		(*
-			<= .system_element_558: .system_element_632;;
+			<= .system_element_1180: .system_element_1593;;
 		*)
 	;;
 
-	.system_element_607
+	.system_element_1568
 	=> nrel_idtf: [<p>многообразие видов действий, которые кибернетическая система способнавыполнять</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> nrel_note: [<p>Подчеркнем, что каждая задача есть спецификация соответствующего(описываемого) действия. Поэтому рассмотрение многообразия видов задач,решаемых кибернетической системой, полностью соответствует многообразию видовдеятельности, осуществляемой этой системой. Важно заметить, что есть видыдеятельности кибернетической системы, которые определяют качество и, вчастности, уровень интеллекта кибернетическойсистемы.</p>]
+	=> nrel_note: [<p>Подчеркнем, что каждая задача есть спецификация соответствующего(описываемого) действия. Поэтому рассмотрение <i>многообразия видов задач,решаемых кибернетической системой</i>, полностью соответствует многообразию видовдеятельности, осуществляемой этой системой. Важно заметить, что есть виды<i>деятельности кибернетической системы</i>, которые определяют качество и, вчастности, <i>уровень интеллекта кибернетической системы.</i></p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_558: .system_element_633;
-	=> .system_element_560: {
-		.system_element_634;
-		.system_element_635;
-		.system_element_636
+	=> .system_element_1180: .system_element_1594;
+	=> .system_element_1416: {
+		.system_element_1595;
+		.system_element_1596;
+		.system_element_1597
 	};;
 
-	.system_element_608
+	.system_element_1569
 	=> nrel_idtf: [<p>способность кибернетической системы осмысливать (ведать) то, что онатворит</p>]
 	(*
 		<- lang_ru;;
@@ -131,18 +131,18 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_637
+	.system_element_1598
 	=> nrel_note: [<p>Указанными методами могут быть не только алгоритмы, но также ифункциональные программы, продукционные системы, логические исчисления,генетические алгоритмы, искусственные нейронные сети различного вида.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_558: 
-		.system_element_638;
-		.system_element_639
+	=> .system_element_1180: 
+		.system_element_1599;
+		.system_element_1600
 	;;
 
-	.system_element_610
+	.system_element_1571
 	=> nrel_idtf: [<p>способность кибернетической системы к решению задач, для которых ненайдены соответствующие (релевантные) им методы их решения</p>]
 	(*
 		<- lang_ru;;
@@ -164,7 +164,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_611
+	.system_element_1572
 	=> nrel_idtf: [<p>объем и многообразие навыков, приобретенных кибернетической системой ктекущему моменту (с помощью учителей-разработчиков или полностьюсамостоятельно)</p>]
 	(*
 		<- lang_ru;;
@@ -185,28 +185,28 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_549: 
-		.system_element_640;
-		.system_element_641;
-		.system_element_642
+	=> .system_element_1214: 
+		.system_element_1601;
+		.system_element_1602;
+		.system_element_1603
 	;;
 
-	.system_element_640
+	.system_element_1601
 	=> nrel_idtf: [<p>множество методов решения задач, используемых кибернетической системойи хранимых в ее памяти</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<= .system_element_549: .system_element_643;;
+	<= .system_element_1214: .system_element_1604;;
 
-	.system_element_644
+	.system_element_1605
 	=> nrel_explanation: [<p><b><i>метод решения задач</i></b> --- это <i>видзнаний</i>, хранимых в <i>памяти кибернетической системы</i> и содержащихинформацию, которой достаточно либо для сведения каждой <i>задачи</i> изсоответствующего <i>класса задач</i> к <i>полной системе подзадач*</i>,решение которых гарантирует решение исходной <i>задачи</i>, <u>либо</u> дляокончательного решения этой <i>задачи</i> из указанного <i>класса задач</i></p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_645
+	.system_element_1606
 	=> nrel_idtf: [<p>способность кибернетической системы к использованию различных видовметодов решения задач, соответствующих различным моделям решения задач</p>]
 	(*
 		<- lang_ru;;
@@ -217,15 +217,15 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_558: .system_element_646;;
+	=> .system_element_1180: .system_element_1607;;
 
-	.system_element_641
+	.system_element_1602
 	=> nrel_note: {
-		.system_element_461
+		.system_element_377
 		(*
 			-> {
-				.system_element_647;
-				.system_element_648
+				.system_element_1608;
+				.system_element_1609
 				(*
 					=> nrel_explanation: [<p>каждая <i>модель решения задач</i> задается
 					<ul>
@@ -237,7 +237,7 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);
-				.system_element_644;
+				.system_element_1605;
 				class_of_tasks
 				(*
 					=> nrel_idtf: [<p><i>множество</i> всех тех и только тех<i>задач</i>, которые решаются с помощью соответствующего <i>метода</i></p>]
@@ -250,7 +250,7 @@
 		*)
 	};;
 
-	.system_element_649
+	.system_element_1610
 	=> nrel_note: [<p>Необходим переход от эклектики никак не связанных друг с другом<i>моделей решения задач</i> к их <i>конвергенции</i>, это предполагает:
 
 	<ul>
@@ -265,18 +265,18 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_613
-	=> .system_element_549: 
-		.system_element_650
+	.system_element_1574
+	=> .system_element_1214: 
+		.system_element_1611
 		(*
-			=> .system_element_558: .system_element_651;;
+			=> .system_element_1180: .system_element_1612;;
 		*);
-		.system_element_652
+		.system_element_1613
 		(*
-			=> .system_element_558: 
-				.system_element_653;
-				.system_element_654;
-				.system_element_655
+			=> .system_element_1180: 
+				.system_element_1614;
+				.system_element_1615;
+				.system_element_1616
 			;;
 		*)
 	;
@@ -292,7 +292,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_656
+	.system_element_1617
 	=> nrel_idtf: [<p>агентно-ориентированная модель управления действиями кибернетическойсистемы, выполняемыми ею в своей памяти</p>]
 	(*
 		<- lang_ru;;
@@ -302,16 +302,21 @@
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
+		=> nrel_detalization: [<p>sd_agents</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
 	*);;
 
-	.system_element_657
+	.system_element_1618
 	=> nrel_idtf: [<p>модель управления поведением кибернетической системы</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
 	=> nrel_subdividing: {
-		.system_element_658
+		.system_element_1619
 		(*
 			=> nrel_explanation: [<p>от комбинации <i>исходных сигналов</i>,формируемых, например, априори известным набором сенсоров (рецепторов) ккомбинации выходных <i>сигналов</i>, управляющих, например, априори известным набором эффекторов</p>]
 			(*
@@ -319,7 +324,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_659
+		.system_element_1620
 		(*
 			=> nrel_explanation: [<p>действие инициируется возникновениемв памяти <i>ситуации</i> априори известной конфигурации или априориизвестного события</p>]
 			(*
@@ -327,7 +332,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_660
+		.system_element_1621
 		(*
 			=> nrel_explanation: [<p>действие инициируется не толькотекущей <i>ситуацией</i> но и предшествующими <i>ситуациями</i>, т.е.событиями перехода от одних <i>ситуаций</i> к другим</p>]
 			(*
@@ -342,7 +347,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_661
+	.system_element_1622
 	=> nrel_idtf: [<p>способность одновременно решать несколько разных задач, некоторые изкоторых могут быть подзадачами одной и той же задачи</p>]
 	(*
 		<- lang_ru;;
@@ -353,9 +358,9 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_558: 
-		.system_element_662;
-		.system_element_663
+	=> .system_element_1180: 
+		.system_element_1623;
+		.system_element_1624
 		(*
 			=> nrel_idtf: [<p>способность кибернетической системы кодновременному выполнению действий, выполнение каждого из которых можетпомешать выполнению другого</p>];;
 			=> nrel_idtf: [<p>способность кибернетической системы к эквилибристике</p>]
@@ -365,9 +370,9 @@
 			*);;
 		*)
 	;
-	=> .system_element_560: {
-		.system_element_664;
-		.system_element_665
+	=> .system_element_1416: {
+		.system_element_1625;
+		.system_element_1626
 		(*
 			=> nrel_explanation: [<p>Логическая параллельность выполняемых процессов(действий) предполагает возможность существования <u>выполняемых</u> процессовв двух режимах:
 			<ul>
@@ -380,9 +385,9 @@
 			*);;
 		*)
 	};
-	=> .system_element_560: {
-		.system_element_666;
-		.system_element_667
+	=> .system_element_1416: {
+		.system_element_1627;
+		.system_element_1628
 	};
 	=> nrel_note: [<p>Подчеркнем, что есть целый ряд задач, решаемых кибернетическойсистемой, процессы решения которых носят перманентный (постоянный) характер. Ктаким задачам относятся:
 	<ul>
@@ -397,7 +402,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_614
+	.system_element_1575
 	=> nrel_idtf: [<p>скорость решения задач в кибернетической системе</p>]
 	(*
 		<- lang_ru;;
@@ -413,9 +418,9 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_558: .system_element_668;;
+	=> .system_element_1180: .system_element_1629;;
 
-	.system_element_615
+	.system_element_1576
 	=> nrel_idtf: [<p>способность кибернетических систем решать задачи, которые:
 
 	<ul>
@@ -448,21 +453,21 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_669
+	.system_element_1630
 	=> nrel_idtf: [<p>трудноформализуемая задача</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> nrel_inclusion: .system_element_670;
-	=> nrel_inclusion: .system_element_671;
-	=> nrel_inclusion: .system_element_672;
-	=> nrel_inclusion: .system_element_673;
-	=> nrel_inclusion: .system_element_674;;
+	=> nrel_inclusion: .system_element_1631;
+	=> nrel_inclusion: .system_element_1632;
+	=> nrel_inclusion: .system_element_1633;
+	=> nrel_inclusion: .system_element_1634;
+	=> nrel_inclusion: .system_element_1635;;
 
-	.system_element_616
-	=> .system_element_558: .system_element_675;
-	<= .system_element_549: .system_element_676;
+	.system_element_1577
+	=> .system_element_1180: .system_element_1636;
+	<= .system_element_1214: .system_element_1637;
 	=> nrel_idtf: [<p>способность кибернетической системы качественно решать широкоемногообразие задач информационного поиска в рамках текущего состояния хранимойинформации</p>]
 	(*
 		<- lang_ru;;
@@ -480,14 +485,14 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> nrel_inclusion: .system_element_677
+	=> nrel_inclusion: .system_element_1638
 	(*
-		=> .system_element_679: .system_element_678
+		=> .system_element_1640: .system_element_1639
 		(*
-			=> .system_element_679: .system_element_680;;
+			=> .system_element_1640: .system_element_1641;;
 		*);;
 	*);
-	=> nrel_inclusion: .system_element_681
+	=> nrel_inclusion: .system_element_1642
 	(*
 		=> nrel_explanation: [<p>Две сущности будем считать связанными в том и только втом случае, если существует маршрут, соединяющий указанные две сущности, всостав которого входят связки, принадлежащие в общем случаем разнымотношениям</p>];;
 		=> nrel_note: [<p>Здесь принципиально важным является учет<i>семантической силы связей</i> между сущностями, которая определяется<i>семантической силой отношений</i>, которым принадлежат связки, входящие всостав связей (маршрутов) между сущностями.</p>]
@@ -495,7 +500,7 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
-		<= .system_element_683: .system_element_682
+		<= .system_element_1644: .system_element_1643
 		(*
 			=> nrel_note: [<p>Здесь имеется в виду произвольное количество связываемыхсущностей, а это предполагает, что ответом на данный запрос является<u>связный граф</u>, вершинами которого являются знаки заданных сущностей.</p>]
 			(*
@@ -504,10 +509,10 @@
 			*);;
 		*);;
 	*);
-	=> nrel_inclusion: .system_element_684
+	=> nrel_inclusion: .system_element_1645
 	(*
 		=> nrel_idtf: [<p>запрос спецификации (описания) заданной сущности</p>];;
-		=> .system_element_679: .system_element_685
+		=> .system_element_1640: .system_element_1646
 		(*
 			=> nrel_idtf: [<p>запрос определения заданного понятия</p>]
 			(*
@@ -515,21 +520,21 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);;
-		=> .system_element_679: .system_element_686;;
+		=> .system_element_1640: .system_element_1647;;
 	*);
-	=> nrel_inclusion: .system_element_687
+	=> nrel_inclusion: .system_element_1648
 	(*
-		=> nrel_inclusion: .system_element_688;;
-		=> nrel_inclusion: .system_element_689
+		=> nrel_inclusion: .system_element_1649;;
+		=> nrel_inclusion: .system_element_1650
 		(*
 			=> nrel_idtf: [<p>запрос объяснения корректности заданного высказывания, которое, вчастности, может быть порождено (сгенерировано) в процессе решения некоторойзадачи с помощью некоторого метода (алгоритма, искусственной нейронной сетилогического исчисления и т.п.)</p>];;
-			=> nrel_inclusion: .system_element_690;;
+			=> nrel_inclusion: .system_element_1651;;
 		*);;
 	*);
-	=> nrel_inclusion: .system_element_691;
-	=> nrel_inclusion: .system_element_692;
-	=> nrel_inclusion: .system_element_693;
-	=> nrel_inclusion: .system_element_694
+	=> nrel_inclusion: .system_element_1652;
+	=> nrel_inclusion: .system_element_1653;
+	=> nrel_inclusion: .system_element_1654;
+	=> nrel_inclusion: .system_element_1655
 	(*
 		=> nrel_idtf: [<p>запрос декомпозиции данной задачи на систему и/или подзадач</p>]
 		(*
@@ -537,7 +542,7 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	=> nrel_inclusion: .system_element_695
+	=> nrel_inclusion: .system_element_1656
 	(*
 		=> nrel_idtf: [<p>каково назначение заданной сущности</p>];;
 		=> nrel_idtf: [<p>для решения какой задачи (для чего, достижения какой цели) нужнаданная сущность</p>]
@@ -546,15 +551,15 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	=> nrel_inclusion: .system_element_696;
-	=> nrel_inclusion: .system_element_697;
-	=> nrel_inclusion: .system_element_698;
-	=> nrel_inclusion: .system_element_699
+	=> nrel_inclusion: .system_element_1657;
+	=> nrel_inclusion: .system_element_1658;
+	=> nrel_inclusion: .system_element_1659;
+	=> nrel_inclusion: .system_element_1660
 	(*
-		=> nrel_inclusion: .system_element_700;;
-		=> nrel_inclusion: .system_element_701;;
+		=> nrel_inclusion: .system_element_1661;;
+		=> nrel_inclusion: .system_element_1662;;
 	*);
-	=> nrel_inclusion: .system_element_702
+	=> nrel_inclusion: .system_element_1663
 	(*
 		=> nrel_idtf: [<p>запрос информации о местоположении заданной пространственной сущностипримечание</p>];;
 		=> nrel_note: [<p>Здесь запрашивается любая информация о пространственных связяхзаданной сущности</p>]
@@ -563,7 +568,7 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	=> nrel_inclusion: .system_element_703
+	=> nrel_inclusion: .system_element_1664
 	(*
 		=> nrel_idtf: [<p>запрос информации о темпоральных свойствах и связях заданной временнойсущности (о моменте начала, о моменте завершения, о длительности)</p>]
 		(*
@@ -572,30 +577,37 @@
 		*);;
 	*);;
 
-	.system_element_704
+	.system_element_1665
 	=> nrel_idtf: [<p>способность кибернетической системы генерировать (порождать, строить,синтезировать, выводить) ответы на самые различные вопросы и, в частности, навопросы типа "что это такое", на почему-вопросы, это означает способностькибернетической системы <u>объяснять</u> (обосновывать корректность) своихдействий</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_558: 
-		.system_element_705;
-		.system_element_706
-	;;
+	=> .system_element_1180: 
+		.system_element_1666;
+		.system_element_1667
+	
+	(*
+		=> nrel_detalization: [<p>sd_sc_quest_lang</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);;
 
-	.system_element_618
+	.system_element_1579
 	=> nrel_idtf: [<p>способность кибернетической системы к целенаправленному порождению(генерации) новых истинных или правдоподобных знаний (следствий) на основеимеющихся знаний (посылок)</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_549: 
-		.system_element_707;
-		.system_element_708;
-		.system_element_709
+	=> .system_element_1214: 
+		.system_element_1668;
+		.system_element_1669;
+		.system_element_1670
 	;;
 
-	.system_element_619
+	.system_element_1580
 	=> nrel_idtf: [<p>качество реализации первого этапа решения сложных задач --- этапагенерации (построения) планов решения сложных задач</p>]
 	(*
 		<- lang_ru;;
@@ -635,8 +647,8 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_558: 
-		.system_element_710
+	=> .system_element_1180: 
+		.system_element_1671
 		(*
 			=> nrel_idtf: [<p>самостоятельность генерациии инициирования целей (задач), направленных на создание условий достижениясоответствующих стратегических целей (сверхзадач)</p>]
 			(*
@@ -644,7 +656,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_711
+		.system_element_1672
 		(*
 			=> nrel_idtf: [<p>степень соответствия(степень полезности) генерируемых целей (задач) для достижения соответствующихстратегических целей (сверхзадач)</p>]
 			(*
@@ -652,7 +664,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_712
+		.system_element_1673
 		(*
 			=> nrel_idtf: [<p>качество расстановкиприоритетов у сгенерированных и инициированных целей (задач) для обеспечениябаланса между тактическими и стратегическими целями</p>]
 			(*
@@ -662,8 +674,8 @@
 		*)
 	;;
 
-	.system_element_710
-	=> nrel_idtf: [<p>способность кибернетической системы генерировать, инициировать ирешать задачи, которые не являются подзадачами, инициированными внешними(другими) субъектами, а также способность на основе анализа своих возможностейотказаться от выполнения задачи, инициированной извне, переадресовав её другойкибернетической системе, либо на основе анализа самой этой задачи обосновать еёнецелесообразность или некорректность</p>]
+	.system_element_1671
+	=> nrel_idtf: [<p>способность <i>кибернетической системы</i> генерировать, инициировать ирешать задачи, которые не являются подзадачами, инициированными внешними(другими) субъектами, а также способность на основе анализа своих возможностейотказаться от выполнения задачи, инициированной извне, переадресовав её другой<i>кибернетической системе</i>, либо на основе анализа самой этой задачи обосновать еёнецелесообразность или некорректность</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
@@ -688,7 +700,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> nrel_note: [<p>Повышение уровня самостоятельности существенно расширяетвозможности кибернетической системы, т.е. объем тех задач, которые она можетрешать не только в идеальных  условиях, но и в реальных (осложненных)обстоятельствах.</p>]
+	=> nrel_note: [<p>Повышение <i>уровня самостоятельности</i> существенно расширяетвозможности <i>кибернетической системы</i>, т.е. объем тех задач, которые она можетрешать не только в идеальных  условиях, но и в реальных (осложненных)обстоятельствах.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
@@ -699,7 +711,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_711
+	.system_element_1672
 	=> nrel_idtf: [<p>целеустремленность</p>]
 	(*
 		<- lang_ru;;
@@ -736,7 +748,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_620
+	.system_element_1581
 	=> nrel_idtf: [<p>качество реализации целенаправленной деятельности на основепостроенных планов</p>]
 	(*
 		<- lang_ru;;
@@ -748,20 +760,19 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_713
+	.system_element_1674
 	=> nrel_idtf: [<p>способность кибернетической системы к сужению области решения каждойрешаемой ею задачи, что существенно минимизирует затраты кибернетическойсистемы на учет и анализ факторов, априори незначимых (несущественных) длярешения каждой решаемой задачи</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
 	=> nrel_note: [<p>Для реализации данной способности важное значение имееткачественная стратификация базы знаний кибернетической системы на предметныеобласти и соответствующие им онтологии.</p>]
-
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_714
+	.system_element_1675
 	=> nrel_idtf: [<p>способность к выявлению (обнаружению, выделению) таких фрагментовинформации, хранимой в памяти кибернетической системы, которые существенны(важны) для достижения соответствующих целей</p>]
 	(*
 		<- lang_ru;;
@@ -778,9 +789,9 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_461
+	.system_element_377
 	-> {
-		.system_element_622
+		.system_element_1583
 		(*
 			=> nrel_note: [<p>Здесь кибернетическая системавыделяет информацию, которая необходима, но не обязательно достаточна длярешения соответствующей задачи.</p>]
 			(*
@@ -788,7 +799,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_713
+		.system_element_1674
 		(*
 			=> nrel_note: [<p>Здесь кибернетическая система отбрасывает(исключает) информацию, которая априори несущественна для решениясоответствующей (заданной) задачи.</p>]
 			(*
@@ -798,7 +809,7 @@
 		*)
 	};;
 
-	.system_element_623
+	.system_element_1584
 	=> nrel_idtf: [<p>уровень активности кибернетической системы</p>]
 	(*
 		<- lang_ru;;
@@ -839,7 +850,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<=> .system_element_716: .system_element_715
+	<=> .system_element_1677: .system_element_1676
 	(*
 		=> nrel_idtf: [<p>уровень бездеятельности, медлительности, вялости, ленивости</p>]
 		(*
@@ -847,12 +858,12 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	=> .system_element_549: 
-		.system_element_717;
-		.system_element_718
+	=> .system_element_1214: 
+		.system_element_1678;
+		.system_element_1679
 	;;
 
-	.system_element_719
+	.system_element_1680
 	=> nrel_idtf: [<p>качество базовых семантически целостных действий в памятикибернетической системы</p>]
 	(*
 		<- lang_ru;;
@@ -878,13 +889,13 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_558: 
-		.system_element_720;
-		.system_element_705;
-		.system_element_721
+	=> .system_element_1180: 
+		.system_element_1681;
+		.system_element_1666;
+		.system_element_1682
 	;;
 
-	.system_element_720
+	.system_element_1681
 	=> nrel_idtf: [<p>степень ассоциативности доступа к информации, хранимой в памятикибернетической системы</p>]
 	(*
 		<- lang_ru;;
@@ -905,7 +916,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> nrel_explanation: [<p>Пусть намнеобходимо локализовать (выделить) хранимую в памяти информацию, описывающуюизвестные нам сущности, связанные известными нам отношениями, номестонахождение этой информации в памяти нам не известно. Если организацияпамяти нам представляет такую возможность, то такую память будем называтьассоциативной, т.е. памятью, обеспечивающей семантический доступ к хранимой вней информации.</p>]
+	=> nrel_explanation: [<p>Пусть нам необходимо локализовать (выделить) хранимую в памяти информацию, описывающуюизвестные нам сущности, связанные известными нам отношениями, номестонахождение этой информации в памяти нам не известно. Если организацияпамяти нам представляет такую возможность, то такую память будем называтьассоциативной, т.е. памятью, обеспечивающей семантический доступ к хранимой вней информации.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
@@ -920,18 +931,17 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_558: .system_element_722
-;;
+	=> .system_element_1180: .system_element_1683;;
 
-	.system_element_723
-	=> .system_element_558: .system_element_722;
+	.system_element_1684
+	=> .system_element_1180: .system_element_1683;
 	=> nrel_idtf: [<p>простота реализации базовых (элементарных), но семантически целостных(семантически значимых, осмысленных) действий (операций) преобразования(обработки) информации, хранимой в памяти кибернетической системы</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_724
+	.system_element_1685
 	=> nrel_idtf: [<p>элементарная семантически значимая (осмысленная) операция надинформацией, хранимой в памяти кибернетической системы</p>]
 	(*
 		<- lang_ru;;
@@ -957,10 +967,10 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_725
-	<= .system_element_549: .system_element_726
+	.system_element_1686
+	<= .system_element_1214: .system_element_1687
 	(*
-		=> .system_element_558: .system_element_722;;
+		=> .system_element_1180: .system_element_1683;;
 	*);
 	=> nrel_note: [<p>Навыки кибернетической системы являются частным видом знаний,хранимых в её памяти, поэтому степень конвергенции навыков и обрабатываемыхзнаний определяется глубиной  и объемом  <u>общих</u> (одинаковых) принципов,лежащих в основе как представления навыков, так представления обрабатываемыхзнаний.</p>]
 	(*
@@ -968,11 +978,11 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_727
-	=> .system_element_549: 
-		.system_element_728;
-		.system_element_729;
-		.system_element_730
+	.system_element_1688
+	=> .system_element_1214: 
+		.system_element_1689;
+		.system_element_1690;
+		.system_element_1691
 		(*
 			=> nrel_idtf: [<p>способность кибернетической системы к воздействию навнешнюю среду и к управлению своим поведением во внешней среде</p>]
 			(*
@@ -982,13 +992,13 @@
 		*)
 	;;
 
-	.system_element_731
-	=> nrel_inclusion: .system_element_732;
-	=> nrel_inclusion: .system_element_733
+	.system_element_1692
+	=> nrel_inclusion: .system_element_1693;
+	=> nrel_inclusion: .system_element_1694
 	(*
 		=> nrel_idtf: [<p>задача анализа информации, порождаемой (генерируемой) непосредственносенсорами кибернетической системы</p>];;
-		=> nrel_inclusion: .system_element_734;;
-		=> nrel_inclusion: .system_element_735
+		=> nrel_inclusion: .system_element_1695;;
+		=> nrel_inclusion: .system_element_1696
 		(*
 			=> nrel_idtf: [<p>задача анализа сенсорной информации, направленного на<u>понимание</u> этой информации --- на выявление (распознавание) в этойинформации отображения (сенсорного описания) объектов, важных длякибернетической системы (т.е. объектов, описанных в базе знаний этой системы и,соответственно, представленных в этой базе знаний своими знаками либо знакамиклассов, которым эти объекты принадлежат), а также важных для кибернетическихсвязей между указанными объектами</p>];;
 			=> nrel_idtf: [<p>задача генерации фрагмента базы знаний кибернетической системы,являющегося логическим следствием заданной сенсорной информации ипредставляющегося собой важную для кибернетической системы информацию</p>]
@@ -1001,7 +1011,7 @@
 				<- lang_ru;;
 				=> nrel_format: format_html;;
 			*);;
-			=> nrel_inclusion: .system_element_736;;
+			=> nrel_inclusion: .system_element_1697;;
 			=> nrel_idtf: [<p>задача анализа введенных знаковых конструкций</p>]
 			(*
 				<- lang_ru;;
@@ -1017,9 +1027,9 @@
 				<- lang_ru;;
 				=> nrel_format: format_html;;
 			*);;
-			=> nrel_inclusion: .system_element_737;;
-			=> nrel_inclusion: .system_element_738;;
-			=> nrel_inclusion: .system_element_739
+			=> nrel_inclusion: .system_element_1698;;
+			=> nrel_inclusion: .system_element_1699;;
+			=> nrel_inclusion: .system_element_1700
 			(*
 				=> nrel_idtf: [<p>задача интеграции (встраивания) нового фрагмента базы знаний в составбазы знаний</p>];;
 				=> nrel_idtf: [<p>задача понимания нового фрагмента базы знаний в контексте её текущегосостояния, что, прежде всего, требует обеспечения семантической совместимости(согласования понятий) между базой знаний и интегрируемым новым фрагментом</p>]
@@ -1030,7 +1040,7 @@
 			*);;
 		*);;
 	*);
-	=> nrel_inclusion: .system_element_740
+	=> nrel_inclusion: .system_element_1701
 	(*
 		=> nrel_idtf: [<p>задача целенаправленной сенсорно-эффекторной (в частности, сенсомоторной) координации</p>]
 		(*
@@ -1039,7 +1049,7 @@
 		*);;
 	*);;
 
-	.system_element_413
+	.system_element_1355
 	=> nrel_idtf: [<p>информация, генерируемая непосредственно некоторой группой(конфигурацией) сенсоров (рецепторов) кибернетической системы</p>]
 	(*
 		<- lang_ru;;
@@ -1061,7 +1071,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_741
+	.system_element_1702
 	=> nrel_idtf: [<p>рецептор кибернетической системы</p>]
 	(*
 		<- lang_ru;;
@@ -1073,37 +1083,36 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_742
+	.system_element_1703
 	=> nrel_idtf: [<p>компонент кибернетической системы, который способен менять своёсостояние в целях непосредственного воздействия на свою физическую оболочку ина внешнюю среду</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_743
+	.system_element_1704
 	=> nrel_idtf: [<p>способность к синтаксическому и семантическому анализу информации,формируемой сенсорами кибернетической системы, а также к погружению  этойинформации в состав общей информационной модели внешней среды кибернетическойсистемы (в состав общей картины внешнего мира)</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
 	=> nrel_idtf: [<p>способность кибернетической системы к переходу от первичной(сенсорной) информации ко вторичной информации, которая описывает связи междувторичными объектами, каждый из которых представлен (описан) в первичнойинформации конфигурацией знаков своих частей с дополнительным описанием свойствкаждой из этих частей</p>]
-
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_744
-	=> .system_element_558: 
-		.system_element_745
+	.system_element_1705
+	=> .system_element_1180: 
+		.system_element_1706
 		(*
-			=> .system_element_549: 
-				.system_element_746;
-				.system_element_747;
-				.system_element_748
+			=> .system_element_1214: 
+				.system_element_1707;
+				.system_element_1708;
+				.system_element_1709
 			;;
 		*);
-		.system_element_749
+		.system_element_1710
 		(*
 			=> nrel_idtf: [<p>качество сенсорно-эффекторной координации действийкибернетической системы при выполнении сложных действий во внешней среде</p>]
 			(*
