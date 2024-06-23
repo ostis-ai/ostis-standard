@@ -1,0 +1,343 @@
+\begin{SCn}
+    \scnsectionheader{Предметная область и онтология синтаксиса естественных языков}
+    \begin{scnsubstruct}
+
+        \scnsectionheader{Предметная область синтаксиса естественных языков}
+        \begin{scnhaselementrolelist}{максимальный класс объектов исследования}
+            \scnitem{синтаксис естественного языка}
+        \end{scnhaselementrolelist}
+        \begin{scnrelfromlist}{библиографическая ссылка}
+            \scnitem{\scncite{Adger2003}}
+            \scnitem{\scncite{Jackendoff1977}}
+            \scnitem{\scncite{Haegeman1994}}
+            \scnitem{\scncite{Carnie2012}}
+        \end{scnrelfromlist}
+
+        \scnheader{синтаксис естественного языка}
+        \scntext{примечание}{Приводимая ниже формализация \textit{синтаксиса} \textit{естественных языков} является ядром, общим для всех \textit{естественных языков}. Очевидно, что \textit{синтаксис} некоторого конкретного \textit{естественного языка} может отличаться от \textit{синтаксиса} других \textit{языков}. В таком случае, более частные отличия необходимо отдельно специфицировать в формализованном виде. Таким образом, ниже будет предложено описание наиболее общих аспектов \textit{синтаксиса} всех \textit{естественных языков}, которое в дальнейшем может дополняться, если того требует конкретная реализация \textit{естественно-языкового интерфейса} какой-либо \textit{ostis-системы}. При этом любые дополнения, специфичные для некоторого конкретного \textit{естественного языка}, не должны противоречить ядру формализации \textit{синтаксиса} \textit{естественных языков}, приведенному в данном разделе.}
+        \scntext{примечание}{При формализации синтаксиса в основном использовались стандартные положения генеративной грамматики.}
+        \begin{scnindent}
+            \begin{scnrelfromset}{источник}
+                \scnitem{\scncite{Adger2003}}
+                \scnitem{\scncite{Jackendoff1977}}
+                \scnitem{\scncite{Haegeman1994}}
+                \scnitem{\scncite{Carnie2012}}
+            \end{scnrelfromset}
+        \end{scnindent}
+
+        \scnheader{грамматическая категория}
+        \scntext{определение}{\textbf{\textit{грамматическая категория}} --- система противопоставленных друг другу рядов грамматических форм с однородными значениями.}
+        \scntext{примечание}{В рамках нашей формализации предлагается представить грамматические категории как классы ролевых отношений, каждый из которых соответствует определенному грамматическому значению.
+            \\Следует отметить, что приводятся основные \textit{грамматические категории}, часто встречающиеся в \textit{естественных языках}, а не всех возможные.}
+        \scnhaselement{лицо}
+        \begin{scnindent}
+            \scnrelto{семейство подмножеств}{ролевое отношение}
+            \scnhaselement{первое лицо\scnrolesign}
+            \scnhaselement{второе лицо\scnrolesign}
+            \scnhaselement{третье лицо\scnrolesign}
+        \end{scnindent}
+        \scnhaselement{число}
+        \begin{scnindent}
+            \scnrelto{семейство подмножеств}{ролевое отношение}
+            \scnhaselement{единственное число\scnrolesign}
+            \scnhaselement{множественное число\scnrolesign}
+            \scnhaselement{двойственное число\scnrolesign}
+            \scnhaselement{тройственное число\scnrolesign}
+            \scnhaselement{паукальное число\scnrolesign}
+        \end{scnindent}
+        \scnhaselement{род}
+        \begin{scnindent}
+            \scnrelto{семейство подмножеств}{ролевое отношение}
+            \scnhaselement{мужской род\scnrolesign}
+            \scnhaselement{средний род\scnrolesign}
+            \scnhaselement{женский род\scnrolesign}
+        \end{scnindent}
+        \scnhaselement{падеж}
+        \begin{scnindent}
+            \scnrelto{семейство подмножеств}{ролевое отношение}
+            \scnhaselement{именительный падеж\scnrolesign}
+            \scnhaselement{родительный падеж\scnrolesign}
+            \scnhaselement{дательный падеж\scnrolesign}
+            \scnhaselement{винительный падеж\scnrolesign}
+            \scnhaselement{творительный падеж\scnrolesign}
+            \scnhaselement{предложный падеж\scnrolesign}
+            \scnhaselement{звательный падеж\scnrolesign}
+            \scnhaselement{абсолютивный падеж\scnrolesign}
+            \scnhaselement{эргативный падеж\scnrolesign}
+        \end{scnindent}
+        \scnhaselement{время}
+        \begin{scnindent}
+            \scnrelto{семейство подмножеств}{ролевое отношение}
+            \scnhaselement{настоящее время\scnrolesign}
+            \scnhaselement{прошедшее время\scnrolesign}
+            \scnhaselement{будущее время\scnrolesign}
+        \end{scnindent}
+        \scnhaselement{наклонение}
+        \begin{scnindent}
+            \scnrelto{семейство подмножеств}{ролевое отношение}
+            \scnhaselement{изъявительное наклонение\scnrolesign}
+            \scnhaselement{повелительное наклонение\scnrolesign}
+            \scnhaselement{сослагательное наклонение\scnrolesign}
+            \scnhaselement{условное наклонение\scnrolesign}
+        \end{scnindent}
+        \scnhaselement{залог}
+        \begin{scnindent}
+            \scnrelto{семейство подмножеств}{ролевое отношение}
+            \scnhaselement{действительный залог\scnrolesign}
+            \scnhaselement{страдательный залог\scnrolesign}
+            \scnhaselement{средний залог\scnrolesign}
+            \scnhaselement{возвратный залог\scnrolesign}
+            \scnhaselement{взаимный залог\scnrolesign}
+        \end{scnindent}
+        \scnhaselement{вид}
+        \begin{scnindent}
+            \scnrelto{семейство подмножеств}{ролевое отношение}
+            \scnhaselement{совершенный вид\scnrolesign}
+            \scnhaselement{несовершенный вид\scnrolesign}
+            \scnhaselement{общий вид\scnrolesign}
+            \scnhaselement{прогрессивный вид\scnrolesign}
+            \scnhaselement{перфектный вид\scnrolesign}
+        \end{scnindent}
+        \scnhaselement{степень сравнения}
+        \begin{scnindent}
+            \scnrelto{семейство подмножеств}{ролевое отношение}
+            \scnhaselement{положительная степень сравнения\scnrolesign}
+            \scnhaselement{сравнительная степень сравнения\scnrolesign}
+            \scnhaselement{превосходная степень сравнения\scnrolesign}
+        \end{scnindent}
+
+        \scnheader{часть речи}
+        \scntext{определение}{\textbf{\textit{часть речи}} --- \textit{категория}, представляющая собой класс синтаксически эквивалентных \textit{знаков} \textit{естественного языка}.}
+        \scnrelto{семейство подмножеств}{лексема}
+        \scnhaselement{существительное}
+        \scnhaselement{прилагательное}
+        \scnhaselement{глагол}
+        \scnhaselement{наречие}
+        \scnhaselement{предлог}
+        \scnhaselement{комплементатор}
+        \scnhaselement{вспомогательный глагол}
+        \scnhaselement{детерминант}
+
+        \scnheader{словоформа}
+        \scntext{определение}{\textbf{\textit{словоформа}} --- \textit{подмножество} \textit{лексемы}, которому принадлежат все вхождения \textit{лексемы} с определенными \textit{грамматическими значениями}.}
+        \scntext{примечание}{В рамках нашей \textit{онтологии} словоформа понимается несколько иначе, чем принято в лингвистике, так как все вхождения лексемы в технологии OSTIS являются \textit{файлами}.}
+        
+        \scnheader{дистрибуция знака}
+        \scntext{определение}{\textbf{\textit{дистрибуция знака}} --- это подмножество синтаксических правил, в которые входит данный \textit{знак}.}
+
+        \scnheader{составляющая}
+        \scntext{определение}{\textbf{\textit{составляющая}} --- элемент множества \textit{C} подмножеств кортежа вхождений лексем \textit{S}, которое содержит в качестве элементов как сам \textit{S}, так и все вхождения лексем в \textit{S}, таким образом, что любые два подмножества, входящие в \textit{C}, либо не пересекаются, либо одно из них включается в другое.}
+        \scnrelfrom{пример}{Рисунок. Иллюстрация связей между составляющими}
+        
+        \scnheader{непосредственно составляющая}
+        \scntext{определение}{\textbf{\textit{непосредственно составляющая}} ---  есть множество \textit{составляющих} \textit{S}, в которое входят \textit{составляющие} \textit{A} и \textit{B}. В является \textit{непосредственно составляющей} \textit{А} если и только если \textit{В} является подмножеством \textit{А} и нет такой \textit{составляющей} \textit{С}, которая является подмножеством \textit{А} и подмножеством которой является \textit{В}.}
+
+        \scnheader{составляющие сестры*}
+        \scntext{определение}{\textbf{\textit{составляющими сестрами*}} считаются \textit{составляющие}, являющиеся \textit{непосредственно составляющими} одной и той же \textit{составляющей}.}
+
+        \scnheader{Рисунок. Иллюстрация связей между составляющими}
+        \scneq{{\scnfileimage[30em]{Contents/part_kb/src/images/sd_natural_languages/syntactic_example.png}}}
+        
+        \scnheader{элементарная составляющая}
+        \scntext{определение}{\textbf{\textit{элементарная составляющая}} --- элемент кортежа вхождений \textit{лексем} \textit{L}, являющихся \textit{непосредственно составляющими} множества \textit{составляющих} \textit{C} и не имеющих непосредственно составляющих \textit{составляющих}.}
+
+        \scnheader{синтаксическая группа}
+        \scntext{определение}{\textbf{\textit{синтаксическая группа}} --- класс \textit{составляющих}, в который входят \textit{составляющие} с вершинами, принадлежащими к одной \textit{части речи}.}
+        \scntext{примечание}{\textit{синтаксические группы} представляют собой либо \textit{синглетон} (минимально включают в себя вершину), либо упорядоченную пару, состояющую из \textit{вершины} и другой \textit{синтаксической группы}.}
+
+        \scnheader{вершина}
+        \scntext{определение}{\textbf{\textit{вершина}} --- \textit{составляющая}, \textit{дистрибуция} которой совпадает с \textit{дистрибуцией} всей \textit{синтаксической группы}.}
+
+        \scnheader{составляющая}
+        \begin{scnrelfromset}{разбиение}
+            \scnitem{синтаксическая группа}
+            \scnitem{вершина}
+        \end{scnrelfromset}
+    
+        \scnheader{синтаксическая группа}
+        \begin{scnrelfromset}{разбиение}
+            \scnitem{именная группа}
+            \begin{scnindent}
+                \scntext{определение}{\textit{именная группа} --- \textit{синтаксическая группа}, \textit{вершиной} которой является \textit{существительное}.}
+            \end{scnindent}
+            \scnitem{глагольная группа}
+            \begin{scnindent}
+                \scntext{определение}{\textit{глагольная группа} --- \textit{синтаксическая группа}, \textit{вершиной} которой является \textit{глагол}.}
+            \end{scnindent}
+            \scnitem{группа прилагательного}
+            \begin{scnindent}
+                \scntext{определение}{\textit{группа прилагательного} --- \textit{синтаксическая группа}, \textit{вершиной} которой является \textit{прилагательное}.}
+            \end{scnindent}
+            \scnitem{наречная группа}
+            \begin{scnindent}
+                \scntext{определение}{\textit{наречная группа} --- \textit{синтаксическая группа}, \textit{вершиной} которой является \textit{наречие}.}
+            \end{scnindent}
+            \scnitem{предложная группа}
+            \begin{scnindent}
+                \scntext{определение}{\textit{предложная группа} --- \textit{синтаксическая группа}, \textit{вершиной} которой является \textit{предлог}.}
+            \end{scnindent}
+            \scnitem{группа комплементатора}
+            \begin{scnindent}
+                \scntext{определение}{\textit{группа комплементатора} --- \textit{синтаксическая группа}, \textit{вершиной} которой является \textit{комплементатор}.}
+            \end{scnindent}
+            \scnitem{временная группа}
+            \begin{scnindent}
+                \scntext{определение}{\textit{временная группа} --- \textit{синтаксическая группа}, \textit{вершиной} которой является \textit{вспомогательный} либо \textit{модальный глагол}.}
+            \end{scnindent}
+            \scnitem{группа детерминанта}
+            \begin{scnindent}
+                \scntext{определение}{\textit{группа детерминанта} --- \textit{синтаксическая группа}, \textit{вершиной} которой является \textit{детерминант}.}
+            \end{scnindent}
+        \end{scnrelfromset}
+        \begin{scnrelfromset}{разбиение}
+            \scnitem{максимальная проекция вершины}
+                \begin{scnindent}
+                \scnidtf{максимальная проекция вершины синтаксической группы}
+                \end{scnindent}
+            \scnitem{промежуточная проекция вершины}
+                \begin{scnindent}
+                \scnidtf{промежуточная проекция вершины синтаксической группы}
+                \end{scnindent}
+        \end{scnrelfromset}
+
+        \scnheader{максимальная проекция вершины группы детерминанта}
+        \begin{scnreltoset}{пересечение}
+            \scnitem{группа детерминанта}
+            \scnitem{максимальная проекция вершины}
+        \end{scnreltoset}
+        \scntext{пояснение}{Могут быть введены более узкие классы, являющиеся пересечением приведенных выше, например \textit{максимальная проекция вершины группы детерминанта}.}
+
+        \scnheader{SCg-текст. Иллюстрация синтаксической структуры предложения. Первая часть}
+        \scneq{{\scnfileimage[30em]{Contents/part_kb/src/images/sd_natural_languages/syntactic_structure_part_1.png}}}
+        \scntext{примечание}{Пример синтаксической структуры предложения}
+
+        \scnheader{SCg-текст. Иллюстрация синтаксической структуры предложения. Вторая часть}
+        \scneq{{\scnfileimage[30em]{Contents/part_kb/src/images/sd_natural_languages/syntactic_structure_part_2.png}}}
+        \scntext{примечание}{Пример синтаксической структуры предложения}
+
+        \scnheader{группа детерминанта}
+        \begin{scnrelfromset}{пример}
+            \scnfileitem{\textit{максимальная проекция вершины группы детерминанта} состоит из (\textit{максимальной проекции вершины группы детерминанта}) и \textit{промежуточной проекции вершины группы детерминанта}}
+            \scnfileitem{\textit{промежуточная проекция вершины группы детерминанта} состоит из \textit{вершины группы детерминанта} (и \textit{максимальной проекции вершины именной группы})}
+        \end{scnrelfromset}
+        \begin{scnindent}
+            \scntext{примечание}{В скобках указаны опциональные элементы.}
+        \end{scnindent}
+
+        \scnheader{именная группа}
+        \begin{scnrelfromset}{пример}
+            \scnfileitem{\textit{максимальная проекция вершины именной группы} состоит из (\textit{максимальной проекции вершины группы детерминанта}) и \textit{промежуточной проекции вершины именной группы}}
+            \scnfileitem{\textit{промежуточная проекция вершины именной группы} состоит из (\textit{максимальной проекции вершины группы прилагательного}) и \textit{промежуточной проекции вершины именной группы} ИЛИ \textit{промежуточной проекции вершины именной группы} (и \textit{максимальной проекции вершины предложной группы})}
+            \scnfileitem{\textit{промежуточная проекция вершины именной группы} состоит из \textit{вершины именной группы} (и \textit{максимальной проекции вершины предложной группы})}
+        \end{scnrelfromset}
+        \begin{scnindent}
+            \scntext{примечание}{В скобках указаны опциональные элементы.}
+        \end{scnindent}
+
+        \scnheader{глагольная группа}
+        \begin{scnrelfromset}{пример}
+            \scnfileitem{\textit{максимальная проекция вершины глагольной группы} состоит из \textit{промежуточная проекция вершины глагольной группы}}
+            \scnfileitem{\textit{промежуточная проекция вершины глагольной группы} состоит из \textit{промежуточной проекции вершины глагольной группы} (и \textit{максимальной проекции вершины предложной группы}) ИЛИ \textit{промежуточной проекции вершины глагольной группы} (и \textit{максимальной проекция вершины наречной группы})}
+            \scnfileitem{\textit{промежуточная проекция вершины глагольной группы} состоит из \textit{вершины глагольной группы} (и \textit{максимальной проекции вершины именной группы})}
+       \end{scnrelfromset}
+        \begin{scnindent}
+            \scntext{примечание}{В скобках указаны опциональные элементы.}
+        \end{scnindent}
+
+        \scnheader{наречная группа}
+        \begin{scnrelfromset}{пример}
+            \scnfileitem{\textit{максимальная проекция вершины наречной группы} состоит из \textit{промежуточной проекции вершины наречной группы}}
+            \scnfileitem{\textit{промежуточная проекция вершины наречной группы} состоит из (\textit{максимальной проекции вершины наречной группы}) и \textit{промежуточной проекции вершины наречной группы}}
+            \scnfileitem{\textit{промежуточная проекция вершины наречной группы} состоит из \textit{вершины наречной группы} (и \textit{максимальной проекции вершины предложной группы})}
+       \end{scnrelfromset}
+        \begin{scnindent}
+            \scntext{примечание}{В скобках указаны опциональные элементы.}
+        \end{scnindent}
+
+        \scnheader{группа прилагательного}
+        \begin{scnrelfromset}{пример}
+            \scnfileitem{\textit{максимальная проекция вершины группы прилагательного} состоит из \textit{промежуточной проекции вершины группы прилагательного}}
+            \scnfileitem{\textit{промежуточная проекция вершины группы прилагательного} состоит из (\textit{максимальной проекции вершины наречной группы}) и \textit{промежуточной проекции вершины группы прилагательного}}
+            \scnfileitem{\textit{промежуточная проекция вершины группы прилагательного} состоит из \textit{вершины группы прилагательного} (и \textit{максимальной проекцим вершины предложной группы})}
+       \end{scnrelfromset}
+        \begin{scnindent}
+            \scntext{примечание}{В скобках указаны опциональные элементы.}
+        \end{scnindent}
+
+        \scnheader{предложная группа}
+        \begin{scnrelfromset}{пример}
+            \scnfileitem{\textit{максимальная проекция вершины предложной группы} состоит из \textit{промежуточной проекции вершины предложной группы}}
+            \scnfileitem{\textit{промежуточная проекция вершины предложной группы} состоит из \textit{промежуточной проекции вершины предложной группы} (и \textit{максимальной проекции вершины предложной группы}) ИЛИ (\textit{максимальной проекции вершины наречной группы}) и \textit{промежуточной проекции вершины предложной группы}}
+            \scnfileitem{\textit{промежуточная проекция вершины предложной группы} состоит из \textit{вершины предложной группы} (и \textit{максимальной проекции вершины именной группы})}
+        \end{scnrelfromset}
+        \begin{scnindent}
+            \scntext{примечание}{В скобках указаны опциональные элементы.}
+        \end{scnindent}
+
+        \scnheader{временная группа}
+        \begin{scnrelfromset}{пример}
+            \scnfileitem{\textit{максимальная проекция вершины временной группы} состоит из (\textit{максимальной проекции вершины группы детерминанта}) и \textit{промежуточной проекции вершины временной группы}}
+            \scnfileitem{\textit{промГруппа комплементатораежуточная проекция вершины временной группы} состоит из \textit{вершины временной группы} (и \textit{максимальной проекции вершины глагольной группы})}
+        \end{scnrelfromset}
+        \begin{scnindent}
+            \scntext{примечание}{В скобках указаны опциональные элементы.}
+        \end{scnindent}
+
+        \scnheader{группа комплементатора}
+        \begin{scnrelfromset}{пример}
+            \scnfileitem{\textit{максимальная проекция вершины группы комплементатора} состоит из (\textit{максимальной проекции вершины некоторой синтаксической группы}) и \textit{промежуточной проекции вершины группы комплементатора}}
+            \scnfileitem{\textit{промежуточная проекция вершины группы комплементатора} состоит из \textit{вершины группы комплементатора} \textit{и максимальной проекции вершины временной группы}}
+       \end{scnrelfromset}
+        \begin{scnindent}
+            \scntext{примечание}{В скобках указаны опциональные элементы.}
+        \end{scnindent}
+
+        \scnheader{структуры синтаксических групп}
+        \scnrelfrom{пример}{SCg-текст. Иллюстрация синтаксической структуры предложения. Первая часть}
+        \scnrelfrom{пример}{SCg-текст. Иллюстрация синтаксической структуры предложения. Вторая часть}
+        \scntext{примечание}{Структуры синтаксических групп не являются произвольными --- элементы внутри группы могут граничить только с определенными множествами элементов.}
+        \scnrelfrom{смотрите}{SCg-текст. Иллюстрация правила структуры синтаксической группы}
+        \scntext{примечание}{Правила структуры синтаксических групп можно обобщить и свести к трем более абстрактным.
+            \begin{itemize}
+                \item Правило спецификатора: \textit{максимальная проекция вершины синтаксической группы} \textit{XP} состоит из (\textit{максимальной проекции вершины} \textit{YP}) \textit{промежуточной проекции вершины синтаксической группы} \textit{X'}
+                \item Правило адъюнкта: \textit{промежуточная проекция вершины синтаксической группы} \textit{X'} состоит из \textit{промежуточной проекции вершины синтаксической группы} \textit{$\bm{X'_1}$} (и \textit{максимальной проекции вершины синтаксической группы} \textit{ZP}) ИЛИ из (\textit{максимальной проекции вершины синтаксической группы} \textit{ZP}) и \textit{промежуточной проекции вершины синтаксической группы} \textit{X'}.
+                \item Правило комплемента: \textit{промежуточная проекция вершины синтаксической группы}  \textit{X'} состоит из \textit{вершины} \textit{X} (и \textit{максимальной проекции вершины синтаксической группы} \textit{WP}).
+            \end{itemize}}
+
+        \scnheader{SCg-текст. Иллюстрация правила структуры синтаксической группы}
+        \scneq{{\scnfileimage[20em]{Contents/part_kb/src/images/sd_natural_languages/tree_structure_rule.png}}}
+
+        \scnheader{комплемент}
+        \scntext{определение}{\textbf{\textit{комплемент}} --- \textit{синтаксическая группа}, являющаяся сестрой вершины.}
+        \scnrelfrom{правило}{правило комплемента}
+        \begin{scnindent}
+            \scntext{пример}{\scnfileimage[30em]{Contents/part_kb/src/images/sd_natural_languages/complement_rule.png}}
+            \begin{scnindent}
+                \scnidtf{SCg-текст. Правило комплемента}
+            \end{scnindent}
+        \end{scnindent}
+
+        \scnheader{адъюнкт}
+        \scntext{определение}{\textbf{\textit{адъюнкт}} --- \textit{синтаксическая группа}, являющаяся дочерью (\textit{непосредственно составляющей}) промежуточной проекции и сестрой промежуточной проекции вершины той же \textit{синтаксической группы}.}
+        \scnrelfrom{правило}{правило адъюнкта}
+        \begin{scnindent}
+            \scntext{пример}{\scnfileimage[30em]{Contents/part_kb/src/images/sd_natural_languages/adjunct_rule.png}}
+            \begin{scnindent}
+                \scnidtf{SCg-текст. Правило адъюнкта}
+            \end{scnindent}
+        \end{scnindent}
+
+        \scnheader{спецификатор}
+        \scntext{определение}{\textbf{\textit{спецификатор}} --- \textit{синтаксическая группа}, являющейся дочерью максимальной проекции и сестрой промежуточной проекции.}
+        \scnrelfrom{правило}{правило спецификатора}
+        \begin{scnindent}
+            \scntext{пример}{\scnfileimage[30em]{Contents/part_kb/src/images/sd_natural_languages/specifier_rule.png}}
+            \begin{scnindent}
+                \scnidtf{SCg-текст. Правило спецификатора}
+            \end{scnindent}
+        \end{scnindent}
+
+    \end{scnsubstruct}
+    \bigskip
+    \scnendcurrentsectioncomment
+\end{SCn}
