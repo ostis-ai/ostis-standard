@@ -19,11 +19,9 @@
 
 \scnheader{архитектура и.н.с.}
 \scntext{примечание}{\textit{Архитектурой и.н.с.} будем называть совокупность информации о структуре ее слоев, формальных нейронов, синаптических связей и функций активаций. То есть то, что можно обучить и использовать для решения задач.}
+\scnrelfrom{пример}{\scnfileimage[30em]{Contents/part_ps/src/images/sd_ps/sd_ann/neural_network.png}}
 \begin{scnindent}
-	\scnrelfrom{изображение}{\scnfileimage[30em]{Contents/part_ps/src/images/sd_ps/sd_ann/neural_network.png}}
-	\begin{scnindent}
-		\scntext{примечание}{Пример архитектуры и.н.с.}
-	\end{scnindent}
+	\scntext{примечание}{Пример архитектуры и.н.с.}
 \end{scnindent}
 
 \scnheader{искусственная нейронная сеть}
@@ -194,8 +192,10 @@
 			\scntext{формула}{
 				\begin{equation*}
 					y = kS
-				\end{equation*}
-				где \textit{k} --- коэффициент наклона прямой, \textit{S} --- в.с.}
+				\end{equation*}}
+				\begin{scnindent}
+					\scntext{примечание}{\textit{k} --- коэффициент наклона прямой, \textit{S} --- в.с.}
+				\end{scnindent}
 		\end{scnindent}
 	\scnitem{пороговая функция}
 		\begin{scnindent}
@@ -213,24 +213,30 @@
 			\scntext{формула}{
 				\begin{equation*}
 					y = \frac{1}{1+e^{-cS}}
-				\end{equation*}
-				где \textit{с} > 0 --- коэффициент, характеризующий ширину сигмоидной функции по оси абсцисс, \textit{S} --- в.с.}
+				\end{equation*}}
+				\begin{scnindent}
+					\scntext{примечание}{\textit{с} > 0 --- коэффициент, характеризующий ширину сигмоидной функции по оси абсцисс, \textit{S} --- в.с.}
+				\end{scnindent}				
 		\end{scnindent}
 	\scnitem{функция гиперболического тангенса}
 		\begin{scnindent}
 			\scntext{формула}{
 				\begin{equation*}
 					y = \frac{e^{cS}-e^{-cS}}{e^{cs}+e^{-cS}}
-				\end{equation*}
-				где \textit{с} > 0 --- коэффициент, характеризующий ширину сигмоидной функции по оси абсцисс, \textit{S} --- в.с.}
+				\end{equation*}}
+				\begin{scnindent}
+					\scntext{примечание}{\textit{с} > 0 --- коэффициент, характеризующий ширину сигмоидной функции по оси абсцисс, \textit{S} --- в.с.}
+				\end{scnindent}
 		\end{scnindent}
 	\scnitem{функция softmax}
 		\begin{scnindent}
 			\scntext{формула}{
 				\begin{equation*}
 					y_j = softmax(S_j) = \frac{e^{S_j}}{\sum_{j} e^{S_j}}
-				\end{equation*}
-				где $S_j$ --- в.с. \textit{j}-го выходного нейрона.}
+				\end{equation*}}
+				\begin{scnindent}
+					\scntext{примечание}{$S_j$ --- в.с. \textit{j}-го выходного нейрона.}
+				\end{scnindent}
 		\end{scnindent}
 	\scnitem{функция ReLU}
 		\begin{scnindent}
@@ -241,8 +247,10 @@
 						S, S > 0,\\
 						kS, S \leq 0
 					\end{cases}
-				\end{equation*}
-				где \textit{k} = 0 или принимает небольшое значение, например, 0.01 или 0.001.}
+				\end{equation*}}
+				\begin{scnindent}
+					\scntext{примечание}{\textit{k} = 0 или принимает небольшое значение, например, 0.01 или 0.001.}
+				\end{scnindent}
 		\end{scnindent}
 \end{scnsubdividing}
 \end{scnindent}
@@ -300,8 +308,10 @@
 \scntext{формула}{
 	\begin{equation*}
 		PRE = \frac{TP}{TP + FP}
-	\end{equation*}
-	где \textit{TP} и \textit{FP} --- число истинно-положительных и ложно-положительных предсказаний нейронной сети соответственно}
+	\end{equation*}}
+	\begin{scnindent}
+        \scntext{примечание}{\textit{TP} и \textit{FP} --- число истинно-положительных и ложно-положительных предсказаний нейронной сети соответственно}
+    \end{scnindent}
 
 \scnheader{полнота и.н.с.}
 \scnidtf{recall}
@@ -309,27 +319,40 @@
 \scntext{формула}{
 	\begin{equation*}
 		REC = \frac{TP}{TP + FN}
-	\end{equation*}
-	где \textit{TP} и \textit{FN} --- число истинно-положительных и ложно-отрицательных предсказаний нейронной сети соответственно}
+	\end{equation*}}
+	\begin{scnindent}
+        \scntext{примечание}{\textit{TP} и \textit{FN} --- число истинно-положительных и ложно-отрицательных предсказаний нейронной сети соответственно}
+    \end{scnindent}
 
 \scnheader{F1-метрика}
 \scntext{формула}{
 	\begin{equation*}
 		F1 = 2 * \frac{PRE * REC}{PRE + REC}
-	\end{equation*}
-	где \textit{PRE} и \textit{REC} --- точность и полнота и.и.с. соответственно}
+	\end{equation*}}
+	\begin{scnindent}
+        \scntext{примечание}{\textit{PRE} и \textit{REC} --- точность и полнота и.и.с. соответственно}
+    \end{scnindent}
 
 \scnheader{MAE}
 \scnidtf{mean absolute error}
-\scntext{формула}{$\frac{1}{N} \sum_{i=1}^N |y_{etalon}^i - y_{predicted}^i|$,\\ $y_{etalon}^i$ --- эталонное значение,\\ $y_{predicted}^i$ --- значение, полученное и.н.с.,\\ \textit{N} --- объем обучающей выборки}
+\scntext{формула}{$\frac{1}{N} \sum_{i=1}^N |y_{etalon}^i - y_{predicted}^i|$}
+\begin{scnindent}
+	\scntext{примечание}{$y_{etalon}^i$ --- эталонное значение,\\ $y_{predicted}^i$ --- значение, полученное и.н.с.,\\ \textit{N} --- объем обучающей выборки}
+\end{scnindent}
 
 \scnheader{MAPE}
 \scnidtf{mean absolute percentage error}
-\scntext{формула}{$\frac{1}{N} \sum_{i=1}^N \frac{|y_{etalon}^i - y_{predicted}^i|}{y_{etalon}^i} * 100\%$, \\ $y_{etalon}^i$ --- эталонное значение,\\ $y_{predicted}^i$ --- значение, полученное и.н.с.,\\ \textit{N} --- объем обучающей выборки}
+\scntext{формула}{$\frac{1}{N} \sum_{i=1}^N \frac{|y_{etalon}^i - y_{predicted}^i|}{y_{etalon}^i} * 100\%$}
+\begin{scnindent}
+	\scntext{примечание}{$y_{etalon}^i$ --- эталонное значение,\\ $y_{predicted}^i$ --- значение, полученное и.н.с.,\\ \textit{N} --- объем обучающей выборки}
+\end{scnindent} 
 
 \scnheader{RMSE}
 \scnidtf{root mean squared error}
-\scntext{формула}{$\sqrt{\frac{1}{N} \sum_{i=1}^N (y_{etalon}^i - y_{predicted}^i)^2}$, \\ $y_{etalon}^i$ --- эталонное значение,\\ $y_{predicted}^i$ --- значение, полученное и.н.с.,\\ \textit{N} --- объем обучающей выборки}
+\scntext{формула}{$\sqrt{\frac{1}{N} \sum_{i=1}^N (y_{etalon}^i - y_{predicted}^i)^2}$}
+\begin{scnindent}
+	\scntext{примечание}{$y_{etalon}^i$ --- эталонное значение,\\ $y_{predicted}^i$ --- значение, полученное и.н.с.,\\ \textit{N} --- объем обучающей выборки}
+\end{scnindent}
 
 \scnheader{SCg-текст. Пример формализации архитектуры искусственной нейронной сети в базе знаний}
 \begin{scnindent}
