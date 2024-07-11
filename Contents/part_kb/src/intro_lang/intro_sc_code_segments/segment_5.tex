@@ -436,10 +436,10 @@
 		\end{scnindent} 
 		\scnitem{sc-класс sc-констант разного структурного типа}
 		\begin{scnindent}
-			\scnhaselementrole{пример}{
+			\begin{scnhaselementrolelist}{пример}
 				\scnitem{sc-константа}
 				\scnitem{постоянная сущность}
-			}
+			\end{scnhaselementrolelist}
 		\end{scnindent} 
 	\end{scnsubdividing}
 	\scntext{пояснение}{Требованием, предъявляемым к каждому \textit{sc-классу} является наличие \textit{общего} свойства, присущего \textit{всем} элементам этого \textit{sc-класса}. Формулировку указанного общего свойства обычно называют \textit{определением} соответствующего \textit{sc-класса} (в частности, \textit{понятия}). Некоторые \textit{sc-классы} могут быть заданы с помощью \textit{отношений эквивалентности}, если эти классы являются \textit{классами эквивалентности} соответствующих \textit{отношений эквивалентности}, то есть являются элементами \textit{фактор-множеств}, соответствующих этим \textit{отношениям}.}
@@ -457,8 +457,7 @@
 			\item множество сотрудников некоторой  конкретной организации (динамическое множество);
 			\item конкретный отрезок, конкретный треугольник.
 		\end{scnitemize}
-		Здесь речь не идет об эквивалентности свойств самих людей и геометрических точек безотносительно к тому, в состав чего они входят. Поэтому это не является \textit{sc-классом}.
-		}
+		Здесь речь не идет об эквивалентности свойств самих людей и геометрических точек безотносительно к тому, в состав чего они входят. Поэтому это не является \textit{sc-классом}.}
 	\end{scnindent}
 	
 	\begin{scnhaselementset}
@@ -492,30 +491,35 @@
 		\end{scnindent}
 	\end{scnhaselementset}
 	\begin{scnindent}
-		\scnrelfrom{пояснение}{
-		\scnstartset
-		\scnheaderlocal{параметр}
-		\scnsubset{бесконечное множество}
-		\scnheaderlocal{признак различия}
-		\scnsubset{конечное множество}
-		\begin{scnhaselementrolelist}{пример}
-			\scnitem{Признак конечности множеств}
-			\begin{scnindent}
-				\begin{scneqtoset}
-					\scnitem{конечное множество}
-					\scnitem{бесконечное множество}				
-				\end{scneqtoset}
-			\end{scnindent}
-			\scnitem{Признак наличия кратных элементов}
-			\begin{scnindent}
-				\begin{scneqtoset}
-					\scnitem{мультимножество}
-					\scnitem{множество без кратных вхождений элементов}
-				\end{scneqtoset}
-			\end{scnindent}
-		\end{scnhaselementrolelist}
-		\scnendstruct
-		}
+		\scnrelfrom{пояснение}{\scnnonamednode}
+		\begin{scnindent}
+			\begin{scneqtoset}
+				\scnitem{параметр}
+				\begin{scnindent}
+					\scnsubset{бесконечное множество}
+				\end{scnindent}
+				\scnitem{признак различия}
+				\begin{scnindent}
+					\scnsubset{конечное множество}
+					\begin{scnhaselementrolelist}{пример}
+						\scnitem{Признак конечности множеств}
+						\begin{scnindent}
+							\begin{scneqtoset}
+								\scnitem{конечное множество}
+								\scnitem{бесконечное множество}				
+							\end{scneqtoset}
+						\end{scnindent}
+						\scnitem{Признак наличия кратных элементов}
+						\begin{scnindent}
+							\begin{scneqtoset}
+								\scnitem{мультимножество}
+								\scnitem{множество без кратных вхождений элементов}
+							\end{scneqtoset}
+						\end{scnindent}
+					\end{scnhaselementrolelist}
+				\end{scnindent}
+			\end{scneqtoset}
+		\end{scnindent}
 	\end{scnindent}
 
 	\scnheader{sc-класс}
@@ -701,6 +705,14 @@
 
 \scnstructheader{Уточнение смысла выделенных классов sc-элементов в Классификации sc-элементов по темпоральным характеристикам обозначаемых ими сущностей}
 \begin{scnsubstruct}
+	\begin{scnrelfromlist}{ключевой знак}
+		\scnitem{формируемое sc-множество}
+		\scnitem{sc-множество, элементы которого не известны}
+		\scnitem{сформированный файл}
+		\scnitem{формируемый файл}
+		\scnitem{файл, структура которого не известна}
+	\end{scnrelfromlist}
+	
 	\scnheader{обозначение временной сущности}
 	\begin{scnsubdividing}
 		\scnitem{обозначение временной сущности существующей сейчас}
@@ -720,7 +732,7 @@
 	\end{scnsubdividing}
 	\begin{scnindent}
 		\scnnote{ostis-системы должны постоянно мониторить состояние временных сущностей, так как в процессе их функционирования будущие сущности становятся настоящими, а настоящие --- прошлыми.}
-\end{scnindent} 
+	\end{scnindent} 
 
 	\scnheader{динамическое sc-множество}
 	\scnidtf{sc-процесс}
@@ -758,24 +770,17 @@
 	\scnheader{сформированное sc-множество}
 	\scnidtf{sc-множество, у которого в текущем состоянии sc-памяти перечислены все его элементы}
 	\scniselement{динамическое sc-множество}
-	\scnnote{Очевидно, что сформированным sc-множеством может стать только конечное sc-множество.}
-
-	\scnheader{формируемое sc-множество}
-
-	\scnheader{sc-множество, элементы которого не известны}
-
-	\scnheader{сформированный файл}
-
-	\scnheader{формируемый файл}
-
-	\scnheader{файл, структура которого не известна}
+	\scntext{пояснение}{Очевидно, что сформированным sc-множеством может стать только конечное sc-множество.}
 
 \end{scnsubstruct}
 
 \scnstructheader{Уточнение смысла семантически выделяемых классов \textit{sc-элементов}, которые необходимо ввести дополнительно к выше рассмотренным классам \textit{sc-элементов}}
 \begin{scnsubstruct}
-	\scnheader{sc-элемент, не являющийся ни sc-синглетоном, ни sc-парой}
 
+	\begin{scnrelfromlist}{ключевой знак}
+		\scnitem{sc-элемент, не являющийся ни sc-синглетоном, ни sc-парой}
+	\end{scnrelfromlist}
+	
 	\scnheader{sc-элемент, копируемый в других компьютерных системах}
 	\scnidtf{\textit{sc-элемент}, имеющий в других компьютерных системах свои копии и/или копии обозначаемой им информационной конструкции}
 

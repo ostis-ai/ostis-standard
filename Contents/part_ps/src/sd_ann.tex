@@ -273,14 +273,14 @@
                 \scnitem{задача классификации}
                 \begin{scnindent}
                     \scnsubset{задача}
-                    \scntext{пояснение}{Задача построения классификатора, т.е. отображения $\tilde c: X \rightarrow C$, где $ X \in \mathbb{R}^m$ ---
-                    признаковое пространство входного образа, $C = {C_1, C_2, ...C_k}$ --- конечное и обычно небольшое множество меток классов.}
+                    \scntext{пояснение}{Задача построения классификатора, т.е. отображения $\tilde c: X \rightarrow C$, где $ X \in \mathbb{R}\upperscore{m}$ ---
+                    признаковое пространство п.в.а., $C \eq \scnleftcurlbrace C\underscore{1}, C\underscore{2}, ...,C\underscore{k} \scnrightcurlbrace$ --- конечное и обычно небольшое множество меток классов.}
                 \end{scnindent}
                 \scnitem{задача регрессии}
                 \begin{scnindent}
                     \scnsubset{задача}
-                    \scntext{пояснение}{Задача построения оценочной функции по примерам $(x_i, f(x_i))$, где $f(x)$ --- неизвестная функция}
-                    \scntext{пояснение}{\textbf{\textit{оценочная функция*}} --- отображение вида $\tilde{f}: X \rightarrow \mathbb{R}$, где $X \in \mathbb{R}^m$ --- признаковое пространство входных данных}
+                    \scntext{пояснение}{Задача построения оценочной функции по примерам $(x\underscore{i}, f(x\underscore{i}))$, где $f(x)$ --- неизвестная функция}
+                    \scntext{пояснение}{\textbf{\textit{оценочная функция*}} --- отображение вида $\tilde{f}: X \rightarrow \mathbb{R}$, где $X \in \mathbb{R}\upperscore{m}$ --- признаковое пространство п.в.а.}
                 \end{scnindent}
                 \scnitem{задача кластеризации}
                 \begin{scnindent}
@@ -292,7 +292,7 @@
                 \begin{scnindent}
                     \scnsubset{задача}
                     \scnidtf{задача уменьшения размерности признакового пространства}
-                    \scntext{определение}{задача понижения размерности --- это задача построения функции $h : X \to Y$ , сохраняющей заданные соотношения между точками множеств $X$ и $Y$, где $X \subset \mathbb{R}^p$ , $Y = h(X) \subset \mathbb{R}^q$ , $q < p$.}
+                    \scntext{определение}{задача понижения размерности --- это задача построения функции $h : X \to Y$ , сохраняющей заданные соотношения между точками множеств $X$ и $Y$, где $X \subset \mathbb{R}\upperscore{p}$ , $Y \eq h(X) \subset \mathbb{R}\upperscore{q}$ , $q < p$.}
                 \end{scnindent}
                 \scnitem{задача управления}
                 \begin{scnindent}
@@ -428,10 +428,10 @@
     \scnrelfrom{второй домен}{число}
     \scnrelfrom{формула}{
         \begin{equation*}
-            S = \sum_{i=1}^{n} w_ix_i - T
+            S \eq \sum\underscore{i \eq 1}\upperscore{\scnleftcurlbrace n\scnrightcurlbrace} w\underscore{i} x\underscore{i} - T
         \end{equation*}}
     \begin{scnindent}
-        \scntext{примечание}{\textit{n} --- размерность вектора входных значений, $w_i$ --- \textit{i}-тый элемент вектора весовых коэффициентов, $x_i$ --- \textit{i}-тый элемент вектора входных значений, \textit{T} --- пороговое значение.}
+        \scntext{примечание}{\textit{n} --- размерность вектора входных значений, $w\underscore{i}$ --- \textit{i}-тый элемент вектора весовых коэффициентов, $x\underscore{i}$ --- \textit{i}-тый элемент вектора входных значений, \textit{T} --- пороговое значение.}
     \end{scnindent}
 
 \scnheader{выходное значение формального нейрона*}
@@ -644,10 +644,10 @@
 			\scntext{алгоритм}{\\
 				\begin{minipage}{\linewidth}
 					\begin{algorithm}[H]
-						\KwData{$X$ --- данные, $Et$ --- желаемый отклик (метки), $E_m$ --- желаемая ошибка (в соответствии с выбранной функцией потерь)}
+						\KwData{$X$ --- данные, $Et$ --- желаемый отклик (метки), $E\underscore{m}$ --- желаемая ошибка (в соответствии с выбранной функцией потерь)}
 						\KwResult{обученная нейронная сеть \textit{Net}}
 						инициализация весов \textit{W} и порогов \textit{T};\\
-						\Repeat{$E<E_m$}{
+						\Repeat{$E<E\underscore{m}$}{
 							\ForEach{$x \in X$ $\And$ $e \in Et$}{
 								фаза прямого распространения сигнала: вычисляются активации для всех слоев и.н.с.;\\
 								фаза обратного распространения ошибки: вычисляются ошибки для последнего слоя и всех предшествующих слоев;\\
@@ -743,17 +743,12 @@
 				\end{scnindent}
 			\end{scnindent}
 	\end{scnrelfromlist}
-<<<<<<< HEAD
-	\scntext{примечание}{Успешность применения методов оптимизации зависит главным образом от знакомства пользователя с соответствующим алгоритмом (\scncite{Goodfellow2017}).}
-
-=======
 	\scntext{примечание}{Успешность применения методов оптимизации зависит главным образом от знакомства пользователя с соответствующим алгоритмом.}
 	\begin{scnindent}
 		\begin{scnrelfromset}{источник}
 			\scnitem{\scncite{Goodfellow2017}}
 		\end{scnrelfromset}
 	\end{scnindent}
->>>>>>> d1c4df0 (feat(kb): Move part 3.6 to standard)
 
 \scnheader{метод оптимизации\scnrolesign}
     \scniselement{ролевое отношение}
@@ -778,10 +773,10 @@
 			\scnidtf{средняя квадратичная ошибка}
 			\scntext{формула}{
 				\begin{equation*}
-					MSE = \frac{1}{L} \sum_{l=1}^L \sum_{i=1}^m (y_i^l - e_i^l)^2
+                    MSE \eq \frac{1}{L} \sum\underscore{l \eq 1}\upperscore{L} \sum\underscore{i \eq 1}\upperscore{m} (y\underscore{i}\upperscore{l} - e\underscore{i}\upperscore{l})\upperscore{2}
 				\end{equation*}}
             \begin{scnindent}
-                \scntext{примечание}{$y_i^l$ --- прогноз модели, $e_i^l$ --- ожидаемый (эталонный) результат, \textit{m} --- размерность выходного вектора, \textit{L} --- объем обучающей выборки.}
+                \scntext{примечание}{$y\underscore{i}\upperscore{l}$ --- прогноз модели, $e\underscore{i}\upperscore{l}$ --- ожидаемый (эталонный) результат, \textit{m} --- размерность выходного вектора, \textit{L} --- объем обучающей выборки.}
             \end{scnindent}
 		\end{scnindent}
 		\scnitem{BCE}
@@ -790,10 +785,10 @@
 			\scnidtf{бинарная кросс-энтропия}
 			\scntext{формула}{
 				\begin{equation*}
-					BCE = - \sum_{l=1}^L (e^l \log(y^l) + (1 - e^l)\log(1 - y^l))
+                    BCE \eq - \sum\underscore{l \eq 1}\upperscore{L} (e\upperscore{l} \log(y\upperscore{l}) + (1 - e\upperscore{l})\log(1 - y\upperscore{l}))
 				\end{equation*}}
             \begin{scnindent}
-                \scntext{примечание}{$y^l$ --- прогноз модели, $e^l$ --- ожидаемый (эталонный) результат: \textit{0} или \textit{1}, \textit{L} --- объем обучающей выборки.}
+                \scntext{примечание}{$y\upperscore{l}$ --- прогноз модели, $e\upperscore{l}$ --- ожидаемый (эталонный) результат: \textit{0} или \textit{1}, \textit{L} --- объем обучающей выборки.}
             \end{scnindent}
 			\scntext{примечание}{для бинарной кросс-энтропии в выходном слое и.н.с. будет находиться один нейрон}
 		\end{scnindent}
@@ -803,10 +798,10 @@
 			\scnidtf{мультиклассовая кросс-энтропия}
 			\scntext{формула}{
 				\begin{equation*}
-					MCE = - \sum_{l=1}^L \sum_{i=1}^m e_\scnleftcurlbrace~i\scnrightcurlbrace^l \log(y_\scnleftcurlbrace~i\scnrightcurlbrace^l)
-				\end{equation*}}
+                    MCE \eq - \sum\underscore{l \eq 1}\upperscore{L} \sum\underscore{i \eq 1}\upperscore{m} e\underscore{\scnleftcurlbrace i\scnrightcurlbrace\upperscore{l}} \log(y\underscore{\scnleftcurlbrace i\scnrightcurlbrace\upperscore{l}})
+                \end{equation*}}
                 \begin{scnindent}
-                    \scntext{примечание}{$y_\scnleftcurlbrace~i\scnrightcurlbrace^l$ --- прогноз модели, $e_i^l$ --- ожидаемый (эталонный результат), \textit{m} --- размерность выходного вектора.}
+                    \scntext{примечание}{$y\underscore{\scnleftcurlbrace i\scnrightcurlbrace\upperscore{l}}$ --- прогноз модели,  $e\underscore{i\upperscore{l}}$ --- ожидаемый (эталонный результат), \textit{m} --- размерность выходного вектора.}
                 \end{scnindent}
 			\scntext{примечание}{для мультиклассовой кросс-энтропии количество нейронов в выходном слое и.н.с. совпадает с количеством классов}
 		\end{scnindent}
@@ -838,7 +833,7 @@
               \scnidtf{момент}
               \scnidtf{momentum}
               \scntext{пояснение}{\textbf{\textit{моментный параметр}} --- параметр, используемый в процессе обучения для устранения проблемы \scnqqi{застревания} алгоритма обучения в локальных минимумах минимизируемой функции потерь.}
-              \scntext{пояснение}{При обучении и.н.с. частой является ситуация остановки процесса в определенной точке локального минимума без достижения желаемого уровня обобщающей способности и.н.с. Для устранения такого    нежелательного явления вводится дополнительный параметр (момент) позволяющий алгоритму обучения \scnqqi{перескочить} через локальный минимум и продолжить процесс.}
+              \scntext{пояснение}{При обучении и.н.с. частой является ситуация остановки процесса в определенной точке локального минимума без достижения желаемого уровня обобщающей способности и.н.с. Для устранения такого нежелательного явления вводится дополнительный параметр (момент) позволяющий алгоритму обучения \scnqqi{перескочить} через локальный минимум и продолжить процесс.}
          \end{scnindent}
        \scnitem{параметр регуляризации}
          \begin{scnindent}
