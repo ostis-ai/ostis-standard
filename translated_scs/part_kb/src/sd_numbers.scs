@@ -1,9 +1,9 @@
-.system_element_3339
+.system_element_2965
 => nrel_inclusion: [*
 
 	subject_domain_numbers_and_numeric_structures
 	<- subject_domain;
-	-> .system_element_765: 
+	-> .system_element_1835: 
 		number
 	;
 	-> .system_element_112: 
@@ -18,22 +18,22 @@
 		arithmetic_expression;
 		arithmetic_operation;
 		number_pi;
-		.system_element_3340;
-		.system_element_3341;
+		.system_element_2966;
+		.system_element_2967;
 		imaginary_unit;
 		numeric_structure;
 		numeral_system;
 		decimal_numeral_system;
 		binary_numeral_system;
 		hexadecimal_numeral_system;
-		.system_element_3342;
-		.system_element_3343;
-		.system_element_3344;
-		.system_element_3345;
-		.system_element_3346;
-		.system_element_3347
+		.system_element_2968;
+		.system_element_2969;
+		.system_element_2970;
+		.system_element_2971;
+		.system_element_2972;
+		.system_element_2973
 	;
-	-> .system_element_1000: 
+	-> .system_element_748: 
 		nrel_opposite_numbers;
 		nrel_modulus;
 		nrel_sum_of_numbers;
@@ -57,16 +57,16 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3345
+	.system_element_2971
 	=> nrel_idtf: [<p>множество цифр</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<= nrel_inclusion: .system_element_3348;
+	<= nrel_inclusion: .system_element_2974;
 	=> nrel_inclusion: 
-		.system_element_3346;
-		.system_element_3347
+		.system_element_2972;
+		.system_element_2973
 	;
 	=> nrel_explanation: [<p><b><i>цифра</i></b> --- это множество файлов, обозначающих вхождение этой цифры во всевозможные записи чисел с помощью этой цифры.</p>]
 	(*
@@ -114,15 +114,15 @@
 	<= nrel_inclusion: real_number;
 	=> nrel_inclusion: integer;;
 
-	.system_element_3342
+	.system_element_2968
 	=> nrel_idtf: [<p>множество дробей</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
 	=> nrel_inclusion: 
-		.system_element_3343;
-		.system_element_3344
+		.system_element_2969;
+		.system_element_2970
 	;
 	=> nrel_explanation: [<p><b><i>дробь</i></b>  это число, состоящее из одной или нескольких равных частей (долей) единицы</p>]
 	(*
@@ -130,7 +130,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3349
+	.system_element_2975
 	=> nrel_idtf: [<p>множество обыкновенных дробей</p>]
 	(*
 		<- lang_ru;;
@@ -141,13 +141,13 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> nrel_explanation: [<p><b><i>обыкновенная дробь</i></b> - запись <i>рационального числа</i> в виде  или m/n, где n ≠ 0. Горизонтальная или косая черта обозначает знак деления, в результате которого получается частное. Делимое называется числителем дроби, а делитель --- знаменателем.</p>]
+	=> nrel_explanation: [<p><b><i>обыкновенная дробь</i></b> --- запись <i>рационального числа</i> в виде <sup>m</sup>&frasl;<sub>n</sub> или m/n, где n ≠ 0. Горизонтальная или косая черта обозначает знак деления, в результате которого получается частное. Делимое называется числителем дроби, а делитель --- знаменателем.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3344
+	.system_element_2970
 	=> nrel_idtf: [<p>множество десятичных дробей</p>]
 	(*
 		<- lang_ru;;
@@ -190,7 +190,7 @@
 	=> nrel_subdividing: {
 		positive_number;
 		negative_number;
-		.system_element_3350
+		.system_element_2976
 	};
 	=> nrel_explanation: [<p><b><i>действительное число</i></b> --- это множество чисел, получаемое в результате объединения иррациональных и <i>рациональных чисел</i>.</p>]
 	(*
@@ -236,7 +236,7 @@
 	*);;
 
 	nrel_opposite_numbers
-	<- .system_element_3351;
+	<- .system_element_2977;
 	=> nrel_explanation: [<p><b><i>противоположные числа*</i></b> --- <i>отношение</i>, связывающее два числа, одно из которых является <i>отрицательным числом</i>, второе --- <i>положительным</i>, при этом <i>модули*</i> этих чисел <i>равны*</i>.</p>]
 	(*
 		<- lang_ru;;
@@ -294,7 +294,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_232: "file://images/sd_numbers/sum.png"
+	=> .system_element_253: "file://images/sd_numbers/sum.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
@@ -308,12 +308,12 @@
 	*);
 	<- arithmetic_operation;
 	<- quasybinary_relation;
-	=> nrel_explanation: [<p><b><i>произведение*</i></b> --- это <i>арифметическая операция</i>, в результате которой один аргумент складывается столько раз, сколько показывает другой, затем результат складывается столько раз, сколько показывает третий и т.д.Первым компонентом связки отношения <b><i>произведение*</i></b> является <i>множество чисел</i> (множителей), содержащее два или более элемента, вторым компонентом --- <i>число</i>, являющееся результатом произведения.Отдельно отметим, что каждая связка отношения <b><i>произведение*</i></b> вида a = b*c может также трактоваться и как запись о делении чисел, например b = , в связи с чем <i>арифметическая операция</i> деления чисел отдельно не вводится.</p>]
+	=> nrel_explanation: [<p><b><i>произведение*</i></b> --- это <i>арифметическая операция</i>, в результате которой один аргумент складывается столько раз, сколько показывает другой, затем результат складывается столько раз, сколько показывает третий и т.д.Первым компонентом связки отношения <b><i>произведение*</i></b> является <i>множество чисел</i> (множителей), содержащее два или более элемента, вторым компонентом --- <i>число</i>, являющееся результатом произведения.Отдельно отметим, что каждая связка отношения <b><i>произведение*</i></b> вида a = b*c может также трактоваться и как запись о делении чисел, например b = <sup>a</sup>&frasl;<sub>c</sub>, в связи с чем <i>арифметическая операция</i> деления чисел отдельно не вводится.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_232: "file://images/sd_numbers/multiplication.png"
+	=> .system_element_253: "file://images/sd_numbers/multiplication.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
@@ -322,12 +322,12 @@
 	nrel_pow_numbers
 	<- arithmetic_operation;
 	<- binary_relation;
-	=> nrel_explanation: [<p><b><i>возведение в степень*</i></b> --- это <i>арифметическая операция</i>, в результате которой число, называемое основанием степени, умножается само на себя столько раз, каков показатель степени.Первым компонентом связки отношения <b><i>возведение в степень*</i></b> является ориентированная пара, первым компонентом которой является <i>число</i>, которое является основанием степени, вторым --- <i>число</i>, которое является показателем степени.Вторым компонентом связки отношения <b><i>возведение в степень*</i></b> является <i>число</i>, которое является результатом возведения в степень.Отдельно отметим, что каждая связка отношения <b><i>возведение в степень*</i></b> вида a = b^c может также трактоваться и как запись об извлечении корня или взятии логарифма, в связи с чем <i>арифметические операции</i> извлечения корня и взятия логарифма отдельно не вводится.</p>]
+	=> nrel_explanation: [<p><b><i>возведение в степень*</i></b> --- это <i>арифметическая операция</i>, в результате которой число, называемое основанием степени, умножается само на себя столько раз, каков показатель степени.Первым компонентом связки отношения <b><i>возведение в степень*</i></b> является ориентированная пара, первым компонентом которой является <i>число</i>, которое является основанием степени, вторым --- <i>число</i>, которое является показателем степени.Вторым компонентом связки отношения <b><i>возведение в степень*</i></b> является <i>число</i>, которое является результатом возведения в степень.Отдельно отметим, что каждая связка отношения <b><i>возведение в степень*</i></b> вида a = b<sup>c</sup> может также трактоваться и как запись об извлечении корня или взятии логарифма, в связи с чем <i>арифметические операции</i> извлечения корня и взятия логарифма отдельно не вводится.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_232: "file://images/sd_numbers/pow.png"
+	=> .system_element_253: "file://images/sd_numbers/pow.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
@@ -341,7 +341,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_232: "file://images/sd_numbers/more.png"
+	=> .system_element_253: "file://images/sd_numbers/more.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
@@ -360,7 +360,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_232: "file://images/sd_numbers/more_or_equal.png"
+	=> .system_element_253: "file://images/sd_numbers/more_or_equal.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
@@ -374,7 +374,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3340
+	.system_element_2966
 	=> nrel_idtf: [<p>0</p>]
 	(*
 		<- lang_ru;;
@@ -387,7 +387,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3341
+	.system_element_2967
 	=> nrel_idtf: [<p>1</p>]
 	(*
 		<- lang_ru;;

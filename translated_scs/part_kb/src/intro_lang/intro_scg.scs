@@ -1,4 +1,4 @@
-.system_element_3678
+.system_element_3153
 = [*
 	=> nrel_idtf: [<p>Описание SCg-кода</p>]
 	(*
@@ -6,33 +6,33 @@
 		=> nrel_format: format_html;;
 	*);
 	<= .system_element_116: <
-		.system_element_3679;
-		.system_element_3680;
-		.system_element_3681;
-		.system_element_3682;
-		.system_element_3683;
-		.system_element_3684;
-		.system_element_3685;
-		.system_element_3686;
-		.system_element_3687
+		.system_element_3154;
+		.system_element_3155;
+		.system_element_3156;
+		.system_element_3157;
+		.system_element_3158;
+		.system_element_3159;
+		.system_element_3160;
+		.system_element_3161;
+		.system_element_3162
 	>;
-	=> .system_element_1070: 
+	=> .system_element_756: 
 		scg_code;
-		.system_element_3688;
-		.system_element_3689;
-		.system_element_3690;
-		.system_element_3691
+		.system_element_3163;
+		.system_element_3164;
+		.system_element_3165;
+		.system_element_3166
 	;
 	=> .system_element_1: 
 		scg_element;
-		.system_element_3692;
-		.system_element_3693;
-		.system_element_3694;
-		.system_element_3695;
-		.system_element_3696
+		.system_element_3167;
+		.system_element_3168;
+		.system_element_3169;
+		.system_element_3170;
+		.system_element_3171
 	;;
 
-	.system_element_3679
+	.system_element_3154
 	=> nrel_inclusion: [*
 
 		scg_code
@@ -51,7 +51,7 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
-		<- .system_element_3697;
+		<- .system_element_3172;
 		=> nrel_explanation: [<p><i>SCg-код</i> представляет собой способ визуализации <i>sc-текстов</i> (информационных конструкций SC-кода) в виде рисунков этих абстрактных конструкций. Подчеркнем, что абстрактная <i>графовая структура</i> и её рисунок (графическое изображение) --- это не одно и то же даже если они <i>изоморфны</i> друг другу. <b><i>SCg-код</i></b> рассматривается нами как объединение <i>Ядра SCg-кода</i>, обеспечивающего изоморфное графическое изображение любого <i>sc-текста</i>, а также нескольких направлений расширения этого ядра, обеспечивающих повышение компактности и читабельности текстов <i>SCg-кода</i> (<i>sc.g-текстов</i>).</p>]
 		(*
 			<- lang_ru;;
@@ -61,7 +61,7 @@
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
-			=> .system_element_193: .system_element_886;;
+			=> .system_element_180: .system_element_2595;;
 		*);;
 
 		scg_code
@@ -127,27 +127,27 @@
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_377
+		.system_element_358
 		-> {
 			...
 			(*
-				<=> .system_element_151: {
+				<=> .system_element_200: {
 					scg_code;
-					.system_element_3698
+					.system_element_3173
 				};;
 			*);
 			...
 			(*
-				<=> .system_element_151: {
-					.system_element_3699;
-					.system_element_3680
+				<=> .system_element_200: {
+					.system_element_3174;
+					.system_element_3155
 				};;
 			*);
 			...
 			(*
-				<=> .system_element_151: {
-					.system_element_3700;
-					.system_element_3701
+				<=> .system_element_200: {
+					.system_element_3175;
+					.system_element_3176
 				};;
 			*)
 		}
@@ -159,8 +159,8 @@
 			*);;
 		*);;
 
-		.system_element_3702
-		<=> "file://../images/scg/SCg-full.png";
+		.system_element_3177
+		<=> "file://Contents/part_kb/src/images/scg/SCg-full.png";
 		=> nrel_inclusion: .intro_scg_examples
 		(*
 			<- concept_file;;
@@ -168,30 +168,30 @@
 		*);;
 	*];;
 
-	.system_element_3680
+	.system_element_3155
 	=> nrel_inclusion: [*
 
-		.system_element_3703
+		.system_element_3178
 		=> nrel_idtf: [<p>Алфавит sc.g-элементов, графически изображающих sc-элементы^</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
-		<= .system_element_1070: .system_element_3704;
+		<= .system_element_756: .system_element_3179;
 		=> nrel_explanation: [<p><i>Алфавит Ядра SCg-кода</i> взаимно однозначно соответствует <i>Алфавиту SC-кода</i>. Указанное соответствие представлено в файле "Таблица. Алфавит Ядра SCg-кода".</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_3704
-		<=> "file://../images/scg/SCg-core-alphabet.pdf"
+		.system_element_3179
+		<=> "file://Contents/part_kb/src/images/scg/SCg-core-alphabet.pdf"
 		(*
 			<- concept_file;;
 			=> nrel_format: format_pdf;;
 		*);;
 
-		.system_element_3705
+		.system_element_3180
 		=> nrel_idtf: [<p><i>sc.g-элемент</i>, являющийся графическим изображением <i>sc-узла общего вида</i></p>]
 		(*
 			<- lang_ru;;
@@ -203,7 +203,7 @@
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_3706
+		.system_element_3181
 		=> nrel_idtf: [<p><i>sc.g-элемент</i>, являющийся графическим изображением <i>sc-ребра общего вида</i></p>]
 		(*
 			<- lang_ru;;
@@ -215,7 +215,7 @@
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_3707
+		.system_element_3182
 		=> nrel_idtf: [<p><i>sc.g-элемент</i>, являющийся графическим изображением <i>sc-дуги общего вида</i></p>]
 		(*
 			<- lang_ru;;
@@ -227,7 +227,7 @@
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_3708
+		.system_element_3183
 		=> nrel_idtf: [<p><i>sc.g-элемент</i>, являющийся графическим изображением <i>базовой sc-дуги</i></p>]
 		(*
 			<- lang_ru;;
@@ -239,12 +239,12 @@
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_3348
+		.system_element_2974
 		=> nrel_idtf: [<p>sc-узел с содержимым</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
-			<- .system_element_3709;;
+			<- .system_element_3184;;
 		*);
 		=> nrel_idtf: [<p>sc-узел, являющийся знаком внутреннего файла ostis-системы</p>]
 		(*
@@ -257,7 +257,7 @@
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_3710
+		.system_element_3185
 		=> nrel_idtf: [<p>sc.g-узел, имеющий содержимое</p>]
 		(*
 			<- lang_ru;;
@@ -294,7 +294,7 @@
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_3703
+		.system_element_3178
 		=> nrel_note: [<p>Трудно сразу поверить, что на основе такого простого алфавита можно построить удобный и <u>универсальный</u> графовый язык. В рамках <i>Документации Технологии OSTIS</i> мы постараемся Вас в этом убедить. Кроме того, нас не должна настораживать простота алфавита, поскольку человечество имеет большой опыт кодирования, хранения в памяти и передачи по каналам связи самых различных информационных ресурсов, используя алфавит, состоящий только из двух классов элементов --- единиц и нулей.Мы ведем речь о принципиально ином (графовом) способе кодирования информации в <i>компьютерных системах</i>, но стараемся при этом свести это кодирование к достаточно простому алфавиту хотя бы для того, чтобы искусственно не усложнять проблему создания нового поколения компьютеров, основанных на указанном способе кодирования информации.Расширения <i>Ядра SCg-кода</i> рассмотрим как направления перехода от текстов <i>Ядра SCg-кода</i> к более компактным текстам. Но, поскольку это приводит к усложнению <i>Синтаксиса SCg-кода</i> и, в первую очередь, к расширению <i>Алфавита SCg-кода</i>, делать такие расширения необходимо обоснованно с учетом частоты встречаемости в рамках <i>баз знаний ostis-систем</i> соответствующих фрагментов.</p>]
 		(*
 			<- lang_ru;;
@@ -302,43 +302,43 @@
 		*);;
 	*];;
 
-	.system_element_3701
+	.system_element_3176
 	=> nrel_inclusion: [*
 
-		.system_element_3700
+		.system_element_3175
 		=> nrel_explanation: [<p><i>Первое направление синтаксического расширения Ядра SCg-кода</i> --- это <u>приписывание</u> некоторым <b>sc.g-элементам</b> <i>основных sc-идентификаторов*</i> (чаще всего --- строковых идентификаторов, то есть имен) <i>sc-элементов</i> , изображаемых этими <i>sc.g-элементами</i>. Указываемые идентификаторы являются уникальным для каждого идентифицируемого (именуемого) <i>sc.g-элемента</i>. Приписывание <i>sc.g-элементам</i> уникальных идентификаторов дает возможность в рамках одного <i>sc.g-текста</i> дублировать (копировать) некоторые <i>sc.g-узлы</i> при условии, если <u>всем</u> таким копиям будут приписаны соответствующие идентификаторы. Такое дублирование <i>sc.g-узлов</i> является дополнительным средствам <u>наглядного</u> размещения <i>sc.g-текстов</i>. Кроме того, приписывание <i>sc.g-элементу</i> соответствующего ему основного (уникального) <i>sc-идентификатора*</i> представляет собой более компактный вариант изображения <i>sc.g-текстов</i>.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_3711
-		<=> "file://../images/scg/scg_transf1.png"
+		.system_element_3186
+		<=> "file://Contents/part_kb/src/images/scg/scg_transf1.png"
 		(*
 			<- concept_file;;
 			=> nrel_format: format_png;;
 		*);
-		<- .system_element_233;
+		<- .system_element_254;
 		=> nrel_explanation: [<p>Здесь (в левом нижнем углу приведенного sc.g-текста) представлен <i>sc.g-узел общего вида</i>, изображающий <i>sc-узел общего вида</i>, которому соответствует <i>основной sc-идентификатор*</i> в виде строки "<b><i>ei</i></b>"</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
-		=> .system_element_3712: "file://../images/scg/scg_transf2.png"
+		=> .system_element_3187: "file://Contents/part_kb/src/images/scg/scg_transf2.png"
 		(*
 			<- concept_file;;
 			=> nrel_format: format_png;;
-			<- .system_element_233;;
+			<- .system_element_254;;
 			=> nrel_explanation: [<p><i>sc.g-узлу общего вида</i> изображающему <i>sc-узел</i>, внешним идентификатором которого является строка "<i>основной sc-идентификатор*</i>" и который, соответственно является знаком <i>бинарного ориентированного отношения</i>, каждая <i>пара</i> которого связывает идентифицируемый <i>sc-элемент</i> с его основным внешним sc-идентификатором, приписывается указанный внешний идентификатор изображаемого им <i>sc-элемента</i>.</p>]
 			(*
 				<- lang_ru;;
 				=> nrel_format: format_html;;
 			*);;
-			=> .system_element_3712: "file://../images/scg/scg_transf3.png"
+			=> .system_element_3187: "file://Contents/part_kb/src/images/scg/scg_transf3.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				<- .system_element_233;;
+				<- .system_element_254;;
 				=> nrel_explanation: [<p>В результате данной трансформации исходный <b><i>sc.g-текст</i></b> трансформируется в один <i>sc.g-общего вида</i>, которому приписывается <i>основной sc-идентификатор</i> "<i><b>ei</b></i>".</p>]
 				(*
 					<- lang_ru;;
@@ -347,7 +347,7 @@
 			*);;
 		*);;
 
-		.system_element_3712
+		.system_element_3187
 		=> nrel_idtf: [<p>Бинарное ориентированное отношение, каждая пара которого связывает исходный вид трансформируемого sc.g-текста и результат этой трансформации</p>]
 		(*
 			<- lang_ru;;
@@ -359,28 +359,28 @@
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_3481
+		.system_element_2979
 		=> nrel_idtf: [<p>синтаксическая трансформация информационной конструкции*</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
-		=> nrel_inclusion: .system_element_3713
+		=> nrel_inclusion: .system_element_3188
 		(*
-			=> nrel_inclusion: .system_element_3712;;
+			=> nrel_inclusion: .system_element_3187;;
 		*);;
 	*]
 ;;
 
-	.system_element_3714
+	.system_element_3189
 	=> nrel_inclusion: [*
 
-		.system_element_3715
+		.system_element_3190
 		=> nrel_explanation: [<p><i>Второе направление расширения Ядра SCg-кода</i> --- это уточнение типологии <i>константных постоянных сущностей</i> и расширение <i>Алфавита Ядра SCg-кода</i>, позволяющее типологию <i>константных постоянных сущностей</i> привести в соответствие с синтаксической типологией новых вводимых элементов <i>Алфавита SCg-кода</i>. Рассмотрим подробнее sc.g-элементы, знаки <i>константных постоянных сущностей</i> различного вида. Графическим признаком <i>константных постоянных sc-узлов</i> в конструкциях SCg-кода является их изображение в виде <u>окружностей</u> диаметра 3d, где d --- диаметр sc.g-узла общего вида. Такое изображение является более компактной записью факта принадлежности заданного sc-узла (назовем его <b>vi</b>) классу sc-констант и классу обозначений постоянных сущностей. Запись этого факта в <i>Ядре SCg-кода</i> потребует (1) явного изображения sc-узла, обозначающего класс всевозможных константных sc-элементов (класс <i>sc-констант</i>), (2) явного изображения базовой sc-дуги, соединяющего изображение sc-узла, обозначающего класс sc-констант, с изображением заданного константного sc-узла, (3) явного изображение sc-узла, обозначающего класс всевозможных sc-элементов, обозначающих <i>постоянные сущности</i>, (4) явного изображения базовой sc-дуги, соединяющего изображение sc-узла, обозначающего класс обозначений <i>постоянных сущностей</i> с изображением рассматриваемого sc-узла <b>vi</b>.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
-			=> .system_element_193: .system_element_3716;;
+			=> .system_element_180: .system_element_3191;;
 		*);
 		=> nrel_explanation: [<p>Важное место среди константных постоянных сущностей занимают <i>константные постоянные пары принадлежности</i>, обозначаемое соответствующими <i>sc.g-дугами</i>. Такие пары принадлежности и обозначающие их sc.g-дуги бывают позитивными, негативными и нечеткими. Константная постоянная позитивная sc.g-дуга принадлежности есть ничто иное, как <i>базовая sc.g-дуга</i>. Константная постоянная негативная sc.g-дуга принадлежности изображается в виде <i>базовой sc.g-дуги</i>, перечеркнутой штриховыми черточками. Константная постоянная нечёткая sc.g-дуга принадлежности изображается в виде недочеркнутой <i>базовой sc.g-дуги</i>, с каждой стороны которой отображаются штрихи, по длине равные половине от длины штрихов, которыми перечеркнута <i>константная постоянная негативная sc.g-дуга</i>.</p>]
 		(*
@@ -397,9 +397,9 @@
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
-			=> .system_element_193: .system_element_3717;;
+			=> .system_element_180: .system_element_3192;;
 		*);
-		=> nrel_explanation: [<p>Общепринятая запись данного факта выглядит следующим образом:"<i>sc-константа</i> ∋ <b>vi</b>; <i>постоянная сущность</i> ∋ <b>v_i</b>."
+		=> nrel_explanation: [<p>Общепринятая запись данного факта выглядит следующим образом:"<i>sc-константа</i> ∋ <b>vi</b>; <i>постоянная сущность</i> ∋ <b>v</b>."
 		<ul>
 			<li> <i>Константные постоянные sc-ребра</i> в конструкциях SCg-кода изображаются в виде двойной линии, каждая из которых имеет толщину примерно d/7, а расстояние между ними равно примерно 3d/7.
 			<li> <i>Константные постоянные sc-дуги</i> изображаются в виде такой же двойной линии, но со стрелочкой. Все <i>базовые sc-дуги</i>, а также все sc-узлы, имеющие содержимое, по определению являются <i>константными постоянными sc-элементами</i>.
@@ -408,7 +408,7 @@
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
-			=> .system_element_193: .system_element_3718;;
+			=> .system_element_180: .system_element_3193;;
 		*);
 		=> nrel_explanation: [<p>Аналогичным образом вводятся:
 		<ul>
@@ -423,23 +423,23 @@
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
-			=> .system_element_193: .system_element_3718;;
+			=> .system_element_180: .system_element_3193;;
 		*);;
 
-		.system_element_3719
-		<=> "file://../images/scg/scg2ex.png"
+		.system_element_3194
+		<=> "file://Contents/part_kb/src/images/scg/scg2ex.png"
 		(*
 			<- concept_file;;
 			=> nrel_format: format_png;;
 		*);;
 
-		.system_element_3720
-		<=> .system_element_151: {
-			"file://../images/scg/scg2_ex1.png"
+		.system_element_3195
+		<=> .system_element_200: {
+			"file://Contents/part_kb/src/images/scg/scg2_ex1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/scg2_ex1_1.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/scg2_ex1_1.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -450,11 +450,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/nodes/const_perm/scg_const_perm_class1.png"
+			"file://Contents/part_kb/src/images/scg/nodes/const_perm/scg_const_perm_class1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/nodes/const_perm/scg_const_perm_class2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/nodes/const_perm/scg_const_perm_class2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -465,11 +465,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/nodes/const_perm/scg_const_perm_class_of_classes1.png"
+			"file://Contents/part_kb/src/images/scg/nodes/const_perm/scg_const_perm_class_of_classes1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/nodes/const_perm/scg_const_perm_class_of_classes2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/nodes/const_perm/scg_const_perm_class_of_classes2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -480,11 +480,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/nodes/const_perm/scg_const_perm_norole1.png"
+			"file://Contents/part_kb/src/images/scg/nodes/const_perm/scg_const_perm_norole1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/nodes/const_perm/scg_const_perm_norole2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/nodes/const_perm/scg_const_perm_norole2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -495,11 +495,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/nodes/const_perm/scg_const_perm_role1.png"
+			"file://Contents/part_kb/src/images/scg/nodes/const_perm/scg_const_perm_role1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/nodes/const_perm/scg_const_perm_role2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/nodes/const_perm/scg_const_perm_role2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -510,11 +510,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/nodes/const_perm/scg_const_perm_structure1.png"
+			"file://Contents/part_kb/src/images/scg/nodes/const_perm/scg_const_perm_structure1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/nodes/const_perm/scg_const_perm_structure2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/nodes/const_perm/scg_const_perm_structure2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -525,11 +525,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/nodes/const_perm/scg_const_perm_primary_entity1.png"
+			"file://Contents/part_kb/src/images/scg/nodes/const_perm/scg_const_perm_primary_entity1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/nodes/const_perm/scg_const_perm_primary_entity2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/nodes/const_perm/scg_const_perm_primary_entity2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -540,11 +540,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/nodes/const_perm/scg_const_perm_tuple1.png"
+			"file://Contents/part_kb/src/images/scg/nodes/const_perm/scg_const_perm_tuple1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/nodes/const_perm/scg_const_perm_tuple2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/nodes/const_perm/scg_const_perm_tuple2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -555,11 +555,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/arcs/const/scg_const_perm_noorien1.png"
+			"file://Contents/part_kb/src/images/scg/arcs/const/scg_const_perm_noorien1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/arcs/const/scg_const_perm_noorien2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/arcs/const/scg_const_perm_noorien2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -570,11 +570,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/arcs/const/scg_const_perm_orient1.png"
+			"file://Contents/part_kb/src/images/scg/arcs/const/scg_const_perm_orient1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/arcs/const/scg_const_perm_orient2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/arcs/const/scg_const_perm_orient2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -585,11 +585,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/arcs/const/scg_const_perm_positive1.png"
+			"file://Contents/part_kb/src/images/scg/arcs/const/scg_const_perm_positive1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/arcs/const/scg_const_perm_positive2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/arcs/const/scg_const_perm_positive2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -600,11 +600,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/arcs/const/scg_const_perm_negative1.png"
+			"file://Contents/part_kb/src/images/scg/arcs/const/scg_const_perm_negative1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/arcs/const/scg_const_perm_negative2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/arcs/const/scg_const_perm_negative2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -615,11 +615,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/arcs/const/scg_const_perm_fuzzy1.png"
+			"file://Contents/part_kb/src/images/scg/arcs/const/scg_const_perm_fuzzy1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/arcs/const/scg_const_perm_fuzzy2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/arcs/const/scg_const_perm_fuzzy2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -632,13 +632,13 @@
 			*)
 		};;
 
-		.system_element_3721
-		<=> .system_element_151: {
-			"file://../images/scg/examples/scg_example_triangle.png"
+		.system_element_3196
+		<=> .system_element_200: {
+			"file://Contents/part_kb/src/images/scg/examples/scg_example_triangle.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				<- .system_element_231: .system_element_233
+				<- .system_element_252: .system_element_254
 				(*
 					=> nrel_explanation: [<p>Данный sc.g-текст содержит следующую информацию: Сущности <i>Треугольник ABC</i> и <i>Треугольник CDE</i> являются треугольниками (принадлежат классу <i>треугольников</i>). При этом известно, что площадь <i>Треугольника CDE</i> в 4 раза больше, чем площадь <i>Треугольника ABC</i>, но конкретные значения ллощадей не известны;
 					<li> Сущность <i>Отрезок DE</i> является отрезком (принадлежит классу <i>отрезков</i>) и является стороной <i>Треугольника CDE</i>. Кроме того, у <i>Отрезка DE</i> есть длина, измерение которой в сантиметрах составляет 5. Обратите внимание, что в данном случае для упрощения понимания использовано бинарное отношение <i>длина*</i>, которое является <i>неосновным понятием</i> и в базе знаний заменяется на <i>базовую sc-дугу</i>, связывающую величину как класс эквивалентности с конкретной сущностью, входящей в данный класс, в данном случае --- <i>Отрезок DE</i>;
@@ -650,7 +650,7 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/examples/scg_example_alice.png"
+			"file://Contents/part_kb/src/images/scg/examples/scg_example_alice.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
@@ -663,24 +663,24 @@
 		};;
 	*];;
 
-	.system_element_3722
+	.system_element_3197
 	=> nrel_inclusion: [*
 
-		.system_element_3723
+		.system_element_3198
 		=> nrel_explanation: [<p><i>Третье направление расширения Ядра SCg-кода</i> --- это расширение его алфавита путем введения дополнительных sc.g-элементов, обозначающих <i>константные временные сущности</i> различного вида. Признаком sc.g-элементов, обозначающих <i>константные временные сущности</i> являются точечные линии (линии, состоящие из точек, размер которых равен размеру изображаемой линии и которые близко расположены друг к другу на расстоянии, равном половине их размера), с помощью которых рисуются окружности при изображении sc-узлов, а также линии при изображении sc-коннекторов.Результатом <i>Третьего направления расширения Ядра SCg-кода</i> является введение следующих видов sc.g-элементов.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
-			=> .system_element_193: .system_element_3724;;
+			=> .system_element_180: .system_element_3199;;
 		*);;
 
-		.system_element_3724
-		<=> .system_element_151: {
-			"file://../images/scg/nodes/const_temp/scg_const_temp_general_view1.png"
+		.system_element_3199
+		<=> .system_element_200: {
+			"file://Contents/part_kb/src/images/scg/nodes/const_temp/scg_const_temp_general_view1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/nodes/const_temp/scg_const_temp_general_view2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/nodes/const_temp/scg_const_temp_general_view2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -691,11 +691,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/nodes/const_temp/scg_const_temp_class1.png"
+			"file://Contents/part_kb/src/images/scg/nodes/const_temp/scg_const_temp_class1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/nodes/const_temp/scg_const_temp_class2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/nodes/const_temp/scg_const_temp_class2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -706,11 +706,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/nodes/const_temp/scg_const_temp_class_of_classes1.png"
+			"file://Contents/part_kb/src/images/scg/nodes/const_temp/scg_const_temp_class_of_classes1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/nodes/const_temp/scg_const_temp_class_of_classes2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/nodes/const_temp/scg_const_temp_class_of_classes2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -721,11 +721,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/nodes/const_temp/scg_const_temp_norole1.png"
+			"file://Contents/part_kb/src/images/scg/nodes/const_temp/scg_const_temp_norole1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/nodes/const_temp/scg_const_temp_norole2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/nodes/const_temp/scg_const_temp_norole2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -736,11 +736,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/nodes/const_temp/scg_const_temp_role1.png"
+			"file://Contents/part_kb/src/images/scg/nodes/const_temp/scg_const_temp_role1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/nodes/const_temp/scg_const_temp_role2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/nodes/const_temp/scg_const_temp_role2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -751,11 +751,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/nodes/const_temp/scg_const_temp_structure1.png"
+			"file://Contents/part_kb/src/images/scg/nodes/const_temp/scg_const_temp_structure1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/nodes/const_temp/scg_const_temp_structure2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/nodes/const_temp/scg_const_temp_structure2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -766,11 +766,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/nodes/const_temp/scg_const_temp_primary_entity1.png"
+			"file://Contents/part_kb/src/images/scg/nodes/const_temp/scg_const_temp_primary_entity1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/nodes/const_temp/scg_const_temp_primary_entity2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/nodes/const_temp/scg_const_temp_primary_entity2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -781,11 +781,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/nodes/const_temp/scg_const_temp_tuple1.png"
+			"file://Contents/part_kb/src/images/scg/nodes/const_temp/scg_const_temp_tuple1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/nodes/const_temp/scg_const_temp_tuple2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/nodes/const_temp/scg_const_temp_tuple2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -796,11 +796,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/arcs/const/scg_const_temp_noorien1.png"
+			"file://Contents/part_kb/src/images/scg/arcs/const/scg_const_temp_noorien1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/arcs/const/scg_const_temp_noorien2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/arcs/const/scg_const_temp_noorien2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -811,11 +811,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/arcs/const/scg_const_temp_orient1.png"
+			"file://Contents/part_kb/src/images/scg/arcs/const/scg_const_temp_orient1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/arcs/const/scg_const_temp_orient2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/arcs/const/scg_const_temp_orient2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -826,11 +826,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/arcs/const/scg_const_temp_positive1.png"
+			"file://Contents/part_kb/src/images/scg/arcs/const/scg_const_temp_positive1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/arcs/const/scg_const_temp_positive2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/arcs/const/scg_const_temp_positive2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -841,11 +841,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/arcs/const/scg_const_temp_negative1.png"
+			"file://Contents/part_kb/src/images/scg/arcs/const/scg_const_temp_negative1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/arcs/const/scg_const_temp_negative2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/arcs/const/scg_const_temp_negative2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -856,11 +856,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/arcs/const/scg_const_temp_fuzzy1.png"
+			"file://Contents/part_kb/src/images/scg/arcs/const/scg_const_temp_fuzzy1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/arcs/const/scg_const_temp_fuzzy2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/arcs/const/scg_const_temp_fuzzy2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -874,10 +874,10 @@
 		};;
 	*];;
 
-	.system_element_3725
+	.system_element_3200
 	=> nrel_inclusion: [*
 
-		.system_element_3726
+		.system_element_3201
 		=> nrel_explanation: [<p><i>Четвёртое направление расширения Ядра SCg-кода</i> --- это расширение его алфавита путем введения дополнительных элементов, обозначающих <i>переменные постоянные сущности</i> различного вида. Признаком sc.g-элементов, обозначающих сущности указанного класса, являются квадратики для изображения обозначений <i>переменных постоянных сущностей</i>, не являющихся бинарными связями, а также пунктирные и штрих-пунктирные линии для изображения <i>переменных постоянных бинарных связей</i>.</p>]
 		(*
 			<- lang_ru;;
@@ -888,19 +888,19 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
-		=> nrel_explanation: [<p><i>Переменная постоянная сущность первого уровня</i> (первичная sc-переменная), не являющаяся бинарной связью --- это переменная, каждым значением которой является <i>константная постоянная сущность</i>, не являющаяся бинарной связью. Такая переменная изображается квадратиком, который ориентирован по вертикали и горизонтали.<i>Переменная постоянная сущность второго уровня</i> (вторичная sc-переменная), не являющаяся бинарной связью, изображается квадратиком, повернутым на 45^.Указанная выше семантика таких изображений приписывается <u>по умолчанию</u>. Это означает, что, если обозначаемая sc-переменная имеет более сложную структуру области её значений (является sc-переменной третьего и выше уровня или sc-переменной, значения которой имеют различный логический уровень), то эта область должна быть специфицирована явно, при этом такая sc-переменная в SCg-коде изображается так же, как первичная sc-переменная.</p>]
+		=> nrel_explanation: [<p><i>Переменная постоянная сущность первого уровня</i> (первичная sc-переменная), не являющаяся бинарной связью --- это переменная, каждым значением которой является <i>константная постоянная сущность</i>, не являющаяся бинарной связью. Такая переменная изображается квадратиком, который ориентирован по вертикали и горизонтали.<i>Переменная постоянная сущность второго уровня</i> (вторичная sc-переменная), не являющаяся бинарной связью, изображается квадратиком, повернутым на 45<sup></sup>.Указанная выше семантика таких изображений приписывается <u>по умолчанию</u>. Это означает, что, если обозначаемая sc-переменная имеет более сложную структуру области её значений (является sc-переменной третьего и выше уровня или sc-переменной, значения которой имеют различный логический уровень), то эта область должна быть специфицирована явно, при этом такая sc-переменная в SCg-коде изображается так же, как первичная sc-переменная.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_3727
-		<=> .system_element_151: {
-			"file://../images/scg/nodes/var_perm/scg_var_perm_general_view1.png"
+		.system_element_3202
+		<=> .system_element_200: {
+			"file://Contents/part_kb/src/images/scg/nodes/var_perm/scg_var_perm_general_view1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/nodes/var_perm/scg_var_perm_general_view2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/nodes/var_perm/scg_var_perm_general_view2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -911,11 +911,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/nodes/var_perm/scg_var_perm_class1.png"
+			"file://Contents/part_kb/src/images/scg/nodes/var_perm/scg_var_perm_class1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/nodes/var_perm/scg_var_perm_class2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/nodes/var_perm/scg_var_perm_class2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -926,11 +926,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/nodes/var_perm/scg_var_perm_class_of_classes1.png"
+			"file://Contents/part_kb/src/images/scg/nodes/var_perm/scg_var_perm_class_of_classes1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/nodes/var_perm/scg_var_perm_class_of_classes2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/nodes/var_perm/scg_var_perm_class_of_classes2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -941,11 +941,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/nodes/var_perm/scg_var_perm_norole1.png"
+			"file://Contents/part_kb/src/images/scg/nodes/var_perm/scg_var_perm_norole1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/nodes/var_perm/scg_var_perm_norole2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/nodes/var_perm/scg_var_perm_norole2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -956,11 +956,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/nodes/var_perm/scg_var_perm_role1.png"
+			"file://Contents/part_kb/src/images/scg/nodes/var_perm/scg_var_perm_role1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/nodes/var_perm/scg_var_perm_role2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/nodes/var_perm/scg_var_perm_role2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -971,11 +971,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/nodes/var_perm/scg_var_perm_structure1.png"
+			"file://Contents/part_kb/src/images/scg/nodes/var_perm/scg_var_perm_structure1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/nodes/var_perm/scg_var_perm_structure2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/nodes/var_perm/scg_var_perm_structure2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -986,11 +986,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/nodes/var_perm/scg_var_perm_primary_entity1.png"
+			"file://Contents/part_kb/src/images/scg/nodes/var_perm/scg_var_perm_primary_entity1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/nodes/var_perm/scg_var_perm_primary_entity2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/nodes/var_perm/scg_var_perm_primary_entity2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1001,11 +1001,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/nodes/var_perm/scg_var_perm_tuple1.png"
+			"file://Contents/part_kb/src/images/scg/nodes/var_perm/scg_var_perm_tuple1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/nodes/var_perm/scg_var_perm_tuple2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/nodes/var_perm/scg_var_perm_tuple2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1016,11 +1016,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/arcs/var/scg_var_perm_noorien1.png"
+			"file://Contents/part_kb/src/images/scg/arcs/var/scg_var_perm_noorien1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/arcs/var/scg_var_perm_noorien2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/arcs/var/scg_var_perm_noorien2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1031,11 +1031,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/arcs/var/scg_var_perm_orient1.png"
+			"file://Contents/part_kb/src/images/scg/arcs/var/scg_var_perm_orient1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/arcs/var/scg_var_perm_orient2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/arcs/var/scg_var_perm_orient2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1046,11 +1046,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/arcs/var/scg_var_perm_positive1.png"
+			"file://Contents/part_kb/src/images/scg/arcs/var/scg_var_perm_positive1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/arcs/var/scg_var_perm_positive2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/arcs/var/scg_var_perm_positive2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1061,11 +1061,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/arcs/var/scg_var_perm_negative1.png"
+			"file://Contents/part_kb/src/images/scg/arcs/var/scg_var_perm_negative1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/arcs/var/scg_var_perm_negative2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/arcs/var/scg_var_perm_negative2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1076,11 +1076,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/arcs/var/scg_var_perm_fuzzy1.png"
+			"file://Contents/part_kb/src/images/scg/arcs/var/scg_var_perm_fuzzy1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/arcs/var/scg_var_perm_fuzzy2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/arcs/var/scg_var_perm_fuzzy2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1091,11 +1091,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/nodes/metavar_perm/scg_metavar_perm_general_view1.png"
+			"file://Contents/part_kb/src/images/scg/nodes/metavar_perm/scg_metavar_perm_general_view1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/nodes/metavar_perm/scg_metavar_perm_general_view2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/nodes/metavar_perm/scg_metavar_perm_general_view2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1106,11 +1106,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/nodes/metavar_perm/scg_metavar_perm_class1.png"
+			"file://Contents/part_kb/src/images/scg/nodes/metavar_perm/scg_metavar_perm_class1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/nodes/metavar_perm/scg_metavar_perm_class2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/nodes/metavar_perm/scg_metavar_perm_class2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1121,11 +1121,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/nodes/metavar_perm/scg_metavar_perm_class_of_classes1.png"
+			"file://Contents/part_kb/src/images/scg/nodes/metavar_perm/scg_metavar_perm_class_of_classes1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/nodes/metavar_perm/scg_metavar_perm_class_of_classes2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/nodes/metavar_perm/scg_metavar_perm_class_of_classes2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1136,11 +1136,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/nodes/metavar_perm/scg_metavar_perm_norole1.png"
+			"file://Contents/part_kb/src/images/scg/nodes/metavar_perm/scg_metavar_perm_norole1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/nodes/metavar_perm/scg_metavar_perm_norole2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/nodes/metavar_perm/scg_metavar_perm_norole2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1151,11 +1151,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/nodes/metavar_perm/scg_metavar_perm_role1.png"
+			"file://Contents/part_kb/src/images/scg/nodes/metavar_perm/scg_metavar_perm_role1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/nodes/metavar_perm/scg_metavar_perm_role2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/nodes/metavar_perm/scg_metavar_perm_role2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1166,11 +1166,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/nodes/metavar_perm/scg_metavar_perm_structure1.png"
+			"file://Contents/part_kb/src/images/scg/nodes/metavar_perm/scg_metavar_perm_structure1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/nodes/metavar_perm/scg_metavar_perm_structure2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/nodes/metavar_perm/scg_metavar_perm_structure2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1181,11 +1181,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/nodes/metavar_perm/scg_metavar_perm_primary_entity1.png"
+			"file://Contents/part_kb/src/images/scg/nodes/metavar_perm/scg_metavar_perm_primary_entity1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/nodes/metavar_perm/scg_metavar_perm_primary_entity2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/nodes/metavar_perm/scg_metavar_perm_primary_entity2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1196,11 +1196,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/nodes/metavar_perm/scg_metavar_perm_tuple1.png"
+			"file://Contents/part_kb/src/images/scg/nodes/metavar_perm/scg_metavar_perm_tuple1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/nodes/metavar_perm/scg_metavar_perm_tuple2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/nodes/metavar_perm/scg_metavar_perm_tuple2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1211,11 +1211,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/arcs/meta/scg_metavar_perm_noorien1.png"
+			"file://Contents/part_kb/src/images/scg/arcs/meta/scg_metavar_perm_noorien1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/arcs/meta/scg_metavar_perm_noorien2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/arcs/meta/scg_metavar_perm_noorien2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1226,11 +1226,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/arcs/meta/scg_metavar_perm_orient1.png"
+			"file://Contents/part_kb/src/images/scg/arcs/meta/scg_metavar_perm_orient1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/arcs/meta/scg_metavar_perm_orient2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/arcs/meta/scg_metavar_perm_orient2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1241,11 +1241,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/arcs/meta/scg_metavar_perm_positive1.png"
+			"file://Contents/part_kb/src/images/scg/arcs/meta/scg_metavar_perm_positive1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/arcs/meta/scg_metavar_perm_positive2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/arcs/meta/scg_metavar_perm_positive2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1256,11 +1256,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/arcs/meta/scg_metavar_perm_negative1.png"
+			"file://Contents/part_kb/src/images/scg/arcs/meta/scg_metavar_perm_negative1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/arcs/meta/scg_metavar_perm_negative2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/arcs/meta/scg_metavar_perm_negative2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1271,11 +1271,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/arcs/meta/scg_metavar_perm_fuzzy1.png"
+			"file://Contents/part_kb/src/images/scg/arcs/meta/scg_metavar_perm_fuzzy1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/arcs/meta/scg_metavar_perm_fuzzy2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/arcs/meta/scg_metavar_perm_fuzzy2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1289,23 +1289,23 @@
 		};;
 	*];;
 
-	.system_element_3728
+	.system_element_3203
 	=> nrel_inclusion: [*
 
-		.system_element_3729
+		.system_element_3204
 		=> nrel_explanation: [<p><i>Пятое направление расширения Ядра SCg-кода</i> --- это расширение его алфавита путем введения дополнительных <i>sc.g-элементов</i>, обозначающих <i>переменные временные сущности</i> различного вида. Указанные дополнительные <i>sc.g-элементы</i> аналогичны тем, которые введены в рамках <i>Четвертого направления расширения Ядра SCg-кода</i>, и отличаются только тем, что в <i>Пятом направлении расширении Ядра SCg-кода</i> речь идёт о переменных <u>временных</u> сущностях, а в <i>Четвертом направлении расширения Ядра SCg-кода</i> --- о переменных <u>постоянных</u> сущностях.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_3730
-		<=> .system_element_151: {
-			"file://../images/scg/nodes/var_temp/scg_var_temp_general_view1.png"
+		.system_element_3205
+		<=> .system_element_200: {
+			"file://Contents/part_kb/src/images/scg/nodes/var_temp/scg_var_temp_general_view1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/nodes/var_temp/scg_var_temp_general_view2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/nodes/var_temp/scg_var_temp_general_view2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1316,11 +1316,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/nodes/var_temp/scg_var_temp_class1.png"
+			"file://Contents/part_kb/src/images/scg/nodes/var_temp/scg_var_temp_class1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/nodes/var_temp/scg_var_temp_class2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/nodes/var_temp/scg_var_temp_class2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1331,11 +1331,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/nodes/var_temp/scg_var_temp_class_of_classes1.png"
+			"file://Contents/part_kb/src/images/scg/nodes/var_temp/scg_var_temp_class_of_classes1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/nodes/var_temp/scg_var_temp_class_of_classes2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/nodes/var_temp/scg_var_temp_class_of_classes2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1346,11 +1346,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/nodes/var_temp/scg_var_temp_norole1.png"
+			"file://Contents/part_kb/src/images/scg/nodes/var_temp/scg_var_temp_norole1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/nodes/var_temp/scg_var_temp_norole2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/nodes/var_temp/scg_var_temp_norole2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1361,11 +1361,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/nodes/var_temp/scg_var_temp_role1.png"
+			"file://Contents/part_kb/src/images/scg/nodes/var_temp/scg_var_temp_role1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/nodes/var_temp/scg_var_temp_role2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/nodes/var_temp/scg_var_temp_role2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1376,11 +1376,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/nodes/var_temp/scg_var_temp_structure1.png"
+			"file://Contents/part_kb/src/images/scg/nodes/var_temp/scg_var_temp_structure1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/nodes/var_temp/scg_var_temp_structure2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/nodes/var_temp/scg_var_temp_structure2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1391,11 +1391,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/nodes/var_temp/scg_var_temp_primary_entity1.png"
+			"file://Contents/part_kb/src/images/scg/nodes/var_temp/scg_var_temp_primary_entity1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/nodes/var_temp/scg_var_temp_primary_entity2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/nodes/var_temp/scg_var_temp_primary_entity2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1406,11 +1406,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/nodes/var_temp/scg_var_temp_tuple1.png"
+			"file://Contents/part_kb/src/images/scg/nodes/var_temp/scg_var_temp_tuple1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/nodes/var_temp/scg_var_temp_tuple2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/nodes/var_temp/scg_var_temp_tuple2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1421,11 +1421,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/arcs/var/scg_var_temp_noorien1.png"
+			"file://Contents/part_kb/src/images/scg/arcs/var/scg_var_temp_noorien1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/arcs/var/scg_var_temp_noorien2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/arcs/var/scg_var_temp_noorien2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1436,11 +1436,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/arcs/var/scg_var_temp_orient1.png"
+			"file://Contents/part_kb/src/images/scg/arcs/var/scg_var_temp_orient1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/arcs/var/scg_var_temp_orient2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/arcs/var/scg_var_temp_orient2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1451,11 +1451,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/arcs/var/scg_var_temp_positive1.png"
+			"file://Contents/part_kb/src/images/scg/arcs/var/scg_var_temp_positive1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/arcs/var/scg_var_temp_positive2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/arcs/var/scg_var_temp_positive2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1466,11 +1466,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/arcs/var/scg_var_temp_negative1.png"
+			"file://Contents/part_kb/src/images/scg/arcs/var/scg_var_temp_negative1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/arcs/var/scg_var_temp_negative2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/arcs/var/scg_var_temp_negative2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1481,11 +1481,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/arcs/var/scg_var_temp_fuzzy1.png"
+			"file://Contents/part_kb/src/images/scg/arcs/var/scg_var_temp_fuzzy1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/arcs/var/scg_var_temp_fuzzy2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/arcs/var/scg_var_temp_fuzzy2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1496,11 +1496,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/nodes/metavar_temp/scg_metavar_temp_general_view1.png"
+			"file://Contents/part_kb/src/images/scg/nodes/metavar_temp/scg_metavar_temp_general_view1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/nodes/metavar_temp/scg_metavar_temp_general_view2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/nodes/metavar_temp/scg_metavar_temp_general_view2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1511,11 +1511,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/nodes/metavar_temp/scg_metavar_temp_class1.png"
+			"file://Contents/part_kb/src/images/scg/nodes/metavar_temp/scg_metavar_temp_class1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/nodes/metavar_temp/scg_metavar_temp_class2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/nodes/metavar_temp/scg_metavar_temp_class2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1526,11 +1526,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/nodes/metavar_temp/scg_metavar_temp_class_of_classes1.png"
+			"file://Contents/part_kb/src/images/scg/nodes/metavar_temp/scg_metavar_temp_class_of_classes1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/nodes/metavar_temp/scg_metavar_temp_class_of_classes2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/nodes/metavar_temp/scg_metavar_temp_class_of_classes2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1541,11 +1541,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/nodes/metavar_temp/scg_metavar_temp_norole1.png"
+			"file://Contents/part_kb/src/images/scg/nodes/metavar_temp/scg_metavar_temp_norole1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/nodes/metavar_temp/scg_metavar_temp_norole2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/nodes/metavar_temp/scg_metavar_temp_norole2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1556,11 +1556,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/nodes/metavar_temp/scg_metavar_temp_role1.png"
+			"file://Contents/part_kb/src/images/scg/nodes/metavar_temp/scg_metavar_temp_role1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/nodes/metavar_temp/scg_metavar_temp_role2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/nodes/metavar_temp/scg_metavar_temp_role2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1571,11 +1571,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/nodes/metavar_temp/scg_metavar_temp_structure1.png"
+			"file://Contents/part_kb/src/images/scg/nodes/metavar_temp/scg_metavar_temp_structure1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/nodes/metavar_temp/scg_metavar_temp_structure2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/nodes/metavar_temp/scg_metavar_temp_structure2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1586,11 +1586,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/nodes/metavar_temp/scg_metavar_temp_primary_entity1.png"
+			"file://Contents/part_kb/src/images/scg/nodes/metavar_temp/scg_metavar_temp_primary_entity1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/nodes/metavar_temp/scg_metavar_temp_primary_entity2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/nodes/metavar_temp/scg_metavar_temp_primary_entity2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1601,11 +1601,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/nodes/metavar_temp/scg_metavar_temp_tuple1.png"
+			"file://Contents/part_kb/src/images/scg/nodes/metavar_temp/scg_metavar_temp_tuple1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/nodes/metavar_temp/scg_metavar_temp_tuple2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/nodes/metavar_temp/scg_metavar_temp_tuple2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1616,11 +1616,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/arcs/meta/scg_metavar_temp_noorien1.png"
+			"file://Contents/part_kb/src/images/scg/arcs/meta/scg_metavar_temp_noorien1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/arcs/meta/scg_metavar_temp_noorien2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/arcs/meta/scg_metavar_temp_noorien2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1631,11 +1631,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/arcs/meta/scg_metavar_temp_orient1.png"
+			"file://Contents/part_kb/src/images/scg/arcs/meta/scg_metavar_temp_orient1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/arcs/meta/scg_metavar_temp_orient2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/arcs/meta/scg_metavar_temp_orient2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1646,11 +1646,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/arcs/meta/scg_metavar_temp_positive1.png"
+			"file://Contents/part_kb/src/images/scg/arcs/meta/scg_metavar_temp_positive1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/arcs/meta/scg_metavar_temp_positive2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/arcs/meta/scg_metavar_temp_positive2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1661,11 +1661,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/arcs/meta/scg_metavar_temp_negative1.png"
+			"file://Contents/part_kb/src/images/scg/arcs/meta/scg_metavar_temp_negative1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/arcs/meta/scg_metavar_temp_negative2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/arcs/meta/scg_metavar_temp_negative2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1676,11 +1676,11 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/arcs/meta/scg_metavar_temp_fuzzy1.png"
+			"file://Contents/part_kb/src/images/scg/arcs/meta/scg_metavar_temp_fuzzy1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				=> .system_element_3481: "file://../images/scg/arcs/meta/scg_metavar_temp_fuzzy2.png"
+				=> .system_element_2979: "file://Contents/part_kb/src/images/scg/arcs/meta/scg_metavar_temp_fuzzy2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1694,17 +1694,17 @@
 		};;
 	*];;
 
-	.system_element_3731
+	.system_element_3206
 	=> nrel_inclusion: [*
 
-		.system_element_3732
+		.system_element_3207
 		=> nrel_explanation: [<p><b><i>Шестое направление расширения Ядра SCg-кода</i></b> --- это введение в SCg-код <i>sc.g-контуров</i> и <i>sc.g-шин</i> как средств структуризации sc.g-текстов и повышения наглядности при их размещении. Подчеркнем, что и sc.g-контуры, и sc.g-шины, и sc.g-рамки являются специальными видами sc.g-элементов. При этом sc.g-контуры и sc.g-рамки являются sc.g-ограничителями (ограничителями SCg-кода).</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_3733
+		.system_element_3208
 		=> nrel_explanation: [<p>Каждый <i>sc.g-контур</i> изображается (в 2D-модификации) в виде замкнутой ломаной линии со скругленными изломами, ограничивающей некоторый фрагмент sc.g-текста и обозначает множество всех <u>sc-элементов</u>, sc.g-изображения которых оказались внутри этого контура. Толщина указанной линии составляет примерно <b>0.4d</b>, где <b><i>d</i></b> --- диаметр <i>sc.g-узла общего вида</i>.Обозначение множества sc-элементов, изображаемое sc.g-контуром, может быть как константным, так и переменным. Соответственно этому линия, изображающая sc.g-контур может быть:
 
 		<ul>
@@ -1723,26 +1723,26 @@
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_3696
+		.system_element_3171
 		=> nrel_explanation: [<p>Каждая sc.g-шина представляет собой замкнутую или незамкнутую линию толщиной примерно равной диаметру <i>sc.g-узла общего вида</i>, которая инцидентна только одному sc.g-элементу и семантически ему эквивалентна. Идея введения sc.g-шин заключается в увеличении размеров sc.g-элементов для расширения их области инцидентности. Особенно актуально это для sc.g-узлов, имеющих большое число инцидентных им sc.g-коннекторов.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_3734
-		<=> .system_element_151: {
-			"file://../images/scg/scg_transf6-1-1.png"
+		.system_element_3209
+		<=> .system_element_200: {
+			"file://Contents/part_kb/src/images/scg/scg_transf6-1-1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				<- .system_element_233;;
+				<- .system_element_254;;
 				=> nrel_explanation: [<p>В данном примере представлена тривиальная <i>структура</i> <b><i>si</i></b>, которая содержит три <i>sc-элемента</i> --- <b><i>e1</i></b>, <b><i>e2</i></b>, <b><i>e3</i></b>.</p>]
 				(*
 					<- lang_ru;;
 					=> nrel_format: format_html;;
 				*);;
-				=> .system_element_3735: "file://../images/scg/scg_transf6-1-2.png"
+				=> .system_element_3210: "file://Contents/part_kb/src/images/scg/scg_transf6-1-2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1753,33 +1753,33 @@
 					*);;
 				*);;
 			*);
-			"file://../images/scg/scg_transf6-2-1.png"
+			"file://Contents/part_kb/src/images/scg/scg_transf6-2-1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				<- .system_element_233;;
+				<- .system_element_254;;
 				=> nrel_explanation: [<p>В данном примере <i>структура</i> содержит <i>sc-элементы</i> различных типов.</p>]
 				(*
 					<- lang_ru;;
 					=> nrel_format: format_html;;
 				*);;
-				=> .system_element_3735: "file://../images/scg/scg_transf6-2-2.png"
+				=> .system_element_3210: "file://Contents/part_kb/src/images/scg/scg_transf6-2-2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
 				*);;
 			*);
-			"file://../images/scg/scg_transf6-3-1.png"
+			"file://Contents/part_kb/src/images/scg/scg_transf6-3-1.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
-				<- .system_element_233;;
+				<- .system_element_254;;
 				=> nrel_explanation: [<p>В приведенном примере из <i>sc.g-узла</i> "<i>геометрическая фигура</i>", выходит несколько <i>sc.g-дуг</i>, с увеличением количества которых <i>sc.g-текст</i> становится менее читабельным.</p>]
 				(*
 					<- lang_ru;;
 					=> nrel_format: format_html;;
 				*);;
-				=> .system_element_3735: "file://../images/scg/scg_transf6-3-2.png"
+				=> .system_element_3210: "file://Contents/part_kb/src/images/scg/scg_transf6-3-2.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;
@@ -1788,10 +1788,10 @@
 		};;
 	*];;
 
-	.system_element_3736
+	.system_element_3211
 	=> nrel_inclusion: [*
 
-		.system_element_3737
+		.system_element_3212
 		=> nrel_explanation: [<p><b><i>Седьмое направление синтаксического расширения Ядра SCg-кода</i></b> --- это переход от 2D-изображений sc.g-текстов к 3D-изображениям.Одним из вариантов трехмерного изображения sc.g-текстов является следующий:
 
 		<ul>

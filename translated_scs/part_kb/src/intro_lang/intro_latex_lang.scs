@@ -1,11 +1,11 @@
 .intro_latex_lang = [*
-.system_element_3472
+.system_element_3836
 => nrel_explanation: [<p>Одним из удобных вариантов представления исходных текстов баз знаний для различных областей научно-технической деятельности является Язык представления исходных текстов баз знаний на основе языка LaTeX. В его основу положен язык LaTeX, так как:<ul>	<li> LaTeX это популярный общепринятый язык для записи научно-технических текстов;	<li> LaTeX представляет собой достаточно мощный и легко расширяемый язык;	<li> LaTeX это достаточно строгий и формальный язык, что позволяет реализовать для него транслятор исходных текстов в базу знаний интеллектуальной системы.</li><ul></p>]
 (*
 	<- lang_ru;;
 	=> nrel_format: format_html;;
 *);
-=> .system_element_219: [<p>Язык представления исходных текстов баз знаний на основе языка LaTeX был разработан для:
+=> .system_element_239: [<p>Язык представления исходных текстов баз знаний на основе языка LaTeX был разработан для:
 <ul>
 	<li> формирования читабельного текста для публикации всего текста <i>Стандарта OSTIS</i> или фрагментов в виде печатных изданий;
 	<li> возможности иметь формальный исходный текст <i>Стандарта OSTIS</i>, который может быть протранслирован в базу знаний.</li>
@@ -18,9 +18,9 @@
 (*
 	<- lang_ru;;
 	=> nrel_format: format_html;;
-	=> .system_element_193: .system_element_3473;;
+	=> .system_element_180: .system_element_3032;;
 *);
-=> .system_element_3474: 
+=> .system_element_3837: 
 	[<p>Весь исходный текст стандарта формируется исключительно с использованием набора команд scn-tex.</p>]
 	(*
 		<- lang_ru;;
@@ -66,36 +66,36 @@
 (*
 	<- lang_ru;;
 	=> nrel_format: format_html;;
-	=> .system_element_193: .system_element_3473;;
+	=> .system_element_180: .system_element_3032;;
 *);
 => nrel_note: [<p>Для формирования отступов для корректного отображения sc.n-текстов используется окружение  begin ---  end. После смещения на определенное число уровней вправо следует смещение на то же число уровней влево.</p>]
 (*
 	<- lang_ru;;
 	=> nrel_format: format_html;;
 *);
-=> .system_element_3475: "file://../images/sd_lang/example_1_1.png"
+=> .system_element_3838: "file://Contents/part_kb/src/images/sd_lang/example_1_1.png"
 (*
 	<- concept_file;;
 	=> nrel_format: format_png;;
 *);
-=> .system_element_3475: "file://../images/sd_lang/example_1_2.png"
+=> .system_element_3838: "file://Contents/part_kb/src/images/sd_lang/example_1_2.png"
 (*
 	<- concept_file;;
 	=> nrel_format: format_png;;
 *);;
 
-.system_element_3476
+.system_element_3839
 => nrel_note: [<p>Команды из набора scn-tex делятся на классы. К чаще всего используемым классам относятся окружения (environments) и списки (lists), которые являются частным случаем окружения. Окружения могут быть вложенными.</p>]
 (*
 	<- lang_ru;;
 	=> nrel_format: format_html;;
 *);
-=> .system_element_3475: "file://../images/sd_lang/example_3_1.png"
+=> .system_element_3838: "file://Contents/part_kb/src/images/sd_lang/example_3_1.png"
 (*
 	<- concept_file;;
 	=> nrel_format: format_png;;
 *);
-=> .system_element_3477: "file://../images/sd_lang/example_3_2.png"
+=> .system_element_3840: "file://Contents/part_kb/src/images/sd_lang/example_3_2.png"
 (*
 	<- concept_file;;
 	=> nrel_format: format_png;;
@@ -106,18 +106,18 @@
 	=> nrel_format: format_html;;
 *);;
 
-.system_element_3478
+.system_element_3841
 => nrel_note: [<p>Для трансляции исходного текста в базу знаний был разработан tex2scs-translator, который переводит фрагменты scn-tex в SCs-код. Каждой scn-tex команде соответствует определенная синтаксическая конструкция SCs-кода. Таким образом, весь исходный текст Стандарта OSTIS, записанный в scn-tex, может быть протранслирован в базу знаний любой ostis-системы, которая поддерживает сборку базы знаний из sc.s-файлов. Далее рассмотрим пример работы транслятора.</p>]
 (*
 	<- lang_ru;;
 	=> nrel_format: format_html;;
-	=> .system_element_193: .system_element_3479;;
+	=> .system_element_180: .system_element_3033;;
 *);
-=> .system_element_3475: "file://../images/sd_lang/example_4_1.png"
+=> .system_element_3838: "file://Contents/part_kb/src/images/sd_lang/example_4_1.png"
 (*
 	<- concept_file;;
 	=> nrel_format: format_png;;
 *);
-=> .system_element_3477: "file://../images/sd_lang/example_4_2.png";;
+=> .system_element_3840: "file://Contents/part_kb/src/images/sd_lang/example_4_2.png";;
 
 *];;

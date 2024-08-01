@@ -1,11 +1,11 @@
-.system_element_192
+.system_element_231
 => nrel_inclusion: [*
-	=> .system_element_172: 
-		.system_element_3024;
-		.system_element_3025
+	=> .system_element_727: 
+		.system_element_5647;
+		.system_element_5648
 	;;
 
-	.system_element_3026
+	.system_element_5649
 	=> nrel_idtf: [<p>Предметная область Базового языка программирования ostis-систем</p>]
 	(*
 		<- lang_ru;;
@@ -28,7 +28,7 @@
 		new_scp_operator;
 		scp_operator_atomic_type
 	;
-	-> .system_element_1000: 
+	-> .system_element_748: 
 		rrel_init;
 		rrel_new_param;
 		rrel_in;
@@ -36,8 +36,8 @@
 		rrel_scp_operand
 	;;
 
-	.system_element_2806
-	=> .system_element_137: [<p>scp-программа</p>]
+	.system_element_1988
+	=> .system_element_269: [<p>scp-программа</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
@@ -48,12 +48,12 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3027
+	.system_element_5650
 	<= nrel_combination: {
-		.system_element_3028;
-		.system_element_3029
+		.system_element_5651;
+		.system_element_5652
 	};
-	=> .system_element_217: {
+	=> .system_element_237: {
 		[<p>Тексты программ <i>Языка SCP</i> записываются при помощи тех же унифицированных семантических сетей, что и обрабатываемая информация, таким образом, можно сказать, что <i>Синтаксис языка SCP</i> на базовом уровне совпадает с <i>Синтаксисом SC-кода</i>.</p>]
 		(*
 			<- lang_ru;;
@@ -65,7 +65,7 @@
 			=> nrel_format: format_html;;
 		*)
 	};
-	=> .system_element_200: {
+	=> .system_element_192: {
 		[<p>Одновременно в общей памяти могут выполняться несколько независимых<i>sc-агентов</i>, при этом разные копии <i>sc-агентов</i> могут выполняться на разных серверах, за счет распределенной реализации интерпретатора sc-моделей (<i>платформы реализации sc-моделей компьютерных систем</i>). Более того, <i>Язык SCP</i> позволяет осуществлять параллельные асинхронные вызовы подпрограмм с последующей синхронизацией, и даже параллельно выполнять операторы в рамках одной <i>scp-программы</i>.</p>]
 		(*
 			<- lang_ru;;
@@ -88,8 +88,8 @@
 		*)
 	};;
 
-	.system_element_704
-	=> .system_element_3030: .system_element_3029;
+	.system_element_686
+	=> .system_element_5653: .system_element_5652;
 	=> nrel_note: [<p><i>Абстрактная scp-машина</i> представляет собой интерпретатор <i>scp-программ</i>, который должен являться частью <i>платформы интерпретации sc-моделей компьютерных систем</i> (хотя в общем случае могут существовать варианты платформы, не содержащие такого интерпретатора, что, однако, не позволит использовать достоинства предлагаемой базовой модели</p>]
 	(*
 		<- lang_ru;;
@@ -103,7 +103,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_232: "file://images/sd_scp/program_example.png"
+	=> .system_element_253: "file://images/sd_scp/program_example.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
@@ -113,33 +113,33 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	-> .system_element_231: 
-		.system_element_3031;
+	-> .system_element_252: 
+		.system_element_5654;
 		_<- scp_process;
-		_-> .system_element_3033:: .system_element_3032;
-		_-> .system_element_3035:: .system_element_3034;
-		_<= nrel_decomposition_of_action:: .system_element_3036
+		_-> .system_element_5656:: .system_element_5655;
+		_-> .system_element_5658:: .system_element_5657;
+		_<= nrel_decomposition_of_action:: .system_element_5659
 		(*
-			_-> .system_element_3038:: .system_element_3037
+			_-> .system_element_5661:: .system_element_5660
 			(*
-				_<- .system_element_3039;;
-				_-> .system_element_3040:: .system_element_3032;;
-				_-> .system_element_3042:: .system_element_3041;;
-				_-> .system_element_3043:: .system_element_3034;;
-				_=> nrel_else_new:: .system_element_3044;;
-				_=> nrel_then:: .system_element_3045;;
+				_<- .system_element_5662;;
+				_-> .system_element_5663:: .system_element_5655;;
+				_-> .system_element_5665:: .system_element_5664;;
+				_-> .system_element_5666:: .system_element_5657;;
+				_=> nrel_else_new:: .system_element_5667;;
+				_=> nrel_then:: .system_element_5668;;
 			*);;
-			_-> .system_element_3044
+			_-> .system_element_5667
 			(*
-				_<- .system_element_3046;;
-				_-> .system_element_3047:: .system_element_3032;;
-				_-> .system_element_3048:: .system_element_3041;;
-				_-> .system_element_3049:: .system_element_3034;;
-				_=> .system_element_3050:: .system_element_3045;;
+				_<- .system_element_5669;;
+				_-> .system_element_5670:: .system_element_5655;;
+				_-> .system_element_5671:: .system_element_5664;;
+				_-> .system_element_5672:: .system_element_5657;;
+				_=> .system_element_5673:: .system_element_5668;;
 			*);;
-			_-> .system_element_3045
+			_-> .system_element_5668
 			(*
-				_<- .system_element_3051;;
+				_<- .system_element_5674;;
 			*);;
 		*)
 	;;
@@ -154,7 +154,7 @@ agent_scp_program
 *);;
 
 abstract_sc_agent_implemented_on_the_scp_language
-=> .system_element_353: {
+=> .system_element_333: {
 	[<p>Общие принципы организации взаимодействия <i>sc-агентов</i> и пользователей <i>ostis-системы</i> через общую<i>sc-память</i>.</p>]
 	(*
 		<- lang_ru;;
@@ -213,7 +213,7 @@ scp_process
 	<- lang_ru;;
 	=> nrel_format: format_html;;
 *);
-=> .system_element_3052: <
+=> .system_element_5675: <
 	"file://images/sd_scp/process_example.png"
 	(*
 		<- concept_file;;

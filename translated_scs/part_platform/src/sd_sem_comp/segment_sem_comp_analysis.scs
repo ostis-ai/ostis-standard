@@ -5,7 +5,7 @@
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
-		=> .system_element_163: 
+		=> .system_element_122: 
 			.system_element_15;
 			.system_element_16
 		;;
@@ -17,8 +17,8 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<- .system_element_186;
-	=> .system_element_204: <
+	<- .system_element_197;
+	=> .system_element_196: <
 		[<p>Информация в памяти представляется в виде последовательности строк символов в бинарном алфавите (0 или 1).</p>]
 		(*
 			<- lang_ru;;
@@ -64,9 +64,9 @@
 			=> nrel_format: format_html;;
 		*)
 	>;
-	=> .system_element_235: .system_element_234
+	=> .system_element_199: .system_element_198
 	(*
-		<=> .system_element_151: {
+		<=> .system_element_200: {
 			[<p>Последовательная обработка, ограничивающая эффективность компьютеров физическими возможностями элементной базы.</p>]
 			(*
 				<- lang_ru;;
@@ -99,15 +99,15 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	=> .system_element_237: .system_element_236
+	=> .system_element_201: .system_element_121
 	(*
 		=> nrel_note: [<p>Попытки преодоления ограничений традиционных фон-Неймановских ЭВМ привели к возникновению множества подходов, связанных с отдельными изменениями принципов логической организации ЭВМ, прежде всего в зависимости от классов задач и предметных областей, на которые ориентируется тот или иной класс ЭВМ. Все эти тенденции, рассмотренные в совокупности, позволяют очертить некоторые ключевые принципы логической организации ЭВМ, ориентированных на переработку знаний (машин переработки знаний --- МПЗ).</p>];;
-		<=> .system_element_151: {
+		<=> .system_element_200: {
 			[<p>Переход к нелинейной организации памяти и аппаратная интерпретация сложных структур данных.</p>]
 			(*
 				<- lang_ru;;
 				=> nrel_format: format_html;;
-				=> .system_element_163: 
+				=> .system_element_122: 
 					.system_element_17;
 					.system_element_18;
 					.system_element_19;
@@ -119,7 +119,7 @@
 			(*
 				<- lang_ru;;
 				=> nrel_format: format_html;;
-				=> .system_element_163: 
+				=> .system_element_122: 
 					.system_element_22;
 					.system_element_23;
 					.system_element_17;
@@ -133,7 +133,7 @@
 			(*
 				<- lang_ru;;
 				=> nrel_format: format_html;;
-				=> .system_element_163: 
+				=> .system_element_122: 
 					.system_element_17;
 					.system_element_28;
 					.system_element_29;
@@ -146,7 +146,7 @@
 			(*
 				<- lang_ru;;
 				=> nrel_format: format_html;;
-				=> .system_element_163: 
+				=> .system_element_122: 
 					.system_element_33;
 					.system_element_34;
 					.system_element_35
@@ -156,7 +156,7 @@
 			(*
 				<- lang_ru;;
 				=> nrel_format: format_html;;
-				=> .system_element_163: 
+				=> .system_element_122: 
 					.system_element_36;
 					.system_element_37;
 					.system_element_38
@@ -165,109 +165,109 @@
 		};;
 	*);;
 
-	.system_element_238
-	=> nrel_note: [<p>На пересечении Альтернативных фон-Неймановским подходов организации ЭВМ в разное время возникали различные классы вычислительных устройств</p>]
+	.system_element_202
+	=> nrel_note: [<p>На пересечении <em>Альтернативных фон-Неймановским подходов организации ЭВМ</em> в разное время возникали различные классы вычислительных устройств</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	-> .system_element_239
+	-> .system_element_203
 	(*
-		=> .system_element_163: 
+		=> .system_element_122: 
 			.system_element_39;
 			.system_element_20;
 			.system_element_40
 		;;
 	*);
-	-> .system_element_240
+	-> .system_element_204
 	(*
-		=> .system_element_163: 
+		=> .system_element_122: 
 			.system_element_24;
 			.system_element_41;
 			.system_element_42
 		;;
 	*);
-	-> .system_element_241
+	-> .system_element_205
 	(*
-		=> .system_element_163: .system_element_43;;
+		=> .system_element_122: .system_element_43;;
 	*);
-	-> .system_element_242
+	-> .system_element_206
 	(*
-		=> .system_element_163: .system_element_44;;
+		=> .system_element_122: .system_element_44;;
 	*);
-	-> .system_element_243
+	-> .system_element_207
 	(*
-		=> .system_element_163: 
+		=> .system_element_122: 
 			.system_element_45;
 			.system_element_46;
 			.system_element_47;
 			.system_element_48
 		;;
-		=> nrel_inclusion: .system_element_244
+		=> nrel_inclusion: .system_element_208
 		(*
-			=> .system_element_163: 
+			=> .system_element_122: 
 				.system_element_49;
 				.system_element_50;
 				.system_element_51
 			;;
 		*);;
-		=> nrel_inclusion: .system_element_245
+		=> nrel_inclusion: .system_element_209
 		(*
-			=> .system_element_163: .system_element_52;;
+			=> .system_element_122: .system_element_52;;
 		*);;
 	*);
-	-> .system_element_246
+	-> .system_element_210
 	(*
-		=> .system_element_163: 
+		=> .system_element_122: 
 			.system_element_53;
 			.system_element_54
 		;;
 	*);
-	-> .system_element_247
+	-> .system_element_211
 	(*
-		=> .system_element_163: 
+		=> .system_element_122: 
 			.system_element_43;
 			.system_element_29;
 			.system_element_32
 		;;
-		=> nrel_inclusion: .system_element_248
+		=> nrel_inclusion: .system_element_212
 		(*
-			=> .system_element_163: .system_element_55;;
+			=> .system_element_122: .system_element_55;;
 		*);;
 	*);
-	-> .system_element_249
+	-> .system_element_213
 	(*
-		=> .system_element_163: .system_element_17;;
+		=> .system_element_122: .system_element_17;;
 	*);
-	-> .system_element_250
+	-> .system_element_214
 	(*
-		=> .system_element_163: 
+		=> .system_element_122: 
 			.system_element_36;
 			.system_element_32;
 			.system_element_23
 		;;
 	*);
-	-> .system_element_251
+	-> .system_element_215
 	(*
-		=> .system_element_163: 
+		=> .system_element_122: 
 			.system_element_56;
 			.system_element_57;
 			.system_element_58;
 			.system_element_59
 		;;
 	*);
-	-> .system_element_252
+	-> .system_element_216
 	(*
 		=> nrel_idtf: [<p>М-сети</p>];;
-		=> .system_element_163: .system_element_60;;
+		=> .system_element_122: .system_element_60;;
 	*);
-	-> .system_element_253
+	-> .system_element_217
 	(*
-		=> .system_element_163: .system_element_61;;
+		=> .system_element_122: .system_element_61;;
 	*);
-	-> .system_element_254
+	-> .system_element_218
 	(*
-		=> .system_element_163: 
+		=> .system_element_122: 
 			.system_element_62;
 			.system_element_63
 		;;
@@ -275,7 +275,7 @@
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
-			=> .system_element_163: 
+			=> .system_element_122: 
 				.system_element_64;
 				.system_element_65;
 				.system_element_66
@@ -285,18 +285,18 @@
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
-			=> .system_element_163: .system_element_67;;
+			=> .system_element_122: .system_element_67;;
 		*);;
 	*);
-	-> .system_element_255
+	-> .system_element_219
 	(*
-		=> .system_element_163: .system_element_68;;
+		=> .system_element_122: .system_element_68;;
 	*);
 	=> nrel_note: [<p>Развитие графических процессоров (graphics processing unit, GPU) привело к возможности организации параллельных вычислений непосредственно на GPU, для чего разрабатываются специализированные программно-аппаратные архитектуры, например CUDA. Преимуществом GPU в данном случае выступает наличие в рамках одного GPU большого (по сравнению с центральным процессором) числа ядер, что позволяет эффективно решать на такой архитектуре задачи, обладающие естественным параллелизмом (например, операции с матрицами). Развиваются также работы, посвященные принципам обработки графовых структур на GPU.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
-		=> .system_element_163: 
+		=> .system_element_122: 
 			.system_element_69;
 			.system_element_70;
 			.system_element_71;
@@ -326,18 +326,18 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_256: <
+	=> .system_element_220: <
 		[<p>1984 год --- в Московском институте электронной техники В.В. Голенковым защищена кандидатского диссертация на тему "Структурная организация и переработка информации в электронных математических машинах, управляемых потоком сложноструктурированных данных", в которой были сформулированы и рассмотрены основные принципы семантических ассоциативных компьютеров.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
-			=> .system_element_163: .system_element_74;;
+			=> .system_element_122: .system_element_74;;
 		*);
 		[<p>1993 год --- комиссия Госкомпрома провела успешные испытания прототипа <i>ассоциативного семантического компьютера</i>, разработанного на базе транспьютеров в рамках научно-исследовательского проекта "Параллельная графовая вычислительная система, ориентированная на решение задач искусственного интеллекта".</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
-			=> .system_element_163: 
+			=> .system_element_122: 
 				.system_element_75;
 				.system_element_76
 			;;
@@ -346,32 +346,32 @@
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
-			=> .system_element_163: .system_element_77;;
+			=> .system_element_122: .system_element_77;;
 		*);
 		[<p>2000 год --- в Институте проблем управления РАН П.А. Гапоновым защищена кандидатская диссертация на тему "Модели и методы параллельной асинхронной переработки информации в графодинамической ассоциативной памяти".</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
-			=> .system_element_163: .system_element_78;;
+			=> .system_element_122: .system_element_78;;
 		*);
 		[<p>2000 год --- в Институте программных систем РАН В.М. Кузьмицким защищена кандидатская диссертация на тему "Принципы построения графодинамического параллельного компьютера, ориентированного на решение задач искусственного интеллекта".</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
-			=> .system_element_163: .system_element_79;;
+			=> .system_element_122: .system_element_79;;
 		*);
 		[<p>2004 год --- в Белорусском государственном университете информатики и радиоэлектроники Р.Е. Сердюковым защищена кандидатская диссертация на тему "Базовые алгоритмы и инструментальные средства обработки информации в графодинамических ассоциативных машинах", в которой было рассмотрено базовое программное обеспечение семантических ассоциативных компьютеров.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
-			=> .system_element_163: .system_element_80;;
+			=> .system_element_122: .system_element_80;;
 		*)
 	>;
 	=> nrel_note: [<p>В тоже время, несмотря на наличие действующего прототипа <i>ассоциативного семантического компьютера</i> на базе транспьютеров, основное внимание в рамках соответствующего проекта и других перечисленных работ уделялось принципам организации распределенной параллельной обработки конструкций SC-кода, в частности, был разработан <i>SCD-код</i> (Semantic Code Distributed) для распределенного хранения конструкций SC-кода и <i>Язык SCPD</i> для распределенной параллельной их обработки. Однако, общие принципы хранения информации и общая архитектура каждого из процессорных элементов (транспьютеров) оставались фон-Неймановскими. В частности, для кодирования конструкций SC-кода в традиционной адресной памяти были разработаны соответствующие структуры данных.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
-		=> .system_element_193: .system_element_173;;
+		=> .system_element_180: .system_element_221;;
 	*);
 	=> nrel_note: [<p>Обоснованность и необходимость разработки <i>ассоциативного семантического компьютера</i>, а также компетентность авторов в данной области подтверждается более чем 30-летним опытом работы и рядом успешных проектов в данном направлении, однако, в тоже время, в предшествующих работах в полной мере не устранены все недостатки фон-Неймановской архитектуры, рассмотренные выше, и разработка и реализация проекта <i>ассоциативного семантического компьютера</i>, устраняющего перечисленные недостатки, остается актуальной.</p>]
 	(*

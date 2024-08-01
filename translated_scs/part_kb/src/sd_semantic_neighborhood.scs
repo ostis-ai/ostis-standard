@@ -1,4 +1,4 @@
-.system_element_4281
+.system_element_3933
 => nrel_inclusion: [*
 
 	subject_domain_of_semantic_neighborhoods
@@ -17,9 +17,9 @@
 		identify_instances_rule;
 		terminological_neighbourhood;
 		theoretic_set_semantic_neighborhood;
-		.system_element_4897;
+		.system_element_3934;
 		logic_semantic_neighborhood;
-		.system_element_4898;
+		.system_element_3935;
 		comparative_analysis
 	;;
 
@@ -69,7 +69,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_1977: "file://images/sd_sem_neigh/example_of_sem_neigh.png"
+	=> .system_element_928: "file://images/sd_sem_neigh/example_of_sem_neigh.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
@@ -78,7 +78,7 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
-		<- .system_element_233;;
+		<- .system_element_254;;
 	*);;
 
 	semantic_neighborhood_by_incident_connector
@@ -193,7 +193,7 @@
 	=> nrel_inclusion: theoretic_set_semantic_neighborhood;
 	=> nrel_inclusion: logic_semantic_neighborhood;
 	=> nrel_inclusion: description_of_a_typical_instance;
-	=> nrel_inclusion: .system_element_4897;
+	=> nrel_inclusion: .system_element_3934;
 	=> nrel_explanation: [<p>Вид <i>семантической окрестности</i>, набор связей для которой уточняется отдельно для каждого типа такой окрестности.</p>]
 	(*
 		<- lang_ru;;
@@ -257,7 +257,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4897
+	.system_element_3934
 	=> nrel_idtf: [<p><i>семантическая окрестность</i>, описывающая декомпозицию некоторой сущности</p>]
 	(*
 		<- lang_ru;;
@@ -269,7 +269,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4898
+	.system_element_3935
 	=> nrel_idtf: [<p>описание типичного экземпляра заданного класса</p>]
 	(*
 		<- lang_ru;;
@@ -288,7 +288,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4310
+	.system_element_3936
 	=> nrel_explanation: [<p>Описание сравнения (сходств и отличий) двух сущностей, которые заданы <i>парой</i> (двухмощными множествами), которому принадлежат знаки обеих сравниваемых сущностей.</p>]
 	(*
 		<- lang_ru;;
@@ -303,12 +303,12 @@
 	*);;
 
 	semantic_neighborhood
-	=> .system_element_4899: 
-		.system_element_4900;
-		.system_element_4901;
-		.system_element_4902;
-		.system_element_4903;
-		.system_element_4904
+	=> .system_element_3937: 
+		.system_element_3938;
+		.system_element_3939;
+		.system_element_3940;
+		.system_element_3941;
+		.system_element_3942
 	;
 	=> nrel_note: [<p>Понятие <i>семантической окрестности</i>, дополненное уточнением таких понятий, как семантическое расстояние между знаками (семантическая близость знаков), <i>радиус семантической окрестности</i>, является перспективной основой для исследования свойств смыслового пространства.</p>]
 	(*

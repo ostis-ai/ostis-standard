@@ -1,25 +1,25 @@
 .segment_ostis_platform = [*
-.system_element_121
+.system_element_255
 => nrel_inclusion: [*
 	=> .system_element_1: 
-		.system_element_122;
-		.system_element_123;
-		.system_element_124;
-		.system_element_125;
-		.system_element_126;
-		.system_element_127;
-		.system_element_128;
-		.system_element_129;
-		.system_element_130;
-		.system_element_131;
-		.system_element_132;
-		.system_element_133;
-		.system_element_134;
-		.system_element_135;
+		.system_element_256;
+		.system_element_226;
+		.system_element_257;
+		.system_element_229;
+		.system_element_258;
+		.system_element_259;
+		.system_element_260;
+		.system_element_261;
+		.system_element_262;
+		.system_element_263;
+		.system_element_264;
+		.system_element_265;
+		.system_element_266;
+		.system_element_267;
 		.system_element_4
 	;;
 
-	.system_element_122
+	.system_element_256
 	=> nrel_idtf: [<p>платформа интерпретации sc-моделей компьютерных систем</p>]
 	(*
 		<- lang_ru;;
@@ -50,7 +50,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<= nrel_inclusion: .system_element_136;
+	<= nrel_inclusion: .system_element_268;
 	=> nrel_idtf: [<p>базовый интерпретатор логико-семантических моделей ostis-систем</p>]
 	(*
 		<- lang_ru;;
@@ -61,7 +61,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_137: [<p>универсальный интерпретатор sc-моделей компьютерных систем</p>]
+	=> .system_element_269: [<p>универсальный интерпретатор sc-моделей компьютерных систем</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
@@ -71,7 +71,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<= nrel_inclusion: .system_element_138;
+	<= nrel_inclusion: .system_element_270;
 	=> nrel_idtf: [<p>встроенная "пустая" ostis-система</p>]
 	(*
 		<- lang_ru;;
@@ -105,12 +105,12 @@
 		=> nrel_format: format_html;;
 	*);
 	=> nrel_subdividing: {
-		.system_element_123;
-		.system_element_124;
-		.system_element_125
+		.system_element_226;
+		.system_element_257;
+		.system_element_229
 	};;
 
-	.system_element_123
+	.system_element_226
 	=> nrel_idtf: [<p>базовый интерпретатор логико-семантических моделей ostis-систем</p>]
 	(*
 		<- lang_ru;;
@@ -136,18 +136,18 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_139: [<p>Основным и <u>единственным требованием</u>, предъявляемым ко всем <i>базовым ostis-платформам</i> для обеспечения их универсальности, является необходимость обеспечения интерпретации <i>Языка SCP</i>, стандартизированного в рамках <i>Технологии OSTIS</i>. При этом важно отметить, что все <i>базовые ostis-платформы</i> обязаны быть <u>функционально эквивалентными</u>, поскольку интерпретируют один и тот же стандарт <i>Языка SCP</i>.</p>]
+	=> .system_element_271: [<p>Основным и <u>единственным требованием</u>, предъявляемым ко всем <i>базовым ostis-платформам</i> для обеспечения их универсальности, является необходимость обеспечения интерпретации <i>Языка SCP</i>, стандартизированного в рамках <i>Технологии OSTIS</i>. При этом важно отметить, что все <i>базовые ostis-платформы</i> обязаны быть <u>функционально эквивалентными</u>, поскольку интерпретируют один и тот же стандарт <i>Языка SCP</i>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_140: {
-		.system_element_126
+	=> .system_element_272: {
+		.system_element_258
 		(*
-			=> .system_element_141: .system_element_127;;
+			=> .system_element_273: .system_element_259;;
 		*);
-		.system_element_128;
-		.system_element_142
+		.system_element_260;
+		.system_element_274
 		(*
 			=> nrel_note: [<p>Реализация базового набора <i>рецепторных sc-агентов</i> и <i>эффекторных sc-агентов</i>, обеспечивающих минимально необходимый обмен информацией между <i>ostis-системой</i> и внешней средой. Конкретный перечень таких агентов требует уточнения, однако можно сказать, что в общем случае они могут быть реализованы как в составе <i>scp-интерпретатора</i> (в этом случае им будут соответствовать определенные классы <i>scp-операторов</i>), так и отдельно от него в составе платформы.</p>]
 			(*
@@ -155,7 +155,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_130
+		.system_element_262
 		(*
 			=> nrel_note: [<p>Реализацию набора sc-агентов, обеспечивающих базовые функции <i>ostis-системы</i>, связанные с обеспечением ее жизнедеятельности, которые принципиально не могут быть реализованы на платформенно-независимом уровне. К таким функциям относятся, например, запуск системы, загрузка базы знаний в память системы, запуск <i>scp-интерпретатора</i> и так далее.</p>]
 			(*
@@ -165,7 +165,7 @@
 		*)
 	};;
 
-	.system_element_124
+	.system_element_257
 	=> nrel_idtf: [<p>ostis-платформа, содержащая дополнительные компоненты, реализованные на уровне платформы</p>]
 	(*
 		<- lang_ru;;
@@ -191,7 +191,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_125
+	.system_element_229
 	=> nrel_idtf: [<p>ostis-платформа, не содержащая реализацию интерпретатора Языка SCP</p>]
 	(*
 		<- lang_ru;;
@@ -212,17 +212,17 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_140: {
-		.system_element_126
+	=> .system_element_272: {
+		.system_element_258
 		(*
-			=> .system_element_141: .system_element_127;;
+			=> .system_element_273: .system_element_259;;
 		*);
-		.system_element_129;
-		.system_element_130;
-		.system_element_131
+		.system_element_261;
+		.system_element_262;
+		.system_element_263
 		(*
 			=> nrel_idtf: [<p>sc-агент, как правило неатомарный, обеспечивающий выполнение всех функций некоторой специализированной ostis-платформы, связанных с обработкой знаний</p>];;
-			<= nrel_inclusion: .system_element_143;;
+			<= nrel_inclusion: .system_element_275;;
 		*)
 	};
 	=> nrel_note: [<p>Применение <i>специализированных ostis-платформ</i> может быть целесообразным на стартовом этапе развития <i>Технологии OSTIS</i>, а также с целью повышения производительности конкретных наиболее высоконагруженных <i>ostis-систем</i>, однако активное развитие таких <i>специализированных ostis-платформ</i> и их компонентов с точки зрения <i>Технологии OSTIS</i> является нецелесообразным, поскольку:
@@ -236,12 +236,12 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_132
-	=> .system_element_140: {
+	.system_element_264
+	=> .system_element_272: {
 		sc_model_of_knowledge_base;
-		.system_element_125
+		.system_element_229
 	};
-	=> .system_element_144: 
+	=> .system_element_276: 
 		[<p>Использование <i>SC-кода</i> как базового языка кодирования информации в базе знаний, и, соответственно, наличие памяти, хранящей конструкции <i>SC-кода</i>.</p>]
 		(*
 			<- lang_ru;;
@@ -269,9 +269,9 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_122
+	.system_element_256
 	=> nrel_subdividing: {
-		.system_element_133
+		.system_element_265
 		(*
 			=> nrel_idtf: [<p>вариант реализации ostis-платформы, рассчитанный на то, что с конкретной ostis-системой взаимодействует только один пользователь (владелец)</p>];;
 			=> nrel_note: [<p>При таком варианте реализации платформы оказывается невозможным реализовать некоторые важные принципы <i>Технологии OSTIS</i>, например, коллективную согласованную разработку базы знаний системы в процессе ее эксплуатации. При этом могут использоваться различные сторонние средства, например, для разработки базы знаний на уровне исходных текстов.</p>]
@@ -280,7 +280,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_134
+		.system_element_266
 		(*
 			=> nrel_idtf: [<p>вариант реализации ostis-платформы, рассчитанный на то, что с конкретной ostis-системой одновременно или в разное время могут взаимодействовать разные пользователи, в общем случае обладающие разными правами, сферами ответственности, уровнем опыта, и имеющие свою конфиденциальную часть хранимой в базе знаний информации</p>]
 			(*
@@ -290,9 +290,9 @@
 		*)
 	};;
 
-	.system_element_145
+	.system_element_277
 	=> nrel_subdividing: {
-		.system_element_146
+		.system_element_278
 		(*
 			=> nrel_idtf: [<p>программная платформа интерпретации sc-моделей ostis-систем</p>];;
 			=> nrel_idtf: [<p>программный базовый интерпретатор sc-моделей ostis-систем</p>]
@@ -312,9 +312,9 @@
 		*)
 	};;
 
-	.system_element_122
+	.system_element_256
 	=> nrel_subdividing: {
-		.system_element_135
+		.system_element_267
 		(*
 			=> nrel_idtf: [<p>платформа интерпретации sc-моделей ostis-систем, реализованная в виде программной системы на базе традиционной компьютерной архитектуры</p>];;
 			=> nrel_idtf: [<p>программная платформа интерпретации sc-моделей ostis-систем</p>]

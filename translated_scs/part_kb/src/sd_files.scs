@@ -1,9 +1,9 @@
-.system_element_4906
+.system_element_3943
 => nrel_inclusion: [*
 
-	.system_element_4907
+	.system_element_3944
 	<- subject_domain;
-	-> .system_element_765: 
+	-> .system_element_1835: 
 		file
 	;
 	-> .system_element_112: 
@@ -15,7 +15,7 @@
 		class_of_syntactically_equivalent_information_structures;
 		maximum_class_of_syntactically_equivalent_information_structures
 	;
-	-> .system_element_1000: 
+	-> .system_element_748: 
 		nrel_sc_text_translation
 	;;
 
@@ -96,14 +96,14 @@
 
 	class_of_syntactically_equivalent_information_structures
 	=> nrel_inclusion: maximum_class_of_syntactically_equivalent_information_structures;
-	=> nrel_explanation: [<p><b><i>класс синтаксически эквивалентных информационных конструкций</i></b> - <i>класс</i> информационных конструкций имеющих общие синтаксические свойства без учета различий в форматах их кодирования, в используемых шрифтах, в форматировании и размещении.</p>]
+	=> nrel_explanation: [<p><b><i>класс синтаксически эквивалентных информационных конструкций</i></b> --- <i>класс</i> информационных конструкций имеющих общие синтаксические свойства без учета различий в форматах их кодирования, в используемых шрифтах, в форматировании и размещении.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
 	maximum_class_of_syntactically_equivalent_information_structures
-	=> nrel_explanation: [<p><b><i>максимальный класс синтаксически эквивалентных информационных конструкций</i></b> - <i>класс</i> всевозможных конструкций, имеющих общие синтаксические свойства без учета различий в форматах их кодирования, в используемых шрифтах, в форматировании и размещении.</p>]
+	=> nrel_explanation: [<p><b><i>максимальный класс синтаксически эквивалентных информационных конструкций</i></b> --- <i>класс</i> всевозможных конструкций, имеющих общие синтаксические свойства без учета различий в форматах их кодирования, в используемых шрифтах, в форматировании и размещении.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;

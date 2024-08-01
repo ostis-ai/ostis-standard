@@ -1,8 +1,8 @@
-.system_element_4908
+.system_element_4991
 = [*
 
-	ostis_standard
-	=> .system_element_4910: .system_element_4909
+	.system_element_759
+	=> .system_element_4993: .system_element_4992
 	(*
 		=> nrel_idtf: [<p>принципы, лежащие в основе структуризации и оформленияСтандарта OSTIS</p>]
 		(*
@@ -10,13 +10,13 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	<=> .system_element_151: <
+	<=> .system_element_200: <
 		[<p>Основной формой представления <i>Стандарта OSTIS</i> какполной документации текущего состояния <i>Технологии OSTIS</i> является<i>текущее состояние</i> основной части <i>базы знаний</i> специальнойинтеллектуальной компьютерной <i>Метасистемы IMS.ostis</i>, обеспечивающейиспользование и эволюцию (перманентное совершенствование) <i>ТехнологииOSTIS</i>. Такое представление <i>Стандарта OSTIS</i> обеспечивает эффективнуюсемантическую навигацию по содержанию <i>Стандарта OSTIS</i> и возможностьзадавать <i>Метасистеме IMS.ostis</i> широкий спектр нетривиальных вопросов осамых различных деталях и тонкостях <i>Технологии OSTIS</i></p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
-		[<p>Непосредственно сам <i>Стандарт OSTIS</i> представляетсобой внутреннее <i>смысловое представление</i> основной части базы знаний<i>Метасистемы IMS.ostis</i> на внутреннем смысловом языке<i>ostis-систем</i> (этот язык назван нами <i>SC-кодом</i> - SemanticComputer Code)</p>]
+		[<p>Непосредственно сам <i>Стандарт OSTIS</i> представляетсобой внутреннее <i>смысловое представление</i> основной части базы знаний<i>Метасистемы IMS.ostis</i> на внутреннем смысловом языке<i>ostis-систем</i> (этот язык назван нами <i>SC-кодом</i>  SemanticComputer Code)</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
@@ -138,12 +138,12 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4911
-	=> .system_element_791: .system_element_4912;;
+	.system_element_4994
+	=> .system_element_2529: .system_element_4995;;
 
-	.system_element_4913
-	=> .system_element_791: .system_element_4914;;
+	.system_element_4996
+	=> .system_element_2529: .system_element_4997;;
 
-	.system_element_4915
-	=> .system_element_791: .system_element_4916;;
+	.system_element_4998
+	=> .system_element_2529: .system_element_4999;;
 *];;
