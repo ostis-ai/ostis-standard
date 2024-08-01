@@ -1,5 +1,7 @@
+\begin{SCn}
+\scnsectionheader{Предметная область и онтология денотационной семантики Языка представления нейросетевого метода решения задач}
 \begin{scnsubstruct}
-
+	
 \scnheader{Денотационная семантика Языка представления нейросетевого метода решения задач}
 \scntext{примечание}{Денотационная семантика Языка представления нейросетевого метода решения задач в базах знаний описывается в рамках предметной области и соответствующей ей онтологии нейросетевого метода.}
 \scntext{примечание}{Так же в \textit{Предметную область нейросетевых методов} добавлены понятия для описания метрик эффективности \textit{нейросетевых методов}. Данные метрики учитываются \textit{решателем задач} при принятии решения об использовании того или иного \textit{нейросетевого метода}.}
@@ -81,8 +83,10 @@
 \scntext{примечание}{Отдельный формальный нейрон является искусственной нейронной сети с одним нейроном в единственном слое.}
 \scnsubset{искусственная нейронная сеть}
 \scntext{пояснение}{\textbf{\textit{формальный нейрон}} --- это основной элемент \textit{искусственной нейронной сети}, применяющий свою \textit{функцию активации} к сумме произведений входных сигналов на весовые коэффициенты:
-	$$y = F\left(\sum_{i=1}^{n} w_ix_i - T\right) = F(WX - T)$$
-	где $X = (x_1,x_2,...,x_n)^T$ --- вектор входного сигнала; $W - (w_1,w_2,...,w_n)$ --- вектор весовых коэффициентов; $T$ --- пороговое значение;
+	\begin{equation*}
+		y \eq F\left(\sum\underscore{i=1}\upperscore{n} w\underscore{i} x\underscore{i} - T\right) \eq F(WX - T)
+	\end{equation*}
+		где $X \eq (x\underscore{1},x\underscore{2},...,x\underscore{n})\upperscore{T}$ --- вектор входного сигнала; $W - (w\underscore{1},w\underscore{2},...,w\underscore{n})$ --- вектор весовых коэффициентов; $T$ --- пороговое значение;
 	\textit{F} --- функция активации.}
 \begin{scnindent}
 	\begin{scnrelfromset}{источник}
@@ -201,7 +205,7 @@
 		\begin{scnindent}
 			\scntext{формула}{
 				\begin{equation*}
-					y = sign(S) =
+					y \eq sign(S) \eq
 					\begin{cases}
 						1, S > 0,\\
 						0, S \leq 0
@@ -212,7 +216,7 @@
 		\begin{scnindent}
 			\scntext{формула}{
 				\begin{equation*}
-					y = \frac{1}{1+e^{-cS}}
+					y \eq \frac{1}{1+e\upperscore{-cS}}
 				\end{equation*}}
 				\begin{scnindent}
 					\scntext{примечание}{\textit{с} > 0 --- коэффициент, характеризующий ширину сигмоидной функции по оси абсцисс, \textit{S} --- в.с.}
@@ -222,7 +226,7 @@
 		\begin{scnindent}
 			\scntext{формула}{
 				\begin{equation*}
-					y = \frac{e^{cS}-e^{-cS}}{e^{cs}+e^{-cS}}
+					y \eq \frac{e\upperscore{cS}-e\upperscore{-cS}}{e\underscore{cs}+e\upperscore{-cS}}
 				\end{equation*}}
 				\begin{scnindent}
 					\scntext{примечание}{\textit{с} > 0 --- коэффициент, характеризующий ширину сигмоидной функции по оси абсцисс, \textit{S} --- в.с.}
@@ -232,17 +236,17 @@
 		\begin{scnindent}
 			\scntext{формула}{
 				\begin{equation*}
-					y_j = softmax(S_j) = \frac{e^{S_j}}{\sum_{j} e^{S_j}}
+					y\underscore{j} \eq softmax(S\underscore{j}) \eq \frac{e\underscore{S\underscore{j}}}{\sum\underscore{j} e\upperscore{S\underscore{j}}}
 				\end{equation*}}
 				\begin{scnindent}
-					\scntext{примечание}{$S_j$ --- в.с. \textit{j}-го выходного нейрона.}
+					\scntext{примечание}{$S\underscore{j}$ --- в.с. \textit{j}-го выходного нейрона.}
 				\end{scnindent}
 		\end{scnindent}
 	\scnitem{функция ReLU}
 		\begin{scnindent}
 			\scntext{формула}{
 				\begin{equation*}
-					y = F(S) =
+					y \eq F(S) \eq
 					\begin{cases}
 						S, S > 0,\\
 						kS, S \leq 0
@@ -288,17 +292,21 @@
 \begin{scnindent}
 	\begin{scneqtoset}
 		\scnitem{классификационные метрики}
-		\begin{scnrelfromset}{декомпозиция}
-			\scnitem{точность и.н.с.}
-			\scnitem{полнота и.н.с.}
-			\scnitem{F1-метрика}
-		\end{scnrelfromset}
+		\begin{scnindent}
+			\begin{scnrelfromset}{декомпозиция}
+				\scnitem{точность и.н.с.}
+				\scnitem{полнота и.н.с.}
+				\scnitem{F1-метрика}
+			\end{scnrelfromset}
+		\end{scnindent}
 		\scnitem{регрессионные метрики}
-		\begin{scnrelfromset}{декомпозиция}
-			\scnitem{MAE}
-			\scnitem{MAPE}
-			\scnitem{RMSE}
-		\end{scnrelfromset}
+		\begin{scnindent}
+			\begin{scnrelfromset}{декомпозиция}
+				\scnitem{MAE}
+				\scnitem{MAPE}
+				\scnitem{RMSE}
+			\end{scnrelfromset}
+		\end{scnindent}
 	\end{scneqtoset}
 \end{scnindent}
 
@@ -335,23 +343,23 @@
 
 \scnheader{MAE}
 \scnidtf{mean absolute error}
-\scntext{формула}{$\frac{1}{N} \sum_{i=1}^N |y_{etalon}^i - y_{predicted}^i|$}
+\scntext{формула}{$\frac{1}{N} \sum\underscore{i \eq 1}\upperscore{N} |y\underscore{etalon}\upperscore{i} - y\underscore{predicted}\upperscore{i}|$}
 \begin{scnindent}
-	\scntext{примечание}{$y_{etalon}^i$ --- эталонное значение,\\ $y_{predicted}^i$ --- значение, полученное и.н.с.,\\ \textit{N} --- объем обучающей выборки}
+	\scntext{примечание}{$y\underscore{etalon}\upperscore{i}$ --- эталонное значение,\\ $y\underscore{predicted}\upperscore{i}$ --- значение, полученное и.н.с.,\\ \textit{N} --- объем обучающей выборки}
 \end{scnindent}
 
 \scnheader{MAPE}
 \scnidtf{mean absolute percentage error}
-\scntext{формула}{$\frac{1}{N} \sum_{i=1}^N \frac{|y_{etalon}^i - y_{predicted}^i|}{y_{etalon}^i} * 100\%$}
+\scntext{формула}{$\frac{1}{N} \sum\underscore{i \eq 1}\upperscore{N} \frac{|y\underscore{etalon}\upperscore{i} - y\underscore{predicted}\upperscore{i}|}{y\underscore{etalon}\upperscore{i}} * 100\percent$}
 \begin{scnindent}
-	\scntext{примечание}{$y_{etalon}^i$ --- эталонное значение,\\ $y_{predicted}^i$ --- значение, полученное и.н.с.,\\ \textit{N} --- объем обучающей выборки}
+	\scntext{примечание}{$y\underscore{etalon}\upperscore{i}$ --- эталонное значение,\\ $y\underscore{predicted}\upperscore{i}$ --- значение, полученное и.н.с.,\\ \textit{N} --- объем обучающей выборки}
 \end{scnindent} 
 
 \scnheader{RMSE}
 \scnidtf{root mean squared error}
-\scntext{формула}{$\sqrt{\frac{1}{N} \sum_{i=1}^N (y_{etalon}^i - y_{predicted}^i)^2}$}
+\scntext{формула}{$\sqrt{\frac{1}{N} \sum\underscore{i \eq 1}\upperscore{N} (y\underscore{etalon}\upperscore{i} - y\underscore{predicted}\upperscore{i})\upperscore{2}}$}
 \begin{scnindent}
-	\scntext{примечание}{$y_{etalon}^i$ --- эталонное значение,\\ $y_{predicted}^i$ --- значение, полученное и.н.с.,\\ \textit{N} --- объем обучающей выборки}
+	\scntext{примечание}{$y\underscore{etalon}\upperscore{i}$ --- эталонное значение,\\ $y\underscore{predicted}\upperscore{i}$ --- значение, полученное и.н.с.,\\ \textit{N} --- объем обучающей выборки}
 \end{scnindent}
 
 \scnheader{SCg-текст. Пример формализации архитектуры искусственной нейронной сети в базе знаний}
@@ -366,3 +374,4 @@
 \end{scnrelfromvector}
 
 \scnendcurrentsectioncomment
+\end{SCn}
