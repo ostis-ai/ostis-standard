@@ -1,4 +1,4 @@
-.system_element_5040
+.system_element_5131
 => nrel_inclusion: [*
 	=> nrel_explanation: [<p><i>Система ключевых знаков Стандарта OSTIS</i> должнастать целостным дополнением  к Оглавлению Стандарта OSTIS
 	<ul>
@@ -10,9 +10,9 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	ostis_standard
-	=> .system_element_1843: <
-		.system_element_2021
+	.system_element_759
+	=> .system_element_980: <
+		.system_element_802
 		(*
 			=> nrel_idtf: [<p>база знаний, представленная в SC-коде</p>];;
 			=> nrel_idtf: [<p>sc-модель базы знаний</p>]
@@ -21,16 +21,16 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_5041;
-		.system_element_5042;
-		.system_element_5043;
-		.system_element_5044;
-		.system_element_5045;
-		.system_element_5046;
-		.system_element_5047;
-		.system_element_5048;
-		.system_element_5049;
-		.system_element_5048
+		.system_element_5132;
+		.system_element_5133;
+		.system_element_5134;
+		.system_element_5135;
+		.system_element_5136;
+		.system_element_5137;
+		.system_element_5138;
+		.system_element_5139;
+		.system_element_5140;
+		.system_element_5139
 		(*
 			=> nrel_idtf: [<p>онтологическая модель интерфейса, построенная на основе SC-кода</p>]
 			(*
@@ -38,8 +38,8 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_5050;
-		.system_element_5051
+		.system_element_5141;
+		.system_element_5142
 		(*
 			=> nrel_idtf: [<p>программная система интерпретации логико-семантических моделейostis-систем, построенная на основе графовой СУБД</p>];;
 			=> nrel_idtf: [<p>система управления базами знаний (СУБЗ) ostis-систем, построенная наоснове графовых СУБД</p>]
@@ -48,7 +48,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_5052
+		.system_element_5143
 		(*
 			=> nrel_idtf: [<p>компьютер с ассоциативной графодинамической (структурнореконфигурируемой) памятью, ориентированный на реализацию ostis-систем</p>];;
 			=> nrel_idtf: [<p>компьютер с ассоциативной графодинамической памятью, обеспечивающийинтерпретацию логико-семантических моделей ostis-систем</p>]
@@ -63,8 +63,8 @@
 			*);;
 		*);
 		project_ostis;
-		ostis_standard;
-		ostis_ecosystem
+		.system_element_759;
+		.system_element_760
 		(*
 			=> nrel_idtf: [<p>Экосистема ostis-систем и их пользователей</p>];;
 			=> nrel_idtf: [<p>Вариант построения smart-общества (общества 5.0) на основеostis-систем</p>]
@@ -73,7 +73,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_5053
+		.system_element_5144
 		(*
 			=> nrel_idtf: [<p>многоагентная модель обработки информации</p>];;
 			=> nrel_idtf: [<p><i>модель обработки информации</i>, рассматривающая <i>процессобработки информации</i> как <i>деятельность</i>, выполняемую некоторым<i>коллективом</i> самостоятельных <i>информационных агентов</i> (агентовобработки информации)</p>]
@@ -83,8 +83,8 @@
 			*);;
 		*)
 	>;
-	=> .system_element_5054: technology_OSTIS;
-	=> .system_element_5055: ostis_system
+	=> .system_element_5145: technology_OSTIS;
+	=> .system_element_5146: ostis_system
 	(*
 		=> nrel_idtf: [<p>множество всевозможных ostis-систем</p>];;
 		=> nrel_idtf: [<p>компьютерная система, построенная по Технологии OSTIS</p>]
@@ -93,10 +93,10 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	=> .system_element_5056: <
-		.system_element_5057;
-		.system_element_5058;
-		.system_element_5059
+	=> .system_element_5147: <
+		.system_element_5148;
+		.system_element_5149;
+		.system_element_5150
 		(*
 			=> nrel_idtf: [<p>интерфейс компьютерной системы, построенный на основе онтологий</p>];;
 			=> nrel_idtf: [<p>ontology based interface</p>]
@@ -105,15 +105,15 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_5060;
-		.system_element_1495;
-		.system_element_5061;
-		.system_element_5062;
-		.system_element_5063;
-		.system_element_1948;
-		.system_element_5064;
-		.system_element_5065;
-		.system_element_1873
+		.system_element_5151;
+		.system_element_1585;
+		.system_element_5152;
+		.system_element_5153;
+		.system_element_5154;
+		.system_element_903;
+		.system_element_5155;
+		.system_element_5156;
+		.system_element_820
 		(*
 			=> nrel_idtf: [<p>мультимодальная интеллектуальная компьютерная система</p>]
 			(*
@@ -121,20 +121,20 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_5066;
-		.system_element_5067;
-		.system_element_5068;
-		.system_element_5069;
-		.system_element_5070;
-		.system_element_5071;
-		.system_element_5072;
-		.system_element_5073;
-		.system_element_5074;
-		.system_element_5075;
-		.system_element_5076;
+		.system_element_5157;
+		.system_element_5158;
+		.system_element_5159;
+		.system_element_5160;
+		.system_element_5161;
+		.system_element_5162;
+		.system_element_5163;
+		.system_element_5164;
+		.system_element_5165;
+		.system_element_5166;
+		.system_element_5167;
 		non_atomic_section;
 		atomic_section;
-		.system_element_1070
+		.system_element_756
 		(*
 			=> nrel_idtf: [<p>ключевая сущность*</p>]
 			(*
@@ -142,12 +142,12 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_208;
+		.system_element_357;
 		scg_code;
 		scs_code;
-		.system_element_1145;
-		nrel_decomposition;
-		.system_element_5077;
+		.system_element_1116;
+		.system_element_417;
+		.system_element_5168;
 		subject_domain
 		(*
 			=> nrel_idtf: [<p>sc-модель предметной области</p>];;
@@ -157,8 +157,8 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_5078;
-		.system_element_5079
+		.system_element_5169;
+		.system_element_5170
 		(*
 			=> nrel_idtf: [<p>подкласс максимального объекта исследования'</p>]
 			(*
@@ -167,9 +167,9 @@
 			*);;
 		*);
 		rrel_explored_relation;
-		.system_element_5080;
+		.system_element_5171;
 		ontology;
-		.system_element_5081;
+		.system_element_5172;
 		formed_set
 		(*
 			=> nrel_idtf: [<p>конечное множество, все элементы которого представленысоответствующими sc-элементами</p>]
@@ -184,8 +184,8 @@
 		nrel_second_domain;
 		nrel_explanation;
 		nrel_semantic_equivalence;
-		.system_element_391;
+		.system_element_372;
 		nrel_note;
-		.system_element_825
+		.system_element_1120
 	>;;
 *];;

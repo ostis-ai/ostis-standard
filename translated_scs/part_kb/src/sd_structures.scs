@@ -1,9 +1,9 @@
-.system_element_3331
+.system_element_3945
 => nrel_inclusion: [*
 
 	subject_domain_of_structures
 	<- subject_domain;
-	-> .system_element_765: 
+	-> .system_element_1835: 
 		structure
 	;
 	-> .system_element_112: 
@@ -15,7 +15,7 @@
 		semantic_level_structural_element;
 		quantity_semantic_level_structural_element
 	;
-	-> .system_element_1000: 
+	-> .system_element_748: 
 		rrel_structure_element;
 		rrel_unrepresented_set;
 		rrel_completely_represented_set;
@@ -66,9 +66,9 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> nrel_subdividing: .system_element_3332
+	=> nrel_subdividing: .system_element_3946
 	(*
-		<=> .system_element_151: {
+		<=> .system_element_200: {
 			process
 			(*
 				=> nrel_idtf: [<p>динамическая структура</p>];;
@@ -83,7 +83,7 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);
-			.system_element_3333
+			.system_element_3947
 			(*
 				=> nrel_idtf: [<p>стационарная структура</p>];;
 				=> nrel_idtf: [<p>структура, не изменяющаяся во времени</p>]
@@ -99,10 +99,10 @@
 			*)
 		};;
 	*);
-	=> nrel_subdividing: .system_element_3334
+	=> nrel_subdividing: .system_element_3948
 	(*
-		<=> .system_element_151: {
-			.system_element_3335
+		<=> .system_element_200: {
+			.system_element_3949
 			(*
 				=> nrel_idtf: [<p>(структура ⋂ временная сущность)</p>]
 				(*
@@ -110,7 +110,7 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);
-			.system_element_3336
+			.system_element_3950
 			(*
 				=> nrel_idtf: [<p>(структура ⋂ постоянная сущность)</p>]
 				(*
@@ -134,7 +134,7 @@
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
-		=> .system_element_232: "file://images/sd_structures/example_of_scg_structure.png"
+		=> .system_element_253: "file://images/sd_structures/example_of_scg_structure.png"
 		(*
 			<- concept_file;;
 			=> nrel_format: format_png;;
@@ -180,7 +180,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3337
+	.system_element_3951
 	-> rrel_structure_element;
 	-> rrel_maximum_set;
 	-> rrel_non_maximum_set;
@@ -230,7 +230,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_1977: "file://images/sd_structures/example_of_element_structure.png"
+	=> .system_element_928: "file://images/sd_structures/example_of_element_structure.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
@@ -239,7 +239,7 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
-		<- .system_element_233;;
+		<- .system_element_254;;
 	*);;
 
 	rrel_unrepresented_set
@@ -362,7 +362,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3338
+	.system_element_3952
 	=> nrel_explanation: [<p><b><i>структура второго уровня</i></b> --- <i>структура</i>, среди элементов которой есть хотя бы один <i>элемент второго уровня'</i>.</p>]
 	(*
 		<- lang_ru;;
@@ -379,7 +379,7 @@
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
-		=> .system_element_232: "file://images/sd_structures/sem_level_struct_elem.png"
+		=> .system_element_253: "file://images/sd_structures/sem_level_struct_elem.png"
 		(*
 			<- concept_file;;
 			=> nrel_format: format_png;;
@@ -436,7 +436,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_232: "file://images/sd_structures/homomorphism.png"
+	=> .system_element_253: "file://images/sd_structures/homomorphism.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
@@ -463,7 +463,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_232: "file://images/sd_structures/isomorphism.png"
+	=> .system_element_253: "file://images/sd_structures/isomorphism.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
@@ -480,7 +480,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_232: "file://images/sd_structures/automorphism.png"
+	=> .system_element_253: "file://images/sd_structures/automorphism.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
@@ -497,7 +497,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_232: "file://images/sd_structures/analogy.png"
+	=> .system_element_253: "file://images/sd_structures/analogy.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
@@ -521,7 +521,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_232: "file://images/sd_structures/primary_sc_syntax.png"
+	=> .system_element_253: "file://images/sd_structures/primary_sc_syntax.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;

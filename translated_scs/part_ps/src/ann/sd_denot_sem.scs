@@ -1,0 +1,623 @@
+.system_element_5516
+=> nrel_inclusion: [*
+
+	.system_element_5517
+	=> nrel_note: [<p>Денотационная семантика Языка представления нейросетевого метода решения задач в базах знаний описывается в рамках предметной области и соответствующей ей онтологии нейросетевого метода.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_note: [<p>Так же в <i>Предметную область нейросетевых методов</i> добавлены понятия для описания метрик эффективности <i>нейросетевых методов</i>. Данные метрики учитываются <i>решателем задач</i> при принятии решения об использовании того или иного <i>нейросетевого метода</i>.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+
+	.system_element_3988
+	=> nrel_idtf: [<p>и.н.с.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>множество искусственных нейронных сетей</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>нейронная сеть</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>нейросетевой метод</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> .system_element_1120: [<p><b><i>искусственная нейронная сеть</i></b> --- это совокупность нейронных элементов и связей между ними.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_note: [<p>Искусственная нейронная сеть состоит из <b><i>формальных нейронов</i></b>, которые связаны между собой посредством <b><i>синаптических связей</i></b>. Нейроны организованы в <b><i>слои</i></b>. Каждый нейрон слоя принимает сигналы со входящих в него синаптических связей, обрабатывает их единым образом с помощью заданной ему или всему слою <b><i>функции активации</i></b> и передает результат на выходящие из него синаптические связи.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+		=> .system_element_122: {
+			.system_element_5265
+		};;
+	*);;
+
+	.system_element_5518
+	=> nrel_note: [<p><i>Архитектурой и.н.с.</i> будем называть совокупность информации о структуре ее слоев, формальных нейронов, синаптических связей и функций активаций. То есть то, что можно обучить и использовать для решения задач.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> .system_element_252: "file://neural_network.png"
+	(*
+		<- concept_file;;
+		=> nrel_format: format_png;;
+		=> nrel_note: [<p>Пример архитектуры и.н.с.</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+
+	.system_element_3988
+	=> nrel_note: [<p>В соответствии с тем, какая у и.н.с. архитектура, можно выделить соответствующую иерархию классов и.н.с.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_subdividing: .system_element_5519
+	(*
+		<=> .system_element_200: {
+			.system_element_5284
+			(*
+				=> nrel_subdividing: {
+					.system_element_5285
+					(*
+						=> nrel_subdividing: {
+							.system_element_5286;
+							.system_element_5287
+						};;
+					*);
+					.system_element_5288;
+					.system_element_5289;
+					.system_element_5520
+				};;
+			*);
+			.system_element_5290
+			(*
+				=> nrel_subdividing: {
+					.system_element_5291;
+					.system_element_5292
+				};;
+			*);
+			.system_element_5293
+			(*
+				=> nrel_subdividing: {
+					.system_element_5294;
+					.system_element_5295;
+					.system_element_5296;
+					.system_element_5297;
+					.system_element_5298
+				};;
+			*)
+		};;
+	*);
+	=> nrel_subdividing: .system_element_5521
+	(*
+		<=> .system_element_200: {
+			.system_element_5299;
+			.system_element_5300
+		};;
+	*);;
+
+	.system_element_5280
+	=> nrel_idtf: [<p>искусственный нейрон</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>нейрон</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>ф.н.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>нейронный элемент</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>множество нейронов искусственных нейронных сетей</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>математическая модель реального биологического нейрона</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_note: [<p>Отдельный формальный нейрон является искусственной нейронной сети с одним нейроном в единственном слое.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	<= nrel_inclusion: .system_element_3988;
+	=> nrel_explanation: [<p><b><i>формальный нейрон</i></b> --- это основной элемент <i>искусственной нейронной сети</i>, применяющий свою <i>функцию активации</i> к сумме произведений входных сигналов на весовые коэффициенты:y = F(<sub>i=1</sub><sup>n</sup> w<sub>i</sub> x<sub>i</sub> - T) = F(WX - T)где X = (x<sub>1</sub>,x<sub>2</sub>,...,x<sub>n</sub>)<sup>T</sup> --- вектор входного сигнала; W - (w<sub>1</sub>,w<sub>2</sub>,...,w<sub>n</sub>) --- вектор весовых коэффициентов; T --- пороговое значение;<i>F</i> --- функция активации.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+		=> .system_element_122: {
+			.system_element_5265
+		};;
+	*);
+	=> .system_element_3880: "file://neuron.png"
+	(*
+		<- concept_file;;
+		=> nrel_format: format_png;;
+		=> nrel_note: [<p>Схема модели формального нейрона.</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);
+	=> nrel_note: [<p>Формальные нейроны могут иметь полный набор связей с нейронами предшествующего слоя или неполный (разряженный) набор связей.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_subdividing: {
+		.system_element_5301
+		(*
+			=> nrel_idtf: [<p>нейрон, у которого есть полный набор связей с нейронами предшествующего слоя</p>];;
+			=> nrel_explanation: [<p>Отдельный обрабатывающий элемент и.н.с., выполняющий функциональное преобразование взвешенной суммы элементов вектора входных значений с помощью функции активации.</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);
+		.system_element_5302
+		(*
+			=> nrel_explanation: [<p>Отдельный обрабатывающий элемент и.н.с., выполняющий функциональное преобразование результата операции свертки матрицы входных значений с помощью функции активации.</p>];;
+			=> nrel_note: [<p>Сверточный формальный нейрон может быть представлен полносвязным формальным нейроном.</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+			=> nrel_note: [<p>Сверточный формальный нейрон с соответствующим ему ядром свертки может быть представлен нейроном с неполным набором связей.</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);
+		.system_element_5303
+		(*
+			=> nrel_explanation: [<p>Формальный нейрон, имеющий обратную связь с самим собой или с другими нейронами и.н.с.</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*)
+	};;
+
+	.system_element_5281
+	=> nrel_idtf: [<p>синапс</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	<= nrel_inclusion: .system_element_5522;;
+
+	.system_element_5282
+	=> nrel_idtf: [<p>слой</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>слой искусственной нейронной сети</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>множество слоев искусственных нейронных сетей</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_note: [<p>Отдельный слой является искусственной нейронной сетью с одним слоем. Следует отметить принципиальную важность этого замечания. Один слой и.н.с. уже является нейронной сетью, поскольку над ним можно производить все основные операции, которые производятся над "большой" и.н.с. (его можно обучить и использовать для решения определенной задачи).</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	<= nrel_inclusion: .system_element_3988;
+	=> nrel_explanation: [<p><b><i>слой и.н.с</i></b> --- это множество нейронных элементов, на которые в каждый такт времени параллельно поступает информация от других нейронных элементов сети.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+		=> .system_element_122: {
+			.system_element_5265
+		};;
+	*);
+	=> nrel_explanation: [<p><b><i>слой и.н.с.</i></b> --- это множество формальных нейронов, осуществляющих параллельную независимую обработку вектора или матрицы входных значений</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_subdividing: .system_element_5523
+	(*
+		<=> .system_element_200: {
+			.system_element_5524
+			(*
+				=> nrel_idtf: [<p>слой, в котором каждый нейрон имеет связь с каждым нейроном предшествующего слоя</p>];;
+				=> nrel_idtf: [<p>слой, в котором каждый нейрон является полносвязным</p>]
+				(*
+					<- lang_ru;;
+					=> nrel_format: format_html;;
+				*);;
+			*);
+			.system_element_5525
+			(*
+				=> nrel_idtf: [<p>слой, в котором каждый нейрон является сверточным</p>]
+				(*
+					<- lang_ru;;
+					=> nrel_format: format_html;;
+				*);;
+			*);
+			.system_element_5317
+			(*
+				=> nrel_idtf: [<p>слой, осуществляющий нелинейное преобразование входных данных</p>];;
+				=> nrel_explanation: [<p>Как правило, выделяются в отдельные слои только в программных реализациях. Фактически рассматриваются как финальный этап расчета выходной активности любого нейрона --- применение функции активации.</p>]
+				(*
+					<- lang_ru;;
+					=> nrel_format: format_html;;
+				*);;
+				=> nrel_note: [<p>не изменяет размерность входных данных</p>]
+				(*
+					<- lang_ru;;
+					=> nrel_format: format_html;;
+				*);;
+			*);
+			.system_element_5318
+			(*
+				=> nrel_idtf: [<p>слой, реализующий технику регуляризации dropout</p>];;
+				=> nrel_note: [<p>Данный тип слоя функционирует только во время обучения и.н.с.</p>]
+				(*
+					<- lang_ru;;
+					=> nrel_format: format_html;;
+				*);;
+				=> nrel_explanation: [<p>Поскольку полносвязные слои имеют большое количество настраиваемых параметров, они подвержены эффекту переобучения. Один из способов устранить такой негативный эффект --- выполнить частичный отсев результатов на выходе полносвязного слоя. На этапе обучения техника dropout позволяет отбросить выходную активность некоторых нейронов с определенной, заданной вероятностью. Выходная активность "отброшенных" нейронов полагается равной нулю.</p>]
+				(*
+					<- lang_ru;;
+					=> nrel_format: format_html;;
+				*);;
+			*);
+			.system_element_5526
+			(*
+				=> nrel_idtf: [<p>подвыборочный слой</p>];;
+				=> nrel_idtf: [<p>объединяющий слой</p>]
+				(*
+					<- lang_ru;;
+					=> nrel_format: format_html;;
+				*);;
+				=> nrel_idtf: [<p>слой, осуществляющий уменьшение размерности входных данных</p>]
+				(*
+					<- lang_ru;;
+					=> nrel_format: format_html;;
+				*);;
+			*);
+			.system_element_5527
+		}
+		(*
+			=> nrel_note: [<p>Нужно отметить, что данный перечень неполный --- разновидности слоев и.н.с. появляются практически в каждой заслуживающей внимания публикации по нейросетевым алгоритмам и на текущий момент их существует достаточно много, однако, как правило, при построении более традиционных архитектур ограничиваются только приведенными вариантами слоев.</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);
+	=> nrel_note: [<p>слои и.н.с. также могут быть классифицированы по исполняемой роли в рамках архитектуры (место в последовательности слоев и.н.с.).Так, например, слой, расположенный первым, называется распределяющим. Слои, расположенные далее, за исключением последнего, называются обрабатывающими. Наконец, последний слой носит название выходного слоя и.н.с.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+
+	.system_element_5325
+	=> nrel_idtf: [<p>функция активации нейрона*</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	<- norole_relation;
+	<- binary_relation;
+	=> nrel_note: [<p>функция активации* --- последний архитектурный компонент и.н.с.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_explanation: [<p><b><i>функция активации*</i></b> --- неролевое отношение, связывающее формальный нейрон с функцией, результат применения которой к <b><i>взвешенной сумме нейрона</i></b> определяет его <b><i>выходное значение</i></b>.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_definitional_domain: .system_element_2170
+	(*
+		<= nrel_combination: {
+			.system_element_5280;
+			.system_element_5435
+		};;
+	*);
+	=> nrel_first_domain: .system_element_5280;
+	=> nrel_second_domain: .system_element_5435
+	(*
+		=> nrel_subdividing: {
+			.system_element_5528
+			(*
+				=> .system_element_5383: [<p>y = kS</p>]
+				(*
+					<- lang_ru;;
+					=> nrel_format: format_html;;
+					=> nrel_note: [<p><i>k</i> --- коэффициент наклона прямой, <i>S</i> --- в.с.</p>]
+					(*
+						<- lang_ru;;
+						=> nrel_format: format_html;;
+					*);;
+				*);;
+			*);
+			.system_element_5529
+			(*
+				=> .system_element_5383: [<p>y = sign(S) =1, S > 0,0, S >= 0</p>]
+				(*
+					<- lang_ru;;
+					=> nrel_format: format_html;;
+				*);;
+			*);
+			.system_element_5530
+			(*
+				=> .system_element_5383: [<p>y = <sup>1</sup>&frasl;<sub>1+e<sup>-cS</sup></sub></p>]
+				(*
+					<- lang_ru;;
+					=> nrel_format: format_html;;
+					=> nrel_note: [<p><i>с</i> > 0 --- коэффициент, характеризующий ширину сигмоидной функции по оси абсцисс, <i>S</i> --- в.с.</p>]
+					(*
+						<- lang_ru;;
+						=> nrel_format: format_html;;
+					*);;
+				*);;
+			*);
+			.system_element_5531
+			(*
+				=> .system_element_5383: [<p>y = <sup>e<sup>cS</sup>-e<sup>-cS</sup></sup>&frasl;<sub>e<sub>cs</sub>+e<sup>-cS</sup></sub></p>]
+				(*
+					<- lang_ru;;
+					=> nrel_format: format_html;;
+					=> nrel_note: [<p><i>с</i> > 0 --- коэффициент, характеризующий ширину сигмоидной функции по оси абсцисс, <i>S</i> --- в.с.</p>]
+					(*
+						<- lang_ru;;
+						=> nrel_format: format_html;;
+					*);;
+				*);;
+			*);
+			.system_element_5532
+			(*
+				=> .system_element_5383: [<p>y<sub>j</sub> = softmax(S<sub>j</sub>) = <sup>e<sub>S<sub>j</sub></sub></sup>&frasl;<sub><sub>j</sub> e<sup>S<sub>j</sub></sup></sub></p>]
+				(*
+					<- lang_ru;;
+					=> nrel_format: format_html;;
+					=> nrel_note: [<p>S<sub>j</sub> --- в.с. <i>j</i>-го выходного нейрона.</p>]
+					(*
+						<- lang_ru;;
+						=> nrel_format: format_html;;
+					*);;
+				*);;
+			*);
+			.system_element_5533
+			(*
+				=> .system_element_5383: [<p>y = F(S) =S, S > 0,kS, S >= 0</p>]
+				(*
+					<- lang_ru;;
+					=> nrel_format: format_html;;
+					=> nrel_note: [<p><i>k</i> = 0 или принимает небольшое значение, например, 0.01 или 0.001.</p>]
+					(*
+						<- lang_ru;;
+						=> nrel_format: format_html;;
+					*);;
+				*);;
+			*)
+		};;
+	*);;
+
+	.system_element_5534
+	<= nrel_inclusion: parameter;
+	=> nrel_subdividing: {
+		.system_element_5535
+		(*
+			=> nrel_idtf: [<p>параметр и.н.с., значение которого изменяется в ходе обучения</p>];;
+			=> nrel_subdividing: {
+				.system_element_5378;
+				.system_element_5307;
+				.system_element_5308
+				(*
+					=> nrel_idtf: [<p>квадратная матрица произвольного порядка, элементы которой изменяются в процессе обучения и.н.с.</p>];;
+					=> nrel_note: [<p>Если сверточный формальный нейрон представить в виде полносвязного формального нейрона, соответствующее ядро свертки преобразуется в вектор весовых коэффициентов.</p>]
+					(*
+						<- lang_ru;;
+						=> nrel_format: format_html;;
+					*);;
+				*)
+			};;
+		*);
+		.system_element_5536
+		(*
+			=> nrel_note: [<p>Параметр и.н.с., определяющий ее архитектуру.</p>];;
+			=> nrel_subdividing: {
+				.system_element_5310;
+				.system_element_5537;
+				.system_element_5538
+			};;
+		*)
+	};;
+
+	.system_element_5539
+	=> nrel_note: [<p>Метрики могут быть классифицированы по типу решаемой задачи.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_subdividing: .system_element_5540
+	(*
+		<=> .system_element_200: {
+			.system_element_5541
+			(*
+				=> .system_element_417: {
+					.system_element_5542;
+					.system_element_5543;
+					.system_element_5544
+				};;
+			*);
+			.system_element_5545
+			(*
+				=> .system_element_417: {
+					.system_element_5546;
+					.system_element_5547;
+					.system_element_5548
+				};;
+			*)
+		};;
+	*);;
+
+	.system_element_5542
+	=> nrel_idtf: [<p>precision</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>доля верно идентифицированных положительных исходов в общем числе исходов, которые были идентифицированы как положительные</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> .system_element_5383: [<p>PRE = <sup>TP</sup>&frasl;<sub>TP + FP</sub></p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+		=> nrel_note: [<p><i>TP</i> и <i>FP</i> --- число истинно-положительных и ложно-положительных предсказаний нейронной сети соответственно</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+
+	.system_element_5543
+	=> nrel_idtf: [<p>recall</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> nrel_idtf: [<p>доля верно идентифицированных положительных исходов в общем числе положительных исходов</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> .system_element_5383: [<p>REC = <sup>TP</sup>&frasl;<sub>TP + FN</sub></p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+		=> nrel_note: [<p><i>TP</i> и <i>FN</i> --- число истинно-положительных и ложно-отрицательных предсказаний нейронной сети соответственно</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+
+	.system_element_5544
+	=> .system_element_5383: [<p>F1 = 2 * <sup>PRE * REC</sup>&frasl;<sub>PRE + REC</sub></p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+		=> nrel_note: [<p><i>PRE</i> и <i>REC</i> --- точность и полнота и.и.с. соответственно</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+
+	.system_element_5546
+	=> nrel_idtf: [<p>mean absolute error</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> .system_element_5383: [<p><sup>1</sup>&frasl;<sub>N</sub> <sub>i = 1</sub><sup>N</sup> |y<sub>etalon</sub><sup>i</sup> - y<sub>predicted</sub><sup>i</sup>|</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+		=> nrel_note: [<p>y<sub>etalon</sub><sup>i</sup> --- эталонное значение, y<sub>predicted</sub><sup>i</sup> --- значение, полученное и.н.с., <i>N</i> --- объем обучающей выборки</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+
+	.system_element_5547
+	=> nrel_idtf: [<p>mean absolute percentage error</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> .system_element_5383: [<p><sup>1</sup>&frasl;<sub>N</sub> <sub>i = 1</sub><sup>N</sup> <sup>|y<sub>etalon</sub><sup>i</sup> - y<sub>predicted</sub><sup>i</sup>|</sup>&frasl;<sub>y<sub>etalon</sub><sup>i</sup></sub> * 100%</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+		=> nrel_note: [<p>y<sub>etalon</sub><sup>i</sup> --- эталонное значение, y<sub>predicted</sub><sup>i</sup> --- значение, полученное и.н.с., <i>N</i> --- объем обучающей выборки</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+
+	.system_element_5548
+	=> nrel_idtf: [<p>root mean squared error</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> .system_element_5383: [<p></p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+		=> nrel_note: [<p>y<sub>etalon</sub><sup>i</sup> --- эталонное значение, y<sub>predicted</sub><sup>i</sup> --- значение, полученное и.н.с., <i>N</i> --- объем обучающей выборки</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+
+	.system_element_5549
+	=> .system_element_3880: "file://neural_network_scg.png"
+	(*
+		<- concept_file;;
+		=> nrel_format: format_png;;
+	*);;
+*];
+=> nrel_conclusion: <
+	[<p>С помощью выделенных понятий становится возможна формализация в <i>базе знаний</i> архитектуры конкретных <i>и.н.с.</i> В качестве примера, на рисунке <i>SCg-текст. Пример формализации архитектуры искусственной нейронной сети в базе знаний</i> представлен пример формализации полносвязной двухслойной <i>и.н.с.</i> с двумя нейронами на входном слое и одном нейроне на обрабатывающем слоев.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	[<p>Следует отметить, что в практике авторов еще не было необходимости явно представлять и.н.с., как это показано на рисунке <i>SCg-текст. Пример формализации архитектуры искусственной нейронной сети в базе знаний</i>. Чаще всего, представление и.н.с. сводилось к представлению ее операционной семантики в виде SCP-программы, как это будет показано далее.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*)
+>;;

@@ -1,16 +1,16 @@
-.system_element_2878
+.system_element_1761
 => nrel_inclusion: [*
 
-	.system_element_2879
+	.system_element_1762
 	<- subject_domain;;
 
-	.system_element_2029
+	.system_element_812
 	=> nrel_idtf: [<p>ostis-система, являющаяся персональным ассистентом пользователя в рамках Экосистемы OSTIS</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_2880: {
+	=> .system_element_1763: {
 		[<p>Возможность анализа деятельности пользователя и формирования рекомендаций по ее оптимизации.</p>]
 		(*
 			<- lang_ru;;
@@ -42,7 +42,7 @@
 			=> nrel_format: format_html;;
 		*)
 	};
-	=> .system_element_200: {
+	=> .system_element_192: {
 		[<p>Пользователю нет необходимости хранить разную информацию в разной форме в разных местах, вся информация хранится в единой базе знаний компактно и без дублирований.</p>]
 		(*
 			<- lang_ru;;
@@ -59,7 +59,7 @@
 			=> nrel_format: format_html;;
 		*)
 	};
-	=> nrel_inclusion: .system_element_2881
+	=> nrel_inclusion: .system_element_1764
 	(*
 		=> nrel_idtf: [<p>персональный ассистент-учитель</p>]
 		(*
@@ -67,7 +67,7 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	=> nrel_inclusion: .system_element_2882
+	=> nrel_inclusion: .system_element_1765
 	(*
 		=> nrel_idtf: [<p>персональный фитнесс-тренер</p>]
 		(*
@@ -75,6 +75,6 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	=> nrel_inclusion: .system_element_2883;
-	=> nrel_inclusion: .system_element_2884;;
+	=> nrel_inclusion: .system_element_1766;
+	=> nrel_inclusion: .system_element_1767;;
 *];;

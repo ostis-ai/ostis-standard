@@ -1,20 +1,20 @@
-.system_element_1007
+.system_element_2536
 => nrel_inclusion: [*
 
-	.system_element_1010
+	.system_element_2537
 	<- subject_domain;
-	<= nrel_private_subject_domain: .system_element_994;
+	<= nrel_private_subject_domain: .system_element_2538;
 	-> .system_element_112: 
-		.system_element_869
+		.system_element_2539
 	;
-	-> .system_element_112: .system_element_1011;;
+	-> .system_element_112: .system_element_2540;;
 
-	.system_element_1012
-	=> nrel_inclusion: .system_element_838;
-	<= nrel_inclusion: .system_element_170;
+	.system_element_2541
+	=> nrel_inclusion: .system_element_2542;
+	<= nrel_inclusion: .system_element_725;
 	=> nrel_inclusion: semantic_neighborhood;
-	=> .system_element_193: .system_element_1013;
-	=> nrel_inclusion: .system_element_1014;
+	=> .system_element_180: .system_element_2543;
+	=> nrel_inclusion: .system_element_2544;
 	=> nrel_note: [<p>Базовый фрагмент предметной области и онтологии включает в себя теоретико-множественную и логическую онтологию, а также фрагменты терминологической онтологии, описывающие основные идентификаторы объектов исследования предметной области.</p>]
 	(*
 		<- lang_ru;;
@@ -25,19 +25,19 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	-> .system_element_1015;
-	-> .system_element_1016;
-	-> .system_element_1017;
-	=> nrel_inclusion: .system_element_1018;
+	-> .system_element_2545;
+	-> .system_element_2546;
+	-> .system_element_2547;
+	=> nrel_inclusion: .system_element_2548;
 	=> nrel_note: [<p>Целые базы знаний могут быть многократно используемыми компонентами в случае разработки интеллектуальных систем, имеющих схожие функциональные требования.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_862
-	-> .system_element_1019;
-	-> .system_element_1020;
+	.system_element_2549
+	-> .system_element_2550;
+	-> .system_element_2551;
 	=> nrel_explanation: [<p><i>Ядро базы знаний</i> представляет собой компонент, входящий в состав каждой базы знаний, разрабатываемой по <i>Технологии OSTIS</i>, и устанавливаемый в первую очередь.</p>]
 	(*
 		<- lang_ru;;
@@ -49,8 +49,8 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_1011
-	<= nrel_inclusion: .system_element_999;
+	.system_element_2540
+	<= nrel_inclusion: .system_element_2552;
 	-> rrel_maximum_studied_object_class;
 	-> rrel_not_maximum_studied_object_class;
 	-> rrel_explored_relation;;
