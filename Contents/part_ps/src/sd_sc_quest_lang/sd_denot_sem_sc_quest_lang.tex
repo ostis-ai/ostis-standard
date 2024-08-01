@@ -1,0 +1,281 @@
+\begin{SCn}
+
+\scnsectionheader{Предметная область и онтология денотационной семантики Языка вопросов для ostis-систем}
+\begin{scnsubstruct}
+
+    \scnheader{Предметная область денотационной семантики Языка вопросов для ostis-систем}
+	\scniselement{предметная область}
+    \begin{scnhaselementrolelist}{класс объектов исследования}
+        \scnitem{вопрос}
+        \scnitem{ответ на вопрос}
+        \scnitem{знак в рамках заданного вопроса}
+        \scnitem{основной знак в рамках заданного вопроса}
+        \scnitem{неосновной знак в рамках заданного вопроса}
+        \scnitem{отношение в рамках заданного вопроса}
+        \scnitem{базовое отношение в рамках заданного вопроса}
+    \end{scnhaselementrolelist}
+    \scnhaselementrole{ключевой знак}{Денотационная семантика Языка вопросов для ostis-систем}
+
+    \scnheader{Денотационная семантика Языка вопросов для ostis-систем}
+    \scntext{примечание}{\textbf{\textit{Денотационная семантика Языка вопросов для ostis-систем}} включает \textit{классы вопросов} и соответствующие \textit{классы ответов}, необходимые для спецификации формулировок \textit{вопросов} и \textit{ответов} на них, а также \textit{классы знаков} и \textit{отношений}, входящих в структуру любого \textit{вопроса}. В \textit{Семантической классификации вопросов} \textit{Языка вопросов для ostis-систем} заложена идея, описанная в работе \cite{Suleimanov2001}.}
+    \begin{scnindent}
+    	\begin{scnrelfromset}{источник}
+    		\scnitem{\scncite{Suleimanov2001}}
+    	\end{scnrelfromset}
+    \end{scnindent}
+    \scntext{примечание}{Любой \textbf{\textit{вопрос}} на \textit{Языке вопросов для ostis-систем} представляет собой \textit{спецификацию действия} на поиск или синтез \textit{знания}, удовлетворяющего информационную потребность \textit{пользователя}, инициирующего этот \textit{вопрос}. То есть \textit{вопрос} --- это ничто иное как \textit{задача}, с помощью которой выражается потребность пользователя в некоторой информации, возможно хранимой или выводимой в \textit{базе знаний} \textit{ostis-системы}.}
+    \begin{scnindent}
+    	\begin{scnrelfromset}{смотрите}
+    		\scnitem{Формализация понятий действия, задачи, метода, средства, навыка и технологии}
+    	\end{scnrelfromset}
+    \end{scnindent}
+    \scntext{примечание}{Каждому \textit{вопросу} можно взаимно однозначно сопоставить некоторое множество \textit{ответов на} этот \textit{вопрос}. Каждый \textit{ответ на вопрос} представляет собой некоторую \textit{sс-структуру} \textit{семантической окрестности основного знака}, раскрываемого в этом \textit{ответе на} заданный \textit{вопрос}.}
+
+    \scnheader{вопрос}
+    \scnidtf{запрос}
+    \scnidtf{непроцедурная формулировка задачи на поиск (в текущем состоянии базы знаний) или на синтез знания, удовлетворяющего заданным требованиям}
+    \scnidtf{запрос метода (способа) решения заданного (указываемого) \textit{класса задач} либо \textit{плана решения} конкретной указываемой \textit{задачи}}
+    \scnidtf{задача, направленная на удовлетворение информационной потребности некоторого субъекта-заказчика}
+    \scnsubset{задача}
+
+    \scnheader{ответ на вопрос}
+    \scnidtf{ответ на запрос}
+    \scnidtf{результат запроса}
+    \scnidtf{результат решения задачи на поиск или синтез знания, удовлетворяющий заданным требованиям}
+    \scnidtf{семантическая окрестность \textit{основного знака}, знание в которой удовлетворяет информационную потребность пользователя}
+    \scnidtf{знание в базе знаний ostis-системы, которое удовлетворяет информационную потребность пользователя}
+    \scnsubset{знание}
+    
+    \scnheader{знак в рамках заданного вопроса}
+    \scntext{примечание}{Среди всех классов \textit{знаков в рамках заданного вопроса} \textit{Языка вопросов для ostis-систем} можно выделить наиболее общие по иерархии классы \textit{знаков}.}
+    \scnsubset{знак}
+    \begin{scnrelfromset}{разбиение}
+        \scnitem{основной знак в рамках заданного вопроса}
+        \begin{scnindent}
+            \scnidtf{ключевой sc-элемент в рамках заданного вопроса}
+            \scnidtf{\textit{знак}, относительно которого задан вопрос}
+        \end{scnindent}
+        \scnitem{неосновной знак в рамках заданного вопроса}
+        \begin{scnindent}
+            \scnidtf{\textit{знак}, стоящий в некотором отношении с \textit{основным знаком в рамках заданного вопроса}}
+        \end{scnindent}
+    \end{scnrelfromset}
+    \scntext{определение}{\textbf{\textit{знаком в рамках заданного вопроса}} является любой \textit{знак понятия} или \textit{сущности}, принадлежащий этому \textit{вопросу}.}
+    \scntext{пояснение}{Между \textit{знаками в рамках заданного вопроса} задается множество связей \textit{отношений}, входящих в состав различных \textit{предметных областей}.}
+    
+    \scnheader{отношение в рамках заданного вопроса}
+    \scnidtf{определенное отношение между знаками \textit{предметной области} в контексте \textit{вопроса}}
+    \scnsubset{отношение}
+    \scntext{определение}{\textbf{\textit{отношение в рамках заданного вопроса}} представляет собой \textit{отношение} между \textit{знаками} \textit{предметной области}, принадлежащих заданному \textit{вопросу}.}
+    \scntext{пояснение}{Среди всех классов \textit{отношений в рамках заданного вопроса} можно выделить класс \textbf{\textit{базовых отношений в рамках заданного вопроса}} и класс \textbf{\textit{составных отношений в рамках заданного вопроса}}.}
+    
+    \scnheader{базовое отношение в рамках заданного вопроса}
+    \scnidtf{\textit{класс отношений}, объединяющий \textit{отношения в заданном вопросе}, отражающие однотипный \textit{смысл} и раскрывающие определенный признак \textit{знаков} \textit{предметной области}}
+    \scnsubset{отношение в рамках заданного вопроса}
+    \begin{scnrelfromset}{декомпозиция}
+        \scnitem{отношение состояния}
+        \scnitem{отношение действия}
+        \scnitem{отношение состава}
+        \scnitem{теоретико-множественное отношение}
+        \scnitem{темпоральное отношение}
+        \scnitem{пространственное отношение}
+        \scnitem{количественное отношение}
+        \scnitem{качественное отношение}
+    \end{scnrelfromset}
+    \scntext{пример}{Например, \textit{отношения в рамках заданного вопроса} такие, как \scnqqi{играет*}, \scnqqi{спит*}, \scnqqi{плавает*}, объединяются в класс \textit{отношений состояния} по признаку выражать состояние знака (то есть данные отношения раскрывают признак \textit{знака} \textit{предметной области} --- \scnqqi{находиться в некотором состоянии}).}
+   
+    \scnheader{составное отношение в рамках заданного вопроса}
+    \scnidtf{устойчивая комбинация двух \textit{отношений действия}: действия, направленного на \textit{параметр вопроса\scnrolesign}, и действия, направленного на \textit{ответ на вопрос*}}
+    \scntext{пример}{Например, элемент \textit{составного отношения в рамках заданного вопроса} между \textit{знаками}: \scnqqi{\textit{Нефтеперерабатывающий завод}}, \scnqqi{\textit{нефть}} и \scnqqi{\textit{нефтепродукты}} --- может быть представлен как \scnqqi{Нефтеперерабатывающий завод перерабатывает нефть в нефтепродукты}.}
+    
+    \scnheader{вопрос}
+    \scntext{примечание}{Смысловая классификация \textit{вопросов} дает возможность противопоставить каждому типу вопроса ограниченный набор допустимых, то есть \textit{семантически корректных информационных конструкций}, передающий правильный \textit{смысл} \textit{вопроса} в зависимости от класса \textit{вопроса}. При этом \textbf{\textit{Семантическая классификация вопросов}} позволяет разбить множество \textit{вопросов} на классы, в каждом из которых требуется раскрытие некоторого однотипного \textit{смысла}, заданного классом этого \textit{вопроса}.}
+    \begin{scnrelfromset}{декомпозиция}
+        \scnitem{вопрос, требующий вывода семантической окрестности \textit{основного знака}}
+        \begin{scnindent}
+            \begin{scnhaselementrolelist}{пример}
+                \scnitem{Вопрос. Что такое \textit{Город Минск}}
+            \end{scnhaselementrolelist}
+        \end{scnindent}
+        \scnitem{вопрос, требующий раскрытия в ответе \textit{базового отношения} \textit{основного знака}}
+        \begin{scnindent}
+            \begin{scnhaselementrolelist}{пример}
+                \scnitem{Вопрос. Что легче: железо или дерево}
+            \end{scnhaselementrolelist}
+        \end{scnindent}
+        \scnitem{вопрос, требующий раскрытия в ответе \textit{составного отношения} \textit{основного знака}}
+        \begin{scnindent}
+            \scntext{пояснение}{Такому классу \textit{вопросов} соответствуют классы \textit{ответов}, в которых \textit{главный знак} раскрывается через \textit{составное отношение}.}
+            \begin{scnhaselementrolelist}{пример}
+                \scnitem{Вопрос. Какие Принципы компонентного проектирования в интеллектуальных компьютерных системах нового поколения}
+            \end{scnhaselementrolelist}
+        \end{scnindent}
+        \scnitem{вопрос, требующий раскрытия в ответе произвольной комбинации \textit{базового отношения} и/или \textit{составного отношения} \textit{основного знака}}
+        \begin{scnindent}
+            \begin{scnhaselementrolelist}{пример}
+                \scnitem{Вопрос. Как определяется уровень интеллекта кибернетической системы}
+            \end{scnhaselementrolelist}
+        \end{scnindent}
+        \scnitem{вопрос, требующий раскрытия в ответе более чем одного \textit{основного знака}}
+        \begin{scnindent}
+            \begin{scnhaselementrolelist}{пример}
+                \scnitem{Вопрос. Докажите теорему Пифагора}
+            \end{scnhaselementrolelist}
+        \end{scnindent}
+    \end{scnrelfromset}
+
+    \scnheader{вопрос, требующий раскрытия в ответе \textit{базового отношения} \textit{основного знака}}
+    \begin{scnrelfromset}{декомпозиция}
+        \scnitem{вопрос, требующий раскрытия в ответе \textit{отношения состава} \textit{основного знака}}
+        \begin{scnindent}
+            \scnidtf{класс вопросов, в ответах на которые \textit{основной знак} \textit{S} раскрывается через его \textit{отношение состава} в связке с его составляющими знаками \textit{P} и \textit{Q}}
+            \begin{scnhaselementrolelist}{пример}
+                \scnitem{Вопрос. Какие административные районы входят в состав Города Витебск}
+                \begin{scnindent}
+                    \scneq{\scnfileimage[35em]{Contents/part_ps/src/images/sd_sc_quest_lang/question_about_vitebsk_regions.png}}
+                    \scnrelfrom{ответ на вопрос}{\{Железнодорожный район Города Витебск, Октябрьский район Города Витебск, Первомайский район Города Витебск\}}
+                    \begin{scnindent}
+                        \scneq{\scnfileimage[35em]{Contents/part_ps/src/images/sd_sc_quest_lang/question_about_vitebsk_regions_answer.png}}
+                    \end{scnindent}
+                \end{scnindent}
+            \end{scnhaselementrolelist}
+        \end{scnindent}
+        \scnitem{вопрос, требующий раскрытия в ответе \textit{теоретико-множественного отношения} \textit{основного знака}}
+        \begin{scnindent}
+            \scnidtf{класс вопросов, в ответах на которые \textit{основной знак} \textit{S} раскрывается через его \textit{теоретико-множественное отношение} в связке с другим знаком \textit{P}, содержащего \textit{S} как часть}
+            \begin{scnhaselementrolelist}{пример}
+                \scnitem{Вопрос. Частью какой области является Смолевичский район}
+                \begin{scnindent}
+                    \scneq{\scnfileimage[35em]{Contents/part_ps/src/images/sd_sc_quest_lang/question_about_smolevichi_inclusion.png}}
+                    \scnrelfrom{ответ на вопрос}{\{Смолевичский район является частью Минской области\}}
+                \end{scnindent}
+            \end{scnhaselementrolelist}
+        \end{scnindent}
+        \scnitem{вопрос, требующий раскрытия в ответе \textit{отношения состояния} \textit{основного знака}}
+        \begin{scnindent}
+            \scnidtf{класс вопросов, в ответах на которые \textit{основной знак} \textit{S} раскрывается через его \textit{отношение состояния}}
+            \begin{scnhaselementrolelist}{пример}
+                \scnitem{Вопрос. Какие города современной территории Республики Беларусь имели Магдебургское право}
+                \begin{scnindent}
+                    \scneq{\scnfileimage[35em]{Contents/part_ps/src/images/sd_sc_quest_lang/question_about_minsk_district_town_with_mag_act.png}}
+                    \scnrelfrom{ответ на вопрос}{\{Волковыск, Гродно, Мозырь и другие имели Магдебургское право\}}
+                \end{scnindent}
+            \end{scnhaselementrolelist}
+        \end{scnindent}
+        \scnitem{вопрос, требующий раскрытия в ответе \textit{отношения действия} \textit{основного знака}}
+        \begin{scnindent}
+            \scnidtf{класс вопросов, в ответах на которые \textit{основной знак} \textit{S} раскрывается через его \textit{отношение действия} в связке с другим знаком \textit{P}}
+        \end{scnindent}
+        \scnitem{вопрос, требующий раскрытия в ответе \textit{темпорального отношения} \textit{основного знака}}
+        \begin{scnindent}
+            \scnidtf{класс вопросов, в ответах на которые \textit{основной знак} \textit{S} раскрывается через его \textit{темпоральное отношение} в связке с другим знаком \textit{P} по некоторой временной шкале}
+            \begin{scnhaselementrolelist}{пример}
+                \scnitem{Вопрос. Какое событие произошло раньше: Первый раздел Речи Посполитой или Бородинское сражение}
+                \begin{scnindent}
+                    \scneq{\scnfileimage[35em]{Contents/part_ps/src/images/sd_sc_quest_lang/question_about_events.png}}
+                    \scnrelfrom{ответ на вопрос}{\{Первый раздел Речи Посполитой был раньше Бородинского сражения\}}
+                    \begin{scnindent}
+                        \scneq{\scnfileimage[35em]{Contents/part_ps/src/images/sd_sc_quest_lang/question_about_event_answer.png}}
+                    \end{scnindent}
+                \end{scnindent}
+            \end{scnhaselementrolelist}
+        \end{scnindent}
+        \scnitem{вопрос, требующий раскрытия в ответе \textit{пространственного отношения} \textit{основного знака}}
+        \begin{scnindent}
+            \scnidtf{класс вопросов, в ответах на которые \textit{основной знак} \textit{S} раскрывается через \textit{пространственное отношение}, отражающее его положение в пространстве относительно другого знака \textit{P}}
+        \end{scnindent}
+        \scnitem{вопрос, требующий раскрытия в ответе \textit{количественного отношения} \textit{основного знака}}
+        \begin{scnindent}
+            \scnidtf{класс вопросов, в ответах на которые раскрывается \textit{количественное отношение} \textit{основного знака}}
+            \begin{scnhaselementrolelist}{пример}
+                \scnitem{Вопрос. Какова высота Горы Дзержинская}
+                \begin{scnindent}
+                    \scneq{\scnfileimage[35em]{Contents/part_ps/src/images/sd_sc_quest_lang/question_about_mountain_length.png}}
+                    \scnrelfrom{ответ на вопрос}{\{Высота Горы Дзержинская --- 345 м\}}
+                \end{scnindent}
+            \end{scnhaselementrolelist}
+        \end{scnindent}
+        \scnitem{вопрос, требующий раскрытия в ответе \textit{качественного отношения} \textit{основного знака}}
+        \begin{scnindent}
+            \scnidtf{класс вопросов, в ответах на которые раскрывается \textit{качественное отношение} \textit{основного знака} \textit{S} в связке с другим знаком \textit{P}}
+            \begin{scnhaselementrolelist}{пример}
+                \scnitem{Вопрос. Территория какой административной области больше: Минской или Брестской}
+                \begin{scnindent}
+                    \scneq{\scnfileimage[35em]{Contents/part_ps/src/images/sd_sc_quest_lang/question_about_district_squares.png}}
+                    \scnrelfrom{ответ на вопрос}{\{Территория Минской области больше Брестской\}}
+                    \begin{scnindent}
+                        \scneq{\scnfileimage[35em]{Contents/part_ps/src/images/sd_sc_quest_lang/question_about_district_squares_answer.png}}
+                    \end{scnindent}
+                \end{scnindent}
+            \end{scnhaselementrolelist}
+        \end{scnindent}
+    \end{scnrelfromset}
+
+    \scnheader{вопрос, требующий раскрытия в ответе произвольной комбинации \textit{базового отношения} и/или \textit{составного отношения} \textit{основного знака}}
+    \begin{scnrelfromset}{декомпозиция}
+        \scnitem{вопрос, требующий раскрытия в ответе произвольной комбинации \textit{составного отношения описания} \textit{основного знака}}
+        \begin{scnindent}
+            \scnidtf{класс вопросов, в ответах на которые раскрываются произвольные комбинации \textit{базового отношения} и/или \textit{составного отношения} \textit{основного знака} \textit{S} в связке с другими знаками}
+            \begin{scnhaselementrolelist}{пример}
+                \scnitem{\{S состоит из P, Q, W. S переводит X и Y и выполняется раньше Z\}}
+                \begin{scnindent}
+                    \scnrelto{ответ на вопрос}{Вопрос. Что такое S}
+                \end{scnindent}
+            \end{scnhaselementrolelist}
+        \end{scnindent}
+        \scnitem{вопрос, требующий раскрытия в ответе произвольной комбинации \textit{составного отношения определения} \textit{основного знака}}
+        \begin{scnindent}
+            \scnidtf{класс ответов, в которых \textit{основной знак} \textit{S} раскрывается через \textit{первостепенное понятие} и его \textit{описание}}
+            \begin{scnhaselementrolelist}{пример}
+                \scnitem{\{Минск --- это столица, которая находится в РБ\}}
+                \begin{scnindent}
+                    \scnrelto{ответ на вопросы}{Вопрос. Как определяется город Минск}
+                \end{scnindent}
+            \end{scnhaselementrolelist}
+        \end{scnindent}
+        \scnitem{вопрос, требующий раскрытия в ответе произвольной комбинации \textit{составного отношения причины} \textit{основного знака}}
+        \begin{scnindent}
+            \scnidtf{класс вопросов, в ответах на которые раскрывается условие существования некоторых отношений \textit{основного знака} \textit{S} в связке с другими знаками}
+            \begin{scnhaselementrolelist}{пример}
+                \scnitem{Вопрос. Почему время в пути от города Минска до города Борисова меньше чем время в пути от города Минска до города Орша}
+                \begin{scnindent}
+                    \scnrelfrom{ответ на вопрос}{\{Время в пути от города Минска до города Борисова меньше чем время в пути от города Минска до города Орша, потому что расстояние от города Минска меньше до города Борисова, чем до города Орша\}}
+                \end{scnindent}
+            \end{scnhaselementrolelist}
+        \end{scnindent}
+        \scnitem{вопрос, требующий раскрытия в ответе произвольной комбинации \textit{составного отношения следствия} \textit{основного знака}}
+        \scnidtf{класс вопросов, в ответах на которые раскрывается следствие от существования некоторых отношений \textit{основного знака} \textit{S} в связке с другими знаками}
+        \begin{scnindent}
+            \begin{scnhaselementrolelist}{пример}
+                \scnitem{Вопрос. Что следует из того, что расстояние от города Минска до города Борисова меньше расстояния от города Минска до города Орша}
+                \begin{scnindent}
+                    \scnrelfrom{ответ на вопрос}{\{Расстояние от города Минска до города Борисова меньше расстояния от города Минска до города Орша, поэтому от города Минска до города Борисова время в пути меньше чем до города Орша\}}
+                \end{scnindent}
+            \end{scnhaselementrolelist}
+        \end{scnindent}
+    \end{scnrelfromset}
+
+    \scnheader{вопрос, требующий раскрытия в ответе более чем одного \textit{основного знака}}
+    \scnsuperset{вопрос, требующий раскрытия в ответе \textit{отношение детализации} знаков, стоящих в некоторых отношениях с \textit{основным знаком}}
+    \begin{scnindent}
+        \scnidtf{класс вопросов, в ответах на которые происходит детализация знаков, стоящих в некоторых отношениях с \textit{основным знаком} \textit{S}}
+        \begin{scnhaselementrolelist}{пример}
+            \scnitem{Вопрос. Какая связь водной сети существует между городом Минск и городом Светлогорск}
+            \begin{scnindent}
+                \scnrelfrom{ответ на вопрос}{\{Город Минск расположен на реке Свислочь, которая впадает в реку Березина, протекающую через город Светлогорск\}}
+            \end{scnindent}
+        \end{scnhaselementrolelist}
+    \end{scnindent}
+  
+    \scnheader{вопрос}
+    \scntext{примечание}{Таким образом, для каждого \textit{вопроса} \textit{пользователя ostis-системы} можно найти класс \textit{вопросов}, на котором можно реализовывать \textit{вывод ответов} на этот \textit{вопрос}. Описанная \textit{Семантическая классификация вопросов} позволяет:
+    \begin{itemize}
+        \item автоматически структурировать \textit{вопросы} \textit{пользователей} по описанию этих \textit{вопросов};
+        \item а также формировать \textit{ответы на} эти \textit{вопросы} с учетом \textit{непроцедурных формулировок} этих \textit{вопросов}.
+    \end{itemize}}
+
+\end{scnsubstruct}
+
+\scnendcurrentsectioncomment
+    
+\end{SCn}
