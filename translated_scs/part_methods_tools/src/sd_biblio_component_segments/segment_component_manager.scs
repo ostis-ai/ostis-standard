@@ -1,19 +1,19 @@
 .segment_component_manager = [*
-.system_element_2570
+.system_element_2802
 => nrel_inclusion: [*
 
-	.system_element_2664
+	.system_element_2918
 	=> nrel_note: [<p>Для того, чтобы хранить <i>многократно используемые компоненты ostis-систем</i>, необходимо некоторое хранилище. Таким хранилищем может выступать как какая-либо ostis-система, так и стороннее хранилище, например, облачное. Помимо исходных файлов компонента в хранилище должна находиться его <u>спецификация</u>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> nrel_inclusion: .system_element_2621
+	=> nrel_inclusion: .system_element_2843
 	(*
 		=> nrel_explanation: [<p>Место хранения файлов исходных текстов многократно используемого компонента.</p>];;
-		=> nrel_inclusion: .system_element_2665
+		=> nrel_inclusion: .system_element_2919
 		(*
-			=> nrel_inclusion: .system_element_2666;;
+			=> nrel_inclusion: .system_element_2920;;
 			=> nrel_note: [<p>На данном этапе в рамках <i>Технологии OSTIS</i> (в силу открытости технологии, а также хранения компонентов в виде файлов исходных текстов) для хранения компонентов чаще всего используются хранилища на основе системы контроля версий Git.</p>]
 			(*
 				<- lang_ru;;
@@ -21,7 +21,7 @@
 			*);;
 		*);;
 	*);
-	=> nrel_inclusion: .system_element_2622
+	=> nrel_inclusion: .system_element_2844
 	(*
 		=> nrel_explanation: [<p>Место хранения скомпилированных файлов многократно используемого компонента.</p>]
 		(*
@@ -35,7 +35,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2626
+	.system_element_2848
 	=> .system_element_269: [<p>менеджер многократно используемых компонентов</p>]
 	(*
 		<- lang_ru;;
@@ -61,7 +61,7 @@
 		*);;
 	*);
 	=> .system_element_272: {
-		.system_element_2667
+		.system_element_2921
 		(*
 			=> nrel_note: [<p>база знаний менеджера компонентов содержит все те знания, которые необходимы для установки многократно используемого компонента в <em>дочернюю ostis-систему</em>. К таким знаниям относятся знания о спецификации многократно используемых компонентов, методы установки компонентов, знание о библиотеках ostis-систем, с которыми происходит взаимодействие, <i>классификация компонентов</i> и другие.</p>]
 			(*
@@ -69,22 +69,22 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_2668
+		.system_element_2922
 		(*
 			=> nrel_note: [<p>решатель задач менеджера компонентов взаимодействует с библиотекой ostis-систем и позволяет установить и интегрировать многократно используемые компоненты в <em>дочернюю ostis-систему</em>, также выполнять поиск, обновление, публикацию, удаление компонентов и другие операции с ними.</p>];;
 			=> nrel_abstract_sc_agent_decomposition: {
-				.system_element_2669;
-				.system_element_2670;
-				.system_element_2671
+				.system_element_2923;
+				.system_element_2924;
+				.system_element_2925
 				(*
 					=> nrel_abstract_sc_agent_decomposition: {
-						.system_element_2672;
-						.system_element_2673
+						.system_element_2926;
+						.system_element_2927
 					};;
 				*)
 			};;
 		*);
-		.system_element_2674
+		.system_element_2928
 		(*
 			=> nrel_note: [<p>интерфейс менеджера многократно используемых компонентов обеспечивает удобное для пользователя и других систем использование менеджера компонентов.</p>]
 			(*
@@ -93,7 +93,7 @@
 			*);;
 		*)
 	};
-	=> .system_element_2676: .system_element_2675
+	=> .system_element_2930: .system_element_2929
 	(*
 		=> nrel_note: [<p>Используя минимальные функциональные возможности, менеджер компонентов может установить компоненты, которые будут расширять его же функционал.</p>];;
 		<=> .system_element_200: {
@@ -114,7 +114,7 @@
 			*)
 		};;
 	*);
-	=> .system_element_2678: .system_element_2677
+	=> .system_element_2932: .system_element_2931
 	(*
 		=> nrel_note: [<p>Компоненты, реализующие расширенный функционал менеджера компонентов являются частью <i>Библиотеки Метасистемы OSTIS</i>.</p>];;
 		<=> .system_element_200: {
@@ -190,7 +190,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2628
+	.system_element_2850
 	<- quasybinary_relation;
 	<- oriented_relation;
 	=> nrel_explanation: [<p>Квазибинарное отношение, связывающее некоторую ostis-систему и компоненты, которые установлены в ней.</p>]
@@ -199,7 +199,7 @@
 		=> nrel_format: format_html;;
 	*);
 	=> nrel_first_domain: ostis_system;
-	=> nrel_second_domain: .system_element_2679
+	=> nrel_second_domain: .system_element_2933
 	(*
 		=> nrel_explanation: [<p>множество многократно используемых компонентов ostis-систем --- это множество, все элементы которого являются многократно используемыми компонентами ostis-систем.</p>]
 		(*

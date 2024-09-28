@@ -1,18 +1,18 @@
-.system_element_2462
+.system_element_2460
 => nrel_inclusion: [*
 	=> .system_element_727: 
+		.system_element_2461;
+		.system_element_2462;
 		.system_element_2463;
-		.system_element_2464;
-		.system_element_2465;
-		.system_element_2466
+		.system_element_2464
 	;;
 
-	.system_element_2467
+	.system_element_2465
 	<- subject_domain;
 	-> .system_element_112: 
 		ostis_system;
-		.system_element_2468;
-		.system_element_2469
+		.system_element_2466;
+		.system_element_2467
 	;;
 
 	project_ostis
@@ -25,7 +25,7 @@
 		technology_OSTIS;
 		.system_element_758
 		(*
-			=> nrel_idtf: [<p>Метасистема IMS.ostis</p>]
+			=> nrel_idtf: [<p>Метасистема OSTIS</p>]
 			(*
 				<- lang_ru;;
 				=> nrel_format: format_html;;
@@ -35,16 +35,16 @@
 		.system_element_760
 	;
 	=> nrel_subproject: 
+		.system_element_2468;
+		.system_element_2469;
 		.system_element_2470;
-		.system_element_2471;
-		.system_element_2472;
-		.system_element_2473
+		.system_element_2471
 	;
 	=> .system_element_1807: 
+		.system_element_2472;
+		.system_element_2473;
 		.system_element_2474;
-		.system_element_2475;
-		.system_element_2476;
-		.system_element_2477
+		.system_element_2475
 	;;
 
 	.system_element_760
@@ -68,7 +68,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_2478: [<p>Обеспечить постоянную поддержку совместимости компьютерных систем, входящих в <i>Экосистему OSTIS</i> как на этапе их разработки, так и в ходе их эксплуатации. Проблема здесь заключается в том, что в ходе эксплуатации систем, входящих в <i>Экосистему OSTIS</i>, они могут изменяться из-за чего совместимость может нарушаться.Задачами <i>Экосистемы OSTIS</i> являются:
+	=> .system_element_2476: [<p>Обеспечить постоянную поддержку совместимости компьютерных систем, входящих в <i>Экосистему OSTIS</i> как на этапе их разработки, так и в ходе их эксплуатации. Проблема здесь заключается в том, что в ходе эксплуатации систем, входящих в <i>Экосистему OSTIS</i>, они могут изменяться из-за чего совместимость может нарушаться.Задачами <i>Экосистемы OSTIS</i> являются:
 	<ul>
 		<li> оперативное внедрение всех согласованных изменений стандарта <i>ostis-систем</i> (в том числе, и изменений систем используемых понятий и соответствующих им терминов);
 		<li> перманентная поддержка высокого уровня взаимопонимания всех систем, входящих в <i>Экосистему OSTIS</i>, и всех их пользователей;
@@ -86,7 +86,7 @@
 
 	ostis_system
 	=> nrel_subdividing: {
-		.system_element_2468
+		.system_element_2466
 		(*
 			=> nrel_idtf: [<p>целостная <i>ostis-система</i>, которая должна самостоятельно решать соответствующее множество задач и, в частности, взаимодействовать с внешней средой (как вербально --- с пользователями и другими компьютерными системами, так и невербально)</p>]
 			(*
@@ -103,7 +103,7 @@
 				=> nrel_format: format_html;;
 			*);;
 			=> nrel_subdividing: {
-				.system_element_2479
+				.system_element_2477
 				(*
 					=> nrel_idtf: [<p><i>встроенная ostis-система</i>, не включающая в себя какие-либо другие <i>встроенные ostis-системы</i></p>]
 					(*
@@ -111,13 +111,13 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);
-				.system_element_2480
+				.system_element_2478
 				(*
-					=> nrel_inclusion: .system_element_2481;;
+					=> nrel_inclusion: .system_element_2479;;
 				*)
 			};;
 		*);
-		.system_element_2292
+		.system_element_2290
 		(*
 			=> nrel_idtf: [<p>группа общающихся ostis-систем, в состав которой могут входить не только самостоятельные ostis-системы, но и коллективы ostis-систем</p>];;
 			=> nrel_idtf: [<p>распределенная ostis-система</p>]
@@ -128,7 +128,7 @@
 		*)
 	};;
 
-	.system_element_2468
+	.system_element_2466
 	=> nrel_explanation: [<p>Подчеркнем, что к <i><b>самостоятельным ostis-системам</b></i>, входящим в состав <i>Экосистемы OSTIS</i>, предъявляются особые требования:
 
 	<ul>
@@ -188,7 +188,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2469
+	.system_element_2467
 	=> nrel_explanation: [<p>Есть три аспекта поддержки совместимости и взаимопонимания в <i>Экосистеме OSTIS</i>:
 
 	<ul>

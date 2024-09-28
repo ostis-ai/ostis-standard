@@ -1,14 +1,14 @@
 .intro_scs_connectors = [*
-.system_element_2982
+.system_element_3348
 = [*
 
-	.system_element_2983
+	.system_element_3349
 	=> nrel_idtf: [<p>базовая sc.s-дуга</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_2984: 
+	=> .system_element_3350: 
 		![->]!
 		(*
 			<- lang_ru;;
@@ -20,7 +20,7 @@
 			=> nrel_format: format_html;;
 		*)
 	;
-	=> .system_element_2985: 
+	=> .system_element_3351: 
 		![∋]!
 		(*
 			<- lang_ru;;
@@ -32,7 +32,7 @@
 			=> nrel_format: format_html;;
 		*)
 	;
-	=> .system_element_2986: 
+	=> .system_element_3352: 
 		"file://Contents/part_kb/src/images/scs/sc.s-connectors/posTermOrientMembership.png"
 		(*
 			<- concept_file;;
@@ -45,8 +45,8 @@
 		*)
 	;;
 
-	.system_element_2987
-	=> .system_element_2984: 
+	.system_element_3353
+	=> .system_element_3350: 
 		![-| >]!
 		(*
 			<- lang_ru;;
@@ -58,7 +58,7 @@
 			=> nrel_format: format_html;;
 		*)
 	;
-	=> .system_element_2985: 
+	=> .system_element_3351: 
 		![/ ∋]!
 		(*
 			<- lang_ru;;
@@ -70,7 +70,7 @@
 			=> nrel_format: format_html;;
 		*)
 	;
-	=> .system_element_2986: 
+	=> .system_element_3352: 
 		"file://Contents/part_kb/src/images/scs/sc.s-connectors/negPermOrient.png"
 		(*
 			<- concept_file;;
@@ -83,8 +83,8 @@
 		*)
 	;;
 
-	.system_element_2988
-	=> .system_element_2984: 
+	.system_element_3354
+	=> .system_element_3350: 
 		![-/ >]!
 		(*
 			<- lang_ru;;
@@ -96,7 +96,7 @@
 			=> nrel_format: format_html;;
 		*)
 	;
-	=> .system_element_2985: 
+	=> .system_element_3351: 
 		![/ ∋]!
 		(*
 			<- lang_ru;;
@@ -108,7 +108,7 @@
 			=> nrel_format: format_html;;
 		*)
 	;
-	=> .system_element_2986: 
+	=> .system_element_3352: 
 		"file://Contents/part_kb/src/images/scs/sc.s-connectors/fuzPermOrient.png"
 		(*
 			<- concept_file;;
@@ -121,8 +121,8 @@
 		*)
 	;;
 
-	.system_element_2989
-	=> .system_element_2984: 
+	.system_element_3355
+	=> .system_element_3350: 
 		![~>]!
 		(*
 			<- lang_ru;;
@@ -134,7 +134,7 @@
 			=> nrel_format: format_html;;
 		*)
 	;
-	=> .system_element_2985: 
+	=> .system_element_3351: 
 		![~∋]!
 		(*
 			<- lang_ru;;
@@ -146,7 +146,7 @@
 			=> nrel_format: format_html;;
 		*)
 	;
-	=> .system_element_2986: 
+	=> .system_element_3352: 
 		"file://Contents/part_kb/src/images/scs/sc.s-connectors/posTempOrient.png"
 		(*
 			<- concept_file;;
@@ -159,8 +159,8 @@
 		*)
 	;;
 
-	.system_element_2990
-	=> .system_element_2984: 
+	.system_element_3356
+	=> .system_element_3350: 
 		![~ |>]!
 		(*
 			<- lang_ru;;
@@ -172,7 +172,7 @@
 			=> nrel_format: format_html;;
 		*)
 	;
-	=> .system_element_2985: 
+	=> .system_element_3351: 
 		![~ /∋]!
 		(*
 			<- lang_ru;;
@@ -184,7 +184,7 @@
 			=> nrel_format: format_html;;
 		*)
 	;
-	=> .system_element_2986: 
+	=> .system_element_3352: 
 		"file://Contents/part_kb/src/images/scs/sc.s-connectors/negTempOrient.png"
 		(*
 			<- concept_file;;
@@ -197,8 +197,8 @@
 		*)
 	;;
 
-	.system_element_2991
-	=> .system_element_2984: 
+	.system_element_3357
+	=> .system_element_3350: 
 		![~ />]!
 		(*
 			<- lang_ru;;
@@ -210,7 +210,7 @@
 			=> nrel_format: format_html;;
 		*)
 	;
-	=> .system_element_2985: 
+	=> .system_element_3351: 
 		![~/∋]!
 		(*
 			<- lang_ru;;
@@ -222,7 +222,7 @@
 			=> nrel_format: format_html;;
 		*)
 	;
-	=> .system_element_2986: 
+	=> .system_element_3352: 
 		"file://Contents/part_kb/src/images/scs/sc.s-connectors/fuzTempOrient.png"
 		(*
 			<- concept_file;;
@@ -235,8 +235,8 @@
 		*)
 	;;
 
-	.system_element_2992
-	=> .system_element_2984: 
+	.system_element_3358
+	=> .system_element_3350: 
 		![_->]!
 		(*
 			<- lang_ru;;
@@ -248,7 +248,7 @@
 			=> nrel_format: format_html;;
 		*)
 	;
-	=> .system_element_2985: 
+	=> .system_element_3351: 
 		![_∋]!
 		(*
 			<- lang_ru;;
@@ -260,7 +260,7 @@
 			=> nrel_format: format_html;;
 		*)
 	;
-	=> .system_element_2986: 
+	=> .system_element_3352: 
 		"file://Contents/part_kb/src/images/scs/sc.s-connectors/varPosPermOrient.png"
 		(*
 			<- concept_file;;
@@ -273,8 +273,8 @@
 		*)
 	;;
 
-	.system_element_2993
-	=> .system_element_2984: 
+	.system_element_3359
+	=> .system_element_3350: 
 		![_-|>]!
 		(*
 			<- lang_ru;;
@@ -286,7 +286,7 @@
 			=> nrel_format: format_html;;
 		*)
 	;
-	=> .system_element_2985: 
+	=> .system_element_3351: 
 		![_/∋]!
 		(*
 			<- lang_ru;;
@@ -298,7 +298,7 @@
 			=> nrel_format: format_html;;
 		*)
 	;
-	=> .system_element_2986: 
+	=> .system_element_3352: 
 		"file://Contents/part_kb/src/images/scs/sc.s-connectors/varNegPermOrient.png"
 		(*
 			<- concept_file;;
@@ -311,8 +311,8 @@
 		*)
 	;;
 
-	.system_element_2994
-	=> .system_element_2984: 
+	.system_element_3360
+	=> .system_element_3350: 
 		![_-/>]!
 		(*
 			<- lang_ru;;
@@ -324,7 +324,7 @@
 			=> nrel_format: format_html;;
 		*)
 	;
-	=> .system_element_2985: 
+	=> .system_element_3351: 
 		![_/∋]!
 		(*
 			<- lang_ru;;
@@ -336,7 +336,7 @@
 			=> nrel_format: format_html;;
 		*)
 	;
-	=> .system_element_2986: 
+	=> .system_element_3352: 
 		"file://Contents/part_kb/src/images/scs/sc.s-connectors/varFuzPermOrient.png"
 		(*
 			<- concept_file;;
@@ -349,8 +349,8 @@
 		*)
 	;;
 
-	.system_element_2995
-	=> .system_element_2984: 
+	.system_element_3361
+	=> .system_element_3350: 
 		![_~>]!
 		(*
 			<- lang_ru;;
@@ -362,7 +362,7 @@
 			=> nrel_format: format_html;;
 		*)
 	;
-	=> .system_element_2985: 
+	=> .system_element_3351: 
 		![_~∋]!
 		(*
 			<- lang_ru;;
@@ -374,7 +374,7 @@
 			=> nrel_format: format_html;;
 		*)
 	;
-	=> .system_element_2986: 
+	=> .system_element_3352: 
 		"file://Contents/part_kb/src/images/scs/sc.s-connectors/varPosTempOrient.png"
 		(*
 			<- concept_file;;
@@ -387,8 +387,8 @@
 		*)
 	;;
 
-	.system_element_2996
-	=> .system_element_2984: 
+	.system_element_3362
+	=> .system_element_3350: 
 		![_~|>]!
 		(*
 			<- lang_ru;;
@@ -400,7 +400,7 @@
 			=> nrel_format: format_html;;
 		*)
 	;
-	=> .system_element_2985: 
+	=> .system_element_3351: 
 		![_~/∋]!
 		(*
 			<- lang_ru;;
@@ -412,7 +412,7 @@
 			=> nrel_format: format_html;;
 		*)
 	;
-	=> .system_element_2986: 
+	=> .system_element_3352: 
 		"file://Contents/part_kb/src/images/scs/sc.s-connectors/varNegTempOrient.png"
 		(*
 			<- concept_file;;
@@ -425,8 +425,8 @@
 		*)
 	;;
 
-	.system_element_2997
-	=> .system_element_2984: 
+	.system_element_3363
+	=> .system_element_3350: 
 		![_~/>]!
 		(*
 			<- lang_ru;;
@@ -438,7 +438,7 @@
 			=> nrel_format: format_html;;
 		*)
 	;
-	=> .system_element_2985: 
+	=> .system_element_3351: 
 		![_~/∋]!
 		(*
 			<- lang_ru;;
@@ -450,7 +450,7 @@
 			=> nrel_format: format_html;;
 		*)
 	;
-	=> .system_element_2986: 
+	=> .system_element_3352: 
 		"file://Contents/part_kb/src/images/scs/sc.s-connectors/varFuzTempOrient.png"
 		(*
 			<- concept_file;;
@@ -463,8 +463,8 @@
 		*)
 	;;
 
-	.system_element_2998
-	=> .system_element_2984: 
+	.system_element_3364
+	=> .system_element_3350: 
 		![__->]!
 		(*
 			<- lang_ru;;
@@ -476,7 +476,7 @@
 			=> nrel_format: format_html;;
 		*)
 	;
-	=> .system_element_2985: 
+	=> .system_element_3351: 
 		![__∋]!
 		(*
 			<- lang_ru;;
@@ -488,7 +488,7 @@
 			=> nrel_format: format_html;;
 		*)
 	;
-	=> .system_element_2986: 
+	=> .system_element_3352: 
 		"file://Contents/part_kb/src/images/scs/sc.s-connectors/metaPosPermOrient.png"
 		(*
 			<- concept_file;;
@@ -501,8 +501,8 @@
 		*)
 	;;
 
-	.system_element_2999
-	=> .system_element_2984: 
+	.system_element_3365
+	=> .system_element_3350: 
 		![__-|>]!
 		(*
 			<- lang_ru;;
@@ -514,7 +514,7 @@
 			=> nrel_format: format_html;;
 		*)
 	;
-	=> .system_element_2985: 
+	=> .system_element_3351: 
 		![__/∋]!
 		(*
 			<- lang_ru;;
@@ -526,7 +526,7 @@
 			=> nrel_format: format_html;;
 		*)
 	;
-	=> .system_element_2986: 
+	=> .system_element_3352: 
 		"file://Contents/part_kb/src/images/scs/sc.s-connectors/metaNegPermOrient.png"
 		(*
 			<- concept_file;;
@@ -539,8 +539,8 @@
 		*)
 	;;
 
-	.system_element_3000
-	=> .system_element_2984: 
+	.system_element_3366
+	=> .system_element_3350: 
 		![__-/>]!
 		(*
 			<- lang_ru;;
@@ -552,7 +552,7 @@
 			=> nrel_format: format_html;;
 		*)
 	;
-	=> .system_element_2985: 
+	=> .system_element_3351: 
 		![__/∋]!
 		(*
 			<- lang_ru;;
@@ -564,7 +564,7 @@
 			=> nrel_format: format_html;;
 		*)
 	;
-	=> .system_element_2986: 
+	=> .system_element_3352: 
 		"file://Contents/part_kb/src/images/scs/sc.s-connectors/metaFuzPermOrient.png"
 		(*
 			<- concept_file;;
@@ -577,8 +577,8 @@
 		*)
 	;;
 
-	.system_element_3001
-	=> .system_element_2984: 
+	.system_element_3367
+	=> .system_element_3350: 
 		![__~>]!
 		(*
 			<- lang_ru;;
@@ -590,7 +590,7 @@
 			=> nrel_format: format_html;;
 		*)
 	;
-	=> .system_element_2985: 
+	=> .system_element_3351: 
 		![__~∋]!
 		(*
 			<- lang_ru;;
@@ -602,7 +602,7 @@
 			=> nrel_format: format_html;;
 		*)
 	;
-	=> .system_element_2986: 
+	=> .system_element_3352: 
 		"file://Contents/part_kb/src/images/scs/sc.s-connectors/metaPosTempOrient.png"
 		(*
 			<- concept_file;;
@@ -615,8 +615,8 @@
 		*)
 	;;
 
-	.system_element_3002
-	=> .system_element_2984: 
+	.system_element_3368
+	=> .system_element_3350: 
 		![__~ |>]!
 		(*
 			<- lang_ru;;
@@ -628,7 +628,7 @@
 			=> nrel_format: format_html;;
 		*)
 	;
-	=> .system_element_2985: 
+	=> .system_element_3351: 
 		![__~/∋]!
 		(*
 			<- lang_ru;;
@@ -640,7 +640,7 @@
 			=> nrel_format: format_html;;
 		*)
 	;
-	=> .system_element_2986: 
+	=> .system_element_3352: 
 		"file://Contents/part_kb/src/images/scs/sc.s-connectors/metaNegTempOrient.png"
 		(*
 			<- concept_file;;
@@ -653,8 +653,8 @@
 		*)
 	;;
 
-	.system_element_3003
-	=> .system_element_2984: 
+	.system_element_3369
+	=> .system_element_3350: 
 		![__~/>]!
 		(*
 			<- lang_ru;;
@@ -666,7 +666,7 @@
 			=> nrel_format: format_html;;
 		*)
 	;
-	=> .system_element_2985: 
+	=> .system_element_3351: 
 		![__~/∋]!
 		(*
 			<- lang_ru;;
@@ -678,7 +678,7 @@
 			=> nrel_format: format_html;;
 		*)
 	;
-	=> .system_element_2986: 
+	=> .system_element_3352: 
 		"file://Contents/part_kb/src/images/scs/sc.s-connectors/metaFuzTempOrient.png"
 		(*
 			<- concept_file;;
@@ -691,25 +691,25 @@
 		*)
 	;;
 
-	.system_element_3004
-	=> .system_element_2984: ![<>]!
+	.system_element_3370
+	=> .system_element_3350: ![<>]!
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_2985: ![]!
+	=> .system_element_3351: ![]!
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_2986: "file://Contents/part_kb/src/images/scs/sc.s-connectors/noorient.png"
+	=> .system_element_3352: "file://Contents/part_kb/src/images/scs/sc.s-connectors/noorient.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);;
 
 	scs_divider_common_type_arc
-	=> .system_element_2984: 
+	=> .system_element_3350: 
 		![>]!
 		(*
 			<- lang_ru;;
@@ -721,7 +721,7 @@
 			=> nrel_format: format_html;;
 		*)
 	;
-	=> .system_element_2985: 
+	=> .system_element_3351: 
 		![→]!
 		(*
 			<- lang_ru;;
@@ -733,7 +733,7 @@
 			=> nrel_format: format_html;;
 		*)
 	;
-	=> .system_element_2986: 
+	=> .system_element_3352: 
 		"file://Contents/part_kb/src/images/scs/sc.s-connectors/orient.png"
 		(*
 			<- concept_file;;
@@ -746,25 +746,25 @@
 		*)
 	;;
 
-	.system_element_3005
-	=> .system_element_2984: ![<=>]!
+	.system_element_3371
+	=> .system_element_3350: ![<=>]!
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_2985: ![⇔]!
+	=> .system_element_3351: ![⇔]!
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_2986: "file://Contents/part_kb/src/images/scs/sc.s-connectors/constPermNoorien.png"
+	=> .system_element_3352: "file://Contents/part_kb/src/images/scs/sc.s-connectors/constPermNoorien.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);;
 
-	.system_element_3006
-	=> .system_element_2984: 
+	.system_element_3372
+	=> .system_element_3350: 
 		![=>]!
 		(*
 			<- lang_ru;;
@@ -776,7 +776,7 @@
 			=> nrel_format: format_html;;
 		*)
 	;
-	=> .system_element_2985: 
+	=> .system_element_3351: 
 		![⇒]!
 		(*
 			<- lang_ru;;
@@ -788,7 +788,7 @@
 			=> nrel_format: format_html;;
 		*)
 	;
-	=> .system_element_2986: 
+	=> .system_element_3352: 
 		"file://Contents/part_kb/src/images/scs/sc.s-connectors/constPermOrient.png"
 		(*
 			<- concept_file;;
@@ -801,25 +801,25 @@
 		*)
 	;;
 
-	.system_element_3007
-	=> .system_element_2984: ![~<=>]!
+	.system_element_3373
+	=> .system_element_3350: ![~<=>]!
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_2985: ![~⇔]!
+	=> .system_element_3351: ![~⇔]!
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_2986: "file://Contents/part_kb/src/images/scs/sc.s-connectors/constTempNoorien.png"
+	=> .system_element_3352: "file://Contents/part_kb/src/images/scs/sc.s-connectors/constTempNoorien.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);;
 
-	.system_element_3008
-	=> .system_element_2984: 
+	.system_element_3374
+	=> .system_element_3350: 
 		![~=>]!
 		(*
 			<- lang_ru;;
@@ -831,7 +831,7 @@
 			=> nrel_format: format_html;;
 		*)
 	;
-	=> .system_element_2985: 
+	=> .system_element_3351: 
 		![~⇒]!
 		(*
 			<- lang_ru;;
@@ -843,7 +843,7 @@
 			=> nrel_format: format_html;;
 		*)
 	;
-	=> .system_element_2986: 
+	=> .system_element_3352: 
 		"file://Contents/part_kb/src/images/scs/sc.s-connectors/constTempOrient.png"
 		(*
 			<- concept_file;;
@@ -856,25 +856,25 @@
 		*)
 	;;
 
-	.system_element_3009
-	=> .system_element_2984: ![_<=>]!
+	.system_element_3375
+	=> .system_element_3350: ![_<=>]!
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_2985: ![_⇔]!
+	=> .system_element_3351: ![_⇔]!
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_2986: "file://Contents/part_kb/src/images/scs/sc.s-connectors/varPermNoorien.png"
+	=> .system_element_3352: "file://Contents/part_kb/src/images/scs/sc.s-connectors/varPermNoorien.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);;
 
-	.system_element_3010
-	=> .system_element_2984: 
+	.system_element_3376
+	=> .system_element_3350: 
 		![_=>]!
 		(*
 			<- lang_ru;;
@@ -886,7 +886,7 @@
 			=> nrel_format: format_html;;
 		*)
 	;
-	=> .system_element_2985: 
+	=> .system_element_3351: 
 		![_⇒]!
 		(*
 			<- lang_ru;;
@@ -898,7 +898,7 @@
 			=> nrel_format: format_html;;
 		*)
 	;
-	=> .system_element_2986: 
+	=> .system_element_3352: 
 		"file://Contents/part_kb/src/images/scs/sc.s-connectors/varPermOrient.png"
 		(*
 			<- concept_file;;
@@ -911,25 +911,25 @@
 		*)
 	;;
 
-	.system_element_3011
-	=> .system_element_2984: ![_~<=>]!
+	.system_element_3377
+	=> .system_element_3350: ![_~<=>]!
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_2985: ![_~⇔]!
+	=> .system_element_3351: ![_~⇔]!
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_2986: "file://Contents/part_kb/src/images/scs/sc.s-connectors/varTempNoorien.png"
+	=> .system_element_3352: "file://Contents/part_kb/src/images/scs/sc.s-connectors/varTempNoorien.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);;
 
-	.system_element_3012
-	=> .system_element_2984: 
+	.system_element_3378
+	=> .system_element_3350: 
 		![_~=>]!
 		(*
 			<- lang_ru;;
@@ -941,7 +941,7 @@
 			=> nrel_format: format_html;;
 		*)
 	;
-	=> .system_element_2985: 
+	=> .system_element_3351: 
 		![_~⇒]!
 		(*
 			<- lang_ru;;
@@ -953,7 +953,7 @@
 			=> nrel_format: format_html;;
 		*)
 	;
-	=> .system_element_2986: 
+	=> .system_element_3352: 
 		"file://Contents/part_kb/src/images/scs/sc.s-connectors/varTempOrient.png"
 		(*
 			<- concept_file;;
@@ -966,25 +966,25 @@
 		*)
 	;;
 
-	.system_element_3013
-	=> .system_element_2984: ![__<=>]!
+	.system_element_3379
+	=> .system_element_3350: ![__<=>]!
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_2985: ![__⇔]!
+	=> .system_element_3351: ![__⇔]!
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_2986: "file://Contents/part_kb/src/images/scs/sc.s-connectors/metaPermNoorien.png"
+	=> .system_element_3352: "file://Contents/part_kb/src/images/scs/sc.s-connectors/metaPermNoorien.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);;
 
-	.system_element_3014
-	=> .system_element_2984: 
+	.system_element_3380
+	=> .system_element_3350: 
 		![__=>]!
 		(*
 			<- lang_ru;;
@@ -996,7 +996,7 @@
 			=> nrel_format: format_html;;
 		*)
 	;
-	=> .system_element_2985: 
+	=> .system_element_3351: 
 		![__⇒]!
 		(*
 			<- lang_ru;;
@@ -1008,7 +1008,7 @@
 			=> nrel_format: format_html;;
 		*)
 	;
-	=> .system_element_2986: 
+	=> .system_element_3352: 
 		"file://Contents/part_kb/src/images/scs/sc.s-connectors/metaPermOrient.png"
 		(*
 			<- concept_file;;
@@ -1021,25 +1021,25 @@
 		*)
 	;;
 
-	.system_element_3015
-	=> .system_element_2984: ![__~<=>]!
+	.system_element_3381
+	=> .system_element_3350: ![__~<=>]!
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_2985: ![__~⇔]!
+	=> .system_element_3351: ![__~⇔]!
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_2986: "file://Contents/part_kb/src/images/scs/sc.s-connectors/metaTempNoorien.png"
+	=> .system_element_3352: "file://Contents/part_kb/src/images/scs/sc.s-connectors/metaTempNoorien.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);;
 
-	.system_element_3016
-	=> .system_element_2984: 
+	.system_element_3382
+	=> .system_element_3350: 
 		![__~=>]!
 		(*
 			<- lang_ru;;
@@ -1051,7 +1051,7 @@
 			=> nrel_format: format_html;;
 		*)
 	;
-	=> .system_element_2985: 
+	=> .system_element_3351: 
 		![__~⇒]!
 		(*
 			<- lang_ru;;
@@ -1063,7 +1063,7 @@
 			=> nrel_format: format_html;;
 		*)
 	;
-	=> .system_element_2986: 
+	=> .system_element_3352: 
 		"file://Contents/part_kb/src/images/scs/sc.s-connectors/metaTempOrient.png"
 		(*
 			<- concept_file;;

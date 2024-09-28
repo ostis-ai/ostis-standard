@@ -1,0 +1,625 @@
+.system_element_2512
+=> nrel_introduction: <
+	[<p>К числу задач системы автоматизации проектирования <i>решателей задач</i> <i>ostis-систем</i> относится техническая поддержка разработчиков решателей, в том числе --- обеспечение корректного и эффективного выполнения этапов, предусмотренных <i>Методикой проектирования машины обработки знаний ostis-систем</i>.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	[<p>При разработке любых компонентов ostis-систем используются схожие принципы. Одним из основных принципов является принцип использования готовых компонентов различного рода, уже имеющихся в библиотеке многократно используемых компонентов ostis-систем, входящей в состав <i>Метасистемы OSTIS</i>.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*)
+>;
+<= .system_element_116: <
+	.system_element_2513;
+	.system_element_2514;
+	.system_element_2515
+>;
+=> .system_element_756: 
+	.system_element_2516;
+	.system_element_2517;
+	.system_element_2518
+;
+=> .system_element_1: 
+	.system_element_1643;
+	sc_agent;
+	knowledge_base;
+	new_scp_program;
+	.system_element_2519;
+	breakpoint;
+	nrel_incorrectness_in_scp_program;
+	incorrectness_in_scp_program;
+	error_in_scp_program;
+	.system_element_2398;
+	.system_element_2520;
+	.system_element_2521;
+	.system_element_2522
+;
+=> nrel_inclusion: [*
+
+	.system_element_2516
+	=> nrel_note: [<p><i>Система автоматизации проектирования решателей задач ostis-систем</i> сама по себе также является ostis-системой и имеет соответствующую структуру. Таким образом, модель данной системы включает <i>sc-модель базы знаний</i>, <i>sc-модель объединенного решателя задач</i> и <i>sc-модель пользовательского интерфейса</i>.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> .system_element_2405: 
+		.system_element_2523;
+		.system_element_2524
+	;
+	=> .system_element_2525: {
+		[<p>Подсистема в рамках <i>Метасистемы OSTIS</i>.</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+			=> nrel_explanation: [<p>Данный вариант использования предполагает отладку необходимых компонентов в рамках <i>Метасистемы OSTIS</i> с последующим переносом их в <i>дочернюю ostis-систему</i>.</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+				=> .system_element_180: .system_element_2526;;
+			*);;
+		*);
+		[<p>Cамостоятельная ostis-система, предназначенная исключительно для разработки и отладки компонентов решателей задач.</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+			=> nrel_note: [<p>В этом случае проектируемые компоненты отлаживаются в рамках такой системы, а затем должны быть перенесены в дочернюю ostis-систему.</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);
+		[<p>Подсистема в рамках дочерней ostis-системы.</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+			=> nrel_note: [<p>В таком варианте отладка компонентов осуществляется непосредственно в той же системе, в которой предполагается их использование, и дополнительного переноса не требуется.</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*)
+	};
+	=> nrel_note: [<p>Независимо от выбранного способа использования системы, разработанные компоненты впоследствии могут быть включены в состав <i>библиотеки многократно используемых компонентов ostis-систем</i>.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+
+	.system_element_2527
+	<=> .system_element_200: {
+		.system_element_2528
+		(*
+			=> nrel_note: [<p>В случае отладки на уровне sc-агентов акт выполнения каждого агента считается неделимым и не может быть прерван. При этом может выполняться отладка как атомарных sc-агентов, так и неатомарных. Инициирование того или иного агента, в том числе входящего в состав неатомарного, осуществляется путем создания соответствующих конструкций в sc-памяти, таким образом, отладка может осуществляться на разных уровнях детализации агентов, вплоть до атомарных.</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);
+		.system_element_2529
+		(*
+			=> nrel_note: [<p>Отладка на уровне <i>scp-программ</i> осуществляется аналогично существующим современным подходам к отладке процедурных программ и предполагает возможность установки точек останова, пошагового выполнения программы и так далее.</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*)
+	};
+	=> nrel_note: [<p>Система поддержки проектирования агентов может служить основой для моделирования систем агентов, использующих другие принципы коммуникации, например, непосредственный обмен сообщениями между агентами.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);;
+
+	.system_element_2516
+	=> nrel_basic_decomposition: {
+		.system_element_2530
+		(*
+			=> nrel_basic_decomposition: {
+				.system_element_2531;
+				.system_element_2517;
+				.system_element_2532
+			};;
+		*);
+		.system_element_2533
+		(*
+			=> nrel_basic_decomposition: {
+				.system_element_2534;
+				.system_element_2518;
+				.system_element_2535
+			};;
+		*)
+	};;
+
+	.system_element_2513
+	=> nrel_inclusion: [*
+		=> .system_element_1: 
+			.system_element_1643;
+			new_scp_program;
+			.system_element_2519;
+			breakpoint;
+			nrel_incorrectness_in_scp_program;
+			incorrectness_in_scp_program;
+			error_in_scp_program
+		;
+		=> nrel_note: [<p><i>База знаний системы автоматизации проектирования решателей задач ostis-систем</i> включает в себя кроме Ядра баз знаний ostis-систем и Предметной области Базового языка программирования ostis-систем также описание ключевых понятий, связанных с верификацией и отладкой <i>scp-программ</i>.</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+
+		.system_element_2519
+		<- quasybinary_relation;
+		=> nrel_first_domain: new_scp_program;
+		=> nrel_second_domain: .system_element_2536
+		(*
+			=> nrel_note: [<p>Данные sc-переменные должны соответствовать <i>scp-операторам</i> в рамках этой программы.</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);
+		=> nrel_note: [<p>При генерации каждого <i>scp-процесса</i>, соответствующего этой <i>scp-программе</i>, все <i>scp-операторы</i>, соответствующие таким переменным, будут добавлены во множество <i>точка останова</i>, то есть выполнение данного scp-процесса будет прерываться при достижении каждого из этих <i>scp-операторов</i>. Использование данного отношения приводит к указанию точек останова для всех <i>scp-процессов</i>, формируемых на основе заданной <i><b>scp-программы</b></i>. Для указания точки останова в рамках отдельно взятого <i>scp-процесса</i> нужный scp-оператор явно включается во множество <i>точка останова</i>.</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);
+		=> nrel_note: [<p>Во множество <b><i>точка останова</i></b> входят все <i>scp-операторы</i>, являющиеся точками останова в рамках какого-либо <i>scp-процесса</i>. Это означает, что в момент, когда в соответствии с переходами между <i>scp-операторами</i> по связкам отношения <i>последовательность действий*</i> указанный <i>scp-оператор</i> должен стать <i>активным действием</i>, он становится <i>отложенным действием</i>, и, соответственно, выполнение всего <i>scp-процесса</i> по данной ветке приостанавливается. Чтобы продолжить выполнение, необходимо удалить указанный <i><b>scp-оператор</b></i> из множества <i>отложенных действий</i> и добавить его во множество <i>активных действий</i>.</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+
+		breakpoint
+		<= nrel_inclusion: new_scp_operator;;
+
+		incorrectness_in_scp_program
+		<= nrel_inclusion: incorrect_structure;
+		=> nrel_inclusion: error_in_scp_program;
+		=> nrel_inclusion: unreachable_scp_operator;
+		=> nrel_inclusion: potentially_infinite_cycle;
+		=> nrel_explanation: [<p>Под <i>некорректностью в scp-программе</i> понимается <i>некорректная структура</i>, описывающая некорректность (не обязательно делающую невозможным выполнение соответствующих данной <i>scp-программе scp-процессов</i>), выявленную в рамках какой-либо конкретной <i>scp-программы</i>.</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+
+		error_in_scp_program
+		=> nrel_explanation: [<p>Под <i>ошибкой в scp-программе</i> понимается такая <i>некорректность в scp-программе</i>, которая делает невозможным успешное выполнение любого <i>scp-процесса</i>, соответствующего данной <i>scp-программе</i>, или даже создание такого <i>scp-процесса</i>.</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);
+		=> nrel_subdividing: {
+			syntax_error_in_scp_program
+			(*
+				=> nrel_explanation: [<p>Под <i>синтаксической ошибкой в scp-программе</i> понимается <i>ошибка в scp-программе</i>, в состав которой входит некоторая конструкция, не соответствующая синтаксису <i>scp-программы</i> или какой-либо ее части, например, конкретного <i>scp-оператора</i>.</p>]
+				(*
+					<- lang_ru;;
+					=> nrel_format: format_html;;
+				*);;
+			*);
+			semantic_error_in_scp_program
+			(*
+				=> nrel_explanation: [<p>Под <i>семантической ошибкой в scp-программе</i> понимается <i>ошибка в scp-программе</i>, в состав которой входит некоторая конструкция, корректная с точки зрения синтаксиса, но некорректная с семантической точки зрения, например, нарушающая логическую целостность <i>scp-программы</i>.</p>]
+				(*
+					<- lang_ru;;
+					=> nrel_format: format_html;;
+				*);;
+			*)
+		};
+		=> nrel_subdividing: {
+			error_in_scp_program_at_program_level;
+			error_in_scp_program_at_set_of_parameters_level;
+			error_in_scp_program_at_set_of_operators_level;
+			error_in_scp_program_at_operator_level;
+			error_in_scp_program_at_operand_level
+		};
+		=> nrel_note: [<p>Каждая <i>ошибка в scp-программе на уровне программы</i> описывает некорректный фрагмент, выявление которого требует анализа всей <i>scp-программы</i> как единого целого, и не может быть выполнено путем анализа ее отдельных частей, например, конкретных <i>scp-операторов</i>.</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+
+		error_in_scp_program_at_program_level
+		=> nrel_inclusion: absent_scp_process
+		(*
+			<- syntax_error_in_scp_program;;
+		*);
+		=> nrel_inclusion: decomposition_of_scp_process_not_specified
+		(*
+			<- syntax_error_in_scp_program;;
+		*);
+		=> nrel_note: [<p>Каждая <i>ошибка в scp-программе на уровне множества параметров</i> описывает некорректный фрагмент, для выявления которого достаточно анализа параметров некоторой <i>scp-программы</i>, то есть явным образом выделенных аргументов <i>действия (scp-процессе)</i>, соответствующего данной scp-программе. К такого рода ошибкам относятся, например, неверное указание ролей этих аргументов в рамках данного действия.</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+
+		error_in_scp_program_at_set_of_parameters_level
+		=> nrel_inclusion: type_of_scp_program_parameter_not_specified
+		(*
+			<- syntax_error_in_scp_program;;
+		*);
+		=> nrel_inclusion: sequence_number_of_scp_program_parameter_not_specified
+		(*
+			<- syntax_error_in_scp_program;;
+		*);
+		=> nrel_note: [<p>Каждая <i>ошибка в scp-программе на уровне множества операторов</i> описывает некорректный фрагмент, для выявления которого достаточно анализа множества операторов некоторой <i>scp-программы</i>, то есть элементов декомпозиции <i>действия (scp-процесса)</i>, соответствующего данной <i>scp-программе</i>. К таким ошибкам относится, например, факт отсутствия <i>начального оператора scp-программы</i> или факт отсутствия в программе <i>scp-оператора завершения выполнения программы</i>.</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+
+		error_in_scp_program_at_set_of_operators_level
+		=> nrel_inclusion: decomposition_of_scp_process_not_contain_any_elements
+		(*
+			<- syntax_error_in_scp_program;;
+		*);
+		=> nrel_inclusion: absent_return
+		(*
+			<- syntax_error_in_scp_program;;
+		*);
+		=> nrel_inclusion: next_scp_operator_not_part_of_scp_process
+		(*
+			<- syntax_error_in_scp_program;;
+		*);
+		=> nrel_inclusion: sequence_of_actions_after_execution_scp_operator_not_specified
+		(*
+			<- syntax_error_in_scp_program;;
+		*);
+		=> nrel_inclusion: there_is_no_rrel_init
+		(*
+			<- syntax_error_in_scp_program;;
+		*);
+		=> nrel_note: [<p>Каждая <i>ошибка в scp-программе на уровне оператора</i> описывает некорректный фрагмент, для выявления которого достаточно анализа одного конкретного <i>scp-оператора</i>, при этом не важно, в состав какой <i>scp-программы</i> он входит. К такого рода ошибкам относится, например, факт указания количества операндов <i>scp-оператора</i>, не соответствующего спецификации соответствующего класса <i>scp-операторов</i>.</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+
+		error_in_scp_program_at_operator_level
+		=> nrel_inclusion: scp_operator_not_belong_to_any_scp_operators_atomic_classes
+		(*
+			<- syntax_error_in_scp_program;;
+		*);
+		=> nrel_inclusion: no_operand_of_erase_scp_operator_is_marked_rrel_erase
+		(*
+			<- syntax_error_in_scp_program;;
+		*);
+		=> nrel_inclusion: in_searchElStr5_second_and_fourth_operands_coincide
+		(*
+			<- syntax_error_in_scp_program;;
+		*);
+		=> nrel_inclusion: scp_operator_of_searching_not_contain_rrel_fixed_operands
+		(*
+			<- syntax_error_in_scp_program;;
+		*);
+		=> nrel_inclusion: searchSet_scp_operator_not_contain_rrel_set_operands
+		(*
+			<- syntax_error_in_scp_program;;
+		*);
+		=> nrel_inclusion: fixed_operand_marked_as_rrel_set
+		(*
+			<- syntax_error_in_scp_program;;
+		*);
+		=> nrel_inclusion: .system_element_2537
+		(*
+			<- syntax_error_in_scp_program;;
+		*);
+		=> nrel_note: [<p>Каждая <i>ошибка в scp-программе на уровне операнда</i> описывает некорректный фрагмент, для выявления которого достаточно анализа одного конкретного операнда в рамках scp-программы, точнее sc-дуги принадлежности, связывающей указанный операнд и соответствующий <i>scp-оператор</i>, при этом не важно, какой именно <i>scp-оператор</i>. К такого рода ошибкам относится, например, факт отсутствия ролевого отношения, указывающего на номер операнда в рамках <i>scp-оператора</i>.</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+
+		error_in_scp_program_at_operand_level
+		=> nrel_inclusion: .system_element_2538
+		(*
+			<- syntax_error_in_scp_program;;
+		*);;
+
+		nrel_incorrectness_in_scp_program
+		<- binary_relation;
+		=> nrel_first_domain: incorrectness_in_scp_program;
+		=> .system_element_2539: new_scp_program;
+		=> nrel_note: [<p>Отношение <i>scp-программа поиска некорректности в scp-программе*</i> связывает <i>класс некорректностей в scp-программе</i> и <i>scp-программу</i>, которая может использоваться для выявления соответствующей некорректности в какой-либо другой <i>scp-программе</i>. Указанная <i>scp-программа</i> должна иметь единственный параметр, который является <i>in-параметром</i> и, в зависимости от соответствующего класса некорректностей в <i>scp-программе</i>, обозначает:
+		<ul>
+			<li> саму <i>scp-программу</i> в случае выявления <i>некорректности в scp-программе</i> вообще или <i>ошибки в scp-программе на уровне программы</i>;
+			<li> <i>scp-процесс</i>, являющийся <i>ключевым sc-элементом</i> данной <i>scp-программы</i> в случае выявления ошибки в <i>scp-программе на уровне множества параметров</i>;
+			<li> <i>множество операторов</i> данной <i>scp-программы</i> в случае выявления <i>ошибки в scp-программе на уровне множества операторов</i>;
+			<li> <i>знак конкретного scp-оператора</i> в случае выявления ошибки в <i>scp-программе на уровне оператора</i>;
+			<li> <i>sc-дугу принадлежности</i> в случае выявления <i>ошибки в scp-программе на уровне операнда</i>.</li>
+		<ul></p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);
+		=> nrel_note: [<p>Если в результате верификации <i>scp-программы</i> выявлена некорректность, то формируется соответствующая <i>структура</i> и генерируется связка отношения <i>некорректность в scp-программе*</i>.</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*];;
+
+	.system_element_2514
+	=> nrel_inclusion: [*
+		=> .system_element_1: 
+			.system_element_2517;
+			.system_element_2518
+		;;
+
+		.system_element_2517
+		=> .system_element_417: {
+			.system_element_2540;
+			.system_element_2541
+			(*
+				=> nrel_abstract_sc_agent_decomposition: {
+					abstract_sc_agent_sc_agents_verification
+					(*
+						=> nrel_abstract_sc_agent_decomposition: {
+							abstract_sc_agent_specification_of_sc_agent_verification;
+							.system_element_2442
+						};;
+					*);
+					.system_element_2443
+					(*
+						=> nrel_abstract_sc_agent_decomposition: {
+							.system_element_2444
+							(*
+								=> nrel_note: [<p>Единственным аргументом класса действий, соответствующего <i>Абстрактному sc-агенту поиска всех выполняющихся процессов, соответствующих заданному sc-агенту</i> является знак этого <i>sc-агента</i>.</p>]
+								(*
+									<- lang_ru;;
+									=> nrel_format: format_html;;
+								*);;
+							*);
+							abstract_sc_agent_initiation_sc_agent_on_given_arguments
+							(*
+								=> nrel_note: [<p>Класс действий, соответствующий <i>Абстрактному sc-агенту инициирования заданного sc-агента на заданных аргументах</i>, имеет два аргумента. Первый аргумент является знаком инициируемого sc-агента, второй --- знаком связки, в которую под соответствующими атрибутами входят sc-элементы, которые станут аргументами соответствующего <i>действия в sc-памяти</i>.</p>]
+								(*
+									<- lang_ru;;
+									=> nrel_format: format_html;;
+								*);;
+							*);
+							.system_element_2445
+							(*
+								=> nrel_note: [<p>Единственным аргументом класса действий, соответствующего <i>Абстрактному sc-агенту активации заданного sc-агента</i> является знак этого <i>sc-агента</i>.</p>]
+								(*
+									<- lang_ru;;
+									=> nrel_format: format_html;;
+								*);;
+							*);
+							.system_element_2446
+							(*
+								=> nrel_note: [<p>Единственным аргументом класса действий, соответствующего <i>Абстрактному sc-агенту деактивации заданного sc-агента</i>, является знак этого <i>sc-агента</i>.</p>]
+								(*
+									<- lang_ru;;
+									=> nrel_format: format_html;;
+								*);;
+							*);
+							.system_element_2447
+							(*
+								=> nrel_note: [<p>Класс действий, соответствующий <i>Абстрактному sc-агенту установки блокировки заданного типа на заданный sc-элемент</i>, имеет три аргумента. Первый аргумент является знаком класса блокировок, второй --- знаком процесса в sc-памяти, третий --- sc-элементом, на который должна быть установлена блокировка.</p>]
+								(*
+									<- lang_ru;;
+									=> nrel_format: format_html;;
+								*);;
+							*);
+							.system_element_2448
+							(*
+								=> nrel_note: [<p>Единственным аргументом класса действий, соответствующего <i>Абстрактному sc-агенту снятия всех блокировок заданного процесса</i>, является знак этого <i>процесса в sc-памяти</i>.</p>]
+								(*
+									<- lang_ru;;
+									=> nrel_format: format_html;;
+								*);;
+							*);
+							.system_element_2449
+							(*
+								=> nrel_note: [<p>Единственным аргументом класса действий, соответствующего <i>Абстрактному sc-агенту снятия всех блокировок с заданного sc-элемента</i>, является знак этого <i>sc-элемента</i>.</p>]
+								(*
+									<- lang_ru;;
+									=> nrel_format: format_html;;
+								*);;
+							*)
+						};;
+					*)
+				};;
+			*)
+		};;
+
+		.system_element_2518
+		=> .system_element_417: {
+			.system_element_2542;
+			.system_element_2541
+			(*
+				=> nrel_abstract_sc_agent_decomposition: {
+					abstract_sc_agent_verification_scp_programs
+					(*
+						=> .system_element_2543: [<p>Алгоритм работы <i>абстрактного sc-агента верификации scp-программ</i> сводится к поиску некорректностей в рамках <i>scp-программы</i> на основе определений, соответствующих различным классам таких некорректностей, а также посредством запуска соответствующих данным классам некорректностей <i>scp-программ поиска некорректности в scp-программе*</i>.</p>];;
+						=> nrel_result: [<p>Результатом работы <i>абстрактного sc-агента верификации scp-программ</i> является формирование в <i>sc-памяти структур</i>, описывающих некорректности в исследуемой <i>scp-программе</i>, если таковые имеются.</p>]
+						(*
+							<- lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+						=> nrel_note: [<p>Единственным аргументом класса действий, соответствующего <i>абстрактному sc-агенту верификации scp-программ</i>, является знак верифицируемой <i>scp-программы</i>.</p>]
+						(*
+							<- lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);
+					abstract_sc_agent_debug_scp_programs
+					(*
+						=> nrel_abstract_sc_agent_decomposition: {
+							abstract_sc_agent_run_scp_program_for_given_rrel_in_set
+							(*
+								=> nrel_note: [<p>Класс действий, соответствующий <i>абстрактному sc-агенту запуска заданной scp-программы для заданного множества входных данных</i> имеет два аргумента. Первый аргумент является знаком запускаемой scp-программы, второй --- знаком связки, в которую под соответствующими атрибутами входят sc-элементы, которые станут аргументами соответствующего scp-процесса.</p>];;
+								=> nrel_note: [<p>В режиме пошагового выполнения предполагается, что на каждом шаге инициируется выполнение всех scp-операторов в рамках заданного scp-процесса, для которых предыдущий scp-оператор стал прошлой сущностью (выполнился). В свою очередь, шаг заканчивается, когда все инициированные таким образом операторы закончат выполнение. Таким образом, в случае, если в рамках scp-программы есть параллельные ветви, то на одном шаге могут одновременно инициироваться два и более scp-оператора.</p>]
+								(*
+									<- lang_ru;;
+									=> nrel_format: format_html;;
+								*);;
+							*);
+							abstract_sc_agent_run_scp_program_for_given_rrel_in_set_single_step
+							(*
+								=> nrel_note: [<p>Класс действий, соответствующий <i>абстрактному sc-агенту запуска заданной scp-программы для заданного множества входных данных в режиме пошагового выполнения</i> имеет два аргумента. Первый аргумент является знаком запускаемой scp-программы, второй --- знаком связки, в которую под соответствующими атрибутами входят sc-элементы, которые станут аргументами соответствующего scp-процесса.</p>];;
+								=> nrel_note: [<p>В режиме пошагового выполнения предполагается, что на каждом шаге инициируется выполнение всех scp-операторов в рамках заданного scp-процесса, для которых предыдущий scp-оператор стал прошлой сущностью (выполнился). В свою очередь, шаг заканчивается, когда все инициированные таким образом операторы закончат выполнение. Таким образом, в случае, если в рамках scp-программы есть параллельные ветви, то на одном шаге могут одновременно инициироваться два и более scp-оператора.</p>]
+								(*
+									<- lang_ru;;
+									=> nrel_format: format_html;;
+								*);;
+							*);
+							abstract_sc_agent_of_search_all_operators_within_scp_program
+							(*
+								=> nrel_note: [<p>Единственным аргументом класса действий, соответствующего <i>абстрактному sc-агенту поиска всех scp-операторов в рамках scp-программы</i>, является знак этой scp-программы.</p>]
+								(*
+									<- lang_ru;;
+									=> nrel_format: format_html;;
+								*);;
+							*);
+							abstract_sc_agent_of_search_all_breakpoints_within_scp_process
+							(*
+								=> nrel_note: [<p>Единственным аргументом класса действия, соответствующего <i>абстрактному sc-агенту поиска всех точек останова в рамках scp-процесса</i>, является знак scp-процесса, с которым будет выполнено соответствующее действие.</p>]
+								(*
+									<- lang_ru;;
+									=> nrel_format: format_html;;
+								*);;
+							*);
+							abstract_sc_agent_add_breakpoint_in_scp_program
+							(*
+								=> nrel_note: [<p>Класс действий, соответствующий <i>абстрактному sc-агенту добавления точки останова в scp-программу</i> имеет два аргумента. Первый аргумент является знаком scp-программы или scp-процесса соответственно, второй --- знаком scp-оператора, входящего в состав этой scp-программы или scp-процесса.</p>]
+								(*
+									<- lang_ru;;
+									=> nrel_format: format_html;;
+								*);;
+							*);
+							abstract_sc_agent_remove_breakpoint_from_scp_program
+							(*
+								=> nrel_note: [<p>Класс действий, соответствующий <i>абстрактному sc-агенту удаления точки останова из scp-программы</i> имеет два аргумента. Первый аргумент является знаком scp-программы или scp-процесса соответственно, второй --- знаком scp-оператора, входящего в состав этой scp-программы или scp-процесса.</p>]
+								(*
+									<- lang_ru;;
+									=> nrel_format: format_html;;
+								*);;
+							*);
+							abstract_sc_agent_add_breakpoint_in_scp_process
+							(*
+								=> nrel_note: [<p>Класс действий, соответствующий <i>абстрактному sc-агенту добавления точки останова в scp-процесс</i> имеет два аргумента. Первый аргумент является знаком scp-программы или scp-процесса соответственно, второй --- знаком scp-оператора, входящего в состав этой scp-программы или scp-процесса.</p>]
+								(*
+									<- lang_ru;;
+									=> nrel_format: format_html;;
+								*);;
+							*);
+							abstract_sc_agent_remove_breakpoint_from_scp_process
+							(*
+								=> nrel_note: [<p>Класс действий, соответствующий <i>абстрактному sc-агенту удаления точки останова из scp-процесса</i> имеет два аргумента. Первый аргумент является знаком scp-программы или scp-процесса соответственно, второй --- знаком scp-оператора, входящего в состав этой scp-программы или scp-процесса.</p>]
+								(*
+									<- lang_ru;;
+									=> nrel_format: format_html;;
+								*);;
+							*);
+							abstract_sc_agent_step_in
+							(*
+								=> nrel_note: [<p>Единственным аргументом класса действия, соответствующего <i>абстрактному sc-агенту продолжения выполнения scp-процесса на один шаг</i>, является знак scp-процесса, с которым будет выполнено соответствующее действие.</p>]
+								(*
+									<- lang_ru;;
+									=> nrel_format: format_html;;
+								*);;
+							*);
+							abstract_sc_agent_step_over
+							(*
+								=> nrel_note: [<p>Единственным аргументом класса действия, соответствующего <i>абстрактному sc-агенту продолжения выполнения scp-процесса до точки останова или завершения</i>, является знак scp-процесса, с которым будет выполнено соответствующее действие.</p>]
+								(*
+									<- lang_ru;;
+									=> nrel_format: format_html;;
+								*);;
+							*);
+							abstract_sc_agent_view_information_about_scp_process
+							(*
+								=> nrel_note: [<p>Единственным аргументом класса действия, соответствующего <i>абстрактному sc-агенту просмотра информации об scp-процессе</i>, является знак scp-процесса, с которым будет выполнено соответствующее действие.</p>]
+								(*
+									<- lang_ru;;
+									=> nrel_format: format_html;;
+								*);;
+							*);
+							abstract_sc_agent_view_information_about_scp_operator
+							(*
+								=> nrel_note: [<p>Единственным аргументом класса действий, соответствующего <i>абстрактному sc-агенту просмотра информации об scp-операторе</i>, является знак scp-оператора, входящего в состав некоторого scp-процесса.</p>];;
+								=> nrel_result: [<p>Результатом работы данного агента является структура, описывающая значения операндов данного scp-оператора, его атомарный тип и другую служебную информацию, полезную для разработчика.</p>]
+								(*
+									<- lang_ru;;
+									=> nrel_format: format_html;;
+								*);;
+							*)
+						};;
+					*)
+				};;
+			*)
+		};;
+	*];;
+
+	.system_element_2515
+	=> nrel_inclusion: [*
+		=> .system_element_1: 
+			.system_element_1643;
+			.system_element_2520;
+			.system_element_2521;
+			.system_element_2522
+		;
+		=> nrel_note: [<p><i>пользовательский интерфейс системы автоматизации проектирования решателей задач ostis-систем</i> представлен набором интерфейсных команд, позволяющих пользователю инициировать деятельность нужного агента, входящего в состав этой системы.</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+
+		.system_element_2520
+		=> nrel_subdividing: {
+			.system_element_2521;
+			.system_element_2544
+		};;
+
+		.system_element_2521
+		=> nrel_subdividing: {
+			.system_element_2545
+			(*
+				=> nrel_subdividing: {
+					.system_element_2546;
+					.system_element_2547
+				};;
+			*);
+			.system_element_2548
+			(*
+				=> nrel_subdividing: {
+					.system_element_2549;
+					.system_element_2550;
+					.system_element_2551;
+					.system_element_2552;
+					.system_element_2553;
+					.system_element_2554;
+					.system_element_2555
+				};;
+			*)
+		};;
+
+		.system_element_2522
+		=> nrel_subdividing: {
+			.system_element_2556;
+			.system_element_2557
+			(*
+				=> nrel_subdividing: {
+					.system_element_2558;
+					.system_element_2559;
+					.system_element_2560;
+					.system_element_2561;
+					.system_element_2562;
+					.system_element_2563;
+					.system_element_2564;
+					.system_element_2565;
+					.system_element_2566;
+					.system_element_2567;
+					.system_element_2568;
+					.system_element_2569
+				};;
+			*)
+		};;
+	*];;
+*];;
