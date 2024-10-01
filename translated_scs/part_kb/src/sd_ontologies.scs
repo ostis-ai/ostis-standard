@@ -1,10 +1,10 @@
-.system_element_3821
+.system_element_2720
 => nrel_inclusion: [*
 	<= .system_element_116: <
-		.system_element_4361;
-		.system_element_4362;
-		.system_element_4363;
-		.system_element_4364
+		.system_element_4832;
+		.system_element_4833;
+		.system_element_4834;
+		.system_element_4835
 	>;
 	=> nrel_introduction: 
 		[<p>На сегодняшний день наиболее эффективным средством структуризации различных областей <i>знаний</i> являются <i>онтологии</i>. Суть онтологического подхода при проектировании <i>базы знаний</i> заключается в рассмотрении структуры <i>базы знаний</i> как иерархической системы выделенных <i>предметных областей</i> и соответствующих им <i>онтологий</i>. Однако, существует множество способов, которыми можно описать реальный мир таким, каким он есть. Решением данной проблемы является использование при проектировании <i>баз знаний</i> <i>интеллектуальных компьютерных систем</i> <i>онтологий верхнего уровня</i>.</p>]
@@ -17,7 +17,7 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 			=> .system_element_122: {
-				.system_element_4365
+				.system_element_4836
 			};;
 		*);
 		[<p>На сегодняшний день был предпринят ряд попыток по созданию <i>онтологии верхного уровня</i>, которая бы позволила обеспечить широкую синтаксическую совместимость разрабатываемых <i>баз знаний</i> <i>интеллектуальных компьютерных систем</i>. Однако после анализа существующих <i>онтологий верхнего уровня</i>, который подробно представлен в <i>sd_ontologies</i>, был сделан вывод, что попытки создать универсальную <i>онтологию верхнего уровня</i>, способную обеспечить совместимость <i>интеллектуальных компьютерных систем</i>, не привели к ожидаемым результатам, поскольку имеют ряд ключевых недостатков.</p>]
@@ -32,7 +32,7 @@
 		*)
 	;;
 
-	.system_element_4366
+	.system_element_4837
 	=> nrel_idtf: [<p>Предметная область теории <i>онтологий</i></p>]
 	(*
 		<- lang_ru;;
@@ -45,13 +45,13 @@
 	*);
 	<- subject_domain;
 	-> .system_element_112: 
-		.system_element_4367;
-		.system_element_3812;
-		.system_element_4368;
-		.system_element_4369;
-		.system_element_4370;
-		.system_element_4371;
-		.system_element_4372
+		.system_element_4838;
+		.system_element_4176;
+		.system_element_4839;
+		.system_element_4840;
+		.system_element_4841;
+		.system_element_4842;
+		.system_element_4843
 	;
 	-> .system_element_748: 
 		nrel_ontology;
@@ -59,7 +59,7 @@
 		nrel_using_statements
 	;;
 
-	.system_element_4361
+	.system_element_4832
 	=> nrel_inclusion: [*
 
 		ontology
@@ -108,14 +108,14 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
-		<= nrel_inclusion: .system_element_2720;
+		<= nrel_inclusion: .system_element_2972;
 		=> nrel_note: [<p>Если <i>спецификация</i> может специфицировать (описывать) любую <i>сущность</i>, то <i>отнология</i> специфицирует только различные <i>знания</i>. При этом наиболее важными объектами такой спецификации являются <i>предметные области</i>.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
-		<= nrel_inclusion: .system_element_4373;
-		<- .system_element_2686;
+		<= nrel_inclusion: .system_element_4844;
+		<- .system_element_2939;
 		=> nrel_note: [<p><i>онтологии</i> являются важнейшим <i>видом знаний</i> (точнее, метазнаний), обеспечивающих семантическую систематизацию <i>знаний</i>, хранимых в памяти <i>интеллектуальных компьютерных систем</i> (в том числе <i>ostis-систем</i>), и, соответственно, семантическую структуризацию <i>баз знаний</i>.</p>]
 		(*
 			<- lang_ru;;
@@ -135,7 +135,7 @@
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
-			=> nrel_authors: .system_element_4374;;
+			=> nrel_authors: .system_element_4845;;
 		*);
 		=> nrel_explanation: [<p><i>онтология</i> включает в себя:
 		<ul>
@@ -153,15 +153,15 @@
 			=> nrel_format: format_html;;
 		*);
 		=> nrel_subdividing: {
-			.system_element_4375;
-			.system_element_4376
+			.system_element_4846;
+			.system_element_4847
 			(*
 				=> nrel_idtf: [<p>онтология, представленная на формальном языке</p>];;
-				<= .system_element_756: .system_element_4377;;
+				<= .system_element_756: .system_element_4848;;
 			*)
 		};;
 
-		.system_element_4376
+		.system_element_4847
 		=> nrel_idtf: [<p>формальное описание <u>денотационной семантики</u> (семантической интерпретации) специфицируемого знания</p>]
 		(*
 			<- lang_ru;;
@@ -173,7 +173,7 @@
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_4378
+		.system_element_2714
 		=> nrel_note: [<p><i>онтология</i> чаще всего трактуется как спецификация концептуализации (спецификация системы <i>понятий</i>) заданной <i>предметной области</i>. Здесь имеется в виду описание теоретико-множественных связей (прежде всего, классификации) используемых <i>понятий</i>, а также описание различных закономерностей для сущностей, принадлежащих этим <i>понятиям</i>. Тем не менее, важными видами спецификации <i>предметной области</i> являются также:
 
 		<ul>
@@ -213,7 +213,7 @@
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_4379
+		.system_element_4849
 		<= nrel_inclusion: ontology;
 		=> nrel_idtf: [<p>онтология, описывающая фундаментальные понятия, которые являются общими для всех предметных областей</p>]
 		(*
@@ -232,12 +232,12 @@
 		*);;
 	*];;
 
-	.system_element_4362
+	.system_element_4833
 	=> nrel_inclusion: [*
 
-		.system_element_4378
+		.system_element_2714
 		=> nrel_subdividing: {
-			.system_element_4380
+			.system_element_4850
 			(*
 				=> nrel_idtf: [<p><i>онтология</i>, представляющая спецификацию соответствующей <i>предметной области</i> в том или ином аспекте</p>]
 				(*
@@ -245,7 +245,7 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);
-			.system_element_4381
+			.system_element_4851
 			(*
 				=> nrel_idtf: [<p>онтология <i>предметной области</i>, являющаяся результатом объединения всех известных <i>частных онтологий</i> этой предметной области</p>]
 				(*
@@ -255,16 +255,16 @@
 			*)
 		};;
 
-		.system_element_4380
+		.system_element_4850
 		=> nrel_note: [<p>Каждая <i>частная онтология</i> является фрагментом <i>предметной области</i>, включающей в себя <u>все</u> (!) частные онтологии, принадлежащие соответствующему <i>виду онтологии</i>. При этом указанная <i>предметная область</i>, в свою очередь, также имеет соответствующую ей <i>онтологию</i>, которая уже является не метазнанием (как любая онтология), а метаметазнанием (спецификацией метазнания).</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
-		=> nrel_subdividing: .system_element_4382
+		=> nrel_subdividing: .system_element_4852
 		(*
 			<=> .system_element_200: {
-				.system_element_3812
+				.system_element_4176
 				(*
 					=> nrel_idtf: [<p>sc-окрестность (sc-спецификация) заданной предметной области в рамках <i>Предметной области предметных областей</i></p>];;
 					=> nrel_idtf: [<p>схема предметной области</p>]
@@ -278,7 +278,7 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);
-				.system_element_4368
+				.system_element_4839
 				(*
 					=> nrel_idtf: [<p>sc-спецификация заданной предметной области в рамках <i>Предметной области множеств</i></p>]
 					(*
@@ -286,7 +286,7 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);
-				.system_element_4369
+				.system_element_4840
 				(*
 					=> nrel_idtf: [<p>sc-текст формальной теории заданной предметной области</p>]
 					(*
@@ -294,11 +294,11 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);
-				.system_element_4372
+				.system_element_4843
 			};;
 		*);;
 
-		.system_element_4382
+		.system_element_4852
 		=> nrel_idtf: [<p>вид спецификаций <i>предметных областей</i></p>]
 		(*
 			<- lang_ru;;
@@ -310,16 +310,16 @@
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_4369
-		<= nrel_set_of_subsets: .system_element_4263;;
+		.system_element_4840
+		<= nrel_set_of_subsets: .system_element_4712;;
 
-		.system_element_4368
+		.system_element_4839
 		<= nrel_set_of_subsets: subject_domain_of_sets;;
 
-		.system_element_3812
+		.system_element_4176
 		<= nrel_set_of_subsets: subject_domain_of_subject_domains;;
 
-		.system_element_3812
+		.system_element_4176
 		=> nrel_idtf: [<p>структурная онтология предметной области</p>]
 		(*
 			<- lang_ru;;
@@ -361,7 +361,7 @@
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_4368
+		.system_element_4839
 		=> nrel_idtf: [<p><i>семантическая окрестность</i> специфицируемой <i>предметной области</i> в рамках <i>Предметной области множеств</i>, описывающая теоретико-множественные связи между <i>понятиями</i> специфицируемой <i>предметной области</i>, включая связи <i>отношений</i> с их <i>областями определения</i> и <i>доменами</i>, связи используемых <i>параметров</i> и классов структур с их <i>областями определения</i></p>]
 		(*
 			<- lang_ru;;
@@ -389,7 +389,7 @@
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_4369
+		.system_element_4840
 		=> nrel_idtf: [<p>формальная теория заданной (специфицируемой) предметной области, описывающая с помощью переменных, кванторов, логических связок, формул различные свойства экземпляров понятий, используемых в специфицируемой предметной области</p>]
 		(*
 			<- lang_ru;;
@@ -429,7 +429,7 @@
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_4372
+		.system_element_4843
 		=> nrel_idtf: [<p>онтология, описывающая <u>правила построения</u> терминов (sc-идентификаторов), соответствующих <b>sc-элементам</b>, принадлежащим специфицируемой предметной области, а также описывающая различного рода терминологические связи между используемыми терминами, характеризующие происхождение этих терминов</p>]
 		(*
 			<- lang_ru;;
@@ -457,23 +457,23 @@
 		*);;
 	*];;
 
-	.system_element_4383
+	.system_element_4853
 	=> nrel_inclusion: [*
 
-		.system_element_4381
+		.system_element_4851
 		=> nrel_idtf: [<p>объединение всех частных онтологий, соответствующих одной предметной области</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
-		<= .system_element_4384: {
-			.system_element_3812;
-			.system_element_4368;
-			.system_element_4369;
-			.system_element_4372
+		<= .system_element_4854: {
+			.system_element_4176;
+			.system_element_4839;
+			.system_element_4840;
+			.system_element_4843
 		};;
 
-		.system_element_2542
+		.system_element_2709
 		=> nrel_idtf: [<p>интеграция некоторой <i>предметной области</i> c соответствующей ей <i><u>объединённой</u> онтологией</i></p>]
 		(*
 			<- lang_ru;;
@@ -484,9 +484,9 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
-		<= .system_element_4384: {
+		<= .system_element_4854: {
 			subject_domain;
-			.system_element_4381
+			.system_element_4851
 		};
 		=> nrel_idtf: [<p>sc-текст, являющийся объединением некоторой предметной области, представленной в SC-коде, и объединённой онтологии этой предметной области, также представленной в SC-коде</p>]
 		(*
@@ -544,7 +544,7 @@
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_4379
+		.system_element_4849
 		=> nrel_note: [<p><i>онтология верхнего уровня</i> является решением проблемы обеспечения совместимости различных <i>видов знаний</i> при проектировании <i>баз знаний</i> <i>интеллектуальных компьютерных систем</i>.</p>]
 		(*
 			<- lang_ru;;
@@ -560,14 +560,14 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 			=> .system_element_122: {
-				.system_element_4385;
-				.system_element_4386
+				.system_element_4855;
+				.system_element_4856
 			};;
 		*);
 		=> .system_element_252: {
-			.system_element_4387;
-			.system_element_4388;
-			.system_element_4389
+			.system_element_4857;
+			.system_element_4858;
+			.system_element_4859
 		}
 		(*
 			=> nrel_note: [<p>Стоит отметить, что представленный список не является окончательным. Существует более пятнадцати онтологий, претендующих на звание онтологий верхнего уровня, целью создания которых является использование их при создании онтологий более низкого уровня.</p>];;
@@ -583,8 +583,8 @@
 			*);;
 		*);;
 
-		.system_element_4386
-		<- .system_element_4379;
+		.system_element_4856
+		<- .system_element_4849;
 		=> nrel_idtf: [<p>Basic Formal Ontology</p>]
 		(*
 			<- lang_ru;;
@@ -604,7 +604,7 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 			=> .system_element_122: {
-				.system_element_4390
+				.system_element_4860
 			};;
 		*);
 		=> .system_element_253: "file://images/sd_ontologies/bfo_structure.png"
@@ -633,8 +633,8 @@
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_4388
-		<- .system_element_4379;
+		.system_element_4858
+		<- .system_element_4849;
 		=> nrel_idtf: [<p>The Standard Upper Ontology</p>]
 		(*
 			<- lang_ru;;
@@ -665,8 +665,8 @@
 			*);;
 		*);;
 
-		.system_element_4389
-		<- .system_element_4379;
+		.system_element_4859
+		<- .system_element_4849;
 		=> nrel_idtf: [<p>Descriptive Ontology for Linguistic and Cognitive Engineering</p>]
 		(*
 			<- lang_ru;;
@@ -689,19 +689,19 @@
 		*);;
 	*];;
 
-	.system_element_4364
+	.system_element_4835
 	=> nrel_inclusion: [*
 
-		.system_element_4391
+		.system_element_4861
 		-> nrel_ontology
 		(*
 			=> nrel_idtf: [<p>быть онтологией заданного информационного ресурса*</p>];;
-			=> nrel_inclusion: .system_element_4392;;
+			=> nrel_inclusion: .system_element_4862;;
 		*);
-		-> .system_element_4393;
-		-> .system_element_4394
+		-> .system_element_4863;
+		-> .system_element_4864
 		(*
-			=> nrel_inclusion: .system_element_4395
+			=> nrel_inclusion: .system_element_4865
 			(*
 				=> nrel_idtf: [<p>декомпозиция предметной области и онтологии на предметную область и её частные онтология*</p>]
 				(*
@@ -710,10 +710,10 @@
 				*);;
 			*);;
 		*);
-		-> .system_element_4396;;
+		-> .system_element_4866;;
 
 		nrel_ontology
-		<= nrel_inclusion: .system_element_4397
+		<= nrel_inclusion: .system_element_4867
 		(*
 			=> nrel_idtf: [<p>быть спецификацией заданной сущности*</p>]
 			(*
@@ -732,7 +732,7 @@
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_4392
+		.system_element_4862
 		<= nrel_inclusion: nrel_ontology;
 		=> nrel_idtf: [<p>быть онтологией заданной предметной области*</p>]
 		(*
@@ -744,18 +744,18 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
-		=> nrel_inclusion: .system_element_4398;
-		=> nrel_inclusion: .system_element_4399;
-		=> nrel_inclusion: .system_element_4400;
-		=> nrel_inclusion: .system_element_4401;
-		=> nrel_inclusion: .system_element_4402;
+		=> nrel_inclusion: .system_element_4868;
+		=> nrel_inclusion: .system_element_4869;
+		=> nrel_inclusion: .system_element_4870;
+		=> nrel_inclusion: .system_element_4871;
+		=> nrel_inclusion: .system_element_4872;
 		=> nrel_note: [<p>Отношение <i>онтология предметной области*</i> и его подмножества не являются обязательными, поскольку конкретный <i>вид онтологии</i> и вид сущности, специфицируемой данной онтологией, однозначно задаются классами, которым принадлежат эта онтология и эта сущность. Таким образом, указанные отношения вводятся исключительно для дидактических целей и не рекомендуются к использованию, поскольку увеличивают число случаев логической эквивалентности sc-текстов.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_4393
+		.system_element_4863
 		<= nrel_inclusion: .system_element_1126;
 		=> nrel_idtf: [<p><i><u>знание</u></i>, являющееся фрагментом (<i>частью</i>) другого заданного <i>знания</i>*</p>]
 		(*
@@ -768,7 +768,7 @@
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_4396
+		.system_element_4866
 		=> nrel_idtf: [<p>быть формальной моделью области выполнения заданной системы действий (заданного сложного действия или заданной деятельности)*</p>]
 		(*
 			<- lang_ru;;

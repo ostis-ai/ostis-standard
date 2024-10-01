@@ -1,5 +1,5 @@
 .segment_1 = [*
-.system_element_3387
+.system_element_3752
 => nrel_inclusion: [*
 
 	.system_element_357
@@ -24,12 +24,12 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_3388: [<p><b>SC-код</b></p>]
+	=> .system_element_3753: [<p><b>SC-код</b></p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<- .system_element_2166;
+	<- .system_element_2164;
 	=> .system_element_585: [<p>sc-текст</p>]
 	(*
 		<- lang_ru;;
@@ -37,7 +37,7 @@
 	*);
 	<- .system_element_354;
 	<- .system_element_355;
-	<- .system_element_3172;
+	<- .system_element_3537;
 	=> nrel_idtf: [<p>Универсальный язык, обеспечивающий внутреннее представление и структуризацию <u>всех</u>(!), используемых ostis-системой в процессе своего функционирования.</p>]
 	(*
 		<- lang_ru;;
@@ -78,7 +78,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<- .system_element_2166;
+	<- .system_element_2164;
 	=> nrel_idtf: [<p>текст SC-кода</p>]
 	(*
 		<- lang_ru;;
@@ -160,8 +160,8 @@
 		*);;
 	*);;
 
-	.system_element_3172
-	=> .system_element_3250: <
+	.system_element_3537
+	=> .system_element_3615: <
 		[<p>множество входящих в язык элементарных фрагментов (символов), которое, в свою очередь, состоит:
 		<ul>
 			<li> из множества узлов (вершин), возможно, синтаксически разного вида;
@@ -188,7 +188,7 @@
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
-		=> .system_element_180: .system_element_3389;;
+		=> .system_element_180: .system_element_3754;;
 	*);;
 
 	.system_element_1146

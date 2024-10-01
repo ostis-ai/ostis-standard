@@ -1,4 +1,4 @@
-.system_element_4262
+.system_element_4711
 => nrel_inclusion: [*
 	=> nrel_summary: [<p>В предметной области рассмотрено представление логических формул и высказываний как для классических логик и их приложений (прикладных логик), так и представление некоторых понятий неклассических логик.</p>]
 	(*
@@ -11,7 +11,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4263
+	.system_element_4712
 	<- subject_domain;
 	-> .system_element_1835: 
 		formal_theory
@@ -32,10 +32,10 @@
 		workable_logical_formula;
 		impossible_logical_formula;
 		quantifier;
-		.system_element_4264;
+		.system_element_4713;
 		number_values_of_variable;
 		existence_fold;
-		.system_element_4265;
+		.system_element_4714;
 		logical_formula_and_uniqueness;
 		open_logical_formula;
 		closed_logical_formula
@@ -45,7 +45,7 @@
 		rrel_axiom;
 		rrel_theorem;
 		nrel_subformula;
-		.system_element_4266;
+		.system_element_4715;
 		nrel_implication;
 		rrel_if;
 		rrel_then;
@@ -53,9 +53,9 @@
 		nrel_conjunction;
 		nrel_disjunction;
 		nrel_strict_disjunction;
-		.system_element_4267;
+		.system_element_4716;
 		nrel_generality;
-		.system_element_4268;
+		.system_element_4717;
 		rrel_bind_variables
 	;;
 
@@ -89,7 +89,7 @@
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
-		=> .system_element_122: .system_element_4269;;
+		=> .system_element_122: .system_element_4718;;
 	*);;
 
 	rrel_subject_domain
@@ -104,9 +104,9 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_180: .system_element_3820;;
+	=> .system_element_180: .system_element_2719;;
 
-	.system_element_4270
+	.system_element_4719
 	=> nrel_explanation: [<p>аксиоматические система --- это система с наличием определенного числа исходных заранее выбранных и фиксированных высказываний, называемых аксиомами.</p>]
 	(*
 		<- lang_ru;;
@@ -140,7 +140,7 @@
 		(*
 			<= nrel_inclusion: closed_logical_formula;;
 		*);
-		.system_element_4271
+		.system_element_4720
 	};
 	=> nrel_explanation: [<p>Под <b><i>высказыванием</i></b> понимается некоторая <i>структура</i> (в которую входят <i>sc-константы</i> из некоторой предметной области и/или <i>sc-переменные</i>) или <i>логическая связка</i>, которая может трактоваться как истинная или ложная в рамках какой-либо <i>предметной области</i>.</p>]
 	(*
@@ -163,10 +163,10 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4272
+	.system_element_4721
 	<- auxiliary_concept;
 	=> nrel_subdividing: {
-		.system_element_4273
+		.system_element_4722
 		(*
 			=> nrel_idtf: [<p>высказывание, истинное в рамках данной формальной теории'</p>];;
 			=> nrel_idtf: [<p>высказывание, знак которого принадлежит данной формальной теории'</p>]
@@ -175,7 +175,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_4274
+		.system_element_4723
 		(*
 			=> nrel_idtf: [<p>высказывание, ложное в рамках данной формальной теории'</p>];;
 			=> nrel_idtf: [<p>высказывание, знак отрицания которого принадлежит данной формальной теории'</p>]
@@ -184,7 +184,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_4275
+		.system_element_4724
 		(*
 			=> nrel_idtf: [<p>гипотетическое высказывание'</p>];;
 			=> nrel_idtf: [<p>высказывание, возможно истинное или ложное в рамках данной формальной теории'</p>]
@@ -198,7 +198,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_4276
+		.system_element_4725
 		(*
 			=> nrel_idtf: [<p>высказывание, бессмысленное в рамках данной формальной теории'</p>];;
 			=> nrel_idtf: [<p>высказывание, не рассматриваемое в рамках данной формальной теории'</p>]
@@ -214,16 +214,16 @@
 		*)
 	};;
 
-	.system_element_4277
+	.system_element_4726
 	=> nrel_idtf: [<p>бинарное ориентированное отношение, каждая <i>пара</i> которого связывает (1) знак некоторой <i>предметной области</i> и (2) знак некоторого <i>высказывания</i>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
 	=> nrel_subdividing: {
-		.system_element_4278;
-		.system_element_4279;
-		.system_element_4280
+		.system_element_4727;
+		.system_element_4728;
+		.system_element_4729
 	};
 	=> .system_element_271: [<p>Все <i>sc-константы</i>, входящие в состав всех <i>атомарных логических формул</i>, входящих в состав всех <i>высказываний</i>, описывающих некоторую <i>предметную область</i>, должны входить в состав описываемой <i>предметной области</i>.</p>]
 	(*
@@ -233,7 +233,7 @@
 
 	.system_element_358
 	-> {
-		.system_element_4277
+		.system_element_4726
 		(*
 			<- .system_element_1102;;
 			=> nrel_idtf: [<p>быть высказыванием, описывающим заданную предметную область*</p>]
@@ -261,8 +261,8 @@
 	atomic_observation
 	<= nrel_inclusion: structure;
 	=> nrel_subdividing: {
-		.system_element_4281;
-		.system_element_4282
+		.system_element_4730;
+		.system_element_4731
 	};
 	=> .system_element_1120: [<p><b><i>атомарное высказывание</i></b> --- это <i>высказывание</i>, которое содержит хотя бы один <i>sc-элемент</i>, не являющийся знаком другого <i>высказывания</i>.</p>]
 	(*
@@ -288,7 +288,7 @@
 	*);;
 
 	factual_observation
-	=> nrel_inclusion: .system_element_4281;
+	=> nrel_inclusion: .system_element_4730;
 	=> nrel_explanation: [<p>Под <i>фактографическим высказыванием</i> понимается:
 	<ul>
 		<li> <i>атомарное высказывание</i>, в состав которого не входит ни одна <i>sc-переменная</i>;
@@ -359,9 +359,9 @@
 		*);;
 	*);;
 
-	.system_element_4271
+	.system_element_4720
 	=> nrel_subdividing: {
-		.system_element_4283
+		.system_element_4732
 		(*
 			=> nrel_explanation: [<p>Под <b><i>атомарным нефактографическим высказыванием</i></b> понимается <i>атомарное высказывание</i>, которое является <i>нефактографическим высказыванием</i>.</p>];;
 			=> nrel_explanation: [<p><b><i>атомарное нефактографическое высказывание</i></b> --- это <i>нефактографическое высказывание</i>, которая не является <i>неатомарным нефактографическим высказыванием</i>.</p>]
@@ -370,7 +370,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_4284
+		.system_element_4733
 		(*
 			=> nrel_explanation: [<p>Под <b><i>неатомарным нефактографическим высказыванием</i></b> понимается <i>неатомарное высказывание</i>, которое является <i>нефактографическим высказыванием</i>.</p>]
 			(*
@@ -400,7 +400,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_253: .system_element_4285;;
+	=> .system_element_253: .system_element_4734;;
 
 	nrel_subformula
 	=> nrel_idtf: [<p>частная формула*</p>]
@@ -445,7 +445,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_4286: [<p><b><i>утверждения</i></b> в рамках <i>Русского языка</i> именуются по следующим правилам:
+	=> .system_element_4735: [<p><b><i>утверждения</i></b> в рамках <i>Русского языка</i> именуются по следующим правилам:
 	<ul>
 		<li> в начале идентификатора пишется сокращение <b>Утв.</b>;
 		<li> далее в круглых скобках через точку с запятой перечисляются основные идентификаторы <i>ключевых <b>sc-элементов</b>'</i> данного <b><i>утверждения</i></b>. Порядок определяется в каждом конкретном случае в зависимости от того, свойства каких из этих <i>понятий</i> описывает данное <b><i>утверждение</i></b> в большей или меньшей степени.</li>
@@ -498,7 +498,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_4286: [<p><b><i>определения</i></b> в рамках <i>Русского языка</i> именуются по следующим правилам:
+	=> .system_element_4735: [<p><b><i>определения</i></b> в рамках <i>Русского языка</i> именуются по следующим правилам:
 	<ul>
 		<li> в начале идентификатора пишется сокращение <b>Опр.</b>;
 		<li> далее в круглых скобках через точку с запятой записывается основной идентификатор <i>ключевого sc-элемента'</i> данного <b><i>определения</i></b>.</li>
@@ -543,7 +543,7 @@
 		=> nrel_format: format_html;;
 	*);
 	<= nrel_inclusion: workable_logical_formula;
-	<= nrel_inclusion: .system_element_4287;
+	<= nrel_inclusion: .system_element_4736;
 	=> .system_element_1120: [<p><b><i>общезначимая логическая формула</i></b> --- это <i>логическая формула</i>, для которой не существует <i>формальной теории</i>, в рамках которой она была бы ложной (или имела бы ложную интерпретацию) с учетом истинности и ложности всех ее <i>подформул*</i> (или их интерпретаций) в рамках этой же <i>формальной теории</i>.</p>]
 	(*
 		<- lang_ru;;
@@ -568,7 +568,7 @@
 		=> nrel_format: format_html;;
 	*);
 	<= nrel_inclusion: impossible_logical_formula;
-	<= nrel_inclusion: .system_element_4287;
+	<= nrel_inclusion: .system_element_4736;
 	=> .system_element_1120: [<p><b><i>противоречивая логическая формула</i></b> --- это <i>логическая формула</i>, для которой не существует <i>формальной теории</i>, в рамках которой она была бы истинной (или имела бы истинную интерпретацию) с учетом истинности и ложности всех ее <i>подформул*</i> (или их интерпретаций) в рамках этой же <i>формальной теории</i>.</p>]
 	(*
 		<- lang_ru;;
@@ -610,7 +610,7 @@
 		<- .system_element_254;;
 	*);;
 
-	.system_element_4288
+	.system_element_4737
 	=> nrel_idtf: [<p>выполнимая логическая формула</p>]
 	(*
 		<- lang_ru;;
@@ -626,7 +626,7 @@
 		generally_valid_logical_formula
 	};;
 
-	.system_element_4289
+	.system_element_4738
 	=> nrel_idtf: [<p>невыполнимая логическая формула</p>]
 	(*
 		<- lang_ru;;
@@ -642,7 +642,7 @@
 		contradictory_logical_formula
 	};;
 
-	.system_element_4287
+	.system_element_4736
 	=> .system_element_1120: [<p><b><i>логическая формула, равнозначная логической константе</i></b> --- это <i>логическая формула</i>, которая является либо только истинной, либо только ложной в рамках всех <i>формальных теорий</i>, в которых можно установить ее истинность или ложность.</p>]
 	(*
 		<- lang_ru;;
@@ -654,7 +654,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4266
+	.system_element_4715
 	=> nrel_idtf: [<p>неатомарная логическая формула</p>]
 	(*
 		<- lang_ru;;
@@ -670,7 +670,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<- .system_element_4290;
+	<- .system_element_4739;
 	<= nrel_set_of_subsets: non_atomic_observation;
 	=> .system_element_1120: [<p><b><i>логическая связка*</i></b> --- это отношение (класс связок), связками которого являются <i>высказывания</i>.</p>]
 	(*
@@ -694,10 +694,10 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<= nrel_inclusion: .system_element_4266;
+	<= nrel_inclusion: .system_element_4715;
 	<- non_oriented_relation;
-	<- .system_element_4290;
-	<- .system_element_4291;
+	<- .system_element_4739;
+	<- .system_element_4740;
 	=> nrel_definitional_domain: logical_formula;
 	=> .system_element_1120: [<p><b><i>конъюнкция*</i></b> --- это множество конъюнктивных <i>высказываний</i>, каждое из которых истинно в рамках некоторой <i>формальной теории</i> только в том случае, когда все его компоненты истинны в рамках этой же <i>формальной теории</i>.</p>]
 	(*
@@ -748,10 +748,10 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<= nrel_inclusion: .system_element_4266;
+	<= nrel_inclusion: .system_element_4715;
 	<- non_oriented_relation;
-	<- .system_element_4290;
-	<- .system_element_4291;
+	<- .system_element_4739;
+	<- .system_element_4740;
 	=> nrel_definitional_domain: logical_formula;
 	=> .system_element_1120: [<p><b><i>дизъюнкция*</i></b> --- это множество дизъюнктивных <i>высказываний</i>, каждое из которых истинно в рамках некоторой <i>формальной теории</i> только в том случае, когда хотя бы один его компонент является истинным в рамках этой же <i>формальной теории</i>.</p>]
 	(*
@@ -770,8 +770,8 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4267
-	<= nrel_inclusion: .system_element_4266;
+	.system_element_4716
+	<= nrel_inclusion: .system_element_4715;
 	<= nrel_inclusion: singletone;
 	<- unary_relation;
 	=> nrel_definitional_domain: logical_formula;
@@ -803,9 +803,9 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<= nrel_inclusion: .system_element_4266;
+	<= nrel_inclusion: .system_element_4715;
 	<- non_oriented_relation;
-	<- .system_element_4290;
+	<- .system_element_4739;
 	=> .system_element_1120: [<p><b><i>строгая дизъюнкция*</i></b> --- это множество строго дизъюнктивных <i>логических формул</i>, каждое из которых истинно в рамках некоторой <i>формальной теории</i> только в том случае, когда ровно один его компонент является истинным (имеет соответствующую истинную интерпретацию) в рамках этой же <i>формальной теории</i>.</p>]
 	(*
 		<- lang_ru;;
@@ -846,7 +846,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<= nrel_inclusion: .system_element_4266;
+	<= nrel_inclusion: .system_element_4715;
 	<- binary_relation;
 	<- oriented_relation;
 	=> nrel_definitional_domain: logical_formula;
@@ -928,7 +928,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<= nrel_inclusion: .system_element_4266;
+	<= nrel_inclusion: .system_element_4715;
 	<- binary_relation;
 	<- non_oriented_relation;
 	=> nrel_definitional_domain: logical_formula;
@@ -961,7 +961,7 @@
 	*);;
 
 	quantifier
-	<= nrel_inclusion: .system_element_4266;
+	<= nrel_inclusion: .system_element_4715;
 	=> .system_element_1120: [<p><b><i>квантор</i></b> --- это <i>отношение</i>, каждая связка которого истинна (или имеет истинную интерпретацию) при выполнении дополнительных условий, связанных с некоторыми из переменных, входящих в состав <i>логических формул</i>, входящих в ее состав.</p>]
 	(*
 		<- lang_ru;;
@@ -991,7 +991,7 @@
 	*);
 	<- quantifier;
 	<- oriented_relation;
-	<- .system_element_4290;
+	<- .system_element_4739;
 	=> .system_element_1120: [<p><b><i>всеобщность</i></b> --- это <i>квантор</i>, для каждой связки которого, истинной в рамках некоторой <i>формальной теории</i>, выполняется следующее утверждение: все формулы, входящие в состав этой связки истинны в рамках этой же <i>формальной теории</i> при всех (любых) возможных значениях всех элементов множества <i>связываемых переменных'</i> входящего в эту связку.</p>]
 	(*
 		<- lang_ru;;
@@ -1014,18 +1014,18 @@
 		<- .system_element_254;;
 	*);;
 
-	.system_element_4264
+	.system_element_4713
 	=> nrel_idtf: [<p>существование*</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
 	=> nrel_subdividing: {
-		.system_element_4292;
-		.system_element_4268
+		.system_element_4741;
+		.system_element_4717
 	};;
 
-	.system_element_4268
+	.system_element_4717
 	=> nrel_idtf: [<p>квантор неатомарного существования*</p>]
 	(*
 		<- lang_ru;;
@@ -1033,7 +1033,7 @@
 	*);
 	<- quantifier;
 	<- oriented_relation;
-	<- .system_element_4290;
+	<- .system_element_4739;
 	=> .system_element_1120: [<p><b><i>неатомарное существование*</i></b> --- это <i>квантор</i>, для каждой связки которого, истинной в рамках некоторой <i>формальной теории</i>, выполняется следующее утверждение: существуют значения всех элементов множества <i>связываемых переменных'</i> входящего в эту связку, такие, что все формулы, входящие в состав этой связки истинны в рамках этой же <i>формальной теории</i>.</p>]
 	(*
 		<- lang_ru;;
@@ -1076,8 +1076,8 @@
 
 	existence_fold
 	<- parameter;
-	=> nrel_param_definitional_domain: .system_element_4264;
-	-> .system_element_4265;
+	=> nrel_param_definitional_domain: .system_element_4713;
+	-> .system_element_4714;
 	=> nrel_explanation: [<p>Каждый элемент <i>параметра</i> <b><i>кратность существования</i></b> представляет собой класс логических <i>формул существования</i>, для которых  при интерпретации на соответствующей <i>предметной области</i> существует ограниченное общее для всех таких формул число комбинаций значений переменных, при которых указанные формулы являются истинными в рамках соответствующей <i>формальной теории</i>.</p>]
 	(*
 		<- lang_ru;;
@@ -1089,7 +1089,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4265
+	.system_element_4714
 	=> nrel_idtf: [<p>однократное существование</p>]
 	(*
 		<- lang_ru;;
@@ -1108,7 +1108,7 @@
 
 	logical_formula_and_uniqueness
 	<= nrel_inclusion: logical_formula;
-	<= nrel_inclusion: .system_element_4265;
+	<= nrel_inclusion: .system_element_4714;
 	=> nrel_explanation: [<p>Каждый элемент множества <b><i>логическая формула и единственность</i></b> представляет собой <i>логическую формулу</i> (<i>атомарную</i> или <i>неатомарную</i>), для которой дополнительно уточняется, что при ее интерпретации на некоторой предметной области существует только один набор значений переменных, входящих в эту формулу (или ее <i>подформулы*</i>), при котором указанная логическая формула истинна в рамках <i>формальной теории</i>, в которую входит данная <i>предметная область</i>.</p>]
 	(*
 		<- lang_ru;;
@@ -1148,7 +1148,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4285
+	.system_element_4734
 	<=> .system_element_200: {
 		"file://images/sd_logical_formulas/example_line_segment_sum.png"
 		(*
@@ -1184,50 +1184,50 @@
 		*)
 	};;
 
-	.system_element_4293
+	.system_element_4742
 	=> nrel_inclusion: [*
 		=> .system_element_1: 
-			.system_element_4294;
-			.system_element_4295;
-			.system_element_4296;
-			.system_element_4297;
-			.system_element_4298;
-			.system_element_4299;
-			.system_element_4300;
-			.system_element_4301;
-			.system_element_4302;
-			.system_element_4303;
-			.system_element_4304;
-			.system_element_4305;
-			.system_element_4306;
-			.system_element_4307;
-			.system_element_4308;
-			.system_element_4309;
-			.system_element_4310;
-			.system_element_4311;
-			.system_element_4312;
-			.system_element_4313;
-			.system_element_4314;
-			.system_element_4315;
-			.system_element_4316;
-			.system_element_4317;
-			.system_element_4318;
-			.system_element_4319;
-			.system_element_4320;
-			.system_element_4321;
-			.system_element_4322;
-			.system_element_4323;
-			.system_element_4324;
-			.system_element_4325;
-			.system_element_4326
+			.system_element_4743;
+			.system_element_4744;
+			.system_element_4745;
+			.system_element_4746;
+			.system_element_4747;
+			.system_element_4748;
+			.system_element_4749;
+			.system_element_4750;
+			.system_element_4751;
+			.system_element_4752;
+			.system_element_4753;
+			.system_element_4754;
+			.system_element_4755;
+			.system_element_4756;
+			.system_element_4757;
+			.system_element_4758;
+			.system_element_4759;
+			.system_element_4760;
+			.system_element_4761;
+			.system_element_4762;
+			.system_element_4763;
+			.system_element_4764;
+			.system_element_4765;
+			.system_element_4766;
+			.system_element_4767;
+			.system_element_4768;
+			.system_element_4769;
+			.system_element_4770;
+			.system_element_4771;
+			.system_element_4772;
+			.system_element_4773;
+			.system_element_4774;
+			.system_element_4775
 		;
 		=> .system_element_122: 
-			.system_element_4327;
-			.system_element_4328;
-			.system_element_4329;
-			.system_element_4330;
-			.system_element_4331;
-			.system_element_4332
+			.system_element_4776;
+			.system_element_4777;
+			.system_element_4778;
+			.system_element_4779;
+			.system_element_4780;
+			.system_element_4781
 		;
 		=> nrel_introduction: [<p>Прикладные логики рассматривают приложения классической логики к абстрактным и предметным областям, описывающим действительность: логические теории об отношениях равенства и порядка, логические теории арифметики, логические теории времени, логические теории доказательств, теории графов и геометрические теории, теории природных и социальных систем.</p>]
 		(*
@@ -1235,213 +1235,213 @@
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_4309
+		.system_element_4758
 		=> nrel_note: [<p>Слотовое бинарное отношение --- слотовое sc-отношение, являющееся множеством.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_4310
+		.system_element_4759
 		=> nrel_note: [<p>Неслотовое бинарное отношение --- бинарное sc-отношение, являющееся множеством, но не являющееся слотовым sc-отношением.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_4295
-		<= nrel_inclusion: .system_element_4333;
+		.system_element_4744
+		<= nrel_inclusion: .system_element_4782;
 		=> nrel_note: [<p>Иррефлексивное неслотовое бинарное отношение --- неслотовое бинарное sc-отношение, для любой связки которого ее различные принадлежности являются принадлежностями различных элементов.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_4296
-		<= nrel_inclusion: .system_element_4334;
+		.system_element_4745
+		<= nrel_inclusion: .system_element_4783;
 		=> nrel_note: [<p>Рефлексивное слотовое бинарное отношение --- слотовое бинарное sc-отношение, для любого элемента связки которого найдется связка, обозначенная петлевой дугой (дугой с совпадающим началом и концом).</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_4297
-		<= nrel_inclusion: .system_element_4334;
+		.system_element_4746
+		<= nrel_inclusion: .system_element_4783;
 		=> nrel_note: [<p>Рефлексивное неслотовое бинарное отношение --- неслотовое бинарное sc-отношение, для любого элемента связки которого найдется связка, имеющая две различные принадлежности этого элемента.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_4298
-		<= nrel_inclusion: .system_element_4335;
+		.system_element_4747
+		<= nrel_inclusion: .system_element_4784;
 		=> nrel_note: [<p>Транзитивное слотовое бинарное отношение --- слотовое бинарное отношение, для любых двух связок которого, конец одной из которых является началом второй, существует связка, началом которой является начало первой связки, а концом является конец второй связки.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_4299
-		<= nrel_inclusion: .system_element_4335;
+		.system_element_4748
+		<= nrel_inclusion: .system_element_4784;
 		=> nrel_note: [<p>Транзитивное неслотовое бинарное отношение --- неслотовое бинарное отношение, для которого существует ролевое отношение, первым доменом которого является это бинарное отношение такое, что для любых двух связок этого бинарного отношения, принадлежность элемента одной из которых не принадлежит этому ролевому отношению, а принадлежность этого же элемента второй связке принадлежит этому ролевому отношению, существует связка с принадлежностью элемента, принадлежащей ролевому отношению, принадлежность которого первой связке принадлежит ролевому отношению, и с принадлежностью элемента, не принадлежащей ролевому отношению, принадлежность которого второй связке не принадлежит этому ролевому отношению.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_4300
-		<= nrel_inclusion: .system_element_4336;
+		.system_element_4749
+		<= nrel_inclusion: .system_element_4785;
 		=> nrel_note: [<p>Симметричное слотовое бинарное отношение --- слотовое бинарное отношение, для любой связки которого существует связка, конец которой является началом первой связки, а начало --- ее концом (то есть эти связки обозначены встречными дугами).</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_4301
-		<= nrel_inclusion: .system_element_4336;
+		.system_element_4750
+		<= nrel_inclusion: .system_element_4785;
 		=> nrel_note: [<p>Симметричное неслотовое бинарное отношение --- неслотовое бинарное отношение, для которого существует ролевое отношение, первым доменом которого является это бинарное отношение, для любой связки которого существует связка с принадлежностью элемента первой связке, принадлежащая ролевому отношению, принадлежность которого второй связке не принадлежит этому ролевому отношению, и с принадлежностью элемента первой связке, не принадлежащая ролевому отношению, принадлежность которого второй связке принадлежит этому же ролевому отношению.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_4302
-		<= nrel_inclusion: .system_element_4337;
+		.system_element_4751
+		<= nrel_inclusion: .system_element_4786;
 		=> nrel_note: [<p>Антисимметричное слотовое бинарное отношение --- слотовое бинарное отношение, для любой связки которого у которой различным начало и конец не существует связки, конец которой является началом первой связки, а начало --- ее концом (то есть эти связки обозначены встречными дугами).</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_4303
-		<= nrel_inclusion: .system_element_4337;
+		.system_element_4752
+		<= nrel_inclusion: .system_element_4786;
 		=> nrel_note: [<p>Антисимметричное неслотовое бинарное отношение --- неслотовое бинарное отношение, для которого существует ролевое отношение, первым доменом которого является это бинарное отношение, для любой связки которого не существует связки с принадлежностью элемента первой связке, принадлежащая ролевому отношению, принадлежность которого второй связке не принадлежит этому ролевому отношению, и с принадлежностью другого элемента первой связке, не принадлежащая ролевому отношению, принадлежность которого второй связке принадлежит этому же ролевому отношению.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_4307
-		<= nrel_inclusion: .system_element_4304;
+		.system_element_4756
+		<= nrel_inclusion: .system_element_4753;
 		=> nrel_note: [<p>Монотонное слотовое бинарное отношение* --- слотовое бинарное отношение по отношению к отношению порядка, если есть связка этого бинарного отношения, то для любой его связки, начало которой связано связкой этого отношения порядка с началом первой, найдется третья связка бинарного отношения, начало которой совпадает с началом втором связки, а конец совпадает с концом первой.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_4305
-		=> nrel_first_domain: .system_element_4304;
+		.system_element_4754
+		=> nrel_first_domain: .system_element_4753;
 		=> nrel_second_domain: order_relation;;
 
-		.system_element_4306
-		=> nrel_first_domain: .system_element_4304;
-		=> nrel_second_domain: .system_element_4338;;
+		.system_element_4755
+		=> nrel_first_domain: .system_element_4753;
+		=> nrel_second_domain: .system_element_4787;;
 
-		.system_element_4308
-		<= nrel_inclusion: .system_element_4304;
+		.system_element_4757
+		<= nrel_inclusion: .system_element_4753;
 		=> nrel_note: [<p>Монотонное неслотовое бинарное отношение* --- неслотовое бинарное отношение по отношению к отношению порядка, для которого существует ролевое отношение, первым доменом которого является это бинарное отношение, такое, что если есть связка этого бинарного отношения, то для любой его связки элемент, принадлежащий ей под этим ролевым отношением, в отличие от другого связан связкой этого отношения порядка с элементом, принадлежащим первой связке под этим же ролевым отношением, в отличие от другого элемента первой связки, найдется третья связка бинарного отношения такая, что элемент, принадлежащий ей под ролевым отношением, принадлежит под этим же ролевым отношением второй связке, а элемент, принадлежащий не под ролевым отношением третьей связке, принадлежит не под ролевым отношением первой связке.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_4311
-		<= nrel_inclusion: .system_element_4339;
+		.system_element_4760
+		<= nrel_inclusion: .system_element_4788;
 		=> nrel_note: [<p>Слотовое отношение эквивалентности --- слотовое транзитивное бинарное отношение, которое является слотовым рефлексивным и симметричным отношением.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_4312
-		<= nrel_inclusion: .system_element_4339;
+		.system_element_4761
+		<= nrel_inclusion: .system_element_4788;
 		=> nrel_note: [<p>Неслотовое отношение эквивалентности --- неслотовое транзитивное бинарное отношение, которое является неслотовым рефлексивным и симметричным отношением (по соответствующим доменам).</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_4313
-		<= nrel_inclusion: .system_element_4340;
+		.system_element_4762
+		<= nrel_inclusion: .system_element_4789;
 		=> nrel_note: [<p>Слотовое отношение нестрогого порядка --- транзитивное бинарное отношение, которое является рефлексивным и антисимметричным.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_4314
-		<= nrel_inclusion: .system_element_4340;
+		.system_element_4763
+		<= nrel_inclusion: .system_element_4789;
 		=> nrel_note: [<p>Неслотовое отношение нестрогого порядка --- транзитивное бинарное отношение, которое является рефлексивным и антисимметричным (по соответствующим доменам).</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_4341
-		=> nrel_inclusion: .system_element_4342
+		.system_element_4790
+		=> nrel_inclusion: .system_element_4791
 		(*
-			=> nrel_inclusion: .system_element_4343;;
+			=> nrel_inclusion: .system_element_4792;;
 		*);
-		<- .system_element_4334;
-		<- .system_element_4335;
-		<- .system_element_4338;
+		<- .system_element_4783;
+		<- .system_element_4784;
+		<- .system_element_4787;
 		=> nrel_note: [<p>отношение выводимости --- рефлексивное, транзитивное, монотонное бинарное отношение на множествах посылок (высказываний, логических формул). Свойствами отношения выводимости являются правила вывода по Генцену.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_4315
+		.system_element_4764
 		=> nrel_note: [<p>секвенция --- связка (импликативного вида) между конъюнктивным множеством логических формул (конъюнкцией) и дизъюнктивным множеством логических формул (дизъюнкцией). Примером секвенции является выражение вида: A_ ∧ A_ ∧ ... ∧ A_ ⇒  C_ ∨ C_ ∨ ... ∨ C_.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_4344
-		=> nrel_first_domain: .system_element_4315;
-		=> nrel_second_domain: .system_element_4345;;
+		.system_element_4793
+		=> nrel_first_domain: .system_element_4764;
+		=> nrel_second_domain: .system_element_4794;;
 
-		.system_element_4346
-		=> nrel_first_domain: .system_element_4315;
-		=> nrel_second_domain: .system_element_4347;;
+		.system_element_4795
+		=> nrel_first_domain: .system_element_4764;
+		=> nrel_second_domain: .system_element_4796;;
 
-		.system_element_4348
+		.system_element_4797
 		=> nrel_note: [<p>Отношение выводимости на секвенциях удовлетворяет правилам вывода исчисления секвенций.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_4316
+		.system_element_4765
 		=> nrel_note: [<p>метаструктура --- структура, полносвязно представленным элементом которой является другая структура.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_4317
+		.system_element_4766
 		=> nrel_note: [<p>модальный оператор --- логическая связка, которая связывает логическую формулу со структурой (и иногда --- другими элементами) в метаструктуре. Примером модального оператора является оператор знания: .</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_4318
+		.system_element_4767
 		=> nrel_note: [<p>модальное правило вывода --- связка модального оператора формулы истинна (имеет истинную интерпретацию) в структуре, если и только если формула истинна (имеет истинную интерпретацию) в предшествующей ей структуре. Примером правила вывода является оператор знания: Γ ⋃ { α }  Γ ⋃ {  α }.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_4319
+		.system_element_4768
 		=> nrel_note: [<p>Отношение становления структур --- бинарное отношение на множестве структур, имеющих непустой общий носитель. Ролями в связке отношения становления являются ролевые отношения предшествующей структуры и последующей структуры.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_4320
+		.system_element_4769
 		=> nrel_idtf: [<p>судьба мышления</p>]
 		(*
 			<- lang_ru;;
@@ -1458,33 +1458,33 @@
 			=> nrel_format: format_html;;
 		*);
 		=> nrel_subdividing: {
-			.system_element_4322;
-			.system_element_4321
+			.system_element_4771;
+			.system_element_4770
 		};;
 
-		.system_element_4323
+		.system_element_4772
 		=> nrel_idtf: [<p>судьба рационального мышления классической логики</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
-		<= nrel_inclusion: .system_element_4321;
+		<= nrel_inclusion: .system_element_4770;
 		=> nrel_note: [<p>последовательность рационального мышления --- последовательность (заданная отношением становления структур) (классически) непротиворечивых sc-множеств (sc-подмножеств или sc-надмножеств) высказываний.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_4349
-		<= nrel_inclusion: .system_element_4323;
-		=> nrel_inclusion: .system_element_4325;
+		.system_element_4798
+		<= nrel_inclusion: .system_element_4772;
+		=> nrel_inclusion: .system_element_4774;
 		=> nrel_note: [<p>последовательность классического рационального дедуктивного мышления --- последовательность рационального мышления, последовательность (становления) непротиворечивых sc-множеств высказываний, дедуктивно логически следующих (по классическим правилам) друг за другом.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_4326
+		.system_element_4775
 		=> nrel_idtf: [<p>воля</p>]
 		(*
 			<- lang_ru;;
@@ -1497,22 +1497,22 @@
 		*);;
 	*];;
 
-	.system_element_4293
+	.system_element_4742
 	=> nrel_inclusion: [*
 		=> .system_element_1: 
-			.system_element_4350;
-			.system_element_4351;
-			.system_element_4352;
-			.system_element_4353;
-			.system_element_4354;
-			.system_element_4355
+			.system_element_4799;
+			.system_element_4800;
+			.system_element_4801;
+			.system_element_4802;
+			.system_element_4803;
+			.system_element_4804
 		;
 		=> .system_element_122: 
-			.system_element_4328;
-			.system_element_4331;
-			.system_element_4356;
-			.system_element_4357;
-			.system_element_4330
+			.system_element_4777;
+			.system_element_4780;
+			.system_element_4805;
+			.system_element_4806;
+			.system_element_4779
 		;
 		=> nrel_introduction: [<p><b><i>неклассические логики</i></b> рассматривают (1) неклассический вывод, в котором отношение выводимости обладает иными свойствами и при котором можно или нельзя вывести то, что выводимо в классической логике, а также (2) --- другие шкалы признаков логических формул, их интерпретаций и значений, отличных от ложных и (достоверно) истинных.</p>]
 		(*
@@ -1520,25 +1520,25 @@
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_4358
+		.system_element_4807
 		=> nrel_note: [<p><i>немонотонный вывод на конечном sc-множестве посылок*</i> --- <i>отношение</i> между (конечными) sc-множествами истинных <i>логических высказываний</i> (посылок). Если не существует вложения структуры <i>атомарной логической формулы</i> в реляционную структуру (sc-подмножество предметной области) <i>sc-множества</i> истинных (непротиворечивых) посылок и относительно них истинно отрицание этой <i>атомарной формулы</i>, то существует <i>sc-множество</i>, с принадлежащей ему реляционной структурой, включающей все элементы ранее упомянутой реляционной структуры и константы этой <i>атомарной формулы</i>, которому принадлежат все посылки ранее упомянутого sc-множества истинных (непротиворечивых) посылок и упомянутая атомарная логическая формула.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_4351
+		.system_element_4800
 		=> nrel_note: [<p><i>выводимое множество</i> --- <i>ситуативное sc-множество</i>, (временная) принадлежность <i>логических формул</i> которому устанавливается в порядке становления процесса вывода этих <i>логических формул</i>.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 			=> .system_element_122: 
-				.system_element_4359;
-				.system_element_3793
+				.system_element_4808;
+				.system_element_4157
 			;;
 		*);;
 
-		.system_element_4352
+		.system_element_4801
 		=> .system_element_1120: [<p><i>нечеткая истинность*</i> --- <i>бинарное отношение</i> между (нечеткой) принадлежностью связки  <i>высказывания</i> <i>формальной теории</i> и конечного sc-множества и действительным числом от 0.0 до 1.0.</p>]
 		(*
 			<- lang_ru;;
@@ -1550,7 +1550,7 @@
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_4353
+		.system_element_4802
 		=> nrel_note: [<p><b><i>конструктивно истинное высказывание*</i></b> --- подмножество <i>истинного высказывания*</i>.</p>]
 		(*
 			<- lang_ru;;
@@ -1577,14 +1577,14 @@
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_4354
+		.system_element_4803
 		=> nrel_note: [<p><i>верное высказывание*</i> --- <i>высказывание</i>, которое является истинным или неискаженным.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_4355
+		.system_element_4804
 		=> nrel_note: [<p><i>неискаженое высказывание*</i> --- <i>высказывание</i>, верность или неверность которого не приводит к противоречию.</p>]
 		(*
 			<- lang_ru;;

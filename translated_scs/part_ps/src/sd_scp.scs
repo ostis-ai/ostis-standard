@@ -1,11 +1,11 @@
 .system_element_231
 => nrel_inclusion: [*
 	=> .system_element_727: 
-		.system_element_5647;
-		.system_element_5648
+		.system_element_6366;
+		.system_element_6367
 	;;
 
-	.system_element_5649
+	.system_element_6368
 	=> nrel_idtf: [<p>Предметная область Базового языка программирования ostis-систем</p>]
 	(*
 		<- lang_ru;;
@@ -36,7 +36,7 @@
 		rrel_scp_operand
 	;;
 
-	.system_element_1988
+	.system_element_1986
 	=> .system_element_269: [<p>scp-программа</p>]
 	(*
 		<- lang_ru;;
@@ -48,10 +48,10 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_5650
+	.system_element_6369
 	<= nrel_combination: {
-		.system_element_5651;
-		.system_element_5652
+		.system_element_6370;
+		.system_element_6371
 	};
 	=> .system_element_237: {
 		[<p>Тексты программ <i>Языка SCP</i> записываются при помощи тех же унифицированных семантических сетей, что и обрабатываемая информация, таким образом, можно сказать, что <i>Синтаксис языка SCP</i> на базовом уровне совпадает с <i>Синтаксисом SC-кода</i>.</p>]
@@ -89,7 +89,7 @@
 	};;
 
 	.system_element_686
-	=> .system_element_5653: .system_element_5652;
+	=> .system_element_6372: .system_element_6371;
 	=> nrel_note: [<p><i>Абстрактная scp-машина</i> представляет собой интерпретатор <i>scp-программ</i>, который должен являться частью <i>платформы интерпретации sc-моделей компьютерных систем</i> (хотя в общем случае могут существовать варианты платформы, не содержащие такого интерпретатора, что, однако, не позволит использовать достоинства предлагаемой базовой модели</p>]
 	(*
 		<- lang_ru;;
@@ -114,32 +114,32 @@
 		*);;
 	*);
 	-> .system_element_252: 
-		.system_element_5654;
+		.system_element_6373;
 		_<- scp_process;
-		_-> .system_element_5656:: .system_element_5655;
-		_-> .system_element_5658:: .system_element_5657;
-		_<= nrel_decomposition_of_action:: .system_element_5659
+		_-> .system_element_6375:: .system_element_6374;
+		_-> .system_element_6377:: .system_element_6376;
+		_<= nrel_decomposition_of_action:: .system_element_6378
 		(*
-			_-> .system_element_5661:: .system_element_5660
+			_-> .system_element_6380:: .system_element_6379
 			(*
-				_<- .system_element_5662;;
-				_-> .system_element_5663:: .system_element_5655;;
-				_-> .system_element_5665:: .system_element_5664;;
-				_-> .system_element_5666:: .system_element_5657;;
-				_=> nrel_else_new:: .system_element_5667;;
-				_=> nrel_then:: .system_element_5668;;
+				_<- .system_element_6381;;
+				_-> .system_element_6382:: .system_element_6374;;
+				_-> .system_element_6384:: .system_element_6383;;
+				_-> .system_element_6385:: .system_element_6376;;
+				_=> nrel_else_new:: .system_element_6386;;
+				_=> nrel_then:: .system_element_6387;;
 			*);;
-			_-> .system_element_5667
+			_-> .system_element_6386
 			(*
-				_<- .system_element_5669;;
-				_-> .system_element_5670:: .system_element_5655;;
-				_-> .system_element_5671:: .system_element_5664;;
-				_-> .system_element_5672:: .system_element_5657;;
-				_=> .system_element_5673:: .system_element_5668;;
+				_<- .system_element_6388;;
+				_-> .system_element_6389:: .system_element_6374;;
+				_-> .system_element_6390:: .system_element_6383;;
+				_-> .system_element_6391:: .system_element_6376;;
+				_=> .system_element_6392:: .system_element_6387;;
 			*);;
-			_-> .system_element_5668
+			_-> .system_element_6387
 			(*
-				_<- .system_element_5674;;
+				_<- .system_element_6393;;
 			*);;
 		*)
 	;;
@@ -213,7 +213,7 @@ scp_process
 	<- lang_ru;;
 	=> nrel_format: format_html;;
 *);
-=> .system_element_5675: <
+=> .system_element_6394: <
 	"file://images/sd_scp/process_example.png"
 	(*
 		<- concept_file;;

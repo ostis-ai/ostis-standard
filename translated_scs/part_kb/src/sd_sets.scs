@@ -1,4 +1,4 @@
-.system_element_4050
+.system_element_2715
 => nrel_inclusion: [*
 
 	subject_domain_of_sets
@@ -24,18 +24,18 @@
 	-> .system_element_112: 
 		finite_set;
 		infinite_set;
-		.system_element_4051;
-		.system_element_4052;
+		.system_element_4501;
+		.system_element_4502;
 		cantor_set;
-		.system_element_3605;
+		.system_element_3969;
 		multiplicity_of_belonging;
 		class;
 		class_of_primary_sc_elements;
 		class_of_sets;
 		class_of_structures;
 		class_of_classes;
-		.system_element_4053;
-		.system_element_4054;
+		.system_element_4503;
+		.system_element_4504;
 		set_of_primary_essences;
 		set_of_sets;
 		non_reflexive_set;
@@ -49,10 +49,10 @@
 		cantor_pair;
 		pair_multiset;
 		triple_set;
-		.system_element_4055;
+		.system_element_4505;
 		cartesian_product;
 		boolean;
-		.system_element_4056
+		.system_element_4506
 	;
 	-> .system_element_748: 
 		nrel_belonging;
@@ -133,10 +133,10 @@
 	};
 	=> nrel_subdividing: {
 		cantor_set;
-		.system_element_3605
+		.system_element_3969
 	};
 	=> nrel_subdividing: {
-		.system_element_4057;
+		.system_element_4507;
 		class
 		(*
 			=> nrel_idtf: [<p>sc-элемент, обозначающий класс sc-элементов</p>];;
@@ -156,12 +156,12 @@
 		*)
 	};
 	=> nrel_subdividing: {
-		.system_element_4054;
-		.system_element_4053
+		.system_element_4504;
+		.system_element_4503
 	};
 	=> nrel_subdividing: {
 		set_of_primary_essences;
-		.system_element_4058;
+		.system_element_4508;
 		set_of_primary_essences_and_sets
 	};
 	=> nrel_subdividing: {
@@ -173,7 +173,7 @@
 		unformed_set
 	};
 	=> nrel_subdividing: {
-		.system_element_4055;
+		.system_element_4505;
 		non_oriented_set
 	};
 	=> nrel_inclusion: empty_set;
@@ -229,8 +229,8 @@
 		=> nrel_format: format_html;;
 	*);
 	=> nrel_subdividing: {
-		.system_element_4051;
-		.system_element_4052
+		.system_element_4501;
+		.system_element_4502
 	};
 	=> nrel_explanation: [<p><b><i>бесконечное множество</i></b> --- это <i>множество</i>, в котором для любого натурального числа <i>n</i> найдётся конечное подмножество из <i>n</i> элементов.</p>]
 	(*
@@ -238,14 +238,14 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4051
+	.system_element_4501
 	=> nrel_explanation: [<p><b><i>счетное множество</i></b> --- это <i>бесконечное множество</i>, для которого существует <i>взаимно-однозначное соответствие</i> с натуральным рядом чисел.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4052
+	.system_element_4502
 	=> nrel_idtf: [<p>континуальное множество</p>]
 	(*
 		<- lang_ru;;
@@ -294,7 +294,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3605
+	.system_element_3969
 	=> nrel_idtf: [<p>множество, имеющее кратные вхождения хотя бы одного элемента</p>]
 	(*
 		<- lang_ru;;
@@ -383,14 +383,14 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4053
+	.system_element_4503
 	=> nrel_explanation: [<p><b><i>нечеткое множество</i></b> --- это <i>множество</i>, которое представляет собой совокупность элементов произвольной природы, относительно которых нельзя точно утверждать  обладают ли эти элементы некоторым характеристическим свойством, которое используется для задания этого нечеткого множества. Принадлежность элементов такому множеству указывается при помощи <i>нечетких позитивных sc-дуг принадлежности</i>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4054
+	.system_element_4504
 	=> nrel_explanation: [<p><b><i>четкое множество</i></b> --- это <i>множество</i>, принадлежность элементов которому достоверна и указывается при помощи <i>четких позитивных sc-дуг принадлежности</i>.</p>]
 	(*
 		<- lang_ru;;
@@ -457,7 +457,7 @@
 	*);;
 
 	empty_set
-	<- .system_element_4056;
+	<- .system_element_4506;
 	=> nrel_explanation: [<p><b><i>пустое множество</i></b> --- это <i>множество</i>, которому не принадлежит ни один элемент.</p>]
 	(*
 		<- lang_ru;;
@@ -465,7 +465,7 @@
 	*);;
 
 	singletone
-	<- .system_element_4056;
+	<- .system_element_4506;
 	=> nrel_idtf: [<p>множество мощности 1</p>]
 	(*
 		<- lang_ru;;
@@ -509,7 +509,7 @@
 	*);;
 
 	pair_set
-	<- .system_element_4056;
+	<- .system_element_4506;
 	=> nrel_idtf: [<p>множество мощности два</p>]
 	(*
 		<- lang_ru;;
@@ -586,7 +586,7 @@
 	*);;
 
 	triple_set
-	<- .system_element_4056;
+	<- .system_element_4506;
 	=> nrel_idtf: [<p>тройка</p>]
 	(*
 		<- lang_ru;;
@@ -614,7 +614,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4055
+	.system_element_4505
 	=> nrel_idtf: [<p>вектор</p>]
 	(*
 		<- lang_ru;;
@@ -711,7 +711,7 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	=> .system_element_3880: "file://images/sd_sets/inclusion2.png"
+	=> .system_element_4241: "file://images/sd_sets/inclusion2.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
@@ -740,7 +740,7 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	=> .system_element_3880: "file://images/sd_sets/union2.png"
+	=> .system_element_4241: "file://images/sd_sets/union2.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
@@ -784,7 +784,7 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	=> .system_element_3880: "file://images/sd_sets/split2.png"
+	=> .system_element_4241: "file://images/sd_sets/split2.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
@@ -813,7 +813,7 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	=> .system_element_3880: "file://images/sd_sets/intersection2.png"
+	=> .system_element_4241: "file://images/sd_sets/intersection2.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
@@ -842,7 +842,7 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	=> .system_element_3880: "file://images/sd_sets/pairOfIntersectingSets2.png"
+	=> .system_element_4241: "file://images/sd_sets/pairOfIntersectingSets2.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
@@ -866,7 +866,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_3880: "file://images/sd_sets/pairwiseIntersectingSets.png"
+	=> .system_element_4241: "file://images/sd_sets/pairwiseIntersectingSets.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
@@ -876,7 +876,7 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	=> .system_element_3880: "file://images/sd_sets/pairwiseIntersectingSets2.png"
+	=> .system_element_4241: "file://images/sd_sets/pairwiseIntersectingSets2.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
@@ -933,7 +933,7 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	=> .system_element_3880: "file://images/sd_sets/pairOfNonIntersectingSets2.png"
+	=> .system_element_4241: "file://images/sd_sets/pairOfNonIntersectingSets2.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
@@ -951,7 +951,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_3880: "file://images/sd_sets/pairwiseNonIntersectingSets.png"
+	=> .system_element_4241: "file://images/sd_sets/pairwiseNonIntersectingSets.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
@@ -978,7 +978,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_3880: "file://images/sd_sets/nonIntersectingSets.png"
+	=> .system_element_4241: "file://images/sd_sets/nonIntersectingSets.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
@@ -1007,7 +1007,7 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	=> .system_element_3880: "file://images/sd_sets/setDifference2.png"
+	=> .system_element_4241: "file://images/sd_sets/setDifference2.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
@@ -1031,7 +1031,7 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	=> .system_element_3880: "file://images/sd_sets/symmetricDifferenceOfSets2.png"
+	=> .system_element_4241: "file://images/sd_sets/symmetricDifferenceOfSets2.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
@@ -1126,7 +1126,7 @@
 	*);
 	=> nrel_second_domain: nrel_boolean;;
 
-	.system_element_4056
+	.system_element_4506
 	=> nrel_idtf: [<p>кардинальное число</p>]
 	(*
 		<- lang_ru;;

@@ -1,5 +1,5 @@
 .segment_7 = [*
-.system_element_3811
+.system_element_4175
 => nrel_inclusion: [*
 	=> .system_element_756: 
 		sc_memory;
@@ -38,17 +38,17 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 			=> nrel_subdividing: {
-				.system_element_3812
+				.system_element_4176
 				(*
 					=> nrel_note: [<p>спецификация предметной области, в которой указываются роли всех ключевых элементов (ключевых знаков), входящих в состав <i>предметной области</i></p>];;
 					=> nrel_inclusion: 
 						rrel_maximum_studied_object_class;
 						rrel_not_maximum_studied_object_class;
-						.system_element_3813;
-						.system_element_3814;
-						.system_element_3815;
-						.system_element_3816;
-						.system_element_3817
+						.system_element_4177;
+						.system_element_4178;
+						.system_element_4179;
+						.system_element_4180;
+						.system_element_4181
 						(*
 							=> nrel_idtf: [<p><i>sc-класс</i>, исследуемый в другой (смежной) <i>предметной области</i></p>]
 							(*
@@ -96,7 +96,7 @@
 						*)
 					;;
 				*);
-				.system_element_3818
+				.system_element_4182
 				(*
 					=> nrel_note: [<p>спецификация предметной области, в которой указывается <i>sc-идентификаторы</i> всех ключевых <i>sc-элементов</i> специфицируемой <i>предметной области</i>, а также приводятся правила построения <i>основных sc-идентификаторов</i> для элементов всех <i>sc-классов</i> (понятий), исследуемых в рамках специфицируемой <i>предметной области</i></p>]
 					(*
@@ -104,10 +104,10 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);
-				.system_element_3819
+				.system_element_4183
 				(*
 					=> nrel_note: [<p>спецификация предметной области, в которой приводится дополнительная информация, предназначенная для того, чтобы пользователи и разработчики (инженеры знаний), которые используют или совершенствуют специфицируемую <i>предметную область</i> и ее <i>онтологию</i>, могли быстрее усвоить их особенности.</p>];;
-					=> .system_element_180: .system_element_3820;;
+					=> .system_element_180: .system_element_2719;;
 				*);
 				[<p>проектная спецификация предметной области и соответствующей ей онтологии</p>]
 				(*
@@ -123,8 +123,8 @@
 		*)
 	};
 	=> .system_element_180: {
-		.system_element_3821;
-		.system_element_3820
+		.system_element_2720;
+		.system_element_2719
 	};
 	=> nrel_note: [<p>Онтологическая формализация <i>базовой денотационной семантики SC-кода</i> трактуется нами как <i>формальная онтология</i>, представленная в <i>SC-коде</i> и описывающая детонационную семантику <i>семантически корректных sc-конструкций</i>. Указанную <i>формальную онтологию</i> будем называть <b><i>Базовой денотационной семантикой SC-кода</i></b>. Для того, чтобы уточнить <i>предметную область</i>, специфицируемую этой <i>онтологией</i>, введем следующие понятия: синонимия sc-элементов,
 	<li> отношение эквивалентности,
@@ -140,7 +140,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3822
+	.system_element_4184
 	=> nrel_idtf: [<p>бинарное ориентированное <i>отношение эквивалентности</i>, каждая пара которого связывает два <i>sc-элемента</i>, обозначающие одну и ту же сущность*</p>]
 	(*
 		<- lang_ru;;
@@ -153,7 +153,7 @@
 	*);;
 
 	equivalence_relation
-	<= .system_element_1: .system_element_3823;;
+	<= .system_element_1: .system_element_4185;;
 
 	ostis_system
 	=> nrel_subdividing: {
@@ -161,11 +161,11 @@
 		.system_element_809
 	};;
 
-	.system_element_3824
-	<= .system_element_269: .system_element_3825
+	.system_element_4186
+	<= .system_element_269: .system_element_4187
 	(*
 		=> nrel_idtf: [<p>информационная конструкция, представляющая собой множество <i>sc-элементов</i></p>];;
-		=> nrel_inclusion: .system_element_3087
+		=> nrel_inclusion: .system_element_3452
 		(*
 			=> nrel_idtf: [<p>текст SC-кода</p>];;
 			=> nrel_idtf: [<p><i>sc-конструкция</i>, являющаяся семантически корректной по отношению к <i>Базовой денотационной семантике SC-кода</i></p>]
@@ -182,18 +182,18 @@
 			(*
 				<- lang_ru;;
 				=> nrel_format: format_html;;
-				<- .system_element_2166;;
+				<- .system_element_2164;;
 				=> nrel_idtf: [<p>Класс (Множество всевозможных) sc-текстов</p>]
 				(*
 					<- lang_ru;;
 					=> nrel_format: format_html;;
 				*);;
 			*);;
-			=> nrel_inclusion: .system_element_3405;;
+			=> nrel_inclusion: .system_element_3770;;
 		*);;
 	*);;
 
-	.system_element_3405
+	.system_element_3770
 	=> nrel_idtf: [<p><i>sc-текст</i>, являющийся либо фрагментом (подструктурой) соответствующей <i>предметной области</i>, либо <i>высказыванием</i>, описывающим некоторое свойство (в частности, некоторую закономерность) этой <i>предметной области</i></p>]
 	(*
 		<- lang_ru;;
@@ -209,14 +209,14 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<= nrel_inclusion: .system_element_3826;
+	<= nrel_inclusion: .system_element_4188;
 	=> nrel_note: [<p>Разные <i>sc-знания</i> могут противоречить друг другу, то есть отражать разные точки зрения на некоторую <i>предметную область</i>, но любое <i>sc-знание</i> должно быть <i>sc-текстом</i>, то есть не должно противоречить правилам <i>Базовой денотационной семантики SC-кода</i>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3827
+	.system_element_4189
 	=> nrel_idtf: [<p>объединение sc-конструкций*</p>]
 	(*
 		<- lang_ru;;
@@ -292,7 +292,7 @@
 		*)
 	;;
 
-	.system_element_3828
+	.system_element_4190
 	=> nrel_idtf: [<p>Онтология Базовой денотационной семантики SC-кода</p>]
 	(*
 		<- lang_ru;;
@@ -313,7 +313,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<- .system_element_3247
+	<- .system_element_3612
 	(*
 		=> nrel_idtf: [<p>формальная онтология, представленная в SC-коде</p>]
 		(*
@@ -321,13 +321,13 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	=> nrel_inclusion: .system_element_3829;
-	=> nrel_inclusion: .system_element_3830;
-	=> nrel_inclusion: .system_element_3831;;
+	=> nrel_inclusion: .system_element_4191;
+	=> nrel_inclusion: .system_element_4192;
+	=> nrel_inclusion: .system_element_4193;;
 
-	.system_element_3832
-	<= .system_element_3834: .system_element_3833;
-	=> .system_element_3835: {
+	.system_element_4194
+	<= .system_element_4196: .system_element_4195;
+	=> .system_element_4197: {
 		[<p>Вторыми компонентами <i>sc-пар</i> константной парой принадлежности могут быть sc-элементы <i>любого</i> типа (в том числе, и <i>sc-переменные</i>), но первыми компонентами таких <i>sc-пар</i> могут быть только <i>константные</i> <i>sc-множества</i>.</p>]
 		(*
 			<- lang_ru;;

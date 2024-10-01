@@ -1,7 +1,7 @@
-.system_element_5030
+.system_element_5536
 => nrel_inclusion: [*
 
-	.system_element_5177
+	.system_element_5676
 	<- subject_domain;
 	-> .system_element_1835: new_scp_operator;
 	-> .system_element_748: 
@@ -21,29 +21,29 @@
 		scp_operator_of_structure_generation
 		(*
 			=> nrel_subdividing: {
-				.system_element_5178;
-				.system_element_5179;
-				.system_element_5180;
-				.system_element_5181
+				.system_element_5677;
+				.system_element_5678;
+				.system_element_5679;
+				.system_element_5680
 			};;
 		*);
-		.system_element_5182
+		.system_element_5681
 		(*
 			=> nrel_subdividing: {
-				.system_element_5183;
-				.system_element_5184;
-				.system_element_5185;
-				.system_element_5186;
-				.system_element_5187
+				.system_element_5682;
+				.system_element_5683;
+				.system_element_5684;
+				.system_element_5685;
+				.system_element_5686
 			};;
 		*);
-		.system_element_5188
+		.system_element_5687
 		(*
 			=> nrel_subdividing: {
-				.system_element_5189;
-				.system_element_5190;
-				.system_element_5191;
-				.system_element_5192
+				.system_element_5688;
+				.system_element_5689;
+				.system_element_5690;
+				.system_element_5691
 			};;
 		*);
 		scp_operator_of_conditions_check
@@ -67,7 +67,6 @@
 		scp_operator_of_scp_process_control
 		(*
 			=> nrel_subdividing: {
-				varErase;
 				return;
 				syncronize;
 				waitReturnSet;
@@ -100,13 +99,13 @@
 				contDivRem;
 				contDivInt;
 				contATg;
+				stringToLowerCase;
 				stringToUpperCase;
-				stringToUpperCase;
-				.system_element_5193;
-				.system_element_5194;
-				.system_element_5195;
+				stringReplace;
+				.system_element_5692;
+				.system_element_5693;
 				stringSlice;
-				.system_element_5196;
+				.system_element_5694;
 				stringLen;
 				stringSplit;
 				stringIfGr;
@@ -120,7 +119,7 @@
 				unlockEl;
 				lockEl;
 				lockElEdit;
-				.system_element_5197;
+				.system_element_5695;
 				unlockElStr;
 				lockElStr;
 				lockElStrEdit;
@@ -142,8 +141,8 @@
 		rrel_assign
 	};
 	=> nrel_subdividing: {
-		.system_element_5198;
-		.system_element_5199
+		.system_element_5696;
+		.system_element_5697
 	};
 	=> nrel_inclusion: 
 		rrel_set
@@ -166,7 +165,7 @@
 						rrel_struct;
 						rrel_relation
 						(*
-							=> nrel_inclusion: .system_element_5200;;
+							=> nrel_inclusion: .system_element_5698;;
 						*);
 						rrel_class
 					};;
@@ -177,7 +176,7 @@
 						rrel_common;
 						rrel_access
 						(*
-							=> nrel_inclusion: .system_element_5201;;
+							=> nrel_inclusion: .system_element_5699;;
 							=> nrel_subdividing: {
 								rrel_pos;
 								rrel_neg;

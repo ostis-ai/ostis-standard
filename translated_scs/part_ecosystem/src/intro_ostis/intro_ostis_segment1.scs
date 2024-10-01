@@ -1,5 +1,5 @@
 .intro_ostis_segment1 = [*
-.system_element_2116
+.system_element_2114
 => nrel_inclusion: [*
 	=> nrel_summary: [<p>Для того, чтобы рассмотреть проблемы дальнейшего развития <i>деятельности</i> в области <i>Искусственного интеллекта</i> как <i>научно-технической дисциплины</i> и, в частности, проблемы комплексной автоматизации этой <i>деятельности</i>, необходимо уточнить структуру указанной <i>деятельности</i>.</p>]
 	(*
@@ -8,10 +8,10 @@
 	*);;
 
 	.system_element_1880
-	<- .system_element_2117;
-	<- .system_element_2075
+	<- .system_element_2115;
+	<- .system_element_2073
 	(*
-		<- .system_element_2102;;
+		<- .system_element_2100;;
 	*);
 	=> nrel_explanation: [<p>Область человеческой деятельности, основными целями которой являются:
 	<ul>
@@ -62,12 +62,12 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_417: .system_element_2118
+	=> .system_element_417: .system_element_2116
 	(*
 		<=> .system_element_200: {
 			.system_element_1868
 			(*
-				=> .system_element_1875: .system_element_2077
+				=> .system_element_1875: .system_element_2075
 				(*
 					=> nrel_idtf: [<p>Теория, уточняющая структуру и принципы функционирования <i>интеллектуальных систем</i>, а также акцентирующая внимание на причинах (предпосылках) возникновение свойства интеллектуальности (феномены <i>интеллекта</i>)</p>]
 					(*
@@ -75,20 +75,20 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);;
-				<- .system_element_2119
+				<- .system_element_2117
 				(*
-					<- .system_element_2102;;
+					<- .system_element_2100;;
 					=> nrel_idtf: [<p>научно-исследовательская дисциплина или направление</p>]
 					(*
 						<- lang_ru;;
 						=> nrel_format: format_html;;
 					*);;
-					<=> .system_element_358: .system_element_2120;;
+					<=> .system_element_358: .system_element_2118;;
 				*);;
 			*);
-			.system_element_2121
+			.system_element_2119
 			(*
-				=> .system_element_1875: .system_element_2078
+				=> .system_element_1875: .system_element_2076
 				(*
 					=> nrel_note: [<p>Комплексность данной <i>технологии</i> заключается в том, что она ориентирована (1) на проектирование <i>интеллектуальных компьютерных систем</i> в целом, а не только отдельных их компонентов и (2) на создание объединённой <i>технологии</i>, объединяющей самые различные технологические подходы на основе их <i>конвергенции</i> и глубокой <i>интеграции</i></p>]
 					(*
@@ -96,14 +96,14 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);;
-				<- .system_element_2122
+				<- .system_element_2120
 				(*
-					<- .system_element_2102;;
+					<- .system_element_2100;;
 				*);;
 			*);
-			.system_element_2123
+			.system_element_2121
 			(*
-				=> .system_element_1875: .system_element_2079
+				=> .system_element_1875: .system_element_2077
 				(*
 					=> nrel_idtf: [<p>технология реализации (сборки и установки) спроектированных интеллектуальных компьютерных систем</p>];;
 					=> nrel_note: [<p>Очевидно, что данная <i>технология</i> должна быть самым тесным образом связана с <i>Базовой комплексной технологией проектирования интеллектуальных компьютерных систем</i> (по крайней мере данная <i>технология</i> должна знать в какой форме ей на вход передаётся результат проектирования). Поэтому имеет смысл говорить об объединённой технологии проектирования и производства <i>интеллектуальных компьютерных систем</i></p>]
@@ -112,24 +112,24 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);;
-				<- .system_element_2124
+				<- .system_element_2122
 				(*
-					<- .system_element_2102;;
+					<- .system_element_2100;;
 				*);;
 			*);
 			.system_element_1872
 			(*
 				=> nrel_idtf: [<p>Множество Процессов разработки (проектирования и производства) <i>интеллектуальных компьютерных систем</i> различного назначения, кроме <i>интеллектуальных компьютерных систем автоматизации проектирования</i> и автоматизации производства <i>интеллектуальных компьютерных систем</i></p>];;
-				=> .system_element_1875: .system_element_2125
+				=> .system_element_1875: .system_element_2123
 				(*
-					=> .system_element_1182: .system_element_2126;;
+					=> .system_element_1182: .system_element_2124;;
 				*);;
-				<= nrel_inclusion: .system_element_2127
+				<= nrel_inclusion: .system_element_2125
 				(*
-					<- .system_element_2102;;
+					<- .system_element_2100;;
 				*);;
 			*);
-			.system_element_2020
+			.system_element_2018
 			(*
 				=> nrel_idtf: [<p>Деятельность, направленная на подготовку молодых специалистов области <i>Искусственного интеллекта</i> на перманентное повышение квалификации действующих специалистов в этой области</p>];;
 				=> nrel_note: [<p>Сложность и высокая степень наукоемкости задач, больших своего решения на текущем этапе развития <i>Искусственного интеллекта</i>, добавляют к специалистам, работающим в этой области высокие требования к уровню их:
@@ -144,12 +144,12 @@
 					<- lang_ru;;
 					=> nrel_format: format_html;;
 				*);;
-				<= nrel_inclusion: .system_element_2022
+				<= nrel_inclusion: .system_element_2020
 				(*
-					<- .system_element_2102;;
+					<- .system_element_2100;;
 				*);;
 			*);
-			.system_element_2128
+			.system_element_2126
 			(*
 				=> nrel_explanation: [<p>Речь идет о бизнес-деятельности в широком смысле как деятельности, направленный на создание инфраструктурных условий для качественного выполнения всех <i>видов деятельности</i> в области <i>Искусственного интеллекта</i>, а именно:
 				<ul>
@@ -163,9 +163,9 @@
 					<li> на публикационную деятельность и защиту интеллектуальной собственности;
 					<li> на материально-техническое обеспечение.</li>
 				<ul></p>];;
-				<= nrel_inclusion: .system_element_2129
+				<= nrel_inclusion: .system_element_2127
 				(*
-					<- .system_element_2102;;
+					<- .system_element_2100;;
 				*);;
 			*)
 		};;
@@ -173,17 +173,17 @@
 
 	.system_element_1869
 	=> .system_element_417: {
-		.system_element_2130
+		.system_element_2128
 		(*
-			=> .system_element_1875: .system_element_2131;;
-			<- .system_element_2132
+			=> .system_element_1875: .system_element_2129;;
+			<- .system_element_2130
 			(*
-				<- .system_element_2102;;
+				<- .system_element_2100;;
 			*);;
 		*);
-		.system_element_2130
+		.system_element_2128
 		(*
-			=> .system_element_1875: .system_element_2133
+			=> .system_element_1875: .system_element_2131
 			(*
 				=> nrel_note: [<p>В состав этой теории входят методы проектирования, библиотеки проектирования и спецификация используемых индустриальных средств.</p>]
 				(*
@@ -196,26 +196,26 @@
 				<- lang_ru;;
 				=> nrel_format: format_html;;
 			*);;
-			<- .system_element_2134
+			<- .system_element_2132
 			(*
-				<- .system_element_2102;;
+				<- .system_element_2100;;
 			*);;
 		*);
-		.system_element_2135
+		.system_element_2133
 		(*
-			<- .system_element_2136
+			<- .system_element_2134
 			(*
-				<- .system_element_2102;;
+				<- .system_element_2100;;
 			*);;
 		*)
 	};;
 
-	.system_element_2123
+	.system_element_2121
 	=> .system_element_417: {
-		.system_element_2137
+		.system_element_2135
 		(*
 			=> nrel_idtf: [<p>Разработка <i>Теории производственной деятельности</i> по реализации (сборке и установке) <i>интеллектуальных компьютерных систем</i></p>];;
-			=> .system_element_1875: .system_element_2138
+			=> .system_element_1875: .system_element_2136
 			(*
 				=> nrel_note: [<p>В состав этой <i>теории</i> входят <i>методы производства</i> (сборки и установки) <i>интеллектуальных компьютерных систем</i>, а также спецификация <i>используемых инструментальных средств</i>.</p>]
 				(*
@@ -224,11 +224,11 @@
 				*);;
 			*);;
 		*);
-		.system_element_2139
+		.system_element_2137
 		(*
-			<- .system_element_2140
+			<- .system_element_2138
 			(*
-				<- .system_element_2102;;
+				<- .system_element_2100;;
 			*);;
 		*)
 	};;
@@ -240,18 +240,18 @@
 		=> nrel_format: format_html;;
 	*);
 	=> .system_element_272: {
-		.system_element_2141
+		.system_element_2139
 		(*
-			=> .system_element_2142: {
-				.system_element_2143;
-				.system_element_2144;
-				.system_element_2145
+			=> .system_element_2140: {
+				.system_element_2141;
+				.system_element_2142;
+				.system_element_2143
 			};;
 		*);
-		.system_element_2146
+		.system_element_2144
 	};;
 
-	.system_element_2146
+	.system_element_2144
 	=> nrel_note: [<p>Производственная деятельность, направленная на <i>производство</i> (реализацию) спроектированной <i>интеллектуальной компьютерной системы</i> значительно уступает по уровню сложности деятельности по проектированию этой <i>интеллектуальной компьютерной системы</i>, так как это производство сводится к сборке результата <i>проектирования</i> (формальной логико-семантической модели разрабатываемой <i>интеллектуальной компьютерной системы</i>) и загрузки этой модели в память компьютера или программного <i>универсального интерпретатора логико-семантических моделей интеллектуальных компьютерных систем</i>, в качестве которого может быть использован:
 
 	<ul>
@@ -268,45 +268,45 @@
 
 	.system_element_358
 	-> {
-		.system_element_2147;
-		.system_element_2148;
-		.system_element_2149
+		.system_element_2145;
+		.system_element_2146;
+		.system_element_2147
 	};
 	-> {
-		.system_element_2052
+		.system_element_2050
 		(*
-			=> nrel_inclusion: .system_element_2150;;
-			=> nrel_inclusion: .system_element_2076;;
+			=> nrel_inclusion: .system_element_2148;;
+			=> nrel_inclusion: .system_element_2074;;
 		*);
-		.system_element_2151
+		.system_element_2149
 		(*
-			=> nrel_inclusion: .system_element_2120;;
-			=> nrel_inclusion: .system_element_2152;;
+			=> nrel_inclusion: .system_element_2118;;
+			=> nrel_inclusion: .system_element_2150;;
 		*)
 	};;
 
 	.system_element_1880
-	=> .system_element_417: .system_element_2153
+	=> .system_element_417: .system_element_2151
 	(*
 		<=> .system_element_200: {
-			.system_element_2154;
-			.system_element_2155
+			.system_element_2152;
+			.system_element_2153
 			(*
 				=> .system_element_417: {
-					.system_element_2156
+					.system_element_2154
 					(*
-						=> .system_element_1126: .system_element_2157;;
+						=> .system_element_1126: .system_element_2155;;
 					*);
+					.system_element_2156;
+					.system_element_2157
+				};;
+				=> .system_element_417: {
 					.system_element_2158;
 					.system_element_2159
 				};;
-				=> .system_element_417: {
-					.system_element_2160;
-					.system_element_2161
-				};;
 			*);
-			.system_element_2162;
-			.system_element_2163
+			.system_element_2160;
+			.system_element_2161
 		};;
 	*);;
 *];;
