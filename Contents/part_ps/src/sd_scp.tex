@@ -2,8 +2,8 @@
 \scnsectionheader{Предметная область и онтология Базового языка программирования ostis-систем}
 \begin{scnsubstruct}
 	\begin{scnrelfromlist}{дочерний раздел}
-		\scnitem{\nameref{sd_scp_denote_sem}}
-		\scnitem{\nameref{sd_scp_oper_sem}}
+		\scnitem{Предметная область и онтология денотационной семантики Базового языка программирования ostis-систем}
+		\scnitem{Предметная область и онтология операционной семантики Базового языка программирования ostis-систем}
 	\end{scnrelfromlist}
 	
 \scnheader{Предметная область Базового языка программирования ostis-систем (языка SCP --- Semantic Code Programming)}
@@ -14,6 +14,10 @@
 \begin{scnhaselementrole}{максимальный класс объектов исследования}
 	{scp-программа}
 \end{scnhaselementrole}
+\begin{scnhaselementrolelist}{ключевой знак}
+	\scnitem{Язык SCP}
+	\scnitem{Абстрактная scp-машина}
+\end{scnhaselementrolelist}
 \begin{scnhaselementrolelist}{класс объектов исследования}
 	%TODO: check by human--->
 	\scnitem{агентная scp-программа}
@@ -32,6 +36,15 @@
 	%<---TODO: check by human
 \end{scnhaselementrolelist}
 
+\begin{scnrelfromvector}{введение}
+	\scnfileitem{Выделение Базового языка программирования для ostis-систем позволяет обеспечить четкое разделение уровня методов и соответственно, навыков ostis-системы, которые могут быть полностью описаны на уровне базы знаний и более низкоуровневых навыков, обеспечивающих интерпретацию указанных навыков более высокого уровня. Другими словами, выделение такого языка позволяет обеспечить \uline{платформенную независимость} ostis-систем, как в случае программной реализации \textit{ostis-платформы}, так и в случае \textit{ассоциативного семантического компьютера}.}
+	\begin{scnindent}
+		\begin{scnrelfromset}{смотрите}
+			\scnitem{Внутренние агенты, выполняющие действия в sc-памяти}
+		\end{scnrelfromset}
+	\end{scnindent}
+\end{scnrelfromvector}
+
 \scnheader{Язык SCP}
 \scnidtftext{часто используемый sc-идентификатор}{scp-программа}
 \scntext{пояснение}{В качестве базового языка для описания программ обработки текстов\textit{SC-кода} предлагается \textit{Язык SCP}.\\
@@ -46,6 +59,7 @@
 	\scnitem{Модель Абстрактной scp-машины}
 	%<---TODO: check by human
 \end{scnreltoset}
+\scntext{примечание}{\textit{Базовая модель обработки sc-текстов} включает в себя \textit{Предметную область Базового языка программирования ostis-систем}, то есть описание \textit{Синтаксиса} и \textit{Денотационной семантики Языка SCP}, а также описание \textit{Абстрактной scp-машины}, которая является моделью \textit{scp-интерпретатора}, который должен являться частью \textit{ostis-платформы} (хотя в общем случае могут существовать варианты платформы, не содержащие такого интерпретатора, что, однако, не позволит использовать достоинства предлагаемой базовой модели.}
 \begin{scnrelfromset}{особенности}
 	%TODO: check by human--->
 	\scnfileitem{Тексты программ \textit{Языка SCP} записываются при помощи тех же унифицированных семантических сетей, что и обрабатываемая информация, таким образом, можно сказать, что \textit{Синтаксис языка SCP} на базовом уровне совпадает с \textit{Синтаксисом SC-кода}.}
@@ -63,16 +77,22 @@
 
 \scnheader{Абстрактная scp-машина}
 \scnrelfrom{модель}{Модель Абстрактной scp-машины}
+\scniselement{scp-машина}
+\begin{scnindent}
+	\scnrelto{обобщенная модель}{scp-интерпретатор}
+\end{scnindent}
 \scntext{примечание}{\textit{Абстрактная scp-машина} представляет собой интерпретатор \textit{scp-программ}, который должен являться частью \textit{платформы интерпретации sc-моделей компьютерных систем} (хотя в общем случае могут существовать варианты платформы, не содержащие такого интерпретатора, что, однако, не позволит использовать достоинства предлагаемой базовой модели}
 
 \scnheader{scp-программа}
 \scnsubset{программа в sc-памяти}
+\scnsuperset{агентная scp-программа}
 \scntext{пояснение}{Каждая \textbf{\textit{scp-программа}} представляет собой \textit{обобщенную структуру}, описывающую один из вариантов декомпозиции действий некоторого класса, выполняемых в sc-памяти. Знак \textit{sc-переменной}, соответствующей конкретному декомпозируемому действию является в рамках \textbf{\textit{scp-программы}} \textit{ключевым sc-элементом\scnrolesign}. Также явно указывается принадлежность данного знака множеству \textit{scp-процессов}.\\
 	Принадлежность некоторого действия множеству \textit{scp-процессов} гарантирует тот факт, что в декомпозиции данного действия будут присутствовать только знаки элементарных действий (\textit{scp-операторов}), которые может интерпретировать реализация абстрактной scp-машины.\\
 	Таким образом, каждая \textbf{\textit{scp-программа}} описывает в обобщенном виде декомпозицию некоторого \textit{\mbox{scp-процесса}} на взаимосвязанные \textit{scp-операторы}, с указанием, при их наличии, аргументов для данного \textit{scp-процесса}.\\
 	По сути каждая \textbf{\textit{scp-программа}} представляет собой описание последовательности элементарных операций, которые необходимо выполнить над семантической сетью, чтобы выполнить более сложное действие некоторого класса.}
-\scnrelfrom{описание примера}{\scnfileimage[20em]{Contents/part_ps/src/images/sd_scp/program_example.png}}
+\scnrelfrom{описание примера}{\scnfileimage[30em]{Contents/part_ps/src/images/sd_scp/program_example.png}}
 	\begin{scnindent}
+		\scnidtf{SCg-текст. Пример scp-программы}
 		\scntext{пояснение}{В приведенном примере показана \textit{scp-программа}, состоящая из трех \textit{scp-операторов}. Данная программа проверяет, содержится ли в заданном множестве (первый параметр) заданный элемент (второй параметр), и, если нет, то добавляет его в это множество.}
 	\end{scnindent}
 
@@ -135,20 +155,25 @@
 	Принадлежность некоторого действия множеству \textit{scp-процессов} гарантирует тот факт, что в декомпозиции данного действия будут присутствовать только знаки элементарных действий (\textit{scp-операторов}), которые может интерпретировать реализация \textit{Абстрактной scp-машины}.}
 \begin{scnrelfromvector}{пример выполнения}
 	%TODO: check by human--->
-	\scnitem{\scnfileimage[20em]{Contents/part_ps/src/images/sd_scp/process_example.png}}
+	\scnitem{\scnfileimage[30em]{Contents/part_ps/src/images/sd_scp/process_example.png}}
 		\begin{scnindent}
+			\scnidtf{SCg-текст. Пример scp-процесса на начальной стадии выполнения}
 			\scntext{пояснение}{Осуществляется вызов \textit{scp-программы}. Генерируется соответствующий \textit{scp-процесс}. Происходит инициирование начального оператора scp-процесса \textit{Operator1}.} 
+			\scntext{пояснение}{Пример поэтапного выполнения scp-процесса, соответствующего ранее рассмотренному примеру scp-программы. В приведенном примере последовательно показаны состояния \textit{scp-процесса}, соответствующего \textit{\mbox{scp-программе}}, добавляющей заданный элемент в заданное множество, если он там ранее не содержался. В примере предполагается, что рассматриваемый элемент (\textit{Element1}) изначально не содержится во множестве (\textit{Set1}).}
 		\end{scnindent}
-	\scnitem{\scnfileimage[20em]{Contents/part_ps/src/images/sd_scp/process_example2.png}}
+	\scnitem{\scnfileimage[30em]{Contents/part_ps/src/images/sd_scp/process_example2.png}}
 		\begin{scnindent}	
+			\scnidtf{SCg-текст. Пример scp-процесса: безуспешно выполнен оператор поиска}
 			\scntext{пояснение}{Оператор \textit{Operator1} оказался безуспешно выполненным. Производится инициирование \textit{\mbox{scp-оператора} генерации трёхэлементной конструкции} \textit{Operator2}.}
 		\end{scnindent}
-	\scnitem{\scnfileimage[20em]{Contents/part_ps/src/images/sd_scp/process_example3.png}}
+	\scnitem{\scnfileimage[30em]{Contents/part_ps/src/images/sd_scp/process_example3.png}}
 		\begin{scnindent}	
+			\scnidtf{SCg-текст. Пример scp-процесса: выполнен оператор генерации, элемент добавлен во множество}
 			\scntext{пояснение}{Оператор \textit{Operator2} выполнился. Производится инициирование \textit{scp-оператора завершения выполнения программы} \textit{Operator3}.}
 		\end{scnindent}
-	\scnitem{\scnfileimage[20em]{Contents/part_ps/src/images/sd_scp/process_example4.png}}
+	\scnitem{\scnfileimage[30em]{Contents/part_ps/src/images/sd_scp/process_example4.png}}
 		\begin{scnindent}
+			\scnidtf{SCg-текст. Пример scp-процесса: выполнение завершено}
 			\scntext{пояснение}{Оператор \textit{Operator3} выполнился. Выполнение \textit{scp-процесса} завершается.}
 		\end{scnindent}
 %<---TODO: check by human
