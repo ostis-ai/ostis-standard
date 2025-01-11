@@ -1,16 +1,16 @@
-.system_element_4059
+.system_element_3212
 = [*
 	<- .system_element_725;
 	=> .system_element_727: 
 		.system_element_230;
-		.system_element_3017;
-		.system_element_3153;
-		.system_element_3848;
-		.system_element_3213
+		.system_element_3383;
+		.system_element_3518;
+		.system_element_4209;
+		.system_element_3578
 	;
 	=> nrel_authors: {
-		.system_element_4060;
-		.system_element_4061
+		.system_element_4509;
+		.system_element_4510
 	};
 	=> nrel_summary: [<p>Поскольку предлагаемая Вашему вниманию <i>Публикация Стандарта OSTIS-2021</i> представляет собой внешний текст основной части <i>базы знаний</i> ostis-системы (<i>Метасистемы OSTIS</i>), необходимо сразу во вводном разделе этого Стандарта пояснить основные принципы, лежащие в основе внутреннего представления <i>баз знаний</i> в памяти <i>ostis-систем</i>, а также некоторые правила и условные обозначения, используемые в оформлении внешних текстов <i>баз знаний ostis-систем</i>.Подчеркнем, что все эти принципы, правила и условные обозначения детально рассмотрены в соответствующих разделах <i>Стандарта OSTIS</i>, но некоторые из них необходимо пояснить до начала ознакомления с основными положениями <i>Технологии OSTIS</i>. Фактически речь идет о кратком руководстве конечных пользователей <i>ostis-систем</i>. Прежде, чем рассматривать <i>внутренний язык*</i> и <i>внешние языки*</i>, используемые <i>ostis-системами</i>, необходимо уточнить понятие <i>информационной конструкции</i>, понятие <i>знака</i>, понятие <i>текста</i>, понятие <i>языка</i>.</p>]
 	(*
@@ -23,59 +23,59 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4062
+	.system_element_4511
 	<- subject_domain;
 	-> .system_element_112: 
 		.system_element_1050;
 		.system_element_1692;
-		.system_element_4063;
-		.system_element_4064;
+		.system_element_4512;
+		.system_element_4513;
 		.system_element_1043;
-		.system_element_2174;
-		.system_element_4065;
-		.system_element_4066;
+		.system_element_2172;
+		.system_element_4514;
+		.system_element_4515;
 		.system_element_1131;
-		.system_element_4067;
-		.system_element_4068;
-		.system_element_4069;
-		.system_element_4070;
-		.system_element_4071;
+		.system_element_4516;
+		.system_element_4517;
+		.system_element_4518;
+		.system_element_4519;
+		.system_element_4520;
 		sc_identifier;
-		.system_element_4072;
-		.system_element_4073;
+		.system_element_4521;
+		.system_element_4522;
 		.system_element_254;
-		.system_element_3239;
-		.system_element_3230;
+		.system_element_3604;
+		.system_element_3595;
 		.system_element_1022;
 		file;
-		.system_element_3521
+		.system_element_3885
 	;
-	-> .system_element_4074: 
-		.system_element_4075;
-		.system_element_3288;
-		.system_element_3315;
-		.system_element_4076;
-		.system_element_4077;
-		.system_element_4078;
-		.system_element_4079;
-		.system_element_3317;
-		.system_element_4080;
-		.system_element_4081
+	-> .system_element_4523: 
+		.system_element_4524;
+		.system_element_3653;
+		.system_element_3680;
+		.system_element_4525;
+		.system_element_4526;
+		.system_element_4527;
+		.system_element_4528;
+		.system_element_3682;
+		.system_element_4529;
+		.system_element_4530
 	;
 	-> .system_element_748: 
-		.system_element_4082;
+		.system_element_4531;
 		.system_element_361;
-		.system_element_3855;
-		.system_element_3853;
-		.system_element_4083;
-		.system_element_3856
+		.system_element_4216;
+		.system_element_4214;
+		.system_element_4532;
+		.system_element_4217
 	;
 	=> .system_element_14: 
-		.system_element_4084;
-		.system_element_4085;
-		.system_element_4086;
-		.system_element_3030;
-		.system_element_2459
+		.system_element_4533;
+		.system_element_4534;
+		.system_element_4535;
+		.system_element_3396;
+		.system_element_2457
 	;;
 
 	ostis_system
@@ -102,7 +102,7 @@
 		=> nrel_format: format_html;;
 	*);
 	=> nrel_subdividing: {
-		.system_element_3975
+		.system_element_4426
 		(*
 			=> nrel_idtf: [<p>информационная конструкция, принадлежащая внутреннему языку ostis-системы</p>]
 			(*
@@ -110,7 +110,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_4087
+		.system_element_4536
 		(*
 			=> nrel_idtf: [<p>инородная (внешняя) для sc-памяти информационная конструкция</p>];;
 			=> nrel_idtf: [<p>информационная конструкция, представленная на внешнем языке ostis-систем</p>]
@@ -120,7 +120,7 @@
 			*);;
 			=> nrel_subdividing: {
 				file;
-				.system_element_4088
+				.system_element_4537
 			};;
 		*)
 	};;
@@ -138,7 +138,7 @@
 		*);;
 	*);;
 
-	.system_element_4063
+	.system_element_4512
 	=> nrel_idtf: [<p>синтаксически атомарный фрагмент (символ), входящий в состав дискретной информационной конструкции</p>]
 	(*
 		<- lang_ru;;
@@ -149,10 +149,10 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<= nrel_second_domain: .system_element_4089;;
+	<= nrel_second_domain: .system_element_4538;;
 
-	.system_element_4090
-	=> nrel_inclusion: .system_element_4091
+	.system_element_4539
+	=> nrel_inclusion: .system_element_4540
 	(*
 		=> nrel_idtf: [<p>описание структуры информационной конструкции, являющееся минимально достаточным для ее семантически эквивалентное смысловое представление</p>]
 		(*
@@ -160,7 +160,7 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	=> nrel_inclusion: .system_element_4068
+	=> nrel_inclusion: .system_element_4517
 	(*
 		=> nrel_idtf: [<p>синтаксические правила языка</p>]
 		(*
@@ -169,7 +169,7 @@
 		*);;
 	*);;
 
-	.system_element_4092
+	.system_element_4541
 	=> nrel_inclusion: .system_element_1694
 	(*
 		=> nrel_idtf: [<p>отображение синтаксической структуры информацинной конструкции в ее семантически эквивалентное смысловое представление</p>]
@@ -178,7 +178,7 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	=> nrel_inclusion: .system_element_4069
+	=> nrel_inclusion: .system_element_4518
 	(*
 		=> nrel_idtf: [<p>объединение семантических окрестностей основных понятий заданного языка и конъюнкция кванторных высказываний, являющихся семантическими правилами заданного языка, то есть правилами, которым должны удовлетворять семантически правильные смысловые информационные конструкции, соответствующие (семантические эквивалентные) синтаксически правильным конструкциям (текстам) заданного языка</p>]
 		(*
@@ -187,7 +187,7 @@
 		*);;
 	*);;
 
-	.system_element_4093
+	.system_element_4542
 	<= nrel_inclusion: question;
 	=> nrel_idtf: [<p>трансляция информационной конструкции на язык смыслового представления знаний</p>]
 	(*
@@ -205,7 +205,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4094
+	.system_element_4543
 	<= nrel_inclusion: question;
 	=> nrel_idtf: [<p>построение синтаксического описания</p>]
 	(*
@@ -213,7 +213,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4095
+	.system_element_4544
 	<= nrel_inclusion: question;
 	=> nrel_idtf: [<p>перевод</p>]
 	(*
@@ -226,22 +226,22 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4075
-	-> .system_element_4089;
-	-> .system_element_4096;
-	-> .system_element_4097;
-	-> .system_element_4098;
-	-> .system_element_4099;
-	-> .system_element_4100;
-	-> .system_element_4101;
-	-> .system_element_4102;
-	-> .system_element_4103;
-	-> .system_element_4104;
-	-> .system_element_4105;
-	-> .system_element_4106;
-	-> .system_element_4082;;
+	.system_element_4524
+	-> .system_element_4538;
+	-> .system_element_4545;
+	-> .system_element_4546;
+	-> .system_element_4547;
+	-> .system_element_4548;
+	-> .system_element_4549;
+	-> .system_element_4550;
+	-> .system_element_4551;
+	-> .system_element_4552;
+	-> .system_element_4553;
+	-> .system_element_4554;
+	-> .system_element_4555;
+	-> .system_element_4531;;
 
-	.system_element_4089
+	.system_element_4538
 	<- .system_element_1102;
 	=> nrel_idtf: [<p>быть элементарным (синтаксически атомарным) фрагментом заданной дискретной информационной конструкции*</p>]
 	(*
@@ -258,9 +258,9 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> nrel_second_domain: .system_element_4063;;
+	=> nrel_second_domain: .system_element_4512;;
 
-	.system_element_4096
+	.system_element_4545
 	<- relation;
 	=> nrel_idtf: [<p>быть синтаксически эквивалентными элементами (атомарными фрагментами) одной и той же или разных дискретных информационных конструкций, т.е. элементами, принадлежащими одному и тому же классу синтаксически эквивалентных элементов дискретных информационных конструкций*</p>]
 	(*
@@ -268,7 +268,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4097
+	.system_element_4546
 	<- .system_element_1102;
 	=> nrel_note: [<p>Для <i>линейных информационных конструкций</i> --- это последовательность элементов (символов), входящих в состав этих конструкций.Для дискретных информационных конструкций, конфигурация которых имеет нелинейный характер, отношение инцидентности их элементов может быть разбито на несколько частных отношений инцидентности, каждое из которых является <u>подмножеством</u> объединенного отношения инцидентности. Например, для двухмерных дискретных информационных конструкций это (1) инцидентность элементов информационных конструкций "по горизонтали" и (2) инцидентность элементов информационных конструкций "по вертикали".</p>]
 	(*
@@ -276,7 +276,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4098
+	.system_element_4547
 	<- .system_element_1102;
 	=> nrel_idtf: [<p>быть дискретной информационной конструкцией, которая является <u>подструктурой</u> для заданной дискретной информационной конструкции, в состав которой входит (1) подмножество элементов заданной информационной конструкции и, соответственно, (2) подмножество пар инцидентности элементов заданной информационной конструкции.</p>]
 	(*
@@ -284,7 +284,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4099
+	.system_element_4548
 	<- binary_relation;
 	=> nrel_idtf: [<p>быть семейством попарно непересекающихся <u>классов</u> синтаксически эквивалентных элементов заданной дискретной информационной конструкции*</p>]
 	(*
@@ -292,7 +292,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4100
+	.system_element_4549
 	<- .system_element_1102;
 	=> nrel_idtf: [<p>быть <i>графовой структурой</i>, которая полностью описывает конфигурацию заданной <i>дискретной информационной конструкции</i> и которая включает в себя: (1) знаки всех тех классов синтаксически эквивалентных элементов, которым принадлежат элементы описываемой дискретной информационной конструкции, (2) знаки всех элементов (атомарных фрагментов) описываемой информационной конструкции, (3) пары, описывающие инцидентность элементов описываемой информационной конструкции, (4) пары, описывающие принадлежность элементов описываемой информационной конструкции соответствующим классам синтаксически эквивалентных элементов этой информационной конструкции.</p>]
 	(*
@@ -300,37 +300,37 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4101
+	.system_element_4550
 	=> .system_element_1120: [<p>Дискретные информационные конструкции <b>Ti</b> и <b>Tj</b> являются синтаксически эквивалентными в том и только в том случае, если между конструкцией <b>Ti</b> и конструкцией <b>Tj</b> существует <u>изоморфизм</u>, в рамках которого каждому элементу конструкции <b>Ti</b> соответствует синтаксически эквивалентный элемент конструкции <b>Tj</b>, т.е. элемент, принадлежащий тому же классу синтаксически эквивалентных элементов дискретных информационных конструкций. Обратное утверждение также является верным.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4102
+	.system_element_4551
 	<- .system_element_1102;
-	<= nrel_inclusion: .system_element_4101;
+	<= nrel_inclusion: .system_element_4550;
 	=> .system_element_1120: [<p>быть дискретной информационной конструкцией, которая не только синтаксически эквивалентна заданной, но и содержит информацию о форме представления элементов копируемой информационной конструкции*</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4103
+	.system_element_4552
 	=> .system_element_1120: [<p>Информационная конструкция <b>Ti</b> и информационная конструкция <b>Tj</b> являются <u>семантически эквивалентными</u> в том и только в том случае, если <u>каждая</u> сущность (в том числе, и каждая связь между сущностями), описываемая в информационной конструкции <b>Ti</b> описывается также и в информационной конструкции <b>Tj</b>. Обратное утверждение также является верным.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4104
+	.system_element_4553
 	=> .system_element_1120: [<p>Информационная конструкция <b>Tj</b> является семантическим расширением информационной конструкции <b>Ti</b> в том и только в том случае, если <u>каждая</u> сущность, описываемая в <b>Ti</b>, описывается также и в <b>Tj</b>. Обратное утверждение не является верным.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4105
+	.system_element_4554
 	=> nrel_idtf: [<p>синтаксическая структура информационной конструкции*</p>]
 	(*
 		<- lang_ru;;
@@ -353,7 +353,7 @@
 	*);
 	=> nrel_first_domain: .system_element_1050;;
 
-	.system_element_4106
+	.system_element_4555
 	<- .system_element_1102;
 	=> nrel_idtf: [<p>смысл информационной конструкции*</p>]
 	(*
@@ -391,7 +391,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4082
+	.system_element_4531
 	<- .system_element_1102;
 	=> nrel_idtf: [<p>правила трансформации заданной информационной конструкции*</p>]
 	(*
@@ -408,21 +408,21 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> nrel_second_domain: .system_element_4107;;
+	=> nrel_second_domain: .system_element_4556;;
 
-	.system_element_4064
+	.system_element_4513
 	=> .system_element_1120: [<p>Множество ориентированных пар, первым компонентом которых является ориентированная пара, состоящая из (1) знака синтаксической структуры некоторой информационной конструкции и (2) знака смысловой структуры этой конструкции, а вторым компонентом которых является множество ориентированных пар, связывающих фрагменты синтаксической структуры заданной информационной конструкции (которые описывают либо структуру фрагментов заданной конструкции, либо связи между фрагментами этой конструкции) с теми фрагментами смысловой структуры заданной информационной конструкции, которые семантически эквивалентны либо синтаксически представленным фрагментам заданной информационной конструкции, либо синтаксически представленным связям между такими фрагментами.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	-> .system_element_4108
+	-> .system_element_4557
 	(*
 		<= nrel_inclusion: nrel_mapping;;
 	*);;
 
-	.system_element_3288
-	-> .system_element_4109
+	.system_element_3653
+	-> .system_element_4558
 	(*
 		=> nrel_idtf: [<p>типология дискретных информационных конструкций, определяемая их размерностью</p>];;
 		=> nrel_explanation: [<p>Это параметр дискретных информационных конструкций, определяющий характер <u>инцидентности</u> элементов таких конструкций.</p>]
@@ -430,7 +430,7 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
-		-> .system_element_4110
+		-> .system_element_4559
 		(*
 			=> nrel_explanation: [<p>дискретная информационная конструкция, каждый элемент которой может иметь не более двух инцидентных ему элементов (один слева, другой справа)</p>]
 			(*
@@ -438,7 +438,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);;
-		-> .system_element_4111
+		-> .system_element_4560
 		(*
 			=> nrel_explanation: [<p>дискретная информационная конструкция, каждый элемент которой может иметь не более четырех инцидентных ему элементов (слева-справа, сверху-снизу)</p>]
 			(*
@@ -446,7 +446,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);;
-		-> .system_element_4112
+		-> .system_element_4561
 		(*
 			=> nrel_explanation: [<p>дискретная информационная конструкция, каждый элемент которой может иметь не более шести инцидентных ему элементов (слева-справа, сверху-снизу, сзади-спереди)</p>]
 			(*
@@ -454,7 +454,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);;
-		-> .system_element_4113
+		-> .system_element_4562
 		(*
 			=> nrel_explanation: [<p>дискретная информационная конструкция, каждый элемент которой может иметь не более восьми инцидентных ему элементов (например, слева-справа, сверху-снизу, сзади-спереди, раньше-позже)</p>]
 			(*
@@ -462,7 +462,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);;
-		-> .system_element_4114
+		-> .system_element_4563
 		(*
 			=> nrel_explanation: [<p>дискретная информационная конструкция, множество элементов которой разбивается на два подмножества  связки и узлы. При этом узлы могут иметь <u>неограниченное</u> количество инцидентных им связок</p>]
 			(*
@@ -476,11 +476,11 @@
 			*);;
 		*);;
 	*);
-	-> .system_element_3289
+	-> .system_element_3654
 	(*
-		-> .system_element_3293
+		-> .system_element_3658
 		(*
-			=> nrel_inclusion: .system_element_2951
+			=> nrel_inclusion: .system_element_3255
 			(*
 				=> nrel_idtf: [<p>речевое сообщение</p>];;
 				=> nrel_idtf: [<p>информационная конструкция, представленная в звуковой форме</p>]
@@ -489,8 +489,8 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);;
-			=> nrel_inclusion: .system_element_4115;;
-			=> nrel_inclusion: .system_element_4116
+			=> nrel_inclusion: .system_element_4564;;
+			=> nrel_inclusion: .system_element_4565
 			(*
 				=> nrel_note: [<p>Конкретный вид носителя для письменной формы представления информации может быть разным  бумага, папирус, береста, камень...</p>]
 				(*
@@ -509,7 +509,7 @@
 			*);;
 		*);;
 	*);
-	-> .system_element_4117
+	-> .system_element_4566
 	(*
 		=> nrel_idtf: [<p>уровень "членораздельности" дискретных информационных конструкций</p>];;
 		=> nrel_note: [<p>Чем выше уровень унификации представления элементов дискретных информационных конструкций, тем проще реализуется (1) процедура выделения (сегментации) элементов дискретной информационной конструкции, (2) процедура установления синтаксической эквивалентности этих элементов и (3) процедура их распознавания, т.е. процедура установления их принадлежности соответствующим классам синтаксически эквивалентных элементов.</p>]
@@ -517,15 +517,15 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
-		-> .system_element_4118
+		-> .system_element_4567
 		(*
-			=> nrel_inclusion: .system_element_2951;;
-			=> nrel_inclusion: .system_element_4115;;
-			=> nrel_inclusion: .system_element_4119;;
+			=> nrel_inclusion: .system_element_3255;;
+			=> nrel_inclusion: .system_element_4564;;
+			=> nrel_inclusion: .system_element_4568;;
 		*);;
-		-> .system_element_4120
+		-> .system_element_4569
 		(*
-			=> nrel_inclusion: .system_element_4121;;
+			=> nrel_inclusion: .system_element_4570;;
 			=> nrel_inclusion: file;;
 		*);;
 	*);;
@@ -537,8 +537,8 @@
 		=> nrel_format: format_html;;
 	*);
 	=> nrel_subdividing: {
-		.system_element_4122;
-		.system_element_4123
+		.system_element_4571;
+		.system_element_4572
 	};
 	=> nrel_note: [<p>Отсутствие знака, обозначающего некоторую сущность, не означает отсутствие самой этой сущности. Это означает только то, что мы даже не догадываемся о её существовании и, следовательно, не приступили к её исследованию.</p>]
 	(*
@@ -546,16 +546,16 @@
 		=> nrel_format: format_html;;
 	*);
 	=> .system_element_180: {
-		.system_element_4084
+		.system_element_4533
 	};;
 
-	.system_element_4076
+	.system_element_4525
 	=> nrel_note: [<p>Поскольку все знаки являются дискретными информационными конструкциями, множество знаков является областью задания всех отношений, заданных на множестве дискретных информационных конструкций. Тем не менее есть как минимум одно отношение, специфичное для множества знаков.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	-> .system_element_4124
+	-> .system_element_4573
 	(*
 		=> .system_element_1120: [<p>Знаки являются синонимичными в том и только в том случае, если они обозначают одну и ту же сущность.</p>];;
 		=> nrel_note: [<p>Синонимичные знаки могут быть синтаксически эквивалентными, а могут и не быть таковыми.</p>]
@@ -565,7 +565,7 @@
 		*);;
 	*);;
 
-	.system_element_2174
+	.system_element_2172
 	<= nrel_inclusion: .system_element_1692;
 	=> nrel_explanation: [<p>дискретная информационная конструкция, которая в общем случае представляет собой конфигурацию знаков и специальных фрагментов информационной конструкции, обеспечивающих структуризацию конфигурации знаков  различного вида разделителей и ограничителей</p>]
 	(*
@@ -578,10 +578,10 @@
 		*);;
 	*);
 	=> .system_element_180: {
-		.system_element_4084
+		.system_element_4533
 	};;
 
-	.system_element_4125
+	.system_element_4574
 	=> nrel_idtf: [<p>быть знаком для заданной знаковой конструкции*</p>]
 	(*
 		<- lang_ru;;
@@ -593,7 +593,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4126
+	.system_element_4575
 	=> .system_element_1120: [<p>бинарное отношение, связывающее семантически смежные знаковые конструкции.</p>]
 	(*
 		<- lang_ru;;
@@ -605,10 +605,10 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4077
-	-> .system_element_4125;
-	-> .system_element_4127;
-	-> .system_element_4128
+	.system_element_4526
+	-> .system_element_4574;
+	-> .system_element_4576;
+	-> .system_element_4577
 	(*
 		=> nrel_idtf: [<p>Множество всех разделителей, входящих в состав заданной знаковой конструкции*</p>]
 		(*
@@ -616,10 +616,10 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	-> .system_element_4129;
-	-> .system_element_4130;
-	-> .system_element_4126;
-	-> .system_element_4131
+	-> .system_element_4578;
+	-> .system_element_4579;
+	-> .system_element_4575;
+	-> .system_element_4580
 	(*
 		=> nrel_idtf: [<p>декомпозиция заданной знаковой конструкции на последовательность знаковых конструкций*</p>]
 		(*
@@ -628,8 +628,8 @@
 		*);;
 	*);;
 
-	.system_element_4078
-	-> .system_element_4132
+	.system_element_4527
+	-> .system_element_4581
 	(*
 		=> .system_element_1120: [<p>знаковая конструкция, описывающая некоторую (одну) связь между некоторыми знаками сущностей</p>]
 		(*
@@ -637,7 +637,7 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	-> .system_element_4133
+	-> .system_element_4582
 	(*
 		=> .system_element_1120: [<p>знаковая конструкция, которую можно представить в виде конкатенации семантически элементарных знаковых конструкций, каждая из которых семантически смежна предшествующей и последующей семантически элементарной знаковой конструкции</p>]
 		(*
@@ -646,21 +646,21 @@
 		*);;
 	*);;
 
-	.system_element_4079
-	-> .system_element_4134
+	.system_element_4528
+	-> .system_element_4583
 	(*
-		-> .system_element_4133;;
-		-> .system_element_4135;;
+		-> .system_element_4582;;
+		-> .system_element_4584;;
 		=> .system_element_252: [<p>В огороде бузина, а в Киеве дядька</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	-> .system_element_4136
+	-> .system_element_4585
 	(*
-		-> .system_element_4137;;
-		-> .system_element_4138;;
+		-> .system_element_4586;;
+		-> .system_element_4587;;
 	*);;
 
 	.system_element_1131
@@ -675,7 +675,7 @@
 		=> nrel_format: format_html;;
 	*);
 	=> nrel_subdividing: {
-		.system_element_4139
+		.system_element_4588
 		(*
 			=> nrel_note: [<p>Для языков такого типа существенно упрощаются методы обработки их текстов.</p>]
 			(*
@@ -683,11 +683,11 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_4140
+		.system_element_4589
 		(*
 			=> nrel_subdividing: {
-				.system_element_4141;
-				.system_element_4142
+				.system_element_4590;
+				.system_element_4591
 				(*
 					=> .system_element_372: [<p>Знаковые конструкции такого языка состоят <u>только</u> из знаков.</p>]
 					(*
@@ -699,13 +699,13 @@
 		*)
 	};;
 
-	.system_element_3317
+	.system_element_3682
 	=> nrel_idtf: [<p>отношение, область определения которого включает в себя множество всевозможных языков</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	-> .system_element_4143
+	-> .system_element_4592
 	(*
 		=> .system_element_1120: [<p>бинарное отношение, связывающее язык и синтаксически правильную (правильно построенную) знаковую конструкцию данного языка.</p>];;
 		=> nrel_idtf: [<p>знаковая конструкция, принадлежащая заданному языку*</p>]
@@ -723,9 +723,9 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
-		<=> .system_element_4144;;
+		<=> .system_element_4593;;
 	*);
-	-> .system_element_4145
+	-> .system_element_4594
 	(*
 		=> nrel_idtf: [<p>знаковая конструкция, не содержащая синтаксических ошибок для заданного языка</p>]
 		(*
@@ -733,17 +733,17 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	-> .system_element_4146;
-	-> .system_element_4147
+	-> .system_element_4595;
+	-> .system_element_4596
 	(*
-		<=> .system_element_4148;;
-		=> nrel_inclusion: .system_element_4149;;
-		=> nrel_inclusion: .system_element_4150;;
+		<=> .system_element_4597;;
+		=> nrel_inclusion: .system_element_4598;;
+		=> nrel_inclusion: .system_element_4599;;
 	*);
-	-> .system_element_4151
+	-> .system_element_4600
 	(*
 		=> nrel_idtf: [<p>семантически правильный текст заданного языка*</p>];;
-		<=> .system_element_4152;;
+		<=> .system_element_4601;;
 		=> nrel_idtf: [<p>истинный текст заданного языка*</p>]
 		(*
 			<- lang_ru;;
@@ -755,7 +755,7 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	-> .system_element_3328
+	-> .system_element_3693
 	(*
 		=> nrel_idtf: [<p>текст заданного языка, не содержащий семантических ошибок, противоречащих признанным закономерностям и фактам*</p>]
 		(*
@@ -763,7 +763,7 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	-> .system_element_3329
+	-> .system_element_3694
 	(*
 		=> nrel_idtf: [<p>текст заданного языка, содержащий достаточную информацию для установления его истинности*</p>]
 		(*
@@ -771,11 +771,11 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	-> .system_element_4153
+	-> .system_element_4602
 	(*
-		<=> .system_element_4154;;
-		=> nrel_inclusion: .system_element_4155;;
-		=> nrel_inclusion: .system_element_4156;;
+		<=> .system_element_4603;;
+		=> nrel_inclusion: .system_element_4604;;
+		=> nrel_inclusion: .system_element_4605;;
 	*);
 	-> .system_element_361
 	(*
@@ -786,7 +786,7 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	-> .system_element_4157
+	-> .system_element_4606
 	(*
 		=> nrel_idtf: [<p>семейство классов синтаксически эквивалентных ограничителей, входящих в состав заданной информационной конструкции или в состав информационных конструкций заданного языка*</p>]
 		(*
@@ -794,7 +794,7 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	-> .system_element_4158
+	-> .system_element_4607
 	(*
 		=> nrel_idtf: [<p>быть теорией правильно построенных информационных конструкций, принадлежащих заданному языку*</p>];;
 		=> nrel_idtf: [<p>определение понятия правильно построенной информационной конструкции заданного языка*</p>]
@@ -822,22 +822,22 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
-		=> nrel_second_domain: .system_element_4068;;
+		=> nrel_second_domain: .system_element_4517;;
 	*);
-	-> .system_element_4159
+	-> .system_element_4608
 	(*
 		=> nrel_idtf: [<p>описание синтаксически выделяемых классов фрагментов конструкций заданного языка*</p>];;
-		=> nrel_second_domain: .system_element_4160
+		=> nrel_second_domain: .system_element_4609
 		(*
-			<= .system_element_4161: .system_element_4068;;
+			<= .system_element_4610: .system_element_4517;;
 		*);;
 	*);
-	-> .system_element_4162
+	-> .system_element_4611
 	(*
 		=> nrel_idtf: [<p>синтаксические правила заданного языка*</p>];;
-		=> nrel_second_domain: .system_element_4163;;
+		=> nrel_second_domain: .system_element_4612;;
 	*);
-	-> .system_element_4164
+	-> .system_element_4613
 	(*
 		=> nrel_idtf: [<p>быть теорией морфизмов, связывающих правильно построенные информационные конструкции заданного языка с описываемыми конфигурациями описываемых сущностей*</p>];;
 		=> nrel_idtf: [<p>семантические правила заданного языка*</p>]
@@ -860,17 +860,17 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
-		=> nrel_second_domain: .system_element_4069;;
+		=> nrel_second_domain: .system_element_4518;;
 	*);
-	-> .system_element_4165
+	-> .system_element_4614
 	(*
-		=> nrel_second_domain: .system_element_4166;;
+		=> nrel_second_domain: .system_element_4615;;
 	*);
-	-> .system_element_4167
+	-> .system_element_4616
 	(*
-		=> nrel_second_domain: .system_element_4168;;
+		=> nrel_second_domain: .system_element_4617;;
 	*);
-	-> .system_element_3244
+	-> .system_element_3609
 	(*
 		=> nrel_idtf: [<p>быть семантически эквивалентными языками*</p>];;
 		=> .system_element_1120: [<p>Язык <b>Li</b> и язык <b>Lj</b> будем считать <i>семантически эквивалентными языками*</i> в том и только в том случае, если для каждого текста, принадлежащего языку <b>Li</b>, существует <i>семантически эквивалентный текст*</i>, принадлежащий языку <b>Lj</b>. Обратное утверждение также является верным.</p>]
@@ -879,16 +879,16 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	-> .system_element_4169
+	-> .system_element_4618
 	(*
-		<=> .system_element_1049: .system_element_4170;;
+		<=> .system_element_1049: .system_element_4619;;
 		=> .system_element_1120: [<p>Язык <b>Lj</b> будем считать <i>семантическим расширением*</i> языка <b>Li</b> в том и только в том случае, есть ли для каждого текста, принадлежащего языку <b>Li</b>, существует <i>семантически эквивалентный текст*</i>, принадлежащий языку <b>Lj</b>. Обратное утверждение не является верным.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	-> .system_element_3243
+	-> .system_element_3608
 	(*
 		=> nrel_idtf: [<p>быть семантически эквивалентным надмножеством заданного языка*</p>];;
 		=> .system_element_1120: [<p>Язык <b>Lj</b> будем считать <i>синтаксическим расширением*</i> языка <b>Li</b> в том и только в том случае, если:
@@ -901,7 +901,7 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	-> .system_element_4171
+	-> .system_element_4620
 	(*
 		=> nrel_idtf: [<p>быть синтаксическим ядром заданного языка*</p>];;
 		=> nrel_idtf: [<p>быть семантически эквивалентным подмножеством заданного языка, имеющим минимальную синтаксическую сложность*</p>]
@@ -910,7 +910,7 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	-> .system_element_4172
+	-> .system_element_4621
 	(*
 		=> nrel_idtf: [<p>быть правилом трансформации информационных конструкций, принадлежащих заданному языку, которое описывает одно из направлений перехода от множества конструкций ядра этого языка ко множеству всех принадлежащих ему информационных конструкций*</p>]
 		(*
@@ -918,10 +918,10 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	-> .system_element_4173
+	-> .system_element_4622
 	(*
 		=> nrel_idtf: [<p>бинарное ориентированное отношение, каждая пара которого связывает знак некоторого языка со множеством правил трансформации текстов этого языка*</p>];;
-		=> nrel_second_domain: .system_element_4070;;
+		=> nrel_second_domain: .system_element_4519;;
 	*);
 	-> .system_element_343
 	(*
@@ -932,7 +932,7 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	-> .system_element_4174
+	-> .system_element_4623
 	(*
 		=> nrel_idtf: [<p>быть внешним языком для заданной системы, основанной на обработке информации, или заданного множества таких систем*</p>];;
 		=> nrel_idtf: [<p>быть языком, используемым для обмена информацией заданной системы, основанной на обработке информации, или заданного множества таких систем с другими системами, основанными на обработке информации, (в том числе, и с себе подобными)*</p>]
@@ -943,7 +943,7 @@
 	*);
 	-> .system_element_577
 	(*
-		<=> .system_element_4175;;
+		<=> .system_element_4624;;
 		=> nrel_idtf: [<p>язык, используемый заданной системой, основанной на обработке информации или заданного множества таких систем*</p>]
 		(*
 			<- lang_ru;;
@@ -955,9 +955,9 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	-> .system_element_4176;;
+	-> .system_element_4625;;
 
-	.system_element_4080
+	.system_element_4529
 	=> nrel_idtf: [<p>признак классификации языков</p>]
 	(*
 		<- lang_ru;;
@@ -978,7 +978,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	-> .system_element_4177
+	-> .system_element_4626
 	(*
 		=> nrel_idtf: [<p>класс языков, семантически эквивалентных друг другу</p>];;
 		-> .system_element_1723
@@ -991,19 +991,19 @@
 			*);;
 		*);;
 	*);
-	-> .system_element_4178
+	-> .system_element_4627
 	(*
-		-> .system_element_4179;;
-		-> .system_element_4180;;
+		-> .system_element_4628;;
+		-> .system_element_4629;;
 	*);
-	-> .system_element_4181
+	-> .system_element_4630
 	(*
-		-> .system_element_4182;;
-		-> .system_element_4183;;
+		-> .system_element_4631;;
+		-> .system_element_4632;;
 	*);
-	-> .system_element_4184
+	-> .system_element_4633
 	(*
-		-> .system_element_4185
+		-> .system_element_4634
 		(*
 			=> nrel_explanation: [<p>В текстах такого языка знак каждой описываемой сущности входит <u>однократно</u>.</p>]
 			(*
@@ -1011,8 +1011,8 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);;
-		-> .system_element_4186;;
-		-> .system_element_4187
+		-> .system_element_4635;;
+		-> .system_element_4636
 		(*
 			=> nrel_idtf: [<p>язык, в рамках которого синонимичные знаки могут быть представлены синтаксически неэквивалентными фрагментами, но фрагментами, являющимися модификациями некоторого "ядра" этих фрагментов (при склонении и спряжении этих знаков).</p>]
 			(*
@@ -1020,11 +1020,11 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);;
-		-> .system_element_4188;;
+		-> .system_element_4637;;
 	*);
-	-> .system_element_4189
+	-> .system_element_4638
 	(*
-		-> .system_element_4190
+		-> .system_element_4639
 		(*
 			=> nrel_idtf: [<p>язык, в текстах которого присутствуют синтаксически эквивалентные, не синонимичные знаки</p>]
 			(*
@@ -1032,26 +1032,26 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);;
-		-> .system_element_4191;;
+		-> .system_element_4640;;
 	*);;
 
-	.system_element_4066
+	.system_element_4515
 	-> .system_element_1144
 	(*
-		<= nrel_second_domain: .system_element_4105;;
-		=> nrel_inclusion: .system_element_4192;;
-		=> nrel_inclusion: .system_element_4193;;
+		<= nrel_second_domain: .system_element_4554;;
+		=> nrel_inclusion: .system_element_4641;;
+		=> nrel_inclusion: .system_element_4642;;
 	*);
-	-> .system_element_4068;
-	-> .system_element_4160;
-	-> .system_element_4163;
-	-> .system_element_4069;
-	-> .system_element_4166;
-	-> .system_element_4168;
-	-> .system_element_4070;
+	-> .system_element_4517;
+	-> .system_element_4609;
+	-> .system_element_4612;
+	-> .system_element_4518;
+	-> .system_element_4615;
+	-> .system_element_4617;
+	-> .system_element_4519;
 	-> .system_element_1089
 	(*
-		<= nrel_second_domain: .system_element_4106;;
+		<= nrel_second_domain: .system_element_4555;;
 		=> nrel_idtf: [<p>смысловая информационная конструкция</p>]
 		(*
 			<- lang_ru;;
@@ -1078,13 +1078,13 @@
 			=> nrel_format: format_html;;
 		*);;
 		=> .system_element_180: {
-			.system_element_4085;
-			.system_element_4086;
+			.system_element_4534;
+			.system_element_4535;
 			.system_element_917
 		};;
 	*);;
 
-	.system_element_4067
+	.system_element_4516
 	=> nrel_idtf: [<p>язык, используемый ostis-системами</p>]
 	(*
 		<- lang_ru;;
@@ -1100,9 +1100,9 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<= nrel_inclusion: .system_element_4194;
+	<= nrel_inclusion: .system_element_4643;
 	<= nrel_inclusion: .system_element_1723;
-	<= .system_element_4176: ostis_system;
+	<= .system_element_4625: ostis_system;
 	-> .system_element_357
 	(*
 		<= .system_element_343: ostis_system;;
@@ -1121,7 +1121,7 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
-		<= .system_element_4174: ostis_system;;
+		<= .system_element_4623: ostis_system;;
 		<- .system_element_1723;;
 	*);
 	-> scs_code
@@ -1132,7 +1132,7 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
-		<= .system_element_4174: ostis_system;;
+		<= .system_element_4623: ostis_system;;
 		<- .system_element_1723;;
 	*);
 	-> .system_element_1116
@@ -1143,7 +1143,7 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
-		<= .system_element_4174: ostis_system;;
+		<= .system_element_4623: ostis_system;;
 		<- .system_element_1723;;
 	*);
 	=> nrel_explanation: <
@@ -1157,10 +1157,10 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 			=> .system_element_180: {
-				.system_element_3030;
-				.system_element_2459;
+				.system_element_3396;
+				.system_element_2457;
 				.system_element_230;
-				.system_element_3943
+				.system_element_3317
 			};;
 		*);
 		[<p>Для описания перечисленных <i>языков</i>, используемых <i>ostis-системами</i>, в каждом из них мы выделим <i>ядро языка*</i>, которое является <i>семантически эквивалентным языком*</i> для соответствующего языка и имеет минимальную синтаксическую сложность. Описание каждого из указанных языков строится как описание нескольких направлений синтаксического расширения выделенного <i>языка-ядра</i>.</p>]
@@ -1187,44 +1187,44 @@
 		=> nrel_format: format_html;;
 	*);
 	=> nrel_subdividing: {
-		.system_element_3521
+		.system_element_3885
 		(*
 			=> nrel_idtf: [<p>файл, хранимый в памяти ostis-системы</p>];;
 			=> nrel_subdividing: {
-				.system_element_4195;
-				.system_element_4196
+				.system_element_4644;
+				.system_element_4645
 			};;
 		*);
-		.system_element_4197
+		.system_element_4646
 	};
-	=> nrel_inclusion: .system_element_4198
+	=> nrel_inclusion: .system_element_4647
 	(*
-		=> nrel_inclusion: .system_element_4199
+		=> nrel_inclusion: .system_element_4648
 		(*
 			=> nrel_subdividing: {
-				.system_element_4200;
-				.system_element_4201
+				.system_element_4649;
+				.system_element_4650
 			};;
-			=> nrel_inclusion: .system_element_4202;;
-			=> nrel_inclusion: .system_element_4203;;
+			=> nrel_inclusion: .system_element_4651;;
+			=> nrel_inclusion: .system_element_4652;;
 		*);;
 	*);
-	=> nrel_inclusion: .system_element_4204;
-	=> nrel_inclusion: .system_element_3345;
-	=> nrel_inclusion: .system_element_3346;;
+	=> nrel_inclusion: .system_element_4653;
+	=> nrel_inclusion: .system_element_3710;
+	=> nrel_inclusion: .system_element_3711;;
 
-	.system_element_4205
+	.system_element_4654
 	=> .system_element_1120: [<p><b><i>файл ostis-системы</i></b> --- инородная для <i>sc-кода</i> <i>информационная конструкция</i>, которая может как храниться в памяти <i>ostis-системы</i>, так и вне ее.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
 	=> nrel_subdividing: {
-		.system_element_4206;
-		.system_element_4207
+		.system_element_4655;
+		.system_element_4656
 	};
 	=> nrel_subdividing: {
-		.system_element_3347
+		.system_element_3712
 		(*
 			=> nrel_idtf: [<p>обозначение одного из вхождений (однорго из экземпляров) информационной конструкции</p>]
 			(*
@@ -1232,7 +1232,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_4208
+		.system_element_4657
 		(*
 			=> nrel_idtf: [<p>обозначение всевозможнных <i>информационных конструкций</i>, каждая из которых эквивалентна той, что представлена содержимым данного sc-узла</p>]
 			(*
@@ -1241,21 +1241,21 @@
 			*);;
 		*)
 	};
-	=> nrel_inclusion: .system_element_3339
+	=> nrel_inclusion: .system_element_3704
 	(*
-		=> .system_element_180: .system_element_3153;;
+		=> .system_element_180: .system_element_3518;;
 	*);
-	=> nrel_inclusion: .system_element_3340
+	=> nrel_inclusion: .system_element_3705
 	(*
-		=> .system_element_180: .system_element_3848;;
+		=> .system_element_180: .system_element_4209;;
 	*);
-	=> nrel_inclusion: .system_element_3341
+	=> nrel_inclusion: .system_element_3706
 	(*
-		=> .system_element_180: .system_element_3213;;
+		=> .system_element_180: .system_element_3578;;
 	*);
-	=> nrel_inclusion: .system_element_4209
+	=> nrel_inclusion: .system_element_4658
 	(*
-		<= nrel_inclusion: .system_element_4199;;
+		<= nrel_inclusion: .system_element_4648;;
 		=> nrel_idtf: [<p>естественно-языковой файл, в котором выделены фрагменты, являющиеся sc-идентификаторами и, соответственно, ссылками на соответствующие им sc-элементы</p>]
 		(*
 			<- lang_ru;;
@@ -1263,7 +1263,7 @@
 		*);;
 	*);;
 
-	.system_element_3127
+	.system_element_3492
 	=> .system_element_1120: [<p><b><i>файл-образец</i></b> --- <i>файл</i>, объявленный как оригинал в рамках <i>экосистемы OSTIS</i>.</p>]
 	(*
 		<- lang_ru;;
@@ -1280,18 +1280,18 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4210
+	.system_element_4659
 	=> .system_element_1120: [<p><b><i>файл-копия</i></b> --- <i>файл</i>, являющийся <i>копией</i> соответствующего образца и <u>хранимый в одном месте</u>. <i>файл-копия</i> может быть <i>копией</i> как и <i>файла-класса</i>, так и <i>файла-экземпляра</i>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
 	=> nrel_subdividing: {
-		.system_element_4211;
-		.system_element_4212
+		.system_element_4660;
+		.system_element_4661
 	};;
 
-	.system_element_4205
+	.system_element_4654
 	=> nrel_note: [<p><i>файлом ostis-системы</i> может стать любой <i>файл</i> современной компьютерной системы.Некоторые <i>текстовые файлы</i> (в первую очередь <i>естественно-языковые файлы</i> --- тексты <i>естественных языков</i>) могут быть некоторым образом размечены путем указания связей размеченного <i>файла</i> с другими <i>файлами</i> <i>ostis-системы</i>, а также с различными <i>sc-элементами</i>.Так, например:
 
 	<ul>
@@ -1308,7 +1308,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4213
+	.system_element_4662
 	-> .system_element_1034
 	(*
 		=> nrel_idtf: [<p><i>бинарное ориентированное отношение</i>, любая пара которого связывает <i>естественно-языковой файл</i> с другим <i>файлом</i>, на который указанный <i>файл</i> ссылается. При этом (1) второй <i>файл</i> может быть не только <i>естественно-языковым файлом</i> (2) в тексте первого <i>файла</i> может быть явно указано место с которого ссылка осуществляется, (3) частным видом ссылки может быть <i>примечание</i>.</p>]
@@ -1318,14 +1318,14 @@
 		*);;
 	*);
 	-> .system_element_756;
-	-> .system_element_4214;
-	-> .system_element_4215;
-	-> .system_element_4216;
-	-> .system_element_4217;;
+	-> .system_element_4663;
+	-> .system_element_4664;
+	-> .system_element_4665;
+	-> .system_element_4666;;
 
 	.system_element_358
 	-> {
-		.system_element_4169
+		.system_element_4618
 		(*
 			=> nrel_idtf: [<p>расширение семантической мощности языка*</p>]
 			(*
@@ -1333,7 +1333,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_3243
+		.system_element_3608
 		(*
 			=> nrel_idtf: [<p>расширение синтаксиса языка при сохранении его семантической мощности*</p>]
 			(*
@@ -1343,8 +1343,8 @@
 		*)
 	};
 	-> {
-		.system_element_3243;
-		.system_element_4172
+		.system_element_3608;
+		.system_element_4621
 		(*
 			=> nrel_idtf: [<p>одно из (или группа) правил синтаксической трансформации текстов заданного языка, расширяющих множество синтаксически правильных текстов этого языка</p>];;
 			=> nrel_note: [<p>Таких направлений синтаксического расширения заданного языка может быть несколько.</p>]
@@ -1358,23 +1358,23 @@
 		...
 		(*
 			<=> .system_element_200: {
-				.system_element_4218;
-				.system_element_4219
+				.system_element_4667;
+				.system_element_4668
 			};;
 			<- .system_element_358;;
 		*);
 		...
 		(*
 			<=> .system_element_200: {
-				.system_element_4100;
-				.system_element_4220
+				.system_element_4549;
+				.system_element_4669
 			};;
 			<- .system_element_358;;
 		*);
 		...
 		(*
 			<=> .system_element_200: {
-				.system_element_4106;
+				.system_element_4555;
 				.system_element_1089
 				(*
 					=> nrel_idtf: [<p>смысловая информационная конструкция</p>]
@@ -1389,30 +1389,30 @@
 		...
 		(*
 			<=> .system_element_200: {
-				.system_element_4158;
-				.system_element_4068
+				.system_element_4607;
+				.system_element_4517
 			};;
 			<- .system_element_358;;
 		*);
 		...
 		(*
 			<=> .system_element_200: {
-				.system_element_4164;
-				.system_element_4069
+				.system_element_4613;
+				.system_element_4518
 			};;
 			<- .system_element_358;;
 		*);
 		...
 		(*
 			<=> .system_element_200: {
-				.system_element_4173;
-				.system_element_4070
+				.system_element_4622;
+				.system_element_4519
 			};;
 			<- .system_element_358;;
 		*)
 	};
 	-> {
-		.system_element_4221
+		.system_element_4670
 		(*
 			=> nrel_idtf: [<p>бинарное ориентированное отношение, каждая пара которого связывает фрагмент синтаксической структуры некоторой дискретной информационной конструкции (точнее, фрагмент смыслового представления этой синтаксической структуры) с элементом смыслового представления исходной дискретной информационной конструкции</p>]
 			(*
@@ -1420,7 +1420,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_4106
+		.system_element_4555
 		(*
 			=> nrel_idtf: [<p>смысловое представление дискретной информационной конструкции*</p>]
 			(*
@@ -1428,10 +1428,10 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_4069
+		.system_element_4518
 	};
 	-> {
-		.system_element_4222
+		.system_element_4671
 		(*
 			=> nrel_idtf: [<p>трансформация информационной конструкции</p>];;
 			=> nrel_idtf: [<p>действие по преобразованию (обработке, трансформации) информационной конструкции</p>]
@@ -1441,8 +1441,8 @@
 			*);;
 			<= nrel_inclusion: question;;
 		*);
-		.system_element_4223;
-		.system_element_4224
+		.system_element_4672;
+		.system_element_4673
 		(*
 			=> nrel_idtf: [<p>обобщенная спецификация класса однотипных информационных трансформаций, описывающая обобщенное условие выполнения произвольной трансформации указанного класса, ее результат и соответствие между условием и реультатом</p>]
 			(*
@@ -1450,7 +1450,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_4225
+		.system_element_4674
 		(*
 			=> nrel_idtf: [<p>обобщенная декомпозиция произвольной информационной трансформации заданного класса на систему взаимосвязанных трансформаций более низкого уровня</p>]
 			(*
@@ -1458,27 +1458,27 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_4226
+		.system_element_4675
 	};;
 
 	.system_element_358
 	-> {
-		.system_element_3267;
-		.system_element_4227;
-		.system_element_4228;
-		.system_element_4229
+		.system_element_3632;
+		.system_element_4676;
+		.system_element_4677;
+		.system_element_4678
 	};;
 
 	.system_element_358
 	-> {
-		.system_element_4230;
-		.system_element_4231;
-		.system_element_4069
+		.system_element_4679;
+		.system_element_4680;
+		.system_element_4518
 	};;
 
 	.system_element_358
 	-> {
-		.system_element_4090
+		.system_element_4539
 		(*
 			=> nrel_idtf: [<p>синтаксис языка</p>];;
 			=> nrel_idtf: [<p>отношение, связывающее тексты некоторого языка и соответствующие тексты того же или другого языка, описывающие синтаксическую структуру этих текстов</p>]
@@ -1495,7 +1495,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_4232
+		.system_element_4681
 		(*
 			=> nrel_idtf: [<p>информационная конструкция, описывающая синтаксическую структуру текста некоторого языка</p>]
 			(*
@@ -1503,7 +1503,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_4233
+		.system_element_4682
 		(*
 			=> nrel_idtf: [<p>информационная конструкция, описывающая синтаксис некоторого языка и его свойства, включают правила построения синтаксически корректных конструкций данного языка</p>]
 			(*
@@ -1513,7 +1513,7 @@
 		*)
 	};;
 
-	.system_element_4067
+	.system_element_4516
 	=> nrel_note: [<p>Следует отличать:
 
 	<ul>
@@ -1569,7 +1569,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3855
+	.system_element_4216
 	=> nrel_idtf: [<p>Отношение, связывающее заданный класс информационных конструкций с соответствующим классом их ограничителей</p>]
 	(*
 		<- lang_ru;;
@@ -1581,39 +1581,39 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4071
-	=> nrel_inclusion: .system_element_4234;
-	=> nrel_inclusion: .system_element_3854;
-	=> nrel_inclusion: .system_element_4235;
-	=> nrel_inclusion: .system_element_4236;;
+	.system_element_4520
+	=> nrel_inclusion: .system_element_4683;
+	=> nrel_inclusion: .system_element_4215;
+	=> nrel_inclusion: .system_element_4684;
+	=> nrel_inclusion: .system_element_4685;;
 
 	scg_code
-	=> .system_element_3855: .system_element_4234;
+	=> .system_element_4216: .system_element_4683;
 	=> nrel_idtf: [<p>Множество ограничителей, используемых в sc.g-текстах</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3853
+	.system_element_4214
 	=> nrel_idtf: [<p>быть разделителями, используемыми в заданном множестве информационных конструкций*</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> nrel_second_domain: .system_element_2846
+	=> nrel_second_domain: .system_element_3095
 	(*
-		=> nrel_inclusion: .system_element_4237
+		=> nrel_inclusion: .system_element_4686
 		(*
-			<=> .system_element_3167;;
+			<=> .system_element_3532;;
 		*);;
 		=> nrel_inclusion: scs_divider;;
-		=> nrel_inclusion: .system_element_4238;;
-		=> nrel_inclusion: .system_element_4239;;
+		=> nrel_inclusion: .system_element_4687;;
+		=> nrel_inclusion: .system_element_4688;;
 	*);;
 
 	sc_identifier
-	=> nrel_inclusion: .system_element_4240;
+	=> nrel_inclusion: .system_element_4689;
 	=> nrel_idtf: [<p>cтруктурированный знак соответствующей (обозначаемой) сущности, который чаще всего представляет собой строку (цепочку символов), которую будем называть именем соответствующей сущности.</p>]
 	(*
 		<- lang_ru;;
@@ -1645,7 +1645,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_4241
+		.system_element_4690
 		(*
 			=> nrel_idtf: [<p>класс идентификаторов, имеющих одинаковую структуру</p>];;
 			=> nrel_idtf: [<p>Семейство всевозможных множеств, каждое из которых является максимальным множеством синтаксически эквивалентных идентификаторов</p>]
@@ -1656,7 +1656,7 @@
 		*)
 	};;
 
-	.system_element_4072
+	.system_element_4521
 	<= nrel_inclusion: sc_identifier;
 	=> nrel_idtf: [<p>строковый идентификатор</p>]
 	(*
@@ -1669,7 +1669,7 @@
 		=> nrel_format: format_html;;
 	*);
 	=> nrel_subdividing: {
-		.system_element_4242
+		.system_element_4691
 		(*
 			=> nrel_idtf: [<p>атомарное имя</p>];;
 			=> nrel_idtf: [<p>имя, в состав которого другие имена не входят</p>]
@@ -1687,9 +1687,9 @@
 			*);;
 		*)
 	};
-	=> nrel_inclusion: .system_element_4240;;
+	=> nrel_inclusion: .system_element_4689;;
 
-	.system_element_4083
+	.system_element_4532
 	<- relation;
 	=> nrel_idtf: [<p>бинарное ориентированное отношение, каждая связка (sc-дуга) которого связывает некоторый элемент с файлом, содержимым которого является внешний идентификатор (чаще всего, имя), соответствующий указанному элементу</p>]
 	(*
@@ -1715,9 +1715,9 @@
 
 	.system_element_358
 	-> {
-		.system_element_4243;
-		.system_element_4244;
-		.system_element_4245
+		.system_element_4692;
+		.system_element_4693;
+		.system_element_4694
 		(*
 			=> nrel_idtf: [<p>простое имя файла ostis-системы</p>]
 			(*
@@ -1725,15 +1725,15 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_4246;
-		.system_element_4247;
-		.system_element_4248
+		.system_element_4695;
+		.system_element_4696;
+		.system_element_4697
 	};;
 
 	.system_element_358
 	-> {
-		.system_element_3347;
-		.system_element_4208
+		.system_element_3712;
+		.system_element_4657
 		(*
 			=> nrel_idtf: [<p>файл, обозначающий класс файлов-экземпляров, синтаксически эквивалентных заданному образцу</p>]
 			(*
@@ -1743,15 +1743,15 @@
 		*)
 	};;
 
-	.system_element_3856
+	.system_element_4217
 	=> nrel_idtf: [<p>быть множеством всех предложений заданного текста, не являющихся встроенными предложениями, то есть предложениями, входящими в состав других предложений*</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> nrel_second_domain: .system_element_4073;;
+	=> nrel_second_domain: .system_element_4522;;
 
-	.system_element_4073
+	.system_element_4522
 	=> nrel_explanation: [<p>минимальный семантически целостный фрагмент текста, представляющий собой конфигурацию знаков, входящих в этот фрагмент и связываемых между собой отношениями инцидентности (в частности, отношением непосредственной последовательности в строке), а также различного вида разделителями и ограничителями</p>]
 	(*
 		<- lang_ru;;
@@ -1765,7 +1765,7 @@
 		=> nrel_format: format_html;;
 	*);
 	=> nrel_subdividing: {
-		.system_element_4249
+		.system_element_4698
 		(*
 			=> nrel_idtf: [<p>sc.g-текст, который семантически эквивалентен <u>связному</u> sc-тексту</p>]
 			(*
@@ -1773,21 +1773,21 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_4250
+		.system_element_4699
 	};
 	=> nrel_subdividing: {
-		.system_element_4251;
-		.system_element_4252
+		.system_element_4700;
+		.system_element_4701
 	};;
 
-	.system_element_3239
+	.system_element_3604
 	=> nrel_idtf: [<p>текст SCs-кода</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
 	=> nrel_subdividing: {
-		.system_element_4253
+		.system_element_4702
 		(*
 			=> nrel_idtf: [<p>sc.s-текст, который семантически эквивалентен <u>связному</u> sc-тексту</p>]
 			(*
@@ -1795,21 +1795,21 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_4254
+		.system_element_4703
 	};
 	=> nrel_subdividing: {
-		.system_element_4255;
-		.system_element_4256
+		.system_element_4704;
+		.system_element_4705
 	};;
 
-	.system_element_3230
+	.system_element_3595
 	=> nrel_idtf: [<p>текст SCn-кода</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
 	=> nrel_subdividing: {
-		.system_element_4257
+		.system_element_4706
 		(*
 			=> nrel_idtf: [<p>sc.n-текст, который семантически эквивалентен <u>связному</u> sc-тексту</p>]
 			(*
@@ -1817,27 +1817,27 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_4258
+		.system_element_4707
 	};
 	=> nrel_subdividing: {
-		.system_element_4259;
-		.system_element_4260
+		.system_element_4708;
+		.system_element_4709
 	};;
 
 	.system_element_358
 	-> {
-		.system_element_3267;
-		.system_element_4227;
-		.system_element_4228;
-		.system_element_4229
+		.system_element_3632;
+		.system_element_4676;
+		.system_element_4677;
+		.system_element_4678
 	};
 	-> {
-		.system_element_4230;
-		.system_element_4231;
-		.system_element_4069
+		.system_element_4679;
+		.system_element_4680;
+		.system_element_4518
 	};
 	-> {
-		.system_element_4090
+		.system_element_4539
 		(*
 			=> nrel_idtf: [<p>синтаксис языка</p>];;
 			=> nrel_idtf: [<p>отношение, связывающее тексты некоторого языка и соответствующие тексты того же или другого языка, описывающие синтаксическую структуру этих текстов</p>]
@@ -1854,7 +1854,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_4261
+		.system_element_4710
 		(*
 			=> nrel_idtf: [<p>информационная конструкция, описывающая синтаксическую структуру текста некоторого языка</p>]
 			(*
@@ -1862,7 +1862,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_4233
+		.system_element_4682
 		(*
 			=> nrel_idtf: [<p>информационная конструкция, описывающая синтаксис некоторого языка и его свойства, включая правила построения синтаксически корректных конструкций данного языка</p>]
 			(*

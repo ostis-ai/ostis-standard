@@ -1,60 +1,60 @@
 .system_element_230
 => nrel_inclusion: [*
 	=> nrel_authors: {
-		.system_element_3842;
-		.system_element_3843
+		.system_element_4203;
+		.system_element_4204
 	};
 	<= .system_element_116: <
-		.system_element_3387;
-		.system_element_3392;
-		.system_element_3240;
-		.system_element_3390;
-		.system_element_3844;
-		.system_element_3641;
-		.system_element_3811;
-		.system_element_3680
+		.system_element_3752;
+		.system_element_3757;
+		.system_element_3605;
+		.system_element_3755;
+		.system_element_4205;
+		.system_element_4005;
+		.system_element_4175;
+		.system_element_4044
 	>;
 	=> .system_element_1: 
 		sc_element;
-		.system_element_3464;
-		.system_element_3465;
-		.system_element_3466;
-		.system_element_3467;
-		.system_element_3542;
+		.system_element_3829;
+		.system_element_3830;
+		.system_element_3831;
+		.system_element_3832;
+		.system_element_3906;
 		sc_constant;
 		sc_variable;
-		.system_element_3404;
-		.system_element_3429;
-		.system_element_3413;
-		.system_element_2680;
-		.system_element_3435
+		.system_element_3769;
+		.system_element_3794;
+		.system_element_3778;
+		.system_element_2934;
+		.system_element_3800
 	;
 	=> .system_element_761: 
-		.system_element_3828
+		.system_element_4190
 	;
 	=> .system_element_14: 
-		.system_element_3845;
+		.system_element_4206;
 		.system_element_98;
 		.system_element_93;
-		.system_element_3792;
-		.system_element_3793;
-		.system_element_3846;
-		.system_element_3794;
-		.system_element_3796;
-		.system_element_3795;
-		.system_element_3799;
-		.system_element_3798;
-		.system_element_3797;
-		.system_element_3800;
-		.system_element_3801;
-		.system_element_3802;
-		.system_element_3803;
-		.system_element_3804;
-		.system_element_3805;
-		.system_element_3806;
-		.system_element_3807;
-		.system_element_3810;
-		.system_element_3809
+		.system_element_4156;
+		.system_element_4157;
+		.system_element_4207;
+		.system_element_4158;
+		.system_element_4160;
+		.system_element_4159;
+		.system_element_4163;
+		.system_element_4162;
+		.system_element_4161;
+		.system_element_4164;
+		.system_element_4165;
+		.system_element_4166;
+		.system_element_4167;
+		.system_element_4168;
+		.system_element_4169;
+		.system_element_4170;
+		.system_element_4171;
+		.system_element_4174;
+		.system_element_4173
 	;
 	=> nrel_introduction: <
 		[<p>Поскольку все элементы <i>информационных конструкций</i> являются обозначениями описываемых сущностей и, в том числе, обозначениями различных выделяемых классов <i>sc-элементов</i>, можно явно ввести различные семантически значимые и синтаксически выделяемые классы <i>sc-элементов</i> и на основе этого явно описать средствами <i>SC-кода</i> <i>Базовую денотационную семантику</i> и <i>Синтаксис SC-кода</i>.</p>]
@@ -62,8 +62,8 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 			=> .system_element_180: {
-				.system_element_3420;
-				.system_element_3393
+				.system_element_3785;
+				.system_element_3758
 			};;
 		*);
 		[<p><i>Синтаксис SC-кода</i> задается семейством классов синтаксический выделяемых <i>sc-элементов</i>. Элементы, принадлежащие каждому синтаксически выделяемому классу <i>sc-элементов</i> должны иметь одинаковые синтаксические признаки (синтаксические метки). При этом очевидно, что <i>Синтаксис SC-кода</i> существенно упростится, если синтаксически выделяемые классы sс-элементов будут одновременно иметь и четкую семантическую интерпретацию.</p>]
@@ -135,15 +135,15 @@
 			(*
 				<- lang_ru;;
 				=> nrel_format: format_html;;
-				=> .system_element_180: .system_element_3845;;
+				=> .system_element_180: .system_element_4206;;
 			*);;
 		*)
 	>;
-	=> .system_element_252: .system_element_3847;;
+	=> .system_element_252: .system_element_4208;;
 
-	.system_element_3847
+	.system_element_4208
 	<=> .system_element_200: {
-		.system_element_3404
+		.system_element_3769
 		(*
 			=> nrel_idtf: [<p><i>sc-конструкция</i></p>];;
 			=> nrel_idtf: [<p>информационная конструкция, принадлежащая <i>SC-коду</i></p>]
@@ -151,15 +151,15 @@
 				<- lang_ru;;
 				=> nrel_format: format_html;;
 			*);;
-			=> nrel_inclusion: .system_element_2680
+			=> nrel_inclusion: .system_element_2934
 			(*
-				=> nrel_inclusion: .system_element_3087
+				=> nrel_inclusion: .system_element_3452
 				(*
 					=> .system_element_269: [<p><i>SC-код</i></p>]
 					(*
 						<- lang_ru;;
 						=> nrel_format: format_html;;
-						<- .system_element_2166;;
+						<- .system_element_2164;;
 					*);;
 					=> nrel_idtf: [<p>синтаксически целостная и синтаксически корректная (правильно построенная) информационная конструкция SC-кода</p>]
 					(*
@@ -171,7 +171,7 @@
 						<- lang_ru;;
 						=> nrel_format: format_html;;
 					*);;
-					=> nrel_inclusion: .system_element_3405
+					=> nrel_inclusion: .system_element_3770
 					(*
 						=> nrel_idtf: [<p>семантически целостный и семантически корректный <i>sc-текст</i>, являющийся адекватным фрагментом соответствующей <i>предметной области</i> или ее спецификации (онтологии)</p>]
 						(*

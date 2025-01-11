@@ -1,7 +1,7 @@
-.system_element_4428
+.system_element_2723
 => nrel_inclusion: [*
 
-	.system_element_4429
+	.system_element_4897
 	=> nrel_idtf: [<p>Предметная область темпоральных связей и отношений</p>]
 	(*
 		<- lang_ru;;
@@ -33,14 +33,14 @@
 		partial_situational_set;
 		temporal_connection;
 		temporal_relation;
-		.system_element_2683;
-		.system_element_2684;
-		.system_element_4430;
+		.system_element_2937;
+		.system_element_2938;
+		.system_element_4898;
 		millennium;
 		century;
 		year;
 		month;
-		.system_element_4431;
+		.system_element_4899;
 		hour;
 		minute;
 		second
@@ -71,7 +71,7 @@
 		rrel_number_of_century;
 		rrel_number_of_year;
 		rrel_number_of_month_in_year;
-		.system_element_4432;
+		.system_element_4900;
 		rrel_number_of_hour_in_day;
 		rrel_number_of_minute_in_hour;
 		rrel_number_of_second_in_minute
@@ -110,7 +110,7 @@
 	};
 	=> nrel_subdividing: {
 		temporary_connection;
-		.system_element_4433
+		.system_element_4901
 		(*
 			=> nrel_idtf: [<p>структура, содержащая хотя бы одну временную сущность</p>];;
 			=> nrel_inclusion: structure;;
@@ -152,10 +152,10 @@
 		material_entity
 	};
 	=> nrel_subdividing: {
-		.system_element_4434
+		.system_element_4902
 		(*
 			=> nrel_subdividing: {
-				.system_element_4435
+				.system_element_4903
 				(*
 					=> nrel_idtf: [<p>атомарная временная сущность</p>];;
 					=> nrel_idtf: [<p>условно мгновенная временная сущность</p>]
@@ -169,10 +169,10 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);
-				.system_element_4436
+				.system_element_4904
 			};;
 		*);
-		.system_element_4437
+		.system_element_4905
 		(*
 			=> nrel_idtf: [<p>временная сущность, которая может быть декомпозирована на последовательность точечных временных сущностей</p>];;
 			=> nrel_idtf: [<p>временная сущность, которой соответствует некоторый временной ряд параметров (состояний) точечных временных сущностей, на которые декомпозируется исходная временная сущность</p>]
@@ -181,7 +181,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_4438
+		.system_element_4906
 		(*
 			=> nrel_idtf: [<p>временная сущность, являющаяся результатом соединения нескольких не только точечных временных сущностей</p>];;
 			=> nrel_idtf: [<p>временная сущность с прерываниями</p>]
@@ -400,7 +400,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4439
+	.system_element_4907
 	=> nrel_idtf: [<p>начальная ситуация процесса*</p>]
 	(*
 		<- lang_ru;;
@@ -448,7 +448,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4419
+	.system_element_4889
 	=> nrel_idtf: [<p>атомарный процесс</p>]
 	(*
 		<- lang_ru;;
@@ -464,15 +464,15 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<= nrel_inclusion: .system_element_4435;;
+	<= nrel_inclusion: .system_element_4903;;
 
-	.system_element_4420
+	.system_element_4890
 	=> nrel_idtf: [<p>процесс, детализация которого на входящие в него подпроцессы в текущем контексте не производится</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> nrel_inclusion: .system_element_4419;
+	=> nrel_inclusion: .system_element_4889;
 	=> nrel_note: [<p>Элементарные процессы могут иметь длительность и, следовательно, не обязательно являются атомарными процессами.</p>]
 	(*
 		<- lang_ru;;
@@ -482,11 +482,11 @@
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
-		<= nrel_note: .system_element_4419;;
+		<= nrel_note: .system_element_4889;;
 	*);;
 
 	.system_element_911
-	<= nrel_inclusion: .system_element_4435;
+	<= nrel_inclusion: .system_element_4903;
 	=> nrel_idtf: [<p>точечная временная сущность, являющаяся началом и/или завершением какой-либо временной сущности (например, процесса)</p>]
 	(*
 		<- lang_ru;;
@@ -508,7 +508,7 @@
 		*);;
 	*);;
 
-	.system_element_4440
+	.system_element_4908
 	=> nrel_idtf: [<p>быть начальным событием заданной временной сущности*</p>]
 	(*
 		<- lang_ru;;
@@ -522,7 +522,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4441
+	.system_element_4909
 	=> nrel_idtf: [<p>конец*</p>]
 	(*
 		<- lang_ru;;
@@ -554,7 +554,7 @@
 		=> nrel_format: format_png;;
 	*);;
 
-	.system_element_4442
+	.system_element_4910
 	=> nrel_idtf: [<p>бинарное ориентированное отношение, каждая связка которого связывает некоторый процесс с более детальным его описанием, что предполагает представление декомпозиции этого процесса на систему взаимосвязанных его подпроцессов (в том числе элементарных).</p>]
 	(*
 		<- lang_ru;;
@@ -662,7 +662,7 @@
 	-> nrel_temporal_inclusion;
 	-> nrel_temporal_union;
 	-> nrel_temporal_decomposition;
-	-> .system_element_4443;
+	-> .system_element_4911;
 	=> nrel_subdividing: {
 		nrel_temporal_adjacency;
 		nrel_temporal_sequence_with_gap;
@@ -695,7 +695,7 @@
 	=> nrel_inclusion: nrel_first_stage;
 	=> nrel_inclusion: nrel_final_stage;
 	=> nrel_inclusion: nrel_intermediate_stage;
-	=> nrel_inclusion: .system_element_4444
+	=> nrel_inclusion: .system_element_4912
 	(*
 		=> nrel_first_domain: process;;
 		=> nrel_second_domain: process;;
@@ -720,7 +720,7 @@
 	-> {
 		nrel_temporal_part
 		(*
-			=> nrel_inclusion: .system_element_4444;;
+			=> nrel_inclusion: .system_element_4912;;
 		*);
 		nrel_temporal_inclusion
 		(*
@@ -787,7 +787,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<=> .system_element_740: .system_element_4445;
+	<=> .system_element_740: .system_element_4913;
 	=> nrel_note: [<p>С формальной точки зрения объединять можно любые временные сущности. Но делать это надо только тогда, когда это имеет смысл, точно так же, как и в случае объединения множеств.</p>]
 	(*
 		<- lang_ru;;
@@ -883,7 +883,7 @@
 		=> nrel_format: format_png;;
 	*);;
 
-	.system_element_2683
+	.system_element_2937
 	=> nrel_idtf: [<p>одновременность начинаний^</p>]
 	(*
 		<- lang_ru;;
@@ -911,7 +911,7 @@
 		*);;
 	*);;
 
-	.system_element_2684
+	.system_element_2938
 	=> nrel_idtf: [<p>конец^</p>]
 	(*
 		<- lang_ru;;
@@ -944,7 +944,7 @@
 		*);;
 	*);;
 
-	.system_element_4446
+	.system_element_4914
 	=> nrel_idtf: [<p>параметр, значениями (элементами) которого являются классы либо одновременно существующих (происходящих) <i>точечных временных сущностей</i>, одновременность которых рассматривается с заданной степенью точности, либо одновременно начинающихся и заканчивающихся длительных процессов</p>]
 	(*
 		<- lang_ru;;
@@ -966,7 +966,7 @@
 		*);;
 	*);;
 
-	.system_element_2962
+	.system_element_3329
 	=> .system_element_253: "file://images/sd_temp_entities/temporal_values_join.png"
 	(*
 		<- concept_file;;
@@ -984,7 +984,7 @@
 		(*
 			<- equivalence_relation;;
 		*);
-		.system_element_4446
+		.system_element_4914
 		(*
 			=> nrel_idtf: [<p>фактор-множество для отношения темпоральное совпадение*</p>]
 			(*
@@ -994,7 +994,7 @@
 		*)
 	};;
 
-	.system_element_4430
+	.system_element_4898
 	=> nrel_idtf: [<p>класс временных сущностей, имеющих одинаковую длительность^</p>]
 	(*
 		<- lang_ru;;

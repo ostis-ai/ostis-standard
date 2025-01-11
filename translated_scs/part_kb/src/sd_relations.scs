@@ -1,7 +1,7 @@
-.system_element_4421
+.system_element_2716
 => nrel_inclusion: [*
 
-	.system_element_4422
+	.system_element_4891
 	<- subject_domain;
 	-> .system_element_1835: 
 		sheaf
@@ -15,7 +15,7 @@
 		oriented_sheaf;
 		relation;
 		class_of_equipotent_sheaves;
-		.system_element_4290;
+		.system_element_4739;
 		unary_relation;
 		binary_relation;
 		quasybinary_relation;
@@ -152,7 +152,7 @@
 	*);;
 
 	oriented_sheaf
-	=> nrel_inclusion: .system_element_4055;
+	=> nrel_inclusion: .system_element_4505;
 	=> nrel_explanation: [<p><b><i>ориентированная связь</i></b> --- связь, в которой с помощью ролевых отношений, указываются роли компонентов этой связи.</p>]
 	(*
 		<- lang_ru;;
@@ -192,7 +192,7 @@
 	*);
 	=> nrel_subdividing: {
 		class_of_equipotent_sheaves;
-		.system_element_4290
+		.system_element_4739
 	};
 	=> nrel_subdividing: {
 		binary_relation;
@@ -227,7 +227,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4290
+	.system_element_4739
 	=> nrel_idtf: [<p>отношение нефиксированной арности</p>]
 	(*
 		<- lang_ru;;
@@ -307,7 +307,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_4423: [<p>В область определения квазибинарного отношения будем включать:
+	=> .system_element_4892: [<p>В область определения квазибинарного отношения будем включать:
 	<ul>
 		<li> вторые компоненты ориентированных пар, принадлежащих этому отношению;
 		<li> элементы первых компонентов ориентированных пар, принадлежащих этому отношению;
@@ -419,7 +419,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4424
+	.system_element_4893
 	<- binary_relation;
 	=> .system_element_1120: [<p><b><i>связанное отношение* R</i></b> на <i>множестве</i> <b><i>A</i></b> --- это <i>бинарное отношение</i>, в котором для каждой пары элементов <b><i>а</i></b> и <b><i>b</i></b> этого множества выполняется одно из двух отношений: <b><i>aRb</i></b> или <b><i>bRa</i></b>.</p>]
 	(*
@@ -506,7 +506,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_4286: [<p>В конце каждого <i>идентификатора</i>, соответствующего экземплярам класса <b><i>ролевое отношение</i></b>, не являющегося системным, ставится знак "'".Например:<i>ключевой экземпляр'</i>.Из-за ограничений в разрешенном алфавите символов, в системном идентификаторе не может быть использовать знак "'", поэтому в начале каждого <i>системного идентификатора</i>, соответствующего экземплярам класса <b><i>ролевое отношение</i></b> ставится префикс "rrel_".Например:<i>rrel_key_sc_element</i></p>]
+	=> .system_element_4735: [<p>В конце каждого <i>идентификатора</i>, соответствующего экземплярам класса <b><i>ролевое отношение</i></b>, не являющегося системным, ставится знак "'".Например:<i>ключевой экземпляр'</i>.Из-за ограничений в разрешенном алфавите символов, в системном идентификаторе не может быть использовать знак "'", поэтому в начале каждого <i>системного идентификатора</i>, соответствующего экземплярам класса <b><i>ролевое отношение</i></b> ставится префикс "rrel_".Например:<i>rrel_key_sc_element</i></p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
@@ -523,7 +523,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	-> .system_element_4425;
+	-> .system_element_4894;
 	=> nrel_explanation: [<p><b><i>числовой атрибут</i></b> --- <i>ролевое отношение</i>, задающее порядковый номер элемента некоторой ориентированной связки, не уточняя при этом семантику такой принадлежности. Во многих случаях бывает достаточно использовать числовые атрибуты, чтобы различать компоненты связки, семантика каждого из которых дополнительно оговаривается, например, при определении отношения, которому данная связка принадлежит.</p>]
 	(*
 		<- lang_ru;;
@@ -540,7 +540,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_4286: [<p>В конце каждого <i>идентификатора</i>, соответствующего экземплярам класса <b><i>неролевое отношение</i></b>, не являющегося системным, ставится знак "*".Например:<i>включение*</i>.Из-за ограничений в разрешенном алфавите символов, в системном идентификаторе не может быть использовать знак "*", поэтому в начале каждого <i>системного идентификатора</i>, соответствующего экземплярам класса <b><i>неролевое отношение</i></b> ставится префикс "nrel_".Например:<i>nrel_inclusion</i></p>]
+	=> .system_element_4735: [<p>В конце каждого <i>идентификатора</i>, соответствующего экземплярам класса <b><i>неролевое отношение</i></b>, не являющегося системным, ставится знак "*".Например:<i>включение*</i>.Из-за ограничений в разрешенном алфавите символов, в системном идентификаторе не может быть использовать знак "*", поэтому в начале каждого <i>системного идентификатора</i>, соответствующего экземплярам класса <b><i>неролевое отношение</i></b> ставится префикс "nrel_".Например:<i>nrel_inclusion</i></p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
@@ -724,7 +724,7 @@
 		nrel_partial_mapping
 	};
 	=> nrel_subdividing: {
-		.system_element_4426;
+		.system_element_4895;
 		nrel_non_surjective_mapping
 	};
 	=> nrel_subdividing: {
@@ -863,7 +863,7 @@
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);
-	=> .system_element_3880: "file://images/sd_relations/surjection2.png"
+	=> .system_element_4241: "file://images/sd_relations/surjection2.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
@@ -885,7 +885,7 @@
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);
-	=> .system_element_3880: "file://images/sd_relations/partiallySurjection.png"
+	=> .system_element_4241: "file://images/sd_relations/partiallySurjection.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
@@ -912,7 +912,7 @@
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);
-	=> .system_element_3880: "file://images/sd_relations/surjectiveConformity2.png"
+	=> .system_element_4241: "file://images/sd_relations/surjectiveConformity2.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
@@ -934,7 +934,7 @@
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);
-	=> .system_element_3880: "file://images/sd_relations/nonSurjectiveConformity2.png"
+	=> .system_element_4241: "file://images/sd_relations/nonSurjectiveConformity2.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
@@ -966,7 +966,7 @@
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);
-	=> .system_element_3880: "file://images/sd_relations/singleConformity2.png"
+	=> .system_element_4241: "file://images/sd_relations/singleConformity2.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
@@ -1005,7 +1005,7 @@
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);
-	=> .system_element_3880: "file://images/sd_relations/nonSingleConformity2.png"
+	=> .system_element_4241: "file://images/sd_relations/nonSingleConformity2.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
@@ -1028,7 +1028,7 @@
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);
-	=> .system_element_3880: "file://images/sd_relations/injectiveConformity2.png"
+	=> .system_element_4241: "file://images/sd_relations/injectiveConformity2.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
@@ -1053,7 +1053,7 @@
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);
-	=> .system_element_3880: "file://images/sd_relations/bijectiveConformity2.png"
+	=> .system_element_4241: "file://images/sd_relations/bijectiveConformity2.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
@@ -1090,7 +1090,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_4427: [<p>Мощность <b><i>множества сочетаний*</i></b> может быть вычислена как <b>n!/(k!(n-k)!)</b>, где <b><i>n</i></b> --- мощность исходного множества, <b><i>k</i></b> --- мощность элементов множества сочетаний.</p>]
+	=> .system_element_4896: [<p>Мощность <b><i>множества сочетаний*</i></b> может быть вычислена как <b>n!/(k!(n-k)!)</b>, где <b><i>n</i></b> --- мощность исходного множества, <b><i>k</i></b> --- мощность элементов множества сочетаний.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
@@ -1112,7 +1112,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_4427: [<p>Мощность <b><i>множества размещений*</i></b> может быть вычислена как <b>n!/(n-k)!</b>, где <b><i>n</i></b> --- мощность исходного множества, <b><i>k</i></b> --- мощность элементов множества сочетаний.</p>]
+	=> .system_element_4896: [<p>Мощность <b><i>множества размещений*</i></b> может быть вычислена как <b>n!/(n-k)!</b>, где <b><i>n</i></b> --- мощность исходного множества, <b><i>k</i></b> --- мощность элементов множества сочетаний.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
@@ -1135,7 +1135,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_4427: [<p>Мощность <b><i>множества перестановок*</i></b> может быть вычислена как <b>n!</b>, где <b><i>n</i></b> --- мощность исходного множества.</p>]
+	=> .system_element_4896: [<p>Мощность <b><i>множества перестановок*</i></b> может быть вычислена как <b>n!</b>, где <b><i>n</i></b> --- мощность исходного множества.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;

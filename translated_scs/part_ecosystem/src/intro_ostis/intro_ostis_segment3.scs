@@ -1,5 +1,5 @@
 .intro_ostis_segment3 = [*
-.system_element_2164
+.system_element_2162
 => nrel_inclusion: [*
 
 	technology_OSTIS
@@ -44,7 +44,7 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
-		[<p><i>Технология OSTIS</i> реализуется в виде сети <i>ostis-систем</i>, которая является частью <i>Экосистемы OSTIS</i>.Ключевой <i>ostis-системой</i> указанной сети является <b><i>Метасистема IMS.ostis</i></b> (Intelligent MetaSystem for ostis-systems), реализующая <b><i>Ядро Технологии OSTIS</i></b>, которое включает в себя базовые (предметно независимые) методы и средства проектирования и производства <i>ostis-систем</i> с интеграцией в их состав типовых встроенных подсистем поддержки эксплуатации и реинжиниринга <i>ostis-систем</i>. Остальные <i>ostis-системы</i>, входящие в состав рассматриваемой сети, реализуют различные специализированные <i>ostis-технологии</i> проектирования различных классов <i>ostis-систем</i>, обеспечивающих автоматизацию любых областей и <i>видов человеческой деятельности</i>, кроме <i>проектирования ostis-систем</i>.</p>]
+		[<p><i>Технология OSTIS</i> реализуется в виде сети <i>ostis-систем</i>, которая является частью <i>Экосистемы OSTIS</i>.Ключевой <i>ostis-системой</i> указанной сети является <b><i>Метасистема OSTIS</i></b> (Intelligent MetaSystem for ostis-systems), реализующая <b><i>Ядро Технологии OSTIS</i></b>, которое включает в себя базовые (предметно независимые) методы и средства проектирования и производства <i>ostis-систем</i> с интеграцией в их состав типовых встроенных подсистем поддержки эксплуатации и реинжиниринга <i>ostis-систем</i>. Остальные <i>ostis-системы</i>, входящие в состав рассматриваемой сети, реализуют различные специализированные <i>ostis-технологии</i> проектирования различных классов <i>ostis-систем</i>, обеспечивающих автоматизацию любых областей и <i>видов человеческой деятельности</i>, кроме <i>проектирования ostis-систем</i>.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
@@ -62,7 +62,7 @@
 	};;
 *];;
 
-.system_element_2165
+.system_element_2163
 => nrel_inclusion: [*
 
 	ostis_system
@@ -75,7 +75,7 @@
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
-		<- .system_element_2166;;
+		<- .system_element_2164;;
 	*);
 	=> nrel_idtf: [<p>Множество всевозможных <i>интеллектуальных компьютерных систем</i>, построенных по <i>Технологии OSTIS</i></p>]
 	(*
@@ -93,8 +93,8 @@
 		.system_element_809
 		(*
 			=> nrel_subdividing: {
-				.system_element_2167;
-				.system_element_2168
+				.system_element_2165;
+				.system_element_2166
 			};;
 		*)
 	};
@@ -108,7 +108,7 @@
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
-			=> .system_element_756: .system_element_2169
+			=> .system_element_756: .system_element_2167
 			(*
 				=> nrel_idtf: [<p>смысл представленной информационной конструкции</p>];;
 				=> .system_element_196: <
@@ -238,22 +238,22 @@
 		*);;
 	*);;
 
-	.system_element_2170
+	.system_element_2168
 	<=> .system_element_200: {
-		.system_element_2171;
+		.system_element_2169;
 		ostis_system
 	};
-	=> .system_element_2173: .system_element_2172
+	=> .system_element_2171: .system_element_2170
 	(*
 		<= nrel_inclusion: .system_element_898;;
 	*);;
 
-	.system_element_2170
+	.system_element_2168
 	<=> .system_element_200: {
 		.system_element_974;
 		ostis_system
 	};
-	=> .system_element_2173: .system_element_802
+	=> .system_element_2171: .system_element_802
 	(*
 		<= nrel_inclusion: .system_element_1022;;
 	*);;
@@ -314,7 +314,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<= nrel_inclusion: .system_element_2174;
+	<= nrel_inclusion: .system_element_2172;
 	=> nrel_explanation: [<p>Семантическая сеть --- это знаковая конструкция, обладающая следующими свойствами:
 	<ul>
 		<li> внутренюю структуру (строение) знаков, входящих в семантическую сеть не требуется учитывать при ее семантическом анализе (понимании)
@@ -335,7 +335,7 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
-		=> .system_element_180: .system_element_2175;;
+		=> .system_element_180: .system_element_2173;;
 	*);;
 
 	.system_element_937
@@ -360,7 +360,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2171
+	.system_element_2169
 	=> nrel_idtf: [<p>внутренняя (информационная) среда кибернетической системы</p>]
 	(*
 		<- lang_ru;;
@@ -374,6 +374,10 @@
 
 	.system_element_937
 	=> nrel_subdividing: {
+		.system_element_2174;
+		.system_element_2175
+	};
+	=> nrel_subdividing: {
 		.system_element_2176;
 		.system_element_2177
 	};
@@ -384,10 +388,6 @@
 	=> nrel_subdividing: {
 		.system_element_2180;
 		.system_element_2181
-	};
-	=> nrel_subdividing: {
-		.system_element_2182;
-		.system_element_2183
 		(*
 			=> nrel_note: [<p>некоторые агенты такой системы могут работать только в памяти</p>]
 			(*
@@ -414,9 +414,9 @@
 		*);;
 	*);
 	<= nrel_intersection: {
+		.system_element_2177;
 		.system_element_2179;
-		.system_element_2181;
-		.system_element_2183
+		.system_element_2181
 	};;
 
 	.system_element_1266
@@ -442,7 +442,7 @@
 			=> nrel_format: format_html;;
 		*)
 	};
-	=> .system_element_1787: .system_element_2184
+	=> .system_element_1787: .system_element_2182
 	(*
 		=> nrel_idtf: [<p>Предлагаемое в рамках <i>Технологии OSTIS</i> уточнение понятия агентно-ориентированной модели обработки информации в памяти</p>]
 		(*
@@ -450,14 +450,14 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	=> nrel_inclusion: .system_element_2084;
+	=> nrel_inclusion: .system_element_2082;
 	=> nrel_note: [<p>Децентрализованное (агентно-ориентированное) управление процессом решения задач в ostis-системах реализуется как на внутреннем уровне (на уровне решателя задач ostis-системы), так и на внешнем уровне (на уровне взаимодействия между ostis-системами)</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2083
+	.system_element_2081
 	=> nrel_idtf: [<p>унификация <i>ostis-систем</i></p>]
 	(*
 		<- lang_ru;;
@@ -483,14 +483,14 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2084
+	.system_element_2082
 	=> nrel_idtf: [<p>Стандарт <i>агентно-ориентированной модели обработки информации в памяти ostis-системы</i></p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2185
+	.system_element_2183
 	=> nrel_idtf: [<p>унификация</p>]
 	(*
 		<- lang_ru;;
@@ -524,7 +524,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2186
+	.system_element_2184
 	=> .system_element_196: {
 		[<p>Вводится <u>универсальный</u> базовый язык внутреннего <u>смыслового</u> представления знаний в памяти <b>ostis-систем</b> (<b><i>SC-код</i></b>), по строению к которому все внутренние языки, ориентированные на представление знаний различного вида (логические языки, языки представления методов решения задач (в частности, программ), язык формулировки задач, онтологические языки и многие другие) являются подъязыками <b><i>SC-кода</i></b>, синтаксис которых полностью совпадает с синтаксисом <b><i>SC-кода</i></b>.</p>]
 		(*
@@ -538,7 +538,7 @@
 		*)
 	};;
 
-	.system_element_2187
+	.system_element_2185
 	=> .system_element_196: {
 		[<p>Синтаксис языка представления соответствующего класса методов решения задач в памяти --- синтаксис <b>SC-кода</b></p>]
 		(*
@@ -566,14 +566,14 @@
 		*)
 	};;
 
-	.system_element_2188
+	.system_element_2186
 	=> nrel_explanation: [<p>Интеграция знаний в памяти <i>ostis-систем</i> сводится к склеиванию (отождествлению) синонимичных знаков</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2189
+	.system_element_2187
 	=> nrel_explanation: [<p>Поскольку модель решения задач, используемая ostis-системой, представлена в памяти ostis-системы как соответствующий вид знаний, интеграция различных моделей решения задач может происходить в ostis-системе точно так же, как и интеграция любых других видов знаний. Кроме того, когда речь идет об интеграции различных моделей решения задач, имеется в виду возможность одновременного использования различных моделей решения задач при обработке одних и тех же знаний и, в частности, при решении одной и той же задачи. Такая возможность в ostis-системе обеспечивается <i>агентно-ориентированной моделью обработки информации</i> в памяти ostis-системы. Таким образом, такого рода интеграция различных моделей решения задач для ostis-систем является тривиальной.</p>]
 	(*
 		<- lang_ru;;
@@ -621,7 +621,7 @@
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
-			=> .system_element_2190: {
+			=> .system_element_2188: {
 				[<p>Существуют четкие формальные критерии, определяющие <i>уровень семантической совместимости</i> (уровень семантической конвергенции) различных знаний, навыков, целых <i>ostis-систем</i> (точнее, баз знаний этих систем). Очевидно, что <i>уровень семантической совместимости</i> прежде всего определяется количеством точек соприкосновения в сравниваемых <i>знаниях</i>, <i>навыках</i> и <i>базах знаний</i>  это <i>знаки</i>, присутствующие <u>в разных</u> сравниваемых объектах, но имеющие одинаковые денотаты (т.е. обозначающие одинаковые сущности). При этом среди таких знаков, обозначающих одинаковые сущности и присутствующих в разных сравниваемых объектах особенно важны знаки, обозначающие <i>понятия</i>.Количество таких общих понятий в сравниваемых знаниях, навыках, базах знаний определяет уровень семантической совместимости (уровень согласованности) систем используемых понятий в сравниваемых указанных объектах. Увеличение количества знаков, обозначающих одинаковые сущности и присутствующих в разных сравниваемых объектах, может привести к тому, что в разных указанных сравниваемых объектах будут присутствовать не только семантически эквивалентные знаки, но и семантически эквивалентные целые фрагменты (целые информационные конструкции).Существенно при этом подчеркнуть, что семантически эквивалентные знаковые конструкции, представленные на внутреннем языке ostis-систем (в SC-коде), в памяти разных ostis-систем всегда являются синтаксически изоморфными графовыми конструкциями, в которых соответствие изоморфизма связывает знаки, хранимые в памяти разных ostis-систем, но обозначающие одинаковые сущности (точнее, одну и ту же сущность). Заметим также, что в рамках памяти каждой индивидуальной <i>ostis-системы</i> синонимия знаков и, соответственно, семантическая эквивалентность знаковых конструкций запрещены.</p>]
 				(*
 					<- lang_ru;;
@@ -678,10 +678,10 @@
 	*);;
 *];;
 
-.system_element_2191
+.system_element_2189
 => nrel_inclusion: [*
 
-	.system_element_2026
+	.system_element_2024
 	=> nrel_idtf: [<p>Человеко-машинный симбиоз, представляющий собой коллектив, состоящий из людей и ostis-систем и обеспечивающий высокий уровень автоматизации определённого (соответствующего) вида человеческой деятельности.</p>]
 	(*
 		<- lang_ru;;
@@ -697,34 +697,50 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2192
+	.system_element_2190
 	-> {
-		.system_element_2026;
+		.system_element_2024;
 		.system_element_1643
 	}
 	(*
 		=> nrel_explanation: {
-			.system_element_2026
+			.system_element_2024
 			(*
-				=> nrel_inclusion: .system_element_2179;;
-				=> nrel_inclusion: .system_element_2193;;
-				=> nrel_inclusion: .system_element_2194;;
+				=> nrel_inclusion: .system_element_2177;;
+				=> nrel_inclusion: .system_element_2191;;
+				=> nrel_inclusion: .system_element_2192;;
 			*);
 			.system_element_1643
 			(*
-				=> nrel_inclusion: .system_element_2179;;
-				=> nrel_inclusion: .system_element_2193;;
-				=> nrel_inclusion: .system_element_2194;;
+				=> nrel_inclusion: .system_element_2177;;
+				=> nrel_inclusion: .system_element_2191;;
+				=> nrel_inclusion: .system_element_2192;;
 			*);
 			.system_element_1266
 		};;
 	*);;
 
-	.system_element_2181
-	=> .system_element_2195: 
+	.system_element_2179
+	=> .system_element_2193: 
+		.system_element_2194
+		(*
+			=> .system_element_2195: [<p>каждый участник оркестра должен иметь квалификацию дирижера или композитора</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);
 		.system_element_2196
 		(*
-			=> .system_element_2197: [<p>каждый участник оркестра должен иметь квалификацию дирижера или композитора</p>]
+			=> .system_element_2195: [<p>каждый участник строительной бригады должен иметь квалификацию прораба</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);
+		.system_element_2197
+		(*
+			=> .system_element_2195: [<p>каждый участник научно-исследовательской лаборатории должен иметь квалификацию заведующего или научного руководителя</p>]
 			(*
 				<- lang_ru;;
 				=> nrel_format: format_html;;
@@ -732,23 +748,7 @@
 		*);
 		.system_element_2198
 		(*
-			=> .system_element_2197: [<p>каждый участник строительной бригады должен иметь квалификацию прораба</p>]
-			(*
-				<- lang_ru;;
-				=> nrel_format: format_html;;
-			*);;
-		*);
-		.system_element_2199
-		(*
-			=> .system_element_2197: [<p>каждый участник научно-исследовательской лаборатории должен иметь квалификацию заведующего или научного руководителя</p>]
-			(*
-				<- lang_ru;;
-				=> nrel_format: format_html;;
-			*);;
-		*);
-		.system_element_2200
-		(*
-			=> .system_element_2197: [<p>каждый участник кафедры должен иметь квалификацию заведующего и ученого секретаря</p>]
+			=> .system_element_2195: [<p>каждый участник кафедры должен иметь квалификацию заведующего и ученого секретаря</p>]
 			(*
 				<- lang_ru;;
 				=> nrel_format: format_html;;
@@ -757,38 +757,38 @@
 	;;
 *];;
 
-.system_element_2201
+.system_element_2199
 => nrel_inclusion: [*
 
-	.system_element_2090
+	.system_element_2088
 	<= nrel_combination: {
-		.system_element_2091
+		.system_element_2089
 		(*
 			=> nrel_subdividing: {
+				.system_element_2200
+				(*
+					-> .system_element_2201;;
+				*);
 				.system_element_2202
 				(*
 					-> .system_element_2203;;
-				*);
-				.system_element_2204
-				(*
+					-> .system_element_2204;;
 					-> .system_element_2205;;
-					-> .system_element_2206;;
-					-> .system_element_2207;;
 				*);
-				.system_element_2208
+				.system_element_2206
 			};;
 		*);
-		.system_element_2092
+		.system_element_2090
 		(*
-			=> nrel_inclusion: .system_element_2209;;
-			=> nrel_inclusion: .system_element_2210;;
+			=> nrel_inclusion: .system_element_2207;;
+			=> nrel_inclusion: .system_element_2208;;
 		*);
-		.system_element_2093
+		.system_element_2091
 		(*
-			-> .system_element_2211;;
-			=> nrel_inclusion: .system_element_2212
+			-> .system_element_2209;;
+			=> nrel_inclusion: .system_element_2210
 			(*
-				=> nrel_inclusion: .system_element_2210
+				=> nrel_inclusion: .system_element_2208
 				(*
 					=> nrel_idtf: [<p>технология эксплуатации ostis-систем управления производством спроектированных продуктов заданного класса, не являющихся ostis-системами</p>]
 					(*
@@ -798,20 +798,20 @@
 				*);;
 			*);;
 		*);
-		.system_element_2094
+		.system_element_2092
 		(*
-			-> .system_element_2213;;
-			=> nrel_inclusion: .system_element_2214;;
+			-> .system_element_2211;;
+			=> nrel_inclusion: .system_element_2212;;
 		*)
 	};;
 
-	.system_element_2090
+	.system_element_2088
 	=> nrel_idtf: [<p>компонент Технологии OSTIS</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	-> .system_element_2215
+	-> .system_element_2213
 	(*
 		=> nrel_idtf: [<p>Базовая ostis-технология</p>]
 		(*
@@ -819,49 +819,49 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	=> nrel_inclusion: .system_element_2216
+	=> nrel_inclusion: .system_element_2214
 	(*
-		=> nrel_inclusion: .system_element_2204
+		=> nrel_inclusion: .system_element_2202
 		(*
+			-> .system_element_2215;;
+			-> .system_element_2216;;
 			-> .system_element_2217;;
 			-> .system_element_2218;;
 			-> .system_element_2219;;
-			-> .system_element_2220;;
-			-> .system_element_2221;;
 		*);;
 	*);
-	=> nrel_inclusion: .system_element_2222
+	=> nrel_inclusion: .system_element_2220
 	(*
+		-> .system_element_2221;;
+		-> .system_element_2222;;
 		-> .system_element_2223;;
 		-> .system_element_2224;;
 		-> .system_element_2225;;
 		-> .system_element_2226;;
-		-> .system_element_2227;;
-		-> .system_element_2228;;
 	*);;
 
-	.system_element_2091
+	.system_element_2089
 	=> nrel_note: [<p>Каждой ostis-технологии проектирования соответсвует своя ostis-система автоматизации проектирования соответствующего класса объектов</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
+	=> .system_element_2228: .system_element_2227;
 	=> .system_element_2230: .system_element_2229;
-	=> .system_element_2232: .system_element_2231;
-	=> nrel_inclusion: .system_element_2202;;
+	=> nrel_inclusion: .system_element_2200;;
 
-	.system_element_2202
+	.system_element_2200
 	=> nrel_idtf: [<p>технология проектирования <i>ostis-систем</i> соответствующего (заданного) класса, который, в свою очередь, соответствует определенному <i>виду человеческой деятельности</i>, подвиды которого автоматизируются с помощью указанных выше проектируемых <i>ostis-систем</i></p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2090
-	=> .system_element_2233: 
+	.system_element_2088
+	=> .system_element_2231: 
 		.system_element_1950;
-		.system_element_2234;
-		.system_element_2235
+		.system_element_2232;
+		.system_element_2233
 	;
 	=> nrel_explanation: [<p>Базовая частная или специализированная технология, входящая в состав комплексной <i>Технологии OSTIS</i>, которая:
 	<ul>
@@ -889,63 +889,63 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	=> .system_element_2195: 
-		.system_element_2236;
-		.system_element_2092;
-		.system_element_2237
+	=> .system_element_2193: 
+		.system_element_2234;
+		.system_element_2090;
+		.system_element_2235
 	;
 	-> .system_element_252: 
 		technology_OSTIS;
-		.system_element_2238;
-		.system_element_2239;
-		.system_element_2240
+		.system_element_2236;
+		.system_element_2237;
+		.system_element_2238
 	;;
 
-	.system_element_2241
+	.system_element_2239
+	=> nrel_inclusion: .system_element_2240;
+	=> nrel_inclusion: .system_element_2241;
 	=> nrel_inclusion: .system_element_2242;
-	=> nrel_inclusion: .system_element_2243;
-	=> nrel_inclusion: .system_element_2244;
-	<= nrel_inclusion: .system_element_2090;;
+	<= nrel_inclusion: .system_element_2088;;
 
-	.system_element_2245
+	.system_element_2243
 	=> nrel_idtf: [<p>Общие методы и средства (языковые и интерфейсные) организации взаимодействия ostis-систем со своими конечными пользователями</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<= nrel_inclusion: .system_element_2090;
+	<= nrel_inclusion: .system_element_2088;
 	=> nrel_note: [<p>Поскольку в рамках Экосистемы OSTIS каждому человеку придется взаимодействовать с больщим числом ostis-систем разного назначения, принципы организации взаимодействия всех ostis-систем со своими пользователями должны быть абсолютно одинаковыми. Удобство (usability) пользовательских интерфейсов должно быть направлено не только на синтаксическую красоту, но и на простую семантическую интерпретацию (понятность).</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2246
+	.system_element_2244
 	=> nrel_idtf: [<p>Технология построения (разработки) логико-семантических моделей (sc-моделей) ostis-систем</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<- .system_element_2090;
+	<- .system_element_2088;
 	=> nrel_note: [<p>Продуктом каждого завершенного (целостного) коллективного проекта, реализованного в рамках этой технологии, является полная <i>логико-семантическая модель ostis-системы</i>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_1817: .system_element_2247;
-	=> .system_element_2248: .system_element_758;
-	=> .system_element_2250: .system_element_2249;
-	=> .system_element_2252: .system_element_2251;;
+	=> .system_element_1817: .system_element_2245;
+	=> .system_element_2246: .system_element_758;
+	=> .system_element_2248: .system_element_2247;
+	=> .system_element_2250: .system_element_2249;;
 
-	.system_element_2253
+	.system_element_2251
 	=> nrel_idtf: [<p>Технология сборки и установки ostis-систем</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<- .system_element_2090;
-	=> .system_element_2254: .system_element_2247;
-	=> .system_element_2255: .system_element_1981
+	<- .system_element_2088;
+	=> .system_element_2252: .system_element_2245;
+	=> .system_element_2253: .system_element_1979
 	(*
 		=> nrel_note: [<p>Это, своего рода, мотор, движок ostis-систем</p>]
 		(*
@@ -953,22 +953,22 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	=> .system_element_2257: .system_element_2256;
-	=> .system_element_2258: .system_element_758;
-	=> .system_element_2259: ostis_system;;
+	=> .system_element_2255: .system_element_2254;
+	=> .system_element_2256: .system_element_758;
+	=> .system_element_2257: ostis_system;;
 
-	.system_element_2260
+	.system_element_2258
 	=> nrel_idtf: [<p>Технология обновления (перепроектирования) ostis-систем в ходе их эксплуатации</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<- .system_element_2090;;
+	<- .system_element_2088;;
 
 	.system_element_358
 	-> {
-		.system_element_1966;
-		.system_element_2261
+		.system_element_1965;
+		.system_element_2259
 	}
 	(*
 		=> nrel_note: [<p>Эти технологии сходны. Их методы и средства совпадают. Не совпадают только исходные данные и результаты, которыми в <i>Технологии обновления ostis-систем</i> являются предшествующие и последующие состояния ostis-систем. В <i>Технологии проектирования ostis-систем</i> исходными данными являются исходные спецификации (замыслы) проектируемых ostis-систем, и результатами --- полные логико-семантические модели этих систем</p>]
@@ -984,14 +984,14 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<= .system_element_1586: .system_element_2090;
+	<= .system_element_1586: .system_element_2088;
 	=> nrel_idtf: [<p>Комплекс (множество) семантически совместимых <i>технологий</i>, в состав которого входит <i>Ядро Технологии OSTIS</i> и иерархическая система <i>ostis-технологий</i>, каждая из которых ориентирована на <i>проектирование</i>, <i>производство</i>, <i>эксплуатацию</i> или <i>реинжиниринг</i> соответствующего <i>класса ostis-систем</i>, обеспечивающих автоматизацию соответствующего <i>вида человеческой деятельности</i>. При этом каждая такая проектируемая <i>ostis-система</i> автоматизирует либо область, либо <i>вид человеческой деятельности</i>, которая (который) является соответственно либо экземпляром (элементом), либо подвидом (подклассом) указанного выше <i>вида человеческой деятельности</i>, соответствующего используемой <i>специализированной <i>ostis-технологии</i></i>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2215
+	.system_element_2213
 	=> nrel_idtf: [<p>Универсальная базовая <i>ostis-технология</i></p>]
 	(*
 		<- lang_ru;;
@@ -1002,13 +1002,13 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<- .system_element_2262: .system_element_2090;
-	<= .system_element_2263: technology_OSTIS;
-	-> .system_element_2060;
-	=> .system_element_2265: .system_element_2264
+	<- .system_element_2260: .system_element_2088;
+	<= .system_element_2261: technology_OSTIS;
+	-> .system_element_2058;
+	=> .system_element_2263: .system_element_2262
 	(*
 		<= nrel_combination: {
-			.system_element_2266
+			.system_element_2264
 			(*
 				=> nrel_idtf: [<p>построение логико-семантической модели <i>ostis-системы</i></p>]
 				(*
@@ -1016,7 +1016,7 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);
-			.system_element_2267
+			.system_element_2265
 			(*
 				=> nrel_idtf: [<p>сборка логико-семантической модели ostis-системы и загрузка этой модели в память универсального интерпретатора таких моделей</p>]
 				(*
@@ -1024,7 +1024,7 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);
-			.system_element_2268
+			.system_element_2266
 			(*
 				=> nrel_idtf: [<p>базовый (предметно-независимый) уровень организации деятельности конечного пользователя ostis-системы с помощью соответствующих методови средств</p>]
 				(*
@@ -1032,7 +1032,7 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);
-			.system_element_2269
+			.system_element_2267
 			(*
 				=> nrel_idtf: [<p>совершенствование <i>ostis-системы</i> в процессе её эксплуатации</p>]
 				(*
@@ -1041,7 +1041,7 @@
 				*);;
 			*)
 		};;
-		=> .system_element_2270: ostis_system
+		=> .system_element_2268: ostis_system
 		(*
 			=> nrel_idtf: [<p><i>интеллектуальная компьютерная система</i>, построенная в соответствии со стандартом <i>Технологии OSTIS</i>, предъявляемым к продуктам, создаваемым с помощью этой технологии</p>]
 			(*
@@ -1056,19 +1056,19 @@
 		*);;
 	*);
 	=> .system_element_1950: 
-		.system_element_2271
+		.system_element_2269
 		(*
 			=> .system_element_1950: 
-				.system_element_2217;
-				.system_element_2218;
-				.system_element_2272;;
+				.system_element_2215;
+				.system_element_2216;
+				.system_element_2270;;
 				=> .system_element_1950: 
-					.system_element_2219;
-					.system_element_2220;
-					.system_element_2221
+					.system_element_2217;
+					.system_element_2218;
+					.system_element_2219
 				
 			;;
-			=> .system_element_1790: .system_element_1965
+			=> .system_element_1790: .system_element_758
 			(*
 				=> nrel_idtf: [<p>Intelligent MetaSystem for ostis-systems design</p>];;
 				=> nrel_idtf: [<p>OSTIS-система автоматизации проектирования ostis-систем</p>]
@@ -1078,10 +1078,10 @@
 				*);;
 			*);;
 		*);
-		.system_element_2273
+		.system_element_2271
 		(*
 			=> nrel_explanation: [<p>Основным компонентом, точнее, инструментальным средством <i>технологии производства <b>ostis-систем</b></i> является <i>универсальный интерпретатор логико-семантических моделей <b>ostis-систем</b></i>. Указанные <i>логико-семантические модели ostis-систем</i> являются результатом <i>проектирования ostis-систем</i> и представляют собой начальные (исходные) состояния <i>баз знаний</i> разрабатываемых <i>ostis-систем</i>. В отличие от <i>инструмента производства ostis-систем</i>, методика их производства весьма проста и сводится к сборке разработанных логико-семантических моделей (начального состояния <i>баз знаний</i>) разрабатываемых <i>ostis-систем</i> и загрузке этих моделей в память <i>универсального интерпретатора логико-семантических моделей <b>ostis-систем</b></i>.</p>];;
-			=> .system_element_1790: .system_element_1981
+			=> .system_element_1790: .system_element_1979
 			(*
 				=> nrel_explanation: [<p>Такой интерпретатор логико-семантических моделей ostis-систем может быть реализован либо программно на <i>современных компьютерах</i>, либо аппаратно в виде компьютеров нового поколения, ориентированных на реализацию интеллектуальных компьютерных систем.</p>];;
 				=> nrel_explanation: [<p>С формальной точки зрения универсальный интерпретатор логико-семантических моделей ostis-систем является пустой ostis-системой, которая способна приобретать и записывать формализованную информацию в свою память.</p>]
@@ -1091,10 +1091,10 @@
 				*);;
 			*);;
 		*);
-		.system_element_2211
+		.system_element_2209
 		(*
 			=> nrel_idtf: [<p>Общая технология эксплуатации ostis-систем, включающая в себя общие методы и средства, используемые в процессе эксплуатации любых ostis-систем</p>];;
-			=> .system_element_1790: .system_element_2274
+			=> .system_element_1790: .system_element_2272
 			(*
 				=> nrel_explanation: [<p>Данная ostis-система входит (интегрирована) в состав каждой ostis-системы.</p>]
 				(*
@@ -1103,9 +1103,9 @@
 				*);;
 			*);;
 		*);
-		.system_element_2213
+		.system_element_2211
 		(*
-			=> .system_element_1790: .system_element_2275
+			=> .system_element_1790: .system_element_2273
 			(*
 				=> nrel_explanation: [<p>Данная ostis-система входит (интегрирована) в состав каждой ostis-системы и обеспечивает внесение изменений руками инженеров, сопровождающих эксплуатацию ostis-системы, или авторов базы знаний этой ostis-системы в текущее состояние базы знаний ostis-системы в ходе её экспуатации</p>]
 				(*
@@ -1115,51 +1115,51 @@
 			*);;
 		*)
 	;
-	=> .system_element_2234: 
-		.system_element_2276
+	=> .system_element_2232: 
+		.system_element_2274
 		(*
-			=> .system_element_2234: 
-				.system_element_2277;
-				.system_element_2278;
-				.system_element_2279
+			=> .system_element_2232: 
+				.system_element_2275;
+				.system_element_2276;
+				.system_element_2277
 			;;
 		*);
-		.system_element_2280
+		.system_element_2278
 		(*
-			=> .system_element_2234: 
+			=> .system_element_2232: 
+				.system_element_2279;
+				.system_element_2280;
 				.system_element_2281;
-				.system_element_2282;
-				.system_element_2283;
-				.system_element_2223
+				.system_element_2221
 				(*
-					=> .system_element_2234: .system_element_2224;;
+					=> .system_element_2232: .system_element_2222;;
 				*)
 			;;
 		*);
-		.system_element_2225
+		.system_element_2223
 		(*
-			=> .system_element_2235: {
-				.system_element_2226;
-				.system_element_2284;
+			=> .system_element_2233: {
+				.system_element_2224;
+				.system_element_2282;
+				.system_element_2283;
+				.system_element_2284
+			};;
+			=> .system_element_2233: {
 				.system_element_2285;
 				.system_element_2286
-			};;
-			=> .system_element_2235: {
-				.system_element_2287;
-				.system_element_2288
 			};;
 		*)
 	;;
 
-	.system_element_2289
+	.system_element_2287
 	=> nrel_note: [<p>Приведённый нами перечень <i>специализированных ostis-технологий</i> охватывает только некоторые области (фрагменты) <i>человеческой деятельности</i>, подлежащие автоматизации с помощью <i>ostis-технологий</i> в рамках <i>Экосистемы OSTIS</i>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2215
-	=> nrel_note: [<p>Форма реализации <i>Ядра Технологии OSTIS</i> (в виде ostis-системы <i>IMS.ostis</i>) позволяет:
+	.system_element_2213
+	=> nrel_note: [<p>Форма реализации <i>Ядра Технологии OSTIS</i> (в виде ostis-системы <i>Метасистемы OSTIS</i>) позволяет:
 
 	<ul>
 
@@ -1255,11 +1255,11 @@
 			=> nrel_format: format_html;;
 		*)
 	;
-	=> .system_element_2290: [<p>Обеспечить низкий порог входа в Технологию OSTIS:
+	=> .system_element_2288: [<p>Обеспечить низкий порог входа в Технологию OSTIS:
 	<ul>
-		<li> для желающих участвовать в развитии <i>Технологии OSTIS</i>, т.е. в совершенствовании <i>Метасистемы IMS.ostis</i> (системы информационной поддержки и автоматизации проектирования <i>ostis-систем</i>), которая сама также является <i>ostis-системой</i>
-		<li> для разработчиков <i>интеллектуальных компьютерных систем</i>, желающих использовать для этого <i>Технологию OSTIS</i> (эти разработчики являются конечными пользователями <i>Метасистем IMS.ostis</i>);
-		<li> для конечных пользователей всевозможных иных <i>ostis-систем</i>, т.е. компьютерных систем, разработанных по <i>Технологии OSTIS</i> с непосредственным использованием в качестве инструмента <i>Метасистемы IMS.ostis</i> (подчеркнем при этом, что базовы принципы организации взаимодействия <i>Метасистемы IMS.ostis</i> с конечными пользователями полностью совпадают с базовыми принципами организации взаимодействия всех остальных <i>ostis-систем</i>, разработанных с помощью <i>Метасистемы IMS.ostis</i>, со своими конечными пользователями. Это обусловлено тем, что <i>Метасистема IMS.ostis</i> сама также является <i>ostis-системой</i> --- материнской <i>ostis-системой</i>).</li>
+		<li> для желающих участвовать в развитии <i>Технологии OSTIS</i>, т.е. в совершенствовании <i>Метасистемы OSTIS</i> (системы информационной поддержки и автоматизации проектирования <i>ostis-систем</i>), которая сама также является <i>ostis-системой</i>
+		<li> для разработчиков <i>интеллектуальных компьютерных систем</i>, желающих использовать для этого <i>Технологию OSTIS</i> (эти разработчики являются конечными пользователями <i>Метасистемы OSTIS</i>);
+		<li> для конечных пользователей всевозможных иных <i>ostis-систем</i>, т.е. компьютерных систем, разработанных по <i>Технологии OSTIS</i> с непосредственным использованием в качестве инструмента <i>Метасистемы OSTIS</i> (подчеркнем при этом, что базовы принципы организации взаимодействия <i>Метасистемы OSTIS</i> с конечными пользователями полностью совпадают с базовыми принципами организации взаимодействия всех остальных <i>ostis-систем</i>, разработанных с помощью <i>Метасистемы OSTIS</i>, со своими конечными пользователями. Это обусловлено тем, что <i>Метасистема OSTIS</i> сама также является <i>ostis-системой</i> --- материнской <i>ostis-системой</i>).</li>
 	<ul></p>]
 	(*
 		<- lang_ru;;
@@ -1267,7 +1267,7 @@
 	*);
 	=> nrel_note: [<p>Для решения указанной задачи необходимо создать инфраструктуру коллективного перманентного обновления (совершенствования) комплексной документации по <i>Технологии OSTIS</i>, которая:
 	<ul>
-		<li> обеспечила бы достаточную полноту и четкость фиксации текущего состояния <i>Технологии OSTIS</i> и удовлетворяла бы как разработчиков <i>Технологии OSTIS</i> (т.е. разработчиков <i>Метасистемы IMS.ostis</i>), так и разработчиков <i>ostis-систем</i>, не являющихся <i>Метасистемой IMS.ostis</i> (т.е. конечных пользователей <i>Метасистемы IMS.ostis</i>), и также конечных пользователей любых <i>ostis-систем</i>
+		<li> обеспечила бы достаточную полноту и четкость фиксации текущего состояния <i>Технологии OSTIS</i> и удовлетворяла бы как разработчиков <i>Технологии OSTIS</i> (т.е. разработчиков <i>Метасистемы OSTIS</i>), так и разработчиков <i>ostis-систем</i>, не являющихся <i>Метасистемой OSTIS</i> (т.е. конечных пользователей <i>Метасистемы OSTIS</i>), и также конечных пользователей любых <i>ostis-систем</i>
 		<li> обеспечила бы высокие темпы совершенствования данной документации на основании (1) четких правил согласования и утверждения различного рода предложений, (2) максимально возможной автоматизации процессов анализа, согласования и утверждения указанных предложений, (3) постоянного расширения числа авторов и (4) четких правил защиты авторских прав;
 		<li> обеспечила бы четкую фиксацию границ между текущим состоянием <i>Технологии OSTIS</i> и разрабатываемыми, тестируемыми фрагментами её будущих версий с обоснованием таких нововведений и с планом их включения в соответствующую версию <i>Технологии OSTIS</i>
 		<li> обеспечила бы четкую семантическую интеграцию документации той части <i>Технологии OSTIS</i>, которая касается проектирования семантических моделей <i>ostis-систем</i> и которая фактически сводится к проектированию <i>баз знаний ostis-систем</i>, а также документации той части <i>Технологии OSTIS</i>, которая описывает различные варианты программной или аппаратной реализации универсального интерпретатора логико-семантических моделей <i>ostis-систем</i>. Подчеркнем при этом, что универсальность используемого в <i>Технологии OSTIS</i> языка представления знаний дает возможность описывать на нем все, что угодно, в том числе и интерпретаторы семантических моделей <i>ostis-систем</i>. Но делать это нужно с разумной степенью детализации.</li>
@@ -1276,12 +1276,12 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_2290: [<p>Осуществить конвергенцию и интеграцию всевозможных частных технологий проектирования и реализации различных видов компонентов интеллектуальных компонентов систем (в частности, баз знаний, различного вида логических моделей, искусственных нейронных сетей и т.п.)</p>]
+	=> .system_element_2288: [<p>Осуществить конвергенцию и интеграцию всевозможных частных технологий проектирования и реализации различных видов компонентов интеллектуальных компонентов систем (в частности, баз знаний, различного вида логических моделей, искусственных нейронных сетей и т.п.)</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_2291: 
+	=> .system_element_2289: 
 		ostis_system
 		(*
 			=> nrel_idtf: [<p>индивидуальная ostis-система</p>];;
@@ -1291,9 +1291,9 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_2292
+		.system_element_2290
 		(*
-			=> nrel_inclusion: .system_element_2167
+			=> nrel_inclusion: .system_element_2165
 			(*
 				=> nrel_idtf: [<p>коллектив ostis-систем, членами которого являются только индивидуальные <b>ostis-системы</b></p>]
 				(*
@@ -1301,7 +1301,7 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);;
-			=> nrel_inclusion: .system_element_2168
+			=> nrel_inclusion: .system_element_2166
 			(*
 				=> nrel_idtf: [<p>коллектив ostis-систем, по крайней мере одним членом которого является коллектив ostis-систем</p>]
 				(*
@@ -1310,17 +1310,17 @@
 				*);;
 			*);;
 		*);
-		.system_element_2026
+		.system_element_2024
 		(*
-			=> nrel_inclusion: .system_element_2293;;
-			=> nrel_inclusion: .system_element_2294
+			=> nrel_inclusion: .system_element_2291;;
+			=> nrel_inclusion: .system_element_2292
 			(*
 				-> .system_element_760;;
 			*);;
 		*)
 	;
-	=> .system_element_2295: 
-		.system_element_2296
+	=> .system_element_2293: 
+		.system_element_2294
 		(*
 			=> nrel_idtf: [<p>Максимальное <i>ostis-сообщество</i>, направленное на автоматизацию всех видов человеческой деятельности</p>]
 			(*
@@ -1328,7 +1328,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_2297
+		.system_element_2295
 		(*
 			=> nrel_idtf: [<p><i>ostis-сообщество</i>, направленное на развитие <i>Технологии OSTIS</i></p>]
 			(*
@@ -1336,7 +1336,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_2298
+		.system_element_2296
 		(*
 			=> nrel_idtf: [<p>Метасистема, являющаяся
 			<ul>
@@ -1370,17 +1370,17 @@
 	*);;
 
 	technology_OSTIS
-	=> .system_element_2299: {
-		.system_element_2300
+	=> .system_element_2297: {
+		.system_element_2298
 		(*
-			=> .system_element_2301: {
-				.system_element_2302;
-				.system_element_2303
+			=> .system_element_2299: {
+				.system_element_2300;
+				.system_element_2301
 			};;
 		*);
-		.system_element_2304
+		.system_element_2302
 		(*
-			=> .system_element_2301: .system_element_2305;;
+			=> .system_element_2299: .system_element_2303;;
 		*)
 	};;
 *];;

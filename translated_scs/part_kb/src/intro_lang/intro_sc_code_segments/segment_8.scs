@@ -1,42 +1,42 @@
 .segment_8 = [*
-.system_element_3680
+.system_element_4044
 => nrel_inclusion: [*
 	=> .system_element_1: 
-		.system_element_3681;
-		.system_element_3682;
-		.system_element_3587;
-		.system_element_3683;
-		.system_element_3684;
-		.system_element_3685;
-		.system_element_3686;
-		.system_element_3687;
-		.system_element_3688;
-		.system_element_3689;
-		.system_element_3690;
-		.system_element_3691;
-		.system_element_3692;
-		.system_element_3693;
-		.system_element_3694;
-		.system_element_3695;
-		.system_element_3696;
-		.system_element_3697;
-		.system_element_3698;
-		.system_element_3699;
-		.system_element_3700;
-		.system_element_3701;
-		.system_element_3702;
-		.system_element_3703;
-		.system_element_3704;
-		.system_element_3705;
-		.system_element_3706;
-		.system_element_3707;
-		.system_element_3708;
-		.system_element_3709;
-		.system_element_3710;
-		.system_element_3711;
-		.system_element_3712;
-		.system_element_3713;
-		.system_element_3714
+		.system_element_4045;
+		.system_element_4046;
+		.system_element_3951;
+		.system_element_4047;
+		.system_element_4048;
+		.system_element_4049;
+		.system_element_4050;
+		.system_element_4051;
+		.system_element_4052;
+		.system_element_4053;
+		.system_element_4054;
+		.system_element_4055;
+		.system_element_4056;
+		.system_element_4057;
+		.system_element_4058;
+		.system_element_4059;
+		.system_element_4060;
+		.system_element_4061;
+		.system_element_4062;
+		.system_element_4063;
+		.system_element_4064;
+		.system_element_4065;
+		.system_element_4066;
+		.system_element_4067;
+		.system_element_4068;
+		.system_element_4069;
+		.system_element_4070;
+		.system_element_4071;
+		.system_element_4072;
+		.system_element_4073;
+		.system_element_4074;
+		.system_element_4075;
+		.system_element_4076;
+		.system_element_4077;
+		.system_element_4078
 	;
 	=> nrel_note: <
 		[<p>Важнейшим достоинством <b><i>SC-пространства</i></b> является возможность уточнения таких понятий, как понятие аналогичности (сходства и отличия) различных описываемых "внешних" сущностей, аналогичности унифицированных <i>семантических сетей</i> (текстов <b><i>SC-кода</i></b>), понятие семантической близости описываемых сущностей (в том числе, и текстов <b><i>SC-кода</i></b>).</p>]
@@ -68,7 +68,7 @@
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
-			=> .system_element_180: .system_element_3715;;
+			=> .system_element_180: .system_element_4079;;
 		*);
 		[<p>На множестве элементов, образующих <b><i>SC-пространство</i></b>, можно изучать топологические свойства и рассматривать <b><i>SC-пространство</i></b> как топологическое пространство. Следует заметить, что, несмотря на то, что <b><i>SC-код</i></b> ориентирован на смысловое представление знаний, в силу наличия <i>не-факторов</i>, не все смыслы могут быть представлены в некоторый момент времени и не будет известна структура соответствующего представления. Поэтому структурно-топологические свойства текстов <i>языка представления знаний</i> скорее определяют синтаксическое пространство, нежели семантическое (смысловое). Хотя оба могут приближаться друг к другу по мере устранения неопределенностей, вызванных <i>не-факторами</i>.</p>]
 		(*
@@ -88,21 +88,21 @@
 		*)
 	>;;
 
-	.system_element_3702
+	.system_element_4066
 	=> nrel_explanation: [<p><i>топологическое пространство</i> --- <i>множество</i> с определенным над ним <i>множеством</i> (семейством) (открытых) подмножеств, включая само <i>множество</i> и <i>пустое множество</i>. Для любого <i>подмножества</i> семейства результат объединения принадлежит <i>семейству множеств</i>, а для любого конечного <i>подмножества семейства</i> результат пересечения также принадлежит <i>семейству множеств</i>. Дополнения множеств семейства до наибольшего из множеств называются <i>замкнутыми множествами</i>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3681
+	.system_element_4045
 	=> nrel_idtf: [<p>непустое sc-множество</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3682
+	.system_element_4046
 	=> nrel_idtf: [<p>sc-множество непустых sc-множеств</p>]
 	(*
 		<- lang_ru;;
@@ -114,80 +114,80 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3587
+	.system_element_3951
 	=> nrel_explanation: [<p>Бинарное sc-отношение --- sc-множество sc-пар (или обобщенных sc-связок, которым существуют две различные принадлежности sc-элементов или одного и того же sc-элемента).</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3716
+	.system_element_4080
 	=> nrel_explanation: [<p>узловая sc-пара --- sc-пара, которая не может быть обозначена sc-дугой принадлежности (позитивной, негативной или нечеткой).</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3717
+	.system_element_4081
 	=> nrel_explanation: [<p>явление принадлежности --- множество явлений, каждое из которых является слотовым sc-отношением, которому постоянно непринадлежат sc-дуги постоянной непринадлежности.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3718
+	.system_element_4082
 	=> nrel_explanation: [<p>становление* --- бинарное sc-отношение между событиями (состояниями) или явлениями.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3719
-	=> nrel_first_domain: .system_element_3718;
-	=> nrel_second_domain: .system_element_3720;;
+	.system_element_4083
+	=> nrel_first_domain: .system_element_4082;
+	=> nrel_second_domain: .system_element_4084;;
 
-	.system_element_3721
-	=> nrel_first_domain: .system_element_3718;
-	=> nrel_second_domain: .system_element_3722;;
+	.system_element_4085
+	=> nrel_first_domain: .system_element_4082;
+	=> nrel_second_domain: .system_element_4086;;
 
-	.system_element_3723
+	.system_element_4087
 	=> nrel_explanation: [<p>продолжительность* --- транзитивное замыкание sc-отношения становления.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3724
-	=> nrel_first_domain: .system_element_3723;
-	=> nrel_second_domain: .system_element_3725;;
+	.system_element_4088
+	=> nrel_first_domain: .system_element_4087;
+	=> nrel_second_domain: .system_element_4089;;
 
-	.system_element_3726
-	=> nrel_first_domain: .system_element_3723;
-	=> nrel_second_domain: .system_element_3727;;
+	.system_element_4090
+	=> nrel_first_domain: .system_element_4087;
+	=> nrel_second_domain: .system_element_4091;;
 
-	.system_element_3683
+	.system_element_4047
 	=> nrel_explanation: [<p>Слотовое sc-отношение --- бинарное sc-отношение (sc-множество (ориентированных) sc-пар), элементы которого не являются узловыми sc-парами.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3684
+	.system_element_4048
 	=> nrel_explanation: [<p>sc-структура* --- sc-множество, в котором есть непустое sc-подмножество-носитель (множество первичных элементов sc-структуры*).</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3728
-	=> nrel_first_domain: .system_element_3684;
-	=> nrel_second_domain: .system_element_3729;;
+	.system_element_4092
+	=> nrel_first_domain: .system_element_4048;
+	=> nrel_second_domain: .system_element_4093;;
 
-	.system_element_3730
-	=> nrel_first_domain: .system_element_3684;
-	=> nrel_second_domain: .system_element_3729;;
+	.system_element_4094
+	=> nrel_first_domain: .system_element_4048;
+	=> nrel_second_domain: .system_element_4093;;
 
-	.system_element_3731
+	.system_element_4095
 	=> nrel_idtf: [<p>элементарно представленный элемент'</p>]
 	(*
 		<- lang_ru;;
@@ -199,7 +199,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3732
+	.system_element_4096
 	=> nrel_idtf: [<p>полносвязно представленный элемент'</p>]
 	(*
 		<- lang_ru;;
@@ -211,7 +211,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3733
+	.system_element_4097
 	=> nrel_idtf: [<p>полностью представленный элемент'</p>]
 	(*
 		<- lang_ru;;
@@ -223,103 +223,103 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3688
+	.system_element_4052
 	=> nrel_explanation: [<p>sc-связка' --- полносвязно представленный элемент' sc-структуры*, принадлежащий sc-отношению' этой sc-структуры*, являющийся sc-связкой.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3689
+	.system_element_4053
 	=> nrel_explanation: [<p>sc-отношение' --- полносвязно представленный элемент' sc-структуры*, sc-отношение, все элементы которого являются sc-связками' этой sc-структуры*.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3690
+	.system_element_4054
 	=> nrel_explanation: [<p>sc-класс' --- полносвязно представленный элемент' sc-структуры*, все элементы которого являются элементами sc-структуры*, не являющийся ни sc-отношением', ни sc-связкой' этой sc-структуры*.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3691
+	.system_element_4055
 	=> nrel_explanation: [<p>Сущностное замыкание* --- наименьшее надмножество* (структура*), в котором каждый элемент является элементарно представленным'.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3734
-	=> nrel_first_domain: .system_element_3691;
-	=> nrel_second_domain: .system_element_3735;;
+	.system_element_4098
+	=> nrel_first_domain: .system_element_4055;
+	=> nrel_second_domain: .system_element_4099;;
 
-	.system_element_3736
-	=> nrel_first_domain: .system_element_3691;
-	=> nrel_second_domain: .system_element_3729;;
+	.system_element_4100
+	=> nrel_first_domain: .system_element_4055;
+	=> nrel_second_domain: .system_element_4093;;
 
-	.system_element_3692
+	.system_element_4056
 	=> nrel_explanation: [<p>содержательное замыкание* --- наименьшее надмножество* (структура*), в котором каждый элемент является полносвязно представленным'</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3737
-	=> nrel_first_domain: .system_element_3692;
-	=> nrel_second_domain: .system_element_3738;;
+	.system_element_4101
+	=> nrel_first_domain: .system_element_4056;
+	=> nrel_second_domain: .system_element_4102;;
 
-	.system_element_3739
-	=> nrel_first_domain: .system_element_3692;
-	=> nrel_second_domain: .system_element_3729;;
+	.system_element_4103
+	=> nrel_first_domain: .system_element_4056;
+	=> nrel_second_domain: .system_element_4093;;
 
-	.system_element_3693
+	.system_element_4057
 	=> nrel_explanation: [<p>sc-отношение сходства по слотовым sc-отношениям* --- sc-отношение, являющееся рефлексивным по этим слотовым отношениям, то есть для любого элемента, входящего в связку этого sc-отношения под одним из слотовых sc-отношений, найдется связка этого sc-отношения, в которую он входит под каждым из этих слотовых sc-отношений.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3740
-	=> nrel_first_domain: .system_element_3693;
-	=> nrel_second_domain: .system_element_3741;;
+	.system_element_4104
+	=> nrel_first_domain: .system_element_4057;
+	=> nrel_second_domain: .system_element_4105;;
 
-	.system_element_3742
-	=> nrel_first_domain: .system_element_3693;
-	=> nrel_second_domain: .system_element_3743;;
+	.system_element_4106
+	=> nrel_first_domain: .system_element_4057;
+	=> nrel_second_domain: .system_element_4107;;
 
-	.system_element_3694
+	.system_element_4058
 	=> nrel_explanation: [<p>sc-отношение семантического сходства по слотовым отношениям* --- sc-отношение сходства по слотовым sc-отношениям* si и sj, в котором каждый элемент под слотовым sc-отношением si, может быть преобразован к элементу синтаксического типа элемента под слотовым sc-отношением sj; два инцидентных sc-элемента под слотовым sc-отношением si, в рамках этого sc-отношения семантического сходства соответствуют инцидентным элементам соответственно под слотовым sc-отношением sj.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3744
-	=> nrel_first_domain: .system_element_3694;
-	=> nrel_second_domain: .system_element_3745;;
+	.system_element_4108
+	=> nrel_first_domain: .system_element_4058;
+	=> nrel_second_domain: .system_element_4109;;
 
-	.system_element_3746
-	=> nrel_first_domain: .system_element_3694;
-	=> nrel_second_domain: .system_element_3747;;
+	.system_element_4110
+	=> nrel_first_domain: .system_element_4058;
+	=> nrel_second_domain: .system_element_4111;;
 
-	.system_element_3695
+	.system_element_4059
 	=> nrel_explanation: [<p>Связная sc-структура* --- sc-структура*, являющаяся связной.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3748
-	=> nrel_first_domain: .system_element_3695;
-	=> nrel_second_domain: .system_element_3749;;
+	.system_element_4112
+	=> nrel_first_domain: .system_element_4059;
+	=> nrel_second_domain: .system_element_4113;;
 
-	.system_element_3750
-	=> nrel_first_domain: .system_element_3695;
-	=> nrel_second_domain: .system_element_3729;;
+	.system_element_4114
+	=> nrel_first_domain: .system_element_4059;
+	=> nrel_second_domain: .system_element_4093;;
 
-	.system_element_3696
+	.system_element_4060
 	=> nrel_idtf: [<p>семантическое подобие sc-структур*</p>]
 	(*
 		<- lang_ru;;
@@ -331,23 +331,23 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3751
-	=> nrel_first_domain: .system_element_3696;
-	=> nrel_second_domain: .system_element_3694;;
+	.system_element_4115
+	=> nrel_first_domain: .system_element_4060;
+	=> nrel_second_domain: .system_element_4058;;
 
-	.system_element_3752
-	=> nrel_first_domain: .system_element_3696;
-	=> nrel_second_domain: .system_element_3753;;
+	.system_element_4116
+	=> nrel_first_domain: .system_element_4060;
+	=> nrel_second_domain: .system_element_4117;;
 
-	.system_element_3754
-	=> nrel_first_domain: .system_element_3753;
-	=> nrel_second_domain: .system_element_3755;;
+	.system_element_4118
+	=> nrel_first_domain: .system_element_4117;
+	=> nrel_second_domain: .system_element_4119;;
 
-	.system_element_3756
-	=> nrel_first_domain: .system_element_3753;
-	=> nrel_second_domain: .system_element_3757;;
+	.system_element_4120
+	=> nrel_first_domain: .system_element_4117;
+	=> nrel_second_domain: .system_element_4121;;
 
-	.system_element_3697
+	.system_element_4061
 	=> nrel_idtf: [<p>семантическое непрерывное подобие sc-структур*</p>]
 	(*
 		<- lang_ru;;
@@ -359,70 +359,70 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3758
-	=> nrel_first_domain: .system_element_3697;
-	=> nrel_second_domain: .system_element_3759;;
+	.system_element_4122
+	=> nrel_first_domain: .system_element_4061;
+	=> nrel_second_domain: .system_element_4123;;
 
-	.system_element_3760
-	=> nrel_first_domain: .system_element_3697;
-	=> nrel_second_domain: .system_element_3761;;
+	.system_element_4124
+	=> nrel_first_domain: .system_element_4061;
+	=> nrel_second_domain: .system_element_4125;;
 
-	.system_element_3762
-	=> nrel_first_domain: .system_element_3761;
-	=> nrel_second_domain: .system_element_3763;;
+	.system_element_4126
+	=> nrel_first_domain: .system_element_4125;
+	=> nrel_second_domain: .system_element_4127;;
 
-	.system_element_3764
-	=> nrel_first_domain: .system_element_3761;
-	=> nrel_second_domain: .system_element_3765;;
+	.system_element_4128
+	=> nrel_first_domain: .system_element_4125;
+	=> nrel_second_domain: .system_element_4129;;
 
-	.system_element_3698
-	=> nrel_first_domain: .system_element_3766;
-	=> nrel_second_domain: .system_element_3767;
+	.system_element_4062
+	=> nrel_first_domain: .system_element_4130;
+	=> nrel_second_domain: .system_element_4131;
 	=> nrel_explanation: [<p>Ключевой запрос' --- поисковый-проверочный запрос (от одного известного элемента), который выполняется хотя бы от одного элемента и не выполняется хотя бы от одного элемента.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3768
-	=> nrel_first_domain: .system_element_3766;
-	=> nrel_second_domain: .system_element_3769;;
+	.system_element_4132
+	=> nrel_first_domain: .system_element_4130;
+	=> nrel_second_domain: .system_element_4133;;
 
-	.system_element_3699
-	<= nrel_inclusion: .system_element_3698;
+	.system_element_4063
+	<= nrel_inclusion: .system_element_4062;
 	=> nrel_explanation: [<p>Минимальный ключевой запрос --- ключевой запрос, который находит sc-подмножества множеств элементов, находимых всеми другими ключевыми запросами, которые имеют те же области известных элементов выполнимости и невыполнимости.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3770
-	=> nrel_first_domain: .system_element_3771;
-	=> nrel_second_domain: .system_element_3772;;
+	.system_element_4134
+	=> nrel_first_domain: .system_element_4135;
+	=> nrel_second_domain: .system_element_4136;;
 
-	.system_element_3700
+	.system_element_4064
 	=> nrel_explanation: [<p>Полная семантическая окрестность элемента* --- все элементы, находимые выполнимыми минимальными ключевыми запросами от этого элемента (c учетом дизъюнктивного поиска и отрицания поиска).</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3773
-	=> nrel_first_domain: .system_element_3700;
-	=> nrel_second_domain: .system_element_3774;;
+	.system_element_4137
+	=> nrel_first_domain: .system_element_4064;
+	=> nrel_second_domain: .system_element_4138;;
 
-	.system_element_3775
-	=> nrel_first_domain: .system_element_3700;
-	=> nrel_second_domain: .system_element_3776;;
+	.system_element_4139
+	=> nrel_first_domain: .system_element_4064;
+	=> nrel_second_domain: .system_element_4140;;
 
-	.system_element_3701
+	.system_element_4065
 	=> nrel_explanation: [<p>интроспективный (базовый) ключевой элемент --- элемент множества (из класса наименьших таких множеств) элементов такого, что любая полная семантическая окрестность любого элемента является sc-подмножеством объединения их полных семантических окрестностей.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3703
+	.system_element_4067
 	=> nrel_explanation: [<p>Топологическое пространство замыкания инцидентности коннекторов на множестве sc-элементов --- топологическое пространство, все замкнутые множества которого содержат все sc-элементы этого множества, до которых есть маршрут по ориентированным связкам отношения инцидентности коннекторов.</p>]
 	(*
 		<- lang_ru;;
@@ -434,15 +434,15 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3777
-	=> nrel_first_domain: .system_element_3778;
-	=> nrel_second_domain: .system_element_3703;;
+	.system_element_4141
+	=> nrel_first_domain: .system_element_4142;
+	=> nrel_second_domain: .system_element_4067;;
 
-	.system_element_3779
-	=> nrel_first_domain: .system_element_3778;
-	=> nrel_second_domain: .system_element_3703;;
+	.system_element_4143
+	=> nrel_first_domain: .system_element_4142;
+	=> nrel_second_domain: .system_element_4067;;
 
-	.system_element_3704
+	.system_element_4068
 	=> nrel_explanation: [<p>Топологическое пространство синтаксического замыкания на множестве sc-элементов --- топологическое пространство, все замкнутые множества которого содержат все sc-элементы этого множества, до которых есть маршрут по ориентированным связкам отношения инцидентности.</p>]
 	(*
 		<- lang_ru;;
@@ -454,7 +454,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3705
+	.system_element_4069
 	=> nrel_explanation: [<p>Топологическое пространство сущностного замыкания на множестве sc-элементов --- топологическое пространство, все замкнутые множества которого являются сущностными замыканиями.</p>]
 	(*
 		<- lang_ru;;
@@ -466,15 +466,15 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3780
-	=> nrel_first_domain: .system_element_3781;
-	=> nrel_second_domain: .system_element_3705;;
+	.system_element_4144
+	=> nrel_first_domain: .system_element_4145;
+	=> nrel_second_domain: .system_element_4069;;
 
-	.system_element_3782
-	=> nrel_first_domain: .system_element_3781;
-	=> nrel_second_domain: .system_element_3705;;
+	.system_element_4146
+	=> nrel_first_domain: .system_element_4145;
+	=> nrel_second_domain: .system_element_4069;;
 
-	.system_element_3706
+	.system_element_4070
 	=> nrel_explanation: [<p>Топологическое пространство содержательного замыкания на множестве sc-элементов --- топологическое пространство, все замкнутые множества которого являются содержательными замыканиями.</p>]
 	(*
 		<- lang_ru;;
@@ -486,13 +486,13 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3783
-	=> nrel_first_domain: .system_element_3784;
-	=> nrel_second_domain: .system_element_3706;;
+	.system_element_4147
+	=> nrel_first_domain: .system_element_4148;
+	=> nrel_second_domain: .system_element_4070;;
 
-	.system_element_3785
-	=> nrel_first_domain: .system_element_3784;
-	=> nrel_second_domain: .system_element_3706;
+	.system_element_4149
+	=> nrel_first_domain: .system_element_4148;
+	=> nrel_second_domain: .system_element_4070;
 	=> nrel_note: [<p>Возможен переход от sc-структур к многообразиям и топологическим пространствам путем сведения sc-структур к графовым структурам.Для более сложных структур таких, как полная семантическая окрестность, топологические свойства подлежат дальнейшему изучению.Далее можно рассмотреть метрические пространства, в частности --- конечные подпространства с полностью представленными sc-элементами. </p>]
 	(*
 		<- lang_ru;;
@@ -500,21 +500,21 @@
 		=> .system_element_180: .system_element_98;;
 	*);;
 
-	.system_element_3707
+	.system_element_4071
 	=> nrel_explanation: [<p>Метрика --- функция двух аргументов, принимающая значения на (линейно) упорядоченном носителе группы, неотрицательна, равна нейтральному элмененту (нулю) только при равенстве аргументов, симметрична, удовлетворяет неравенству треугольника.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3709
+	.system_element_4073
 	=> nrel_explanation: [<p>Метрическое пространство --- множество, с определенной на нем функцией двух аргументов, являющейся метрикой, принимающей значения на упорядоченном носителе группы.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3708
+	.system_element_4072
 	=> nrel_idtf: [<p>семантическая близость</p>]
 	(*
 		<- lang_ru;;
@@ -526,35 +526,35 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3710
+	.system_element_4074
 	=> nrel_explanation: [<p>Метрическое конечное синтаксическое пространство SC-кода --- метрическое пространство с конечным носителем, элементами которого являются обозначения (sc-элементы), а значение метрики может быть определено через отношения инцидентности элементов без учета их семантического типа.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3786
-	=> nrel_first_domain: .system_element_3787;
-	=> nrel_second_domain: .system_element_3710;;
+	.system_element_4150
+	=> nrel_first_domain: .system_element_4151;
+	=> nrel_second_domain: .system_element_4074;;
 
-	.system_element_3788
-	=> nrel_first_domain: .system_element_3787;
-	=> nrel_second_domain: .system_element_3710;;
+	.system_element_4152
+	=> nrel_first_domain: .system_element_4151;
+	=> nrel_second_domain: .system_element_4074;;
 
-	.system_element_3711
+	.system_element_4075
 	=> nrel_explanation: [<p>Метрическое конечное семантическое пространство SC-кода --- метрическое пространство с конечным носителем, элементами которого являются обозначения (sc-элементы), а значение метрики не может быть определено через отношения инцидентности элементов без учета их семантического типа.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3789
-	=> nrel_first_domain: .system_element_3790;
-	=> nrel_second_domain: .system_element_3711;;
+	.system_element_4153
+	=> nrel_first_domain: .system_element_4154;
+	=> nrel_second_domain: .system_element_4075;;
 
-	.system_element_3791
-	=> nrel_first_domain: .system_element_3790;
-	=> nrel_second_domain: .system_element_3711;
+	.system_element_4155
+	=> nrel_first_domain: .system_element_4154;
+	=> nrel_second_domain: .system_element_4075;
 	=> nrel_note: [<p>Метрическое конечное синтаксическое пространство может быть построено в соответствии с моделью обработки строк и определениями метрики.</p>]
 	(*
 		<- lang_ru;;
@@ -565,22 +565,22 @@
 		};;
 	*);;
 
-	.system_element_3712
+	.system_element_4076
 	=> nrel_explanation: [<p>Псевдометрика --- функция двух аргументов, принимающая значения на (линейно) упорядоченном носителе группы, неотрицательна, симметрична, удовлетворяет неравенству треугольника.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3713
+	.system_element_4077
 	=> nrel_explanation: [<p>псевдометрическое пространство --- множество, с определенной на нем функцией двух аргументов, являющейся псевдометрикой, принимающей значения на упорядоченном носителе группы.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
-		=> .system_element_180: .system_element_3792;;
+		=> .system_element_180: .system_element_4156;;
 	*);;
 
-	.system_element_3714
+	.system_element_4078
 	=> nrel_explanation: [<p>Псевдометрическое конечное семантическое пространство SC-кода --- псевдометрическое пространство с конечным носителем, элементами которого являются обозначения (sc-элементы), а значение псевдометрики не может быть определено через отношения инцидентности элементов без учета их семантического типа.</p>]
 	(*
 		<- lang_ru;;
@@ -598,7 +598,7 @@
 			=> nrel_format: format_html;;
 			=> .system_element_180: {
 				.system_element_98;
-				.system_element_3793
+				.system_element_4157
 			};;
 		*);
 		[<p>В разных науках исследователи затрагивали вопросы касающиеся смыслов и их размещения и взаимосвязи. Можно выделить следующие работы, которые соотносятся с тремя подходами: экстериорный подход, интериорные подходы на основании количественных и структурно-динамических признаков.</p>]
@@ -606,12 +606,12 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 			=> .system_element_180: {
-				.system_element_3794;
-				.system_element_3795;
-				.system_element_3796;
-				.system_element_3797;
-				.system_element_3798;
-				.system_element_3799
+				.system_element_4158;
+				.system_element_4159;
+				.system_element_4160;
+				.system_element_4161;
+				.system_element_4162;
+				.system_element_4163
 			};;
 		*);
 		[<p>В современных работах в технических науках, возможно, наиболее близкими понятиями являются понятия, выражающие смысл термина "семантическое пространство" (интериорный подход).Общим во многих подходах к работе с "семантическим пространством" является рассмотрение словоформ или лексем (множеств словоформ) и их признаков. В литературе встречаются следующие подходы:
@@ -626,22 +626,22 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 			=> .system_element_180: {
-				.system_element_3800;
-				.system_element_3801;
-				.system_element_3802
+				.system_element_4164;
+				.system_element_4165;
+				.system_element_4166
 			};;
 		*);
 		[<p>Статистический подход к обработке естественного языка противопоставляется интуиции и коммуникативному опыту ученых. В основе подхода лежит семантическая статистическая гипотеза, что смысл слов (лексем) определяется контекстом использования (его статистическим образом) в языке (с коммуникативной структурой).</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
-			=> .system_element_180: .system_element_3800;;
+			=> .system_element_180: .system_element_4164;;
 		*);
 		[<p>Модель векторного пространства семантики. Модель рассматривается для двух случаев: большого словаря (N >= M ) и задачи информационного поиска (M >= N ). M --- размер словаря, N --- количество контекстов.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
-			=> .system_element_180: .system_element_3800;;
+			=> .system_element_180: .system_element_4164;;
 		*);
 		[<p>На основе статистики строится матрица размерности  M × N  частот  p<sub>ij</sub>  появления лексемы (слова)  w<sub>i</sub>  в документе (контексте, подтексты, которые могут перекрываться)  c<sub>j</sub>  .   x<sub>ij</sub> = max( { 0} ⋃ { log (<sup>p<sup>ij</sup></sup>&frasl;<sub>(Σ <sup>j</sup> p<sup>ij</sup>) * ( Σ <sup>i</sup> p<sup>ij</sup>) </sub>) } )  </p>]
 		(*
@@ -653,9 +653,9 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 			=> .system_element_180: {
-				.system_element_3803;
-				.system_element_3804;
-				.system_element_3802
+				.system_element_4167;
+				.system_element_4168;
+				.system_element_4166
 			};;
 		*);
 		[<p>Другой способ задать линейный порядок --- это рассмотреть фильтрацию в <i>R</i><sup>M</sup>, заданную расширяющимися контекстами. В итоге для текста получаем точки (флаги) во флаговом многообразии. Для флаговых многообразий тоже можно вычислить метрику Фубини-Штуди.</p>]
@@ -663,8 +663,8 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 			=> .system_element_180: {
-				.system_element_3805;
-				.system_element_3804
+				.system_element_4169;
+				.system_element_4168
 			};;
 		*);
 		[<p>Этот порядок соответствует временному измерению (процессу коммуникации во времени), что может быть существенным. Другой порядок может быть не зависимым от этого, например алфавитный или порядок в соответствии с законом Ципфа.</p>]
@@ -672,13 +672,13 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 			=> .system_element_180: {
-				.system_element_3806;
-				.system_element_3807
+				.system_element_4170;
+				.system_element_4171
 			};;
 		*)
 	>;;
 
-	.system_element_3808
+	.system_element_4172
 	=> .system_element_253: "file://Contents/part_kb/src/images/sd_lang/comparison_table.png"
 	(*
 		<- concept_file;;
@@ -690,9 +690,9 @@
 		=> nrel_format: format_html;;
 	*);
 	=> .system_element_180: {
-		.system_element_3809;
-		.system_element_3810;
-		.system_element_3797
+		.system_element_4173;
+		.system_element_4174;
+		.system_element_4161
 	};;
 *];;
 
