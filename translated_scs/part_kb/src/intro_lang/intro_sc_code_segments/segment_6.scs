@@ -1,20 +1,20 @@
 .segment_6 = [*
-.system_element_4005
+.system_element_1960
 => nrel_inclusion: [*
 	=> nrel_inclusion: 
-		.system_element_4006;
-		.system_element_4007
+		.system_element_1961;
+		.system_element_1717
 	;;
 
-	.system_element_4008
+	.system_element_1962
 	=> nrel_note: [<p>Класс <i>sc-структур</i>, каждая из которых описывает базовые семантические свойства (характеристики) соответствующего (описываемого, специфицируемого) <i>sc-элемента</i></p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<= nrel_inclusion: .system_element_2934
+	<= nrel_inclusion: .system_element_262
 	(*
-		<= nrel_inclusion: .system_element_4009
+		<= nrel_inclusion: .system_element_1963
 		(*
 			=> nrel_idtf: [<p>представленная в <i>SC-коде</i> семантическая окрестность (спецификация) некоторого (специфицируемого) <i>sc-элемента</i></p>]
 			(*
@@ -23,10 +23,10 @@
 			*);;
 		*);;
 	*);
-	<= nrel_inclusion: .system_element_4009;
-	<= nrel_second_domain: .system_element_4010
+	<= nrel_inclusion: .system_element_1963;
+	<= nrel_second_domain: .system_element_1964
 	(*
-		=> .system_element_1120: [<p>бинарное ориентированное отношение, каждая пара которого связывает <i>sc-элемент</i> с его базовой семантической спецификацией*</p>]
+		=> .system_element_264: [<p>бинарное ориентированное отношение, каждая пара которого связывает <i>sc-элемент</i> с его базовой семантической спецификацией*</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
@@ -55,25 +55,25 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4011
+	.system_element_1965
 	=> nrel_inclusion: {
-		.system_element_4012;
-		.system_element_4013;
+		.system_element_1966;
+		.system_element_1967;
 		last_entity;
 		future_entity;
-		.system_element_4014;
-		.system_element_4015;
-		.system_element_4016;
-		.system_element_3724;
-		.system_element_4017;
-		.system_element_4007;
-		.system_element_3991;
+		.system_element_1968;
+		.system_element_1969;
+		.system_element_1970;
+		.system_element_1971;
+		.system_element_1972;
+		.system_element_1717;
+		.system_element_1973;
 		process_in_sc_memory
 	};;
 
-	.system_element_4012
+	.system_element_1966
 	<- parameter;
-	<- .system_element_4018;
+	<- .system_element_1974;
 	=> nrel_idtf: [<p>глобальная приблизительно точная ситуация^</p>]
 	(*
 		<- lang_ru;;
@@ -95,7 +95,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4013
+	.system_element_1967
 	=> nrel_idtf: [<p>Глобальная ситуация текущего (настоящего) момента времени</p>]
 	(*
 		<- lang_ru;;
@@ -111,9 +111,9 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<- .system_element_3795;
-	<- .system_element_3990;
-	<= .system_element_4020: .system_element_4019;
+	<- .system_element_1975;
+	<- .system_element_1976;
+	<= .system_element_1978: .system_element_1977;
 	=> nrel_explanation: [<p>Из знака <i>Текущего момента времени</i> (который является также знаком <i>sc-синглетона</i>) "выходит" sc-пара <i>временной</i> принадлежности, представляющая собой, образно говоря, "стрелку" внутренних часов <i>ostis-системы</i>, которая всегда указывает только на один элемент множества моментов времени, но в разные моменты времени указывает на разные элементы этого множества</p>]
 	(*
 		<- lang_ru;;
@@ -134,7 +134,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4014
+	.system_element_1968
 	=> nrel_idtf: [<p>момент времени, соответствующий началу существования заданной временной сущности</p>]
 	(*
 		<- lang_ru;;
@@ -151,9 +151,9 @@
 		=> nrel_format: format_html;;
 	*);
 	=> nrel_first_domain: temporary_entity;
-	=> nrel_second_domain: .system_element_4012;;
+	=> nrel_second_domain: .system_element_1966;;
 
-	.system_element_4015
+	.system_element_1969
 	=> nrel_idtf: [<p>момент времени, соответствующий завершению существования заданной временной сущности</p>]
 	(*
 		<- lang_ru;;
@@ -162,19 +162,19 @@
 
 	situation
 	=> nrel_subdividing: {
-		.system_element_4016;
-		.system_element_3724
+		.system_element_1970;
+		.system_element_1971
 	};;
 
-	.system_element_911
+	.system_element_766
 	=> nrel_subdividing: {
-		.system_element_4017;
-		.system_element_4007
+		.system_element_1972;
+		.system_element_1717
 	};;
 
-	.system_element_3990
+	.system_element_1976
 	=> nrel_subdividing: {
-		.system_element_3991
+		.system_element_1973
 		(*
 			=> nrel_idtf: [<p>процесс, происходящий в окружающей среде ostis-системы</p>]
 			(*
@@ -185,7 +185,7 @@
 		process_in_sc_memory
 	};;
 
-	.system_element_4016
+	.system_element_1970
 	=> nrel_idtf: [<p>ситуация во внешней среде</p>]
 	(*
 		<- lang_ru;;
@@ -197,33 +197,33 @@
 		=> nrel_format: format_html;;
 	*);
 	<= nrel_inclusion: temporary_entity;
-	<= nrel_inclusion: .system_element_2934;
+	<= nrel_inclusion: .system_element_262;
 	<= nrel_inclusion: sc_constant;
-	<= nrel_inclusion: .system_element_3856;
-	<- .system_element_3778;;
+	<= nrel_inclusion: .system_element_1979;
+	<- .system_element_1980;;
 
-	.system_element_4021
+	.system_element_1981
 	=> nrel_note: [<p>В простейшем случае внешние ситуации, входящие в класс внешних ситуаций являются изоморфными</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3991
+	.system_element_1973
 	=> nrel_idtf: [<p>темпоральная детализация внешней динамической сущности</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4017
+	.system_element_1972
 	=> nrel_idtf: [<p>факт появления (возникновения) некоторой внешней сущности (в том числе некоторой внешней ситуации) или факт завершения существования некоторой внешней сущности (в том числе некоторой внешней ситуации)</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3724
+	.system_element_1971
 	=> nrel_idtf: [<p>внутренняя ситуация</p>]
 	(*
 		<- lang_ru;;
@@ -240,7 +240,7 @@
 		*);;
 	*);;
 
-	.system_element_4022
+	.system_element_1982
 	=> nrel_idtf: [<p>класс внутренних ситуаций</p>]
 	(*
 		<- lang_ru;;
@@ -264,7 +264,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4008
+	.system_element_1962
 	=> nrel_note: [<p>Важной частью <b><i>базовой семантической спецификации sc-элемента</i></b> является фиксация того, что <i>ostis-система</i> <i>знает и чего она не знает</i> о специфицируемом <i>sc-элементе</i> или об обозначенной им сущности.</p>]
 	(*
 		<- lang_ru;;
@@ -287,44 +287,44 @@
 			*)
 		};;
 	*);
-	=> .system_element_4023: {
-		.system_element_4024;
-		.system_element_4025;
-		.system_element_4026;
-		.system_element_4027;
-		.system_element_4028;
-		.system_element_4029;
-		.system_element_4030;
-		.system_element_4031;
-		.system_element_4032;
-		.system_element_4033;
-		.system_element_4034;
-		.system_element_4035;
-		.system_element_4036;
-		.system_element_4037;
-		.system_element_4038
+	=> .system_element_1983: {
+		.system_element_1984;
+		.system_element_1985;
+		.system_element_1986;
+		.system_element_1987;
+		.system_element_1988;
+		.system_element_1989;
+		.system_element_1990;
+		.system_element_1991;
+		.system_element_1992;
+		.system_element_1993;
+		.system_element_1994;
+		.system_element_1995;
+		.system_element_1996;
+		.system_element_1997;
+		.system_element_1998
 	};
 	=> nrel_note: [<p>Подчеркнем то, что базовую семантическую спецификацию должны иметь абсолютно все <i>sc-элементы</i>, хранимые в <i>sc-памяти</i> в текущий момент времени, в том числе и все <i>sc-элементы</i>, являющиеся ключевыми знаками в рамках <b><i>Предметной области Базовой денотационной семантики SC-кода</i></b>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
-		=> .system_element_252: .system_element_3829;;
+		=> .system_element_203: .system_element_1999;;
 	*);;
 
-	.system_element_3829
+	.system_element_1999
 	=> nrel_idtf: [<p>Множество всевозможных sc-элементов, обозначающих sc-множества</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
-		<- .system_element_2164;;
+		<- .system_element_1946;;
 	*);
-	<- .system_element_3829;
+	<- .system_element_1999;
 	=> nrel_note: [<p>Одним из элементов данного множества является знак, обозначающий это множество. Это означает, это данное множество является <i>рефлексивным множеством</i></p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<- .system_element_4039;
+	<- .system_element_2000;
 	=> nrel_note: [<p>Элементами данного множества являются обозначения различных:
 	<ul>
 		<li> sc-синглетонов;
@@ -337,22 +337,22 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<- .system_element_4040;
+	<- .system_element_2001;
 	<- sc_constant;
 	=> nrel_note: [<p>Само данное множество является константным, несмотря на то, что его элементами являются как sc-константы, так и sc-переменные</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<- .system_element_4041;
+	<- .system_element_2002;
 	<- permanent_entity;
 	=> nrel_note: [<p>Следует отличать постоянство/временность сущности, обозначаемой sc-элементом и постоянство/временность sc-множества, одним из элементов которого указанный sc-элемент является.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<- .system_element_4042;
-	<- .system_element_4043;
+	<- .system_element_2003;
+	<- .system_element_2004;
 	=> nrel_note: 
 		[<p>Следует отличать статичность/динамичность sc-множества, обозначаемого соответствующим sc-элементом и статичность/динамичность sc-множества, одним из элементов которого указанный выше sc-элемент является.</p>]
 		(*
@@ -365,7 +365,7 @@
 			=> nrel_format: format_html;;
 		*)
 	;
-	<- .system_element_3778;
+	<- .system_element_1980;
 	=> nrel_idtf: [<p>Класс всевозможных sc-элементов, обозначающих sc-множества</p>]
 	(*
 		<- lang_ru;;

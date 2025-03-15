@@ -1,11 +1,13 @@
-.system_element_231
+.system_element_4707
 => nrel_inclusion: [*
-	=> .system_element_727: 
-		.system_element_6366;
-		.system_element_6367
-	;;
+	=> .system_element_342: 
+		.system_element_6489;
+		.system_element_6331
+	;
+	<- .system_element_3;
+	-> rrel_key_sc_element: .system_element_6743;;
 
-	.system_element_6368
+	.system_element_6743
 	=> nrel_idtf: [<p>Предметная область Базового языка программирования ostis-систем</p>]
 	(*
 		<- lang_ru;;
@@ -22,22 +24,36 @@
 		=> nrel_format: format_html;;
 	*);
 	<- subject_domain;
-	-> .system_element_112: 
+	-> .system_element_418: 
+		.system_element_3388;
+		.system_element_4646
+	;
+	-> .system_element_6: 
 		agent_scp_program;
 		scp_process;
 		new_scp_operator;
 		scp_operator_atomic_type
 	;
-	-> .system_element_748: 
+	-> .system_element_335: 
 		rrel_init;
 		rrel_new_param;
 		rrel_in;
 		rrel_out;
 		rrel_scp_operand
-	;;
+	;
+	=> nrel_introduction: <
+		[<p>Выделение Базового языка программирования для ostis-систем позволяет обеспечить четкое разделение уровня методов и соответственно, навыков ostis-системы, которые могут быть полностью описаны на уровне базы знаний и более низкоуровневых навыков, обеспечивающих интерпретацию указанных навыков более высокого уровня. Другими словами, выделение такого языка позволяет обеспечить <u>платформенную независимость</u> ostis-систем, как в случае программной реализации <i>ostis-платформы</i>, так и в случае <i>ассоциативного семантического компьютера</i>.</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+			=> .system_element_35: {
+				.system_element_6692
+			};;
+		*)
+	>;;
 
-	.system_element_1986
-	=> .system_element_269: [<p>scp-программа</p>]
+	.system_element_3388
+	=> .system_element_172: [<p>scp-программа</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
@@ -48,12 +64,17 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_6369
+	.system_element_6744
 	<= nrel_combination: {
-		.system_element_6370;
-		.system_element_6371
+		.system_element_6745;
+		.system_element_6746
 	};
-	=> .system_element_237: {
+	=> nrel_note: [<p><i>Базовая модель обработки sc-текстов</i> включает в себя <i>Предметную область Базового языка программирования ostis-систем</i>, то есть описание <i>Синтаксиса</i> и <i>Денотационной семантики Языка SCP</i>, а также описание <i>Абстрактной scp-машины</i>, которая является моделью <i>scp-интерпретатора</i>, который должен являться частью <i>ostis-платформы</i> (хотя в общем случае могут существовать варианты платформы, не содержащие такого интерпретатора, что, однако, не позволит использовать достоинства предлагаемой базовой модели.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+	*);
+	=> .system_element_4713: {
 		[<p>Тексты программ <i>Языка SCP</i> записываются при помощи тех же унифицированных семантических сетей, что и обрабатываемая информация, таким образом, можно сказать, что <i>Синтаксис языка SCP</i> на базовом уровне совпадает с <i>Синтаксисом SC-кода</i>.</p>]
 		(*
 			<- lang_ru;;
@@ -65,7 +86,7 @@
 			=> nrel_format: format_html;;
 		*)
 	};
-	=> .system_element_192: {
+	=> .system_element_2880: {
 		[<p>Одновременно в общей памяти могут выполняться несколько независимых<i>sc-агентов</i>, при этом разные копии <i>sc-агентов</i> могут выполняться на разных серверах, за счет распределенной реализации интерпретатора sc-моделей (<i>платформы реализации sc-моделей компьютерных систем</i>). Более того, <i>Язык SCP</i> позволяет осуществлять параллельные асинхронные вызовы подпрограмм с последующей синхронизацией, и даже параллельно выполнять операторы в рамках одной <i>scp-программы</i>.</p>]
 		(*
 			<- lang_ru;;
@@ -88,8 +109,12 @@
 		*)
 	};;
 
-	.system_element_686
-	=> .system_element_6372: .system_element_6371;
+	.system_element_4646
+	=> .system_element_6747: .system_element_6746;
+	<- .system_element_281
+	(*
+		<= .system_element_4703: .system_element_4908;;
+	*);
 	=> nrel_note: [<p><i>Абстрактная scp-машина</i> представляет собой интерпретатор <i>scp-программ</i>, который должен являться частью <i>платформы интерпретации sc-моделей компьютерных систем</i> (хотя в общем случае могут существовать варианты платформы, не содержащие такого интерпретатора, что, однако, не позволит использовать достоинства предлагаемой базовой модели</p>]
 	(*
 		<- lang_ru;;
@@ -98,48 +123,54 @@
 
 	new_scp_program
 	<= nrel_inclusion: program_in_sc_memory;
+	=> nrel_inclusion: agent_scp_program;
 	=> nrel_explanation: [<p>Каждая <b><i>scp-программа</i></b> представляет собой <i>обобщенную структуру</i>, описывающую один из вариантов декомпозиции действий некоторого класса, выполняемых в sc-памяти. Знак <i>sc-переменной</i>, соответствующей конкретному декомпозируемому действию является в рамках <b><i>scp-программы</i></b> <i>ключевым sc-элементом'</i>. Также явно указывается принадлежность данного знака множеству <i>scp-процессов</i>.Принадлежность некоторого действия множеству <i>scp-процессов</i> гарантирует тот факт, что в декомпозиции данного действия будут присутствовать только знаки элементарных действий (<i>scp-операторов</i>), которые может интерпретировать реализация абстрактной scp-машины.Таким образом, каждая <b><i>scp-программа</i></b> описывает в обобщенном виде декомпозицию некоторого <i><b>scp-процесса</b></i> на взаимосвязанные <i>scp-операторы</i>, с указанием, при их наличии, аргументов для данного <i>scp-процесса</i>.По сути каждая <b><i>scp-программа</i></b> представляет собой описание последовательности элементарных операций, которые необходимо выполнить над семантической сетью, чтобы выполнить более сложное действие некоторого класса.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_253: "file://images/sd_scp/program_example.png"
+	=> .system_element_126: "file://images/sd_scp/program_example.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
+		=> nrel_idtf: [<p>SCg-текст. Пример scp-программы</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
 		=> nrel_explanation: [<p>В приведенном примере показана <i>scp-программа</i>, состоящая из трех <i>scp-операторов</i>. Данная программа проверяет, содержится ли в заданном множестве (первый параметр) заданный элемент (второй параметр), и, если нет, то добавляет его в это множество.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	-> .system_element_252: 
-		.system_element_6373;
-		_<- scp_process;
-		_-> .system_element_6375:: .system_element_6374;
-		_-> .system_element_6377:: .system_element_6376;
-		_<= nrel_decomposition_of_action:: .system_element_6378
+	-> .system_element_203: 
+		.system_element_6748;
+		<-_ scp_process;
+		_-> .system_element_6750:: .system_element_6749;
+		_-> .system_element_6752:: .system_element_6751;
+		<=_ nrel_decomposition_of_action:: .system_element_6753
 		(*
-			_-> .system_element_6380:: .system_element_6379
+			_-> rrel_1:: .system_element_6754
 			(*
-				_<- .system_element_6381;;
-				_-> .system_element_6382:: .system_element_6374;;
-				_-> .system_element_6384:: .system_element_6383;;
-				_-> .system_element_6385:: .system_element_6376;;
-				_=> nrel_else_new:: .system_element_6386;;
-				_=> nrel_then:: .system_element_6387;;
+				<-_ .system_element_6755;;
+				_-> .system_element_6756:: .system_element_6749;;
+				_-> .system_element_6758:: .system_element_6757;;
+				_-> .system_element_6759:: .system_element_6751;;
+				_=> nrel_else_new:: .system_element_6760;;
+				_=> nrel_then:: .system_element_6761;;
 			*);;
-			_-> .system_element_6386
+			_-> .system_element_6760
 			(*
-				_<- .system_element_6388;;
-				_-> .system_element_6389:: .system_element_6374;;
-				_-> .system_element_6390:: .system_element_6383;;
-				_-> .system_element_6391:: .system_element_6376;;
-				_=> .system_element_6392:: .system_element_6387;;
+				<-_ .system_element_6762;;
+				_-> .system_element_6763:: .system_element_6749;;
+				_-> .system_element_6764:: .system_element_6757;;
+				_-> .system_element_6765:: .system_element_6751;;
+				_=> .system_element_6766:: .system_element_6761;;
 			*);;
-			_-> .system_element_6387
+			_-> .system_element_6761
 			(*
-				_<- .system_element_6393;;
+				<-_ .system_element_6767;;
 			*);;
 		*)
 	;;
@@ -154,7 +185,7 @@ agent_scp_program
 *);;
 
 abstract_sc_agent_implemented_on_the_scp_language
-=> .system_element_333: {
+=> .system_element_2811: {
 	[<p>Общие принципы организации взаимодействия <i>sc-агентов</i> и пользователей <i>ostis-системы</i> через общую<i>sc-память</i>.</p>]
 	(*
 		<- lang_ru;;
@@ -213,12 +244,22 @@ scp_process
 	<- lang_ru;;
 	=> nrel_format: format_html;;
 *);
-=> .system_element_6394: <
+=> .system_element_6768: <
 	"file://images/sd_scp/process_example.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
+		=> nrel_idtf: [<p>SCg-текст. Пример scp-процесса на начальной стадии выполнения</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
 		=> nrel_explanation: [<p>Осуществляется вызов <i>scp-программы</i>. Генерируется соответствующий <i>scp-процесс</i>. Происходит инициирование начального оператора scp-процесса <i>Operator1</i>.</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+		=> nrel_explanation: [<p>Пример поэтапного выполнения scp-процесса, соответствующего ранее рассмотренному примеру scp-программы. В приведенном примере последовательно показаны состояния <i>scp-процесса</i>, соответствующего <i><b>scp-программе</b></i>, добавляющей заданный элемент в заданное множество, если он там ранее не содержался. В примере предполагается, что рассматриваемый элемент (<i>Element1</i>) изначально не содержится во множестве (<i>Set1</i>).</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
@@ -228,6 +269,11 @@ scp_process
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
+		=> nrel_idtf: [<p>SCg-текст. Пример scp-процесса: безуспешно выполнен оператор поиска</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
 		=> nrel_explanation: [<p>Оператор <i>Operator1</i> оказался безуспешно выполненным. Производится инициирование <i><b>scp-оператора</b> генерации трёхэлементной конструкции</i> <i>Operator2</i>.</p>]
 		(*
 			<- lang_ru;;
@@ -238,6 +284,11 @@ scp_process
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
+		=> nrel_idtf: [<p>SCg-текст. Пример scp-процесса: выполнен оператор генерации, элемент добавлен во множество</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
 		=> nrel_explanation: [<p>Оператор <i>Operator2</i> выполнился. Производится инициирование <i>scp-оператора завершения выполнения программы</i> <i>Operator3</i>.</p>]
 		(*
 			<- lang_ru;;
@@ -248,6 +299,11 @@ scp_process
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
+		=> nrel_idtf: [<p>SCg-текст. Пример scp-процесса: выполнение завершено</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
 		=> nrel_explanation: [<p>Оператор <i>Operator3</i> выполнился. Выполнение <i>scp-процесса</i> завершается.</p>]
 		(*
 			<- lang_ru;;

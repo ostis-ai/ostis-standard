@@ -1,11 +1,13 @@
-.system_element_2719
+.system_element_28
 => nrel_inclusion: [*
-	<= .system_element_116: <
-		.system_element_4404;
-		.system_element_4405;
-		.system_element_4406;
-		.system_element_4407
-	>;;
+	<= .system_element_315: <
+		.system_element_1514;
+		.system_element_1515;
+		.system_element_1516;
+		.system_element_1517
+	>;
+	<- .system_element_3;
+	-> rrel_key_sc_element: subject_domain_of_subject_domains;;
 
 	subject_domain_of_subject_domains
 	=> nrel_idtf: [<p><i>Предметная область</i>, объектами исследования которой являются предметные области</p>]
@@ -20,13 +22,13 @@
 	*);
 	<- subject_domain;
 	<- reflexive_set;
-	-> .system_element_112: 
-		.system_element_4408;
-		.system_element_4409;
+	-> .system_element_6: 
+		.system_element_1518;
+		.system_element_1519;
 		concept;
 		sc_lang
 	;
-	-> .system_element_748: 
+	-> .system_element_335: 
 		rrel_concept_subject_domain;
 		rrel_explored_concept;
 		rrel_maximum_studied_object_class;
@@ -34,16 +36,16 @@
 		rrel_explored_primary_elements_class;
 		rrel_explored_relation;
 		rrel_explored_structures_class;
-		.system_element_4410;
-		.system_element_4411;
-		.system_element_4412;
-		.system_element_4413;
-		.system_element_4414;
-		.system_element_4415;
-		.system_element_4416
+		.system_element_1520;
+		.system_element_1521;
+		.system_element_1522;
+		.system_element_1523;
+		.system_element_1524;
+		.system_element_1525;
+		.system_element_1526
 	;;
 
-	.system_element_4404
+	.system_element_1514
 	=> nrel_inclusion: [*
 
 		subject_domain
@@ -179,10 +181,10 @@
 		*);;
 	*];;
 
-	.system_element_4417
+	.system_element_1527
 	=> nrel_inclusion: [*
 
-		.system_element_4418
+		.system_element_1528
 		=> nrel_idtf: [<p>ролевое отношение, связывающее предметные области с их ключевыми знаками</p>]
 		(*
 			<- lang_ru;;
@@ -200,11 +202,11 @@
 		*);
 		-> rrel_studied_object_class;
 		-> rrel_maximum_studied_object_class;
-		-> .system_element_4177;
-		-> .system_element_4419;
-		-> .system_element_4420;
-		-> .system_element_4421;
-		-> .system_element_4422;;
+		-> .system_element_1529;
+		-> .system_element_1530;
+		-> .system_element_1531;
+		-> .system_element_1532;
+		-> .system_element_1533;;
 
 		rrel_studied_object_class
 		=> nrel_idtf: [<p>быть классом <u>первичных</u> (для данной предметной области) объектов исследования'</p>]
@@ -237,7 +239,7 @@
 				(*
 					<= nrel_inclusion: class_of_classes;;
 				*);
-				.system_element_4423
+				.system_element_1534
 				(*
 					<= nrel_inclusion: class;;
 				*);
@@ -245,40 +247,40 @@
 				(*
 					<= nrel_inclusion: set;;
 				*);
-				.system_element_4424;
-				.system_element_4425;
+				.system_element_1535;
+				.system_element_1536;
 				semantic_neighborhood;
 				subject_domain;
 				ontology;
 				logical_formula;
-				question;
+				action;
 				task;
-				.system_element_1050;
-				.system_element_1131;
-				.system_element_4426;
-				.system_element_736;
-				.system_element_810;
+				.system_element_700;
+				.system_element_803;
+				.system_element_837;
+				.system_element_1181;
+				.system_element_1182;
 				knowledge;
 				knowledge_base;
-				.system_element_4427;
-				.system_element_4428;
-				.system_element_927;
-				.system_element_1022;
-				.system_element_4429;
-				.system_element_4430;
-				.system_element_1643;
-				.system_element_4431;
-				.system_element_4432;
-				.system_element_4433;
-				.system_element_4434;
-				.system_element_4435;
+				.system_element_1537;
+				.system_element_1538;
+				.system_element_1539;
+				.system_element_813;
+				.system_element_1540;
+				.system_element_1541;
+				.system_element_414;
+				.system_element_1542;
+				.system_element_1543;
+				.system_element_1544;
+				.system_element_1545;
+				.system_element_1546;
 				sc_agent
 				(*
 					=> nrel_idtf: [<p>внутренний агент ostis-системы, осуществляющий выполнение некоторого вида действий в памяти ostis-системы</p>];;
-					=> nrel_inclusion: .system_element_4436;;
-					=> nrel_inclusion: .system_element_4437;;
+					=> nrel_inclusion: .system_element_1547;;
+					=> nrel_inclusion: .system_element_1548;;
 				*);
-				.system_element_4438
+				.system_element_1549
 				(*
 					=> nrel_idtf: [<p>Язык SCP</p>]
 					(*
@@ -286,18 +288,18 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);
-				.system_element_4439;
-				.system_element_2479;
-				.system_element_4440;
-				.system_element_4441;
+				.system_element_1222;
+				.system_element_1550;
+				.system_element_1551;
+				.system_element_1552;
 				languages;
-				.system_element_4442;
-				.system_element_4443;
-				.system_element_113;
-				.system_element_4444;
-				.system_element_4445;
-				.system_element_4446;
-				.system_element_4447
+				.system_element_1553;
+				.system_element_1554;
+				.system_element_1555;
+				.system_element_1556;
+				.system_element_1557;
+				.system_element_1558;
+				.system_element_1559
 			};;
 			=> nrel_note: [<p>Здесь приведено семейство тех <i>классов объектов исследования</i>, для которых в текущей версии <i>Стандарта OSTIS</i> представлены соответствующие <i>предметные области</i>. Очевидно, что это семейство должно быть существенно расширено и включить в себя, например, такие <i>классы</i> сущностей, как:
 			<ul>
@@ -333,7 +335,7 @@
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_4177
+		.system_element_1529
 		=> nrel_idtf: [<p>особый объект исследования'</p>]
 		(*
 			<- lang_ru;;
@@ -349,7 +351,7 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
-		-> .system_element_252: .system_element_4448
+		-> rrel_example: .system_element_1560
 		(*
 			=> nrel_note: [<p>Особыми свойствами Числа <i>Нуль</i> являются:
 			<ul>
@@ -361,19 +363,19 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		-> .system_element_4449;
-		-> .system_element_4450;
-		-> .system_element_4451;;
+		-> .system_element_1561;
+		-> .system_element_1562;
+		-> .system_element_1563;;
 
-		.system_element_4452
+		.system_element_1564
 		=> nrel_idtf: [<p>входящий в состав предметной области знак ключевой сущности'</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
 		=> nrel_subdividing: {
-			.system_element_4419;
-			.system_element_4177
+			.system_element_1530;
+			.system_element_1529
 			(*
 				=> nrel_idtf: [<p>знак ключевого объекта исследования'</p>]
 				(*
@@ -383,16 +385,16 @@
 			*)
 		};;
 
-		.system_element_4419
+		.system_element_1530
 		=> nrel_idtf: [<p>понятие, используемое в заданной предметной области не в качестве одного из объектов исследования, а в качестве <u>ключевого</u> понятия'</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
-		<= nrel_inclusion: .system_element_4453
+		<= nrel_inclusion: .system_element_1565
 		(*
 			=> nrel_idtf: [<p>понятие, используемое в sc-знании'</p>];;
-			<= nrel_inclusion: .system_element_4454
+			<= nrel_inclusion: .system_element_1566
 			(*
 				=> nrel_idtf: [<p>понятие, используемое в знании, которое может быть представлено не только в SC-коде*</p>]
 				(*
@@ -413,19 +415,19 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
-		=> nrel_subdividing: .system_element_4455
+		=> nrel_subdividing: .system_element_1567
 		(*
-			<=> .system_element_200: {
+			<=> .system_element_72: {
 				rrel_studied_object_class;
-				.system_element_4456;
-				.system_element_4457;
-				.system_element_4458
+				.system_element_1568;
+				.system_element_1569;
+				.system_element_1570
 			};;
 		*);
-		=> nrel_subdividing: .system_element_4459
+		=> nrel_subdividing: .system_element_1571
 		(*
-			<=> .system_element_200: {
-				.system_element_4460
+			<=> .system_element_72: {
+				.system_element_1572
 				(*
 					=> nrel_note: [<p>Для каждого используемого отношения в предметную область здесь должны входить не только знаки связок, но и все связки целиком с их компонентами.</p>]
 					(*
@@ -433,14 +435,14 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);
-				.system_element_4461
+				.system_element_1573
 			};;
 		*);
-		=> nrel_subdividing: .system_element_4462
+		=> nrel_subdividing: .system_element_1574
 		(*
-			<=> .system_element_200: {
-				.system_element_4463;
-				.system_element_4464
+			<=> .system_element_72: {
+				.system_element_1575;
+				.system_element_1576
 			};;
 			=> nrel_note: [<p>Будем считать, что понятие вводится в данной предметной области в том и только в том случае, если ни в одной предметной области более высокого уровня это понятие не используется. То есть речь идет о первом упоминании этого понятия в рамках последовательности предметных областей от родительских к дочерним.</p>]
 			(*
@@ -448,18 +450,18 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		=> nrel_subdividing: .system_element_4465
+		=> nrel_subdividing: .system_element_1577
 		(*
-			<=> .system_element_200: {
-				.system_element_4466;
-				.system_element_4467
+			<=> .system_element_72: {
+				.system_element_1578;
+				.system_element_1579
 			};;
 		*);
-		=> nrel_subdividing: .system_element_4468
+		=> nrel_subdividing: .system_element_1580
 		(*
-			<=> .system_element_200: {
-				.system_element_4469;
-				.system_element_4470
+			<=> .system_element_72: {
+				.system_element_1581;
+				.system_element_1582
 			};;
 		*);
 		=> nrel_note: [<p>Понятие, используемое в базе знаний, может быть введено (впервые упомянуто) в одной предметной области, определено в другой, а исследоваться --- в третьей.</p>]
@@ -468,45 +470,45 @@
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_4420
+		.system_element_1531
 		=> nrel_idtf: [<p>знак первичного объекта исследования в рамках заданной предметной области'</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_4421
+		.system_element_1532
 		=> nrel_idtf: [<p>знак вторичного объекта исследования в рамках предметной области'</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
-		=> nrel_inclusion: .system_element_4471
+		=> nrel_inclusion: .system_element_1583
 		(*
-			=> nrel_inclusion: .system_element_4472;;
-			=> nrel_inclusion: .system_element_4473
+			=> nrel_inclusion: .system_element_1584;;
+			=> nrel_inclusion: .system_element_1585
 			(*
-				=> nrel_inclusion: .system_element_4474;;
-				=> nrel_inclusion: .system_element_4475;;
-				=> nrel_inclusion: .system_element_4476;;
+				=> nrel_inclusion: .system_element_1586;;
+				=> nrel_inclusion: .system_element_1587;;
+				=> nrel_inclusion: .system_element_1588;;
 			*);;
 		*);
-		=> nrel_inclusion: .system_element_4477
+		=> nrel_inclusion: .system_element_1589
 		(*
-			=> nrel_inclusion: .system_element_4478;;
-			=> nrel_inclusion: .system_element_4479;;
-			=> nrel_inclusion: .system_element_4480;;
-			=> nrel_inclusion: .system_element_4481;;
+			=> nrel_inclusion: .system_element_1590;;
+			=> nrel_inclusion: .system_element_1591;;
+			=> nrel_inclusion: .system_element_1592;;
+			=> nrel_inclusion: .system_element_1593;;
 		*);
-		=> nrel_inclusion: .system_element_4482
+		=> nrel_inclusion: .system_element_1594
 		(*
-			=> nrel_inclusion: .system_element_4483;;
-			=> nrel_inclusion: .system_element_4484;;
-			=> nrel_inclusion: .system_element_4485;;
-			=> nrel_inclusion: .system_element_4486;;
+			=> nrel_inclusion: .system_element_1595;;
+			=> nrel_inclusion: .system_element_1596;;
+			=> nrel_inclusion: .system_element_1597;;
+			=> nrel_inclusion: .system_element_1598;;
 		*);;
 
-		.system_element_4422
+		.system_element_1533
 		=> nrel_idtf: [<p>вспомогательный элемент предметной области, исследуемый в другой (смежной) предметной области'</p>]
 		(*
 			<- lang_ru;;
@@ -549,7 +551,7 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
-		<= nrel_second_domain: .system_element_4454;
+		<= nrel_second_domain: .system_element_1566;
 		=> nrel_idtf: [<p>класс сущностей (класс связок (в том числе <i>отношение</i>), класс классов (в том числе параметр), класс структур), который по крайней мере в одной <i>предметной области</i> является <i>используемым понятием'</i></p>]
 		(*
 			<- lang_ru;;
@@ -557,12 +559,12 @@
 		*);;
 	*];;
 
-	.system_element_4487
+	.system_element_1599
 	=> nrel_inclusion: [*
 
 		subject_domain
 		=> nrel_subdividing: {
-			.system_element_4408
+			.system_element_1518
 			(*
 				=> nrel_idtf: [<p>стационарная предметная область</p>];;
 				=> nrel_idtf: [<p><i>предметная область</i>, в которой связи между сущностями, входящими в ее состав, не зависят от времени (не меняются во времени), элементами <b><i>статической предметной области</i></b> не могут быть <i>временные сущности</i></p>]
@@ -571,7 +573,7 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);
-			.system_element_4488
+			.system_element_1600
 			(*
 				=> nrel_idtf: [<p><i>предметная область</i>, решение задач в которой не требует учета темпоральных свойств объектов исследования</p>]
 				(*
@@ -579,7 +581,7 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);
-			.system_element_4409
+			.system_element_1519
 			(*
 				=> nrel_idtf: [<p>нестационарная предметная область</p>];;
 				=> nrel_idtf: [<p><i>предметная область</i>, которая описывает изменение состояния (в том числе внутренней структуры) объектов исследования и/или изменение конфигурации связей между объектами исследования</p>]
@@ -595,7 +597,7 @@
 			*)
 		};
 		=> nrel_subdividing: {
-			.system_element_4489
+			.system_element_1601
 			(*
 				=> nrel_idtf: [<p><i>предметная область</i>, объектами исследования которой являются <u>внешние</u> сущности (обозначаемые первичными <i>sc-элементами</i>)</p>]
 				(*
@@ -603,7 +605,7 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);
-			.system_element_4490
+			.system_element_1602
 			(*
 				=> nrel_idtf: [<p>метапредметная область</p>];;
 				=> nrel_idtf: [<p><i>предметная область</i>, объектами исследования которой являются <i>sc-множества</i> (отношения, параметры, структуры, классы структур, знания, языки и другие)</p>]
@@ -637,8 +639,8 @@
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_4491
-		-> .system_element_4492
+		.system_element_1603
+		-> .system_element_1523
 		(*
 			=> nrel_idtf: [<p>частная предметная область*</p>];;
 			=> nrel_idtf: [<p>быть частной предметной областью*</p>]
@@ -682,7 +684,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		-> .system_element_4493
+		-> .system_element_1604
 		(*
 			=> nrel_idtf: [<p>Отношение, связывающее заданное семейство предметных областей с предметной областью, которая является результатом их интеграции (это не только теоретико-множественное объединение заданных предметных областей, но и уточнение ролей ключевых понятий в интегрированной предметной области, поскольку одно и то же понятие в интегрируемых предметных областях может иметь разные роли).</p>]
 			(*
@@ -690,24 +692,24 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		-> .system_element_4494;
-		-> .system_element_4495;;
+		-> .system_element_1605;
+		-> .system_element_1606;;
 
-		.system_element_4496
+		.system_element_1607
 		=> nrel_explanation: [<p>Переход от одной предметной области к предметной области с тем же максимальным классом объектов исследования, но с расширенным семейством отношений и, возможно, с расширенным семейством явно выделенных классов объектов исследования (подклассов максимального класса).</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_4497
+		.system_element_1608
 		=> nrel_explanation: [<p>Переход от рассмотрения внешних связей объектов исследования к рассмотрению их внутренней структуры путем декомпозиции исследуемых объектов на части и путем включения в число исследуемых объектов тех, которые являются указанными частями.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_4498
+		.system_element_1609
 		=> nrel_explanation: [<p>Переход от описания заданного класса исследуемых объектов к описанию класса всевозможных множеств, элементами которых являются указанные объекты (например, переход от предметной области геометрических точек к предметной области геометрических фигур).</p>]
 		(*
 			<- lang_ru;;
@@ -715,7 +717,7 @@
 		*);;
 	*];;
 
-	.system_element_4407
+	.system_element_1517
 	=> nrel_inclusion: [*
 
 		sc_lang
@@ -730,7 +732,7 @@
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_4416
+		.system_element_1526
 		=> nrel_idtf: [<p>предметная область заданного sc-языка*</p>]
 		(*
 			<- lang_ru;;
@@ -794,14 +796,14 @@
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_4499
+		.system_element_1610
 		=> nrel_explanation: [<p>Указанная онтология SC-кода определяет денотационную семантику SC-кода путем семантической интерпретации <u>синтаксически</u> выделяемых классов sc-элементов. То есть данная денотационная семантика уточняет смысл <u>только</u> тех классов sc-элементов, которые задаются <u>синтаксически</u> путем приписывания sc-элементам соответствующей синтаксической метки.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_4500
+		.system_element_1611
 		=> nrel_explanation: [<p>Указанная онтология Базового универсального sc-языка определяет денотационную семантику этого Базового универсального sc-языка и представляет собой онтологию <u>верхнего уровня</u>, которая уточняет смысл понятий, лежащий в основе указанного sc-языка. В эту онтологию входит уточнение таких понятий, как материальная сущность, абстрактная сущность, число, пространство, множество, связь, класс, отношение, параметр, структура, класс структур, информационная конструкция, знание, статическая сущность, динамическая сущность, процесс, ситуация, действие, постоянная сущность, временная сущность, часть*, декомпозиция*, пространственная часть*, темпоральная часть* и так далее.</p>]
 		(*
 			<- lang_ru;;

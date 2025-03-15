@@ -1,103 +1,105 @@
-.system_element_3005
+.system_element_2677
 => nrel_inclusion: [*
-	=> .system_element_299: 
-		.system_element_5001;
-		.system_element_3188;
-		.system_element_5002;
-		.system_element_5003
-	;;
+	=> .system_element_1416: 
+		.system_element_1417;
+		.system_element_794;
+		.system_element_1418;
+		.system_element_1419
+	;
+	<- .system_element_3;
+	-> rrel_key_sc_element: .system_element_2678;;
 
-	.system_element_5355
+	.system_element_2678
 	<- subject_domain;
-	-> .system_element_1835: 
-		.system_element_1131
+	-> .system_element_330: 
+		.system_element_803
 	;
-	-> .system_element_112: 
-		.system_element_5356;
-		.system_element_5357;
-		.system_element_3313;
-		.system_element_5358;
-		.system_element_5359;
+	-> .system_element_6: 
+		.system_element_2679;
+		.system_element_2680;
+		.system_element_652;
+		.system_element_2681;
+		.system_element_2682;
 		languages;
-		.system_element_5360;
-		.system_element_5361;
-		.system_element_4310;
-		.system_element_4359;
-		.system_element_4368;
-		.system_element_4370;
-		.system_element_4375;
-		.system_element_4376;
-		.system_element_4390;
-		.system_element_4393;
-		.system_element_4395
+		.system_element_2683;
+		.system_element_2684;
+		.system_element_602;
+		.system_element_651;
+		.system_element_661;
+		.system_element_663;
+		.system_element_668;
+		.system_element_669;
+		.system_element_685;
+		.system_element_688;
+		.system_element_690
 	;
-	=> .system_element_756: {
-		.system_element_5362;
-		.system_element_5363;
-		.system_element_5364
+	=> .system_element_418: {
+		.system_element_2685;
+		.system_element_2686;
+		.system_element_2687
 	};
-	-> .system_element_748: 
-		.system_element_5365;
-		.system_element_5366
+	-> .system_element_335: 
+		.system_element_2688;
+		.system_element_2689
 	;
-	=> .system_element_14: 
-		.system_element_5367;
-		.system_element_5368;
-		.system_element_5369;
-		.system_element_5370;
-		.system_element_5371;
-		.system_element_5372;
-		.system_element_5373;
-		.system_element_5374;
-		.system_element_5375;
-		.system_element_5376;
-		.system_element_5377;
-		.system_element_5378;
-		.system_element_5379;
-		.system_element_5380;
-		.system_element_5381;
-		.system_element_5382;
-		.system_element_5383;
-		.system_element_5384;
-		.system_element_5385;
-		.system_element_5386;
-		.system_element_5387;
-		.system_element_5388;
-		.system_element_5389;
-		.system_element_5390;
-		.system_element_5391;
-		.system_element_5392;
-		.system_element_5393;
-		.system_element_5394;
-		.system_element_5395;
-		.system_element_5396;
-		.system_element_5397;
-		.system_element_5398;
-		.system_element_5399;
-		.system_element_5400;
-		.system_element_5401;
-		.system_element_5402;
-		.system_element_5403;
-		.system_element_5404;
-		.system_element_5405;
-		.system_element_5406;
-		.system_element_3396;
-		.system_element_5407;
-		.system_element_4307;
-		.system_element_3213;
-		.system_element_4308;
-		.system_element_4309;
-		.system_element_4812;
-		.system_element_4813;
-		.system_element_4814
+	=> .system_element_11: 
+		.system_element_2690;
+		.system_element_2691;
+		.system_element_2692;
+		.system_element_2693;
+		.system_element_2694;
+		.system_element_2695;
+		.system_element_2696;
+		.system_element_2697;
+		.system_element_2698;
+		.system_element_2699;
+		.system_element_2700;
+		.system_element_2701;
+		.system_element_2702;
+		.system_element_2703;
+		.system_element_2704;
+		.system_element_2705;
+		.system_element_2706;
+		.system_element_2707;
+		.system_element_2708;
+		.system_element_2709;
+		.system_element_2710;
+		.system_element_2711;
+		.system_element_2712;
+		.system_element_2713;
+		.system_element_2714;
+		.system_element_2715;
+		.system_element_2716;
+		.system_element_2717;
+		.system_element_2718;
+		.system_element_2719;
+		.system_element_2720;
+		.system_element_2721;
+		.system_element_2722;
+		.system_element_2723;
+		.system_element_2724;
+		.system_element_2725;
+		.system_element_2726;
+		.system_element_2727;
+		.system_element_2728;
+		.system_element_2729;
+		.system_element_835;
+		.system_element_2730;
+		.system_element_598;
+		.system_element_599;
+		.system_element_600;
+		.system_element_601;
+		.system_element_1048;
+		.system_element_1049;
+		.system_element_1050
 	;
 	=> nrel_introduction: <
 		[<p>В настоящее время научные исследования в области искусственного интеллекта развиваются по большому спектру различных направлений, однако между ними отсутствует согласованность систем понятий и, как следствие этого, совместимость разрабатываемых систем.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
-			=> .system_element_122: {
-				.system_element_5367
+			=> .system_element_1: {
+				.system_element_2690
 			};;
 		*);
 		[<p>Так в области создания программного обеспечения в силу его значительной сложности остро стоит проблема обеспечения интероперабельности различных программных сущностей, а также переиспользования результатов предыдущих аналогичных разработок.</p>]
@@ -111,40 +113,40 @@
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
-			=> .system_element_122: {
-				.system_element_5368
+			=> .system_element_1: {
+				.system_element_2691
 			};;
-			=> .system_element_180: {
-				.system_element_2720
+			=> .system_element_35: {
+				.system_element_29
 			};;
 		*);
 		[<p>В качестве примера <i>онтологии</i> в данной области можно привести COPS. Целью данной <i>онтологии</i> являлась формализация общих понятий из области программного обеспечения с целью упрощения его разработки и использования.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
-			=> .system_element_122: {
-				.system_element_5369
+			=> .system_element_1: {
+				.system_element_2692
 			};;
 		*);
 		[<p>Проблема совместимости результатов исследований также остро стоит и в лингвистике --- науке, в которой существует множество различных теорий, часто несовместимых друг с другом.В лингвистических исследованиях используются разные варианты разметки данных, нет одного подхода к структуризации корпусов текстов и различаются способы представления данных в них.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
-			=> .system_element_122: {
-				.system_element_5370;
-				.system_element_5371
+			=> .system_element_1: {
+				.system_element_2693;
+				.system_element_2694
 			};;
 		*);
 		[<p>В качестве решения проблемы несовместимости различных способов описания данных в лингвистике предлагались варианты стандартизации форматов такого описания.Примером могут служить <i>Text Encoding Initiative</i> --- консорциум по стандартизации представления текстов в цифровом виде и гайдлайны экспертной группы по стандартизации представления языковых данных <i>EAGLES</i> (например, рекомендации по разметке корпусов текстов).Однако ни один из таких стандартов не получил распространения и не стал использоваться лингвистами повсеместно.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
-			=> .system_element_122: {
-				.system_element_5373;
-				.system_element_5372;
-				.system_element_5408
+			=> .system_element_1: {
+				.system_element_2696;
+				.system_element_2695;
+				.system_element_2731
 				(*
-					<= .system_element_1126: .system_element_5374;;
+					<= .system_element_1104: .system_element_2697;;
 				*)
 			};;
 		*);
@@ -152,22 +154,22 @@
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
-			=> .system_element_122: {
-				.system_element_5376;
-				.system_element_5375;
-				.system_element_5370
+			=> .system_element_1: {
+				.system_element_2699;
+				.system_element_2698;
+				.system_element_2693
 			};;
 		*);
 		[<p>В качестве такой <i>онтологии</i> в предметной области лингвистики выступает <i>The General Ontology of Linguistic Description</i> (<i>GOLD</i>).В этой <i>онтологии</i> формализованы наиболее базовые категории и отношения, используемые в лингвистике, а сама онтология интегрирована с онтологией верхнего уровня <i>Suggested Upper Merged Ontology</i> (<i>SUMO</i>).Авторы <i>GOLD</i> пишут, что создавали онтологию в первую очередь для того, чтобы решить проблему интероперабельности данных лингвистической типологии и для того, чтобы с ее помощью экспертные системы могли обрабатывать научные данные по естественным языкам --- то есть целью создателей <i>онтологии</i> не являлось непосредственно решение задач из области обработки текстов на естественном языке.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
-			=> .system_element_122: {
-				.system_element_5377;
-				.system_element_5378;
-				.system_element_5409
+			=> .system_element_1: {
+				.system_element_2700;
+				.system_element_2701;
+				.system_element_2732
 				(*
-					<= .system_element_1126: .system_element_5379;;
+					<= .system_element_1104: .system_element_2702;;
 				*)
 			};;
 		*);
@@ -175,8 +177,8 @@
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
-			=> .system_element_122: {
-				.system_element_5380
+			=> .system_element_1: {
+				.system_element_2703
 			};;
 		*);
 		[<p>При создании <i>онтологий</i> <i>естественного языка</i>, встает вопрос о статусе спецификации лингвистической информации в таких онтологиях.</p>]
@@ -190,45 +192,45 @@
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
-			=> .system_element_122: {
-				.system_element_5381
+			=> .system_element_1: {
+				.system_element_2704
 			};;
 		*);
 		[<p>Популярность в сфере обработки естественного языка приобрел второй тип <i>онтологии</i>, так как он, в отличие от третьего подхода, который совсем не формализует лингвистическую информацию, позволяет специфицировать больше информации о естественных языках.Так, одна из самых популярных онтологий, используемых в системах для обработки естественного языка, the <i>Generalized Upper Model</i>, является онтологией второго типа.П. Буителар и другие подчеркивают, что всем <i>формальным онтологиям</i> необходима связь с языковой информацией для решения таких задач как выделение информации из текстов <i>естественного языка</i>, автоматизированное заполнение <i>онтологий</i> и генерации текста на <i>естественном языке</i>.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
-			=> .system_element_122: {
-				.system_element_5381;
-				.system_element_5382;
-				.system_element_5383
+			=> .system_element_1: {
+				.system_element_2704;
+				.system_element_2705;
+				.system_element_2706
 			};;
 		*);
 		[<p>Так как использование онтологий в обработке <i>естественного языка</i> позволяет задать семантику получаемым в результате обработки <i>естественного языка</i> данным и потенциально повысить качество анализа, начинается переход к созданию движимых <i>онтологиями</i> систем обработки <i>естественных языков</i>. <i>онтологии</i> <i>естественного языка</i> активно применяются для генерации текстов <i>естественного языка</i> на основе некоторой <i>онтологии</i> предметной области.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
-			=> .system_element_122: {
-				.system_element_5384;
-				.system_element_5385;
-				.system_element_5387;
-				.system_element_5386
+			=> .system_element_1: {
+				.system_element_2707;
+				.system_element_2708;
+				.system_element_2710;
+				.system_element_2709
 			};;
 		*);
 		[<p>Онтологический подход также используется в системах естественно-языковых запросов для баз данных, в которых запрос на <i>естественном языке</i> транслируется в <i>язык</i> запросов по <i>онтологиям</i> конкретных <i>предметных областей</i>, конструкции которого затем транслируются в SQL для обеспечения взаимодействия с реляционными базами данных.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
-			=> .system_element_122: {
-				.system_element_5388
+			=> .system_element_1: {
+				.system_element_2711
 			};;
 		*);
 		[<p>Кроме того, спецификация лингвистической информации в виде <i>онтологий</i> помогает решать задачу автоматизированного создания <i>онтологий</i> на основе естественно-языковых текстов.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
-			=> .system_element_122: {
-				.system_element_5389
+			=> .system_element_1: {
+				.system_element_2712
 			};;
 		*);
 		[<p>Создаются <i>онтологии</i> частных областей лингвистики: например, онтология пространственных выражений в естественных языках, онтология темпоральных сущностей на основе естественного языка, <i>онтологии</i> конкретных естественных языков.</p>]
@@ -255,41 +257,41 @@
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
-			=> .system_element_122: {
-				.system_element_5392;
-				.system_element_5391;
-				.system_element_5390;
-				.system_element_5395;
-				.system_element_5394;
-				.system_element_5393;
-				.system_element_5396;
-				.system_element_5397;
-				.system_element_5398;
-				.system_element_5399;
-				.system_element_5400;
-				.system_element_5401;
-				.system_element_5402
+			=> .system_element_1: {
+				.system_element_2715;
+				.system_element_2714;
+				.system_element_2713;
+				.system_element_2718;
+				.system_element_2717;
+				.system_element_2716;
+				.system_element_2719;
+				.system_element_2720;
+				.system_element_2721;
+				.system_element_2722;
+				.system_element_2723;
+				.system_element_2724;
+				.system_element_2725
 			};;
 		*);
 		[<p>Многие из приведенных выше онтологий созданы с использованием технологии <i>Semantic Web</i>, который является внешней технологией по отношению к существующим решениям для обработки <i>естественных языков</i>, поэтому последним приходится обращаться к ней с помощью API и стандартизированных <i>языков запросов</i> (в частности, <i>SPARQL</i>).</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
-			=> .system_element_122: {
-				.system_element_5387;
-				.system_element_5403
+			=> .system_element_1: {
+				.system_element_2710;
+				.system_element_2726
 			};;
 		*);
 		[<p>Стоит отметить, что несмотря на активное развитие в направлении применения <i>онтологий</i> для обработки <i>естественного языка</i>, многие популярные библиотеки по обработке естественного языка (например, <i>NLTK</i> и <i>spaCy</i> в принципе не поддерживают использование <i>онтологий</i>, а большинство инструментов для разметки естественно-языковых текстов используют обычно свой формат, что требует использования специфичных для таких инструментов парсеров и конвертеров, чтобы данные можно было применить при решении каких-либо задач.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
-			=> .system_element_122: {
-				.system_element_5405;
-				.system_element_5404;
-				.system_element_5410
+			=> .system_element_1: {
+				.system_element_2728;
+				.system_element_2727;
+				.system_element_2733
 				(*
-					<= .system_element_1126: .system_element_5406;;
+					<= .system_element_1104: .system_element_2729;;
 				*)
 			};;
 		*);
@@ -299,17 +301,17 @@
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
-			=> .system_element_122: {
-				.system_element_3396;
-				.system_element_5367
+			=> .system_element_1: {
+				.system_element_835;
+				.system_element_2690
 			};;
 		*);
 		[<p>Так как используемый в <i>Технологии OSTIS</i> <i>язык</i> --- <i>SC-код</i> --- обладает достаточной экспрессивностью для описания знаний любого вида, а сама технология нацелена на создание интероперабельных интеллектуальных систем нового поколения, <i>естественно-языковые интерфейсы</i> <i>ostis-систем</i> смогут справляться с широким кругом задач по обработке текстов на естественных языках --- будь то синтез естественно-языковых текстов в целом, ведение диалога в диалоговых системах, поиск с использованием <i>естественного языка</i>, выделение информации из текстов и тому подобное.При этом в то время как в текущем состоянии сферы обработки естественных языков данные классы задач выполняются зачастую специализированными средствами и требуют дополнительных затрат на обеспечение потенциальной совместимости с конкретными компьютерными системами, в рамках <i>Технологии OSTIS</i> для их решения будет использоваться один универсальный <i>язык смыслового представления знаний</i>, на котором будут написаны как компоненты решателя задач, так и онтология языков и конкретных предметных областей, что позволит решить проблему интероперабельности.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
-			=> .system_element_180: {
-				.system_element_230
+			=> .system_element_35: {
+				.system_element_788
 			};;
 		*);
 		[<p>Более того, <i>онтология</i> <i>естественных языков</i>, разработанная в рамках такой технологии, могла бы быть использована не только для решения прикладных задач по обработке <i>естественного языка</i>, но и для обеспечения интероперабельности данных, полученных в ходе лингвистических исследований, что было бы ценным вкладом в область теоретической лингвистики.</p>]
@@ -339,7 +341,7 @@
 		*)
 	>;;
 
-	.system_element_1131
+	.system_element_803
 	=> nrel_subdividing: {
 		languages
 		(*
@@ -349,56 +351,56 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_5411
+		.system_element_2734
 		(*
 			=> nrel_explanation: [<p>Искусственный язык представляет собой язык, специально разработанный для достижения определённых целей</p>];;
-			-> .system_element_5412;;
-			-> .system_element_573;;
-			=> nrel_inclusion: .system_element_5413
+			-> .system_element_2735;;
+			-> .system_element_211;;
+			=> nrel_inclusion: .system_element_2736
 			(*
 				=> nrel_explanation: [<p>Сконструированный язык представляет собой искусственный язык, предназначенный для общения людей</p>];;
-				-> .system_element_5412;;
+				-> .system_element_2735;;
 			*);;
 		*)
 	};
-	=> nrel_inclusion: .system_element_5414
+	=> nrel_inclusion: .system_element_2737
 	(*
 		=> nrel_explanation: [<p>Международный язык представляет собой естественный или искусственный язык, использующийся для общения людей разных из стран</p>];;
 		-> lang_en;;
 		-> lang_ru;;
 	*);;
 
-	.system_element_5356
+	.system_element_2679
 	<= nrel_intersection: {
-		.system_element_5413;
-		.system_element_5414
+		.system_element_2736;
+		.system_element_2737
 	};;
 
-	.system_element_5357
+	.system_element_2680
 	<= nrel_combination: {
 		languages;
-		.system_element_5413
+		.system_element_2736
 	};
 	-> lang_en;
 	-> lang_ru;
-	-> .system_element_5412;
+	-> .system_element_2735;
 	<= nrel_combination: {
-		.system_element_5415
+		.system_element_2738
 		(*
 			=> nrel_explanation: [<p>Корневой язык представляет собой язык, для которого характерно полное отсутствие словоизменения и наличие грамматической значимости порядка слов, состоящих только из корня.</p>];;
 			-> lang_en;;
 		*);
-		.system_element_5416
+		.system_element_2739
 		(*
 			=> nrel_explanation: [<p>Агглютинативный язык характеризуется развитой системой употребления суффиксов, приставок, добавляемых к неизменяемой основе слова, которые используются для выражения категорий числа, падежа, рода и др.</p>];;
 			-> lang_en;;
 		*);
-		.system_element_4636
+		.system_element_951
 		(*
 			=> nrel_explanation: [<p>Для флективного языка характерно развитое употребление окончаний для выражения категорий рода, числа, падежа, сложная система склонения глаголов, чередование гласных в корне, а также строгое различение частей речи.</p>];;
 			-> lang_ru;;
 		*);
-		.system_element_5417
+		.system_element_2740
 		(*
 			=> nrel_explanation: [<p>Для профлективного языка характерны агглютинация (в случае именного словоизменения), флексия и чередование гласных (аблаут)(в случае глагольного словоизменения).</p>]
 			(*
@@ -408,21 +410,21 @@
 		*)
 	};;
 
-	.system_element_3313
+	.system_element_652
 	<= nrel_inclusion: file;
-	=> .system_element_1120: [<p><b><i>лексема</i></b> --- минимальная единица <i>языка</i>, имеющая семантическую интерпретацию и обозначающая концепт, отражающий взгляд на мир некоторого языкового сообщества</p>]
+	=> .system_element_264: [<p><b><i>лексема</i></b> --- минимальная единица <i>языка</i>, имеющая семантическую интерпретацию и обозначающая концепт, отражающий взгляд на мир некоторого языкового сообщества</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
-		=> .system_element_122: .system_element_5407;;
+		=> .system_element_1: .system_element_2730;;
 	*);
 	=> nrel_explanation: [<p><i>Лексема</i> --- тайген или ёген конкретного естественного языка.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
-		=> .system_element_122: .system_element_5005;;
+		=> .system_element_1: .system_element_1421;;
 	*);
-	=> .system_element_252: "file://images/sd_natural_languages/lexeme_example_a.png"
+	=> .system_element_203: "file://images/sd_natural_languages/lexeme_example_a.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
@@ -438,15 +440,15 @@
 		*);;
 	*);;
 
-	.system_element_5358
+	.system_element_2681
 	<= nrel_inclusion: file;
-	=> .system_element_1120: [<p><i>номинативная единица</i> --- это устойчивая последовательность комбинторных вариантов лексем, в которой один вариант лексемы (модификатор) определяет другой (актуализатор).</p>]
+	=> .system_element_264: [<p><i>номинативная единица</i> --- это устойчивая последовательность комбинторных вариантов лексем, в которой один вариант лексемы (модификатор) определяет другой (актуализатор).</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
-		=> .system_element_122: .system_element_5005;;
+		=> .system_element_1: .system_element_1421;;
 	*);
-	=> .system_element_252: {
+	=> .system_element_203: {
 		[<p>записная книжка</p>]
 		(*
 			<- lang_ru;;
@@ -459,18 +461,18 @@
 		*)
 	};;
 
-	.system_element_5359
+	.system_element_2682
 	<= nrel_inclusion: file;
 	=> nrel_explanation: [<p><i>Комбинторный вариант лексемы</i> --- вариант лексемы в упорядоченном наборе её вариантов (парадигме).</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
-		=> .system_element_122: .system_element_5418;;
+		=> .system_element_1: .system_element_2741;;
 	*);;
 
-	.system_element_5365
+	.system_element_2688
 	<- quasybinary_relation;
-	=> .system_element_1120: [<p><b><i>морфологическая парадигма*</i></b> --- <i>бинарное ориентированное отношение</i>, связывающее <i>лексему</i> и множество ее <i>словоформ</i>.</p>]
+	=> .system_element_264: [<p><b><i>морфологическая парадигма*</i></b> --- <i>бинарное ориентированное отношение</i>, связывающее <i>лексему</i> и множество ее <i>словоформ</i>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
@@ -480,103 +482,103 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> nrel_first_domain: .system_element_4368;
-	=> nrel_second_domain: .system_element_3313;;
+	=> nrel_first_domain: .system_element_661;
+	=> nrel_second_domain: .system_element_652;;
 
 	languages
 	=> nrel_subdividing: {
-		.system_element_5419
+		.system_element_2742
 		(*
 			=> nrel_subdividing: {
-				.system_element_5360;
-				.system_element_5361
+				.system_element_2683;
+				.system_element_2684
 			};;
 		*);
-		.system_element_5420
+		.system_element_2743
 		(*
 			=> nrel_explanation: [<p><i>Знаки алфавита синтаксиса</i> --- вспомогательные средства синтаксиса (на макроуровне --- предлоги, послелоги, союзы, частицы и др., на микроуровне --- флексии, префиксы, постфиксы, инфиксы и др.), служащие для соединения составных частей языковых структур и образования морфологических парадигм.</p>]
 			(*
 				<- lang_ru;;
 				=> nrel_format: format_html;;
-				=> .system_element_122: .system_element_5005;;
+				=> .system_element_1: .system_element_1421;;
 			*);;
 		*)
 	};;
 
-	.system_element_5360
-	=> .system_element_1120: [<p><i>тайген</i> --- часть языка, обозначающая индивида.</p>]
+	.system_element_2683
+	=> .system_element_264: [<p><i>тайген</i> --- часть языка, обозначающая индивида.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
-		=> .system_element_122: .system_element_5421;;
-		=> .system_element_122: .system_element_5422;;
+		=> .system_element_1: .system_element_2744;;
+		=> .system_element_1: .system_element_2745;;
 	*);
 	=> nrel_subdividing: {
-		.system_element_5423
+		.system_element_2746
 		(*
 			=> nrel_subdividing: {
-				.system_element_5424;
-				.system_element_5425
+				.system_element_2747;
+				.system_element_2748
 			};;
 		*);
-		.system_element_5426
+		.system_element_2749
 		(*
 			=> nrel_subdividing: {
-				.system_element_5427;
-				.system_element_5428
+				.system_element_2750;
+				.system_element_2751
 				(*
 					=> nrel_subdividing: {
-						.system_element_5429
+						.system_element_2752
 						(*
-							=> .system_element_1120: [<p><i>информационный тайген</i> --- тайген, обозначающий индивида в информационном фрагменте модели мира.</p>]
+							=> .system_element_264: [<p><i>информационный тайген</i> --- тайген, обозначающий индивида в информационном фрагменте модели мира.</p>]
 							(*
 								<- lang_ru;;
 								=> nrel_format: format_html;;
-								=> .system_element_122: .system_element_5421;;
-								=> .system_element_122: .system_element_5422;;
+								=> .system_element_1: .system_element_2744;;
+								=> .system_element_1: .system_element_2745;;
 							*);;
 						*);
-						.system_element_5430
+						.system_element_2753
 						(*
-							=> .system_element_1120: [<p><i>физический тайген</i> --- тайген, обозначающий индивида в физическом фрагменте модели мира.</p>]
+							=> .system_element_264: [<p><i>физический тайген</i> --- тайген, обозначающий индивида в физическом фрагменте модели мира.</p>]
 							(*
 								<- lang_ru;;
 								=> nrel_format: format_html;;
-								=> .system_element_122: .system_element_5421;;
-								=> .system_element_122: .system_element_5422;;
+								=> .system_element_1: .system_element_2744;;
+								=> .system_element_1: .system_element_2745;;
 							*);;
 							=> nrel_subdividing: {
-								.system_element_5431
+								.system_element_2754
 								(*
-									=> .system_element_1120: [<p><i>постоянный тайген</i> --- физический тайген, обозначающий постоянного индивида.</p>]
+									=> .system_element_264: [<p><i>постоянный тайген</i> --- физический тайген, обозначающий постоянного индивида.</p>]
 									(*
 										<- lang_ru;;
 										=> nrel_format: format_html;;
-										=> .system_element_122: .system_element_5421;;
-										=> .system_element_122: .system_element_5422;;
+										=> .system_element_1: .system_element_2744;;
+										=> .system_element_1: .system_element_2745;;
 									*);;
 								*);
-								.system_element_5432
+								.system_element_2755
 								(*
-									=> .system_element_1120: [<p><i>переменный тайген</i> --- физический тайген, обозначающий переменного индивида.</p>]
+									=> .system_element_264: [<p><i>переменный тайген</i> --- физический тайген, обозначающий переменного индивида.</p>]
 									(*
 										<- lang_ru;;
 										=> nrel_format: format_html;;
-										=> .system_element_122: .system_element_5421;;
-										=> .system_element_122: .system_element_5422;;
+										=> .system_element_1: .system_element_2744;;
+										=> .system_element_1: .system_element_2745;;
 									*);;
 								*)
 							};;
 							=> nrel_subdividing: {
-								.system_element_5433;
-								.system_element_5434
+								.system_element_2756;
+								.system_element_2757
 							};;
 							=> nrel_subdividing: {
-								.system_element_5435;
-								.system_element_5436
+								.system_element_2758;
+								.system_element_2759
 								(*
-									=> nrel_inclusion: .system_element_5437;;
-									=> nrel_inclusion: .system_element_5438;;
+									=> nrel_inclusion: .system_element_2760;;
+									=> nrel_inclusion: .system_element_2761;;
 								*)
 							};;
 						*)
@@ -586,191 +588,191 @@
 		*)
 	};;
 
-	.system_element_5361
-	=> .system_element_1120: [<p><i>ёген</i> --- часть языка, обозначающая признак индивида.</p>]
+	.system_element_2684
+	=> .system_element_264: [<p><i>ёген</i> --- часть языка, обозначающая признак индивида.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
-		=> .system_element_122: .system_element_5421;;
-		=> .system_element_122: .system_element_5422;;
+		=> .system_element_1: .system_element_2744;;
+		=> .system_element_1: .system_element_2745;;
 	*);
 	=> nrel_subdividing: {
-		.system_element_5439
+		.system_element_2762
 		(*
 			=> nrel_subdividing: {
-				.system_element_5440;
-				.system_element_5441
+				.system_element_2763;
+				.system_element_2764
 			};;
 		*);
-		.system_element_5442
+		.system_element_2765
 		(*
 			=> nrel_subdividing: {
-				.system_element_5443
+				.system_element_2766
 				(*
 					=> nrel_subdividing: {
-						.system_element_5444
+						.system_element_2767
 						(*
-							=> .system_element_1120: [<p><i>информационный ёген</i> --- еген, обозначающий признак индивида в информационном фрагменте модели мира.</p>]
+							=> .system_element_264: [<p><i>информационный ёген</i> --- еген, обозначающий признак индивида в информационном фрагменте модели мира.</p>]
 							(*
 								<- lang_ru;;
 								=> nrel_format: format_html;;
-								=> .system_element_122: .system_element_5421;;
-								=> .system_element_122: .system_element_5445;;
+								=> .system_element_1: .system_element_2744;;
+								=> .system_element_1: .system_element_2768;;
 							*);;
 						*);
-						.system_element_5446
+						.system_element_2769
 						(*
-							=> .system_element_1120: [<p><i>физический ёген</i> --- еген, обозначающий признак индивида в физическом фрагменте модели мира.</p>]
+							=> .system_element_264: [<p><i>физический ёген</i> --- еген, обозначающий признак индивида в физическом фрагменте модели мира.</p>]
 							(*
 								<- lang_ru;;
 								=> nrel_format: format_html;;
-								=> .system_element_122: .system_element_5421;;
-								=> .system_element_122: .system_element_5445;;
+								=> .system_element_1: .system_element_2744;;
+								=> .system_element_1: .system_element_2768;;
 							*);;
 							=> nrel_subdividing: {
-								.system_element_5447
+								.system_element_2770
 								(*
-									=> .system_element_1120: [<p><i>постоянный ёген</i> --- физический ёген, обозначающий постоянный признак индивида.</p>]
+									=> .system_element_264: [<p><i>постоянный ёген</i> --- физический ёген, обозначающий постоянный признак индивида.</p>]
 									(*
 										<- lang_ru;;
 										=> nrel_format: format_html;;
-										=> .system_element_122: .system_element_5421;;
-										=> .system_element_122: .system_element_5445;;
+										=> .system_element_1: .system_element_2744;;
+										=> .system_element_1: .system_element_2768;;
 									*);;
 								*);
-								.system_element_5448
+								.system_element_2771
 								(*
-									=> .system_element_1120: [<p><i>переменный ёген</i> --- физический ёген, обозначающий переменный признак индивида.</p>]
+									=> .system_element_264: [<p><i>переменный ёген</i> --- физический ёген, обозначающий переменный признак индивида.</p>]
 									(*
 										<- lang_ru;;
 										=> nrel_format: format_html;;
-										=> .system_element_122: .system_element_5421;;
-										=> .system_element_122: .system_element_5445;;
+										=> .system_element_1: .system_element_2744;;
+										=> .system_element_1: .system_element_2768;;
 									*);;
 								*)
 							};;
 							=> nrel_subdividing: {
-								.system_element_5449;
-								.system_element_5450
+								.system_element_2772;
+								.system_element_2773
 							};;
 							=> nrel_subdividing: {
-								.system_element_5451;
-								.system_element_5452
+								.system_element_2774;
+								.system_element_2775
 								(*
 									=> nrel_subdividing: {
-										.system_element_5453;
-										.system_element_5454
+										.system_element_2776;
+										.system_element_2777
 									};;
 								*)
 							};;
 						*)
 					};;
 				*);
-				.system_element_5455
+				.system_element_2778
 			};;
 		*)
 	};;
 
-	.system_element_5366
+	.system_element_2689
 	<- role_relation;
-	=> .system_element_1120: [<p><i>член предложения'</i> --- это отношение, связывающее декомпозицию текста с файлом, содержимое которого (часть языка) играет в декомпозируемом тексте определенную синтаксическую роль.</p>]
+	=> .system_element_264: [<p><i>член предложения'</i> --- это отношение, связывающее декомпозицию текста с файлом, содержимое которого (часть языка) играет в декомпозируемом тексте определенную синтаксическую роль.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
-		=> .system_element_122: .system_element_5005;;
+		=> .system_element_1: .system_element_1421;;
 	*);
 	=> nrel_subdividing: {
-		.system_element_5456
+		.system_element_2779
 		(*
 			=> nrel_subdividing: {
-				.system_element_5457
+				.system_element_2780
 				(*
-					=> .system_element_1120: [<p><i>подлежащее'</i> --- это одно из главных ролевых отношений, связывающее декомпозицию текста с файлом, содержимое которого обозначает исходный пункт описания события, выбранный наблюдателем.</p>]
+					=> .system_element_264: [<p><i>подлежащее'</i> --- это одно из главных ролевых отношений, связывающее декомпозицию текста с файлом, содержимое которого обозначает исходный пункт описания события, выбранный наблюдателем.</p>]
 					(*
 						<- lang_ru;;
 						=> nrel_format: format_html;;
-						=> .system_element_122: .system_element_5458;;
+						=> .system_element_1: .system_element_2781;;
 					*);;
 				*);
-				.system_element_5459
+				.system_element_2782
 				(*
-					=> .system_element_1120: [<p><i>сказуемое'</i> --- это одно из главных ролевых отношений, связывающее декомпозицию текста с файлом, содержимое которого обозначает отображение наблюдателем исходного пункта описания события в конечный.</p>]
+					=> .system_element_264: [<p><i>сказуемое'</i> --- это одно из главных ролевых отношений, связывающее декомпозицию текста с файлом, содержимое которого обозначает отображение наблюдателем исходного пункта описания события в конечный.</p>]
 					(*
 						<- lang_ru;;
 						=> nrel_format: format_html;;
-						=> .system_element_122: .system_element_5458;;
+						=> .system_element_1: .system_element_2781;;
 					*);;
 				*);
-				.system_element_5460
+				.system_element_2783
 				(*
-					=> .system_element_1120: [<p><i>прямое дополнение'</i> --- это одно из главных ролевых отношений, связывающее декомпозицию текста с файлом, содержимое которого обозначает конечный пункт описания события, выбранный наблюдателем.</p>]
+					=> .system_element_264: [<p><i>прямое дополнение'</i> --- это одно из главных ролевых отношений, связывающее декомпозицию текста с файлом, содержимое которого обозначает конечный пункт описания события, выбранный наблюдателем.</p>]
 					(*
 						<- lang_ru;;
 						=> nrel_format: format_html;;
-						=> .system_element_122: .system_element_5458;;
+						=> .system_element_1: .system_element_2781;;
 					*);;
 				*)
 			};;
 		*);
-		.system_element_5461
+		.system_element_2784
 		(*
 			=> nrel_subdividing: {
-				.system_element_5462;
-				.system_element_5463
+				.system_element_2785;
+				.system_element_2786
 				(*
-					=> .system_element_1120: [<p><i>определение'</i> --- это одно из второстепенных ролевых отношений, связывающее декомпозицию текста с файлом, содержимое которого обозначает модификацию подлежащего, дополнения, обстоятельства места и времени.</p>]
+					=> .system_element_264: [<p><i>определение'</i> --- это одно из второстепенных ролевых отношений, связывающее декомпозицию текста с файлом, содержимое которого обозначает модификацию подлежащего, дополнения, обстоятельства места и времени.</p>]
 					(*
 						<- lang_ru;;
 						=> nrel_format: format_html;;
-						=> .system_element_122: .system_element_5445;;
-						=> .system_element_122: .system_element_5464;;
-						=> .system_element_122: .system_element_5465;;
+						=> .system_element_1: .system_element_2768;;
+						=> .system_element_1: .system_element_2787;;
+						=> .system_element_1: .system_element_2788;;
 					*);;
 				*);
-				.system_element_5466
+				.system_element_2789
 				(*
-					=> .system_element_1120: [<p><i>обстоятельство'</i> --- это одно из второстепенных ролевых отношений, связывающее декомпозицию текста с файлом, содержимое которого обозначает либо модификацию, либо локализацию сказуемого.</p>]
+					=> .system_element_264: [<p><i>обстоятельство'</i> --- это одно из второстепенных ролевых отношений, связывающее декомпозицию текста с файлом, содержимое которого обозначает либо модификацию, либо локализацию сказуемого.</p>]
 					(*
 						<- lang_ru;;
 						=> nrel_format: format_html;;
-						=> .system_element_122: .system_element_5445;;
-						=> .system_element_122: .system_element_5464;;
-						=> .system_element_122: .system_element_5465;;
+						=> .system_element_1: .system_element_2768;;
+						=> .system_element_1: .system_element_2787;;
+						=> .system_element_1: .system_element_2788;;
 						=> nrel_subdividing: {
-							.system_element_5467
+							.system_element_2790
 							(*
-								=> .system_element_1120: [<p>обстоятельство степени --- обстоятельство, обозначающее модификацию сказуемого.</p>]
+								=> .system_element_264: [<p>обстоятельство степени --- обстоятельство, обозначающее модификацию сказуемого.</p>]
 								(*
 									<- lang_ru;;
 									=> nrel_format: format_html;;
 								*);;
 							*);
-							.system_element_5468
+							.system_element_2791
 							(*
-								=> .system_element_1120: [<p>обстоятельство образа действия --- обстоятельство, обозначающее модификацию сказуемого.</p>]
+								=> .system_element_264: [<p>обстоятельство образа действия --- обстоятельство, обозначающее модификацию сказуемого.</p>]
 								(*
 									<- lang_ru;;
 									=> nrel_format: format_html;;
 								*);;
 							*);
-							.system_element_5469
+							.system_element_2792
 							(*
-								=> .system_element_1120: [<p>обстоятельства места --- обстоятельство, обозначающее пространственную локализацию сказуемого.</p>]
+								=> .system_element_264: [<p>обстоятельства места --- обстоятельство, обозначающее пространственную локализацию сказуемого.</p>]
 								(*
 									<- lang_ru;;
 									=> nrel_format: format_html;;
 									=> nrel_subdividing: {
-										.system_element_5470;
-										.system_element_5471
+										.system_element_2793;
+										.system_element_2794
 									};;
 								*);;
 							*);
-							.system_element_5472
+							.system_element_2795
 							(*
-								=> .system_element_1120: [<p>обстоятельство времени --- обстоятельство, обозначающее временную локализацию сказуемого.</p>];;
+								=> .system_element_264: [<p>обстоятельство времени --- обстоятельство, обозначающее временную локализацию сказуемого.</p>];;
 								=> nrel_subdividing: {
-									.system_element_5473;
-									.system_element_5474
+									.system_element_2796;
+									.system_element_2797
 								};;
 							*)
 						};;
@@ -780,8 +782,8 @@
 		*)
 	};;
 
-	.system_element_5475
-	<- .system_element_254;
+	.system_element_2798
+	<- .system_element_143;
 	=> nrel_explanation: [<p>Здесь представлено описание лексемы с указанием ее принадлежности определённой части речи. Также описание содержит морфологическую парадигму данной лексемы, связывающую ее с ее словоформами.</p>]
 	(*
 		<- lang_ru;;
@@ -793,8 +795,8 @@
 		=> nrel_format: format_png;;
 	*);;
 
-	.system_element_5476
-	<=> .system_element_200: {
+	.system_element_2799
+	<=> .system_element_72: {
 		[<p>Contents/part_kb/src/images/sd_natural_languages/nl_text.png</p>]
 		(*
 			<- lang_ru;;
@@ -804,7 +806,7 @@
 				<- lang_ru;;
 				=> nrel_format: format_html;;
 			*);;
-			=> .system_element_5477: "file://images/sd_natural_languages/nl_lexical.png"
+			=> .system_element_2800: "file://images/sd_natural_languages/nl_lexical.png"
 			(*
 				<- concept_file;;
 				=> nrel_format: format_png;;
@@ -813,7 +815,7 @@
 					<- lang_ru;;
 					=> nrel_format: format_html;;
 				*);;
-				=> .system_element_5478: "file://images/sd_natural_languages/nl_synactical.png"
+				=> .system_element_2801: "file://images/sd_natural_languages/nl_synactical.png"
 				(*
 					<- concept_file;;
 					=> nrel_format: format_png;;

@@ -1,18 +1,18 @@
-.system_element_4809
+.system_element_1045
 => nrel_inclusion: [*
 
-	.system_element_4810
-	-> .system_element_1835: 
-		.system_element_4811
+	.system_element_1046
+	-> .system_element_330: 
+		.system_element_1047
 	;
-	=> .system_element_14: 
-		.system_element_4812;
-		.system_element_4813;
-		.system_element_4814
+	=> .system_element_11: 
+		.system_element_1048;
+		.system_element_1049;
+		.system_element_1050
 	;;
 
-	.system_element_4815
-	=> .system_element_1120: [<p>Формализацией <i>денотационной семантики</i> <i>естественного языка</i> мы будем считать множество общих правил перехода от <i>синтаксиса информационных конструкций</i> <i>естественных языков</i> к <i>смысловому представлению информации</i>, содержащейся в исходной <i>информационной конструкции</i>.</p>]
+	.system_element_1051
+	=> .system_element_264: [<p>Формализацией <i>денотационной семантики</i> <i>естественного языка</i> мы будем считать множество общих правил перехода от <i>синтаксиса информационных конструкций</i> <i>естественных языков</i> к <i>смысловому представлению информации</i>, содержащейся в исходной <i>информационной конструкции</i>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
@@ -21,14 +21,14 @@
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
-		=> .system_element_122: {
-			.system_element_4812;
-			.system_element_4813;
-			.system_element_4814
+		=> .system_element_1: {
+			.system_element_1048;
+			.system_element_1049;
+			.system_element_1050
 		};;
 	*);;
 
-	.system_element_4811
+	.system_element_1047
 	=> nrel_note: [<p><i>Денотационная семантика</i> <i>языка</i> специфицирует интерпретацию элементов <i>синтаксиса</i> данного <i>языка</i> и представляет собой множество формул, описывающих то, каким образом <i>информационным конструкциям</i> <i>языка</i> ставятся в соответствие обозначаемые ими сущности и конфигурации отношений между этими сущностями.</p>]
 	(*
 		<- lang_ru;;
@@ -40,42 +40,42 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4816
+	.system_element_1052
 	=> nrel_note: [<p>Данные правила должны применяться последовательно и позволяют получить <i>смысл</i> текста <i>естественного языка</i> по его синтаксической структуре, "поднимаясь" по дереву <i>составляющих</i> от <i>вершин</i> к <i>максимальным проекциям</i>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	-> .system_element_4817
+	-> .system_element_1053
 	(*
-		=> .system_element_252: .system_element_4818;;
+		=> .system_element_203: .system_element_1054;;
 	*);
-	-> .system_element_4819
+	-> .system_element_1055
 	(*
-		=> .system_element_252: .system_element_4820;;
+		=> .system_element_203: .system_element_1056;;
 	*);
-	-> .system_element_4821
+	-> .system_element_1057
 	(*
-		=> .system_element_252: .system_element_4822;;
+		=> .system_element_203: .system_element_1058;;
 	*);
-	-> .system_element_4823
+	-> .system_element_1059
 	(*
-		=> .system_element_252: .system_element_4824;;
+		=> .system_element_203: .system_element_1060;;
 	*);
-	-> .system_element_4825
+	-> .system_element_1061
 	(*
-		=> .system_element_252: .system_element_4826;;
+		=> .system_element_203: .system_element_1062;;
 	*);
-	-> .system_element_4827
+	-> .system_element_1063
 	(*
-		=> .system_element_252: .system_element_4828;;
+		=> .system_element_203: .system_element_1064;;
 	*);
-	-> .system_element_4829
+	-> .system_element_1065
 	(*
-		=> .system_element_252: .system_element_4830;;
+		=> .system_element_203: .system_element_1066;;
 	*);;
 
-	.system_element_4818
+	.system_element_1054
 	<=> "file://images/sd_natural_languages/d_sem_1.png"
 	(*
 		<- concept_file;;
@@ -87,7 +87,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4820
+	.system_element_1056
 	<=> "file://images/sd_natural_languages/d_sem_2.png"
 	(*
 		<- concept_file;;
@@ -99,7 +99,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4822
+	.system_element_1058
 	<=> "file://images/sd_natural_languages/d_sem_3.png"
 	(*
 		<- concept_file;;
@@ -111,7 +111,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4824
+	.system_element_1060
 	<=> "file://images/sd_natural_languages/d_sem_4.png"
 	(*
 		<- concept_file;;
@@ -123,7 +123,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4826
+	.system_element_1062
 	<=> "file://images/sd_natural_languages/d_sem_5.png"
 	(*
 		<- concept_file;;
@@ -135,7 +135,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4828
+	.system_element_1064
 	<=> "file://images/sd_natural_languages/d_sem_6.png"
 	(*
 		<- concept_file;;
@@ -147,7 +147,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4830
+	.system_element_1066
 	<=> "file://images/sd_natural_languages/d_sem_7.png"
 	(*
 		<- concept_file;;

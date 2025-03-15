@@ -1,9 +1,9 @@
 .sd_actions_segment6_7 = [*
-.system_element_5177
+.system_element_1112
 => nrel_inclusion: [*
-	<- .system_element_4961;;
+	<- .system_element_3;;
 
-	.system_element_946
+	.system_element_745
 	=> nrel_idtf: [<p>умение</p>]
 	(*
 		<- lang_ru;;
@@ -40,7 +40,7 @@
 		=> nrel_format: format_html;;
 	*);
 	=> nrel_subdividing: {
-		.system_element_5241
+		.system_element_1214
 		(*
 			=> nrel_idtf: [<p>самоинициирующийся навык</p>]
 			(*
@@ -48,7 +48,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_5242
+		.system_element_1215
 	};
 	=> nrel_explanation: [<p><i>Навыки</i> могут быть <i>пассивными навыками</i>, то есть такими <i>навыками</i>, применение которых должно явно инициироваться каким-либо агентом, либо <i>активными навыками</i>, которые инициируются самостоятельно при возникновении соответствующей ситуации в базе знаний. Для этого в состав <i>активного навыка</i> помимо <i>метода</i> и его операционной семантики включается также <i>sc-агент</i>, который реагирует на появление соответствующей ситуации в базе знаний и инициирует интерпретацию <i>метода</i> данного <i>навыка</i>.Такое разделение позволяет реализовать и комбинировать различные подходы к решению задач, в частности, <i>пассивные навыки</i> можно рассматривать в качестве способа реализации концепции интеллектуального пакета программ.</p>]
 	(*
@@ -61,8 +61,8 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_5217
-	<= .system_element_4972: .system_element_465;
+	.system_element_1184
+	<= .system_element_1187: .system_element_141;
 	=> nrel_idtf: [<p>множество методов, для которых можно <u>унифицировать</u> представление (спецификацию) этих методов</p>]
 	(*
 		<- lang_ru;;
@@ -83,17 +83,17 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	-> .system_element_5243
+	-> .system_element_1216
 	(*
-		=> nrel_inclusion: .system_element_5244;;
+		=> nrel_inclusion: .system_element_1217;;
 	*);
-	-> .system_element_5245
+	-> .system_element_1218
 	(*
-		=> nrel_inclusion: .system_element_5246;;
-		=> nrel_inclusion: .system_element_5247;;
-		=> nrel_inclusion: .system_element_5248
+		=> nrel_inclusion: .system_element_1219;;
+		=> nrel_inclusion: .system_element_1220;;
+		=> nrel_inclusion: .system_element_1221
 		(*
-			=> nrel_inclusion: .system_element_4439
+			=> nrel_inclusion: .system_element_1222
 			(*
 				=> nrel_idtf: [<p>класс методов решения задач на основе искусственных нейронных сетей</p>]
 				(*
@@ -101,7 +101,7 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);;
-			=> nrel_inclusion: .system_element_5249;;
+			=> nrel_inclusion: .system_element_1223;;
 		*);;
 	*);
 	=> nrel_idtf: [<p>множество методов основанных на общей онтологии</p>]
@@ -130,7 +130,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_5250
+	.system_element_1224
 	=> nrel_idtf: [<p>язык методов</p>]
 	(*
 		<- lang_ru;;
@@ -161,13 +161,13 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<= nrel_inclusion: .system_element_1131;
+	<= nrel_inclusion: .system_element_803;
 	=> nrel_idtf: [<p>язык программирования</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> nrel_inclusion: .system_element_5251
+	=> nrel_inclusion: .system_element_1225
 	(*
 		=> nrel_idtf: [<p>язык программирования внутренних действий кибернетической системы, выполняемых в их памяти</p>];;
 		=> nrel_idtf: [<p>язык представления методов решения задач в памяти кибернетических систем</p>]
@@ -176,7 +176,7 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	=> nrel_inclusion: .system_element_5252
+	=> nrel_inclusion: .system_element_1226
 	(*
 		=> nrel_idtf: [<p>язык программирования внешних действий кибернетических систем</p>]
 		(*
@@ -200,8 +200,8 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_5250
-	=> nrel_inclusion: .system_element_5253
+	.system_element_1224
+	=> nrel_inclusion: .system_element_1227
 	(*
 		=> nrel_idtf: [<p>язык программирования общего назначения</p>]
 		(*
@@ -209,7 +209,7 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	=> nrel_inclusion: .system_element_5254
+	=> nrel_inclusion: .system_element_1228
 	(*
 		=> nrel_idtf: [<p>предметно-ориентированный язык программирования</p>]
 		(*
@@ -217,38 +217,38 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	=> nrel_subdividing: .system_element_5255
+	=> nrel_subdividing: .system_element_1229
 	(*
-		<=> .system_element_200: {
-			.system_element_5256;
-			.system_element_5257
+		<=> .system_element_72: {
+			.system_element_1230;
+			.system_element_1231
 		};;
 	*);;
 
-	.system_element_5256
+	.system_element_1230
 	=> nrel_idtf: [<p>императивный язык представления методов</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> nrel_inclusion: .system_element_5258
+	=> nrel_inclusion: .system_element_1232
 	(*
-		-> .system_element_252: 
-			.system_element_5259;
-			.system_element_5260;
-			.system_element_5261
+		-> .system_element_203: 
+			.system_element_1233;
+			.system_element_1234;
+			.system_element_1235
 		;;
 	*);
-	=> nrel_inclusion: .system_element_5262
+	=> nrel_inclusion: .system_element_1236
 	(*
-		-> .system_element_252: 
-			.system_element_576;
-			.system_element_5263;
-			.system_element_709
+		-> .system_element_203: 
+			.system_element_1237;
+			.system_element_1238;
+			.system_element_1239
 		;;
-		=> nrel_inclusion: .system_element_5264;;
+		=> nrel_inclusion: .system_element_1240;;
 	*);
-	=> nrel_inclusion: .system_element_5265
+	=> nrel_inclusion: .system_element_1241
 	(*
 		=> nrel_idtf: [<p>склеивающий язык представления методов</p>]
 		(*
@@ -267,24 +267,24 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_5257
+	.system_element_1231
 	=> nrel_idtf: [<p>декларативный язык представления методов</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> nrel_inclusion: .system_element_5266
+	=> nrel_inclusion: .system_element_1242
 	(*
-		-> .system_element_252: 
-			.system_element_5267
+		-> .system_element_203: 
+			.system_element_1243
 		;;
 	*);
-	=> nrel_inclusion: .system_element_5268;
-	=> nrel_inclusion: .system_element_5269
+	=> nrel_inclusion: .system_element_1244;
+	=> nrel_inclusion: .system_element_1245
 	(*
 		=> nrel_idtf: [<p>аппликативный язык представления методов</p>];;
-		-> .system_element_252: 
-			.system_element_5270
+		-> .system_element_203: 
+			.system_element_1246
 		;;
 	*);
 	=> nrel_note: [<p><i>непроцедурные языки представления методов</i>, в отличие от процедурных, задают вычисления как последовательность связанных между собой объектов. Основные понятия непроцедурных я.п.м. обычно не связаны с компонентами компьютера.</p>]
@@ -293,30 +293,30 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_5271
+	.system_element_1247
 	=> nrel_idtf: [<p>отношение, область определения которого включает в себя множество всевозможных языков представления методов</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	-> .system_element_5272;
-	-> .system_element_5273
+	-> .system_element_1248;
+	-> .system_element_1249
 	(*
 		=> nrel_idtf: [<p>метод, не содержащий синтаксических ошибок для заданного языка представления методов*</p>];;
-		<= nrel_inclusion: .system_element_4594;;
+		<= nrel_inclusion: .system_element_902;;
 	*);
-	-> .system_element_5274
+	-> .system_element_1250
 	(*
-		<= nrel_inclusion: .system_element_4595;;
+		<= nrel_inclusion: .system_element_903;;
 	*);
-	-> .system_element_5275
+	-> .system_element_1251
 	(*
 		=> nrel_idtf: [<p>метод, не содержащий семантических ошибок для заданного языка представления методов*</p>];;
-		<= nrel_inclusion: .system_element_5276;;
+		<= nrel_inclusion: .system_element_1252;;
 	*);
-	-> .system_element_5277
+	-> .system_element_1253
 	(*
-		<= nrel_inclusion: .system_element_5278;;
+		<= nrel_inclusion: .system_element_1254;;
 		=> nrel_idtf: [<p>метод заданного языка представления методов, содержащий достаточную информацию для установления егоистинности*</p>]
 		(*
 			<- lang_ru;;
@@ -324,38 +324,38 @@
 		*);;
 	*);;
 
-	.system_element_5272
+	.system_element_1248
 	=> nrel_idtf: [<p>метод, принадлежащий заданному языку программирования*</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<= nrel_inclusion: .system_element_4592;
-	=> nrel_second_domain: .system_element_465;
+	<= nrel_inclusion: .system_element_900;
+	=> nrel_second_domain: .system_element_141;
 	<= nrel_combination: {
 		...
 		(*
 			<= nrel_combination: {
-				.system_element_5273;
-				.system_element_5274
+				.system_element_1249;
+				.system_element_1250
 			};;
 		*);
 		...
 		(*
 			<= nrel_combination: {
-				.system_element_5275;
-				.system_element_5274
+				.system_element_1251;
+				.system_element_1250
 			};;
 		*)
 	};;
 
-	.system_element_1258
+	.system_element_1175
 	=> nrel_idtf: [<p>метаметод интерпретации соответствующего класса методов</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<= nrel_inclusion: .system_element_465;
+	<= nrel_inclusion: .system_element_141;
 	=> nrel_idtf: [<p>метаметод</p>]
 	(*
 		<- lang_ru;;
@@ -371,18 +371,18 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> nrel_inclusion: .system_element_5279;
-	=> nrel_inclusion: .system_element_5280;
-	=> nrel_inclusion: .system_element_5281;
-	=> nrel_inclusion: .system_element_5282;
-	=> nrel_inclusion: .system_element_5283;
-	=> nrel_inclusion: .system_element_5284
+	=> nrel_inclusion: .system_element_1255;
+	=> nrel_inclusion: .system_element_1256;
+	=> nrel_inclusion: .system_element_1257;
+	=> nrel_inclusion: .system_element_1258;
+	=> nrel_inclusion: .system_element_1259;
+	=> nrel_inclusion: .system_element_1260
 	(*
-		=> nrel_inclusion: .system_element_5285;;
-		=> nrel_inclusion: .system_element_5286;;
+		=> nrel_inclusion: .system_element_1261;;
+		=> nrel_inclusion: .system_element_1262;;
 	*);
-	=> nrel_inclusion: .system_element_5287;
-	=> nrel_inclusion: .system_element_5288;
+	=> nrel_inclusion: .system_element_1263;
+	=> nrel_inclusion: .system_element_1264;
 	=> nrel_note: [<p>Для интерпретации <u>всех</u> моделей решения задач может быть использован агентно-ориентированный подход.</p>]
 	(*
 		<- lang_ru;;
@@ -400,9 +400,9 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_5289
-	<= nrel_inclusion: .system_element_4867;
-	<=> .system_element_5290;
+	.system_element_1265
+	<= nrel_inclusion: .system_element_748;
+	<=> .system_element_1266;
 	=> nrel_idtf: [<p>спецификация <i>класса методов</i>*</p>]
 	(*
 		<- lang_ru;;
@@ -413,10 +413,10 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<= .system_element_5291: {
-		.system_element_5292;
-		.system_element_5293;
-		.system_element_5294
+	<= .system_element_1267: {
+		.system_element_1268;
+		.system_element_1269;
+		.system_element_1270
 	};
 	=> nrel_explanation: [<p><i>модель решения задач*</i> ставит в соответствие некоторому классу методов синтаксис, денотационную и операционную семантику языка представления методов соответствующего класса.</p>]
 	(*
@@ -424,8 +424,8 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_5295
-	<= nrel_second_domain: .system_element_5293;
+	.system_element_1271
+	<= nrel_second_domain: .system_element_1269;
 	=> nrel_idtf: [<p>онтология соответствующего класса методов</p>]
 	(*
 		<- lang_ru;;
@@ -453,8 +453,8 @@
 	*);
 	<= nrel_inclusion: ontology;;
 
-	.system_element_5296
-	<= nrel_second_domain: .system_element_5294;
+	.system_element_1272
+	<= nrel_second_domain: .system_element_1270;
 	=> nrel_idtf: [<p>метаметод интерпретации соответствующего класса методов</p>]
 	(*
 		<- lang_ru;;
@@ -471,7 +471,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_5297
+	.system_element_1273
 	=> nrel_note: [<p>Поскольку каждому <i>методу</i> соответствует <i>обобщенная формулировка задач</i>, решаемых с помощью этого <i>метода</i>, то каждому <i>классу методов</i> должен соответствовать не только определенный <i>язык представления методов</i>, принадлежащих указанному <i>классу методов</i>, но и определенный <i>язык представления обобщенных формулировок задач для различных классов задач</i>, решаемых с помощью <i>методов</i>, принадлежащих указанному <i>классу методов</i>.</p>]
 	(*
 		<- lang_ru;;
@@ -479,17 +479,17 @@
 	*);;
 *];;
 
-.system_element_5178
+.system_element_1113
 => nrel_inclusion: [*
-	<- .system_element_4961;;
+	<- .system_element_1274;;
 
-	.system_element_2049
+	.system_element_1185
 	=> nrel_explanation: [<p>Сложный процесс, состоящий из действий, направленных на достижение нескольких <u>разных</u> целей (т.е. целей, не связанных отношением цель-подцель). При этом некоторые из указанных максимальных целей могут достигаться с помощью одного и того же метода или одного и того же (фиксированного) семейства методов.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> nrel_inclusion: .system_element_5298
+	=> nrel_inclusion: .system_element_1275
 	(*
 		=> nrel_idtf: [<p>деятельность по преобразованию материальных сущностей (физических объектов)</p>]
 		(*
@@ -497,7 +497,7 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	=> nrel_inclusion: .system_element_5299
+	=> nrel_inclusion: .system_element_1276
 	(*
 		=> nrel_idtf: [<p>деятельность, направленная на обработку информации</p>];;
 		=> nrel_idtf: [<p>умственная деятельность</p>]
@@ -554,8 +554,8 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_5300
-	-> .system_element_2023
+	.system_element_1277
+	-> .system_element_1278
 	(*
 		=> nrel_idtf: [<p>быть субъектом заданного действия или деятельности*</p>];;
 		=> nrel_idtf: [<p>кибернетическая система, которая в рамках заданного действия или деятельности выполняет ту или иную роль, воздействует на некий объект действия, используя тот или иной инструмент*</p>]
@@ -563,9 +563,9 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
-		<- .system_element_5106;;
+		<- .system_element_1279;;
 	*);
-	-> .system_element_5301
+	-> .system_element_1280
 	(*
 		=> nrel_idtf: [<p>информационный контекст, в рамках которого осуществляется выполнение заданного действия или деятельности*</p>];;
 		=> nrel_idtf: [<p>область исполнения действия или деятельности*</p>]
@@ -578,13 +578,13 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
-		=> nrel_first_domain: .system_element_5302;;
+		=> nrel_first_domain: .system_element_1281;;
 		=> nrel_idtf: [<p>совокупность знаний, достаточных для информационного обеспечения заданного действия или заданной деятельности</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
-		<- .system_element_5192;;
+		<- .system_element_1145;;
 		=> nrel_note: [<p>Локализация (минимизация) <i>контекста</i> заданного действия или деятельности является важнейшим подготовленным этапом, обеспечивающим существенное снижение накладных расходов при непосредственном выполнении этого <i>действия</i> или <i>деятельности</i>.</p>]
 		(*
 			<- lang_ru;;
@@ -597,9 +597,9 @@
 		*);;
 	*);;
 
-	.system_element_358
+	.system_element_265
 	-> {
-		question
+		action
 		(*
 			=> nrel_idtf: [<p>процесс достижения конкретной цели в конкретных обстоятельствах</p>];;
 			=> nrel_idtf: [<p>процесс решения конкретной задачи в конкретных условиях</p>]
@@ -618,7 +618,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_2049
+		.system_element_1185
 		(*
 			=> nrel_idtf: [<p>система действий выполняемых соответствующим субъектом (кибернетической системой), скрепленная общим контекстом и определенным набором используемых навыков и инструментов</p>];;
 			=> nrel_note: [<p>В отличие от <i>действия</i>, <i>деятельность</i> носит чаще всего перманентный характер в рамках времени существования соответствующего субъекта.</p>]
@@ -629,7 +629,7 @@
 		*)
 	};;
 
-	.system_element_5303
+	.system_element_1282
 	=> nrel_idtf: [<p>полная система действий, выполняемых соответствующей кибернетической системой</p>]
 	(*
 		<- lang_ru;;
@@ -646,7 +646,7 @@
 		=> nrel_format: format_html;;
 	*);
 	=> nrel_subdividing: {
-		.system_element_5304
+		.system_element_1283
 		(*
 			=> nrel_idtf: [<p>внутренняя деятельность соответствующего субъекта</p>];;
 			=> nrel_idtf: [<p>деятельность некоторого субъекта по обработке информации</p>]
@@ -660,7 +660,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_5305
+		.system_element_1284
 		(*
 			=> nrel_idtf: [<p>внешнее поведение соответствующего субъекта</p>];;
 			=> nrel_idtf: [<p>деятельность субъекта во внешней среде</p>]
@@ -671,8 +671,8 @@
 		*)
 	};;
 
-	.system_element_2051
-	<= .system_element_4972: .system_element_2049;
+	.system_element_1186
+	<= .system_element_1187: .system_element_1185;
 	=> nrel_idtf: [<p>класс семантически целостных систем действия, для которых можно унифицировать используемые методы, информационные ресурсы и инструменты</p>]
 	(*
 		<- lang_ru;;
@@ -693,12 +693,12 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	-> .system_element_5306;
-	-> .system_element_5307;
-	-> .system_element_5308;
-	-> .system_element_5309;
-	-> .system_element_5310;
-	-> .system_element_2052
+	-> .system_element_1285;
+	-> .system_element_1286;
+	-> .system_element_1287;
+	-> .system_element_1288;
+	-> .system_element_1289;
+	-> .system_element_1290
 	(*
 		=> nrel_idtf: [<p>проектная деятельность</p>];;
 		=> nrel_idtf: [<p>построение такого описания (в частности, описания структуры) некоторого материального объекта, которого достаточно для воспроизводства (реализации, материализации) этого объекта либо при одиночном (уникальном), либо при массовом (промышленном) воспроизводстве указанного объекта</p>]
@@ -720,10 +720,10 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	-> .system_element_5311
+	-> .system_element_1291
 	(*
-		=> nrel_inclusion: .system_element_5312;;
-		=> nrel_inclusion: .system_element_5313;;
+		=> nrel_inclusion: .system_element_1292;;
+		=> nrel_inclusion: .system_element_1293;;
 		=> nrel_note: [<p>Примерами данного вида действий являются:
 		<ul>
 			<li> разработка плана-графика строительства конкретного здания;
@@ -736,7 +736,7 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	-> .system_element_2053
+	-> .system_element_1294
 	(*
 		=> nrel_idtf: [<p>воспроизводство материального объекта по заданному его проекту и плану реализации</p>];;
 		=> nrel_idtf: [<p>производственная деятельность</p>]
@@ -755,9 +755,9 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	-> .system_element_5314;
-	-> .system_element_2644;
-	-> .system_element_1587
+	-> .system_element_1295;
+	-> .system_element_462;
+	-> .system_element_1296
 	(*
 		=> nrel_idtf: [<p>синтез</p>]
 		(*
@@ -765,13 +765,13 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	-> .system_element_5315;
-	-> .system_element_2020;
-	-> .system_element_5316;
-	-> .system_element_2148;
-	-> .system_element_5317
+	-> .system_element_1297;
+	-> .system_element_1298;
+	-> .system_element_1299;
+	-> .system_element_1300;
+	-> .system_element_1301
 	(*
-		=> nrel_inclusion: .system_element_5318
+		=> nrel_inclusion: .system_element_1302
 		(*
 			=> nrel_idtf: [<p>управление целенаправленной коллективной деятельностью нескольких субъектов</p>]
 			(*
@@ -781,14 +781,14 @@
 		*);;
 	*);;
 
-	.system_element_2052
+	.system_element_1290
 	=> nrel_idtf: [<p>действие, направленное на построение (разработку) такой <u>информационной</u> модели (проекта) некоторой <u>материальной</u> сущности, которой <u>достаточно</u>, чтобы соответствующий индивидуальный или коллективный субъект по соответствующей технологии (т.е. с помощью соответствующих методов и средств (инструментов) смог воспроизвести (изготовить) указанную материальную сущность либо в одном экземпляре, либо в достаточно большом количестве таких экземпляров (копий), т.е. воспроизвести в промышленном масштабе</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2053
+	.system_element_1294
 	=> nrel_idtf: [<p>воспроизводство</p>]
 	(*
 		<- lang_ru;;
@@ -825,7 +825,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_5314
+	.system_element_1295
 	=> nrel_idtf: [<p>модификация</p>]
 	(*
 		<- lang_ru;;
@@ -861,7 +861,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> nrel_inclusion: .system_element_5319
+	=> nrel_inclusion: .system_element_1303
 	(*
 		=> nrel_idtf: [<p>модификация, направленная на повышение качества модифицируемой сущности</p>];;
 		=> nrel_idtf: [<p>повышение качества</p>]
@@ -874,7 +874,7 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
-		=> nrel_inclusion: .system_element_5320
+		=> nrel_inclusion: .system_element_1304
 		(*
 			=> nrel_idtf: [<p>совершенствование, выполняемое самой совершенствуемой сущностью</p>]
 			(*
@@ -882,7 +882,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);;
-		=> nrel_inclusion: .system_element_5321;;
+		=> nrel_inclusion: .system_element_1305;;
 		=> nrel_note: [<p>Самосовершенствоваться и обучаться могут только достаточно развитые кибернетические системы. Но совершенствоваться усилиями внешних субъектов могут любые сущности.</p>]
 		(*
 			<- lang_ru;;
@@ -890,7 +890,7 @@
 		*);;
 	*);;
 
-	.system_element_2644
+	.system_element_462
 	=> nrel_idtf: [<p>построение (разработка, создание) спецификации (описания) основных связей и/или структуры, свойств, закономерностей, соответствующих (описываемой) сущности</p>]
 	(*
 		<- lang_ru;;
@@ -902,7 +902,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_1587
+	.system_element_1296
 	=> nrel_idtf: [<p>синтез</p>]
 	(*
 		<- lang_ru;;
@@ -924,7 +924,7 @@
 		=> nrel_format: format_html;;
 	*);
 	=> nrel_subdividing: {
-		.system_element_5322
+		.system_element_1306
 		(*
 			=> nrel_idtf: [<p>интеграция без разрушения целостности интегрируемых сущностей</p>];;
 			=> nrel_idtf: [<p>интеграция без взаимопроникновения</p>]
@@ -938,7 +938,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_5323
+		.system_element_1307
 		(*
 			=> nrel_idtf: [<p>интеграция, в результате которой получается гибридная сущность</p>];;
 			=> nrel_idtf: [<p>интеграция с разрушением целостности (взаимопроникновением диффузий) интегрируемых сущностей</p>]
@@ -954,7 +954,7 @@
 		*)
 	};;
 
-	.system_element_2051
+	.system_element_1186
 	=> nrel_explanation: [<p>Если классу легко выполнимых сложных действий ставится в соответствие чаще всего <u>один</u> <i>метод</i> и, возможно, некоторый набор инструментальных средств, используемых в этом методе, то каждому виду деятельности ставится в соответствие своя <b><i>технология</i></b>, включающая в себя некоторый набор используемых <i>методов</i>, а также набор <i>инструментальных средств</i>, используемых в этих <i>методах</i>. Сложность здесь заключается:
 
 	<ul>
@@ -969,30 +969,30 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_358
+	.system_element_265
 	-> {
-		question
+		action
 		(*
-			-> .system_element_252: .system_element_5324
+			-> rrel_example: .system_element_1308
 			(*
-				<- .system_element_5325;;
+				<- .system_element_1309;;
 			*);;
 		*);
 		actions_class
 		(*
-			-> .system_element_252: .system_element_5326
+			-> rrel_example: .system_element_1310
 			(*
-				=> .system_element_5327: [<p>действие, направленное на построение доказательства (логического обоснования) теоремы</p>];;
-				=> .system_element_5328: [<p>Класс действий, направленных на построение доказательств (логических обоснований) всевозможных теорем в различных формальных теориях</p>]
+				=> .system_element_1311: [<p>действие, направленное на построение доказательства (логического обоснования) теоремы</p>];;
+				=> .system_element_1312: [<p>Класс действий, направленных на построение доказательств (логических обоснований) всевозможных теорем в различных формальных теориях</p>]
 				(*
 					<- lang_ru;;
 					=> nrel_format: format_html;;
 				*);;
 			*);;
 		*);
-		.system_element_2049
+		.system_element_1185
 		(*
-			-> .system_element_252: .system_element_5329
+			-> rrel_example: .system_element_1313
 			(*
 				=> nrel_idtf: [<p>Процесс эволюции формальной теории, являющейся формальным представлением Геометрии Евклида</p>];;
 				=> nrel_explanation: [<p>В данный процесс входит и генерация гипотез в рамках Геометрии Евклида, и доказательство теорем, и выявление противоречий между высказываниями, и разрешение этих противоречий, и минимизация числа используемых определяемых понятий, и многое другое.</p>]
@@ -1007,11 +1007,11 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_2051
+		.system_element_1186
 		(*
-			-> .system_element_252: .system_element_5330
+			-> rrel_example: .system_element_1314
 			(*
-				=> .system_element_5328: [<p>Класс процессов, направленных на эволюцию всевозможных формальных теорий (логических онтологий), которая также включает в себя возможность коррекции этих теорий</p>]
+				=> .system_element_1312: [<p>Класс процессов, направленных на эволюцию всевозможных формальных теорий (логических онтологий), которая также включает в себя возможность коррекции этих теорий</p>]
 				(*
 					<- lang_ru;;
 					=> nrel_format: format_html;;
@@ -1020,21 +1020,21 @@
 		*)
 	};;
 
-	.system_element_5331
-	=> .system_element_269: [<p>спецификация вида деятельности*</p>]
+	.system_element_1315
+	=> .system_element_172: [<p>спецификация вида деятельности*</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<=> .system_element_1948
+	<=> .system_element_1316
 	(*
 		=> nrel_idtf: [<p>технология реализации (выполнения) деятельности соответствующего (заданного) вида*</p>];;
-		=> nrel_second_domain: .system_element_5332
+		=> nrel_second_domain: .system_element_1317
 		(*
 			=> nrel_idtf: [<p>технология соответствующего вида деятельности</p>];;
-			<=> .system_element_740: .system_element_5333
+			<=> .system_element_774: .system_element_1318
 			(*
-				<=> .system_element_740: .system_element_5118;;
+				<=> .system_element_774: .system_element_1319;;
 			*);;
 			=> nrel_explanation: [<p><i>технология</i> (как спецификация соответствующего вида деятельности) включает в себя:
 			<ul>
@@ -1048,7 +1048,7 @@
 		*);;
 	*);;
 
-	.system_element_2058
+	.system_element_735
 	=> nrel_explanation: [<p>Каждая <i>технология</i> представляет собой комплекс <i>методов</i> (методик) и средств, обеспечивающих выполнение некоторого множества <i>действий</i>, входящих в состав соответствующего <i>вида деятельности</i>. Каждая <i>технология</i> задается:
 
 	<ul>
@@ -1087,8 +1087,8 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> nrel_inclusion: .system_element_5334;
-	=> nrel_inclusion: .system_element_5335
+	=> nrel_inclusion: .system_element_1320;
+	=> nrel_inclusion: .system_element_1321
 	(*
 		=> nrel_idtf: [<p>технология проектной деятельности</p>];;
 		=> nrel_idtf: [<p>технология построения такой информационной модели соответствующей сущности (артефакта), которой достаточно для воспроизводства этой сущности</p>]
@@ -1097,7 +1097,7 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	=> nrel_inclusion: .system_element_5336
+	=> nrel_inclusion: .system_element_1322
 	(*
 		=> nrel_idtf: [<p>технология производственной деятельности</p>];;
 		=> nrel_idtf: [<p>технология воспроизводства некоторого вида сущностей по заданным проектам этих сущностей</p>]
@@ -1106,8 +1106,8 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	=> nrel_inclusion: .system_element_5337;
-	=> nrel_inclusion: .system_element_5338
+	=> nrel_inclusion: .system_element_1323;
+	=> nrel_inclusion: .system_element_1324
 	(*
 		=> nrel_idtf: [<p>технология подготовки молодых специалистов</p>];;
 		=> nrel_idtf: [<p>технология образовательной деятельности</p>]
@@ -1117,8 +1117,8 @@
 		*);;
 	*);;
 
-	.system_element_5339
-	-> .system_element_2255
+	.system_element_1325
+	-> .system_element_1326
 	(*
 		=> nrel_idtf: [<p>семейство методов, используемых в специфицируемой технологии с дополнительным указанием их иерархии (т.е. с указанием того, какие методы используются при реализации других методов)</p>]
 		(*
@@ -1126,7 +1126,7 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	-> .system_element_5340
+	-> .system_element_1327
 	(*
 		=> nrel_idtf: [<p>средства, которые сами способны выполнять некоторые действия, но при этом ими надо как-то управлять (например, транспортные средства, компьютеры)</p>];;
 		=> nrel_idtf: [<p>средства автоматизации*</p>]
@@ -1135,7 +1135,7 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	-> .system_element_5341
+	-> .system_element_1328
 	(*
 		=> nrel_idtf: [<p>средства, которые сами ничего делать не могут (например, молоток, лопата, ножницы)</p>]
 		(*
@@ -1143,11 +1143,11 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	-> .system_element_2253;
-	-> .system_element_5342;
-	-> .system_element_5343;
-	-> .system_element_2257;
-	-> .system_element_5344
+	-> .system_element_1329;
+	-> .system_element_1330;
+	-> .system_element_1331;
+	-> .system_element_1332;
+	-> .system_element_1333
 	(*
 		=> nrel_idtf: [<p>объединенный (интегрированный) продукт*</p>]
 		(*
@@ -1155,7 +1155,7 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	-> .system_element_5345
+	-> .system_element_1334
 	(*
 		=> nrel_idtf: [<p>вариант (форма) реализации технологии*</p>]
 		(*
@@ -1163,7 +1163,7 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	-> .system_element_1950
+	-> .system_element_1335
 	(*
 		=> nrel_idtf: [<p>быть частной технологией по отношению к заданной технологии*</p>]
 		(*
@@ -1172,7 +1172,7 @@
 		*);;
 	*);;
 
-	.system_element_2257
+	.system_element_1332
 	=> nrel_idtf: [<p>производимые сущности*</p>]
 	(*
 		<- lang_ru;;
@@ -1209,31 +1209,31 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2058
+	.system_element_735
 	=> nrel_note: [<p>Поскольку разработка каждой конкретной <i>технологии</i> требует больших затрат, очень важно, чтобы <i>технологии</i> создавались не под конкретные <i>деятельности</i>, а для целых классов деятельностей (<i>видов деятельности</i>). При этом важно, чтобы разрабатываемые <i>технологии</i> охватывали как можно большее количество деятельностей, входящих в состав указанных <i>видов деятельности</i>. Из этого следует целесообразность конвергенции и унификации различных сфер <i>деятельности</i> для того, чтобы повысить мощность применения (использования) каждой разрабатываемой <i>технологии</i>.Кроме того важна <i>совместимость технологий</i>, позволяющая решать <i>задачи</i>, требующие одновременного использования нескольких <i>технологий</i>, причем, в непредсказуемых сочетаниях. Очень важно также, кроме <i>видов деятельности</i>, которым соответствуют конкретные <i>технологии</i>, ввести <i>обобщенные виды деятельности</i> и построить их иерархии, явно фиксировать стандарты, которым должны соответствовать все виды соответствующего обобщенного <i>вида деятельности</i>. Это необходимо для обеспечения совместимости <i>технологий</i>. Все используемые технологии должны пронизывать друг друга и составлять стройную иерархическую систему совместимых технологий (сумму технологий).</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_5346
+	.system_element_1336
 	=> nrel_idtf: [<p>множество похожих технологий, использующих, например, одинаковые методики, и/или одинаковые активные инструменты, и/или одинаковые пассивные инструменты, и/или похожие множества продуктов</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	-> .system_element_5335
+	-> .system_element_1321
 	(*
-		=> nrel_inclusion: .system_element_5347;;
-		=> nrel_inclusion: .system_element_5348;;
-		=> nrel_inclusion: .system_element_5349;;
-		=> nrel_inclusion: .system_element_5350;;
+		=> nrel_inclusion: .system_element_1337;;
+		=> nrel_inclusion: .system_element_1338;;
+		=> nrel_inclusion: .system_element_1339;;
+		=> nrel_inclusion: .system_element_1340;;
 	*);
-	-> .system_element_5351
+	-> .system_element_1341
 	(*
-		=> nrel_inclusion: .system_element_5352;;
-		=> nrel_inclusion: .system_element_5353;;
-		=> nrel_inclusion: .system_element_5354;;
+		=> nrel_inclusion: .system_element_1342;;
+		=> nrel_inclusion: .system_element_1343;;
+		=> nrel_inclusion: .system_element_1344;;
 	*);;
 *];;
 

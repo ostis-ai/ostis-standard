@@ -1,6 +1,6 @@
-.system_element_724
+.system_element_4952
 => nrel_inclusion: [*
-	<- .system_element_725;
+	<- .system_element_3;
 	=> nrel_idtf: [<p>Предметная область и онтология платформ интерпретации sc-моделей компьютерных систем</p>]
 	(*
 		<- lang_ru;;
@@ -31,21 +31,21 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_14: 
-		.system_element_64;
-		.system_element_65;
-		.system_element_293;
-		.system_element_726;
-		.system_element_15;
-		.system_element_16
+	=> .system_element_11: 
+		.system_element_4891;
+		.system_element_4892;
+		.system_element_4927;
+		.system_element_4939;
+		.system_element_4820;
+		.system_element_4821
 	;
-	=> .system_element_727: 
-		.system_element_221;
-		.system_element_0
+	=> .system_element_342: 
+		.system_element_4706;
+		.system_element_4942
 	;
-	<= .system_element_116: <
-		.system_element_279;
-		.system_element_255
+	<= .system_element_315: <
+		.system_element_4919;
+		.system_element_4905
 	>;
 	=> nrel_inclusion: .segment_platfrom_independent;
 	=> nrel_inclusion: .segment_ostis_platform;;

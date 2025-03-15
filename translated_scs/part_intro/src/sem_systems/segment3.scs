@@ -1,10 +1,10 @@
 .segment3 = [*
-.system_element_872
+.system_element_5554
 => nrel_inclusion: [*
-	=> .system_element_1: 
-		.system_element_873;
-		.system_element_874;
-		.system_element_875;
+	=> .system_element_9: 
+		.system_element_4124;
+		.system_element_5568;
+		.system_element_4024;
 		lang_external
 		(*
 			=> nrel_idtf: [<p>язык обмена сообщениями</p>]
@@ -13,7 +13,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_876
+		.system_element_5569
 		(*
 			=> nrel_idtf: [<p>язык представления информации в памяти кибернетической системы</p>]
 			(*
@@ -21,13 +21,13 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_877;
-		.system_element_878;
-		.system_element_879;
-		.system_element_880;
-		.system_element_881;
-		.system_element_882;
-		.system_element_883
+		.system_element_5570;
+		.system_element_5571;
+		.system_element_5572;
+		.system_element_4053;
+		.system_element_5573;
+		.system_element_5574;
+		.system_element_5575
 		(*
 			=> nrel_idtf: [<p>рецептор</p>]
 			(*
@@ -35,25 +35,25 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_884;
-		.system_element_885;
-		.system_element_886;
-		.system_element_887;
-		.system_element_888;
-		.system_element_889
+		.system_element_5576;
+		.system_element_5577;
+		.system_element_5323;
+		.system_element_5578;
+		.system_element_5579;
+		.system_element_2960
 	;
-	=> .system_element_761: 
-		.system_element_890
+	=> .system_element_2400: 
+		.system_element_5580
 	;;
 
-	.system_element_891
-	=> .system_element_196: 
+	.system_element_5581
+	=> .system_element_2130: 
 		[<p>интерфейс <i>интеллектуальной компьютерной системы нового поколения</i> рассматривается как решательзадач частного вида --- <i>интерфейсных задач</i></p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
-		=> .system_element_892: 
+		=> .system_element_5582: 
 			[<p>задачи понимания вербальной информации, приобретаемой интеллектуальной компьютерной системой (синтаксический анализ, семантический анализ и погружение в базу знаний интеллектуальнойкомпьютерной системы)</p>]
 			(*
 				<- lang_ru;;
@@ -75,7 +75,7 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
-		=> .system_element_196: 
+		=> .system_element_2130: 
 			[<p>смысловое представление накапливаемых (приобретаемых знаний)</p>]
 			(*
 				<- lang_ru;;
@@ -115,8 +115,8 @@
 		*)
 	;;
 
-	.system_element_893
-	=> .system_element_196: 
+	.system_element_5583
+	=> .system_element_2130: 
 		[<p>интерфейс индивидуальной интеллектуальной компьютерной системы нового поколения являетсяспециализированным компонентом решателя задач интеллектуальной компьютерной системы нового поколения,то есть специализированной <u>встроенной</u> (в индивидуальную интеллектуальную компьютерную системунового поколения) интеллектуальной компьютерной системой нового поколения, ориентированной нарешение интерфейсных задач, к которым относятся:
 		<ul>
 			<li> понимание принятых сообщений (их перевод на язык внутреннего смыслового представления информациии погружения в текущее состояние базы знаний)
@@ -142,7 +142,7 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
-		=> .system_element_894: 
+		=> .system_element_5584: 
 			[<p>синтаксиса и денотационной семантики всех используемых внешних языков</p>]
 			(*
 				<- lang_ru;;

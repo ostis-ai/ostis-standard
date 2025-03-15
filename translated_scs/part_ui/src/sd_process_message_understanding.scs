@@ -1,62 +1,62 @@
-.system_element_3187
+.system_element_4008
 => nrel_inclusion: [*
-	=> .system_element_299: 
-		.system_element_3188;
-		.system_element_3189;
-		.system_element_3190
+	=> .system_element_1416: 
+		.system_element_794;
+		.system_element_793;
+		.system_element_4006
 	;;
 
-	.system_element_3191
-	-> .system_element_1835: .system_element_3192;
-	-> .system_element_112: 
-		.system_element_3193;
-		.system_element_3194;
-		.system_element_3195;
-		.system_element_3196;
-		.system_element_3197;
-		.system_element_3198;
-		.system_element_3199;
-		.system_element_3200;
-		.system_element_3201;
-		.system_element_3202;
-		.system_element_3203;
-		.system_element_3204
+	.system_element_4088
+	-> rrel_maximum_studied_object_class: .system_element_4027;
+	-> .system_element_6: 
+		.system_element_4089;
+		.system_element_4090;
+		.system_element_4091;
+		.system_element_4092;
+		.system_element_4093;
+		.system_element_4028;
+		.system_element_4029;
+		.system_element_4094;
+		.system_element_4095;
+		.system_element_4096;
+		.system_element_4097;
+		.system_element_4098
 	;
-	-> .system_element_748: 
-		.system_element_3205;
-		.system_element_3206
+	-> .system_element_335: 
+		.system_element_4030;
+		.system_element_4031
 	;;
 
-	.system_element_3192
-	=> .system_element_272: {
-		.system_element_3207
+	.system_element_4027
+	=> .system_element_189: {
+		.system_element_4099
 		(*
-			=> .system_element_1120: [<p><b><i>действие. генерация вариантов значения сообщения</i></b> --- <i>действие</i>, в ходе которого осуществляется формирование <i>строгой дизъюнкции</i> потенциально эквивалентных структур</p>]
+			=> .system_element_264: [<p><b><i>действие. генерация вариантов значения сообщения</i></b> --- <i>действие</i>, в ходе которого осуществляется формирование <i>строгой дизъюнкции</i> потенциально эквивалентных структур</p>]
 			(*
 				<- lang_ru;;
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_3208
+		.system_element_4100
 		(*
-			=> .system_element_272: {
-				.system_element_3193;
-				.system_element_3209;
-				.system_element_3210
+			=> .system_element_189: {
+				.system_element_4089;
+				.system_element_4101;
+				.system_element_4102
 			};;
 		*)
 	};;
 
-	.system_element_3205
-	=> .system_element_1120: [<p><b><i>потенциально эквивалентная структура*</i></b> --- <i>бинарное ориентированное отношение</i>, связывающее структуру и множество структур, которые потенциально могут быть эквивалентны ей, однако для достоверного определения факта требуются дополнительные <i>действия</i></p>]
+	.system_element_4030
+	=> .system_element_264: [<p><b><i>потенциально эквивалентная структура*</i></b> --- <i>бинарное ориентированное отношение</i>, связывающее структуру и множество структур, которые потенциально могут быть эквивалентны ей, однако для достоверного определения факта требуются дополнительные <i>действия</i></p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3211
-	=> .system_element_122: .system_element_3212;
-	=> .system_element_252: "file://images/sd_ui/transition_to_semanic_rule.png"
+	.system_element_4103
+	=> .system_element_1: .system_element_787;
+	=> .system_element_203: "file://images/sd_ui/transition_to_semanic_rule.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
@@ -67,14 +67,14 @@
 		*);;
 	*);;
 
-	.system_element_3196
+	.system_element_4092
 	=> nrel_note: <
 		[<p>В результате действия перехода от результата синтаксического анализа к потенциально эквивалентным сообщению структурам в базе знаний формируется структура, описывающая возможные варианты смысла сообщения. Наличие нескольких таких структур объясняется тем, что в общем случае на этапе синтаксического анализа выполняется генерация нескольких вариантов синтаксической структуры. Выбор корректного значения сообщения будет осуществлен в ходе выполнения последующих действий.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
-			=> .system_element_122: .system_element_3213;;
-			=> .system_element_180: .system_element_3214;;
+			=> .system_element_1: .system_element_599;;
+			=> .system_element_35: .system_element_4104;;
 		*);
 		[<p>Следует отметить, что при необходимости смысл сообщения может быть сгенерирован не только на основании его синтаксической структуры в терминах грамматики составляющих, но и других знаний о данном сообщении, например выделенных из текста данного сообщения троек вида субъект-отношение-объект, результата его классификации и тому подобные.</p>]
 		(*
@@ -88,20 +88,20 @@
 		*)
 	>;;
 
-	.system_element_3197
-	=> .system_element_252: .system_element_3214;;
+	.system_element_4093
+	=> .system_element_203: .system_element_4104;;
 
-	.system_element_3214
-	=> .system_element_928: "file://images/sd_ui/messsage_meaning_variants.png"
+	.system_element_4104
+	=> .system_element_772: "file://images/sd_ui/messsage_meaning_variants.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);;
 
-	.system_element_3199
-	<= nrel_inclusion: .system_element_3198
+	.system_element_4029
+	<= nrel_inclusion: .system_element_4028
 	(*
-		=> .system_element_1120: [<p><b><i>контекст</i></b> --- <i>sc-структура</i>, содержащая знания, которыми оперирует система в ходе одного или нескольких диалогов</p>]
+		=> .system_element_264: [<p><b><i>контекст</i></b> --- <i>sc-структура</i>, содержащая знания, которыми оперирует система в ходе одного или нескольких диалогов</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
@@ -112,19 +112,19 @@
 			*);;
 		*);;
 	*);
-	=> nrel_subdividing: .system_element_3215
+	=> nrel_subdividing: .system_element_4105
 	(*
-		<=> .system_element_200: {
-			.system_element_3200;
-			.system_element_3201;
-			.system_element_3202
+		<=> .system_element_72: {
+			.system_element_4094;
+			.system_element_4095;
+			.system_element_4096
 		};;
 	*);
-	=> nrel_subdividing: .system_element_3216
+	=> nrel_subdividing: .system_element_4106
 	(*
-		<=> .system_element_200: {
-			.system_element_3203;
-			.system_element_3204
+		<=> .system_element_72: {
+			.system_element_4097;
+			.system_element_4098
 		};;
 	*);
 	=> nrel_note: [<p>Подмножество <i>контекста</i> может включаться в согласованную часть <i>базы знаний</i>, например, если речь идет о каких-то предварительно занесенных в <i>базу знаний</i> биографических сведениях --- дате рождения и тому подобном.</p>]
@@ -132,12 +132,12 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_3217: [<p>В каждый момент времени с пользователем связан 1 пользовательский диалоговый контекст (содержащий, по крайней мере известные заранее факты о нем: имя, возраст и тому подобное) и несколько тематических.</p>]
+	=> .system_element_4107: [<p>В каждый момент времени с пользователем связан 1 пользовательский диалоговый контекст (содержащий, по крайней мере известные заранее факты о нем: имя, возраст и тому подобное) и несколько тематических.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_3218: "file://images/sd_ui/user_context.png"
+	=> .system_element_4108: "file://images/sd_ui/user_context.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
@@ -153,22 +153,22 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3200
-	=> .system_element_1120: [<p><b><i>тематический контекст</i></b> --- <i>контекст диалога</i>, содержащий специфические для темы сведения (сведения, полученные во время ведения диалога, на определенную тематику, например, при диалоге об определенном наборе сущностей)</p>]
+	.system_element_4094
+	=> .system_element_264: [<p><b><i>тематический контекст</i></b> --- <i>контекст диалога</i>, содержащий специфические для темы сведения (сведения, полученные во время ведения диалога, на определенную тематику, например, при диалоге об определенном наборе сущностей)</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3206
-	=> .system_element_1120: [<p><b><i>множество тематических контекстов диалога*</i></b> --- <i>бинарное ориентированное отношение</i>, диалог с ориентированным множеством его тематических контекстов</p>]
+	.system_element_4031
+	=> .system_element_264: [<p><b><i>множество тематических контекстов диалога*</i></b> --- <i>бинарное ориентированное отношение</i>, диалог с ориентированным множеством его тематических контекстов</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3201
-	=> .system_element_1120: [<p><b><i>пользовательский контекст</i></b> --- <i>контекст диалога</i>, содержащие специфические для пользователя сведения, которые могут быть использованы в диалоге с ним на любую тематику</p>]
+	.system_element_4095
+	=> .system_element_264: [<p><b><i>пользовательский контекст</i></b> --- <i>контекст диалога</i>, содержащие специфические для пользователя сведения, которые могут быть использованы в диалоге с ним на любую тематику</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
@@ -178,7 +178,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_252: "file://images/sd_ui/context_in_KB.png"
+	=> .system_element_203: "file://images/sd_ui/context_in_KB.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
@@ -189,59 +189,59 @@
 		*);;
 	*);;
 
-	.system_element_3202
-	=> .system_element_1120: [<p><b><i>глобальный контекст</i></b> --- <i>контекст диалога</i>, содержащий сведения, которые могут быть необходимы при ведении диалога с любым пользователем</p>]
+	.system_element_4096
+	=> .system_element_264: [<p><b><i>глобальный контекст</i></b> --- <i>контекст диалога</i>, содержащий сведения, которые могут быть необходимы при ведении диалога с любым пользователем</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_1120: [<p><b><i>глобальный контекст</i></b> --- подмножество согласованной части <i>базы знаний</i>, содержащее те сведения, что допустимо использовать в диалоге</p>]
+	=> .system_element_264: [<p><b><i>глобальный контекст</i></b> --- подмножество согласованной части <i>базы знаний</i>, содержащее те сведения, что допустимо использовать в диалоге</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_252: [<p>В диалоге с определенным пользователем не нужно использовать: находящуюся в базе знаний служебную информацию, необходимую для работы системы, но не предназначенную для использования в диалоге;
+	=> .system_element_203: [<p>В диалоге с определенным пользователем не нужно использовать: находящуюся в базе знаний служебную информацию, необходимую для работы системы, но не предназначенную для использования в диалоге;
 	<li> части пользовательских контекстов иных пользователей.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3203
+	.system_element_4097
 	=> nrel_explanation: [<p><b><i>Неизменяемый в ходе работы системы контекст диалога</i></b> содержит в себе знания, необходимые для обеспечения выполнения системой своих функций,  которые были заложены в нее априорно ее разработчиками и/или администраторами и не изменяются в ходе ее функционирования на постоянной основе.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3204
+	.system_element_4098
 	=> nrel_explanation: [<p><b><i>Изменяемый в ходе работы системы контекст диалога</i></b> содержит в себе знания, необходимые для обеспечения выполнения системой своих функций,  которые были ей получены в ходе ее работы и/или достоверность которых скоротечна.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> nrel_subdividing: .system_element_3219
+	=> nrel_subdividing: .system_element_4109
 	(*
-		<=> .system_element_200: {
-			.system_element_3220;
-			.system_element_3221
+		<=> .system_element_72: {
+			.system_element_4110;
+			.system_element_4111
 		};;
 	*);
-	=> nrel_subdividing: .system_element_3222
+	=> nrel_subdividing: .system_element_4112
 	(*
-		<=> .system_element_200: {
-			.system_element_3223;
-			.system_element_3224
+		<=> .system_element_72: {
+			.system_element_4113;
+			.system_element_4114
 		};;
 	*);;
 
-	.system_element_3193
+	.system_element_4089
 	=> nrel_note: [<p><b><i>действие. разрешение контекста</i></b> сводится к сопоставлению каждому варианту его значения соответствующего <i>контекста</i>. Выбор производится на основании значения функции <i>F<sub>CTD</sub>(T, C)</i>, где <i>T</i> --- <i>вариант трансляции</i>, <i>C</i> --- <i>тематический контекст</i>. Подходящим контекстом для варианта трансляции считается тот, для которого значение этой функции максимально. В случае, если подходящий контекст не найден, генерируется новый.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_3225: "file://images/sd_ui/relevant_contexts.png"
+	=> .system_element_4069: "file://images/sd_ui/relevant_contexts.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
@@ -252,13 +252,13 @@
 		*);;
 	*);;
 
-	.system_element_3194
+	.system_element_4090
 	=> nrel_note: [<p><b><i>действие. выбор смысла сообщения</i></b> представляет собой выбор из множества вариантов трансляции и соответствующих им <i>контекстов</i> одной пары и обозначение ее как эквивалентной сообщению конструкции. В простейшем случае, на данном этапе допустимо выполнить выбор в соответствии с рассчитанными на предыдущем этапе для пар потенциально эквивалентных структур и соответствующих им <i>контекстов</i> значениями функции <i>F<sub>CTD</sub>(T, C)</i> и выбрать пару, для которой оно максимально, однако при необходимости также возможно введение и отдельной функции.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_3225: "file://images/sd_ui/message_equivalent_structure.png"
+	=> .system_element_4069: "file://images/sd_ui/message_equivalent_structure.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
@@ -269,26 +269,26 @@
 		*);;
 	*);;
 
-	.system_element_3195
+	.system_element_4091
 	=> nrel_note: [<p><b><i>действие. погружение сообщения в контекст</i></b> представляет собой погружение полученного смысла сообщения в <i>контекст</i>. Кроме выбранного смысла сообщения, в контекст может добавляться и иная необходимая для обработки сообщения информация. Кроме того, на данном этапе на основе хранящихся в контексте сведений также должно выполняться разрешение местоимений.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_252: {
-		.system_element_3226;
-		.system_element_3227
+	=> .system_element_203: {
+		.system_element_4115;
+		.system_element_4116
 	};;
 
-	.system_element_3226
-	=> .system_element_928: "file://images/sd_ui/context_1.png"
+	.system_element_4115
+	=> .system_element_772: "file://images/sd_ui/context_1.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);;
 
-	.system_element_3227
-	=> .system_element_928: "file://images/sd_ui/context_2.png"
+	.system_element_4116
+	=> .system_element_772: "file://images/sd_ui/context_2.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;

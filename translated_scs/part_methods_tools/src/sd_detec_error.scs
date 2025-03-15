@@ -1,6 +1,6 @@
-.system_element_2857
+.system_element_345
 => nrel_inclusion: [*
-	=> .system_element_2858: [<p>Важным этапом в разработке любой системы является контроль ее качества, так как именно на этом этапе определяется степень жизнеспособности и эффективности системы.</p>]
+	=> .system_element_346: [<p>Важным этапом в разработке любой системы является контроль ее качества, так как именно на этом этапе определяется степень жизнеспособности и эффективности системы.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
@@ -9,14 +9,14 @@
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
-		=> .system_element_122: {
-			.system_element_2748;
-			.system_element_2749
+		=> .system_element_1: {
+			.system_element_50;
+			.system_element_51
 		};;
 	*);;
 
-	.system_element_2859
-	=> .system_element_319: {
+	.system_element_347
+	=> .system_element_348: {
 		[<p>зависимость от формата представления информации, из-за чего приходится тратить дополнительно время на конвертирование информации</p>]
 		(*
 			<- lang_ru;;
@@ -44,10 +44,10 @@
 		*)
 	}
 	(*
-		=> .system_element_122: {
-			.system_element_2750
+		=> .system_element_1: {
+			.system_element_52
 		};;
-		=> .system_element_2860: {
+		=> .system_element_349: {
 			[<p>использовать унифицированный и удобный формат представления знаний</p>]
 			(*
 				<- lang_ru;;
@@ -66,8 +66,8 @@
 		};;
 	*);;
 
-	.system_element_2861
-	<=> .system_element_200: {
+	.system_element_350
+	<=> .system_element_72: {
 		[<p>наличие общей методологии проектирования интеллектуальных систем, позволяющей решить проблему совместимости систем при их коллективном взаимодействии</p>]
 		(*
 			<- lang_ru;;
@@ -95,39 +95,39 @@
 		*)
 	};;
 
-	.system_element_2862
+	.system_element_351
 	<= nrel_inclusion: {
-		.system_element_2863;
-		.system_element_2864;
-		.system_element_2865
+		.system_element_352;
+		.system_element_353;
+		.system_element_354
 	};
 	=> nrel_note: [<p>Качество базы знаний во многом определяется уровнем наличия/отсутствия <i>не-факторов</i> в <i>базе знаний</i>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
-		=> .system_element_122: {
-			.system_element_2751
+		=> .system_element_1: {
+			.system_element_53
 		};;
 	*);;
 
-	.system_element_1696
+	.system_element_355
 	=> nrel_idtf: [<p>группа семантических свойств, определяющих качество информации, хранимой в памяти кибернетической системы</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<=> .system_element_200: {
-		.system_element_2866;
-		.system_element_2867;
-		.system_element_2868;
-		.system_element_2869;
-		.system_element_2870;
-		.system_element_2871;
-		.system_element_2872;
-		.system_element_2873
+	<=> .system_element_72: {
+		.system_element_356;
+		.system_element_357;
+		.system_element_358;
+		.system_element_359;
+		.system_element_360;
+		.system_element_361;
+		.system_element_362;
+		.system_element_363
 	};;
 
-	.system_element_2874
+	.system_element_364
 	=> nrel_idtf: [<p>структура, описывающая проблемный фрагмент базы знаний</p>]
 	(*
 		<- lang_ru;;
@@ -167,7 +167,7 @@
 		*)
 	};;
 
-	.system_element_1711
+	.system_element_365
 	=> nrel_idtf: [<p>пара противоречащих друг другу фрагментов информации, хранимой в памяти кибернетической системы*</p>]
 	(*
 		<- lang_ru;;
@@ -190,7 +190,7 @@
 
 	incorrect_structure
 	<= nrel_inclusion: {
-		.system_element_2875;
+		.system_element_366;
 		structure_of_wrong_using_of_relations;
 		structure_containing_cycle_of_ordering_relation;
 		structure_contradicting_uniqueness_property
@@ -199,42 +199,42 @@
 	structure_describing_incompleteness_in_kb
 	<= nrel_inclusion: {
 		structure_without_max_studied_object_class_of_subject_domain;
-		.system_element_2876;
+		.system_element_367;
 		structure_with_partly_defined_relation;
 		structure_which_contains_concepts_that_dont_belong_to_any_subjdomain
 	};;
 
-	.system_element_2877
+	.system_element_368
 	=> nrel_idtf: [<p>проблемная структура, для исправления которой требуется участие разработчика</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2878
+	.system_element_369
 	=> nrel_idtf: [<p>множество элементов, удаление которых из структуры позволяет устранить в ней противоречия</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2879
+	.system_element_370
 	=> nrel_idtf: [<p>множество элементов, добавление которых в структуру позволяет устранить в ней противоречия</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2880
+	.system_element_371
 	=> nrel_idtf: [<p>структура, в которой система не способна автоматически устранить противоречия</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_358
+	.system_element_265
 	-> {
-		.system_element_2881
+		.system_element_372
 		(*
 			=> nrel_note: [<p>Здесь структура, которую система не может решить сама, не может быть исправлена при взаимодействии с разработчиком и требует полного исправления от самого разработчика</p>]
 			(*
@@ -242,7 +242,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_2882
+		.system_element_373
 		(*
 			=> nrel_note: [<p>Здесь структура, требующая внимания разработчика, может быть решена в процессе верификации, но потребуется участие разработчика</p>]
 			(*
@@ -252,9 +252,9 @@
 		*)
 	};;
 
-	.system_element_2883
+	.system_element_374
 	=> nrel_abstract_sc_agent_decomposition: {
-		.system_element_2884
+		.system_element_375
 		(*
 			=> nrel_idtf: [<p>Множество агентов, обеспечивающих поиск и фиксирование противоречий в структуре</p>]
 			(*
@@ -262,7 +262,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_2885
+		.system_element_376
 		(*
 			=> nrel_idtf: [<p>Множество агентов, создающих предложения по исправлению противоречий</p>];;
 			=> nrel_note: [<p>Результатом работы таких агентов будут множества предлагаемых к удалению из структуры или добавлению в структуру элементов</p>]
@@ -271,7 +271,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_2886
+		.system_element_377
 		(*
 			=> nrel_idtf: [<p>Агент, создающий структуру содержащую все элементы сливаемых структур</p>]
 			(*
@@ -279,8 +279,8 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_2887;
-		.system_element_2888
+		.system_element_378;
+		.system_element_379
 		(*
 			=> nrel_note: [<p>Внесение изменений подразумевает не только исправление в базе знаний изначальной проблемной структуры, но и фиксацию самого факта изменения состояния базы знаний</p>]
 			(*
@@ -288,7 +288,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_2889
+		.system_element_380
 		(*
 			=> nrel_note: [<p>Агент, обеспечивающий полный цикл верификации структуры и координирующий другие агенты</p>]
 			(*

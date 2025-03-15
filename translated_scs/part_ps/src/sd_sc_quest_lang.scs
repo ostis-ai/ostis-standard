@@ -1,53 +1,55 @@
-.system_element_6289
+.system_element_6978
 => nrel_inclusion: [*
+	<- .system_element_3;
+	-> rrel_key_sc_element: .system_element_6979;;
 
-	.system_element_6290
+	.system_element_6979
 	<- subject_domain;
 	=> nrel_authors: {
-		.system_element_6291;
-		.system_element_300;
-		.system_element_301;
-		.system_element_6292
+		.system_element_6980;
+		.system_element_4293;
+		.system_element_1105;
+		.system_element_2529
 	};
-	=> .system_element_4413: 
-		.system_element_5728;
-		.system_element_5731;
-		.system_element_5701
+	=> .system_element_1523: 
+		.system_element_6981;
+		.system_element_6982;
+		.system_element_6983
 	;
 	=> nrel_summary: [<p>Возможности <i>баз знаний</i> <i>ostis-систем</i> позволяют не только представлять и структурировать знания об окружающем мире, но и быстро получать и формировать эти знания о нем, тем самым удовлетворяя информационную потребность пользователя. В данной предметной области уточнена формальная спецификация <i>Языка вопросов для ostis-систем</i>, позволяющая описывать и интерпретировать любые классы <i>вопросов</i> <i>пользователей ostis-систем</i>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_756: 
-		.system_element_6293
+	=> .system_element_418: 
+		.system_element_6984
 	;
-	-> .system_element_112: 
-		task_question;
-		.system_element_5702;
-		.system_element_5703;
-		.system_element_5704;
-		.system_element_5705;
-		.system_element_5706;
-		.system_element_5707;
-		.system_element_5709
+	-> .system_element_6: 
+		task_action;
+		.system_element_6985;
+		.system_element_6986;
+		.system_element_6987;
+		.system_element_6988;
+		.system_element_6989;
+		.system_element_6990;
+		.system_element_6991
 	;
-	=> .system_element_14: 
-		.system_element_6294;
-		.system_element_5733;
-		.system_element_6295;
-		.system_element_6296;
-		.system_element_6297;
-		.system_element_6298;
-		.system_element_6299;
-		.system_element_6300;
-		.system_element_6301;
-		.system_element_6302;
-		.system_element_6303;
-		.system_element_6304;
-		.system_element_6305;
-		.system_element_6306;
-		.system_element_6307
+	=> .system_element_11: 
+		.system_element_6992;
+		.system_element_6993;
+		.system_element_6994;
+		.system_element_6995;
+		.system_element_6996;
+		.system_element_6997;
+		.system_element_6998;
+		.system_element_6999;
+		.system_element_7000;
+		.system_element_7001;
+		.system_element_7002;
+		.system_element_7003;
+		.system_element_7004;
+		.system_element_7005;
+		.system_element_7006
 	;
 	=> nrel_introduction: <
 		[<p>Одна из ключевых особенностей <i>интеллектуальной системы</i> состоит в том, что <i>пользователь</i> имеет возможность формулировать свою информационную потребность. Cпособом выражения такой потребности является <i>вопрос</i>. В процессе общения всегда существует контекст, который определяет дополнительную информацию, способствующую правильному пониманию <i>смысла</i> сообщения. Особенность представления информации в <i>базах знаний</i> <i>ostis-систем</i> упрощает формирование информационной потребности пользователя, так как представленная информация в <i>базах знаний</i> уже структурирована и известны отношения, заданные на определенном понятии, в отношении которого разрешается вопросно-проблемная ситуация.</p>]
@@ -59,8 +61,8 @@
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
-			=> .system_element_122: {
-				.system_element_6294
+			=> .system_element_1: {
+				.system_element_6992
 			};;
 		*);
 		[<p>Целью разработки <b><i>Языка вопросов для ostis-систем</i></b> и последующего его развития является реализация возможности понимания действий, осуществляемых <i>ostis-системой</i>, при формировании ответа на поставленный <i>вопрос</i>. В процессе формирования ответа на поставленный <i>вопрос</i> возможны следующие варианты: <i>ответ на</i> поставленный <i>вопрос</i> существует в <i>базе знаний</i> и происходит локализация <i>фрагмента базы знаний</i> в контексте выраженной средствами <i>SC-кода</i> информационной потребности <i>пользователя</i>;
@@ -68,13 +70,13 @@
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
-			=> .system_element_180: {
-				.system_element_6308
+			=> .system_element_35: {
+				.system_element_7007
 			};;
 		*)
 	>;;
 
-	.system_element_6293
+	.system_element_6984
 	=> nrel_idtf: [<p>Предлагаемый вариант языка для описания вопросов и ответов на них в ostis-системах</p>]
 	(*
 		<- lang_ru;;
@@ -86,16 +88,16 @@
 		=> nrel_format: format_html;;
 	*);
 	<- sc_lang;
-	=> .system_element_4607: .system_element_6309
+	=> .system_element_917: .system_element_7008
 	(*
-		<= nrel_inclusion: .system_element_3611;;
+		<= nrel_inclusion: .system_element_2260;;
 	*);
-	=> .system_element_4613: .system_element_5732
+	=> .system_element_923: .system_element_7009
 	(*
 		=> nrel_idtf: [<p>Онтология классов знаков и отношений для описания формулировок вопросов на SC-коде</p>];;
-		=> nrel_inclusion: .system_element_6310;;
+		=> nrel_inclusion: .system_element_7010;;
 	*);
-	=> .system_element_4622: .system_element_6311
+	=> .system_element_935: .system_element_7011
 	(*
 		=> nrel_idtf: [<p>Коллектив sc-агентов вывода ответов на заданные вопросы пользователя ostis-системы</p>]
 		(*
