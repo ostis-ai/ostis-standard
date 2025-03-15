@@ -1,37 +1,39 @@
-.system_element_2729
-=> nrel_introduction: [<p>Большое разнообразие <i>интерфейсов</i> влечет за собой разработку большого числа компонентов. В качестве <i>многократно используемых компонентов интерфейсов ostis-систем</i> могут выступать как уже спроектированные <i>интерфейсы</i>, так и специфицированные <i>компоненты интерфейсов</i>. Большое число <i>многократно используемых компонентов интерфейсов ostis-систем</i> создает проблему их хранения и поиска. Чтобы решить эту проблему, в технологию включена <i>библиотека многократно используемых компонентов пользовательских интерфейсов ostis-систем</i> и <i>менеджер многократно используемых компонентов ostis-систем</i>.</p>]
-(*
-	<- lang_ru;;
-	=> nrel_format: format_html;;
-	=> .system_element_180: .system_element_2526;;
-*);
+.system_element_344
 => nrel_inclusion: [*
+	=> nrel_introduction: [<p>Большое разнообразие <i>интерфейсов</i> влечет за собой разработку большого числа компонентов. В качестве <i>многократно используемых компонентов интерфейсов ostis-систем</i> могут выступать как уже спроектированные <i>интерфейсы</i>, так и специфицированные <i>компоненты интерфейсов</i>. Большое число <i>многократно используемых компонентов интерфейсов ostis-систем</i> создает проблему их хранения и поиска. Чтобы решить эту проблему, в технологию включена <i>библиотека многократно используемых компонентов пользовательских интерфейсов ostis-систем</i> и <i>менеджер многократно используемых компонентов ostis-систем</i>.</p>]
+	(*
+		<- lang_ru;;
+		=> nrel_format: format_html;;
+		=> .system_element_35: .system_element_314;;
+	*);
+	<- .system_element_3;
+	-> rrel_key_sc_element: .system_element_587;;
 
-	.system_element_2730
+	.system_element_587
 	<- subject_domain;
-	-> .system_element_1835: .system_element_2731;
-	-> .system_element_112: 
-		.system_element_2732;
-		.system_element_2733;
-		.system_element_2734;
-		.system_element_2735;
-		.system_element_2736;
-		.system_element_2737
+	-> rrel_maximum_studied_object_class: .system_element_284;
+	-> .system_element_6: 
+		.system_element_588;
+		.system_element_589;
+		.system_element_590;
+		.system_element_591;
+		.system_element_592;
+		.system_element_593
 	;;
 
-	.system_element_2738
-	=> nrel_subdividing: .system_element_2739
+	.system_element_308
+	=> nrel_subdividing: .system_element_594
 	(*
-		<=> .system_element_200: {
-			.system_element_2733;
-			.system_element_2734;
-			.system_element_2735;
-			.system_element_2736;
-			.system_element_2737
+		<=> .system_element_72: {
+			.system_element_589;
+			.system_element_590;
+			.system_element_591;
+			.system_element_592;
+			.system_element_593
 			(*
-				=> .system_element_180: 
-					.system_element_2636;
-					.system_element_2637
+				=> .system_element_35: 
+					.system_element_179;
+					.system_element_455
 				;;
 			*)
 		};;
@@ -42,7 +44,7 @@
 		*);;
 	*);;
 
-	.system_element_2732
+	.system_element_588
 	=> nrel_note: [<p><i>пользовательский интерфейс</i> <i>библиотеки многократно используемых компонентов интерфейсов ostis-систем</i> строится на основе sc.g-интерфейса (комплекс информационно-программных средств обеспечивающих общение интеллектуальных систем с пользователями на основе <i>SCg-кода</i>, как способа внешнего представления информации). Однако, это не исключает возможность использования других способов диалога пользователя с <i>библиотекой многократно используемых компонентов интерфейсов ostis-систем</i>.</p>]
 	(*
 		<- lang_ru;;

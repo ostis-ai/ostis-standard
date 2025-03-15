@@ -1,4 +1,4 @@
-.system_element_2672
+.system_element_39
 => nrel_summary: [<p>В предметной области и онтологии рассматриваются актуальные проблемы текущего состояния средств проектирования и анализа качества <i>баз знаний</i>, предложен подход к их решению на основе <i>Технологии OSTIS</i>. Сформулированы принципы коллективного проектирования и разработки <i>баз знаний</i>. Сформулированы принципы верификации <i>баз знаний</i>.</p>]
 (*
 	<- lang_ru;;
@@ -32,30 +32,30 @@
 	*)
 >
 (*
-	=> .system_element_122: {
-		.system_element_2740
+	=> .system_element_1: {
+		.system_element_40
 	};;
 *);
-=> .system_element_1: 
+=> .system_element_9: 
 	knowledge_base;
-	.system_element_2741;
-	.system_element_2742;
-	.system_element_2743;
-	.system_element_2744;
-	.system_element_2745;
-	.system_element_2746
+	.system_element_41;
+	.system_element_42;
+	.system_element_43;
+	.system_element_44;
+	.system_element_45;
+	.system_element_46
 ;
-=> .system_element_14: 
-	.system_element_2740;
-	.system_element_2747;
-	.system_element_2436;
-	.system_element_2482;
-	.system_element_2748;
-	.system_element_2749;
-	.system_element_2750;
-	.system_element_2751;
-	.system_element_2698;
-	.system_element_2705
+=> .system_element_11: 
+	.system_element_40;
+	.system_element_47;
+	.system_element_48;
+	.system_element_49;
+	.system_element_50;
+	.system_element_51;
+	.system_element_52;
+	.system_element_53;
+	.system_element_2;
+	.system_element_13
 ;
 => nrel_inclusion: [*
 
@@ -76,8 +76,8 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2752
-	=> nrel_inclusion: .system_element_2753
+	.system_element_54
+	=> nrel_inclusion: .system_element_55
 	(*
 		=> nrel_explanation: [<p>унификация формы представления знаний</p>]
 		(*
@@ -85,7 +85,7 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	=> nrel_inclusion: .system_element_2754
+	=> nrel_inclusion: .system_element_56
 	(*
 		=> nrel_explanation: [<p>однозначная и единая для всех компонентов трактовка используемых понятий</p>]
 		(*
@@ -93,7 +93,7 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	=> .system_element_2755: [<p>Существующие подходы к разработке <i>баз знаний</i>, как правило, предполагают решение задачи обеспечения синтаксической совместимости знаний путем соединения разнородных моделей представления знаний, а также разработки новых интегрированных моделей и новых языков представления знаний.Разработка <i>базы знаний</i> таким методом приводит к дополнительным накладным расходам при интеграции и обработке разнородных знаний, и, как следствие, к резкому увеличению трудозатрат при модификации таких <i>баз знаний</i> и добавлении новых видов знаний.</p>]
+	=> .system_element_57: [<p>Существующие подходы к разработке <i>баз знаний</i>, как правило, предполагают решение задачи обеспечения синтаксической совместимости знаний путем соединения разнородных моделей представления знаний, а также разработки новых интегрированных моделей и новых языков представления знаний.Разработка <i>базы знаний</i> таким методом приводит к дополнительным накладным расходам при интеграции и обработке разнородных знаний, и, как следствие, к резкому увеличению трудозатрат при модификации таких <i>баз знаний</i> и добавлении новых видов знаний.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
@@ -104,8 +104,8 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2756
-	=> .system_element_737: <
+	.system_element_58
+	=> .system_element_59: <
 		[<p>возможность согласованного использования различных видов знаний, хранимых в одной <i>базе знаний</i>, при решении каждой комплексной задачи</p>]
 		(*
 			<- lang_ru;;
@@ -143,8 +143,8 @@
 		*)
 	>;;
 
-	.system_element_2757
-	=> .system_element_737: <
+	.system_element_60
+	=> .system_element_59: <
 		[<p>обеспечение возможности как ручного, так и автоматического <i>редактирования баз знаний</i></p>]
 		(*
 			<- lang_ru;;
@@ -165,13 +165,13 @@
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
-		=> .system_element_122: {
-			.system_element_2747
+		=> .system_element_1: {
+			.system_element_47
 		};;
 	*);;
 
-	.system_element_2758
-	=> nrel_inclusion: .system_element_2759
+	.system_element_61
+	=> nrel_inclusion: .system_element_62
 	(*
 		=> nrel_explanation: [<p>Индивидуальный представляет собой наполнение изолировнной части <i>базы знаний</i> конкретным пользователем</p>];;
 		=> nrel_note: [<p>При этом <i>процесс редактирования базы знаний</i> должен быть максимально удобным и понятным для пользователя.</p>]
@@ -180,17 +180,17 @@
 			=> nrel_format: format_html;;
 		*);;
 		=> nrel_inclusion: {
-			.system_element_2760;
-			.system_element_2761
+			.system_element_63;
+			.system_element_64
 		};;
 	*);
-	=> nrel_inclusion: .system_element_2762
+	=> nrel_inclusion: .system_element_65
 	(*
 		=> nrel_explanation: [<p>Коллективный представляет собой согласование всей <i>базы знаний</i> и включает в себя процесс внесения предложений и внедрения изменений</p>];;
 		=> nrel_inclusion: {
-			.system_element_2763;
-			.system_element_2764;
-			.system_element_2765
+			.system_element_66;
+			.system_element_67;
+			.system_element_68
 		};;
 	*);
 	=> nrel_note: [<p>Так как в основе любой современной базы знаний лежат <i>онтологии</i>, то методы и средства разработки онтологий являются важнейшей частью технологий разработки баз знаний.</p>]
@@ -199,64 +199,64 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2766
-	=> .system_element_2767: [<p>представляет собой набор инструкций и руководств, описывающих процесс выполнения сложных процедур разработки онтологий.Она детализирует различные задачи, как они должны быть выполнены, в каком порядке и каким образом осуществлять документирование работы по созданию онтологий</p>]
+	.system_element_69
+	=> .system_element_70: [<p>представляет собой набор инструкций и руководств, описывающих процесс выполнения сложных процедур разработки онтологий.Она детализирует различные задачи, как они должны быть выполнены, в каком порядке и каким образом осуществлять документирование работы по созданию онтологий</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> nrel_subdividing: .system_element_2768
+	=> nrel_subdividing: .system_element_71
 	(*
-		<=> .system_element_200: {
-			.system_element_2769;
-			.system_element_2770
+		<=> .system_element_72: {
+			.system_element_73;
+			.system_element_74
 		};;
 	*);
-	=> nrel_subdividing: .system_element_2771
+	=> nrel_subdividing: .system_element_75
 	(*
-		<=> .system_element_200: {
-			.system_element_2772;
-			.system_element_2773;
-			.system_element_2774
+		<=> .system_element_72: {
+			.system_element_76;
+			.system_element_77;
+			.system_element_78
 		};;
 	*);
-	=> nrel_subdividing: .system_element_2775
+	=> nrel_subdividing: .system_element_79
 	(*
-		<=> .system_element_200: {
-			.system_element_2776;
-			.system_element_2777;
-			.system_element_2778;
-			.system_element_2779
+		<=> .system_element_72: {
+			.system_element_80;
+			.system_element_81;
+			.system_element_82;
+			.system_element_83
 		};;
 	*);
-	=> nrel_subdividing: .system_element_2780
+	=> nrel_subdividing: .system_element_84
 	(*
-		<=> .system_element_200: {
-			.system_element_2781;
-			.system_element_2782
+		<=> .system_element_72: {
+			.system_element_85;
+			.system_element_86
 		};;
 	*);
-	=> nrel_subdividing: .system_element_2783
+	=> nrel_subdividing: .system_element_87
 	(*
-		<=> .system_element_200: {
-			.system_element_2784;
-			.system_element_2785
+		<=> .system_element_72: {
+			.system_element_88;
+			.system_element_89
 		};;
 	*);
-	=> nrel_subdividing: .system_element_2786
+	=> nrel_subdividing: .system_element_90
 	(*
-		<=> .system_element_200: {
-			.system_element_2787;
-			.system_element_2788;
-			.system_element_2789;
-			.system_element_2790
+		<=> .system_element_72: {
+			.system_element_91;
+			.system_element_92;
+			.system_element_93;
+			.system_element_94
 		};;
 	*);
-	=> nrel_subdividing: .system_element_2791
+	=> nrel_subdividing: .system_element_95
 	(*
-		<=> .system_element_200: {
-			.system_element_2792;
-			.system_element_2793
+		<=> .system_element_72: {
+			.system_element_96;
+			.system_element_97
 		};;
 	*);
 	=> nrel_note: [<p>Большинство методологий не поддерживают совместную разработку <i>баз знаний</i>, поддержку совместимости разрабатываемых <i>баз знаний</i> и, как следствие, поддержку повторного использования уже разработанных <i>баз знаний</i> и их <i>компонентов</i></p>]
@@ -278,18 +278,18 @@
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
-		=> .system_element_180: {
-			.system_element_2697
+		=> .system_element_35: {
+			.system_element_0
 		};;
 	*);;
 
-	.system_element_2794
+	.system_element_98
 	=> nrel_explanation: [<p>Стартовая версия <i>ostis-системы</i> содержит набор знаний и средств решения задач, достаточный для дальнейшего развития системы</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_2795: <
+	=> .system_element_99: <
 		[<p>выбор и установка <i>ostis-платформы</i> для интерпретации <i>sc-модели ostis-системы</i></p>]
 		(*
 			<- lang_ru;;
@@ -317,13 +317,13 @@
 		*)
 	>;;
 
-	.system_element_2796
+	.system_element_100
 	=> nrel_inclusion: <
 		[<p>Формирование начальной структуры <i>гибридной базы знаний</i></p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
-			=> .system_element_282: <
+			=> .system_element_101: <
 				[<p>Формирование структуры разделов базы знаний, соответствующей варианту структуризации <i>базы знаний</i> с точки зрения разработчиков</p>]
 				(*
 					<- lang_ru;;
@@ -373,8 +373,8 @@
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
-		=> .system_element_122: {
-			.system_element_2436
+		=> .system_element_1: {
+			.system_element_48
 		};;
 	*);;
 *];;

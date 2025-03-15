@@ -1,18 +1,18 @@
-.system_element_4304
+.system_element_595
 => nrel_inclusion: [*
 
-	.system_element_4305
-	-> .system_element_1835: 
-		.system_element_4306
+	.system_element_596
+	-> .system_element_330: 
+		.system_element_597
 	;
-	=> .system_element_14: 
-		.system_element_4307;
-		.system_element_3213;
-		.system_element_4308;
-		.system_element_4309
+	=> .system_element_11: 
+		.system_element_598;
+		.system_element_599;
+		.system_element_600;
+		.system_element_601
 	;;
 
-	.system_element_4306
+	.system_element_597
 	=> nrel_note: [<p>Приводимая ниже формализация <i>синтаксиса</i> <i>естественных языков</i> является ядром, общим для всех <i>естественных языков</i>. Очевидно, что <i>синтаксис</i> некоторого конкретного <i>естественного языка</i> может отличаться от <i>синтаксиса</i> других <i>языков</i>. В таком случае, более частные отличия необходимо отдельно специфицировать в формализованном виде. Таким образом, ниже будет предложено описание наиболее общих аспектов <i>синтаксиса</i> всех <i>естественных языков</i>, которое в дальнейшем может дополняться, если того требует конкретная реализация <i>естественно-языкового интерфейса</i> какой-либо <i>ostis-системы</i>. При этом любые дополнения, специфичные для некоторого конкретного <i>естественного языка</i>, не должны противоречить ядру формализации <i>синтаксиса</i> <i>естественных языков</i>, приведенному в данном разделе.</p>]
 	(*
 		<- lang_ru;;
@@ -22,16 +22,16 @@
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
-		=> .system_element_122: {
-			.system_element_4307;
-			.system_element_3213;
-			.system_element_4308;
-			.system_element_4309
+		=> .system_element_1: {
+			.system_element_598;
+			.system_element_599;
+			.system_element_600;
+			.system_element_601
 		};;
 	*);;
 
-	.system_element_4310
-	=> .system_element_1120: [<p><b><i>грамматическая категория</i></b> --- система противопоставленных друг другу рядов грамматических форм с однородными значениями.</p>]
+	.system_element_602
+	=> .system_element_264: [<p><b><i>грамматическая категория</i></b> --- система противопоставленных друг другу рядов грамматических форм с однородными значениями.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
@@ -41,101 +41,101 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	-> .system_element_4311
+	-> .system_element_603
 	(*
 		<= nrel_set_of_subsets: role_relation;;
-		-> .system_element_4312;;
-		-> .system_element_4313;;
-		-> .system_element_4314;;
+		-> .system_element_604;;
+		-> .system_element_605;;
+		-> .system_element_606;;
 	*);
 	-> number
 	(*
 		<= nrel_set_of_subsets: role_relation;;
-		-> .system_element_4315;;
-		-> .system_element_4316;;
-		-> .system_element_4317;;
-		-> .system_element_4318;;
-		-> .system_element_4319;;
+		-> .system_element_607;;
+		-> .system_element_608;;
+		-> .system_element_609;;
+		-> .system_element_610;;
+		-> .system_element_611;;
 	*);
-	-> .system_element_4320
+	-> .system_element_612
 	(*
 		<= nrel_set_of_subsets: role_relation;;
-		-> .system_element_4321;;
-		-> .system_element_4322;;
-		-> .system_element_4323;;
+		-> .system_element_613;;
+		-> .system_element_614;;
+		-> .system_element_615;;
 	*);
-	-> .system_element_4324
+	-> .system_element_616
 	(*
 		<= nrel_set_of_subsets: role_relation;;
-		-> .system_element_4325;;
-		-> .system_element_4326;;
-		-> .system_element_4327;;
-		-> .system_element_4328;;
-		-> .system_element_4329;;
-		-> .system_element_4330;;
-		-> .system_element_4331;;
-		-> .system_element_4332;;
-		-> .system_element_4333;;
+		-> .system_element_617;;
+		-> .system_element_618;;
+		-> .system_element_619;;
+		-> .system_element_620;;
+		-> .system_element_621;;
+		-> .system_element_622;;
+		-> .system_element_623;;
+		-> .system_element_624;;
+		-> .system_element_625;;
 	*);
-	-> .system_element_4334
+	-> .system_element_626
 	(*
 		<= nrel_set_of_subsets: role_relation;;
-		-> .system_element_4335;;
-		-> .system_element_4336;;
-		-> .system_element_4337;;
+		-> .system_element_627;;
+		-> .system_element_628;;
+		-> .system_element_629;;
 	*);
-	-> .system_element_4338
+	-> .system_element_630
 	(*
 		<= nrel_set_of_subsets: role_relation;;
-		-> .system_element_4339;;
-		-> .system_element_4340;;
-		-> .system_element_4341;;
-		-> .system_element_4342;;
+		-> .system_element_631;;
+		-> .system_element_632;;
+		-> .system_element_633;;
+		-> .system_element_634;;
 	*);
-	-> .system_element_4343
+	-> .system_element_635
 	(*
 		<= nrel_set_of_subsets: role_relation;;
-		-> .system_element_4344;;
-		-> .system_element_4345;;
-		-> .system_element_4346;;
-		-> .system_element_4347;;
-		-> .system_element_4348;;
+		-> .system_element_636;;
+		-> .system_element_637;;
+		-> .system_element_638;;
+		-> .system_element_639;;
+		-> .system_element_640;;
 	*);
-	-> .system_element_4349
+	-> .system_element_641
 	(*
 		<= nrel_set_of_subsets: role_relation;;
-		-> .system_element_4350;;
-		-> .system_element_4351;;
-		-> .system_element_4352;;
-		-> .system_element_4353;;
-		-> .system_element_4354;;
+		-> .system_element_642;;
+		-> .system_element_643;;
+		-> .system_element_644;;
+		-> .system_element_645;;
+		-> .system_element_646;;
 	*);
-	-> .system_element_4355
+	-> .system_element_647
 	(*
 		<= nrel_set_of_subsets: role_relation;;
-		-> .system_element_4356;;
-		-> .system_element_4357;;
-		-> .system_element_4358;;
+		-> .system_element_648;;
+		-> .system_element_649;;
+		-> .system_element_650;;
 	*);;
 
-	.system_element_4359
-	=> .system_element_1120: [<p><b><i>часть речи</i></b> --- <i>категория</i>, представляющая собой класс синтаксически эквивалентных <i>знаков</i> <i>естественного языка</i>.</p>]
+	.system_element_651
+	=> .system_element_264: [<p><b><i>часть речи</i></b> --- <i>категория</i>, представляющая собой класс синтаксически эквивалентных <i>знаков</i> <i>естественного языка</i>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<= nrel_set_of_subsets: .system_element_3313;
-	-> .system_element_4360;
-	-> .system_element_4361;
-	-> .system_element_4362;
-	-> .system_element_4363;
-	-> .system_element_4364;
-	-> .system_element_4365;
-	-> .system_element_4366;
-	-> .system_element_4367;;
+	<= nrel_set_of_subsets: .system_element_652;
+	-> .system_element_653;
+	-> .system_element_654;
+	-> .system_element_655;
+	-> .system_element_656;
+	-> .system_element_657;
+	-> .system_element_658;
+	-> .system_element_659;
+	-> .system_element_660;;
 
-	.system_element_4368
-	=> .system_element_1120: [<p><b><i>словоформа</i></b> --- <i>подмножество</i> <i>лексемы</i>, которому принадлежат все вхождения <i>лексемы</i> с определенными <i>грамматическими значениями</i>.</p>]
+	.system_element_661
+	=> .system_element_264: [<p><b><i>словоформа</i></b> --- <i>подмножество</i> <i>лексемы</i>, которому принадлежат все вхождения <i>лексемы</i> с определенными <i>грамматическими значениями</i>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
@@ -146,51 +146,51 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4369
-	=> .system_element_1120: [<p><b><i>дистрибуция знака</i></b> --- это подмножество синтаксических правил, в которые входит данный <i>знак</i>.</p>]
+	.system_element_662
+	=> .system_element_264: [<p><b><i>дистрибуция знака</i></b> --- это подмножество синтаксических правил, в которые входит данный <i>знак</i>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4370
-	=> .system_element_1120: [<p><b><i>составляющая</i></b> --- элемент множества <i>C</i> подмножеств кортежа вхождений лексем <i>S</i>, которое содержит в качестве элементов как сам <i>S</i>, так и все вхождения лексем в <i>S</i>, таким образом, что любые два подмножества, входящие в <i>C</i>, либо не пересекаются, либо одно из них включается в другое.</p>]
+	.system_element_663
+	=> .system_element_264: [<p><b><i>составляющая</i></b> --- элемент множества <i>C</i> подмножеств кортежа вхождений лексем <i>S</i>, которое содержит в качестве элементов как сам <i>S</i>, так и все вхождения лексем в <i>S</i>, таким образом, что любые два подмножества, входящие в <i>C</i>, либо не пересекаются, либо одно из них включается в другое.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_252: .system_element_4371;;
+	=> .system_element_203: .system_element_664;;
 
-	.system_element_4372
-	=> .system_element_1120: [<p><b><i>непосредственно составляющая</i></b> ---  есть множество <i>составляющих</i> <i>S</i>, в которое входят <i>составляющие</i> <i>A</i> и <i>B</i>. В является <i>непосредственно составляющей</i> <i>А</i> если и только если <i>В</i> является подмножеством <i>А</i> и нет такой <i>составляющей</i> <i>С</i>, которая является подмножеством <i>А</i> и подмножеством которой является <i>В</i>.</p>]
+	.system_element_665
+	=> .system_element_264: [<p><b><i>непосредственно составляющая</i></b> ---  есть множество <i>составляющих</i> <i>S</i>, в которое входят <i>составляющие</i> <i>A</i> и <i>B</i>. В является <i>непосредственно составляющей</i> <i>А</i> если и только если <i>В</i> является подмножеством <i>А</i> и нет такой <i>составляющей</i> <i>С</i>, которая является подмножеством <i>А</i> и подмножеством которой является <i>В</i>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4373
-	=> .system_element_1120: [<p><b><i>составляющими сестрами*</i></b> считаются <i>составляющие</i>, являющиеся <i>непосредственно составляющими</i> одной и той же <i>составляющей</i>.</p>]
+	.system_element_666
+	=> .system_element_264: [<p><b><i>составляющими сестрами*</i></b> считаются <i>составляющие</i>, являющиеся <i>непосредственно составляющими</i> одной и той же <i>составляющей</i>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4371
+	.system_element_664
 	<=> "file://images/sd_natural_languages/syntactic_example.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);;
 
-	.system_element_4374
-	=> .system_element_1120: [<p><b><i>элементарная составляющая</i></b> --- элемент кортежа вхождений <i>лексем</i> <i>L</i>, являющихся <i>непосредственно составляющими</i> множества <i>составляющих</i> <i>C</i> и не имеющих непосредственно составляющих <i>составляющих</i>.</p>]
+	.system_element_667
+	=> .system_element_264: [<p><b><i>элементарная составляющая</i></b> --- элемент кортежа вхождений <i>лексем</i> <i>L</i>, являющихся <i>непосредственно составляющими</i> множества <i>составляющих</i> <i>C</i> и не имеющих непосредственно составляющих <i>составляющих</i>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4375
-	=> .system_element_1120: [<p><b><i>синтаксическая группа</i></b> --- класс <i>составляющих</i>, в который входят <i>составляющие</i> с вершинами, принадлежащими к одной <i>части речи</i>.</p>]
+	.system_element_668
+	=> .system_element_264: [<p><b><i>синтаксическая группа</i></b> --- класс <i>составляющих</i>, в который входят <i>составляющие</i> с вершинами, принадлежащими к одной <i>части речи</i>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
@@ -201,80 +201,80 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4376
-	=> .system_element_1120: [<p><b><i>вершина</i></b> --- <i>составляющая</i>, <i>дистрибуция</i> которой совпадает с <i>дистрибуцией</i> всей <i>синтаксической группы</i>.</p>]
+	.system_element_669
+	=> .system_element_264: [<p><b><i>вершина</i></b> --- <i>составляющая</i>, <i>дистрибуция</i> которой совпадает с <i>дистрибуцией</i> всей <i>синтаксической группы</i>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4370
+	.system_element_663
 	=> nrel_subdividing: {
-		.system_element_4375;
-		.system_element_4376
+		.system_element_668;
+		.system_element_669
 	};;
 
-	.system_element_4375
+	.system_element_668
 	=> nrel_subdividing: {
-		.system_element_4377
+		.system_element_670
 		(*
-			=> .system_element_1120: [<p><i>именная группа</i> --- <i>синтаксическая группа</i>, <i>вершиной</i> которой является <i>существительное</i>.</p>]
+			=> .system_element_264: [<p><i>именная группа</i> --- <i>синтаксическая группа</i>, <i>вершиной</i> которой является <i>существительное</i>.</p>]
 			(*
 				<- lang_ru;;
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_4378
+		.system_element_671
 		(*
-			=> .system_element_1120: [<p><i>глагольная группа</i> --- <i>синтаксическая группа</i>, <i>вершиной</i> которой является <i>глагол</i>.</p>]
+			=> .system_element_264: [<p><i>глагольная группа</i> --- <i>синтаксическая группа</i>, <i>вершиной</i> которой является <i>глагол</i>.</p>]
 			(*
 				<- lang_ru;;
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_4379
+		.system_element_672
 		(*
-			=> .system_element_1120: [<p><i>группа прилагательного</i> --- <i>синтаксическая группа</i>, <i>вершиной</i> которой является <i>прилагательное</i>.</p>]
+			=> .system_element_264: [<p><i>группа прилагательного</i> --- <i>синтаксическая группа</i>, <i>вершиной</i> которой является <i>прилагательное</i>.</p>]
 			(*
 				<- lang_ru;;
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_4380
+		.system_element_673
 		(*
-			=> .system_element_1120: [<p><i>наречная группа</i> --- <i>синтаксическая группа</i>, <i>вершиной</i> которой является <i>наречие</i>.</p>]
+			=> .system_element_264: [<p><i>наречная группа</i> --- <i>синтаксическая группа</i>, <i>вершиной</i> которой является <i>наречие</i>.</p>]
 			(*
 				<- lang_ru;;
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_4381
+		.system_element_674
 		(*
-			=> .system_element_1120: [<p><i>предложная группа</i> --- <i>синтаксическая группа</i>, <i>вершиной</i> которой является <i>предлог</i>.</p>]
+			=> .system_element_264: [<p><i>предложная группа</i> --- <i>синтаксическая группа</i>, <i>вершиной</i> которой является <i>предлог</i>.</p>]
 			(*
 				<- lang_ru;;
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_4382
+		.system_element_675
 		(*
-			=> .system_element_1120: [<p><i>группа комплементатора</i> --- <i>синтаксическая группа</i>, <i>вершиной</i> которой является <i>комплементатор</i>.</p>]
+			=> .system_element_264: [<p><i>группа комплементатора</i> --- <i>синтаксическая группа</i>, <i>вершиной</i> которой является <i>комплементатор</i>.</p>]
 			(*
 				<- lang_ru;;
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_4383
+		.system_element_676
 		(*
-			=> .system_element_1120: [<p><i>временная группа</i> --- <i>синтаксическая группа</i>, <i>вершиной</i> которой является <i>вспомогательный</i> либо <i>модальный глагол</i>.</p>]
+			=> .system_element_264: [<p><i>временная группа</i> --- <i>синтаксическая группа</i>, <i>вершиной</i> которой является <i>вспомогательный</i> либо <i>модальный глагол</i>.</p>]
 			(*
 				<- lang_ru;;
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_4384
+		.system_element_677
 		(*
-			=> .system_element_1120: [<p><i>группа детерминанта</i> --- <i>синтаксическая группа</i>, <i>вершиной</i> которой является <i>детерминант</i>.</p>]
+			=> .system_element_264: [<p><i>группа детерминанта</i> --- <i>синтаксическая группа</i>, <i>вершиной</i> которой является <i>детерминант</i>.</p>]
 			(*
 				<- lang_ru;;
 				=> nrel_format: format_html;;
@@ -282,7 +282,7 @@
 		*)
 	};
 	=> nrel_subdividing: {
-		.system_element_4385
+		.system_element_678
 		(*
 			=> nrel_idtf: [<p>максимальная проекция вершины синтаксической группы</p>]
 			(*
@@ -290,7 +290,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_4386
+		.system_element_679
 		(*
 			=> nrel_idtf: [<p>промежуточная проекция вершины синтаксической группы</p>]
 			(*
@@ -300,10 +300,10 @@
 		*)
 	};;
 
-	.system_element_4387
+	.system_element_680
 	<= nrel_intersection: {
-		.system_element_4384;
-		.system_element_4385
+		.system_element_677;
+		.system_element_678
 	};
 	=> nrel_explanation: [<p>Могут быть введены более узкие классы, являющиеся пересечением приведенных выше, например <i>максимальная проекция вершины группы детерминанта</i>.</p>]
 	(*
@@ -311,7 +311,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3322
+	.system_element_681
 	<=> "file://images/sd_natural_languages/syntactic_structure_part_1.png"
 	(*
 		<- concept_file;;
@@ -323,7 +323,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3323
+	.system_element_682
 	<=> "file://images/sd_natural_languages/syntactic_structure_part_2.png"
 	(*
 		<- concept_file;;
@@ -335,8 +335,8 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4384
-	=> .system_element_252: {
+	.system_element_677
+	=> .system_element_203: {
 		[<p><i>максимальная проекция вершины группы детерминанта</i> состоит из (<i>максимальной проекции вершины группы детерминанта</i>) и <i>промежуточной проекции вершины группы детерминанта</i></p>]
 		(*
 			<- lang_ru;;
@@ -356,8 +356,8 @@
 		*);;
 	*);;
 
-	.system_element_4377
-	=> .system_element_252: {
+	.system_element_670
+	=> .system_element_203: {
 		[<p><i>максимальная проекция вершины именной группы</i> состоит из (<i>максимальной проекции вершины группы детерминанта</i>) и <i>промежуточной проекции вершины именной группы</i></p>]
 		(*
 			<- lang_ru;;
@@ -382,8 +382,8 @@
 		*);;
 	*);;
 
-	.system_element_4378
-	=> .system_element_252: {
+	.system_element_671
+	=> .system_element_203: {
 		[<p><i>максимальная проекция вершины глагольной группы</i> состоит из <i>промежуточная проекция вершины глагольной группы</i></p>]
 		(*
 			<- lang_ru;;
@@ -408,8 +408,8 @@
 		*);;
 	*);;
 
-	.system_element_4380
-	=> .system_element_252: {
+	.system_element_673
+	=> .system_element_203: {
 		[<p><i>максимальная проекция вершины наречной группы</i> состоит из <i>промежуточной проекции вершины наречной группы</i></p>]
 		(*
 			<- lang_ru;;
@@ -434,8 +434,8 @@
 		*);;
 	*);;
 
-	.system_element_4379
-	=> .system_element_252: {
+	.system_element_672
+	=> .system_element_203: {
 		[<p><i>максимальная проекция вершины группы прилагательного</i> состоит из <i>промежуточной проекции вершины группы прилагательного</i></p>]
 		(*
 			<- lang_ru;;
@@ -460,8 +460,8 @@
 		*);;
 	*);;
 
-	.system_element_4381
-	=> .system_element_252: {
+	.system_element_674
+	=> .system_element_203: {
 		[<p><i>максимальная проекция вершины предложной группы</i> состоит из <i>промежуточной проекции вершины предложной группы</i></p>]
 		(*
 			<- lang_ru;;
@@ -486,8 +486,8 @@
 		*);;
 	*);;
 
-	.system_element_4383
-	=> .system_element_252: {
+	.system_element_676
+	=> .system_element_203: {
 		[<p><i>максимальная проекция вершины временной группы</i> состоит из (<i>максимальной проекции вершины группы детерминанта</i>) и <i>промежуточной проекции вершины временной группы</i></p>]
 		(*
 			<- lang_ru;;
@@ -507,8 +507,8 @@
 		*);;
 	*);;
 
-	.system_element_4382
-	=> .system_element_252: {
+	.system_element_675
+	=> .system_element_203: {
 		[<p><i>максимальная проекция вершины группы комплементатора</i> состоит из (<i>максимальной проекции вершины некоторой синтаксической группы</i>) и <i>промежуточной проекции вершины группы комплементатора</i></p>]
 		(*
 			<- lang_ru;;
@@ -528,39 +528,39 @@
 		*);;
 	*);;
 
-	.system_element_4388
-	=> .system_element_252: .system_element_3322;
-	=> .system_element_252: .system_element_3323;
+	.system_element_683
+	=> .system_element_203: .system_element_681;
+	=> .system_element_203: .system_element_682;
 	=> nrel_note: [<p>Структуры синтаксических групп не являются произвольными --- элементы внутри группы могут граничить только с определенными множествами элементов.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_180: .system_element_4389;
-	=> nrel_note: [<p>Правила структуры синтаксических групп можно обобщить и свести к трем более абстрактным. Правило спецификатора: <i>максимальная проекция вершины синтаксической группы</i> <i>XP</i> состоит из (<i>максимальной проекции вершины</i> <i>YP</i>) <i>промежуточной проекции вершины синтаксической группы</i> <i>X</i>
-	<li> Правило адъюнкта: <i>промежуточная проекция вершины синтаксической группы</i> <i>X</i> состоит из <i>промежуточной проекции вершины синтаксической группы</i> <i><b>X_1</b></i> (и <i>максимальной проекции вершины синтаксической группы</i> <i>ZP</i>) ИЛИ из (<i>максимальной проекции вершины синтаксической группы</i> <i>ZP</i>) и <i>промежуточной проекции вершины синтаксической группы</i> <i>X</i>.
-	<li> Правило комплемента: <i>промежуточная проекция вершины синтаксической группы</i>  <i>X</i> состоит из <i>вершины</i> <i>X</i> (и <i>максимальной проекции вершины синтаксической группы</i> <i>WP</i>).</p>]
+	=> .system_element_35: .system_element_684;
+	=> nrel_note: [<p>Правила структуры синтаксических групп можно обобщить и свести к трем более абстрактным. Правило спецификатора: <i>максимальная проекция вершины синтаксической группы</i> <i>XP</i> состоит из (<i>максимальной проекции вершины</i> <i>YP</i>) <i>промежуточной проекции вершины синтаксической группы</i> <i>X'</i>
+	<li> Правило адъюнкта: <i>промежуточная проекция вершины синтаксической группы</i> <i>X'</i> состоит из <i>промежуточной проекции вершины синтаксической группы</i> <i><b>X</b></i> (и <i>максимальной проекции вершины синтаксической группы</i> <i>ZP</i>) ИЛИ из (<i>максимальной проекции вершины синтаксической группы</i> <i>ZP</i>) и <i>промежуточной проекции вершины синтаксической группы</i> <i>X'</i>.
+	<li> Правило комплемента: <i>промежуточная проекция вершины синтаксической группы</i>  <i>X'</i> состоит из <i>вершины</i> <i>X</i> (и <i>максимальной проекции вершины синтаксической группы</i> <i>WP</i>).</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_4389
+	.system_element_684
 	<=> "file://images/sd_natural_languages/tree_structure_rule.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
 	*);;
 
-	.system_element_4390
-	=> .system_element_1120: [<p><b><i>комплемент</i></b> --- <i>синтаксическая группа</i>, являющаяся сестрой вершины.</p>]
+	.system_element_685
+	=> .system_element_264: [<p><b><i>комплемент</i></b> --- <i>синтаксическая группа</i>, являющаяся сестрой вершины.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_4392: .system_element_4391
+	=> .system_element_687: .system_element_686
 	(*
-		=> .system_element_252: [<p>"file://images/sd_natural_languages/complement_rule.png"</p>]
+		=> .system_element_203: [<p>"file://images/sd_natural_languages/complement_rule.png"</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
@@ -572,15 +572,15 @@
 		*);;
 	*);;
 
-	.system_element_4393
-	=> .system_element_1120: [<p><b><i>адъюнкт</i></b> --- <i>синтаксическая группа</i>, являющаяся дочерью (<i>непосредственно составляющей</i>) промежуточной проекции и сестрой промежуточной проекции вершины той же <i>синтаксической группы</i>.</p>]
+	.system_element_688
+	=> .system_element_264: [<p><b><i>адъюнкт</i></b> --- <i>синтаксическая группа</i>, являющаяся дочерью (<i>непосредственно составляющей</i>) промежуточной проекции и сестрой промежуточной проекции вершины той же <i>синтаксической группы</i>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_4392: .system_element_4394
+	=> .system_element_687: .system_element_689
 	(*
-		=> .system_element_252: [<p>"file://images/sd_natural_languages/adjunct_rule.png"</p>]
+		=> .system_element_203: [<p>"file://images/sd_natural_languages/adjunct_rule.png"</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
@@ -592,15 +592,15 @@
 		*);;
 	*);;
 
-	.system_element_4395
-	=> .system_element_1120: [<p><b><i>спецификатор</i></b> --- <i>синтаксическая группа</i>, являющейся дочерью максимальной проекции и сестрой промежуточной проекции.</p>]
+	.system_element_690
+	=> .system_element_264: [<p><b><i>спецификатор</i></b> --- <i>синтаксическая группа</i>, являющейся дочерью максимальной проекции и сестрой промежуточной проекции.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_4392: .system_element_4396
+	=> .system_element_687: .system_element_691
 	(*
-		=> .system_element_252: [<p>"file://images/sd_natural_languages/specifier_rule.png"</p>]
+		=> .system_element_203: [<p>"file://images/sd_natural_languages/specifier_rule.png"</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;

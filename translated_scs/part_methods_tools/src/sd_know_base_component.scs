@@ -1,41 +1,43 @@
-.system_element_2697
+.system_element_0
 => nrel_inclusion: [*
 	=> nrel_summary: [<p>Для широкого применения интеллектуальных систем, способных повысить качество решения прикладных задач, разработано большое число <i>баз знаний</i> по самым различным предметным областям. Однако в большинстве случаев каждая база знаний разрабатывается отдельно и независимо от других, в отсутствие единой унифицированной формальной основы для представления знаний, а также единых принципов формирования систем понятий для описываемой предметной области. В связи с этим разработанные базы оказываются, как правило, несовместимы между собой и не пригодны для повторного использования. Для быстрой разработки достаточного количества баз знаний, кроме наличия средств разработки интеллектуальных систем, обеспечивающих разработку и проектирование различных компонентов интеллектуальной системы, включая базу знаний, требуется наличие соответствующей отлаженной технологии проектирования баз знаний.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
-		=> .system_element_122: 
-			.system_element_2698
+		=> .system_element_1: 
+			.system_element_2
 		;;
-	*);;
+	*);
+	<- .system_element_3;
+	-> rrel_key_sc_element: .system_element_4;;
 
-	.system_element_2699
+	.system_element_4
 	<- subject_domain;
-	<= nrel_private_subject_domain: .system_element_2700;
-	-> .system_element_112: 
-		.system_element_2701
+	<= nrel_private_subject_domain: .system_element_5;
+	-> .system_element_6: 
+		.system_element_7
 	;
-	-> .system_element_112: .system_element_2702;
-	=> .system_element_1: 
-		.system_element_2703
+	-> rrel_studied_object_class: .system_element_8;
+	=> .system_element_9: 
+		.system_element_10
 	;
-	=> .system_element_14: 
-		.system_element_2698;
-		.system_element_2704;
-		.system_element_2705
+	=> .system_element_11: 
+		.system_element_2;
+		.system_element_12;
+		.system_element_13
 	;;
 
-	.system_element_2706
-	-> .system_element_2707;
-	-> .system_element_2708;
+	.system_element_14
+	-> .system_element_15;
+	-> .system_element_16;
 	=> nrel_explanation: [<p><i>Ядро базы знаний</i> представляет собой компонент, входящий в состав каждой базы знаний, разрабатываемой по <i>Технологии OSTIS</i>, и устанавливаемый в первую очередь.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2702
-	<= nrel_inclusion: .system_element_2604;
+	.system_element_8
+	<= nrel_inclusion: .system_element_17;
 	-> rrel_maximum_studied_object_class;
 	-> rrel_not_maximum_studied_object_class;
 	-> rrel_explored_relation;
@@ -45,10 +47,10 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2701
-	=> nrel_inclusion: .system_element_2709
+	.system_element_7
+	=> nrel_inclusion: .system_element_18
 	(*
-		<= nrel_inclusion: .system_element_725;;
+		<= nrel_inclusion: .system_element_3;;
 	*);
 	=> nrel_inclusion: semantic_neighborhood
 	(*
@@ -57,7 +59,7 @@
 		=> nrel_inclusion: basic_semantic_neighborhood;;
 		=> nrel_inclusion: specialized_semantic_neighborhood;;
 	*);
-	=> nrel_inclusion: .system_element_2710
+	=> nrel_inclusion: .system_element_19
 	(*
 		=> nrel_note: [<p>Базовый фрагмент предметной области и онтологии включает в себя теоретико-множественную, логическую онтологии, а также терминологические фрагменты.</p>];;
 		=> nrel_note: [<p>Данный вид многократно используемых компонентов позволяет использовать только те знания, которые непосредственно необходимы для функционирования интеллектуальных систем, исключив то, что никак не влияет на работу конечной системы (пояснения, примеры, дидактический материал и так далее).</p>]
@@ -65,9 +67,9 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
-		-> .system_element_2711;;
-		-> .system_element_2712;;
-		-> .system_element_2713;;
+		-> .system_element_20;;
+		-> .system_element_21;;
+		-> .system_element_22;;
 	*);
 	=> nrel_inclusion: knowledge_base
 	(*
@@ -83,7 +85,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2714
+	.system_element_23
 	=> nrel_note: [<p><i>онтологии предметных областей</i>, описывающие виды знаний, которые являются основой для построения <i>базы знаний</i> любой <i>интеллектуальной системы</i>, входят в <i>Ядро базы знаний</i>, поскольку являются <i>онтологиями верхнего уровня</i>. Следовательно, <i>Ядро базы знаний</i> представляет собой компонент, входящий в состав каждой базы знаний, разрабатываемой по <i>Технологии OSTIS</i>, и устанавливающийся в первую очередь.</p>]
 	(*
 		<- lang_ru;;
@@ -95,31 +97,31 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2701
-	-> .system_element_2708
+	.system_element_7
+	-> .system_element_16
 	(*
-		-> .system_element_2715;;
-		-> .system_element_2716;;
-		-> .system_element_2717;;
-		-> .system_element_2718;;
-		-> .system_element_2719;;
-		-> .system_element_2720;;
+		-> .system_element_24;;
+		-> .system_element_25;;
+		-> .system_element_26;;
+		-> .system_element_27;;
+		-> .system_element_28;;
+		-> .system_element_29;;
 	*);;
 
-	.system_element_2701
-	-> .system_element_2707
+	.system_element_7
+	-> .system_element_15
 	(*
-		=> nrel_inclusion: .system_element_2708;;
+		=> nrel_inclusion: .system_element_16;;
 		=> nrel_explanation: [<p>В отличие от <i>Ядра базы знаний</i> <i>Расширенное ядро базы знаний</i> содержит в себе не только обязательные для установки <i>онтологии предметных областей</i>, но и такие <i>онтологии предметных областей</i>, которые используются в большинстве <i>интеллектуальных компьютерных систем</i>. Следовательно, являются компонентами, которые наиболее часто устанавливаются пользователями <i>Библиотеки многократно используемых компонентов баз знаний ostis-систем в составе Метасистемы OSTIS</i>.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
-		-> .system_element_2721;;
-		-> .system_element_2722;;
-		-> .system_element_2723;;
-		-> .system_element_2724;;
-		-> .system_element_2725;;
+		-> .system_element_30;;
+		-> .system_element_31;;
+		-> .system_element_32;;
+		-> .system_element_33;;
+		-> .system_element_34;;
 		=> nrel_note: [<p>Представленный список <i>многократно используемых компонентов баз знаний</i> не является окончательным. В случае, когда разработчик <i>базы знаний</i> интеллектуальной системы считает, что разработанный им компонент сможет стать неотъемлемой частью библиотеки, то компонент будет добавлен в библиотеку, как многократно используемый, если:
 		<ul>
 			<li> компонент специфицирован;
@@ -135,26 +137,26 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	=> .system_element_180: {
-		.system_element_2726
+	=> .system_element_35: {
+		.system_element_36
 	};;
 
-	.system_element_2727
-	<= nrel_inclusion: .system_element_2728;
+	.system_element_37
+	<= nrel_inclusion: .system_element_38;
 	-> rrel_maximum_studied_object_class
 	(*
 		=> nrel_idtf: [<p>класс объектов исследования, для которого в заданной предметной области отсутствует другой класс объектов исследования, который был бы его надмножеством'</p>];;
-		=> nrel_first_domain: .system_element_2709;;
+		=> nrel_first_domain: .system_element_18;;
 		=> nrel_second_domain: concept;;
 	*);
 	-> rrel_not_maximum_studied_object_class
 	(*
-		=> nrel_first_domain: .system_element_2709;;
+		=> nrel_first_domain: .system_element_18;;
 		=> nrel_second_domain: concept;;
 	*);
 	-> rrel_explored_relation
 	(*
-		=> nrel_first_domain: .system_element_2709;;
+		=> nrel_first_domain: .system_element_18;;
 		=> nrel_second_domain: concept;;
 	*);
 	=> nrel_note: [<p>Для компонентов, которые являются частью <i>Библиотеки многократно используемых компонентов баз знаний ostis-систем в составе Метасистемы OSTIS</i>, также существуют средства поиска, обновления.</p>]

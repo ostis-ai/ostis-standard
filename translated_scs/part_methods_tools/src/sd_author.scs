@@ -1,7 +1,7 @@
-.system_element_2606
+.system_element_102
 => nrel_inclusion: [*
 
-	.system_element_2507
+	.system_element_103
 	=> nrel_explanation: [<p>данная модель базируется на модели деятельности различных субъектов и реализована в виде онтологии предметной области деятельности разработчиков, направленной на разработку и модификацию гибридных баз знаний.</p>]
 	(*
 		<- lang_ru;;
@@ -28,7 +28,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2607
+	.system_element_104
 	=> nrel_idtf: [<p>бинарное отношение, связывающее sc-модель базы знаний ostis-системы и sc-элемент, обозначающий персону, участвующую в разработке или эксплуатации этой базы знаний</p>]
 	(*
 		<- lang_ru;;
@@ -36,9 +36,9 @@
 	*);
 	<- binary_relation;
 	<- oriented_relation;
-	=> nrel_subdividing: .system_element_2608
+	=> nrel_subdividing: .system_element_105
 	(*
-		<=> .system_element_200: {
+		<=> .system_element_72: {
 			nrel_registered_user
 			(*
 				=> nrel_explanation: [<p><i>зарегистрированный пользователь</i> имеет доступ на чтение всей базы знаний и внесение предложений ко всей базе знаний, может выполнять роль конечного пользователя ostis-системы, то есть работать в режиме эксплуатации, а также роль ее разработчика. </p>]
@@ -61,7 +61,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2609
+	.system_element_106
 	=> nrel_idtf: [<p>бинарное отношение, связывающее sc-элемент, обозначающий sc-структуру (например, фрагмент sc-модели базы знаний), и sc-элемент, обозначающий пользователя этой ostis-системы, который обладает правом просмотра этой sc-структуры.</p>]
 	(*
 		<- lang_ru;;
@@ -75,7 +75,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_2610
+	.system_element_107
 	=> nrel_idtf: [<p>бинарное отношение, связывающее sc-элемент, обозначающий sc-структуру (например, фрагмент sc-модели базы знаний), и sc-элемент, обозначающий зарегистрированного пользователя ostis-системы, который обладает правом редактирования этой sc-структуры.</p>]
 	(*
 		<- lang_ru;;
@@ -83,10 +83,10 @@
 	*);
 	<- binary_relation;
 	<- oriented_relation;
-	=> nrel_inclusion: .system_element_2611;
-	=> .system_element_2612: {
-		.system_element_2613;
-		.system_element_2614
+	=> nrel_inclusion: .system_element_108;
+	=> .system_element_109: {
+		.system_element_110;
+		.system_element_111
 	};
 	=> nrel_note: [<p>Связки отношения <i>пользователя, обладающего правом редактирования sc-структуры ostis-системы*</i> связывают sc-структуру (не обязательно всю sc-модель базы знаний) и пользователя, зарегистрированного в этой sc-модели базы знаний.</p>]
 	(*
@@ -95,15 +95,15 @@
 	*);;
 
 	nrel_developer
-	<= nrel_inclusion: .system_element_2615;
+	<= nrel_inclusion: .system_element_112;
 	=> nrel_idtf: [<p>бинарное отношение, связывающее sc-элемент, обозначающий некоторый раздел базы знаний (в пределе --- всю базу знаний), и sc-элемент, обозначающий пользователя ostis-системы, который может быть разработчиком данного раздела базы знаний, то есть выполнять проектные задачи в рамках данного раздела</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> nrel_subdividing: .system_element_2616
+	=> nrel_subdividing: .system_element_113
 	(*
-		<=> .system_element_200: {
+		<=> .system_element_72: {
 			nrel_administrator;
 			nrel_manager;
 			nrel_expert
@@ -116,7 +116,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_2617: {
+	=> .system_element_114: {
 		[<p>контроль целостности и непротиворечивости всей базы знаний</p>]
 		(*
 			<- lang_ru;;
@@ -145,7 +145,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_2617: {
+	=> .system_element_114: {
 		[<p>планирование объемов работ по разработке базы знаний</p>]
 		(*
 			<- lang_ru;;
@@ -174,7 +174,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_2617: {
+	=> .system_element_114: {
 		[<p>верификация результатов выполнения проектных задач</p>]
 		(*
 			<- lang_ru;;

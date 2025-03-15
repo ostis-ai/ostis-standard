@@ -1,27 +1,29 @@
-.system_element_1799
+.system_element_3671
 => nrel_inclusion: [*
-	=> .system_element_299: 
-		.system_element_1800;
-		.system_element_1801;
-		.system_element_1802;
-		.system_element_1803
+	=> .system_element_1416: 
+		.system_element_3733;
+		.system_element_3734;
+		.system_element_3735;
+		.system_element_3736
 	;
-	<- .system_element_725;;
+	<- .system_element_3;
+	-> rrel_key_sc_element: .system_element_3737;;
 
-	.system_element_1804
+	.system_element_3737
 	<- subject_domain;
-	-> .system_element_112: 
-		.system_element_1805;
-		.system_element_1806
+	.system_element_3738;
+	-> .system_element_6: 
+		.system_element_3739;
+		.system_element_3740
 	;
-	=> .system_element_1807: 
-		.system_element_1808;
-		.system_element_1809;
-		.system_element_1810;
-		.system_element_1811
+	=> .system_element_1196: 
+		.system_element_1211;
+		.system_element_3741;
+		.system_element_3742;
+		.system_element_3743
 	;;
 
-	.system_element_1812
+	.system_element_3738
 	=> nrel_idtf: [<p>система автоматизации производственной деятельности предприятия</p>]
 	(*
 		<- lang_ru;;
@@ -32,13 +34,13 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<= nrel_inclusion: .system_element_1813;
-	=> .system_element_1814: {
+	<= nrel_inclusion: .system_element_3744;
+	=> .system_element_162: {
 		[<p>Существующие средства автоматизации деятельности предприятия имеют высокую стоимость, трудны в освоении и адаптации к конкретному производству. Как правило, такие средства, с одной стороны, жестко ориентированы на решение некоторого ограниченного класса задач, с другой стороны, разработчики стремятся сделать такого рода средства как можно более универсальными, наращивая их частными решениями, что приводит к сложности и громоздкости таких систем.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
-			=> .system_element_372: [<p>Как следствие подобного подхода к наращиванию функционала, существующие средства автоматизации деятельности предприятия имеют низкий уровень гибкости (возможности внесения изменений), что приводит к существенным накладным расходам при адаптации таких средств к новым требованиям. Как правило, внесение изменений в указанные средства требует вмешательства разработчиков (часто сторонних с точки зрения предприятия), что влечет значительные временные и финансовые затраты. Как следствие двух указанных проблем, далеко не всякое предприятие может обеспечить высокий уровень автоматизации своей деятельности, даже в случае наличия на рынке подходящих решений.</p>]
+			=> .system_element_840: [<p>Как следствие подобного подхода к наращиванию функционала, существующие средства автоматизации деятельности предприятия имеют низкий уровень гибкости (возможности внесения изменений), что приводит к существенным накладным расходам при адаптации таких средств к новым требованиям. Как правило, внесение изменений в указанные средства требует вмешательства разработчиков (часто сторонних с точки зрения предприятия), что влечет значительные временные и финансовые затраты. Как следствие двух указанных проблем, далеко не всякое предприятие может обеспечить высокий уровень автоматизации своей деятельности, даже в случае наличия на рынке подходящих решений.</p>]
 			(*
 				<- lang_ru;;
 				=> nrel_format: format_html;;
@@ -48,7 +50,7 @@
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
-			=> .system_element_372: [<p>Отсутствие такого рода моделей препятствует дальнейшему повышению уровня автоматизации предприятия, в частности, в области автоматизации принятия решений в нештатных ситуациях, прогнозирования дальнейшего развития событий.</p>]
+			=> .system_element_840: [<p>Отсутствие такого рода моделей препятствует дальнейшему повышению уровня автоматизации предприятия, в частности, в области автоматизации принятия решений в нештатных ситуациях, прогнозирования дальнейшего развития событий.</p>]
 			(*
 				<- lang_ru;;
 				=> nrel_format: format_html;;
@@ -66,7 +68,7 @@
 		*)
 	}
 	(*
-		=> .system_element_753: {
+		=> .system_element_3745: {
 			[<p>Предприятие рассматривается как распределенная, интеллектуальная социотехническая система, в основе которой лежит хорошо структурированная общая база знаний предприятия.</p>]
 			(*
 				<- lang_ru;;
@@ -92,7 +94,7 @@
 				(*
 					<- lang_ru;;
 					=> nrel_format: format_html;;
-					=> .system_element_372: [<p>В конечном итоге весь менеджмент процессов производства при таком подходе сводится к грамотной спецификации задач в такой общей базе знаний, указания их приоритетов, исполнителей, сроков выполнения и т.д.</p>]
+					=> .system_element_840: [<p>В конечном итоге весь менеджмент процессов производства при таком подходе сводится к грамотной спецификации задач в такой общей базе знаний, указания их приоритетов, исполнителей, сроков выполнения и т.д.</p>]
 					(*
 						<- lang_ru;;
 						=> nrel_format: format_html;;
@@ -113,7 +115,7 @@
 			(*
 				<- lang_ru;;
 				=> nrel_format: format_html;;
-				=> .system_element_372: 
+				=> .system_element_840: 
 					[<p>Разработка системы сводится к разработке ее модели, описанной средствами SC-кода (sc-модели), которая затем интерпретируется одной из платформ интерпретации.</p>]
 					(*
 						<- lang_ru;;
@@ -133,8 +135,8 @@
 			*)
 		}
 		(*
-			=> .system_element_122: .system_element_1815;;
-			=> .system_element_290: {
+			=> .system_element_1: .system_element_3746;;
+			=> .system_element_138: {
 				[<p>Отсутствие необходимости разработки средств непосредственного взаимодействия компонентов системы (человек-роботизированная система, человек-человек и т.д.) засчет их взаимодействия посредством общей памяти.</p>]
 				(*
 					<- lang_ru;;
@@ -167,15 +169,15 @@
 				*)
 			}
 			(*
-				=> .system_element_122: .system_element_1816;;
+				=> .system_element_1: .system_element_3747;;
 			*);;
 		*);;
 	*);;
 
-	.system_element_1805
+	.system_element_3739
 	<= nrel_inclusion: process;
-	=> .system_element_1817: .system_element_1812;
-	=> nrel_inclusion: .system_element_1818
+	=> .system_element_3203: .system_element_3738;
+	=> nrel_inclusion: .system_element_3748
 	(*
 		=> nrel_explanation: [<p>Основой онтологического подхода к проектированию предприятия является формализация стандартов. Каждый стандарт рассматривается как онтология соответствующей предметной области, являющаяся основой для автоматизированного решения ряда задач, включая информационное обслуживание сотрудников, формальную оценку соответствия предприятия этим стандартам и т.д.Одной из важных проблем внедрения стандарта на предприятии является возможность неоднозначной трактовки некоторых положений стандарта, а также необходимость постоянной коррекции такой трактовки с целью приближения ее к смыслу оригинала. Кроме того, существуют особенности применения стандарта на каждом предприятии, необходимость актуализации используемого стандарта (т.к. любой стандарт постоянно эволюционирует), с последующим внесением изменений в структуру и организацию деятельности предприятия для обеспечения соответствия стандарту. Одним из путей решения такого рода проблем является построение его формальной семантической модели, которая могла бы одинаково интерпретироваться как компьютерной системой, так и человеком. Однако, представление стандарта в виде его формальной семантической модели является не самим стандартом, а субъективной трактовкой этого стандарта разработчиком указанной модели. Но при этом формальное семантическое представление стандарта создает конструктивную почву для его согласования, а также для обеспечения четкости и однозначности его трактовки. Кроме того, формальное семантическое представление стандарта обеспечивает значительное упрощение внесения изменений в такое представление стандарта, которые могут быть вызваны либо уточнением трактовки (понимания) этого стандарта, либо эволюцией самого стандарта (его исходного документа). Указанное упрощение обусловлено тем, что в семантическом представлении любых знаний, в том числе и стандартов, знаки всех описываемых сущностей и связей между ними представлены однократно, т.е. их изменения в рамках базы знаний локализованы, в то время как прослеживание таких связей в естественно-языковом представлении стандарта затруднено.Формальное семантическое представление стандарта позволяет без внесения каких-либо изменений в структуру такого представления дополнять его различного рода дидактической информацией (примерами, пояснениями, аналогиями и т.д.), которая способствует более быстрому пониманию стандарта сотрудниками предприятия.Построение формальной модели стандарта сводится к построению интегрированной формальной онтологии, специфицирующей соответствующую предметную область. Для этого необходимо отобразить структуру и содержание исходного текста документа стандарта на иерархию предметных областей и соответствующих им онтологий. Выделение предметных областей позволяет локализовать область решения задач, решаемых в рамках базы знаний, в том числе, проектных. Иными словами, поиск путей решения задачи из некоторой предметной области ограничен рамками этой предметной области.Использование онтологического подхода к построению формальной модели стандарта позволяет путем добавления интеллектуальных агентов обработки знаний построить на его основе интеллектуальную справочную систему, предоставляющую широкий спектр информационных услуг пользователям, в том числе, способную отвечать на широкий спектр вопросов, ответ на которые может быть в явном виде не представлен в тексте стандарта, или поиск его в таком тексте затруднителен.</p>]
 		(*
@@ -184,12 +186,12 @@
 		*);;
 	*);;
 
-	.system_element_1806
-	<= .system_element_1819: .system_element_1818
+	.system_element_3740
+	<= .system_element_3749: .system_element_3748
 	(*
-		=> .system_element_1817: .system_element_1820;;
+		=> .system_element_3203: .system_element_3750;;
 	*);
-	=> .system_element_1821: {
+	=> .system_element_3751: {
 		[<p>Дублирование информации в рамках документа, описывающего стандарт</p>]
 		(*
 			<- lang_ru;;
@@ -227,15 +229,15 @@
 		*)
 	}
 	(*
-		=> .system_element_122: 
-			.system_element_1822;
-			.system_element_1823
+		=> .system_element_1: 
+			.system_element_2859;
+			.system_element_2860
 		;;
-		=> .system_element_1824: [<p>В качестве основы для автоматизации процессов создания, развития и применения стандартов предлагается использовать Технологию OSTIS и соответствующий набор моделей, методов и средств разработки семантически совместимых интеллектуальных систем, в частности, SC-код как основу формализации стандарта.</p>]
+		=> .system_element_3752: [<p>В качестве основы для автоматизации процессов создания, развития и применения стандартов предлагается использовать Технологию OSTIS и соответствующий набор моделей, методов и средств разработки семантически совместимых интеллектуальных систем, в частности, SC-код как основу формализации стандарта.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
-			=> .system_element_290: {
+			=> .system_element_138: {
 				[<p>Автоматизация процессов согласования стандартов распределенным коллективом авторов.</p>]
 				(*
 					<- lang_ru;;
@@ -274,12 +276,12 @@
 			};;
 		*);;
 	*);
-	=> nrel_inclusion: .system_element_1825
+	=> nrel_inclusion: .system_element_3753
 	(*
-		-> .system_element_1826
+		-> .system_element_3754
 		(*
 			=> nrel_explanation: [<p>ISA 88 --- основополагающий стандарт для партионного производства. Стандарт широко используется на предприятиях в Америке и Европе, активно внедряется и на территории Республики Беларусь</p>];;
-			=> .system_element_752: {
+			=> .system_element_3755: {
 				[<p>Американская версия стандарта --- ANSI/ISA-88.00.01-2010 --- является уже обновленной, третьей редакцией от 2010 года, в то же время европейская версия, принятая в 1997 --- IEC 61512-1 --- основывается на старой версии ISA-88.01-1995</p>]
 				(*
 					<- lang_ru;;
@@ -296,7 +298,7 @@
 					=> nrel_format: format_html;;
 				*)
 			};;
-			=> .system_element_1827: [<p>https://www.isa.org/isa88/</p>]
+			=> .system_element_3756: [<p>https://www.isa.org/isa88/</p>]
 			(*
 				<- lang_ru;;
 				=> nrel_format: format_html;;
@@ -306,32 +308,32 @@
 				<- lang_ru;;
 				=> nrel_format: format_html;;
 			*);;
-			=> .system_element_1088: .system_element_1828
+			=> .system_element_3758: .system_element_3757
 			(*
-				<= nrel_inclusion: .system_element_1829;;
+				<= nrel_inclusion: .system_element_3759;;
 			*);;
 		*);;
 	*);;
 
-	.system_element_1829
+	.system_element_3759
 	=> nrel_private_subject_domain: 
-		.system_element_1830;
-		.system_element_1831;
-		.system_element_1832;
-		.system_element_1833
+		.system_element_3760;
+		.system_element_3761;
+		.system_element_3762;
+		.system_element_3763
 	;;
 
-	.system_element_1830
-	-> .system_element_1835: .system_element_1834;
-	-> .system_element_1836: 
-		.system_element_1837;
-		.system_element_1838;
-		.system_element_1839;
-		.system_element_1840;
-		.system_element_1841;
-		.system_element_1842;
-		.system_element_1843;
-		.system_element_1844
+	.system_element_3760
+	-> rrel_maximum_studied_object_class: .system_element_3764;
+	-> .system_element_3765: 
+		.system_element_3766;
+		.system_element_3767;
+		.system_element_3768;
+		.system_element_3769;
+		.system_element_3770;
+		.system_element_3771;
+		.system_element_3772;
+		.system_element_3773
 		(*
 			=> nrel_idtf: [<p>equipment relation</p>]
 			(*
@@ -340,7 +342,7 @@
 			*);;
 		*)
 	;
-	-> .system_element_748: .system_element_1845
+	-> rrel_explored_relation: .system_element_3774
 	(*
 		=> nrel_idtf: [<p>contains*</p>]
 		(*
@@ -349,8 +351,8 @@
 		*);;
 	*);;
 
-	.system_element_1831
-	-> .system_element_1835: .system_element_1846
+	.system_element_3761
+	-> rrel_maximum_studied_object_class: .system_element_3775
 	(*
 		=> nrel_idtf: [<p>process element</p>]
 		(*
@@ -358,8 +360,8 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	-> .system_element_1836: 
-		.system_element_1847
+	-> .system_element_3765: 
+		.system_element_3776
 		(*
 			=> nrel_idtf: [<p>process stage</p>]
 			(*
@@ -367,7 +369,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_1848
+		.system_element_3777
 		(*
 			=> nrel_idtf: [<p>process operation</p>]
 			(*
@@ -375,7 +377,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_1849
+		.system_element_3778
 		(*
 			=> nrel_idtf: [<p>process action</p>]
 			(*
@@ -384,7 +386,7 @@
 			*);;
 		*)
 	;
-	-> .system_element_748: .system_element_1850
+	-> rrel_explored_relation: .system_element_3779
 	(*
 		=> nrel_idtf: [<p>process element link*</p>]
 		(*
@@ -393,8 +395,8 @@
 		*);;
 	*);;
 
-	.system_element_1832
-	-> .system_element_1835: .system_element_1851
+	.system_element_3762
+	-> rrel_maximum_studied_object_class: .system_element_3780
 	(*
 		=> nrel_idtf: [<p>procedural element</p>]
 		(*
@@ -402,8 +404,8 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	-> .system_element_1836: 
-		.system_element_1852
+	-> .system_element_3765: 
+		.system_element_3781
 		(*
 			=> nrel_idtf: [<p>process cell procedure</p>]
 			(*
@@ -411,7 +413,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_1853
+		.system_element_3782
 		(*
 			=> nrel_idtf: [<p>unit procedure</p>]
 			(*
@@ -419,7 +421,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_1854
+		.system_element_3783
 		(*
 			=> nrel_idtf: [<p>operation</p>]
 			(*
@@ -427,7 +429,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_1855
+		.system_element_3784
 		(*
 			=> nrel_idtf: [<p>phase</p>]
 			(*
@@ -435,7 +437,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_1856
+		.system_element_3785
 		(*
 			=> nrel_idtf: [<p>recipe procedural element</p>]
 			(*
@@ -443,7 +445,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_1857
+		.system_element_3786
 		(*
 			=> nrel_idtf: [<p>equipment procedural element</p>]
 			(*
@@ -451,7 +453,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_1858
+		.system_element_3787
 		(*
 			=> nrel_idtf: [<p>recipe process cell procedure</p>]
 			(*
@@ -459,7 +461,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_1859
+		.system_element_3788
 		(*
 			=> nrel_idtf: [<p>recipe unit procedure</p>]
 			(*
@@ -467,7 +469,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_1860
+		.system_element_3789
 		(*
 			=> nrel_idtf: [<p>recipe operation</p>]
 			(*
@@ -475,7 +477,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_1861
+		.system_element_3790
 		(*
 			=> nrel_idtf: [<p>recipe phase</p>]
 			(*
@@ -483,7 +485,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_1862
+		.system_element_3791
 		(*
 			=> nrel_idtf: [<p>equipment process cell procedure</p>]
 			(*
@@ -491,7 +493,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_1853
+		.system_element_3782
 		(*
 			=> nrel_idtf: [<p>equipment unit procedure</p>]
 			(*
@@ -499,7 +501,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_1863
+		.system_element_3792
 		(*
 			=> nrel_idtf: [<p>equipment operation</p>]
 			(*
@@ -507,7 +509,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_1864
+		.system_element_3793
 		(*
 			=> nrel_idtf: [<p>equipment phase</p>]
 			(*
@@ -516,7 +518,7 @@
 			*);;
 		*)
 	;
-	-> .system_element_748: .system_element_1865
+	-> rrel_explored_relation: .system_element_3794
 	(*
 		=> nrel_idtf: [<p>execution order*</p>]
 		(*
@@ -525,23 +527,23 @@
 		*);;
 	*);;
 
-	.system_element_1855
+	.system_element_3784
 	=> nrel_idtf: [<p>атомарный процедурный элемент</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> nrel_inclusion: .system_element_1861;
-	=> nrel_inclusion: .system_element_1864;
-	<= nrel_inclusion: .system_element_1851;
+	=> nrel_inclusion: .system_element_3790;
+	=> nrel_inclusion: .system_element_3793;
+	<= nrel_inclusion: .system_element_3780;
 	=> nrel_explanation: [<p>Фаза --- нижний уровень <i>процедурного элемента</i> в модели <i>технологического управления</i>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_1865
-	=> .system_element_1866: .system_element_1851;
+	.system_element_3794
+	=> .system_element_3795: .system_element_3780;
 	=> nrel_explanation: [<p>Отношение <b><i>порядок исполнения*</i></b> cвязывает <i>процедурный элемент</i> с процедурным элементом, начинающим выполнение по его завершении.</p>]
 	(*
 		<- lang_ru;;

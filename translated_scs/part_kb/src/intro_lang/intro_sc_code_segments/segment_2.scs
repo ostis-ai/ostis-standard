@@ -1,20 +1,20 @@
 .segment_2 = [*
-.system_element_3757
+.system_element_2134
 => nrel_inclusion: [*
 
-	.system_element_3758
+	.system_element_2135
 	=> nrel_inclusion: [*
 
-		.system_element_3758
-		=> .system_element_3615: <
-			.system_element_3759;
-			.system_element_3760;
-			.system_element_3761
+		.system_element_2135
+		=> .system_element_2131: <
+			.system_element_2136;
+			.system_element_2137;
+			.system_element_2138
 		>;
-		<= .system_element_598: .system_element_3607;;
+		<= .system_element_1010: .system_element_2139;;
 
-		.system_element_3762
-		=> .system_element_3615: <
+		.system_element_2140
+		=> .system_element_2131: <
 			[<p>алфавит используемых символов (элементарных, атомарных фрагментов информационных конструкций, каковыми, в частности, являются буквы), то есть семейство таких попарно непересекающихся классов синтаксически эквивалентных символов, для которых существует простая процедура, позволяющая для любого символа по его синтаксическим особенностям установить факт его принадлежности одному из указанных классов</p>]
 			(*
 				<- lang_ru;;
@@ -27,8 +27,8 @@
 			*)
 		>;;
 
-		.system_element_3763
-		=> .system_element_3615: <
+		.system_element_2141
+		=> .system_element_2131: <
 			[<p>семейство классов <i>синтаксически</i> эквивалентных <i>sc-элементов</i>, в каждый из которых входят <i>sc-элементы</i> с одинаковыми <i>синтаксическими</i> характеристиками или, условно говоря, с одинаковыми наборами <i>синтаксических</i> меток</p>]
 			(*
 				<- lang_ru;;
@@ -45,8 +45,8 @@
 			*)
 		>;;
 
-		.system_element_3607
-		=> .system_element_3764: sc_element
+		.system_element_2139
+		=> .system_element_2142: sc_element
 		(*
 			=> nrel_idtf: [<p>элемент конструкции <i>Ядра SC-кода</i></p>];;
 			=> nrel_idtf: [<p>синтаксически элементарный (атомарный) фрагмент дискретной информационной конструкции, принадлежащей <i>Ядру SC-кода</i></p>]
@@ -65,9 +65,9 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		=> .system_element_361: .system_element_3765;;
+		=> .system_element_827: .system_element_2143;;
 
-		.system_element_3765
+		.system_element_2143
 		=> nrel_idtf: [<p>Множество (Семейство) всех классов синтаксически эквивалентных sc-элементов Ядра SC-кода</p>]
 		(*
 			<- lang_ru;;
@@ -93,15 +93,15 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
-		<=> .system_element_200: {
+		<=> .system_element_72: {
 			sc_edge;
 			sc_arc_common;
-			.system_element_3617;
-			.system_element_3618;
-			.system_element_3619
+			.system_element_2144;
+			.system_element_2145;
+			.system_element_2146
 		};;
 
-		.system_element_3766
+		.system_element_2147
 		=> nrel_idtf: [<p><i>Класс константных постоянных позитивных sc-пар принадлежности</i> и Класс всех остальных <i>sc-элементов</i> (задаваемых по умолчанию)</p>]
 		(*
 			<- lang_ru;;
@@ -118,7 +118,7 @@
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_3767
+		.system_element_2148
 		=> nrel_explanation: [<p><b>класс sc-элементов</b> можно выделить <i>явно</i> путем:
 
 		<ul>
@@ -133,16 +133,16 @@
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_357
-		=> .system_element_3768: {
+		.system_element_962
+		=> .system_element_2149: {
 			sc_element;
-			.system_element_3769;
-			.system_element_2934;
-			.system_element_3452;
-			.system_element_3770;
+			.system_element_2013;
+			.system_element_262;
+			.system_element_1945;
+			.system_element_1947;
 			file;
-			.system_element_3391;
-			.system_element_3401
+			.system_element_2121;
+			.system_element_2150
 		};
 		=> nrel_note: [<p><i>SC-коду</i> соответствует несколько синтаксических модификаций, каждая из которых задается:
 		<ul>
@@ -154,7 +154,7 @@
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_3771
+		.system_element_2151
 		=> nrel_idtf: [<p>семейство синтаксических меток, приписываемых <i>sc-элементам</i> в рамках соответствующей синтаксической модификации SC-кода и указывающих факт принадлежности <i>sc-элемента</i> соответствующему классу <i>sc-элементов</i> (<i>sc-классу</i>)</p>]
 		(*
 			<- lang_ru;;
@@ -172,7 +172,7 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
-		=> nrel_subdividing: .system_element_3765
+		=> nrel_subdividing: .system_element_2143
 		(*
 			=> nrel_note: [<p><i>Алфавит Ядра SC-кода</i> является одним из признаков классификации sc-элементов.</p>];;
 			=> nrel_note: [<p>В процессе обработки текстов <i>Ядра SC-кода</i> синтаксический тип <i>sc-элементов</i> может меняться --- <i>sc-узел</i> может трансформироваться в <i>sc-ребро</i>, <i>sc-ребро</i> --- в <i>sc-дугу</i>, <i>sc-дуга</i> общего вида --- в <i>базовую sc-дугу</i>.</p>]
@@ -183,9 +183,9 @@
 		*);;
 
 		sc_node
-		<=> .system_element_3772;;
+		<=> .system_element_2152;;
 
-		.system_element_3769
+		.system_element_2013
 		=> nrel_idtf: [<p>sc-конструкция</p>]
 		(*
 			<- lang_ru;;
@@ -202,21 +202,21 @@
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_2934
+		.system_element_262
 		=> nrel_idtf: [<p>sc-множество, содержащее sc-связки (знаки связей) между элементами этого множества</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_3452
+		.system_element_1945
 		=> nrel_idtf: [<p>связная sc-структура, являющаяся семантически корректной в рамках Базовой денотационной семантики SC-кода, а также синтаксически корректной в рамках соответствующей синтаксической модификации SC-кода</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_3770
+		.system_element_1947
 		=> nrel_idtf: [<p>sc-текст, обладающий дополнительным свойством иметь истинное значение по отношению к соответствующей предметной области</p>]
 		(*
 			<- lang_ru;;
@@ -230,7 +230,7 @@
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_3391
+		.system_element_2121
 		<= nrel_inclusion: file;
 		=> nrel_idtf: [<p>файл, являющийся внешним идентификатором (в частности, именем) соответствующего sc-элемента, хранимого в sc-памяти ostis-системы</p>]
 		(*
@@ -238,14 +238,14 @@
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_3401
+		.system_element_2150
 		=> nrel_idtf: [<p>sc-идентификатор, который взаимно однозначно соответствует идентифицируемому sc-элементу</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_3773
+		.system_element_2153
 		=> nrel_idtf: [<p>класс <i>sc-элементов</i>, определяемый на основе <i>Алфавита Ядра SC-кода^</i></p>]
 		(*
 			<- lang_ru;;
@@ -283,24 +283,24 @@
 		*);
 		-> sc_connector;
 		-> sc_arc;
-		=> nrel_inclusion: .system_element_3765;;
+		=> nrel_inclusion: .system_element_2143;;
 
 		sc_arc
-		<=> .system_element_3774;
+		<=> .system_element_2154;
 		=> nrel_subdividing: {
 			sc_arc_common;
-			.system_element_3617
+			.system_element_2144
 		};;
 
 		sc_connector
-		<=> .system_element_3775;
+		<=> .system_element_2155;
 		=> nrel_subdividing: {
-			.system_element_3622;
+			.system_element_2156;
 			sc_arc_common
 		};;
 	*];;
 
-	.system_element_3776
+	.system_element_2157
 	=> nrel_inclusion: [*
 
 		sc_element
@@ -312,7 +312,7 @@
 					sc_arc
 					(*
 						=> nrel_subdividing: {
-							.system_element_3617;
+							.system_element_2144;
 							sc_arc_common
 						};;
 					*)
@@ -321,8 +321,8 @@
 			sc_node
 			(*
 				=> nrel_subdividing: {
-					.system_element_3618;
-					.system_element_3619
+					.system_element_2145;
+					.system_element_2146
 				};;
 			*)
 		};
@@ -335,14 +335,14 @@
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
-			=> .system_element_180: .system_element_3777;;
+			=> .system_element_35: .system_element_2158;;
 		*);;
 
-		.system_element_358
+		.system_element_265
 		-> {
-			.system_element_3616;
-			.system_element_3627;
-			.system_element_3778
+			.system_element_2159;
+			.system_element_2160;
+			.system_element_1980
 			(*
 				=> nrel_idtf: [<p>Класс sc-элементов, выделяемый (задаваемый) явно с помощью sc-конструкции, состоящей (1) из sc-элемента, являющего <i>знаком</i> этого класса и (2) из константных постоянных позитивных sc-пар принадлежности, соединяющих указанный знак выделяемого класса sc-элементов со всеми sc-элементами, принадлежащими этому классу и хранимыми в текущем состоянии sc-памяти</p>]
 				(*
@@ -352,7 +352,7 @@
 			*)
 		};
 		-> {
-			.system_element_3779
+			.system_element_2161
 			(*
 				=> nrel_explanation: [<p>Соотношение между sc-элементом и тем, что он обозначает (его денотатом) и соответствующую <i>семантическую</i> классификацию всего множества sc-элементов</p>]
 				(*
@@ -360,7 +360,7 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);
-			.system_element_3780
+			.system_element_2162
 			(*
 				=> nrel_explanation: [<p>Синтаксическую метку (значение синтаксического признака-параметра), приписываемую каждому sc-элементу и соответствующую <i>синтаксическую</i> классификацию всего множества sc-элементов (Алфавит SC-кода^)</p>]
 				(*
@@ -370,31 +370,31 @@
 			*)
 		};;
 
-		.system_element_3781
-		=> .system_element_1120: [<p>Бинарное ориентированное отношение, первым компонентом каждой ориентированной пары которого является некоторый sc-коннектор, а вторым компонентом является один из sc-элементов, соединяемых указанным sc-коннектором с некоторым другим sc-элементом, который указывается в другой паре инцидентности для этого же sc-коннектора</p>]
+		.system_element_2163
+		=> .system_element_264: [<p>Бинарное ориентированное отношение, первым компонентом каждой ориентированной пары которого является некоторый sc-коннектор, а вторым компонентом является один из sc-элементов, соединяемых указанным sc-коннектором с некоторым другим sc-элементом, который указывается в другой паре инцидентности для этого же sc-коннектора</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_3782
-		=> .system_element_1120: [<p>Бинарное ориентированное отношение, первым компонентом каждой ориентированной пары которого является некоторая sc-дуга, а вторым компонентом --- sc-элемент, в который указанная sc-дуга входит, т.е. sc-элемент, который является вторым компонентом, соединяемым (связываемым) указанной sc-дугой</p>]
+		.system_element_2164
+		=> .system_element_264: [<p>Бинарное ориентированное отношение, первым компонентом каждой ориентированной пары которого является некоторая sc-дуга, а вторым компонентом --- sc-элемент, в который указанная sc-дуга входит, т.е. sc-элемент, который является вторым компонентом, соединяемым (связываемым) указанной sc-дугой</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_3607
-		=> .system_element_386: .system_element_3783
+		.system_element_2139
+		=> .system_element_2166: .system_element_2165
 		(*
 			-> {
-				.system_element_3784
+				.system_element_2167
 				(*
-					<=> .system_element_200: {
-						.system_element_3781
+					<=> .system_element_72: {
+						.system_element_2163
 						(*
-							=> nrel_inclusion: .system_element_3782;;
-							<- .system_element_1102;;
+							=> nrel_inclusion: .system_element_2164;;
+							<- .system_element_860;;
 						*)
 					};;
 				*);
@@ -422,11 +422,11 @@
 		*);;
 	*];;
 
-	.system_element_3785
+	.system_element_2168
 	=> nrel_inclusion: [*
 
-		.system_element_3607
-		=> .system_element_3632: .system_element_3785
+		.system_element_2139
+		=> .system_element_1004: .system_element_2168
 		(*
 			=> nrel_idtf: [<p>Описание соответствия информационных конструкций, принадлежащих <i>Ядру SC-кода</i>, и сущностей, описываемых этими конструкциями</p>]
 			(*
@@ -435,51 +435,51 @@
 			*);;
 		*);;
 
-		.system_element_3786
-		-> .system_element_3765;
-		-> .system_element_3787;
-		-> .system_element_3788;
-		-> .system_element_3789;
-		-> .system_element_3790;
-		-> .system_element_3791;;
+		.system_element_2169
+		-> .system_element_2143;
+		-> .system_element_2170;
+		-> .system_element_2171;
+		-> .system_element_2172;
+		-> .system_element_2173;
+		-> .system_element_2174;;
 	*];;
 
-	.system_element_3792
+	.system_element_2175
 	=> nrel_inclusion: [*
 		=> nrel_note: [<p>Приведенная типология полностью аналогична <i>Структурной типологии sc-элементов^</i>, в отличие от которой она описывает структурную классификацию только константных sc-элементов (<i>sc-констант</i>).</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
-		<- .system_element_2934;
-		<=> .system_element_740: .system_element_3788;;
+		<- .system_element_262;
+		<=> .system_element_774: .system_element_2171;;
 
 		sc_constant
-		=> nrel_subdividing: .system_element_3793
+		=> nrel_subdividing: .system_element_2176
 		(*
-			<=> .system_element_200: {
-				.system_element_3769
+			<=> .system_element_72: {
+				.system_element_2013
 				(*
 					=> nrel_subdividing: {
-						.system_element_3794
+						.system_element_2028
 						(*
 							=> nrel_subdividing: {
-								.system_element_3795;
-								.system_element_3796
+								.system_element_1975;
+								.system_element_2034
 								(*
 									=> nrel_subdividing: {
-										.system_element_3797;
-										.system_element_3798
+										.system_element_2037;
+										.system_element_2040
 									};;
 								*);
-								.system_element_3799
+								.system_element_2060
 							};;
 						*);
-						.system_element_3778;
-						.system_element_2934
+						.system_element_1980;
+						.system_element_262
 					};;
 				*);
-				.system_element_3800
+				.system_element_2093
 				(*
 					=> nrel_idtf: [<p>sc-элемент, являющийся знаком внешней сущности</p>];;
 					=> nrel_idtf: [<p>знак внешней сущности</p>]
@@ -494,78 +494,78 @@
 					*);;
 					=> nrel_subdividing: {
 						file;
-						.system_element_3801;
-						.system_element_3802
+						.system_element_2177;
+						.system_element_2178
 					};;
 				*)
 			};;
 		*);;
 
-		.system_element_3798
+		.system_element_2040
 		=> nrel_subdividing: {
-			.system_element_3803
+			.system_element_2043
 			(*
 				=> nrel_subdividing: {
-					.system_element_3804;
-					.system_element_3805
+					.system_element_2046;
+					.system_element_2049
 					(*
-						=> nrel_inclusion: .system_element_3806
+						=> nrel_inclusion: .system_element_2051
 						(*
-							<= .system_element_3807: {
+							<= .system_element_2179: {
 								sc_constant;
 								permanent_entity;
-								.system_element_3808;
-								.system_element_3805
+								.system_element_2180;
+								.system_element_2049
 							};;
 						*);;
-						=> nrel_inclusion: .system_element_3809
+						=> nrel_inclusion: .system_element_2052
 						(*
-							<= .system_element_3807: {
+							<= .system_element_2179: {
 								sc_constant;
 								temporary_entity;
-								.system_element_3810;
-								.system_element_3805
+								.system_element_2181;
+								.system_element_2049
 							};;
 						*);;
 					*);
-					.system_element_3811
+					.system_element_2054
 				};;
 			*);
-			.system_element_3812
+			.system_element_2182
 		};;
 	*];;
 
-	.system_element_3777
+	.system_element_2158
 	=> nrel_inclusion: [*
 
 		sc_element
-		=> .system_element_3813: {
-			.system_element_3814
+		=> .system_element_2183: {
+			.system_element_2184
 			(*
-				=> .system_element_180: .system_element_3815;;
+				=> .system_element_35: .system_element_2185;;
 			*);
-			.system_element_3816
+			.system_element_2186
 			(*
-				=> .system_element_180: .system_element_3817;;
+				=> .system_element_35: .system_element_2187;;
 			*);
-			.system_element_3818
+			.system_element_2188
 			(*
 				=> nrel_idtf: [<p>темпоральная характеристика sc-элементов</p>];;
-				=> nrel_inclusion: .system_element_3819
+				=> nrel_inclusion: .system_element_2189
 				(*
-					=> .system_element_180: .system_element_3820;;
+					=> .system_element_35: .system_element_2190;;
 				*);;
-				=> nrel_inclusion: .system_element_3821;;
-				=> nrel_inclusion: .system_element_3822
+				=> nrel_inclusion: .system_element_2191;;
+				=> nrel_inclusion: .system_element_2192
 				(*
-					=> .system_element_180: .system_element_3823;;
+					=> .system_element_35: .system_element_2193;;
 					=> nrel_idtf: [<p>стационарность обозначаемой сущности</p>]
 					(*
 						<- lang_ru;;
 						=> nrel_format: format_html;;
 					*);;
 				*);;
-				=> nrel_inclusion: .system_element_3824
+				=> nrel_inclusion: .system_element_2194
 				(*
 					=> nrel_idtf: [<p>изменчивость обозначаемой сущности</p>]
 					(*
@@ -582,13 +582,13 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
-		=> nrel_subdividing: .system_element_3825
+		=> nrel_subdividing: .system_element_2171
 		(*
-			<=> .system_element_200: {
-				.system_element_3826
+			<=> .system_element_72: {
+				.system_element_2195
 				(*
 					=> nrel_subdividing: {
-						.system_element_3827
+						.system_element_2196
 						(*
 							=> nrel_idtf: [<p>обозначение внешней сущности, не являющейся информационной конструкцией</p>];;
 							=> nrel_note: [<p>К материальным сущностям относятся физические тела, поля, биологические объекты, технические системы и многое другое.</p>]
@@ -597,7 +597,7 @@
 								=> nrel_format: format_html;;
 							*);;
 						*);
-						.system_element_3828
+						.system_element_2197
 						(*
 							=> nrel_note: [<p>Примерами абстрактных терминальных сущностей являются предельно малые физические тела, точки различных пространств, числа.</p>]
 							(*
@@ -605,7 +605,7 @@
 								=> nrel_format: format_html;;
 							*);;
 						*);
-						.system_element_3648
+						.system_element_2198
 						(*
 							=> nrel_idtf: [<p>обозначение информационной конструкции, не являющейся ни sc-множеством, ни файлом</p>];;
 							=> nrel_idtf: [<p>обозначение информационной конструкции, не являющейся конструкцией <i>SC-кода</i> и тем более <i>Ядра SC-кода</i></p>]
@@ -618,7 +618,7 @@
 								<- lang_ru;;
 								=> nrel_format: format_html;;
 							*);;
-							=> nrel_inclusion: .system_element_3695
+							=> nrel_inclusion: .system_element_2019
 							(*
 								=> nrel_idtf: [<p>обозначение внешней информационной конструкции, представленной в электронной форме</p>]
 								(*
@@ -629,49 +629,49 @@
 						*)
 					};;
 				*);
-				.system_element_3829
+				.system_element_1999
 				(*
 					=> nrel_subdividing: {
-						.system_element_3830;
-						.system_element_3831;
-						.system_element_3832
+						.system_element_2027;
+						.system_element_2062;
+						.system_element_2091
 					};;
 				*)
 			};;
 		*);;
 
-		.system_element_3830
+		.system_element_2027
 		=> nrel_subdividing: {
-			.system_element_3833
+			.system_element_2199
 			(*
-				=> nrel_inclusion: .system_element_3834;;
-				=> nrel_inclusion: .system_element_3835;;
+				=> nrel_inclusion: .system_element_2031;;
+				=> nrel_inclusion: .system_element_2059;;
 			*);
-			.system_element_3836
+			.system_element_2033
 			(*
 				=> nrel_subdividing: {
-					.system_element_3837;
-					.system_element_3838;
-					.system_element_3839
+					.system_element_2036;
+					.system_element_2200;
+					.system_element_2039
 					(*
-						=> nrel_inclusion: .system_element_3840
+						=> nrel_inclusion: .system_element_2042
 						(*
 							=> nrel_subdividing: {
-								.system_element_3841;
-								.system_element_3842;
-								.system_element_3843
+								.system_element_2201;
+								.system_element_2202;
+								.system_element_2203
 							};;
 						*);;
-						=> nrel_inclusion: .system_element_3844;;
+						=> nrel_inclusion: .system_element_2204;;
 					*)
 				};;
 			*)
 		};;
 
 		sc_element
-		=> nrel_subdividing: .system_element_3845
+		=> nrel_subdividing: .system_element_2172
 		(*
-			<=> .system_element_200: {
+			<=> .system_element_72: {
 				sc_constant
 				(*
 					=> nrel_idtf: [<p>sc-элемент, логико-семантическим значением которого является он сам</p>];;
@@ -700,7 +700,7 @@
 						=> nrel_format: format_html;;
 					*);;
 					=> nrel_subdividing: {
-						.system_element_3846
+						.system_element_2205
 						(*
 							=> nrel_idtf: [<p>sc-элемент, областью возможных значений которого является множество sc-констант</p>]
 							(*
@@ -708,7 +708,7 @@
 								=> nrel_format: format_html;;
 							*);;
 						*);
-						.system_element_3847
+						.system_element_2206
 						(*
 							=> nrel_idtf: [<p>sc-элемент, возможными значениями которого являются переменные 1-го уровня</p>];;
 							=> nrel_note: [<p>Такие переменные (метапеременные) необходимы для описания логических языков.</p>]
@@ -717,7 +717,7 @@
 								=> nrel_format: format_html;;
 							*);;
 						*);
-						.system_element_3848
+						.system_element_2207
 						(*
 							=> nrel_idtf: [<p>sc-переменная, на значения которой не накладывается никаких ограничений</p>]
 							(*
@@ -729,15 +729,15 @@
 				*)
 			};;
 		*);
-		=> nrel_subdividing: .system_element_3849
+		=> nrel_subdividing: .system_element_2208
 		(*
-			<=> .system_element_200: {
-				.system_element_3850;
-				.system_element_3851
+			<=> .system_element_72: {
+				.system_element_2209;
+				.system_element_2106
 				(*
 					=> nrel_idtf: [<p>обозначение нестационарной сущности, факт существования которой зависит от времени</p>];;
 					=> nrel_subdividing: {
-						.system_element_3852
+						.system_element_2210
 						(*
 							=> nrel_idtf: [<p>обозначение сущности, существовавшей до текущего момента времени</p>]
 							(*
@@ -745,7 +745,7 @@
 								=> nrel_format: format_html;;
 							*);;
 						*);
-						.system_element_3853
+						.system_element_2211
 						(*
 							=> nrel_idtf: [<p>обозначение сущности, существующей в текущий момент времени</p>]
 							(*
@@ -753,7 +753,7 @@
 								=> nrel_format: format_html;;
 							*);;
 						*);
-						.system_element_3854
+						.system_element_2212
 						(*
 							=> nrel_idtf: [<p>обозначение сущности, существование которой прогнозируется или планируется в будущем</p>]
 							(*
@@ -763,16 +763,16 @@
 						*)
 					};;
 					=> nrel_subdividing: {
-						.system_element_3855
+						.system_element_2213
 						(*
-							=> nrel_inclusion: .system_element_3856;;
-							=> nrel_inclusion: .system_element_3857;;
-							=> nrel_inclusion: .system_element_3858;;
+							=> nrel_inclusion: .system_element_1979;;
+							=> nrel_inclusion: .system_element_2214;;
+							=> nrel_inclusion: .system_element_2215;;
 						*);
-						.system_element_3859
+						.system_element_2216
 						(*
 							=> nrel_subdividing: {
-								.system_element_3860
+								.system_element_2217
 								(*
 									=> nrel_idtf: [<p>обозначение ситуации, которая возникла или возникает в процессе обработки информации в sc-памяти</p>]
 									(*
@@ -780,7 +780,7 @@
 										=> nrel_format: format_html;;
 									*);;
 								*);
-								.system_element_3861
+								.system_element_2218
 								(*
 									=> nrel_idtf: [<p>обозначение события, которое произошло или произойдет в процессе обработки информации в sc-памяти</p>]
 									(*
@@ -788,7 +788,7 @@
 										=> nrel_format: format_html;;
 									*);;
 								*);
-								.system_element_3862
+								.system_element_2219
 								(*
 									=> nrel_idtf: [<p>обозначение внутреннего процесса в sc-памяти, который происходит, произошел или будет происходить</p>]
 									(*
@@ -802,10 +802,10 @@
 				*)
 			};;
 		*);
-		=> nrel_subdividing: .system_element_3863
+		=> nrel_subdividing: .system_element_2220
 		(*
-			<=> .system_element_200: {
-				.system_element_3864
+			<=> .system_element_72: {
+				.system_element_2221
 				(*
 					=> nrel_idtf: [<p>обозначение статичной сущности</p>];;
 					=> nrel_idtf: [<p>обозначение стационарной сущности</p>]
@@ -818,19 +818,19 @@
 						<- lang_ru;;
 						=> nrel_format: format_html;;
 					*);;
-					=> nrel_inclusion: .system_element_3865;;
+					=> nrel_inclusion: .system_element_2222;;
 				*);
-				.system_element_3866
+				.system_element_2223
 				(*
 					=> nrel_idtf: [<p>обозначение сущности изменяющейся во времени</p>];;
-					=> nrel_inclusion: .system_element_3867;;
+					=> nrel_inclusion: .system_element_2224;;
 				*)
 			};;
 		*);
-		=> nrel_subdividing: .system_element_3868
+		=> nrel_subdividing: .system_element_2174
 		(*
-			<=> .system_element_200: {
-				.system_element_3869
+			<=> .system_element_72: {
+				.system_element_2225
 				(*
 					=> nrel_idtf: [<p>sc-элемент, считающийся логически удаленным, но присутствующим в описании истории эксплуатации и эволюции базы знаний</p>]
 					(*
@@ -846,7 +846,7 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);
-				.system_element_3870
+				.system_element_2226
 				(*
 					=> nrel_idtf: [<p>sc-элемент, планируемый для включения в состав эксплуатируемой части базы знаний</p>]
 					(*
@@ -855,7 +855,7 @@
 					*);;
 				*)
 			};;
-			=> .system_element_358: {
+			=> .system_element_265: {
 				[<p>Временный характер присутствия любого <i>sc-элемента</i> в составе той <i>базы знаний</i> (в той <i>sc-памяти</i>) <i>ostis-системы</i>, в которой он находится (когда-то он появляется, когда-то может быть удален из <i>sc-памяти</i>).</p>]
 				(*
 					<- lang_ru;;
@@ -889,14 +889,14 @@
 			};;
 		*);;
 
-		.system_element_3871
+		.system_element_2227
 		=> nrel_idtf: [<p>обозначение множества sc-элементов</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
 		=> nrel_subdividing: {
-			.system_element_3872
+			.system_element_2228
 			(*
 				=> nrel_idtf: [<p>sc-переменная, обозначающая произвольное множество из некоторого семейства множеств</p>];;
 				=> nrel_idtf: [<p>переменное множество</p>]
@@ -922,7 +922,7 @@
 			=> nrel_format: format_html;;
 		*);
 		=> nrel_subdividing: {
-			.system_element_3873
+			.system_element_2229
 			(*
 				=> nrel_idtf: [<p>множество, элементами которого являются только sc-константы</p>]
 				(*
@@ -930,13 +930,13 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);
-			.system_element_2536
+			.system_element_515
 			(*
 				=> nrel_idtf: [<p>множество, элементами которого являются только sc-переменные</p>];;
 				=> nrel_inclusion: sc_variable
 				(*
 					=> nrel_idtf: [<p>множество, элементами которого являются всевозможные sc-переменные и только они</p>];;
-					=> nrel_inclusion: .system_element_3872
+					=> nrel_inclusion: .system_element_2228
 					(*
 						=> nrel_idtf: [<p>sc-переменная, значениями которой являются всевозможные обозначения множеств и только они</p>]
 						(*
@@ -946,10 +946,10 @@
 					*);;
 				*);;
 			*);
-			.system_element_3874
+			.system_element_2230
 			(*
 				=> nrel_idtf: [<p>множество, в число элементов которого входят как sc-константы, так и sc-переменные</p>];;
-				=> nrel_inclusion: .system_element_3871
+				=> nrel_inclusion: .system_element_2227
 				(*
 					=> nrel_idtf: [<p>множество, элементами которого являются всевозможные <b>sc-переменные</b> и <b>sc-константы</b>, обозначающие множества и только они</p>]
 					(*
@@ -960,14 +960,14 @@
 			*)
 		};;
 
-		.system_element_3830
+		.system_element_2027
 		=> nrel_idtf: [<p>обозначение связи между sc-элементами и/или обозначаемыми ими сущностями</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
 		=> nrel_subdividing: {
-			.system_element_3875
+			.system_element_2231
 			(*
 				=> nrel_idtf: [<p>sc-переменная, значениями которой являются обозначения sc-связок</p>]
 				(*
@@ -975,7 +975,7 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);
-			.system_element_3794
+			.system_element_2028
 			(*
 				=> nrel_idtf: [<p>конкретная sc-связка sc-элементов</p>]
 				(*
@@ -984,10 +984,10 @@
 				*);;
 			*)
 		};
-		=> nrel_inclusion: .system_element_3836
+		=> nrel_inclusion: .system_element_2033
 		(*
 			=> nrel_idtf: [<p>обозначение sc-связки двух sc-элементов либо одного sc-элемента с самим собой</p>];;
-			=> nrel_inclusion: .system_element_3796;;
+			=> nrel_inclusion: .system_element_2034;;
 			=> nrel_idtf: [<p>конкретная sc-пара</p>]
 			(*
 				<- lang_ru;;
@@ -995,33 +995,33 @@
 			*);;
 			<= nrel_inclusion: sc_constant;;
 			=> nrel_inclusion: sc_connector;;
-			=> nrel_inclusion: .system_element_3798
+			=> nrel_inclusion: .system_element_2040
 			(*
-				=> nrel_inclusion: .system_element_3803
+				=> nrel_inclusion: .system_element_2043
 				(*
 					=> nrel_subdividing: {
-						.system_element_3876
+						.system_element_2232
 						(*
-							=> nrel_inclusion: .system_element_3877
+							=> nrel_inclusion: .system_element_2233
 							(*
-								=> nrel_inclusion: .system_element_3617;;
+								=> nrel_inclusion: .system_element_2144;;
 							*);;
 						*);
-						.system_element_3878;
-						.system_element_3879
+						.system_element_2234;
+						.system_element_2235
 					};;
 				*);;
 			*);;
 		*);;
 
-		.system_element_3880
+		.system_element_2236
 		=> nrel_idtf: [<p>обозначение множества sc-элементов, которые в соответствующем смысле эквивалентны друг другу, т.е. имеют одинаковые свойства</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
 		=> nrel_subdividing: {
-			.system_element_3881
+			.system_element_2237
 			(*
 				<= nrel_inclusion: sc_variable;;
 				<- sc_constant;;
@@ -1034,13 +1034,13 @@
 
 		class
 		=> nrel_subdividing: {
-			.system_element_3882;
+			.system_element_2238;
 			class_of_sets
 			(*
 				=> nrel_subdividing: {
-					.system_element_3883
+					.system_element_2239
 					(*
-						=> nrel_inclusion: .system_element_3884;;
+						=> nrel_inclusion: .system_element_2069;;
 					*);
 					class_of_classes
 					(*
@@ -1060,54 +1060,54 @@
 				};;
 			*)
 		};
-		-> .system_element_3829
+		-> .system_element_1999
 		(*
-			=> nrel_inclusion: .system_element_3769;;
+			=> nrel_inclusion: .system_element_2013;;
 		*);
 		-> set;
-		-> .system_element_3830
+		-> .system_element_2027
 		(*
-			=> nrel_inclusion: .system_element_3794;;
+			=> nrel_inclusion: .system_element_2028;;
 		*);
-		-> .system_element_3794;
-		-> .system_element_3831
+		-> .system_element_2028;
+		-> .system_element_2062
 		(*
-			=> nrel_inclusion: .system_element_3778;;
+			=> nrel_inclusion: .system_element_1980;;
 		*);
-		-> .system_element_3778;
-		-> .system_element_3832
+		-> .system_element_1980;
+		-> .system_element_2091
 		(*
-			=> nrel_inclusion: .system_element_2934;;
+			=> nrel_inclusion: .system_element_262;;
 		*);
-		-> .system_element_2934;
-		-> .system_element_3647
+		-> .system_element_262;
+		-> .system_element_2240
 		(*
-			=> nrel_inclusion: .system_element_1692
+			=> nrel_inclusion: .system_element_796
 			(*
 				=> nrel_inclusion: file
 				(*
-					=> nrel_inclusion: .system_element_3885
+					=> nrel_inclusion: .system_element_814
 					(*
-						=> nrel_inclusion: .system_element_3340;;
+						=> nrel_inclusion: .system_element_1743;;
 					*);;
 				*);;
 			*);;
 		*);
-		=> nrel_inclusion: .system_element_3832;
+		=> nrel_inclusion: .system_element_2091;
 		=> nrel_note: [<p>Все семантически и синтаксически выделяемые классы sc-элементов, а также всевозможные подклассы этих классов являются экземплярами (элементами) <i>класса</i></p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_3832
+		.system_element_2091
 		=> nrel_idtf: [<p>обозначение sc-множества, не являющегося ни sc-связкой, ни sc-классом</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
 		=> nrel_subdividing: {
-			.system_element_3886
+			.system_element_2241
 			(*
 				<= nrel_inclusion: sc_variable;;
 			*);
@@ -1119,40 +1119,40 @@
 		};;
 	*];;
 
-	.system_element_3887
+	.system_element_2242
 	=> nrel_inclusion: [*
 
-		.system_element_3888
+		.system_element_2243
 		=> nrel_inclusion: [*
 			=> nrel_idtf: [<p>класс sc-элементов, определяемый сущностями, которые обозначаются этими sc-элементами, также доступностью (активностью использования) sc-элементов в процессе эксплуатации и эволюции базы знаний</p>]
 			(*
 				<- lang_ru;;
 				=> nrel_format: format_html;;
 			*);
-			<- .system_element_3826
+			<- .system_element_2195
 			(*
-				=> nrel_inclusion: .system_element_3889;;
+				=> nrel_inclusion: .system_element_2244;;
 			*);
-			<- .system_element_3890
+			<- .system_element_2245
 			(*
-				=> nrel_inclusion: .system_element_3889;;
+				=> nrel_inclusion: .system_element_2244;;
 			*);
-			<- .system_element_3836
+			<- .system_element_2033
 			(*
-				<=> nrel_pair_of_intersecting_sets: .system_element_3621;;
-				=> nrel_inclusion: .system_element_3891;;
+				<=> nrel_pair_of_intersecting_sets: .system_element_2244;;
+				=> nrel_inclusion: sc_connector;;
 				=> nrel_note: [<p><i>обозначение sc-пары</i> может быть представлено либо <i>sc-узлом общего вида</i>, либо <i>sc-коннектором</i>. При этом каждый <i>sc-коннектор</i> представляет собой <i>обозначение sc-пары</i>.</p>]
 				(*
 					<- lang_ru;;
 					=> nrel_format: format_html;;
 				*);;
 			*);
-			<- .system_element_3837
+			<- .system_element_2036
 			(*
 				=> nrel_idtf: [<p>обозначение бинарной неориентированной связи между sc-элементами</p>];;
 				<=> nrel_pair_of_intersecting_sets: 
-					.system_element_3621;
-					.system_element_3622
+					.system_element_2244;
+					.system_element_2156
 				;;
 				=> nrel_note: [<p>Каждый <i>sc-элемент</i>, принадлежащий этому классу, связывается с элементами обозначаемого им множества</p>]
 				(*
@@ -1165,14 +1165,14 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);
-			<- .system_element_3892
+			<- .system_element_1990
 			(*
 				<=> nrel_pair_of_intersecting_sets: 
-					.system_element_3621;
-					.system_element_3622
+					.system_element_2244;
+					.system_element_2156
 				;;
 			*);
-			<- .system_element_3893
+			<- .system_element_2246
 			(*
 				=> nrel_note: [<p>Каждый <i>sc-элемент</i>, принадлежащий этому классу, связывается с элементами обозначаемого им множества:
 				<ul>
@@ -1184,16 +1184,16 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);
-			<- .system_element_3839
+			<- .system_element_2039
 			(*
 				=> nrel_idtf: [<p>обозначение бинарной ориентированной связи между sc-элементами</p>];;
 				<=> nrel_pair_of_intersecting_sets: 
-					.system_element_3621;
-					.system_element_3622
+					.system_element_2244;
+					.system_element_2156
 				;;
 				=> nrel_inclusion: sc_arc_common;;
 			*);
-			<- .system_element_3894
+			<- .system_element_2247
 			(*
 				=> nrel_note: [<p>Каждый элемент этого класса, как и любое другое <i>обозначение ориентированной sc-пары</i>, является первым компонентом <i>пары инцидентности обозначения sc-пары с ее компонентом</i>, а также первым компонентом <i>пары инцидентности обозначения ориентированной sc-пары с ее вторым компонентом</i></p>]
 				(*
@@ -1201,17 +1201,17 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);
-			<- .system_element_3895
+			<- .system_element_2248
 			(*
 				<=> nrel_pair_of_intersecting_sets: 
-					.system_element_3621;
-					.system_element_3622;
+					.system_element_2244;
+					.system_element_2156;
 					sc_arc_common
 				;;
-				=> nrel_inclusion: .system_element_3617;;
-				<= .system_element_3807: {
+				=> nrel_inclusion: .system_element_2144;;
+				<= .system_element_2179: {
 					sc_constant;
-					.system_element_3850
+					.system_element_2209
 					(*
 						=> nrel_idtf: [<p>обозначение постоянно существующей сущности</p>]
 						(*
@@ -1219,16 +1219,16 @@
 							=> nrel_format: format_html;;
 						*);;
 					*);
-					.system_element_3840
+					.system_element_2042
 				};;
 			*);
-			<- .system_element_3880
+			<- .system_element_2236
 			(*
-				<= nrel_inclusion: .system_element_3621;;
+				<= nrel_inclusion: .system_element_2244;;
 			*);
-			<- .system_element_3896
+			<- .system_element_2249
 			(*
-				<= nrel_inclusion: .system_element_3621;;
+				<= nrel_inclusion: .system_element_2244;;
 			*);
 			<- file
 			(*
@@ -1239,21 +1239,21 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);
-			<- .system_element_3897
+			<- .system_element_2250
 			(*
-				=> nrel_inclusion: .system_element_3834;;
-				=> nrel_inclusion: .system_element_3835;;
-				=> nrel_inclusion: .system_element_3831;;
-				=> nrel_inclusion: .system_element_3832;;
-				=> nrel_inclusion: .system_element_3898;;
+				=> nrel_inclusion: .system_element_2031;;
+				=> nrel_inclusion: .system_element_2059;;
+				=> nrel_inclusion: .system_element_2062;;
+				=> nrel_inclusion: .system_element_2091;;
+				=> nrel_inclusion: .system_element_2251;;
 			*);;
 		*];;
 
-		.system_element_3887
+		.system_element_2242
 		=> nrel_inclusion: [*
 
-			.system_element_3607
-			=> .system_element_3900: .system_element_3899
+			.system_element_2139
+			=> .system_element_2253: .system_element_2252
 			(*
 				-> {
 					[<p>Каждый sc-элемент является знаком (обозначением) некоторой описываемой сущности.</p>]
@@ -1294,7 +1294,7 @@
 				};;
 			*);;
 
-			.system_element_3901
+			.system_element_2254
 			=> nrel_idtf: [<p>Правила модификации синтаксического типа sc-элементов в рамках Ядра SC-кода</p>]
 			(*
 				<- lang_ru;;
@@ -1323,15 +1323,15 @@
 				*)
 			};;
 
-			.system_element_358
+			.system_element_265
 			-> {
-				.system_element_3902;
-				.system_element_3628;
-				.system_element_3888
+				.system_element_2255;
+				.system_element_2256;
+				.system_element_2243
 			};;
 
-			.system_element_3903
-			=> .system_element_269: 
+			.system_element_2257
+			=> .system_element_172: 
 				[<p>пара инцидентности sc-элементов*</p>]
 				(*
 					<- lang_ru;;

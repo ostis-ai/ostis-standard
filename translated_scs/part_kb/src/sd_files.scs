@@ -1,12 +1,14 @@
-.system_element_3317
+.system_element_751
 => nrel_inclusion: [*
+	<- .system_element_3;
+	-> rrel_key_sc_element: .system_element_752;;
 
-	.system_element_4303
+	.system_element_752
 	<- subject_domain;
-	-> .system_element_1835: 
+	-> .system_element_330: 
 		file
 	;
-	-> .system_element_112: 
+	-> .system_element_6: 
 		lang_external;
 		languages;
 		lang_ru;
@@ -15,7 +17,7 @@
 		class_of_syntactically_equivalent_information_structures;
 		maximum_class_of_syntactically_equivalent_information_structures
 	;
-	-> .system_element_748: 
+	-> .system_element_335: 
 		nrel_sc_text_translation
 	;;
 

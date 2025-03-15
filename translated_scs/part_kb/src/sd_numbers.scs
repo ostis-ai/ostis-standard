@@ -1,12 +1,14 @@
-.system_element_2722
+.system_element_31
 => nrel_inclusion: [*
+	<- .system_element_3;
+	-> rrel_key_sc_element: subject_domain_numbers_and_numeric_structures;;
 
 	subject_domain_numbers_and_numeric_structures
 	<- subject_domain;
-	-> .system_element_1835: 
+	-> .system_element_330: 
 		number
 	;
-	-> .system_element_112: 
+	-> .system_element_6: 
 		natural_number;
 		integer;
 		rational_number;
@@ -18,22 +20,22 @@
 		arithmetic_expression;
 		arithmetic_operation;
 		number_pi;
-		.system_element_3332;
-		.system_element_3333;
+		.system_element_1735;
+		.system_element_1736;
 		imaginary_unit;
 		numeric_structure;
 		numeral_system;
 		decimal_numeral_system;
 		binary_numeral_system;
 		hexadecimal_numeral_system;
-		.system_element_3334;
-		.system_element_3335;
-		.system_element_3336;
-		.system_element_3337;
-		.system_element_3338;
-		.system_element_3339
+		.system_element_1737;
+		.system_element_1738;
+		.system_element_1739;
+		.system_element_1740;
+		.system_element_1741;
+		.system_element_1742
 	;
-	-> .system_element_748: 
+	-> .system_element_335: 
 		nrel_opposite_numbers;
 		nrel_modulus;
 		nrel_sum_of_numbers;
@@ -57,16 +59,16 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3337
+	.system_element_1740
 	=> nrel_idtf: [<p>множество цифр</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<= nrel_inclusion: .system_element_3340;
+	<= nrel_inclusion: .system_element_1743;
 	=> nrel_inclusion: 
-		.system_element_3338;
-		.system_element_3339
+		.system_element_1741;
+		.system_element_1742
 	;
 	=> nrel_explanation: [<p><b><i>цифра</i></b> --- это множество файлов, обозначающих вхождение этой цифры во всевозможные записи чисел с помощью этой цифры.</p>]
 	(*
@@ -114,15 +116,15 @@
 	<= nrel_inclusion: real_number;
 	=> nrel_inclusion: integer;;
 
-	.system_element_3334
+	.system_element_1737
 	=> nrel_idtf: [<p>множество дробей</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
 	=> nrel_inclusion: 
-		.system_element_3335;
-		.system_element_3336
+		.system_element_1738;
+		.system_element_1739
 	;
 	=> nrel_explanation: [<p><b><i>дробь</i></b>  это число, состоящее из одной или нескольких равных частей (долей) единицы</p>]
 	(*
@@ -130,7 +132,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3341
+	.system_element_1744
 	=> nrel_idtf: [<p>множество обыкновенных дробей</p>]
 	(*
 		<- lang_ru;;
@@ -147,7 +149,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3336
+	.system_element_1739
 	=> nrel_idtf: [<p>множество десятичных дробей</p>]
 	(*
 		<- lang_ru;;
@@ -190,7 +192,7 @@
 	=> nrel_subdividing: {
 		positive_number;
 		negative_number;
-		.system_element_3342
+		.system_element_1745
 	};
 	=> nrel_explanation: [<p><b><i>действительное число</i></b> --- это множество чисел, получаемое в результате объединения иррациональных и <i>рациональных чисел</i>.</p>]
 	(*
@@ -236,7 +238,7 @@
 	*);;
 
 	nrel_opposite_numbers
-	<- .system_element_3343;
+	<- .system_element_1746;
 	=> nrel_explanation: [<p><b><i>противоположные числа*</i></b> --- <i>отношение</i>, связывающее два числа, одно из которых является <i>отрицательным числом</i>, второе --- <i>положительным</i>, при этом <i>модули*</i> этих чисел <i>равны*</i>.</p>]
 	(*
 		<- lang_ru;;
@@ -294,7 +296,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_253: "file://images/sd_numbers/sum.png"
+	=> .system_element_126: "file://images/sd_numbers/sum.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
@@ -313,7 +315,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_253: "file://images/sd_numbers/multiplication.png"
+	=> .system_element_126: "file://images/sd_numbers/multiplication.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
@@ -327,7 +329,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_253: "file://images/sd_numbers/pow.png"
+	=> .system_element_126: "file://images/sd_numbers/pow.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
@@ -341,7 +343,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_253: "file://images/sd_numbers/more.png"
+	=> .system_element_126: "file://images/sd_numbers/more.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
@@ -360,7 +362,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_253: "file://images/sd_numbers/more_or_equal.png"
+	=> .system_element_126: "file://images/sd_numbers/more_or_equal.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
@@ -374,7 +376,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3332
+	.system_element_1735
 	=> nrel_idtf: [<p>0</p>]
 	(*
 		<- lang_ru;;
@@ -387,7 +389,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_3333
+	.system_element_1736
 	=> nrel_idtf: [<p>1</p>]
 	(*
 		<- lang_ru;;

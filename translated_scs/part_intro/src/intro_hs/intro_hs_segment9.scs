@@ -1,5 +1,5 @@
 .intro_hs_segment9 = [*
-.system_element_1431
+.system_element_5586
 => nrel_inclusion: [*
 	=> nrel_idtf: [<p>Комплекс свойств <i>кибернетической системы</i>, определяющихнеобходимые требования к тем <i>кибернетическим системам</i>, которые могутвходить в состав <i>синергетических кибернетических систем</i></p>]
 	(*
@@ -7,7 +7,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_973
+	.system_element_5329
 	=> nrel_idtf: [<p>способность кибернетической системы взаимодействовать с другимикибернетическими системами в целях создания коллектива кибернетических систем(<i>многоагентных систем</i>), уровень качества и, в частности, уровень<i>интеллекта</i> которого выше уровня качества каждой<i>кибернетической системы</i>, входящей в состав этого коллектива)</p>]
 	(*
 		<- lang_ru;;
@@ -42,7 +42,7 @@
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
-		=> .system_element_122: [<p>Neiva2016</p>]
+		=> .system_element_1: [<p>Neiva2016</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
@@ -101,26 +101,26 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_1164: 
-		.system_element_1432
+	=> .system_element_3488: 
+		.system_element_5587
 		(*
-			=> .system_element_269: [<p>договороспособность</p>]
+			=> .system_element_172: [<p>договороспособность</p>]
 			(*
 				<- lang_ru;;
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_1433
+		.system_element_5588
 		(*
-			=> .system_element_269: [<p>социальная ответственность</p>]
+			=> .system_element_172: [<p>социальная ответственность</p>]
 			(*
 				<- lang_ru;;
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_1434
+		.system_element_5589
 		(*
-			=> .system_element_269: [<p>социальная активность</p>]
+			=> .system_element_172: [<p>социальная активность</p>]
 			(*
 				<- lang_ru;;
 				=> nrel_format: format_html;;
@@ -128,18 +128,18 @@
 		*)
 	;;
 
-	.system_element_1432
-	=> .system_element_1164: 
-		.system_element_1338;
-		.system_element_1435;
-		.system_element_1436;
-		.system_element_1437;
-		.system_element_1438;
-		.system_element_1439;
-		.system_element_1440
+	.system_element_5587
+	=> .system_element_3488: 
+		.system_element_5590;
+		.system_element_5591;
+		.system_element_5592;
+		.system_element_5593;
+		.system_element_5594;
+		.system_element_5595;
+		.system_element_5596
 	;;
 
-	.system_element_1441
+	.system_element_5597
 	=> nrel_idtf: [<p>способность кибернетической системы к пониманию информации,поступающей извне от других кибернетических систем</p>]
 	(*
 		<- lang_ru;;
@@ -150,13 +150,13 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_1166: {
-		.system_element_1442;
-		.system_element_1443
+	=> .system_element_5598: {
+		.system_element_5599;
+		.system_element_5600
 	};
-	=> .system_element_1164: .system_element_1444;;
+	=> .system_element_3488: .system_element_5601;;
 
-	.system_element_1445
+	.system_element_3797
 	=> nrel_idtf: [<p>информация, передаваемая (пересылаемая) от одной кибернетическойсистемы к другой или к другим кибернетическим системам</p>]
 	(*
 		<- lang_ru;;
@@ -168,7 +168,7 @@
 		=> nrel_format: format_html;;
 	*);
 	=> nrel_subdividing: {
-		.system_element_1446
+		.system_element_5602
 		(*
 			=> nrel_idtf: [<p>передаваемая словесная информация</p>]
 			(*
@@ -176,7 +176,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_1447
+		.system_element_5603
 		(*
 			=> nrel_note: [<p>Примерами невербальных сообщений являются пересылаемые фото-документы, видео-материалы</p>]
 			(*
@@ -185,15 +185,15 @@
 			*);;
 		*)
 	};
-	=> .system_element_1448: {
-		.system_element_1449
+	=> .system_element_5604: {
+		.system_element_5605
 		(*
-			=> .system_element_1448: {
-				.system_element_1450;
-				.system_element_1451;
-				.system_element_1452;
-				.system_element_1453;
-				.system_element_1454
+			=> .system_element_5604: {
+				.system_element_5606;
+				.system_element_5607;
+				.system_element_5608;
+				.system_element_5609;
+				.system_element_5610
 				(*
 					=> nrel_note: [<p>Если специфицируемое сообщение является ответом на некоторый запрос</p>]
 					(*
@@ -201,8 +201,8 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);
-				.system_element_1455;
-				.system_element_1456
+				.system_element_5611;
+				.system_element_5612
 				(*
 					=> nrel_note: [<p>Для вербальных сообщений это указание используемого  внешнего языка</p>]
 					(*
@@ -212,7 +212,7 @@
 				*)
 			};;
 		*);
-		.system_element_1457
+		.system_element_5613
 		(*
 			=> nrel_idtf: [<p>собственно само сообщение</p>]
 			(*
@@ -221,21 +221,21 @@
 			*);;
 		*)
 	};
-	=> nrel_subdividing: .system_element_1458;
-	<=> .system_element_200: {
-		.system_element_1459
+	=> nrel_subdividing: .system_element_5614;
+	<=> .system_element_72: {
+		.system_element_5615
 		(*
-			=> nrel_inclusion: .system_element_1460;;
+			=> nrel_inclusion: .system_element_5616;;
 		*);
-		.system_element_1461;
-		.system_element_1462;
-		.system_element_1463
+		.system_element_5617;
+		.system_element_5618;
+		.system_element_5619
 	};;
 
-	.system_element_358
+	.system_element_265
 	-> {
-		.system_element_1464;
-		.system_element_1465
+		.system_element_5620;
+		.system_element_5621
 		(*
 			=> nrel_idtf: [<p>вербальная информация, представленная в виде файла</p>]
 			(*
@@ -243,20 +243,20 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_1446
+		.system_element_5602
 	};;
 
-	.system_element_1464
+	.system_element_5620
 	=> nrel_idtf: [<p>знаковая конструкция, которая имеет в общем случае произвольнуюденотационную семантику и которая может либо поступать на вход кибернетическойсистемы через соответствующие ее сенсоры (рецепторы), либо черезсоответствующие эффекторы передаваться (пересылаться) в качестве сообщениядругим кибернетическим системам</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_358
+	.system_element_265
 	-> {
-		.system_element_1464;
-		.system_element_886
+		.system_element_5620;
+		.system_element_5323
 	}
 	(*
 		=> nrel_note: [<p>И <i>вербальная информация</i> и <i>сенсорная информация</i>являются <i>знаковыми конструкциями</i>, но, во-первых, <i>вербальнаяинформация</i> может быть как внешней знаковой конструкцией, так и внутреннейзнаковой конструкцией, хранимой в памяти кибернетической системы, а<i>сенсорная информация</i> всегда является внутренней <i>знаковойконструкцией</i> кибернетической системы и, во-вторых, <i>сенсорнаяинформация</i> описывает только пограничную  для <i>кибернетической системы</i>физическую <i>окружающую среду</i>, тогда, как <i>вербальная информация</i>может описывать все, что угодно.</p>]
@@ -266,10 +266,10 @@
 		*);;
 	*);;
 
-	.system_element_358
+	.system_element_265
 	-> {
-		.system_element_1466;
-		.system_element_1467
+		.system_element_5622;
+		.system_element_5623
 		(*
 			=> nrel_idtf: [<p>файл, содержимым которого является электронный образ некоторой невербальной информации</p>]
 			(*
@@ -277,7 +277,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_1447
+		.system_element_5603
 		(*
 			=> nrel_idtf: [<p>невербальная информация, представленная в виде файла и передаваемая(пересылаемая) от одной кибернетической системы к другой</p>]
 			(*
@@ -285,7 +285,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_886
+		.system_element_5323
 		(*
 			=> nrel_idtf: [<p>информация, формируемая сенсорами кибернетической системы</p>]
 			(*
@@ -295,19 +295,19 @@
 		*)
 	};;
 
-	.system_element_1466
-	=> nrel_inclusion: .system_element_1468;
-	=> nrel_inclusion: .system_element_1469;
-	=> nrel_inclusion: .system_element_1470
+	.system_element_5622
+	=> nrel_inclusion: .system_element_5624;
+	=> nrel_inclusion: .system_element_5625;
+	=> nrel_inclusion: .system_element_5626
 	(*
-		=> nrel_inclusion: .system_element_1471;;
-		=> nrel_inclusion: .system_element_1472;;
-		=> nrel_inclusion: .system_element_1473;;
+		=> nrel_inclusion: .system_element_5627;;
+		=> nrel_inclusion: .system_element_5628;;
+		=> nrel_inclusion: .system_element_5629;;
 	*);
-	=> nrel_inclusion: .system_element_1474;
-	=> nrel_inclusion: .system_element_1475;;
+	=> nrel_inclusion: .system_element_5630;
+	=> nrel_inclusion: .system_element_5631;;
 
-	.system_element_1476
+	.system_element_5632
 	=> nrel_idtf: [<p>способность кибернетической системы к пониманию вербальной информации,поступающей извне из разных источников</p>]
 	(*
 		<- lang_ru;;
@@ -334,7 +334,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_1477
+	.system_element_5633
 	=> nrel_idtf: [<p>уровень взаимопонимания кибернетической системой со своими партнерами</p>]
 	(*
 		<- lang_ru;;
@@ -346,8 +346,8 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_1477
-	<= .system_element_1155: .system_element_1478;
+	.system_element_5633
+	<= .system_element_5635: .system_element_5634;
 	=> nrel_explanation: [<p><i>семантическая совместимость кибернетическихсистем</i> определяется
 	<ul>
 		<li> количеством знаков, которые хранятся в памяти одной заданнойкибернетической системы и денотационная семантика которых совпадает сденотационной семантикой знаков, хранимых в памяти другой заданнойкибернетической системы (другими словами, это количество сущностей, которыеописывают как в памяти первой кибернетической системы, так и в памяти второйкибернетической системы),
@@ -368,15 +368,15 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_1479
+	.system_element_5636
 	=> nrel_idtf: [<p>способность кибернетической системы к обеспечению взаимопонимания со своими партнерами.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_1166: {
-		.system_element_1480;
-		.system_element_1481
+	=> .system_element_5598: {
+		.system_element_5637;
+		.system_element_5638
 		(*
 			=> nrel_note: [<p>Речь идет о согласовании внешних языков, используемых кибернетическими системами при их общении.</p>]
 			(*
@@ -385,8 +385,8 @@
 			*);;
 		*)
 	};
-	=> .system_element_1166: {
-		.system_element_1482
+	=> .system_element_5598: {
+		.system_element_5639
 		(*
 			=> nrel_note: [<p>Речь идет об обеспечении начальной (стартовой) семантической совместимости.</p>]
 			(*
@@ -394,7 +394,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_1483
+		.system_element_5640
 		(*
 			=> nrel_note: [<p>Речь идет о перманентном процессе поддержкинеобходимого уровня семантической совместимости(взаимопонимания) в условияхпостоянной эволюции всех взаимодействующих кибернетических систем.</p>]
 			(*
@@ -404,7 +404,7 @@
 		*)
 	};;
 
-	.system_element_1484
+	.system_element_5641
 	=> nrel_idtf: [<p>унификация представления информации, хранимой в памяти всевозможных кибернетических систем</p>]
 	(*
 		<- lang_ru;;
@@ -421,7 +421,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_1485
+	.system_element_5642
 	=> nrel_idtf: [<p>способность кибернетической системы к согласованию денотационнойсемантики знаков (и, в первую очередь, знаков понятий), используемых всобственной базе знаний с денотационной семантике тех знаков, которые входят всостав информации поступающей от других кибернетических систем-партнеров</p>]
 	(*
 		<- lang_ru;;
@@ -438,17 +438,17 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_358
+	.system_element_265
 	-> {
-		.system_element_1486
+		.system_element_5643
 		(*
-			<- .system_element_1413;;
-			=> nrel_definitional_domain: .system_element_736;;
+			<- .system_element_3010;;
+			=> nrel_definitional_domain: .system_element_1181;;
 		*);
-		.system_element_1487
+		.system_element_5644
 		(*
-			<- .system_element_1413;;
-			=> nrel_definitional_domain: .system_element_1488
+			<- .system_element_3010;;
+			=> nrel_definitional_domain: .system_element_5645
 			(*
 				=> nrel_idtf: [<p>множество всевозможных сочетаний кибернетических систем по две*</p>];;
 				=> nrel_idtf: [<p>множество всевозможных двухмощных множеств кибернетических систем*</p>]
@@ -465,8 +465,8 @@
 		*)
 	};;
 
-	.system_element_1489
-	=> .system_element_269: [<p>коммуникабельность</p>]
+	.system_element_5646
+	=> .system_element_172: [<p>коммуникабельность</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
@@ -482,14 +482,14 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_1490
+	.system_element_5647
 	=> nrel_idtf: [<p>способность активно участвовать в коллективном (в согласованиикаких-либо предложений) --- т.е. в подтверждении (признании) этих предложений,либо в их отклонении с указанием причин или предлагаемых доработок</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_1440
+	.system_element_5596
 	=> nrel_note: [<p>Данная способность кибернетической системы предполагает:
 
 	<ul>
@@ -508,16 +508,16 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_1433
-	=> .system_element_1164: 
-		.system_element_1491;
-		.system_element_1492;
-		.system_element_1493;
-		.system_element_1494;
-		.system_element_1495
+	.system_element_5588
+	=> .system_element_3488: 
+		.system_element_5648;
+		.system_element_5649;
+		.system_element_5650;
+		.system_element_5651;
+		.system_element_5652
 	;;
 
-	.system_element_1493
+	.system_element_5650
 	=> nrel_note: [<p>уровень мотивации к повышеннию качества коллективов, в составкоторых кибернетическая система входит</p>]
 	(*
 		<- lang_ru;;
@@ -534,8 +534,8 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_1434
-	=> .system_element_1496: [<p>социальная активность</p>]
+	.system_element_5589
+	=> .system_element_5653: [<p>социальная активность</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
@@ -545,15 +545,15 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_1164: 
-		.system_element_1497;
-		.system_element_1498;
-		.system_element_1499;
-		.system_element_1500;
-		.system_element_1501
+	=> .system_element_3488: 
+		.system_element_5654;
+		.system_element_5655;
+		.system_element_5656;
+		.system_element_5657;
+		.system_element_5658
 	;;
 
-	.system_element_1502
+	.system_element_5659
 	=> nrel_idtf: [<p>уровень способности в создании таких коллективов кибернетическихсистем, в состав которых входит данная кибернетическая система и которыенаправлены на коллективное решение соответствующего актуального класса сложныхкомплексных задач, с каждой из которых не может справиться любая из имеющихсякибернетических систем.</p>]
 	(*
 		<- lang_ru;;
@@ -581,7 +581,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_1503
+	.system_element_5660
 	=> nrel_explanation: [<p>Данная характеристика кибернетической системы уточняетспектр ее социальной активности</p>]
 	(*
 		<- lang_ru;;

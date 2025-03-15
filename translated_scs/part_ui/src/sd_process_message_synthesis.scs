@@ -1,30 +1,30 @@
-.system_element_3228
+.system_element_4074
 => nrel_inclusion: [*
-	=> .system_element_299: 
-		.system_element_3188;
-		.system_element_3189;
-		.system_element_3190
+	=> .system_element_1416: 
+		.system_element_794;
+		.system_element_793;
+		.system_element_4006
 	;;
 
-	.system_element_3229
-	-> .system_element_1835: .system_element_3230;
-	-> .system_element_112: 
-		.system_element_3230;
-		.system_element_3231;
-		.system_element_3232
+	.system_element_4075
+	-> rrel_maximum_studied_object_class: .system_element_4076;
+	-> .system_element_6: 
+		.system_element_4076;
+		.system_element_4077;
+		.system_element_4078
 	;;
 
-	.system_element_3230
+	.system_element_4076
 	=> nrel_note: [<p>Методика разработки естественно-языковых интерфейсов включает несколько этапов, в которых необходимо учитывать методику построения и модификации гибридных баз знаний и гибридных решателей задач.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
-		=> .system_element_122: 
-			.system_element_2436;
-			.system_element_2451
+		=> .system_element_1: 
+			.system_element_48;
+			.system_element_416
 		;;
 	*);
-	=> .system_element_928: "file://images/sd_ui/method.png"
+	=> .system_element_772: "file://images/sd_ui/method.png"
 	(*
 		<- concept_file;;
 		=> nrel_format: format_png;;
@@ -39,8 +39,8 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_282: <
-		.system_element_3233
+	=> .system_element_101: <
+		.system_element_4079
 		(*
 			=> nrel_explanation: [<p>На данном этапе необходимо четко рассматривать особенности конкретного <i>естественного языка</i>. Затем можно разработать базу знаний по обработке конкретного <i>естественного языка</i> и соответствующие <i>решатели задач</i> для выполнения обработки. После определения конкретного <i>естественного языка</i> существует вероятность того, что в составе библиотеки компонентов уже есть реализованный вариант требуемой базы знаний и соответствующих решателей. В противном случае, тем не менее, у разработчика появляется возможность включить разработанную <i>базу знаний</i> по обработке конкретного естественного языка и соответствующие <i>решатели задач</i> в <i>библиотеку компонентов</i> для последующего использования.</p>]
 			(*
@@ -48,25 +48,25 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_3234
+		.system_element_4080
 		(*
 			=> nrel_explanation: [<p>На данном этапе при разработке базы знаний используются общие принципы согласованного построения и модификации <i>гибридных баз знаний</i>.</p>]
 			(*
 				<- lang_ru;;
 				=> nrel_format: format_html;;
-				=> .system_element_122: .system_element_2747;;
+				=> .system_element_1: .system_element_47;;
 			*);;
 		*);
-		.system_element_3235
+		.system_element_4081
 		(*
 			=> nrel_explanation: [<p>Для разработки <i>решателей задач</i> <i>естественно-языкового интерфейса</i>, направленных на приобретение фактографических знаний и генерацию текстов конкретного <i>естественного языка</i>, используются общие принципы согласованного построения и модификации гибридных <i>решателей задач</i>.</p>]
 			(*
 				<- lang_ru;;
 				=> nrel_format: format_html;;
-				=> .system_element_122: .system_element_2451;;
+				=> .system_element_1: .system_element_416;;
 			*);;
 		*);
-		.system_element_3236
+		.system_element_4082
 		(*
 			=> nrel_explanation: [<p>На данном этапе выполняется верификация разработанных <i>компонентов</i> (<i>базы знаний</i> по обработке конкретного естественного языка и соответствующего <i>решателя задач</i>) конкретного <i>естественно-языкового интерфейса</i>.</p>]
 			(*
@@ -74,7 +74,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_3237
+		.system_element_4083
 	>
 	(*
 		=> nrel_note: [<p>Как правило, этапы 4 и 5 могут выполняться циклически до тех пор, пока разработанные компоненты не будут соответствовать предъявляемым требованиям.</p>]
@@ -84,9 +84,9 @@
 		*);;
 	*);;
 
-	.system_element_3231
+	.system_element_4077
 	=> nrel_subdividing: {
-		.system_element_3238
+		.system_element_4084
 		(*
 			=> nrel_idtf: [<p>Библиотека многократно используемых компонентов лингвистической базы знаний</p>];;
 			=> nrel_idtf: [<p>Библиотека многократно используемых компонентов базы знаний по обработке естественного языка</p>]
@@ -95,7 +95,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_3239
+		.system_element_4085
 		(*
 			=> nrel_idtf: [<p>Библиотека многократно используемых компонентов решателей задач для обработки естественного языка</p>]
 			(*
@@ -108,12 +108,12 @@
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
-		=> .system_element_122: .system_element_2526;;
+		=> .system_element_1: .system_element_314;;
 	*);;
 
-	.system_element_3232
+	.system_element_4078
 	=> nrel_subdividing: {
-		.system_element_3240
+		.system_element_4086
 		(*
 			=> nrel_idtf: [<p>Библиотека многократно используемых компонентов базы знаний по обработке китайского языка</p>]
 			(*
@@ -121,7 +121,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_3241
+		.system_element_4087
 		(*
 			=> nrel_idtf: [<p>Библиотека многократно используемых компонентов решателей задач для обработки китайского языка</p>]
 			(*
