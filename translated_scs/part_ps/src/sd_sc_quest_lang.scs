@@ -94,7 +94,11 @@
 	*);
 	=> .system_element_923: .system_element_7009
 	(*
-		=> nrel_idtf: [<p>Онтология классов знаков и отношений для описания формулировок вопросов на SC-коде</p>];;
+		=> nrel_idtf: [<p>Онтология классов знаков и отношений для описания формулировок вопросов на SC-коде</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
 		=> nrel_inclusion: .system_element_7010;;
 	*);
 	=> .system_element_935: .system_element_7011

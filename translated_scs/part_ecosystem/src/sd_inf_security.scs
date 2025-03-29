@@ -96,7 +96,11 @@
 			=> .system_element_35: .system_element_3590;
 			-> .system_element_3613
 			(*
-				=> nrel_idtf: [<p>User and Entity Behavior Analytics</p>];;
+				=> nrel_idtf: [<p>User and Entity Behavior Analytics</p>]
+				(*
+					<- lang_ru;;
+					=> nrel_format: format_html;;
+				*);;
 				=> .system_element_264: [<p>UEBA --- система анализа поведения субъектов (пользователей, программ, агентов) на предмет обнаружения нестандартного поведения и использования их для обнаружения потенциальных угроз с использованием шаблонов угроз (паттернов).</p>]
 				(*
 					<- lang_ru;;
@@ -105,7 +109,11 @@
 			*);
 			-> .system_element_3614
 			(*
-				=> nrel_idtf: [<p>Threat Intelligence Platform</p>];;
+				=> nrel_idtf: [<p>Threat Intelligence Platform</p>]
+				(*
+					<- lang_ru;;
+					=> nrel_format: format_html;;
+				*);;
 				=> .system_element_264: [<p>TIP --- платформы раннего обнаружения угроз на основе сбора и анализа информации индикаторов компрометации и реагирования на них. Применение методов машинного обучения повышает эффективность обнаружения неизвестных угроз на ранних этапах.</p>]
 				(*
 					<- lang_ru;;
@@ -114,7 +122,11 @@
 			*);
 			-> .system_element_3615
 			(*
-				=> nrel_idtf: [<p>Endpoint Detection and Response</p>];;
+				=> nrel_idtf: [<p>Endpoint Detection and Response</p>]
+				(*
+					<- lang_ru;;
+					=> nrel_format: format_html;;
+				*);;
 				=> .system_element_264: [<p>EDR --- системы обнаружения атак оперативного реагирования на конечных точках компьютерной сети. Могут обнаруживать вредоносные программы, автоматически классифицировать угрозы и самостоятельно реагировать на них.</p>]
 				(*
 					<- lang_ru;;
@@ -123,7 +135,11 @@
 			*);
 			-> .system_element_3616
 			(*
-				=> nrel_idtf: [<p>Security Information and EventManagement</p>];;
+				=> nrel_idtf: [<p>Security Information and EventManagement</p>]
+				(*
+					<- lang_ru;;
+					=> nrel_format: format_html;;
+				*);;
 				=> .system_element_264: [<p>SIEM --- системы сбора и анализа информации о событиях безопасности от сетевых устройств и приложений в реальном времени и оповещения.</p>]
 				(*
 					<- lang_ru;;
@@ -132,7 +148,11 @@
 			*);
 			-> .system_element_3617
 			(*
-				=> nrel_idtf: [<p>Network Detection and Response</p>];;
+				=> nrel_idtf: [<p>Network Detection and Response</p>]
+				(*
+					<- lang_ru;;
+					=> nrel_format: format_html;;
+				*);;
 				=> .system_element_264: [<p>NDR --- системы обнаружения атак на сетевом уровне и оперативного реагирования на них. <i>Искусственный интеллект</i> использует накопленную статистику и базу знаний об угрозах.</p>]
 				(*
 					<- lang_ru;;
@@ -141,7 +161,11 @@
 			*);
 			-> .system_element_3618
 			(*
-				=> nrel_idtf: [<p>Security Orchestration and Automated Response</p>];;
+				=> nrel_idtf: [<p>Security Orchestration and Automated Response</p>]
+				(*
+					<- lang_ru;;
+					=> nrel_format: format_html;;
+				*);;
 				=> .system_element_264: [<p>SOAR --- системы, позволяющие выявлять угрозы информационной безопасности и автоматизировать реагирование на инциденты. В решениях данного типа, в отличие от SIEM-систем, <i>Искусственный интеллект</i> помогает не только проводить анализ, но и автоматически реагировать надлежащим образом на выявленные угрозы.</p>]
 				(*
 					<- lang_ru;;
@@ -150,7 +174,11 @@
 			*);
 			-> .system_element_3619
 			(*
-				=> nrel_idtf: [<p>Application Security</p>];;
+				=> nrel_idtf: [<p>Application Security</p>]
+				(*
+					<- lang_ru;;
+					=> nrel_format: format_html;;
+				*);;
 				=> .system_element_264: [<p>Средства защиты приложений --- системы, позволяющие определять угрозы безопасности прикладных приложений, управлять процессом мониторинга и устранения таких угроз.</p>]
 				(*
 					<- lang_ru;;
@@ -159,7 +187,11 @@
 			*);
 			-> .system_element_3620
 			(*
-				=> nrel_idtf: [<p>Antifraud</p>];;
+				=> nrel_idtf: [<p>Antifraud</p>]
+				(*
+					<- lang_ru;;
+					=> nrel_format: format_html;;
+				*);;
 				=> .system_element_264: [<p>Антифрод --- платформы в режиме реального времени обнаруживают угрозы в бизнес-процессах и мошеннические операции. <i>Искусственный интеллект</i> используется для определения отклонений от идентифицированных бизнес-процессов с целью выявления вторжений или уязвимости процессов и повышает адаптивность к изменению логики и метрик бизнес-процессов.</p>]
 				(*
 					<- lang_ru;;
@@ -462,7 +494,11 @@
 		*);
 		=> nrel_inclusion: .system_element_3650
 		(*
-			=> nrel_idtf: [<p>семантические вирусы</p>];;
+			=> nrel_idtf: [<p>семантические вирусы</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
 			=> .system_element_264: [<p>угроза. разрушение семантики баз знаний --- это подмена или удаление узлов и связей между ними в базе знаний.</p>]
 			(*
 				<- lang_ru;;
@@ -488,7 +524,11 @@
 		*);
 		=> nrel_inclusion: .system_element_3654
 		(*
-			=> nrel_idtf: [<p>угроза. нарушение аутентичности</p>];;
+			=> nrel_idtf: [<p>угроза. нарушение аутентичности</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
 			=> .system_element_264: [<p>угроза. нарушение подлинности (аутентичности) --- это выполнение действий в системе от имени другого лица или выдача недостоверных ресурсов (в том числе и данных) за подлинные.</p>]
 			(*
 				<- lang_ru;;

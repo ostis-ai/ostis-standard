@@ -181,7 +181,11 @@
 		.system_element_5313;
 		.system_element_5315
 		(*
-			=> nrel_idtf: [<p>уровень интеллекта кибернетическойсистемы</p>];;
+			=> nrel_idtf: [<p>уровень интеллекта кибернетическойсистемы</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
 			=> nrel_idtf: [<p>интеллектуальность</p>]
 			(*
 				<- lang_ru;;
@@ -190,7 +194,11 @@
 		*);
 		intelligent_system
 		(*
-			=> nrel_idtf: [<p>интеллектуальная кибернетическая система</p>];;
+			=> nrel_idtf: [<p>интеллектуальная кибернетическая система</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
 			=> nrel_inclusion: .system_element_1182;;
 		*);
 		.system_element_5297;

@@ -188,10 +188,10 @@
 .system_element_6933 <- sc_node_non_role_relation;;
 
 .system_element_6928 => nrel_main_idtf: [Синтаксис и семантика языков программирования в ostis-системах] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_6928 <- sc_node;;
+.system_element_6928 <- sc_node_structure;;
 
 .system_element_6927 => nrel_main_idtf: [Операционная семантика программ в ostis-системах] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_6927 <- sc_node;;
+.system_element_6927 <- sc_node_structure;;
 
 .system_element_6922 => nrel_main_idtf: [Миварный подход] (* <- lang_ru;; => nrel_format: format_html;; *);;
 .system_element_6922 <- sc_node;;
@@ -499,6 +499,9 @@
 .system_element_6721 => nrel_main_idtf: [scp-процесс, не являющийся scp-метапроцессом] (* <- lang_ru;; => nrel_format: format_html;; *);;
 .system_element_6721 <- sc_node_class;;
 
+.system_element_6718 => nrel_main_idtf: [Принципы синхронизации деятельности sc-агентов] (* <- lang_ru;; => nrel_format: format_html;; *);;
+.system_element_6718 <- sc_node_structure;;
+
 .system_element_6717 => nrel_main_idtf: [Понятие sc-агента и абстрактного sc-агента] (* <- lang_ru;; => nrel_format: format_html;; *);;
 .system_element_6717 <- sc_node_structure;;
 
@@ -653,7 +656,7 @@
 .system_element_6639 <- sc_node;;
 
 .system_element_6925 => nrel_main_idtf: [Синтаксис программ в ostis-системах] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_6925 <- sc_node;;
+.system_element_6925 <- sc_node_structure;;
 
 .system_element_6638 => nrel_main_idtf: [решатель задач на основе объектно-ориентированных программ] (* <- lang_ru;; => nrel_format: format_html;; *);;
 .system_element_6638 <- sc_node;;
@@ -1085,13 +1088,13 @@
 .system_element_6349 <- sc_node;;
 
 .system_element_6347 => nrel_main_idtf: [Комплекс свойств, определяющих эффективность программ в ostis-системах] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_6347 <- sc_node;;
+.system_element_6347 <- sc_node_structure;;
 
 .system_element_6343 => nrel_main_idtf: [Существующие онтологии языков программирования] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_6343 <- sc_node;;
+.system_element_6343 <- sc_node_structure;;
 
 .system_element_6342 => nrel_main_idtf: [Проблемы текущего состояния в области разработки и применения языков программирования] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_6342 <- sc_node;;
+.system_element_6342 <- sc_node_structure;;
 
 .system_element_6338 => nrel_main_idtf: [Абстрактный sc-агент трансляции сформированной спецификации события в sc-памяти во внутреннее представление] (* <- lang_ru;; => nrel_format: format_html;; *);;
 .system_element_6338 <- sc_node;;
@@ -2657,7 +2660,7 @@
 .system_element_5432 <- sc_node;;
 
 .system_element_6926 => nrel_main_idtf: [Денотационная семантика программ в ostis-системах] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_6926 <- sc_node;;
+.system_element_6926 <- sc_node_structure;;
 
 .system_element_5431 => nrel_main_idtf: [УСК] (* <- lang_ru;; => nrel_format: format_html;; *);;
 .system_element_5431 <- sc_node;;
@@ -2765,10 +2768,10 @@
 .system_element_5375 <- sc_node;;
 
 .system_element_5372 => nrel_main_idtf: [Направления эволюции компьютерных систем] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_5372 <- sc_node;;
+.system_element_5372 <- sc_node_structure;;
 
 .system_element_5370 => nrel_main_idtf: [Комплекс свойств, определяющих качество многоагентной системы] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_5370 <- sc_node;;
+.system_element_5370 <- sc_node_structure;;
 
 .system_element_6861 => nrel_main_idtf: [примечане*] (* <- lang_ru;; => nrel_format: format_html;; *);;
 .system_element_6861 <- sc_node_non_role_relation;;
@@ -2783,7 +2786,7 @@
 .system_element_5364 <- sc_node;;
 
 .system_element_5363 => nrel_main_idtf: [Уточнение понятия кибернетической системы] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_5363 <- sc_node;;
+.system_element_5363 <- sc_node_structure;;
 
 .system_element_7088 => nrel_main_idtf: [Абстрактный sc-агент синтеза ответа на заданный вопрос] (* <- lang_ru;; => nrel_format: format_html;; *);;
 .system_element_7088 <- sc_node;;
@@ -3524,10 +3527,10 @@
 .system_element_4977 <- sc_node_non_role_relation;;
 
 .system_element_4976 => nrel_main_idtf: [Общая Структура Стандарта OSTIS] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_4976 <- sc_node;;
+.system_element_4976 <- sc_node_structure;;
 
 .system_element_4974 => nrel_main_idtf: [Оглавление Стандарта OSTIS] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_4974 <- sc_node;;
+.system_element_4974 <- sc_node_structure;;
 
 .system_element_4973 => nrel_main_idtf: [Титульная спецификация Стандарта OSTIS] (* <- lang_ru;; => nrel_format: format_html;; *);;
 .system_element_4973 <- sc_node_structure;;
@@ -3812,7 +3815,7 @@
 .system_element_4826 <- sc_node_non_role_relation;;
 
 .system_element_6344 => nrel_main_idtf: [Предлагаемый подход к разработке технологий программирования для ostis-систем] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_6344 <- sc_node;;
+.system_element_6344 <- sc_node_structure;;
 
 .system_element_4825 => nrel_main_idtf: [особенности логической организации*] (* <- lang_ru;; => nrel_format: format_html;; *);;
 .system_element_4825 <- sc_node_non_role_relation;;
@@ -4055,7 +4058,7 @@
 .system_element_6052 <- sc_node;;
 
 .system_element_4707 => nrel_main_idtf: [Предметная область и онтология Базового языка программирования ostis-систем] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_4707 <- sc_node;;
+.system_element_4707 <- sc_node_structure;;
 
 .system_element_4706 => nrel_main_idtf: [Предметная область и онтология программных вариантов реализации базового интерпретатора логико-семантических моделей ostis-систем на современных компьютерах] (* <- lang_ru;; => nrel_format: format_html;; *);;
 .system_element_4706 <- sc_node;;
@@ -4070,7 +4073,7 @@
 .system_element_4701 <- sc_node_non_role_relation;;
 
 .system_element_4698 => nrel_main_idtf: [Предметная область и онтология решателей задач ostis-систем] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_4698 <- sc_node;;
+.system_element_4698 <- sc_node_structure;;
 
 .system_element_4697 => nrel_main_idtf: [свойства*] (* <- lang_ru;; => nrel_format: format_html;; *);;
 .system_element_4697 <- sc_node_non_role_relation;;
@@ -4430,7 +4433,7 @@
 .system_element_4545 <- sc_node;;
 
 .system_element_4544 => nrel_main_idtf: [SC-JSON-код] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_4544 <- sc_node;;
+.system_element_4544 <- sc_node_structure;;
 
 .system_element_4543 => nrel_main_idtf: [C#] (* <- lang_ru;; => nrel_format: format_html;; *);;
 .system_element_4543 <- sc_node;;
@@ -4637,7 +4640,7 @@
 .system_element_4449 <- sc_node;;
 
 .system_element_4448 => nrel_main_idtf: [Программный интерфейс информационно-поисковых методов в Реализации sc-памяти] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_4448 <- sc_node;;
+.system_element_4448 <- sc_node_structure;;
 
 .system_element_4445 => nrel_main_idtf: [некорректный синтаксический класс для уточнения класса элемента sc-памяти] (* <- lang_ru;; => nrel_format: format_html;; *);;
 .system_element_4445 <- sc_node;;
@@ -4679,7 +4682,7 @@
 .system_element_4432 <- sc_node;;
 
 .system_element_4429 => nrel_main_idtf: [Программный интерфейс информационно-формирующих методов в Реализации sc-памяти] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_4429 <- sc_node;;
+.system_element_4429 <- sc_node_structure;;
 
 .system_element_4428 => nrel_main_idtf: [Спецификация Программного интерфейса информационно-формирующих методов Реализации sc-памяти в Программной платформе ostis-систем] (* <- lang_ru;; => nrel_format: format_html;; *);;
 .system_element_4428 <- sc_node_structure;;
@@ -5120,7 +5123,7 @@
 .system_element_4217 <- sc_node;;
 
 .system_element_6776 => nrel_main_idtf: [Предметная область и онтология искусственных нейронных сетей] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_6776 <- sc_node;;
+.system_element_6776 <- sc_node_structure;;
 
 .system_element_6702 => nrel_main_idtf: [действие. уточнить тип заданного sc-элемента] (* <- lang_ru;; => nrel_format: format_html;; *);;
 .system_element_6702 <- sc_node;;
@@ -5477,7 +5480,7 @@
 .system_element_4041 <- sc_node;;
 
 .system_element_4038 => nrel_main_idtf: [Предметная область и онтология интерфейсов ostis-систем] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_4038 <- sc_node;;
+.system_element_4038 <- sc_node_structure;;
 
 .system_element_4037 => nrel_main_idtf: [естественно-языковой интерфейс ostis-систем] (* <- lang_ru;; => nrel_format: format_html;; *);;
 .system_element_4037 <- sc_node;;
@@ -5525,7 +5528,7 @@
 .system_element_4011 <- sc_node;;
 
 .system_element_4007 => nrel_main_idtf: [Предметная область и онтология синтаксического анализа естественно-языковых сообщений, входящих в ostis-систему] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_4007 <- sc_node;;
+.system_element_4007 <- sc_node_structure;;
 
 .system_element_4006 => nrel_main_idtf: [Цянь Л.] (* <- lang_ru;; => nrel_format: format_html;; *);;
 .system_element_4006 <- sc_node;;
@@ -6287,7 +6290,7 @@ order_role_relation <- sc_node_class;;
 .system_element_3645 <- sc_node;;
 
 .system_element_3643 => nrel_main_idtf: [Предметная область и онтология Экосистемы OSTIS] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_3643 <- sc_node;;
+.system_element_3643 <- sc_node_structure;;
 
 .system_element_3642 => nrel_main_idtf: [принцип ответственности] (* <- lang_ru;; => nrel_format: format_html;; *);;
 .system_element_3642 <- sc_node;;
@@ -6509,7 +6512,7 @@ agent_of_expert_approval_of_verified_proposal <- sc_node;;
 .system_element_6557 <- sc_node;;
 
 .system_element_2556 => nrel_main_idtf: [Описание Первого направления расширения Ядра SCg-кода] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_2556 <- sc_node;;
+.system_element_2556 <- sc_node_structure;;
 
 .system_element_3481 => nrel_main_idtf: [Рынок знаний, реализуемый в рамках Экосистемы OSTIS] (* <- lang_ru;; => nrel_format: format_html;; *);;
 .system_element_3481 <- sc_node;;
@@ -6815,7 +6818,7 @@ ui_rrel_output_format <- sc_node_role_relation;;
 .system_element_1373 <- sc_node_non_role_relation;;
 
 .system_element_3044 => nrel_main_idtf: [Уточнение Понятия Технологии OSTIS] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_3044 <- sc_node;;
+.system_element_3044 <- sc_node_structure;;
 
 .system_element_3405 => nrel_main_idtf: [Разработка ostis-систем автоматизации проектирования ostis-систем управления умными городами] (* <- lang_ru;; => nrel_format: format_html;; *);;
 .system_element_3405 <- sc_node;;
@@ -7670,7 +7673,7 @@ procedural_formulation_of_task <- sc_node_class;;
 .system_element_1156 <- sc_node_non_role_relation;;
 
 .system_element_3046 => nrel_main_idtf: [Уточнение Понятия Экосистемы OSTIS] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_3046 <- sc_node;;
+.system_element_3046 <- sc_node_structure;;
 
 .system_element_3038 => nrel_main_idtf: [интеграция баз знаний] (* <- lang_ru;; => nrel_format: format_html;; *);;
 .system_element_3038 <- sc_node;;
@@ -7694,7 +7697,7 @@ agent_of_calculation_ninetieth_percentile_vertex_degrees <- sc_node;;
 .system_element_3036 <- sc_node;;
 
 .system_element_6585 => nrel_main_idtf: [Современное состояние технологий разработки решателей задач и требования, предъявляемые к гибридным решателям задач] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_6585 <- sc_node;;
+.system_element_6585 <- sc_node_structure;;
 
 .system_element_3467 => nrel_main_idtf: [Какова основная цель создания Экосистемы OSTIS] (* <- lang_ru;; => nrel_format: format_html;; *);;
 .system_element_3467 <- sc_node;;
@@ -8723,16 +8726,16 @@ lib_component_proc_of_calculation_number_of_all_types_of_outbound_connections <-
 .system_element_2600 <- sc_node;;
 
 .system_element_2595 => nrel_main_idtf: [Описание Ядра SCs-кода и различных направлений его расширения] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_2595 <- sc_node;;
+.system_element_2595 <- sc_node_structure;;
 
 .system_element_2594 => nrel_main_idtf: [Описание sc.s-предложений] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_2594 <- sc_node;;
+.system_element_2594 <- sc_node_structure;;
 
 .system_element_4884 => nrel_main_idtf: [активные семантические сети] (* <- lang_ru;; => nrel_format: format_html;; *);;
 .system_element_4884 <- sc_node;;
 
 .system_element_2593 => nrel_main_idtf: [Описание sc.s-разделителей и sc.s-ограничителей] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_2593 <- sc_node;;
+.system_element_2593 <- sc_node_structure;;
 
 .system_element_3870 => nrel_main_idtf: [вывод*] (* <- lang_ru;; => nrel_format: format_html;; *);;
 .system_element_3870 <- sc_node_non_role_relation;;
@@ -8879,7 +8882,7 @@ section_methodology_evolutionary_design_of_computer_systems <- sc_node;;
 .system_element_2543 <- sc_node;;
 
 .system_element_2537 => nrel_main_idtf: [Описание Ядра SCg-кода] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_2537 <- sc_node;;
+.system_element_2537 <- sc_node_structure;;
 
 lib_component_ui_menu_file_for_counting_variables_in_structure => nrel_main_idtf: [Компонент библиотеки. Команда пользовательского интерфейса подсчета количества sc-переменных в структуре] (* <- lang_ru;; => nrel_format: format_html;; *);;
 lib_component_ui_menu_file_for_counting_variables_in_structure <- sc_node_structure;;
@@ -9293,7 +9296,7 @@ lib_component_proc_of_adding_general_action_comment <- sc_node_structure;;
 .system_element_297 <- sc_node;;
 
 .system_element_1399 => nrel_main_idtf: [Логико-семантическая модель ostis-системы автоматизации проектирования искусственных нейронных сетей, семантически совместимых с базами знаний ostis-систем] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_1399 <- sc_node;;
+.system_element_1399 <- sc_node_structure;;
 
 .system_element_2838 => nrel_main_idtf: [принципы функционирования*] (* <- lang_ru;; => nrel_format: format_html;; *);;
 .system_element_2838 <- sc_node_non_role_relation;;
@@ -9497,7 +9500,7 @@ agent_of_verify_the_desired_structure => nrel_main_idtf: [агентная scp-�
 agent_of_verify_the_desired_structure <- sc_node;;
 
 .system_element_493 => nrel_main_idtf: [Сегмент. Семантическая модель решателя задач системы автоматизации проектирования решателей задач ostis-систем] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_493 <- sc_node;;
+.system_element_493 <- sc_node_structure;;
 
 .system_element_2331 => nrel_main_idtf: [файл-изображение] (* <- lang_ru;; => nrel_format: format_html;; *);;
 .system_element_2331 <- sc_node;;
@@ -9727,9 +9730,6 @@ enough_formed_internal_file <- sc_node_class;;
 .system_element_2254 => nrel_main_idtf: [Правила синтаксической трансформации sc-элементов в рамках Ядра SC-кода] (* <- lang_ru;; => nrel_format: format_html;; *);;
 .system_element_2254 <- sc_node;;
 
-.system_element_2252 => nrel_main_idtf: [<b><em>Семантические правила Ядра SC-кода</b></em>] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_2252 <- sc_node;;
-
 rrel_out => nrel_main_idtf: [out-параметр'] (* <- lang_ru;; => nrel_format: format_html;; *);;
 rrel_out <- sc_node_role_relation;;
 
@@ -9955,6 +9955,9 @@ ui_control_select_window_type <- sc_node;;
 .system_element_2166 => nrel_main_idtf: [синтаксические правила*] (* <- lang_ru;; => nrel_format: format_html;; *);;
 .system_element_2166 <- sc_node_non_role_relation;;
 
+.system_element_2165 => nrel_main_idtf: [<b><em>Синтаксические правила Ядра SC-кода</em></b>] (* <- lang_ru;; => nrel_format: format_html;; *);;
+.system_element_2165 <- sc_node;;
+
 .system_element_2164 => nrel_main_idtf: [инцидентность входящих sc-дуг*] (* <- lang_ru;; => nrel_format: format_html;; *);;
 .system_element_2164 <- sc_node_non_role_relation;;
 
@@ -9965,7 +9968,7 @@ ui_control_select_window_type <- sc_node;;
 .system_element_2163 <- sc_node_non_role_relation;;
 
 .system_element_2158 => nrel_main_idtf: [Семантическая классификация sc-элементов] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_2158 <- sc_node;;
+.system_element_2158 <- sc_node_structure;;
 
 .system_element_5009 => nrel_main_idtf: [Кобринский Б.А.] (* <- lang_ru;; => nrel_format: format_html;; *);;
 .system_element_5009 <- sc_node;;
@@ -10451,7 +10454,7 @@ nrel_definitional_domain <- sc_node_non_role_relation;;
 .system_element_2004 <- sc_node;;
 
 .system_element_6346 => nrel_main_idtf: [Методы и средства поддержки проектирования и разработки программ в ostis-системах] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_6346 <- sc_node;;
+.system_element_6346 <- sc_node_structure;;
 
 section_concept_of_reusable_component_kpm => nrel_main_idtf: [Раздел. Понятие многократно используемого компонента абстрактных sc-машин] (* <- lang_ru;; => nrel_format: format_html;; *);;
 section_concept_of_reusable_component_kpm <- sc_node_structure;;
@@ -11021,7 +11024,7 @@ contATg <- sc_node_class;;
 .system_element_1817 <- sc_node_role_relation;;
 
 .system_element_2394 => nrel_main_idtf: [Понятие простого идентификатора sc-элемента] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_2394 <- sc_node;;
+.system_element_2394 <- sc_node_structure;;
 
 .system_element_1816 => nrel_main_idtf: [семантическое непрерывное сходство sc-структур*] (* <- lang_ru;; => nrel_format: format_html;; *);;
 .system_element_1816 <- sc_node_non_role_relation;;
@@ -12002,7 +12005,7 @@ agent_of_checking_concept_def_existence <- sc_node;;
 .system_element_1518 <- sc_node;;
 
 .system_element_1517 => nrel_main_idtf: [Что такое sc-язык] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_1517 <- sc_node;;
+.system_element_1517 <- sc_node_structure;;
 
 subject_domain_of_abstract_sc_agents => nrel_main_idtf: [Предметная область абстрактных агентов, работающих над унифицированной семантической памятью] (* <- lang_ru;; => nrel_format: format_html;; *);;
 subject_domain_of_abstract_sc_agents <- sc_node_structure;;
@@ -12014,7 +12017,7 @@ rrel_set_4 => nrel_main_idtf: [формируемое множество 4'] (* 
 rrel_set_4 <- sc_node_role_relation;;
 
 .system_element_1514 => nrel_main_idtf: [Что такое предметная область] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_1514 <- sc_node;;
+.system_element_1514 <- sc_node_structure;;
 
 .system_element_1504 => nrel_main_idtf: [индивидуальное действие, выполняемое человеком] (* <- lang_ru;; => nrel_format: format_html;; *);;
 .system_element_1504 <- sc_node;;
@@ -12392,7 +12395,7 @@ sc_agent_approval_verification_result_of_offer <- sc_node;;
 .system_element_1390 <- sc_node;;
 
 .system_element_3045 => nrel_main_idtf: [Перспективы использования Технологии OSTIS для повышения качества человеческой деятельности в области Искусственного интеллекта] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_3045 <- sc_node;;
+.system_element_3045 <- sc_node_structure;;
 
 action_finding_theorems => nrel_main_idtf: [действие. найти теоремы] (* <- lang_ru;; => nrel_format: format_html;; *);;
 action_finding_theorems <- sc_node_class;;
@@ -12644,7 +12647,7 @@ nrel_using_example => nrel_main_idtf: [пример использования*]
 nrel_using_example <- sc_node_non_role_relation;;
 
 .system_element_789 => nrel_main_idtf: [Предметная область и онтология внешних идентификаторов знаков, входящих в информационные конструкции внутреннего языка ostis-систем] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_789 <- sc_node;;
+.system_element_789 <- sc_node_structure;;
 
 .system_element_2773 => nrel_main_idtf: [количественный ёген] (* <- lang_ru;; => nrel_format: format_html;; *);;
 .system_element_2773 <- sc_node;;
@@ -12908,7 +12911,7 @@ ifGr => nrel_main_idtf: [scp-оператор сравнения числовы�
 ifGr <- sc_node_class;;
 
 .system_element_2592 => nrel_main_idtf: [Описание Алфавита SCs-кода] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_2592 <- sc_node;;
+.system_element_2592 <- sc_node_structure;;
 
 .system_element_990 => nrel_main_idtf: [ссылка*] (* <- lang_ru;; => nrel_format: format_html;; *);;
 .system_element_990 <- sc_node_non_role_relation;;
@@ -13045,12 +13048,6 @@ nrel_cartesian_product <- sc_node_non_role_relation;;
 .system_element_1186 => nrel_main_idtf: [вид деятельности] (* <- lang_ru;; => nrel_format: format_html;; *);;
 .system_element_1186 <- sc_node;;
 
-.system_element_6718 => nrel_main_idtf: [Принципы синхронизации деятельности sc-агентов] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_6718 <- sc_node_structure;;
-
-.system_element_2165 => nrel_main_idtf: [<b><em>Синтаксические правила Ядра SC-кода</b></em>] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_2165 <- sc_node;;
-
 .system_element_1185 => nrel_main_idtf: [деятельность] (* <- lang_ru;; => nrel_format: format_html;; *);;
 .system_element_1185 <- sc_node;;
 
@@ -13085,7 +13082,7 @@ effector_abstract_sc_agent => nrel_main_idtf: [эффекторный абстр
 effector_abstract_sc_agent <- sc_node_class;;
 
 .system_element_2803 => nrel_main_idtf: [Сегмент. Структура, назначение, особенности и достоинства Метасистемы OSTIS] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_2803 <- sc_node;;
+.system_element_2803 <- sc_node_structure;;
 
 ui_menu_file_for_calculation_number_of_class_instances => nrel_main_idtf: [Посчитать количество элементов класса] (* <- lang_ru;; => nrel_format: format_html;; *);;
 ui_menu_file_for_calculation_number_of_class_instances <- sc_node;;
@@ -13262,16 +13259,16 @@ rrel_3 <- sc_node_role_relation;;
 .system_element_1118 <- sc_node;;
 
 .system_element_1110 => nrel_main_idtf: [Предметная область и онтология субъектно-объектных спецификаций воздействий] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_1110 <- sc_node;;
+.system_element_1110 <- sc_node_structure;;
 
 not_enough_specified_essence => nrel_main_idtf: [недостаточно специфицированная сущность] (* <- lang_ru;; => nrel_format: format_html;; *);;
 not_enough_specified_essence <- sc_node_class;;
 
 .system_element_1108 => nrel_main_idtf: [Уточнение понятия задачи. Типология задач] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_1108 <- sc_node;;
+.system_element_1108 <- sc_node_structure;;
 
 .system_element_1107 => nrel_main_idtf: [Уточнение понятия воздействия и понятия действия. Типология воздействий и действий] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_1107 <- sc_node;;
+.system_element_1107 <- sc_node_structure;;
 
 .system_element_4809 => nrel_main_idtf: [архитектура вычислительной системы с последовательной обработкой информации] (* <- lang_ru;; => nrel_format: format_html;; *);;
 .system_element_4809 <- sc_node;;
@@ -13388,10 +13385,10 @@ current_processes_of_computer_system <- sc_node_class;;
 .system_element_715 <- sc_node;;
 
 .system_element_1070 => nrel_main_idtf: [Отношения, заданные на множестве онтологий] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_1070 <- sc_node;;
+.system_element_1070 <- sc_node_structure;;
 
 .system_element_1068 => nrel_main_idtf: [Типология онтологий предметной области] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_1068 <- sc_node;;
+.system_element_1068 <- sc_node_structure;;
 
 scn_code => nrel_main_idtf: [SСn-код] (* <- lang_ru;; => nrel_format: format_html;; *);;
 scn_code <- sc_node;;
@@ -13670,7 +13667,7 @@ measurable_parameter <- sc_node_class;;
 .system_element_1902 <- sc_node_role_relation;;
 
 .system_element_3043 => nrel_main_idtf: [Анализ структуры Деятельности в области Искусственного интеллекта] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_3043 <- sc_node;;
+.system_element_3043 <- sc_node_structure;;
 
 .system_element_2545 => nrel_main_idtf: [Алфавит SCg-кода^] (* <- lang_ru;; => nrel_format: format_html;; *);;
 .system_element_2545 <- sc_node;;
@@ -13724,7 +13721,7 @@ current_processes_of_computer_system_operation <- sc_node_class;;
 .system_element_4656 <- sc_node;;
 
 .system_element_960 => nrel_main_idtf: [Предметная область и онтология смыслового представления информации] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_960 <- sc_node;;
+.system_element_960 <- sc_node_structure;;
 
 .system_element_1076 => nrel_main_idtf: [Рене Декарт] (* <- lang_ru;; => nrel_format: format_html;; *);;
 .system_element_1076 <- sc_node;;
@@ -13808,7 +13805,7 @@ sc_agent_of_calculation_average_depth_of_subject_domain <- sc_node;;
 .system_element_943 <- sc_node;;
 
 .system_element_1112 => nrel_main_idtf: [Уточнение понятия навыка, понятия класса методов и понятия модели решения задач] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_1112 <- sc_node;;
+.system_element_1112 <- sc_node_structure;;
 
 .system_element_942 => nrel_main_idtf: [уровень синтаксической сложности представления знаков в текстах языка^] (* <- lang_ru;; => nrel_format: format_html;; *);;
 .system_element_942 <- sc_node;;
@@ -14110,6 +14107,9 @@ ui_menu_file_for_agent_of_checking_subject_domain_accessory_for_classes_in_given
 .system_element_865 => nrel_main_idtf: [двухмерная информационная конструкция] (* <- lang_ru;; => nrel_format: format_html;; *);;
 .system_element_865 <- sc_node;;
 
+.system_element_2252 => nrel_main_idtf: [<b><em>Семантические правила Ядра SC-кода</em></b>] (* <- lang_ru;; => nrel_format: format_html;; *);;
+.system_element_2252 <- sc_node;;
+
 .system_element_864 => nrel_main_idtf: [линейная информационная конструкция] (* <- lang_ru;; => nrel_format: format_html;; *);;
 .system_element_864 <- sc_node;;
 
@@ -14165,7 +14165,7 @@ scn_code_ext2 <- sc_node;;
 .system_element_845 <- sc_node;;
 
 .system_element_29 => nrel_main_idtf: [Предметная область и онтология онтологий] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_29 <- sc_node;;
+.system_element_29 <- sc_node_structure;;
 
 .system_element_844 => nrel_main_idtf: [денотационная семантика] (* <- lang_ru;; => nrel_format: format_html;; *);;
 .system_element_844 <- sc_node;;
@@ -14189,7 +14189,7 @@ scn_code_ext2 <- sc_node;;
 .system_element_3145 <- sc_node;;
 
 .system_element_24 => nrel_main_idtf: [Предметная область и онтология множеств] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_24 <- sc_node;;
+.system_element_24 <- sc_node_structure;;
 
 .system_element_1460 => nrel_main_idtf: [воздействие активизации] (* <- lang_ru;; => nrel_format: format_html;; *);;
 .system_element_1460 <- sc_node;;
@@ -14225,7 +14225,7 @@ scn_code_ext2 <- sc_node;;
 .system_element_831 <- sc_node_non_role_relation;;
 
 .system_element_2393 => nrel_main_idtf: [Понятие внешнего идентификатора sc-элемента] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_2393 <- sc_node;;
+.system_element_2393 <- sc_node_structure;;
 
 .system_element_829 => nrel_main_idtf: [разделители*] (* <- lang_ru;; => nrel_format: format_html;; *);;
 .system_element_829 <- sc_node_non_role_relation;;
@@ -14354,13 +14354,13 @@ action_of_finding_examples <- sc_node_class;;
 .system_element_3312 <- sc_node;;
 
 .system_element_792 => nrel_main_idtf: [Предметная область и онтология языка внешнего форматированного представления информационных конструкций внутреннего языка ostis-систем] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_792 <- sc_node;;
+.system_element_792 <- sc_node_structure;;
 
 .system_element_1698 => nrel_main_idtf: [немонотонный вывод на конечном sc-множестве посылок] (* <- lang_ru;; => nrel_format: format_html;; *);;
 .system_element_1698 <- sc_node;;
 
 .system_element_791 => nrel_main_idtf: [Предметная область и онтология языка внешнего линейного представления информационных конструкций внутреннего языка ostis-систем] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_791 <- sc_node;;
+.system_element_791 <- sc_node_structure;;
 
 .system_element_2721 => nrel_main_idtf: [Calzolari1991] (* <- lang_ru;; => nrel_format: format_html;; *);;
 .system_element_2721 <- sc_node;;
@@ -14369,7 +14369,7 @@ action_of_finding_examples <- sc_node_class;;
 .system_element_385 <- sc_node;;
 
 .system_element_788 => nrel_main_idtf: [Предметная область и онтология внутреннего языка ostis-систем] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_788 <- sc_node;;
+.system_element_788 <- sc_node_structure;;
 
 .system_element_4102 => nrel_main_idtf: [действие. погружение сообщения в контекст] (* <- lang_ru;; => nrel_format: format_html;; *);;
 .system_element_4102 <- sc_node;;
@@ -15860,7 +15860,7 @@ lib_component_proc_of_calculation_number_of_all_types_of_input_connections => nr
 lib_component_proc_of_calculation_number_of_all_types_of_input_connections <- sc_node_structure;;
 
 .system_element_344 => nrel_main_idtf: [Предметная область и онтология многократно используемых компонентов интерфейсов ostis-систем] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_344 <- sc_node;;
+.system_element_344 <- sc_node_structure;;
 
 .system_element_1720 => nrel_main_idtf: [событие добавления sc-дуги, входящей в заданный sc-элемент] (* <- lang_ru;; => nrel_format: format_html;; *);;
 .system_element_1720 <- sc_node;;
@@ -16058,7 +16058,7 @@ scs_code <- sc_node_class;;
 .system_element_284 <- sc_node;;
 
 .system_element_6586 => nrel_main_idtf: [Предлагаемый подход к разработке гибридных решателей задач ostis-систем и обработке информации в ostis-системах] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_6586 <- sc_node;;
+.system_element_6586 <- sc_node_structure;;
 
 .system_element_5170 => nrel_main_idtf: [ 70.2. Предметная область и онтология встроенных ostis-систем поддержки использования ostis-систем конечными пользователями] (* <- lang_ru;; => nrel_format: format_html;; *);;
 .system_element_5170 <- sc_node;;
@@ -17015,13 +17015,13 @@ lib_component_agent_of_finding_constants <- sc_node;;
 .system_element_242 <- sc_node;;
 
 .system_element_30 => nrel_main_idtf: [Предметная область и онтология параметров, величин и шкал] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_30 <- sc_node;;
+.system_element_30 <- sc_node_structure;;
 
 structure_of_wrong_using_of_relations => nrel_main_idtf: [несоответствие элементов связки доменам отношения] (* <- lang_ru;; => nrel_format: format_html;; *);;
 structure_of_wrong_using_of_relations <- sc_node_class;;
 
 .system_element_28 => nrel_main_idtf: [Предметная область и онтология предметных областей] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_28 <- sc_node;;
+.system_element_28 <- sc_node_structure;;
 
 .system_element_3531 => nrel_main_idtf: [средство управления процессом повышения качества деятельности конечных пользователей] (* <- lang_ru;; => nrel_format: format_html;; *);;
 .system_element_3531 <- sc_node;;
@@ -17033,7 +17033,7 @@ lib_component_ui_menu_file_for_finding_definitions <- sc_node_structure;;
 .system_element_2472 <- sc_node;;
 
 .system_element_27 => nrel_main_idtf: [Предметная область и онтология семантических окрестностей] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_27 <- sc_node;;
+.system_element_27 <- sc_node_structure;;
 
 .system_element_2865 => nrel_main_idtf: [Van2005] (* <- lang_ru;; => nrel_format: format_html;; *);;
 .system_element_2865 <- sc_node;;
@@ -17048,7 +17048,7 @@ abstract_sc_agent_remove_breakpoint_from_scp_process <- sc_node_class;;
 .system_element_261 <- sc_node_non_role_relation;;
 
 .system_element_25 => nrel_main_idtf: [Предметная область и онтология связок и отношений] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_25 <- sc_node;;
+.system_element_25 <- sc_node_structure;;
 
 .system_element_1266 => nrel_main_idtf: [сужение отношения по первому домену(спецификация*; класс методов)*] (* <- lang_ru;; => nrel_format: format_html;; *);;
 .system_element_1266 <- sc_node_non_role_relation;;
@@ -18683,7 +18683,7 @@ section_rules_of_designing_models_texts <- sc_node;;
 .system_element_3183 <- sc_node;;
 
 .system_element_790 => nrel_main_idtf: [Предметная область и онтология языка внешнего графического представления информационных конструкций внутреннего языка ostis-систем] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_790 <- sc_node;;
+.system_element_790 <- sc_node_structure;;
 
 useless_scp_process => nrel_main_idtf: [бесполезный scp-процесс] (* <- lang_ru;; => nrel_format: format_html;; *);;
 useless_scp_process <- sc_node_class;;
@@ -18749,7 +18749,7 @@ doc_web_platform_based_on_software_sc_memory => nrel_main_idtf: [Докумен�
 doc_web_platform_based_on_software_sc_memory <- sc_node_structure;;
 
 .system_element_32 => nrel_main_idtf: [Предметная область и онтология темпоральных сущностей] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_32 <- sc_node;;
+.system_element_32 <- sc_node_structure;;
 
 agent_of_counting_nodes_in_structure => nrel_main_idtf: [агентная scp-программа подсчета количества sc-узлов в струтуре] (* <- lang_ru;; => nrel_format: format_html;; *);;
 agent_of_counting_nodes_in_structure <- sc_node;;
@@ -19424,7 +19424,7 @@ lib_component_agent_of_erase_elements => nrel_main_idtf: [Компонент б�
 lib_component_agent_of_erase_elements <- sc_node;;
 
 .system_element_3671 => nrel_main_idtf: [Предметная область и онтология семантически совместимых ostis-систем управления рецептурным производством] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_3671 <- sc_node;;
+.system_element_3671 <- sc_node_structure;;
 
 .system_element_3475 => nrel_main_idtf: [вид человеческой деятельности, продуктом которой является информационная модель некоторого объекта или класса объектов] (* <- lang_ru;; => nrel_format: format_html;; *);;
 .system_element_3475 <- sc_node;;
@@ -19700,7 +19700,7 @@ subjdomain_entities => nrel_main_idtf: [Предметная область sc-�
 subjdomain_entities <- sc_node_structure;;
 
 .system_element_3588 => nrel_main_idtf: [Принципы, лежащие в основе обеспечения информационной безопасности ostis-систем] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_3588 <- sc_node;;
+.system_element_3588 <- sc_node_structure;;
 
 agent_of_forming_set_theoretic_ontology => nrel_main_idtf: [агентная scp-программа формирования теоретико-множественной онтологии для заданной предметной области] (* <- lang_ru;; => nrel_format: format_html;; *);;
 agent_of_forming_set_theoretic_ontology <- sc_node;;
@@ -20312,7 +20312,7 @@ action_to_form_an_artist_proposal_of_project_task <- sc_node_class;;
 .system_element_562 <- sc_node;;
 
 .system_element_341 => nrel_main_idtf: [Предметная область и онтология комплексной технологии поддержки жизненного цикла интеллектуальных компьютерных систем нового поколения] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_341 <- sc_node;;
+.system_element_341 <- sc_node_structure;;
 
 scs_divider_const_neg_nonstat_accessory_arc => nrel_main_idtf: [константная негативная нестационарная sc.s-дуга принадлежности] (* <- lang_ru;; => nrel_format: format_html;; *);;
 scs_divider_const_neg_nonstat_accessory_arc <- sc_node_class;;
@@ -21182,7 +21182,7 @@ lib_component_agent_approval_verification_result_of_offer => nrel_main_idtf: [К
 lib_component_agent_approval_verification_result_of_offer <- sc_node;;
 
 .system_element_6516 => nrel_main_idtf: [Предметная область и онтология действий, задач, планов, протоколов и методов, реализуемых ostis-системой, а также внутренних агентов, выполняющих эти действия] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_6516 <- sc_node;;
+.system_element_6516 <- sc_node_structure;;
 
 .system_element_5482 => nrel_main_idtf: [программная реализация <u>модели</u> абстрактной смысловой памяти на современных компьютерах] (* <- lang_ru;; => nrel_format: format_html;; *);;
 .system_element_5482 <- sc_node;;
@@ -21494,7 +21494,7 @@ ui_expert_mode => nrel_main_idtf: [Экспертный режим] (* <- lang_r
 ui_expert_mode <- sc_node_class;;
 
 .system_element_340 => nrel_main_idtf: [Логико-семантическая модель Метасистемы OSTIS] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_340 <- sc_node;;
+.system_element_340 <- sc_node_structure;;
 
 nrel_injection => nrel_main_idtf: [инъективное соответствие*] (* <- lang_ru;; => nrel_format: format_html;; *);;
 nrel_injection <- sc_node_non_role_relation;;
@@ -21689,7 +21689,7 @@ lib_component_agent_of_finding_rejected_proposals_by_user => nrel_main_idtf: [К
 lib_component_agent_of_finding_rejected_proposals_by_user <- sc_node;;
 
 .system_element_3827 => nrel_main_idtf: [Применение принципов онтологического проектирования при разработке аудиоинтерфейсов] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_3827 <- sc_node;;
+.system_element_3827 <- sc_node_structure;;
 
 decimal_numeral_system => nrel_main_idtf: [десятичная система счисления] (* <- lang_ru;; => nrel_format: format_html;; *);;
 decimal_numeral_system <- sc_node_class;;
@@ -22520,7 +22520,7 @@ stringSplit => nrel_main_idtf: [scp-оператор разбиения стро
 stringSplit <- sc_node_class;;
 
 .system_element_6345 => nrel_main_idtf: [Синтаксис и семантика программ в ostis-системах] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_6345 <- sc_node;;
+.system_element_6345 <- sc_node_structure;;
 
 .system_element_4622 => nrel_main_idtf: [ответ инициализации sc-события] (* <- lang_ru;; => nrel_format: format_html;; *);;
 .system_element_4622 <- sc_node;;
@@ -22874,7 +22874,7 @@ lib_component_agent_of_search_of_all_superclasses_in_quasybinary_relation => nre
 lib_component_agent_of_search_of_all_superclasses_in_quasybinary_relation <- sc_node;;
 
 .system_element_2395 => nrel_main_idtf: [Понятие сложного идентификатора sc-элемента] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_2395 <- sc_node;;
+.system_element_2395 <- sc_node_structure;;
 
 semantic_network => nrel_main_idtf: [Семантическая сеть] (* <- lang_ru;; => nrel_format: format_html;; *);;
 semantic_network <- sc_node_class;;
@@ -22952,7 +22952,7 @@ ui_scg_control_tool_open => nrel_main_idtf: [Открыть файл] (* <- lang
 ui_scg_control_tool_open <- sc_node_class;;
 
 .system_element_2536 => nrel_main_idtf: [Основные положения языка графического представления знаний ostis-систем] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_2536 <- sc_node;;
+.system_element_2536 <- sc_node_structure;;
 
 .system_element_5350 => nrel_main_idtf: [Sherif1988] (* <- lang_ru;; => nrel_format: format_html;; *);;
 .system_element_5350 <- sc_node;;
@@ -23078,7 +23078,7 @@ sc_agent_of_calculation_min_value_of_ontology_depths => nrel_main_idtf: [sc-аг
 sc_agent_of_calculation_min_value_of_ontology_depths <- sc_node;;
 
 .system_element_3587 => nrel_main_idtf: [Специфика обеспечения информационной безопасности интеллектуальных систем нового поколения] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_3587 <- sc_node;;
+.system_element_3587 <- sc_node_structure;;
 
 .system_element_7076 => nrel_main_idtf: [Абстрактный sc-агент поиска ответа на вопрос, требующий раскрытия в ответе теоретико-множественного отношения для основного знака] (* <- lang_ru;; => nrel_format: format_html;; *);;
 .system_element_7076 <- sc_node;;
@@ -23762,7 +23762,7 @@ nrel_library_component_decomposition <- sc_node_non_role_relation;;
 .system_element_1964 <- sc_node_non_role_relation;;
 
 .system_element_36 => nrel_main_idtf: [Предметная область и онтология знаний и баз знаний ostis-систем] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_36 <- sc_node;;
+.system_element_36 <- sc_node_structure;;
 
 action_to_form_full_semantic_neighborhood_of_designated_entity => nrel_main_idtf: [действие. сформировать полную семантическую окрестность указываемой сущности] (* <- lang_ru;; => nrel_format: format_html;; *);;
 action_to_form_full_semantic_neighborhood_of_designated_entity <- sc_node_class;;
@@ -24038,7 +24038,7 @@ ui_menu_file_for_checking_existence_of_measure_or_scale_of_parameter => nrel_mai
 ui_menu_file_for_checking_existence_of_measure_or_scale_of_parameter <- sc_node;;
 
 scn_sentence => nrel_main_idtf: [sc.n-предложение] (* <- lang_ru;; => nrel_format: format_html;; *);;
-scn_sentence <- sc_node;;
+scn_sentence <- sc_node_class;;
 
 rrel_1 => nrel_main_idtf: [1'] (* <- lang_ru;; => nrel_format: format_html;; *);;
 rrel_1 <- sc_node_role_relation;;
@@ -24263,7 +24263,7 @@ sc_agent_of_calculation_of_the_number_of_vertexes_with_diff_types_of_outgoing_co
 .system_element_1591 <- sc_node_role_relation;;
 
 .system_element_693 => nrel_main_idtf: [Предметная область и онтология логических формул, высказываний и формальных теорий] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_693 <- sc_node;;
+.system_element_693 <- sc_node_structure;;
 
 complex_technology_development_of_intelligent_systems => nrel_main_idtf: [комплексная технология разработки интеллектуальных систем] (* <- lang_ru;; => nrel_format: format_html;; *);;
 complex_technology_development_of_intelligent_systems <- sc_node;;
@@ -24518,7 +24518,7 @@ lib_ui_menu_file_for_finding_approved_proposals_by_user_with_context <- sc_node_
 .system_element_5192 <- sc_node;;
 
 .system_element_4982 => nrel_main_idtf: [Авторский коллектив Стандарта OSTIS] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_4982 <- sc_node;;
+.system_element_4982 <- sc_node_structure;;
 
 structure_which_elements_have_sys_idtf_but_dont_have_main_idtf_in_all_lang => nrel_main_idtf: [для заданной сущности указан системный, но не указаны основные идентификаторы для всех внешних языков] (* <- lang_ru;; => nrel_format: format_html;; *);;
 structure_which_elements_have_sys_idtf_but_dont_have_main_idtf_in_all_lang <- sc_node_class;;
@@ -25196,7 +25196,7 @@ ui_menu_file_for_changing_main_identifier <- sc_node;;
 .system_element_440 <- sc_node;;
 
 .system_element_494 => nrel_main_idtf: [Сегмент. Семантическая модель пользовательского интерфейса системы автоматизации проектирования решателей задач ostis-систем] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_494 <- sc_node;;
+.system_element_494 <- sc_node_structure;;
 
 cantor_set => nrel_main_idtf: [множество без кратных элементов] (* <- lang_ru;; => nrel_format: format_html;; *);;
 cantor_set <- sc_node_class;;
@@ -25691,7 +25691,7 @@ action_of_checking_key_sc_elements_of_the_semantic_neighborhoods_in_the_given_st
 action_of_checking_key_sc_elements_of_the_semantic_neighborhoods_in_the_given_structure <- sc_node_class;;
 
 .system_element_26 => nrel_main_idtf: [Предметная область и онтология структур] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_26 <- sc_node;;
+.system_element_26 <- sc_node_structure;;
 
 .system_element_2226 => nrel_main_idtf: [будущий sc-элемент] (* <- lang_ru;; => nrel_format: format_html;; *);;
 .system_element_2226 <- sc_node;;
@@ -26192,7 +26192,7 @@ exercise_2_section_subjdomain_parameters_and_values => nrel_main_idtf: [Упра
 exercise_2_section_subjdomain_parameters_and_values <- sc_node;;
 
 .system_element_4008 => nrel_main_idtf: [Предметная область и онтология понимания естественно-языковых сообщений, входящих в ostis-систему] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_4008 <- sc_node;;
+.system_element_4008 <- sc_node_structure;;
 
 exercise_1_section_subjdomain_parameters_and_values => nrel_main_idtf: [Упражнение 1. Раздел. Предметная область параметров и величин] (* <- lang_ru;; => nrel_format: format_html;; *);;
 exercise_1_section_subjdomain_parameters_and_values <- sc_node;;
@@ -27005,7 +27005,7 @@ rrel_common <- sc_node_role_relation;;
 .system_element_1707 <- sc_node;;
 
 .system_element_492 => nrel_main_idtf: [Сегмент. Семантическая модель базы знаний системы автоматизации проектирования решателей задач ostis-систем] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_492 <- sc_node;;
+.system_element_492 <- sc_node_structure;;
 
 .system_element_3443 => nrel_main_idtf: [персональный ostis-ассистент*] (* <- lang_ru;; => nrel_format: format_html;; *);;
 .system_element_3443 <- sc_node_non_role_relation;;
@@ -27167,7 +27167,7 @@ class <- sc_node_class;;
 .system_element_6435 <- sc_node;;
 
 scg_element => nrel_main_idtf: [sc.g-элемент] (* <- lang_ru;; => nrel_format: format_html;; *);;
-scg_element <- sc_node;;
+scg_element <- sc_node_class;;
 
 scp_operator_of_structure_deleting => nrel_main_idtf: [scp-оператор удаления структуры] (* <- lang_ru;; => nrel_format: format_html;; *);;
 scp_operator_of_structure_deleting <- sc_node_class;;
@@ -27320,7 +27320,7 @@ ui_menu_file_for_calculation_min_value_of_ontology_depths => nrel_main_idtf: [В
 ui_menu_file_for_calculation_min_value_of_ontology_depths <- sc_node;;
 
 .system_element_31 => nrel_main_idtf: [Предметная область и онтология чисел и числовых структур] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_31 <- sc_node;;
+.system_element_31 <- sc_node_structure;;
 
 action_to_calculate_number_of_diff_input_connections_for_vertex_to_all_ontology_vertexes => nrel_main_idtf: [действие. посчитать количество вершин с разными типами входящих связей по отношению ко всем вершинам онтологии] (* <- lang_ru;; => nrel_format: format_html;; *);;
 action_to_calculate_number_of_diff_input_connections_for_vertex_to_all_ontology_vertexes <- sc_node_class;;
@@ -27656,7 +27656,7 @@ nrel_temporal_part => nrel_main_idtf: [темпоральная часть*] (* 
 nrel_temporal_part <- sc_node_non_role_relation;;
 
 .system_element_1113 => nrel_main_idtf: [Уточнение понятия деятельности, понятия вида деятельности и понятия технологии] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_1113 <- sc_node;;
+.system_element_1113 <- sc_node_structure;;
 
 lib_component_ui_menu_file_for_calculation_number_of_concepts_and_relations => nrel_main_idtf: [Компонент библиотеки. Команда пользовательского интерфейса подсчета количества относительных и абсолютных понятий базы знаний] (* <- lang_ru;; => nrel_format: format_html;; *);;
 lib_component_ui_menu_file_for_calculation_number_of_concepts_and_relations <- sc_node_structure;;
@@ -28181,7 +28181,7 @@ lib_component_ui_menu_file_for_manager_rejection_proposals_for_editing_kb => nre
 lib_component_ui_menu_file_for_manager_rejection_proposals_for_editing_kb <- sc_node_structure;;
 
 .system_element_1067 => nrel_main_idtf: [Что такое онтология] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_1067 <- sc_node;;
+.system_element_1067 <- sc_node_structure;;
 
 action_to_verify_argumentation_of_designated_solution_correctness => nrel_main_idtf: [действие. верифицировать обоснование корректности указываемого решения] (* <- lang_ru;; => nrel_format: format_html;; *);;
 action_to_verify_argumentation_of_designated_solution_correctness <- sc_node_class;;
@@ -28454,7 +28454,7 @@ stefanuk_v_l_2007kn_sotruk_ptp <- sc_node;;
 .system_element_3134 <- sc_node;;
 
 .system_element_343 => nrel_main_idtf: [Предметная область и онтология многократно используемых компонентов решателей задач ostis-систем] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_343 <- sc_node;;
+.system_element_343 <- sc_node_structure;;
 
 abstract_sc_agent_is_not_implemented_on_the_scp_language => nrel_main_idtf: [абстрактный sc-агент, не реализуемый на Языке SCP] (* <- lang_ru;; => nrel_format: format_html;; *);;
 abstract_sc_agent_is_not_implemented_on_the_scp_language <- sc_node_class;;
@@ -28724,7 +28724,7 @@ history_and_current_processes_of_computer_system_operation <- sc_node_class;;
 .system_element_1097 <- sc_node_non_role_relation;;
 
 .system_element_3828 => nrel_main_idtf: [Предметная область и онтология задач аудиоинтерфейса ostis-систем] (* <- lang_ru;; => nrel_format: format_html;; *);;
-.system_element_3828 <- sc_node;;
+.system_element_3828 <- sc_node_structure;;
 
 .system_element_299 => nrel_main_idtf: [ostis-платформа] (* <- lang_ru;; => nrel_format: format_html;; *);;
 .system_element_299 <- sc_node_class;;

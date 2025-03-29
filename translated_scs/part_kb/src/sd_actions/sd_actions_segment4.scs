@@ -37,7 +37,11 @@
 	=> nrel_subdividing: {
 		.system_element_1154
 		(*
-			=> nrel_explanation: [<p><i>субъект'</i> --- инициатор акции.</p>];;
+			=> nrel_explanation: [<p><i>субъект'</i> --- инициатор акции.</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
 			=> nrel_subdividing: {
 				.system_element_1426;
 				.system_element_1427;
@@ -54,7 +58,11 @@
 		*);
 		.system_element_1430
 		(*
-			=> nrel_explanation: [<p><i>инструмент'</i> --- исполнитель акции.</p>];;
+			=> nrel_explanation: [<p><i>инструмент'</i> --- исполнитель акции.</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
 			=> nrel_subdividing: {
 				.system_element_1431
 				(*
@@ -92,7 +100,11 @@
 		*);
 		.system_element_1153
 		(*
-			=> nrel_explanation: [<p><i>медиатор'</i> --- посредник акции.</p>];;
+			=> nrel_explanation: [<p><i>медиатор'</i> --- посредник акции.</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
 			=> nrel_subdividing: {
 				.system_element_1435;
 				.system_element_1436
@@ -195,7 +207,11 @@
 		*);
 		.system_element_1448
 		(*
-			=> nrel_explanation: [<p><i>объект'</i> --- реципиент акции.</p>];;
+			=> nrel_explanation: [<p><i>объект'</i> --- реципиент акции.</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
 			=> nrel_subdividing: {
 				.system_element_1449
 				(*
@@ -233,7 +249,11 @@
 		*);
 		.system_element_1453
 		(*
-			=> nrel_explanation: [<p><i>продукт'</i> --- результат воздействия субъекта на объект.</p>];;
+			=> nrel_explanation: [<p><i>продукт'</i> --- результат воздействия субъекта на объект.</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
 			=> nrel_subdividing: {
 				.system_element_1454
 				(*
@@ -658,7 +678,11 @@
 	*);
 	<=> .system_element_265: .system_element_490
 	(*
-		=> nrel_idtf: [<p>спецификация планируемого результата*</p>];;
+		=> nrel_idtf: [<p>спецификация планируемого результата*</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
 		=> nrel_note: [<p>Следует также отмечать то, что является непосредственно результатом (продуктом) некоторого действия, и то, что является предварительной (исходной, стартовой) спецификацией этого результата. Далеко не всегда результатом действия является именно то, что планировалось (было целью) изначально.</p>]
 		(*
 			<- lang_ru;;

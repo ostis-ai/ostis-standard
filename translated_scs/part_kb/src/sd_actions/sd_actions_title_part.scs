@@ -35,12 +35,20 @@
 -> .system_element_1114: 
 	impact
 	(*
-		=> nrel_idtf: [<p><i>процесс</i> воздействия одних <i>сущностей</i> на другие</p>];;
+		=> nrel_idtf: [<p><i>процесс</i> воздействия одних <i>сущностей</i> на другие</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
 		<= nrel_inclusion: process;;
 	*);
 	action
 	(*
-		=> nrel_idtf: [<p><i>процесс</i>, "осознанно" и целенаправленно выполняемый (управляемый) некоторой <i>кибернетической системой</i></p>];;
+		=> nrel_idtf: [<p><i>процесс</i>, "осознанно" и целенаправленно выполняемый (управляемый) некоторой <i>кибернетической системой</i></p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
 		<= nrel_inclusion: impact;;
 		<= nrel_inclusion: process;;
 	*);
@@ -241,7 +249,11 @@
 -> .system_element_1168: 
 	task
 	(*
-		=> nrel_idtf: [<p>формулировка задачи</p>];;
+		=> nrel_idtf: [<p>формулировка задачи</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
 		=> nrel_idtf: [<p>спецификация действия</p>]
 		(*
 			<- lang_ru;;
@@ -280,7 +292,11 @@
 	.system_element_1170;
 	.system_element_1171
 	(*
-		=> nrel_idtf: [<p>декларативный план сложного действия</p>];;
+		=> nrel_idtf: [<p>декларативный план сложного действия</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
 		=> nrel_idtf: [<p>иерархическая система подзадач заданной сложной задачи</p>]
 		(*
 			<- lang_ru;;
@@ -317,7 +333,11 @@
 	effector_action_ostis_system;
 	sc_agent
 	(*
-		=> nrel_idtf: [<p>внутренний субъект ostis-системы</p>];;
+		=> nrel_idtf: [<p>внутренний субъект ostis-системы</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
 		=> nrel_idtf: [<p>субъект, реализующий действия, выполняемые в памяти ostis-системы</p>]
 		(*
 			<- lang_ru;;
@@ -336,7 +356,11 @@
 	*);
 	computer_system
 	(*
-		=> nrel_idtf: [<p>искусственная кибернетическая система</p>];;
+		=> nrel_idtf: [<p>искусственная кибернетическая система</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
 		<= nrel_inclusion: .system_element_1181;;
 	*);
 	.system_element_1182
@@ -351,7 +375,11 @@
 	ostis_system;
 	.system_element_748
 	(*
-		=> nrel_idtf: [<p>быть спецификацией (описанием, семантической окрестностью заданной сущности*)</p>];;
+		=> nrel_idtf: [<p>быть спецификацией (описанием, семантической окрестностью заданной сущности*)</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
 		=> nrel_idtf: [<p>семантическая окрестность*</p>]
 		(*
 			<- lang_ru;;
@@ -397,7 +425,11 @@
 -> <
 	.system_element_1188
 	(*
-		=> nrel_idtf: [<p>специфицируемая сущность</p>];;
+		=> nrel_idtf: [<p>специфицируемая сущность</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
 		=> nrel_idtf: [<p>сущность, использование которой требует вполне определенной ее спецификации</p>]
 		(*
 			<- lang_ru;;
@@ -412,7 +444,11 @@
 	*);
 	.system_element_1189
 	(*
-		=> nrel_idtf: [<p>спецификация</p>];;
+		=> nrel_idtf: [<p>спецификация</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
 		=> nrel_inclusion: task
 		(*
 			=> nrel_inclusion: declarative_formulation_of_task
@@ -434,7 +470,11 @@
 		*);;
 		=> nrel_inclusion: .system_element_1190
 		(*
-			=> nrel_idtf: [<p>план</p>];;
+			=> nrel_idtf: [<p>план</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
 			=> nrel_idtf: [<p>план выполнения действия</p>]
 			(*
 				<- lang_ru;;
@@ -502,10 +542,18 @@
 	*);
 	.system_element_1198
 	(*
-		=> nrel_summary: [<p>Ikeda1998</p>];;
+		=> nrel_summary: [<p>Ikeda1998</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
 		=> .system_element_418: .system_element_1199
 		(*
-			=> nrel_idtf: [<p>задачная онтология</p>];;
+			=> nrel_idtf: [<p>задачная онтология</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
 			=> nrel_idtf: [<p>онтология классов задач, решаемых в данной предметной области</p>]
 			(*
 				<- lang_ru;;

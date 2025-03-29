@@ -5,7 +5,9 @@
 
 	subject_domain_of_semantic_neighborhoods
 	<- subject_domain;
-	semantic_neighborhood;
+	-> .system_element_330: 
+		semantic_neighborhood
+	;
 	-> .system_element_6: 
 		semantic_neighborhood_by_incident_connector;
 		semantic_neighborhood_by_outgoing_arcs;

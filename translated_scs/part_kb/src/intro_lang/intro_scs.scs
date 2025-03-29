@@ -86,7 +86,11 @@
 	*);
 	=> nrel_inclusion: scs_divider_connector
 	(*
-		=> nrel_idtf: [<p>неоднозначное sc.s-изображение <i>sc-коннектора</i>, являющееся также одновременно одним из видов <i>sc.s-разделителей</i></p>];;
+		=> nrel_idtf: [<p>неоднозначное sc.s-изображение <i>sc-коннектора</i>, являющееся также одновременно одним из видов <i>sc.s-разделителей</i></p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
 		<= nrel_inclusion: scs_divider;;
 	*);
 	=> nrel_inclusion: .system_element_2599
@@ -211,7 +215,11 @@
 		(*
 			=> nrel_inclusion: .system_element_2617
 			(*
-				=> nrel_idtf: [<p>Расширенный алфавит sc.s-коннекторов</p>];;
+				=> nrel_idtf: [<p>Расширенный алфавит sc.s-коннекторов</p>]
+				(*
+					<- lang_ru;;
+					=> nrel_format: format_html;;
+				*);;
 				-> {
 					![∈]!
 					(*
@@ -296,7 +304,11 @@
 				};;
 				=> nrel_inclusion: .system_element_2618
 				(*
-					=> nrel_idtf: [<p>Базовый алфавит sc.s-коннекторов</p>];;
+					=> nrel_idtf: [<p>Базовый алфавит sc.s-коннекторов</p>]
+					(*
+						<- lang_ru;;
+						=> nrel_format: format_html;;
+					*);;
 					-> {
 						![~]!
 						(*
@@ -449,7 +461,11 @@
 				=> nrel_inclusion: .system_element_2620;;
 				=> nrel_inclusion: .system_element_2612
 				(*
-					<=> nrel_semantic_equivalence: ![:]!;;
+					<=> nrel_semantic_equivalence: ![:]!
+					(*
+						<- lang_ru;;
+						=> nrel_format: format_html;;
+					*);;
 					=> nrel_note: [<p>Разделяет sc-идентификатор бинарного отношения и второй компонент одной из связок этого отношения в случае, если указанное бинарное отношение и его связка связаны <u>константной</u> sc-дугой принадлежности.</p>]
 					(*
 						<- lang_ru;;
@@ -458,7 +474,11 @@
 				*);;
 				=> nrel_inclusion: .system_element_2621
 				(*
-					<=> nrel_semantic_equivalence: ![::]!;;
+					<=> nrel_semantic_equivalence: ![::]!
+					(*
+						<- lang_ru;;
+						=> nrel_format: format_html;;
+					*);;
 					=> nrel_note: [<p>Разделяет sc-идентификатор бинарного отношения и второй компонент одной из связок этого отношения в случае, если указанное бинарное отношение и его связка связаны <u>переменной</u> sc-дугой принадлежности.</p>]
 					(*
 						<- lang_ru;;
@@ -468,7 +488,11 @@
 			*);
 			.system_element_2622
 			(*
-				<=> nrel_semantic_equivalence: ![;;]!;;
+				<=> nrel_semantic_equivalence: ![;;]!
+				(*
+					<- lang_ru;;
+					=> nrel_format: format_html;;
+				*);;
 				=> nrel_idtf: [<p>двойная точка с запятой</p>]
 				(*
 					<- lang_ru;;
@@ -480,7 +504,11 @@
 		.system_element_1014
 		=> nrel_inclusion: .system_element_2623
 		(*
-			<=> [<p>(!\[ (* \]! ⋃ !\[ *) \]!)</p>];;
+			<=> [<p>(!\[ (* \]! ⋃ !\[ *) \]!)</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
 			=> nrel_explanation: [<p>Круглые скобки со звездочкой ограничивают присоединенные sc.s-предложения, которые, в свою очередь, могут иметь в своем составе другие присоединенные sc.s-предложения.</p>]
 			(*
 				<- lang_ru;;
@@ -513,7 +541,11 @@
 		=> nrel_subdividing: {
 			.system_element_2628
 			(*
-				=> nrel_idtf: [<p>знак инцидентности sc-коннектора, sc-идентификатор которого находится справа</p>];;
+				=> nrel_idtf: [<p>знак инцидентности sc-коннектора, sc-идентификатор которого находится справа</p>]
+				(*
+					<- lang_ru;;
+					=> nrel_format: format_html;;
+				*);;
 				<=> nrel_semantic_equivalence: ![|-]!
 				(*
 					<- lang_ru;;
@@ -522,7 +554,11 @@
 			*);
 			.system_element_2629
 			(*
-				=> nrel_idtf: [<p>знак инцидентности sc-коннектора, sc-идентификатор которого находится слева</p>];;
+				=> nrel_idtf: [<p>знак инцидентности sc-коннектора, sc-идентификатор которого находится слева</p>]
+				(*
+					<- lang_ru;;
+					=> nrel_format: format_html;;
+				*);;
 				<=> nrel_semantic_equivalence: ![-|]!
 				(*
 					<- lang_ru;;
@@ -531,7 +567,11 @@
 			*);
 			.system_element_2630
 			(*
-				=> nrel_idtf: [<p>знак инцидентности sc-дуги, sc-идентификатор который находится справа</p>];;
+				=> nrel_idtf: [<p>знак инцидентности sc-дуги, sc-идентификатор который находится справа</p>]
+				(*
+					<- lang_ru;;
+					=> nrel_format: format_html;;
+				*);;
 				<=> nrel_semantic_equivalence: ![|<]!
 				(*
 					<- lang_ru;;
@@ -540,7 +580,11 @@
 			*);
 			.system_element_2631
 			(*
-				=> nrel_idtf: [<p>знак инцидентности sc-дуги, sc-идентификатор который находится слева</p>];;
+				=> nrel_idtf: [<p>знак инцидентности sc-дуги, sc-идентификатор который находится слева</p>]
+				(*
+					<- lang_ru;;
+					=> nrel_format: format_html;;
+				*);;
 				<=> nrel_semantic_equivalence: ![>|]!
 				(*
 					<- lang_ru;;
@@ -615,7 +659,11 @@
 		.system_element_2627
 		=> .system_element_2635: .system_element_2636
 		(*
-			=> .system_element_203: "file://Contents/part_kb/src/images/scs/sc.s-connectors/scs_non_membership_connectors_1.png";;
+			=> .system_element_203: "file://Contents/part_kb/src/images/scs/sc.s-connectors/scs_non_membership_connectors_1.png"
+			(*
+				<- concept_file;;
+				=> nrel_format: format_png;;
+			*);;
 			=> .system_element_203: "file://Contents/part_kb/src/images/scs/sc.s-connectors/scs_non_membership_connectors_2.png"
 			(*
 				<- concept_file;;
@@ -641,7 +689,11 @@
 		<= nrel_inclusion: .system_element_811;
 		=> nrel_inclusion: scs_sentence_simple
 		(*
-			=> nrel_idtf: [<p>минимальное sc.s-предложение</p>];;
+			=> nrel_idtf: [<p>минимальное sc.s-предложение</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
 			=> nrel_explanation: [<p><i>sc.s-предложение</i>, (1) <u>состоящее</u> или из двух <i>sc-идентификаторов</i>, соединенных между собой <i><b>sc.s-коннектором</b></i>, или из трех <i>sc-идентификаторов</i>, разделенных <i>sc.s-разделителями, изображающими связь инцидентности sc-элементов</i>, и (2) завершающееся <i>двойной точкой с запятой</i></p>]
 			(*
 				<- lang_ru;;
@@ -949,10 +1001,18 @@
 			*);
 			=> nrel_inclusion: .system_element_2650
 			(*
-				=> nrel_idtf: [<p>конкатенция всех <i>sc.s-предложений</i>, входящих в состав <i>sc.s-выражения структуры</i></p>];;
+				=> nrel_idtf: [<p>конкатенция всех <i>sc.s-предложений</i>, входящих в состав <i>sc.s-выражения структуры</i></p>]
+				(*
+					<- lang_ru;;
+					=> nrel_format: format_html;;
+				*);;
 				=> nrel_inclusion: .system_element_2651
 				(*
-					=> nrel_idtf: [<p>часть цепочки <i>sc.s-предложений</i>, входящих в состав максимального sc.s-текста, включенного в структуру</p>];;
+					=> nrel_idtf: [<p>часть цепочки <i>sc.s-предложений</i>, входящих в состав максимального sc.s-текста, включенного в структуру</p>]
+					(*
+						<- lang_ru;;
+						=> nrel_format: format_html;;
+					*);;
 					=> nrel_inclusion: .system_element_2652;;
 				*);;
 			*);
@@ -1171,7 +1231,11 @@
 				scs_divider_connector;
 				.system_element_2648
 				(*
-					=> nrel_idtf: [<p>модификатор sc.s-коннектора*</p>];;
+					=> nrel_idtf: [<p>модификатор sc.s-коннектора*</p>]
+					(*
+						<- lang_ru;;
+						=> nrel_format: format_html;;
+					*);;
 					<- relation;;
 				*)
 			};
