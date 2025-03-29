@@ -73,7 +73,11 @@
 		<=> .system_element_72: {
 			process
 			(*
-				=> nrel_idtf: [<p>динамическая структура</p>];;
+				=> nrel_idtf: [<p>динамическая структура</p>]
+				(*
+					<- lang_ru;;
+					=> nrel_format: format_html;;
+				*);;
 				=> nrel_idtf: [<p>структура, состав которой меняется с течением времени</p>]
 				(*
 					<- lang_ru;;
@@ -87,7 +91,11 @@
 			*);
 			.system_element_1755
 			(*
-				=> nrel_idtf: [<p>стационарная структура</p>];;
+				=> nrel_idtf: [<p>стационарная структура</p>]
+				(*
+					<- lang_ru;;
+					=> nrel_format: format_html;;
+				*);;
 				=> nrel_idtf: [<p>структура, не изменяющаяся во времени</p>]
 				(*
 					<- lang_ru;;

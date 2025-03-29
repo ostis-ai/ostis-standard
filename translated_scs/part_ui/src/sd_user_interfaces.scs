@@ -733,10 +733,18 @@
 	*);
 	=> nrel_inclusion: .system_element_4194
 	(*
-		=> nrel_idtf: [<p>presentation user interface component</p>];;
+		=> nrel_idtf: [<p>presentation user interface component</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
 		=> nrel_inclusion: .system_element_4135
 		(*
-			=> nrel_idtf: [<p>output</p>];;
+			=> nrel_idtf: [<p>output</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
 			=> nrel_inclusion: .system_element_4195
 			(*
 				=> nrel_idtf: [<p>image-output</p>]
@@ -747,7 +755,11 @@
 			*);;
 			=> nrel_inclusion: .system_element_4196
 			(*
-				=> nrel_idtf: [<p>graphical-output</p>];;
+				=> nrel_idtf: [<p>graphical-output</p>]
+				(*
+					<- lang_ru;;
+					=> nrel_format: format_html;;
+				*);;
 				=> nrel_inclusion: .system_element_4197
 				(*
 					=> nrel_idtf: [<p>chart</p>]
@@ -791,7 +803,11 @@
 			*);;
 			=> nrel_inclusion: .system_element_4202
 			(*
-				=> nrel_idtf: [<p>text-output</p>];;
+				=> nrel_idtf: [<p>text-output</p>]
+				(*
+					<- lang_ru;;
+					=> nrel_format: format_html;;
+				*);;
 				=> nrel_inclusion: .system_element_4203
 				(*
 					=> nrel_idtf: [<p>headline</p>]
@@ -820,7 +836,11 @@
 		*);;
 		=> nrel_inclusion: .system_element_4138
 		(*
-			=> nrel_idtf: [<p>decorative user interface component</p>];;
+			=> nrel_idtf: [<p>decorative user interface component</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
 			=> nrel_inclusion: .system_element_1017
 			(*
 				=> nrel_idtf: [<p>separator</p>]
@@ -840,7 +860,11 @@
 		*);;
 		=> nrel_inclusion: .system_element_218
 		(*
-			=> nrel_idtf: [<p>container</p>];;
+			=> nrel_idtf: [<p>container</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
 			=> nrel_inclusion: .system_element_4139
 			(*
 				=> nrel_idtf: [<p>menu</p>]
@@ -939,7 +963,11 @@
 			*);;
 			=> nrel_inclusion: .system_element_4143
 			(*
-				=> nrel_idtf: [<p>window</p>];;
+				=> nrel_idtf: [<p>window</p>]
+				(*
+					<- lang_ru;;
+					=> nrel_format: format_html;;
+				*);;
 				=> nrel_inclusion: .system_element_4144
 				(*
 					=> nrel_idtf: [<p>modal-window</p>]
@@ -961,16 +989,32 @@
 	*);
 	=> nrel_inclusion: .system_element_4146
 	(*
-		=> nrel_idtf: [<p>interactive user interface component</p>];;
+		=> nrel_idtf: [<p>interactive user interface component</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
 		=> nrel_inclusion: .system_element_4213
 		(*
-			=> nrel_idtf: [<p>data-input-component</p>];;
+			=> nrel_idtf: [<p>data-input-component</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
 			=> nrel_inclusion: .system_element_4214
 			(*
-				=> nrel_idtf: [<p>data-input-component-with-direct-feedback</p>];;
+				=> nrel_idtf: [<p>data-input-component-with-direct-feedback</p>]
+				(*
+					<- lang_ru;;
+					=> nrel_format: format_html;;
+				*);;
 				=> nrel_inclusion: .system_element_4215
 				(*
-					=> nrel_idtf: [<p>text-input-component-with-direct-feedback</p>];;
+					=> nrel_idtf: [<p>text-input-component-with-direct-feedback</p>]
+					(*
+						<- lang_ru;;
+						=> nrel_format: format_html;;
+					*);;
 					=> nrel_inclusion: .system_element_4216
 					(*
 						=> nrel_idtf: [<p>multi-line-text-field</p>]
@@ -1006,7 +1050,11 @@
 				*);;
 				=> nrel_inclusion: .system_element_4220
 				(*
-					=> nrel_idtf: [<p>selection-component</p>];;
+					=> nrel_idtf: [<p>selection-component</p>]
+					(*
+						<- lang_ru;;
+						=> nrel_format: format_html;;
+					*);;
 					=> nrel_inclusion: .system_element_4221
 					(*
 						=> nrel_idtf: [<p>selection-component-multiple-values</p>]
@@ -1026,7 +1074,11 @@
 				*);;
 				=> nrel_inclusion: .system_element_4223
 				(*
-					=> nrel_idtf: [<p>selectable-data-representation</p>];;
+					=> nrel_idtf: [<p>selectable-data-representation</p>]
+					(*
+						<- lang_ru;;
+						=> nrel_format: format_html;;
+					*);;
 					=> nrel_inclusion: .system_element_4147
 					(*
 						=> nrel_idtf: [<p>check-box</p>]
@@ -1063,7 +1115,11 @@
 			*);;
 			=> nrel_inclusion: .system_element_4225
 			(*
-				=> nrel_idtf: [<p>data-input-component-without-direct-feedback</p>];;
+				=> nrel_idtf: [<p>data-input-component-without-direct-feedback</p>]
+				(*
+					<- lang_ru;;
+					=> nrel_format: format_html;;
+				*);;
 				=> nrel_inclusion: .system_element_4226
 				(*
 					=> nrel_idtf: [<p>spin-button</p>]
@@ -1092,7 +1148,11 @@
 		*);;
 		=> nrel_inclusion: .system_element_4229
 		(*
-			=> nrel_idtf: [<p>presentation-manipulation-component</p>];;
+			=> nrel_idtf: [<p>presentation-manipulation-component</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
 			=> nrel_inclusion: .system_element_4230
 			(*
 				=> nrel_idtf: [<p>activating-component</p>]
@@ -1103,7 +1163,11 @@
 			*);;
 			=> nrel_inclusion: .system_element_4231
 			(*
-				=> nrel_idtf: [<p>continuous-manipulation-component</p>];;
+				=> nrel_idtf: [<p>continuous-manipulation-component</p>]
+				(*
+					<- lang_ru;;
+					=> nrel_format: format_html;;
+				*);;
 				=> nrel_inclusion: .system_element_4151
 				(*
 					=> nrel_idtf: [<p>scrollbar</p>]
@@ -1124,10 +1188,18 @@
 		*);;
 		=> nrel_inclusion: .system_element_4233
 		(*
-			=> nrel_idtf: [<p>operation-trigger-component</p>];;
+			=> nrel_idtf: [<p>operation-trigger-component</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
 			=> nrel_inclusion: .system_element_4234
 			(*
-				=> nrel_idtf: [<p>command-selection-component</p>];;
+				=> nrel_idtf: [<p>command-selection-component</p>]
+				(*
+					<- lang_ru;;
+					=> nrel_format: format_html;;
+				*);;
 				=> nrel_inclusion: .system_element_4152
 				(*
 					=> nrel_idtf: [<p>button</p>]

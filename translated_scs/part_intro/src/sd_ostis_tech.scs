@@ -380,7 +380,11 @@
 	=> nrel_subdividing: {
 		.system_element_5282
 		(*
-			=> nrel_idtf: [<p>самостоятельная <i>ostis-система</i></p>];;
+			=> nrel_idtf: [<p>самостоятельная <i>ostis-система</i></p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
 			=> nrel_idtf: [<p>интероперабельная ostis-система</p>]
 			(*
 				<- lang_ru;;
@@ -404,7 +408,11 @@
 	.system_element_1182
 	=> nrel_inclusion: .system_element_5283
 	(*
-		=> nrel_idtf: [<p>интеллектуальная компьютерная система нового поколения</p>];;
+		=> nrel_idtf: [<p>интеллектуальная компьютерная система нового поколения</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
 		=> nrel_inclusion: .system_element_5282
 		(*
 			=> nrel_idtf: [<p>предлагаемый нами вариант построения интероперабельных интеллектуальных компьютерных систем</p>]

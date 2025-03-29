@@ -40,7 +40,11 @@
 	*);
 	=> .system_element_785: .system_element_6742
 	(*
-		<=> nrel_semantic_equivalence: "file://images/sd_sc_product_program_lang_denot_sem/ops5_production_rule_example.png";;
+		<=> nrel_semantic_equivalence: "file://images/sd_sc_product_program_lang_denot_sem/ops5_production_rule_example.png"
+		(*
+			<- concept_file;;
+			=> nrel_format: format_png;;
+		*);;
 		=> nrel_note: [<p>Данные в рабочей памяти структурированы и переменные появляются в угловых скобках. Название структуры данных, такое как "goal" (цель) и "physical-object" (физический объект), является первым буквальным в условиях; поля структуры начинаются с "". На негативное состояние указывает "--".</p>]
 		(*
 			<- lang_ru;;

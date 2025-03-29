@@ -98,12 +98,20 @@
 	=> nrel_subdividing: {
 		.system_element_4702
 		(*
-			=> nrel_idtf: [<p>sc-компьютер, обеспечивающий интепретацию scp-программ</p>];;
+			=> nrel_idtf: [<p>sc-компьютер, обеспечивающий интепретацию scp-программ</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
 			=> .system_element_4703: .system_element_4308;;
 		*);
 		.system_element_4704
 		(*
-			=> nrel_idtf: [<p>sc-компьютер, обеспечивающий интепретацию scp-программ</p>];;
+			=> nrel_idtf: [<p>sc-компьютер, обеспечивающий интепретацию scp-программ</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
 			=> .system_element_4703: .system_element_4705;;
 		*)
 	};;

@@ -53,10 +53,18 @@
 	*);
 	=> nrel_inclusion: .system_element_4256
 	(*
-		=> nrel_idtf: [<p>mouse-action</p>];;
+		=> nrel_idtf: [<p>mouse-action</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
 		=> nrel_inclusion: .system_element_4257
 		(*
-			=> nrel_idtf: [<p>mouse-scroll</p>];;
+			=> nrel_idtf: [<p>mouse-scroll</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
 			=> nrel_inclusion: .system_element_4258
 			(*
 				=> nrel_idtf: [<p>mouse-scroll-up</p>]
@@ -92,7 +100,11 @@
 		*);;
 		=> nrel_inclusion: .system_element_4262
 		(*
-			=> nrel_idtf: [<p>mouse-click</p>];;
+			=> nrel_idtf: [<p>mouse-click</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
 			=> nrel_inclusion: .system_element_4263
 			(*
 				=> nrel_idtf: [<p>mouse-single-click</p>]
@@ -145,7 +157,11 @@
 	*);
 	=> nrel_inclusion: .system_element_4269
 	(*
-		=> nrel_idtf: [<p>keyboard-action</p>];;
+		=> nrel_idtf: [<p>keyboard-action</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
 		=> nrel_inclusion: .system_element_4270
 		(*
 			=> nrel_idtf: [<p>press-function-key</p>]
@@ -173,10 +189,18 @@
 	*);
 	=> nrel_inclusion: .system_element_4273
 	(*
-		=> nrel_idtf: [<p>touch-action</p>];;
+		=> nrel_idtf: [<p>touch-action</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
 		=> nrel_inclusion: .system_element_4274
 		(*
-			=> nrel_idtf: [<p>touch-click</p>];;
+			=> nrel_idtf: [<p>touch-click</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
 			=> nrel_inclusion: .system_element_4275
 			(*
 				=> nrel_idtf: [<p>touch-single-click</p>]
@@ -196,7 +220,11 @@
 		*);;
 		=> nrel_inclusion: .system_element_4277
 		(*
-			=> nrel_idtf: [<p>touch-gesture</p>];;
+			=> nrel_idtf: [<p>touch-gesture</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
 			=> nrel_inclusion: .system_element_4278
 			(*
 				=> nrel_idtf: [<p>one-fingure-gesture</p>]
@@ -233,7 +261,11 @@
 	*);
 	=> nrel_inclusion: .system_element_4282
 	(*
-		=> nrel_idtf: [<p>pen-base-action</p>];;
+		=> nrel_idtf: [<p>pen-base-action</p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
 		=> nrel_inclusion: .system_element_4283
 		(*
 			=> nrel_idtf: [<p>touch-function-key</p>]

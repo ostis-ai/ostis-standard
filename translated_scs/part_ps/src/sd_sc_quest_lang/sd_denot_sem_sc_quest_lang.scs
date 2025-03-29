@@ -100,7 +100,11 @@
 	=> nrel_subdividing: {
 		.system_element_6987
 		(*
-			=> nrel_idtf: [<p>ключевой sc-элемент в рамках заданного вопроса</p>];;
+			=> nrel_idtf: [<p>ключевой sc-элемент в рамках заданного вопроса</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
 			=> nrel_idtf: [<p><i>знак</i>, относительно которого задан вопрос</p>]
 			(*
 				<- lang_ru;;
@@ -201,7 +205,11 @@
 		*);
 		.system_element_7025
 		(*
-			=> nrel_explanation: [<p>Такому классу <i>вопросов</i> соответствуют классы <i>ответов</i>, в которых <i>главный знак</i> раскрывается через <i>составное отношение</i>.</p>];;
+			=> nrel_explanation: [<p>Такому классу <i>вопросов</i> соответствуют классы <i>ответов</i>, в которых <i>главный знак</i> раскрывается через <i>составное отношение</i>.</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
 			-> .system_element_203: 
 				.system_element_7026
 			;;
@@ -224,11 +232,19 @@
 	=> nrel_decomposition: {
 		.system_element_7031
 		(*
-			=> nrel_idtf: [<p>класс вопросов, в ответах на которые <i>основной знак</i> <i>S</i> раскрывается через его <i>отношение состава</i> в связке с его составляющими знаками <i>P</i> и <i>Q</i></p>];;
+			=> nrel_idtf: [<p>класс вопросов, в ответах на которые <i>основной знак</i> <i>S</i> раскрывается через его <i>отношение состава</i> в связке с его составляющими знаками <i>P</i> и <i>Q</i></p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
 			-> .system_element_203: 
 				.system_element_7032
 				(*
-					<=> "file://question_about_vitebsk_regions.png";;
+					<=> "file://question_about_vitebsk_regions.png"
+					(*
+						<- concept_file;;
+						=> nrel_format: format_png;;
+					*);;
 					=> .system_element_7034: .system_element_7033
 					(*
 						<=> "file://question_about_vitebsk_regions_answer.png"
@@ -242,22 +258,38 @@
 		*);
 		.system_element_7035
 		(*
-			=> nrel_idtf: [<p>класс вопросов, в ответах на которые <i>основной знак</i> <i>S</i> раскрывается через его <i>теоретико-множественное отношение</i> в связке с другим знаком <i>P</i>, содержащего <i>S</i> как часть</p>];;
+			=> nrel_idtf: [<p>класс вопросов, в ответах на которые <i>основной знак</i> <i>S</i> раскрывается через его <i>теоретико-множественное отношение</i> в связке с другим знаком <i>P</i>, содержащего <i>S</i> как часть</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
 			-> .system_element_203: 
 				.system_element_7036
 				(*
-					<=> "file://question_about_smolevichi_inclusion.png";;
+					<=> "file://question_about_smolevichi_inclusion.png"
+					(*
+						<- concept_file;;
+						=> nrel_format: format_png;;
+					*);;
 					=> .system_element_7034: .system_element_7037;;
 				*)
 			;;
 		*);
 		.system_element_7038
 		(*
-			=> nrel_idtf: [<p>класс вопросов, в ответах на которые <i>основной знак</i> <i>S</i> раскрывается через его <i>отношение состояния</i></p>];;
+			=> nrel_idtf: [<p>класс вопросов, в ответах на которые <i>основной знак</i> <i>S</i> раскрывается через его <i>отношение состояния</i></p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
 			-> .system_element_203: 
 				.system_element_7039
 				(*
-					<=> "file://question_about_minsk_district_town_with_mag_act.png";;
+					<=> "file://question_about_minsk_district_town_with_mag_act.png"
+					(*
+						<- concept_file;;
+						=> nrel_format: format_png;;
+					*);;
 					=> .system_element_7034: .system_element_7040;;
 				*)
 			;;
@@ -272,11 +304,19 @@
 		*);
 		.system_element_7042
 		(*
-			=> nrel_idtf: [<p>класс вопросов, в ответах на которые <i>основной знак</i> <i>S</i> раскрывается через его <i>темпоральное отношение</i> в связке с другим знаком <i>P</i> по некоторой временной шкале</p>];;
+			=> nrel_idtf: [<p>класс вопросов, в ответах на которые <i>основной знак</i> <i>S</i> раскрывается через его <i>темпоральное отношение</i> в связке с другим знаком <i>P</i> по некоторой временной шкале</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
 			-> .system_element_203: 
 				.system_element_7043
 				(*
-					<=> "file://question_about_events.png";;
+					<=> "file://question_about_events.png"
+					(*
+						<- concept_file;;
+						=> nrel_format: format_png;;
+					*);;
 					=> .system_element_7034: .system_element_7044
 					(*
 						<=> "file://question_about_event_answer.png"
@@ -298,22 +338,38 @@
 		*);
 		.system_element_7046
 		(*
-			=> nrel_idtf: [<p>класс вопросов, в ответах на которые раскрывается <i>количественное отношение</i> <i>основного знака</i></p>];;
+			=> nrel_idtf: [<p>класс вопросов, в ответах на которые раскрывается <i>количественное отношение</i> <i>основного знака</i></p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
 			-> .system_element_203: 
 				.system_element_7047
 				(*
-					<=> "file://question_about_mountain_length.png";;
+					<=> "file://question_about_mountain_length.png"
+					(*
+						<- concept_file;;
+						=> nrel_format: format_png;;
+					*);;
 					=> .system_element_7034: .system_element_7048;;
 				*)
 			;;
 		*);
 		.system_element_7049
 		(*
-			=> nrel_idtf: [<p>класс вопросов, в ответах на которые раскрывается <i>качественное отношение</i> <i>основного знака</i> <i>S</i> в связке с другим знаком <i>P</i></p>];;
+			=> nrel_idtf: [<p>класс вопросов, в ответах на которые раскрывается <i>качественное отношение</i> <i>основного знака</i> <i>S</i> в связке с другим знаком <i>P</i></p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
 			-> .system_element_203: 
 				.system_element_7050
 				(*
-					<=> "file://question_about_district_squares.png";;
+					<=> "file://question_about_district_squares.png"
+					(*
+						<- concept_file;;
+						=> nrel_format: format_png;;
+					*);;
 					=> .system_element_7034: .system_element_7051
 					(*
 						<=> "file://question_about_district_squares_answer.png"
@@ -331,7 +387,11 @@
 	=> nrel_decomposition: {
 		.system_element_7052
 		(*
-			=> nrel_idtf: [<p>класс вопросов, в ответах на которые раскрываются произвольные комбинации <i>базового отношения</i> и/или <i>составного отношения</i> <i>основного знака</i> <i>S</i> в связке с другими знаками</p>];;
+			=> nrel_idtf: [<p>класс вопросов, в ответах на которые раскрываются произвольные комбинации <i>базового отношения</i> и/или <i>составного отношения</i> <i>основного знака</i> <i>S</i> в связке с другими знаками</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
 			-> .system_element_203: 
 				.system_element_7053
 				(*
@@ -341,7 +401,11 @@
 		*);
 		.system_element_7055
 		(*
-			=> nrel_idtf: [<p>класс ответов, в которых <i>основной знак</i> <i>S</i> раскрывается через <i>первостепенное понятие</i> и его <i>описание</i></p>];;
+			=> nrel_idtf: [<p>класс ответов, в которых <i>основной знак</i> <i>S</i> раскрывается через <i>первостепенное понятие</i> и его <i>описание</i></p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
 			-> .system_element_203: 
 				.system_element_7056
 				(*
@@ -351,7 +415,11 @@
 		*);
 		.system_element_7059
 		(*
-			=> nrel_idtf: [<p>класс вопросов, в ответах на которые раскрывается условие существования некоторых отношений <i>основного знака</i> <i>S</i> в связке с другими знаками</p>];;
+			=> nrel_idtf: [<p>класс вопросов, в ответах на которые раскрывается условие существования некоторых отношений <i>основного знака</i> <i>S</i> в связке с другими знаками</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
 			-> .system_element_203: 
 				.system_element_7060
 				(*
@@ -361,7 +429,11 @@
 		*);
 		.system_element_7062
 		(*
-			=> nrel_idtf: [<p>класс вопросов, в ответах на которые раскрывается следствие от существования некоторых отношений <i>основного знака</i> <i>S</i> в связке с другими знаками</p>];;
+			=> nrel_idtf: [<p>класс вопросов, в ответах на которые раскрывается следствие от существования некоторых отношений <i>основного знака</i> <i>S</i> в связке с другими знаками</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
 			-> .system_element_203: 
 				.system_element_7063
 				(*
@@ -374,7 +446,11 @@
 	.system_element_7029
 	=> nrel_inclusion: .system_element_7065
 	(*
-		=> nrel_idtf: [<p>класс вопросов, в ответах на которые происходит детализация знаков, стоящих в некоторых отношениях с <i>основным знаком</i> <i>S</i></p>];;
+		=> nrel_idtf: [<p>класс вопросов, в ответах на которые происходит детализация знаков, стоящих в некоторых отношениях с <i>основным знаком</i> <i>S</i></p>]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
 		-> .system_element_203: 
 			.system_element_7066
 			(*

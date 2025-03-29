@@ -145,7 +145,11 @@
 	<=> .system_element_72: {
 		.system_element_2013
 		(*
-			=> nrel_idtf: [<p><i>sc-конструкция</i></p>];;
+			=> nrel_idtf: [<p><i>sc-конструкция</i></p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
 			=> nrel_idtf: [<p>информационная конструкция, принадлежащая <i>SC-коду</i></p>]
 			(*
 				<- lang_ru;;
