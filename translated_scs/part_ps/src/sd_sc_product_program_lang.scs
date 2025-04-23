@@ -1,21 +1,21 @@
-.system_element_6769
+.system_element_5094
 => nrel_inclusion: [*
 	<- .system_element_3;
-	-> rrel_key_sc_element: .system_element_6770;;
+	-> rrel_key_sc_element: .system_element_6706;;
 
-	.system_element_6770
+	.system_element_6706
 	<- subject_domain;
 	-> .system_element_330: 
-		.system_element_6397;
-		.system_element_6398
+		.system_element_6338;
+		.system_element_6339
 	;
 	=> .system_element_1416: 
-		.system_element_6399;
+		.system_element_6340;
 		.system_element_4293
 	;;
 
-	.system_element_6398
-	<- .system_element_6771;
+	.system_element_6339
+	<- .system_element_6707;
 	=> nrel_explanation: [<p>Продукции наряду с фреймами являются наиболее популярными средствами представления знаний в интеллектуальных компьютерных системах.</p>]
 	(*
 		<- lang_ru;;

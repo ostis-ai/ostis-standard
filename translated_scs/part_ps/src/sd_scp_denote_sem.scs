@@ -1,9 +1,9 @@
-.system_element_6489
+.system_element_5085
 => nrel_inclusion: [*
 	<- .system_element_3;
-	-> rrel_key_sc_element: .system_element_6490;;
+	-> rrel_key_sc_element: .system_element_6429;;
 
-	.system_element_6490
+	.system_element_6429
 	<- subject_domain;
 	-> rrel_maximum_studied_object_class: new_scp_operator;
 	-> .system_element_335: 
@@ -23,29 +23,29 @@
 		scp_operator_of_structure_generation
 		(*
 			=> nrel_subdividing: {
-				.system_element_6491;
-				.system_element_6492;
-				.system_element_6493;
-				.system_element_6494
+				.system_element_6430;
+				.system_element_6431;
+				.system_element_6432;
+				.system_element_6433
 			};;
 		*);
-		.system_element_6495
+		.system_element_6434
 		(*
 			=> nrel_subdividing: {
-				.system_element_6496;
-				.system_element_6497;
-				.system_element_6498;
-				.system_element_6499;
-				.system_element_6500
+				.system_element_6435;
+				.system_element_6436;
+				.system_element_6437;
+				.system_element_6438;
+				.system_element_6439
 			};;
 		*);
-		.system_element_6501
+		.system_element_6440
 		(*
 			=> nrel_subdividing: {
-				.system_element_6502;
-				.system_element_6503;
-				.system_element_6504;
-				.system_element_6505
+				.system_element_6441;
+				.system_element_6442;
+				.system_element_6443;
+				.system_element_6444
 			};;
 		*);
 		scp_operator_of_conditions_check
@@ -104,10 +104,10 @@
 				stringToLowerCase;
 				stringToUpperCase;
 				stringReplace;
-				.system_element_6506;
-				.system_element_6507;
+				.system_element_6445;
+				.system_element_6446;
 				stringSlice;
-				.system_element_6508;
+				.system_element_6447;
 				stringLen;
 				stringSplit;
 				stringIfGr;
@@ -121,7 +121,7 @@
 				unlockEl;
 				lockEl;
 				lockElEdit;
-				.system_element_6509;
+				.system_element_6448;
 				unlockElStr;
 				lockElStr;
 				lockElStrEdit;
@@ -140,7 +140,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_6510
+	.system_element_6449
 	=> .system_element_264: [<p>Каждый <b><i>атомарный тип scp-оператора</i></b> представляет собой класс <i>scp-операторов</i>, который не разбивается на более частные, и, соответственно, интерпретируется реализацией <i>Aбстрактной scp-машины</i>.</p>]
 	(*
 		<- lang_ru;;
@@ -182,7 +182,7 @@
 	*);;
 
 	.system_element_837
-	=> nrel_subdividing: .system_element_6511
+	=> nrel_subdividing: .system_element_6450
 	(*
 		<=> .system_element_72: {
 			non_standard_structure;
@@ -290,8 +290,8 @@
 		rrel_assign
 	};
 	=> nrel_subdividing: {
-		.system_element_6512;
-		.system_element_6513
+		.system_element_6451;
+		.system_element_6452
 	};
 	=> nrel_inclusion: 
 		rrel_set
@@ -314,7 +314,7 @@
 						rrel_struct;
 						rrel_relation
 						(*
-							=> nrel_inclusion: .system_element_6514;;
+							=> nrel_inclusion: .system_element_6453;;
 						*);
 						rrel_class
 					};;
@@ -325,7 +325,7 @@
 						rrel_common;
 						rrel_access
 						(*
-							=> nrel_inclusion: .system_element_6515;;
+							=> nrel_inclusion: .system_element_6454;;
 							=> nrel_subdividing: {
 								rrel_pos;
 								rrel_neg;
@@ -418,7 +418,7 @@
 		sc_constant
 	};;
 
-	.system_element_6492
+	.system_element_6431
 	=> nrel_note: [<p>На рисунках показан пример работы scp-оператора генерации пятиэлементной конструкции. В приведенном примере выполняется генерация пятиэлементной конструкции, которая имеет два scp-операнда с заданным значением. В примере предполагается, что рассматриваемые элементы (some_node1 и some_node2) изначально никак не связаны между собой.</p>]
 	(*
 		<- lang_ru;;
@@ -445,7 +445,7 @@
 		*);;
 	*);;
 
-	.system_element_6500
+	.system_element_6439
 	=> nrel_note: [<p>На рисунках приведен пример scp-оператора поиска трехэлементной конструкции, которая имеет два scp-операнда с заданным значением. В примере предполагается, что рассматриваемые элементы (some_node1 и some_node2) изначально связаны между собой константной постоянной sc-дугой.</p>]
 	(*
 		<- lang_ru;;
@@ -472,7 +472,7 @@
 		*);;
 	*);;
 
-	.system_element_6503
+	.system_element_6442
 	=> nrel_note: [<p>На рисунках приведен пример scp-оператора поиска трехэлементной конструкции, которая имеет два scp-операнда с заданным значением. В примере предполагается, что рассматриваемые элементы (some_node1 и some_node2) изначально связаны между собой константной постоянной sc-дугой.</p>]
 	(*
 		<- lang_ru;;

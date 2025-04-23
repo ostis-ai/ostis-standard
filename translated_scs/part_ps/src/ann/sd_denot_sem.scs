@@ -1,7 +1,7 @@
-.system_element_6266
+.system_element_6211
 => nrel_inclusion: [*
 
-	.system_element_6267
+	.system_element_6212
 	=> nrel_note: [<p>Денотационная семантика Языка представления нейросетевого метода решения задач в базах знаний описывается в рамках предметной области и соответствующей ей онтологии нейросетевого метода.</p>]
 	(*
 		<- lang_ru;;
@@ -44,11 +44,11 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 		=> .system_element_1: {
-			.system_element_6192
+			.system_element_6137
 		};;
 	*);;
 
-	.system_element_6268
+	.system_element_6213
 	=> nrel_note: [<p><i>Архитектурой и.н.с.</i> будем называть совокупность информации о структуре ее слоев, формальных нейронов, синаптических связей и функций активаций. То есть то, что можно обучить и использовать для решения задач.</p>]
 	(*
 		<- lang_ru;;
@@ -71,52 +71,52 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> nrel_subdividing: .system_element_6269
+	=> nrel_subdividing: .system_element_6214
 	(*
 		<=> .system_element_72: {
-			.system_element_6270
+			.system_element_6215
 			(*
 				=> nrel_subdividing: {
-					.system_element_6271
+					.system_element_6216
 					(*
 						=> nrel_subdividing: {
-							.system_element_6272;
-							.system_element_6273
+							.system_element_6217;
+							.system_element_6218
 						};;
 					*);
-					.system_element_6274;
-					.system_element_6275;
-					.system_element_6276
+					.system_element_6219;
+					.system_element_6220;
+					.system_element_6221
 				};;
 			*);
-			.system_element_6277
+			.system_element_6222
 			(*
 				=> nrel_subdividing: {
-					.system_element_6278;
-					.system_element_6279
+					.system_element_6223;
+					.system_element_6224
 				};;
 			*);
-			.system_element_6280
+			.system_element_6225
 			(*
 				=> nrel_subdividing: {
-					.system_element_6281;
-					.system_element_6282;
-					.system_element_6283;
-					.system_element_6284;
-					.system_element_6285
+					.system_element_6226;
+					.system_element_6227;
+					.system_element_6228;
+					.system_element_6229;
+					.system_element_6230
 				};;
 			*)
 		};;
 	*);
-	=> nrel_subdividing: .system_element_6286
+	=> nrel_subdividing: .system_element_6231
 	(*
 		<=> .system_element_72: {
-			.system_element_6287;
-			.system_element_6288
+			.system_element_6232;
+			.system_element_6233
 		};;
 	*);;
 
-	.system_element_6289
+	.system_element_6234
 	=> nrel_idtf: [<p>искусственный нейрон</p>]
 	(*
 		<- lang_ru;;
@@ -158,7 +158,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 		=> .system_element_1: {
-			.system_element_6192
+			.system_element_6137
 		};;
 	*);
 	=> .system_element_785: "file://neuron.png"
@@ -177,7 +177,7 @@
 		=> nrel_format: format_html;;
 	*);
 	=> nrel_subdividing: {
-		.system_element_6290
+		.system_element_6235
 		(*
 			=> nrel_idtf: [<p>нейрон, у которого есть полный набор связей с нейронами предшествующего слоя</p>]
 			(*
@@ -190,7 +190,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_6291
+		.system_element_6236
 		(*
 			=> nrel_explanation: [<p>Отдельный обрабатывающий элемент и.н.с., выполняющий функциональное преобразование результата операции свертки матрицы входных значений с помощью функции активации.</p>]
 			(*
@@ -208,7 +208,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_6292
+		.system_element_6237
 		(*
 			=> nrel_explanation: [<p>Формальный нейрон, имеющий обратную связь с самим собой или с другими нейронами и.н.с.</p>]
 			(*
@@ -218,15 +218,15 @@
 		*)
 	};;
 
-	.system_element_6293
+	.system_element_6238
 	=> nrel_idtf: [<p>синапс</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<= nrel_inclusion: .system_element_6294;;
+	<= nrel_inclusion: .system_element_6239;;
 
-	.system_element_6295
+	.system_element_6240
 	=> nrel_idtf: [<p>слой</p>]
 	(*
 		<- lang_ru;;
@@ -253,7 +253,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 		=> .system_element_1: {
-			.system_element_6192
+			.system_element_6137
 		};;
 	*);
 	=> nrel_explanation: [<p><b><i>слой и.н.с.</i></b> --- это множество формальных нейронов, осуществляющих параллельную независимую обработку вектора или матрицы входных значений</p>]
@@ -261,10 +261,10 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> nrel_subdividing: .system_element_6296
+	=> nrel_subdividing: .system_element_6241
 	(*
 		<=> .system_element_72: {
-			.system_element_6297
+			.system_element_6242
 			(*
 				=> nrel_idtf: [<p>слой, в котором каждый нейрон имеет связь с каждым нейроном предшествующего слоя</p>]
 				(*
@@ -277,7 +277,7 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);
-			.system_element_6298
+			.system_element_6243
 			(*
 				=> nrel_idtf: [<p>слой, в котором каждый нейрон является сверточным</p>]
 				(*
@@ -285,7 +285,7 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);
-			.system_element_6299
+			.system_element_6244
 			(*
 				=> nrel_idtf: [<p>слой, осуществляющий нелинейное преобразование входных данных</p>]
 				(*
@@ -303,7 +303,7 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);
-			.system_element_6300
+			.system_element_6245
 			(*
 				=> nrel_idtf: [<p>слой, реализующий технику регуляризации dropout</p>]
 				(*
@@ -321,7 +321,7 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);
-			.system_element_6301
+			.system_element_6246
 			(*
 				=> nrel_idtf: [<p>подвыборочный слой</p>]
 				(*
@@ -339,7 +339,7 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);
-			.system_element_6302
+			.system_element_6247
 		}
 		(*
 			=> nrel_note: [<p>Нужно отметить, что данный перечень неполный --- разновидности слоев и.н.с. появляются практически в каждой заслуживающей внимания публикации по нейросетевым алгоритмам и на текущий момент их существует достаточно много, однако, как правило, при построении более традиционных архитектур ограничиваются только приведенными вариантами слоев.</p>]
@@ -355,7 +355,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_6303
+	.system_element_6248
 	=> nrel_idtf: [<p>функция активации нейрона*</p>]
 	(*
 		<- lang_ru;;
@@ -376,17 +376,17 @@
 	=> nrel_definitional_domain: .system_element_2086
 	(*
 		<= nrel_combination: {
-			.system_element_6289;
-			.system_element_6179
+			.system_element_6234;
+			.system_element_6124
 		};;
 	*);
-	=> nrel_first_domain: .system_element_6289;
-	=> nrel_second_domain: .system_element_6179
+	=> nrel_first_domain: .system_element_6234;
+	=> nrel_second_domain: .system_element_6124
 	(*
 		=> nrel_subdividing: {
-			.system_element_6304
+			.system_element_6249
 			(*
-				=> .system_element_6222: [<p>y = kS</p>]
+				=> .system_element_6167: [<p>y = kS</p>]
 				(*
 					<- lang_ru;;
 					=> nrel_format: format_html;;
@@ -397,30 +397,17 @@
 					*);;
 				*);;
 			*);
-			.system_element_6305
+			.system_element_6250
 			(*
-				=> .system_element_6222: [<p>y = sign(S) =1, S > 0,0, S >= 0</p>]
+				=> .system_element_6167: [<p>y = sign(S) =1, S > 0,0, S >= 0</p>]
 				(*
 					<- lang_ru;;
 					=> nrel_format: format_html;;
 				*);;
 			*);
-			.system_element_6306
+			.system_element_6251
 			(*
-				=> .system_element_6222: [<p>y = <sup>1</sup>&frasl;<sub>1+e<sup>-cS</sup></sub></p>]
-				(*
-					<- lang_ru;;
-					=> nrel_format: format_html;;
-					=> nrel_note: [<p><i>с</i> > 0 --- коэффициент, характеризующий ширину сигмоидной функции по оси абсцисс, <i>S</i> --- в.с.</p>]
-					(*
-						<- lang_ru;;
-						=> nrel_format: format_html;;
-					*);;
-				*);;
-			*);
-			.system_element_6307
-			(*
-				=> .system_element_6222: [<p>y = <sup>e<sup>cS</sup>-e<sup>-cS</sup></sup>&frasl;<sub>e<sub>cs</sub>+e<sup>-cS</sup></sub></p>]
+				=> .system_element_6167: [<p>y = <sup>1</sup>&frasl;<sub>1+e<sup>-cS</sup></sub></p>]
 				(*
 					<- lang_ru;;
 					=> nrel_format: format_html;;
@@ -431,9 +418,22 @@
 					*);;
 				*);;
 			*);
-			.system_element_6308
+			.system_element_6252
 			(*
-				=> .system_element_6222: [<p>y<sub>j</sub> = softmax(S<sub>j</sub>) = <sup>e<sub>S<sub>j</sub></sub></sup>&frasl;<sub><sub>j</sub> e<sup>S<sub>j</sub></sup></sub></p>]
+				=> .system_element_6167: [<p>y = <sup>e<sup>cS</sup>-e<sup>-cS</sup></sup>&frasl;<sub>e<sub>cs</sub>+e<sup>-cS</sup></sub></p>]
+				(*
+					<- lang_ru;;
+					=> nrel_format: format_html;;
+					=> nrel_note: [<p><i>с</i> > 0 --- коэффициент, характеризующий ширину сигмоидной функции по оси абсцисс, <i>S</i> --- в.с.</p>]
+					(*
+						<- lang_ru;;
+						=> nrel_format: format_html;;
+					*);;
+				*);;
+			*);
+			.system_element_6253
+			(*
+				=> .system_element_6167: [<p>y<sub>j</sub> = softmax(S<sub>j</sub>) = <sup>e<sub>S<sub>j</sub></sub></sup>&frasl;<sub><sub>j</sub> e<sup>S<sub>j</sub></sup></sub></p>]
 				(*
 					<- lang_ru;;
 					=> nrel_format: format_html;;
@@ -444,9 +444,9 @@
 					*);;
 				*);;
 			*);
-			.system_element_6309
+			.system_element_6254
 			(*
-				=> .system_element_6222: [<p>y = F(S) =S, S > 0,kS, S >= 0</p>]
+				=> .system_element_6167: [<p>y = F(S) =S, S > 0,kS, S >= 0</p>]
 				(*
 					<- lang_ru;;
 					=> nrel_format: format_html;;
@@ -460,10 +460,10 @@
 		};;
 	*);;
 
-	.system_element_6310
+	.system_element_6255
 	<= nrel_inclusion: parameter;
 	=> nrel_subdividing: {
-		.system_element_6311
+		.system_element_6256
 		(*
 			=> nrel_idtf: [<p>параметр и.н.с., значение которого изменяется в ходе обучения</p>]
 			(*
@@ -471,9 +471,9 @@
 				=> nrel_format: format_html;;
 			*);;
 			=> nrel_subdividing: {
-				.system_element_6312;
-				.system_element_6313;
-				.system_element_6314
+				.system_element_6257;
+				.system_element_6258;
+				.system_element_6259
 				(*
 					=> nrel_idtf: [<p>квадратная матрица произвольного порядка, элементы которой изменяются в процессе обучения и.н.с.</p>]
 					(*
@@ -488,7 +488,7 @@
 				*)
 			};;
 		*);
-		.system_element_6315
+		.system_element_6260
 		(*
 			=> nrel_note: [<p>Параметр и.н.с., определяющий ее архитектуру.</p>]
 			(*
@@ -496,42 +496,42 @@
 				=> nrel_format: format_html;;
 			*);;
 			=> nrel_subdividing: {
-				.system_element_6316;
-				.system_element_6317;
-				.system_element_6318
+				.system_element_6261;
+				.system_element_6262;
+				.system_element_6263
 			};;
 		*)
 	};;
 
-	.system_element_6319
+	.system_element_6264
 	=> nrel_note: [<p>Метрики могут быть классифицированы по типу решаемой задачи.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> nrel_subdividing: .system_element_6320
+	=> nrel_subdividing: .system_element_6265
 	(*
 		<=> .system_element_72: {
-			.system_element_6321
+			.system_element_6266
 			(*
 				=> nrel_decomposition: {
-					.system_element_6322;
-					.system_element_6323;
-					.system_element_6324
+					.system_element_6267;
+					.system_element_6268;
+					.system_element_6269
 				};;
 			*);
-			.system_element_6325
+			.system_element_6270
 			(*
 				=> nrel_decomposition: {
-					.system_element_6326;
-					.system_element_6327;
-					.system_element_6328
+					.system_element_6271;
+					.system_element_6272;
+					.system_element_6273
 				};;
 			*)
 		};;
 	*);;
 
-	.system_element_6322
+	.system_element_6267
 	=> nrel_idtf: [<p>precision</p>]
 	(*
 		<- lang_ru;;
@@ -542,7 +542,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_6222: [<p>PRE = <sup>TP</sup>&frasl;<sub>TP + FP</sub></p>]
+	=> .system_element_6167: [<p>PRE = <sup>TP</sup>&frasl;<sub>TP + FP</sub></p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
@@ -553,7 +553,7 @@
 		*);;
 	*);;
 
-	.system_element_6323
+	.system_element_6268
 	=> nrel_idtf: [<p>recall</p>]
 	(*
 		<- lang_ru;;
@@ -564,7 +564,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_6222: [<p>REC = <sup>TP</sup>&frasl;<sub>TP + FN</sub></p>]
+	=> .system_element_6167: [<p>REC = <sup>TP</sup>&frasl;<sub>TP + FN</sub></p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
@@ -575,8 +575,8 @@
 		*);;
 	*);;
 
-	.system_element_6324
-	=> .system_element_6222: [<p>F1 = 2 * <sup>PRE * REC</sup>&frasl;<sub>PRE + REC</sub></p>]
+	.system_element_6269
+	=> .system_element_6167: [<p>F1 = 2 * <sup>PRE * REC</sup>&frasl;<sub>PRE + REC</sub></p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
@@ -587,13 +587,13 @@
 		*);;
 	*);;
 
-	.system_element_6326
+	.system_element_6271
 	=> nrel_idtf: [<p>mean absolute error</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_6222: [<p><sup>1</sup>&frasl;<sub>N</sub> <sub>i = 1</sub><sup>N</sup> |y<sub>etalon</sub><sup>i</sup> - y<sub>predicted</sub><sup>i</sup>|</p>]
+	=> .system_element_6167: [<p><sup>1</sup>&frasl;<sub>N</sub> <sub>i = 1</sub><sup>N</sup> |y<sub>etalon</sub><sup>i</sup> - y<sub>predicted</sub><sup>i</sup>|</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
@@ -604,13 +604,13 @@
 		*);;
 	*);;
 
-	.system_element_6327
+	.system_element_6272
 	=> nrel_idtf: [<p>mean absolute percentage error</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_6222: [<p><sup>1</sup>&frasl;<sub>N</sub> <sub>i = 1</sub><sup>N</sup> <sup>|y<sub>etalon</sub><sup>i</sup> - y<sub>predicted</sub><sup>i</sup>|</sup>&frasl;<sub>y<sub>etalon</sub><sup>i</sup></sub> * 100%</p>]
+	=> .system_element_6167: [<p><sup>1</sup>&frasl;<sub>N</sub> <sub>i = 1</sub><sup>N</sup> <sup>|y<sub>etalon</sub><sup>i</sup> - y<sub>predicted</sub><sup>i</sup>|</sup>&frasl;<sub>y<sub>etalon</sub><sup>i</sup></sub> * 100%</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
@@ -621,13 +621,13 @@
 		*);;
 	*);;
 
-	.system_element_6328
+	.system_element_6273
 	=> nrel_idtf: [<p>root mean squared error</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_6222: [<p></p>]
+	=> .system_element_6167: [<p></p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
@@ -638,7 +638,7 @@
 		*);;
 	*);;
 
-	.system_element_6329
+	.system_element_6274
 	=> .system_element_785: "file://neural_network_scg.png"
 	(*
 		<- concept_file;;
