@@ -1,14 +1,14 @@
-.system_element_5098
+.system_element_5097
 => nrel_inclusion: [*
 	=> .system_element_1416: 
 		.system_element_5005;
+		.system_element_6707;
 		.system_element_6708;
-		.system_element_6709;
-		.system_element_6710
+		.system_element_6709
 	;
 	<= .system_element_315: <
-		.system_element_6711;
-		.system_element_6712
+		.system_element_6710;
+		.system_element_6711
 	>;
 	=> nrel_summary: [<p>Рассмотрен подход к интеграции и конвергенции искусственных нейронных сетей с базами знанийв интеллектуальных компьютерных системах нового поколения с помощью представления и интерпретации искусственных нейронных сетей в базе знаний. Описаны <i>Синтаксис, Денотационная и Операционная семантика Языка представления нейросетевых методов в базах знаний</i>. Описаны этапы построения нейросетевых методов решения задач с помощью интеллектуальной среды проектирования искусственных нейронных сетей.</p>]
 	(*
@@ -16,30 +16,30 @@
 		=> nrel_format: format_html;;
 	*);
 	=> .system_element_418: 
-		.system_element_6713
+		.system_element_6712
 	;
 	-> .system_element_6: 
-		.system_element_6714;
+		.system_element_6713;
 		.system_element_1263;
-		.system_element_6715;
-		.system_element_6716
+		.system_element_6714;
+		.system_element_6715
 	;
 	=> .system_element_11: {
+		.system_element_6716;
 		.system_element_6717;
 		.system_element_6718;
 		.system_element_6719;
 		.system_element_6720;
 		.system_element_6721;
 		.system_element_6722;
-		.system_element_6723;
-		.system_element_6137;
-		.system_element_6098;
+		.system_element_6136;
+		.system_element_6097;
+		.system_element_6174;
 		.system_element_6175;
-		.system_element_6176;
-		.system_element_6182;
+		.system_element_6181;
+		.system_element_6186;
 		.system_element_6187;
-		.system_element_6188;
-		.system_element_6189
+		.system_element_6188
 	};
 	=> nrel_introduction: <
 		[<p>В последнее десятилетие обозначилась устойчивая тенденция широкого применения методов машинного обучения в самых разных областях человеческой деятельности, обусловленная в первую очередь развитием теории искусственных нейронных сетей (и. н. с.), а также аппаратных возможностей.</p>]
@@ -85,7 +85,7 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 			=> .system_element_1: {
-				.system_element_6724
+				.system_element_6723
 			};;
 		*);
 		[<p>Современные задачи все чаще требуют обоснования своего решения. Появилось целое направление Explainable AI, в рамках которого предпринимаются различные попытки объяснить решения и.н.с. Развиваются подходы, предлагающие интеграцию нейронных сетей с базами знаний.</p>]
@@ -93,13 +93,13 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 			=> .system_element_1: {
-				.system_element_6719;
+				.system_element_6718;
+				.system_element_6717;
 				.system_element_6718;
 				.system_element_6719;
 				.system_element_6720;
 				.system_element_6721;
-				.system_element_6722;
-				.system_element_6723
+				.system_element_6722
 			};;
 		*);
 		[<p>Сложность современных интеллектуальных систем, использующих нейросетевые модели, а также большой объём обрабатываемых ими данных обуславливают необходимость мониторинга, объяснения и понимания механизмов их работы с целью вербализации оценки и оптимизации их деятельности.</p>]
@@ -118,8 +118,8 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 			=> .system_element_1: {
-				.system_element_6725;
-				.system_element_6726
+				.system_element_6724;
+				.system_element_6725
 			};;
 		*);
 		[<p>Можно выделить два основных направления интеграции и.н.с. с базами знаний: Построение интеллектуальных систем, способных использовать нейросетевые методы наравне с другими имеющимися в системе методами для решения задач или подзадач системы. Такие системы смогут учитывать семантику решаемых задач на более высоком уровне, что сделает решение этих задач более структурированными и прозрачными.
@@ -130,12 +130,12 @@
 		*)
 	>;
 	<- .system_element_3;
-	-> rrel_key_sc_element: .system_element_6711;;
+	-> rrel_key_sc_element: .system_element_6710;;
 
-	.system_element_6711
+	.system_element_6710
 	=> nrel_inclusion: [*
 
-		.system_element_6727
+		.system_element_6726
 		=> nrel_idtf: [<p>Предметная область и.н.с.</p>]
 		(*
 			<- lang_ru;;
@@ -143,27 +143,28 @@
 		*);
 		<- subject_domain;
 		=> .system_element_418: 
+			.system_element_6727;
 			.system_element_6728;
-			.system_element_6729;
-			.system_element_6730
+			.system_element_6729
 		;
 		-> .system_element_330: 
 			.system_element_1222
 		;
 		-> .system_element_6: 
+			.system_element_6713;
+			.system_element_6233;
 			.system_element_6714;
-			.system_element_6234;
-			.system_element_6715;
-			.system_element_6238;
-			.system_element_6240;
-			.system_element_6731;
+			.system_element_6237;
+			.system_element_6239;
+			.system_element_6730;
 			.system_element_1222;
+			.system_element_6214;
 			.system_element_6215;
 			.system_element_6216;
 			.system_element_6217;
 			.system_element_6218;
 			.system_element_6219;
-			.system_element_6220;
+			.system_element_6221;
 			.system_element_6222;
 			.system_element_6223;
 			.system_element_6224;
@@ -172,63 +173,62 @@
 			.system_element_6227;
 			.system_element_6228;
 			.system_element_6229;
-			.system_element_6230;
+			.system_element_6231;
 			.system_element_6232;
 			.system_element_6233;
 			.system_element_6234;
 			.system_element_6235;
 			.system_element_6236;
 			.system_element_6237;
-			.system_element_6238;
+			.system_element_6731;
 			.system_element_6732;
 			.system_element_6733;
-			.system_element_6734;
+			.system_element_6257;
 			.system_element_6258;
-			.system_element_6259;
+			.system_element_6734;
+			.system_element_6260;
 			.system_element_6735;
-			.system_element_6261;
 			.system_element_6736;
 			.system_element_6737;
 			.system_element_6738;
 			.system_element_6739;
 			.system_element_6740;
-			.system_element_6741;
+			.system_element_6243;
 			.system_element_6244;
-			.system_element_6245;
-			.system_element_6742
+			.system_element_6741
 		;
 		-> .system_element_335: 
+			.system_element_6742;
 			.system_element_6743;
 			.system_element_6744;
 			.system_element_6745;
 			.system_element_6746;
+			.system_element_6247;
 			.system_element_6747;
-			.system_element_6248;
 			.system_element_6748;
 			.system_element_6749;
-			.system_element_6750;
-			.system_element_6751
+			.system_element_6750
 		;
 		=> nrel_private_subject_domain: 
-			.system_element_6752
+			.system_element_6751
 			(*
 				=> nrel_private_subject_domain: 
-					.system_element_6753
+					.system_element_6752
 					(*
 						=> nrel_private_subject_domain: 
-							.system_element_6754
+							.system_element_6753
 							(*
 								=> nrel_private_subject_domain: 
+									.system_element_6754;
 									.system_element_6755;
-									.system_element_6756;
-									.system_element_6757
+									.system_element_6756
 								;;
 							*);
-							.system_element_6758;
-							.system_element_6759
+							.system_element_6757;
+							.system_element_6758
 						;;
 					*);
-					.system_element_6760
+					.system_element_6759
 					(*
 						=> nrel_idtf: [<p>Предметная область рекуррентных ИНС</p>]
 						(*
@@ -236,58 +236,58 @@
 							=> nrel_format: format_html;;
 						*);;
 						=> nrel_private_subject_domain: 
+							.system_element_6760;
 							.system_element_6761;
 							.system_element_6762;
-							.system_element_6763;
-							.system_element_6764
+							.system_element_6763
 						;;
 					*)
 				;;
 			*);
-			.system_element_6765
+			.system_element_6764
 			(*
 				=> nrel_private_subject_domain: 
-					.system_element_6766;
-					.system_element_6767
+					.system_element_6765;
+					.system_element_6766
 					(*
 						=> nrel_private_subject_domain: 
+							.system_element_6767;
 							.system_element_6768;
 							.system_element_6769;
 							.system_element_6770;
 							.system_element_6771;
-							.system_element_6772;
-							.system_element_6773
+							.system_element_6772
 						;;
 					*)
 				;;
 			*);
-			.system_element_6774
+			.system_element_6773
 			(*
 				=> nrel_private_subject_domain: 
+					.system_element_6774;
 					.system_element_6775;
-					.system_element_6776;
-					.system_element_6777
+					.system_element_6776
 				;;
 			*);
-			.system_element_6778
+			.system_element_6777
 			(*
 				=> nrel_private_subject_domain: 
+					.system_element_6778;
 					.system_element_6779;
 					.system_element_6780;
 					.system_element_6781;
 					.system_element_6782;
-					.system_element_6783;
-					.system_element_6784
+					.system_element_6783
 				;;
 			*);
-			.system_element_6785
+			.system_element_6784
 		;
 		=> nrel_introduction: [<p>Решатель задач занимается обработкой фрагментов базы знаний. На операционном уровне обработка сводится к добавлению, поиску, редактированию и удалению sc-узлов и sc-коннекторов базы знаний. На семантическом же уровне такая операция является действием, выполняемым в памяти субъекта действия, где, в общем случае, субъектом является ostis-система, а база знаний --- её памятью. действие определяется как процесс воздействияодной сущности (или некоторого множества сущностей) на другую сущность (или на некоторое множество других сущностей) в соответствии с некоторой целью.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 			=> .system_element_35: {
-				.system_element_5081
+				.system_element_5080
 			};;
 		*);;
 
@@ -303,7 +303,7 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
-		<= nrel_inclusion: .system_element_6786
+		<= nrel_inclusion: .system_element_6785
 		(*
 			=> nrel_explanation: [<p><b><i>математическая модель</i></b> --- это упрощенное описание объекта реального мира, выраженное с помощью математической символики</p>]
 			(*
@@ -321,10 +321,10 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		=> .system_element_6788: .system_element_6787
+		=> .system_element_6787: .system_element_6786
 		(*
 			<=> .system_element_72: {
-				.system_element_6195
+				.system_element_6194
 				(*
 					<= nrel_inclusion: task;;
 					=> nrel_explanation: [<p>Задача построения классификатора, т.е. отображения ~ c: X → C, где  X ∈ <i>R</i><sup>m</sup> ---признаковое пространство п.в.а., C = { C<sub>1</sub>, C<sub>2</sub>, ...,C<sub>k</sub> } --- конечное и обычно небольшое множество меток классов.</p>]
@@ -333,7 +333,7 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);
-				.system_element_6789
+				.system_element_6788
 				(*
 					<= nrel_inclusion: task;;
 					=> nrel_explanation: [<p>Задача построения оценочной функции по примерам (x<sub>i</sub>, f(x<sub>i</sub>)), где f(x) --- неизвестная функция</p>]
@@ -347,7 +347,7 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);
-				.system_element_6790
+				.system_element_6789
 				(*
 					<= nrel_inclusion: task;;
 					=> nrel_explanation: [<p>Задача разбиения множества п.в.а. на группы (кластеры) по какой-либо метрике сходства.</p>]
@@ -356,7 +356,7 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);
-				.system_element_6791
+				.system_element_6790
 				(*
 					<= nrel_inclusion: task;;
 					=> nrel_idtf: [<p>задача уменьшения размерности признакового пространства</p>]
@@ -370,7 +370,7 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);
-				.system_element_6792
+				.system_element_6791
 				(*
 					<= nrel_inclusion: task;;
 					=> .system_element_264: [<p>задача управления --- это задача построения модели-регулятора состояния сложного динамического объекта.</p>]
@@ -379,7 +379,7 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);
-				.system_element_6793
+				.system_element_6792
 				(*
 					<= nrel_inclusion: task;;
 					=> .system_element_264: [<p>задача фильтрации --- это задача построения модели, которая производит очистку исходного сигнала, содержащего некоторый шум и уменьшает влияние случайных ошибок в сигнале.</p>]
@@ -388,18 +388,18 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);
-				.system_element_6794
+				.system_element_6793
 				(*
 					<= nrel_inclusion: task;;
-					<= nrel_inclusion: .system_element_6195;;
-					<= nrel_inclusion: .system_element_6789;;
+					<= nrel_inclusion: .system_element_6194;;
+					<= nrel_inclusion: .system_element_6788;;
 					=> .system_element_264: [<p>задача детекции --- это задача, которая является частным случаем задачи классификации и задачи регрессии. Задача построения модели, осуществляющей обнаружение объектов определенных типов на фото- и видеоизображениях.</p>]
 					(*
 						<- lang_ru;;
 						=> nrel_format: format_html;;
 					*);;
 				*);
-				.system_element_6795
+				.system_element_6794
 				(*
 					<= nrel_inclusion: task;;
 					=> .system_element_264: [<p>задача с ассоциативной памятью --- это задача построения модели, позволяющей выполнить реконструкцию исходного образа на основании сохраненных ранее образов.</p>]
@@ -410,7 +410,7 @@
 				*)
 			};;
 		*);
-		=> .system_element_6796: [<p>Схожие задачи объединены в классы, для которых заданы обобщенные формулировки задач.</p>]
+		=> .system_element_6795: [<p>Схожие задачи объединены в классы, для которых заданы обобщенные формулировки задач.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
@@ -433,7 +433,7 @@
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_6797
+		.system_element_6796
 		=> .system_element_785: "file://images/sd_ps/sd_ann/ontology_fragment.png"
 		(*
 			<- concept_file;;
@@ -455,7 +455,7 @@
 			*);;
 		*);;
 
-		.system_element_6743
+		.system_element_6742
 		=> nrel_idtf: [<p>формальный нейронный элемент'</p>]
 		(*
 			<- lang_ru;;
@@ -473,7 +473,7 @@
 		*);
 		<- role_relation;
 		=> nrel_first_domain: .system_element_1222;
-		=> nrel_second_domain: .system_element_6234;
+		=> nrel_second_domain: .system_element_6233;
 		=> nrel_definitional_domain: .system_element_1222;
 		=> nrel_explanation: [<p><b><i>формальный нейрон'</i></b> --- ролевое отношение, связывающее искусственную нейронную сеть с ее нейроном.</p>]
 		(*
@@ -481,7 +481,7 @@
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_6744
+		.system_element_6743
 		=> nrel_idtf: [<p>пороговый нейронный элемент'</p>]
 		(*
 			<- lang_ru;;
@@ -494,7 +494,7 @@
 		*);
 		<- role_relation;
 		=> nrel_first_domain: .system_element_1222;
-		=> nrel_second_domain: .system_element_6234;
+		=> nrel_second_domain: .system_element_6233;
 		=> nrel_definitional_domain: .system_element_1222;
 		=> nrel_explanation: [<p><b><i>пороговый формальный нейрон'</i></b> --- ролевое отношение, связывающее искусственную нейронную сеть с таким ее нейроном, выходное значение которого всегда равно -1.</p>]
 		(*
@@ -507,7 +507,7 @@
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_6745
+		.system_element_6744
 		=> nrel_idtf: [<p>синапс'</p>]
 		(*
 			<- lang_ru;;
@@ -515,16 +515,16 @@
 		*);
 		<- role_relation;
 		=> nrel_first_domain: .system_element_1222;
-		=> nrel_second_domain: .system_element_6238;
+		=> nrel_second_domain: .system_element_6237;
 		=> nrel_definitional_domain: .system_element_2086
 		(*
 			<= nrel_combination: {
 				.system_element_1222;
-				.system_element_6798
+				.system_element_6797
 			};;
 		*);;
 
-		.system_element_6257
+		.system_element_6256
 		=> nrel_idtf: [<p>вес синапса</p>]
 		(*
 			<- lang_ru;;
@@ -535,7 +535,7 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
-		<= nrel_inclusion: .system_element_6799;
+		<= nrel_inclusion: .system_element_6798;
 		=> nrel_explanation: [<p><b><i>весовой коэффициент синаптической связи</i></b> --- это числовой коэффициент, который ставится в соответствие каждому синапсу нейронной сети и изменяется в процессе обучения.</p>]
 		(*
 			<- lang_ru;;
@@ -547,7 +547,7 @@
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_6746
+		.system_element_6745
 		=> nrel_idtf: [<p>входное значение нейрона*</p>]
 		(*
 			<- lang_ru;;
@@ -560,12 +560,12 @@
 		*);
 		<- norole_relation;
 		<- binary_relation;
-		=> nrel_first_domain: .system_element_6234;
+		=> nrel_first_domain: .system_element_6233;
 		=> nrel_second_domain: number;
 		=> nrel_definitional_domain: .system_element_2086
 		(*
 			<= nrel_combination: {
-				.system_element_6234;
+				.system_element_6233;
 				number
 			};;
 		*);
@@ -574,13 +574,13 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
-		=> .system_element_6800: [<p>Использование множества как формы представления входных данных является серьезным допущением, так как на практике входные данные структурированы более сложно --- в многомерные массивы. Самым близким теоретическим аналогом здесь выступает тензор. К сожалению, описание теории нейронных сетей с помощью тензорного исчисления в литературе как таковое отсутствует, но активно используется на практике: например, во многих разрабатываемых нейросетевых фреймворках. Формализация нейронных сетей с помощью тензоров видится авторам наиболее вероятным направлением работы в ближайших изданиях <i>стандарта OSTIS</i>.</p>]
+		=> .system_element_6799: [<p>Использование множества как формы представления входных данных является серьезным допущением, так как на практике входные данные структурированы более сложно --- в многомерные массивы. Самым близким теоретическим аналогом здесь выступает тензор. К сожалению, описание теории нейронных сетей с помощью тензорного исчисления в литературе как таковое отсутствует, но активно используется на практике: например, во многих разрабатываемых нейросетевых фреймворках. Формализация нейронных сетей с помощью тензоров видится авторам наиболее вероятным направлением работы в ближайших изданиях <i>стандарта OSTIS</i>.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_6801
+		.system_element_6800
 		=> nrel_idtf: [<p>п.в.а.</p>]
 		(*
 			<- lang_ru;;
@@ -599,7 +599,7 @@
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_6739
+		.system_element_6738
 		=> nrel_idtf: [<p>feature</p>]
 		(*
 			<- lang_ru;;
@@ -617,7 +617,7 @@
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_6748
+		.system_element_6747
 		=> nrel_idtf: [<p>взвешенная сумма входных значений*</p>]
 		(*
 			<- lang_ru;;
@@ -638,13 +638,13 @@
 		=> nrel_definitional_domain: .system_element_2086
 		(*
 			<= nrel_combination: {
-				.system_element_6234;
+				.system_element_6233;
 				number
 			};;
 		*);
-		=> nrel_first_domain: .system_element_6234;
+		=> nrel_first_domain: .system_element_6233;
 		=> nrel_second_domain: number;
-		=> .system_element_6167: .system_element_6802
+		=> .system_element_6166: .system_element_6801
 		(*
 			=> nrel_note: [<p><i>n</i> --- размерность вектора входных значений, w<sub>i</sub> --- <i>i</i>-тый элемент вектора весовых коэффициентов, x<sub>i</sub> --- <i>i</i>-тый элемент вектора входных значений, <i>T</i> --- пороговое значение.</p>]
 			(*
@@ -653,7 +653,7 @@
 			*);;
 		*);;
 
-		.system_element_6747
+		.system_element_6746
 		=> nrel_idtf: [<p>выходное значение нейрона*</p>]
 		(*
 			<- lang_ru;;
@@ -666,12 +666,12 @@
 		*);
 		<- norole_relation;
 		<- binary_relation;
-		=> nrel_first_domain: .system_element_6234;
+		=> nrel_first_domain: .system_element_6233;
 		=> nrel_second_domain: number;
 		=> nrel_definitional_domain: .system_element_2086
 		(*
 			<= nrel_combination: {
-				.system_element_6234;
+				.system_element_6233;
 				number
 			};;
 		*);
@@ -686,7 +686,7 @@
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_6240
+		.system_element_6239
 		=> nrel_note: [<p>функция активации слоя является функцией активации всех формальных нейронов этого слоя</p>]
 		(*
 			<- lang_ru;;
@@ -703,7 +703,7 @@
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_6749
+		.system_element_6748
 		=> nrel_idtf: [<p>входной слой*</p>]
 		(*
 			<- lang_ru;;
@@ -713,16 +713,16 @@
 		<- binary_relation;
 		=> nrel_definitional_domain: .system_element_1222;
 		=> nrel_first_domain: .system_element_1222;
-		=> nrel_second_domain: .system_element_6240;;
+		=> nrel_second_domain: .system_element_6239;;
 
-		.system_element_6750
+		.system_element_6749
 		<- norole_relation;
 		<- binary_relation;
 		=> nrel_definitional_domain: .system_element_1222;
 		=> nrel_first_domain: .system_element_1222;
-		=> nrel_second_domain: .system_element_6803;;
+		=> nrel_second_domain: .system_element_6802;;
 
-		.system_element_6751
+		.system_element_6750
 		<- norole_relation;
 		<- binary_relation;
 		=> nrel_explanation: [<p><b><i>выходной слой*</i></b> --- неролевое отношение, связывающее искусственную нейронную сеть с ее слоем, выходные значения нейронов которого являются выходными значениями всей нейронной сети.</p>]
@@ -732,13 +732,13 @@
 		*);
 		=> nrel_definitional_domain: .system_element_1222;
 		=> nrel_first_domain: .system_element_1222;
-		=> nrel_second_domain: .system_element_6803;;
+		=> nrel_second_domain: .system_element_6802;;
 	*];;
 
-	.system_element_6804
+	.system_element_6803
 	=> nrel_inclusion: [*
 
-		.system_element_6805
+		.system_element_6804
 		=> nrel_idtf: [<p>Предметная область действий по обработке и.н.с.</p>]
 		(*
 			<- lang_ru;;
@@ -746,34 +746,34 @@
 		*);
 		<- subject_domain;
 		-> .system_element_6: 
+			.system_element_6805;
 			.system_element_6806;
 			.system_element_6807;
-			.system_element_6808;
-			.system_element_6115;
-			.system_element_6179;
+			.system_element_6114;
+			.system_element_6178;
+			.system_element_6155;
+			.system_element_6180;
 			.system_element_6156;
-			.system_element_6181;
-			.system_element_6157;
+			.system_element_6808;
+			.system_element_6189;
 			.system_element_6809;
-			.system_element_6190;
 			.system_element_6810;
 			.system_element_6811;
 			.system_element_6812;
 			.system_element_6813;
 			.system_element_6814;
-			.system_element_6815;
-			.system_element_6816
+			.system_element_6815
 		;
 		-> .system_element_335: 
+			.system_element_6816;
 			.system_element_6817;
 			.system_element_6818;
 			.system_element_6819;
 			.system_element_6820;
-			.system_element_6821;
-			.system_element_6822
+			.system_element_6821
 		;;
 
-		.system_element_6823
+		.system_element_6822
 		=> nrel_idtf: [<p>действие по обработке и.н.с.</p>]
 		(*
 			<- lang_ru;;
@@ -791,44 +791,44 @@
 			=> nrel_format: format_html;;
 		*);
 		=> nrel_subdividing: {
-			.system_element_6808
+			.system_element_6807
 			(*
 				=> nrel_subdividing: {
+					.system_element_6823;
 					.system_element_6824;
 					.system_element_6825;
-					.system_element_6826;
-					.system_element_6827
+					.system_element_6826
 					(*
 						=> nrel_subdividing: {
+							.system_element_6827;
 							.system_element_6828;
 							.system_element_6829;
 							.system_element_6830;
-							.system_element_6831;
-							.system_element_6832
+							.system_element_6831
 							(*
 								=> nrel_subdividing: {
+									.system_element_6832;
 									.system_element_6833;
 									.system_element_6834;
-									.system_element_6835;
-									.system_element_6836
+									.system_element_6835
 								};;
 							*)
 						};;
 					*)
 				};;
 			*);
-			.system_element_6807
+			.system_element_6806
 			(*
-				=> nrel_inclusion: .system_element_6158;;
-				=> nrel_inclusion: .system_element_6837
+				=> nrel_inclusion: .system_element_6157;;
+				=> nrel_inclusion: .system_element_6836
 				(*
-					=> nrel_inclusion: .system_element_6838
+					=> nrel_inclusion: .system_element_6837
 					(*
-						=> nrel_inclusion: .system_element_6839;;
+						=> nrel_inclusion: .system_element_6838;;
 					*);;
 				*);;
 			*);
-			.system_element_6115
+			.system_element_6114
 		};
 		=> nrel_note: [<p>Действия по обработке и.н.с осуществляет соответствующий коллектив агентов.</p>]
 		(*
@@ -846,14 +846,14 @@
 			*);;
 		*);;
 
-		.system_element_6158
+		.system_element_6157
 		=> nrel_idtf: [<p>действие обучения искусственной нейронной сети</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
-		<= nrel_inclusion: .system_element_6807;
-		=> .system_element_6840: {
+		<= nrel_inclusion: .system_element_6806;
+		=> .system_element_6839: {
 			[<p>Переобучение --- проблема, возникающая при обучении и.н.с., заключающаяся в том, что сеть хорошо адаптируется к п.в.а. из обучающей выборки, при этом теряя способность к обобщению. Переобучение возникает из-за применения неоправданно сложной модели при обучении и.н.с. Это происходит, когда количество настраиваемых параметров и.н.с. намного больше размера обучающей выборки. Возможные варианты решения проблемы заключаются в упрощении модели, увеличении выборки, использовании регуляризации (параметр регуляризации, техника dropout и т.д.).Обнаружение переобученности сложнее, чем недообученности. Как правило, для этого применяется кросс-валидация на валидационной выборке, позволяющая оценить момент завершения процесса обучения. Идеальным вариантом является достижение баланса между переобученностью и недообученностью.</p>]
 			(*
 				<- lang_ru;;
@@ -871,7 +871,7 @@
 			=> nrel_format: format_png;;
 		*);;
 
-		.system_element_6816
+		.system_element_6815
 		<= nrel_inclusion: set;
 		=> nrel_explanation: [<p><b><i>выборка</i></b> --- множество п.в.а., используемых в процессе обучения, тестирования и архитектурной настройки и.н.с.</p>]
 		(*
@@ -879,20 +879,20 @@
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_6817
+		.system_element_6816
 		=> nrel_idtf: [<p>training set'</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
 		<- role_relation;
-		=> nrel_first_domain: .system_element_6158;
-		=> nrel_second_domain: .system_element_6816;
+		=> nrel_first_domain: .system_element_6157;
+		=> nrel_second_domain: .system_element_6815;
 		=> nrel_definitional_domain: .system_element_2086
 		(*
 			<= nrel_combination: {
-				.system_element_6158;
-				.system_element_6816
+				.system_element_6157;
+				.system_element_6815
 			};;
 		*);
 		=> nrel_explanation: [<p><b><i>обучающая выборка'</i></b> --- ролевое отношение, связывающее действие обучения и.н.с. с выборкой, используемой для изменения настраиваемых параметров и.н.с. в процессе ее обучения.</p>]
@@ -901,20 +901,20 @@
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_6818
+		.system_element_6817
 		=> nrel_idtf: [<p>test set'</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
 		<- role_relation;
-		=> nrel_first_domain: .system_element_6158;
-		=> nrel_second_domain: .system_element_6816;
+		=> nrel_first_domain: .system_element_6157;
+		=> nrel_second_domain: .system_element_6815;
 		=> nrel_definitional_domain: .system_element_2086
 		(*
 			<= nrel_combination: {
-				.system_element_6158;
-				.system_element_6816
+				.system_element_6157;
+				.system_element_6815
 			};;
 		*);
 		=> nrel_explanation: [<p><b><i>тестовая выборка'</i></b> --- ролевое отношение, связывающее действие обучения и.н.с. с выборкой, используемой для проверки обобщающей способности обученной и.н.с.</p>]
@@ -928,15 +928,15 @@
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_6819
+		.system_element_6818
 		<- role_relation;
-		=> nrel_first_domain: .system_element_6158;
-		=> nrel_second_domain: .system_element_6816;
+		=> nrel_first_domain: .system_element_6157;
+		=> nrel_second_domain: .system_element_6815;
 		=> nrel_definitional_domain: .system_element_2086
 		(*
 			<= nrel_combination: {
-				.system_element_6158;
-				.system_element_6816
+				.system_element_6157;
+				.system_element_6815
 			};;
 		*);
 		=> nrel_explanation: [<p><b><i>валидационная выборка'</i></b> --- ролевое отношение, связывающее действие обучения и.н.с. с выборкой, используемой для определения (настройки) архитектурных параметров и.н.с. и параметров обучения.</p>]
@@ -950,7 +950,7 @@
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_6179
+		.system_element_6178
 		<= nrel_inclusion: .system_element_141;
 		=> nrel_explanation: [<p><b><i>метод обучения и.н.с.</i></b> --- метод итеративного поиска оптимальных значений настраиваемых параметров и.н.с., минимизирующих некоторую заданную функцию потерь.</p>]
 		(*
@@ -962,21 +962,21 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
-		=> nrel_inclusion: .system_element_6156
+		=> nrel_inclusion: .system_element_6155
 		(*
 			=> nrel_explanation: [<p><b><i>метод обучения с учителем</i></b> --- метод обучения с использованием заданных целевых переменных.</p>]
 			(*
 				<- lang_ru;;
 				=> nrel_format: format_html;;
 			*);;
-			=> nrel_inclusion: .system_element_6181
+			=> nrel_inclusion: .system_element_6180
 			(*
 				=> nrel_idtf: [<p>м.о.р.о.</p>]
 				(*
 					<- lang_ru;;
 					=> nrel_format: format_html;;
 				*);;
-				=> .system_element_6841: [<p>инициализация весов <i>W</i> и порогов <i>T</i>;</p>]
+				=> .system_element_6840: [<p>инициализация весов <i>W</i> и порогов <i>T</i>;</p>]
 				(*
 					<- lang_ru;;
 					=> nrel_format: format_html;;
@@ -993,7 +993,7 @@
 				*);;
 			*);;
 		*);
-		=> nrel_inclusion: .system_element_6157
+		=> nrel_inclusion: .system_element_6156
 		(*
 			=> nrel_explanation: [<p><b><i>метод обучения без учителя</i></b> --- метод обучения без использования заданных целевых переменных (в режиме самоорганизации)</p>]
 			(*
@@ -1005,20 +1005,20 @@
 				<- lang_ru;;
 				=> nrel_format: format_html;;
 				=> .system_element_1: {
-					.system_element_6182
+					.system_element_6181
 				};;
 			*);;
 		*);;
 
-		.system_element_6820
+		.system_element_6819
 		<- role_relation;
-		=> nrel_first_domain: .system_element_6158;
-		=> nrel_second_domain: .system_element_6179;
+		=> nrel_first_domain: .system_element_6157;
+		=> nrel_second_domain: .system_element_6178;
 		=> nrel_definitional_domain: .system_element_2086
 		(*
 			<= nrel_combination: {
-				.system_element_6158;
-				.system_element_6179
+				.system_element_6157;
+				.system_element_6178
 			};;
 		*);
 		=> nrel_explanation: [<p><b><i>метод обучения'</i></b> --- ролевое отношение, связывающее действие обучения и.н.с. с методом обучения,  использующимся для обучения и.н.с. в рамках этого действия.</p>]
@@ -1027,10 +1027,10 @@
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_6809
+		.system_element_6808
 		<= nrel_inclusion: .system_element_141;
 		=> nrel_inclusion: 
-			.system_element_6842
+			.system_element_6841
 			(*
 				=> nrel_idtf: [<p>стохастический градиентный спуск</p>]
 				(*
@@ -1052,11 +1052,11 @@
 					<- lang_ru;;
 					=> nrel_format: format_html;;
 					=> .system_element_1: {
-						.system_element_6187
+						.system_element_6186
 					};;
 				*);;
 			*);
-			.system_element_6843
+			.system_element_6842
 			(*
 				=> nrel_idtf: [<p>метод Нестерова</p>]
 				(*
@@ -1068,11 +1068,11 @@
 					<- lang_ru;;
 					=> nrel_format: format_html;;
 					=> .system_element_1: {
-						.system_element_6182
+						.system_element_6181
 					};;
 				*);;
 			*);
-			.system_element_6844
+			.system_element_6843
 			(*
 				=> nrel_idtf: [<p>adaptive gradient</p>]
 				(*
@@ -1084,11 +1084,11 @@
 					<- lang_ru;;
 					=> nrel_format: format_html;;
 					=> .system_element_1: {
-						.system_element_6188
+						.system_element_6187
 					};;
 				*);;
 			*);
-			.system_element_6845
+			.system_element_6844
 			(*
 				=> nrel_idtf: [<p>root mean square propagation</p>]
 				(*
@@ -1100,11 +1100,11 @@
 					<- lang_ru;;
 					=> nrel_format: format_html;;
 					=> .system_element_1: {
-						.system_element_6182
+						.system_element_6181
 					};;
 				*);;
 			*);
-			.system_element_6846
+			.system_element_6845
 			(*
 				=> nrel_idtf: [<p>adaptive moments</p>]
 				(*
@@ -1116,7 +1116,7 @@
 					<- lang_ru;;
 					=> nrel_format: format_html;;
 					=> .system_element_1: {
-						.system_element_6189
+						.system_element_6188
 					};;
 				*);;
 			*)
@@ -1126,19 +1126,19 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 			=> .system_element_1: {
-				.system_element_6182
+				.system_element_6181
 			};;
 		*);;
 
-		.system_element_6821
+		.system_element_6820
 		<- role_relation;
-		=> nrel_first_domain: .system_element_6179;
-		=> nrel_second_domain: .system_element_6809;
+		=> nrel_first_domain: .system_element_6178;
+		=> nrel_second_domain: .system_element_6808;
 		=> nrel_definitional_domain: .system_element_2086
 		(*
 			<= nrel_combination: {
-				.system_element_6179;
-				.system_element_6809
+				.system_element_6178;
+				.system_element_6808
 			};;
 		*);
 		=> nrel_explanation: [<p><b><i>метод оптимизации'</i></b> --- ролевое отношение, связывающее метод обучения и.н.с. с методом оптимизации, использующимся для обучения и.н.с. с помощью данного метода.</p>]
@@ -1147,15 +1147,15 @@
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_6190
-		<= nrel_inclusion: .system_element_6124;
+		.system_element_6189
+		<= nrel_inclusion: .system_element_6123;
 		=> nrel_explanation: [<p><b><i>функция потерь</i></b> --- функция, используемая для вычисления ошибки, рассчитываемой как разница между фактическим эталонным значением и прогнозируемым значением, получаемым и.н.с.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
 		=> nrel_inclusion: 
-			.system_element_6847
+			.system_element_6846
 			(*
 				=> nrel_idtf: [<p>mean square error</p>]
 				(*
@@ -1167,7 +1167,7 @@
 					<- lang_ru;;
 					=> nrel_format: format_html;;
 				*);;
-				=> .system_element_6167: [<p>MSE = <sup>1</sup>&frasl;<sub>L</sub> <sub>l = 1</sub><sup>L</sup> <sub>i = 1</sub><sup>m</sup> (y<sub>i</sub><sup>l</sup> - e<sub>i</sub><sup>l</sup>)<sup>2</sup></p>]
+				=> .system_element_6166: [<p>MSE = <sup>1</sup>&frasl;<sub>L</sub> <sub>l = 1</sub><sup>L</sup> <sub>i = 1</sub><sup>m</sup> (y<sub>i</sub><sup>l</sup> - e<sub>i</sub><sup>l</sup>)<sup>2</sup></p>]
 				(*
 					<- lang_ru;;
 					=> nrel_format: format_html;;
@@ -1178,7 +1178,7 @@
 					*);;
 				*);;
 			*);
-			.system_element_6848
+			.system_element_6847
 			(*
 				=> nrel_idtf: [<p>binary cross entropy</p>]
 				(*
@@ -1190,7 +1190,7 @@
 					<- lang_ru;;
 					=> nrel_format: format_html;;
 				*);;
-				=> .system_element_6167: [<p>BCE = - <sub>l = 1</sub><sup>L</sup> (e<sup>l</sup> log(y<sup>l</sup>) + (1 - e<sup>l</sup>)log(1 - y<sup>l</sup>))</p>]
+				=> .system_element_6166: [<p>BCE = - <sub>l = 1</sub><sup>L</sup> (e<sup>l</sup> log(y<sup>l</sup>) + (1 - e<sup>l</sup>)log(1 - y<sup>l</sup>))</p>]
 				(*
 					<- lang_ru;;
 					=> nrel_format: format_html;;
@@ -1206,7 +1206,7 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);
-			.system_element_6849
+			.system_element_6848
 			(*
 				=> nrel_idtf: [<p>multi-class cross entropy</p>]
 				(*
@@ -1218,7 +1218,7 @@
 					<- lang_ru;;
 					=> nrel_format: format_html;;
 				*);;
-				=> .system_element_6167: [<p>MCE = - <sub>l = 1</sub><sup>L</sup> <sub>i = 1</sub><sup>m</sup> e<sub>{ i}<sup>l</sup></sub> log(y<sub>{ i}<sup>l</sup></sub>)</p>]
+				=> .system_element_6166: [<p>MCE = - <sub>l = 1</sub><sup>L</sup> <sub>i = 1</sub><sup>m</sup> e<sub>{ i}<sup>l</sup></sub> log(y<sub>{ i}<sup>l</sup></sub>)</p>]
 				(*
 					<- lang_ru;;
 					=> nrel_format: format_html;;
@@ -1241,15 +1241,15 @@
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_6822
+		.system_element_6821
 		<- role_relation;
-		=> nrel_first_domain: .system_element_6179;
-		=> nrel_second_domain: .system_element_6190;
+		=> nrel_first_domain: .system_element_6178;
+		=> nrel_second_domain: .system_element_6189;
 		=> nrel_definitional_domain: .system_element_2086
 		(*
 			<= nrel_combination: {
-				.system_element_6179;
-				.system_element_6190
+				.system_element_6178;
+				.system_element_6189
 			};;
 		*);
 		=> nrel_explanation: [<p><b><i>функция потерь'</i></b> --- ролевое отношение, связывающее метод обучения и.н.с. с функцией потерь, использующимся для обучения и.н.с. с помощью данного метода.</p>]
@@ -1258,14 +1258,14 @@
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_6810
+		.system_element_6809
 		=> nrel_idtf: [<p>группа наиболее общих параметров метода обучения и.н.с.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
-		=> .system_element_6850: {
-			.system_element_6811
+		=> .system_element_6849: {
+			.system_element_6810
 			(*
 				=> nrel_explanation: [<p><b><i>скорость обучения</i></b> --- параметр, определяющий скорость изменения параметров и.н.с. в процессе обучения.</p>]
 				(*
@@ -1273,7 +1273,7 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);
-			.system_element_6812
+			.system_element_6811
 			(*
 				=> nrel_idtf: [<p>момент</p>]
 				(*
@@ -1296,7 +1296,7 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);
-			.system_element_6813
+			.system_element_6812
 			(*
 				=> nrel_explanation: [<p><b><i>параметр регуляризации</i></b> --- параметр, применяемый для контроля уровня переобучения и.н.с.</p>]
 				(*
@@ -1309,7 +1309,7 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);
-			.system_element_6814
+			.system_element_6813
 			(*
 				=> nrel_explanation: [<p><b><i>размер группы обучения</i></b> --- размер группы п.в.а., которая используется для изменения параметров и.н.с. на каждом элементарном шаге обучения.</p>]
 				(*
@@ -1317,7 +1317,7 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);
-			.system_element_6815
+			.system_element_6814
 			(*
 				=> nrel_explanation: [<p><b><i>эпоха обучения</i></b> --- одна итерация алгоритма обучения, в ходе которой все обучающие п.в.а. из обучающей выборки были однократно использованы.</p>]
 				(*

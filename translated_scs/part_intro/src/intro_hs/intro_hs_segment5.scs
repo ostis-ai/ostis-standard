@@ -1,8 +1,8 @@
 .intro_hs_segment5 = [*
-.system_element_6008
+.system_element_6007
 => nrel_inclusion: [*
 
-	.system_element_5269
+	.system_element_5268
 	=> nrel_idtf: [<p>информационная конструкция</p>]
 	(*
 		<- lang_ru;;
@@ -45,7 +45,7 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
-		=> nrel_inclusion: .system_element_6009;;
+		=> nrel_inclusion: .system_element_6008;;
 	*);
 	=> nrel_idtf: [<p>информационная модель</p>]
 	(*
@@ -75,8 +75,8 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_5270
-	<= nrel_inclusion: .system_element_5269;
+	.system_element_5269
+	<= nrel_inclusion: .system_element_5268;
 	=> nrel_idtf: [<p>первичная информация, приобретаемая кибернетической системы с помощьюеё сенсоров (рецепторов)</p>]
 	(*
 		<- lang_ru;;
@@ -125,7 +125,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> nrel_inclusion: .system_element_6010
+	=> nrel_inclusion: .system_element_6009
 	(*
 		=> nrel_idtf: [<p>язык, используемый кибернетической системой для представленияинформации, хранимой в её памяти</p>]
 		(*
@@ -134,15 +134,15 @@
 		*);;
 	*);;
 
-	.system_element_5244
+	.system_element_5243
 	=> nrel_idtf: [<p>совокупность <u>всей</u> информации, хранимой в памятикибернетической системы</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<= nrel_inclusion: .system_element_5269;;
+	<= nrel_inclusion: .system_element_5268;;
 
-	.system_element_5708
+	.system_element_5707
 	=> nrel_idtf: [<p>качество знаний, приобретенных кибернетической системой к текущемумоменту</p>]
 	(*
 		<- lang_ru;;
@@ -189,13 +189,13 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_5742: .system_element_355;
+	=> .system_element_5741: .system_element_355;
 	=> .system_element_3488: 
+		.system_element_6010;
 		.system_element_6011;
 		.system_element_6012;
 		.system_element_6013;
-		.system_element_6014;
-		.system_element_6015
+		.system_element_6014
 	;;
 
 	.system_element_355
@@ -205,30 +205,30 @@
 		=> nrel_format: format_html;;
 	*);
 	<=> .system_element_72: {
+		.system_element_6015;
 		.system_element_6016;
 		.system_element_6017;
 		.system_element_6018;
 		.system_element_6019;
 		.system_element_6020;
 		.system_element_6021;
-		.system_element_6022;
-		.system_element_6023
+		.system_element_6022
 	};
 	=> nrel_explanation: [<p>Ярушкина.Н.Г.НечетГС-2007кн.-стр.10-28</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
-		<= .system_element_2932: .system_element_5290;;
+		<= .system_element_2932: .system_element_5289;;
 	*);;
 
-	.system_element_6016
+	.system_element_6015
 	=> nrel_idtf: [<p>уровень адекватности хранимой информации той среде, в которойсуществует кибернетическая система и информационной моделью которой этахранимая информация является</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_6024
+	.system_element_6023
 	=> nrel_idtf: [<p>уровень присутствия в хранимой информации различного вида противоречийи, в частности, ошибок</p>]
 	(*
 		<- lang_ru;;
@@ -256,21 +256,21 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_6025
+	.system_element_6024
 	=> .system_element_264: [<p>противоречие, заключающееся в нарушении некоторойзакономерности (некоторого правила), которая не подвергается сомнению</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_6025
+	.system_element_6024
 	=> nrel_note: [<p>Ошибки (ошибочные фрагменты) в хранимой информации могут бытьсинтаксическими и семантическими, противоречащими некоторым правилам(закономерностям), которые явно в памяти могут быть не представлены и считаютсяаприори истинными.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_6026
+	.system_element_6025
 	=> nrel_idtf: [<p>уровень того, насколько <i>информация, хранимая в памяти кибернетическойсистемы</i>, описывает среду существования этой системы и используемые ею <i>методырешения задач</i> достаточно полно (достаточно детально) для того, чтобыкибернетическая система могла действительно решать все множествосоответствующих ей задач</p>]
 	(*
 		<- lang_ru;;
@@ -292,17 +292,17 @@
 		=> nrel_format: format_html;;
 	*);
 	=> .system_element_3488: 
-		.system_element_5738;
-		.system_element_6027
+		.system_element_5737;
+		.system_element_6026
 	;;
 
-	.system_element_6028
+	.system_element_6027
 	=> .system_element_3488: 
-		.system_element_6029;
-		.system_element_6030
+		.system_element_6028;
+		.system_element_6029
 	;;
 
-	.system_element_6018
+	.system_element_6017
 	=> nrel_idtf: [<p>уровень содержательной информативности информации, хранимой в памятикибернетической системы</p>]
 	(*
 		<- lang_ru;;
@@ -324,7 +324,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_6031
+	.system_element_6030
 	=> nrel_idtf: [<p>информация, отсутствие которой в памяти кибернетической системысущественно усложняет деятельность этой системы</p>]
 	(*
 		<- lang_ru;;
@@ -341,14 +341,14 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_6032
+	.system_element_6031
 	=> nrel_idtf: [<p>многообразие форм и общее количество информационного мусора, входящегов состав <i>информации, хранимой в памяти кибернетической системы</i></p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_6033
+	.system_element_6032
 	=> nrel_idtf: [<p>информационный фрагмент, входящий в состав <i>информации, хранимой впамяти кибернетической системы</i>, удаление которого существенно <u>не</u>усложнит деятельность <i>кибернетической системы</i></p>]
 	(*
 		<- lang_ru;;
@@ -364,13 +364,13 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_6011
+	.system_element_6010
 	=> nrel_idtf: [<p>семантическая мощность внутреннего языка кибернетической системы</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_3488: .system_element_6034;
+	=> .system_element_3488: .system_element_6033;
 	=> nrel_note: [<p>Универсальность внутреннего языка кибернетическойсистемы является важнейшим фактором еёинтеллектуальности</p>]
 	(*
 		<- lang_ru;;
@@ -384,15 +384,15 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_6035
+	.system_element_6034
 	=> .system_element_3488: 
-		.system_element_5738;
-		.system_element_6013
+		.system_element_5737;
+		.system_element_6012
 	;;
 
-	.system_element_5738
-	=> .system_element_5580: 
-		.system_element_6036
+	.system_element_5737
+	=> .system_element_5579: 
+		.system_element_6035
 		(*
 			=> nrel_idtf: [<p>многообразие видов метаинформации (метазнаний), хранимых впамяти кибернетической системы</p>]
 			(*
@@ -400,13 +400,13 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
+		.system_element_6036;
 		.system_element_6037;
 		.system_element_6038;
-		.system_element_6039;
-		.system_element_6040
+		.system_element_6039
 	;;
 
-	.system_element_6041
+	.system_element_6040
 	=> nrel_idtf: [<p>объем знаний, приобретенных кибернетической системой к текущемумоменту</p>]
 	(*
 		<- lang_ru;;
@@ -423,7 +423,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_6042
+	.system_element_6041
 	=> nrel_idtf: [<p>уровень бесшовной  интеграции различного вида знаний кибернетическойсистемы</p>]
 	(*
 		<- lang_ru;;
@@ -439,9 +439,9 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_3488: .system_element_6043;;
+	=> .system_element_3488: .system_element_6042;;
 
-	.system_element_6044
+	.system_element_6043
 	=> nrel_idtf: [<p>степень приближения информации, хранимой в памяти кибернетическойсистемы, к максимально простой и компактной форме представления информационноймодели некоторого множества описываемых сущностей, которая является отражениемопределенной конфигурации связей между указанными сущностями</p>]
 	(*
 		<- lang_ru;;
@@ -465,14 +465,14 @@
 			=> nrel_format: format_html;;
 		*);;
 	*);
-	<=> .system_element_265: .system_element_6045
+	<=> .system_element_265: .system_element_6044
 	(*
 		=> nrel_idtf: [<p>деятельность, направленная на повышение уровня формализованностипредставление информации</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
-		=> .system_element_6046: [<p>сближение синтаксиса с семантикой --- сближениесинтаксической структуры информационной конструкции с её смысловой структурой</p>]
+		=> .system_element_6045: [<p>сближение синтаксиса с семантикой --- сближениесинтаксической структуры информационной конструкции с её смысловой структурой</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
@@ -494,10 +494,10 @@
 		=> nrel_format: format_html;;
 	*);
 	=> .system_element_3488: 
-		.system_element_6029;
+		.system_element_6028;
+		.system_element_6046;
 		.system_element_6047;
-		.system_element_6048;
-		.system_element_6049
+		.system_element_6048
 	;;
 
 	.system_element_813
@@ -528,7 +528,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_6050
+	.system_element_6049
 	=> nrel_idtf: [<p>многообразие видов семантической эквивалентности фрагментовинформации, хранимой в памяти кибернетической системы</p>]
 	(*
 		<- lang_ru;;
@@ -540,14 +540,14 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_6051
+	.system_element_6050
 	=> nrel_idtf: [<p>частота присутствия в хранимой информации семантически эквивалентныхинформационных фрагментов и, в частности, синонимичных знаков</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_6052
+	.system_element_6051
 	=> nrel_note: [<p>Примерами фрагментов хранимой информации, не являющихся знакамиили конфигурациями знаков, являются:
 
 	<ul>
@@ -566,17 +566,17 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_6049
+	.system_element_6048
 	=> nrel_note: [<p>Должно уменьшаться число элементов памяти, используемых дляпредставления информации, т.е. необходим переход к более компактным, носемантически эквивалентным информационнымконструкциям.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_6053
+	.system_element_6052
 	=> .system_element_3488: 
-		.system_element_5952;
-		.system_element_6036
+		.system_element_5951;
+		.system_element_6035
 	;
 	=> nrel_idtf: [<p>способность <i>кибернетической системы</i> выделять такие разделы <i>информации,хранимой в памяти этой системы</i>, которые бы ограничивали области действия<i>агентов решателя задач кибернетической системы</i>, являющиеся достаточными длярешения заданных задач</p>]
 	(*
@@ -604,7 +604,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_6054
+	.system_element_6053
 	=> nrel_idtf: [<p>уровень применения средств самоописания (метаязыковых средств) винформации, хранимой в памяти кибернетической системы</p>]
 	(*
 		<- lang_ru;;
@@ -621,7 +621,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_6055
+	.system_element_6054
 	=> nrel_note: [<p>Данное свойство касается не самой информации, хранимой в памяти,а язык кодирования (представления) информации в памяти кибернетическойсистемы</p>]
 	(*
 		<- lang_ru;;
@@ -639,7 +639,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<= nrel_inclusion: .system_element_5244;
+	<= nrel_inclusion: .system_element_5243;
 	=> nrel_explanation: [<p><i>информация, хранимая в памяти кибернетической системы</i>и имеющая высокий уровень качества по всем показателям и, в частности, высокийуровень:
 	<ul>
 		<li> <i>семантической мощности языка представления информации хранимой впамяти кибернетической системы</i> (в базе знаний указанный язык должен бытьуниверсальным);

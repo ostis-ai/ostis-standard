@@ -1,21 +1,21 @@
 .system_element_5038
 => nrel_inclusion: [*
 	<- .system_element_3;
-	-> rrel_key_sc_element: .system_element_5430;;
+	-> rrel_key_sc_element: .system_element_5429;;
 
-	.system_element_5430
+	.system_element_5429
 	<- subject_domain;
+	-> .system_element_6: 
+		.system_element_5430
+	;
 	-> .system_element_6: 
 		.system_element_5431
 	;
-	-> .system_element_6: 
-		.system_element_5432
-	;
 	-> .system_element_335: 
-		.system_element_5433
+		.system_element_5432
 	;;
 
-	.system_element_5434
+	.system_element_5433
 	=> nrel_note: [<p>В качестве основы унификации принципов обработкиинформации в компьютерных системах предлагается использовать<i>агентно-ориентированный подход к обработке информации</i>, обладающийрядом важных достоинств.</p>]
 	(*
 		<- lang_ru;;
@@ -44,7 +44,7 @@
 		*)
 	}
 	(*
-		=> .system_element_1: .system_element_5435;;
+		=> .system_element_1: .system_element_5434;;
 	*);
 	=> .system_element_3755: {
 		[<p>Знания агента представляются при помощиузкоспециализированных языков, зачастую не предназначенных для представлениязнаний в широком смысле и онтологий в частности.</p>]
@@ -120,7 +120,7 @@
 		*);;
 	*);;
 
-	.system_element_5433
+	.system_element_5432
 	=> nrel_note: [<p><b><i>совместимость моделей решения задач*</i></b>-- это возможность одновременного использования разными моделями решения задачодних и тех же информационных ресурсов.</p>]
 	(*
 		<- lang_ru;;
@@ -139,9 +139,9 @@
 		*)
 	};;
 
-	.system_element_5432
+	.system_element_5431
 	<= nrel_inclusion: process;
-	=> .system_element_5436: <
+	=> .system_element_5435: <
 		[<p>Объединение множества методов первого решателя и множестваметодов второго решателя</p>]
 		(*
 			<- lang_ru;;

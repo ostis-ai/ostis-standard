@@ -1,10 +1,10 @@
 .intro_hs_segment4 = [*
-.system_element_6056
+.system_element_6055
 => nrel_inclusion: [*
 
-	.system_element_5262
+	.system_element_5261
 	<- .system_element_3010;
-	<- .system_element_5735;
+	<- .system_element_5734;
 	=> nrel_idtf: [<p>уровень (степень, величина) интеллекта кибернетической системы</p>]
 	(*
 		<- lang_ru;;
@@ -70,15 +70,15 @@
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
-		=> nrel_authors: .system_element_6057;;
+		=> nrel_authors: .system_element_6056;;
 	*);
 	=> nrel_note: [<p>Исследователи Искусственного интеллекта определяют интеллект как неотъемлемое свойство машины.Их целью является построение систем, которые демонстрируют весь спектр когнитивных способностей, которые мы обнаруживаем у людей</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 		=> .system_element_1: 
-			.system_element_5300;
-			.system_element_5301
+			.system_element_5299;
+			.system_element_5300
 		;;
 	*);
 	=> nrel_note: [<p>Прежде, чем говорить о требованиях, предъявляемых к<i>технологии проектирования и производства интеллектуальных компьютерныхсистем (искусственных кибернетических систем</i>, обладающих высоким уровнем<i>интеллекта)</i>, необходимо уточнить (детализировать) <i>свойства</i>,присущие указанным системам и являющиеся предпосылками, обеспечивающими высокийуровень <i>интеллекта</i>. Подчеркнем, что указанные <i>свойства</i>,уточняющие (детализирующие, обеспечивающие, определяющие) <i>свойства</i>%<i>интеллектуальных систем</i>%(<i>свойства</i>, определяющие уровень <i>интеллекта</i> этих систем)должны быть общими как для искусственных кибернетических систем(<i>компьютерных систем</i>), так и для <i>естественных кибернетическихсистем.</i></p>]
@@ -101,11 +101,11 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_6058
+	.system_element_6057
 	=> .system_element_3488: 
-		.system_element_5263;
-		.system_element_5272;
-		.system_element_5276
+		.system_element_5262;
+		.system_element_5271;
+		.system_element_5275
 		(*
 			=> nrel_note: [<p>Интеллект <i>кибернетической системы</i>, как и лежащий вего основе познавательный процесс, выполняемый кибернетической системой, имеетсоциальный характер, поскольку наиболее эффективно формируется и развивается вформе взаимодействия <i>кибернетической</i> системы с другими<i>кибернетическими системами</i>.</p>]
 			(*
@@ -115,21 +115,21 @@
 		*)
 	;;
 
-	.system_element_5263
+	.system_element_5262
 	=> nrel_idtf: [<p>уровень навыков (умений), а также иных знаний, приобретенных <i>кибернетической системой</i> к заданному моменту</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
 	=> .system_element_3488: 
-		.system_element_6059
+		.system_element_6058
 		(*
 			=> nrel_idtf: [<p>качество умений, которыми владеет кибернетическая система втекущий момент</p>]
 			(*
 				<- lang_ru;;
 				=> nrel_format: format_html;;
 			*);;
-			=> .system_element_3488: .system_element_6060
+			=> .system_element_3488: .system_element_6059
 			(*
 				=> nrel_idtf: [<p>качество знаний, приобретенных кибернетической системой к заданному моменту</p>]
 				(*
@@ -138,7 +138,7 @@
 				*);;
 			*);;
 		*);
-		.system_element_5708
+		.system_element_5707
 		(*
 			=> nrel_note: [<p>Следует обратить внимание на то, что <i>качество информации, хранимой в памяти кибернетической системы</i>, является фактором,обеспечивающим не только <i>качество навыков, приобретенныхкибернетической системой</i>, но и общий <i>уровень качества кибернетической системы</i>.</p>]
 			(*
@@ -149,10 +149,10 @@
 	;;
 
 	.system_element_1181
-	<= nrel_combination: .system_element_6061
+	<= nrel_combination: .system_element_6060
 	(*
 		<=> .system_element_72: {
-			.system_element_6062;
+			.system_element_6061;
 			intelligent_system
 			(*
 				=> nrel_idtf: [<p>интеллектуальная кибернетическая система</p>]
@@ -161,7 +161,7 @@
 					=> nrel_format: format_html;;
 				*);;
 				<= nrel_combination: {
-					.system_element_6063
+					.system_element_6062
 					(*
 						=> nrel_idtf: [<p>кибернетическая система со слабым интеллектом</p>]
 						(*
@@ -179,7 +179,7 @@
 							=> nrel_format: format_html;;
 						*);;
 					*);
-					.system_element_6064
+					.system_element_6063
 					(*
 						=> nrel_idtf: [<p>идеальная интеллектуальная система</p>]
 						(*
@@ -207,7 +207,7 @@
 		};;
 	*);;
 
-	.system_element_6061
+	.system_element_6060
 	=> nrel_note: [<p>Данный признак классификации кибернетических систем формальноявляется не разбиением, а покрытием множества <i>кибернетических систем</i>,так как отсутствует четкая грань между неинтеллектуальными и интеллектуальнымикибернетическими системами, а также между слабоинтеллектуальными ивысокоинтеллектуальными кибернетическими системами.</p>]
 	(*
 		<- lang_ru;;
@@ -240,7 +240,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<= nrel_inclusion: .system_element_6065
+	<= nrel_inclusion: .system_element_6064
 	(*
 		=> nrel_idtf: [<p>кибернетическая система, имеющая высокий уровень образованности</p>]
 		(*
@@ -252,13 +252,13 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
+		<= nrel_inclusion: .system_element_5263;;
 		<= nrel_inclusion: .system_element_5264;;
 		<= nrel_inclusion: .system_element_5265;;
-		<= nrel_inclusion: .system_element_5266;;
-		<= nrel_inclusion: .system_element_5255;;
-		<= nrel_inclusion: .system_element_6066;;
+		<= nrel_inclusion: .system_element_5254;;
+		<= nrel_inclusion: .system_element_6065;;
 	*);
-	<= nrel_inclusion: .system_element_5267
+	<= nrel_inclusion: .system_element_5266
 	(*
 		=> nrel_idtf: [<p>когнитивная кибернетическая система</p>]
 		(*
@@ -270,20 +270,20 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
+		<= nrel_inclusion: .system_element_6066;;
 		<= nrel_inclusion: .system_element_6067;;
 		<= nrel_inclusion: .system_element_6068;;
 		<= nrel_inclusion: .system_element_6069;;
-		<= nrel_inclusion: .system_element_6070;;
 	*);
-	<= nrel_inclusion: .system_element_5268
+	<= nrel_inclusion: .system_element_5267
 	(*
 		=> nrel_idtf: [<p>кибернетическая система, имеющая высокий уровень интероперабельности</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
-		<= nrel_inclusion: .system_element_6071;;
-		<= nrel_inclusion: .system_element_6072
+		<= nrel_inclusion: .system_element_6070;;
+		<= nrel_inclusion: .system_element_6071
 		(*
 			=> nrel_idtf: [<p>кибернетическая система, способная координировать (согласовывать) своюдеятельность с другими системами</p>]
 			(*
@@ -293,7 +293,7 @@
 		*);;
 	*);;
 
-	.system_element_5264
+	.system_element_5263
 	=> nrel_idtf: [<p>кибернетическая система, в основе которой лежит формируемая в еепамяти, постоянно совершенствуемая и структурированная информационная модельтой среды, в рамках которой она существует и решает соответствующие задачи</p>]
 	(*
 		<- lang_ru;;
@@ -310,21 +310,21 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_5265
+	.system_element_5264
 	=> nrel_idtf: [<p>кибернетическая система, в которой выполняемые ею действияинициируются соответствующими ситуациями и/или событиями, возникающими в еебазе знаний</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_5266
+	.system_element_5265
 	=> nrel_idtf: [<p>субъект, осознанно и целенаправленно осуществляющий свою деятельность,ведающий то, что он творит</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_5267
+	.system_element_5266
 	=> nrel_idtf: [<p>когнитивная система</p>]
 	(*
 		<- lang_ru;;
@@ -341,7 +341,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_5268
+	.system_element_5267
 	=> nrel_idtf: [<p>кибернетическая система, имеющая достаточно высокий уровеньинтеллекта, чтобы быть полезным членом различных, в том числе, ичеловеко-машинных сообществ</p>]
 	(*
 		<- lang_ru;;

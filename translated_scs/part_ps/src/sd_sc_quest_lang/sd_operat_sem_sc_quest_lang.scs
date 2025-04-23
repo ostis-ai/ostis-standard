@@ -1,18 +1,18 @@
-.system_element_7003
+.system_element_7002
 => nrel_inclusion: [*
 	<- .system_element_3;
-	-> rrel_key_sc_element: .system_element_6916;;
+	-> rrel_key_sc_element: .system_element_6915;;
 
-	.system_element_6916
+	.system_element_6915
 	<- subject_domain;
 	-> .system_element_6: 
 		task_action;
+		.system_element_6917;
 		.system_element_6918;
 		.system_element_6919;
 		.system_element_6920;
 		.system_element_6921;
-		.system_element_6922;
-		.system_element_6923
+		.system_element_6922
 	;;
 
 	task_action
@@ -21,16 +21,17 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 		=> .system_element_35: {
-			.system_element_7004
+			.system_element_7003
 		};;
 	*);;
 
-	.system_element_6924
-	<- .system_element_7005;
+	.system_element_6923
+	<- .system_element_7004;
 	=> nrel_abstract_sc_agent_decomposition: {
-		.system_element_7006
+		.system_element_7005
 		(*
 			=> nrel_abstract_sc_agent_decomposition: {
+				.system_element_7006;
 				.system_element_7007;
 				.system_element_7008;
 				.system_element_7009;
@@ -43,11 +44,10 @@
 				.system_element_7016;
 				.system_element_7017;
 				.system_element_7018;
-				.system_element_7019;
-				.system_element_7020
+				.system_element_7019
 			};;
 		*);
-		.system_element_7021
+		.system_element_7020
 	};
 	=> nrel_note: [<p>Все <i>sc-агенты</i>, выводящие <i>ответы на</i> поставленные <i>вопросы</i>, формируют <i>коллектив sc-агентов</i> --- <b><i>интерпретатор Языка вопросов для ostis-систем</i></b>, с помощью которого можно интерпретировать любые классы <i>вопросов</i>. <i>интерпретатор Языка вопросов для ostis-систем</i> может быть реализован по-разному: в виде <i>коллектива scp-агентов</i> или <i>платформенно-зависимых sc-агентов</i>.</p>]
 	(*

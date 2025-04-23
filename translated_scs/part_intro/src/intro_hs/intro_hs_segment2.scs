@@ -1,9 +1,9 @@
 .intro_hs_segment2 = [*
 
-.system_element_5734
+.system_element_5733
 => nrel_inclusion: [*
 
-	.system_element_5254
+	.system_element_5253
 	=> nrel_idtf: [<p>интегральный уровень качества кибернетической системы в заданный момент</p>]
 	(*
 		<- lang_ru;;
@@ -23,7 +23,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<- .system_element_5735;
+	<- .system_element_5734;
 	=> nrel_idtf: [<p>эволюционный уровень кибернетической системы</p>]
 	(*
 		<- lang_ru;;
@@ -68,38 +68,38 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 		=> .system_element_1: 
-			.system_element_5298;
 			.system_element_5297;
-			.system_element_5303;
+			.system_element_5296;
+			.system_element_5302;
+			.system_element_5293;
 			.system_element_5294;
-			.system_element_5295;
-			.system_element_5296
+			.system_element_5295
 		;;
 	*);;
 
-	.system_element_5254
-	=> .system_element_5736: 
-		.system_element_5260;
-		.system_element_5271
+	.system_element_5253
+	=> .system_element_5735: 
+		.system_element_5259;
+		.system_element_5270
 		(*
-			=> .system_element_5736: .system_element_5708;;
+			=> .system_element_5735: .system_element_5707;;
 		*);
-		.system_element_5708;
-		.system_element_5737
+		.system_element_5707;
+		.system_element_5736
 		(*
 			=> nrel_idtf: [<p>степень многообразия (1) видов знаний, хранимых в памяти кибернетической системы, (2) используемых моделей решения задач, (3) видов сенсоров и эффекторов</p>]
 			(*
 				<- lang_ru;;
 				=> nrel_format: format_html;;
 			*);;
-			=> .system_element_5580: 
+			=> .system_element_5579: 
+				.system_element_5737;
 				.system_element_5738;
-				.system_element_5739;
-				.system_element_5740
+				.system_element_5739
 			;;
 		*);
-		.system_element_5256;
-		.system_element_5258
+		.system_element_5255;
+		.system_element_5257
 		(*
 			=> nrel_idtf: [<p>cкорость решения задач кибернетической системы</p>]
 			(*
@@ -107,24 +107,24 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_5259;
-		.system_element_5276
+		.system_element_5258;
+		.system_element_5275
 	;;
 
-	.system_element_5737
-	=> .system_element_5580: 
+	.system_element_5736
+	=> .system_element_5579: 
+		.system_element_5737;
 		.system_element_5738;
-		.system_element_5739;
-		.system_element_5740
+		.system_element_5739
 	;;
 
-	.system_element_5255
+	.system_element_5254
 	=> nrel_idtf: [<p>кибернетическая система, использующая многообразие рецепторных и/или эффекторных подсистем, и/или многообразие видов обрабатываемой информации, и/или многообразие способов решения задач</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> nrel_inclusion: .system_element_5741
+	=> nrel_inclusion: .system_element_5740
 	(*
 		=> nrel_idtf: [<p><i>компьютерная система</i>, способная решать <i>комплексные задачи</i>, требующие использования многообразия различных видов обрабатываемой информации и различных <i>моделей решения задач</i></p>]
 		(*
@@ -133,14 +133,14 @@
 		*);;
 	*);;
 
-	.system_element_5256
+	.system_element_5255
 	=> nrel_idtf: [<p>приспособленность кибернетической системы к эволюции, к повышению уровня своего качества</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_5742: {
-		.system_element_5272
+	=> .system_element_5741: {
+		.system_element_5271
 		(*
 			=> nrel_idtf: [<p>способность кибернетической системы самостоятельно повышать уровень своего качества</p>]
 			(*
@@ -153,7 +153,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_5743
+		.system_element_5742
 		(*
 			=> nrel_idtf: [<p>приспособленность кибернетической системы к её совершенствованию, осуществляемому внешними субъектами</p>]
 			(*
@@ -172,9 +172,9 @@
 			*);;
 		*)
 	};
-	=> .system_element_5742: {
-		.system_element_5257;
-		.system_element_5273
+	=> .system_element_5741: {
+		.system_element_5256;
+		.system_element_5272
 		(*
 			=> nrel_idtf: [<p>уровень стратифицированности кибернетической системы</p>]
 			(*
@@ -189,7 +189,7 @@
 		*)
 	};;
 
-	.system_element_5257
+	.system_element_5256
 	=> nrel_idtf: [<p>реконфигурируемость кибернетической системы</p>]
 	(*
 		<- lang_ru;;
@@ -285,31 +285,31 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_5742: {
+	=> .system_element_5741: {
+		.system_element_5743
+		(*
+			=> .system_element_3488: .system_element_5272;;
+		*);
 		.system_element_5744
-		(*
-			=> .system_element_3488: .system_element_5273;;
-		*);
-		.system_element_5745
 	};
-	=> .system_element_5543: {
+	=> .system_element_5542: {
+		.system_element_5745;
 		.system_element_5746;
-		.system_element_5747;
-		.system_element_5732
+		.system_element_5731
 		(*
-			=> .system_element_5580: .system_element_5748;;
+			=> .system_element_5579: .system_element_5747;;
 		*);
-		.system_element_5749
+		.system_element_5748
 	};
-	=> .system_element_5543: {
-		.system_element_5750;
-		.system_element_5751
+	=> .system_element_5542: {
+		.system_element_5749;
+		.system_element_5750
 		(*
-			<= .system_element_3488: .system_element_5272;;
+			<= .system_element_3488: .system_element_5271;;
 		*)
 	};;
 
-	.system_element_5743
+	.system_element_5742
 	=> nrel_idtf: [<p>приспособленность кибернетическиой системы к хирургическим методам её совершенствования, реализуемым разработчиками</p>]
 	(*
 		<- lang_ru;;
@@ -321,14 +321,14 @@
 		=> nrel_format: format_html;;
 	*);
 	=> .system_element_3488: 
-		.system_element_5752
+		.system_element_5751
 		(*
-			=> .system_element_3488: .system_element_5273;;
+			=> .system_element_3488: .system_element_5272;;
 		*);
-		.system_element_5753
+		.system_element_5752
 	;;
 
-	.system_element_5258
+	.system_element_5257
 	=> nrel_idtf: [<p>быстродействие кибернетической системы</p>]
 	(*
 		<- lang_ru;;
@@ -339,23 +339,23 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_5580: 
-		.system_element_5754;
-		.system_element_5755
+	=> .system_element_5579: 
+		.system_element_5753;
+		.system_element_5754
 	;;
 
-	.system_element_5259
+	.system_element_5258
 	=> nrel_idtf: [<p>способность кибернетической системы при соответствующих условиях ее функционирования сохранять (и, точнее, не снижать) уровень всех свойств и способностей, определяющих общее (комплексное) качество кибернетической системы</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
 	=> .system_element_3488: 
+		.system_element_5755;
 		.system_element_5756;
-		.system_element_5757;
-		.system_element_5758
+		.system_element_5757
 		(*
-			=> .system_element_1632: .system_element_5759
+			=> .system_element_1632: .system_element_5758
 			(*
 				=> nrel_note: [<p>Здесь слово ремонтопригодность взято в кавычки, т.к. речь идет не только об искусственных (технических) кибернетических системах</p>]
 				(*
