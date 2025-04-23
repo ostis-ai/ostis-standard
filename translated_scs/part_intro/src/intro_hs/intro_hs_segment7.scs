@@ -1,8 +1,8 @@
 .intro_hs_segment7 = [*
-.system_element_5957
+.system_element_5902
 => nrel_inclusion: [*
 
-	.system_element_5325
+	.system_element_5272
 	=> nrel_idtf: [<p>способность <i>кибернетической системы</i> повышать своё качество, адаптируясь к решению новых задач, <i>качество внутренней информации модели своей среды</i>, <i>качество</i> своего <i>решателя задач</i> и даже <i>качество</i> своей <i>физической оболочки</i>.</p>]
 	(*
 		<- lang_ru;;
@@ -13,7 +13,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<=> .system_element_265: .system_element_5798;
+	<=> .system_element_265: .system_element_5743;
 	=> nrel_idtf: [<p>способность кибернетической системы к самостоятельному повышению уровня (качества) своих знаний, навыков, а также уровня своей обучаемости</p>]
 	(*
 		<- lang_ru;;
@@ -87,7 +87,7 @@
 
 	.system_element_265
 	-> {
-		.system_element_5316
+		.system_element_5263
 		(*
 			=> nrel_idtf: [<p>навыки и другие знания, которые кибернетическая приобрела (с учителем, экспертом или самостоятельно) к заданному моменту</p>]
 			(*
@@ -100,7 +100,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_5325
+		.system_element_5272
 		(*
 			=> nrel_idtf: [<p>скорость повышения уровня образованности кибернетической системы</p>]
 			(*
@@ -113,7 +113,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_5958
+		.system_element_5903
 		(*
 			=> nrel_idtf: [<p>ускорение повышения уровня образованности кибернетической системы</p>]
 			(*
@@ -128,53 +128,53 @@
 		*)
 	};;
 
-	.system_element_5325
-	=> .system_element_5797: .system_element_5959;
-	=> .system_element_5598: .system_element_5960;;
+	.system_element_5272
+	=> .system_element_5742: .system_element_5904;
+	=> .system_element_5543: .system_element_5905;;
 
-	.system_element_5961
+	.system_element_5906
 	<=> .system_element_72: {
-		.system_element_5310;
-		.system_element_5326;
-		.system_element_5327;
-		.system_element_5962;
-		.system_element_5963;
-		.system_element_5964
+		.system_element_5257;
+		.system_element_5273;
+		.system_element_5274;
+		.system_element_5907;
+		.system_element_5908;
+		.system_element_5909
 	};;
 
-	.system_element_5806
+	.system_element_5751
 	=> nrel_idtf: [<p>гибкость кибернетической системы при выполнении ею изменений над самой этой системой</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_5797: {
-		.system_element_5965;
-		.system_element_5966
+	=> .system_element_5742: {
+		.system_element_5910;
+		.system_element_5911
 	};
-	=> .system_element_5598: {
-		.system_element_5967;
-		.system_element_5968;
-		.system_element_5969
+	=> .system_element_5543: {
+		.system_element_5912;
+		.system_element_5913;
+		.system_element_5914
 	};;
 
-	.system_element_5806
+	.system_element_5751
 	=> nrel_idtf: [<p>гибкость кибернетической системы при её самосовершенствовании</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<= .system_element_5635: .system_element_5310
+	<= .system_element_5580: .system_element_5257
 	(*
 		=> nrel_note: [<p>Поскольку обучение всегда сводится к внесению тех или иных изменений в обучаемую кибернетическую систему, без высокого уровня гибкости этой системы не может быть высокого уровня её обучаемости.</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
-		<= .system_element_3488: .system_element_5325;;
+		<= .system_element_3488: .system_element_5272;;
 	*);;
 
-	.system_element_5965
+	.system_element_5910
 	=> nrel_idtf: [<p>легкость (трудоемкость) внесения различных изменений в кибернетическую систему, осуществляемых самой этой кибернетической системой</p>]
 	(*
 		<- lang_ru;;
@@ -186,7 +186,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_5326
+	.system_element_5273
 	=> nrel_idtf: [<p>иерархическая декомпозиция кибернетической системы на такие подсистемы, структура и функционирование которых минимально возможным образом связаны друг с другом, что существенным образом сужает область учета последствий различных изменений вносимых в систему, а также область поиска причин всевозможных ошибок</p>]
 	(*
 		<- lang_ru;;
@@ -221,13 +221,13 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_5635: 
-		.system_element_5970;
-		.system_element_5971;
-		.system_element_5788
+	=> .system_element_5580: 
+		.system_element_5915;
+		.system_element_5916;
+		.system_element_5733
 	;;
 
-	.system_element_5327
+	.system_element_5274
 	=> nrel_idtf: [<p>уровень (степень) рефлексивности кибернетической системы</p>]
 	(*
 		<- lang_ru;;
@@ -278,19 +278,19 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_5635: 
-		.system_element_5972;
-		.system_element_5973
+	=> .system_element_5580: 
+		.system_element_5917;
+		.system_element_5918
 		(*
-			=> .system_element_5635: .system_element_5974;;
+			=> .system_element_5580: .system_element_5919;;
 		*);
-		.system_element_5975
+		.system_element_5920
 		(*
-			=> .system_element_5635: .system_element_5976;;
+			=> .system_element_5580: .system_element_5921;;
 		*)
 	;;
 
-	.system_element_5962
+	.system_element_5907
 	=> nrel_explanation: [<p>Данное свойство определяет границу между теми знаниями и навыками, которые соответствующая <i>кибернетическая система</i> принципиально может приобрести, и теми знаниями и навыками, которые указанная кибернетическая система не сможет приобрести никогда. Данное свойство определяет максимальный уровень потенциальных возможностей соответствующей кибернетической системы. Очевидно, что максимальная степень отсутствия ограничений в приобретении новых знаний и навыков --- это полное отсутствие ограничений, т.е. полная универсальность возможностей соответствующих кибернетических систем, которые всё могут познать и всё могут сотворить.</p>]
 	(*
 		<- lang_ru;;
@@ -311,12 +311,12 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_5635: 
-		.system_element_5977;
-		.system_element_5978
+	=> .system_element_5580: 
+		.system_element_5922;
+		.system_element_5923
 	;;
 
-	.system_element_5977
+	.system_element_5922
 	=> nrel_idtf: [<p>граница приобретаемых знаний, за пределы которой кибернетическая система принципиально не может перейти в процессе своего обучения</p>]
 	(*
 		<- lang_ru;;
@@ -339,7 +339,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_5963
+	.system_element_5908
 	=> nrel_idtf: [<p>познавательная мотивированность</p>]
 	(*
 		<- lang_ru;;
@@ -379,18 +379,18 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_5635: 
-		.system_element_5979;
-		.system_element_5980;
-		.system_element_5981
+	=> .system_element_5580: 
+		.system_element_5924;
+		.system_element_5925;
+		.system_element_5926
 	;
 	=> .system_element_3488: 
-		.system_element_5982;
-		.system_element_5983;
-		.system_element_5984
+		.system_element_5927;
+		.system_element_5928;
+		.system_element_5929
 	;;
 
-	.system_element_5982
+	.system_element_5927
 	=> nrel_idtf: [<p>способность планировать своё обучение и управлять процессом обучения</p>]
 	(*
 		<- lang_ru;;
@@ -427,7 +427,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_5983
+	.system_element_5928
 	=> nrel_idtf: [<p>способность осуществлять управление своим обучением</p>]
 	(*
 		<- lang_ru;;
@@ -439,7 +439,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_5984
+	.system_element_5929
 	=> nrel_idtf: [<p>способность к отклонениям от составленных планов своих действий для повышения качества результата или сохранении целенаправленности этих действий</p>]
 	(*
 		<- lang_ru;;
@@ -451,7 +451,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_5964
+	.system_element_5909
 	=> nrel_idtf: [<p>способность кибернетической системы к выявлению и устранению угроз, направленных на снижение её качества и даже на её уничтожение, что означает полную потерю необходимого качества</p>]
 	(*
 		<- lang_ru;;
@@ -473,7 +473,7 @@
 		=> nrel_format: format_html;;
 	*);
 	=> .system_element_3488: 
-		.system_element_5985
+		.system_element_5930
 	
 	(*
 		=> nrel_epigraph: [<p>Прежде, чем выполнять приказ, подумай</p>]
@@ -498,39 +498,39 @@
 		*);;
 	*);;
 
-	.system_element_5959
+	.system_element_5904
 	<=> .system_element_72: {
-		.system_element_5986;
-		.system_element_5987;
-		.system_element_5988
+		.system_element_5931;
+		.system_element_5932;
+		.system_element_5933
 	};;
 
-	.system_element_5989
+	.system_element_5934
 	=> nrel_idtf: [<p>способность кибернетической системы к постоянному пополнению и совершенствованию информации, хранимой в её памяти, по всевозможным направлениям и, в первую очередь, в направлении повышения уровня адекватности (корректности) и полноты описания своей внешней среды и своей физической оболочки</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
 	=> .system_element_3488: 
-		.system_element_5990;
-		.system_element_5970;
-		.system_element_5991;
-		.system_element_5972;
-		.system_element_5992;
-		.system_element_5993;
-		.system_element_5994;
-		.system_element_5995;
-		.system_element_5996;
-		.system_element_5997;
-		.system_element_5998;
-		.system_element_5999;
-		.system_element_6000;
-		.system_element_6001;
-		.system_element_6002;
-		.system_element_6003
+		.system_element_5935;
+		.system_element_5915;
+		.system_element_5936;
+		.system_element_5917;
+		.system_element_5937;
+		.system_element_5938;
+		.system_element_5939;
+		.system_element_5940;
+		.system_element_5941;
+		.system_element_5942;
+		.system_element_5943;
+		.system_element_5944;
+		.system_element_5945;
+		.system_element_5946;
+		.system_element_5947;
+		.system_element_5948
 	;;
 
-	.system_element_5990
+	.system_element_5935
 	=> nrel_idtf: [<p>гибкость информации, хранимой в памяти кибернетической системы, при её обработке на семантическом уровне</p>]
 	(*
 		<- lang_ru;;
@@ -579,14 +579,14 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_5970
+	.system_element_5915
 	=> nrel_idtf: [<p>логико-семантическая стратифицированность информации, хранимой в памяти кибернетической системы</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_3488: .system_element_6004;
-	=> .system_element_3488: .system_element_6005
+	=> .system_element_3488: .system_element_5949;
+	=> .system_element_3488: .system_element_5950
 	(*
 		=> nrel_idtf: [<p>уровень развития метаязыковых средств кодирования (внутреннего представления) информации, хранимой в памяти кибернетической системы</p>]
 		(*
@@ -595,8 +595,8 @@
 		*);;
 	*);;
 
-	.system_element_6006
-	<=> .system_element_265: .system_element_6007
+	.system_element_5951
+	<=> .system_element_265: .system_element_5952
 	(*
 		=> nrel_idtf: [<p>уровень структуризации информации, хранимой в памяти кибернетической системы</p>]
 		(*
@@ -608,50 +608,50 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
-		<=> .system_element_265: .system_element_6004
+		<=> .system_element_265: .system_element_5949
 		(*
-			<= nrel_inclusion: .system_element_6008
+			<= nrel_inclusion: .system_element_5953
 			(*
 				<= nrel_inclusion: process;;
 			*);;
 		*);;
 	*);;
 
-	.system_element_5972
+	.system_element_5917
 	=> nrel_idtf: [<p>способность кибернетической системы к анализу информации, хранимой в собственной памяти, для последующего повышения качества этой информации</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<= .system_element_5635: .system_element_6009;
+	<= .system_element_5580: .system_element_5954;
 	=> nrel_note: [<p>Рефлексия кибернетической системы, то есть анализ собственного качества, включает в себя не только анализ качества информации, хранимой в её памяти, но и анализ собственной деятельности как во внешней среде, так и в собственной памяти. При этом анализ собственной деятельности сводится к анализу описания этой деятельности, представленного в собственной памяти.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
 	=> .system_element_3488: 
-		.system_element_6010;
-		.system_element_6011
+		.system_element_5955;
+		.system_element_5956
 		(*
-			=> .system_element_5635: 
-				.system_element_6012;
-				.system_element_6013;
-				.system_element_6014
+			=> .system_element_5580: 
+				.system_element_5957;
+				.system_element_5958;
+				.system_element_5959
 			;;
 		*);
-		.system_element_6015;
-		.system_element_6016
+		.system_element_5960;
+		.system_element_5961
 	;;
 
-	.system_element_5992
-	=> .system_element_5635: 
-		.system_element_6017;
-		.system_element_6018;
-		.system_element_6019;
-		.system_element_6020
+	.system_element_5937
+	=> .system_element_5580: 
+		.system_element_5962;
+		.system_element_5963;
+		.system_element_5964;
+		.system_element_5965
 	;;
 
-	.system_element_6018
+	.system_element_5963
 	=> nrel_idtf: [<p>способность кибернетической системы к устранению дублирования информации в рамках памяти указанной системы</p>]
 	(*
 		<- lang_ru;;
@@ -668,7 +668,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_6021
+		.system_element_5966
 		(*
 			=> nrel_idtf: [<p>эквивалентность информационных конструкций по форме*</p>]
 			(*
@@ -691,15 +691,15 @@
 		*)
 	};;
 
-	.system_element_6022
-	=> .system_element_3488: .system_element_6023;
+	.system_element_5967
+	=> .system_element_3488: .system_element_5968;
 	=> nrel_note: [<p>Формальным результатом обнаружения информационной дыры является формулировка запроса на недостающую информацию, которую необходимо сгенерировать.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_6024
+	.system_element_5969
 	=> nrel_idtf: [<p>способность кибернетической системы к забыванию (стиранию, удалению) ненужной (лишней, отработанной ) информации, которая, например, играет роль информационных лесов  при решении различных задач</p>]
 	(*
 		<- lang_ru;;
@@ -716,7 +716,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_6025
+	.system_element_5970
 	=> nrel_note: [<p>Новая введенная в память информационная конструкция трактуется как конструкция, у которой входящие в нее знаки являются потенциальными синонимами тем знакам, которые уже присутствуют в хранимой информации. Поэтому для всех этих знаков надо проверить наличие их синонимов. После этого синонимичные знаки должны быть отождествлены. Отождествление знаков осуществляется либо путем приписывания им одинаковых идентификаторов (имен), либо путем физического  склеивания этих знаков.</p>]
 	(*
 		<- lang_ru;;
@@ -732,7 +732,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_6026
+	.system_element_5971
 	=> nrel_note: [<p>Сходства в знаниях могут иметь самый разнообразный вид и далеко не всегда являются очевидными.</p>]
 	(*
 		<- lang_ru;;
@@ -744,13 +744,13 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_6027
+	.system_element_5972
 	=> nrel_idtf: [<p>способность кибернетической системы к увеличению сходств в знаниях хранимых в ее памяти</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_3488: .system_element_6028;
+	=> .system_element_3488: .system_element_5973;
 	=> nrel_idtf: [<p>способность к сближению  знаний путем:
 	<ul>
 		<li> увеличения числа общих понятий, используемых в сближаемых  знаниях;
@@ -765,13 +765,13 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_6029
+	.system_element_5974
 	=> nrel_idtf: [<p>способность объединять имеющиеся знания и формировать целостную картину различных исследуемых объектов, систем, процессов, явлений</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_3488: .system_element_6027;
+	=> .system_element_3488: .system_element_5972;
 	=> nrel_note: [<p>Качество (глубина) интеграции знаний определяется тем, насколько качественно до этого была проведена конвергенция интегрируемых знаний.</p>]
 	(*
 		<- lang_ru;;
@@ -783,13 +783,13 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_6030
+	.system_element_5975
 	=> nrel_note: [<p>Мы вынуждены смотреть на окружающую нас внешнюю среду (внешний мир) через замочную скважину  своих сенсоров (рецепторов), своих персональных точек зрения, мировоззрения различных научных дисциплин. Но необходимо помнить, что целостную картину внешней среды (картину мира) можно построить только путем сближения (конвергенции) и соединения (интеграции) самых различных точек зрения, самых различных научных дисциплин и направлений. Мир не делится на различные дисциплины --- он един. Для эффективного решения задач конвергенции и интеграции знаний необходимо построить искусственную (рукотворную) среду (память), в которой было бы удобно не только хранить самые различные знания, но и осуществлять конвергенцию и интеграцию этих знаний. При этом очень важно, чтобы формируемая таким образом информационная модель окружающей нас внешней среды (информационной картины мира) была общедоступна как для просмотра (ознакомления), причем, без каких бы то ни было замочных скважин , так и для ввода новых знаний, представляющих (отражающих) точку зрения их авторов.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> nrel_epigraph: .system_element_6031;;
+	=> nrel_epigraph: .system_element_5976;;
 
 	.system_element_265
 	-> {
@@ -801,7 +801,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_6032
+		.system_element_5977
 		(*
 			=> nrel_idtf: [<p>Множество пар близких (аналогичных, сходных) сущностей*</p>]
 			(*
@@ -837,21 +837,21 @@
 		*)
 	};;
 
-	.system_element_5999
+	.system_element_5944
 	=> nrel_note: [<p>Важным примером обобщения является переход от задач к классам часто решаемых задач.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_6033
+	.system_element_5978
 	=> nrel_note: [<p>Данная способность кибернетической системы является важнейшим фактором эволюции информации, хранимой в памяти кибернетической системы, в направлении перехода от данных (от фактографической информации) к знаниям.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_6034
+	.system_element_5979
 	=> nrel_note: [<p>Примерами знаний, подлежащих обоснованию или опровержению, являются:
 
 	<ul>
@@ -878,14 +878,14 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_6002
+	.system_element_5947
 	=> nrel_note: [<p>Создание динамических информационных моделей сложных динамических систем и проведение различного рода мысленных  экспериментов с такими моделями является весьма перспективным и мощным методом исследования сложных динамических систем.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_6035
+	.system_element_5980
 	=> nrel_idtf: [<p>способность к адаптации накопленных знаний к различным изменениям условий и жизненных ситуаций</p>]
 	(*
 		<- lang_ru;;
@@ -901,24 +901,24 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_5987
+	.system_element_5932
 	=> nrel_idtf: [<p>способность кибернетической системы повышать качество своих приобретаемых навыков</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
 	=> .system_element_3488: 
-		.system_element_6036;
-		.system_element_5968;
-		.system_element_5971;
-		.system_element_5973;
-		.system_element_6037;
-		.system_element_6038;
-		.system_element_6039;
-		.system_element_6040
+		.system_element_5981;
+		.system_element_5913;
+		.system_element_5916;
+		.system_element_5918;
+		.system_element_5982;
+		.system_element_5983;
+		.system_element_5984;
+		.system_element_5985
 	;;
 
-	.system_element_5968
+	.system_element_5913
 	=> nrel_idtf: [<p>простота реализации решателем задач кибернетической системы различного рода изменений самого себя</p>]
 	(*
 		<- lang_ru;;
@@ -929,22 +929,22 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_3488: .system_element_5990;;
+	=> .system_element_3488: .system_element_5935;;
 
-	.system_element_5971
-	=> .system_element_5635: 
-		.system_element_6041;
-		.system_element_6042;
-		.system_element_6043
+	.system_element_5916
+	=> .system_element_5580: 
+		.system_element_5986;
+		.system_element_5987;
+		.system_element_5988
 	
 	(*
-		=> .system_element_5635: .system_element_6044;;
+		=> .system_element_5580: .system_element_5989;;
 	*);;
 
-	.system_element_6045
-	=> .system_element_3488: .system_element_6046;;
+	.system_element_5990
+	=> .system_element_3488: .system_element_5991;;
 
-	.system_element_5973
+	.system_element_5918
 	=> nrel_idtf: [<p>способность кибернетической системы к анализу (к оценке качества) своей деятельности в собственной внутренней среде (в своей памяти), а также в своей внешней среде</p>]
 	(*
 		<- lang_ru;;
@@ -972,11 +972,11 @@
 		=> nrel_format: format_html;;
 	*);
 	=> .system_element_3488: 
-		.system_element_6045;
-		.system_element_6047
+		.system_element_5990;
+		.system_element_5992
 		(*
-			=> .system_element_5635: 
-				.system_element_6048
+			=> .system_element_5580: 
+				.system_element_5993
 				(*
 					=> nrel_idtf: [<p>способность кибернетической системы к анализу качества своего поведения (действий, информационных процессов) в собственной внутренней среде --- своих действий, сводящихся к поиску, генерации, удалению и преобразованию информационных конструкций, хранимых в собственной памяти</p>]
 					(*
@@ -984,26 +984,26 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);
-				.system_element_5974
+				.system_element_5919
 			;;
 		*);
-		.system_element_6049
+		.system_element_5994
 		(*
-			=> .system_element_5635: 
-				.system_element_6050;
-				.system_element_6051
+			=> .system_element_5580: 
+				.system_element_5995;
+				.system_element_5996
 			;;
 		*)
 	;;
 
-	.system_element_6046
+	.system_element_5991
 	=> nrel_note: [<p>В данном свойстве кибернетической системы имеется в виду описание собственных действий, выполняемых кибернетической системой как в своей внутренней среде (в собственной памяти), так и в своей внешней среде.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_5974
+	.system_element_5919
 	=> nrel_idtf: [<p>способность кибернетической системы к анализу соответствия между тем, что планировалось сделать во внешней среде и тем, что реально получилось</p>]
 	(*
 		<- lang_ru;;
@@ -1020,7 +1020,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_6037
+	.system_element_5982
 	=> nrel_idtf: [<p>способность кибернетической системы к коррекции своего поведения в целях повышения его качества (эффективности)</p>]
 	(*
 		<- lang_ru;;
@@ -1031,9 +1031,9 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_3488: .system_element_6047;;
+	=> .system_element_3488: .system_element_5992;;
 
-	.system_element_6038
+	.system_element_5983
 	=> nrel_note: [<p>Хранимые в памяти <i>методы</i> решения задач разбиваются на следующие классы:
 
 	<ul>
@@ -1050,7 +1050,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_6039
+	.system_element_5984
 	=> nrel_note: [<p>Целесообразность генерации нового метода решения задач возникает, когда кибернетической системе приходится часто решать эквивалентные задачи некоторого класса. Генерация соответствующего метода и последующая его оптимизация позволяет существенно сократить время решения задач.</p>]
 	(*
 		<- lang_ru;;
@@ -1071,9 +1071,9 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_3488: .system_element_6052;;
+	=> .system_element_3488: .system_element_5997;;
 
-	.system_element_6040
+	.system_element_5985
 	=> nrel_note: [<p>Для обеспечения такой способности необходима:
 
 	<ul>
@@ -1096,7 +1096,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_5988
+	.system_element_5933
 	=> nrel_idtf: [<p>способность кибернетической системы к самостоятельному совершенствованию (эволюции) своей физической оболочки</p>]
 	(*
 		<- lang_ru;;
@@ -1108,24 +1108,24 @@
 		=> nrel_format: format_html;;
 	*);
 	=> .system_element_3488: 
-		.system_element_6053;
-		.system_element_5788;
-		.system_element_6054
+		.system_element_5998;
+		.system_element_5733;
+		.system_element_5999
 		(*
-			=> .system_element_3488: .system_element_6055;;
+			=> .system_element_3488: .system_element_6000;;
 		*);
-		.system_element_6056
+		.system_element_6001
 	;;
 
-	.system_element_6057
+	.system_element_6002
 	<=> .system_element_72: {
-		.system_element_6058;
-		.system_element_6059;
-		.system_element_6060;
-		.system_element_6061
+		.system_element_6003;
+		.system_element_6004;
+		.system_element_6005;
+		.system_element_6006
 	};;
 
-	.system_element_6058
+	.system_element_6003
 	=> nrel_idtf: [<p>уровень способности к обучению под управлением внешнего субъекта-учителя</p>]
 	(*
 		<- lang_ru;;
@@ -1142,7 +1142,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_6059
+	.system_element_6004
 	=> nrel_idtf: [<p>способность кибернетической системы к самообучению в диалоге с экспертом-консультантом</p>]
 	(*
 		<- lang_ru;;
@@ -1168,9 +1168,9 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_3488: .system_element_5982;;
+	=> .system_element_3488: .system_element_5927;;
 
-	.system_element_6062
+	.system_element_6007
 	=> nrel_idtf: [<p>способность кибернетической системы к извлечению информации, содержащейся во внешних информационных источниках, к поиску нужных внешних источников и к построению на этой основе систематизированной картины мира</p>]
 	(*
 		<- lang_ru;;
@@ -1182,7 +1182,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_6061
+	.system_element_6006
 	=> nrel_idtf: [<p>способность кибернетической системы формировать систематизированную модель (картину) окружающей среды, используя для ее непосредственного восприятия и изучения только собственные сенсоры и эффекторы, а также некоторые дополнительные средства, усиливающие возможности сенсоров и эффекторов</p>]
 	(*
 		<- lang_ru;;

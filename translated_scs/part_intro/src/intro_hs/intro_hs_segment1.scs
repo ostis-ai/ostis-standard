@@ -1,5 +1,5 @@
 .intro_hs_segment1 = [*
-.system_element_5363
+.system_element_5310
 => nrel_inclusion: [*
 
 	.system_element_1181
@@ -78,9 +78,9 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<= .system_element_418: .system_element_5346
+	<= .system_element_418: .system_element_5293
 	(*
-		<- .system_element_5690;;
+		<- .system_element_5635;;
 	*);
 	=> nrel_note: [<p>кибернетическая система динамически сопоставляет полученную информацию с выбранными действиями,относящимися к задаче, которая определяет основную цель системы.</p>]
 	(*
@@ -93,14 +93,14 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_5691
+	.system_element_5636
 	=> nrel_inclusion: [*
 
 		.system_element_1181
-		=> nrel_subdividing: .system_element_5692
+		=> nrel_subdividing: .system_element_5637
 		(*
 			<=> .system_element_72: {
-				.system_element_5333
+				.system_element_5280
 				(*
 					=> nrel_idtf: [<p>кибернетическая система естественного происхождения</p>]
 					(*
@@ -127,19 +127,19 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);
-				.system_element_5693
+				.system_element_5638
 				(*
 					=> nrel_idtf: [<p>кибернетическая система, в состав которой входят компонентыкак естественного, так и искусственного происхождения</p>]
 					(*
 						<- lang_ru;;
 						=> nrel_format: format_html;;
 					*);;
-					=> nrel_inclusion: .system_element_5694;;
+					=> nrel_inclusion: .system_element_5639;;
 				*)
 			};;
 		*);;
 
-		.system_element_5290
+		.system_element_5237
 		=> nrel_idtf: [<p>артефакт</p>]
 		(*
 			<- lang_ru;;
@@ -160,13 +160,13 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
-		=> nrel_inclusion: .system_element_5695;
+		=> nrel_inclusion: .system_element_5640;
 		=> nrel_idtf: [<p>знание, приобретенное в результате научно-технической деятельностичеловеческого общества</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
-		=> nrel_inclusion: .system_element_5696;
+		=> nrel_inclusion: .system_element_5641;
 		=> nrel_inclusion: computer_system;;
 
 		computer_system
@@ -191,9 +191,9 @@
 			=> nrel_format: format_html;;
 		*);
 		<= nrel_inclusion: .system_element_1181;
-		=> nrel_inclusion: .system_element_5697;
-		=> nrel_inclusion: .system_element_5698;
-		=> nrel_inclusion: .system_element_5699;
+		=> nrel_inclusion: .system_element_5642;
+		=> nrel_inclusion: .system_element_5643;
+		=> nrel_inclusion: .system_element_5644;
 		=> nrel_inclusion: ostis_system;
 		=> nrel_note: [<p>Основной тенденцией эволюции компьютерных систем являетсяповышение уровня их интеллектуальности.</p>]
 		(*
@@ -214,15 +214,15 @@
 		};;
 
 		.system_element_1181
-		=> nrel_subdividing: .system_element_5700
+		=> nrel_subdividing: .system_element_5645
 		(*
 			<=> .system_element_72: {
-				.system_element_5291;
-				.system_element_5292;
-				.system_element_5701
+				.system_element_5238;
+				.system_element_5239;
+				.system_element_5646
 				(*
 					=> nrel_subdividing: {
-						.system_element_5294
+						.system_element_5241
 						(*
 							=> nrel_idtf: [<p>многоагентная система, агентами которой не могут быть многоагентные системы</p>]
 							(*
@@ -230,7 +230,7 @@
 								=> nrel_format: format_html;;
 							*);;
 						*);
-						.system_element_5702
+						.system_element_5647
 						(*
 							=> nrel_idtf: [<p>многоагентная система, по крайней мере однимагентом которой является многоагентная система</p>]
 							(*
@@ -240,7 +240,7 @@
 						*)
 					};;
 					=> nrel_subdividing: {
-						.system_element_5703
+						.system_element_5648
 						(*
 							=> nrel_note: [<p>Такой коллектив может быть либо одноуровневым, либо иерархическим коллективом</p>]
 							(*
@@ -248,16 +248,16 @@
 								=> nrel_format: format_html;;
 							*);;
 						*);
-						.system_element_5704;
-						.system_element_5705
+						.system_element_5649;
+						.system_element_5650
 					};;
 				*)
 			};;
 		*);
-		=> nrel_subdividing: .system_element_5706
+		=> nrel_subdividing: .system_element_5651
 		(*
 			<=> .system_element_72: {
-				.system_element_5707
+				.system_element_5652
 				(*
 					=> nrel_idtf: [<p>кибернетическая система, не имеющая надсистем</p>]
 					(*
@@ -265,8 +265,8 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);
-				.system_element_5708;
-				.system_element_5709
+				.system_element_5653;
+				.system_element_5654
 				(*
 					=> nrel_idtf: [<p>кибернетическая система, являющаяся агентом одной или нескольких многоагентных систем</p>]
 					(*
@@ -277,7 +277,7 @@
 			};;
 		*);;
 
-		.system_element_5291
+		.system_element_5238
 		=> nrel_idtf: [<p><i>кибернетическая система</i>, уровень развития которой находитсяниже уровня <i>индивидуальных кибернетических систем</i> и которая являетсяспециализированным средством обработки информации специализированным решателемзадач, реализующим (интерпретирующим) чаще всего один <i>метод</i> решениязадач и, соответственно, решающим только <i>задачи</i> заданного<i>класса задач</i></p>]
 		(*
 			<- lang_ru;;
@@ -294,7 +294,7 @@
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_5292
+		.system_element_5239
 		=> nrel_idtf: [<p>условно выделенный уровень развития <i>кибернетических систем</i>, воснове которого лежит переход от <i>специализированного решателя задач киндивидуальному решателю</i>, обеспечивающему интерпретацию произвольного(нефиксированного) набора <i>методов</i> (программ) решения задач приусловии, если эти <i>методы</i> введены (загружены, записаны) в<i>память</i> <i>кибернетической системы</i></p>]
 		(*
 			<- lang_ru;;
@@ -336,8 +336,8 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 			=> .system_element_1: 
-				.system_element_5710;
-				.system_element_5711
+				.system_element_5655;
+				.system_element_5656
 			;;
 		*);
 		=> nrel_idtf: [<p>кибернетическая система, которая обладаетдостаточной самостоятельностью (целостностью), но не является коллективом такихсамостоятельных  кибернетических систем</p>]
@@ -356,8 +356,8 @@
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_5708
-		=> .system_element_203: .system_element_5712;
+		.system_element_5653
+		=> .system_element_203: .system_element_5657;
 		=> .system_element_203: .system_element_414;;
 
 		.system_element_3128
@@ -367,12 +367,12 @@
 			=> nrel_format: format_html;;
 		*);
 		=> nrel_subdividing: {
-			.system_element_5703;
-			.system_element_5295;
-			.system_element_5713
+			.system_element_5648;
+			.system_element_5242;
+			.system_element_5658
 		};
 		=> nrel_subdividing: {
-			.system_element_5294
+			.system_element_5241
 			(*
 				=> nrel_idtf: [<p>многоагентная система, агентами которой не могут быть многоагентные системы</p>]
 				(*
@@ -380,7 +380,7 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);
-			.system_element_5702
+			.system_element_5647
 			(*
 				=> nrel_idtf: [<p>многоагентная система, по крайней мере одним агентом которой является многоагентная система</p>]
 				(*
@@ -390,18 +390,18 @@
 			*)
 		};;
 
-		.system_element_5294
+		.system_element_5241
 		=> nrel_idtf: [<p>специализированное средство решения задач, реализующее либо<u>одну</u> модель параллельного (распределенного) решения задачсоответствующего класса, либо комбинацию <u>фиксированного числа</u> разных ипараллельно реализованных моделей решения задач</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
 		=> nrel_subdividing: {
-			.system_element_5714;
-			.system_element_5715
+			.system_element_5659;
+			.system_element_5660
 		};;
 
-		.system_element_5295
+		.system_element_5242
 		<= nrel_inclusion: .system_element_3128;
 		=> nrel_idtf: [<p>многоагентная система, агентами (членами) которой являются<u>индивидуальные</u>(!) кибернетические системы</p>]
 		(*
@@ -417,10 +417,10 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);
-			.system_element_5694
+			.system_element_5639
 		};;
 
-		.system_element_5296
+		.system_element_5243
 		=> nrel_idtf: [<p>многоагентная система, агентами (членами) которой могут быть:
 
 		<ul>
@@ -438,18 +438,18 @@
 		*);;
 	*];;
 
-	.system_element_5716
+	.system_element_5661
 	=> nrel_inclusion: [*
 
 		.system_element_1181
 		=> .system_element_189: {
-			.system_element_5297;
-			.system_element_5298;
-			.system_element_5299;
-			.system_element_5303
+			.system_element_5244;
+			.system_element_5245;
+			.system_element_5246;
+			.system_element_5250
 		};;
 
-		.system_element_5297
+		.system_element_5244
 		=> nrel_idtf: [<p>информация, хранимая в памяти <i>кибернетической системы</i> ипредставляющая собой информационную модель среды, в которой действует(существует, функционирует) эта <i>кибернетическая система</i></p>]
 		(*
 			<- lang_ru;;
@@ -471,7 +471,7 @@
 			<- oriented_relation;;
 		*);;
 
-		.system_element_5298
+		.system_element_5245
 		=> nrel_idtf: [<p>внутренняя абстрактная информационная среда <i>кибернетической системы</i>,представляющая собой динамическую <i>информационную  конструкцию</i>, каждое состояниекоторой есть не что иное, как <i>информация, хранимая в памяти кибернетическойсистемы</i> в соответствующий момент времени</p>]
 		(*
 			<- lang_ru;;
@@ -482,7 +482,7 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
-		<= nrel_inclusion: .system_element_5717
+		<= nrel_inclusion: .system_element_5662
 		(*
 			=> nrel_idtf: [<p>процесс преобразования информационной конструкции</p>]
 			(*
@@ -491,7 +491,7 @@
 			*);;
 		*);;
 
-		.system_element_5299
+		.system_element_5246
 		=> nrel_idtf: [<p>совокупность всех навыков (умений), приобретенных кибернетическойсистемой к рассматриваемому моменту</p>]
 		(*
 			<- lang_ru;;
@@ -503,7 +503,7 @@
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_5300
+		.system_element_5247
 		<= nrel_inclusion: action;
 		=> nrel_idtf: [<p>целенаправленное (осознанное) действие, выполняемое кибернетическойсистемой, а точнее, её решателем задач</p>]
 		(*
@@ -511,7 +511,7 @@
 			=> nrel_format: format_html;;
 		*);
 		=> nrel_subdividing: {
-			.system_element_5718
+			.system_element_5663
 			(*
 				=> nrel_idtf: [<p>действие, выполняемое кибернетической системой в её внешней среде</p>]
 				(*
@@ -524,8 +524,8 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);
-			.system_element_5719;
-			.system_element_5720
+			.system_element_5664;
+			.system_element_5665
 			(*
 				=> nrel_idtf: [<p>действие, направленное напреобразование информации, хранимой в памяти, но никак не на преобразованиефизической памяти (физической оболочки абстрактной памяти)</p>]
 				(*
@@ -565,7 +565,7 @@
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_5301
+		.system_element_5248
 		=> nrel_idtf: [<p>задача, решаемая соответствующей кибернетической системой</p>]
 		(*
 			<- lang_ru;;
@@ -576,7 +576,7 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
-		<=> .system_element_265: .system_element_5330
+		<=> .system_element_265: .system_element_5277
 		(*
 			=> nrel_idtf: [<p>быть задачей, решаемой заданной кибернетической системой*</p>]
 			(*
@@ -604,8 +604,8 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);
-			.system_element_5721;
-			.system_element_5722
+			.system_element_5666;
+			.system_element_5667
 			(*
 				=> nrel_idtf: [<p>задача, полностью решаемая в памяти кибернетической системы инаправленная на изменение состояния информации, хранимой в памятикибернетической системы</p>]
 				(*
@@ -638,7 +638,7 @@
 			=> nrel_format: format_html;;
 		*);;
 
-		.system_element_5302
+		.system_element_5249
 		=> nrel_idtf: [<p>условно выделяемый компонент <i>решателя задач кибернетическойсистемы</i>, обеспечивающий решение <i>интерфейсных задач</i>, направленных на<u>непосредственную</u> реализацию взаимодействия <i>кибернетическойсистемы</i> с её <i>внешней средой</i></p>]
 		(*
 			<- lang_ru;;
@@ -649,19 +649,19 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
-		<= .system_element_2919: .system_element_5299;
-		<=> .system_element_265: .system_element_5723
+		<= .system_element_2919: .system_element_5246;
+		<=> .system_element_265: .system_element_5668
 		(*
-			<= .system_element_2919: .system_element_5303;;
+			<= .system_element_2919: .system_element_5250;;
 		*);;
 
-		.system_element_5303
+		.system_element_5250
 		=> nrel_idtf: [<p>часть кибернетической системы, являющаяся посредникоммежду еёвнутренней средой (памятью, в которой хранится и обрабатывается информациякибернетической системы) и её внешней средой</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
-		<= nrel_second_domain: .system_element_5724
+		<= nrel_second_domain: .system_element_5669
 		(*
 			<- binary_relation;;
 			<- oriented_relation;;
@@ -669,9 +669,9 @@
 
 		.system_element_1181
 		=> .system_element_189: {
-			.system_element_5304;
-			.system_element_5305;
-			.system_element_5725
+			.system_element_5251;
+			.system_element_5252;
+			.system_element_5670
 			(*
 				=> nrel_idtf: [<p>аппаратное обеспечение интерфейса кибернетической системы с еёвнешней средой</p>]
 				(*
@@ -679,14 +679,14 @@
 					=> nrel_format: format_html;;
 				*);;
 				=> .system_element_189: {
-					.system_element_5726;
-					.system_element_5727
+					.system_element_5671;
+					.system_element_5672
 				};;
 			*);
-			.system_element_5728
+			.system_element_5673
 		};;
 
-		.system_element_5304
+		.system_element_5251
 		=> nrel_idtf: [<p>физическая оболочка (реализация) абстрактной <i>памятикибернетической системы</i> --- внутренней среды <i>кибернетической системы</i>,в рамках которой <i>кибернетическая система</i> формирует и использует(обрабатывает) информационную модель своей внешней среды</p>]
 		(*
 			<- lang_ru;;
@@ -758,15 +758,15 @@
 		*);;
 
 		.system_element_1181
-		=> .system_element_5730: .system_element_5729
+		=> .system_element_5675: .system_element_5674
 		(*
 			<=> .system_element_72: <
-				.system_element_5731;
-				.system_element_5732;
-				.system_element_5733;
-				.system_element_5734;
-				.system_element_5735;
-				.system_element_5292
+				.system_element_5676;
+				.system_element_5677;
+				.system_element_5678;
+				.system_element_5679;
+				.system_element_5680;
+				.system_element_5239
 				(*
 					=> nrel_note: [<p>Каждая <i>индивидуальная кибернетическая система</i> содержит <i>память</i>,имеющую достаточно высокий уровень качества</p>]
 					(*
@@ -774,14 +774,14 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);
-				.system_element_5736;
-				.system_element_5737;
-				.system_element_5738;
-				.system_element_5739
+				.system_element_5681;
+				.system_element_5682;
+				.system_element_5683;
+				.system_element_5684
 			>;;
 		*);;
 
-		.system_element_5305
+		.system_element_5252
 		=> nrel_idtf: [<p>физически (аппаратно реализованный) интерпретатор хранимых в <i>памятикибернетической системы методов (программ)</i>, соответствующих базовой (для даннойкибернетической системы) <i>модели решения задач</i>, т.е. такой модели решения задач,которая для данной <i>кибернетической системы</i> является <i>моделью решения задач</i>самого нижнего уровня и, следовательно, не может быть интерпретирована спомощью другой <i>модели решения задач</i>, используемой этой же <i>кибернетическойсистемой</i>, а может быть проинтерпретирована либо путем аппаратной реализациитакого интерпретатора, либо путём его программной реализации, например, насовременных компьютерах, но в последнем случае, кроме собственногоинтерпретатора, необходимо также построить модель <i>памяти</i> реализуемойкибернетической системы</p>]
 		(*
 			<- lang_ru;;
@@ -797,7 +797,7 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
-		<= nrel_second_domain: .system_element_5740
+		<= nrel_second_domain: .system_element_5685
 		(*
 			=> nrel_explanation: [<p>бинарное ориентированное отношения, каждая паракоторого связывает знак кибернетической системы со знаком её процессора</p>]
 			(*
@@ -808,8 +808,8 @@
 			<- oriented_relation;;
 		*);;
 
-		.system_element_5306
-		<= nrel_inclusion: .system_element_5303;
+		.system_element_5253
+		<= nrel_inclusion: .system_element_5250;
 		=> nrel_idtf: [<p>физическая оболочка искусственной кибернетической системы</p>]
 		(*
 			<- lang_ru;;
@@ -825,7 +825,7 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
-		=> nrel_inclusion: .system_element_5741
+		=> nrel_inclusion: .system_element_5686
 		(*
 			=> nrel_idtf: [<p>компьютер, ориентированный на реализацию интеллектуальных компьютерныхсистем</p>]
 			(*
@@ -855,22 +855,22 @@
 		*);;
 	*];;
 
-	.system_element_5742
+	.system_element_5687
 	=> nrel_inclusion: [*
 
-		.system_element_5743
-		-> .system_element_5744;
-		-> .system_element_5740;
-		-> .system_element_5745;
-		-> .system_element_5331;
-		-> .system_element_5746;
-		-> .system_element_5747;
-		-> .system_element_5724;
+		.system_element_5688
+		-> .system_element_5689;
+		-> .system_element_5685;
+		-> .system_element_5690;
+		-> .system_element_5278;
+		-> .system_element_5691;
+		-> .system_element_5692;
+		-> .system_element_5669;
 		-> .system_element_3126;
-		-> .system_element_5748;
+		-> .system_element_5693;
 		-> .system_element_1104
 		(*
-			=> nrel_inclusion: .system_element_5749;;
+			=> nrel_inclusion: .system_element_5694;;
 		*);;
 
 		.system_element_3126
@@ -887,15 +887,15 @@
 
 		.system_element_265
 		-> {
-			.system_element_5330;
-			.system_element_5299
+			.system_element_5277;
+			.system_element_5246
 			(*
 				=> nrel_idtf: [<p>иерархическая система моделей решения задач</p>]
 				(*
 					<- lang_ru;;
 					=> nrel_format: format_html;;
 				*);;
-				=> .system_element_5750: .system_element_5305
+				=> .system_element_5695: .system_element_5252
 				(*
 					=> nrel_explanation: [<p>Это реализация модели решения задач, обеспечивающейинтерпретацию всех используемых моделей решения задач верхнего уровня</p>]
 					(*
@@ -906,13 +906,13 @@
 			*)
 		};;
 
-		.system_element_5330
+		.system_element_5277
 		=> nrel_idtf: [<p>быть задачей, решаемой заданной кибернетической системой*</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
-		=> nrel_inclusion: .system_element_5751
+		=> nrel_inclusion: .system_element_5696
 		(*
 			=> nrel_idtf: [<p>внутренняя задача кибернетической системы*</p>]
 			(*
@@ -920,9 +920,9 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		=> nrel_inclusion: .system_element_5752;;
+		=> nrel_inclusion: .system_element_5697;;
 
-		.system_element_5331
+		.system_element_5278
 		=> nrel_idtf: [<p>внешняя среда*</p>]
 		(*
 			<- lang_ru;;
@@ -941,7 +941,7 @@
 		<- binary_relation;
 		<- oriented_relation;
 		=> nrel_first_domain: .system_element_1181;
-		=> nrel_inclusion: .system_element_5753
+		=> nrel_inclusion: .system_element_5698
 		(*
 			=> nrel_idtf: [<p>совокупность всевозможных информационных конструкций, к которым даннаякибернетическая система имеет доступ и которые представлены самым различнымобразом (в том числе, и в памяти тех кибернетических систем (субъектов), скоторыми данная система взаимодействует)*</p>]
 			(*
@@ -950,7 +950,7 @@
 			*);;
 		*);;
 
-		.system_element_5332
+		.system_element_5279
 		=> nrel_idtf: [<p>быть средой существования (жизнедеятельности) заданной (указанной,соответствующей) кибернетической системы*</p>]
 		(*
 			<- lang_ru;;
@@ -963,8 +963,8 @@
 		*);
 		=> nrel_subdividing: {
 			.system_element_3130;
-			.system_element_5754;
-			.system_element_5755
+			.system_element_5699;
+			.system_element_5700
 		};;
 	*];;
 *];

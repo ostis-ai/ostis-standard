@@ -1,18 +1,18 @@
-.system_element_7070
+.system_element_7003
 => nrel_inclusion: [*
 	<- .system_element_3;
-	-> rrel_key_sc_element: .system_element_6983;;
+	-> rrel_key_sc_element: .system_element_6916;;
 
-	.system_element_6983
+	.system_element_6916
 	<- subject_domain;
 	-> .system_element_6: 
 		task_action;
-		.system_element_6985;
-		.system_element_6986;
-		.system_element_6987;
-		.system_element_6988;
-		.system_element_6989;
-		.system_element_6990
+		.system_element_6918;
+		.system_element_6919;
+		.system_element_6920;
+		.system_element_6921;
+		.system_element_6922;
+		.system_element_6923
 	;;
 
 	task_action
@@ -21,33 +21,33 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 		=> .system_element_35: {
-			.system_element_7071
+			.system_element_7004
 		};;
 	*);;
 
-	.system_element_6991
-	<- .system_element_7072;
+	.system_element_6924
+	<- .system_element_7005;
 	=> nrel_abstract_sc_agent_decomposition: {
-		.system_element_7073
+		.system_element_7006
 		(*
 			=> nrel_abstract_sc_agent_decomposition: {
-				.system_element_7074;
-				.system_element_7075;
-				.system_element_7076;
-				.system_element_7077;
-				.system_element_7078;
-				.system_element_7079;
-				.system_element_7080;
-				.system_element_7081;
-				.system_element_7082;
-				.system_element_7083;
-				.system_element_7084;
-				.system_element_7085;
-				.system_element_7086;
-				.system_element_7087
+				.system_element_7007;
+				.system_element_7008;
+				.system_element_7009;
+				.system_element_7010;
+				.system_element_7011;
+				.system_element_7012;
+				.system_element_7013;
+				.system_element_7014;
+				.system_element_7015;
+				.system_element_7016;
+				.system_element_7017;
+				.system_element_7018;
+				.system_element_7019;
+				.system_element_7020
 			};;
 		*);
-		.system_element_7088
+		.system_element_7021
 	};
 	=> nrel_note: [<p>Все <i>sc-агенты</i>, выводящие <i>ответы на</i> поставленные <i>вопросы</i>, формируют <i>коллектив sc-агентов</i> --- <b><i>интерпретатор Языка вопросов для ostis-систем</i></b>, с помощью которого можно интерпретировать любые классы <i>вопросов</i>. <i>интерпретатор Языка вопросов для ostis-систем</i> может быть реализован по-разному: в виде <i>коллектива scp-агентов</i> или <i>платформенно-зависимых sc-агентов</i>.</p>]
 	(*

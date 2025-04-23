@@ -1,4 +1,4 @@
-.system_element_6406
+.system_element_5093
 => nrel_summary: [<p>Логические модели решения задач являются основой обработки знаний в интеллектуальных системах. В данной главе рассматривается интеграция различных моделей решения задач, в том числе принципы логического вывода, для решения задач на основе общей формальной модели.</p>]
 (*
 	<- lang_ru;;
@@ -6,40 +6,40 @@
 *);
 => nrel_inclusion: [*
 	<- .system_element_3;
-	-> rrel_key_sc_element: .system_element_6407;;
+	-> rrel_key_sc_element: .system_element_6347;;
 
-	.system_element_6407
+	.system_element_6347
 	<- subject_domain;
 	-> .system_element_330: 
-		.system_element_6408
+		.system_element_6348
 	;
 	=> .system_element_1416: 
 		.system_element_2529;
 		.system_element_1105;
-		.system_element_6409;
-		.system_element_6399
+		.system_element_6349;
+		.system_element_6340
 	;
 	=> .system_element_316: <
-		.system_element_6410;
-		.system_element_6411;
-		.system_element_6412;
-		.system_element_6413;
-		.system_element_6414;
-		.system_element_6415;
-		.system_element_6416;
-		.system_element_6417;
-		.system_element_6418;
-		.system_element_6419;
-		.system_element_6420;
-		.system_element_6421;
-		.system_element_6422;
-		.system_element_6423;
-		.system_element_6424;
-		.system_element_6425;
-		.system_element_6426
+		.system_element_6350;
+		.system_element_6351;
+		.system_element_6352;
+		.system_element_6353;
+		.system_element_6354;
+		.system_element_6355;
+		.system_element_6356;
+		.system_element_6357;
+		.system_element_6358;
+		.system_element_6359;
+		.system_element_6360;
+		.system_element_6361;
+		.system_element_6362;
+		.system_element_6363;
+		.system_element_6364;
+		.system_element_6365;
+		.system_element_6366
 	>;;
 
-	.system_element_6427
+	.system_element_6367
 	=> nrel_explanation: [<p>Логика решает задачи доказательства высказываний, аргументации того или иного высказывания, задачу генерации и опровержения гипотез. Некоторые гипотезы могут быть опровергнуты, однако извлекая причины того, почему гипотеза опровергнута, можно изменить посылку гипотезы так, чтобы создать новую гипотезу, которая впоследствии может стать теоремой.</p>]
 	(*
 		<- lang_ru;;
@@ -58,10 +58,10 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_6408
+	.system_element_6348
 	<= nrel_inclusion: .system_element_961;;
 
-	.system_element_6428
+	.system_element_6368
 	=> nrel_note: [<p>На данный момент реализовано много систем <i>логического вывода</i>, использующих известные правила прямого заключения и резолюции в различных видах логик.</p>]
 	(*
 		<- lang_ru;;
@@ -91,7 +91,7 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
-		=> .system_element_785: .system_element_6429
+		=> .system_element_785: .system_element_6369
 		(*
 			<=> nrel_semantic_equivalence: "file://images/sd_operat_sem_sc_logical_lang/swrl_example.png"
 			(*
@@ -100,31 +100,31 @@
 			*);;
 		*);;
 	*);
-	=> .system_element_35: .system_element_6410;
+	=> .system_element_35: .system_element_6350;
 	=> nrel_note: [<p><i>Технология OSTIS</i> позволяет интегрировать любые принципы логического вывода для решения задач в интеллектуальных системах на основе общей формальной модели. Для того, чтобы использовать какую-либо новую или существующую модель, необходимо привести ее к предлагаемому формализму, что позволит интегрировать и синхронизировать ее с уже имеющимися в соответствующей <i>библиотеке многократно используемых компонентов ostis-систем</i>. Формализм <i>SC-кода</i> позволяет описывать широкий спектр понятий и отношений между ними, что делает его подходящим вариантом для реализации логического вывода в интеллектуальных компьютерных системах нового поколения. Кроме того, целесообразно воспользоваться принципом наследования, лежащим в основе иерархической структуризации баз знаний ostis-систем.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
-		=> .system_element_203: .system_element_6430
+		=> .system_element_203: .system_element_6370
 		(*
 			=> nrel_inclusion: [*
 
 				.system_element_1084
 				=> .system_element_1523: 
-					.system_element_6431;
-					.system_element_6432
+					.system_element_6371;
+					.system_element_6372
 				;;
 
-				.system_element_6431
-				=> .system_element_1523: .system_element_6433
+				.system_element_6371
+				=> .system_element_1523: .system_element_6373
 				(*
-					=> .system_element_1523: .system_element_6434;;
+					=> .system_element_1523: .system_element_6374;;
 				*);;
 
-				.system_element_6435
+				.system_element_6375
 				<= .system_element_1523: 
-					.system_element_6431;
-					.system_element_6432
+					.system_element_6371;
+					.system_element_6372
 				;;
 			*];;
 			=> nrel_note: [<p>Наследование предметных областей позволяет использовать описанные логики и их компоненты при описании любых логик. Базовые понятия позволяют разработчикам интеллектуальной системы добавлять новые логики. Для реализации конкретной логической модели решения задач необходимо создать предметную область, которая будет дочерней по отношению к <i>Предметной области логических моделей решения задач</i> и предметной области некоторого <i>логического языка</i>, например, языка логики высказываний, языка логики предикатов, языка нечеткой логики и других.</p>]
@@ -135,11 +135,11 @@
 		*);;
 	*);;
 
-	.system_element_6436
-	<- .system_element_6393;;
+	.system_element_6376
+	<- .system_element_6335;;
 
-	.system_element_6437
-	<= nrel_inclusion: .system_element_6438;
+	.system_element_6377
+	<= nrel_inclusion: .system_element_6378;
 	=> nrel_note: [<p><i>база знаний</i> каждой <i>системы программирования Пролог</i> содержит информацию в виде предикатов. В логическом программировании, реализованном в <i>системе программирования Пролог</i>, используется только одно <i>правило вывода</i> --- правило резолюции. Задача пролог-программы заключается в том, чтобы доказать, является ли заданное целевое высказывание следствием из имеющихся формул и, если является, то каким образом был получен такой вывод. Когда пользователь задает вопрос <i>системе программирования Пролог</i>, система ищет соответствующие предикаты в базе знаний и, если они найдены, сравнивает их с заданными условиями. <i>система программирования Пролог</i> хорошо справляется с нетрудными задачами, однако ограничена лишь одним принципом логического вывода и не позволяет учитывать сложноструктурированные знания в различных видах логик.</p>]
 	(*
 		<- lang_ru;;
@@ -153,30 +153,30 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_6435
+	.system_element_6375
 	=> nrel_note: [<p>Логические формулы и высказывания интерпретируется с помощью понятий, описанных в <i>Предметной области логических моделей решения задач</i>, включающую модель и реализацию абстрактных агентов, необходимых для решения логических задач.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	-> .system_element_6439: 
-		.system_element_6440;
-		.system_element_6441;
-		.system_element_6442;
-		.system_element_6443
+	-> .system_element_6379: 
+		.system_element_6380;
+		.system_element_6381;
+		.system_element_6382;
+		.system_element_6383
 	;;
 
-	.system_element_6444
-	<= .system_element_6445: .system_element_962;
+	.system_element_6384
+	<= .system_element_6385: .system_element_962;
 	=> nrel_explanation: [<p><i><b>Язык SCL</b></i> -- подъязык <i>SC-кода</i> для записи логических утверждений. Над высказываниями <i>Языка SCL</i> можно проводить <i>логический вывод</i>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
 	=> .system_element_35: .system_element_36;
-	=> .system_element_35: .system_element_6411;;
+	=> .system_element_35: .system_element_6351;;
 
-	.system_element_6440
+	.system_element_6380
 	=> nrel_idtf: [<p>вывод</p>]
 	(*
 		<- lang_ru;;
@@ -187,23 +187,23 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_35: .system_element_6412;
+	=> .system_element_35: .system_element_6352;
 	=> nrel_note: [<p>Доказательство вывода формулы равносильно доказательству противоречивости вывода отрицания этой формулы. При использовании правила резолюции это особенно удобно использовать.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_6446
+	.system_element_6386
 	=> nrel_note: [<p>Некоторые операции, необходимые в одной предметной области будут избыточными в другой. Например, в системе, решающей задачи по геометрии, химии и другим естественным наукам обоснованным будет использование дедуктивных методов вывода, поскольку решение задач в таких предметных областях основывается только на достоверных правилах. В системах же медицинской диагностики, к примеру, постоянно возникает ситуация, когда диагноз может быть поставлен только с некоторой долей уверенности и абсолютно достоверным ответ на поставленный вопрос быть не может. В связи с этим возникает необходимость использования различных <i>решателей задач</i> в различных системах, при этом их состав и возможности в конкретной системе определяется не только непосредственно разработчиком, а требует консультаций с экспертами в данной предметной области. Тем не менее основой для всех видов логик является классическая логика и наиболее общие ее методы распространяются на другие логики с некоторыми модификациями, уточнениями и ограничениями.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
-		=> .system_element_35: .system_element_6447;;
+		=> .system_element_35: .system_element_6387;;
 	*);;
 
 	.system_element_1219
-	=> nrel_inclusion: .system_element_6446
+	=> nrel_inclusion: .system_element_6386
 	(*
 		=> nrel_explanation: [<p>Классический дедуктивный вывод является наиболее популярным при построении автоматических решателей задач, так как всегда дает достоверный результат. Дедуктивный вывод включает в себя прямой и обратный и логический вывод (принцип резолюции, процедуру Эрбрана и так далее), все виды силлогизмов и так далее.</p>]
 		(*
@@ -221,11 +221,11 @@
 			=> nrel_format: format_html;;
 		*);;
 		=> .system_element_1196: 
-			.system_element_6412;
-			.system_element_6413
+			.system_element_6352;
+			.system_element_6353
 		;;
 	*);
-	=> nrel_inclusion: .system_element_6448
+	=> nrel_inclusion: .system_element_6388
 	(*
 		=> .system_element_158: [<p>Предоставляет возможность в процессе решения использовать различные предположения, что делает его удобным для использования в слабоформализованных и трудноформализуемых предметных областях, например при построении систем медицинской диагностики.</p>]
 		(*
@@ -233,11 +233,11 @@
 			=> nrel_format: format_html;;
 		*);;
 		=> .system_element_1196: 
-			.system_element_6414;
-			.system_element_6415
+			.system_element_6354;
+			.system_element_6355
 		;;
 	*);
-	=> nrel_inclusion: .system_element_6449
+	=> nrel_inclusion: .system_element_6389
 	(*
 		=> nrel_note: [<p>Наилучшим считается такое объяснение, которое удовлетворяет специальным критериям, определяемым в зависимости от решаемой задачи и используемой формализации.</p>]
 		(*
@@ -245,11 +245,11 @@
 			=> nrel_format: format_html;;
 		*);;
 		=> .system_element_1196: 
-			.system_element_6416;
-			.system_element_6417
+			.system_element_6356;
+			.system_element_6357
 		;;
 	*);
-	=> nrel_inclusion: .system_element_6450
+	=> nrel_inclusion: .system_element_6390
 	(*
 		=> nrel_note: [<p>Импликативные высказывания могут рассматриваться как "если истинна посылка", то с некоторой вероятностью (часто или редко) истинно заключение, в отличие от классической логики, где зачастую используются статические предметные области и выражение "часто или редко" не применимо (корректно использовать только наречие "всегда").</p>]
 		(*
@@ -257,12 +257,12 @@
 			=> nrel_format: format_html;;
 		*);;
 		=> .system_element_1196: 
-			.system_element_6418;
-			.system_element_6419;
-			.system_element_6420
+			.system_element_6358;
+			.system_element_6359;
+			.system_element_6360
 		;;
 	*);
-	=> nrel_inclusion: .system_element_6451
+	=> nrel_inclusion: .system_element_6391
 	(*
 		=> nrel_note: [<p>Вывод с умолчаниями применяется, в том числе, для того, чтобы оптимизировать процесс рассуждений, дополняя процесс достоверного вывода вероятностными предположениями в тех случаях, когда вероятность ошибки крайне мала.</p>]
 		(*
@@ -270,11 +270,11 @@
 			=> nrel_format: format_html;;
 		*);;
 		=> .system_element_1196: 
-			.system_element_6421;
-			.system_element_6422
+			.system_element_6361;
+			.system_element_6362
 		;;
 	*);
-	=> nrel_inclusion: .system_element_6452
+	=> nrel_inclusion: .system_element_6392
 	(*
 		=> nrel_note: [<p>Применение темпорального вывода является очень актуальным для нестатичных предметных областей, в которых истинность того или иного утверждения меняется со временем, что существенно влияет на ход решения какой-либо задачи. Следует отметить, что Язык SCL предоставляет все необходимые возможности для описания таких динамических предметных областей.</p>]
 		(*
@@ -282,8 +282,8 @@
 			=> nrel_format: format_html;;
 		*);;
 		=> .system_element_1196: 
-			.system_element_6423;
-			.system_element_6424
+			.system_element_6363;
+			.system_element_6364
 		;;
 	*);;
 
@@ -294,20 +294,20 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_6453
+	.system_element_6393
 	=> nrel_idtf: [<p>scl-машина</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	<- .system_element_6454;
+	<- .system_element_6394;
 	<- .system_element_3064;
 	=> nrel_note: [<p>Операции <i>scl-машины</i> соответствуют правилам <i>логического вывода</i>.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_936: .system_element_6444;
+	=> .system_element_936: .system_element_6384;
 	=> nrel_note: [<p>Семейство специализированных абстрактных графодинамических машин обработки знаний является формальным уточнением операционной семантики специализированных графовых языков представления знаний, каждому из которых соответствует одна или несколько абстрактных машин. Эти абстрактные машины соответствуют различным моделям решения задач, различным логикам, различным моделям правдоподобных рассуждений.</p>]
 	(*
 		<- lang_ru;;
@@ -317,22 +317,22 @@
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
-		=> .system_element_35: .system_element_6425;;
+		=> .system_element_35: .system_element_6365;;
 	*);
-	=> .system_element_35: .system_element_6411;;
+	=> .system_element_35: .system_element_6351;;
 
-	.system_element_6453
+	.system_element_6393
 	=> nrel_abstract_sc_agent_decomposition: {
-		.system_element_6455
+		.system_element_6395
 		(*
 			=> nrel_note: [<p>Задачей <i>Абстрактного sc-агента применения правила вывода</i> является применение заданного правила вывода с заданными логическими формулами.</p>]
 			(*
 				<- lang_ru;;
 				=> nrel_format: format_html;;
 			*);;
-			=> .system_element_6457: .system_element_6456;;
-			=> nrel_primary_initiation_condition: .system_element_6458;;
-			=> .system_element_5490: <
+			=> .system_element_6397: .system_element_6396;;
+			=> nrel_primary_initiation_condition: .system_element_6398;;
+			=> .system_element_5436: <
 				[<p>Проверка условия инициирования.</p>]
 				(*
 					<- lang_ru;;
@@ -354,7 +354,7 @@
 				<- lang_ru;;
 				=> nrel_format: format_html;;
 			*);;
-			=> .system_element_785: .system_element_6459
+			=> .system_element_785: .system_element_6399
 			(*
 				<=> nrel_semantic_equivalence: "file://images/sd_operat_sem_sc_logical_lang/Modus_ponens.png"
 				(*
@@ -368,16 +368,16 @@
 				*);;
 			*);;
 		*);
-		.system_element_6460
+		.system_element_6400
 		(*
 			=> nrel_note: [<p>Задачей <i>Абстрактного sc-агента эквивалентных преобразований логической формулы</i> является применение некоторых правил, которые приводят логическую формулу в определенный вид.</p>]
 			(*
 				<- lang_ru;;
 				=> nrel_format: format_html;;
 			*);;
-			=> .system_element_6457: .system_element_6461;;
-			=> nrel_primary_initiation_condition: .system_element_6458;;
-			=> .system_element_5490: <
+			=> .system_element_6397: .system_element_6401;;
+			=> nrel_primary_initiation_condition: .system_element_6398;;
+			=> .system_element_5436: <
 				[<p>Проверка условия инициирования.</p>]
 				(*
 					<- lang_ru;;
@@ -405,16 +405,16 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_6462
+		.system_element_6402
 		(*
 			=> nrel_note: [<p>Задачей <i>Абстрактного sc-агента прямого логического вывода</i> является генерации новых знаний на основе некоторых логических утверждений.</p>]
 			(*
 				<- lang_ru;;
 				=> nrel_format: format_html;;
 			*);;
-			=> .system_element_6457: .system_element_6463;;
-			=> nrel_primary_initiation_condition: .system_element_6458;;
-			=> .system_element_5490: <
+			=> .system_element_6397: .system_element_6403;;
+			=> nrel_primary_initiation_condition: .system_element_6398;;
+			=> .system_element_5436: <
 				[<p>Проверка условия инициирования.</p>]
 				(*
 					<- lang_ru;;
@@ -446,7 +446,7 @@
 							*);;
 						*)
 					};;
-					=> .system_element_35: .system_element_6426;;
+					=> .system_element_35: .system_element_6366;;
 				*)
 			>;;
 			=> nrel_note: [<p>Входными аргументами такого агента является целевая структура, множество формул, которые используются в ходе вывода агентом применения правил вывода, множество правил вывода, входная структура и выходная структура. В результате выполнения агентом логического вывода действия, в sc-памяти формируется sc-структура, представляющая собой дерево решения. Это дерево состоит из последовательности узлов, представляющих собой примененные правила, которые привели к появлению в sc-памяти требуемых знаний. Такое дерево может быть пустым в случае, если требуемую структуру не удалось сгенерировать в ходе логического вывода.</p>]
@@ -454,7 +454,7 @@
 				<- lang_ru;;
 				=> nrel_format: format_html;;
 			*);;
-			=> .system_element_785: .system_element_6464
+			=> .system_element_785: .system_element_6404
 			(*
 				<=> nrel_semantic_equivalence: "file://images/sd_operat_sem_sc_logical_lang/direct_inference_agent.png"
 				(*
@@ -463,16 +463,16 @@
 				*);;
 			*);;
 		*);
-		.system_element_6465
+		.system_element_6405
 		(*
 			=> nrel_note: [<p>Задачей <i>Абстрактного sc-агента обратного логического вывода</i> является проверка гипотез. Некоторые гипотезы могут быть опровергнуты, однако извлекая причины того, почему гипотеза опровергнута, можно изменить посылку гипотезы так, чтобы создать новую гипотезу, которая впоследствии может стать полезной теоремой.</p>]
 			(*
 				<- lang_ru;;
 				=> nrel_format: format_html;;
 			*);;
-			=> .system_element_6457: .system_element_6466;;
-			=> nrel_primary_initiation_condition: .system_element_6458;;
-			=> .system_element_5490: <
+			=> .system_element_6397: .system_element_6406;;
+			=> nrel_primary_initiation_condition: .system_element_6398;;
+			=> .system_element_5436: <
 				[<p>Проверка условия инициирования.</p>]
 				(*
 					<- lang_ru;;
@@ -487,7 +487,7 @@
 						<- lang_ru;;
 						=> nrel_format: format_html;;
 					*);;
-					=> .system_element_35: .system_element_6426;;
+					=> .system_element_35: .system_element_6366;;
 				*)
 			>;;
 			=> nrel_note: [<p>Ответом данного агента будет дерево вывода, которое показывает, с использованием каких правил можно доказать или опровергнуть выдвинутую гипотезу.</p>]
@@ -497,7 +497,7 @@
 			*);;
 		*)
 	};
-	-> .system_element_6467
+	-> .system_element_6407
 	(*
 		=> nrel_idtf: [<p>Реализация scl-машины</p>]
 		(*
@@ -511,23 +511,23 @@
 		*);;
 	*);;
 
-	.system_element_6460
+	.system_element_6400
 	=> nrel_abstract_sc_agent_decomposition: {
-		.system_element_6468;
-		.system_element_6469;
-		.system_element_6470;
-		.system_element_6471;
-		.system_element_6472;
-		.system_element_6473;
-		.system_element_6474;
-		.system_element_6475;
-		.system_element_6476;
-		.system_element_6477;
-		.system_element_6478;
-		.system_element_6479
+		.system_element_6408;
+		.system_element_6409;
+		.system_element_6410;
+		.system_element_6411;
+		.system_element_6412;
+		.system_element_6413;
+		.system_element_6414;
+		.system_element_6415;
+		.system_element_6416;
+		.system_element_6417;
+		.system_element_6418;
+		.system_element_6419
 	};;
 
-	.system_element_6480
+	.system_element_6420
 	=> .system_element_158: [<p>Любая формула семантически эквивалентна некоторой формуле в конъюнктивной нормальной форме, в связи с этим иногда удобно применять правило резолюции.</p>]
 	(*
 		<- lang_ru;;
@@ -548,7 +548,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_203: .system_element_6481
+	=> .system_element_203: .system_element_6421
 	(*
 		<=> nrel_semantic_equivalence: "file://images/sd_operat_sem_sc_logical_lang/resolution.png"
 		(*
@@ -557,11 +557,11 @@
 		*);;
 	*);;
 
-	.system_element_6453
-	=> nrel_using_example: .system_element_6482
+	.system_element_6393
+	=> nrel_using_example: .system_element_6422
 	(*
-		=> .system_element_6484: .system_element_6483;;
-		=> .system_element_785: .system_element_6485
+		=> .system_element_6424: .system_element_6423;;
+		=> .system_element_785: .system_element_6425
 		(*
 			<=> nrel_semantic_equivalence: "file://images/sd_operat_sem_sc_logical_lang/resolution_formulas_example.png"
 			(*
@@ -584,7 +584,7 @@
 			(*
 				<- lang_ru;;
 				=> nrel_format: format_html;;
-				=> .system_element_785: .system_element_6486
+				=> .system_element_785: .system_element_6426
 				(*
 					<=> nrel_semantic_equivalence: "file://images/sd_operat_sem_sc_logical_lang/conjunction_implication_rule.png"
 					(*
@@ -597,7 +597,7 @@
 			(*
 				<- lang_ru;;
 				=> nrel_format: format_html;;
-				=> .system_element_785: .system_element_6487
+				=> .system_element_785: .system_element_6427
 				(*
 					<=> nrel_semantic_equivalence: "file://images/sd_operat_sem_sc_logical_lang/resolution_prepared_formulas_example.png"
 					(*
@@ -613,7 +613,7 @@
 			*)
 		>
 		(*
-			=> .system_element_785: .system_element_6488
+			=> .system_element_785: .system_element_6428
 			(*
 				<=> nrel_semantic_equivalence: "file://images/sd_operat_sem_sc_logical_lang/resolution_inference.png"
 				(*

@@ -1,66 +1,66 @@
-.system_element_5288
+.system_element_5027
 => nrel_inclusion: [*
 	<- .system_element_3;
-	-> rrel_key_sc_element: .system_element_5289;;
+	-> rrel_key_sc_element: .system_element_5236;;
 
-	.system_element_5289
+	.system_element_5236
 	<- subject_domain;
 	-> .system_element_6: 
 		.system_element_1181
 	;
 	-> .system_element_6: 
-		.system_element_5290;
+		.system_element_5237;
 		computer_system;
-		.system_element_5291;
-		.system_element_5292;
-		.system_element_5293;
+		.system_element_5238;
+		.system_element_5239;
+		.system_element_5240;
 		.system_element_3128;
-		.system_element_5294;
-		.system_element_5295;
-		.system_element_5296;
-		.system_element_5297;
-		.system_element_5298;
-		.system_element_5299;
-		.system_element_5300;
+		.system_element_5241;
+		.system_element_5242;
+		.system_element_5243;
+		.system_element_5244;
+		.system_element_5245;
+		.system_element_5246;
+		.system_element_5247;
 		task;
-		.system_element_5301;
+		.system_element_5248;
 		.system_element_745;
-		.system_element_5302;
-		.system_element_5303;
-		.system_element_5304;
-		.system_element_5305;
-		.system_element_5306;
-		.system_element_5307;
-		.system_element_5308;
-		.system_element_5309;
-		.system_element_5310;
-		.system_element_5311;
-		.system_element_5312;
-		.system_element_5313;
-		.system_element_5314;
-		.system_element_5315;
-		.system_element_5316;
+		.system_element_5249;
+		.system_element_5250;
+		.system_element_5251;
+		.system_element_5252;
+		.system_element_5253;
+		.system_element_5254;
+		.system_element_5255;
+		.system_element_5256;
+		.system_element_5257;
+		.system_element_5258;
+		.system_element_5259;
+		.system_element_5260;
+		.system_element_5261;
+		.system_element_5262;
+		.system_element_5263;
 		intelligent_system;
-		.system_element_5317;
-		.system_element_5318;
-		.system_element_5319;
-		.system_element_5320;
-		.system_element_5321;
+		.system_element_5264;
+		.system_element_5265;
+		.system_element_5266;
+		.system_element_5267;
+		.system_element_5268;
 		.system_element_1182;
-		.system_element_5322;
-		.system_element_5323;
-		.system_element_5324;
-		.system_element_5325;
-		.system_element_5326;
-		.system_element_5327;
-		.system_element_5328;
-		.system_element_5329
+		.system_element_5269;
+		.system_element_5270;
+		.system_element_5271;
+		.system_element_5272;
+		.system_element_5273;
+		.system_element_5274;
+		.system_element_5275;
+		.system_element_5276
 	;
 	-> .system_element_335: 
 		.system_element_3126;
-		.system_element_5330;
-		.system_element_5331;
-		.system_element_5332;
+		.system_element_5277;
+		.system_element_5278;
+		.system_element_5279;
 		.system_element_3129
 	;
 	=> nrel_idtf: [<p>Иерархическая система свойств (характеристик) кибернетическихсистем, определяющих общий (интегральный) уровень их качества</p>]
@@ -157,7 +157,7 @@
 		.system_element_1181
 		(*
 			=> nrel_subdividing: {
-				.system_element_5333;
+				.system_element_5280;
 				computer_system
 				(*
 					=> nrel_idtf: [<p>искусственная кибернетическая система</p>]
@@ -166,7 +166,7 @@
 						=> nrel_format: format_html;;
 					*);;
 				*);
-				.system_element_5334
+				.system_element_5281
 				(*
 					=> nrel_idtf: [<p>кибернетическая система, являющаяся симбиозом компонентов какестественного, так и искусственного происхождения</p>]
 					(*
@@ -176,10 +176,10 @@
 				*)
 			};;
 		*);
-		.system_element_5307;
-		.system_element_5303;
-		.system_element_5313;
-		.system_element_5315
+		.system_element_5254;
+		.system_element_5250;
+		.system_element_5260;
+		.system_element_5262
 		(*
 			=> nrel_idtf: [<p>уровень интеллекта кибернетическойсистемы</p>]
 			(*
@@ -201,18 +201,18 @@
 			*);;
 			=> nrel_inclusion: .system_element_1182;;
 		*);
-		.system_element_5297;
-		.system_element_5335;
+		.system_element_5244;
+		.system_element_5282;
 		knowledge_base;
-		.system_element_5336;
-		.system_element_5299;
-		.system_element_5324;
-		.system_element_5304;
-		.system_element_5314;
-		.system_element_5325;
-		.system_element_5310;
-		.system_element_5326;
-		.system_element_5327
+		.system_element_5283;
+		.system_element_5246;
+		.system_element_5271;
+		.system_element_5251;
+		.system_element_5261;
+		.system_element_5272;
+		.system_element_5257;
+		.system_element_5273;
+		.system_element_5274
 		(*
 			=> nrel_idtf: [<p>уровень рефлексии кибернетической системы</p>]
 			(*
@@ -221,10 +221,10 @@
 			*);;
 		*);
 		.system_element_3128;
-		.system_element_5337;
-		.system_element_5338;
-		.system_element_5339;
-		.system_element_5329
+		.system_element_5284;
+		.system_element_5285;
+		.system_element_5286;
+		.system_element_5276
 		(*
 			=> nrel_idtf: [<p>способность кибернетической системы своей внутренней и внешней деятельностью обеспечиватьвысокий уровень интеллекта тех многоагентных систем, членом (агентом) которыхона является</p>]
 			(*
@@ -234,43 +234,43 @@
 		*)
 	>;
 	=> .system_element_316: <
-		.system_element_5340;
-		.system_element_5341;
-		.system_element_5342;
-		.system_element_5343;
-		.system_element_5344;
-		.system_element_5345;
-		.system_element_5346;
-		.system_element_5347;
-		.system_element_5348;
-		.system_element_5349;
-		.system_element_5350;
-		.system_element_5351;
-		.system_element_5352;
-		.system_element_5353;
-		.system_element_5354;
-		.system_element_5355;
-		.system_element_5356;
-		.system_element_5357;
-		.system_element_5358;
-		.system_element_5359;
-		.system_element_5360;
+		.system_element_5287;
+		.system_element_5288;
+		.system_element_5289;
+		.system_element_5290;
+		.system_element_5291;
+		.system_element_5292;
+		.system_element_5293;
+		.system_element_5294;
+		.system_element_5295;
+		.system_element_5296;
+		.system_element_5297;
+		.system_element_5298;
+		.system_element_5299;
+		.system_element_5300;
+		.system_element_5301;
+		.system_element_5302;
+		.system_element_5303;
+		.system_element_5304;
+		.system_element_5305;
+		.system_element_5306;
+		.system_element_5307;
 		.system_element_3092;
-		.system_element_5361;
-		.system_element_5362;
+		.system_element_5308;
+		.system_element_5309;
 		.system_element_3094
 	>;
 	<= .system_element_315: <
-		.system_element_5363;
-		.system_element_5364;
-		.system_element_5365;
-		.system_element_5366;
-		.system_element_5367;
-		.system_element_5368;
-		.system_element_5369;
-		.system_element_5370;
-		.system_element_5371;
-		.system_element_5372
+		.system_element_5310;
+		.system_element_5311;
+		.system_element_5312;
+		.system_element_5313;
+		.system_element_5314;
+		.system_element_5315;
+		.system_element_5316;
+		.system_element_5317;
+		.system_element_5318;
+		.system_element_5319
 	>
 ;
 	=> nrel_inclusion: .intro_hs_segment1;
