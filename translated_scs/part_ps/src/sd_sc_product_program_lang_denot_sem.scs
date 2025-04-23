@@ -1,31 +1,31 @@
-.system_element_5096
+.system_element_5095
 => nrel_inclusion: [*
 	<- .system_element_3;
-	-> rrel_key_sc_element: .system_element_6675;;
+	-> rrel_key_sc_element: .system_element_6674;;
 
-	.system_element_6675
+	.system_element_6674
 	<- subject_domain;
 	-> .system_element_330: 
-		.system_element_6338;
-		.system_element_6339
+		.system_element_6337;
+		.system_element_6338
 	;
 	=> .system_element_1416: 
-		.system_element_6340;
+		.system_element_6339;
 		.system_element_4293
 	;
 	=> .system_element_316: <
-		.system_element_6676;
-		.system_element_6677
+		.system_element_6675;
+		.system_element_6676
 	>;;
 
-	.system_element_6678
-	<- .system_element_6338;
+	.system_element_6677
+	<- .system_element_6337;
 	=> nrel_note: [<p>База данных в языке называется рабочей памятью (working memory) и состоит из нескольких сотен объектов, каждый из которых имеет свой набор атрибутов. Объект вместе с парами <атрибут -- значение> называется элементом рабочей памяти.</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_35: .system_element_6676;
+	=> .system_element_35: .system_element_6675;
 	=> nrel_note: [<p>Основная задача, которую поставили перед собой разработчики языка <i>OPS5</i>, добиться максимально высокой эффективности выполнения продукционной программы. Интерпретатор системы порождает конфликтное множество, каждый элемент которого представляет собой пару <имя продукции, список элементов рабочей памяти, которые являются означиваниями для образцов продукции>. Каждая продукция в <i>OPS5</i> состоит из символа Р, имени продукции, левой части, символа --> и правой части.</p>]
 	(*
 		<- lang_ru;;
@@ -38,7 +38,7 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_785: .system_element_6679
+	=> .system_element_785: .system_element_6678
 	(*
 		<=> nrel_semantic_equivalence: "file://images/sd_sc_product_program_lang_denot_sem/ops5_production_rule_example.png"
 		(*
@@ -67,7 +67,7 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_6677
+	.system_element_6676
 	=> nrel_explanation: [<p><b><i>CLIPS</i></b> использует продукционную модель представления знаний и поэтому содержит три основных элемента:
 
 	<li>
@@ -89,5 +89,5 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> .system_element_35: .system_element_6677;;
+	=> .system_element_35: .system_element_6676;;
 *];;

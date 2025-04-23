@@ -49,7 +49,7 @@ ostis_standard
 					.system_element_5036;
 					.system_element_5037
 					(*
-						=> nrel_detalization: <
+						=> nrel_section_decomposition: <
 							.system_element_960;
 							.system_element_5038
 						>;;
@@ -107,7 +107,7 @@ ostis_standard
 				=> nrel_section_decomposition: <
 					.system_element_788
 					(*
-						=> nrel_detalization: <
+						=> nrel_section_decomposition: <
 							.system_element_5063;
 							.system_element_5064
 						>;;
@@ -115,7 +115,7 @@ ostis_standard
 					.system_element_789;
 					.system_element_790
 					(*
-						=> nrel_detalization: <
+						=> nrel_section_decomposition: <
 							.system_element_5065;
 							.system_element_5066;
 							.system_element_5067
@@ -123,7 +123,7 @@ ostis_standard
 					*);
 					.system_element_791
 					(*
-						=> nrel_detalization: <
+						=> nrel_section_decomposition: <
 							.system_element_5068;
 							.system_element_5069;
 							.system_element_5070
@@ -131,7 +131,7 @@ ostis_standard
 					*);
 					.system_element_792
 					(*
-						=> nrel_detalization: <
+						=> nrel_section_decomposition: <
 							.system_element_5071;
 							.system_element_5072;
 							.system_element_5073
@@ -141,7 +141,7 @@ ostis_standard
 			*);
 			.system_element_5074
 			(*
-				=> .system_element_5075: <
+				=> nrel_section_decomposition: <
 					.system_element_24;
 					.system_element_25;
 					.system_element_30;
@@ -155,78 +155,78 @@ ostis_standard
 					.system_element_34
 				>;;
 			*);
-			.system_element_5076
+			.system_element_5075
 			(*
-				=> .system_element_5075: <
+				=> nrel_section_decomposition: <
 					.system_element_27;
-					.system_element_5077
+					.system_element_5076
 					(*
-						=> .system_element_5075: <
+						=> nrel_section_decomposition: <
 							.system_element_28;
 							.system_element_29
 						>;;
 					*);
-					.system_element_5078;
+					.system_element_5077;
 					.system_element_751
 				>;;
 			*)
 		>;;
 	*);
-	.system_element_5079
+	.system_element_5078
 	(*
 		=> nrel_section_decomposition: <
-			.system_element_5080
+			.system_element_5079
 			(*
 				=> nrel_section_decomposition: <
-					.system_element_5081
+					.system_element_5080
 					(*
-						=> nrel_detalization: <
-							.system_element_5082;
-							.system_element_5083
+						=> nrel_section_decomposition: <
+							.system_element_5081;
+							.system_element_5082
 						>;;
 					*);
 					.system_element_4707
 					(*
-						=> nrel_detalization: <
+						=> nrel_section_decomposition: <
+							.system_element_5083;
 							.system_element_5084;
-							.system_element_5085;
-							.system_element_5086
+							.system_element_5085
 						>;;
 					*);
-					.system_element_5087
+					.system_element_5086
 					(*
-						=> .system_element_1104: .system_element_5088;;
+						=> .system_element_1104: .system_element_5087;;
 					*);
-					.system_element_5089
+					.system_element_5088
 					(*
-						=> nrel_detalization: <
+						=> nrel_section_decomposition: <
+							.system_element_5089;
 							.system_element_5090;
-							.system_element_5091;
-							.system_element_5092
+							.system_element_5091
 						>;;
 					*);
-					.system_element_5093;
-					.system_element_5094
+					.system_element_5092;
+					.system_element_5093
 					(*
-						=> nrel_detalization: <
+						=> nrel_section_decomposition: <
+							.system_element_5094;
 							.system_element_5095;
-							.system_element_5096;
-							.system_element_5097
+							.system_element_5096
 						>;;
 					*);
-					.system_element_5098
+					.system_element_5097
 					(*
-						=> nrel_detalization: <
+						=> nrel_section_decomposition: <
+							.system_element_5098;
 							.system_element_5099;
-							.system_element_5100;
-							.system_element_5101
+							.system_element_5100
 						>;;
 					*)
 				>;;
 			*)
 		>;;
 	*);
-	.system_element_5102
+	.system_element_5101
 	(*
 		=> nrel_section_decomposition: <
 			.system_element_4038;
@@ -235,10 +235,10 @@ ostis_standard
 			.system_element_4000;
 			.system_element_4005
 			(*
-				=> nrel_detalization: <
+				=> nrel_section_decomposition: <
 					.system_element_2677
 					(*
-						=> nrel_detalization: <
+						=> nrel_section_decomposition: <
 							.system_element_595;
 							.system_element_1045
 						>;;
@@ -250,7 +250,7 @@ ostis_standard
 			*)
 		>;;
 	*);
-	.system_element_5103
+	.system_element_5102
 	(*
 		=> nrel_section_decomposition: <
 			.system_element_314
@@ -259,16 +259,16 @@ ostis_standard
 					.system_element_0;
 					.system_element_343
 					(*
-						=> nrel_detalization: <
-							.system_element_5104;
-							.system_element_5105
+						=> nrel_section_decomposition: <
+							.system_element_5103;
+							.system_element_5104
 						>;;
 					*);
 					.system_element_344;
-					.system_element_5106
+					.system_element_5105
 				>;;
 			*);
-			.system_element_5107
+			.system_element_5106
 			(*
 				=> nrel_section_decomposition: <
 					.system_element_39;
@@ -276,105 +276,105 @@ ostis_standard
 					.system_element_437
 				>;;
 			*);
-			.system_element_5108;
-			.system_element_5109
+			.system_element_5107;
+			.system_element_5108
 			(*
 				=> nrel_section_decomposition: <
-					.system_element_5110
+					.system_element_5109
 					(*
 						=> nrel_section_decomposition: <
+							.system_element_5110;
 							.system_element_5111;
 							.system_element_5112;
 							.system_element_5113;
-							.system_element_5114;
-							.system_element_5115
+							.system_element_5114
 						>;;
 					*);
 					.system_element_491
 					(*
 						=> nrel_section_decomposition: <
+							.system_element_5115;
 							.system_element_5116;
-							.system_element_5117;
-							.system_element_5118
+							.system_element_5117
 						>;;
 					*);
-					.system_element_5119;
-					.system_element_5120
+					.system_element_5118;
+					.system_element_5119
 				>;;
 			*);
-			.system_element_5121
+			.system_element_5120
 		>;;
 	*);
-	.system_element_5122
+	.system_element_5121
 	(*
 		=> .system_element_1104: .system_element_4930
 		(*
 			=> .system_element_1104: .system_element_4952
 			(*
-				=> nrel_detalization: <
+				=> nrel_section_decomposition: <
 					.system_element_4942;
 					.system_element_4706
 				>;;
 			*);;
 		*);;
 	*);
-	.system_element_5123
+	.system_element_5122
 	(*
-		=> .system_element_1104: .system_element_5124
+		=> .system_element_1104: .system_element_5123
 		(*
-			=> nrel_detalization: <
-				.system_element_5125;
-				.system_element_5126
+			=> nrel_section_decomposition: <
+				.system_element_5124;
+				.system_element_5125
 			>;;
 		*);;
 	*);
-	.system_element_5127
+	.system_element_5126
 	(*
 		=> nrel_section_decomposition: <
-			.system_element_5128;
-			.system_element_5129
+			.system_element_5127;
+			.system_element_5128
 			(*
-				=> nrel_detalization: <
-					.system_element_5130;
-					.system_element_5131
+				=> nrel_section_decomposition: <
+					.system_element_5129;
+					.system_element_5130
 					(*
-						=> .system_element_1104: .system_element_5132;;
+						=> .system_element_1104: .system_element_5131;;
 					*);
 					.system_element_2898;
-					.system_element_5133
+					.system_element_5132
 					(*
-						=> .system_element_1104: .system_element_5134;;
+						=> .system_element_1104: .system_element_5133;;
 					*);
 					.system_element_2862
 					(*
 						=> .system_element_1104: .system_element_340;;
 					*);
-					.system_element_5135;
+					.system_element_5134;
 					.system_element_2885
 					(*
-						=> .system_element_1104: .system_element_5136;;
+						=> .system_element_1104: .system_element_5135;;
 					*);
 					.system_element_2870
 					(*
-						=> .system_element_1104: .system_element_5137;;
+						=> .system_element_1104: .system_element_5136;;
 					*);
 					.system_element_2899
 					(*
-						=> .system_element_1104: .system_element_5138;;
+						=> .system_element_1104: .system_element_5137;;
 					*);
-					.system_element_5139;
-					.system_element_5140
+					.system_element_5138;
+					.system_element_5139
 					(*
 						=> .system_element_1104: .system_element_3671;;
 					*);
-					.system_element_5141
+					.system_element_5140
 					(*
-						=> .system_element_1104: .system_element_5142;;
+						=> .system_element_1104: .system_element_5141;;
 					*);
 					.system_element_3581
 				>;;
 			*)
 		>;;
 	*);
-	.system_element_5143
+	.system_element_5142
 >;;

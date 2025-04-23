@@ -4,7 +4,7 @@
 	.system_element_341
 	=> .system_element_418: 
 		technology_OSTIS;
-		.system_element_5187;
+		.system_element_5186;
 		myself;
 		ostis_standard;
 		.system_element_2974
@@ -13,8 +13,8 @@
 		ostis_system
 	;
 	=> .system_element_2400: 
-		.system_element_5188;
-		.system_element_5189
+		.system_element_5187;
+		.system_element_5188
 	;
 	=> nrel_summary: [<p>Рассмотрены принципы построения комплексной технологии разработки и поддержки жизненного цикла интеллектуальных компьютерных систем нового поколения --- <i>Технологии OSTIS</i>.</p>]
 	(*
@@ -23,25 +23,25 @@
 	*);;
 *];;
 
-.system_element_5190
+.system_element_5189
 => nrel_inclusion: [*
 
-	.system_element_5191
-	=> nrel_inclusion: .system_element_5192
+	.system_element_5190
+	=> nrel_inclusion: .system_element_5191
 	(*
+		=> nrel_inclusion: .system_element_5192;;
 		=> nrel_inclusion: .system_element_5193;;
 		=> nrel_inclusion: .system_element_5194;;
-		=> nrel_inclusion: .system_element_5195;;
 	*);
+	=> nrel_inclusion: .system_element_5195;
 	=> nrel_inclusion: .system_element_5196;
 	=> nrel_inclusion: .system_element_5197;
 	=> nrel_inclusion: .system_element_5198;
 	=> nrel_inclusion: .system_element_5199;
 	=> nrel_inclusion: .system_element_5200;
-	=> nrel_inclusion: .system_element_5201;
-	=> nrel_inclusion: .system_element_5202;;
+	=> nrel_inclusion: .system_element_5201;;
 
-	.system_element_5203
+	.system_element_5202
 	=> .system_element_426: 
 		[<p>четкое описание текущей версии <i>стандарта интеллектуальных компьютерных систем нового поколения</i>, обеспечивающего семантическую совместимость разрабатываемых систем</p>]
 		(*
@@ -60,7 +60,7 @@
 		*)
 	;;
 
-	.system_element_5204
+	.system_element_5203
 	=> .system_element_426: 
 		[<p>обеспечение низкого порога вхождения в <i>технологию проектирования интеллектуальных компьютерных систем</i> как для пользователей технологии (то есть разработчиков прикладных или специализированных интеллектуальных компьютерных систем), так и для разработчиков самой технологии</p>]
 		(*
@@ -74,7 +74,7 @@
 		*)
 	;;
 
-	.system_element_5205
+	.system_element_5204
 	=> .system_element_2130: 
 		[<p>Реализация предлагаемой <i>технологии</i> разработки и сопровождения <i>интеллектуальных компьютерных систем нового поколения</i> в виде <b><i>интеллектуальной компьютерной метасистемы</i></b>, которая полностью соответствует <i>стандартам</i> предлагаемых <i>интеллектуальных компьютерных систем нового поколения</i>, разрабатываемым по предлагаемой <i>технологии</i>.</p>]
 		(*
@@ -148,7 +148,7 @@
 		*)
 	;;
 
-	.system_element_5206
+	.system_element_5205
 	=> .system_element_167: {
 		[<p>Унифицировать формализацию различных моделей представления различного вида используемой информации, хранимой в памяти интеллектуальных компьютерных систем и различных моделей решения интеллектуальных задач для обеспечения семантической совместимости и простой автоматизируемой интегрируемости различных видов знаний и моделей решения задач в интеллектуальных компьютерных системах. Для этого необходимо разработать базовую универсальную абстрактную модель представления и обработки знаний, обеспечивающую реализацию всевозможных моделей решения задач.</p>]
 		(*
@@ -204,8 +204,8 @@
 		*);;
 	*);;
 
-	.system_element_5207
-	=> .system_element_5208: 
+	.system_element_5206
+	=> .system_element_5207: 
 		[<p>архитектура интеллектуальных компьютерных систем, обеспечивающая семантическую совместимость:
 		<ul>
 			<li> между интеллектуальными компьютерными системами и их пользователями
@@ -230,39 +230,39 @@
 
 	metasystem_knowledge_base
 	=> nrel_subdividing: {
-		.system_element_5209;
-		.system_element_5187
+		.system_element_5208;
+		.system_element_5186
 		(*
 			=> nrel_subdividing: {
-				.system_element_5210
+				.system_element_5209
 				(*
 					=> nrel_subdividing: {
+						.system_element_5210;
 						.system_element_5211;
-						.system_element_5212;
-						.system_element_5213
+						.system_element_5212
 					};;
 				*);
-				.system_element_5214
+				.system_element_5213
 				(*
 					=> nrel_subdividing: {
+						.system_element_5214;
 						.system_element_5215;
 						.system_element_5216;
-						.system_element_5217;
-						.system_element_5218
+						.system_element_5217
 					};;
 				*);
-				.system_element_5219
+				.system_element_5218
 				(*
 					=> nrel_subdividing: {
-						.system_element_5220
+						.system_element_5219
 					};;
 				*);
-				.system_element_5221
+				.system_element_5220
 				(*
 					=> nrel_subdividing: {
+						.system_element_5221;
 						.system_element_5222;
-						.system_element_5223;
-						.system_element_5224
+						.system_element_5223
 					};;
 				*)
 			};;
@@ -334,11 +334,11 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	-> .system_element_5187;
-	-> .system_element_5221;;
+	-> .system_element_5186;
+	-> .system_element_5220;;
 *];;
 
-.system_element_5225
+.system_element_5224
 => nrel_inclusion: [*
 
 	.system_element_1932
@@ -347,13 +347,13 @@
 		<- lang_ru;;
 		=> nrel_format: format_html;;
 	*);
-	=> nrel_inclusion: .system_element_5226
+	=> nrel_inclusion: .system_element_5225
 	(*
-		=> nrel_inclusion: .system_element_5227;;
+		=> nrel_inclusion: .system_element_5226;;
 	*);
-	=> nrel_inclusion: .system_element_5228
+	=> nrel_inclusion: .system_element_5227
 	(*
-		-> .system_element_5229;;
+		-> .system_element_5228;;
 	*);
 	=> nrel_note: [<p>Каждый <i>sc-элемент</i> (знак, хранимый в базе знаний ostis-системы) по отношению к базе знаний <i>ostis-системы</i> считается временной сущностью, поскольку каждый <i>sc-элемент</i> в какой-то момент вводится в состав <i>базы знаний</i> и в какой-то момент может быть из нее удален, но при этом следует отличать временный характер самого <i>sc-элемента</i> от временного или постоянного характера обозначаемой им сущности</p>]
 	(*
@@ -378,7 +378,7 @@
 		=> nrel_format: format_html;;
 	*);
 	=> nrel_subdividing: {
-		.system_element_5230
+		.system_element_5229
 		(*
 			=> nrel_idtf: [<p>самостоятельная <i>ostis-система</i></p>]
 			(*
@@ -406,14 +406,14 @@
 	};;
 
 	.system_element_1182
-	=> nrel_inclusion: .system_element_5231
+	=> nrel_inclusion: .system_element_5230
 	(*
 		=> nrel_idtf: [<p>интеллектуальная компьютерная система нового поколения</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);;
-		=> nrel_inclusion: .system_element_5230
+		=> nrel_inclusion: .system_element_5229
 		(*
 			=> nrel_idtf: [<p>предлагаемый нами вариант построения интероперабельных интеллектуальных компьютерных систем</p>]
 			(*
@@ -446,7 +446,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_5232
+		.system_element_5231
 	};;
 
 	.system_element_1942
@@ -473,7 +473,7 @@
 		=> nrel_format: format_html;;
 	*);
 	<- ostis_system;
-	<= .system_element_5233: technology_OSTIS;
+	<= .system_element_5232: technology_OSTIS;
 	=> .system_element_1: [<p>Логико-семантическая модель Метасистемы OSTIS</p>]
 	(*
 		<- lang_ru;;
@@ -502,12 +502,12 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_5234
+	.system_element_5233
 	=> nrel_note: [<p>Для разработки большого количества интероперабельных семантически совместимых интеллектуальных компьютерных систем, обеспечивающих переход на принципиально новый уровень автоматизации человеческой деятельности необходимо создание технологии, обеспечивающей массовое производство таких интеллектуальных компьютерных систем, участие в котором должно быть доступно широкому контингенту разработчиков (в том числе разработчиков средней квалификации и начинающих разработчиков)</p>]
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
-		=> .system_element_5235: 
+		=> .system_element_5234: 
 			[<p>стандартизация интероперабельных интеллектуальных компьютерных систем</p>]
 			(*
 				<- lang_ru;;

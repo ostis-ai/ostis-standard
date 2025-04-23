@@ -1,9 +1,9 @@
 .segment3 = [*
-.system_element_5499
+.system_element_5498
 => nrel_inclusion: [*
 	=> .system_element_9: 
 		.system_element_4124;
-		.system_element_5513;
+		.system_element_5512;
 		.system_element_4024;
 		lang_external
 		(*
@@ -13,7 +13,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
-		.system_element_5514
+		.system_element_5513
 		(*
 			=> nrel_idtf: [<p>язык представления информации в памяти кибернетической системы</p>]
 			(*
@@ -21,13 +21,13 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
+		.system_element_5514;
 		.system_element_5515;
 		.system_element_5516;
-		.system_element_5517;
 		.system_element_4053;
+		.system_element_5517;
 		.system_element_5518;
-		.system_element_5519;
-		.system_element_5520
+		.system_element_5519
 		(*
 			=> nrel_idtf: [<p>рецептор</p>]
 			(*
@@ -35,25 +35,25 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);
+		.system_element_5520;
 		.system_element_5521;
+		.system_element_5269;
 		.system_element_5522;
-		.system_element_5270;
 		.system_element_5523;
-		.system_element_5524;
 		.system_element_2960
 	;
 	=> .system_element_2400: 
-		.system_element_5525
+		.system_element_5524
 	;;
 
-	.system_element_5526
+	.system_element_5525
 	=> .system_element_2130: 
 		[<p>интерфейс <i>интеллектуальной компьютерной системы нового поколения</i> рассматривается как решательзадач частного вида --- <i>интерфейсных задач</i></p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
-		=> .system_element_5527: 
+		=> .system_element_5526: 
 			[<p>задачи понимания вербальной информации, приобретаемой интеллектуальной компьютерной системой (синтаксический анализ, семантический анализ и погружение в базу знаний интеллектуальнойкомпьютерной системы)</p>]
 			(*
 				<- lang_ru;;
@@ -115,7 +115,7 @@
 		*)
 	;;
 
-	.system_element_5528
+	.system_element_5527
 	=> .system_element_2130: 
 		[<p>интерфейс индивидуальной интеллектуальной компьютерной системы нового поколения являетсяспециализированным компонентом решателя задач интеллектуальной компьютерной системы нового поколения,то есть специализированной <u>встроенной</u> (в индивидуальную интеллектуальную компьютерную системунового поколения) интеллектуальной компьютерной системой нового поколения, ориентированной нарешение интерфейсных задач, к которым относятся:
 		<ul>
@@ -142,7 +142,7 @@
 			<- lang_ru;;
 			=> nrel_format: format_html;;
 		*);
-		=> .system_element_5529: 
+		=> .system_element_5528: 
 			[<p>синтаксиса и денотационной семантики всех используемых внешних языков</p>]
 			(*
 				<- lang_ru;;

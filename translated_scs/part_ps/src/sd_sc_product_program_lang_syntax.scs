@@ -1,23 +1,23 @@
-.system_element_5095
+.system_element_5094
 => nrel_inclusion: [*
 	<- .system_element_3;
-	-> rrel_key_sc_element: .system_element_6337;;
+	-> rrel_key_sc_element: .system_element_6336;;
 
-	.system_element_6337
+	.system_element_6336
 	<- subject_domain;
 	-> .system_element_330: 
-		.system_element_6338;
-		.system_element_6339
+		.system_element_6337;
+		.system_element_6338
 	;
 	=> .system_element_1416: 
-		.system_element_6340;
+		.system_element_6339;
 		.system_element_4293
 	;
 	=> .system_element_316: <
-		.system_element_6341
+		.system_element_6340
 	>;;
 
-	.system_element_6339
+	.system_element_6338
 	=> nrel_note: [<p>В ряде интеллектуальных систем используются комбинации сетевых и продукционных моделей представления знаний. В таких моделях декларативные знания описываются в сетевом компоненте модели, а процедурные знания --- в продукционном. В этом случае говорят о работе продукционной системы над семантической сетью. Процедурные знания позволяют системе узнать, как можно использовать те или иные декларативные знания, в частности, знания о закономерностях той части действительности, в которой "живет" интеллектуальная система, для получения нужных системе результатов или тех результатов, которые ожидает от нее пользователь.</p>]
 	(*
 		<- lang_ru;;
@@ -27,7 +27,7 @@
 	(*
 		<- lang_ru;;
 		=> nrel_format: format_html;;
-		=> .system_element_6342: [<p>i</p>]
+		=> .system_element_6341: [<p>i</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
@@ -37,7 +37,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);;
-		=> .system_element_6342: [<p>Q</p>]
+		=> .system_element_6341: [<p>Q</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
@@ -47,7 +47,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);;
-		=> .system_element_6342: [<p>P</p>]
+		=> .system_element_6341: [<p>P</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
@@ -62,7 +62,7 @@
 				*);;
 			*);;
 		*);;
-		=> .system_element_6342: [<p>A ⇒ B</p>]
+		=> .system_element_6341: [<p>A ⇒ B</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
@@ -77,7 +77,7 @@
 				=> nrel_format: format_html;;
 			*);;
 		*);;
-		=> .system_element_6342: [<p>N</p>]
+		=> .system_element_6341: [<p>N</p>]
 		(*
 			<- lang_ru;;
 			=> nrel_format: format_html;;
@@ -91,7 +91,7 @@
 					=> nrel_format: format_html;;
 				*);;
 			*);;
-			=> .system_element_35: .system_element_6341;;
+			=> .system_element_35: .system_element_6340;;
 		*);;
 	*);
 	=> nrel_note: [<p>Если в памяти системы хранится некоторый набор продукций, то они образуют систему продукций. В системе продукций должны быть заданы специальные процедуры управления продукциями, с помощью которых происходит актуализация продукций и выбор для выполнения той или иной продукции из числа актуализированных.</p>]
@@ -100,13 +100,13 @@
 		=> nrel_format: format_html;;
 	*);;
 
-	.system_element_6343
+	.system_element_6342
 	<= nrel_inclusion: .system_element_141;
 	=> .system_element_189: {
-		.system_element_6339;
+		.system_element_6338;
+		.system_element_6343;
 		.system_element_6344;
-		.system_element_6345;
-		.system_element_6346
+		.system_element_6345
 	}
 	(*
 		=> nrel_note: [<p>Основной единицей продукционного языка программирования, определяющей его лицо и его возможности, является продукция.</p>]
