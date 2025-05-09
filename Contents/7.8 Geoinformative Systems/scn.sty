@@ -1,0 +1,807 @@
+\NeedsTeXFormat{LaTeX2e}[2021-06-01]
+\ProvidesPackage{scn}
+  [2022/07/26 v0.1.0 LaTeX package for SCn-code support]
+
+
+%DEFINES START
+
+\newlength{\tabsize}
+\setlength{\tabsize}{3em}
+
+\newlength{\insize}
+\setlength{\insize}{0.8em}
+
+\newlength{\insizevar}
+\setlength{\insizevar}{1.4em}
+
+\newlength{\subsetsize}
+\setlength{\subsetsize}{0.9em}
+
+\newlength{\coloneqsize}
+\setlength{\coloneqsize}{1.1em}
+
+\newlength{\arrowsize}
+\setlength{\arrowsize}{1.2em}
+
+\newlength{\arrowsizevar}
+\setlength{\arrowsizevar}{1.8em}
+
+\newlength{\bulletsize}
+\setlength{\bulletsize}{0.5em}
+
+\newlength{\bulletbracketsize}
+\setlength{\bulletbracketsize}{1em}
+
+\newlength{\bracketsize}
+\setlength{\bracketsize}{0.7em}
+
+\newlength{\eqsize}
+\setlength{\eqsize}{0.9em}
+
+\newlength{\substructsize}
+\setlength{\substructsize}{1.8em}
+
+\newlength{\fileparskip}
+\setlength{\fileparskip}{0.5em}
+
+\newlength{\toclineskip}
+\setlength{\toclineskip}{\baselineskip}
+
+\newcounter{hind}
+
+% Create line with dots
+\newcommand{\filldots}{\xleaders\hbox{*}\hfill}
+
+\newcommand{\scnsupergroupsign}{\textasciicircum}
+\newcommand{\scnrolesign}{\,$^\prime$}
+
+\newcommand{\calctab}{\dimexpr (\tabsize)*\value{hind} \relax}
+\newcommand{\settab}{\setlength{\parindent}{\calctab}}
+\newcommand{\sethind}[1][0em]{\setlength{\hangindent}{\calctab+\tabsize+#1}}
+\newcommand{\calcdiff}[1]{\dimexpr \tabsize-#1  \relax}
+\newcommand{\makediff}[1]{\hspace{\calcdiff{#1}}}
+
+\RequirePackage{microtype}
+\newcommand{\textspaced}[1]{%
+  \textls[200]{#1}
+}
+
+\RequirePackage{amsmath,bm}
+
+\newcommand{\scnnonamednode}{%
+  $\pmb{\{}\pmb{\}}$\par
+}
+
+\newcommand{\scnstartstruct}{%
+  \settab
+  \par$\pmb{=}$\\
+  $\pmb{\{}$\par
+}
+
+\newcommand{\scnstartsubstruct}{%
+  \settab
+  \par$\pmb{\supset=}$\\
+  $\pmb{\{}$\par
+}
+
+\RequirePackage{ifthen}
+\NewDocumentCommand{\scnstartset}{o}{%
+  \ifthenelse{\equal{#1}{local}}{}{\par}%
+  $\pmb{\{}$\par
+}
+
+\NewDocumentCommand{\scnendstruct}{o}{%
+  \ifthenelse{\equal{#1}{local}}{\settab}{}%
+  \par$\pmb{\}}$\par
+}
+
+\NewDocumentCommand{\scnstartvector}{o}{%
+  \ifthenelse{\equal{#1}{local}}{}{\par}%
+  $\pmb{\langle}$\par
+}
+
+\NewDocumentCommand{\scnendvector}{o}{%
+  \ifthenelse{\equal{#1}{local}}{\settab}{}%
+  \par$\pmb{\rangle}$\par
+}
+
+\NewDocumentCommand{\scnstarthierstruct}{o}{%
+  \ifthenelse{\equal{#1}{local}}{}{\par}%
+  $\pmb{\langle|}$\par
+}
+
+\NewDocumentCommand{\scnendhierstruct}{o}{%
+  \ifthenelse{\equal{#1}{local}}{\settab}{}%
+  \par$\pmb{|\rangle}$\par
+}
+
+\providecommand{\segment}{Segment}
+
+\providecommand{\complfragm}{Completed}
+
+\providecommand{\complsect}{Completed Section}
+
+\providecommand{\complsegm}{Completed Segment}
+
+\providecommand{\curpage}{page number}
+
+\providecommand{\sectfamily}{Section family}
+
+\providecommand{\sect}{Section}
+
+\providecommand{\bibref}{bibliographic reference}
+
+\providecommand{\annot}{annotation}
+
+%DEFINES END
+
+%SCN START
+
+\newcommand{\scnheader}[1]{%
+  \setlength{\hangindent}{0em}
+  \setlength{\parskip}{\baselineskip}
+  \par{\itshape\bfseries#1}
+  \setlength{\parskip}{0em}
+  \par
+}
+
+\newcommand{\scnfilelongheader}[1]{%
+  \vspace{-\fileparskip}
+    \begin{adjustwidth}{\calctab+0.4em}{0em}
+    \justify
+    \setlength{\parindent}{0em}
+    \setlength{\itemindent}{0em}
+    \setlength{\parskip}{\fileparskip}
+    \hspace{-0.4em}\normalfont{\bfseries[}#1{\bfseries]}
+  \end{adjustwidth}
+}
+
+\newcommand{\scnfileheader}[1]{\scnfilelongheader{#1}}
+
+\newcommand{\scnstructheader}[1]{%
+  \setlength{\hangindent}{0em}
+  \setlength{\parskip}{\baselineskip}
+  \par{\itshape\bfseries\textspaced{#1}}
+  \setlength{\parskip}{0em}
+  \par
+}
+
+\newcommand{\scnheaderlocal}[1]{%
+  \settab{\itshape\bfseries#1}\par
+}
+
+\newcommand{\scnstructheaderlocal}[1]{%
+  \settab{\itshape\bfseries\textspaced{#1}}\par
+}
+
+\newcommand{\scnstructidtf}[1]{%
+  {\itshape\textspaced{#1}}%
+}
+
+\newcommand{\scnkeyword}[1]{%
+  {\itshape\bfseries#1}%
+}
+
+\newcommand{\scnsectionheader}[1]{%
+  \textspaced{\scnheader{\large #1}}
+}
+
+\makeatletter
+\newcommand{\scnsegmentheader}[1]{%
+  \bigskip
+  \normalfont\bfseries /*~\textspaced{\segment}~%
+  \filldots/%
+  \normalfont\textspaced{\scnheader{#1}}\par
+}
+\makeatother
+
+\NewDocumentCommand{\scnrel}{>{\SplitList{;}}m}{%
+  \providecommand\relit[1]{{\itshape##1}*{\normalfont:~}}%
+  \settab\sethind%
+  \ProcessList{#1}{\relit}\par
+}
+
+\NewDocumentCommand{\scnvarrel}{>{\SplitList{;}}m}{%
+  \providecommand\varrelit[1]{{\itshape##1}*{\normalfont::~}}%
+  \settab\sethind%
+  \ProcessList{#1}{\varrelit}\par
+}
+
+\NewDocumentCommand{\scnrolerel}{>{\SplitList{;}}m}{%
+  \providecommand\rolerelit[1]{{\itshape##1}\scnrolesign{\normalfont:~}}%
+  \settab\sethind%
+  \ProcessList{#1}{\rolerelit}\par
+}
+
+\NewDocumentCommand{\scnvarrolerel}{>{\SplitList{;}}m}{%
+  \providecommand\varrolerelit[1]{{\itshape##1}\scnrolesign{\normalfont::~}}%
+  \settab\sethind%
+  \ProcessList{#1}{\varrolerelit}\par
+}
+
+\RequirePackage{calc}
+\RequirePackage{changepage}
+\RequirePackage{ragged2e}
+
+\newcommand{\scnfilelong}[1]{
+  \vspace{-\fileparskip}
+  \begin{adjustwidth}{\calctab+0.4em}{0em}
+    \justify
+    \setlength{\parindent}{0em}
+    \setlength{\itemindent}{0em}
+    \setlength{\parskip}{\fileparskip}
+    \hspace{-0.4em}\normalfont{\bfseries[}#1{\bfseries]}
+  \end{adjustwidth}
+}
+
+\RequirePackage{tabularx}
+\RequirePackage{graphicx}
+\RequirePackage{colortbl}
+
+\newcommand{\scnfileimage}[2][\textwidth-\calctab]{
+  \begin{adjustwidth}{\calctab}{0em}
+    \setlength{\parindent}{0em}
+    \setlength{\itemindent}{0em}
+    \setlength{\parskip}{0em}
+    \normalfont{\bfseries[}\hfill\\
+      \cellcolor{white}
+      \includegraphics[width=#1]{#2}\\%
+      {\bfseries]}
+  \end{adjustwidth}
+}
+
+\newcommand{\scnrelfrom}[2]{%
+  \settab$\bm{\Rightarrow}$\makediff{\arrowsize}\scnrel{#1}
+  \begin{scnindent}
+    \settab\sethind{\itshape #2}
+  \end{scnindent}
+  \par
+}
+
+\newcommand{\scnrelsuperset}[2]{%
+  \settab$\bm{\supset}$\makediff{\subsetsize}\scnrel{#1}
+  \begin{scnindent}
+    \sethind\settab{\itshape #2}
+  \end{scnindent}
+  \par
+}
+
+\newcommand{\scnvarrelfrom}[2]{%
+  \settab\textunderscore$\bm{\Rightarrow}$\makediff{\arrowsizevar}\scnvarrel{#1}
+  \begin{scnindent}
+    \sethind\settab{\itshape #2}
+  \end{scnindent}
+  \par
+}
+
+\newcommand{\scnrelto}[2]{%
+  \settab$\bm{\Leftarrow}$\makediff{\arrowsize}\scnrel{#1}
+  \begin{scnindent}
+    \sethind\settab{\itshape #2}
+  \end{scnindent}
+  \par
+}
+
+\newcommand{\scnvarrelto}[2]{%
+  \settab\textunderscore$\bm{\Leftarrow}$\makediff{\arrowsizevar}\scnvarrel{#1}
+  \begin{scnindent}
+    \sethind\settab{\itshape #2}
+  \end{scnindent}
+  \par
+}
+
+\newcommand{\scnrelboth}[2]{%
+  \settab$\bm{\Leftrightarrow}$\makediff{\arrowsize}\scnrel{#1}
+  \begin{scnindent}
+    \sethind\settab{\itshape #2}
+  \end{scnindent}
+  \par
+}
+
+\newcommand{\scneq}[1]{%
+  \settab\sethind$\bm{=}$\makediff{\eqsize}{\itshape#1}\par
+}
+
+\newcommand{\scneqfile}[1]{%
+  \settab$\bm{=}$\\
+  \scnfilelong{#1}\par
+}
+
+\newcommand{\scneqimage}[2][\textwidth-\calctab]{%
+  \settab$\bm{=}$
+  \scnfileimage[#1]{#2}\par
+}
+
+\RequirePackage{xcolor}
+
+\newcommand{\scnfiletable}[1]{
+  \begin{adjustwidth}{\calctab}{0em}
+    \setlength{\parindent}{0em}
+    \setlength{\itemindent}{0em}
+    \setlength{\parskip}{0em}
+    \normalfont{\bfseries[}
+      \rowcolors{1}{white}{white}
+      #1%
+      {\bfseries]}
+  \end{adjustwidth}
+}
+
+\newcommand{\scneqtable}[1]{%
+  \settab$\bm{=}$\\ 
+  \scnfiletable{#1}\par
+}
+
+\newcommand{\scnfileclass}[1]{%
+  \vspace{-\fileparskip}
+  \begin{adjustwidth}{\calctab+0.7em}{0em}
+    \justify
+    \setlength{\parindent}{0em}
+    \setlength{\itemindent}{0em}
+    \setlength{\parskip}{\fileparskip}
+    \hspace{-0.7em}\normalfont{\bfseries![}#1{\bfseries]!}
+  \end{adjustwidth}
+}
+
+\newcommand{\scneqfileclass}[1]{%
+  \settab\sethind$\bm{=}$\makediff{\eqsize}%
+  \vspace{-\baselineskip}
+  \begin{scnindent}
+    \scnfileclass{#1}\par
+  \end{scnindent}
+}
+
+\newcommand{\scnsubset}[1]{%
+  \settab\sethind$\bm{\subset}$\makediff{\subsetsize}{\itshape#1}\par
+}
+
+\newcommand{\scnnotsubset}[1]{%
+  \settab\sethind$\bm{\not\subset}$\makediff{\subsetsize}{\itshape#1}\par
+}
+
+\newcommand{\scnsuperset}[1]{%
+  \settab\sethind$\bm{\supset}$\makediff{\subsetsize}{\itshape#1}\par
+}
+
+\newcommand{\scniselement}[1]{%
+  \settab\sethind$\bm{\in}$\makediff{\insize}{\itshape#1}\par
+}
+
+\newcommand{\scnisvarelement}[1]{%
+  \settab\sethind\textunderscore$\bm{\in}$\makediff{\insizevar}{\itshape#1}\par
+}
+
+\newcommand{\scnhaselement}[1]{%
+  \settab\sethind$\bm{\ni}$\makediff{\insize}{\itshape#1}\par
+}
+
+\newcommand{\scnhasvarelement}[1]{%
+  \settab\settab\textunderscore$\bm{\ni}$\makediff{\insizevar}{\itshape#1}\par
+}
+
+\newcommand{\scnhaselementrole}[2]{%
+  \settab$\bm{\ni}$\makediff{\insize}\scnrolerel{#1}
+  \begin{scnindent}
+    \settab\sethind%
+    {\itshape#2}
+  \end{scnindent}
+  \par
+}
+
+\newcommand{\scnhasvarelementrole}[2]{%
+  \settab\textunderscore$\bm{\ni}$\makediff{\insizevar}\scnvarrolerel{#1}
+  \begin{scnindent}
+    \settab\sethind{\itshape#2}
+  \end{scnindent}
+  \par
+}
+
+\newcommand{\scniselementrole}[2]{%
+  \settab$\bm{\in}$\makediff{\insize}\scnrolerel{#1}
+  \begin{scnindent}
+    \settab\sethind{\itshape#2}
+  \end{scnindent}
+  \par
+}
+
+\RequirePackage{mathtools}
+
+\newcommand{\scnidtf}[1]{%
+  \settab\sethind$\bm{\coloneqq}$\makediff{\coloneqsize}
+  \vspace{-\baselineskip}
+  \begin{scnindent}
+    \scnfilelong{#1}
+  \end{scnindent}
+  \par
+}
+
+\newcommand{\scnidtftext}[2]{%
+  \settab$\bm{\coloneqq}$\makediff{\coloneqsize}\scnrel{#1}
+  \begin{scnindent}
+    \scnfilelong{#2}
+  \end{scnindent}
+  \par
+}
+
+\newcommand{\scntext}[2]{%
+  \settab$\bm{\Rightarrow}$\makediff{\arrowsize}\scnrel{#1}
+  \begin{scnindent}
+    \sethind\settab\scnfilelong{#2}
+  \end{scnindent}
+  \par
+}
+
+%Developer info
+
+\makeatletter
+\newcommand*{\currentname}{\@currentlabelname}
+\makeatother
+
+\newcommand{\scnsourcecomment}[1]{%
+  \begin{adjustwidth}{\calctab}{0em}
+    \justify
+    \setlength{\parindent}{0em}
+    \setlength{\itemindent}{0em}%
+    \normalfont {\bfseries/*}~#1{}~{\bfseries*/}
+  \end{adjustwidth}
+}
+
+\newcommand{\scnsourcecommentinline}[1]{%
+  \begin{adjustwidth}{\calctab}{0em}
+    \justify
+    \setlength{\parindent}{0em}
+    \setlength{\itemindent}{0em}%
+    \vspace{-\baselineskip}\hspace{\tabsize}
+    \normalfont {\bfseries/*}~#1{}~{\bfseries*/}
+  \end{adjustwidth}
+}
+
+\newcommand{\scnendfragmentcomment}[1]{%
+  \scnsourcecommentinline{\complfragm~``{\itshape#1}''}
+}
+
+\newcommand{\scnendcurrentsectioncomment}{%
+  \scnsourcecommentinline{\complsect~``{\itshape\currentname}''}
+}
+
+\newcommand{\scnendsegmentcomment}[1]{%
+  \scnsourcecommentinline{\complsegm~``{\itshape#1}''}
+}
+
+
+% Itemize START
+
+\RequirePackage{enumitem}
+\RequirePackage{amssymb}
+
+\newenvironment{scnitemize}{
+  \begin{itemize}[
+      leftmargin=\calctab-0.4em,
+      itemsep=-0.25em,
+      labelsep=\calcdiff{\bulletsize-0.4em},
+      before=\vspace{-0.8em},
+      after=\vspace{-0.5em}
+    ]
+    \renewcommand{\labelitemi}{$\bullet$}
+    \renewcommand{\labelitemii}{$\bullet$}
+    \renewcommand{\labelitemiii}{$\bullet$}
+}{
+  \end{itemize}
+}
+
+\newenvironment{scnitemizeii}{
+  \begin{itemize}[
+      leftmargin=\calctab,
+      itemsep=-0.25em,
+      labelsep=\calcdiff{\bulletsize},
+      itemindent=-0.25em,
+      before=\vspace{-0.3em},
+      after=\vspace{0em}
+    ]
+    \renewcommand{\labelitemi}{$\bullet$}
+}{
+  \end{itemize}
+}
+
+\newenvironment{scnitemizeiii}{
+  \begin{itemize}[
+      leftmargin=\calctab,
+      itemsep=-0.25em,
+      labelsep=\calcdiff{\bulletsize},
+      itemindent=-0.8em,
+      before=\vspace{-0.3em},
+      after=\vspace{0em}
+    ]
+    \renewcommand{\labelitemi}{$\bullet$}
+}{
+  \end{itemize}
+}
+
+\newenvironment{scnenumerate}{
+  \begin{enumerate}[
+      leftmargin=\calctab-0.4em,
+      itemsep=-0.25em,
+      labelsep=\calcdiff{\bulletsize-0.65em},
+      before=\vspace{-0.8em},
+      after=\vspace{-0.5em}
+    ]
+}{
+  \end{enumerate}
+}
+
+% Itemize END
+
+\newcommand{\scnqq}[1]{"#1"{}}
+
+\newcommand{\scnqqi}[1]{``#1''}
+
+
+\newcommand{\scnleftcurlbrace}{\{}
+
+\newcommand{\scnrightcurlbrace}{\}}
+
+\newcommand{\scnleftsquarebrace}{\[}
+
+\newcommand{\scnleftsquarebracene}{[}
+
+\newcommand{\scnrightsquarebrace}{\]}
+
+\newcommand{\scnrightsquarebracene}{]}
+
+\newcommand{\scnstar}{*}
+
+\newcommand{\scnslash}{/}
+
+\newcommand{\scnhyphen}{-}
+
+% ENVIRONMENTS Start
+
+\newenvironment{SCn}{%
+  \setcounter{hind}{0}%
+  \setlength{\parskip}{0em}
+  \begin{flushleft}
+}{%
+  \end{flushleft}
+}
+\newenvironment{scnindent}
+{\addtocounter{hind}{1}}
+{\addtocounter{hind}{-1}}
+
+\NewDocumentCommand{\scnlist}{o}{%
+  \providecommand{\scnitem}[1]{%
+    \par$\bullet$\makediff{\bulletsize}%
+    \begin{scnindent}%
+      {\itshape##1}\par%
+    \end{scnindent}%
+  }
+  \providecommand{\scnfileitem}[1]{%
+    \par$\bullet$
+    \vspace{-\baselineskip}
+    \begin{adjustwidth}{\calctab+\tabsize+0.4em}{0em}
+      \justify
+      \setlength{\parindent}{0em}
+      \setlength{\itemindent}{0em}
+      \setlength{\parskip}{0em}
+      \hspace{-0.4em}\normalfont{\bfseries[}##1{\bfseries]}
+    \end{adjustwidth}
+  }
+  \ifthenelse{\equal{#1}{local}}{
+    \setlength{\parindent}{\calctab+\bulletsize}%
+    \vspace{-\baselineskip}%
+    \renewcommand{\scnitem}[1]{%
+      \par$\bullet$\makediff{\bulletbracketsize}%
+      \begin{scnindent}%
+        {\itshape##1}\par%
+      \end{scnindent}%
+    }
+    \renewcommand{\scnfileitem}[1]{%
+      \par$\bullet$
+      \vspace{-\baselineskip}
+      \begin{adjustwidth}{\calctab+\tabsize+0.4em}{0em}
+        \justify
+        \setlength{\parindent}{0em}
+        \setlength{\itemindent}{0em}
+        \setlength{\parskip}{0em}
+        \hspace{-0.4em}\normalfont{\bfseries[}##1{\bfseries]}
+      \end{adjustwidth}
+    }
+  }{}
+}{}
+\newenvironment{scnrelfromlist}[1]{%
+  \par\settab$\bm{\Rightarrow}$\makediff{\arrowsize}\scnrel{#1}
+  \begin{scnindent}%
+    \settab\sethind%
+    \begin{scnlist}%
+}{
+    \end{scnlist}
+  \end{scnindent}
+}
+\newenvironment{scnreltolist}[1]{%
+  \par\settab$\bm{\Leftarrow}$\makediff{\arrowsize}\scnrel{#1}
+  \begin{scnindent}%
+    \settab\sethind%
+    \begin{scnlist}%
+}{
+    \end{scnlist}
+  \end{scnindent}
+}
+\newenvironment{scnrelbothlist}[1]{%
+  \par\settab$\bm{\Leftrightarrow}$\makediff{\arrowsize}\scnrel{#1}
+  \begin{scnindent}%
+    \settab\sethind%
+    \begin{scnlist}%
+}{
+    \end{scnlist}
+  \end{scnindent}
+}
+\RequirePackage{xparse}
+\NewDocumentEnvironment{set}{mm}
+{#1}
+{#2}
+\newenvironment{scnstruct}
+{\begin{set}{\scnstartstruct}{\scnendstruct}}
+{\end{set}}
+\newenvironment{scnsubstruct}
+{\begin{set}{\scnstartsubstruct}{\scnendstruct}}
+{\end{set}}
+
+\NewDocumentEnvironment{scnsetenv}{o}
+{\begin{set}{\scnstartset[#1]}{\scnendstruct[#1]}}
+{\end{set}}
+
+\NewDocumentEnvironment{scnvectorenv}{o}
+{\begin{set}{\scnstartvector[#1]}{\scnendvector[#1]}}
+{\end{set}}
+
+\NewDocumentEnvironment{scnhierstruct}{o}
+{\begin{set}{\scnstarthierstruct[#1]}{\scnendhierstruct[#1]}}
+{\end{set}}
+
+\newenvironment{scnset}{%
+  \par\settab\sethind%
+  \begin{scnsetenv}%
+    \begin{scnlist}[local]%
+}{
+    \end{scnlist}
+  \end{scnsetenv}
+}
+
+\newenvironment{scnrelfromset}[1]{%
+  \par\settab$\bm{\Rightarrow}$\makediff{\arrowsize}\scnrel{#1}
+  \begin{scnindent}%
+    \settab\sethind%
+    \begin{scnsetenv}%
+      \begin{scnlist}[local]%
+}{
+      \end{scnlist}
+    \end{scnsetenv}
+  \end{scnindent}
+}
+
+\newenvironment{scnvector}{%
+  \par\settab\sethind%
+  \begin{scnvectorenv}%
+    \begin{scnlist}[local]%
+}{
+    \end{scnlist}
+  \end{scnvectorenv}
+}
+
+\newenvironment{scnrelfromvector}[1]{%
+  \par\settab$\bm{\Rightarrow}$\makediff{\arrowsize}\scnrel{#1}
+  \begin{scnindent}%
+    \settab\sethind%
+    \begin{scnvectorenv}%
+      \begin{scnlist}[local]%
+}{
+      \end{scnlist}
+    \end{scnvectorenv}
+  \end{scnindent}
+}
+
+\newenvironment{scnreltoset}[1]{%
+  \settab$\bm{\Leftarrow}$\makediff{\arrowsize}\scnrel{#1}
+  \begin{scnindent}%
+    \settab\sethind
+    \begin{scnsetenv}%
+      \begin{scnlist}[local]%
+}{
+      \end{scnlist}
+    \end{scnsetenv}
+  \end{scnindent}
+}
+
+\newenvironment{scnreltovector}[1]{%
+  \par\settab$\bm{\Leftarrow}$\makediff{\arrowsize}\scnrel{#1}
+  \begin{scnindent}%
+    \settab\sethind
+    \begin{scnvectorenv}%
+      \begin{scnlist}[local]%
+}{
+      \end{scnlist}
+    \end{scnvectorenv}
+  \end{scnindent}
+}
+
+\newenvironment{scnhaselementrolelist}[1]{%
+  \par\settab$\bm{\ni}$\makediff{\insize}\scnrolerel{#1}
+  \begin{scnindent}%
+    \settab\sethind%
+    \begin{scnlist}%
+}{
+    \end{scnlist}
+  \end{scnindent}
+}
+\newenvironment{scnhaselementset}{%
+  \par\settab$\bm{\ni}$\makediff{\insize}%
+  \begin{scnindent}%
+    \settab\sethind%
+    \begin{scnsetenv}[local]%
+      \begin{scnlist}[local]%
+}{
+      \end{scnlist}
+    \end{scnsetenv}
+  \end{scnindent}
+}
+
+\newenvironment{scnhaselementvector}{%
+  \par\settab$\bm{\ni}$\makediff{\insize}%
+  \begin{scnindent}%
+    \settab\sethind
+    \begin{scnvectorenv}[local]
+      \begin{scnlist}[local]
+}{
+      \end{scnlist}
+    \end{scnvectorenv}
+  \end{scnindent}
+}
+
+\newenvironment{scneqtoset}{%
+  \par\settab$\bm{=}$\makediff{\eqsize}%
+  \begin{scnindent}%
+    \settab\sethind%
+    \begin{scnsetenv}[local]%
+      \begin{scnlist}[local]%
+}{
+      \end{scnlist}
+    \end{scnsetenv}
+  \end{scnindent}
+}
+
+\newenvironment{scneqtovector}{%
+  \par\settab$\bm{=}$\makediff{\eqsize}%
+  \begin{scnindent}%
+    \settab\sethind%
+    \begin{scnvectorenv}[local]%
+      \begin{scnlist}[local]%
+}{
+      \end{scnlist}
+    \end{scnvectorenv}
+  \end{scnindent}
+}
+
+\newenvironment{scnhassubstruct}{%
+  \par\settab$\bm{\supset=}$\makediff{\substructsize}%
+  \begin{scnindent}%
+    \settab\sethind%
+    \begin{scnsetenv}[local]%
+      \begin{scnlist}[local]%
+}{
+      \end{scnlist}
+    \end{scnsetenv}
+  \end{scnindent}
+}
+
+\newenvironment{scnhassubset}{%
+  \par\settab$\bm{\supset}$\makediff{\subsetsize}%
+  \begin{scnindent}%
+    \settab\sethind%
+    \begin{scnsetenv}[local]%
+      \begin{scnlist}[local]%
+}{
+      \end{scnlist}
+    \end{scnsetenv}
+  \end{scnindent}
+}
+
+% ENVIRONMENTS End
+\endinput
