@@ -673,13 +673,19 @@
         \begin{scnrelfromset}{разбиение}
         	\scnitem{файл ostis-системы}
         	\begin{scnindent}
-        		\scnidtf{файл, хранимый в памяти ostis-системы}
-        		\begin{scnrelfromset}{разбиение}
-        			\scnitem{сформированный файл ostis-системы}
-        			\scnitem{несформированный файл ostis-системы}
-        		\end{scnrelfromset}
-        	\end{scnindent}
-        	\scnitem{файл компьютерной системы, не явлющейся ostis-системой}
+                \scnidtf{внутренний файл ostis-системы}
+                \scnidtf{файл, хранимый в памяти ostis-системы}
+                % такое же разбиение указано в sd_temp_entities_kb, относится к обоим областям. изменять согласованно со вторым использованием .
+                \begin{scnsubdividing}
+                    \scnitem{недостаточно сформированный внутренний файл}
+                    \scnitem{достаточно сформированный внутренний файл}
+                    \scnitem{внутренний файл, имеющий средний уровень сформированности}
+                \end{scnsubdividing}
+            \end{scnindent}
+            \scnitem{внешний файл ostis-системы}
+            \begin{scnindent}
+                \scnidtf{файл компьютерной системы, не явлющейся ostis-системой}
+            \end{scnindent}
         \end{scnrelfromset}
         \scnsuperset{текстовый файл}
         \begin{scnindent}
@@ -698,12 +704,9 @@
         \scnsuperset{видео-файл}
         \scnsuperset{аудио-файл}
         
-        \scnheader{файл ostis-систем}
-        \scntext{определение}{\textbf{\textit{файл ostis-системы}} --- инородная для \textit{sc-кода} \textit{информационная конструкция}, которая может как храниться в памяти \textit{ostis-системы}, так и вне ее.}
-        \begin{scnrelfromset}{разбиение}
-        	\scnitem{хранимый файл ostis-систем}
-        	\scnitem{пустой файл ostis-систем}
-        \end{scnrelfromset}
+        \scnheader{файл ostis-системы}
+        \scntext{определение}{\textbf{\textit{файл ostis-системы}} --- инородная для \textit{sc-кода} \textit{информационная конструкция}, которая храниться в памяти \textit{ostis-системы}.}
+        \scnsuperset{пустой файл ostis-системы}
         \begin{scnrelfromset}{разбиение}
         	\scnitem{файл-экземпляр}
         	\begin{scnindent}
